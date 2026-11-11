@@ -1,4 +1,5 @@
-import { Canvas } from '@react-three/fiber'
+import { Canvas, useThree } from '@react-three/fiber'
+import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js'
 import { Suspense, useEffect, useRef, useState, type PointerEvent as ReactPointerEvent, type Ref } from 'react'
 import * as THREE from 'three'
 import type { CameraView, Structure } from '../content/types'
@@ -20,12 +21,26 @@ export interface AnatomyViewerProps {
 
 const DPR: [number, number] = [1, 2] // cap pixel ratio at 2 for mobile GPUs
 
+/** Soft studio lighting: a procedural room environment (no HDR download) plus a key and a rim light. */
 function Lights() {
+  const gl = useThree((s) => s.gl)
+  const scene = useThree((s) => s.scene)
+  useEffect(() => {
+    const pmrem = new THREE.PMREMGenerator(gl)
+    const env = pmrem.fromScene(new RoomEnvironment(), 0.04).texture
+    scene.environment = env
+    scene.environmentIntensity = 0.35
+    return () => {
+      scene.environment = null
+      env.dispose()
+      pmrem.dispose()
+    }
+  }, [gl, scene])
   return (
     <>
-      <hemisphereLight args={['#ffffff', '#30303a', 1.1]} />
-      <directionalLight position={[2, 3, 2.5]} intensity={1.6} />
-      <directionalLight position={[-2.5, 1, -2]} intensity={0.6} />
+      <hemisphereLight args={['#fff8ee', '#1d1d22', 0.45]} />
+      <directionalLight position={[1.5, 3, 2.5]} intensity={1.35} color="#fff6e8" />
+      <directionalLight position={[-2.5, 1.5, -2]} intensity={0.8} color="#dfe8ff" />
     </>
   )
 }

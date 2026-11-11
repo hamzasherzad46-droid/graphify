@@ -1,0 +1,810 @@
+{
+ "parts": [
+  {
+   "name": "frontal",
+   "shape": "sphere",
+   "radius": 0.075,
+   "position": [
+    0,
+    1.65,
+    0.04
+   ],
+   "scale": [
+    1,
+    0.8,
+    0.62
+   ]
+  },
+  {
+   "name": "parietal.l",
+   "shape": "sphere",
+   "radius": 0.068,
+   "position": [
+    0.042,
+    1.69,
+    -0.015
+   ],
+   "scale": [
+    0.75,
+    0.62,
+    1
+   ]
+  },
+  {
+   "name": "parietal.r",
+   "shape": "sphere",
+   "radius": 0.068,
+   "position": [
+    -0.042,
+    1.69,
+    -0.015
+   ],
+   "scale": [
+    0.75,
+    0.62,
+    1
+   ]
+  },
+  {
+   "name": "temporal.l",
+   "shape": "sphere",
+   "radius": 0.042,
+   "position": [
+    0.074,
+    1.6,
+    -0.005
+   ],
+   "scale": [
+    0.45,
+    1,
+    1
+   ]
+  },
+  {
+   "name": "temporal.r",
+   "shape": "sphere",
+   "radius": 0.042,
+   "position": [
+    -0.074,
+    1.6,
+    -0.005
+   ],
+   "scale": [
+    0.45,
+    1,
+    1
+   ]
+  },
+  {
+   "name": "occipital",
+   "shape": "sphere",
+   "radius": 0.066,
+   "position": [
+    0,
+    1.615,
+    -0.072
+   ],
+   "scale": [
+    1,
+    0.9,
+    0.6
+   ]
+  },
+  {
+   "name": "sphenoid",
+   "shape": "box",
+   "size": [
+    0.13,
+    0.03,
+    0.04
+   ],
+   "position": [
+    0,
+    1.585,
+    0.015
+   ]
+  },
+  {
+   "name": "ethmoid",
+   "shape": "box",
+   "size": [
+    0.028,
+    0.032,
+    0.035
+   ],
+   "position": [
+    0,
+    1.6,
+    0.058
+   ]
+  },
+  {
+   "name": "nasal.l",
+   "shape": "box",
+   "size": [
+    0.011,
+    0.026,
+    0.008
+   ],
+   "position": [
+    0.006,
+    1.585,
+    0.092
+   ],
+   "rotation": [
+    -20,
+    0,
+    0
+   ]
+  },
+  {
+   "name": "nasal.r",
+   "shape": "box",
+   "size": [
+    0.011,
+    0.026,
+    0.008
+   ],
+   "position": [
+    -0.006,
+    1.585,
+    0.092
+   ],
+   "rotation": [
+    -20,
+    0,
+    0
+   ]
+  },
+  {
+   "name": "zygomatic.l",
+   "shape": "sphere",
+   "radius": 0.021,
+   "position": [
+    0.052,
+    1.575,
+    0.066
+   ],
+   "scale": [
+    1,
+    0.8,
+    0.6
+   ]
+  },
+  {
+   "name": "zygomatic.r",
+   "shape": "sphere",
+   "radius": 0.021,
+   "position": [
+    -0.052,
+    1.575,
+    0.066
+   ],
+   "scale": [
+    1,
+    0.8,
+    0.6
+   ]
+  },
+  {
+   "name": "maxilla",
+   "shape": "box",
+   "size": [
+    0.062,
+    0.036,
+    0.045
+   ],
+   "position": [
+    0,
+    1.545,
+    0.066
+   ]
+  },
+  {
+   "name": "mandible",
+   "shape": "arch",
+   "radius": 0.048,
+   "tube": 0.011,
+   "position": [
+    0,
+    1.505,
+    0.03
+   ]
+  },
+  {
+   "name": "cervical",
+   "shape": "stack",
+   "count": 7,
+   "radius": 0.019,
+   "height": 0.12,
+   "position": [
+    0,
+    1.43,
+    -0.03
+   ]
+  },
+  {
+   "name": "thoracic",
+   "shape": "stack",
+   "count": 12,
+   "radius": 0.024,
+   "height": 0.28,
+   "position": [
+    0,
+    1.225,
+    -0.05
+   ]
+  },
+  {
+   "name": "lumbar",
+   "shape": "stack",
+   "count": 5,
+   "radius": 0.03,
+   "height": 0.17,
+   "position": [
+    0,
+    1.0,
+    -0.04
+   ]
+  },
+  {
+   "name": "sacrum",
+   "shape": "cone",
+   "radiusTop": 0.045,
+   "radiusBottom": 0.016,
+   "height": 0.1,
+   "position": [
+    0,
+    0.87,
+    -0.06
+   ],
+   "rotation": [
+    -15,
+    0,
+    0
+   ]
+  },
+  {
+   "name": "coccyx",
+   "shape": "cone",
+   "radiusTop": 0.012,
+   "radiusBottom": 0.004,
+   "height": 0.035,
+   "position": [
+    0,
+    0.805,
+    -0.045
+   ]
+  },
+  {
+   "name": "rib",
+   "shape": "ribcage",
+   "count": 12,
+   "top": 1.34,
+   "bottom": 1.09,
+   "radiusX": [
+    0.075,
+    0.135
+   ],
+   "radiusZ": [
+    0.075,
+    0.1
+   ],
+   "tube": 0.006,
+   "centerZ": 0.02
+  },
+  {
+   "name": "sternum",
+   "shape": "box",
+   "size": [
+    0.035,
+    0.17,
+    0.014
+   ],
+   "position": [
+    0,
+    1.22,
+    0.112
+   ],
+   "rotation": [
+    -10,
+    0,
+    0
+   ]
+  },
+  {
+   "name": "clavicle.l",
+   "shape": "capsule",
+   "radius": 0.008,
+   "from": [
+    0.018,
+    1.405,
+    0.06
+   ],
+   "to": [
+    0.15,
+    1.42,
+    0.0
+   ]
+  },
+  {
+   "name": "clavicle.r",
+   "shape": "capsule",
+   "radius": 0.008,
+   "from": [
+    -0.018,
+    1.405,
+    0.06
+   ],
+   "to": [
+    -0.15,
+    1.42,
+    0.0
+   ]
+  },
+  {
+   "name": "scapula.l",
+   "shape": "box",
+   "size": [
+    0.1,
+    0.13,
+    0.01
+   ],
+   "position": [
+    0.1,
+    1.3,
+    -0.09
+   ],
+   "rotation": [
+    0,
+    20,
+    0
+   ]
+  },
+  {
+   "name": "scapula.r",
+   "shape": "box",
+   "size": [
+    0.1,
+    0.13,
+    0.01
+   ],
+   "position": [
+    -0.1,
+    1.3,
+    -0.09
+   ],
+   "rotation": [
+    0,
+    -20,
+    0
+   ]
+  },
+  {
+   "name": "humerus.l",
+   "shape": "capsule",
+   "radius": 0.014,
+   "from": [
+    0.17,
+    1.38,
+    -0.01
+   ],
+   "to": [
+    0.2,
+    1.09,
+    -0.02
+   ]
+  },
+  {
+   "name": "humerus.r",
+   "shape": "capsule",
+   "radius": 0.014,
+   "from": [
+    -0.17,
+    1.38,
+    -0.01
+   ],
+   "to": [
+    -0.2,
+    1.09,
+    -0.02
+   ]
+  },
+  {
+   "name": "medial_epicondyle.l",
+   "shape": "sphere",
+   "radius": 0.011,
+   "position": [
+    0.178,
+    1.085,
+    -0.02
+   ]
+  },
+  {
+   "name": "medial_epicondyle.r",
+   "shape": "sphere",
+   "radius": 0.011,
+   "position": [
+    -0.178,
+    1.085,
+    -0.02
+   ]
+  },
+  {
+   "name": "lateral_epicondyle.l",
+   "shape": "sphere",
+   "radius": 0.011,
+   "position": [
+    0.222,
+    1.085,
+    -0.02
+   ]
+  },
+  {
+   "name": "lateral_epicondyle.r",
+   "shape": "sphere",
+   "radius": 0.011,
+   "position": [
+    -0.222,
+    1.085,
+    -0.02
+   ]
+  },
+  {
+   "name": "radius.l",
+   "shape": "capsule",
+   "radius": 0.009,
+   "from": [
+    0.225,
+    1.07,
+    0.0
+   ],
+   "to": [
+    0.26,
+    0.83,
+    0.02
+   ]
+  },
+  {
+   "name": "radius.r",
+   "shape": "capsule",
+   "radius": 0.009,
+   "from": [
+    -0.225,
+    1.07,
+    0.0
+   ],
+   "to": [
+    -0.26,
+    0.83,
+    0.02
+   ]
+  },
+  {
+   "name": "ulna.l",
+   "shape": "capsule",
+   "radius": 0.009,
+   "from": [
+    0.19,
+    1.08,
+    -0.02
+   ],
+   "to": [
+    0.225,
+    0.83,
+    0.0
+   ]
+  },
+  {
+   "name": "ulna.r",
+   "shape": "capsule",
+   "radius": 0.009,
+   "from": [
+    -0.19,
+    1.08,
+    -0.02
+   ],
+   "to": [
+    -0.225,
+    0.83,
+    0.0
+   ]
+  },
+  {
+   "name": "carpals.l",
+   "shape": "box",
+   "size": [
+    0.05,
+    0.03,
+    0.022
+   ],
+   "position": [
+    0.245,
+    0.8,
+    0.01
+   ]
+  },
+  {
+   "name": "carpals.r",
+   "shape": "box",
+   "size": [
+    0.05,
+    0.03,
+    0.022
+   ],
+   "position": [
+    -0.245,
+    0.8,
+    0.01
+   ]
+  },
+  {
+   "name": "metacarpals.l",
+   "shape": "rods",
+   "count": 5,
+   "radius": 0.004,
+   "length": 0.062,
+   "spacing": 0.011,
+   "position": [
+    0.248,
+    0.783,
+    0.01
+   ]
+  },
+  {
+   "name": "metacarpals.r",
+   "shape": "rods",
+   "count": 5,
+   "radius": 0.004,
+   "length": 0.062,
+   "spacing": 0.011,
+   "position": [
+    -0.248,
+    0.783,
+    0.01
+   ]
+  },
+  {
+   "name": "phalanges_hand.l",
+   "shape": "rods",
+   "count": 5,
+   "radius": 0.0035,
+   "length": 0.07,
+   "spacing": 0.011,
+   "position": [
+    0.248,
+    0.716,
+    0.01
+   ]
+  },
+  {
+   "name": "phalanges_hand.r",
+   "shape": "rods",
+   "count": 5,
+   "radius": 0.0035,
+   "length": 0.07,
+   "spacing": 0.011,
+   "position": [
+    -0.248,
+    0.716,
+    0.01
+   ]
+  },
+  {
+   "name": "hip_bone.l",
+   "shape": "sphere",
+   "radius": 0.09,
+   "position": [
+    0.085,
+    0.93,
+    -0.01
+   ],
+   "scale": [
+    0.65,
+    1,
+    0.38
+   ],
+   "rotation": [
+    0,
+    25,
+    -18
+   ]
+  },
+  {
+   "name": "hip_bone.r",
+   "shape": "sphere",
+   "radius": 0.09,
+   "position": [
+    -0.085,
+    0.93,
+    -0.01
+   ],
+   "scale": [
+    0.65,
+    1,
+    0.38
+   ],
+   "rotation": [
+    0,
+    -25,
+    18
+   ]
+  },
+  {
+   "name": "femur.l",
+   "shape": "capsule",
+   "radius": 0.016,
+   "from": [
+    0.105,
+    0.88,
+    0.0
+   ],
+   "to": [
+    0.085,
+    0.5,
+    0.0
+   ]
+  },
+  {
+   "name": "femur.r",
+   "shape": "capsule",
+   "radius": 0.016,
+   "from": [
+    -0.105,
+    0.88,
+    0.0
+   ],
+   "to": [
+    -0.085,
+    0.5,
+    0.0
+   ]
+  },
+  {
+   "name": "patella.l",
+   "shape": "sphere",
+   "radius": 0.022,
+   "position": [
+    0.082,
+    0.47,
+    0.04
+   ],
+   "scale": [
+    1,
+    1.2,
+    0.5
+   ]
+  },
+  {
+   "name": "patella.r",
+   "shape": "sphere",
+   "radius": 0.022,
+   "position": [
+    -0.082,
+    0.47,
+    0.04
+   ],
+   "scale": [
+    1,
+    1.2,
+    0.5
+   ]
+  },
+  {
+   "name": "tibia.l",
+   "shape": "capsule",
+   "radius": 0.014,
+   "from": [
+    0.075,
+    0.46,
+    0.0
+   ],
+   "to": [
+    0.075,
+    0.08,
+    -0.005
+   ]
+  },
+  {
+   "name": "tibia.r",
+   "shape": "capsule",
+   "radius": 0.014,
+   "from": [
+    -0.075,
+    0.46,
+    0.0
+   ],
+   "to": [
+    -0.075,
+    0.08,
+    -0.005
+   ]
+  },
+  {
+   "name": "fibula.l",
+   "shape": "capsule",
+   "radius": 0.007,
+   "from": [
+    0.11,
+    0.44,
+    -0.01
+   ],
+   "to": [
+    0.105,
+    0.07,
+    -0.01
+   ]
+  },
+  {
+   "name": "fibula.r",
+   "shape": "capsule",
+   "radius": 0.007,
+   "from": [
+    -0.11,
+    0.44,
+    -0.01
+   ],
+   "to": [
+    -0.105,
+    0.07,
+    -0.01
+   ]
+  },
+  {
+   "name": "tarsals.l",
+   "shape": "box",
+   "size": [
+    0.06,
+    0.04,
+    0.07
+   ],
+   "position": [
+    0.085,
+    0.045,
+    0.035
+   ]
+  },
+  {
+   "name": "tarsals.r",
+   "shape": "box",
+   "size": [
+    0.06,
+    0.04,
+    0.07
+   ],
+   "position": [
+    -0.085,
+    0.045,
+    0.035
+   ]
+  },
+  {
+   "name": "calcaneus.l",
+   "shape": "box",
+   "size": [
+    0.035,
+    0.045,
+    0.06
+   ],
+   "position": [
+    0.08,
+    0.025,
+    -0.025
+   ]
+  },
+  {
+   "name": "calcaneus.r",
+   "shape": "box",
+   "size": [
+    0.035,
+    0.045,
+    0.06
+   ],
+   "position": [
+    -0.08,
+    0.025,
+    -0.025
+   ]
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+  "courses": [
+    {
+      "id": "anatomy",
+      "title": "Anatomy",
+      "modules": [
+        {
+          "id": "skeleton",
+          "title": "Skeleton",
+          "description": "Bones of the skull, axial skeleton and limbs.",
+          "status": "available",
+          "contentFile": "skeleton",
+          "placeholderFile": "skeleton.placeholder",
+          "model": { "file": "skeleton.glb", "scale": 1, "position": [0, 0, 0], "rotation": [0, 0, 0] }
+        },
+        {
+          "id": "heart",
+          "title": "Heart",
+          "description": "Chambers, valves and great vessels.",
+          "status": "coming-soon"
+        },
+        {
+          "id": "vessels",
+          "title": "Major Vessels",
+          "description": "Arteries and veins of the body.",
+          "status": "coming-soon"
+        },
+        {
+          "id": "muscles",
+          "title": "Muscles",
+          "description": "Major skeletal muscles and their actions.",
+          "status": "coming-soon"
+        }
+      ]
+    }
+  ]
+}

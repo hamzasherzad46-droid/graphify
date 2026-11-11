@@ -78,8 +78,32 @@ for a structure's `camera` field.
 
 ## 3D models
 
-Final models come from **Z-Anatomy** (CC BY-SA 4.0, based on BodyParts3D, CC BY-SA 2.1 JP) as GLB
-files in `public/models`, one named mesh per bone. Until then the app draws primitive placeholders.
+`public/models/skeleton.glb` is the real **BodyParts3D 4.0** skeleton (© DBCLS): 276 named meshes,
+~308k triangles, 1.4 MB with Draco compression. Each bone is its own mesh (`frontal`, `parietal.l`,
+`rib_3.r`, `scaphoid.l`, `hand_phalanx_23.r`, …), with the original BodyParts3D name and id kept in
+each node's `extras`.
+
+Changes from the source data, all made by `scripts/import-bodyparts3d.mjs`:
+
+- Bones only, plus teeth, costal cartilages and intervertebral discs so the skeleton looks complete.
+- The **medial and lateral epicondyles** are split off each humerus as their own meshes, so they can
+  be highlighted. The split is a sphere around the most medial or lateral point of the distal humerus.
+- **The coccyx is approximate.** BodyParts3D has no coccyx mesh, so the script adds a smooth, tapered
+  shape at the sacrum's apex. Replace it with a Z-Anatomy coccyx when you can.
+
+### Rebuilding the skeleton model
+
+The source is the [`@dagno/anatomy-model`](https://www.npmjs.com/package/@dagno/anatomy-model)
+npm package (BodyParts3D 4.0, CC BY 4.0), used as data only:
+
+```bash
+mkdir -p /tmp/bp3d && (cd /tmp/bp3d && npm pack --ignore-scripts @dagno/anatomy-model && tar xzf *.tgz)
+node scripts/import-bodyparts3d.mjs /tmp/bp3d/package/model /tmp/skeleton-raw.glb --fit-cameras content/skeleton.json
+scripts/convert-model.sh /tmp/skeleton-raw.glb skeleton
+npm test   # checks every meshName exists in the new GLB
+```
+
+`--fit-cameras` re-frames every question's camera around the real bone, keeping its viewing angle.
 
 ### Converting Z-Anatomy files to compressed GLB
 
@@ -95,21 +119,25 @@ The script:
    `draco`. Node names are preserved.
 3. Prints the mesh names so you can copy them into `meshName` fields.
 
-Manual equivalent: in Blender, delete or hide everything except the bones you need, then
-File → Export → glTF 2.0 (.glb) with *Selected Objects*, *Apply Modifiers* and *+Y Up* checked, then:
-
-```bash
-npx @gltf-transform/cli draco skeleton-raw.glb public/models/skeleton.glb
-```
-
-After adding a real model:
+After swapping in a different model:
 
 - If it isn't in atlas space, set `model.scale` / `position` / `rotation` (degrees) in
-  `catalog.json`. Z-Anatomy exports may use centimetres or another axis convention: check it.
-- Update each structure's `meshName` to the real mesh names, and re-tune `camera` values with
+  `catalog.json`.
+- Update `meshName` fields to the new mesh names, run `npm test`, and re-tune cameras with
   "Copy camera".
-- Landmarks such as the epicondyles may not be separate meshes in Z-Anatomy. Either split them
-  out in Blender (recommended) or highlight the parent bone.
+
+### Placeholders
+
+A module with no GLB yet can list a `placeholderFile` in `catalog.json`: primitive shapes (spheres,
+boxes, capsules…) named like real meshes, so the quiz works before models exist. The skeleton no
+longer needs one.
+
+### Rendering
+
+Bones use a near-opaque ivory material lit by a procedural studio environment (three's
+`RoomEnvironment`, nothing downloaded). The target bone is red with a soft rim glow. Any part of it
+hidden behind other bones shows through as a faint red silhouette (a `GreaterDepth` pass), so
+internal bones like the sphenoid and ethmoid stay findable.
 
 The Draco decoder is served from `/draco` (copied from three.js), not from a CDN, so it works offline.
 
@@ -137,7 +165,8 @@ src/
 
 Verified in headless Chromium at 390×844: build, lint, tests, the full practice → summary → review
 flow, hard mode, timed test, explore tap-to-identify, light mode, localStorage persistence, offline
-reload, and loading a Draco-compressed GLB (exported from the placeholder) with Z-Anatomy-style names.
+reload, and every structure highlighted and framed correctly on the real BodyParts3D skeleton.
 
-**UNVERIFIED**: real iPhone/Android devices (touch feel, Safari quirks, home-screen install), the
-Blender step of `convert-model.sh` (Blender wasn't available), and real Z-Anatomy models.
+**UNVERIFIED**: real iPhone/Android devices (touch feel, Safari quirks, home-screen install, and
+frame rate with the ~308k-triangle skeleton; if a phone struggles, lower the `--ratio` in
+`convert-model.sh`), the Blender step of `convert-model.sh` (Blender wasn't available), and Z-Anatomy models.

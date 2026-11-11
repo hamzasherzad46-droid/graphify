@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync } from 'node:fs'
+import { existsSync, readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
@@ -7,6 +7,15 @@ import { meshKeys, meshMatchesAny } from '../lib/meshMatch'
 import type { Catalog, ModuleContent, PlaceholderModel } from './types'
 
 const dir = fileURLToPath(new URL('../../content', import.meta.url))
+const modelsDir = fileURLToPath(new URL('../../public/models', import.meta.url))
+
+/** Node names from a GLB's JSON chunk (no decoding of geometry needed). */
+function glbNodeNames(file: string): string[] {
+  const b = readFileSync(join(modelsDir, file))
+  const len = b.readUInt32LE(12)
+  const json = JSON.parse(b.subarray(20, 20 + len).toString('utf8')) as { nodes?: { name?: string }[] }
+  return (json.nodes ?? []).map((n) => n.name ?? '')
+}
 const read = <T,>(f: string): T => JSON.parse(readFileSync(join(dir, f), 'utf8')) as T
 
 const catalog = read<Catalog>('catalog.json')
@@ -48,11 +57,14 @@ for (const m of modules) {
       for (const a of acceptedAnswers(s.name, s.synonyms)) expect(def.includes(a), `definition reveals "${a}"`).toBe(false)
     })
 
-    it('every structure has a placeholder mesh', () => {
-      if (!placeholder.parts.length) return
+    it('every meshName matches a mesh in the model (or the placeholder if there is no model yet)', () => {
+      const hasModel = !!m.model && existsSync(join(modelsDir, m.model.file))
+      const names = hasModel ? glbNodeNames(m.model!.file) : placeholder.parts.map((p) => p.name)
+      if (!names.length) return
       for (const s of content.structures) {
-        const keys = meshKeys(s.meshName)
-        expect(placeholder.parts.some((p) => meshMatchesAny(p.name, keys)), s.id).toBe(true)
+        for (const key of meshKeys(s.meshName)) {
+          expect(names.some((n) => meshMatchesAny(n, [key])), `${s.id}: "${key}"`).toBe(true)
+        }
       }
     })
 

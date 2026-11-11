@@ -220,6 +220,10 @@
   margin-top: var(--space-3);
 }
 
+.credits-model {
+  margin-top: var(--space-2);
+}
+
 .overlay a {
   color: var(--text-muted);
 }

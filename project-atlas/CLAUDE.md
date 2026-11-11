@@ -28,14 +28,15 @@ Vite + React + TypeScript, three.js via @react-three/fiber + drei, Zustand, loca
 - Ask before adding paid services or non-permissively licensed dependencies.
 
 ## Licensing
-3D models from Z-Anatomy (CC BY-SA 4.0) / BodyParts3D (CC BY-SA 2.1 JP). Keep the Credits screen attribution intact.
+3D models from Z-Anatomy (CC BY-SA 4.0) / BodyParts3D (CC BY-SA 2.1 JP; the current skeleton is BodyParts3D 4.0 under CC BY 4.0). Keep the Credits screen attribution intact.
 
 ## Done means
 Builds, lints, runs on a phone-sized viewport, and the quiz flow works end to end.
 
 ## Where things live
 - `content/catalog.json` — courses → modules (status, content file, model file + transform)
-- `content/<module>.json` — structures; `content/<module>.placeholder.json` — primitive stand-ins
+- `content/<module>.json` — structures; optional `content/<module>.placeholder.json` — primitive stand-ins for modules without a GLB
+- `public/models/skeleton.glb` — real BodyParts3D bones, built by `scripts/import-bodyparts3d.mjs` (see README "3D models")
 - `src/content/content.test.ts` — validates every content file (run `npm test` after editing content)
 - `src/lib/` — pure logic: `typing.ts` (answer engine), `srs.ts` (spaced repetition), `meshMatch.ts`, `storage.ts`
 - `src/state/` — Zustand stores: settings, progress (persisted), nav, quiz session

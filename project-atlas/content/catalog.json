@@ -10,7 +10,6 @@
           "description": "Bones of the skull, axial skeleton and limbs.",
           "status": "available",
           "contentFile": "skeleton",
-          "placeholderFile": "skeleton.placeholder",
           "model": { "file": "skeleton.glb", "scale": 1, "position": [0, 0, 0], "rotation": [0, 0, 0] }
         },
         {

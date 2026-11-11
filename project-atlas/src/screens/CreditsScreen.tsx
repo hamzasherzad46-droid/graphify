@@ -27,10 +27,19 @@ export function CreditsScreen() {
             </a>
           </div>
         </div>
-        <p className="muted small credits-note">
-          The 3D models are adapted from these sources and are shared under the same licences. Until the models are added, the app
-          shows simple placeholder shapes.
-        </p>
+        <div className="card credits-model">
+          <p>
+            Skeleton model: BodyParts3D 4.0, © The Database Center for Life Science, CC BY 4.0 (dataset licence updated 2025-02-27).
+            Prepared for the web by the @dagno/anatomy-model package.
+          </p>
+          <a className="muted small" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">
+            creativecommons.org/licenses/by/4.0
+          </a>
+          <p className="muted small credits-note">
+            Changes for Atlas: bones selected and renamed, the medial and lateral epicondyles separated from the humerus, an approximate
+            coccyx added (BodyParts3D has no coccyx mesh), and the model compressed.
+          </p>
+        </div>
 
         <p className="section-label">Fonts</p>
         <p className="muted small">Fraunces and Inter, both under the SIL Open Font License.</p>

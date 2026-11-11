@@ -1,0 +1,303 @@
+.app[hidden] {
+  display: none;
+}
+
+/* ---------- Tab bar ---------- */
+.tabbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  height: calc(var(--tabbar-h) + var(--safe-bottom));
+  padding: 6px 4px var(--safe-bottom);
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  backdrop-filter: blur(20px) saturate(1.4);
+  border-top: 1px solid var(--line);
+}
+
+.tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  max-width: 80px;
+  color: var(--text-muted);
+  font-size: 10px;
+  font-weight: 500;
+  transition: color var(--dur) var(--ease);
+}
+
+.tab[aria-current='page'] {
+  color: var(--text);
+}
+
+.tab[aria-current='page'] svg {
+  stroke: var(--accent);
+}
+
+/* ---------- Home ---------- */
+.continue {
+  padding: var(--space-5);
+}
+
+.continue-title {
+  display: block;
+  font-size: 22px;
+}
+
+.continue-sub {
+  display: block;
+  margin-top: 2px;
+}
+
+.continue-go {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.review-row {
+  margin-top: var(--space-2);
+}
+
+.home-explore {
+  margin-top: var(--space-6);
+}
+
+/* ---------- Courses ---------- */
+.module-title {
+  font-size: 20px;
+}
+
+.module p {
+  margin-top: 2px;
+}
+
+.module.locked {
+  opacity: 0.5;
+}
+
+.pill {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text-muted);
+}
+
+.module-bar {
+  margin: var(--space-4) 0 var(--space-2);
+}
+
+.module-regions {
+  gap: 0;
+}
+
+.region-row {
+  min-height: 46px;
+  border-top: 1px solid var(--line);
+}
+
+/* ---------- Practice / Assess ---------- */
+.mode-help {
+  margin-top: var(--space-2);
+}
+
+.practice-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-top: var(--space-7);
+}
+
+.assess-card {
+  padding: var(--space-5);
+}
+
+.assess-start {
+  margin-top: var(--space-5);
+}
+
+.assess-score {
+  font-size: 20px;
+}
+
+/* ---------- Progress ---------- */
+.progress-review {
+  margin-top: var(--space-4);
+}
+
+.progress-bar {
+  margin-top: var(--space-2);
+}
+
+.structure-name {
+  font-size: 16px;
+}
+
+.structure-table {
+  border-top: 1px solid var(--line);
+}
+
+.structure-row {
+  min-height: 42px;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.structure-row .mastered::after {
+  content: ' ●';
+  color: var(--success);
+  font-size: 9px;
+  vertical-align: middle;
+}
+
+/* ---------- Profile ---------- */
+.switch {
+  width: 46px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  position: relative;
+  transition: background var(--dur) var(--ease);
+  flex-shrink: 0;
+}
+
+.switch::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: transform var(--dur) var(--ease);
+}
+
+.switch.on {
+  background: var(--accent);
+}
+
+.switch.on::after {
+  transform: translateX(18px);
+}
+
+.danger-row {
+  color: var(--danger);
+}
+
+/* ---------- Credits overlay ---------- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 15;
+  overflow-y: auto;
+  background: var(--bg);
+}
+
+.back {
+  color: var(--text-muted);
+  margin-bottom: var(--space-5);
+  min-height: 40px;
+}
+
+.credits-note {
+  margin-top: var(--space-3);
+}
+
+.overlay a {
+  color: var(--text-muted);
+}
+
+/* ---------- Explore ---------- */
+.explore {
+  position: fixed;
+  inset: 0 0 calc(var(--tabbar-h) + var(--safe-bottom));
+  display: flex;
+  flex-direction: column;
+  padding-top: calc(var(--safe-top) + var(--space-5));
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.explore-head {
+  padding: 0 var(--space-5);
+}
+
+.explore-viewer {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+}
+
+.dev-copy {
+  position: absolute;
+  right: var(--space-4);
+  top: var(--space-2);
+  z-index: 2;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px dashed var(--line);
+  color: var(--text-muted);
+}
+
+.explore-card {
+  margin: 0 var(--space-4) var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-l);
+  padding: var(--space-4) var(--space-5);
+  min-height: 64px;
+  transition: transform var(--dur) var(--ease);
+}
+
+.explore-card.open {
+  animation: fade-up var(--dur) var(--ease) both;
+}
+
+.explore-name {
+  font-size: 26px;
+  font-weight: 450;
+}
+
+.explore-close {
+  width: 32px;
+  height: 32px;
+}
+
+.explore-latin {
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: var(--space-1);
+}
+
+.explore-note {
+  margin-top: var(--space-2);
+}
+
+.explore-actions {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.explore-actions .btn {
+  min-height: 38px;
+  font-size: 14px;
+}

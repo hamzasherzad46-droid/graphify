@@ -1,0 +1,10 @@
+{
+  "include": [
+    "epiglottis", "thyroid cartilage", "cricoid cartilage", "(left |right )?arytenoid cartilage", "septal nasal cartilage",
+    "trachea", "(left |right )?main bronchus( proper)?",
+    "(left |right )?(anterior basal|anterior|apical|lateral basal|medial basal|posterior basal|posterior|superior) segmental bronchial tree",
+    "(lateral|medial) segmental bronchial tree", "(superior|inferior) lingular bronchial tree",
+    "diaphragm", "(left |right )?external intercostal muscle"
+  ],
+  "minCameraDistance": 0.3
+}

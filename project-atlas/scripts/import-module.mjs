@@ -11,6 +11,11 @@
  * → "anterior_part_of_superior_temporal_gyrus.r"), duplicates get "_2", "_3"… after the side.
  * The original name and id are kept in each node's `extras`.
  *
+ * --extra <file.glb> adds meshes from another GLB in the same coordinate space, picked by node name with
+ * spec.extraNodes ({ "lung_l": "lung.l" }). Used for organs BodyParts3D 4.0's IS-A set lacks (lungs, liver),
+ * taken from the open-anatomy-3d model (CC BY 4.0, also BodyParts3D-derived) after
+ * `gltf-transform dequantize` and `gltf-transform flatten` so positions are plain floats at scene root.
+ *
  * --fit-cameras frames every structure in the content file around its meshes, keeping the
  * direction of its current camera (position − target). If the target's x is negative the
  * right-side (.r) meshes are framed; positive, the left; zero, both.
@@ -26,6 +31,8 @@ if (!atlasDir || !specFile || !outFile) {
 }
 const fitIdx = rest.indexOf('--fit-cameras')
 const contentFile = fitIdx >= 0 ? rest[fitIdx + 1] : null
+const extraIdx = rest.indexOf('--extra')
+const extraFile = extraIdx >= 0 ? rest[extraIdx + 1] : null
 const spec = JSON.parse(readFileSync(specFile, 'utf8'))
 const include = spec.include.map((s) => new RegExp(`^(?:${s})$`, 'i'))
 const minRadius = spec.minCameraDistance ?? 0.3
@@ -65,6 +72,48 @@ for (const p of atlas.parts) {
   const idx = new Uint32Array(buf.buffer.slice(buf.byteOffset + p.indices, buf.byteOffset + p.indices + p.indexCount * 4))
   meshes.push({ name, extras: { source: 'BodyParts3D 4.0', id: p.id, name: p.name, system: p.system }, pos, nrm, idx })
 }
+/** Reads named meshes (float positions/normals, scene-root nodes with translation/scale) from a GLB. */
+function readGlbMeshes(file, nameMap) {
+  const b = readFileSync(file)
+  const jsonLen = b.readUInt32LE(12)
+  const json = JSON.parse(b.subarray(20, 20 + jsonLen).toString('utf8'))
+  const binStart = 20 + jsonLen + 8
+  const read = (accIndex, Ctor, comps) => {
+    const acc = json.accessors[accIndex]
+    const view = json.bufferViews[acc.bufferView]
+    const elem = Ctor.BYTES_PER_ELEMENT * comps
+    const stride = view.byteStride ?? elem
+    const base = binStart + (view.byteOffset ?? 0) + (acc.byteOffset ?? 0)
+    const out = new Ctor(acc.count * comps)
+    for (let i = 0; i < acc.count; i++) {
+      const row = new Ctor(b.buffer.slice(b.byteOffset + base + i * stride, b.byteOffset + base + i * stride + elem))
+      out.set(row, i * comps)
+    }
+    return out
+  }
+  const out = []
+  for (const node of json.nodes) {
+    const target = nameMap[node.name]
+    if (!target || node.mesh === undefined) continue
+    if (node.rotation) throw new Error(`${node.name}: rotated nodes are not supported`)
+    const s = node.scale ?? [1, 1, 1]
+    const t = node.translation ?? [0, 0, 0]
+    for (const prim of json.meshes[node.mesh].primitives) {
+      const pos = read(prim.attributes.POSITION, Float32Array, 3)
+      for (let i = 0; i < pos.length; i++) pos[i] = pos[i] * s[i % 3] + t[i % 3]
+      const nrm = read(prim.attributes.NORMAL, Float32Array, 3)
+      const idxAcc = json.accessors[prim.indices]
+      const idx = Uint32Array.from(read(prim.indices, idxAcc.componentType === 5125 ? Uint32Array : Uint16Array, 1))
+      out.push({ name: target, extras: { source: 'open-anatomy-3d (BodyParts3D-derived, CC BY 4.0)', name: node.name }, pos, nrm, idx })
+    }
+  }
+  const missing = Object.keys(nameMap).filter((n) => !out.some((m) => m.extras.name === n))
+  if (missing.length) console.warn('extra nodes not found:', missing)
+  return out
+}
+
+if (extraFile && spec.extraNodes) meshes.push(...readGlbMeshes(extraFile, spec.extraNodes))
+
 const unmatched = spec.include.filter((_, i) => !matchedPatterns.has(i))
 if (unmatched.length) console.warn('patterns with no match:', unmatched)
 

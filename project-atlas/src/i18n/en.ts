@@ -56,6 +56,9 @@ export const en = {
   'region.coronary': 'Coronary circulation',
   'region.arteries': 'Arteries',
   'region.veins': 'Veins',
+  'region.upper-airway': 'Upper airway and larynx',
+  'region.lower-airway': 'Trachea and bronchi',
+  'region.lungs': 'Lungs and breathing',
 
   'track.nursing': 'Nursing',
   'track.medicine': 'Medicine',

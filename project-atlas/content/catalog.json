@@ -42,7 +42,18 @@
         }
       ]
     },
-    { "id": "respiratory", "glyph": "lungs", "modules": [{ "id": "airways", "status": "coming-soon" }] },
+    {
+      "id": "respiratory",
+      "glyph": "lungs",
+      "modules": [
+        {
+          "id": "airways",
+          "status": "available",
+          "contentFile": "airways",
+          "model": { "file": "airways.glb", "context": "skeleton-context.glb" }
+        }
+      ]
+    },
     { "id": "nervous", "glyph": "brain", "modules": [{ "id": "brain", "status": "coming-soon" }] },
     { "id": "digestive", "glyph": "stomach", "modules": [{ "id": "digestive", "status": "coming-soon" }] },
     { "id": "urinary", "glyph": "kidney", "modules": [{ "id": "urinary", "status": "coming-soon" }] },

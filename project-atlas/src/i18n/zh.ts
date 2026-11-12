@@ -48,6 +48,8 @@ export const zh: Messages = {
   'region.valves': '瓣膜',
   'region.great-vessels': '大血管',
   'region.coronary': '冠状循环',
+  'region.arteries': '动脉',
+  'region.veins': '静脉',
   'track.nursing': '护理',
   'track.medicine': '临床医学',
   'track.physio': '物理治疗',

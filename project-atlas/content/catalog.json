@@ -34,7 +34,12 @@
           "contentFile": "heart",
           "model": { "file": "heart.glb", "context": "skeleton-context.glb" }
         },
-        { "id": "vessels", "status": "coming-soon" }
+        {
+          "id": "vessels",
+          "status": "available",
+          "contentFile": "vessels",
+          "model": { "file": "vessels.glb", "context": "skeleton-context.glb" }
+        }
       ]
     },
     { "id": "respiratory", "glyph": "lungs", "modules": [{ "id": "airways", "status": "coming-soon" }] },

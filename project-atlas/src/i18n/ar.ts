@@ -48,6 +48,8 @@ export const ar: Messages = {
   'region.valves': 'الصمامات',
   'region.great-vessels': 'الأوعية الكبرى',
   'region.coronary': 'الدوران التاجي',
+  'region.arteries': 'الشرايين',
+  'region.veins': 'الأوردة',
   'track.nursing': 'التمريض',
   'track.medicine': 'الطب',
   'track.physio': 'العلاج الطبيعي',

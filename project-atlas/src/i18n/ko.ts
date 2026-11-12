@@ -48,6 +48,8 @@ export const ko: Messages = {
   'region.valves': '판막',
   'region.great-vessels': '대혈관',
   'region.coronary': '관상 순환',
+  'region.arteries': '동맥',
+  'region.veins': '정맥',
   'track.nursing': '간호학',
   'track.medicine': '의학',
   'track.physio': '물리치료',

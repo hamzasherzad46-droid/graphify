@@ -48,6 +48,8 @@ export const de: Messages = {
   'region.valves': 'Klappen',
   'region.great-vessels': 'Große Gefäße',
   'region.coronary': 'Koronarkreislauf',
+  'region.arteries': 'Arterien',
+  'region.veins': 'Venen',
   'track.nursing': 'Pflege',
   'track.medicine': 'Medizin',
   'track.physio': 'Physiotherapie',

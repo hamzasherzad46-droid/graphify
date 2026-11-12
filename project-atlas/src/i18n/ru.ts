@@ -48,6 +48,8 @@ export const ru: Messages = {
   'region.valves': 'Клапаны',
   'region.great-vessels': 'Крупные сосуды',
   'region.coronary': 'Коронарное кровообращение',
+  'region.arteries': 'Артерии',
+  'region.veins': 'Вены',
   'track.nursing': 'Сестринское дело',
   'track.medicine': 'Медицина',
   'track.physio': 'Физиотерапия',

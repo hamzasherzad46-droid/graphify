@@ -54,6 +54,8 @@ export const en = {
   'region.valves': 'Valves',
   'region.great-vessels': 'Great vessels',
   'region.coronary': 'Coronary circulation',
+  'region.arteries': 'Arteries',
+  'region.veins': 'Veins',
 
   'track.nursing': 'Nursing',
   'track.medicine': 'Medicine',

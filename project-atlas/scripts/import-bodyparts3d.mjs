@@ -91,7 +91,6 @@ const PAIRED = {
   'lateral cuneiform bone': 'lateral_cuneiform',
 }
 
-let toothN = 0
 function meshNameFor(name) {
   const n = name.toLowerCase()
   if (SIMPLE[n]) return SIMPLE[n]
@@ -112,7 +111,9 @@ function meshNameFor(name) {
     return `foot_phalanx_${TOE[m[3]]}${SEG[m[1]]}.${m[2][0]}`
   if ((m = n.match(/^intervertebral disk(?: of (\w+) (cervical|thoracic|lumbar) vertebra| of axis)?$/)))
     return m[1] ? `intervertebral_disc_${m[2]}_${ordNum(m[1])}` : n.includes('axis') ? 'intervertebral_disc_cervical_2' : 'intervertebral_disc_lumbosacral'
-  if (/ secondary .*tooth$/.test(n)) return `tooth_${++toothN}`
+  // Teeth by jaw, position and type: "Left upper first secondary molar tooth" → upper_first_molar.l
+  if ((m = n.match(/^(left|right) (upper|lower) (?:(central|lateral|first|second) )?secondary (incisor|canine|premolar|molar) tooth$/)))
+    return `${m[2]}_${m[3] ? `${m[3]}_` : ''}${m[4]}.${m[1][0]}`
   return null // muscles, tendons, laryngeal cartilages, gingiva … are skipped
 }
 

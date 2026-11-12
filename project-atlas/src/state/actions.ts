@@ -8,9 +8,15 @@ import { useSettings, type QuizMode } from './settings'
 export const availableModules = allModules.filter((m) => m.status === 'available')
 export const defaultModuleId = availableModules[0]?.id ?? 'skeleton'
 
-export function startPractice(moduleId: string, region: string | null, mode: QuizMode, answerTimer = useSettings.getState().answerTimer) {
+export function startPractice(
+  moduleId: string,
+  region: string | null,
+  mode: QuizMode,
+  answerTimer = useSettings.getState().answerTimer,
+  tier: number | null = null,
+) {
   useSettings.getState().set({ lastSession: { moduleId, region, mode } })
-  useNav.getState().startSession({ kind: 'practice', moduleId, region, mode, length: PRACTICE_LENGTH, answerTimer })
+  useNav.getState().startSession({ kind: 'practice', moduleId, region, mode, length: PRACTICE_LENGTH, answerTimer, tier })
 }
 
 export function startAssessment(moduleId: string) {

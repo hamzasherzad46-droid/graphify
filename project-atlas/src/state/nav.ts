@@ -17,6 +17,8 @@ export interface SessionConfig {
   timeLimitMs?: number
   /** Per-question time limit in seconds; 0 = none. */
   answerTimer: number
+  /** Only structures of this difficulty (1 foundation, 2 intermediate, 3 advanced); null = all. */
+  tier?: number | null
 }
 
 export interface CardsConfig {

@@ -70,7 +70,10 @@ function shuffle<T>(arr: T[]): T[] {
 
 export function buildQueue(config: SessionConfig, structures: Structure[], records: Record<string, StructureRecord>): string[] {
   if (config.ids?.length) return shuffle(config.ids).slice(0, config.length)
-  const pool = structures.filter((s) => !config.region || s.region === config.region)
+  const inRegion = structures.filter((s) => !config.region || s.region === config.region)
+  const tiered = inRegion.filter((s) => !config.tier || s.difficulty === config.tier)
+  // If a region has nothing at the chosen level, fall back to every level rather than an empty session.
+  const pool = tiered.length ? tiered : inRegion
   if (config.kind === 'assessment') return shuffle(pool).slice(0, config.length).map((s) => s.id)
   return prioritise(pool, records, Date.now())
     .slice(0, config.length)

@@ -15,6 +15,7 @@ export function PracticeScreen() {
   const [mode, setMode] = useState<QuizMode>(last?.mode ?? 'learn')
   const [region, setRegion] = useState<string | null>(last?.region ?? null)
   const [timer, setTimer] = useState<number>(settings.answerTimer)
+  const [tier, setTier] = useState<number | null>(null)
   const { assets } = useModule(moduleId)
   const records = useProgress((s) => s.records)
   const missed = assets ? missedCount(assets.content, records) : 0
@@ -59,6 +60,17 @@ export function PracticeScreen() {
         </div>
 
         <div className="field">
+          <span className="kicker">{t('practice.level')}</span>
+          <div className="seg">
+            {([null, 1, 2, 3] as const).map((lv) => (
+              <button key={lv ?? 'all'} aria-pressed={tier === lv} onClick={() => setTier(lv)}>
+                {t(lv ? (`tier.${lv}` as const) : 'tier.all')}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="field">
           <span className="kicker">{t('practice.timer')}</span>
           <div className="seg">
             {ANSWER_TIMERS.map((s) => (
@@ -83,7 +95,7 @@ export function PracticeScreen() {
           </div>
         </div>
 
-        <button className="btn btn-accent btn-block" disabled={!assets} onClick={() => startPractice(moduleId, region, mode, timer)}>
+        <button className="btn btn-accent btn-block" disabled={!assets} onClick={() => startPractice(moduleId, region, mode, timer, tier)}>
           {t('practice.start')}
         </button>
         <p className="tiny muted answer-lang">{t('practice.answerLang')}</p>

@@ -23,23 +23,28 @@ apply there.
 
 ## What's in the prototype
 
-- **Quiz** (Practice tab): learn mode (ghost letters + definition clue) and hard mode (dashes only),
-  on-screen QWERTY + physical keyboard, wrong keys flash red and shake the word, backspace, hint
-  (reveals a letter, counts as an error), skip, synonyms (e.g. *collarbone*), multi-word answers.
-  After each answer: green/red confirmation, definition, one clinical note, auto-advance after 1.2 s
-  (tap the card to pause; Enter/Space continues). The camera eases to the next structure; previous and
-  next questions sit either side as blurred ghost models.
-- **3D**: drag to rotate, pinch to zoom, double-tap to reset. Explore tab: tap any bone to identify it.
-- **Learning logic**: per-structure attempts / correct / errors / last seen; Leitner-box spaced
-  repetition (misses come back 4 questions later in the same session and sooner in future sessions;
-  mastered items appear less often); "Review mistakes" quizzes only items not yet re-learned.
-- **Tracks**: Nursing shows injection, pulse, cannulation and safety notes; Medicine shows Latin
-  names (also accepted as answers) and finer landmarks.
-- **Tabs**: Home (today, continue, weak areas), Courses (Skeleton live; Heart, Vessels, Muscles
-  "Coming soon"), 3D, Practice, Tests (20 questions / 5 minutes / hard mode, history), Progress
-  (per-region accuracy, most missed, every structure), Profile (theme, track, sound, reset, credits).
-- **PWA**: manifest, icons, service worker. App shell, fonts, content and the Draco decoder are
-  precached; each module's GLB is cached the first time it's opened, so it works offline after one visit.
+- **Eight body systems, 249 structures, all on real BodyParts3D meshes**: skeleton (65, incl. individual
+  carpals/tarsals, C1/C2/C7, teeth by type), muscles (52), heart (23), major vessels (32), airways (15),
+  brain (31), digestive (17), urinary (7), male reproductive (7). Organ and muscle modules show a faint
+  skeleton behind them for orientation.
+- **Quiz**: learn mode (ghost letters + definition clue) or hard mode (dashes); level filter (foundation /
+  intermediate / advanced); optional per-question timer (30/20/10 s; time-out = miss); exams with a whole-test
+  clock and per-answer timer. Combos, XP, stamps and sounds that climb with the combo.
+- **Flashcards**: what it does, why it's there, and a note for your track; swipe to grade; own spaced repetition.
+- **Today**: level & XP, daily goal dial, streak + week strip, due flashcards and mistakes, daily / weekly /
+  monthly assignments (auto-awarded XP), fact of the day, systems index, weak spots, quick exam.
+- **Tracks**: nursing, medicine, physiotherapy, dentistry, sports science — notes per structure where relevant.
+- **Languages**: English, French, German, Arabic (right-to-left), Russian, Chinese, Korean for the whole UI.
+  Anatomy content (names, definitions, notes) is English; answers are typed in English or Latin.
+- **Design**: “plate book” — warm paper and ink, vermilion accent, Newsreader + IBM Plex, mono specimen labels;
+  “Darkroom” dark mode.
+
+### Known data gaps (BodyParts3D 4.0)
+
+No lung surfaces (lungs are shown by their segmental airway trees), no spinal cord or limb nerves, no
+masseter/temporalis/latissimus dorsi/rectus abdominis or facial muscles, no female reproductive organs,
+no sigmoid colon or caecum, and no coccyx (an approximate one is added). The liver surface comes from
+open-anatomy-3d (CC BY 4.0). Translations and clinical notes need review by native speakers and clinicians.
 
 ## Content (data-driven)
 
@@ -96,6 +101,21 @@ Changes from the source data, all made by `scripts/import-bodyparts3d.mjs`:
   be highlighted. The split is a sphere around the most medial or lateral point of the distal humerus.
 - **The coccyx is approximate.** BodyParts3D has no coccyx mesh, so the script adds a smooth, tapered
   shape at the sacrum's apex. Replace it with a Z-Anatomy coccyx when you can.
+
+### Building the other system models
+
+Each system has a spec (`scripts/modules/<module>.json`: BodyParts3D name patterns) and a content source
+(`scripts/content-src/<module>.py`):
+
+```bash
+python3 scripts/content-src/build.py muscles
+node scripts/import-module.mjs /tmp/bp3d/package/model scripts/modules/muscles.json /tmp/muscles-raw.glb --fit-cameras content/muscles.json
+SIMPLIFY_RATIO=0.35 SIMPLIFY_ERROR=0.003 scripts/convert-model.sh /tmp/muscles-raw.glb muscles
+```
+
+The digestive module also takes `--extra flat.glb` (open-anatomy-3d's model after `gltf-transform dequantize`
+and `flatten`) for the liver surface. `skeleton-context.glb` is the skeleton simplified to ~95k triangles
+(`SIMPLIFY_RATIO=0.18 SIMPLIFY_ERROR=0.01`), used as the faint backdrop.
 
 ### Rebuilding the skeleton model
 

@@ -12,7 +12,18 @@
         }
       ]
     },
-    { "id": "muscular", "glyph": "muscle", "modules": [{ "id": "muscles", "status": "coming-soon" }] },
+    {
+      "id": "muscular",
+      "glyph": "muscle",
+      "modules": [
+        {
+          "id": "muscles",
+          "status": "available",
+          "contentFile": "muscles",
+          "model": { "file": "muscles.glb", "context": "skeleton-context.glb" }
+        }
+      ]
+    },
     {
       "id": "cardiovascular",
       "glyph": "heart",

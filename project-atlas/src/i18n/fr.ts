@@ -42,6 +42,8 @@ export const fr: Messages = {
   'region.axial': 'Squelette axial',
   'region.upper-limb': 'Membre supérieur',
   'region.lower-limb': 'Membre inférieur',
+  'region.head-neck': 'Tête et cou',
+  'region.trunk': 'Tronc',
   'track.nursing': 'Soins infirmiers',
   'track.medicine': 'Médecine',
   'track.physio': 'Kinésithérapie',

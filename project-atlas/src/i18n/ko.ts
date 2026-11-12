@@ -42,6 +42,8 @@ export const ko: Messages = {
   'region.axial': '몸통뼈대',
   'region.upper-limb': '팔',
   'region.lower-limb': '다리',
+  'region.head-neck': '머리와 목',
+  'region.trunk': '몸통',
   'track.nursing': '간호학',
   'track.medicine': '의학',
   'track.physio': '물리치료',

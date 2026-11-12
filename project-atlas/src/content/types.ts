@@ -80,6 +80,8 @@ export interface ModuleInfo {
     scale?: number
     position?: Vec3
     rotation?: Vec3
+    /** Faint backdrop model for orientation, e.g. the skeleton behind organs. */
+    context?: string
   }
   /** Set by the loader. */
   systemId?: string

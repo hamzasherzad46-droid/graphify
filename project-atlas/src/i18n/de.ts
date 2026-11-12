@@ -42,6 +42,8 @@ export const de: Messages = {
   'region.axial': 'Achsenskelett',
   'region.upper-limb': 'Obere Extremität',
   'region.lower-limb': 'Untere Extremität',
+  'region.head-neck': 'Kopf und Hals',
+  'region.trunk': 'Rumpf',
   'track.nursing': 'Pflege',
   'track.medicine': 'Medizin',
   'track.physio': 'Physiotherapie',

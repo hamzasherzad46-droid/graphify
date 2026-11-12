@@ -6,7 +6,7 @@ import type { CameraView, Structure } from '../content/types'
 import type { ModuleAssets } from '../content/useModule'
 import { meshKeys } from '../lib/meshMatch'
 import { CameraRig, type CameraApi } from './CameraRig'
-import { ModelInstance } from './ModelInstance'
+import { ContextModel, ModelInstance } from './ModelInstance'
 import './viewer.css'
 
 export interface AnatomyViewerProps {
@@ -77,6 +77,11 @@ export default function AnatomyViewer({ assets, highlight, view, ghosts, onPick,
           <Suspense fallback={null}>
             <ModelInstance assets={assets} highlight={highlight} onPick={onPick} />
           </Suspense>
+          {assets.info.model?.context && (
+            <Suspense fallback={null}>
+              <ContextModel file={assets.info.model.context} />
+            </Suspense>
+          )}
           <CameraRig view={view} resetKey={resetKey} apiRef={cameraApi} />
         </Canvas>
       </div>

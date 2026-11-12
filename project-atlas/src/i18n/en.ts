@@ -48,6 +48,8 @@ export const en = {
   'region.axial': 'Axial skeleton',
   'region.upper-limb': 'Upper limb',
   'region.lower-limb': 'Lower limb',
+  'region.head-neck': 'Head and neck',
+  'region.trunk': 'Trunk',
 
   'track.nursing': 'Nursing',
   'track.medicine': 'Medicine',

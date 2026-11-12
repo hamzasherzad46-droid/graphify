@@ -42,6 +42,8 @@ export const zh: Messages = {
   'region.axial': '中轴骨',
   'region.upper-limb': '上肢',
   'region.lower-limb': '下肢',
+  'region.head-neck': '头颈部',
+  'region.trunk': '躯干',
   'track.nursing': '护理',
   'track.medicine': '临床医学',
   'track.physio': '物理治疗',

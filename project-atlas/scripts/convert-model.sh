@@ -47,8 +47,9 @@ esac
 
 npx --yes @gltf-transform/cli dedup "$raw" "$tmp/a.glb"
 npx --yes @gltf-transform/cli weld "$tmp/a.glb" "$tmp/b.glb"
-# Light simplification keeps silhouettes; raise --ratio if bones look faceted.
-npx --yes @gltf-transform/cli simplify "$tmp/b.glb" "$tmp/c.glb" --ratio 0.5 --error 0.0005
+# Light simplification keeps silhouettes; raise the ratio if shapes look faceted.
+# Override per model: SIMPLIFY_RATIO=0.35 SIMPLIFY_ERROR=0.002 scripts/convert-model.sh …
+npx --yes @gltf-transform/cli simplify "$tmp/b.glb" "$tmp/c.glb" --ratio "${SIMPLIFY_RATIO:-0.5}" --error "${SIMPLIFY_ERROR:-0.0005}"
 npx --yes @gltf-transform/cli draco "$tmp/c.glb" "$out_dir/$name.glb"
 
 ls -lh "$out_dir/$name.glb"

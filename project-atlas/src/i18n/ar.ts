@@ -42,6 +42,8 @@ export const ar: Messages = {
   'region.axial': 'الهيكل المحوري',
   'region.upper-limb': 'الطرف العلوي',
   'region.lower-limb': 'الطرف السفلي',
+  'region.head-neck': 'الرأس والعنق',
+  'region.trunk': 'الجذع',
   'track.nursing': 'التمريض',
   'track.medicine': 'الطب',
   'track.physio': 'العلاج الطبيعي',

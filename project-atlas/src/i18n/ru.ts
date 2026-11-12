@@ -42,6 +42,8 @@ export const ru: Messages = {
   'region.axial': 'Осевой скелет',
   'region.upper-limb': 'Верхняя конечность',
   'region.lower-limb': 'Нижняя конечность',
+  'region.head-neck': 'Голова и шея',
+  'region.trunk': 'Туловище',
   'track.nursing': 'Сестринское дело',
   'track.medicine': 'Медицина',
   'track.physio': 'Физиотерапия',

@@ -106,3 +106,47 @@ function Highlighted({ root, highlight, glow = true, onPick, onMatched }: Instan
 
   return <primitive object={root} onClick={handleClick} />
 }
+
+/** A faint, non-interactive backdrop model (e.g. the skeleton behind the muscles) that helps orientation. */
+export function ContextModel({ file }: { file: string }) {
+  return EMBEDDED_MODELS ? <EmbeddedContext file={file} /> : <FetchedContext file={file} />
+}
+
+function FetchedContext({ file }: { file: string }) {
+  const gltf = useGLTF(publicUrl(`models/${file}`), DRACO_PATH, MESHOPT)
+  return <ContextScene scene={gltf.scene} />
+}
+
+function EmbeddedContext({ file }: { file: string }) {
+  const gltf = use(loadEmbeddedModel(file))
+  return <ContextScene scene={gltf.scene} />
+}
+
+function ContextScene({ scene }: { scene: THREE.Object3D }) {
+  const theme = useResolvedTheme()
+  const root = useMemo(() => {
+    const clone = scene.clone(true)
+    const material = new THREE.MeshStandardMaterial({
+      color: PALETTES[theme].bone,
+      roughness: 0.8,
+      transparent: true,
+      opacity: theme === 'dark' ? 0.16 : 0.24,
+      depthWrite: false,
+    })
+    clone.traverse((o) => {
+      const m = o as THREE.Mesh
+      if (!m.isMesh) return
+      m.material = material
+      m.renderOrder = -1
+      m.raycast = () => {} // taps go to the module's own structures
+    })
+    return clone
+  }, [scene, theme])
+  useEffect(
+    () => () => {
+      root.traverse((o) => ((o as THREE.Mesh).material as THREE.Material | undefined)?.dispose?.())
+    },
+    [root],
+  )
+  return <primitive object={root} />
+}

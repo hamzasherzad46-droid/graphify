@@ -54,7 +54,11 @@
         }
       ]
     },
-    { "id": "nervous", "glyph": "brain", "modules": [{ "id": "brain", "status": "coming-soon" }] },
+    {
+      "id": "nervous",
+      "glyph": "brain",
+      "modules": [{ "id": "brain", "status": "available", "contentFile": "brain", "model": { "file": "brain.glb" } }]
+    },
     { "id": "digestive", "glyph": "stomach", "modules": [{ "id": "digestive", "status": "coming-soon" }] },
     { "id": "urinary", "glyph": "kidney", "modules": [{ "id": "urinary", "status": "coming-soon" }] },
     { "id": "reproductive", "glyph": "reproductive", "modules": [{ "id": "reproductive", "status": "coming-soon" }] }

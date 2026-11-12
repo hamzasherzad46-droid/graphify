@@ -1,0 +1,15 @@
+{
+  "include": [
+    "(left |right )?(superior|middle|inferior) frontal gyrus", "(left |right )?(precentral|postcentral|cingulate|angular|supramarginal|fusiform|parahippocampal) gyrus",
+    "orbital gyrus", "(left |right )?superior parietal lobule", "(anterior|posterior) part of (left |right )?superior temporal gyrus",
+    "(left |right )?(middle|inferior) temporal gyrus", "(left |right )?occipital lobe", "(left |right )?insula",
+    "white matter of (left |right )?cerebral hemisphere", "corpus callosum", "anterior commissure", "posterior commissure",
+    "(left |right )?(thalamus|amygdala|hippocampus|caudate nucleus|putamen|globus pallidus|internal capsule)", "hypothalamus",
+    "(left |right )?fornix of forebrain", "commissure of fornix of forebrain", "mammillary body",
+    "cerebellum", "midbrain", "peduncle of midbrain", "pons", "medulla oblongata",
+    "(left |right )?(superior|inferior) colliculus", "(left |right )?(lateral|medial) geniculate body",
+    "(left |right )?lateral ventricle", "third ventricle", "fourth ventricle", "cerebral aqueduct",
+    "optic chiasm", "(left |right )?optic (nerve|tract)", "pituitary gland", "pineal body"
+  ],
+  "minCameraDistance": 0.2
+}

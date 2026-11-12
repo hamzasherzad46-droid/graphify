@@ -59,6 +59,10 @@ export const en = {
   'region.upper-airway': 'Upper airway and larynx',
   'region.lower-airway': 'Trachea and bronchi',
   'region.lungs': 'Lungs and breathing',
+  'region.cerebrum': 'Lobes and gyri',
+  'region.deep': 'Deep and limbic structures',
+  'region.brainstem': 'Brainstem and cerebellum',
+  'region.ventricles': 'Ventricles, glands and visual pathway',
 
   'track.nursing': 'Nursing',
   'track.medicine': 'Medicine',

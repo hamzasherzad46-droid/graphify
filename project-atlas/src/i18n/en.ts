@@ -63,6 +63,9 @@ export const en = {
   'region.deep': 'Deep and limbic structures',
   'region.brainstem': 'Brainstem and cerebellum',
   'region.ventricles': 'Ventricles, glands and visual pathway',
+  'region.upper-gi': 'Mouth to stomach',
+  'region.intestines': 'Intestines',
+  'region.accessory': 'Liver, pancreas and spleen',
 
   'track.nursing': 'Nursing',
   'track.medicine': 'Medicine',

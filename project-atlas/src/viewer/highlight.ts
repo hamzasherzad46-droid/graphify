@@ -6,13 +6,16 @@ export const ACCENT = new THREE.Color('#e5484d')
 export interface Palette {
   bone: string
   boneOpacity: number
+  /** Highlight colour; matches the UI accent. */
+  accent: string
 }
 
 // Ivory bone, nearly opaque so it reads as real bone; the target also shows
 // through anything in front of it (x-ray overlay), so hidden bones stay findable.
 export const PALETTES: Record<'dark' | 'light', Palette> = {
-  dark: { bone: '#e9e1cf', boneOpacity: 0.9 },
-  light: { bone: '#ddd3bf', boneOpacity: 0.94 },
+  dark: { bone: '#e9e1cf', boneOpacity: 0.9, accent: '#f0603f' },
+  // On paper the bone is a shade darker than the page so it reads like an engraved plate.
+  light: { bone: '#d6cab2', boneOpacity: 0.95, accent: '#cf4527' },
 }
 
 /** Fresnel rim shell: a slightly inflated copy of the mesh that glows at its edges. */
@@ -86,9 +89,15 @@ export class Highlighter {
     })
   }
 
+  private accent = ACCENT.clone()
+
   setPalette(palette: Palette) {
     this.base.color.set(palette.bone)
     this.base.opacity = palette.boneOpacity
+    this.accent.set(palette.accent)
+    this.target.emissive.copy(this.accent)
+    this.glow.uniforms.color.value.copy(this.accent)
+    this.xray.color.copy(this.accent)
   }
 
   /** Returns the matched meshes. */
@@ -117,7 +126,7 @@ export class Highlighter {
 
   setProgress(t: number) {
     this.target.emissiveIntensity = 0.22 * t
-    this.target.color.copy(ACCENT).lerp(this.base.color, 1 - t)
+    this.target.color.copy(this.accent).lerp(this.base.color, 1 - t)
     this.glow.uniforms.intensity.value = 0.7 * t
     this.xray.opacity = 0.35 * t
   }

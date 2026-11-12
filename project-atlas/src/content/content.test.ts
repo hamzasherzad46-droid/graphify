@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 import { describe, expect, it } from 'vitest'
 import { acceptedAnswers, normalizeAnswer } from '../lib/typing'
 import { meshKeys, meshMatchesAny } from '../lib/meshMatch'
-import type { Catalog, ModuleContent, PlaceholderModel } from './types'
+import { TRACKS, type Catalog, type ModuleContent, type PlaceholderModel } from './types'
 
 const dir = fileURLToPath(new URL('../../content', import.meta.url))
 const modelsDir = fileURLToPath(new URL('../../public/models', import.meta.url))
@@ -19,9 +19,14 @@ function glbNodeNames(file: string): string[] {
 const read = <T,>(f: string): T => JSON.parse(readFileSync(join(dir, f), 'utf8')) as T
 
 const catalog = read<Catalog>('catalog.json')
-const modules = catalog.courses.flatMap((c) => c.modules).filter((m) => m.status === 'available')
+const modules = catalog.systems.flatMap((c) => c.modules).filter((m) => m.status === 'available')
 
 describe('content catalog', () => {
+  it('module ids are unique across systems', () => {
+    const ids = catalog.systems.flatMap((c) => c.modules.map((m) => m.id))
+    expect(new Set(ids).size).toBe(ids.length)
+  })
+
   it('every available module has its content file', () => {
     const present = new Set(readdirSync(dir))
     for (const m of modules) {
@@ -43,8 +48,19 @@ for (const m of modules) {
     })
 
     it.each(content.structures.map((s) => [s.id, s] as const))('%s is complete and typeable', (_id, s) => {
-      for (const field of ['name', 'latinName', 'definition', 'nursingNote', 'medicineNote', 'modelFile'] as const) {
+      for (const field of ['name', 'latinName', 'definition', 'function', 'why', 'modelFile'] as const) {
         expect(s[field], field).toBeTruthy()
+      }
+      const notes = Object.entries(s.notes ?? {})
+      expect(notes.length, 'at least one track note').toBeGreaterThan(0)
+      for (const [track, note] of notes) {
+        expect(TRACKS, track).toContain(track)
+        expect(note).toBeTruthy()
+      }
+      // Flashcard fronts show the model, backs the answer; function/why must not leak it on the front either.
+      for (const text of [s.function, s.why]) {
+        const t = normalizeAnswer(text)
+        for (const a of acceptedAnswers(s.name, s.synonyms)) expect(t.includes(a), `function/why reveals "${a}"`).toBe(false)
       }
       expect(regionIds.has(s.region)).toBe(true)
       expect([1, 2, 3]).toContain(s.difficulty)

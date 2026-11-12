@@ -7,14 +7,22 @@ export interface CameraView {
   target: Vec3
 }
 
+export type Track = 'nursing' | 'medicine' | 'physio' | 'dentistry' | 'sports'
+export const TRACKS: Track[] = ['nursing', 'medicine', 'physio', 'dentistry', 'sports']
+
 export interface Structure {
   id: string
   name: string
   synonyms: string[]
   latinName: string
+  /** One sentence. Must not contain the answer: it is shown as a clue in learn mode. */
   definition: string
-  nursingNote: string
-  medicineNote: string
+  /** Flashcard: what it does. */
+  function: string
+  /** Flashcard: why it is there (its purpose / design reason). */
+  why: string
+  /** Notes per study track; at least one. Tracks without a note fall back to another track's note. */
+  notes: Partial<Record<Track, string>>
   region: string
   /** GLB file in /public/models. Usually the module's model. */
   modelFile: string
@@ -61,8 +69,6 @@ export interface PlaceholderModel {
 
 export interface ModuleInfo {
   id: string
-  title: string
-  description: string
   status: 'available' | 'coming-soon'
   /** Basename of /content/<contentFile>.json */
   contentFile?: string
@@ -75,14 +81,17 @@ export interface ModuleInfo {
     position?: Vec3
     rotation?: Vec3
   }
+  /** Set by the loader. */
+  systemId?: string
 }
 
-export interface Course {
+/** Names and descriptions of systems and modules live in the UI translations (system.<id>, module.<id>). */
+export interface BodySystem {
   id: string
-  title: string
+  glyph: string
   modules: ModuleInfo[]
 }
 
 export interface Catalog {
-  courses: Course[]
+  systems: BodySystem[]
 }

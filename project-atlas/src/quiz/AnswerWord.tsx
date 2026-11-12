@@ -38,6 +38,7 @@ export function AnswerWord({ answer, typed, mode, done, outcome, wrongCount }: P
     <div
       ref={el}
       className={`answer answer-${state}`}
+      dir="ltr"
       style={{ fontSize: size }}
       aria-label={done ? answer : `${typed.length} of ${answer.length} letters typed`}
       aria-live="polite"

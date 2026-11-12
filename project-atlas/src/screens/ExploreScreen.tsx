@@ -1,8 +1,10 @@
 import { lazy, Suspense, useMemo, useRef, useState } from 'react'
+import { noteFor } from '../content/notes'
 import type { CameraView, Structure } from '../content/types'
 import { useModule } from '../content/useModule'
+import { useT } from '../i18n'
 import { meshKeys, meshMatchesAny } from '../lib/meshMatch'
-import { defaultModuleId } from '../state/actions'
+import { useNav } from '../state/nav'
 import { useSettings } from '../state/settings'
 import type { CameraApi } from '../viewer/CameraRig'
 
@@ -10,9 +12,11 @@ const AnatomyViewer = lazy(() => import('../viewer/AnatomyViewer'))
 
 const OVERVIEW: CameraView = { position: [0.7, 1.05, 2.55], target: [0, 0.88, 0] }
 
-/** Free explore: drag, pinch, tap a structure to see what it is. */
-export function ExploreScreen() {
-  const { assets } = useModule(defaultModuleId)
+/** Free explore: drag, pinch, tap a structure to see what it is and what it does. */
+export function ExploreScreen({ moduleId }: { moduleId: string }) {
+  const t = useT()
+  const openExplore = useNav((s) => s.openExplore)
+  const { assets } = useModule(moduleId)
   const track = useSettings((s) => s.track)
   const [selected, setSelected] = useState<Structure | null>(null)
   const [view, setView] = useState<CameraView>(OVERVIEW)
@@ -35,11 +39,16 @@ export function ExploreScreen() {
     setTimeout(() => setCopied(false), 1200)
   }
 
+  const note = selected ? noteFor(selected, track) : null
+
   return (
-    <main className="explore">
+    <div className="overlay explore">
       <header className="explore-head">
-        <h1 className="screen-title">3D Learning</h1>
-        <p className="muted small">Drag to rotate · pinch to zoom · double-tap to reset · tap a bone</p>
+        <button className="back mono" onClick={() => openExplore(null)}>
+          <span className="flip-rtl">←</span> {t.td(`module.${moduleId}`, moduleId)}
+        </button>
+        <h1 className="h2">{t('explore.title')}</h1>
+        <p className="tiny muted">{t('explore.help')}</p>
       </header>
       <div className="explore-viewer">
         {assets && (
@@ -48,38 +57,36 @@ export function ExploreScreen() {
           </Suspense>
         )}
         {import.meta.env.DEV && (
-          <button className="dev-copy" onClick={() => void copyCamera()}>
-            {copied ? 'Copied' : 'Copy camera'}
+          <button className="dev-copy mono" onClick={() => void copyCamera()}>
+            {copied ? t('explore.copied') : t('explore.copy')}
           </button>
         )}
       </div>
-      <section className={`explore-card${selected ? ' open' : ''}`} aria-live="polite">
+      <section className={`sheet explore-card${selected ? ' open' : ''}`} aria-live="polite">
         {selected ? (
           <>
             <div className="row">
-              <h2 className="serif explore-name">{selected.name}</h2>
-              <button className="explore-close muted" onClick={() => setSelected(null)} aria-label="Clear selection">
+              <h2 className="explore-name serif">{selected.name}</h2>
+              <button className="explore-close muted" onClick={() => setSelected(null)} aria-label={t('common.close')}>
                 ✕
               </button>
             </div>
-            {track === 'medicine' && selected.latinName.toLowerCase() !== selected.name.toLowerCase() && (
-              <p className="serif explore-latin">{selected.latinName}</p>
-            )}
-            <p className="muted small">{selected.definition}</p>
-            <p className="small explore-note">{track === 'nursing' ? selected.nursingNote : selected.medicineNote}</p>
+            {selected.latinName.toLowerCase() !== selected.name.toLowerCase() && <p className="serif explore-latin">{selected.latinName}</p>}
+            <p className="small">{selected.function}</p>
+            {note && <p className="small muted explore-note">{note.text}</p>}
             <div className="explore-actions">
-              <button className="btn btn-ghost" onClick={() => setView({ ...selected.camera })}>
-                Focus
+              <button className="btn btn-line" onClick={() => setView({ ...selected.camera })}>
+                {t('explore.focus')}
               </button>
-              <button className="btn btn-ghost" onClick={() => setView({ ...OVERVIEW })}>
-                Whole body
+              <button className="btn btn-line" onClick={() => setView({ ...OVERVIEW })}>
+                {t('explore.whole')}
               </button>
             </div>
           </>
         ) : (
-          <p className="muted small">Tap any structure to see its name and definition.</p>
+          <p className="small muted">{t('explore.tap')}</p>
         )}
       </section>
-    </main>
+    </div>
   )
 }

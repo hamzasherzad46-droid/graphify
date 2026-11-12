@@ -4,7 +4,7 @@ import type { Catalog, ModuleContent, ModuleInfo, PlaceholderModel } from './typ
 
 export const catalog = catalogJson as Catalog
 
-export const allModules: ModuleInfo[] = catalog.courses.flatMap((c) => c.modules)
+export const allModules: ModuleInfo[] = catalog.systems.flatMap((sys) => sys.modules.map((m) => ({ ...m, systemId: sys.id })))
 
 export function getModuleInfo(id: string): ModuleInfo | undefined {
   return allModules.find((m) => m.id === id)

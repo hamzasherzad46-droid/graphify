@@ -3,9 +3,9 @@ import type { Structure } from '../content/types'
 import { acceptedAnswers, applyKey, emptyTyping, type KeyInput, type TypingState } from '../lib/typing'
 import { outcomeFor, prioritise, requeue, type Outcome, type StructureRecord } from '../lib/srs'
 import { playSound } from '../lib/sound'
+import { xpForAnswer } from '../lib/xp'
 import type { SessionConfig } from './nav'
 import { useProgress } from './progress'
-import { useSettings, type Track } from './settings'
 
 export type Phase = 'typing' | 'done' | 'finished'
 
@@ -13,6 +13,8 @@ export interface QuestionResult {
   id: string
   outcome: Outcome
   errors: number
+  xp: number
+  timedOut: boolean
 }
 
 export interface KeyFlash {
@@ -32,11 +34,16 @@ interface QuizState {
   phase: Phase
   qErrors: number
   qStart: number
+  /** Per-question deadline (ms epoch) when an answer timer is on. */
+  qDeadline: number | null
   lastOutcome: Outcome | null
+  lastXp: number
+  timedOut: boolean
   keysCorrect: number
   keysWrong: number
   streak: number
   bestStreak: number
+  sessionXp: number
   results: QuestionResult[]
   requeued: string[]
   flash: KeyFlash | null
@@ -47,6 +54,7 @@ interface QuizState {
   init(config: SessionConfig, structures: Structure[]): void
   press(input: KeyInput): void
   skip(): void
+  timeout(): void
   next(): void
   finish(): void
 }
@@ -69,8 +77,9 @@ export function buildQueue(config: SessionConfig, structures: Structure[], recor
     .map((s) => s.id)
 }
 
-export function answersFor(s: Structure, track: Track): string[] {
-  return acceptedAnswers(s.name, s.synonyms, track === 'medicine' ? [s.latinName] : [])
+/** English name and synonyms, plus the Latin name: the international terms are accepted in every language. */
+export function answersFor(s: Structure): string[] {
+  return acceptedAnswers(s.name, s.synonyms, [s.latinName])
 }
 
 const fresh = {
@@ -81,11 +90,15 @@ const fresh = {
   phase: 'typing' as Phase,
   qErrors: 0,
   qStart: 0,
+  qDeadline: null,
   lastOutcome: null,
+  lastXp: 0,
+  timedOut: false,
   keysCorrect: 0,
   keysWrong: 0,
   streak: 0,
   bestStreak: 0,
+  sessionXp: 0,
   results: [] as QuestionResult[],
   requeued: [] as string[],
   flash: null,
@@ -99,45 +112,56 @@ export const useQuiz = create<QuizState>()((set, get) => {
   const flashOf = (key: string, kind: KeyFlash['kind']): KeyFlash => ({ key, kind, n: (get().flash?.n ?? 0) + 1 })
 
   const loadQuestion = (index: number) => {
-    const { queue, byId } = get()
+    const { queue, byId, config } = get()
     const s = byId[queue[index]]
+    const now = Date.now()
     set({
       index,
-      answers: s ? answersFor(s, useSettings.getState().track) : [],
+      answers: s ? answersFor(s) : [],
       typing: emptyTyping,
       phase: 'typing',
       qErrors: 0,
-      qStart: Date.now(),
+      qStart: now,
+      qDeadline: config?.answerTimer ? now + config.answerTimer * 1000 : null,
       lastOutcome: null,
+      lastXp: 0,
+      timedOut: false,
     })
   }
 
-  const complete = (skipped: boolean) => {
+  const complete = (skipped: boolean, timedOut = false) => {
     const st = get()
     const id = st.queue[st.index]
+    const s = st.byId[id]
+    const config = st.config!
     const errors = st.qErrors
     const outcome = outcomeFor(errors, skipped)
-    useProgress.getState().record(id, outcome, errors, Date.now() - st.qStart)
     const streak = outcome === 'perfect' ? st.streak + 1 : 0
+    const xp = xpForAnswer({ outcome, combo: streak, hard: config.mode === 'hard', timed: !!config.answerTimer, difficulty: s?.difficulty ?? 1 })
+    useProgress.getState().record({ id, moduleId: config.moduleId, outcome, errors, ms: Date.now() - st.qStart, xp, combo: streak })
     let queue = st.queue
     let requeued = st.requeued
     // In practice and review, missed items come back later in the same session (once).
-    if (outcome !== 'perfect' && st.config?.kind !== 'assessment' && !requeued.includes(id)) {
+    if (outcome !== 'perfect' && config.kind !== 'assessment' && !requeued.includes(id)) {
       queue = requeue(queue, st.index, id)
       requeued = [...requeued, id]
     }
     set({
       phase: 'done',
       lastOutcome: outcome,
+      lastXp: xp,
+      timedOut,
+      qDeadline: null,
       streak,
       bestStreak: Math.max(st.bestStreak, streak),
-      results: [...st.results, { id, outcome, errors }],
+      sessionXp: st.sessionXp + xp,
+      results: [...st.results, { id, outcome, errors, xp, timedOut }],
       queue,
       requeued,
-      // On skip, reveal the answer.
+      // On skip or timeout, reveal the answer.
       typing: skipped ? { buffer: st.answers[0] ?? '', awaitingEnter: false } : st.typing,
     })
-    playSound(outcome === 'failed' ? 'fail' : 'complete')
+    playSound(outcome === 'failed' ? 'fail' : streak >= 3 ? 'combo' : 'complete', streak)
   }
 
   return {
@@ -194,6 +218,10 @@ export const useQuiz = create<QuizState>()((set, get) => {
       if (get().phase === 'typing') complete(true)
     },
 
+    timeout() {
+      if (get().phase === 'typing') complete(true, true)
+    },
+
     next() {
       const st = get()
       if (st.phase === 'finished') return
@@ -204,7 +232,8 @@ export const useQuiz = create<QuizState>()((set, get) => {
     finish() {
       const st = get()
       if (st.phase === 'finished') return
-      set({ phase: 'finished', finishedAt: Date.now() })
+      set({ phase: 'finished', finishedAt: Date.now(), qDeadline: null })
+      playSound('finish')
       if (st.config?.kind === 'assessment') {
         const unique = new Map(st.results.map((r) => [r.id, r]))
         useProgress.getState().addAssessment({

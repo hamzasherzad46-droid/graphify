@@ -10,15 +10,17 @@ interface Props {
   onSkip(): void
   awaitingEnter: boolean
   disabled?: boolean
+  labels: { hint: string; skip: string; space: string }
 }
 
 /** Custom on-screen QWERTY keyboard. Keys light up when pressed; wrong keys flash red. */
-export const Keyboard = memo(function Keyboard({ flash, onKey, onSkip, awaitingEnter, disabled }: Props) {
+export const Keyboard = memo(function Keyboard({ flash, onKey, onSkip, awaitingEnter, disabled, labels }: Props) {
   return (
-    <div className={`kb${disabled ? ' kb-disabled' : ''}`} role="group" aria-label="Keyboard">
+    // Answers are typed in Latin letters, so the keyboard stays left-to-right in every language.
+    <div className={`kb${disabled ? ' kb-disabled' : ''}`} role="group" aria-label="Keyboard" dir="ltr">
       {ROWS.map((row, r) => (
         <div className="kb-row" key={row}>
-          {r === 2 && <Key id="hint" label="Hint" wide flash={flash} onPress={() => onKey({ type: 'hint' })} />}
+          {r === 2 && <Key id="hint" label={labels.hint} aria="Hint" wide flash={flash} onPress={() => onKey({ type: 'hint' })} />}
           {[...row].map((ch) => (
             <Key key={ch} id={ch} label={ch} flash={flash} onPress={() => onKey({ type: 'char', char: ch })} />
           ))}
@@ -26,8 +28,8 @@ export const Keyboard = memo(function Keyboard({ flash, onKey, onSkip, awaitingE
         </div>
       ))}
       <div className="kb-row">
-        <Key id="skip" label="Skip" wide flash={flash} onPress={onSkip} />
-        <Key id=" " label="space" aria="Space" space flash={flash} onPress={() => onKey({ type: 'char', char: ' ' })} />
+        <Key id="skip" label={labels.skip} aria="Skip" wide flash={flash} onPress={onSkip} />
+        <Key id=" " label={labels.space} aria="Space" space flash={flash} onPress={() => onKey({ type: 'char', char: ' ' })} />
         <Key id="enter" label="↵" aria="Enter" wide accent={awaitingEnter} flash={flash} onPress={() => onKey({ type: 'enter' })} />
       </div>
     </div>

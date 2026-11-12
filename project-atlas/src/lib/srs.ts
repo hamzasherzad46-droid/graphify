@@ -16,6 +16,8 @@ export interface StructureRecord {
   lastOutcome: Outcome
   box: number
   dueAt: number
+  /** First time the item reached the mastered box. */
+  masteredAt?: number
 }
 
 export const MASTERED_BOX = 4
@@ -41,6 +43,7 @@ export function updateRecord(prev: StructureRecord | undefined, outcome: Outcome
     lastOutcome: outcome,
     box,
     dueAt: now + INTERVALS[box],
+    masteredAt: prev?.masteredAt ?? (box >= MASTERED_BOX ? now : undefined),
   }
 }
 

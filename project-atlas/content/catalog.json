@@ -1,36 +1,30 @@
 {
-  "courses": [
+  "systems": [
     {
-      "id": "anatomy",
-      "title": "Anatomy",
+      "id": "skeletal",
+      "glyph": "bone",
       "modules": [
         {
           "id": "skeleton",
-          "title": "Skeleton",
-          "description": "Bones of the skull, axial skeleton and limbs.",
           "status": "available",
           "contentFile": "skeleton",
           "model": { "file": "skeleton.glb", "scale": 1, "position": [0, 0, 0], "rotation": [0, 0, 0] }
-        },
-        {
-          "id": "heart",
-          "title": "Heart",
-          "description": "Chambers, valves and great vessels.",
-          "status": "coming-soon"
-        },
-        {
-          "id": "vessels",
-          "title": "Major Vessels",
-          "description": "Arteries and veins of the body.",
-          "status": "coming-soon"
-        },
-        {
-          "id": "muscles",
-          "title": "Muscles",
-          "description": "Major skeletal muscles and their actions.",
-          "status": "coming-soon"
         }
       ]
-    }
+    },
+    { "id": "muscular", "glyph": "muscle", "modules": [{ "id": "muscles", "status": "coming-soon" }] },
+    {
+      "id": "cardiovascular",
+      "glyph": "heart",
+      "modules": [
+        { "id": "heart", "status": "coming-soon" },
+        { "id": "vessels", "status": "coming-soon" }
+      ]
+    },
+    { "id": "respiratory", "glyph": "lungs", "modules": [{ "id": "airways", "status": "coming-soon" }] },
+    { "id": "nervous", "glyph": "brain", "modules": [{ "id": "brain", "status": "coming-soon" }] },
+    { "id": "digestive", "glyph": "stomach", "modules": [{ "id": "digestive", "status": "coming-soon" }] },
+    { "id": "urinary", "glyph": "kidney", "modules": [{ "id": "urinary", "status": "coming-soon" }] },
+    { "id": "reproductive", "glyph": "reproductive", "modules": [{ "id": "reproductive", "status": "coming-soon" }] }
   ]
 }

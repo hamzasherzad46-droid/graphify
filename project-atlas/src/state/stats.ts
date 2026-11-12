@@ -1,5 +1,5 @@
 import type { ModuleContent, Structure } from '../content/types'
-import { isMastered, isMissed, type StructureRecord } from '../lib/srs'
+import { isMastered, type StructureRecord } from '../lib/srs'
 
 export interface RegionStats {
   id: string
@@ -60,6 +60,3 @@ export function mostMissed(content: ModuleContent, records: Record<string, Struc
     .slice(0, limit)
 }
 
-export function missedCount(content: ModuleContent, records: Record<string, StructureRecord>): number {
-  return content.structures.filter((s) => isMissed(records[s.id])).length
-}

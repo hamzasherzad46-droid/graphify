@@ -1,0 +1,26 @@
+{
+  "include": [
+    "wall of (left |right )?(atrium|ventricle)",
+    "cavity of (left |right )?(atrium|ventricle)",
+    "(anterior|posterior|septal) leaflet of (tricuspid|mitral) valve",
+    "((left |right )?(anterior|posterior)) cusp of (aortic|pulmonary) valve",
+    "(anterior|posterior|septal|lateral) papillary muscle of (left |right )?ventricle",
+    "anterolateral head of lateral papillary muscle of (left |right )?ventricle",
+    "ascending aorta",
+    "arch of aorta",
+    "descending (thoracic )?aorta",
+    "pulmonary trunk",
+    "(left |right )?pulmonary artery",
+    "(left |right )?(superior|inferior) pulmonary vein",
+    "(superior|inferior) vena cava",
+    "brachiocephalic artery",
+    "(.* )?(left |right )?coronary artery",
+    "(.* )?interventricular artery",
+    "coronary sinus",
+    "(great|middle|small|anterior) cardiac vein",
+    "posterior vein of (left |right )?ventricle",
+    "(left |right )?marginal vein",
+    "anterior interventricular vein"
+  ],
+  "minCameraDistance": 0.22
+}

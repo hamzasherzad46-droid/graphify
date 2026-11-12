@@ -50,6 +50,10 @@ export const en = {
   'region.lower-limb': 'Lower limb',
   'region.head-neck': 'Head and neck',
   'region.trunk': 'Trunk',
+  'region.chambers': 'Chambers',
+  'region.valves': 'Valves',
+  'region.great-vessels': 'Great vessels',
+  'region.coronary': 'Coronary circulation',
 
   'track.nursing': 'Nursing',
   'track.medicine': 'Medicine',

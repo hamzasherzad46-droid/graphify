@@ -8,7 +8,7 @@
  * The spec lists which BodyParts3D parts to include, as case-insensitive regular expressions
  * matched against the whole part name. Mesh names are generated: side words move to a suffix
  * ("Left biceps brachii" → "biceps_brachii.l", "Anterior part of right superior temporal gyrus"
- * → "anterior_part_of_superior_temporal_gyrus.r"), duplicates get "_2", "_3"…
+ * → "anterior_part_of_superior_temporal_gyrus.r"), duplicates get "_2", "_3"… after the side.
  * The original name and id are kept in each node's `extras`.
  *
  * --fit-cameras frames every structure in the content file around its meshes, keeping the
@@ -55,7 +55,8 @@ for (const p of atlas.parts) {
   let name = slugAndSide(p.name)
   const n = (used.get(name) ?? 0) + 1
   used.set(name, n)
-  if (n > 1) name = name.includes('.') ? name.replace('.', `_${n}.`) : `${name}_${n}`
+  // Number duplicates after the side, so a side-specific key ("x.r") still matches every copy ("x.r_2").
+  if (n > 1) name = `${name}_${n}`
   const buf = chunks[p.chunk]
   const v = p.vertexCount
   const pos = new Float32Array(buf.buffer.slice(buf.byteOffset + p.positions, buf.byteOffset + p.positions + v * 12))

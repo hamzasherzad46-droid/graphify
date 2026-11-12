@@ -1,0 +1,409 @@
+{
+  "module": "heart",
+  "regions": [
+    { "id": "chambers", "name": "Chambers" },
+    { "id": "valves", "name": "Valves" },
+    { "id": "great-vessels", "name": "Great vessels" },
+    { "id": "coronary", "name": "Coronary circulation" }
+  ],
+  "structures": [
+    {
+      "id": "right-atrium",
+      "name": "right atrium",
+      "synonyms": [],
+      "latinName": "atrium dextrum",
+      "definition": "Upper right chamber of the heart, receiving blood from the venae cavae and the coronary sinus.",
+      "function": "Collects deoxygenated blood from the body and pushes it into the right ventricle.",
+      "why": "A thin-walled reservoir lets blood keep flowing into the heart while the ventricles are contracting.",
+      "notes": {
+        "medicine": "Contains the sinoatrial node, the heart’s natural pacemaker, near the opening of the superior vena cava.",
+        "nursing": "Central venous pressure reflects the pressure in this chamber; central line tips sit just above it."
+      },
+      "region": "chambers",
+      "modelFile": "heart.glb",
+      "meshName": ["cavity_of_atrium.r", "wall_of_atrium.r"],
+      "camera": { "position": [-0.098, 1.333, 0.254], "target": [-0.015, 1.309, 0.028] },
+      "difficulty": 1
+    },
+    {
+      "id": "left-atrium",
+      "name": "left atrium",
+      "synonyms": [],
+      "latinName": "atrium sinistrum",
+      "definition": "Upper left chamber of the heart, at the back, receiving the four pulmonary veins.",
+      "function": "Collects oxygenated blood from the lungs and pushes it into the left ventricle.",
+      "why": "It acts as a booster pump, topping up the left ventricle just before it contracts.",
+      "notes": {
+        "medicine": "In atrial fibrillation clots form in its appendage, the source of most cardioembolic strokes.",
+        "sports": "Endurance training enlarges it modestly as part of the “athlete’s heart”."
+      },
+      "region": "chambers",
+      "modelFile": "heart.glb",
+      "meshName": ["cavity_of_atrium.l", "wall_of_atrium.l"],
+      "camera": { "position": [-0.071, 1.34, -0.237], "target": [0.02, 1.314, 0.011] },
+      "difficulty": 1
+    },
+    {
+      "id": "right-ventricle",
+      "name": "right ventricle",
+      "synonyms": [],
+      "latinName": "ventriculus dexter",
+      "definition": "Lower right chamber of the heart, forming most of its front surface.",
+      "function": "Pumps deoxygenated blood through the pulmonary valve to the lungs.",
+      "why": "The lungs need only low pressure, so its wall is thin and it pumps at about a fifth of the left side’s pressure.",
+      "notes": {
+        "medicine": "Fails when lung pressure rises (cor pulmonale), causing raised neck veins, liver congestion and ankle swelling.",
+        "nursing": "Right-sided heart failure shows as peripheral oedema and a raised jugular venous pressure."
+      },
+      "region": "chambers",
+      "modelFile": "heart.glb",
+      "meshName": "cavity_of_ventricle.r",
+      "camera": { "position": [-0.064, 1.321, 0.263], "target": [0.017, 1.298, 0.044] },
+      "difficulty": 1
+    },
+    {
+      "id": "left-ventricle",
+      "name": "left ventricle",
+      "synonyms": [],
+      "latinName": "ventriculus sinister",
+      "definition": "Lower left chamber of the heart, forming its apex, with the thickest muscular wall.",
+      "function": "Pumps oxygenated blood through the aortic valve to the whole body.",
+      "why": "Its thick wall generates the high pressure needed to push blood to every organ.",
+      "notes": {
+        "medicine": "Left ventricular failure backs fluid into the lungs, causing breathlessness and pulmonary oedema.",
+        "nursing": "Orthopnoea and crackles at the lung bases suggest left-sided heart failure.",
+        "sports": "Endurance training enlarges its cavity; strength training thickens its wall."
+      },
+      "region": "chambers",
+      "modelFile": "heart.glb",
+      "meshName": "cavity_of_ventricle.l",
+      "camera": { "position": [-0.185, 1.307, 0.045], "target": [0.038, 1.296, 0.022] },
+      "difficulty": 1
+    },
+    {
+      "id": "tricuspid-valve",
+      "name": "tricuspid valve",
+      "synonyms": ["right atrioventricular valve"],
+      "latinName": "valva atrioventricularis dextra",
+      "definition": "Three-leaflet valve between the right atrium and right ventricle.",
+      "function": "Lets blood pass into the right ventricle and closes to stop it flowing back when the ventricle contracts.",
+      "why": "Its closure, with the mitral valve’s, makes the first heart sound.",
+      "notes": {
+        "medicine": "Infective endocarditis of this valve is typical of people who inject drugs."
+      },
+      "region": "valves",
+      "modelFile": "heart.glb",
+      "meshName": ["anterior_leaflet_of_tricuspid_valve", "posterior_leaflet_of_tricuspid_valve", "septal_leaflet_of_tricuspid_valve"],
+      "camera": { "position": [-0.071, 1.312, 0.24], "target": [0.004, 1.291, 0.035] },
+      "difficulty": 2
+    },
+    {
+      "id": "mitral-valve",
+      "name": "mitral valve",
+      "synonyms": ["bicuspid valve", "left atrioventricular valve"],
+      "latinName": "valva atrioventricularis sinistra",
+      "definition": "Two-leaflet valve between the left atrium and left ventricle.",
+      "function": "Lets oxygenated blood into the left ventricle and seals as the ventricle contracts.",
+      "why": "It withstands the highest pressure of any valve, held shut by cords anchored to papillary muscles.",
+      "notes": {
+        "medicine": "Mitral regurgitation gives a pansystolic murmur heard best at the apex, radiating to the axilla."
+      },
+      "region": "valves",
+      "modelFile": "heart.glb",
+      "meshName": ["anterior_leaflet_of_mitral_valve", "posterior_leaflet_of_mitral_valve"],
+      "camera": { "position": [-0.181, 1.307, 0.035], "target": [0.037, 1.296, 0.014] },
+      "difficulty": 2
+    },
+    {
+      "id": "pulmonary-valve",
+      "name": "pulmonary valve",
+      "synonyms": ["pulmonic valve"],
+      "latinName": "valva trunci pulmonalis",
+      "definition": "Three-cusp valve at the exit of the right ventricle.",
+      "function": "Opens to let blood into the pulmonary trunk and closes to stop it falling back.",
+      "why": "Its pocket-shaped cusps fill with blood and snap shut without needing cords.",
+      "notes": {
+        "medicine": "Its closure contributes to the second heart sound, best heard at the left upper sternal edge."
+      },
+      "region": "valves",
+      "modelFile": "heart.glb",
+      "meshName": ["anterior_cusp_of_pulmonary_valve", "posterior_cusp_of_pulmonary_valve"],
+      "camera": { "position": [-0.051, 1.355, 0.249], "target": [0.025, 1.333, 0.044] },
+      "difficulty": 2
+    },
+    {
+      "id": "aortic-valve",
+      "name": "aortic valve",
+      "synonyms": [],
+      "latinName": "valva aortae",
+      "definition": "Three-cusp valve at the exit of the left ventricle.",
+      "function": "Opens to let blood into the aorta and closes to stop it falling back into the ventricle.",
+      "why": "The coronary arteries arise just above its cusps, so the heart feeds itself when the valve closes.",
+      "notes": {
+        "medicine": "Aortic stenosis causes an ejection systolic murmur radiating to the carotids, with angina, syncope and breathlessness."
+      },
+      "region": "valves",
+      "modelFile": "heart.glb",
+      "meshName": ["anterior_cusp_of_aortic_valve", "posterior_cusp_of_aortic_valve"],
+      "camera": { "position": [-0.057, 1.344, 0.224], "target": [0.019, 1.322, 0.019] },
+      "difficulty": 2
+    },
+    {
+      "id": "papillary-muscles",
+      "name": "papillary muscles",
+      "synonyms": ["papillary muscle"],
+      "latinName": "musculi papillares",
+      "definition": "Finger-like muscles projecting from the ventricular walls, attached by cords to the valve leaflets.",
+      "function": "Tense the cords as the ventricles contract so the leaflets don’t flip back into the atria.",
+      "why": "Without them the inlet valves would blow inside out under ventricular pressure.",
+      "notes": {
+        "medicine": "Rupture after a myocardial infarction causes sudden severe mitral regurgitation."
+      },
+      "region": "valves",
+      "modelFile": "heart.glb",
+      "meshName": ["anterior_papillary_muscle_of_ventricle", "posterior_papillary_muscle_of_ventricle", "septal_papillary_muscle_of_ventricle", "lateral_papillary_muscle_of_ventricle", "anterolateral_head_of_lateral_papillary_muscle_of_ventricle"],
+      "camera": { "position": [-0.178, 1.298, 0.061], "target": [0.041, 1.287, 0.039] },
+      "difficulty": 3
+    },
+    {
+      "id": "ascending-aorta",
+      "name": "ascending aorta",
+      "synonyms": [],
+      "latinName": "aorta ascendens",
+      "definition": "First part of the aorta, rising from the left ventricle behind the sternum.",
+      "function": "Carries all the blood leaving the left ventricle and gives off the coronary arteries.",
+      "why": "Its elastic wall stretches with each beat and recoils to keep blood moving between beats.",
+      "notes": {
+        "medicine": "Dilates in Marfan syndrome and with age; dissection here is a surgical emergency."
+      },
+      "region": "great-vessels",
+      "modelFile": "heart.glb",
+      "meshName": "ascending_aorta",
+      "camera": { "position": [-0.065, 1.358, 0.227], "target": [0.011, 1.336, 0.022] },
+      "difficulty": 2
+    },
+    {
+      "id": "aortic-arch",
+      "name": "aortic arch",
+      "synonyms": ["arch of aorta", "arch of the aorta"],
+      "latinName": "arcus aortae",
+      "definition": "Curved part of the aorta that turns backwards and to the left over the root of the left lung.",
+      "function": "Gives off the brachiocephalic trunk, left common carotid and left subclavian arteries to the head and arms.",
+      "why": "Curving over lets one vessel supply the head and arms and then descend to the body.",
+      "notes": {
+        "medicine": "The left recurrent laryngeal nerve hooks under it, so an aneurysm here can cause hoarseness."
+      },
+      "region": "great-vessels",
+      "modelFile": "heart.glb",
+      "meshName": "arch_of_aorta",
+      "camera": { "position": [-0.205, 1.389, 0.015], "target": [0.014, 1.378, -0.006] },
+      "difficulty": 1
+    },
+    {
+      "id": "descending-thoracic-aorta",
+      "name": "descending aorta",
+      "synonyms": ["descending thoracic aorta", "thoracic aorta"],
+      "latinName": "aorta descendens",
+      "definition": "Part of the aorta running down through the back of the chest beside the vertebral column.",
+      "function": "Carries blood to the chest wall, oesophagus and then on to the abdomen.",
+      "why": "Running along the spine keeps it protected and lets it supply the body segment by segment.",
+      "notes": {
+        "medicine": "Becomes the abdominal aorta as it passes through the diaphragm at T12."
+      },
+      "region": "great-vessels",
+      "modelFile": "heart.glb",
+      "meshName": ["descending_thoracic_aorta", "descending_aorta"],
+      "camera": { "position": [-0.224, 1.27, -0.664], "target": [0.016, 1.201, -0.012] },
+      "difficulty": 2
+    },
+    {
+      "id": "pulmonary-trunk",
+      "name": "pulmonary trunk",
+      "synonyms": ["pulmonary artery"],
+      "latinName": "truncus pulmonalis",
+      "definition": "Large artery leaving the right ventricle that divides into right and left branches.",
+      "function": "Carries deoxygenated blood to the lungs.",
+      "why": "It is the only artery that carries deoxygenated blood (apart from the umbilical arteries before birth).",
+      "notes": {
+        "medicine": "A large clot lodged where it divides (saddle embolus) causes sudden collapse."
+      },
+      "region": "great-vessels",
+      "modelFile": "heart.glb",
+      "meshName": ["pulmonary_trunk", "pulmonary_artery"],
+      "camera": { "position": [-0.111, 1.372, 0.338], "target": [0.01, 1.337, 0.008] },
+      "difficulty": 1
+    },
+    {
+      "id": "pulmonary-veins",
+      "name": "pulmonary veins",
+      "synonyms": ["pulmonary vein"],
+      "latinName": "venae pulmonales",
+      "definition": "Four veins, two from each lung, opening into the back of the left atrium.",
+      "function": "Return oxygenated blood from the lungs to the heart.",
+      "why": "They are the only veins carrying oxygen-rich blood.",
+      "notes": {
+        "medicine": "Catheter ablation for atrial fibrillation isolates the openings of these veins."
+      },
+      "region": "great-vessels",
+      "modelFile": "heart.glb",
+      "meshName": ["superior_pulmonary_vein", "inferior_pulmonary_vein"],
+      "camera": { "position": [-0.077, 1.344, -0.286], "target": [0.022, 1.315, -0.018] },
+      "difficulty": 2
+    },
+    {
+      "id": "superior-vena-cava",
+      "name": "superior vena cava",
+      "synonyms": ["svc"],
+      "latinName": "vena cava superior",
+      "definition": "Large vein entering the top of the right atrium.",
+      "function": "Returns blood from the head, neck, arms and upper chest.",
+      "why": "One short, wide vein lets blood from the whole upper body drain into the heart with little resistance.",
+      "notes": {
+        "nursing": "The tip of a central venous catheter should lie in its lower part, just above the right atrium.",
+        "medicine": "Obstruction (often by lung cancer) causes face and arm swelling and distended chest veins."
+      },
+      "region": "great-vessels",
+      "modelFile": "heart.glb",
+      "meshName": "superior_vena_cava",
+      "camera": { "position": [-0.091, 1.392, 0.221], "target": [-0.015, 1.37, 0.015] },
+      "difficulty": 1
+    },
+    {
+      "id": "inferior-vena-cava",
+      "name": "inferior vena cava",
+      "synonyms": ["ivc"],
+      "latinName": "vena cava inferior",
+      "definition": "The largest vein, entering the bottom of the right atrium after passing through the diaphragm.",
+      "function": "Returns blood from the legs, pelvis and abdomen.",
+      "why": "It carries the largest volume of returning blood, so it is the widest vein in the body.",
+      "notes": {
+        "nursing": "In late pregnancy, lying flat compresses it; tilt the patient to the left.",
+        "medicine": "Ultrasound of its diameter and collapse helps assess fluid status."
+      },
+      "region": "great-vessels",
+      "modelFile": "heart.glb",
+      "meshName": "inferior_vena_cava",
+      "camera": { "position": [-0.174, 1.194, 0.448], "target": [-0.014, 1.149, 0.016] },
+      "difficulty": 1
+    },
+    {
+      "id": "brachiocephalic-trunk",
+      "name": "brachiocephalic trunk",
+      "synonyms": ["brachiocephalic artery", "innominate artery"],
+      "latinName": "truncus brachiocephalicus",
+      "definition": "First and largest branch of the aortic arch, on the right side.",
+      "function": "Divides into the right common carotid and right subclavian arteries.",
+      "why": "Gives the right side of the head and the right arm one shared origin from the aorta.",
+      "notes": {
+        "medicine": "There is only one: the left carotid and subclavian arteries arise directly from the arch."
+      },
+      "region": "great-vessels",
+      "modelFile": "heart.glb",
+      "meshName": "brachiocephalic_artery",
+      "camera": { "position": [-0.076, 1.423, 0.216], "target": [-0.001, 1.401, 0.011] },
+      "difficulty": 3
+    },
+    {
+      "id": "right-coronary-artery",
+      "name": "right coronary artery",
+      "synonyms": ["rca"],
+      "latinName": "arteria coronaria dextra",
+      "definition": "Artery arising above the aortic valve and running in the groove between the right atrium and ventricle.",
+      "function": "Supplies the right atrium, right ventricle and, in most people, the sinoatrial and atrioventricular nodes.",
+      "why": "Running in the groove around the heart protects it while it supplies the right side.",
+      "notes": {
+        "medicine": "Its blockage causes inferior myocardial infarction (ST elevation in II, III, aVF) and often heart block."
+      },
+      "region": "coronary",
+      "modelFile": "heart.glb",
+      "meshName": ["trunk_of_coronary_artery.r", "marginal_branch_of_coronary_artery.r", "first_anterior_ventricular_branch_of_coronary_artery.r", "first_posterior_ventricular_branch_of_coronary_artery.r"],
+      "camera": { "position": [-0.076, 1.326, 0.31], "target": [0.026, 1.296, 0.033] },
+      "difficulty": 2
+    },
+    {
+      "id": "left-coronary-artery",
+      "name": "left coronary artery",
+      "synonyms": ["left main coronary artery", "left main stem", "lca"],
+      "latinName": "arteria coronaria sinistra",
+      "definition": "Short main artery arising above the aortic valve and passing behind the pulmonary trunk.",
+      "function": "Divides into the anterior interventricular and circumflex branches that feed the left heart.",
+      "why": "Supplies the hard-working left ventricle, which needs the most oxygen.",
+      "notes": {
+        "medicine": "A blockage of the left main stem threatens a large area of muscle and is often treated surgically."
+      },
+      "region": "coronary",
+      "modelFile": "heart.glb",
+      "meshName": "trunk_of_coronary_artery.l",
+      "camera": { "position": [-0.19, 1.346, 0.042], "target": [0.029, 1.335, 0.02] },
+      "difficulty": 2
+    },
+    {
+      "id": "anterior-interventricular-artery",
+      "name": "left anterior descending artery",
+      "synonyms": ["lad", "anterior interventricular artery", "anterior interventricular branch"],
+      "latinName": "ramus interventricularis anterior",
+      "definition": "Branch running down the groove on the front of the heart between the two ventricles.",
+      "function": "Supplies the front of the left ventricle, the apex and the front two-thirds of the septum.",
+      "why": "It feeds the largest share of the left ventricle’s muscle.",
+      "notes": {
+        "medicine": "Called the “widow-maker”: its blockage causes large anterior infarctions (ST elevation V1–V4)."
+      },
+      "region": "coronary",
+      "modelFile": "heart.glb",
+      "meshName": ["trunk_of_anterior_interventricular_branch_of_coronary_artery.l", "diagonal_branch_of_anterior_descending_branch_of_coronary_artery.l"],
+      "camera": { "position": [-0.019, 1.318, 0.249], "target": [0.056, 1.297, 0.044] },
+      "difficulty": 2
+    },
+    {
+      "id": "circumflex-artery",
+      "name": "circumflex artery",
+      "synonyms": ["circumflex branch", "left circumflex artery", "lcx"],
+      "latinName": "ramus circumflexus",
+      "definition": "Branch of the left coronary artery that curves around the left side of the heart in the groove between atrium and ventricle.",
+      "function": "Supplies the left atrium and the side and back of the left ventricle.",
+      "why": "Wrapping around the heart lets one vessel reach its left and back walls.",
+      "notes": {
+        "medicine": "Its blockage causes lateral infarction and can be electrically silent on a standard ECG."
+      },
+      "region": "coronary",
+      "modelFile": "heart.glb",
+      "meshName": "circumflex_branch_of_coronary_artery.l",
+      "camera": { "position": [-0.163, 1.311, 0.037], "target": [0.056, 1.3, 0.015] },
+      "difficulty": 3
+    },
+    {
+      "id": "posterior-interventricular-artery",
+      "name": "posterior descending artery",
+      "synonyms": ["pda", "posterior interventricular artery", "posterior interventricular branch"],
+      "latinName": "ramus interventricularis posterior",
+      "definition": "Artery running in the groove on the underside of the heart between the ventricles.",
+      "function": "Supplies the back third of the septum and the inferior wall of both ventricles.",
+      "why": "Whichever coronary artery gives this branch is called “dominant” — usually the right.",
+      "notes": {
+        "medicine": "Coronary dominance is defined by which artery gives rise to it."
+      },
+      "region": "coronary",
+      "modelFile": "heart.glb",
+      "meshName": "posterior_interventricular_branch_of_coronary_artery.r",
+      "camera": { "position": [0.033, 1.129, 0.213], "target": [0.033, 1.261, 0.037] },
+      "difficulty": 3
+    },
+    {
+      "id": "coronary-sinus",
+      "name": "coronary sinus",
+      "synonyms": [],
+      "latinName": "sinus coronarius",
+      "definition": "Wide venous channel in the groove on the back of the heart, opening into the right atrium.",
+      "function": "Collects most of the blood that has supplied the heart muscle and returns it to the right atrium.",
+      "why": "The heart drains its own veins straight back into itself.",
+      "notes": {
+        "medicine": "Pacing leads for cardiac resynchronisation therapy are passed through it to reach the left ventricle."
+      },
+      "region": "coronary",
+      "modelFile": "heart.glb",
+      "meshName": ["coronary_sinus", "great_cardiac_vein"],
+      "camera": { "position": [-0.054, 1.325, -0.201], "target": [0.022, 1.304, 0.004] },
+      "difficulty": 3
+    }
+  ]
+}

@@ -28,7 +28,12 @@
       "id": "cardiovascular",
       "glyph": "heart",
       "modules": [
-        { "id": "heart", "status": "coming-soon" },
+        {
+          "id": "heart",
+          "status": "available",
+          "contentFile": "heart",
+          "model": { "file": "heart.glb", "context": "skeleton-context.glb" }
+        },
         { "id": "vessels", "status": "coming-soon" }
       ]
     },

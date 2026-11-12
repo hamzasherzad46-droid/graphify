@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
+    "build:artifact": "tsc -b && vite build --mode artifact && scripts/artifact-model.sh",
     "lint": "eslint .",
     "test": "vitest run",
     "validate:content": "vitest run src/content"

@@ -15,6 +15,12 @@ npm run build && npm run preview   # production build with service worker
 To try it on a phone on the same Wi-Fi: `npm run dev -- --host`, then open the printed network URL.
 (Service workers need HTTPS or localhost, so offline mode and installation only work on a deployed build.)
 
+**Sandboxed build** (`npm run build:artifact` → `dist-artifact/`): for hosts like a claude.ai artifact,
+which serve only HTML/JS/CSS, block service workers and may block WebAssembly. It uses relative URLs,
+inlines the fonts, has no service worker, and ships each model quantized (no Draco) inside a JS module
+that is parsed in memory (`src/viewer/embeddedModel.ts`). Offline mode and home-screen install don't
+apply there.
+
 ## What's in the prototype
 
 - **Quiz** (Practice tab): learn mode (ghost letters + definition clue) and hard mode (dashes only),

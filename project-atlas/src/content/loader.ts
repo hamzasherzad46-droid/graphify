@@ -1,4 +1,5 @@
 import catalogJson from '../../content/catalog.json'
+import { publicUrl } from '../lib/paths'
 import type { Catalog, ModuleContent, ModuleInfo, PlaceholderModel } from './types'
 
 export const catalog = catalogJson as Catalog
@@ -44,15 +45,18 @@ export function loadPlaceholder(info: ModuleInfo): Promise<PlaceholderModel> {
 const modelCheck = new Map<string, Promise<boolean>>()
 
 /**
- * True if /models/<file> exists and is a real binary (the dev server and the
- * service worker answer unknown paths with index.html, so check the type).
+ * False only when /models/<file> is clearly missing: a 404, or the HTML page that
+ * the dev server and service worker return for unknown paths. If the check itself
+ * can't run (e.g. a sandboxed host), assume the model is there and let the loader try.
  */
 export function modelAvailable(file: string): Promise<boolean> {
+  // The artifact build embeds its models as JS modules (see viewer/embeddedModel.ts).
+  if (import.meta.env.MODE === 'artifact') return Promise.resolve(true)
   let p = modelCheck.get(file)
   if (!p) {
-    p = fetch(`/models/${file}`, { method: 'HEAD' })
-      .then((r) => r.ok && !(r.headers.get('content-type') ?? '').includes('text/html'))
-      .catch(() => false)
+    p = fetch(publicUrl(`models/${file}`), { method: 'HEAD' })
+      .then((r) => r.status !== 404 && !(r.headers.get('content-type') ?? '').includes('text/html'))
+      .catch(() => true)
     modelCheck.set(file, p)
   }
   return p

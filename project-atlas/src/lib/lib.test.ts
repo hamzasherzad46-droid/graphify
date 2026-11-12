@@ -55,6 +55,14 @@ describe('typing engine', () => {
     expect(typeAll('frontal bone', answers).results.at(-1)).toBe('complete')
   })
 
+  it('does not wait for Enter when a longer answer only adds letters (plurals)', () => {
+    const answers = acceptedAnswers('temporal bone', ['temporal', 'temporal bones'])
+    expect(typeAll('temporal bone', answers).results.at(-1)).toBe('complete')
+    expect(typeAll('maxilla', acceptedAnswers('maxilla', ['maxillae'])).results.at(-1)).toBe('complete')
+    // …but still waits when another word may follow.
+    expect(typeAll('temporal', answers).state.awaitingEnter).toBe(true)
+  })
+
   it('backspace and hint', () => {
     const answers = acceptedAnswers('ulna', [])
     let s: TypingState = { buffer: 'ul', awaitingEnter: false }

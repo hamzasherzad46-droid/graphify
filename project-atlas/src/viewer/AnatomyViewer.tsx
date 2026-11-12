@@ -1,6 +1,6 @@
 import { Canvas, useThree } from '@react-three/fiber'
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js'
-import { Suspense, useEffect, useRef, useState, type PointerEvent as ReactPointerEvent, type Ref } from 'react'
+import { Component, Suspense, useEffect, useMemo, useRef, useState, type ReactNode, type PointerEvent as ReactPointerEvent, type Ref } from 'react'
 import * as THREE from 'three'
 import type { CameraView, Structure } from '../content/types'
 import type { ModuleAssets } from '../content/useModule'
@@ -24,26 +24,25 @@ const DPR: [number, number] = [1, 2] // cap pixel ratio at 2 for mobile GPUs
 /** Soft studio lighting: a procedural room environment (no HDR download) plus a key and a rim light. */
 function Lights() {
   const gl = useThree((s) => s.gl)
-  const scene = useThree((s) => s.scene)
-  useEffect(() => {
+  const env = useMemo(() => {
     const pmrem = new THREE.PMREMGenerator(gl)
-    const env = pmrem.fromScene(new RoomEnvironment(), 0.04).texture
-    scene.environment = env
-    scene.environmentIntensity = 0.35
-    return () => {
-      scene.environment = null
-      env.dispose()
-      pmrem.dispose()
-    }
-  }, [gl, scene])
+    const texture = pmrem.fromScene(new RoomEnvironment(), 0.04).texture
+    pmrem.dispose()
+    return texture
+  }, [gl])
+  useEffect(() => () => env.dispose(), [env])
   return (
     <>
+      {/* Attaches to the scene's `environment`; intensity is set on the Canvas scene. */}
+      <primitive object={env} attach="environment" />
       <hemisphereLight args={['#fff8ee', '#1d1d22', 0.45]} />
       <directionalLight position={[1.5, 3, 2.5]} intensity={1.35} color="#fff6e8" />
       <directionalLight position={[-2.5, 1.5, -2]} intensity={0.8} color="#dfe8ff" />
     </>
   )
 }
+
+const SCENE = { environmentIntensity: 0.35 }
 
 export default function AnatomyViewer({ assets, highlight, view, ghosts, onPick, cameraApi }: AnatomyViewerProps) {
   const [resetKey, setResetKey] = useState(0)
@@ -63,23 +62,38 @@ export default function AnatomyViewer({ assets, highlight, view, ghosts, onPick,
   }
 
   return (
-    <div className="viewer" onPointerUp={onPointerUp}>
-      {ghosts && <GhostCarousel assets={assets} {...ghosts} />}
-      <Canvas
-        className="viewer-main"
-        dpr={DPR}
-        frameloop="demand"
-        gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
-        camera={{ fov: 35, near: 0.01, far: 50, position: view.position }}
-      >
-        <Lights />
-        <Suspense fallback={null}>
-          <ModelInstance assets={assets} highlight={highlight} onPick={onPick} />
-        </Suspense>
-        <CameraRig view={view} resetKey={resetKey} apiRef={cameraApi} />
-      </Canvas>
-    </div>
+    <ViewerBoundary>
+      <div className="viewer" onPointerUp={onPointerUp}>
+        {ghosts && <GhostCarousel assets={assets} {...ghosts} />}
+        <Canvas
+          className="viewer-main"
+          dpr={DPR}
+          frameloop="demand"
+          gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
+          camera={{ fov: 35, near: 0.01, far: 50, position: view.position }}
+          scene={SCENE}
+        >
+          <Lights />
+          <Suspense fallback={null}>
+            <ModelInstance assets={assets} highlight={highlight} onPick={onPick} />
+          </Suspense>
+          <CameraRig view={view} resetKey={resetKey} apiRef={cameraApi} />
+        </Canvas>
+      </div>
+    </ViewerBoundary>
   )
+}
+
+/** If the model or WebGL fails, show a message instead of taking the whole app down. */
+class ViewerBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
+  state = { failed: false }
+  static getDerivedStateFromError() {
+    return { failed: true }
+  }
+  render() {
+    if (this.state.failed) return <div className="viewer viewer-error">Couldn’t load the 3D model. The quiz still works.</div>
+    return this.props.children
+  }
 }
 
 /* ---------- Ghost carousel ---------- */
@@ -105,7 +119,13 @@ function GhostCarousel({ assets, prev, next, index }: { assets: ModuleAssets; pr
   }, [index])
   return (
     <div className="viewer-ghosts" ref={el} aria-hidden>
-      <Canvas dpr={0.5} frameloop="demand" gl={{ antialias: false, alpha: true }} camera={{ fov: 30, position: [0, 0, 4] }}>
+      <Canvas
+        dpr={0.5}
+        frameloop="demand"
+        gl={{ antialias: false, alpha: true }}
+        camera={{ fov: 30, position: [0, 0, 4] }}
+        scene={SCENE}
+      >
         <Lights />
         <Suspense fallback={null}>
           {prev && <Ghost assets={assets} structure={prev} slot={-GHOST_SLOT_X} />}

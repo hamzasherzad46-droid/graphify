@@ -29,3 +29,12 @@
   -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 82%, transparent 100%);
   mask-image: linear-gradient(to bottom, #000 0%, #000 82%, transparent 100%);
 }
+
+.viewer-error {
+  display: grid;
+  place-items: center;
+  padding: var(--space-5);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+}

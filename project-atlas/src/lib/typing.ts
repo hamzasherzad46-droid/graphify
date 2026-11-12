@@ -38,7 +38,7 @@ export type KeyResult =
 
 export interface TypingState {
   buffer: string
-  /** True when the buffer is a full answer that is also a prefix of a longer one; Enter confirms. */
+  /** True when the buffer is a full answer and a longer answer continues with another word; Enter confirms. */
   awaitingEnter: boolean
 }
 
@@ -52,7 +52,9 @@ export function activeAnswer(buffer: string, answers: string[]): string {
 function settle(buffer: string, answers: string[]): { state: TypingState; result: KeyResult } {
   const exact = answers.includes(buffer)
   if (!exact) return { state: { buffer, awaitingEnter: false }, result: 'correct' }
-  const longer = answers.some((a) => a !== buffer && a.startsWith(buffer))
+  // Wait for Enter only if a longer answer continues with another word ("frontal" → "frontal bone").
+  // A longer form that only adds letters ("temporal bone" → "temporal bones") doesn't hold things up.
+  const longer = answers.some((a) => a.startsWith(buffer + ' '))
   if (longer) return { state: { buffer, awaitingEnter: true }, result: 'correct' }
   return { state: { buffer, awaitingEnter: false }, result: 'complete' }
 }

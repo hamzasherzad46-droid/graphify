@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useNav } from '../state/nav'
 import { useProgress } from '../state/progress'
 import { useSettings } from '../state/settings'
@@ -7,6 +8,7 @@ export function ProfileScreen() {
   const s = useSettings()
   const reset = useProgress((p) => p.reset)
   const setCredits = useNav((n) => n.setCredits)
+  const [confirming, setConfirming] = useState(false)
 
   return (
     <main className="screen">
@@ -45,13 +47,18 @@ export function ProfileScreen() {
 
       <p className="section-label">Data</p>
       <div className="list">
+        {/* In-page confirm: native confirm() is blocked in sandboxed hosts and looks out of place. */}
         <button
           className="card row danger-row"
           onClick={() => {
-            if (window.confirm('Reset all progress? This cannot be undone.')) reset()
+            if (!confirming) return setConfirming(true)
+            reset()
+            setConfirming(false)
           }}
+          onBlur={() => setConfirming(false)}
         >
-          <span>Reset progress</span>
+          <span>{confirming ? 'Tap again to erase all progress' : 'Reset progress'}</span>
+          {confirming && <span className="small muted">Can’t be undone</span>}
         </button>
         <button className="card row" onClick={() => setCredits(true)}>
           <span>About & credits</span>

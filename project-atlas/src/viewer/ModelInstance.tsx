@@ -1,14 +1,18 @@
 import { useGLTF } from '@react-three/drei'
 import { useFrame, useThree, type ThreeEvent } from '@react-three/fiber'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { use, useEffect, useMemo, useRef, useState } from 'react'
 import * as THREE from 'three'
 import type { ModuleAssets } from '../content/useModule'
+import { publicUrl } from '../lib/paths'
+import { EMBEDDED_MODELS, loadEmbeddedModel } from './embeddedModel'
 import { buildPlaceholder } from './placeholder'
 import { Highlighter, PALETTES } from './highlight'
 import { useResolvedTheme } from './useResolvedTheme'
 
 const DEG = Math.PI / 180
-const DRACO_PATH = '/draco/' // self-hosted so it works offline
+const DRACO_PATH = publicUrl('draco/') // self-hosted so it works offline
+// Our models don't use meshopt; skipping its decoder avoids instantiating WebAssembly for nothing.
+const MESHOPT = false
 
 interface InstanceProps {
   assets: ModuleAssets
@@ -26,9 +30,23 @@ export function ModelInstance(props: InstanceProps) {
 }
 
 function GlbModel(props: InstanceProps & { file: string }) {
-  const gltf = useGLTF(`/models/${props.file}`, DRACO_PATH)
+  return EMBEDDED_MODELS ? <EmbeddedGlb {...props} /> : <FetchedGlb {...props} />
+}
+
+function FetchedGlb(props: InstanceProps & { file: string }) {
+  const gltf = useGLTF(publicUrl(`models/${props.file}`), DRACO_PATH, MESHOPT)
+  return <GlbScene {...props} scene={gltf.scene} />
+}
+
+function EmbeddedGlb(props: InstanceProps & { file: string }) {
+  const gltf = use(loadEmbeddedModel(props.file))
+  return <GlbScene {...props} scene={gltf.scene} />
+}
+
+function GlbScene(props: InstanceProps & { scene: THREE.Object3D }) {
   // Clone per instance (the ghost carousel shows extra copies); geometry stays shared.
-  const root = useMemo(() => gltf.scene.clone(true), [gltf.scene])
+  const { scene } = props
+  const root = useMemo(() => scene.clone(true), [scene])
   const t = props.assets.info.model
   return (
     <group

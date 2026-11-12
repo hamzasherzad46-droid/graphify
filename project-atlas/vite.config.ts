@@ -58,7 +58,7 @@ export default defineConfig(({ mode }) => {
     build: {
       // three.js + R3F is ~1 MB (≈270 KB gzipped) and is lazy-loaded only when a 3D view opens.
       chunkSizeWarningLimit: 1100,
-      ...(artifact ? { outDir: 'dist-artifact', assetsInlineLimit: 120_000 } : {}),
+      ...(artifact ? { outDir: 'dist-artifact', assetsInlineLimit: 400_000 } : {}),
     },
     }
 })

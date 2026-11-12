@@ -1,0 +1,4 @@
+{
+  "include": ["(left |right )?kidney", "(left |right )?adrenal gland", "(left |right )?renal artery", "(left |right )?renal vein", "(left |right )?ureter", "urinary bladder", "urethra"],
+  "minCameraDistance": 0.3
+}

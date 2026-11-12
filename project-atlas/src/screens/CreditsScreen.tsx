@@ -38,16 +38,28 @@ export function CreditsScreen() {
             <div className="index-row static">
               <span className="index-main">
                 <span className="credit">
-                  Skeleton model: BodyParts3D 4.0, © The Database Center for Life Science, CC BY 4.0 (dataset licence updated 2025-02-27).
+                  3D models: BodyParts3D 4.0, © The Database Center for Life Science, CC BY 4.0 (dataset licence updated 2025-02-27).
                   Prepared for the web by the @dagno/anatomy-model package.
                 </span>
                 <a className="index-sub" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">
                   creativecommons.org/licenses/by/4.0
                 </a>
                 <span className="index-sub">
-                  Changes for Atlas: bones selected and renamed, the medial and lateral epicondyles separated from the humerus, an
-                  approximate coccyx added (BodyParts3D has no coccyx mesh), and the model compressed.
+                  Changes for Atlas: structures selected, grouped and renamed per body system; the medial and lateral epicondyles
+                  separated from the humerus; an approximate coccyx added (BodyParts3D has no coccyx mesh); meshes simplified and
+                  compressed.
                 </span>
+              </span>
+            </div>
+            <div className="index-row static">
+              <span className="index-main">
+                <span className="credit">
+                  Liver surface: BodyParts3D © The Database Center for Life Science (CC BY 4.0), modified by open-anatomy-3d
+                  (github.com/MervinR07/open-anatomy-3d), CC BY 4.0.
+                </span>
+                <a className="index-sub" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">
+                  creativecommons.org/licenses/by/4.0
+                </a>
               </span>
             </div>
           </div>

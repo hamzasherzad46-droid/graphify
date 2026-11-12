@@ -71,7 +71,29 @@
         }
       ]
     },
-    { "id": "urinary", "glyph": "kidney", "modules": [{ "id": "urinary", "status": "coming-soon" }] },
-    { "id": "reproductive", "glyph": "reproductive", "modules": [{ "id": "reproductive", "status": "coming-soon" }] }
+    {
+      "id": "urinary",
+      "glyph": "kidney",
+      "modules": [
+        {
+          "id": "urinary",
+          "status": "available",
+          "contentFile": "urinary",
+          "model": { "file": "urinary.glb", "context": "skeleton-context.glb" }
+        }
+      ]
+    },
+    {
+      "id": "reproductive",
+      "glyph": "reproductive",
+      "modules": [
+        {
+          "id": "reproductive",
+          "status": "available",
+          "contentFile": "reproductive",
+          "model": { "file": "reproductive.glb", "context": "skeleton-context.glb" }
+        }
+      ]
+    }
   ]
 }

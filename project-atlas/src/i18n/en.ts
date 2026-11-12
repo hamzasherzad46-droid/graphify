@@ -32,7 +32,7 @@ export const en = {
   'systemBlurb.nervous': 'The brain, its lobes, deep nuclei and pathways.',
   'systemBlurb.digestive': 'From the tongue to the rectum, with the glands that feed it.',
   'systemBlurb.urinary': 'Kidneys, ureters, bladder and urethra.',
-  'systemBlurb.reproductive': 'Reproductive organs and glands.',
+  'systemBlurb.reproductive': 'Male reproductive organs and glands (female anatomy in preparation).',
 
   'module.skeleton': 'Bones of the body',
   'module.muscles': 'Muscles',
@@ -66,6 +66,9 @@ export const en = {
   'region.upper-gi': 'Mouth to stomach',
   'region.intestines': 'Intestines',
   'region.accessory': 'Liver, pancreas and spleen',
+  'region.kidneys': 'Kidneys and their vessels',
+  'region.lower-urinary': 'Ureters, bladder and urethra',
+  'region.male': 'Male reproductive organs',
 
   'track.nursing': 'Nursing',
   'track.medicine': 'Medicine',

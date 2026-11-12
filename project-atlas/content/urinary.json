@@ -1,0 +1,131 @@
+{
+  "module": "urinary",
+  "regions": [
+    { "id": "kidneys", "name": "Kidneys and their vessels" },
+    { "id": "lower-urinary", "name": "Ureters, bladder and urethra" }
+  ],
+  "structures": [
+    {
+      "id": "kidney",
+      "name": "kidney",
+      "synonyms": ["kidneys"],
+      "latinName": "ren",
+      "definition": "Bean-shaped organ, one on each side of the spine at the back of the abdomen, from about T12 to L3.",
+      "function": "Filters the blood to make urine, balancing water, salts and acid, and makes renin and erythropoietin.",
+      "why": "Constant filtering keeps the blood’s chemistry stable whatever we eat and drink.",
+      "notes": {
+        "nursing": "Urine output below 0.5 mL/kg/hour is an early warning of acute kidney injury.",
+        "medicine": "The right kidney sits lower than the left because the liver is above it."
+      },
+      "region": "kidneys",
+      "modelFile": "urinary.glb",
+      "meshName": "kidney",
+      "camera": { "position": [-0.145, 1.149, -0.412], "target": [0.001, 1.107, -0.014] },
+      "difficulty": 1
+    },
+    {
+      "id": "adrenal-gland",
+      "name": "adrenal gland",
+      "synonyms": ["suprarenal gland", "adrenal"],
+      "latinName": "glandula suprarenalis",
+      "definition": "Small triangular gland sitting on top of each kidney.",
+      "function": "Releases cortisol, aldosterone and epinephrine.",
+      "why": "Its outer layer controls salt and stress hormones; its core releases the “fight or flight” hormone.",
+      "notes": {
+        "nursing": "Never stop long-term steroids suddenly: the suppressed glands can’t respond to stress (adrenal crisis)."
+      },
+      "region": "kidneys",
+      "modelFile": "urinary.glb",
+      "meshName": "adrenal_gland",
+      "camera": { "position": [-0.097, 1.184, -0.297], "target": [0.006, 1.155, -0.017] },
+      "difficulty": 2
+    },
+    {
+      "id": "renal-artery-u",
+      "name": "renal artery",
+      "synonyms": [],
+      "latinName": "arteria renalis",
+      "definition": "Artery leaving each side of the aorta at about L1 to enter the kidney.",
+      "function": "Carries about a fifth of the heart’s output to the kidney.",
+      "why": "Filtering needs a huge blood flow relative to the organ’s size.",
+      "notes": {
+        "medicine": "Narrowing causes hypertension that resists treatment; ACE inhibitors can then worsen kidney function."
+      },
+      "region": "kidneys",
+      "modelFile": "urinary.glb",
+      "meshName": "renal_artery",
+      "camera": { "position": [-0.105, 1.145, 0.289], "target": [-0.001, 1.116, 0.009] },
+      "difficulty": 2
+    },
+    {
+      "id": "renal-vein",
+      "name": "renal vein",
+      "synonyms": [],
+      "latinName": "vena renalis",
+      "definition": "Vein draining each kidney into the inferior vena cava.",
+      "function": "Returns filtered blood from the kidney to the heart.",
+      "why": "It carries the cleaned blood back into the circulation.",
+      "notes": {
+        "medicine": "The left one is longer and passes in front of the aorta; it also receives the left gonadal vein."
+      },
+      "region": "kidneys",
+      "modelFile": "urinary.glb",
+      "meshName": "renal_vein",
+      "camera": { "position": [-0.122, 1.142, 0.343], "target": [0.004, 1.106, 0] },
+      "difficulty": 2
+    },
+    {
+      "id": "ureter",
+      "name": "ureter",
+      "synonyms": ["ureters"],
+      "latinName": "ureter",
+      "definition": "Narrow muscular tube about 25 cm long carrying urine from each kidney down to the bladder.",
+      "function": "Moves urine to the bladder by waves of contraction.",
+      "why": "Entering the bladder at an angle stops urine flowing back up when the bladder squeezes.",
+      "notes": {
+        "medicine": "Stones lodge at its narrowest points: where it leaves the kidney, crosses the pelvic brim and enters the bladder.",
+        "nursing": "Loin-to-groin colicky pain with blood in the urine suggests a stone; give analgesia and strain the urine."
+      },
+      "region": "lower-urinary",
+      "modelFile": "urinary.glb",
+      "meshName": "ureter",
+      "camera": { "position": [-0.199, 1.078, 0.539], "target": [0.003, 1.02, -0.01] },
+      "difficulty": 1
+    },
+    {
+      "id": "urinary-bladder",
+      "name": "urinary bladder",
+      "synonyms": ["bladder"],
+      "latinName": "vesica urinaria",
+      "definition": "Hollow muscular bag in the pelvis behind the pubic bone.",
+      "function": "Stores urine and empties it under voluntary control.",
+      "why": "Storage lets us pass urine at convenient times instead of continuously.",
+      "notes": {
+        "nursing": "Use a bladder scan before catheterising for retention; record residual volume.",
+        "physio": "Pelvic floor training improves stress incontinence."
+      },
+      "region": "lower-urinary",
+      "modelFile": "urinary.glb",
+      "meshName": "urinary_bladder",
+      "camera": { "position": [-0.104, 0.917, 0.273], "target": [-0.001, 0.888, -0.008] },
+      "difficulty": 1
+    },
+    {
+      "id": "urethra",
+      "name": "urethra",
+      "synonyms": [],
+      "latinName": "urethra",
+      "definition": "Tube carrying urine from the bladder to the outside; in males it also carries semen.",
+      "function": "Drains urine from the bladder.",
+      "why": "Its sphincters keep it closed until we choose to empty the bladder.",
+      "notes": {
+        "nursing": "Use strict aseptic technique for catheterisation; the male urethra is about 20 cm long, the female about 4 cm."
+      },
+      "region": "lower-urinary",
+      "modelFile": "urinary.glb",
+      "meshName": "urethra",
+      "camera": { "position": [-0.104, 0.858, 0.312], "target": [-0.001, 0.829, 0.032] },
+      "difficulty": 2
+    }
+  ]
+}

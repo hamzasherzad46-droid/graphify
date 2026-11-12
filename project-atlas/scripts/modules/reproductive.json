@@ -1,0 +1,5 @@
+{
+  "include": ["(left |right )?testis", "(left |right )?epididymis", "(left |right )?deferent duct", "(left |right )?seminal vesicle", "prostate",
+    "corpus cavernosum of penis", "corpus spongiosum of penis", "glans penis", "urinary bladder", "urethra"],
+  "minCameraDistance": 0.25
+}

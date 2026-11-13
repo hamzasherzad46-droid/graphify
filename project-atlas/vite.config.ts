@@ -6,8 +6,10 @@ import { VitePWA } from 'vite-plugin-pwa'
 // relative URLs, no service worker, fonts inlined into the CSS.
 export default defineConfig(({ mode }) => {
   const artifact = mode === 'artifact'
+  // ATLAS_BASE serves the app from a sub-path, e.g. "/graphify/" on GitHub Pages.
+  const base = artifact ? './' : (process.env.ATLAS_BASE ?? '/')
   return {
-    base: artifact ? './' : '/',
+    base,
     plugins: [
       react(),
       // Sandboxed hosts only allow data: images, so drop the favicon links there.
@@ -27,8 +29,8 @@ export default defineConfig(({ mode }) => {
             background_color: '#0b0b0d',
             display: 'standalone',
             orientation: 'portrait',
-            start_url: '/',
-            scope: '/',
+            start_url: base,
+            scope: base,
             icons: [
               { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
               { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
@@ -39,11 +41,11 @@ export default defineConfig(({ mode }) => {
             // App shell, fonts, content chunks and the Draco decoder are precached,
             // so the app works offline after the first visit.
             globPatterns: ['**/*.{js,css,html,woff2,svg,png,wasm}'],
-            navigateFallback: '/index.html',
+            navigateFallback: `${base}index.html`,
             runtimeCaching: [
               {
                 // 3D models are large: cache each module's GLB the first time it is opened.
-                urlPattern: ({ url }) => url.pathname.startsWith('/models/'),
+                urlPattern: ({ url }) => url.pathname.startsWith(`${base}models/`),
                 handler: 'CacheFirst',
                 options: {
                   cacheName: 'atlas-models',

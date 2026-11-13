@@ -1,0 +1,272 @@
+{
+  "module": "airways",
+  "regions": [
+    { "id": "upper-airway", "name": "Upper airway and larynx" },
+    { "id": "lower-airway", "name": "Trachea and bronchi" },
+    { "id": "lungs", "name": "Lungs and breathing" }
+  ],
+  "structures": [
+    {
+      "id": "epiglottis",
+      "name": "epiglottis",
+      "synonyms": [],
+      "latinName": "epiglottis",
+      "definition": "Leaf-shaped flap of elastic cartilage behind the root of the tongue.",
+      "function": "Tips back over the entrance to the larynx during swallowing.",
+      "why": "It helps steer food and drink into the oesophagus instead of the airway.",
+      "notes": {
+        "nursing": "After a stroke, an impaired swallow lets food slip past it: screen swallowing before giving anything by mouth.",
+        "medicine": "Epiglottitis causes drooling, stridor and a “tripod” posture; don’t examine the throat, secure the airway."
+      },
+      "region": "upper-airway",
+      "modelFile": "airways.glb",
+      "meshName": "epiglottis",
+      "camera": { "position": [-0.299, 1.517, 0.042], "target": [-0.001, 1.502, 0.012] },
+      "difficulty": 2
+    },
+    {
+      "id": "thyroid-cartilage",
+      "name": "thyroid cartilage",
+      "synonyms": ["adams apple"],
+      "latinName": "cartilago thyroidea",
+      "definition": "The largest cartilage of the larynx, shaped like an open book facing forward.",
+      "function": "Shields the vocal cords and anchors them at the front.",
+      "why": "Its two plates meet at an angle that forms the laryngeal prominence.",
+      "notes": {
+        "medicine": "Its prominence (Adam’s apple) is larger after puberty in males because the vocal cords lengthen.",
+        "nursing": "A landmark for finding the cricothyroid membrane just below it in an airway emergency."
+      },
+      "region": "upper-airway",
+      "modelFile": "airways.glb",
+      "meshName": "thyroid_cartilage",
+      "camera": { "position": [-0.104, 1.519, 0.287], "target": [-0.001, 1.489, 0.007] },
+      "difficulty": 1
+    },
+    {
+      "id": "cricoid-cartilage",
+      "name": "cricoid cartilage",
+      "synonyms": [],
+      "latinName": "cartilago cricoidea",
+      "definition": "Signet-ring-shaped cartilage at the bottom of the larynx, the only complete ring in the airway.",
+      "function": "Supports the larynx and holds the airway open where it joins the trachea.",
+      "why": "A complete ring keeps the airway from collapsing at its narrowest fixed point.",
+      "notes": {
+        "medicine": "Marks the C6 level; the cricothyroid membrane above it is the site of an emergency surgical airway."
+      },
+      "region": "upper-airway",
+      "modelFile": "airways.glb",
+      "meshName": "cricoid_cartilage",
+      "camera": { "position": [-0.104, 1.504, 0.282], "target": [-0.001, 1.474, 0.002] },
+      "difficulty": 2
+    },
+    {
+      "id": "arytenoid-cartilages",
+      "name": "arytenoid cartilages",
+      "synonyms": ["arytenoid cartilage", "arytenoids"],
+      "latinName": "cartilagines arytenoideae",
+      "definition": "Pair of small pyramid-shaped cartilages sitting on the back of the ring-shaped cartilage below.",
+      "function": "Pivot and slide to open and close the vocal cords, which attach to them.",
+      "why": "Moving these small cartilages lets tiny muscles control voice pitch and protect the airway.",
+      "notes": {
+        "medicine": "Can be dislocated by intubation, causing hoarseness afterwards."
+      },
+      "region": "upper-airway",
+      "modelFile": "airways.glb",
+      "meshName": "arytenoid_cartilage",
+      "camera": { "position": [-0.104, 1.515, -0.281], "target": [-0.001, 1.486, -0.001] },
+      "difficulty": 3
+    },
+    {
+      "id": "septal-cartilage",
+      "name": "septal cartilage",
+      "synonyms": ["nasal septal cartilage", "septal nasal cartilage"],
+      "latinName": "cartilago septi nasi",
+      "definition": "Plate of cartilage forming the front part of the wall between the two nasal cavities.",
+      "function": "Divides the nose into two airways and supports the tip of the nose.",
+      "why": "Cartilage, unlike bone, lets the nose bend under impact.",
+      "notes": {
+        "sports": "A blow to the nose can cause a septal haematoma, which must be drained to protect the cartilage."
+      },
+      "region": "upper-airway",
+      "modelFile": "airways.glb",
+      "meshName": "septal_nasal_cartilage",
+      "camera": { "position": [-0.104, 1.604, 0.367], "target": [-0.001, 1.574, 0.087] },
+      "difficulty": 2
+    },
+    {
+      "id": "trachea",
+      "name": "trachea",
+      "synonyms": ["windpipe"],
+      "latinName": "trachea",
+      "definition": "Tube about 10–12 cm long, held open by C-shaped rings, running from the larynx into the chest.",
+      "function": "Conducts air to and from the lungs and sweeps mucus upward with its cilia.",
+      "why": "C-shaped rings keep it open but let the oesophagus behind it expand when swallowing.",
+      "notes": {
+        "nursing": "Tracheostomy care keeps the tube clear; humidify inspired air because the nose is bypassed.",
+        "medicine": "Divides at the carina at about T4–T5, level with the sternal angle."
+      },
+      "region": "lower-airway",
+      "modelFile": "airways.glb",
+      "meshName": "trachea",
+      "camera": { "position": [-0.103, 1.448, 0.274], "target": [0, 1.418, -0.006] },
+      "difficulty": 1
+    },
+    {
+      "id": "right-main-bronchus",
+      "name": "right main bronchus",
+      "synonyms": [],
+      "latinName": "bronchus principalis dexter",
+      "definition": "Short, wide airway branching from the trachea to the right lung.",
+      "function": "Carries air into the right lung, where it divides into three lobar bronchi.",
+      "why": "It runs more vertically than its partner because the heart sits to the left.",
+      "notes": {
+        "nursing": "Inhaled objects and aspirated fluid usually go into the right lung; an endotracheal tube pushed too far enters it.",
+        "medicine": "Wider, shorter and more vertical than the left: the classic site of aspirated foreign bodies."
+      },
+      "region": "lower-airway",
+      "modelFile": "airways.glb",
+      "meshName": "main_bronchus_proper.r",
+      "camera": { "position": [-0.129, 1.359, 0.26], "target": [-0.025, 1.329, -0.02] },
+      "difficulty": 1
+    },
+    {
+      "id": "left-main-bronchus",
+      "name": "left main bronchus",
+      "synonyms": [],
+      "latinName": "bronchus principalis sinister",
+      "definition": "Longer, narrower airway branching from the trachea to the left lung, under the aortic arch.",
+      "function": "Carries air into the left lung, where it divides into two lobar bronchi.",
+      "why": "It passes under the aortic arch and in front of the oesophagus to reach the smaller left lung.",
+      "notes": {
+        "medicine": "Its course under the arch explains why the aorta and left bronchus are close on chest imaging."
+      },
+      "region": "lower-airway",
+      "modelFile": "airways.glb",
+      "meshName": "main_bronchus.l",
+      "camera": { "position": [-0.067, 1.366, 0.257], "target": [0.036, 1.337, -0.023] },
+      "difficulty": 2
+    },
+    {
+      "id": "bronchial-tree",
+      "name": "bronchial tree",
+      "synonyms": ["airway tree"],
+      "latinName": "arbor bronchialis",
+      "definition": "Branching airways that divide about 23 times from the main bronchi down to the smallest bronchioles.",
+      "function": "Distributes air to every part of the lungs.",
+      "why": "Repeated branching spreads air across an exchange surface the size of a tennis court.",
+      "notes": {
+        "nursing": "Chest physiotherapy positions drain particular segments of it.",
+        "physio": "Postural drainage uses the anatomy of its segments to clear secretions."
+      },
+      "region": "lower-airway",
+      "modelFile": "airways.glb",
+      "meshName": ["anterior_basal_segmental_bronchial_tree", "anterior_segmental_bronchial_tree", "apical_segmental_bronchial_tree", "lateral_basal_segmental_bronchial_tree", "medial_basal_segmental_bronchial_tree", "posterior_basal_segmental_bronchial_tree", "posterior_segmental_bronchial_tree", "superior_segmental_bronchial_tree", "lateral_segmental_bronchial_tree", "medial_segmental_bronchial_tree", "superior_lingular_bronchial_tree", "inferior_lingular_bronchial_tree"],
+      "camera": { "position": [-0.238, 1.386, 0.653], "target": [0.003, 1.317, -0.001] },
+      "difficulty": 1
+    },
+    {
+      "id": "right-middle-lobe",
+      "name": "right middle lobe",
+      "synonyms": ["middle lobe"],
+      "latinName": "lobus medius pulmonis dextri",
+      "definition": "The lobe found only in the right lung, between the upper and lower lobes, shown here by its airways.",
+      "function": "Ventilates the front of the lower right chest, beside the heart.",
+      "why": "The right lung has three lobes because the heart takes up space on the left.",
+      "notes": {
+        "medicine": "Its collapse or pneumonia blurs the right heart border on a chest X-ray."
+      },
+      "region": "lower-airway",
+      "modelFile": "airways.glb",
+      "meshName": ["lateral_segmental_bronchial_tree", "medial_segmental_bronchial_tree"],
+      "camera": { "position": [-0.232, 1.325, 0.276], "target": [-0.07, 1.295, 0.026] },
+      "difficulty": 3
+    },
+    {
+      "id": "lingula",
+      "name": "lingula",
+      "synonyms": [],
+      "latinName": "lingula pulmonis sinistri",
+      "definition": "Tongue-shaped part of the left upper lobe beside the heart, shown here by its airways.",
+      "function": "Ventilates the part of the left lung next to the heart.",
+      "why": "It is the left lung’s equivalent of the right middle lobe.",
+      "notes": {
+        "medicine": "Consolidation here blurs the left heart border on a chest X-ray."
+      },
+      "region": "lower-airway",
+      "modelFile": "airways.glb",
+      "meshName": ["superior_lingular_bronchial_tree", "inferior_lingular_bronchial_tree"],
+      "camera": { "position": [-0.215, 1.312, 0.056], "target": [0.083, 1.297, 0.026] },
+      "difficulty": 3
+    },
+    {
+      "id": "right-lung",
+      "name": "right lung",
+      "synonyms": [],
+      "latinName": "pulmo dexter",
+      "definition": "Larger of the two lungs, with three lobes, in the right side of the chest (shown here by its ten segmental airway trees).",
+      "function": "Takes in oxygen and gives off carbon dioxide across its alveoli.",
+      "why": "It is larger than its partner because the heart leans to the left.",
+      "notes": {
+        "nursing": "Listen at the front, sides and back; the lower lobe is heard mainly from behind.",
+        "physio": "Deep breathing and early mobilisation after surgery prevent its bases from collapsing."
+      },
+      "region": "lungs",
+      "modelFile": "airways.glb",
+      "meshName": ["anterior_basal_segmental_bronchial_tree.r", "anterior_segmental_bronchial_tree.r", "apical_segmental_bronchial_tree.r", "lateral_basal_segmental_bronchial_tree.r", "medial_basal_segmental_bronchial_tree.r", "posterior_basal_segmental_bronchial_tree.r", "posterior_segmental_bronchial_tree.r", "superior_segmental_bronchial_tree.r", "lateral_segmental_bronchial_tree", "medial_segmental_bronchial_tree"],
+      "camera": { "position": [-0.248, 1.373, 0.501], "target": [-0.063, 1.32, -0.001] },
+      "difficulty": 1
+    },
+    {
+      "id": "left-lung",
+      "name": "left lung",
+      "synonyms": [],
+      "latinName": "pulmo sinister",
+      "definition": "Smaller of the two lungs, with two lobes and a notch for the heart (shown here by its segmental airway trees).",
+      "function": "Takes in oxygen and gives off carbon dioxide across its alveoli.",
+      "why": "Its cardiac notch makes room for the heart.",
+      "notes": {
+        "nursing": "Compare both sides when listening; reduced breath sounds on one side can mean collapse, fluid or pneumothorax."
+      },
+      "region": "lungs",
+      "modelFile": "airways.glb",
+      "meshName": ["anterior_basal_segmental_bronchial_tree.l", "anterior_segmental_bronchial_tree.l", "apical_segmental_bronchial_tree.l", "lateral_basal_segmental_bronchial_tree.l", "medial_basal_segmental_bronchial_tree.l", "posterior_basal_segmental_bronchial_tree.l", "posterior_segmental_bronchial_tree.l", "superior_segmental_bronchial_tree.l", "superior_lingular_bronchial_tree", "inferior_lingular_bronchial_tree"],
+      "camera": { "position": [-0.121, 1.373, 0.525], "target": [0.073, 1.317, -0.001] },
+      "difficulty": 1
+    },
+    {
+      "id": "diaphragm",
+      "name": "diaphragm",
+      "synonyms": ["thoracic diaphragm"],
+      "latinName": "diaphragma",
+      "definition": "Dome-shaped sheet of muscle separating the chest from the abdomen.",
+      "function": "Contracts and flattens to draw air into the lungs; does most of the work of quiet breathing.",
+      "why": "Enlarging the chest from below is the most efficient way to inflate the lungs.",
+      "notes": {
+        "nursing": "Sitting a breathless patient upright lets it move more freely.",
+        "medicine": "Supplied by the phrenic nerve (C3–C5); irritation refers pain to the shoulder tip."
+      },
+      "region": "lungs",
+      "modelFile": "airways.glb",
+      "meshName": "diaphragm",
+      "camera": { "position": [-0.242, 1.236, 0.669], "target": [-0.001, 1.167, 0.016] },
+      "difficulty": 1
+    },
+    {
+      "id": "external-intercostals",
+      "name": "external intercostals",
+      "synonyms": ["external intercostal muscles", "external intercostal"],
+      "latinName": "musculi intercostales externi",
+      "definition": "Muscles filling the spaces between the ribs, their fibres running down and forward.",
+      "function": "Lift the ribs to widen the chest when breathing in.",
+      "why": "They stiffen the chest wall so it doesn’t get sucked inward on each breath.",
+      "notes": {
+        "physio": "Thoracic expansion exercises work them to improve breathing after chest surgery."
+      },
+      "region": "lungs",
+      "modelFile": "airways.glb",
+      "meshName": "external_intercostal_muscle",
+      "camera": { "position": [-0.501, 1.358, 0.772], "target": [0, 1.267, -0.003] },
+      "difficulty": 2
+    }
+  ]
+}

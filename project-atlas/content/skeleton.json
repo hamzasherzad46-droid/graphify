@@ -1,0 +1,1197 @@
+{
+  "module": "skeleton",
+  "regions": [
+    { "id": "skull", "name": "Skull" },
+    { "id": "axial", "name": "Axial skeleton" },
+    { "id": "upper-limb", "name": "Upper limb" },
+    { "id": "lower-limb", "name": "Lower limb" },
+    { "id": "teeth", "name": "Teeth" }
+  ],
+  "structures": [
+    {
+      "id": "frontal",
+      "name": "frontal bone",
+      "synonyms": ["frontal"],
+      "latinName": "os frontale",
+      "definition": "Forms the forehead and the roofs of the orbits.",
+      "function": "Protects the front of the brain, forms the forehead and the roofs of the orbits, and anchors scalp muscles.",
+      "why": "A thick, curved front plate takes forward impacts so the brain's planning centres stay safe; its sinuses lighten the skull.",
+      "notes": {
+        "nursing": "The anterior fontanelle lies where this bone meets the parietal bones; in infants a bulging fontanelle can signal raised intracranial pressure and a sunken one dehydration.",
+        "medicine": "Contains the frontal sinuses; the supraorbital notch or foramen transmits the supraorbital nerve and vessels.",
+        "sports": "After a blow to the forehead, assess for concussion even when the bone itself is intact."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "frontal",
+      "camera": { "position": [0.084, 1.688, 0.375], "target": [-0.001, 1.654, 0.042] },
+      "difficulty": 1
+    },
+    {
+      "id": "parietal",
+      "name": "parietal bone",
+      "synonyms": ["parietal", "parietal bones"],
+      "latinName": "os parietale",
+      "definition": "Paired bones forming the roof and upper sides of the cranium.",
+      "function": "Forms most of the roof and upper sides of the cranium, covering the brain's touch and spatial areas.",
+      "why": "Two plates meeting at sutures let the skull mould during birth and grow with the brain through childhood.",
+      "notes": {
+        "nursing": "Both fontanelles border these bones; palpate fontanelles with the infant calm and held upright.",
+        "medicine": "Joined to each other at the sagittal suture, to the frontal bone at the coronal suture and to the occipital bone at the lambdoid suture."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "parietal",
+      "camera": { "position": [0.369, 1.835, 0.169], "target": [-0.001, 1.655, -0.042] },
+      "difficulty": 1
+    },
+    {
+      "id": "temporal",
+      "name": "temporal bone",
+      "synonyms": ["temporal", "temporal bones"],
+      "latinName": "os temporale",
+      "definition": "Paired bones at the sides and base of the skull that house the ear.",
+      "function": "Houses the organs of hearing and balance and forms the socket of the jaw joint.",
+      "why": "Its dense petrous part shields the delicate inner ear, and its mandibular fossa gives the jaw a joint to work against.",
+      "notes": {
+        "nursing": "Tympanic thermometers read from the ear canal in this bone; pull the pinna up and back in adults, down and back in children under about 3.",
+        "medicine": "The petrous part houses the middle and inner ear; the pterion, where four bones meet, overlies the middle meningeal artery (extradural haematoma risk).",
+        "dentistry": "The temporomandibular joint sits in its mandibular fossa; TMJ disorders present with clicking, pain and limited opening."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "temporal",
+      "camera": { "position": [-0.358, 1.606, 0.042], "target": [-0.043, 1.592, -0.016] },
+      "difficulty": 1
+    },
+    {
+      "id": "occipital",
+      "name": "occipital bone",
+      "synonyms": ["occipital", "occiput"],
+      "latinName": "os occipitale",
+      "definition": "Forms the back and base of the skull around the opening for the spinal cord.",
+      "function": "Forms the back and base of the skull and joins the skull to the spine.",
+      "why": "The foramen magnum lets the brainstem pass to the spinal cord, and its condyles carry the head onto the atlas while allowing nodding.",
+      "notes": {
+        "nursing": "The back of the head is a high-risk pressure injury site in infants and immobile patients; the posterior fontanelle (with the parietal bones) closes by about 2 months.",
+        "medicine": "Contains the foramen magnum; the occipital condyles articulate with the atlas (C1) at the atlanto-occipital joint.",
+        "physio": "The suboccipital muscles attach just below it; tension here is a common source of cervicogenic headache."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "occipital",
+      "camera": { "position": [0.121, 1.658, -0.421], "target": [-0.001, 1.609, -0.059] },
+      "difficulty": 1
+    },
+    {
+      "id": "sphenoid",
+      "name": "sphenoid bone",
+      "synonyms": ["sphenoid"],
+      "latinName": "os sphenoidale",
+      "definition": "Butterfly-shaped bone in the middle of the skull base, behind the eyes.",
+      "function": "Links the bones of the cranium and face and cradles the pituitary gland.",
+      "why": "As the keystone of the skull base it ties the other bones together, and its openings route the nerves and vessels of the eyes and face.",
+      "notes": {
+        "nursing": "After transsphenoidal pituitary surgery, patients should avoid blowing the nose and using straws; report clear nasal drainage, which may be cerebrospinal fluid.",
+        "medicine": "The sella turcica holds the pituitary gland; the optic canal and the foramina rotundum, ovale and spinosum pass through it.",
+        "dentistry": "Its pterygoid plates anchor the medial and lateral pterygoid muscles, key movers of the mandible."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "sphenoid",
+      "camera": { "position": [-0.297, 1.615, 0.136], "target": [-0.001, 1.592, 0.018] },
+      "difficulty": 2
+    },
+    {
+      "id": "ethmoid",
+      "name": "ethmoid bone",
+      "synonyms": ["ethmoid"],
+      "latinName": "os ethmoidale",
+      "definition": "Light, spongy bone between the orbits that forms part of the nasal cavity roof.",
+      "function": "Separates the nasal cavity from the brain and forms parts of the orbits and the nasal septum.",
+      "why": "The sieve-like cribriform plate lets smell fibres reach the brain, while its thin air cells keep the skull light.",
+      "notes": {
+        "nursing": "Its cribriform plate is thin; with a suspected base-of-skull fracture, avoid nasal tubes and nasopharyngeal airways and use the oral route.",
+        "medicine": "Olfactory nerve fibres pass through the cribriform plate; the perpendicular plate forms the upper nasal septum and the crista galli anchors the falx cerebri."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "ethmoid",
+      "camera": { "position": [0.112, 1.608, 0.343], "target": [-0.001, 1.593, 0.044] },
+      "difficulty": 3
+    },
+    {
+      "id": "nasal",
+      "name": "nasal bone",
+      "synonyms": ["nasal", "nasal bones"],
+      "latinName": "os nasale",
+      "definition": "Small paired bones forming the bridge of the nose.",
+      "function": "Form the bony bridge of the nose.",
+      "why": "They shape the nose and guard the upper airway; the rest of the nose is cartilage, so it can flex instead of breaking.",
+      "notes": {
+        "nursing": "When passing a nasogastric tube, direct it straight back along the floor of the nose toward the ear, not upward toward the bridge.",
+        "medicine": "The most commonly fractured facial bones; they articulate with the frontal bone above and the frontal processes of the maxillae laterally.",
+        "sports": "Nasal fractures are common in contact sports; check for a septal haematoma, which needs urgent drainage."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "nasal",
+      "camera": { "position": [0.149, 1.608, 0.363], "target": [-0.001, 1.595, 0.08] },
+      "difficulty": 1
+    },
+    {
+      "id": "zygomatic",
+      "name": "zygomatic bone",
+      "synonyms": ["zygomatic", "cheekbone", "cheek bone", "malar bone"],
+      "latinName": "os zygomaticum",
+      "definition": "Paired bones forming the prominence of the cheek and part of the orbit wall.",
+      "function": "Forms the cheek prominence, part of the orbit wall and the front of the cheek arch.",
+      "why": "It acts as a buttress that spreads chewing forces from the upper jaw to the skull, and it anchors the masseter.",
+      "notes": {
+        "nursing": "After facial trauma, a flattened cheek, periorbital swelling or numbness of the cheek can indicate a fracture here.",
+        "medicine": "Its temporal process joins the zygomatic process of the temporal bone to form the zygomatic arch; fractures can injure the infraorbital nerve.",
+        "dentistry": "The masseter arises from the zygomatic arch; palpate it when assessing bruxism and TMJ pain.",
+        "sports": "Cheekbone fractures from ball or elbow impacts can trap eye muscles; refer urgently if there is double vision."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "zygomatic",
+      "camera": { "position": [-0.271, 1.607, 0.271], "target": [-0.049, 1.587, 0.042] },
+      "difficulty": 2
+    },
+    {
+      "id": "maxilla",
+      "name": "maxilla",
+      "synonyms": ["maxillae", "upper jaw", "upper jawbone"],
+      "latinName": "maxilla",
+      "definition": "Paired bone that holds the upper teeth and forms the front of the hard palate and the orbit floor.",
+      "function": "Holds the upper teeth and forms the front of the hard palate, the floor of the nasal cavity and the floor of the orbit.",
+      "why": "Its large hollow sinus keeps the face light, while the alveolar process anchors the upper teeth for biting.",
+      "notes": {
+        "nursing": "Upper teeth and dentures sit on its alveolar process; check the upper gums during oral care.",
+        "medicine": "Contains the maxillary sinus, the largest paranasal sinus; the infraorbital foramen lies just below the orbit.",
+        "dentistry": "Upper molar roots lie close to the maxillary sinus floor; an extraction can open an oro-antral communication."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "maxilla",
+      "camera": { "position": [0.093, 1.577, 0.361], "target": [-0.001, 1.577, 0.055] },
+      "difficulty": 1
+    },
+    {
+      "id": "mandible",
+      "name": "mandible",
+      "synonyms": ["jaw", "jawbone", "lower jaw", "lower jawbone"],
+      "latinName": "mandibula",
+      "definition": "The only movable bone of the skull; it holds the lower teeth.",
+      "function": "Holds the lower teeth and moves at the temporomandibular joints for chewing and speech.",
+      "why": "One strong U-shaped bone gives the chewing muscles a mobile lever.",
+      "notes": {
+        "nursing": "A jaw thrust (lifting the angles of this bone forward) opens the airway without tilting the head in suspected spinal injury.",
+        "medicine": "Articulates at the temporomandibular joint; the inferior alveolar nerve enters at the mandibular foramen and exits as the mental nerve.",
+        "dentistry": "An inferior alveolar nerve block targets the mandibular foramen on the inner ramus to numb the lower teeth."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "mandible",
+      "camera": { "position": [-0.205, 1.535, 0.278], "target": [-0.001, 1.542, 0.032] },
+      "difficulty": 1
+    },
+    {
+      "id": "cervical-vertebrae",
+      "name": "cervical vertebrae",
+      "synonyms": ["cervical spine", "cervical vertebra", "neck vertebrae"],
+      "latinName": "vertebrae cervicales",
+      "definition": "The seven bones of the neck, from the base of the skull to the shoulders.",
+      "function": "Support the head, allow its wide range of movement and protect the cervical spinal cord.",
+      "why": "Small, light vertebrae trade strength for mobility; about half of head rotation happens at the joint between C1 and C2.",
+      "notes": {
+        "nursing": "With suspected injury here, maintain manual in-line stabilisation and log-roll the patient; use a collar according to local protocol.",
+        "medicine": "C1 (atlas) has no body; C2 (axis) has the dens; transverse foramina carry the vertebral arteries; C7 is the vertebra prominens.",
+        "physio": "In neck pain, assess range of motion plus dermatomes and myotomes; neurological red flags need urgent referral.",
+        "sports": "Spear tackles and shallow dives load the neck in flexion; any neck injury with arm tingling or weakness means immobilise and refer."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": "cervical",
+      "camera": { "position": [-0.275, 1.513, -0.208], "target": [-0.001, 1.501, -0.044] },
+      "difficulty": 1
+    },
+    {
+      "id": "thoracic-vertebrae",
+      "name": "thoracic vertebrae",
+      "synonyms": ["thoracic spine", "thoracic vertebra", "dorsal vertebrae"],
+      "latinName": "vertebrae thoracicae",
+      "definition": "The twelve spinal bones of the upper back that articulate with the ribs.",
+      "function": "Support the upper trunk and form joints with the ribs.",
+      "why": "The rib attachments make this part of the spine stiff, protecting the heart and lungs at the cost of movement.",
+      "notes": {
+        "nursing": "Osteoporotic compression fractures here cause height loss and kyphosis; measure height routinely in older adults.",
+        "medicine": "Have costal facets for the ribs, heart-shaped bodies and long spinous processes that slope downward.",
+        "physio": "Thoracic mobility affects overhead arm movement and breathing; postural kyphosis is a common treatment target."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": "thoracic",
+      "camera": { "position": [0.248, 1.316, -0.671], "target": [-0.001, 1.292, -0.049] },
+      "difficulty": 1
+    },
+    {
+      "id": "lumbar-vertebrae",
+      "name": "lumbar vertebrae",
+      "synonyms": ["lumbar spine", "lumbar vertebra"],
+      "latinName": "vertebrae lumbales",
+      "definition": "The five largest movable vertebrae, in the lower back.",
+      "function": "Carry the weight of the upper body and allow bending forwards and backwards.",
+      "why": "They are the largest vertebrae because they carry the most load; the shape of their joints favours flexion and extension.",
+      "notes": {
+        "nursing": "Lumbar puncture is done at L3–L4 or L4–L5 with the patient curled up; a line between the top of the iliac crests crosses about L4.",
+        "medicine": "The spinal cord ends at about L1–L2 (conus medullaris), so needles below this level enter the cauda equina space.",
+        "physio": "The commonest site of mechanical back pain; always screen for red flags such as cauda equina symptoms.",
+        "sports": "Repeated extension (gymnastics, fast bowling) can cause a pars interarticularis stress fracture (spondylolysis)."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": "lumbar",
+      "camera": { "position": [-0.243, 1.066, -0.373], "target": [-0.001, 1.066, -0.033] },
+      "difficulty": 1
+    },
+    {
+      "id": "sacrum",
+      "name": "sacrum",
+      "synonyms": ["sacral bone"],
+      "latinName": "os sacrum",
+      "definition": "Triangular bone of five fused vertebrae wedged between the hip bones.",
+      "function": "Joins the spine to the pelvis at the sacroiliac joints and passes body weight to the legs.",
+      "why": "Five vertebrae fused into one wedge lock the back of the pelvic ring.",
+      "notes": {
+        "nursing": "The skin over this bone is the most common site for pressure injuries; reposition immobile patients regularly and inspect it.",
+        "medicine": "The sacral promontory marks the pelvic inlet; the sacral hiatus is the entry point for caudal epidural anaesthesia.",
+        "physio": "Sacroiliac joint pain is a cause of low back and buttock pain and is common in pregnancy."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": "sacrum",
+      "camera": { "position": [0.135, 0.987, -0.429], "target": [-0.001, 0.933, -0.063] },
+      "difficulty": 1
+    },
+    {
+      "id": "coccyx",
+      "name": "coccyx",
+      "synonyms": ["tailbone", "tail bone"],
+      "latinName": "os coccygis",
+      "definition": "Small triangular bone of fused rudimentary vertebrae at the base of the spine.",
+      "function": "Anchors pelvic floor muscles, tendons and ligaments.",
+      "why": "The remnant of a tail, it now supports the pelvic floor and takes weight when sitting leaning back.",
+      "notes": {
+        "nursing": "Often bruised after falls onto the buttocks; pressure-relieving cushions help when sitting is painful.",
+        "medicine": "Usually three to five fused segments; it gives attachment to the gluteus maximus and the anococcygeal ligament.",
+        "physio": "Pelvic floor rehabilitation works the levator ani muscles that attach to it."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": "coccyx",
+      "camera": { "position": [-0.185, 0.877, -0.345], "target": [-0.001, 0.847, -0.084] },
+      "difficulty": 1
+    },
+    {
+      "id": "ribs",
+      "name": "ribs",
+      "synonyms": ["rib", "costae"],
+      "latinName": "costae",
+      "definition": "Twelve pairs of curved bones that form the cage around the thorax.",
+      "function": "Protect the heart and lungs and move with every breath.",
+      "why": "Curved, springy bones with cartilage ends let the chest expand for breathing while still shielding the organs.",
+      "notes": {
+        "nursing": "Fractures here cause painful, shallow breathing and a risk of pneumonia; encourage deep breathing with good pain relief.",
+        "medicine": "Pairs 1–7 are true, 8–10 false and 11–12 floating; the neurovascular bundle runs in the costal groove, so chest drains pass just above a rib.",
+        "physio": "Chest expansion is assessed in respiratory physiotherapy; rib fractures make coughing painful and weak.",
+        "sports": "Rib injuries are common in contact sports; lower rib fractures can hide damage to the spleen or liver."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": "rib",
+      "camera": { "position": [0.364, 1.371, 0.864], "target": [-0.001, 1.267, 0.001] },
+      "difficulty": 1
+    },
+    {
+      "id": "sternum",
+      "name": "sternum",
+      "synonyms": ["breastbone", "breast bone"],
+      "latinName": "sternum",
+      "definition": "Flat bone in the midline of the chest to which the upper ribs attach.",
+      "function": "Anchors the clavicles and the upper rib cartilages and shields the heart.",
+      "why": "A central plate closes the front of the rib cage and gives the shoulder girdle a solid base.",
+      "notes": {
+        "nursing": "Adult CPR compressions go on the lower half of this bone, 5–6 cm deep at 100–120 per minute.",
+        "medicine": "Made of the manubrium, body and xiphoid process; the sternal angle marks the 2nd costal cartilage and the T4–T5 level."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": ["manubrium", "sternal_body", "xiphoid_process"],
+      "camera": { "position": [0.137, 1.343, 0.407], "target": [0, 1.323, 0.072] },
+      "difficulty": 1
+    },
+    {
+      "id": "clavicle",
+      "name": "clavicle",
+      "synonyms": ["collarbone", "collar bone"],
+      "latinName": "clavicula",
+      "definition": "S-shaped bone running horizontally between the sternum and the shoulder.",
+      "function": "Holds the shoulder out to the side and passes forces from the arm to the trunk.",
+      "why": "It works as a strut that keeps the arm clear of the body so it can move freely.",
+      "notes": {
+        "nursing": "Subclavian central lines are inserted just below this bone; watch for signs of pneumothorax afterwards.",
+        "medicine": "The most commonly fractured bone, usually in the middle third; it is the first bone to start ossifying.",
+        "physio": "Most clavicle fractures are treated in a sling; rehabilitation restores shoulder range once healing allows.",
+        "sports": "Often fractured in falls onto the shoulder, as in cycling and rugby."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "clavicle",
+      "camera": { "position": [-0.144, 1.46, 0.316], "target": [-0.078, 1.41, 0.001] },
+      "difficulty": 1
+    },
+    {
+      "id": "scapula",
+      "name": "scapula",
+      "synonyms": ["shoulder blade", "shoulderblade"],
+      "latinName": "scapula",
+      "definition": "Flat triangular bone on the upper back that forms the back of the shoulder.",
+      "function": "Provides the socket of the shoulder joint and anchors the rotator cuff and other shoulder muscles.",
+      "why": "Gliding over the ribs, it repositions the socket so the arm can reach overhead.",
+      "notes": {
+        "nursing": "For a deltoid injection, find the acromion process of this bone and inject 2.5–5 cm (2–3 fingerbreadths) below it.",
+        "medicine": "Key landmarks are the spine, acromion, coracoid process and glenoid cavity; the inferior angle lies at about T7.",
+        "physio": "Abnormal scapular movement (dyskinesis) is assessed in shoulder pain and treated with stabilisation exercises.",
+        "sports": "Throwers and swimmers rely on scapular control to avoid shoulder impingement."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "scapula",
+      "camera": { "position": [-0.296, 1.419, -0.435], "target": [-0.112, 1.345, -0.051] },
+      "difficulty": 1
+    },
+    {
+      "id": "humerus",
+      "name": "humerus",
+      "synonyms": ["upper arm bone"],
+      "latinName": "humerus",
+      "definition": "The long bone of the upper arm, from shoulder to elbow.",
+      "function": "Links the shoulder to the elbow and anchors the major muscles of the arm.",
+      "why": "A long lever gives reach and power, and its rounded head allows the shoulder's wide range of motion.",
+      "notes": {
+        "nursing": "The greater tubercle at its upper end is an intraosseous (IO) access site in emergencies.",
+        "medicine": "Surgical neck fractures risk the axillary nerve; mid-shaft fractures risk the radial nerve in the radial groove.",
+        "physio": "After a proximal humerus fracture, early guided movement prevents a stiff shoulder."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": ["humerus", "medial_epicondyle", "lateral_epicondyle"],
+      "camera": { "position": [-0.561, 1.279, 0.479], "target": [-0.19, 1.261, -0.024] },
+      "difficulty": 1
+    },
+    {
+      "id": "radius",
+      "name": "radius",
+      "synonyms": ["radial bone"],
+      "latinName": "radius",
+      "definition": "Lateral bone of the forearm, on the thumb side.",
+      "function": "Rotates around the ulna to turn the palm up and down, and carries most of the wrist joint.",
+      "why": "Pronation and supination let the hand face any direction without moving the elbow.",
+      "notes": {
+        "nursing": "The radial pulse is felt at the wrist on the thumb side, over the lower end of this bone.",
+        "medicine": "Distal fractures after a fall on an outstretched hand (Colles fracture) are common; its head articulates with the capitulum at the elbow.",
+        "physio": "After a distal radius fracture, rehabilitation restores wrist extension, grip strength and forearm rotation."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "radius",
+      "camera": { "position": [-0.501, 1.024, 0.39], "target": [-0.25, 0.998, -0.006] },
+      "difficulty": 1
+    },
+    {
+      "id": "ulna",
+      "name": "ulna",
+      "synonyms": ["ulnar bone"],
+      "latinName": "ulna",
+      "definition": "Medial bone of the forearm, on the little-finger side, forming the point of the elbow.",
+      "function": "Forms the main hinge of the elbow and steadies the forearm.",
+      "why": "Its hooked upper end grips the humerus for a stable elbow while the radius turns around it.",
+      "notes": {
+        "nursing": "After forearm fractures or casting, check finger colour, warmth, capillary refill, sensation and movement (neurovascular observations).",
+        "medicine": "The olecranon forms the elbow tip and its trochlear notch grips the trochlea of the humerus."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "ulna",
+      "camera": { "position": [-0.424, 1.032, 0.447], "target": [-0.222, 1.007, -0.016] },
+      "difficulty": 1
+    },
+    {
+      "id": "carpals",
+      "name": "carpals",
+      "synonyms": ["carpal bones", "carpus", "wrist bones"],
+      "latinName": "ossa carpi",
+      "definition": "Eight small bones arranged in two rows that form the wrist.",
+      "function": "Form the wrist and let it bend, extend and tilt side to side.",
+      "why": "Eight small bones in two rows spread load and allow more complex movement than one bone could.",
+      "notes": {
+        "nursing": "Snuffbox tenderness after a fall on an outstretched hand is treated as a suspected scaphoid fracture even if the first X-ray is normal.",
+        "medicine": "The scaphoid is the most often fractured; its blood supply enters distally, so proximal pole fractures risk avascular necrosis.",
+        "sports": "Scaphoid fractures are easily missed in goalkeepers and fallers; persistent snuffbox pain needs follow-up imaging."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": ["scaphoid", "lunate", "triquetral", "pisiform", "trapezium", "trapezoid", "capitate", "hamate"],
+      "camera": { "position": [-0.407, 0.894, 0.306], "target": [-0.257, 0.875, 0.024] },
+      "difficulty": 2
+    },
+    {
+      "id": "metacarpals",
+      "name": "metacarpals",
+      "synonyms": ["metacarpal bones", "metacarpus"],
+      "latinName": "ossa metacarpi",
+      "definition": "Five long bones forming the palm, between the wrist and the fingers.",
+      "function": "Form the palm and support the fingers.",
+      "why": "Their arched arrangement cups the palm for grasping.",
+      "notes": {
+        "nursing": "The dorsal metacarpal veins on the back of the hand are common peripheral cannulation sites.",
+        "medicine": "A fracture of the fifth one's neck after punching is called a boxer's fracture.",
+        "sports": "A fracture of the fifth metacarpal neck (boxer's fracture) is typical after punching a hard object."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "metacarpal",
+      "camera": { "position": [-0.414, 0.856, 0.317], "target": [-0.267, 0.836, 0.033] },
+      "difficulty": 2
+    },
+    {
+      "id": "phalanges",
+      "name": "phalanges",
+      "synonyms": ["phalanx", "finger bones"],
+      "latinName": "phalanges manus",
+      "definition": "The fourteen small bones of the fingers and thumb in each hand.",
+      "function": "Form the fingers and thumb, allowing grip and fine manipulation.",
+      "why": "Several short segments per digit let the fingers curl and pinch precisely.",
+      "notes": {
+        "nursing": "Capillary refill and pulse oximetry are checked at the fingertips, over the distal bones of the fingers.",
+        "medicine": "Each finger has proximal, middle and distal bones; the thumb has only proximal and distal. The foot has its own set.",
+        "physio": "Hand therapy after finger fractures balances early movement against protecting the fracture."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "hand_phalanx",
+      "camera": { "position": [-0.425, 0.806, 0.345], "target": [-0.271, 0.788, 0.065] },
+      "difficulty": 2
+    },
+    {
+      "id": "medial-epicondyle",
+      "name": "medial epicondyle",
+      "synonyms": ["medial epicondyle of humerus"],
+      "latinName": "epicondylus medialis humeri",
+      "definition": "Bony prominence on the inner side of the lower end of the humerus.",
+      "function": "Anchors the forearm flexor muscles.",
+      "why": "It projects to give the flexors leverage at the elbow.",
+      "notes": {
+        "nursing": "The ulnar nerve runs just behind it (the 'funny bone'); pad elbows when positioning patients to avoid nerve compression.",
+        "medicine": "Common origin of the forearm flexors; inflammation here is medial epicondylitis (golfer's elbow).",
+        "sports": "In young throwers, repeated stress on its growth plate causes 'little league elbow'."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "medial_epicondyle",
+      "camera": { "position": [-0.094, 1.141, 0.274], "target": [-0.187, 1.13, -0.032] },
+      "difficulty": 3
+    },
+    {
+      "id": "lateral-epicondyle",
+      "name": "lateral epicondyle",
+      "synonyms": ["lateral epicondyle of humerus"],
+      "latinName": "epicondylus lateralis humeri",
+      "definition": "Bony prominence on the outer side of the lower end of the humerus.",
+      "function": "Anchors the forearm extensor muscles.",
+      "why": "It gives the wrist and finger extensors a firm origin close to the elbow.",
+      "notes": {
+        "nursing": "The antecubital fossa, the usual venepuncture site (median cubital vein), lies just below the line joining the two epicondyles.",
+        "medicine": "Common origin of the forearm extensors; overuse causes lateral epicondylitis (tennis elbow).",
+        "physio": "Tennis elbow is managed with load management and progressive loading of the wrist extensors."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "lateral_epicondyle",
+      "camera": { "position": [-0.443, 1.144, 0.205], "target": [-0.233, 1.132, -0.036] },
+      "difficulty": 3
+    },
+    {
+      "id": "hip-bone",
+      "name": "hip bone",
+      "synonyms": ["pelvis", "pelvic bone", "innominate bone", "coxal bone", "os coxae"],
+      "latinName": "os coxae",
+      "definition": "Large paired bone made of the ilium, ischium and pubis, forming the side wall of the bony pelvic ring.",
+      "function": "Forms the hip socket, supports the trunk and protects the pelvic organs.",
+      "why": "Three bones fuse into one strong ring that passes weight to the legs and anchors powerful hip muscles.",
+      "notes": {
+        "nursing": "Ventrogluteal injection: palm on the greater trochanter, index finger on the anterior superior iliac spine, middle finger along the iliac crest; inject in the centre of the V.",
+        "medicine": "The three parts fuse at the acetabulum; the two of them, with the sacrum and coccyx, form the bony pelvis.",
+        "physio": "A Trendelenburg sign (pelvis drops on the unsupported side) shows weak hip abductors.",
+        "sports": "Adolescent sprinters and kickers can avulse the anterior superior iliac spine or the ischial tuberosity."
+      },
+      "region": "lower-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "hip_bone",
+      "camera": { "position": [-0.325, 0.972, 0.453], "target": [-0.074, 0.933, -0.03] },
+      "difficulty": 1
+    },
+    {
+      "id": "femur",
+      "name": "femur",
+      "synonyms": ["thigh bone", "thighbone"],
+      "latinName": "femur",
+      "definition": "The longest and strongest bone in the body, in the thigh.",
+      "function": "Passes body weight from the hip to the knee and anchors the thigh muscles.",
+      "why": "Its length gives a long stride, and its angled neck places the leg under the body for efficient walking.",
+      "notes": {
+        "nursing": "The vastus lateralis injection site is the middle third of the thigh, lateral to the front, between the greater trochanter and the knee; it is the preferred IM site in infants.",
+        "medicine": "Intracapsular neck fractures can disrupt the medial circumflex femoral artery and cause avascular necrosis of the head.",
+        "physio": "After hip fracture surgery, mobilising early reduces complications.",
+        "sports": "Endurance runners can develop femoral neck stress fractures; groin pain on hopping needs imaging."
+      },
+      "region": "lower-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "femur",
+      "camera": { "position": [-0.61, 0.696, 0.747], "target": [-0.091, 0.679, -0.019] },
+      "difficulty": 1
+    },
+    {
+      "id": "patella",
+      "name": "patella",
+      "synonyms": ["kneecap", "knee cap"],
+      "latinName": "patella",
+      "definition": "Small triangular bone at the front of the knee.",
+      "function": "Increases the leverage of the quadriceps when straightening the knee.",
+      "why": "As a sesamoid bone it holds the quadriceps tendon away from the joint, improving its mechanical advantage.",
+      "notes": {
+        "nursing": "The knee-jerk reflex is tested by tapping the tendon just below this bone.",
+        "medicine": "The largest sesamoid bone, embedded in the quadriceps tendon; it improves the leverage of knee extension.",
+        "physio": "Patellofemoral pain is treated by strengthening the quadriceps and hip muscles.",
+        "sports": "Patellar tendinopathy (jumper's knee) affects athletes in jumping sports."
+      },
+      "region": "lower-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "patella",
+      "camera": { "position": [-0.204, 0.481, 0.307], "target": [-0.081, 0.459, 0.012] },
+      "difficulty": 1
+    },
+    {
+      "id": "tibia",
+      "name": "tibia",
+      "synonyms": ["shinbone", "shin bone"],
+      "latinName": "tibia",
+      "definition": "The larger, weight-bearing bone on the medial side of the lower leg.",
+      "function": "Carries body weight from the knee to the ankle.",
+      "why": "A thick shaft makes it the main weight-bearing bone of the lower leg.",
+      "notes": {
+        "nursing": "Its upper front surface, 1–2 cm below and medial to the tibial tuberosity, is a common intraosseous (IO) access site, especially in children.",
+        "medicine": "Its anteromedial surface lies just under the skin, so open fractures are common; its distal end forms the medial malleolus.",
+        "physio": "After a tibial fracture, progress walking aids according to the surgeon's weight-bearing instructions.",
+        "sports": "Runners get medial tibial stress syndrome (shin splints) and tibial stress fractures."
+      },
+      "region": "lower-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "tibia",
+      "camera": { "position": [-0.473, 0.287, 0.617], "target": [-0.072, 0.262, -0.017] },
+      "difficulty": 1
+    },
+    {
+      "id": "fibula",
+      "name": "fibula",
+      "synonyms": ["calf bone"],
+      "latinName": "fibula",
+      "definition": "The thin bone on the lateral side of the lower leg.",
+      "function": "Stabilises the ankle and anchors lower leg muscles.",
+      "why": "It carries little weight, but its lower end forms the outer wall of the ankle and stops it rolling.",
+      "notes": {
+        "nursing": "The common fibular nerve wraps around its neck; tight casts or side-lying pressure can cause foot drop, so check ankle dorsiflexion.",
+        "medicine": "Its distal end forms the lateral malleolus of the ankle; it bears little body weight.",
+        "sports": "An inversion sprain can also fracture the lateral malleolus; use the Ottawa ankle rules to decide on an X-ray."
+      },
+      "region": "lower-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "fibula",
+      "camera": { "position": [-0.724, 0.284, 0.362], "target": [-0.102, 0.245, -0.037] },
+      "difficulty": 1
+    },
+    {
+      "id": "tarsals",
+      "name": "tarsals",
+      "synonyms": ["tarsal bones", "tarsus", "ankle bones"],
+      "latinName": "ossa tarsi",
+      "definition": "Seven bones forming the ankle and the back half of the foot.",
+      "function": "Form the ankle and back of the foot, carrying weight and allowing foot movement.",
+      "why": "Seven bones arranged in arches absorb shock and adapt the foot to uneven ground.",
+      "notes": {
+        "nursing": "The dorsalis pedis pulse is felt on the top of the foot over these bones, just lateral to the big-toe extensor tendon.",
+        "medicine": "They are the talus, calcaneus, navicular, cuboid and three cuneiforms; the talus transmits body weight from the tibia.",
+        "physio": "Midfoot and subtalar mobility are assessed in foot pain; arch support can help."
+      },
+      "region": "lower-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": ["talus", "calcaneus", "navicular", "cuboid", "medial_cuneiform", "intermediate_cuneiform", "lateral_cuneiform"],
+      "camera": { "position": [-0.247, 0.178, 0.221], "target": [-0.08, 0.045, -0.018] },
+      "difficulty": 2
+    },
+    {
+      "id": "calcaneus",
+      "name": "calcaneus",
+      "synonyms": ["heel bone", "calcaneum"],
+      "latinName": "calcaneus",
+      "definition": "The largest tarsal bone, forming the heel.",
+      "function": "Forms the heel, takes weight when standing and anchors the Achilles tendon.",
+      "why": "A long heel lever gives the calf muscles leverage to push off when walking and running.",
+      "notes": {
+        "nursing": "Newborn heel-prick samples are taken from the medial or lateral edge of the plantar heel, avoiding the centre to protect this bone.",
+        "medicine": "The calcaneal (Achilles) tendon inserts on its posterior surface; fractures from falls from height often come with lumbar spine fractures.",
+        "physio": "Plantar heel pain is treated with calf and plantar fascia stretching and load management.",
+        "sports": "Achilles tendinopathy and calcaneal stress fractures are common in runners."
+      },
+      "region": "lower-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "calcaneus",
+      "camera": { "position": [-0.308, 0.122, -0.239], "target": [-0.073, 0.034, -0.041] },
+      "difficulty": 2
+    },
+    {
+      "id": "atlas",
+      "name": "atlas",
+      "synonyms": ["first cervical vertebra", "c one"],
+      "latinName": "atlas",
+      "definition": "Ring-shaped topmost vertebra of the neck, with no body, carrying the skull.",
+      "function": "Supports the skull and allows nodding at the joint with the occipital condyles.",
+      "why": "Losing its body lets it form a pivot ring around the peg of the vertebra below.",
+      "notes": {
+        "medicine": "Jefferson fracture is a burst fracture of this ring from axial loading (diving)."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": "cervical_1",
+      "camera": { "position": [-0.092, 1.58, 0.269], "target": [-0.001, 1.55, -0.036] },
+      "difficulty": 2
+    },
+    {
+      "id": "axis",
+      "name": "axis",
+      "synonyms": ["second cervical vertebra"],
+      "latinName": "axis",
+      "definition": "Neck vertebra just below the topmost one, with a tooth-like peg (dens) projecting upward.",
+      "function": "Forms the pivot around which the head turns.",
+      "why": "Its dens acts as an axle for head rotation.",
+      "notes": {
+        "medicine": "Hangman’s fracture breaks its pars interarticularis; dens fractures are common in older people after falls."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": "cervical_2",
+      "camera": { "position": [-0.092, 1.564, 0.267], "target": [-0.001, 1.534, -0.038] },
+      "difficulty": 2
+    },
+    {
+      "id": "vertebra-prominens",
+      "name": "vertebra prominens",
+      "synonyms": ["seventh cervical vertebra", "c seven"],
+      "latinName": "vertebra prominens",
+      "definition": "Lowest neck vertebra, with a long spinous process easily felt at the base of the neck.",
+      "function": "Anchors the nuchal ligament and neck muscles.",
+      "why": "Its long spine is a dependable surface landmark for counting vertebrae.",
+      "notes": {
+        "physio": "Palpate its spinous process to locate the cervicothoracic junction.",
+        "nursing": "Used as a landmark when measuring or positioning the neck."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": "cervical_7",
+      "camera": { "position": [-0.092, 1.487, -0.349], "target": [-0.001, 1.456, -0.044] },
+      "difficulty": 2
+    },
+    {
+      "id": "manubrium",
+      "name": "manubrium",
+      "synonyms": [],
+      "latinName": "manubrium sterni",
+      "definition": "Upper, handle-shaped part of the breastbone with a notch at its top.",
+      "function": "Joins the clavicles and the first ribs.",
+      "why": "A broad upper plate gives the shoulder girdle its only bony joint with the trunk.",
+      "notes": {
+        "medicine": "It joins the body of the sternum at the sternal angle, level with the second rib."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": "manubrium",
+      "camera": { "position": [-0.092, 1.411, 0.36], "target": [0, 1.381, 0.055] },
+      "difficulty": 2
+    },
+    {
+      "id": "xiphoid-process",
+      "name": "xiphoid process",
+      "synonyms": ["xiphoid", "xiphisternum"],
+      "latinName": "processus xiphoideus",
+      "definition": "Small pointed tip at the lower end of the breastbone.",
+      "function": "Anchors parts of the diaphragm and the abdominal muscles.",
+      "why": "A small, often cartilaginous tip finishes the front of the chest wall.",
+      "notes": {
+        "nursing": "Keep hands above it during CPR compressions to avoid breaking it and injuring the liver."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": "xiphoid_process",
+      "camera": { "position": [-0.091, 1.283, 0.411], "target": [0, 1.252, 0.106] },
+      "difficulty": 2
+    },
+    {
+      "id": "first-rib",
+      "name": "first rib",
+      "synonyms": [],
+      "latinName": "costa prima",
+      "definition": "The shortest, broadest and most curved rib, lying under the clavicle.",
+      "function": "Anchors the scalene muscles and supports the subclavian vessels and the brachial plexus.",
+      "why": "Its flat, strong shape shields the vessels and nerves heading for the arm.",
+      "notes": {
+        "medicine": "Fracturing it needs great force; look for associated vessel and lung injury."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": ["rib_1.l", "rib_1.r"],
+      "camera": { "position": [-0.092, 1.449, 0.303], "target": [-0.001, 1.418, -0.003] },
+      "difficulty": 3
+    },
+    {
+      "id": "floating-ribs",
+      "name": "floating ribs",
+      "synonyms": ["floating rib", "eleventh and twelfth ribs"],
+      "latinName": "costae fluctuantes",
+      "definition": "The two lowest pairs of ribs, whose front ends end free in the abdominal wall muscles.",
+      "function": "Protect the back of the kidneys and give attachment to back and abdominal muscles.",
+      "why": "Free front ends let the lower chest flex and twist.",
+      "notes": {
+        "medicine": "Fractures can injure the kidney behind them; look for blood in the urine."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": ["rib_11", "rib_12"],
+      "camera": { "position": [-0.143, 1.191, -0.518], "target": [-0.001, 1.143, -0.043] },
+      "difficulty": 3
+    },
+    {
+      "id": "costal-cartilages",
+      "name": "costal cartilages",
+      "synonyms": ["costal cartilage"],
+      "latinName": "cartilagines costales",
+      "definition": "Bars of hyaline cartilage joining the front ends of the upper ribs to the sternum.",
+      "function": "Connect the ribs to the breastbone and let the chest wall spring.",
+      "why": "Flexible links let the rib cage expand with each breath and absorb blows.",
+      "notes": {
+        "medicine": "Inflammation at their joints (costochondritis) causes chest pain tender to press.",
+        "physio": "Their stiffening with age reduces chest expansion."
+      },
+      "region": "axial",
+      "modelFile": "skeleton.glb",
+      "meshName": "costal_cartilage",
+      "camera": { "position": [-0.177, 1.348, 0.654], "target": [-0.001, 1.29, 0.068] },
+      "difficulty": 2
+    },
+    {
+      "id": "hyoid",
+      "name": "hyoid bone",
+      "synonyms": ["hyoid"],
+      "latinName": "os hyoideum",
+      "definition": "U-shaped bone in the front of the neck below the mandible, not joined to any other bone.",
+      "function": "Anchors the tongue and the muscles of the floor of the mouth and larynx.",
+      "why": "Floating in muscle lets it move up and down during swallowing and speech.",
+      "notes": {
+        "medicine": "A fractured one at post-mortem suggests strangulation.",
+        "dentistry": "Swallowing studies track its upward movement."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "hyoid",
+      "camera": { "position": [-0.092, 1.54, 0.317], "target": [-0.001, 1.51, 0.012] },
+      "difficulty": 2
+    },
+    {
+      "id": "vomer",
+      "name": "vomer",
+      "synonyms": [],
+      "latinName": "vomer",
+      "definition": "Thin flat bone forming the back and lower part of the nasal septum.",
+      "function": "Divides the back of the nasal cavity into two passages.",
+      "why": "A thin midline plate keeps the two airways separate.",
+      "notes": {
+        "medicine": "It articulates with the sphenoid above and the maxillae and palatine bones below."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "vomer",
+      "camera": { "position": [-0.001, 1.348, 0.265], "target": [-0.001, 1.574, 0.038] },
+      "difficulty": 3
+    },
+    {
+      "id": "lacrimal",
+      "name": "lacrimal bone",
+      "synonyms": ["lacrimal"],
+      "latinName": "os lacrimale",
+      "definition": "The smallest facial bone, in the inner wall of the orbit.",
+      "function": "Forms part of the orbit wall and houses the tear sac.",
+      "why": "Its groove carries the tear duct from the eye into the nose.",
+      "notes": {
+        "medicine": "Blockage of the nasolacrimal duct beside it causes a watery eye."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "lacrimal",
+      "camera": { "position": [-0.203, 1.64, 0.311], "target": [-0.013, 1.593, 0.058] },
+      "difficulty": 3
+    },
+    {
+      "id": "palatine",
+      "name": "palatine bone",
+      "synonyms": ["palatine"],
+      "latinName": "os palatinum",
+      "definition": "L-shaped bone forming the back of the hard palate and part of the nasal wall.",
+      "function": "Completes the roof of the mouth behind the maxillae.",
+      "why": "It closes the back of the hard palate so the mouth and nose are separated.",
+      "notes": {
+        "dentistry": "The greater palatine foramen near the upper second and third molars is the site of the greater palatine nerve block."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "palatine",
+      "camera": { "position": [-0.001, 1.344, 0.253], "target": [-0.001, 1.57, 0.027] },
+      "difficulty": 3
+    },
+    {
+      "id": "inferior-nasal-concha",
+      "name": "inferior nasal concha",
+      "synonyms": ["inferior turbinate", "turbinate"],
+      "latinName": "concha nasalis inferior",
+      "definition": "Scroll-shaped bone on the side wall of each nasal cavity.",
+      "function": "Swirls and warms incoming air and keeps the lining moist.",
+      "why": "Turbulence brings air into contact with the warm, moist lining.",
+      "notes": {
+        "nursing": "Direct a nasogastric tube along the nasal floor, below it."
+      },
+      "region": "skull",
+      "modelFile": "skeleton.glb",
+      "meshName": "inferior_nasal_concha",
+      "camera": { "position": [-0.201, 1.614, 0.301], "target": [-0.012, 1.567, 0.048] },
+      "difficulty": 3
+    },
+    {
+      "id": "scaphoid",
+      "name": "scaphoid",
+      "synonyms": [],
+      "latinName": "os scaphoideum",
+      "definition": "Boat-shaped carpal bone on the thumb side of the proximal row.",
+      "function": "Links the two rows of carpal bones and carries load from the hand to the radius.",
+      "why": "Bridging both rows makes it stabilise the wrist, and also makes it vulnerable.",
+      "notes": {
+        "medicine": "The most commonly fractured carpal bone; its blood supply enters distally, so proximal fractures risk avascular necrosis.",
+        "sports": "Suspect it after a fall on an outstretched hand with snuffbox tenderness."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "scaphoid",
+      "camera": { "position": [-0.352, 0.942, 0.32], "target": [-0.261, 0.882, 0.019] },
+      "difficulty": 2
+    },
+    {
+      "id": "lunate",
+      "name": "lunate",
+      "synonyms": [],
+      "latinName": "os lunatum",
+      "definition": "Crescent-shaped carpal bone in the middle of the proximal row.",
+      "function": "Articulates with the radius and carries load across the wrist.",
+      "why": "Its curved shape lets the wrist bend smoothly.",
+      "notes": {
+        "medicine": "The most commonly dislocated carpal bone; dislocation can compress the median nerve."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "lunate",
+      "camera": { "position": [-0.335, 0.942, 0.32], "target": [-0.244, 0.882, 0.019] },
+      "difficulty": 3
+    },
+    {
+      "id": "triquetral",
+      "name": "triquetral",
+      "synonyms": ["triquetrum"],
+      "latinName": "os triquetrum",
+      "definition": "Pyramid-shaped carpal bone on the little-finger side of the proximal row.",
+      "function": "Supports the small pea-shaped bone and the ulnar side of the wrist.",
+      "why": "It completes the proximal row on the ulnar side.",
+      "notes": {
+        "medicine": "Dorsal chip fractures are common after falls."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "triquetral",
+      "camera": { "position": [-0.328, 0.934, 0.323], "target": [-0.237, 0.874, 0.022] },
+      "difficulty": 3
+    },
+    {
+      "id": "pisiform",
+      "name": "pisiform",
+      "synonyms": [],
+      "latinName": "os pisiforme",
+      "definition": "Small pea-shaped bone lying in the tendon of the flexor carpi ulnaris.",
+      "function": "Gives the wrist flexor on the ulnar side better leverage.",
+      "why": "As a sesamoid bone it changes the tendon’s angle of pull.",
+      "notes": {
+        "medicine": "Forms one wall of Guyon’s canal, where the ulnar nerve can be compressed."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "pisiform",
+      "camera": { "position": [-0.326, 0.934, 0.333], "target": [-0.236, 0.874, 0.032] },
+      "difficulty": 3
+    },
+    {
+      "id": "trapezium",
+      "name": "trapezium",
+      "synonyms": [],
+      "latinName": "os trapezium",
+      "definition": "Carpal bone at the base of the thumb in the distal row.",
+      "function": "Forms the saddle joint with the first metacarpal.",
+      "why": "Its saddle shape gives the thumb the movement to oppose the fingers.",
+      "notes": {
+        "physio": "The joint at its base is the commonest site of osteoarthritis in the hand."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "trapezium",
+      "camera": { "position": [-0.364, 0.934, 0.327], "target": [-0.273, 0.874, 0.026] },
+      "difficulty": 3
+    },
+    {
+      "id": "trapezoid",
+      "name": "trapezoid",
+      "synonyms": [],
+      "latinName": "os trapezoideum",
+      "definition": "Small wedge-shaped carpal bone in the distal row, at the base of the index finger.",
+      "function": "Supports the second metacarpal.",
+      "why": "It locks the base of the index finger firmly in place.",
+      "notes": {
+        "medicine": "The least commonly fractured carpal bone."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "trapezoid",
+      "camera": { "position": [-0.358, 0.927, 0.322], "target": [-0.268, 0.867, 0.021] },
+      "difficulty": 3
+    },
+    {
+      "id": "capitate",
+      "name": "capitate",
+      "synonyms": [],
+      "latinName": "os capitatum",
+      "definition": "The largest carpal bone, in the centre of the distal row.",
+      "function": "Supports the third metacarpal and forms the keystone of the wrist.",
+      "why": "Its central position lets it transmit force straight up the middle finger’s line.",
+      "notes": {
+        "medicine": "It is the first carpal bone to ossify, at about 2 months."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "capitate",
+      "camera": { "position": [-0.347, 0.932, 0.32], "target": [-0.256, 0.872, 0.019] },
+      "difficulty": 3
+    },
+    {
+      "id": "hamate",
+      "name": "hamate",
+      "synonyms": [],
+      "latinName": "os hamatum",
+      "definition": "Wedge-shaped carpal bone with a hook, in the distal row on the little-finger side.",
+      "function": "Supports the fourth and fifth metacarpals; its hook anchors the flexor retinaculum.",
+      "why": "The hook forms a pulley wall for the finger flexor tendons.",
+      "notes": {
+        "sports": "The hook fractures in golfers, batters and tennis players from repeated handle impact."
+      },
+      "region": "upper-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "hamate",
+      "camera": { "position": [-0.335, 0.929, 0.324], "target": [-0.244, 0.869, 0.023] },
+      "difficulty": 3
+    },
+    {
+      "id": "talus",
+      "name": "talus",
+      "synonyms": ["astragalus", "ankle bone"],
+      "latinName": "talus",
+      "definition": "Tarsal bone sitting between the tibia and fibula above and the heel bone below.",
+      "function": "Transmits body weight from the leg to the foot and forms the ankle joint.",
+      "why": "It has no muscle attachments, so it can glide freely as a link between leg and foot.",
+      "notes": {
+        "medicine": "Neck fractures can cut off its blood supply, risking avascular necrosis.",
+        "sports": "Osteochondral lesions of its dome follow ankle sprains."
+      },
+      "region": "lower-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "talus",
+      "camera": { "position": [-0.382, 0.095, 0.04], "target": [-0.07, 0.064, -0.023] },
+      "difficulty": 2
+    },
+    {
+      "id": "navicular",
+      "name": "navicular",
+      "synonyms": [],
+      "latinName": "os naviculare",
+      "definition": "Boat-shaped tarsal bone on the inner side of the midfoot.",
+      "function": "Forms the keystone of the medial arch and anchors the tibialis posterior tendon.",
+      "why": "It locks the arch between the hindfoot and the forefoot.",
+      "notes": {
+        "sports": "Stress fractures occur in sprinters and jumpers and are easily missed."
+      },
+      "region": "lower-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "navicular",
+      "camera": { "position": [0.191, 0.075, 0.181], "target": [-0.077, 0.06, 0.008] },
+      "difficulty": 3
+    },
+    {
+      "id": "cuboid",
+      "name": "cuboid",
+      "synonyms": [],
+      "latinName": "os cuboideum",
+      "definition": "Cube-shaped tarsal bone on the outer side of the midfoot.",
+      "function": "Supports the lateral arch and grooves the fibularis longus tendon.",
+      "why": "It gives the outer column of the foot stability.",
+      "notes": {
+        "physio": "Cuboid syndrome causes lateral foot pain in dancers and runners."
+      },
+      "region": "lower-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "cuboid",
+      "camera": { "position": [-0.411, 0.073, 0.063], "target": [-0.099, 0.042, 0] },
+      "difficulty": 3
+    },
+    {
+      "id": "cuneiforms",
+      "name": "cuneiforms",
+      "synonyms": ["cuneiform", "cuneiform bones"],
+      "latinName": "ossa cuneiformia",
+      "definition": "Three wedge-shaped tarsal bones in front of the boat-shaped tarsal bone.",
+      "function": "Support the first three metatarsals and form the transverse arch.",
+      "why": "Their wedge shapes build the arch across the foot.",
+      "notes": {
+        "medicine": "Lisfranc injuries disrupt the joints between them and the metatarsals."
+      },
+      "region": "lower-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": ["medial_cuneiform", "intermediate_cuneiform", "lateral_cuneiform"],
+      "camera": { "position": [-0.181, 0.295, 0.205], "target": [-0.089, 0.05, 0.021] },
+      "difficulty": 3
+    },
+    {
+      "id": "metatarsals",
+      "name": "metatarsals",
+      "synonyms": ["metatarsal bones", "metatarsus"],
+      "latinName": "ossa metatarsi",
+      "definition": "Five long bones of the forefoot between the tarsals and the toes.",
+      "function": "Carry weight to the toes and give leverage for push-off.",
+      "why": "Their arched arrangement spreads load across the front of the foot.",
+      "notes": {
+        "sports": "March (stress) fractures of the second metatarsal occur in runners and soldiers; Jones fractures affect the fifth."
+      },
+      "region": "lower-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "metatarsal",
+      "camera": { "position": [-0.206, 0.279, 0.225], "target": [-0.114, 0.034, 0.041] },
+      "difficulty": 2
+    },
+    {
+      "id": "foot-phalanges",
+      "name": "phalanges of the foot",
+      "synonyms": ["toe bones", "foot phalanges"],
+      "latinName": "phalanges pedis",
+      "definition": "The fourteen small bones of the toes.",
+      "function": "Help balance and push off at the end of each step.",
+      "why": "Gripping the ground with the toes refines balance.",
+      "notes": {
+        "nursing": "Check toe colour and capillary refill after leg casts."
+      },
+      "region": "lower-limb",
+      "modelFile": "skeleton.glb",
+      "meshName": "foot_phalanx",
+      "camera": { "position": [-0.22, 0.262, 0.276], "target": [-0.128, 0.017, 0.092] },
+      "difficulty": 3
+    },
+    {
+      "id": "incisors",
+      "name": "incisors",
+      "synonyms": ["incisor", "incisor teeth"],
+      "latinName": "dentes incisivi",
+      "definition": "The eight chisel-shaped front teeth, two central and two lateral in each jaw.",
+      "function": "Cut and bite food.",
+      "why": "Thin, sharp edges shear food at the front of the mouth.",
+      "notes": {
+        "dentistry": "FDI numbers 11–12, 21–22, 31–32 and 41–42; upper centrals erupt at about 7–8 years."
+      },
+      "region": "teeth",
+      "modelFile": "skeleton.glb",
+      "meshName": ["upper_central_incisor", "upper_lateral_incisor", "lower_central_incisor", "lower_lateral_incisor"],
+      "camera": { "position": [-0.092, 1.563, 0.377], "target": [-0.001, 1.532, 0.072] },
+      "difficulty": 2
+    },
+    {
+      "id": "canines",
+      "name": "canines",
+      "synonyms": ["canine", "canine teeth", "cuspids"],
+      "latinName": "dentes canini",
+      "definition": "Four pointed teeth at the corners of the dental arches, with the longest roots.",
+      "function": "Tear food and guide the jaw sideways during chewing.",
+      "why": "Long roots anchor them for gripping and for guiding jaw movement.",
+      "notes": {
+        "dentistry": "FDI 13, 23, 33, 43; upper canines are the commonest impacted teeth after third molars."
+      },
+      "region": "teeth",
+      "modelFile": "skeleton.glb",
+      "meshName": ["upper_canine", "lower_canine"],
+      "camera": { "position": [-0.206, 1.581, 0.32], "target": [-0.016, 1.534, 0.067] },
+      "difficulty": 2
+    },
+    {
+      "id": "premolars",
+      "name": "premolars",
+      "synonyms": ["premolar", "bicuspids"],
+      "latinName": "dentes premolares",
+      "definition": "Eight teeth with two cusps, between the pointed corner teeth and the molars.",
+      "function": "Crush and grind food.",
+      "why": "They bridge cutting at the front and grinding at the back.",
+      "notes": {
+        "dentistry": "Absent in the primary dentition; often extracted for orthodontic space."
+      },
+      "region": "teeth",
+      "modelFile": "skeleton.glb",
+      "meshName": ["upper_first_premolar", "upper_second_premolar", "lower_first_premolar", "lower_second_premolar"],
+      "camera": { "position": [-0.211, 1.583, 0.311], "target": [-0.021, 1.536, 0.057] },
+      "difficulty": 3
+    },
+    {
+      "id": "molars",
+      "name": "molars",
+      "synonyms": ["molar", "molar teeth"],
+      "latinName": "dentes molares",
+      "definition": "Broad back teeth with several cusps and two or three roots.",
+      "function": "Grind food into small pieces for swallowing.",
+      "why": "Large flat surfaces near the jaw joint deliver the strongest chewing force.",
+      "notes": {
+        "dentistry": "The first permanent molars erupt at about 6 years and are key teeth for occlusion; third molars are absent from this model."
+      },
+      "region": "teeth",
+      "modelFile": "skeleton.glb",
+      "meshName": ["upper_first_molar", "upper_second_molar", "lower_first_molar", "lower_second_molar"],
+      "camera": { "position": [-0.338, 1.571, 0.103], "target": [-0.026, 1.54, 0.04] },
+      "difficulty": 2
+    }
+  ]
+}

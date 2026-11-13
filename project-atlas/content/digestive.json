@@ -1,0 +1,308 @@
+{
+  "module": "digestive",
+  "regions": [
+    { "id": "upper-gi", "name": "Mouth to stomach" },
+    { "id": "intestines", "name": "Intestines" },
+    { "id": "accessory", "name": "Liver, pancreas and spleen" }
+  ],
+  "structures": [
+    {
+      "id": "tongue",
+      "name": "tongue",
+      "synonyms": [],
+      "latinName": "lingua",
+      "definition": "Muscular organ filling the floor of the mouth, covered with taste buds.",
+      "function": "Moves food for chewing, forms the bolus, starts swallowing and shapes speech.",
+      "why": "Muscle fibres running in three directions let it change shape freely.",
+      "notes": {
+        "dentistry": "Examine all its surfaces, including the sides and underside, for ulcers or white or red patches.",
+        "nursing": "A dry, coated tongue suggests dehydration or poor oral care."
+      },
+      "region": "upper-gi",
+      "modelFile": "digestive.glb",
+      "meshName": "tongue",
+      "camera": { "position": [-0.299, 1.542, 0.07], "target": [-0.001, 1.527, 0.04] },
+      "difficulty": 1
+    },
+    {
+      "id": "salivary-glands",
+      "name": "salivary glands",
+      "synonyms": ["salivary gland", "submandibular gland", "sublingual gland"],
+      "latinName": "glandulae salivariae",
+      "definition": "Glands under the jaw and under the tongue that drain into the mouth.",
+      "function": "Produce saliva, which moistens food, starts starch digestion and protects the teeth.",
+      "why": "Saliva lubricates swallowing and buffers acid that would dissolve enamel.",
+      "notes": {
+        "dentistry": "Reduced saliva (dry mouth from medication or radiotherapy) sharply raises caries risk.",
+        "medicine": "Stones most often form in the submandibular gland because its saliva is thick and its duct runs uphill."
+      },
+      "region": "upper-gi",
+      "modelFile": "digestive.glb",
+      "meshName": ["submandibular_gland", "sublingual_gland"],
+      "camera": { "position": [-0.169, 1.423, 0.28], "target": [-0.02, 1.528, 0.041] },
+      "difficulty": 2
+    },
+    {
+      "id": "oesophagus",
+      "name": "oesophagus",
+      "synonyms": ["esophagus", "gullet", "food pipe"],
+      "latinName": "oesophagus",
+      "definition": "Muscular tube about 25 cm long running from the pharynx through the chest behind the trachea to the stomach.",
+      "function": "Moves swallowed food to the stomach by waves of contraction (peristalsis).",
+      "why": "Its lower sphincter stops stomach acid flowing back up.",
+      "notes": {
+        "nursing": "Confirm nasogastric tube position before use; a misplaced tube may be in the airway instead.",
+        "medicine": "Narrows at three points: the cricopharyngeus, where the aortic arch and left bronchus cross it, and the diaphragm."
+      },
+      "region": "upper-gi",
+      "modelFile": "digestive.glb",
+      "meshName": "esophagus",
+      "camera": { "position": [-0.529, 1.358, 0.049], "target": [0.007, 1.331, -0.005] },
+      "difficulty": 1
+    },
+    {
+      "id": "stomach",
+      "name": "stomach",
+      "synonyms": ["gaster"],
+      "latinName": "gaster",
+      "definition": "J-shaped muscular bag in the upper left abdomen, below the diaphragm.",
+      "function": "Stores food, churns it with acid and enzymes, and releases it slowly into the duodenum.",
+      "why": "Storage lets us eat meals rather than graze, and acid kills many swallowed microbes.",
+      "notes": {
+        "nursing": "Gastric aspirate pH of 5.5 or below helps confirm nasogastric tube position.",
+        "medicine": "Peptic ulcers are most often caused by H. pylori or NSAIDs."
+      },
+      "region": "upper-gi",
+      "modelFile": "digestive.glb",
+      "meshName": "stomach",
+      "camera": { "position": [-0.1, 1.217, 0.415], "target": [0.038, 1.176, 0.038] },
+      "difficulty": 1
+    },
+    {
+      "id": "duodenum",
+      "name": "duodenum",
+      "synonyms": [],
+      "latinName": "duodenum",
+      "definition": "C-shaped first part of the small intestine, curving around the head of the pancreas.",
+      "function": "Receives bile and pancreatic juice and begins most chemical digestion.",
+      "why": "Mixing acid food with alkaline juices here neutralises it and activates enzymes.",
+      "notes": {
+        "medicine": "Duodenal ulcers are commoner than gastric ulcers; pain often eases with food."
+      },
+      "region": "intestines",
+      "modelFile": "digestive.glb",
+      "meshName": "duodenum",
+      "camera": { "position": [-0.119, 1.139, 0.311], "target": [-0.017, 1.109, 0.03] },
+      "difficulty": 2
+    },
+    {
+      "id": "jejunum",
+      "name": "jejunum",
+      "synonyms": [],
+      "latinName": "jejunum",
+      "definition": "Middle part of the small intestine, mostly in the upper left abdomen.",
+      "function": "Absorbs most nutrients from digested food.",
+      "why": "Tall folds and villi give it a huge surface area for absorption.",
+      "notes": {
+        "medicine": "Feeding tubes (jejunostomies) are placed here when the stomach cannot be used."
+      },
+      "region": "intestines",
+      "modelFile": "digestive.glb",
+      "meshName": ["proximal_part_of_jejunum", "middle_part_of_jejunum", "distal_part_of_jejunum"],
+      "camera": { "position": [-0.144, 1.089, 0.469], "target": [0.01, 1.045, 0.05] },
+      "difficulty": 2
+    },
+    {
+      "id": "ileum",
+      "name": "ileum",
+      "synonyms": [],
+      "latinName": "ileum",
+      "definition": "Final and longest part of the small intestine, ending at the caecum.",
+      "function": "Absorbs vitamin B12 and bile salts and the remaining nutrients.",
+      "why": "Recycling bile salts here saves the liver making new ones.",
+      "notes": {
+        "medicine": "Crohn’s disease most often affects its last part; removal can cause B12 deficiency."
+      },
+      "region": "intestines",
+      "modelFile": "digestive.glb",
+      "meshName": ["proximal_part_of_ileum", "middle_part_of_ileum", "distal_part_of_ileum", "ileocecal_junction"],
+      "camera": { "position": [-0.15, 1.003, 0.481], "target": [0.011, 0.957, 0.043] },
+      "difficulty": 2
+    },
+    {
+      "id": "appendix",
+      "name": "appendix",
+      "synonyms": ["vermiform appendix"],
+      "latinName": "appendix vermiformis",
+      "definition": "Narrow finger-like tube hanging from the caecum in the lower right abdomen.",
+      "function": "Contains lymphoid tissue and may store helpful gut bacteria.",
+      "why": "It may act as a reserve of gut bacteria after diarrhoeal illness.",
+      "notes": {
+        "nursing": "Pain moving from around the navel to the lower right abdomen suggests appendicitis; keep nil by mouth and escalate.",
+        "medicine": "McBurney’s point lies one third of the way from the anterior superior iliac spine to the umbilicus."
+      },
+      "region": "intestines",
+      "modelFile": "digestive.glb",
+      "meshName": ["appendix", "mesoappendix"],
+      "camera": { "position": [-0.216, 0.998, 0.255], "target": [-0.054, 0.969, 0.004] },
+      "difficulty": 1
+    },
+    {
+      "id": "ascending-colon",
+      "name": "ascending colon",
+      "synonyms": [],
+      "latinName": "colon ascendens",
+      "definition": "Part of the large intestine rising up the right side of the abdomen from the caecum to the liver.",
+      "function": "Absorbs water and salts from the liquid contents arriving from the small intestine.",
+      "why": "It begins turning liquid waste into firm stool.",
+      "notes": {
+        "medicine": "Right-sided bowel cancers often present with anaemia rather than a change in bowel habit."
+      },
+      "region": "intestines",
+      "modelFile": "digestive.glb",
+      "meshName": "ascending_colon",
+      "camera": { "position": [-0.306, 1.078, 0.343], "target": [-0.095, 1.039, 0.018] },
+      "difficulty": 2
+    },
+    {
+      "id": "transverse-colon",
+      "name": "transverse colon",
+      "synonyms": [],
+      "latinName": "colon transversum",
+      "definition": "Part of the large intestine crossing the abdomen from right to left, hanging below the stomach.",
+      "function": "Continues absorbing water and moving stool toward the left side.",
+      "why": "Hanging on its own mesentery lets it move and stretch as it fills.",
+      "notes": {
+        "medicine": "Its middle hangs low and can reach the pelvis in thin people."
+      },
+      "region": "intestines",
+      "modelFile": "digestive.glb",
+      "meshName": ["transverse_colon", "transverse_mesocolon"],
+      "camera": { "position": [-0.201, 1.1, 0.581], "target": [0.004, 1.041, 0.024] },
+      "difficulty": 2
+    },
+    {
+      "id": "descending-colon",
+      "name": "descending colon",
+      "synonyms": [],
+      "latinName": "colon descendens",
+      "definition": "Part of the large intestine running down the left side of the abdomen.",
+      "function": "Stores and moves formed stool toward the rectum.",
+      "why": "Fixed to the back wall, it is a steady channel for stool.",
+      "notes": {
+        "medicine": "Diverticula are common in the left colon in older adults."
+      },
+      "region": "intestines",
+      "modelFile": "digestive.glb",
+      "meshName": "descending_colon",
+      "camera": { "position": [-0.141, 1.074, 0.512], "target": [0.05, 1.02, -0.004] },
+      "difficulty": 2
+    },
+    {
+      "id": "rectum",
+      "name": "rectum",
+      "synonyms": [],
+      "latinName": "rectum",
+      "definition": "Final straight part of the large intestine in the pelvis, ending at the anal canal.",
+      "function": "Stores stool until it can be passed and triggers the urge to defecate.",
+      "why": "Stretch receptors in its wall signal when it is full.",
+      "notes": {
+        "nursing": "Rectal medications and enemas are given with the patient lying on the left side, following the bowel’s curve."
+      },
+      "region": "intestines",
+      "modelFile": "digestive.glb",
+      "meshName": "rectum",
+      "camera": { "position": [-0.099, 0.923, 0.222], "target": [0.005, 0.894, -0.058] },
+      "difficulty": 1
+    },
+    {
+      "id": "liver",
+      "name": "liver",
+      "synonyms": ["hepar"],
+      "latinName": "hepar",
+      "definition": "The largest internal organ, in the upper right abdomen under the diaphragm.",
+      "function": "Processes nutrients, makes bile and plasma proteins, stores glycogen and clears drugs and toxins.",
+      "why": "All blood from the gut passes through it first, so it can process what is absorbed.",
+      "notes": {
+        "nursing": "Jaundice, confusion and bruising suggest liver failure; check drug doses, as many are cleared here.",
+        "medicine": "Divided into eight functional segments by its blood supply (Couinaud)."
+      },
+      "region": "accessory",
+      "modelFile": "digestive.glb",
+      "meshName": ["liver_surface", "caudate_lobe_of_liver"],
+      "camera": { "position": [-0.21, 1.241, 0.567], "target": [-0.01, 1.184, 0.022] },
+      "difficulty": 1
+    },
+    {
+      "id": "gallbladder",
+      "name": "gallbladder",
+      "synonyms": ["gall bladder"],
+      "latinName": "vesica biliaris",
+      "definition": "Pear-shaped sac under the liver.",
+      "function": "Stores and concentrates bile and squeezes it into the duodenum after fatty meals.",
+      "why": "Releasing bile on demand delivers it when fat needs digesting.",
+      "notes": {
+        "nursing": "Pain under the right ribs after a fatty meal suggests gallstones.",
+        "medicine": "Murphy’s sign: pain stops a breath in when pressing below the right ribs."
+      },
+      "region": "accessory",
+      "modelFile": "digestive.glb",
+      "meshName": "gallbladder",
+      "camera": { "position": [-0.207, 1.179, 0.305], "target": [-0.045, 1.149, 0.054] },
+      "difficulty": 1
+    },
+    {
+      "id": "bile-ducts",
+      "name": "bile ducts",
+      "synonyms": ["bile duct", "biliary tree"],
+      "latinName": "ductus biliferi",
+      "definition": "Branching tubes draining bile from the liver and the bile sac into the duodenum.",
+      "function": "Carry bile to the intestine to digest fat.",
+      "why": "They connect bile made in the liver with the gut where it is needed.",
+      "notes": {
+        "medicine": "A stone blocking the common bile duct causes jaundice; with fever and pain, think cholangitis."
+      },
+      "region": "accessory",
+      "modelFile": "digestive.glb",
+      "meshName": ["cystic_duct", "common_hepatic_duct", "hepatic_duct"],
+      "camera": { "position": [-0.193, 1.171, 0.278], "target": [-0.031, 1.142, 0.027] },
+      "difficulty": 3
+    },
+    {
+      "id": "pancreas",
+      "name": "pancreas",
+      "synonyms": [],
+      "latinName": "pancreas",
+      "definition": "Long gland lying behind the stomach, its head in the curve of the duodenum.",
+      "function": "Makes digestive enzymes and the hormones insulin and glucagon.",
+      "why": "It is both a digestive gland and an endocrine organ controlling blood sugar.",
+      "notes": {
+        "nursing": "Acute pancreatitis causes severe upper abdominal pain radiating to the back; monitor fluid balance closely.",
+        "medicine": "Gallstones and alcohol are the commonest causes of acute pancreatitis."
+      },
+      "region": "accessory",
+      "modelFile": "digestive.glb",
+      "meshName": ["pancreas", "parenchyma_of_pancreas", "pancreatic_duct"],
+      "camera": { "position": [-0.092, 1.149, 0.301], "target": [0.012, 1.119, 0.021] },
+      "difficulty": 1
+    },
+    {
+      "id": "spleen",
+      "name": "spleen",
+      "synonyms": [],
+      "latinName": "splen",
+      "definition": "Fist-sized organ in the upper left abdomen behind the stomach, under ribs 9–11.",
+      "function": "Filters old red cells and bacteria from the blood and helps mount immune responses.",
+      "why": "Blood flowing slowly through it lets white cells catch bacteria and old cells.",
+      "notes": {
+        "sports": "Avoid contact sport for several weeks after glandular fever: an enlarged spleen can rupture.",
+        "medicine": "After splenectomy, patients need vaccines and sometimes lifelong antibiotics."
+      },
+      "region": "accessory",
+      "modelFile": "digestive.glb",
+      "meshName": "spleen",
+      "camera": { "position": [-0.213, 1.18, 0.024], "target": [0.085, 1.165, -0.006] },
+      "difficulty": 1
+    }
+  ]
+}

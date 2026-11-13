@@ -1,0 +1,561 @@
+{
+  "module": "vessels",
+  "regions": [
+    { "id": "arteries", "name": "Arteries" },
+    { "id": "veins", "name": "Veins" }
+  ],
+  "structures": [
+    {
+      "id": "aorta",
+      "name": "aorta",
+      "synonyms": [],
+      "latinName": "aorta",
+      "definition": "The body’s main artery, rising from the heart, arching over it and running down in front of the spine.",
+      "function": "Carries oxygenated blood from the left ventricle to every artery of the body except those of the lungs.",
+      "why": "Its elastic wall absorbs each heartbeat and recoils, turning pulsed output into steadier flow.",
+      "notes": {
+        "medicine": "Ends at L4 by dividing into the common iliac arteries; an abdominal aneurysm presents as a pulsatile mass.",
+        "nursing": "A sudden tearing chest or back pain with unequal arm blood pressures suggests aortic dissection: escalate immediately."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": ["ascending_aorta", "arch_of_aorta", "descending_thoracic_aorta", "descending_aorta", "abdominal_aorta"],
+      "camera": { "position": [-0.239, 1.282, 0.677], "target": [0.014, 1.21, -0.009] },
+      "difficulty": 1
+    },
+    {
+      "id": "common-carotid",
+      "name": "common carotid artery",
+      "synonyms": ["carotid", "carotid artery"],
+      "latinName": "arteria carotis communis",
+      "definition": "Large artery running up each side of the neck beside the windpipe.",
+      "function": "Carries blood to the head and neck, dividing at the level of the upper thyroid cartilage.",
+      "why": "Its pulse is strong and close to the surface, so it is reliable even when blood pressure is low.",
+      "notes": {
+        "nursing": "Check the carotid pulse for up to 10 seconds in an unresponsive adult; never press both sides at once.",
+        "medicine": "Its bifurcation holds the carotid sinus (blood pressure sensor) and carotid body (oxygen sensor)."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "common_carotid_artery",
+      "camera": { "position": [-0.177, 1.459, 0.262], "target": [-0.015, 1.43, 0.011] },
+      "difficulty": 1
+    },
+    {
+      "id": "internal-carotid",
+      "name": "internal carotid artery",
+      "synonyms": ["ica"],
+      "latinName": "arteria carotis interna",
+      "definition": "Branch rising from the neck through the skull base without giving branches in the neck.",
+      "function": "Supplies most of the front and middle of the brain and the eye.",
+      "why": "A protected route through the skull base carries the bulk of the brain’s blood supply.",
+      "notes": {
+        "medicine": "Stenosis at its origin is a major cause of stroke and transient monocular blindness (amaurosis fugax)."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "internal_carotid_artery",
+      "camera": { "position": [-0.186, 1.594, 0.255], "target": [-0.024, 1.564, 0.004] },
+      "difficulty": 2
+    },
+    {
+      "id": "vertebral-artery",
+      "name": "vertebral artery",
+      "synonyms": [],
+      "latinName": "arteria vertebralis",
+      "definition": "Artery rising through the openings in the transverse processes of the upper six cervical vertebrae.",
+      "function": "Joins its partner inside the skull to supply the brainstem, cerebellum and back of the brain.",
+      "why": "Travelling inside the vertebrae protects it as the neck moves.",
+      "notes": {
+        "physio": "Screen for vertebrobasilar insufficiency (dizziness, diplopia, drop attacks) before neck manipulation."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "vertebral_artery",
+      "camera": { "position": [-0.179, 1.56, -0.278], "target": [-0.017, 1.53, -0.027] },
+      "difficulty": 2
+    },
+    {
+      "id": "basilar-artery",
+      "name": "basilar artery",
+      "synonyms": [],
+      "latinName": "arteria basilaris",
+      "definition": "Single artery lying on the front of the pons, formed where the two vertebral arteries join.",
+      "function": "Supplies the brainstem and cerebellum and divides into the posterior cerebral arteries.",
+      "why": "Joining two arteries into one gives the brainstem a backup if one side is narrowed.",
+      "notes": {
+        "medicine": "Its occlusion causes “locked-in syndrome” and is often fatal without urgent treatment."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "basilar_artery",
+      "camera": { "position": [-0.001, 1.416, 0.231], "target": [-0.001, 1.596, -0.009] },
+      "difficulty": 3
+    },
+    {
+      "id": "subclavian-artery",
+      "name": "subclavian artery",
+      "synonyms": [],
+      "latinName": "arteria subclavia",
+      "definition": "Artery arching over the first rib behind the clavicle toward the armpit.",
+      "function": "Supplies the arm and gives branches to the brain, chest wall and neck.",
+      "why": "It carries blood to the upper limb while the clavicle shields it.",
+      "notes": {
+        "medicine": "Becomes the axillary artery at the outer border of the first rib; compressed in thoracic outlet syndrome."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "subclavian_artery",
+      "camera": { "position": [-0.208, 1.45, 0.254], "target": [-0.046, 1.42, 0.003] },
+      "difficulty": 2
+    },
+    {
+      "id": "axillary-artery",
+      "name": "axillary artery",
+      "synonyms": [],
+      "latinName": "arteria axillaris",
+      "definition": "Artery passing through the armpit from the first rib to the lower border of the teres major.",
+      "function": "Supplies the shoulder region and continues into the arm.",
+      "why": "It runs deep in the armpit, surrounded by the brachial plexus, protected by fat and muscle.",
+      "notes": {
+        "medicine": "Shoulder dislocations and fractures of the humeral neck can injure it."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "axillary_artery",
+      "camera": { "position": [-0.276, 1.407, 0.244], "target": [-0.114, 1.377, -0.007] },
+      "difficulty": 2
+    },
+    {
+      "id": "brachial-artery",
+      "name": "brachial artery",
+      "synonyms": [],
+      "latinName": "arteria brachialis",
+      "definition": "Main artery of the upper arm, running down its inner side to the front of the elbow.",
+      "function": "Supplies the arm and divides into the radial and ulnar arteries below the elbow.",
+      "why": "Its course in the groove beside the large flexor muscle keeps it sheltered.",
+      "notes": {
+        "nursing": "Blood pressure cuffs compress it; listen over it, just medial to the tendon in the elbow crease.",
+        "medicine": "Supracondylar fractures in children can injure it: check the radial pulse and hand perfusion."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "brachial_artery",
+      "camera": { "position": [-0.454, 1.275, 0.404], "target": [-0.18, 1.226, -0.019] },
+      "difficulty": 1
+    },
+    {
+      "id": "radial-artery",
+      "name": "radial artery",
+      "synonyms": [],
+      "latinName": "arteria radialis",
+      "definition": "Forearm artery running down the thumb side to the wrist.",
+      "function": "Supplies the forearm and hand and forms the deep palmar arch.",
+      "why": "Running superficially over the end of the radius makes it easy to feel and reach.",
+      "notes": {
+        "nursing": "The usual site for the pulse and for arterial blood gas sampling; do Allen’s test first.",
+        "medicine": "Common access route for coronary angiography and arterial lines."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "radial_artery",
+      "camera": { "position": [-0.501, 1.032, 0.399], "target": [-0.247, 0.986, 0.005] },
+      "difficulty": 1
+    },
+    {
+      "id": "ulnar-artery",
+      "name": "ulnar artery",
+      "synonyms": [],
+      "latinName": "arteria ulnaris",
+      "definition": "Forearm artery running down the little-finger side to the wrist.",
+      "function": "Supplies the forearm and hand and forms the superficial palmar arch.",
+      "why": "With its partner on the other side, it gives the hand a double blood supply.",
+      "notes": {
+        "nursing": "Allen’s test checks that it can perfuse the hand before radial artery sampling."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "ulnar_artery",
+      "camera": { "position": [-0.474, 1.032, 0.385], "target": [-0.227, 0.988, 0.004] },
+      "difficulty": 2
+    },
+    {
+      "id": "coeliac-trunk",
+      "name": "coeliac trunk",
+      "synonyms": ["celiac trunk", "celiac artery", "coeliac artery"],
+      "latinName": "truncus coeliacus",
+      "definition": "Short thick artery leaving the front of the abdominal aorta just below the diaphragm.",
+      "function": "Divides into the left gastric, splenic and common hepatic arteries.",
+      "why": "It supplies the foregut: oesophagus end, stomach, liver, pancreas, spleen and upper duodenum.",
+      "notes": {
+        "medicine": "Arises at T12; its three branches form a “tripod”."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": ["celiac_trunk", "celiac_artery"],
+      "camera": { "position": [-0.097, 1.191, 0.299], "target": [0.007, 1.162, 0.019] },
+      "difficulty": 2
+    },
+    {
+      "id": "superior-mesenteric-artery",
+      "name": "superior mesenteric artery",
+      "synonyms": [],
+      "latinName": "arteria mesenterica superior",
+      "definition": "Artery leaving the front of the aorta just below the trunk to the upper abdominal organs.",
+      "function": "Supplies the small intestine, caecum, ascending colon and most of the transverse colon.",
+      "why": "One large vessel feeds the whole midgut through arcades in the mesentery.",
+      "notes": {
+        "medicine": "Its sudden occlusion causes acute mesenteric ischaemia: pain out of proportion to the examination."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "superior_mesenteric_artery",
+      "camera": { "position": [-0.135, 1.091, 0.327], "target": [-0.026, 1.06, 0.032] },
+      "difficulty": 2
+    },
+    {
+      "id": "inferior-mesenteric-artery",
+      "name": "inferior mesenteric artery",
+      "synonyms": ["ima"],
+      "latinName": "arteria mesenterica inferior",
+      "definition": "Smaller artery leaving the front of the aorta at L3.",
+      "function": "Supplies the distal transverse colon, descending and sigmoid colon and upper rectum.",
+      "why": "It feeds the hindgut, whose blood supply links with the midgut’s along the marginal artery.",
+      "notes": {
+        "medicine": "The splenic flexure is a watershed area prone to ischaemic colitis."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "inferior_mesenteric_artery",
+      "camera": { "position": [-0.092, 1.05, 0.305], "target": [0.011, 1.021, 0.025] },
+      "difficulty": 3
+    },
+    {
+      "id": "renal-artery",
+      "name": "renal artery",
+      "synonyms": [],
+      "latinName": "arteria renalis",
+      "definition": "Artery leaving each side of the aorta at about L1 to enter the kidney.",
+      "function": "Carries about a fifth of the heart’s output to the kidney for filtering.",
+      "why": "The kidneys need far more blood than their size suggests, because they clean the whole circulation.",
+      "notes": {
+        "medicine": "Renal artery stenosis causes resistant hypertension; the right artery passes behind the inferior vena cava."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "renal_artery",
+      "camera": { "position": [-0.105, 1.145, 0.289], "target": [-0.001, 1.116, 0.009] },
+      "difficulty": 2
+    },
+    {
+      "id": "common-iliac-artery",
+      "name": "common iliac artery",
+      "synonyms": [],
+      "latinName": "arteria iliaca communis",
+      "definition": "One of the two terminal branches of the aorta, running down and outward at the pelvic brim.",
+      "function": "Divides into the internal iliac artery for the pelvis and the external iliac artery for the leg.",
+      "why": "Splitting the aorta gives each leg and each side of the pelvis its own supply.",
+      "notes": {
+        "medicine": "Aortic aneurysms often extend into it."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "common_iliac_artery",
+      "camera": { "position": [-0.104, 1.041, 0.29], "target": [-0.001, 1.011, 0.01] },
+      "difficulty": 2
+    },
+    {
+      "id": "external-iliac-artery",
+      "name": "external iliac artery",
+      "synonyms": [],
+      "latinName": "arteria iliaca externa",
+      "definition": "Artery running along the pelvic brim to pass under the inguinal ligament.",
+      "function": "Carries blood to the leg; it becomes the femoral artery at the inguinal ligament.",
+      "why": "It is the leg’s main supply line through the pelvis.",
+      "notes": {
+        "medicine": "Kidney transplants are usually connected to it."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "external_iliac_artery",
+      "camera": { "position": [-0.207, 0.966, 0.262], "target": [-0.044, 0.937, 0.011] },
+      "difficulty": 3
+    },
+    {
+      "id": "femoral-artery",
+      "name": "femoral artery",
+      "synonyms": [],
+      "latinName": "arteria femoralis",
+      "definition": "Main artery of the thigh, starting at the groin and running down its front and inner side.",
+      "function": "Supplies the thigh and continues behind the knee to supply the leg.",
+      "why": "It is the leg’s main artery, superficial in the groin and then protected in a muscular canal.",
+      "notes": {
+        "nursing": "The femoral pulse is felt at the mid-inguinal point; check the groin site for bleeding after angiography.",
+        "medicine": "Common access for angiography and arterial lines."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "femoral_artery",
+      "camera": { "position": [-0.429, 0.797, 0.597], "target": [-0.052, 0.728, 0.014] },
+      "difficulty": 1
+    },
+    {
+      "id": "popliteal-artery",
+      "name": "popliteal artery",
+      "synonyms": [],
+      "latinName": "arteria poplitea",
+      "definition": "Continuation of the femoral artery, lying deep in the hollow at the back of the knee.",
+      "function": "Supplies the knee and divides into the arteries of the leg.",
+      "why": "It is the deepest structure in the back of the knee, cushioned by fat.",
+      "notes": {
+        "nursing": "Its pulse is felt deep in the back of the knee with the knee slightly bent.",
+        "sports": "Knee dislocations can tear it; always check the foot pulses after a dislocation."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "popliteal_artery",
+      "camera": { "position": [-0.289, 0.499, -0.355], "target": [-0.076, 0.46, -0.026] },
+      "difficulty": 2
+    },
+    {
+      "id": "anterior-tibial-artery",
+      "name": "anterior tibial artery",
+      "synonyms": [],
+      "latinName": "arteria tibialis anterior",
+      "definition": "Leg artery running down the front of the interosseous membrane to the ankle.",
+      "function": "Supplies the front of the leg and continues onto the foot.",
+      "why": "It feeds the muscles that lift the foot.",
+      "notes": {
+        "sports": "Swelling in the front compartment can compress it (compartment syndrome)."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "anterior_tibial_artery",
+      "camera": { "position": [-0.419, 0.302, 0.497], "target": [-0.087, 0.241, -0.016] },
+      "difficulty": 3
+    },
+    {
+      "id": "posterior-tibial-artery",
+      "name": "posterior tibial artery",
+      "synonyms": [],
+      "latinName": "arteria tibialis posterior",
+      "definition": "Leg artery running down the back of the calf and behind the medial malleolus into the sole.",
+      "function": "Supplies the back of the leg and the sole of the foot.",
+      "why": "It carries blood to the weight-bearing sole.",
+      "notes": {
+        "nursing": "Its pulse is felt behind the medial malleolus; check it in peripheral vascular assessments."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "posterior_tibial_artery",
+      "camera": { "position": [0.471, 0.234, 0.318], "target": [-0.068, 0.202, -0.031] },
+      "difficulty": 2
+    },
+    {
+      "id": "dorsalis-pedis",
+      "name": "dorsalis pedis artery",
+      "synonyms": ["dorsalis pedis", "dorsal pedal artery"],
+      "latinName": "arteria dorsalis pedis",
+      "definition": "Artery on the top of the foot, continuing from the leg artery that runs down the front of the shin.",
+      "function": "Supplies the top of the foot and links with the arteries of the sole.",
+      "why": "It completes a loop of blood supply around the foot.",
+      "notes": {
+        "nursing": "Its pulse is felt on the top of the foot, lateral to the big-toe extensor tendon; absent in a minority of people."
+      },
+      "region": "arteries",
+      "modelFile": "vessels.glb",
+      "meshName": "dorsalis_pedis_artery",
+      "camera": { "position": [-0.242, 0.1, 0.269], "target": [-0.08, 0.07, 0.018] },
+      "difficulty": 2
+    },
+    {
+      "id": "superior-vena-cava",
+      "name": "superior vena cava",
+      "synonyms": ["svc"],
+      "latinName": "vena cava superior",
+      "definition": "Large vein entering the top of the right atrium.",
+      "function": "Returns blood from the head, neck, arms and upper chest.",
+      "why": "One short, wide vein lets the whole upper body drain into the heart with little resistance.",
+      "notes": {
+        "nursing": "Central venous catheter tips should sit in its lower part, just above the right atrium."
+      },
+      "region": "veins",
+      "modelFile": "vessels.glb",
+      "meshName": "superior_vena_cava",
+      "camera": { "position": [-0.119, 1.4, 0.296], "target": [-0.015, 1.37, 0.015] },
+      "difficulty": 1
+    },
+    {
+      "id": "inferior-vena-cava",
+      "name": "inferior vena cava",
+      "synonyms": ["ivc"],
+      "latinName": "vena cava inferior",
+      "definition": "The largest vein, running up the right side of the spine to the heart.",
+      "function": "Returns blood from the legs, pelvis and abdomen.",
+      "why": "It carries the largest volume of returning blood, so it is the widest vein.",
+      "notes": {
+        "nursing": "In late pregnancy, lying flat compresses it; tilt the patient to the left."
+      },
+      "region": "veins",
+      "modelFile": "vessels.glb",
+      "meshName": "inferior_vena_cava",
+      "camera": { "position": [-0.174, 1.194, 0.448], "target": [-0.014, 1.149, 0.016] },
+      "difficulty": 1
+    },
+    {
+      "id": "internal-jugular",
+      "name": "internal jugular vein",
+      "synonyms": ["ijv", "internal jugular"],
+      "latinName": "vena jugularis interna",
+      "definition": "Large vein running down the side of the neck beside the carotid artery.",
+      "function": "Drains blood from the brain, face and neck.",
+      "why": "It carries the brain’s venous blood straight down to the heart.",
+      "notes": {
+        "nursing": "Jugular venous pressure is assessed with the patient at 45°; it reflects right atrial pressure.",
+        "medicine": "The right one is the preferred route for ultrasound-guided central venous catheters."
+      },
+      "region": "veins",
+      "modelFile": "vessels.glb",
+      "meshName": "internal_jugular_vein",
+      "camera": { "position": [-0.189, 1.469, 0.268], "target": [-0.026, 1.439, 0.017] },
+      "difficulty": 1
+    },
+    {
+      "id": "subclavian-vein",
+      "name": "subclavian vein",
+      "synonyms": [],
+      "latinName": "vena subclavia",
+      "definition": "Vein passing under the clavicle, in front of its artery, from the armpit to the base of the neck.",
+      "function": "Drains the arm and joins the internal jugular vein.",
+      "why": "A wide, fixed vein that stays open even when blood volume is low.",
+      "notes": {
+        "nursing": "Central lines inserted here carry a risk of pneumothorax; check the chest X-ray afterwards."
+      },
+      "region": "veins",
+      "modelFile": "vessels.glb",
+      "meshName": "subclavian_vein",
+      "camera": { "position": [-0.217, 1.447, 0.266], "target": [-0.055, 1.418, 0.015] },
+      "difficulty": 2
+    },
+    {
+      "id": "cephalic-vein",
+      "name": "cephalic vein",
+      "synonyms": [],
+      "latinName": "vena cephalica",
+      "definition": "Superficial vein running up the thumb side of the forearm and arm into the groove between the chest and shoulder muscles.",
+      "function": "Drains the outer side of the hand and arm into the axillary vein.",
+      "why": "Running just under the skin, it carries blood up the arm without being compressed by muscle.",
+      "notes": {
+        "nursing": "At the wrist it is the “intern’s vein”: large and straight, good for cannulation."
+      },
+      "region": "veins",
+      "modelFile": "vessels.glb",
+      "meshName": "cephalic_vein",
+      "camera": { "position": [-0.794, 1.238, 0.933], "target": [-0.193, 1.129, 0.005] },
+      "difficulty": 1
+    },
+    {
+      "id": "basilic-vein",
+      "name": "basilic vein",
+      "synonyms": [],
+      "latinName": "vena basilica",
+      "definition": "Superficial vein running up the little-finger side of the forearm and inner arm before diving deep.",
+      "function": "Drains the inner side of the hand and arm into the axillary vein.",
+      "why": "It joins the deep veins halfway up the arm, giving a route for central catheters.",
+      "notes": {
+        "nursing": "A common route for PICC lines; it lies close to the brachial artery and median nerve at the elbow."
+      },
+      "region": "veins",
+      "modelFile": "vessels.glb",
+      "meshName": "basilic_vein",
+      "camera": { "position": [-0.668, 1.177, 0.723], "target": [-0.193, 1.091, -0.011] },
+      "difficulty": 1
+    },
+    {
+      "id": "median-cubital-vein",
+      "name": "median cubital vein",
+      "synonyms": ["median cubital"],
+      "latinName": "vena mediana cubiti",
+      "definition": "Short superficial vein crossing the front of the elbow between the two main arm veins.",
+      "function": "Links the two superficial veins of the arm.",
+      "why": "It is large, superficial and anchored by the bicipital aponeurosis, so it rolls little.",
+      "notes": {
+        "nursing": "The first choice for venepuncture: superficial, well anchored and away from nerves."
+      },
+      "region": "veins",
+      "modelFile": "vessels.glb",
+      "meshName": "median_cubital_vein",
+      "camera": { "position": [-0.371, 1.152, 0.235], "target": [-0.209, 1.122, -0.016] },
+      "difficulty": 1
+    },
+    {
+      "id": "hepatic-portal-vein",
+      "name": "hepatic portal vein",
+      "synonyms": ["portal vein"],
+      "latinName": "vena portae hepatis",
+      "definition": "Vein formed behind the pancreas by the union of the splenic and superior mesenteric veins.",
+      "function": "Carries nutrient-rich blood from the gut, spleen and pancreas to the liver.",
+      "why": "Routing absorbed food and toxins through the liver first lets it process them before they reach the body.",
+      "notes": {
+        "medicine": "Portal hypertension (usually cirrhosis) opens collaterals: oesophageal varices, caput medusae, haemorrhoids."
+      },
+      "region": "veins",
+      "modelFile": "vessels.glb",
+      "meshName": ["hepatic_portal_vein", "portal_vein"],
+      "camera": { "position": [-0.18, 1.236, 0.453], "target": [-0.022, 1.191, 0.025] },
+      "difficulty": 2
+    },
+    {
+      "id": "femoral-vein",
+      "name": "femoral vein",
+      "synonyms": [],
+      "latinName": "vena femoralis",
+      "definition": "Deep vein of the thigh, lying beside its artery in the groin.",
+      "function": "Drains the leg toward the external iliac vein.",
+      "why": "It carries most of the leg’s blood back from the deep muscles.",
+      "notes": {
+        "nursing": "A common site of deep vein thrombosis; it lies medial to the femoral artery (remember NAVY)."
+      },
+      "region": "veins",
+      "modelFile": "vessels.glb",
+      "meshName": "femoral_vein",
+      "camera": { "position": [-0.398, 0.786, 0.552], "target": [-0.053, 0.723, 0.019] },
+      "difficulty": 2
+    },
+    {
+      "id": "great-saphenous-vein",
+      "name": "great saphenous vein",
+      "synonyms": ["long saphenous vein"],
+      "latinName": "vena saphena magna",
+      "definition": "The longest vein in the body, running up the inner side of the leg from the foot to the groin.",
+      "function": "Drains the superficial tissues of the leg into the deep vein in the groin.",
+      "why": "A superficial channel lets skin and fat drain while deep veins carry the muscle blood.",
+      "notes": {
+        "nursing": "Lies just in front of the medial malleolus: a reliable site for a cut-down in an emergency.",
+        "medicine": "Harvested for coronary artery bypass grafts; varicose veins often start at its valves."
+      },
+      "region": "veins",
+      "modelFile": "vessels.glb",
+      "meshName": "great_saphenous_vein",
+      "camera": { "position": [1.282, 0.541, 0.865], "target": [-0.054, 0.463, 0.001] },
+      "difficulty": 1
+    },
+    {
+      "id": "small-saphenous-vein",
+      "name": "small saphenous vein",
+      "synonyms": ["short saphenous vein"],
+      "latinName": "vena saphena parva",
+      "definition": "Superficial vein running up the back of the calf from behind the lateral malleolus.",
+      "function": "Drains the outer foot and back of the leg into the deep vein behind the knee.",
+      "why": "It drains the calf skin into the deep system.",
+      "notes": {
+        "medicine": "Its valves can fail, causing varicose veins at the back of the calf."
+      },
+      "region": "veins",
+      "modelFile": "vessels.glb",
+      "meshName": "small_saphenous_vein",
+      "camera": { "position": [-0.566, 0.348, -0.791], "target": [-0.087, 0.261, -0.051] },
+      "difficulty": 2
+    }
+  ]
+}

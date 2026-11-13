@@ -1,0 +1,99 @@
+{
+  "systems": [
+    {
+      "id": "skeletal",
+      "glyph": "bone",
+      "modules": [
+        {
+          "id": "skeleton",
+          "status": "available",
+          "contentFile": "skeleton",
+          "model": { "file": "skeleton.glb", "scale": 1, "position": [0, 0, 0], "rotation": [0, 0, 0] }
+        }
+      ]
+    },
+    {
+      "id": "muscular",
+      "glyph": "muscle",
+      "modules": [
+        {
+          "id": "muscles",
+          "status": "available",
+          "contentFile": "muscles",
+          "model": { "file": "muscles.glb", "context": "skeleton-context.glb" }
+        }
+      ]
+    },
+    {
+      "id": "cardiovascular",
+      "glyph": "heart",
+      "modules": [
+        {
+          "id": "heart",
+          "status": "available",
+          "contentFile": "heart",
+          "model": { "file": "heart.glb", "context": "skeleton-context.glb" }
+        },
+        {
+          "id": "vessels",
+          "status": "available",
+          "contentFile": "vessels",
+          "model": { "file": "vessels.glb", "context": "skeleton-context.glb" }
+        }
+      ]
+    },
+    {
+      "id": "respiratory",
+      "glyph": "lungs",
+      "modules": [
+        {
+          "id": "airways",
+          "status": "available",
+          "contentFile": "airways",
+          "model": { "file": "airways.glb", "context": "skeleton-context.glb" }
+        }
+      ]
+    },
+    {
+      "id": "nervous",
+      "glyph": "brain",
+      "modules": [{ "id": "brain", "status": "available", "contentFile": "brain", "model": { "file": "brain.glb" } }]
+    },
+    {
+      "id": "digestive",
+      "glyph": "stomach",
+      "modules": [
+        {
+          "id": "digestive",
+          "status": "available",
+          "contentFile": "digestive",
+          "model": { "file": "digestive.glb", "context": "skeleton-context.glb" }
+        }
+      ]
+    },
+    {
+      "id": "urinary",
+      "glyph": "kidney",
+      "modules": [
+        {
+          "id": "urinary",
+          "status": "available",
+          "contentFile": "urinary",
+          "model": { "file": "urinary.glb", "context": "skeleton-context.glb" }
+        }
+      ]
+    },
+    {
+      "id": "reproductive",
+      "glyph": "reproductive",
+      "modules": [
+        {
+          "id": "reproductive",
+          "status": "available",
+          "contentFile": "reproductive",
+          "model": { "file": "reproductive.glb", "context": "skeleton-context.glb" }
+        }
+      ]
+    }
+  ]
+}

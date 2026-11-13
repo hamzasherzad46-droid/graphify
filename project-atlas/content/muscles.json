@@ -1,0 +1,927 @@
+{
+  "module": "muscles",
+  "regions": [
+    { "id": "head-neck", "name": "Head and neck" },
+    { "id": "upper-limb", "name": "Upper limb" },
+    { "id": "trunk", "name": "Trunk" },
+    { "id": "lower-limb", "name": "Lower limb" }
+  ],
+  "structures": [
+    {
+      "id": "sternocleidomastoid",
+      "name": "sternocleidomastoid",
+      "synonyms": ["scm", "sternomastoid"],
+      "latinName": "musculus sternocleidomastoideus",
+      "definition": "Strap-like neck muscle running from the sternum and clavicle up to the mastoid process.",
+      "function": "Turns the head to the opposite side and tilts it to the same side; both together flex the neck.",
+      "why": "It positions the head and lifts the sternum as an accessory breathing muscle when breathing is hard.",
+      "notes": {
+        "nursing": "Visible use of the neck muscles when breathing at rest is a sign of respiratory distress.",
+        "medicine": "Shortening in infancy causes torticollis; it divides the neck into anterior and posterior triangles.",
+        "physio": "Often tight in forward-head posture; stretched in neck rehabilitation."
+      },
+      "region": "head-neck",
+      "modelFile": "muscles.glb",
+      "meshName": "sternocleidomastoid",
+      "camera": { "position": [-0.275, 1.531, 0.421], "target": [-0.001, 1.481, -0.003] },
+      "difficulty": 1
+    },
+    {
+      "id": "levator-scapulae",
+      "name": "levator scapulae",
+      "synonyms": [],
+      "latinName": "musculus levator scapulae",
+      "definition": "Muscle running from the upper cervical vertebrae down to the upper inner corner of the shoulder blade.",
+      "function": "Elevates the scapula and tips the glenoid downward; helps bend the neck to the side.",
+      "why": "It works with the upper back muscles to lift and steady the shoulder blade.",
+      "notes": {
+        "physio": "A common source of the stiff, painful neck sometimes called a crick in the neck."
+      },
+      "region": "head-neck",
+      "modelFile": "muscles.glb",
+      "meshName": "levator_scapulae",
+      "camera": { "position": [-0.241, 1.502, -0.347], "target": [-0.051, 1.467, -0.053] },
+      "difficulty": 2
+    },
+    {
+      "id": "scalenes",
+      "name": "scalene muscles",
+      "synonyms": ["scalenes", "scalene"],
+      "latinName": "musculi scaleni",
+      "definition": "Three muscles on each side of the neck running from the cervical vertebrae to the first two ribs.",
+      "function": "Raise the first two ribs in deep breathing and bend the neck to the side.",
+      "why": "They anchor the top of the rib cage so the chest can expand upward.",
+      "notes": {
+        "medicine": "The brachial plexus and subclavian artery pass between the anterior and middle muscles: the site of interscalene nerve blocks and thoracic outlet compression.",
+        "nursing": "Their use during breathing at rest is a sign of respiratory distress."
+      },
+      "region": "head-neck",
+      "modelFile": "muscles.glb",
+      "meshName": ["scalenus_anterior", "scalenus_medius", "scalenus_posterior"],
+      "camera": { "position": [-0.237, 1.504, 0.269], "target": [-0.048, 1.47, -0.024] },
+      "difficulty": 2
+    },
+    {
+      "id": "digastric",
+      "name": "digastric",
+      "synonyms": [],
+      "latinName": "musculus digastricus",
+      "definition": "Two-bellied muscle under the jaw, its bellies joined by a tendon slung near the hyoid bone.",
+      "function": "Opens the mouth by pulling the mandible down and raises the hyoid during swallowing.",
+      "why": "Two bellies on one tendon let a single muscle pull the jaw and the hyoid from two directions.",
+      "notes": {
+        "dentistry": "Helps open the mouth; its anterior belly is supplied by the trigeminal nerve and its posterior belly by the facial nerve."
+      },
+      "region": "head-neck",
+      "modelFile": "muscles.glb",
+      "meshName": "digastric",
+      "camera": { "position": [-0.205, 1.419, 0.291], "target": [-0.031, 1.541, 0.012] },
+      "difficulty": 3
+    },
+    {
+      "id": "mylohyoid",
+      "name": "mylohyoid",
+      "synonyms": [],
+      "latinName": "musculus mylohyoideus",
+      "definition": "Thin sheet of muscle forming the floor of the mouth between the two halves of the mandible.",
+      "function": "Raises the floor of the mouth and the hyoid bone during swallowing and speech.",
+      "why": "It forms a muscular sling that supports the tongue.",
+      "notes": {
+        "dentistry": "Lower molar roots lie below its attachment line, so infections there spread into the neck rather than under the tongue."
+      },
+      "region": "head-neck",
+      "modelFile": "muscles.glb",
+      "meshName": "mylohyoid",
+      "camera": { "position": [-0.001, 1.312, 0.321], "target": [-0.001, 1.522, 0.041] },
+      "difficulty": 3
+    },
+    {
+      "id": "deltoid",
+      "name": "deltoid",
+      "synonyms": ["delt", "delts"],
+      "latinName": "musculus deltoideus",
+      "definition": "Thick triangular muscle that caps the shoulder.",
+      "function": "Raises the arm away from the body; its front part flexes and its back part extends the arm.",
+      "why": "Wrapping over the shoulder joint, it gives the arm power to lift in almost any direction.",
+      "notes": {
+        "nursing": "Deltoid IM injection: 2–3 fingerbreadths below the acromion into the thickest part; up to about 1 mL in adults.",
+        "medicine": "Supplied by the axillary nerve, which is at risk in shoulder dislocation and surgical neck fractures.",
+        "sports": "Overhead presses and lateral raises train its three parts."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": ["acromial_part_of_deltoid", "clavicular_part_of_deltoid", "spinal_part_of_deltoid"],
+      "camera": { "position": [-0.628, 1.388, 0.033], "target": [-0.155, 1.35, -0.038] },
+      "difficulty": 1
+    },
+    {
+      "id": "pectoralis-major",
+      "name": "pectoralis major",
+      "synonyms": ["pecs", "pec major", "pectoral"],
+      "latinName": "musculus pectoralis major",
+      "definition": "Large fan-shaped chest muscle running from the sternum and clavicle to the upper humerus.",
+      "function": "Pulls the arm across the chest, rotates it inward and helps flex the shoulder.",
+      "why": "Its broad fan gives power for pushing, climbing and hugging.",
+      "notes": {
+        "sports": "Trained by bench press and push-ups; its humeral tendon can rupture during heavy bench pressing.",
+        "medicine": "Forms the anterior axillary fold."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": ["abdominal_part_of_pectoralis_major", "clavicular_part_of_pectoralis_major", "sternocostal_part_of_pectoralis_major"],
+      "camera": { "position": [-0.44, 1.36, 0.576], "target": [-0.1, 1.298, 0.05] },
+      "difficulty": 1
+    },
+    {
+      "id": "pectoralis-minor",
+      "name": "pectoralis minor",
+      "synonyms": ["pec minor"],
+      "latinName": "musculus pectoralis minor",
+      "definition": "Small triangular muscle under the large chest muscle, attached to the coracoid process.",
+      "function": "Pulls the scapula forward and down and lifts the ribs in forced breathing.",
+      "why": "It steadies the shoulder blade against the chest wall.",
+      "notes": {
+        "physio": "Tightness tilts the scapula forward and is linked to rounded shoulders and impingement."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "pectoralis_minor",
+      "camera": { "position": [-0.289, 1.367, 0.319], "target": [-0.1, 1.332, 0.027] },
+      "difficulty": 2
+    },
+    {
+      "id": "serratus-anterior",
+      "name": "serratus anterior",
+      "synonyms": ["serratus"],
+      "latinName": "musculus serratus anterior",
+      "definition": "Saw-toothed muscle on the side of the chest, from the upper ribs to the inner edge of the shoulder blade.",
+      "function": "Pulls the scapula forward around the ribs and rotates it upward so the arm can go overhead.",
+      "why": "It holds the shoulder blade flat against the chest wall.",
+      "notes": {
+        "medicine": "Long thoracic nerve injury, for example during axillary surgery, causes winging of the scapula.",
+        "physio": "Strengthened with push-up plus and wall slides in scapular rehabilitation.",
+        "sports": "Called the boxer’s muscle because it drives a punch forward."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "serratus_anterior",
+      "camera": { "position": [-0.718, 1.341, 0.069], "target": [-0.101, 1.291, -0.024] },
+      "difficulty": 2
+    },
+    {
+      "id": "rotator-cuff",
+      "name": "rotator cuff",
+      "synonyms": ["rotator cuff muscles"],
+      "latinName": "rotator cuff",
+      "definition": "Four muscles whose tendons wrap the head of the humerus to hold it in its shallow socket.",
+      "function": "Keep the humeral head centred in the glenoid and rotate the arm.",
+      "why": "The shoulder trades bony stability for range of motion, so these muscles hold it together.",
+      "notes": {
+        "physio": "Cuff tendinopathy and tears are among the commonest shoulder problems; progressive loading is first-line treatment.",
+        "sports": "Throwers and swimmers need cuff endurance; weakness at the back of the cuff is linked to injury.",
+        "medicine": "Remember SITS: supraspinatus, infraspinatus, teres minor, subscapularis."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": ["supraspinatus", "infraspinatus_muscle", "teres_minor", "subscapularis"],
+      "camera": { "position": [-0.355, 1.389, -0.407], "target": [-0.125, 1.347, -0.052] },
+      "difficulty": 1
+    },
+    {
+      "id": "supraspinatus",
+      "name": "supraspinatus",
+      "synonyms": [],
+      "latinName": "musculus supraspinatus",
+      "definition": "Muscle lying in the fossa above the spine of the scapula, its tendon running under the acromion.",
+      "function": "Starts raising the arm sideways and presses the humeral head into its socket.",
+      "why": "Its pull holds the ball in the socket while the larger shoulder muscle lifts.",
+      "notes": {
+        "physio": "Its tendon is the one most often involved in impingement and cuff tears (painful arc between about 60° and 120°)."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "supraspinatus",
+      "camera": { "position": [-0.315, 1.437, -0.34], "target": [-0.126, 1.403, -0.048] },
+      "difficulty": 2
+    },
+    {
+      "id": "infraspinatus",
+      "name": "infraspinatus",
+      "synonyms": [],
+      "latinName": "musculus infraspinatus",
+      "definition": "Muscle filling the fossa below the spine of the scapula.",
+      "function": "Rotates the arm outward and steadies the shoulder.",
+      "why": "It balances the strong inward rotators so the shoulder stays centred.",
+      "notes": {
+        "sports": "Tightness and weakness at the back of the shoulder are common in throwing athletes."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "infraspinatus_muscle",
+      "camera": { "position": [-0.328, 1.384, -0.377], "target": [-0.125, 1.347, -0.063] },
+      "difficulty": 2
+    },
+    {
+      "id": "teres-minor",
+      "name": "teres minor",
+      "synonyms": [],
+      "latinName": "musculus teres minor",
+      "definition": "Small cylindrical muscle along the outer border of the shoulder blade.",
+      "function": "Rotates the arm outward and helps hold the humeral head in place.",
+      "why": "A second outward rotator that backs up its larger neighbour above.",
+      "notes": {
+        "medicine": "Supplied by the axillary nerve, like the deltoid."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "teres_minor",
+      "camera": { "position": [-0.337, 1.381, -0.346], "target": [-0.148, 1.347, -0.054] },
+      "difficulty": 3
+    },
+    {
+      "id": "subscapularis",
+      "name": "subscapularis",
+      "synonyms": [],
+      "latinName": "musculus subscapularis",
+      "definition": "Large muscle on the rib-facing surface of the shoulder blade.",
+      "function": "Rotates the arm inward and protects the front of the shoulder joint.",
+      "why": "The only cuff muscle at the front, it guards against the shoulder dislocating forward.",
+      "notes": {
+        "physio": "Tested with the lift-off and belly-press tests."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "subscapularis",
+      "camera": { "position": [-0.313, 1.374, 0.258], "target": [-0.115, 1.338, -0.049] },
+      "difficulty": 3
+    },
+    {
+      "id": "teres-major",
+      "name": "teres major",
+      "synonyms": [],
+      "latinName": "musculus teres major",
+      "definition": "Thick muscle running from the lower angle of the scapula to the front of the humerus.",
+      "function": "Pulls the arm down and back and rotates it inward.",
+      "why": "It assists the large back muscle (latissimus dorsi) in powerful pulling.",
+      "notes": {
+        "medicine": "Forms the lower border of the quadrangular and triangular spaces at the back of the shoulder."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "teres_major",
+      "camera": { "position": [-0.318, 1.35, -0.353], "target": [-0.129, 1.316, -0.061] },
+      "difficulty": 2
+    },
+    {
+      "id": "rhomboids",
+      "name": "rhomboids",
+      "synonyms": ["rhomboid", "rhomboid muscles", "rhomboid major", "rhomboid minor"],
+      "latinName": "musculi rhomboidei",
+      "definition": "Two flat muscles running from the spine to the inner border of the shoulder blade.",
+      "function": "Pull the shoulder blades together and up.",
+      "why": "They keep the shoulder blades from drifting forward and away from the spine.",
+      "notes": {
+        "physio": "Weakness contributes to rounded shoulders; trained with rows and scapular retraction."
+      },
+      "region": "trunk",
+      "modelFile": "muscles.glb",
+      "meshName": ["rhomboid_major", "rhomboid_minor"],
+      "camera": { "position": [0, 1.392, -0.603], "target": [0, 1.366, -0.085] },
+      "difficulty": 2
+    },
+    {
+      "id": "biceps-brachii",
+      "name": "biceps brachii",
+      "synonyms": ["biceps"],
+      "latinName": "musculus biceps brachii",
+      "definition": "Two-headed muscle on the front of the upper arm.",
+      "function": "Bends the elbow and turns the palm upward; helps flex the shoulder.",
+      "why": "Crossing both shoulder and elbow, it is strongest when lifting with the palm up or turning a screwdriver.",
+      "notes": {
+        "nursing": "Its tendon is felt in the antecubital fossa; the brachial pulse, used for blood pressure, lies just medial to it.",
+        "medicine": "The biceps reflex tests C5–C6; rupture of the long head gives a “Popeye” bulge.",
+        "sports": "Its distal tendon can rupture under a sudden heavy lowering load."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": ["long_head_of_biceps_brachii", "short_head_of_biceps_brachii"],
+      "camera": { "position": [-0.555, 1.313, 0.564], "target": [-0.183, 1.245, -0.011] },
+      "difficulty": 1
+    },
+    {
+      "id": "triceps-brachii",
+      "name": "triceps brachii",
+      "synonyms": ["triceps"],
+      "latinName": "musculus triceps brachii",
+      "definition": "Three-headed muscle on the back of the upper arm.",
+      "function": "Straightens the elbow; its long head also extends the shoulder.",
+      "why": "The main elbow extensor, used in pushing and getting up from a chair.",
+      "notes": {
+        "nursing": "Skinfold thickness for nutritional assessment is measured over the back of the arm at its midpoint.",
+        "medicine": "The triceps reflex tests C7."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": ["lateral_head_of_triceps_brachii", "long_head_of_triceps_brachii", "medial_head_of_triceps_brachii"],
+      "camera": { "position": [-0.483, 1.298, -0.521], "target": [-0.181, 1.243, -0.055] },
+      "difficulty": 1
+    },
+    {
+      "id": "brachialis",
+      "name": "brachialis",
+      "synonyms": [],
+      "latinName": "musculus brachialis",
+      "definition": "Muscle deep to the front upper-arm muscle, attached to the coronoid process of the ulna.",
+      "function": "The main flexor of the elbow in every forearm position.",
+      "why": "Attached to the ulna, which does not rotate, it flexes the elbow whatever the palm is doing.",
+      "notes": {
+        "medicine": "Can calcify after elbow injury (myositis ossificans), so avoid aggressive massage after trauma."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "brachialis",
+      "camera": { "position": [-0.447, 1.23, 0.347], "target": [-0.206, 1.186, -0.027] },
+      "difficulty": 2
+    },
+    {
+      "id": "brachioradialis",
+      "name": "brachioradialis",
+      "synonyms": [],
+      "latinName": "musculus brachioradialis",
+      "definition": "Forearm muscle running from the lower outer humerus to the radius near the wrist.",
+      "function": "Bends the elbow, most strongly with the forearm half-turned, as when holding a mug.",
+      "why": "A long lever across the elbow that adds speed and power to bending it.",
+      "notes": {
+        "medicine": "The brachioradialis reflex tests C6."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "brachioradialis",
+      "camera": { "position": [-0.608, 1.123, 0.552], "target": [-0.244, 1.057, -0.011] },
+      "difficulty": 2
+    },
+    {
+      "id": "pronator-teres",
+      "name": "pronator teres",
+      "synonyms": [],
+      "latinName": "musculus pronator teres",
+      "definition": "Short forearm muscle running from the medial epicondyle across to the middle of the radius.",
+      "function": "Turns the palm down and helps bend the elbow.",
+      "why": "It rolls the radius over the ulna so the hand can face downward.",
+      "notes": {
+        "medicine": "The median nerve passes between its two heads and can be compressed there (pronator syndrome)."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": ["humeral_head_of_pronator_teres", "ulnar_head_of_pronator_teres"],
+      "camera": { "position": [-0.412, 1.104, 0.278], "target": [-0.222, 1.069, -0.015] },
+      "difficulty": 3
+    },
+    {
+      "id": "flexor-carpi-radialis",
+      "name": "flexor carpi radialis",
+      "synonyms": [],
+      "latinName": "musculus flexor carpi radialis",
+      "definition": "Forearm muscle running from the medial epicondyle to the base of the second metacarpal.",
+      "function": "Bends the wrist and tilts it toward the thumb side.",
+      "why": "Part of the forearm flexor group that powers gripping.",
+      "notes": {
+        "nursing": "Its tendon is a landmark at the wrist: the radial pulse is felt just lateral to it."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "flexor_carpi_radialis",
+      "camera": { "position": [-0.536, 1.053, 0.479], "target": [-0.228, 0.997, 0.004] },
+      "difficulty": 3
+    },
+    {
+      "id": "flexor-digitorum-superficialis",
+      "name": "flexor digitorum superficialis",
+      "synonyms": [],
+      "latinName": "musculus flexor digitorum superficialis",
+      "definition": "Forearm muscle whose four tendons attach to the middle bones of the fingers.",
+      "function": "Bends the fingers at their middle joints and helps bend the wrist.",
+      "why": "It lets each finger flex on its own for grip and fine tasks.",
+      "notes": {
+        "medicine": "Tested by holding the other fingers straight and asking for one finger to bend at its middle joint."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "flexor_digitorum_superficialis",
+      "camera": { "position": [-0.667, 1.02, 0.674], "target": [-0.242, 0.943, 0.018] },
+      "difficulty": 3
+    },
+    {
+      "id": "extensor-digitorum",
+      "name": "extensor digitorum",
+      "synonyms": [],
+      "latinName": "musculus extensor digitorum",
+      "definition": "Muscle on the back of the forearm whose tendons spread over the backs of the fingers.",
+      "function": "Straightens the fingers and helps extend the wrist.",
+      "why": "It opens the hand to let go, balancing the strong finger flexors.",
+      "notes": {
+        "physio": "Overload at its origin on the lateral epicondyle contributes to tennis elbow."
+      },
+      "region": "upper-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "extensor_digitorum",
+      "camera": { "position": [-0.685, 1.024, -0.648], "target": [-0.264, 0.947, 0.004] },
+      "difficulty": 3
+    },
+    {
+      "id": "trapezius",
+      "name": "trapezius",
+      "synonyms": ["traps"],
+      "latinName": "musculus trapezius",
+      "definition": "Large diamond-shaped muscle covering the back of the neck and upper back.",
+      "function": "Lifts, pulls back and lowers the shoulder blade and rotates it upward when the arm goes overhead.",
+      "why": "Its three parts let the shoulder blade move in many directions and hold the shoulder up against the arm’s weight.",
+      "notes": {
+        "medicine": "Supplied by the accessory nerve (CN XI); injury causes a drooping shoulder and weak shrug.",
+        "physio": "Upper fibres are often overactive and lower fibres weak in shoulder impingement.",
+        "sports": "Shrugs train the upper part; rows and prone Y-raises train the middle and lower parts."
+      },
+      "region": "trunk",
+      "modelFile": "muscles.glb",
+      "meshName": ["ascending_part_of_trapezius", "descending_part_of_trapezius", "transverse_part_of_trapezius"],
+      "camera": { "position": [0, 1.413, -1.154], "target": [0, 1.358, -0.062] },
+      "difficulty": 1
+    },
+    {
+      "id": "diaphragm",
+      "name": "diaphragm",
+      "synonyms": ["thoracic diaphragm"],
+      "latinName": "diaphragma",
+      "definition": "Dome-shaped sheet of muscle separating the chest from the abdomen.",
+      "function": "The main muscle of breathing: it flattens as it contracts, drawing air into the lungs.",
+      "why": "By enlarging the chest from below, it does most of the work of quiet breathing.",
+      "notes": {
+        "nursing": "Sitting a breathless patient upright lets it move more freely.",
+        "medicine": "Supplied by the phrenic nerve (C3–C5); irritation refers pain to the shoulder tip.",
+        "physio": "Diaphragmatic breathing exercises improve breathing efficiency after surgery."
+      },
+      "region": "trunk",
+      "modelFile": "muscles.glb",
+      "meshName": "diaphragm",
+      "camera": { "position": [-0.242, 1.236, 0.669], "target": [-0.001, 1.167, 0.016] },
+      "difficulty": 1
+    },
+    {
+      "id": "external-oblique",
+      "name": "external oblique",
+      "synonyms": ["external abdominal oblique", "external obliques"],
+      "latinName": "musculus obliquus externus abdominis",
+      "definition": "The largest and most superficial flat muscle of the side of the abdomen; its fibres run down and forward like hands in front pockets.",
+      "function": "Flexes and rotates the trunk and compresses the abdomen.",
+      "why": "With the other abdominal muscles it forms a corset that protects the organs and supports the spine.",
+      "notes": {
+        "medicine": "Its aponeurosis forms the inguinal ligament and the front wall of the inguinal canal.",
+        "sports": "Trained with rotation and anti-rotation core exercises."
+      },
+      "region": "trunk",
+      "modelFile": "muscles.glb",
+      "meshName": "external_oblique",
+      "camera": { "position": [-0.564, 1.17, 0.788], "target": [-0.072, 1.081, 0.028] },
+      "difficulty": 2
+    },
+    {
+      "id": "erector-spinae",
+      "name": "erector spinae",
+      "synonyms": ["erector spinae muscles", "sacrospinalis", "paraspinal muscles"],
+      "latinName": "musculus erector spinae",
+      "definition": "Column of muscles running alongside the spine from the pelvis to the skull.",
+      "function": "Straightens the back, controls bending forward and bends the spine to the side.",
+      "why": "It holds the body upright against gravity all day.",
+      "notes": {
+        "physio": "Back extensor endurance is a treatment target in low back pain.",
+        "sports": "Trained by deadlifts and back extensions; it often guards painfully after a back strain."
+      },
+      "region": "trunk",
+      "modelFile": "muscles.glb",
+      "meshName": ["iliocostalis_cervicis", "iliocostalis_lumborum", "iliocostalis_thoracis", "longissimus_capitis", "longissimus_cervicis", "longissimus_thoracis", "spinalis", "spinalis_thoracis"],
+      "camera": { "position": [0, 1.311, -1.413], "target": [0, 1.243, -0.064] },
+      "difficulty": 1
+    },
+    {
+      "id": "external-intercostals",
+      "name": "external intercostals",
+      "synonyms": ["external intercostal muscles", "external intercostal"],
+      "latinName": "musculi intercostales externi",
+      "definition": "Muscles filling the spaces between the ribs, their fibres running down and forward.",
+      "function": "Lift the ribs when breathing in.",
+      "why": "They stiffen and raise the chest wall so it doesn’t get sucked inward on each breath.",
+      "notes": {
+        "medicine": "The neurovascular bundle runs in the groove under each rib, between the deeper layers."
+      },
+      "region": "trunk",
+      "modelFile": "muscles.glb",
+      "meshName": "external_intercostal_muscle",
+      "camera": { "position": [-0.501, 1.358, 0.772], "target": [0, 1.267, -0.003] },
+      "difficulty": 2
+    },
+    {
+      "id": "gluteus-maximus",
+      "name": "gluteus maximus",
+      "synonyms": ["glute max", "gluteus max"],
+      "latinName": "musculus gluteus maximus",
+      "definition": "Large, thick muscle forming most of the buttock.",
+      "function": "Extends and turns the hip outward, as in climbing stairs, running and rising from a chair.",
+      "why": "Its size reflects upright walking: it stops the trunk tipping forward at the hip.",
+      "notes": {
+        "nursing": "The dorsogluteal injection site risks the sciatic nerve; the ventrogluteal site is preferred.",
+        "physio": "Weakness is linked to knee and back pain; bridges and squats retrain it.",
+        "sports": "A main driver of sprint acceleration and jumping."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "gluteus_maximus",
+      "camera": { "position": [-0.401, 0.938, -0.579], "target": [-0.072, 0.878, -0.071] },
+      "difficulty": 1
+    },
+    {
+      "id": "gluteus-medius",
+      "name": "gluteus medius",
+      "synonyms": ["glute med"],
+      "latinName": "musculus gluteus medius",
+      "definition": "Fan-shaped hip muscle on the outer surface of the ilium, partly covered by the largest buttock muscle.",
+      "function": "Abducts the hip and keeps the pelvis level when standing on one leg.",
+      "why": "Every step balances on one leg; without it the pelvis drops on the other side.",
+      "notes": {
+        "nursing": "The ventrogluteal IM injection site lies in this muscle, away from major nerves and vessels.",
+        "physio": "Weakness causes a Trendelenburg gait."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "gluteus_medius",
+      "camera": { "position": [-0.489, 0.979, 0.017], "target": [-0.105, 0.948, -0.041] },
+      "difficulty": 2
+    },
+    {
+      "id": "gluteus-minimus",
+      "name": "gluteus minimus",
+      "synonyms": [],
+      "latinName": "musculus gluteus minimus",
+      "definition": "The smallest and deepest of the three buttock muscles.",
+      "function": "Abducts and turns the hip inward and steadies the pelvis.",
+      "why": "It works with its larger neighbour to keep the pelvis level while walking.",
+      "notes": {
+        "physio": "Its tendon is often involved in lateral hip pain (gluteal tendinopathy)."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "gluteus_minimus",
+      "camera": { "position": [-0.451, 0.959, 0.026], "target": [-0.106, 0.931, -0.026] },
+      "difficulty": 3
+    },
+    {
+      "id": "piriformis",
+      "name": "piriformis",
+      "synonyms": [],
+      "latinName": "musculus piriformis",
+      "definition": "Pear-shaped muscle running from the front of the sacrum to the greater trochanter.",
+      "function": "Rotates the hip outward and moves the bent hip out to the side.",
+      "why": "One of the deep hip rotators that steady the femoral head in its socket.",
+      "notes": {
+        "medicine": "The sciatic nerve usually leaves the pelvis just below it; compression here is called piriformis syndrome."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "piriformis",
+      "camera": { "position": [-0.271, 0.952, -0.35], "target": [-0.081, 0.917, -0.058] },
+      "difficulty": 3
+    },
+    {
+      "id": "tensor-fasciae-latae",
+      "name": "tensor fasciae latae",
+      "synonyms": ["tfl"],
+      "latinName": "musculus tensor fasciae latae",
+      "definition": "Small muscle on the outer front of the hip that blends into the iliotibial tract.",
+      "function": "Helps flex, abduct and turn the hip inward and steadies the knee through the iliotibial band.",
+      "why": "It tightens the fascia of the thigh to stabilise hip and knee when standing on one leg.",
+      "notes": {
+        "sports": "Overuse with a tight iliotibial band contributes to outer knee pain in runners."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "tensor_fasciae_latae",
+      "camera": { "position": [-0.489, 0.945, 0.065], "target": [-0.144, 0.917, 0.014] },
+      "difficulty": 3
+    },
+    {
+      "id": "iliopsoas",
+      "name": "iliopsoas",
+      "synonyms": ["iliopsoas muscle"],
+      "latinName": "musculus iliopsoas",
+      "definition": "Combined muscle formed by the psoas major from the lumbar spine and the iliacus from the pelvis, inserting on the lesser trochanter.",
+      "function": "The strongest hip flexor, lifting the thigh toward the trunk.",
+      "why": "It links the spine to the leg, flexing the hip in walking, running and sitting up.",
+      "notes": {
+        "physio": "Long periods of sitting can shorten it; the Thomas test assesses its length.",
+        "medicine": "Inflammation next to it (psoas abscess, appendicitis) makes hip extension painful: the psoas sign."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": ["psoas_major", "iliacus"],
+      "camera": { "position": [-0.473, 1.068, 0.615], "target": [-0.067, 0.994, -0.012] },
+      "difficulty": 2
+    },
+    {
+      "id": "sartorius",
+      "name": "sartorius",
+      "synonyms": ["tailor muscle", "tailors muscle"],
+      "latinName": "musculus sartorius",
+      "definition": "Long strap-like muscle crossing the thigh diagonally from the anterior superior iliac spine to the inner tibia.",
+      "function": "Flexes, abducts and turns the hip outward and bends the knee, as when sitting cross-legged.",
+      "why": "The longest muscle in the body, it moves hip and knee together.",
+      "notes": {
+        "medicine": "Forms the lateral border of the femoral triangle."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "sartorius",
+      "camera": { "position": [-0.737, 0.786, 1.035], "target": [-0.076, 0.666, 0.012] },
+      "difficulty": 2
+    },
+    {
+      "id": "quadriceps",
+      "name": "quadriceps femoris",
+      "synonyms": ["quadriceps", "quads", "quadriceps muscle"],
+      "latinName": "musculus quadriceps femoris",
+      "definition": "Four-part muscle group on the front of the thigh, joined in one tendon around the kneecap.",
+      "function": "Straightens the knee; one part also flexes the hip.",
+      "why": "It controls the knee when standing up, climbing and landing.",
+      "notes": {
+        "physio": "Wasting starts within days of knee injury or surgery; early static contractions limit it.",
+        "sports": "Strength in lowering (eccentric) movements protects the knee in landing and cutting.",
+        "nursing": "The knee-jerk reflex tests its nerve supply (L3–L4)."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": ["rectus_femoris", "vastus_lateralis", "vastus_medialis", "vastus_intermedius"],
+      "camera": { "position": [-0.695, 0.78, 0.928], "target": [-0.097, 0.671, 0.005] },
+      "difficulty": 1
+    },
+    {
+      "id": "rectus-femoris",
+      "name": "rectus femoris",
+      "synonyms": [],
+      "latinName": "musculus rectus femoris",
+      "definition": "Straight muscle down the middle of the front of the thigh, the only one of its group to cross the hip.",
+      "function": "Flexes the hip and straightens the knee.",
+      "why": "Crossing two joints lets it power a kick.",
+      "notes": {
+        "sports": "Commonly strained in kicking sports.",
+        "nursing": "An alternative IM site in adults, used less often because injections there are painful."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "rectus_femoris",
+      "camera": { "position": [-0.696, 0.778, 0.926], "target": [-0.109, 0.671, 0.018] },
+      "difficulty": 2
+    },
+    {
+      "id": "vastus-lateralis",
+      "name": "vastus lateralis",
+      "synonyms": [],
+      "latinName": "musculus vastus lateralis",
+      "definition": "The largest muscle of the front-of-thigh group, on the outer side of the thigh.",
+      "function": "Straightens the knee.",
+      "why": "It provides much of the force for standing and climbing.",
+      "notes": {
+        "nursing": "The preferred IM site in infants: the middle third of the thigh on its front-outer side."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "vastus_lateralis",
+      "camera": { "position": [-1.032, 0.704, 0.134], "target": [-0.122, 0.631, -0.003] },
+      "difficulty": 2
+    },
+    {
+      "id": "vastus-medialis",
+      "name": "vastus medialis",
+      "synonyms": ["vmo"],
+      "latinName": "musculus vastus medialis",
+      "definition": "Teardrop-shaped muscle on the inner side of the lower thigh, just above the knee.",
+      "function": "Straightens the knee and helps keep the kneecap tracking centrally.",
+      "why": "Its lowest fibres pull the patella inward, balancing the pull of the larger outer muscle.",
+      "notes": {
+        "physio": "Targeted in rehabilitation of patellofemoral pain."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "vastus_medialis",
+      "camera": { "position": [0.584, 0.656, 0.441], "target": [-0.07, 0.617, 0.018] },
+      "difficulty": 2
+    },
+    {
+      "id": "vastus-intermedius",
+      "name": "vastus intermedius",
+      "synonyms": [],
+      "latinName": "musculus vastus intermedius",
+      "definition": "Deep muscle lying under the straight central thigh muscle, directly on the front of the femur.",
+      "function": "Straightens the knee.",
+      "why": "It adds force to knee extension from directly in front of the femur.",
+      "notes": {
+        "medicine": "A thigh bruise (“dead leg”) can bleed into it and, rarely, calcify."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "vastus_intermedius",
+      "camera": { "position": [-0.554, 0.716, 0.701], "target": [-0.105, 0.634, 0.006] },
+      "difficulty": 3
+    },
+    {
+      "id": "adductor-longus",
+      "name": "adductor longus",
+      "synonyms": [],
+      "latinName": "musculus adductor longus",
+      "definition": "Fan-shaped inner-thigh muscle running from the pubis to the middle of the femur.",
+      "function": "Pulls the thigh inward and helps flex it.",
+      "why": "It stabilises the pelvis and brings the legs together.",
+      "notes": {
+        "sports": "Groin strains most often involve this muscle, typically in football and ice hockey.",
+        "medicine": "Forms the medial border of the femoral triangle."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "adductor_longus",
+      "camera": { "position": [-0.369, 0.79, 0.498], "target": [-0.056, 0.733, 0.013] },
+      "difficulty": 2
+    },
+    {
+      "id": "adductor-magnus",
+      "name": "adductor magnus",
+      "synonyms": [],
+      "latinName": "musculus adductor magnus",
+      "definition": "The largest and deepest inner-thigh muscle, running from the pubis and ischial tuberosity along the femur.",
+      "function": "Pulls the thigh inward; its hamstring part also extends the hip.",
+      "why": "A powerful stabiliser of the hip in squatting and climbing.",
+      "notes": {
+        "medicine": "The femoral artery passes through a gap in its tendon (adductor hiatus) to become the popliteal artery."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "adductor_magnus",
+      "camera": { "position": [0.6, 0.696, 0.413], "target": [-0.063, 0.657, -0.016] },
+      "difficulty": 3
+    },
+    {
+      "id": "gracilis",
+      "name": "gracilis",
+      "synonyms": [],
+      "latinName": "musculus gracilis",
+      "definition": "Long, slender muscle on the inner thigh from the pubis to the inner tibia.",
+      "function": "Pulls the thigh inward and bends the knee.",
+      "why": "The most superficial of the inner-thigh group, it helps bring the legs together.",
+      "notes": {
+        "medicine": "Its tendon is harvested, often with semitendinosus, for ACL reconstruction."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "gracilis",
+      "camera": { "position": [0.795, 0.668, 0.54], "target": [-0.041, 0.618, -0.001] },
+      "difficulty": 2
+    },
+    {
+      "id": "hamstrings",
+      "name": "hamstrings",
+      "synonyms": ["hamstring", "hamstring muscles"],
+      "latinName": "musculi ischiocrurales",
+      "definition": "Three muscles on the back of the thigh running from the ischial tuberosity to just below the knee.",
+      "function": "Bend the knee and extend the hip.",
+      "why": "They slow the swinging leg when running and protect the knee.",
+      "notes": {
+        "sports": "The commonest muscle strain in sprinting; Nordic curls reduce the risk.",
+        "physio": "The straight leg raise assesses their length as well as nerve tension."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": ["long_head_of_biceps_femoris", "semitendinosus", "semimembranosus"],
+      "camera": { "position": [-0.589, 0.696, -0.841], "target": [-0.07, 0.602, -0.039] },
+      "difficulty": 1
+    },
+    {
+      "id": "biceps-femoris",
+      "name": "biceps femoris",
+      "synonyms": ["lateral hamstring"],
+      "latinName": "musculus biceps femoris",
+      "definition": "Two-headed muscle on the outer back of the thigh, inserting on the head of the fibula.",
+      "function": "Bends the knee, turns the bent knee outward, and its long head extends the hip.",
+      "why": "It is the outer member of the back-of-thigh group.",
+      "notes": {
+        "sports": "Its long head is the part most often strained in sprinters."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": ["long_head_of_biceps_femoris", "short_head_of_biceps_femoris"],
+      "camera": { "position": [-0.552, 0.709, -0.764], "target": [-0.088, 0.624, -0.047] },
+      "difficulty": 2
+    },
+    {
+      "id": "semitendinosus",
+      "name": "semitendinosus",
+      "synonyms": [],
+      "latinName": "musculus semitendinosus",
+      "definition": "Inner back-of-thigh muscle with a long cord-like tendon in its lower half.",
+      "function": "Bends the knee, turns the bent knee inward and extends the hip.",
+      "why": "Its long tendon joins the pes anserinus on the inner tibia.",
+      "notes": {
+        "medicine": "Often harvested with gracilis for ACL reconstruction."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "semitendinosus",
+      "camera": { "position": [-0.552, 0.693, -0.818], "target": [-0.048, 0.602, -0.038] },
+      "difficulty": 3
+    },
+    {
+      "id": "semimembranosus",
+      "name": "semimembranosus",
+      "synonyms": [],
+      "latinName": "musculus semimembranosus",
+      "definition": "Broad, flat muscle of the inner back of the thigh, lying under its tendon-rich neighbour.",
+      "function": "Bends the knee, turns the bent knee inward and extends the hip.",
+      "why": "The deepest and broadest of its group, it also reinforces the back of the knee capsule.",
+      "notes": {
+        "physio": "A Baker’s cyst often arises between it and the medial head of the calf muscle."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "semimembranosus",
+      "camera": { "position": [-0.504, 0.697, -0.744], "target": [-0.042, 0.613, -0.03] },
+      "difficulty": 3
+    },
+    {
+      "id": "gastrocnemius",
+      "name": "gastrocnemius",
+      "synonyms": ["calf muscle", "gastrocs"],
+      "latinName": "musculus gastrocnemius",
+      "definition": "Two-headed muscle forming the bulge of the calf, crossing both knee and ankle.",
+      "function": "Points the foot and helps bend the knee.",
+      "why": "It gives push-off power for walking, running and jumping.",
+      "notes": {
+        "nursing": "Calf pain, swelling and warmth may mean deep vein thrombosis; assess and escalate.",
+        "physio": "Tightness limits ankle dorsiflexion; tested with the knee straight.",
+        "sports": "“Tennis leg” is a tear of its medial head."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": ["lateral_head_of_gastrocnemius", "medial_head_of_gastrocnemius"],
+      "camera": { "position": [-0.416, 0.418, -0.586], "target": [-0.069, 0.356, -0.051] },
+      "difficulty": 1
+    },
+    {
+      "id": "soleus",
+      "name": "soleus",
+      "synonyms": [],
+      "latinName": "musculus soleus",
+      "definition": "Broad, flat muscle lying deep to the main calf muscle.",
+      "function": "Points the foot and keeps the body from falling forward when standing.",
+      "why": "Rich in fatigue-resistant fibres, it works almost constantly while you stand.",
+      "notes": {
+        "nursing": "Its veins act as a muscle pump; immobility stops the pump and raises the risk of DVT.",
+        "physio": "Stretched with the knee bent to target it rather than the two-headed calf muscle."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "soleus",
+      "camera": { "position": [-0.428, 0.338, -0.583], "target": [-0.076, 0.274, -0.038] },
+      "difficulty": 2
+    },
+    {
+      "id": "tibialis-anterior",
+      "name": "tibialis anterior",
+      "synonyms": [],
+      "latinName": "musculus tibialis anterior",
+      "definition": "Muscle running down the front of the shin to the inner side of the foot.",
+      "function": "Lifts the foot and turns the sole inward.",
+      "why": "It lifts the toes clear of the ground as the leg swings through each step.",
+      "notes": {
+        "medicine": "Weakness, for example from common fibular nerve palsy, causes foot drop and a high-stepping gait.",
+        "sports": "Overuse contributes to pain at the front of the shin in runners."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "tibialis_anterior",
+      "camera": { "position": [-0.509, 0.313, 0.656], "target": [-0.092, 0.237, 0.011] },
+      "difficulty": 2
+    },
+    {
+      "id": "fibularis-longus",
+      "name": "fibularis longus",
+      "synonyms": ["peroneus longus"],
+      "latinName": "musculus fibularis longus",
+      "definition": "Long muscle on the outer side of the leg whose tendon passes behind the lateral malleolus and under the foot.",
+      "function": "Turns the sole outward, points the foot and supports the arches.",
+      "why": "It stops the ankle rolling over and steadies the foot on uneven ground.",
+      "notes": {
+        "sports": "Retraining it after an ankle sprain improves eversion strength and balance."
+      },
+      "region": "lower-limb",
+      "modelFile": "muscles.glb",
+      "meshName": "fibularis_longus",
+      "camera": { "position": [-0.892, 0.291, 0.107], "target": [-0.104, 0.228, -0.011] },
+      "difficulty": 2
+    }
+  ]
+}

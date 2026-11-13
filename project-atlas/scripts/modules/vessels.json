@@ -1,0 +1,16 @@
+{
+  "include": [
+    "ascending aorta", "arch of aorta", "descending (thoracic )?aorta", "abdominal aorta",
+    "(superior|inferior) vena cava",
+    "(left |right )?(common|internal) carotid artery",
+    "(left |right )?vertebral artery", "basilar artery",
+    "(left |right )?(subclavian|axillary|brachial|radial|ulnar) artery",
+    "celiac (trunk|artery)", "(superior|inferior) mesenteric artery",
+    "(left |right )?renal artery",
+    "(left |right )?(common|external) iliac artery",
+    "(left |right )?(femoral|popliteal|anterior tibial|posterior tibial|dorsalis pedis) artery",
+    "(left |right )?(internal jugular|subclavian|cephalic|basilic|median cubital|femoral|great saphenous|small saphenous) vein",
+    "hepatic portal vein", "(left |right )?portal vein"
+  ],
+  "minCameraDistance": 0.3
+}

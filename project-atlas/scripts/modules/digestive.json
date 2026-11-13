@@ -1,0 +1,11 @@
+{
+  "include": [
+    "tongue", "(left |right )?(submandibular|sublingual) gland", "esophagus", "stomach", "duodenum",
+    "(proximal|middle|distal) part of (jejunum|ileum)", "ileocecal junction", "appendix", "mesoappendix",
+    "(ascending|transverse|descending) colon", "transverse mesocolon", "rectum",
+    "caudate lobe of liver", "gallbladder", "cystic duct", "common hepatic duct", "(left |right )?hepatic duct",
+    "pancreas", "parenchyma of pancreas", "pancreatic duct", "spleen"
+  ],
+  "extraNodes": { "liver": "liver_surface" },
+  "minCameraDistance": 0.3
+}

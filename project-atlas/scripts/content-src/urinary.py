@@ -1,0 +1,52 @@
+"""Urinary system."""
+MODEL = 'urinary.glb'
+REGIONS = [('kidneys', 'Kidneys and their vessels'), ('lower-urinary', 'Ureters, bladder and urethra')]
+
+def S(id, name, latin, region, mesh, difficulty, view, definition, function, why, notes, synonyms=()):
+    return dict(id=id, name=name, latin=latin, region=region, mesh=mesh, difficulty=difficulty, view=view,
+                definition=definition, function=function, why=why, notes=notes, synonyms=list(synonyms))
+
+STRUCTURES = [
+  S('kidney', 'kidney', 'ren', 'kidneys', 'kidney', 1, 'bc',
+    'Bean-shaped organ, one on each side of the spine at the back of the abdomen, from about T12 to L3.',
+    'Filters the blood to make urine, balancing water, salts and acid, and makes renin and erythropoietin.',
+    'Constant filtering keeps the blood’s chemistry stable whatever we eat and drink.',
+    {'nursing': 'Urine output below 0.5 mL/kg/hour is an early warning of acute kidney injury.',
+     'medicine': 'The right kidney sits lower than the left because the liver is above it.'},
+    ['kidneys']),
+  S('adrenal-gland', 'adrenal gland', 'glandula suprarenalis', 'kidneys', 'adrenal_gland', 2, 'bc',
+    'Small triangular gland sitting on top of each kidney.',
+    'Releases cortisol, aldosterone and epinephrine.',
+    'Its outer layer controls salt and stress hormones; its core releases the “fight or flight” hormone.',
+    {'nursing': 'Never stop long-term steroids suddenly: the suppressed glands can’t respond to stress (adrenal crisis).'},
+    ['suprarenal gland', 'adrenal']),
+  S('renal-artery-u', 'renal artery', 'arteria renalis', 'kidneys', 'renal_artery', 2, 'fc',
+    'Artery leaving each side of the aorta at about L1 to enter the kidney.',
+    'Carries about a fifth of the heart’s output to the kidney.',
+    'Filtering needs a huge blood flow relative to the organ’s size.',
+    {'medicine': 'Narrowing causes hypertension that resists treatment; ACE inhibitors can then worsen kidney function.'}),
+  S('renal-vein', 'renal vein', 'vena renalis', 'kidneys', 'renal_vein', 2, 'fc',
+    'Vein draining each kidney into the inferior vena cava.',
+    'Returns filtered blood from the kidney to the heart.',
+    'It carries the cleaned blood back into the circulation.',
+    {'medicine': 'The left one is longer and passes in front of the aorta; it also receives the left gonadal vein.'}),
+  S('ureter', 'ureter', 'ureter', 'lower-urinary', 'ureter', 1, 'fc',
+    'Narrow muscular tube about 25 cm long carrying urine from each kidney down to the bladder.',
+    'Moves urine to the bladder by waves of contraction.',
+    'Entering the bladder at an angle stops urine flowing back up when the bladder squeezes.',
+    {'medicine': 'Stones lodge at its narrowest points: where it leaves the kidney, crosses the pelvic brim and enters the bladder.',
+     'nursing': 'Loin-to-groin colicky pain with blood in the urine suggests a stone; give analgesia and strain the urine.'},
+    ['ureters']),
+  S('urinary-bladder', 'urinary bladder', 'vesica urinaria', 'lower-urinary', 'urinary_bladder', 1, 'fc',
+    'Hollow muscular bag in the pelvis behind the pubic bone.',
+    'Stores urine and empties it under voluntary control.',
+    'Storage lets us pass urine at convenient times instead of continuously.',
+    {'nursing': 'Use a bladder scan before catheterising for retention; record residual volume.',
+     'physio': 'Pelvic floor training improves stress incontinence.'},
+    ['bladder']),
+  S('urethra', 'urethra', 'urethra', 'lower-urinary', 'urethra', 2, 'fc',
+    'Tube carrying urine from the bladder to the outside; in males it also carries semen.',
+    'Drains urine from the bladder.',
+    'Its sphincters keep it closed until we choose to empty the bladder.',
+    {'nursing': 'Use strict aseptic technique for catheterisation; the male urethra is about 20 cm long, the female about 4 cm.'}),
+]

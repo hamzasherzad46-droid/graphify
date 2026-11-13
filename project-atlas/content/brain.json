@@ -1,0 +1,553 @@
+{
+  "module": "brain",
+  "regions": [
+    { "id": "cerebrum", "name": "Lobes and gyri" },
+    { "id": "deep", "name": "Deep and limbic structures" },
+    { "id": "brainstem", "name": "Brainstem and cerebellum" },
+    { "id": "ventricles", "name": "Ventricles, glands and visual pathway" }
+  ],
+  "structures": [
+    {
+      "id": "frontal-lobe",
+      "name": "frontal lobe",
+      "synonyms": [],
+      "latinName": "lobus frontalis",
+      "definition": "The largest lobe of each hemisphere, in front of the central sulcus.",
+      "function": "Plans and controls movement, makes decisions, holds attention and regulates behaviour and personality.",
+      "why": "Its size reflects how much of human behaviour depends on planning and self-control.",
+      "notes": {
+        "nursing": "Damage can cause disinhibition and personality change; family reports of “not himself” matter.",
+        "medicine": "Phineas Gage is the classic case of frontal injury changing personality."
+      },
+      "region": "cerebrum",
+      "modelFile": "brain.glb",
+      "meshName": ["superior_frontal_gyrus", "middle_frontal_gyrus", "inferior_frontal_gyrus", "precentral_gyrus", "orbital_gyrus"],
+      "camera": { "position": [-0.392, 1.68, 0.044], "target": [-0.001, 1.66, 0.004] },
+      "difficulty": 1
+    },
+    {
+      "id": "precentral-gyrus",
+      "name": "precentral gyrus",
+      "synonyms": ["primary motor cortex", "motor cortex"],
+      "latinName": "gyrus precentralis",
+      "definition": "Strip of cortex running from top to side of each hemisphere just in front of the central sulcus.",
+      "function": "Sends the commands that move the opposite side of the body.",
+      "why": "The body is mapped along it (the motor homunculus), with large areas for the hand and face.",
+      "notes": {
+        "medicine": "A stroke here causes weakness on the opposite side; the leg area lies on the medial surface.",
+        "physio": "Rehabilitation after stroke relies on neighbouring cortex taking over its lost areas."
+      },
+      "region": "cerebrum",
+      "modelFile": "brain.glb",
+      "meshName": "precentral_gyrus",
+      "camera": { "position": [-0.3, 1.687, 0.002], "target": [-0.001, 1.672, -0.028] },
+      "difficulty": 2
+    },
+    {
+      "id": "inferior-frontal-gyrus",
+      "name": "inferior frontal gyrus",
+      "synonyms": [],
+      "latinName": "gyrus frontalis inferior",
+      "definition": "Lowest of the three horizontal folds on the side of the frontal lobe.",
+      "function": "On the dominant side (usually left) it contains Broca’s area, which produces speech.",
+      "why": "Speech production sits next to the motor areas for the mouth and larynx.",
+      "notes": {
+        "medicine": "Damage gives expressive (Broca’s) aphasia: slow, effortful speech with good understanding.",
+        "nursing": "Patients with expressive aphasia often understand; use yes/no questions and give them time."
+      },
+      "region": "cerebrum",
+      "modelFile": "brain.glb",
+      "meshName": "inferior_frontal_gyrus",
+      "camera": { "position": [-0.288, 1.669, 0.05], "target": [-0.001, 1.655, 0.021] },
+      "difficulty": 3
+    },
+    {
+      "id": "parietal-lobe",
+      "name": "parietal lobe",
+      "synonyms": [],
+      "latinName": "lobus parietalis",
+      "definition": "Lobe behind the central sulcus and above the lateral sulcus.",
+      "function": "Processes touch and body position and builds the sense of where things are in space.",
+      "why": "It combines senses into a map of the body and its surroundings.",
+      "notes": {
+        "medicine": "Right-sided damage can cause neglect of the left side of space.",
+        "nursing": "Patients with neglect may ignore food on one side of the plate; approach from the unaffected side."
+      },
+      "region": "cerebrum",
+      "modelFile": "brain.glb",
+      "meshName": ["postcentral_gyrus", "superior_parietal_lobule", "supramarginal_gyrus", "angular_gyrus"],
+      "camera": { "position": [-0.357, 1.677, -0.024], "target": [0, 1.66, -0.059] },
+      "difficulty": 1
+    },
+    {
+      "id": "postcentral-gyrus",
+      "name": "postcentral gyrus",
+      "synonyms": ["primary somatosensory cortex", "somatosensory cortex"],
+      "latinName": "gyrus postcentralis",
+      "definition": "Strip of cortex just behind the central sulcus.",
+      "function": "Receives touch, pain and position sense from the opposite side of the body.",
+      "why": "The body is mapped along it (the sensory homunculus), with large areas for lips and fingertips.",
+      "notes": {
+        "medicine": "A lesion causes loss of fine sensation on the opposite side."
+      },
+      "region": "cerebrum",
+      "modelFile": "brain.glb",
+      "meshName": "postcentral_gyrus",
+      "camera": { "position": [-0.307, 1.687, -0.013], "target": [-0.001, 1.672, -0.044] },
+      "difficulty": 2
+    },
+    {
+      "id": "temporal-lobe",
+      "name": "temporal lobe",
+      "synonyms": [],
+      "latinName": "lobus temporalis",
+      "definition": "Lobe below the lateral sulcus, behind the temple.",
+      "function": "Processes hearing, language comprehension and recognition of objects and faces, and helps form memories.",
+      "why": "Lying near the ear, it handles sound; its inner parts link to the memory system.",
+      "notes": {
+        "medicine": "Wernicke’s area (comprehension) is in the back of its superior gyrus on the dominant side.",
+        "nursing": "Temporal lobe seizures may present as déjà vu, odd smells or lip-smacking rather than convulsions."
+      },
+      "region": "cerebrum",
+      "modelFile": "brain.glb",
+      "meshName": ["anterior_part_of_superior_temporal_gyrus", "posterior_part_of_superior_temporal_gyrus", "middle_temporal_gyrus", "inferior_temporal_gyrus", "fusiform_gyrus"],
+      "camera": { "position": [-0.363, 1.639, 0.007], "target": [-0.001, 1.621, -0.029] },
+      "difficulty": 1
+    },
+    {
+      "id": "occipital-lobe",
+      "name": "occipital lobe",
+      "synonyms": [],
+      "latinName": "lobus occipitalis",
+      "definition": "Lobe at the back of each hemisphere, resting on the tentorium.",
+      "function": "Contains the primary visual cortex, which receives and interprets what the eyes see.",
+      "why": "Vision needs a large area of cortex, placed at the back where the visual pathways end.",
+      "notes": {
+        "medicine": "A stroke of one side causes loss of the opposite half of the visual field (homonymous hemianopia).",
+        "sports": "A blow to the back of the head can cause visual disturbance after concussion."
+      },
+      "region": "cerebrum",
+      "modelFile": "brain.glb",
+      "meshName": "occipital_lobe",
+      "camera": { "position": [-0.08, 1.646, -0.295], "target": [-0.001, 1.623, -0.079] },
+      "difficulty": 1
+    },
+    {
+      "id": "insula",
+      "name": "insula",
+      "synonyms": ["insular cortex", "insular lobe"],
+      "latinName": "insula",
+      "definition": "Lobe of cortex hidden deep in the lateral sulcus, covered by the frontal, parietal and temporal lobes.",
+      "function": "Senses the body’s internal state (heartbeat, gut, pain) and contributes to taste and emotion.",
+      "why": "It turns signals from inside the body into feelings such as disgust or breathlessness.",
+      "notes": {
+        "medicine": "Middle cerebral artery strokes often involve it."
+      },
+      "region": "cerebrum",
+      "modelFile": "brain.glb",
+      "meshName": "insula",
+      "camera": { "position": [-0.208, 1.651, 0.017], "target": [-0.001, 1.641, -0.003] },
+      "difficulty": 3
+    },
+    {
+      "id": "cingulate-gyrus",
+      "name": "cingulate gyrus",
+      "synonyms": [],
+      "latinName": "gyrus cinguli",
+      "definition": "Curved fold on the inner surface of each hemisphere, wrapping above the large band of fibres joining the hemispheres.",
+      "function": "Links emotion, motivation and attention, and helps detect errors and pain.",
+      "why": "Part of the limbic system, it connects feelings with behaviour.",
+      "notes": {
+        "medicine": "Under raised pressure it can herniate under the falx (subfalcine herniation)."
+      },
+      "region": "cerebrum",
+      "modelFile": "brain.glb",
+      "meshName": "cingulate_gyrus",
+      "camera": { "position": [-0.001, 1.898, 0.076], "target": [-0.001, 1.642, -0.014] },
+      "difficulty": 3
+    },
+    {
+      "id": "corpus-callosum",
+      "name": "corpus callosum",
+      "synonyms": [],
+      "latinName": "corpus callosum",
+      "definition": "The largest band of white-matter fibres, joining the two cerebral hemispheres.",
+      "function": "Lets the two hemispheres share information.",
+      "why": "Each hemisphere controls the opposite body side, so they must communicate constantly.",
+      "notes": {
+        "medicine": "Cutting it (callosotomy) for epilepsy can cause “split-brain” effects."
+      },
+      "region": "deep",
+      "modelFile": "brain.glb",
+      "meshName": "corpus_callosum",
+      "camera": { "position": [-0.001, 1.844, 0.056], "target": [-0.001, 1.642, -0.015] },
+      "difficulty": 1
+    },
+    {
+      "id": "thalamus",
+      "name": "thalamus",
+      "synonyms": [],
+      "latinName": "thalamus",
+      "definition": "Paired egg-shaped mass of grey matter at the centre of the brain, either side of the third ventricle.",
+      "function": "Relays and filters sensory and motor signals on their way to the cortex.",
+      "why": "Almost every sense (except smell) is checked here before reaching awareness.",
+      "notes": {
+        "medicine": "Thalamic strokes can cause severe pain on the opposite side (thalamic pain syndrome)."
+      },
+      "region": "deep",
+      "modelFile": "brain.glb",
+      "meshName": "thalamus",
+      "camera": { "position": [-0.001, 1.821, 0.046], "target": [-0.001, 1.632, -0.02] },
+      "difficulty": 2
+    },
+    {
+      "id": "hypothalamus",
+      "name": "hypothalamus",
+      "synonyms": [],
+      "latinName": "hypothalamus",
+      "definition": "Small region below the thalamus, forming the floor of the third ventricle.",
+      "function": "Controls temperature, hunger, thirst, sleep cycles and the pituitary gland.",
+      "why": "It keeps the body’s internal conditions stable, linking the nervous and hormonal systems.",
+      "notes": {
+        "nursing": "Damage can cause wild temperature swings and diabetes insipidus (large volumes of dilute urine)."
+      },
+      "region": "deep",
+      "modelFile": "brain.glb",
+      "meshName": "hypothalamus",
+      "camera": { "position": [-0.001, 1.5, 0.161], "target": [-0.001, 1.62, 0.001] },
+      "difficulty": 2
+    },
+    {
+      "id": "hippocampus",
+      "name": "hippocampus",
+      "synonyms": [],
+      "latinName": "hippocampus",
+      "definition": "Curved ridge of grey matter in the floor of the temporal horn of the lateral ventricle.",
+      "function": "Forms new memories of facts and events and maps space.",
+      "why": "It binds experiences together so they can be stored elsewhere in the cortex.",
+      "notes": {
+        "medicine": "One of the first areas damaged in Alzheimer’s disease; very sensitive to lack of oxygen.",
+        "nursing": "New memories are lost first in dementia; old memories are often preserved."
+      },
+      "region": "deep",
+      "modelFile": "brain.glb",
+      "meshName": "hippocampus",
+      "camera": { "position": [-0.001, 1.807, 0.047], "target": [-0.001, 1.618, -0.019] },
+      "difficulty": 2
+    },
+    {
+      "id": "amygdala",
+      "name": "amygdala",
+      "synonyms": [],
+      "latinName": "corpus amygdaloideum",
+      "definition": "Almond-shaped cluster of nuclei deep in the front of the temporal lobe.",
+      "function": "Detects threats and drives fear, and attaches emotional weight to memories.",
+      "why": "Fast threat detection, before conscious thought, helped survival.",
+      "notes": {
+        "medicine": "Overactivity is implicated in anxiety disorders and PTSD."
+      },
+      "region": "deep",
+      "modelFile": "brain.glb",
+      "meshName": "amygdala",
+      "camera": { "position": [-0.001, 1.496, 0.158], "target": [-0.001, 1.616, -0.002] },
+      "difficulty": 2
+    },
+    {
+      "id": "caudate-nucleus",
+      "name": "caudate nucleus",
+      "synonyms": [],
+      "latinName": "nucleus caudatus",
+      "definition": "C-shaped nucleus curving along the wall of the lateral ventricle.",
+      "function": "Part of the basal nuclei: helps select and start movements and supports learning.",
+      "why": "Its loop with the cortex filters which actions go ahead.",
+      "notes": {
+        "medicine": "Wastes early in Huntington’s disease, widening the lateral ventricles on scans."
+      },
+      "region": "deep",
+      "modelFile": "brain.glb",
+      "meshName": "caudate_nucleus",
+      "camera": { "position": [-0.001, 1.826, 0.058], "target": [-0.001, 1.637, -0.008] },
+      "difficulty": 3
+    },
+    {
+      "id": "putamen",
+      "name": "putamen",
+      "synonyms": [],
+      "latinName": "putamen",
+      "definition": "Rounded nucleus lying outside the internal capsule, forming the outer part of the lentiform nucleus.",
+      "function": "Regulates movement and motor learning as part of the basal nuclei.",
+      "why": "It turns learned movements into smooth automatic routines.",
+      "notes": {
+        "medicine": "The commonest site of hypertensive intracerebral haemorrhage."
+      },
+      "region": "deep",
+      "modelFile": "brain.glb",
+      "meshName": "putamen",
+      "camera": { "position": [-0.001, 1.825, 0.063], "target": [-0.001, 1.637, -0.003] },
+      "difficulty": 3
+    },
+    {
+      "id": "globus-pallidus",
+      "name": "globus pallidus",
+      "synonyms": [],
+      "latinName": "globus pallidus",
+      "definition": "Pale wedge-shaped nucleus lying inside the putamen, forming the inner lentiform nucleus.",
+      "function": "The main output of the basal nuclei, braking unwanted movement.",
+      "why": "Its constant inhibition keeps movements from starting unless they are selected.",
+      "notes": {
+        "medicine": "A target for deep brain stimulation in Parkinson’s disease and dystonia."
+      },
+      "region": "deep",
+      "modelFile": "brain.glb",
+      "meshName": "globus_pallidus",
+      "camera": { "position": [-0.001, 1.822, 0.061], "target": [-0.001, 1.633, -0.005] },
+      "difficulty": 3
+    },
+    {
+      "id": "internal-capsule",
+      "name": "internal capsule",
+      "synonyms": [],
+      "latinName": "capsula interna",
+      "definition": "V-shaped band of white matter between the thalamus, caudate and lentiform nuclei.",
+      "function": "Carries motor and sensory fibres between the cortex and the brainstem and spinal cord.",
+      "why": "All the main highways to and from the cortex funnel through it.",
+      "notes": {
+        "medicine": "A small stroke here causes dense weakness of the whole opposite side (pure motor stroke)."
+      },
+      "region": "deep",
+      "modelFile": "brain.glb",
+      "meshName": "internal_capsule",
+      "camera": { "position": [-0.001, 1.827, 0.058], "target": [-0.001, 1.639, -0.008] },
+      "difficulty": 3
+    },
+    {
+      "id": "cerebellum",
+      "name": "cerebellum",
+      "synonyms": ["little brain"],
+      "latinName": "cerebellum",
+      "definition": "Rounded, finely folded structure behind the brainstem, under the occipital lobes.",
+      "function": "Coordinates movement, balance and posture and fine-tunes timing.",
+      "why": "It compares intended movement with actual movement and corrects errors.",
+      "notes": {
+        "nursing": "Cerebellar signs: unsteady gait, slurred speech, tremor on reaching; alcohol affects it early.",
+        "physio": "Balance and coordination training help after cerebellar stroke.",
+        "medicine": "Damage affects the same side of the body."
+      },
+      "region": "brainstem",
+      "modelFile": "brain.glb",
+      "meshName": "cerebellum",
+      "camera": { "position": [-0.087, 1.617, -0.295], "target": [-0.001, 1.592, -0.06] },
+      "difficulty": 1
+    },
+    {
+      "id": "midbrain",
+      "name": "midbrain",
+      "synonyms": ["mesencephalon"],
+      "latinName": "mesencephalon",
+      "definition": "Top part of the brainstem, between the thalamus and the pons.",
+      "function": "Controls eye movements and pupil reflexes and relays hearing and vision signals.",
+      "why": "It holds reflex centres that turn the eyes and head toward sights and sounds.",
+      "notes": {
+        "medicine": "Contains the substantia nigra, which degenerates in Parkinson’s disease.",
+        "nursing": "Fixed, dilated pupils on a neuro check can signal pressure on the midbrain."
+      },
+      "region": "brainstem",
+      "modelFile": "brain.glb",
+      "meshName": ["midbrain", "peduncle_of_midbrain"],
+      "camera": { "position": [-0.199, 1.625, 0.003], "target": [-0.001, 1.615, -0.017] },
+      "difficulty": 2
+    },
+    {
+      "id": "pons",
+      "name": "pons",
+      "synonyms": [],
+      "latinName": "pons",
+      "definition": "Bulging middle part of the brainstem, in front of the cerebellum.",
+      "function": "Relays signals to the cerebellum and helps control breathing, sleep and facial movement.",
+      "why": "Its bulk is the bridge of fibres carrying cortex signals to the cerebellum.",
+      "notes": {
+        "medicine": "Cranial nerves V–VIII arise around it; a pontine stroke can cause locked-in syndrome."
+      },
+      "region": "brainstem",
+      "modelFile": "brain.glb",
+      "meshName": "pons",
+      "camera": { "position": [-0.199, 1.604, 0], "target": [-0.001, 1.595, -0.02] },
+      "difficulty": 1
+    },
+    {
+      "id": "medulla-oblongata",
+      "name": "medulla oblongata",
+      "synonyms": ["medulla"],
+      "latinName": "medulla oblongata",
+      "definition": "Lowest part of the brainstem, continuous with the spinal cord at the foramen magnum.",
+      "function": "Controls breathing, heart rate, blood pressure, swallowing and vomiting.",
+      "why": "The vital reflexes that keep us alive run here, below conscious control.",
+      "notes": {
+        "medicine": "Coning (tonsillar herniation) compresses it, causing respiratory arrest.",
+        "nursing": "Rising blood pressure with slowing pulse and irregular breathing (Cushing’s triad) is a late sign of raised pressure."
+      },
+      "region": "brainstem",
+      "modelFile": "brain.glb",
+      "meshName": "medulla_oblongata",
+      "camera": { "position": [-0.199, 1.573, -0.012], "target": [-0.001, 1.563, -0.032] },
+      "difficulty": 1
+    },
+    {
+      "id": "lateral-ventricles",
+      "name": "lateral ventricles",
+      "synonyms": ["lateral ventricle"],
+      "latinName": "ventriculi laterales",
+      "definition": "Pair of C-shaped fluid-filled cavities, one in each cerebral hemisphere.",
+      "function": "Produce cerebrospinal fluid (from choroid plexus) and pass it to the third ventricle.",
+      "why": "Fluid cushions the brain and carries away waste.",
+      "notes": {
+        "medicine": "They enlarge in hydrocephalus; a drain may be placed in one to relieve pressure.",
+        "nursing": "Check external ventricular drain height and output hourly."
+      },
+      "region": "ventricles",
+      "modelFile": "brain.glb",
+      "meshName": "lateral_ventricle",
+      "camera": { "position": [-0.001, 1.89, 0.062], "target": [-0.001, 1.633, -0.028] },
+      "difficulty": 2
+    },
+    {
+      "id": "third-ventricle",
+      "name": "third ventricle",
+      "synonyms": [],
+      "latinName": "ventriculus tertius",
+      "definition": "Narrow midline fluid space between the two thalami.",
+      "function": "Passes cerebrospinal fluid from the lateral ventricles to the cerebral aqueduct.",
+      "why": "A central channel links the fluid spaces of both hemispheres to the brainstem.",
+      "notes": {
+        "medicine": "A colloid cyst can block its entrance and cause sudden hydrocephalus."
+      },
+      "region": "ventricles",
+      "modelFile": "brain.glb",
+      "meshName": "third_ventricle",
+      "camera": { "position": [-0.199, 1.637, 0.005], "target": [-0.001, 1.627, -0.015] },
+      "difficulty": 3
+    },
+    {
+      "id": "fourth-ventricle",
+      "name": "fourth ventricle",
+      "synonyms": [],
+      "latinName": "ventriculus quartus",
+      "definition": "Diamond-shaped fluid space between the brainstem and the cerebellum.",
+      "function": "Lets cerebrospinal fluid escape into the space around the brain and spinal cord.",
+      "why": "Its openings are the main exit from the internal fluid system.",
+      "notes": {
+        "medicine": "Blockage of its outlets causes obstructive hydrocephalus."
+      },
+      "region": "ventricles",
+      "modelFile": "brain.glb",
+      "meshName": "fourth_ventricle",
+      "camera": { "position": [-0.199, 1.598, -0.017], "target": [-0.001, 1.588, -0.037] },
+      "difficulty": 3
+    },
+    {
+      "id": "optic-chiasm",
+      "name": "optic chiasm",
+      "synonyms": ["optic chiasma"],
+      "latinName": "chiasma opticum",
+      "definition": "X-shaped crossing of the visual fibres just above the pituitary gland.",
+      "function": "Sends fibres from the inner half of each retina to the opposite side of the brain.",
+      "why": "Crossing lets each hemisphere see the opposite half of the visual world with both eyes.",
+      "notes": {
+        "medicine": "A pituitary tumour pressing on it causes loss of both outer visual fields (bitemporal hemianopia)."
+      },
+      "region": "ventricles",
+      "modelFile": "brain.glb",
+      "meshName": ["optic_chiasm", "optic_nerve", "optic_tract"],
+      "camera": { "position": [-0.001, 1.485, 0.176], "target": [-0.001, 1.609, 0.011] },
+      "difficulty": 2
+    },
+    {
+      "id": "optic-nerve",
+      "name": "optic nerve",
+      "synonyms": ["cranial nerve ii", "second cranial nerve"],
+      "latinName": "nervus opticus",
+      "definition": "Nerve running from the back of each eye to the crossing of visual fibres above the pituitary.",
+      "function": "Carries visual information from the retina to the brain.",
+      "why": "Each eye has its own cable carrying about a million fibres.",
+      "notes": {
+        "medicine": "Swelling of its head (papilloedema) on fundoscopy is a sign of raised intracranial pressure.",
+        "nursing": "Pupil reactions test it together with the oculomotor nerve."
+      },
+      "region": "ventricles",
+      "modelFile": "brain.glb",
+      "meshName": "optic_nerve",
+      "camera": { "position": [-0.001, 1.488, 0.187], "target": [-0.001, 1.608, 0.027] },
+      "difficulty": 2
+    },
+    {
+      "id": "pituitary-gland",
+      "name": "pituitary gland",
+      "synonyms": ["pituitary", "hypophysis"],
+      "latinName": "hypophysis",
+      "definition": "Pea-sized gland hanging from the base of the brain in a saddle of the sphenoid bone.",
+      "function": "Releases hormones controlling growth, the thyroid, adrenals, reproduction, milk and water balance.",
+      "why": "It translates signals from the hypothalamus into hormones for the whole body.",
+      "notes": {
+        "medicine": "Tumours can cause hormone excess (e.g. acromegaly) and visual field loss.",
+        "nursing": "After pituitary surgery, measure urine output: diabetes insipidus is common."
+      },
+      "region": "ventricles",
+      "modelFile": "brain.glb",
+      "meshName": "pituitary_gland",
+      "camera": { "position": [-0.001, 1.487, 0.166], "target": [-0.001, 1.607, 0.006] },
+      "difficulty": 2
+    },
+    {
+      "id": "pineal-gland",
+      "name": "pineal gland",
+      "synonyms": ["pineal body", "pineal"],
+      "latinName": "glandula pinealis",
+      "definition": "Tiny pine-cone-shaped gland at the back of the third ventricle.",
+      "function": "Secretes melatonin, which helps set the sleep–wake cycle.",
+      "why": "It turns information about darkness into a hormonal signal of night.",
+      "notes": {
+        "medicine": "Often calcifies with age and shows up as a midline marker on X-ray and CT."
+      },
+      "region": "ventricles",
+      "modelFile": "brain.glb",
+      "meshName": "pineal_body",
+      "camera": { "position": [-0.069, 1.642, -0.222], "target": [-0.001, 1.622, -0.035] },
+      "difficulty": 3
+    },
+    {
+      "id": "fornix",
+      "name": "fornix",
+      "synonyms": [],
+      "latinName": "fornix",
+      "definition": "Arched bundle of fibres running from the hippocampus over the thalamus to the mammillary bodies.",
+      "function": "Carries output from the hippocampus as part of the memory circuit.",
+      "why": "It links the memory-forming hippocampus to the rest of the limbic system.",
+      "notes": {
+        "medicine": "Damage (e.g. after surgery for a colloid cyst) can cause memory loss."
+      },
+      "region": "deep",
+      "modelFile": "brain.glb",
+      "meshName": "fornix_of_forebrain",
+      "camera": { "position": [-0.199, 1.639, 0], "target": [-0.001, 1.629, -0.019] },
+      "difficulty": 3
+    },
+    {
+      "id": "mammillary-bodies",
+      "name": "mammillary bodies",
+      "synonyms": ["mammillary body"],
+      "latinName": "corpora mammillaria",
+      "definition": "Two small round bumps on the underside of the brain behind the pituitary stalk.",
+      "function": "Relay memory signals from the hippocampus toward the thalamus.",
+      "why": "They are a waypoint in the circuit that consolidates new memories.",
+      "notes": {
+        "medicine": "Damaged in thiamine deficiency (Wernicke–Korsakoff syndrome).",
+        "nursing": "Give thiamine before glucose in patients with alcohol dependence."
+      },
+      "region": "deep",
+      "modelFile": "brain.glb",
+      "meshName": "mammillary_body",
+      "camera": { "position": [-0.001, 1.499, 0.154], "target": [-0.001, 1.619, -0.006] },
+      "difficulty": 3
+    }
+  ]
+}

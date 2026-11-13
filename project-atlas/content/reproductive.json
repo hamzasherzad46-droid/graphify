@@ -1,0 +1,129 @@
+{
+  "module": "reproductive",
+  "regions": [
+    { "id": "male", "name": "Male reproductive organs" }
+  ],
+  "structures": [
+    {
+      "id": "testis",
+      "name": "testis",
+      "synonyms": ["testes", "testicle"],
+      "latinName": "testis",
+      "definition": "Oval gland in the scrotum, one on each side.",
+      "function": "Produces sperm and testosterone.",
+      "why": "It sits outside the body because sperm production needs a temperature about 2–3 °C below body temperature.",
+      "notes": {
+        "nursing": "Sudden severe scrotal pain is testicular torsion until proven otherwise: surgery within 6 hours saves it.",
+        "medicine": "Drains to the para-aortic lymph nodes because it develops near the kidneys and descends."
+      },
+      "region": "male",
+      "modelFile": "reproductive.glb",
+      "meshName": "testis",
+      "camera": { "position": [-0.088, 0.807, 0.286], "target": [-0.002, 0.782, 0.052] },
+      "difficulty": 1
+    },
+    {
+      "id": "epididymis",
+      "name": "epididymis",
+      "synonyms": [],
+      "latinName": "epididymis",
+      "definition": "Coiled tube on the back of each testis.",
+      "function": "Stores sperm and lets it mature and gain the ability to swim.",
+      "why": "Sperm leaving the testis can’t yet swim; maturing here takes about two weeks.",
+      "notes": {
+        "medicine": "Epididymitis causes pain that eases when the testis is lifted, unlike torsion."
+      },
+      "region": "male",
+      "modelFile": "reproductive.glb",
+      "meshName": "epididymis",
+      "camera": { "position": [-0.157, 0.815, 0.259], "target": [-0.021, 0.791, 0.05] },
+      "difficulty": 2
+    },
+    {
+      "id": "vas-deferens",
+      "name": "vas deferens",
+      "synonyms": ["ductus deferens", "deferent duct", "vas"],
+      "latinName": "ductus deferens",
+      "definition": "Muscular tube carrying sperm from the epididymis up through the inguinal canal into the pelvis.",
+      "function": "Moves sperm toward the urethra during ejaculation.",
+      "why": "Its thick muscular wall propels sperm quickly when needed.",
+      "notes": {
+        "medicine": "Cut and tied in a vasectomy."
+      },
+      "region": "male",
+      "modelFile": "reproductive.glb",
+      "meshName": "deferent_duct",
+      "camera": { "position": [-0.262, 0.895, 0.34], "target": [-0.044, 0.856, 0.004] },
+      "difficulty": 2
+    },
+    {
+      "id": "seminal-vesicle",
+      "name": "seminal vesicle",
+      "synonyms": ["seminal vesicles", "seminal gland"],
+      "latinName": "glandula vesiculosa",
+      "definition": "Coiled gland behind the bladder, one on each side.",
+      "function": "Produces most of the seminal fluid, rich in fructose.",
+      "why": "The fluid gives sperm energy and volume to travel.",
+      "notes": {
+        "medicine": "Its duct joins the vas deferens to form the ejaculatory duct."
+      },
+      "region": "male",
+      "modelFile": "reproductive.glb",
+      "meshName": "seminal_vesicle",
+      "camera": { "position": [-0.087, 0.906, -0.268], "target": [-0.001, 0.882, -0.035] },
+      "difficulty": 3
+    },
+    {
+      "id": "prostate",
+      "name": "prostate",
+      "synonyms": ["prostate gland"],
+      "latinName": "prostata",
+      "definition": "Walnut-sized gland below the bladder, surrounding the first part of the urethra.",
+      "function": "Adds an alkaline fluid to semen.",
+      "why": "The fluid protects sperm from vaginal acidity.",
+      "notes": {
+        "nursing": "An enlarged gland causes poor stream, frequency and retention; a catheter may be needed.",
+        "medicine": "Felt on rectal examination; cancer usually starts in the peripheral zone."
+      },
+      "region": "male",
+      "modelFile": "reproductive.glb",
+      "meshName": "prostate",
+      "camera": { "position": [-0.087, 0.885, 0.214], "target": [-0.001, 0.86, -0.02] },
+      "difficulty": 1
+    },
+    {
+      "id": "corpus-cavernosum",
+      "name": "corpus cavernosum",
+      "synonyms": ["corpora cavernosa"],
+      "latinName": "corpus cavernosum penis",
+      "definition": "Paired column of spongy erectile tissue along the upper part of the penis.",
+      "function": "Fills with blood to produce an erection.",
+      "why": "Trapping blood under pressure makes the organ rigid.",
+      "notes": {
+        "medicine": "Priapism (erection lasting over 4 hours) is a urological emergency."
+      },
+      "region": "male",
+      "modelFile": "reproductive.glb",
+      "meshName": "corpus_cavernosum_of_penis",
+      "camera": { "position": [-0.11, 0.858, 0.327], "target": [-0.001, 0.827, 0.03] },
+      "difficulty": 3
+    },
+    {
+      "id": "corpus-spongiosum",
+      "name": "corpus spongiosum",
+      "synonyms": [],
+      "latinName": "corpus spongiosum penis",
+      "definition": "Single column of erectile tissue on the underside of the penis, surrounding the urethra and expanding into the glans.",
+      "function": "Keeps the urethra open during erection.",
+      "why": "Softer than the paired columns, it doesn’t squeeze the urethra closed.",
+      "notes": {
+        "nursing": "During male catheterisation, hold the shaft upright to straighten the urethra through it."
+      },
+      "region": "male",
+      "modelFile": "reproductive.glb",
+      "meshName": ["corpus_spongiosum_of_penis", "glans_penis"],
+      "camera": { "position": [-0.098, 0.85, 0.303], "target": [-0.001, 0.822, 0.038] },
+      "difficulty": 3
+    }
+  ]
+}

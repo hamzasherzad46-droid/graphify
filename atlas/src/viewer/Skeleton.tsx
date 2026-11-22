@@ -1,14 +1,13 @@
 import { useLayoutEffect, useMemo } from 'react'
 import * as THREE from 'three'
 import { useThree } from '@react-three/fiber'
-import { useGLTF } from '@react-three/drei'
 import { useViewer } from '../state/store'
 import { createMaterials } from './materials'
 import { registry, anchors } from './registry'
-import { MODEL_URL, DRACO_PATH } from './modelUrls'
+import { MODEL_URL, preloadModel, useModel } from './modelUrls'
 import type { Sex } from '../data/types'
 
-useGLTF.preload(MODEL_URL.male, DRACO_PATH)
+void preloadModel(MODEL_URL.male)
 
 /** A point on the bone's surface near its centre: anchors labels and survives occlusion tests. */
 function surfaceAnchor(mesh: THREE.Mesh): THREE.Vector3 {
@@ -28,7 +27,7 @@ function surfaceAnchor(mesh: THREE.Mesh): THREE.Vector3 {
 }
 
 export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) {
-  const { scene } = useGLTF(MODEL_URL[sex], DRACO_PATH)
+  const { scene } = useModel(MODEL_URL[sex])
   const invalidate = useThree((s) => s.invalidate)
   const mats = useMemo(() => createMaterials(theme), [theme])
   const glow = useMemo(() => ({ shell: new THREE.Mesh(undefined, mats.glow), xray: new THREE.Mesh(undefined, mats.xray) }), [mats])

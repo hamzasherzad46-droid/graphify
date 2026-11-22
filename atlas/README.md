@@ -9,6 +9,8 @@ npm run dev            # http://localhost:5173  (add -- --host to open it on a p
 npm test               # content + search tests
 npm run lint
 npm run build && npm run preview   # production build with service worker (offline after first visit)
+npm run build:preview              # dist-artifact/: shareable preview for sandboxed hosts (no service worker,
+                                   # plain-JS Draco decoder, model as base64 text)
 ```
 
 ## Build status

@@ -1,0 +1,28 @@
+{
+  "id": "hand_distal_phalanx_1_right",
+  "name": "Distal phalanx of the thumb",
+  "latin": "Phalanx distalis pollicis",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Phalanges of the hand",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Small base and shaft",
+    "Ungual tuberosity under the nail bed"
+  ],
+  "articulations": [
+    "hand_proximal_phalanx_1_right"
+  ],
+  "clinical": "Tuft fractures of the distal phalanx are common crush injuries.",
+  "acceptedSpellings": [
+    "distal phalanx of the thumb",
+    "distal phalanx of thumb",
+    "distal phalanx thumb",
+    "thumb distal phalanx",
+    "distal phalanx of the pollex"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

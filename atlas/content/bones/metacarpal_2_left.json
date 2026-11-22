@@ -1,0 +1,32 @@
+{
+  "id": "metacarpal_2_left",
+  "name": "Second metacarpal",
+  "latin": "Os metacarpi II",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Metacarpals",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Base, shaft and head",
+    "Head forms the knuckle (metacarpophalangeal joint)"
+  ],
+  "articulations": [
+    "trapezium_left",
+    "trapezoid_left",
+    "capitate_left",
+    "metacarpal_3_left",
+    "hand_proximal_phalanx_2_left"
+  ],
+  "clinical": "Metacarpal shaft fractures can cause rotational deformity; check finger alignment in flexion.",
+  "acceptedSpellings": [
+    "second metacarpal",
+    "second metacarpal bone",
+    "metacarpal 2",
+    "metacarpal ii",
+    "index finger metacarpal"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

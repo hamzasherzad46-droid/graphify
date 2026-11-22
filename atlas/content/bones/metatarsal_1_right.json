@@ -1,0 +1,29 @@
+{
+  "id": "metatarsal_1_right",
+  "name": "First metatarsal",
+  "latin": "Os metatarsi I",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Metatarsals",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Shortest and thickest metatarsal",
+    "Two sesamoid bones under its head",
+    "Tuberosity for fibularis longus"
+  ],
+  "articulations": [
+    "medial_cuneiform_right",
+    "foot_proximal_phalanx_1_right"
+  ],
+  "clinical": "Hallux valgus (bunion) involves medial deviation of the first metatarsal.",
+  "acceptedSpellings": [
+    "first metatarsal",
+    "first metatarsal bone",
+    "metatarsal 1",
+    "metatarsal i"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

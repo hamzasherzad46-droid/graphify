@@ -1,0 +1,29 @@
+{
+  "id": "hand_middle_phalanx_2_left",
+  "name": "Middle phalanx of the index finger",
+  "latin": "Phalanx media digiti II manus",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Phalanges of the hand",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Base with two concave facets",
+    "Shaft",
+    "Bicondylar head"
+  ],
+  "articulations": [
+    "hand_proximal_phalanx_2_left",
+    "hand_distal_phalanx_2_left"
+  ],
+  "clinical": "Volar plate avulsion at the base of the middle phalanx follows hyperextension (jammed finger).",
+  "acceptedSpellings": [
+    "middle phalanx of the index finger",
+    "middle phalanx of index finger",
+    "middle phalanx index finger",
+    "index finger middle phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

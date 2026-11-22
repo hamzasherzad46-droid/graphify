@@ -1,0 +1,27 @@
+{
+  "id": "rib_12_right",
+  "name": "Twelfth rib",
+  "latin": "Costa XII",
+  "taCode": "",
+  "region": "Thorax",
+  "subregion": "Ribs",
+  "side": "right",
+  "type": "flat",
+  "features": [
+    "Short rib with a single facet on the head",
+    "No neck or tubercle",
+    "Free anterior end (floating rib)"
+  ],
+  "articulations": [
+    "vertebra_t12"
+  ],
+  "clinical": "The twelfth rib is a landmark for the kidney and pleura in posterior approaches.",
+  "acceptedSpellings": [
+    "twelfth rib",
+    "rib 12",
+    "rib12"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

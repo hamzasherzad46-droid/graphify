@@ -1,0 +1,28 @@
+{
+  "id": "nasal_bone_right",
+  "name": "Nasal bone",
+  "latin": "Os nasale",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Facial bones",
+  "side": "right",
+  "type": "flat",
+  "features": [
+    "Forms the bridge of the nose",
+    "Midline internasal suture",
+    "Small vascular foramen"
+  ],
+  "articulations": [
+    "nasal_bone_left",
+    "frontal_bone",
+    "ethmoid_bone",
+    "maxilla_right"
+  ],
+  "clinical": "The most commonly fractured facial bone.",
+  "acceptedSpellings": [
+    "nasal bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

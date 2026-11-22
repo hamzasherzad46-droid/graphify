@@ -1,0 +1,35 @@
+{
+  "id": "vertebra_t4",
+  "name": "Fourth thoracic vertebra",
+  "latin": "Vertebra thoracica IV",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Thoracic vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Heart-shaped body",
+    "Costal facets on the body for rib heads",
+    "Costal facets on the transverse processes",
+    "Long spinous process angled downwards",
+    "Small circular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_t3",
+    "vertebra_t5",
+    "rib_4_left",
+    "rib_4_right",
+    "rib_5_left",
+    "rib_5_right"
+  ],
+  "clinical": "The sternal angle (T4/T5) marks the bifurcation of the trachea and the arch of the aorta.",
+  "acceptedSpellings": [
+    "fourth thoracic vertebra",
+    "t4",
+    "t 4",
+    "th4"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

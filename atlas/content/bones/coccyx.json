@@ -1,0 +1,29 @@
+{
+  "id": "coccyx",
+  "name": "Coccyx",
+  "latin": "Os coccygis",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Sacrum and coccyx",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Three to five fused rudimentary vertebrae",
+    "Coccygeal cornua",
+    "Attachment for the anococcygeal ligament and gluteus maximus"
+  ],
+  "articulations": [
+    "sacrum"
+  ],
+  "clinical": "Coccydynia (tailbone pain) often follows a fall onto the buttocks.",
+  "acceptedSpellings": [
+    "coccyx",
+    "tailbone",
+    "tail bone",
+    "os coccygis"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22",
+  "modelNote": "3D shape is approximate: the source dataset has no coccyx mesh."
+}

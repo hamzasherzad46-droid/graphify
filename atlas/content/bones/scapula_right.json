@@ -1,0 +1,31 @@
+{
+  "id": "scapula_right",
+  "name": "Scapula",
+  "latin": "Scapula",
+  "taCode": "",
+  "region": "Upper limb",
+  "subregion": "Shoulder girdle",
+  "side": "right",
+  "type": "flat",
+  "features": [
+    "Spine and acromion",
+    "Coracoid process",
+    "Glenoid cavity",
+    "Supraspinous, infraspinous and subscapular fossae",
+    "Superior, medial and lateral borders",
+    "Suprascapular notch"
+  ],
+  "articulations": [
+    "clavicle_right",
+    "humerus_right"
+  ],
+  "clinical": "Damage to the long thoracic nerve paralyses serratus anterior and causes a winged scapula.",
+  "acceptedSpellings": [
+    "scapula",
+    "shoulder blade",
+    "shoulderblade"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

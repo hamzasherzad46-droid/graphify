@@ -1,0 +1,29 @@
+{
+  "id": "lacrimal_bone_left",
+  "name": "Lacrimal bone",
+  "latin": "Os lacrimale",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Facial bones",
+  "side": "left",
+  "type": "flat",
+  "features": [
+    "Smallest facial bone, in the medial orbital wall",
+    "Posterior lacrimal crest",
+    "Lacrimal groove forming the fossa for the lacrimal sac",
+    "Lacrimal hamulus"
+  ],
+  "articulations": [
+    "frontal_bone",
+    "ethmoid_bone",
+    "maxilla_left",
+    "inferior_nasal_concha_left"
+  ],
+  "clinical": "Dacryocystorhinostomy creates an opening through the lacrimal bone to drain a blocked tear duct.",
+  "acceptedSpellings": [
+    "lacrimal bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

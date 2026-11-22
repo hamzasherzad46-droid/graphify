@@ -1,0 +1,27 @@
+{
+  "id": "pisiform_left",
+  "name": "Pisiform",
+  "latin": "Os pisiforme",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Carpal bones",
+  "side": "left",
+  "type": "sesamoid",
+  "features": [
+    "Pea-shaped",
+    "Sesamoid bone in the tendon of flexor carpi ulnaris",
+    "Palpable at the base of the hypothenar eminence",
+    "Attachment of the flexor retinaculum"
+  ],
+  "articulations": [
+    "triquetrum_left"
+  ],
+  "clinical": "Forms the medial wall of Guyon's canal, where the ulnar nerve can be compressed.",
+  "acceptedSpellings": [
+    "pisiform",
+    "pisiform bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "hand_proximal_phalanx_5_left",
+  "name": "Proximal phalanx of the little finger",
+  "latin": "Phalanx proximalis digiti V manus",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Phalanges of the hand",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Longest phalanx of the digit",
+    "Concave base for the metacarpal head",
+    "Bicondylar head (trochlea)"
+  ],
+  "articulations": [
+    "metacarpal_5_left",
+    "hand_middle_phalanx_5_left"
+  ],
+  "clinical": "Proximal phalanx fractures tend to angulate palmarly because of the pull of the interossei.",
+  "acceptedSpellings": [
+    "proximal phalanx of the little finger",
+    "proximal phalanx of little finger",
+    "proximal phalanx little finger",
+    "little finger proximal phalanx",
+    "proximal phalanx of the fifth finger",
+    "proximal phalanx of fifth finger",
+    "proximal phalanx of the pinky"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

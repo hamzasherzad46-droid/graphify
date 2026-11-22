@@ -1,0 +1,32 @@
+{
+  "id": "talus_right",
+  "name": "Talus",
+  "latin": "Talus",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Tarsal bones",
+  "side": "right",
+  "type": "short",
+  "features": [
+    "Head, neck and body",
+    "Trochlea (articulates with tibia and fibula)",
+    "No muscle attachments",
+    "Lateral and posterior processes"
+  ],
+  "articulations": [
+    "tibia_right",
+    "fibula_right",
+    "calcaneus_right",
+    "navicular_right"
+  ],
+  "clinical": "Talar neck fractures risk avascular necrosis because the blood supply enters distally.",
+  "acceptedSpellings": [
+    "talus",
+    "astragalus",
+    "ankle bone",
+    "anklebone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

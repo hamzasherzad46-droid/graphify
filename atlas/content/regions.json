@@ -1,0 +1,23 @@
+{
+  "regions": [
+    { "id": "Skull", "label": "Skull" },
+    { "id": "Neck", "label": "Neck" },
+    { "id": "Vertebral column", "label": "Spine" },
+    { "id": "Thorax", "label": "Thorax" },
+    { "id": "Upper limb", "label": "Upper limb" },
+    { "id": "Hand", "label": "Hand" },
+    { "id": "Pelvis", "label": "Pelvis" },
+    { "id": "Lower limb", "label": "Lower limb" },
+    { "id": "Foot", "label": "Foot" }
+  ],
+  "groups": [
+    { "id": "skull", "label": "Skull", "regions": ["Skull", "Neck"] },
+    { "id": "spine", "label": "Spine", "regions": ["Vertebral column"] },
+    { "id": "thorax", "label": "Thorax", "regions": ["Thorax"] },
+    { "id": "upper-limb", "label": "Upper limb", "regions": ["Upper limb", "Hand"] },
+    { "id": "hand", "label": "Hand", "regions": ["Hand"] },
+    { "id": "pelvis", "label": "Pelvis", "regions": ["Pelvis"], "bones": ["sacrum", "coccyx"] },
+    { "id": "lower-limb", "label": "Lower limb", "regions": ["Lower limb", "Foot"] },
+    { "id": "foot", "label": "Foot", "regions": ["Foot"] }
+  ]
+}

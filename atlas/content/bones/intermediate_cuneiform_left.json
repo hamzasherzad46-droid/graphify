@@ -1,0 +1,30 @@
+{
+  "id": "intermediate_cuneiform_left",
+  "name": "Intermediate cuneiform",
+  "latin": "Os cuneiforme intermedium",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Tarsal bones",
+  "side": "left",
+  "type": "short",
+  "features": [
+    "Smallest cuneiform",
+    "Wedge-shaped; recessed, so the second metatarsal keys in"
+  ],
+  "articulations": [
+    "navicular_left",
+    "medial_cuneiform_left",
+    "lateral_cuneiform_left",
+    "metatarsal_2_left"
+  ],
+  "clinical": "The recessed second metatarsal base acts as the keystone of the Lisfranc joint.",
+  "acceptedSpellings": [
+    "intermediate cuneiform",
+    "intermediate cuneiform bone",
+    "middle cuneiform",
+    "second cuneiform"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

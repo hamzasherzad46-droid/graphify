@@ -1,0 +1,28 @@
+{
+  "id": "foot_middle_phalanx_2_right",
+  "name": "Middle phalanx of the second toe",
+  "latin": "Phalanx media digiti II pedis",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Phalanges of the foot",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Short and broad",
+    "Often fused with the distal phalanx in the little toe"
+  ],
+  "articulations": [
+    "foot_proximal_phalanx_2_right",
+    "foot_distal_phalanx_2_right"
+  ],
+  "clinical": "Hammer toe deformity flexes the proximal interphalangeal joint above the middle phalanx.",
+  "acceptedSpellings": [
+    "middle phalanx of the second toe",
+    "middle phalanx of second toe",
+    "middle phalanx second toe",
+    "second toe middle phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

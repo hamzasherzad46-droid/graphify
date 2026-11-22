@@ -1,0 +1,30 @@
+{
+  "id": "vertebra_c2",
+  "name": "Axis",
+  "latin": "Axis",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Cervical vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Dens (odontoid process)",
+    "Large bifid spinous process",
+    "Superior articular facets for the atlas",
+    "Transverse foramina"
+  ],
+  "articulations": [
+    "vertebra_c1",
+    "vertebra_c3"
+  ],
+  "clinical": "Odontoid (dens) fractures and hangman's fracture (pars of C2) are classic C2 injuries.",
+  "acceptedSpellings": [
+    "axis",
+    "c2",
+    "second cervical vertebra",
+    "c 2"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

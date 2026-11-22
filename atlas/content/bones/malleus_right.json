@@ -1,0 +1,28 @@
+{
+  "id": "malleus_right",
+  "name": "Malleus",
+  "latin": "Malleus",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Auditory ossicles",
+  "side": "right",
+  "type": "irregular",
+  "features": [
+    "Head (in the epitympanic recess)",
+    "Neck",
+    "Handle (manubrium) attached to the tympanic membrane",
+    "Lateral and anterior processes"
+  ],
+  "articulations": [
+    "incus_right"
+  ],
+  "clinical": "Fixation of the ossicular chain causes conductive hearing loss.",
+  "acceptedSpellings": [
+    "malleus",
+    "hammer"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22",
+  "modelNote": "3D shape is simplified: the source dataset has no ossicle meshes."
+}

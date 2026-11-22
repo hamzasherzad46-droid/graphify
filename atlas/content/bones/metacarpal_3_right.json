@@ -1,0 +1,32 @@
+{
+  "id": "metacarpal_3_right",
+  "name": "Third metacarpal",
+  "latin": "Os metacarpi III",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Metacarpals",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Base, shaft and head",
+    "Head forms the knuckle (metacarpophalangeal joint)",
+    "Styloid process on the base"
+  ],
+  "articulations": [
+    "capitate_right",
+    "metacarpal_2_right",
+    "metacarpal_4_right",
+    "hand_proximal_phalanx_3_right"
+  ],
+  "clinical": "Metacarpal shaft fractures can cause rotational deformity; check finger alignment in flexion.",
+  "acceptedSpellings": [
+    "third metacarpal",
+    "third metacarpal bone",
+    "metacarpal 3",
+    "metacarpal iii",
+    "middle finger metacarpal"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "hand_distal_phalanx_2_right",
+  "name": "Distal phalanx of the index finger",
+  "latin": "Phalanx distalis digiti II manus",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Phalanges of the hand",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Small base and shaft",
+    "Ungual tuberosity under the nail bed"
+  ],
+  "articulations": [
+    "hand_middle_phalanx_2_right"
+  ],
+  "clinical": "Mallet finger: avulsion of the extensor tendon from the base of the distal phalanx.",
+  "acceptedSpellings": [
+    "distal phalanx of the index finger",
+    "distal phalanx of index finger",
+    "distal phalanx index finger",
+    "index finger distal phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

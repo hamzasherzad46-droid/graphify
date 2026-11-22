@@ -1,0 +1,33 @@
+{
+  "id": "vertebra_t10",
+  "name": "Tenth thoracic vertebra",
+  "latin": "Vertebra thoracica X",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Thoracic vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Heart-shaped body",
+    "Costal facets on the body for rib heads",
+    "Costal facets on the transverse processes",
+    "Long spinous process angled downwards",
+    "Small circular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_t9",
+    "vertebra_t11",
+    "rib_10_left",
+    "rib_10_right"
+  ],
+  "clinical": "The oesophagus passes through the diaphragm at T10.",
+  "acceptedSpellings": [
+    "tenth thoracic vertebra",
+    "t10",
+    "t 10",
+    "th10"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

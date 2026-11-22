@@ -1,0 +1,31 @@
+{
+  "id": "triquetrum_left",
+  "name": "Triquetrum",
+  "latin": "Os triquetrum",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Carpal bones",
+  "side": "left",
+  "type": "short",
+  "features": [
+    "Pyramidal shape",
+    "Oval facet for the pisiform on its palmar surface",
+    "Separated from the ulna by the articular disc"
+  ],
+  "articulations": [
+    "lunate_left",
+    "pisiform_left",
+    "hamate_left"
+  ],
+  "clinical": "Dorsal chip fractures of the triquetrum are the second most common carpal fracture.",
+  "acceptedSpellings": [
+    "triquetrum",
+    "triquetral",
+    "triquetral bone",
+    "triangular bone",
+    "cuneiform of the hand"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

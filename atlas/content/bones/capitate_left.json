@@ -1,0 +1,34 @@
+{
+  "id": "capitate_left",
+  "name": "Capitate",
+  "latin": "Os capitatum",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Carpal bones",
+  "side": "left",
+  "type": "short",
+  "features": [
+    "Largest carpal bone",
+    "Rounded head fitting into the lunate and scaphoid",
+    "Central in the distal row",
+    "First carpal to ossify"
+  ],
+  "articulations": [
+    "scaphoid_left",
+    "lunate_left",
+    "trapezoid_left",
+    "hamate_left",
+    "metacarpal_2_left",
+    "metacarpal_3_left",
+    "metacarpal_4_left"
+  ],
+  "clinical": "Lies centrally in the wrist; perilunate injuries can fracture it together with the scaphoid.",
+  "acceptedSpellings": [
+    "capitate",
+    "capitate bone",
+    "os magnum"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

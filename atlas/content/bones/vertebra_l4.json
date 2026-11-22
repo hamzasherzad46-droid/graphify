@@ -1,0 +1,30 @@
+{
+  "id": "vertebra_l4",
+  "name": "Fourth lumbar vertebra",
+  "latin": "Vertebra lumbalis IV",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Lumbar vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Large kidney-shaped body",
+    "Short, thick, quadrangular spinous process",
+    "Mammillary and accessory processes",
+    "Articular facets oriented sagittally (resist rotation)",
+    "Triangular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_l3",
+    "vertebra_l5"
+  ],
+  "clinical": "A line between the iliac crest tops (supracristal plane) passes through L4.",
+  "acceptedSpellings": [
+    "fourth lumbar vertebra",
+    "l4",
+    "l 4"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

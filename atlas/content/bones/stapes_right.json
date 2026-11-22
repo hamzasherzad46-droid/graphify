@@ -1,0 +1,28 @@
+{
+  "id": "stapes_right",
+  "name": "Stapes",
+  "latin": "Stapes",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Auditory ossicles",
+  "side": "right",
+  "type": "irregular",
+  "features": [
+    "Smallest bone in the body",
+    "Head and neck",
+    "Anterior and posterior crura",
+    "Base (footplate) in the oval window"
+  ],
+  "articulations": [
+    "incus_right"
+  ],
+  "clinical": "Otosclerosis fixes the stapes footplate in the oval window; treated by stapedectomy.",
+  "acceptedSpellings": [
+    "stapes",
+    "stirrup"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22",
+  "modelNote": "3D shape is simplified: the source dataset has no ossicle meshes."
+}

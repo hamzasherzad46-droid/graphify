@@ -1,0 +1,32 @@
+{
+  "id": "temporal_bone_left",
+  "name": "Temporal bone",
+  "latin": "Os temporale",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Cranial bones",
+  "side": "left",
+  "type": "irregular",
+  "features": [
+    "Squamous, petrous, tympanic and mastoid parts",
+    "External acoustic meatus",
+    "Zygomatic process",
+    "Mandibular fossa and articular tubercle",
+    "Styloid and mastoid processes",
+    "Houses the middle and inner ear"
+  ],
+  "articulations": [
+    "mandible",
+    "parietal_bone_left",
+    "occipital_bone",
+    "sphenoid_bone",
+    "zygomatic_bone_left"
+  ],
+  "clinical": "Mastoiditis can spread from middle ear infection into the mastoid air cells.",
+  "acceptedSpellings": [
+    "temporal bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

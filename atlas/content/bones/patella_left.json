@@ -1,0 +1,27 @@
+{
+  "id": "patella_left",
+  "name": "Patella",
+  "latin": "Patella",
+  "taCode": "",
+  "region": "Lower limb",
+  "subregion": "Knee",
+  "side": "left",
+  "type": "sesamoid",
+  "features": [
+    "Largest sesamoid bone, in the quadriceps tendon",
+    "Base (superior) and apex (inferior)",
+    "Medial and lateral articular facets"
+  ],
+  "articulations": [
+    "femur_left"
+  ],
+  "clinical": "Lateral patellar dislocation is common in young people, especially with a shallow trochlear groove.",
+  "acceptedSpellings": [
+    "patella",
+    "kneecap",
+    "knee cap"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "foot_middle_phalanx_3_left",
+  "name": "Middle phalanx of the third toe",
+  "latin": "Phalanx media digiti III pedis",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Phalanges of the foot",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Short and broad",
+    "Often fused with the distal phalanx in the little toe"
+  ],
+  "articulations": [
+    "foot_proximal_phalanx_3_left",
+    "foot_distal_phalanx_3_left"
+  ],
+  "clinical": "Hammer toe deformity flexes the proximal interphalangeal joint above the middle phalanx.",
+  "acceptedSpellings": [
+    "middle phalanx of the third toe",
+    "middle phalanx of third toe",
+    "middle phalanx third toe",
+    "third toe middle phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

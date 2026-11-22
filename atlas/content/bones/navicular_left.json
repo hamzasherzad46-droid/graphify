@@ -1,0 +1,32 @@
+{
+  "id": "navicular_left",
+  "name": "Navicular",
+  "latin": "Os naviculare",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Tarsal bones",
+  "side": "left",
+  "type": "short",
+  "features": [
+    "Boat-shaped, on the medial side of the foot",
+    "Navicular tuberosity (tibialis posterior)",
+    "Concave facet for the head of the talus"
+  ],
+  "articulations": [
+    "talus_left",
+    "medial_cuneiform_left",
+    "intermediate_cuneiform_left",
+    "lateral_cuneiform_left",
+    "cuboid_left"
+  ],
+  "clinical": "Navicular stress fractures occur in runners and jumpers and are easily missed.",
+  "acceptedSpellings": [
+    "navicular",
+    "navicular bone",
+    "navicular of the foot",
+    "scaphoid of the foot"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

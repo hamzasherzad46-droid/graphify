@@ -1,0 +1,35 @@
+{
+  "id": "vertebra_t8",
+  "name": "Eighth thoracic vertebra",
+  "latin": "Vertebra thoracica VIII",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Thoracic vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Heart-shaped body",
+    "Costal facets on the body for rib heads",
+    "Costal facets on the transverse processes",
+    "Long spinous process angled downwards",
+    "Small circular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_t7",
+    "vertebra_t9",
+    "rib_8_left",
+    "rib_8_right",
+    "rib_9_left",
+    "rib_9_right"
+  ],
+  "clinical": "The inferior vena cava passes through the diaphragm at T8.",
+  "acceptedSpellings": [
+    "eighth thoracic vertebra",
+    "t8",
+    "t 8",
+    "th8"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

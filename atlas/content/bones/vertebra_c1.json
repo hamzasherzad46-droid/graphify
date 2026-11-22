@@ -1,0 +1,32 @@
+{
+  "id": "vertebra_c1",
+  "name": "Atlas",
+  "latin": "Atlas",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Cervical vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "No body and no spinous process",
+    "Anterior and posterior arches",
+    "Lateral masses",
+    "Superior articular facets for the occipital condyles",
+    "Facet for the dens (anterior arch)",
+    "Transverse foramina"
+  ],
+  "articulations": [
+    "occipital_bone",
+    "vertebra_c2"
+  ],
+  "clinical": "Jefferson fracture is a burst fracture of the atlas ring from axial loading.",
+  "acceptedSpellings": [
+    "atlas",
+    "c1",
+    "first cervical vertebra",
+    "c 1"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

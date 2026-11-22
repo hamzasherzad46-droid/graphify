@@ -1,0 +1,35 @@
+{
+  "id": "vertebra_t7",
+  "name": "Seventh thoracic vertebra",
+  "latin": "Vertebra thoracica VII",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Thoracic vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Heart-shaped body",
+    "Costal facets on the body for rib heads",
+    "Costal facets on the transverse processes",
+    "Long spinous process angled downwards",
+    "Small circular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_t6",
+    "vertebra_t8",
+    "rib_7_left",
+    "rib_7_right",
+    "rib_8_left",
+    "rib_8_right"
+  ],
+  "clinical": "Osteoporotic wedge compression fractures are common in the thoracic spine and cause kyphosis.",
+  "acceptedSpellings": [
+    "seventh thoracic vertebra",
+    "t7",
+    "t 7",
+    "th7"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "vertebra_c6",
+  "name": "Sixth cervical vertebra",
+  "latin": "Vertebra cervicalis VI",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Cervical vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Small, wide vertebral body",
+    "Large triangular vertebral foramen",
+    "Transverse foramina (vertebral artery)",
+    "Bifid spinous process",
+    "Uncinate processes on the body"
+  ],
+  "articulations": [
+    "vertebra_c5",
+    "vertebra_c7"
+  ],
+  "clinical": "C6 has the carotid (Chassaignac's) tubercle and is level with the cricoid cartilage.",
+  "acceptedSpellings": [
+    "sixth cervical vertebra",
+    "c6",
+    "c 6"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "clavicle_right",
+  "name": "Clavicle",
+  "latin": "Clavicula",
+  "taCode": "",
+  "region": "Upper limb",
+  "subregion": "Shoulder girdle",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "S-shaped: medial two-thirds convex forwards",
+    "Sternal and acromial ends",
+    "Conoid tubercle and trapezoid line",
+    "Subclavian groove",
+    "Only bony strut joining the upper limb to the trunk"
+  ],
+  "articulations": [
+    "sternum",
+    "scapula_right"
+  ],
+  "clinical": "The most commonly fractured bone in the body, usually at the junction of its middle and lateral thirds.",
+  "acceptedSpellings": [
+    "clavicle",
+    "collarbone",
+    "collar bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "hyoid_bone",
+  "name": "Hyoid bone",
+  "latin": "Os hyoideum",
+  "taCode": "",
+  "region": "Neck",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "U-shaped bone at the level of C3",
+    "Body",
+    "Greater horns (cornua)",
+    "Lesser horns (cornua)",
+    "Does not articulate with any other bone"
+  ],
+  "articulations": [],
+  "clinical": "A fractured hyoid at autopsy suggests manual strangulation.",
+  "acceptedSpellings": [
+    "hyoid bone",
+    "hyoid",
+    "os hyoideum"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

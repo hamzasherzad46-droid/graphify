@@ -1,0 +1,30 @@
+{
+  "id": "metatarsal_3_right",
+  "name": "Third metatarsal",
+  "latin": "Os metatarsi III",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Metatarsals",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Base, shaft and head",
+    "Head bears weight at the ball of the foot"
+  ],
+  "articulations": [
+    "lateral_cuneiform_right",
+    "metatarsal_2_right",
+    "metatarsal_4_right",
+    "foot_proximal_phalanx_3_right"
+  ],
+  "clinical": "Metatarsal stress fractures occur with repetitive loading such as marching or running.",
+  "acceptedSpellings": [
+    "third metatarsal",
+    "third metatarsal bone",
+    "metatarsal 3",
+    "metatarsal iii"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

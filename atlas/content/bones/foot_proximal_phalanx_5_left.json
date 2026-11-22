@@ -1,0 +1,30 @@
+{
+  "id": "foot_proximal_phalanx_5_left",
+  "name": "Proximal phalanx of the little toe",
+  "latin": "Phalanx proximalis digiti V pedis",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Phalanges of the foot",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Longest phalanx of the toe",
+    "Concave base for the metatarsal head"
+  ],
+  "articulations": [
+    "metatarsal_5_left",
+    "foot_middle_phalanx_5_left"
+  ],
+  "clinical": "Toe phalanx fractures usually follow stubbing or a dropped weight and are managed by buddy strapping.",
+  "acceptedSpellings": [
+    "proximal phalanx of the little toe",
+    "proximal phalanx of little toe",
+    "proximal phalanx little toe",
+    "little toe proximal phalanx",
+    "proximal phalanx of the fifth toe",
+    "proximal phalanx of fifth toe"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

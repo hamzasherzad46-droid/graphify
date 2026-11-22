@@ -1,0 +1,27 @@
+{
+  "id": "rib_11_right",
+  "name": "Eleventh rib",
+  "latin": "Costa XI",
+  "taCode": "",
+  "region": "Thorax",
+  "subregion": "Ribs",
+  "side": "right",
+  "type": "flat",
+  "features": [
+    "Short rib with a single facet on the head",
+    "No neck or tubercle",
+    "Free anterior end (floating rib)"
+  ],
+  "articulations": [
+    "vertebra_t11"
+  ],
+  "clinical": "Floating ribs overlie the kidneys and can be injured with them in flank trauma.",
+  "acceptedSpellings": [
+    "eleventh rib",
+    "rib 11",
+    "rib11"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "hip_bone_left",
+  "name": "Hip bone",
+  "latin": "Os coxae",
+  "taCode": "",
+  "region": "Pelvis",
+  "subregion": "Pelvic girdle",
+  "side": "left",
+  "type": "irregular",
+  "features": [
+    "Ilium, ischium and pubis fused at the acetabulum",
+    "Iliac crest, ASIS and PSIS",
+    "Acetabulum",
+    "Obturator foramen",
+    "Greater and lesser sciatic notches",
+    "Ischial tuberosity and ischial spine",
+    "Pubic symphysis surface"
+  ],
+  "articulations": [
+    "sacrum",
+    "hip_bone_right",
+    "femur_left"
+  ],
+  "clinical": "The ASIS is a key landmark for measuring leg length and locating the inguinal ligament.",
+  "acceptedSpellings": [
+    "hip bone",
+    "os coxae",
+    "coxal bone",
+    "innominate bone",
+    "pelvic bone",
+    "hipbone",
+    "innominate"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

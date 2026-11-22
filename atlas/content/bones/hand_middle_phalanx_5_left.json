@@ -1,0 +1,32 @@
+{
+  "id": "hand_middle_phalanx_5_left",
+  "name": "Middle phalanx of the little finger",
+  "latin": "Phalanx media digiti V manus",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Phalanges of the hand",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Base with two concave facets",
+    "Shaft",
+    "Bicondylar head"
+  ],
+  "articulations": [
+    "hand_proximal_phalanx_5_left",
+    "hand_distal_phalanx_5_left"
+  ],
+  "clinical": "Volar plate avulsion at the base of the middle phalanx follows hyperextension (jammed finger).",
+  "acceptedSpellings": [
+    "middle phalanx of the little finger",
+    "middle phalanx of little finger",
+    "middle phalanx little finger",
+    "little finger middle phalanx",
+    "middle phalanx of the fifth finger",
+    "middle phalanx of fifth finger",
+    "middle phalanx of the pinky"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

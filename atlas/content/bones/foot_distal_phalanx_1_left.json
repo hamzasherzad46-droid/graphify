@@ -1,0 +1,30 @@
+{
+  "id": "foot_distal_phalanx_1_left",
+  "name": "Distal phalanx of the big toe",
+  "latin": "Phalanx distalis hallucis",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Phalanges of the foot",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Small, with a tuberosity under the nail bed"
+  ],
+  "articulations": [
+    "foot_proximal_phalanx_1_left"
+  ],
+  "clinical": "Subungual haematoma over a distal phalanx may hide an underlying fracture.",
+  "acceptedSpellings": [
+    "distal phalanx of the big toe",
+    "distal phalanx of big toe",
+    "distal phalanx big toe",
+    "big toe distal phalanx",
+    "distal phalanx of the hallux",
+    "distal phalanx of hallux",
+    "distal phalanx of the great toe",
+    "distal phalanx of the first toe"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

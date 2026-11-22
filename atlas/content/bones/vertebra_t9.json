@@ -1,0 +1,35 @@
+{
+  "id": "vertebra_t9",
+  "name": "Ninth thoracic vertebra",
+  "latin": "Vertebra thoracica IX",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Thoracic vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Heart-shaped body",
+    "Costal facets on the body for rib heads",
+    "Costal facets on the transverse processes",
+    "Long spinous process angled downwards",
+    "Small circular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_t8",
+    "vertebra_t10",
+    "rib_9_left",
+    "rib_9_right",
+    "rib_10_left",
+    "rib_10_right"
+  ],
+  "clinical": "Osteoporotic wedge compression fractures are common in the thoracic spine and cause kyphosis.",
+  "acceptedSpellings": [
+    "ninth thoracic vertebra",
+    "t9",
+    "t 9",
+    "th9"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "vertebra_l2",
+  "name": "Second lumbar vertebra",
+  "latin": "Vertebra lumbalis II",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Lumbar vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Large kidney-shaped body",
+    "Short, thick, quadrangular spinous process",
+    "Mammillary and accessory processes",
+    "Articular facets oriented sagittally (resist rotation)",
+    "Triangular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_l1",
+    "vertebra_l3"
+  ],
+  "clinical": "L4/L5 and L5/S1 are the commonest levels for lumbar disc herniation.",
+  "acceptedSpellings": [
+    "second lumbar vertebra",
+    "l2",
+    "l 2"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

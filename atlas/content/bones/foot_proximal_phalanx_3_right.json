@@ -1,0 +1,28 @@
+{
+  "id": "foot_proximal_phalanx_3_right",
+  "name": "Proximal phalanx of the third toe",
+  "latin": "Phalanx proximalis digiti III pedis",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Phalanges of the foot",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Longest phalanx of the toe",
+    "Concave base for the metatarsal head"
+  ],
+  "articulations": [
+    "metatarsal_3_right",
+    "foot_middle_phalanx_3_right"
+  ],
+  "clinical": "Toe phalanx fractures usually follow stubbing or a dropped weight and are managed by buddy strapping.",
+  "acceptedSpellings": [
+    "proximal phalanx of the third toe",
+    "proximal phalanx of third toe",
+    "proximal phalanx third toe",
+    "third toe proximal phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

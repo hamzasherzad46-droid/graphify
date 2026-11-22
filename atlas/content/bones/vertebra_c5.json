@@ -1,0 +1,30 @@
+{
+  "id": "vertebra_c5",
+  "name": "Fifth cervical vertebra",
+  "latin": "Vertebra cervicalis V",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Cervical vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Small, wide vertebral body",
+    "Large triangular vertebral foramen",
+    "Transverse foramina (vertebral artery)",
+    "Bifid spinous process",
+    "Uncinate processes on the body"
+  ],
+  "articulations": [
+    "vertebra_c4",
+    "vertebra_c6"
+  ],
+  "clinical": "C5–C6 is the most common level for cervical disc degeneration.",
+  "acceptedSpellings": [
+    "fifth cervical vertebra",
+    "c5",
+    "c 5"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

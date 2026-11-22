@@ -1,0 +1,30 @@
+{
+  "id": "ulna_left",
+  "name": "Ulna",
+  "latin": "Ulna",
+  "taCode": "",
+  "region": "Upper limb",
+  "subregion": "Forearm",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Olecranon",
+    "Coronoid process",
+    "Trochlear notch",
+    "Radial notch",
+    "Ulnar tuberosity",
+    "Interosseous border",
+    "Head and styloid process"
+  ],
+  "articulations": [
+    "humerus_left",
+    "radius_left"
+  ],
+  "clinical": "Monteggia fracture: proximal ulnar shaft fracture with dislocation of the radial head.",
+  "acceptedSpellings": [
+    "ulna"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

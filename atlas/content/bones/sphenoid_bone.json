@@ -1,0 +1,39 @@
+{
+  "id": "sphenoid_bone",
+  "name": "Sphenoid bone",
+  "latin": "Os sphenoidale",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Cranial bones",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Body with sella turcica (pituitary fossa)",
+    "Greater and lesser wings",
+    "Pterygoid processes",
+    "Optic canals and superior orbital fissures",
+    "Foramina rotundum, ovale and spinosum",
+    "Sphenoidal sinuses"
+  ],
+  "articulations": [
+    "frontal_bone",
+    "occipital_bone",
+    "ethmoid_bone",
+    "vomer",
+    "parietal_bone_left",
+    "parietal_bone_right",
+    "temporal_bone_left",
+    "temporal_bone_right",
+    "zygomatic_bone_left",
+    "zygomatic_bone_right",
+    "palatine_bone_left",
+    "palatine_bone_right"
+  ],
+  "clinical": "Pituitary tumours are approached through the sphenoidal sinus (transsphenoidal surgery).",
+  "acceptedSpellings": [
+    "sphenoid bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

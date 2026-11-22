@@ -1,0 +1,29 @@
+{
+  "id": "incus_left",
+  "name": "Incus",
+  "latin": "Incus",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Auditory ossicles",
+  "side": "left",
+  "type": "irregular",
+  "features": [
+    "Body (articulates with the malleus head)",
+    "Short process",
+    "Long process",
+    "Lenticular process (articulates with the stapes)"
+  ],
+  "articulations": [
+    "malleus_left",
+    "stapes_left"
+  ],
+  "clinical": "Erosion of the long process of the incus is common in chronic otitis media.",
+  "acceptedSpellings": [
+    "incus",
+    "anvil"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22",
+  "modelNote": "3D shape is simplified: the source dataset has no ossicle meshes."
+}

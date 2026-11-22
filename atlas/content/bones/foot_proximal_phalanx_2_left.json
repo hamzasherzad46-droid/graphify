@@ -1,0 +1,28 @@
+{
+  "id": "foot_proximal_phalanx_2_left",
+  "name": "Proximal phalanx of the second toe",
+  "latin": "Phalanx proximalis digiti II pedis",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Phalanges of the foot",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Longest phalanx of the toe",
+    "Concave base for the metatarsal head"
+  ],
+  "articulations": [
+    "metatarsal_2_left",
+    "foot_middle_phalanx_2_left"
+  ],
+  "clinical": "Toe phalanx fractures usually follow stubbing or a dropped weight and are managed by buddy strapping.",
+  "acceptedSpellings": [
+    "proximal phalanx of the second toe",
+    "proximal phalanx of second toe",
+    "proximal phalanx second toe",
+    "second toe proximal phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

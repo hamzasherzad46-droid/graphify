@@ -1,0 +1,35 @@
+{
+  "id": "vertebra_t5",
+  "name": "Fifth thoracic vertebra",
+  "latin": "Vertebra thoracica V",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Thoracic vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Heart-shaped body",
+    "Costal facets on the body for rib heads",
+    "Costal facets on the transverse processes",
+    "Long spinous process angled downwards",
+    "Small circular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_t4",
+    "vertebra_t6",
+    "rib_5_left",
+    "rib_5_right",
+    "rib_6_left",
+    "rib_6_right"
+  ],
+  "clinical": "Osteoporotic wedge compression fractures are common in the thoracic spine and cause kyphosis.",
+  "acceptedSpellings": [
+    "fifth thoracic vertebra",
+    "t5",
+    "t 5",
+    "th5"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

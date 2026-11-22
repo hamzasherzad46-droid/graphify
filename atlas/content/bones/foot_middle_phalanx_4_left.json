@@ -1,0 +1,28 @@
+{
+  "id": "foot_middle_phalanx_4_left",
+  "name": "Middle phalanx of the fourth toe",
+  "latin": "Phalanx media digiti IV pedis",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Phalanges of the foot",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Short and broad",
+    "Often fused with the distal phalanx in the little toe"
+  ],
+  "articulations": [
+    "foot_proximal_phalanx_4_left",
+    "foot_distal_phalanx_4_left"
+  ],
+  "clinical": "Hammer toe deformity flexes the proximal interphalangeal joint above the middle phalanx.",
+  "acceptedSpellings": [
+    "middle phalanx of the fourth toe",
+    "middle phalanx of fourth toe",
+    "middle phalanx fourth toe",
+    "fourth toe middle phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

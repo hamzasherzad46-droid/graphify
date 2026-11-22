@@ -1,0 +1,35 @@
+{
+  "id": "vertebra_t1",
+  "name": "First thoracic vertebra",
+  "latin": "Vertebra thoracica I",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Thoracic vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Heart-shaped body",
+    "Full costal facet for rib 1 and a demifacet for rib 2",
+    "Costal facets on the transverse processes",
+    "Long spinous process angled downwards",
+    "Small circular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_c7",
+    "vertebra_t2",
+    "rib_1_left",
+    "rib_1_right",
+    "rib_2_left",
+    "rib_2_right"
+  ],
+  "clinical": "T1 nerve root compression (e.g. Pancoast tumour) affects the intrinsic hand muscles.",
+  "acceptedSpellings": [
+    "first thoracic vertebra",
+    "t1",
+    "t 1",
+    "th1"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

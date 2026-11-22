@@ -1,0 +1,32 @@
+{
+  "id": "sacrum",
+  "name": "Sacrum",
+  "latin": "Os sacrum",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Sacrum and coccyx",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Five fused sacral vertebrae",
+    "Sacral promontory",
+    "Anterior and posterior sacral foramina",
+    "Auricular surfaces (sacroiliac joints)",
+    "Median sacral crest",
+    "Sacral hiatus and sacral canal"
+  ],
+  "articulations": [
+    "vertebra_l5",
+    "coccyx",
+    "hip_bone_left",
+    "hip_bone_right"
+  ],
+  "clinical": "Caudal epidural anaesthesia is given through the sacral hiatus.",
+  "acceptedSpellings": [
+    "sacrum",
+    "os sacrum"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

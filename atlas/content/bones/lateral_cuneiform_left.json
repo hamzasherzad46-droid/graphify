@@ -1,0 +1,30 @@
+{
+  "id": "lateral_cuneiform_left",
+  "name": "Lateral cuneiform",
+  "latin": "Os cuneiforme laterale",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Tarsal bones",
+  "side": "left",
+  "type": "short",
+  "features": [
+    "Wedge-shaped, between the intermediate cuneiform and the cuboid"
+  ],
+  "articulations": [
+    "navicular_left",
+    "intermediate_cuneiform_left",
+    "cuboid_left",
+    "metatarsal_2_left",
+    "metatarsal_3_left",
+    "metatarsal_4_left"
+  ],
+  "clinical": "Injured as part of tarsometatarsal (Lisfranc) fracture-dislocations.",
+  "acceptedSpellings": [
+    "lateral cuneiform",
+    "lateral cuneiform bone",
+    "third cuneiform"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

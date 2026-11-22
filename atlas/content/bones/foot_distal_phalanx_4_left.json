@@ -1,0 +1,26 @@
+{
+  "id": "foot_distal_phalanx_4_left",
+  "name": "Distal phalanx of the fourth toe",
+  "latin": "Phalanx distalis digiti IV pedis",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Phalanges of the foot",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Small, with a tuberosity under the nail bed"
+  ],
+  "articulations": [
+    "foot_middle_phalanx_4_left"
+  ],
+  "clinical": "Subungual haematoma over a distal phalanx may hide an underlying fracture.",
+  "acceptedSpellings": [
+    "distal phalanx of the fourth toe",
+    "distal phalanx of fourth toe",
+    "distal phalanx fourth toe",
+    "fourth toe distal phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "hamate_left",
+  "name": "Hamate",
+  "latin": "Os hamatum",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Carpal bones",
+  "side": "left",
+  "type": "short",
+  "features": [
+    "Wedge-shaped",
+    "Hook (hamulus) projecting palmarly",
+    "Hook forms the lateral wall of Guyon's canal"
+  ],
+  "articulations": [
+    "lunate_left",
+    "triquetrum_left",
+    "capitate_left",
+    "metacarpal_4_left",
+    "metacarpal_5_left"
+  ],
+  "clinical": "Hook of hamate fractures occur in golf, racquet and baseball players.",
+  "acceptedSpellings": [
+    "hamate",
+    "hamate bone",
+    "unciform bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "metacarpal_1_right",
+  "name": "First metacarpal",
+  "latin": "Os metacarpi I",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Metacarpals",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Shortest and thickest metacarpal",
+    "Saddle-shaped base for the trapezium",
+    "Rotated about 90° relative to the others (allows opposition)"
+  ],
+  "articulations": [
+    "trapezium_right",
+    "hand_proximal_phalanx_1_right"
+  ],
+  "clinical": "Bennett's fracture is an intra-articular fracture of the base of the first metacarpal.",
+  "acceptedSpellings": [
+    "first metacarpal",
+    "first metacarpal bone",
+    "metacarpal 1",
+    "metacarpal i",
+    "thumb metacarpal"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

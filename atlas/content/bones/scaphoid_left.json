@@ -1,0 +1,33 @@
+{
+  "id": "scaphoid_left",
+  "name": "Scaphoid",
+  "latin": "Os scaphoideum",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Carpal bones",
+  "side": "left",
+  "type": "short",
+  "features": [
+    "Boat-shaped; largest bone of the proximal row",
+    "Tubercle palpable at the wrist",
+    "Waist",
+    "Lies in the floor of the anatomical snuffbox"
+  ],
+  "articulations": [
+    "radius_left",
+    "lunate_left",
+    "trapezium_left",
+    "trapezoid_left",
+    "capitate_left"
+  ],
+  "clinical": "The most commonly fractured carpal; retrograde blood supply risks avascular necrosis of the proximal pole.",
+  "acceptedSpellings": [
+    "scaphoid",
+    "navicular of the hand",
+    "scaphoid bone",
+    "os scaphoideum"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

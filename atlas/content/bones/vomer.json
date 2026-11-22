@@ -1,0 +1,30 @@
+{
+  "id": "vomer",
+  "name": "Vomer",
+  "latin": "Vomer",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Facial bones",
+  "side": "midline",
+  "type": "flat",
+  "features": [
+    "Thin plate forming the posteroinferior nasal septum",
+    "Alae articulating with the sphenoid",
+    "Free posterior border separating the choanae"
+  ],
+  "articulations": [
+    "sphenoid_bone",
+    "ethmoid_bone",
+    "maxilla_left",
+    "maxilla_right",
+    "palatine_bone_left",
+    "palatine_bone_right"
+  ],
+  "clinical": "Deviation of the nasal septum often involves the vomer and can obstruct airflow.",
+  "acceptedSpellings": [
+    "vomer"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "foot_proximal_phalanx_4_left",
+  "name": "Proximal phalanx of the fourth toe",
+  "latin": "Phalanx proximalis digiti IV pedis",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Phalanges of the foot",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Longest phalanx of the toe",
+    "Concave base for the metatarsal head"
+  ],
+  "articulations": [
+    "metatarsal_4_left",
+    "foot_middle_phalanx_4_left"
+  ],
+  "clinical": "Toe phalanx fractures usually follow stubbing or a dropped weight and are managed by buddy strapping.",
+  "acceptedSpellings": [
+    "proximal phalanx of the fourth toe",
+    "proximal phalanx of fourth toe",
+    "proximal phalanx fourth toe",
+    "fourth toe proximal phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

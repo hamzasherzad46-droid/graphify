@@ -1,0 +1,33 @@
+{
+  "id": "occipital_bone",
+  "name": "Occipital bone",
+  "latin": "Os occipitale",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Cranial bones",
+  "side": "midline",
+  "type": "flat",
+  "features": [
+    "Foramen magnum",
+    "Occipital condyles",
+    "External occipital protuberance (inion)",
+    "Superior and inferior nuchal lines",
+    "Hypoglossal canals",
+    "Basilar part (clivus)"
+  ],
+  "articulations": [
+    "parietal_bone_left",
+    "parietal_bone_right",
+    "temporal_bone_left",
+    "temporal_bone_right",
+    "sphenoid_bone",
+    "vertebra_c1"
+  ],
+  "clinical": "Herniation of the cerebellar tonsils through the foramen magnum (coning) compresses the brainstem.",
+  "acceptedSpellings": [
+    "occipital bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

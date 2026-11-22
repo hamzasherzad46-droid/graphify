@@ -1,0 +1,30 @@
+{
+  "id": "trapezium_right",
+  "name": "Trapezium",
+  "latin": "Os trapezium",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Carpal bones",
+  "side": "right",
+  "type": "short",
+  "features": [
+    "Saddle-shaped facet for the first metacarpal",
+    "Tubercle and groove for flexor carpi radialis",
+    "Attachment of the flexor retinaculum"
+  ],
+  "articulations": [
+    "scaphoid_right",
+    "trapezoid_right",
+    "metacarpal_1_right",
+    "metacarpal_2_right"
+  ],
+  "clinical": "The thumb carpometacarpal joint is a common site of osteoarthritis.",
+  "acceptedSpellings": [
+    "trapezium",
+    "trapezium bone",
+    "greater multangular"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

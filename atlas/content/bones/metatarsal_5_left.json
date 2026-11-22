@@ -1,0 +1,30 @@
+{
+  "id": "metatarsal_5_left",
+  "name": "Fifth metatarsal",
+  "latin": "Os metatarsi V",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Metatarsals",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Base, shaft and head",
+    "Head bears weight at the ball of the foot",
+    "Tuberosity on the base for fibularis brevis"
+  ],
+  "articulations": [
+    "cuboid_left",
+    "metatarsal_4_left",
+    "foot_proximal_phalanx_5_left"
+  ],
+  "clinical": "Jones fracture at the base of the fifth metatarsal heals poorly due to a watershed blood supply.",
+  "acceptedSpellings": [
+    "fifth metatarsal",
+    "fifth metatarsal bone",
+    "metatarsal 5",
+    "metatarsal v"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "radius_left",
+  "name": "Radius",
+  "latin": "Radius",
+  "taCode": "",
+  "region": "Upper limb",
+  "subregion": "Forearm",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Head (disc-shaped)",
+    "Neck and radial tuberosity",
+    "Interosseous border",
+    "Styloid process",
+    "Ulnar notch",
+    "Dorsal (Lister's) tubercle",
+    "Carpal articular surface"
+  ],
+  "articulations": [
+    "humerus_left",
+    "ulna_left",
+    "scaphoid_left",
+    "lunate_left"
+  ],
+  "clinical": "Colles' fracture of the distal radius (fall on an outstretched hand) is very common.",
+  "acceptedSpellings": [
+    "radius"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

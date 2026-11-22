@@ -1,0 +1,31 @@
+{
+  "id": "lunate_left",
+  "name": "Lunate",
+  "latin": "Os lunatum",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Carpal bones",
+  "side": "left",
+  "type": "short",
+  "features": [
+    "Crescent (moon) shaped",
+    "Central bone of the proximal row",
+    "Articulates with the radius"
+  ],
+  "articulations": [
+    "radius_left",
+    "scaphoid_left",
+    "triquetrum_left",
+    "capitate_left",
+    "hamate_left"
+  ],
+  "clinical": "The most commonly dislocated carpal; anterior dislocation can compress the median nerve.",
+  "acceptedSpellings": [
+    "lunate",
+    "lunate bone",
+    "semilunar bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

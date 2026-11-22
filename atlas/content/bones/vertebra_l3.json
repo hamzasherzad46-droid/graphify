@@ -1,0 +1,30 @@
+{
+  "id": "vertebra_l3",
+  "name": "Third lumbar vertebra",
+  "latin": "Vertebra lumbalis III",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Lumbar vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Large kidney-shaped body",
+    "Short, thick, quadrangular spinous process",
+    "Mammillary and accessory processes",
+    "Articular facets oriented sagittally (resist rotation)",
+    "Triangular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_l2",
+    "vertebra_l4"
+  ],
+  "clinical": "Lumbar puncture is done at L3/L4 or L4/L5, below the end of the spinal cord.",
+  "acceptedSpellings": [
+    "third lumbar vertebra",
+    "l3",
+    "l 3"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

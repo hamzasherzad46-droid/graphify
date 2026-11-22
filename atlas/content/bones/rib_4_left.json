@@ -1,0 +1,30 @@
+{
+  "id": "rib_4_left",
+  "name": "Fourth rib",
+  "latin": "Costa IV",
+  "taCode": "",
+  "region": "Thorax",
+  "subregion": "Ribs",
+  "side": "left",
+  "type": "flat",
+  "features": [
+    "Head, neck, tubercle, angle and shaft",
+    "Classified as a true rib (vertebrosternal)",
+    "Costal groove on the inner lower border (intercostal vessels and nerve)",
+    "Head with two facets (crest between them)"
+  ],
+  "articulations": [
+    "vertebra_t4",
+    "vertebra_t3",
+    "sternum"
+  ],
+  "clinical": "Rib fractures most often occur near the angle; several adjacent fractures can cause flail chest.",
+  "acceptedSpellings": [
+    "fourth rib",
+    "rib 4",
+    "rib4"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

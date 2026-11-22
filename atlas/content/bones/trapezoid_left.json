@@ -1,0 +1,29 @@
+{
+  "id": "trapezoid_left",
+  "name": "Trapezoid",
+  "latin": "Os trapezoideum",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Carpal bones",
+  "side": "left",
+  "type": "short",
+  "features": [
+    "Small, wedge-shaped",
+    "Articulates with the base of the second metacarpal"
+  ],
+  "articulations": [
+    "scaphoid_left",
+    "trapezium_left",
+    "capitate_left",
+    "metacarpal_2_left"
+  ],
+  "clinical": "The least commonly fractured carpal bone.",
+  "acceptedSpellings": [
+    "trapezoid",
+    "trapezoid bone",
+    "lesser multangular"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "rib_7_left",
+  "name": "Seventh rib",
+  "latin": "Costa VII",
+  "taCode": "",
+  "region": "Thorax",
+  "subregion": "Ribs",
+  "side": "left",
+  "type": "flat",
+  "features": [
+    "Head, neck, tubercle, angle and shaft",
+    "Classified as a true rib (vertebrosternal)",
+    "Costal groove on the inner lower border (intercostal vessels and nerve)",
+    "Head with two facets (crest between them)"
+  ],
+  "articulations": [
+    "vertebra_t7",
+    "vertebra_t6",
+    "sternum"
+  ],
+  "clinical": "Rib fractures most often occur near the angle; several adjacent fractures can cause flail chest.",
+  "acceptedSpellings": [
+    "seventh rib",
+    "rib 7",
+    "rib7"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

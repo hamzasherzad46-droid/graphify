@@ -1,0 +1,35 @@
+{
+  "id": "vertebra_t6",
+  "name": "Sixth thoracic vertebra",
+  "latin": "Vertebra thoracica VI",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Thoracic vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Heart-shaped body",
+    "Costal facets on the body for rib heads",
+    "Costal facets on the transverse processes",
+    "Long spinous process angled downwards",
+    "Small circular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_t5",
+    "vertebra_t7",
+    "rib_6_left",
+    "rib_6_right",
+    "rib_7_left",
+    "rib_7_right"
+  ],
+  "clinical": "Osteoporotic wedge compression fractures are common in the thoracic spine and cause kyphosis.",
+  "acceptedSpellings": [
+    "sixth thoracic vertebra",
+    "t6",
+    "t 6",
+    "th6"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

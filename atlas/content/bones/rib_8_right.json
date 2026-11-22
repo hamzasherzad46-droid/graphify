@@ -1,0 +1,29 @@
+{
+  "id": "rib_8_right",
+  "name": "Eighth rib",
+  "latin": "Costa VIII",
+  "taCode": "",
+  "region": "Thorax",
+  "subregion": "Ribs",
+  "side": "right",
+  "type": "flat",
+  "features": [
+    "Head, neck, tubercle, angle and shaft",
+    "Classified as a false rib (vertebrochondral)",
+    "Costal groove on the inner lower border (intercostal vessels and nerve)",
+    "Head with two facets (crest between them)"
+  ],
+  "articulations": [
+    "vertebra_t8",
+    "vertebra_t7"
+  ],
+  "clinical": "Rib fractures most often occur near the angle; several adjacent fractures can cause flail chest.",
+  "acceptedSpellings": [
+    "eighth rib",
+    "rib 8",
+    "rib8"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

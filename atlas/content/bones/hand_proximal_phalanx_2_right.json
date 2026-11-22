@@ -1,0 +1,29 @@
+{
+  "id": "hand_proximal_phalanx_2_right",
+  "name": "Proximal phalanx of the index finger",
+  "latin": "Phalanx proximalis digiti II manus",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Phalanges of the hand",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Longest phalanx of the digit",
+    "Concave base for the metacarpal head",
+    "Bicondylar head (trochlea)"
+  ],
+  "articulations": [
+    "metacarpal_2_right",
+    "hand_middle_phalanx_2_right"
+  ],
+  "clinical": "Proximal phalanx fractures tend to angulate palmarly because of the pull of the interossei.",
+  "acceptedSpellings": [
+    "proximal phalanx of the index finger",
+    "proximal phalanx of index finger",
+    "proximal phalanx index finger",
+    "index finger proximal phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

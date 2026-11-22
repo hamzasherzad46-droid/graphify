@@ -1,0 +1,29 @@
+{
+  "id": "vertebra_c7",
+  "name": "Seventh cervical vertebra",
+  "latin": "Vertebra cervicalis VII",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Cervical vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Vertebra prominens: long, non-bifid spinous process",
+    "Small transverse foramina (usually no vertebral artery)",
+    "Transitional to the thoracic vertebrae"
+  ],
+  "articulations": [
+    "vertebra_c6",
+    "vertebra_t1"
+  ],
+  "clinical": "Its spinous process is the first easily palpable landmark when counting vertebrae.",
+  "acceptedSpellings": [
+    "seventh cervical vertebra",
+    "c7",
+    "vertebra prominens",
+    "c 7"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

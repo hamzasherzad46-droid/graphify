@@ -1,0 +1,31 @@
+{
+  "id": "inferior_nasal_concha_left",
+  "name": "Inferior nasal concha",
+  "latin": "Concha nasalis inferior",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Facial bones",
+  "side": "left",
+  "type": "irregular",
+  "features": [
+    "Scroll-like bone on the lateral nasal wall",
+    "Largest concha; a separate bone",
+    "Covers the opening of the nasolacrimal duct (inferior meatus)"
+  ],
+  "articulations": [
+    "maxilla_left",
+    "lacrimal_bone_left",
+    "ethmoid_bone",
+    "palatine_bone_left"
+  ],
+  "clinical": "Hypertrophy of the inferior turbinate is a common cause of nasal obstruction.",
+  "acceptedSpellings": [
+    "inferior nasal concha",
+    "inferior turbinate",
+    "inferior nasal turbinate",
+    "inferior concha"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

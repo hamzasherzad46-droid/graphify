@@ -1,0 +1,31 @@
+{
+  "id": "parietal_bone_right",
+  "name": "Parietal bone",
+  "latin": "Os parietale",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Cranial bones",
+  "side": "right",
+  "type": "flat",
+  "features": [
+    "Parietal eminence (tuber)",
+    "Superior and inferior temporal lines",
+    "Groove for the superior sagittal sinus",
+    "Grooves for the middle meningeal vessels on the inner surface",
+    "Parietal foramen"
+  ],
+  "articulations": [
+    "parietal_bone_left",
+    "frontal_bone",
+    "occipital_bone",
+    "temporal_bone_right",
+    "sphenoid_bone"
+  ],
+  "clinical": "Fracture over the pterion region can tear the middle meningeal artery, causing an extradural haematoma.",
+  "acceptedSpellings": [
+    "parietal bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

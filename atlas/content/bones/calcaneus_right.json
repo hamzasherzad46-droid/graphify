@@ -1,0 +1,32 @@
+{
+  "id": "calcaneus_right",
+  "name": "Calcaneus",
+  "latin": "Calcaneus",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Tarsal bones",
+  "side": "right",
+  "type": "short",
+  "features": [
+    "Largest tarsal bone (heel)",
+    "Calcaneal tuberosity (Achilles tendon)",
+    "Sustentaculum tali",
+    "Fibular (peroneal) trochlea",
+    "Facets for the talus"
+  ],
+  "articulations": [
+    "talus_right",
+    "cuboid_right"
+  ],
+  "clinical": "Falls from height cause calcaneal fractures, often with associated lumbar spine fractures.",
+  "acceptedSpellings": [
+    "calcaneus",
+    "calcaneum",
+    "heel bone",
+    "heelbone",
+    "os calcis"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

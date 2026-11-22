@@ -1,0 +1,35 @@
+{
+  "id": "vertebra_t2",
+  "name": "Second thoracic vertebra",
+  "latin": "Vertebra thoracica II",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Thoracic vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Heart-shaped body",
+    "Costal facets on the body for rib heads",
+    "Costal facets on the transverse processes",
+    "Long spinous process angled downwards",
+    "Small circular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_t1",
+    "vertebra_t3",
+    "rib_2_left",
+    "rib_2_right",
+    "rib_3_left",
+    "rib_3_right"
+  ],
+  "clinical": "The jugular (suprasternal) notch of the sternum lies at about the level of T2.",
+  "acceptedSpellings": [
+    "second thoracic vertebra",
+    "t2",
+    "t 2",
+    "th2"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

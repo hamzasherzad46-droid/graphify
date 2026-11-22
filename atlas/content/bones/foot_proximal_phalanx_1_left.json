@@ -1,0 +1,32 @@
+{
+  "id": "foot_proximal_phalanx_1_left",
+  "name": "Proximal phalanx of the big toe",
+  "latin": "Phalanx proximalis hallucis",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Phalanges of the foot",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Longest phalanx of the toe",
+    "Concave base for the metatarsal head"
+  ],
+  "articulations": [
+    "metatarsal_1_left",
+    "foot_distal_phalanx_1_left"
+  ],
+  "clinical": "Turf toe is a sprain of the plantar plate at the base of the big toe's proximal phalanx.",
+  "acceptedSpellings": [
+    "proximal phalanx of the big toe",
+    "proximal phalanx of big toe",
+    "proximal phalanx big toe",
+    "big toe proximal phalanx",
+    "proximal phalanx of the hallux",
+    "proximal phalanx of hallux",
+    "proximal phalanx of the great toe",
+    "proximal phalanx of the first toe"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

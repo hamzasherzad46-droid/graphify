@@ -1,0 +1,38 @@
+{
+  "id": "frontal_bone",
+  "name": "Frontal bone",
+  "latin": "Os frontale",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Cranial bones",
+  "side": "midline",
+  "type": "flat",
+  "features": [
+    "Squamous part (forehead)",
+    "Supraorbital margins and supraorbital notch/foramen",
+    "Orbital parts forming the roofs of the orbits",
+    "Frontal sinuses",
+    "Glabella and superciliary arches"
+  ],
+  "articulations": [
+    "parietal_bone_left",
+    "parietal_bone_right",
+    "sphenoid_bone",
+    "ethmoid_bone",
+    "nasal_bone_left",
+    "nasal_bone_right",
+    "maxilla_left",
+    "maxilla_right",
+    "lacrimal_bone_left",
+    "lacrimal_bone_right",
+    "zygomatic_bone_left",
+    "zygomatic_bone_right"
+  ],
+  "clinical": "Frontal sinus fractures from forehead impact can involve the frontonasal duct and the anterior cranial fossa.",
+  "acceptedSpellings": [
+    "frontal bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

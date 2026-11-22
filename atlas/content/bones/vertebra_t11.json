@@ -1,0 +1,32 @@
+{
+  "id": "vertebra_t11",
+  "name": "Eleventh thoracic vertebra",
+  "latin": "Vertebra thoracica XI",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Thoracic vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Heart-shaped body",
+    "Single full costal facet for rib 11; no transverse costal facet",
+    "Long spinous process angled downwards",
+    "Small circular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_t10",
+    "vertebra_t12",
+    "rib_11_left",
+    "rib_11_right"
+  ],
+  "clinical": "Osteoporotic wedge compression fractures are common in the thoracic spine and cause kyphosis.",
+  "acceptedSpellings": [
+    "eleventh thoracic vertebra",
+    "t11",
+    "t 11",
+    "th11"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

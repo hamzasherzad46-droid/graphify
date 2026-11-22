@@ -1,0 +1,32 @@
+{
+  "id": "zygomatic_bone_left",
+  "name": "Zygomatic bone",
+  "latin": "Os zygomaticum",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Facial bones",
+  "side": "left",
+  "type": "irregular",
+  "features": [
+    "Forms the prominence of the cheek",
+    "Frontal and temporal processes",
+    "Lateral orbital wall and rim",
+    "Zygomaticofacial foramen"
+  ],
+  "articulations": [
+    "frontal_bone",
+    "sphenoid_bone",
+    "temporal_bone_left",
+    "maxilla_left"
+  ],
+  "clinical": "Zygomaticomaxillary complex fractures can cause cheek flattening, diplopia and cheek numbness.",
+  "acceptedSpellings": [
+    "zygomatic bone",
+    "cheekbone",
+    "cheek bone",
+    "malar bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

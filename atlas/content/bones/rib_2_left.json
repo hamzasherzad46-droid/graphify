@@ -1,0 +1,29 @@
+{
+  "id": "rib_2_left",
+  "name": "Second rib",
+  "latin": "Costa II",
+  "taCode": "",
+  "region": "Thorax",
+  "subregion": "Ribs",
+  "side": "left",
+  "type": "flat",
+  "features": [
+    "Head, neck, tubercle, angle and shaft",
+    "Classified as a true rib (vertebrosternal)",
+    "Tuberosity for serratus anterior"
+  ],
+  "articulations": [
+    "vertebra_t2",
+    "vertebra_t1",
+    "sternum"
+  ],
+  "clinical": "The second costal cartilage meets the sternum at the sternal angle.",
+  "acceptedSpellings": [
+    "second rib",
+    "rib 2",
+    "rib2"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

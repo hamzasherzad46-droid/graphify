@@ -1,0 +1,40 @@
+{
+  "id": "ethmoid_bone",
+  "name": "Ethmoid bone",
+  "latin": "Os ethmoidale",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Cranial bones",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Cribriform plate with olfactory foramina",
+    "Crista galli",
+    "Perpendicular plate (nasal septum)",
+    "Ethmoidal labyrinths with air cells",
+    "Superior and middle nasal conchae",
+    "Orbital plates"
+  ],
+  "articulations": [
+    "frontal_bone",
+    "sphenoid_bone",
+    "vomer",
+    "nasal_bone_left",
+    "nasal_bone_right",
+    "maxilla_left",
+    "maxilla_right",
+    "lacrimal_bone_left",
+    "lacrimal_bone_right",
+    "palatine_bone_left",
+    "palatine_bone_right",
+    "inferior_nasal_concha_left",
+    "inferior_nasal_concha_right"
+  ],
+  "clinical": "Cribriform plate fracture can cause CSF rhinorrhoea and loss of smell (anosmia).",
+  "acceptedSpellings": [
+    "ethmoid bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "hand_middle_phalanx_3_left",
+  "name": "Middle phalanx of the middle finger",
+  "latin": "Phalanx media digiti III manus",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Phalanges of the hand",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Base with two concave facets",
+    "Shaft",
+    "Bicondylar head"
+  ],
+  "articulations": [
+    "hand_proximal_phalanx_3_left",
+    "hand_distal_phalanx_3_left"
+  ],
+  "clinical": "Volar plate avulsion at the base of the middle phalanx follows hyperextension (jammed finger).",
+  "acceptedSpellings": [
+    "middle phalanx of the middle finger",
+    "middle phalanx of middle finger",
+    "middle phalanx middle finger",
+    "middle finger middle phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "hand_distal_phalanx_3_right",
+  "name": "Distal phalanx of the middle finger",
+  "latin": "Phalanx distalis digiti III manus",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Phalanges of the hand",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Small base and shaft",
+    "Ungual tuberosity under the nail bed"
+  ],
+  "articulations": [
+    "hand_middle_phalanx_3_right"
+  ],
+  "clinical": "Mallet finger: avulsion of the extensor tendon from the base of the distal phalanx.",
+  "acceptedSpellings": [
+    "distal phalanx of the middle finger",
+    "distal phalanx of middle finger",
+    "distal phalanx middle finger",
+    "middle finger distal phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "vertebra_l5",
+  "name": "Fifth lumbar vertebra",
+  "latin": "Vertebra lumbalis V",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Lumbar vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Largest vertebral body, wedge-shaped (taller anteriorly)",
+    "Short, thick, quadrangular spinous process",
+    "Mammillary and accessory processes",
+    "Articular facets oriented sagittally (resist rotation)",
+    "Triangular vertebral foramen",
+    "Thick transverse processes attached to the iliolumbar ligaments"
+  ],
+  "articulations": [
+    "vertebra_l4",
+    "sacrum"
+  ],
+  "clinical": "Spondylolisthesis most often affects L5 slipping forward on the sacrum.",
+  "acceptedSpellings": [
+    "fifth lumbar vertebra",
+    "l5",
+    "l 5"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

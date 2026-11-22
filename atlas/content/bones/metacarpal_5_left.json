@@ -1,0 +1,30 @@
+{
+  "id": "metacarpal_5_left",
+  "name": "Fifth metacarpal",
+  "latin": "Os metacarpi V",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Metacarpals",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Base, shaft and head",
+    "Head forms the knuckle (metacarpophalangeal joint)"
+  ],
+  "articulations": [
+    "hamate_left",
+    "metacarpal_4_left",
+    "hand_proximal_phalanx_5_left"
+  ],
+  "clinical": "Boxer's fracture is a fracture of the neck of the fifth metacarpal from punching.",
+  "acceptedSpellings": [
+    "fifth metacarpal",
+    "fifth metacarpal bone",
+    "metacarpal 5",
+    "metacarpal v",
+    "little finger metacarpal"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

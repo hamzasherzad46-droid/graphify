@@ -1,0 +1,31 @@
+{
+  "id": "metatarsal_4_left",
+  "name": "Fourth metatarsal",
+  "latin": "Os metatarsi IV",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Metatarsals",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Base, shaft and head",
+    "Head bears weight at the ball of the foot"
+  ],
+  "articulations": [
+    "lateral_cuneiform_left",
+    "cuboid_left",
+    "metatarsal_3_left",
+    "metatarsal_5_left",
+    "foot_proximal_phalanx_4_left"
+  ],
+  "clinical": "Metatarsal stress fractures occur with repetitive loading such as marching or running.",
+  "acceptedSpellings": [
+    "fourth metatarsal",
+    "fourth metatarsal bone",
+    "metatarsal 4",
+    "metatarsal iv"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

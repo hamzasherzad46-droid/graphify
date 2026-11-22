@@ -1,0 +1,33 @@
+{
+  "id": "tibia_right",
+  "name": "Tibia",
+  "latin": "Tibia",
+  "taCode": "",
+  "region": "Lower limb",
+  "subregion": "Leg",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Medial and lateral condyles (tibial plateau)",
+    "Intercondylar eminence",
+    "Tibial tuberosity",
+    "Soleal line",
+    "Anterior border (shin)",
+    "Medial malleolus",
+    "Fibular notch"
+  ],
+  "articulations": [
+    "femur_right",
+    "fibula_right",
+    "talus_right"
+  ],
+  "clinical": "The most commonly fractured long bone; its subcutaneous anterior border makes open fractures frequent.",
+  "acceptedSpellings": [
+    "tibia",
+    "shin bone",
+    "shinbone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

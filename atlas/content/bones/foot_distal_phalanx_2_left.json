@@ -1,0 +1,26 @@
+{
+  "id": "foot_distal_phalanx_2_left",
+  "name": "Distal phalanx of the second toe",
+  "latin": "Phalanx distalis digiti II pedis",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Phalanges of the foot",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Small, with a tuberosity under the nail bed"
+  ],
+  "articulations": [
+    "foot_middle_phalanx_2_left"
+  ],
+  "clinical": "Subungual haematoma over a distal phalanx may hide an underlying fracture.",
+  "acceptedSpellings": [
+    "distal phalanx of the second toe",
+    "distal phalanx of second toe",
+    "distal phalanx second toe",
+    "second toe distal phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

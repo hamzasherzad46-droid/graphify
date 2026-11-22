@@ -1,0 +1,30 @@
+{
+  "id": "rib_1_left",
+  "name": "First rib",
+  "latin": "Costa I",
+  "taCode": "",
+  "region": "Thorax",
+  "subregion": "Ribs",
+  "side": "left",
+  "type": "flat",
+  "features": [
+    "Shortest, broadest and most curved rib",
+    "Single facet on the head (T1 only)",
+    "Scalene tubercle for scalenus anterior",
+    "Grooves for the subclavian vein and artery",
+    "True rib"
+  ],
+  "articulations": [
+    "vertebra_t1",
+    "sternum"
+  ],
+  "clinical": "A cervical rib or a tight first rib can compress the brachial plexus (thoracic outlet syndrome).",
+  "acceptedSpellings": [
+    "first rib",
+    "rib 1",
+    "rib1"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "foot_distal_phalanx_3_right",
+  "name": "Distal phalanx of the third toe",
+  "latin": "Phalanx distalis digiti III pedis",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Phalanges of the foot",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Small, with a tuberosity under the nail bed"
+  ],
+  "articulations": [
+    "foot_middle_phalanx_3_right"
+  ],
+  "clinical": "Subungual haematoma over a distal phalanx may hide an underlying fracture.",
+  "acceptedSpellings": [
+    "distal phalanx of the third toe",
+    "distal phalanx of third toe",
+    "distal phalanx third toe",
+    "third toe distal phalanx"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

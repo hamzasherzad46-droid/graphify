@@ -1,0 +1,29 @@
+{
+  "id": "rib_10_right",
+  "name": "Tenth rib",
+  "latin": "Costa X",
+  "taCode": "",
+  "region": "Thorax",
+  "subregion": "Ribs",
+  "side": "right",
+  "type": "flat",
+  "features": [
+    "Head, neck, tubercle, angle and shaft",
+    "Classified as a false rib (vertebrochondral)",
+    "Costal groove on the inner lower border (intercostal vessels and nerve)",
+    "Head with two facets (crest between them)"
+  ],
+  "articulations": [
+    "vertebra_t10",
+    "vertebra_t9"
+  ],
+  "clinical": "Rib fractures most often occur near the angle; several adjacent fractures can cause flail chest.",
+  "acceptedSpellings": [
+    "tenth rib",
+    "rib 10",
+    "rib10"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

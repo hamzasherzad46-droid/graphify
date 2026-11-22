@@ -1,0 +1,32 @@
+{
+  "id": "palatine_bone_right",
+  "name": "Palatine bone",
+  "latin": "Os palatinum",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Facial bones",
+  "side": "right",
+  "type": "irregular",
+  "features": [
+    "L-shaped: horizontal and perpendicular plates",
+    "Horizontal plate forms the posterior hard palate",
+    "Pyramidal process",
+    "Greater and lesser palatine foramina",
+    "Orbital process"
+  ],
+  "articulations": [
+    "palatine_bone_left",
+    "maxilla_right",
+    "sphenoid_bone",
+    "ethmoid_bone",
+    "vomer",
+    "inferior_nasal_concha_right"
+  ],
+  "clinical": "Incomplete fusion of the palatine processes and horizontal plates causes cleft palate.",
+  "acceptedSpellings": [
+    "palatine bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

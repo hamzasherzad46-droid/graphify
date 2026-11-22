@@ -1,0 +1,34 @@
+{
+  "id": "femur_right",
+  "name": "Femur",
+  "latin": "Femur",
+  "taCode": "",
+  "region": "Lower limb",
+  "subregion": "Thigh",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Head with the fovea",
+    "Neck (angle ~125° to the shaft)",
+    "Greater and lesser trochanters",
+    "Intertrochanteric line and crest",
+    "Linea aspera",
+    "Medial and lateral condyles and epicondyles",
+    "Adductor tubercle",
+    "Patellar surface"
+  ],
+  "articulations": [
+    "hip_bone_right",
+    "tibia_right",
+    "patella_right"
+  ],
+  "clinical": "Intracapsular neck of femur fractures can disrupt the blood supply to the head (avascular necrosis).",
+  "acceptedSpellings": [
+    "femur",
+    "thigh bone",
+    "thighbone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

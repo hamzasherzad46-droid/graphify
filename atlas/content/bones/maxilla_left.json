@@ -1,0 +1,37 @@
+{
+  "id": "maxilla_left",
+  "name": "Maxilla",
+  "latin": "Maxilla",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Facial bones",
+  "side": "left",
+  "type": "irregular",
+  "features": [
+    "Body containing the maxillary sinus",
+    "Alveolar process with upper teeth",
+    "Palatine process (anterior hard palate)",
+    "Frontal and zygomatic processes",
+    "Infraorbital foramen"
+  ],
+  "articulations": [
+    "maxilla_right",
+    "frontal_bone",
+    "ethmoid_bone",
+    "nasal_bone_left",
+    "lacrimal_bone_left",
+    "zygomatic_bone_left",
+    "palatine_bone_left",
+    "vomer",
+    "inferior_nasal_concha_left"
+  ],
+  "clinical": "Le Fort fractures classify midface fractures by the level at which the maxilla separates.",
+  "acceptedSpellings": [
+    "maxilla",
+    "upper jaw",
+    "upper jaw bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

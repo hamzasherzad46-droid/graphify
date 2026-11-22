@@ -1,0 +1,30 @@
+{
+  "id": "vertebra_l1",
+  "name": "First lumbar vertebra",
+  "latin": "Vertebra lumbalis I",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Lumbar vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Large kidney-shaped body",
+    "Short, thick, quadrangular spinous process",
+    "Mammillary and accessory processes",
+    "Articular facets oriented sagittally (resist rotation)",
+    "Triangular vertebral foramen"
+  ],
+  "articulations": [
+    "vertebra_t12",
+    "vertebra_l2"
+  ],
+  "clinical": "In adults the spinal cord usually ends at the L1–L2 level (conus medullaris).",
+  "acceptedSpellings": [
+    "first lumbar vertebra",
+    "l1",
+    "l 1"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

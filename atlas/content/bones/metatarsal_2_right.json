@@ -1,0 +1,31 @@
+{
+  "id": "metatarsal_2_right",
+  "name": "Second metatarsal",
+  "latin": "Os metatarsi II",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Metatarsals",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Base, shaft and head",
+    "Head bears weight at the ball of the foot"
+  ],
+  "articulations": [
+    "medial_cuneiform_right",
+    "intermediate_cuneiform_right",
+    "lateral_cuneiform_right",
+    "metatarsal_3_right",
+    "foot_proximal_phalanx_2_right"
+  ],
+  "clinical": "The second metatarsal is the commonest site of a march (stress) fracture.",
+  "acceptedSpellings": [
+    "second metatarsal",
+    "second metatarsal bone",
+    "metatarsal 2",
+    "metatarsal ii"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

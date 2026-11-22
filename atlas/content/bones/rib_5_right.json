@@ -1,0 +1,30 @@
+{
+  "id": "rib_5_right",
+  "name": "Fifth rib",
+  "latin": "Costa V",
+  "taCode": "",
+  "region": "Thorax",
+  "subregion": "Ribs",
+  "side": "right",
+  "type": "flat",
+  "features": [
+    "Head, neck, tubercle, angle and shaft",
+    "Classified as a true rib (vertebrosternal)",
+    "Costal groove on the inner lower border (intercostal vessels and nerve)",
+    "Head with two facets (crest between them)"
+  ],
+  "articulations": [
+    "vertebra_t5",
+    "vertebra_t4",
+    "sternum"
+  ],
+  "clinical": "Rib fractures most often occur near the angle; several adjacent fractures can cause flail chest.",
+  "acceptedSpellings": [
+    "fifth rib",
+    "rib 5",
+    "rib5"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

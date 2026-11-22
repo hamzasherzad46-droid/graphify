@@ -1,0 +1,29 @@
+{
+  "id": "medial_cuneiform_left",
+  "name": "Medial cuneiform",
+  "latin": "Os cuneiforme mediale",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Tarsal bones",
+  "side": "left",
+  "type": "short",
+  "features": [
+    "Largest cuneiform",
+    "Insertion of tibialis anterior and fibularis longus"
+  ],
+  "articulations": [
+    "navicular_left",
+    "intermediate_cuneiform_left",
+    "metatarsal_1_left",
+    "metatarsal_2_left"
+  ],
+  "clinical": "Part of the tarsometatarsal (Lisfranc) joint complex.",
+  "acceptedSpellings": [
+    "medial cuneiform",
+    "medial cuneiform bone",
+    "first cuneiform"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "mandible",
+  "name": "Mandible",
+  "latin": "Mandibula",
+  "taCode": "",
+  "region": "Skull",
+  "subregion": "Facial bones",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Body and two rami",
+    "Condylar and coronoid processes",
+    "Angle of the mandible",
+    "Mental foramen and mental protuberance",
+    "Mandibular foramen and canal",
+    "Alveolar part with lower teeth"
+  ],
+  "articulations": [
+    "temporal_bone_left",
+    "temporal_bone_right"
+  ],
+  "clinical": "Inferior alveolar nerve block is given near the mandibular foramen for lower dental anaesthesia.",
+  "acceptedSpellings": [
+    "mandible",
+    "lower jaw",
+    "jaw bone",
+    "jawbone",
+    "lower jaw bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

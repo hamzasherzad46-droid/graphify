@@ -1,0 +1,29 @@
+{
+  "id": "fibula_right",
+  "name": "Fibula",
+  "latin": "Fibula",
+  "taCode": "",
+  "region": "Lower limb",
+  "subregion": "Leg",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Head with its apex (styloid process)",
+    "Neck",
+    "Slender shaft (mainly for muscle attachment)",
+    "Lateral malleolus",
+    "Malleolar fossa"
+  ],
+  "articulations": [
+    "tibia_right",
+    "talus_right"
+  ],
+  "clinical": "Fracture of the fibular neck can injure the common fibular nerve, causing foot drop.",
+  "acceptedSpellings": [
+    "fibula",
+    "calf bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

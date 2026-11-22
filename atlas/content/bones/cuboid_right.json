@@ -1,0 +1,30 @@
+{
+  "id": "cuboid_right",
+  "name": "Cuboid",
+  "latin": "Os cuboideum",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Tarsal bones",
+  "side": "right",
+  "type": "short",
+  "features": [
+    "Lateral column of the foot",
+    "Groove for the fibularis (peroneus) longus tendon",
+    "Tuberosity"
+  ],
+  "articulations": [
+    "calcaneus_right",
+    "navicular_right",
+    "lateral_cuneiform_right",
+    "metatarsal_4_right",
+    "metatarsal_5_right"
+  ],
+  "clinical": "Cuboid syndrome (subluxation) causes lateral foot pain in athletes and dancers.",
+  "acceptedSpellings": [
+    "cuboid",
+    "cuboid bone"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

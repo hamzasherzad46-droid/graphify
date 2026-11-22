@@ -1,0 +1,31 @@
+{
+  "id": "humerus_right",
+  "name": "Humerus",
+  "latin": "Humerus",
+  "taCode": "",
+  "region": "Upper limb",
+  "subregion": "Arm",
+  "side": "right",
+  "type": "long",
+  "features": [
+    "Head, anatomical and surgical necks",
+    "Greater and lesser tubercles, intertubercular sulcus",
+    "Deltoid tuberosity",
+    "Radial (spiral) groove",
+    "Medial and lateral epicondyles",
+    "Capitulum and trochlea",
+    "Olecranon, coronoid and radial fossae"
+  ],
+  "articulations": [
+    "scapula_right",
+    "radius_right",
+    "ulna_right"
+  ],
+  "clinical": "Midshaft fractures can injure the radial nerve in the radial groove, causing wrist drop.",
+  "acceptedSpellings": [
+    "humerus"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

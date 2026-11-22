@@ -1,0 +1,30 @@
+{
+  "id": "hand_proximal_phalanx_1_left",
+  "name": "Proximal phalanx of the thumb",
+  "latin": "Phalanx proximalis pollicis",
+  "taCode": "",
+  "region": "Hand",
+  "subregion": "Phalanges of the hand",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Longest phalanx of the digit",
+    "Concave base for the metacarpal head",
+    "Bicondylar head (trochlea)"
+  ],
+  "articulations": [
+    "metacarpal_1_left",
+    "hand_distal_phalanx_1_left"
+  ],
+  "clinical": "Skier's (gamekeeper's) thumb: ulnar collateral ligament injury at the base of the thumb's proximal phalanx.",
+  "acceptedSpellings": [
+    "proximal phalanx of the thumb",
+    "proximal phalanx of thumb",
+    "proximal phalanx thumb",
+    "thumb proximal phalanx",
+    "proximal phalanx of the pollex"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

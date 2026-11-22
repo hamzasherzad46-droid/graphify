@@ -1,0 +1,33 @@
+{
+  "id": "vertebra_t12",
+  "name": "Twelfth thoracic vertebra",
+  "latin": "Vertebra thoracica XII",
+  "taCode": "",
+  "region": "Vertebral column",
+  "subregion": "Thoracic vertebrae",
+  "side": "midline",
+  "type": "irregular",
+  "features": [
+    "Heart-shaped body",
+    "Single full costal facet for rib 12; no transverse costal facet",
+    "Long spinous process angled downwards",
+    "Small circular vertebral foramen",
+    "Transitional: lower articular processes face laterally like lumbar ones"
+  ],
+  "articulations": [
+    "vertebra_t11",
+    "vertebra_l1",
+    "rib_12_left",
+    "rib_12_right"
+  ],
+  "clinical": "The aorta passes behind the diaphragm (aortic hiatus) at T12.",
+  "acceptedSpellings": [
+    "twelfth thoracic vertebra",
+    "t12",
+    "t 12",
+    "th12"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

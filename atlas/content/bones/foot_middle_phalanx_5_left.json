@@ -1,0 +1,30 @@
+{
+  "id": "foot_middle_phalanx_5_left",
+  "name": "Middle phalanx of the little toe",
+  "latin": "Phalanx media digiti V pedis",
+  "taCode": "",
+  "region": "Foot",
+  "subregion": "Phalanges of the foot",
+  "side": "left",
+  "type": "long",
+  "features": [
+    "Short and broad",
+    "Often fused with the distal phalanx in the little toe"
+  ],
+  "articulations": [
+    "foot_proximal_phalanx_5_left",
+    "foot_distal_phalanx_5_left"
+  ],
+  "clinical": "Hammer toe deformity flexes the proximal interphalangeal joint above the middle phalanx.",
+  "acceptedSpellings": [
+    "middle phalanx of the little toe",
+    "middle phalanx of little toe",
+    "middle phalanx little toe",
+    "little toe middle phalanx",
+    "middle phalanx of the fifth toe",
+    "middle phalanx of fifth toe"
+  ],
+  "reviewStatus": "draft",
+  "reviewer": "",
+  "lastUpdated": "2026-11-22"
+}

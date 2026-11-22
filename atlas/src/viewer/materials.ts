@@ -109,7 +109,10 @@ export function createMaterials(theme: 'dark' | 'light') {
   const selected = new THREE.MeshMatcapMaterial({ matcap, color: p.selected })
   const glow = glowMaterial(p.glow, theme === 'dark' ? 1.4 : 1.1, 2.2)
   const xray = glowMaterial(p.glow, theme === 'dark' ? 0.55 : 0.45, 1.2, true)
-  return { bone, context, ghost, contextGhost, selected, glow, xray, palette: p }
+  // Study: the "dark skeleton" behind a lit target, and a mistaken tap.
+  const dim = new THREE.MeshMatcapMaterial({ matcap, color: theme === 'dark' ? '#4a5352' : '#b8b5ae', transparent: true, opacity: theme === 'dark' ? 0.32 : 0.4, depthWrite: false })
+  const wrong = new THREE.MeshMatcapMaterial({ matcap, color: theme === 'dark' ? '#ff8a80' : '#d9473f' })
+  return { bone, context, ghost, contextGhost, selected, glow, xray, dim, wrong, palette: p }
 }
 
 export type Materials = ReturnType<typeof createMaterials>

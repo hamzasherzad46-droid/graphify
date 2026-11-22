@@ -75,6 +75,7 @@ export function Picking() {
       }
       down = { x: e.clientX, y: e.clientY, t: performance.now(), multi: false, moved: false }
       const { x, y } = down
+      if (useViewer.getState().studying) return // no dragging bones out during a test
       holdTimer = window.setTimeout(() => {
         if (down && !down.multi && !down.moved) startDrag(x, y)
       }, HOLD)
@@ -110,6 +111,10 @@ export function Picking() {
       const now = performance.now()
       const isDouble = now - last.t < DOUBLE_TAP && Math.hypot(e.clientX - last.x, e.clientY - last.y) < 30
       const s = useViewer.getState()
+      if (s.studying) {
+        s.onTap?.(id)
+        return
+      }
       if (isDouble && id && id === last.id) {
         s.select(id, { focus: true })
         last = { t: 0, x: 0, y: 0, id: null }

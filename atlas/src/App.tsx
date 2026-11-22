@@ -11,6 +11,9 @@ import { Loader } from './ui/Loader'
 import { Disclaimer } from './ui/Disclaimer'
 import { Menu } from './ui/Menu'
 import { Toast } from './ui/Toast'
+import { useSession } from './learn/session'
+import { StudyLauncher } from './ui/study/StudyLauncher'
+import { StudySession } from './ui/study/StudySession'
 
 const Viewer = lazy(() => import('./viewer/Viewer'))
 
@@ -19,6 +22,8 @@ export default function App() {
   const loaded = useViewer((s) => s.loaded)
   const accepted = usePrefs((s) => s.disclaimerAccepted)
   const [menu, setMenu] = useState(false)
+  const mode = useSession((s) => s.mode)
+  const launcher = useSession((s) => s.launcher)
   return (
     <div className="app">
       <div className="stage" aria-label="3D skeleton. Drag to rotate, pinch to zoom, two fingers to pan, tap a bone to select it, double-tap to focus.">
@@ -27,15 +32,22 @@ export default function App() {
         </Suspense>
       </div>
       <div className="hud-frame" aria-hidden />
-      <LabelsOverlay />
-      <TopBar onMenu={() => setMenu(true)} />
-      <HudReadout />
-      <ExplodeBar />
-      <Dock />
-      <InfoPanel />
+      {mode ? (
+        <StudySession key={mode} mode={mode} />
+      ) : (
+        <>
+          <LabelsOverlay />
+          <TopBar onMenu={() => setMenu(true)} />
+          <HudReadout />
+          <ExplodeBar />
+          <Dock />
+          <InfoPanel />
+        </>
+      )}
       <Loader done={loaded} />
       <Toast />
       {menu && <Menu onClose={() => setMenu(false)} />}
+      {launcher && !mode && <StudyLauncher />}
       {!accepted && <Disclaimer />}
     </div>
   )

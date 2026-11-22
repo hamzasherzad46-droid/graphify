@@ -35,6 +35,7 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
   const hidden = useViewer((s) => s.hidden)
   const isolated = useViewer((s) => s.isolated)
   const ghost = useViewer((s) => s.ghost)
+  const highlight = useViewer((s) => s.highlight)
 
   // Register meshes once per loaded model.
   useLayoutEffect(() => {
@@ -69,19 +70,30 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
     for (const [id, m] of registry.bones) {
       m.visible = !hidden.includes(id) && (!isolated || isolated.includes(id))
       const isSel = id === selectedId
-      m.material = isSel ? mats.selected : ghost ? mats.ghost : mats.bone
+      m.material = highlight
+        ? highlight.target.includes(id)
+          ? mats.selected
+          : highlight.wrong.includes(id)
+            ? mats.wrong
+            : mats.dim
+        : isSel
+          ? mats.selected
+          : ghost
+            ? mats.ghost
+            : mats.bone
       ;(mats.ghost as THREE.MeshMatcapMaterial).opacity = ghostAll ? mats.palette.ghostOpacity * 3 : mats.palette.ghostOpacity
     }
     for (const m of registry.context) {
       const host = registry.host.get(m)
       m.visible = !isolated && !(host && hidden.includes(host))
-      m.material = ghost ? mats.contextGhost : mats.context
+      m.material = highlight ? mats.dim : ghost ? mats.contextGhost : mats.context
     }
     glow.shell.removeFromParent()
     glow.xray.removeFromParent()
-    const sel = selectedId ? registry.bones.get(selectedId) : null
+    const glowId = highlight ? highlight.target[0] : selectedId
+    const sel = glowId ? registry.bones.get(glowId) : null
     if (sel && sel.visible) {
-      const r = registry.radius.get(selectedId!) ?? 0.05
+      const r = registry.radius.get(glowId!) ?? 0.05
       // The x-ray silhouette is only useful when other bones can hide this one.
       for (const g of isolated ? [glow.shell] : [glow.shell, glow.xray]) {
         g.geometry = sel.geometry
@@ -93,7 +105,7 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
       glow.xray.renderOrder = 3
     }
     invalidate()
-  }, [selectedId, hidden, isolated, ghost, mats, glow, invalidate, scene])
+  }, [selectedId, hidden, isolated, ghost, highlight, mats, glow, invalidate, scene])
 
   return <primitive object={scene} />
 }

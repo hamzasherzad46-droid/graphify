@@ -20,8 +20,8 @@ npm run build:preview              # dist-artifact/: shareable preview for sandb
 | 1 | Male skeleton: rotate / zoom / pan / select, info panel | **Done**, awaiting phone test |
 | 2 | Female skeleton and toggle | **Done**, awaiting phone test |
 | 3 | Exploded view, drag, reassemble | **Done**, awaiting phone test |
-| 4 | Typing Test | — |
-| 5 | Flashcards (FSRS), Quiz, Weak Bones | — |
+| 4 | Typing Test | **Done**, awaiting phone test |
+| 5 | Flashcards (FSRS), Quiz, Weak Bones | **Done**, awaiting phone test |
 | 6 | Progress tracking and polish | — |
 
 ### Step 1 includes
@@ -101,6 +101,29 @@ the skull (`src/viewer/explode.ts`, tested in `explode.test.ts`).
 
 **Hold a bone (0.3 s), then drag** to pull it out; a quick drag still rotates. **Reassemble** eases everything home.
 Bones ease towards their targets each frame, and frames are only rendered while something moves.
+
+## Study modes (steps 4–5)
+
+**Study** (top bar) opens the modes and their settings: region (whole skeleton or a group), male or female
+model, bones per session (10/20/50/all), typing time limit, quiz time per question, new flashcards a day, sounds.
+During a session the target bone lights up on a dimmed, see-through skeleton, framed with its neighbours from the
+side it is best seen (`frame` camera command); explore controls are hidden and taps on the model answer questions.
+
+- **Typing Test**: type the name of the lit bone. Accepted answers are the bone's name and `acceptedSpellings`,
+  compared without case, spaces or punctuation, with ordinals spelled out and British/American spellings folded
+  together (ae/oe→e, -our→-or, -re→-er, -ise→-ize: `src/learn/answer.ts`). One or two-letter slips are marked
+  "Almost" (still wrong) and the correct spelling is shown on every mistake. Soft synthesized key click. Results:
+  accuracy, seconds per bone, bones per minute, and each mistake with **Show me** (opens it in 3D).
+- **Flashcards**: two cards per bone name, *Name it* (lit bone → name) and *Find it* (name → tap it, either side).
+  Scheduled with **FSRS** (`ts-fsrs`, MIT, default parameters); Again / Hard / Good / Easy show when the card comes
+  back. Due cards first, then new ones up to the daily limit (each bone's *Name it* card before its *Find it* card);
+  Again repeats the card later in the session.
+- **Quiz**: alternating timed multiple choice (three plausible distractors from the same subregion, then region)
+  and "tap the bone" (camera frames the region, not the bone).
+- **Weak Bones**: the bones missed most (smoothed error rate across all modes), with question types interleaved.
+
+Every answer is recorded per bone in `useProgress` (on this device, through `appStorage`), which also keeps the
+study days and flashcard states, for step 6.
 
 ## Female skeleton (step 2)
 

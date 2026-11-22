@@ -6,6 +6,11 @@ import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib'
 import { useViewer, type ViewName } from '../state/store'
 import { useHud, INSETS, topInset } from '../state/hud'
 import { registry } from './registry'
+import { BONES, BONE_BY_ID } from '../data/bones'
+
+/** Top of the free screen area: below the header, explode bar or study prompt. */
+const topNow = () => (useViewer.getState().studying ? useHud.getState().studyInsets.top : topInset(useViewer.getState().explodeOpen))
+const bottomNow = () => (useViewer.getState().studying ? useHud.getState().studyInsets.bottom : useViewer.getState().selectedId ? INSETS.panel : INSETS.bottom)
 
 const DIRS: Record<ViewName, THREE.Vector3> = {
   anterior: new THREE.Vector3(0, 0, 1),
@@ -54,7 +59,7 @@ export function CameraRig() {
   /** Distance at which a half-width × half-height extent fits the free screen area, with a small margin. */
   const fitBox = (halfW: number, halfH: number, bottomInset: number) => {
     const tanV = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2)
-    const freeFrac = Math.max(0.35, (size.height - topInset(useViewer.getState().explodeOpen) - bottomInset) / size.height)
+    const freeFrac = Math.max(0.35, (size.height - topNow() - bottomInset) / size.height)
     const tanH = tanV * camera.aspect
     return Math.max(halfH / (tanV * freeFrac), halfW / (tanH * 0.9)) * 1.06
   }
@@ -62,7 +67,7 @@ export function CameraRig() {
   /** Orbit target that puts `point` in the middle of the free screen area. */
   const framedTarget = (point: THREE.Vector3, dir: THREE.Vector3, dist: number, bottomInset: number) => {
     const vFov = THREE.MathUtils.degToRad(camera.fov)
-    const shiftPx = (topInset(useViewer.getState().explodeOpen) - bottomInset) / 2
+    const shiftPx = (topNow() - bottomInset) / 2
     const shift = (shiftPx / size.height) * 2 * dist * Math.tan(vFov / 2)
     const right = new THREE.Vector3().crossVectors(camera.up, dir)
     if (right.lengthSq() < 1e-6) right.set(1, 0, 0)
@@ -124,7 +129,7 @@ export function CameraRig() {
   useEffect(() => {
     const c = controls.current
     if (!command || !c || !home.current) return
-    const bottom = useViewer.getState().selectedId ? INSETS.panel : INSETS.bottom
+    const bottom = bottomNow()
     if (command.kind === 'reset') {
       // Frame the skeleton as it is now (exploded or not).
       const box = new THREE.Box3().setFromObject(registry.root!)
@@ -144,6 +149,39 @@ export function CameraRig() {
         const v = homeView(dir)
         flyTo(v.target, dir, v.dist)
       }
+    } else if (command.kind === 'frame') {
+      // Study: show the bone with its neighbours (its cluster), from the side it is best seen.
+      const m = registry.bones.get(command.id)
+      const b = BONE_BY_ID.get(command.id)
+      if (!m || !b) return
+      let p = m.getWorldPosition(new THREE.Vector3())
+      const v = new THREE.Vector3()
+      // Neighbours: the bone's cluster (same subregion and side), or its whole region for "tap the bone".
+      const near = BONES.filter((x) => x.region === b.region && x.side === b.side && (command.region || (x.subregion ?? '') === (b.subregion ?? '')))
+      if (command.region) {
+        const c = new THREE.Vector3()
+        let k = 0
+        for (const x of near) {
+          const mm = registry.bones.get(x.id)
+          if (mm) {
+            c.add(mm.getWorldPosition(v))
+            k++
+          }
+        }
+        if (k) p = c.divideScalar(k)
+      }
+      let R = (registry.radius.get(command.id) ?? 0.03) * 2.5
+      for (const x of near) {
+        const mm = registry.bones.get(x.id)
+        if (mm) R = Math.max(R, (mm.getWorldPosition(v).distanceTo(p) + (registry.radius.get(x.id) ?? 0) * 0.6) * (command.region ? 1 : 0.8))
+      }
+      R = THREE.MathUtils.clamp(R, 0.045, command.region ? 0.6 : 0.4)
+      // Outward from the body's vertical axis, leaning anterior and a little from above.
+      const axis = home.current.center
+      const out = new THREE.Vector3(p.x - axis.x, 0, p.z - axis.z)
+      const dir = (out.lengthSq() > 1e-4 ? out.normalize() : new THREE.Vector3()).add(new THREE.Vector3(0, 0.25, 0.5)).normalize()
+      const dist = fitDistance(R, bottom)
+      flyTo(framedTarget(p, dir, dist, bottom), dir, dist, 650)
     } else if (command.kind === 'focus') {
       const m = registry.bones.get(command.id)
       if (!m) return

@@ -11,6 +11,7 @@ export type CameraCommand =
   | { kind: 'focus'; id: string; n: number; tight?: boolean }
   | { kind: 'view'; view: ViewName; n: number }
   | { kind: 'reset'; n: number }
+  | { kind: 'frame'; id: string; n: number; region?: boolean }
 
 export interface ErrorReport {
   boneId: string
@@ -46,6 +47,17 @@ interface ViewerState {
   setExplodeAmount: (a: number) => void
   setDragged: (id: string, offset: [number, number, number]) => void
   reassemble: () => void
+  /** Study session running: explore controls are hidden and taps go to `onTap`. */
+  studying: boolean
+  /** Study highlight: target bones lit on a dimmed skeleton; wrong = a mistaken tap, shown in red. */
+  highlight: { target: string[]; wrong: string[] } | null
+  onTap: ((id: string | null) => void) | null
+  startStudy: () => void
+  endStudy: () => void
+  setHighlight: (h: { target: string[]; wrong?: string[] } | null, frame?: boolean) => void
+  setOnTap: (fn: ((id: string | null) => void) | null) => void
+  /** Frame the region around a bone without pointing at it ("tap the bone" questions). */
+  frameRegion: (id: string) => void
   select: (id: string | null, opts?: { focus?: boolean }) => void
   focus: (id: string) => void
   setView: (view: ViewName) => void
@@ -81,6 +93,30 @@ export const useViewer = create<ViewerState>((set, get) => ({
   setExplodeAmount: (explodeAmount) => set({ explodeAmount }),
   setDragged: (id, offset) => set((s) => ({ dragged: { ...s.dragged, [id]: offset } })),
   reassemble: () => set({ explodeAmount: 0, dragged: {} }),
+  studying: false,
+  highlight: null,
+  onTap: null,
+  startStudy: () =>
+    set({
+      studying: true,
+      selectedId: null,
+      hidden: [],
+      isolated: null,
+      ghost: false,
+      labels: false,
+      explodeOpen: false,
+      explodeAmount: 0,
+      dragged: {},
+      panelExpanded: false,
+    }),
+  endStudy: () => set({ studying: false, highlight: null, onTap: null, camera: { kind: 'reset', n: ++n } }),
+  setHighlight: (h, frame = true) =>
+    set({
+      highlight: h ? { target: h.target, wrong: h.wrong ?? [] } : null,
+      ...(h && frame && h.target[0] ? { camera: { kind: 'frame' as const, id: h.target[0], n: ++n } } : {}),
+    }),
+  setOnTap: (onTap) => set({ onTap }),
+  frameRegion: (id) => set({ highlight: null, camera: { kind: 'frame', id, n: ++n, region: true } }),
   select: (id, opts) =>
     set((s) => ({
       selectedId: id,
@@ -103,7 +139,21 @@ export const useViewer = create<ViewerState>((set, get) => ({
   setLoaded: (loaded) => set({ loaded }),
 }))
 
+export interface StudySettings {
+  area: string // 'all' or a regions.json group id
+  sex: Sex
+  count: number // questions per session, 0 = all
+  timeLimit: number // typing test: seconds for the whole test, 0 = none
+  perQuestion: number // quiz: seconds per question, 0 = none
+  newPerDay: number // flashcards: new cards per day
+  sound: boolean // soft keyboard click and answer tones
+}
+
+export const DEFAULT_STUDY: StudySettings = { area: 'all', sex: 'male', count: 20, timeLimit: 0, perQuestion: 20, newPerDay: 15, sound: true }
+
 interface PrefsState {
+  study: StudySettings
+  setStudy: (s: Partial<StudySettings>) => void
   theme: Theme
   disclaimerAccepted: boolean
   reviewerMode: boolean
@@ -123,6 +173,8 @@ interface PrefsState {
 export const usePrefs = create<PrefsState>()(
   persist(
     (set, get) => ({
+      study: DEFAULT_STUDY,
+      setStudy: (s) => set({ study: { ...get().study, ...s } }),
       theme: 'dark',
       disclaimerAccepted: false,
       reviewerMode: false,

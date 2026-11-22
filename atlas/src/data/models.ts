@@ -20,8 +20,7 @@ export function meshInfo(sex: Sex, id: string): MeshInfo | undefined {
 /** Where this bone's 3D shape comes from, in plain words. */
 export function modelSource(sex: Sex, id: string): string {
   const m = MANIFESTS[sex][id]
-  if (sex === 'male') return m?.approximate ? 'Simplified shape (not in BodyParts3D)' : 'BodyParts3D, adult male'
+  if (sex === 'male') return 'Z-Anatomy adult male (based on BodyParts3D)'
   if (m?.origin === 'scan') return 'CT-based scan of a female donor (Visible Human Female)'
-  if (m?.approximate) return 'Simplified shape, fitted to the female skeleton'
   return 'Adapted from the male model, fitted to the female skeleton'
 }

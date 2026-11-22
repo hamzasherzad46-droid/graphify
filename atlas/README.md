@@ -19,7 +19,7 @@ npm run build:preview              # dist-artifact/: shareable preview for sandb
 | --- | --- | --- |
 | 1 | Male skeleton: rotate / zoom / pan / select, info panel | **Done**, awaiting phone test |
 | 2 | Female skeleton and toggle | **Done**, awaiting phone test |
-| 3 | Exploded view, drag, reassemble | — |
+| 3 | Exploded view, drag, reassemble | **Done**, awaiting phone test |
 | 4 | Typing Test | — |
 | 5 | Flashcards (FSRS), Quiz, Weak Bones | — |
 | 6 | Progress tracking and polish | — |
@@ -72,28 +72,39 @@ device until exported (Settings → Export review changes). Error reports are st
 
 ## 3D model
 
-`public/models/skeleton-male.glb` (1.09 MB, Draco): 206 bone meshes named by bone id, plus one merged,
-non-selectable context mesh (costal cartilages, intervertebral discs, teeth). 315k triangles. Each bone is
-centred on its own origin, so the exploded view can move bones by changing their position only.
+`public/models/skeleton-male.glb` (0.98 MB, Draco, ~260k triangles): 206 bone meshes named by bone id, plus
+non-selectable context meshes (costal cartilages, intervertebral discs, teeth), each merged per host bone so they
+move with it. Each bone is centred on its own origin, so the exploded view moves bones by changing their position only.
 
-Source: **BodyParts3D 4.0** (© DBCLS, CC BY 4.0), the dataset Z-Anatomy's skeleton is built on, read from the
-`@dagno/anatomy-model` npm package. Z-Anatomy's own files are hosted on GitHub, which this build environment
-couldn't reach.
+Source: **Z-Anatomy** (CC BY-SA 4.0), which is built on BodyParts3D 4.0 (© DBCLS, CC BY 4.0). Every bone,
+including the coccyx and the six auditory ossicles, is a real mesh. **The model files are therefore CC BY-SA 4.0**:
+anyone redistributing them must credit the sources (Settings → Credits and attribution) and share alike. App code is
+unaffected.
 
 ```bash
-mkdir -p /tmp/bp3d && (cd /tmp/bp3d && npm pack --ignore-scripts @dagno/anatomy-model && tar xzf *.tgz)
-npm run model -- /tmp/bp3d/package/model male   # writes the GLB and src/data/model-male.json
+GIT_LFS_SKIP_SMUDGE=1 git clone --depth 1 --filter=blob:none --no-checkout -b PC-Version https://github.com/LluisV/z-anatomy /tmp/za
+git -C /tmp/za checkout HEAD -- Resources/Models/FBX/SkeletalSystem100.fbx Resources/Models/FBX/Joints100.fbx
+npm run model -- /tmp/za/Resources/Models/FBX male
 npm test
 ```
 
-**Approximate shapes**: BodyParts3D has no coccyx and no ossicles. The build script generates them. The coccyx
-is four tapering segments at the sacral apex. The malleus, incus and stapes are simplified shapes at typical
-adult sizes, placed in the tympanic cavity. The script finds that cavity by ray-casting each temporal bone for
-the external acoustic meatus. Each of these bones says so in its info panel.
+`scripts/lib/mesh.mjs` reads the FBX (three's FBXLoader in Node), welds, simplifies with meshoptimizer (≤0.15 %
+relative error, ≤5k triangles per bone), recomputes normals and writes the GLB.
+
+## Exploded view (step 3)
+
+Dock → explode button. Choose the whole skeleton or one region (skull, spine, thorax, upper limb, hand, pelvis,
+lower limb, foot) and drag the slider. Each bone moves away from its cluster's centre (e.g. the left carpals), each
+cluster from its region's centre, and in a whole-skeleton explode each region from the body's centre; limbs explode
+per side, the vertebrae spread gently along the column, and a spine-only explode moves the column back so it clears
+the skull (`src/viewer/explode.ts`, tested in `explode.test.ts`).
+
+**Hold a bone (0.3 s), then drag** to pull it out; a quick drag still rotates. **Reassemble** eases everything home.
+Bones ease towards their targets each frame, and frames are only rendered while something moves.
 
 ## Female skeleton (step 2)
 
-`public/models/skeleton-female.glb` (1.18 MB, 206 bones, 160 cm). No free, complete female skeleton with separate bones
+`public/models/skeleton-female.glb` (1.07 MB, 206 bones, 161 cm). No free, complete female skeleton with separate bones
 exists, so it combines:
 
 - **Real female bones (36)** from the Visible Human Female, via the HuBMAP Human Reference Atlas *3D Reference Organ
@@ -101,8 +112,8 @@ exists, so it combines:
   tibia, fibula. These carry the main sex differences (pelvis shape, subpubic angle, sacrum).
   The donor has six lumbar vertebrae; Atlas shows the standard five (the top one is left out and the spine above lowered
   by 34 mm).
-- **Derived bones (170)**: skull, ossicles, hyoid, thorax, upper limbs, hands and feet from the BodyParts3D model, scaled
-  by the measured female/male long-bone ratio (0.904; head 0.926), placed by a best fit to the female thoracic vertebrae
+- **Derived bones (170)**: skull, ossicles, hyoid, thorax, upper limbs, hands and feet from the Z-Anatomy male, scaled
+  by the measured female/male long-bone ratio (0.944; head 0.967), placed by a best fit to the female thoracic vertebrae
   (or, for the feet, the female ankle), with typical female skull adjustments (brow ridge, mastoids, occipital
   protuberance, gonial angles; 2–3 mm).
 
@@ -111,7 +122,7 @@ section (`sexDifferences` in the bone's JSON).
 
 ```bash
 curl -o /tmp/hra-f.glb https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.5/assets/3d-vh-f-united.glb  # 212 MB
-npm run model -- /tmp/bp3d/package/model female /tmp/hra-f.glb   # scripts/female.mjs does the fitting
+npm run model -- /tmp/za/Resources/Models/FBX female /tmp/hra-f.glb   # scripts/female.mjs does the fitting
 ```
 
 ## Performance (measured in headless Chromium, 390×844)
@@ -152,5 +163,6 @@ The native projects aren't committed yet. They need Xcode or Android Studio, whi
 
 ## Licences
 
-Bone meshes: BodyParts3D 4.0, © The Database Center for Life Science, CC BY 4.0 (modified). The credits screen
-in the app carries the full attribution. Code dependencies are MIT, Apache 2.0, or OFL (Inter font).
+3D models: CC BY-SA 4.0, adapted from Z-Anatomy (CC BY-SA 4.0), BodyParts3D 4.0 (© DBCLS, CC BY 4.0) and the
+HuBMAP Visible Human Female reference set (CC BY 4.0). The credits screen in the app carries the full attribution.
+App code dependencies are MIT, Apache 2.0, or OFL (Inter font).

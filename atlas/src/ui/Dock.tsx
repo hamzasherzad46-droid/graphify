@@ -1,6 +1,6 @@
 import { useViewer, type ViewName } from '../state/store'
 import { useHud } from '../state/hud'
-import { GhostIcon, LabelIcon, ResetIcon } from './Icons'
+import { ExplodeIcon, GhostIcon, LabelIcon, ResetIcon } from './Icons'
 
 const VIEWS: [ViewName, string, string][] = [
   ['anterior', 'ANT', 'Anterior view'],
@@ -14,6 +14,7 @@ const VIEWS: [ViewName, string, string][] = [
 export function Dock() {
   const labels = useViewer((s) => s.labels)
   const ghost = useViewer((s) => s.ghost)
+  const explodeOpen = useViewer((s) => s.explodeOpen)
   const orientation = useHud((s) => s.orientation)
   const s = useViewer.getState
   return (
@@ -28,6 +29,15 @@ export function Dock() {
       <div className="tools">
         <button className={`tool ${labels ? 'on' : ''}`} aria-pressed={labels} aria-label="Labels" title="Labels" onClick={() => s().setLabels(!labels)}>
           <LabelIcon />
+        </button>
+        <button
+          className={`tool ${explodeOpen ? 'on' : ''}`}
+          aria-pressed={explodeOpen}
+          aria-label="Exploded view"
+          title="Exploded view"
+          onClick={() => s().setExplodeOpen(!explodeOpen)}
+        >
+          <ExplodeIcon />
         </button>
         <button className={`tool ${ghost ? 'on' : ''}`} aria-pressed={ghost} aria-label="Ghost mode" title="Ghost mode" onClick={() => s().setGhost(!ghost)}>
           <GhostIcon />

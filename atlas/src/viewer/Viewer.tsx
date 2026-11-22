@@ -6,6 +6,7 @@ import { CameraRig } from './CameraRig'
 import { Picking } from './Picking'
 import { LabelLayout } from './LabelLayout'
 import { HudFloor } from './HudFloor'
+import { ExplodeAnimator } from './ExplodeAnimator'
 
 /** The 3D view (lazy-loaded chunk: three.js and React Three Fiber). Renders only when something changes. */
 export default function Viewer({ theme }: { theme: 'dark' | 'light' }) {
@@ -25,6 +26,7 @@ export default function Viewer({ theme }: { theme: 'dark' | 'light' }) {
       <CameraRig />
       <Picking />
       <LabelLayout />
+      <ExplodeAnimator />
     </Canvas>
   )
 }

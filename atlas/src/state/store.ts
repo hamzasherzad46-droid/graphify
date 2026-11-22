@@ -35,6 +35,17 @@ interface ViewerState {
   camera: CameraCommand | null
   panelExpanded: boolean
   loaded: boolean
+  /** Exploded view: whether its controls are open, which group explodes ('all' or a regions.json group id), 0–1. */
+  explodeOpen: boolean
+  explodeGroup: string
+  explodeAmount: number
+  /** Bones pulled out by hand: offset from where the explode puts them, in metres. */
+  dragged: Record<string, [number, number, number]>
+  setExplodeOpen: (on: boolean) => void
+  setExplodeGroup: (g: string) => void
+  setExplodeAmount: (a: number) => void
+  setDragged: (id: string, offset: [number, number, number]) => void
+  reassemble: () => void
   select: (id: string | null, opts?: { focus?: boolean }) => void
   focus: (id: string) => void
   setView: (view: ViewName) => void
@@ -61,6 +72,15 @@ export const useViewer = create<ViewerState>((set, get) => ({
   camera: null,
   panelExpanded: false,
   loaded: false,
+  explodeOpen: false,
+  explodeGroup: 'all',
+  explodeAmount: 0,
+  dragged: {},
+  setExplodeOpen: (explodeOpen) => set({ explodeOpen }),
+  setExplodeGroup: (explodeGroup) => set({ explodeGroup }),
+  setExplodeAmount: (explodeAmount) => set({ explodeAmount }),
+  setDragged: (id, offset) => set((s) => ({ dragged: { ...s.dragged, [id]: offset } })),
+  reassemble: () => set({ explodeAmount: 0, dragged: {} }),
   select: (id, opts) =>
     set((s) => ({
       selectedId: id,

@@ -41,6 +41,8 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
     registry.root = scene as unknown as THREE.Group
     registry.bones.clear()
     registry.context = []
+    registry.host.clear()
+    registry.contextRest.clear()
     scene.traverse((o) => {
       const m = o as THREE.Mesh
       if (!m.isMesh) return
@@ -53,6 +55,8 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
         anchors.set(m.name, surfaceAnchor(m))
       } else {
         registry.context.push(m)
+        registry.contextRest.set(m, m.position.clone())
+        if (m.userData.host) registry.host.set(m, m.userData.host)
         m.raycast = () => {} // context meshes (cartilage, discs, teeth) are never picked
       }
     })
@@ -69,7 +73,8 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
       ;(mats.ghost as THREE.MeshMatcapMaterial).opacity = ghostAll ? mats.palette.ghostOpacity * 3 : mats.palette.ghostOpacity
     }
     for (const m of registry.context) {
-      m.visible = !isolated
+      const host = registry.host.get(m)
+      m.visible = !isolated && !(host && hidden.includes(host))
       m.material = ghost ? mats.contextGhost : mats.context
     }
     glow.shell.removeFromParent()

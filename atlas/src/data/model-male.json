@@ -1,2084 +1,2527 @@
 {
  "sex": "male",
- "source": "BodyParts3D 4.0 (© DBCLS, CC BY 4.0)",
- "triangles": 314574,
+ "source": "Z-Anatomy (CC BY-SA 4.0), based on BodyParts3D 4.0 (© DBCLS, CC BY 4.0)",
+ "triangles": 259892,
  "meshes": {
   "calcaneus_left": {
    "kind": "bone",
    "center": [
-    0.0729,
-    0.0344,
-    -0.0408
+    0.0785,
+    0.0278,
+    -0.0537
    ],
-   "radius": 0.042,
-   "triangles": 1122
+   "radius": 0.0432,
+   "triangles": 1012
   },
   "calcaneus_right": {
    "kind": "bone",
    "center": [
-    -0.0728,
-    0.0343,
-    -0.0409
+    -0.0785,
+    0.0278,
+    -0.0537
    ],
-   "radius": 0.042,
-   "triangles": 1076
+   "radius": 0.0432,
+   "triangles": 1008
   },
   "capitate_left": {
    "kind": "bone",
    "center": [
-    0.2564,
-    0.8715,
-    0.019
+    0.2649,
+    0.8344,
+    0.018
    ],
-   "radius": 0.0132,
-   "triangles": 388
+   "radius": 0.0135,
+   "triangles": 420
   },
   "capitate_right": {
    "kind": "bone",
    "center": [
-    -0.2564,
-    0.8715,
-    0.019
+    -0.2649,
+    0.8344,
+    0.018
    ],
-   "radius": 0.013,
-   "triangles": 406
+   "radius": 0.0135,
+   "triangles": 420
   },
   "clavicle_left": {
    "kind": "bone",
    "center": [
-    0.0762,
-    1.41,
-    0.0007
+    0.0828,
+    1.398,
+    -0.0009
    ],
-   "radius": 0.0775,
-   "triangles": 826
+   "radius": 0.0809,
+   "triangles": 930
   },
   "clavicle_right": {
    "kind": "bone",
    "center": [
-    -0.0775,
-    1.4101,
-    0.0007
+    -0.0828,
+    1.398,
+    -0.0009
    ],
-   "radius": 0.0775,
-   "triangles": 820
+   "radius": 0.0809,
+   "triangles": 930
   },
   "coccyx": {
    "kind": "bone",
    "center": [
-    -0.0012,
-    0.8486,
-    -0.082
+    0,
+    0.8365,
+    -0.0765
    ],
-   "radius": 0.0252,
-   "triangles": 1568,
-   "approximate": true
+   "radius": 0.0191,
+   "triangles": 1080
   },
   "cuboid_left": {
    "kind": "bone",
    "center": [
-    0.0985,
-    0.0414,
-    -0.0001
+    0.0956,
+    0.0351,
+    -0.0064
    ],
-   "radius": 0.0196,
-   "triangles": 806
+   "radius": 0.0205,
+   "triangles": 856
   },
   "cuboid_right": {
    "kind": "bone",
    "center": [
-    -0.0987,
-    0.0415,
-    0.0003
+    -0.0956,
+    0.0351,
+    -0.0064
    ],
-   "radius": 0.0197,
-   "triangles": 822
+   "radius": 0.0205,
+   "triangles": 862
   },
   "ethmoid_bone": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.5929,
-    0.0435
+    0,
+    1.5764,
+    0.0537
    ],
-   "radius": 0.029,
-   "triangles": 8618
+   "radius": 0.0279,
+   "triangles": 4998
   },
   "femur_left": {
    "kind": "bone",
    "center": [
-    0.0913,
-    0.6791,
-    -0.0191
+    0.0904,
+    0.6476,
+    -0.0205
    ],
-   "radius": 0.2364,
-   "triangles": 884
+   "radius": 0.2309,
+   "triangles": 1288
   },
   "femur_right": {
    "kind": "bone",
    "center": [
-    -0.0909,
-    0.6791,
-    -0.0193
+    -0.0904,
+    0.6479,
+    -0.0205
    ],
-   "radius": 0.2367,
-   "triangles": 930
+   "radius": 0.2312,
+   "triangles": 1292
   },
   "fibula_left": {
    "kind": "bone",
    "center": [
-    0.1023,
-    0.2451,
-    -0.0366
+    0.1067,
+    0.2273,
+    -0.0432
    ],
-   "radius": 0.1922,
-   "triangles": 278
+   "radius": 0.1815,
+   "triangles": 450
   },
   "fibula_right": {
    "kind": "bone",
    "center": [
-    -0.1023,
-    0.2449,
-    -0.0368
+    -0.1067,
+    0.2273,
+    -0.0432
    ],
-   "radius": 0.1923,
-   "triangles": 298
+   "radius": 0.1815,
+   "triangles": 450
   },
   "foot_distal_phalanx_1_left": {
    "kind": "bone",
    "center": [
-    0.1138,
-    0.0136,
-    0.1233
+    0.08,
+    0.0065,
+    0.1212
    ],
-   "radius": 0.0145,
-   "triangles": 366
+   "radius": 0.0149,
+   "triangles": 428
   },
   "foot_distal_phalanx_1_right": {
    "kind": "bone",
    "center": [
-    -0.1138,
-    0.0137,
-    0.1234
+    -0.08,
+    0.0065,
+    0.1212
    ],
-   "radius": 0.0145,
-   "triangles": 404
+   "radius": 0.0149,
+   "triangles": 428
   },
   "foot_distal_phalanx_2_left": {
    "kind": "bone",
    "center": [
-    0.1378,
-    0.0115,
-    0.1274
+    0.1038,
+    0.0041,
+    0.1305
    ],
-   "radius": 0.0068,
-   "triangles": 238
+   "radius": 0.0072,
+   "triangles": 202
   },
   "foot_distal_phalanx_2_right": {
    "kind": "bone",
    "center": [
-    -0.1378,
-    0.0114,
-    0.1276
+    -0.1038,
+    0.0041,
+    0.1305
    ],
-   "radius": 0.0071,
-   "triangles": 196
+   "radius": 0.0072,
+   "triangles": 202
   },
   "foot_distal_phalanx_3_left": {
    "kind": "bone",
    "center": [
-    0.1503,
-    0.0108,
-    0.118
+    0.1188,
+    0.0034,
+    0.1243
    ],
-   "radius": 0.0062,
-   "triangles": 336
+   "radius": 0.0066,
+   "triangles": 260
   },
   "foot_distal_phalanx_3_right": {
    "kind": "bone",
    "center": [
-    -0.1504,
-    0.0108,
-    0.118
+    -0.1188,
+    0.0034,
+    0.1243
    ],
-   "radius": 0.0062,
-   "triangles": 258
+   "radius": 0.0066,
+   "triangles": 260
   },
   "foot_distal_phalanx_4_left": {
    "kind": "bone",
    "center": [
-    0.1596,
-    0.0112,
-    0.101
+    0.1322,
+    0.0037,
+    0.1096
    ],
-   "radius": 0.0064,
-   "triangles": 226
+   "radius": 0.0066,
+   "triangles": 242
   },
   "foot_distal_phalanx_4_right": {
    "kind": "bone",
    "center": [
-    -0.1597,
-    0.0112,
-    0.101
+    -0.1322,
+    0.0037,
+    0.1096
    ],
-   "radius": 0.0063,
-   "triangles": 240
+   "radius": 0.0066,
+   "triangles": 242
   },
   "foot_distal_phalanx_5_left": {
    "kind": "bone",
    "center": [
-    0.1653,
-    0.0103,
-    0.0814
+    0.1425,
+    0.0028,
+    0.091
    ],
-   "radius": 0.0057,
-   "triangles": 220
+   "radius": 0.0061,
+   "triangles": 194
   },
   "foot_distal_phalanx_5_right": {
    "kind": "bone",
    "center": [
-    -0.1652,
-    0.0104,
-    0.0814
+    -0.1425,
+    0.0028,
+    0.091
    ],
-   "radius": 0.0057,
-   "triangles": 210
+   "radius": 0.0061,
+   "triangles": 194
   },
   "foot_middle_phalanx_2_left": {
    "kind": "bone",
    "center": [
-    0.1322,
-    0.0145,
-    0.1161
+    0.101,
+    0.0072,
+    0.1178
    ],
-   "radius": 0.009,
-   "triangles": 322
+   "radius": 0.0094,
+   "triangles": 262
   },
   "foot_middle_phalanx_2_right": {
    "kind": "bone",
    "center": [
-    -0.1323,
-    0.0144,
-    0.1162
+    -0.101,
+    0.0072,
+    0.1178
    ],
-   "radius": 0.009,
-   "triangles": 258
+   "radius": 0.0094,
+   "triangles": 260
   },
   "foot_middle_phalanx_3_left": {
    "kind": "bone",
    "center": [
-    0.1454,
-    0.0131,
-    0.1074
+    0.1161,
+    0.0059,
+    0.1121
    ],
-   "radius": 0.0087,
-   "triangles": 288
+   "radius": 0.0091,
+   "triangles": 290
   },
   "foot_middle_phalanx_3_right": {
    "kind": "bone",
    "center": [
-    -0.1453,
-    0.0132,
-    0.1073
+    -0.1161,
+    0.0059,
+    0.1121
    ],
-   "radius": 0.0087,
-   "triangles": 292
+   "radius": 0.0091,
+   "triangles": 290
   },
   "foot_middle_phalanx_4_left": {
    "kind": "bone",
    "center": [
-    0.1552,
-    0.0122,
-    0.0921
+    0.1299,
+    0.0048,
+    0.0993
    ],
-   "radius": 0.0074,
-   "triangles": 280
+   "radius": 0.0079,
+   "triangles": 346
   },
   "foot_middle_phalanx_4_right": {
    "kind": "bone",
    "center": [
-    -0.1552,
-    0.0122,
-    0.0921
+    -0.1299,
+    0.0048,
+    0.0993
    ],
-   "radius": 0.0075,
-   "triangles": 342
+   "radius": 0.0079,
+   "triangles": 346
   },
   "foot_middle_phalanx_5_left": {
    "kind": "bone",
    "center": [
-    0.1624,
-    0.0112,
-    0.0753
+    0.1411,
+    0.0037,
+    0.0837
    ],
-   "radius": 0.0048,
-   "triangles": 224
+   "radius": 0.0049,
+   "triangles": 136
   },
   "foot_middle_phalanx_5_right": {
    "kind": "bone",
    "center": [
-    -0.1624,
-    0.0112,
-    0.0751
+    -0.1411,
+    0.0037,
+    0.0837
    ],
-   "radius": 0.0048,
+   "radius": 0.0049,
    "triangles": 136
   },
   "foot_proximal_phalanx_1_left": {
    "kind": "bone",
    "center": [
-    0.1019,
-    0.0181,
-    0.1027
+    0.074,
+    0.011,
+    0.0972
    ],
-   "radius": 0.019,
-   "triangles": 502
+   "radius": 0.0199,
+   "triangles": 412
   },
   "foot_proximal_phalanx_1_right": {
    "kind": "bone",
    "center": [
-    -0.1019,
-    0.0181,
-    0.1027
+    -0.074,
+    0.011,
+    0.0972
    ],
-   "radius": 0.0189,
-   "triangles": 468
+   "radius": 0.0199,
+   "triangles": 412
   },
   "foot_proximal_phalanx_2_left": {
    "kind": "bone",
    "center": [
-    0.1225,
-    0.0175,
-    0.0976
+    0.0955,
+    0.0103,
+    0.0971
    ],
-   "radius": 0.0155,
-   "triangles": 374
+   "radius": 0.0158,
+   "triangles": 408
   },
   "foot_proximal_phalanx_2_right": {
    "kind": "bone",
    "center": [
-    -0.1225,
-    0.0174,
-    0.0976
+    -0.0955,
+    0.0103,
+    0.0971
    ],
-   "radius": 0.0154,
-   "triangles": 392
+   "radius": 0.0158,
+   "triangles": 408
   },
   "foot_proximal_phalanx_3_left": {
    "kind": "bone",
    "center": [
-    0.1355,
-    0.0163,
-    0.0887
+    0.1106,
+    0.0089,
+    0.0912
    ],
-   "radius": 0.0151,
-   "triangles": 388
+   "radius": 0.0157,
+   "triangles": 408
   },
   "foot_proximal_phalanx_3_right": {
    "kind": "bone",
    "center": [
-    -0.1355,
-    0.0162,
-    0.0886
+    -0.1106,
+    0.0089,
+    0.0912
    ],
-   "radius": 0.0153,
-   "triangles": 398
+   "radius": 0.0157,
+   "triangles": 408
   },
   "foot_proximal_phalanx_4_left": {
    "kind": "bone",
    "center": [
-    0.1451,
-    0.015,
-    0.0764
+    0.1232,
+    0.0076,
+    0.0815
    ],
-   "radius": 0.0146,
-   "triangles": 418
+   "radius": 0.015,
+   "triangles": 436
   },
   "foot_proximal_phalanx_4_right": {
    "kind": "bone",
    "center": [
-    -0.1451,
-    0.015,
-    0.0764
+    -0.1232,
+    0.0076,
+    0.0815
    ],
-   "radius": 0.0146,
-   "triangles": 418
+   "radius": 0.015,
+   "triangles": 436
   },
   "foot_proximal_phalanx_5_left": {
    "kind": "bone",
    "center": [
-    0.1539,
-    0.0132,
-    0.0614
+    0.1355,
+    0.0057,
+    0.0684
    ],
-   "radius": 0.0149,
-   "triangles": 386
+   "radius": 0.0154,
+   "triangles": 384
   },
   "foot_proximal_phalanx_5_right": {
    "kind": "bone",
    "center": [
-    -0.1539,
-    0.0131,
-    0.0614
+    -0.1355,
+    0.0057,
+    0.0684
    ],
-   "radius": 0.0149,
-   "triangles": 386
+   "radius": 0.0154,
+   "triangles": 384
   },
   "frontal_bone": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.6535,
-    0.042
+    0,
+    1.6367,
+    0.0525
    ],
-   "radius": 0.0663,
-   "triangles": 5112
+   "radius": 0.0646,
+   "triangles": 5000
   },
   "hamate_left": {
    "kind": "bone",
    "center": [
-    0.2441,
-    0.8691,
-    0.0227
+    0.2523,
+    0.8318,
+    0.0218
    ],
-   "radius": 0.0129,
-   "triangles": 440
+   "radius": 0.0133,
+   "triangles": 506
   },
   "hamate_right": {
    "kind": "bone",
    "center": [
-    -0.2443,
-    0.8691,
-    0.0227
+    -0.2523,
+    0.8318,
+    0.0218
    ],
-   "radius": 0.0128,
-   "triangles": 490
+   "radius": 0.0133,
+   "triangles": 506
   },
   "hand_distal_phalanx_1_left": {
    "kind": "bone",
    "center": [
-    0.3174,
-    0.8088,
-    0.0653
+    0.3276,
+    0.7697,
+    0.0658
    ],
-   "radius": 0.0137,
-   "triangles": 262
+   "radius": 0.0143,
+   "triangles": 180
   },
   "hand_distal_phalanx_1_right": {
    "kind": "bone",
    "center": [
-    -0.3171,
-    0.8088,
-    0.0652
+    -0.3276,
+    0.7697,
+    0.0658
    ],
-   "radius": 0.0138,
-   "triangles": 228
+   "radius": 0.0143,
+   "triangles": 180
   },
   "hand_distal_phalanx_2_left": {
    "kind": "bone",
    "center": [
-    0.3063,
-    0.7468,
-    0.0782
+    0.3164,
+    0.7057,
+    0.0791
    ],
-   "radius": 0.0104,
-   "triangles": 318
+   "radius": 0.0109,
+   "triangles": 208
   },
   "hand_distal_phalanx_2_right": {
    "kind": "bone",
    "center": [
-    -0.3064,
-    0.7469,
-    0.0782
+    -0.3164,
+    0.7057,
+    0.0791
    ],
-   "radius": 0.0105,
+   "radius": 0.0109,
    "triangles": 208
   },
   "hand_distal_phalanx_3_left": {
    "kind": "bone",
    "center": [
-    0.2761,
-    0.738,
-    0.0866
+    0.2852,
+    0.6964,
+    0.0881
    ],
-   "radius": 0.0101,
-   "triangles": 260
+   "radius": 0.0102,
+   "triangles": 172
   },
   "hand_distal_phalanx_3_right": {
    "kind": "bone",
    "center": [
-    -0.2761,
-    0.7379,
-    0.0868
+    -0.2852,
+    0.6964,
+    0.0881
    ],
-   "radius": 0.01,
-   "triangles": 170
+   "radius": 0.0102,
+   "triangles": 172
   },
   "hand_distal_phalanx_4_left": {
    "kind": "bone",
    "center": [
-    0.2495,
-    0.7475,
-    0.0866
+    0.2576,
+    0.7064,
+    0.0878
    ],
-   "radius": 0.0084,
-   "triangles": 192
+   "radius": 0.0089,
+   "triangles": 112
   },
   "hand_distal_phalanx_4_right": {
    "kind": "bone",
    "center": [
-    -0.2494,
-    0.7475,
-    0.0865
+    -0.2576,
+    0.7064,
+    0.0878
    ],
-   "radius": 0.0086,
+   "radius": 0.0089,
    "triangles": 112
   },
   "hand_distal_phalanx_5_left": {
    "kind": "bone",
    "center": [
-    0.223,
-    0.7611,
-    0.0754
+    0.2304,
+    0.7203,
+    0.0762
    ],
-   "radius": 0.0086,
-   "triangles": 198
+   "radius": 0.0093,
+   "triangles": 174
   },
   "hand_distal_phalanx_5_right": {
    "kind": "bone",
    "center": [
-    -0.223,
-    0.7611,
-    0.075
+    -0.2304,
+    0.7203,
+    0.0762
    ],
-   "radius": 0.0085,
-   "triangles": 184
+   "radius": 0.0093,
+   "triangles": 174
   },
   "hand_middle_phalanx_2_left": {
    "kind": "bone",
    "center": [
-    0.3017,
-    0.7593,
-    0.0617
+    0.3116,
+    0.7185,
+    0.062
    ],
-   "radius": 0.0142,
-   "triangles": 300
+   "radius": 0.0148,
+   "triangles": 228
   },
   "hand_middle_phalanx_2_right": {
    "kind": "bone",
    "center": [
-    -0.3017,
-    0.7594,
-    0.0617
+    -0.3116,
+    0.7185,
+    0.062
    ],
-   "radius": 0.0143,
-   "triangles": 256
+   "radius": 0.0148,
+   "triangles": 228
   },
   "hand_middle_phalanx_3_left": {
    "kind": "bone",
    "center": [
-    0.2734,
-    0.7532,
-    0.0694
+    0.2824,
+    0.7122,
+    0.0699
    ],
-   "radius": 0.0165,
-   "triangles": 366
+   "radius": 0.0171,
+   "triangles": 282
   },
   "hand_middle_phalanx_3_right": {
    "kind": "bone",
    "center": [
-    -0.2734,
-    0.7532,
-    0.0694
+    -0.2824,
+    0.7122,
+    0.0699
    ],
-   "radius": 0.0166,
-   "triangles": 330
+   "radius": 0.0171,
+   "triangles": 282
   },
   "hand_middle_phalanx_4_left": {
    "kind": "bone",
    "center": [
-    0.2487,
-    0.7599,
-    0.0687
+    0.2568,
+    0.7191,
+    0.0692
    ],
-   "radius": 0.0163,
-   "triangles": 326
+   "radius": 0.017,
+   "triangles": 350
   },
   "hand_middle_phalanx_4_right": {
    "kind": "bone",
    "center": [
-    -0.2485,
-    0.7598,
-    0.0686
+    -0.2568,
+    0.7191,
+    0.0692
    ],
-   "radius": 0.0164,
-   "triangles": 306
+   "radius": 0.017,
+   "triangles": 350
   },
   "hand_middle_phalanx_5_left": {
    "kind": "bone",
    "center": [
-    0.2246,
-    0.7754,
-    0.0632
+    0.2321,
+    0.7352,
+    0.0636
    ],
-   "radius": 0.0126,
-   "triangles": 252
+   "radius": 0.0133,
+   "triangles": 198
   },
   "hand_middle_phalanx_5_right": {
    "kind": "bone",
    "center": [
-    -0.2247,
-    0.7755,
-    0.0631
+    -0.2321,
+    0.7352,
+    0.0636
    ],
-   "radius": 0.0129,
-   "triangles": 206
+   "radius": 0.0133,
+   "triangles": 198
   },
   "hand_proximal_phalanx_1_left": {
    "kind": "bone",
    "center": [
-    0.3087,
-    0.8295,
-    0.0537
+    0.3188,
+    0.791,
+    0.0539
    ],
-   "radius": 0.0165,
-   "triangles": 336
+   "radius": 0.0175,
+   "triangles": 270
   },
   "hand_proximal_phalanx_1_right": {
    "kind": "bone",
    "center": [
-    -0.3087,
-    0.8295,
-    0.0538
+    -0.3188,
+    0.791,
+    0.0539
    ],
-   "radius": 0.017,
-   "triangles": 316
+   "radius": 0.0175,
+   "triangles": 270
   },
   "hand_proximal_phalanx_2_left": {
    "kind": "bone",
    "center": [
-    0.2918,
-    0.7826,
-    0.0456
+    0.3013,
+    0.7426,
+    0.0453
    ],
-   "radius": 0.0212,
-   "triangles": 384
+   "radius": 0.0221,
+   "triangles": 362
   },
   "hand_proximal_phalanx_2_right": {
    "kind": "bone",
    "center": [
-    -0.2919,
-    0.7826,
-    0.0454
+    -0.3013,
+    0.7426,
+    0.0453
    ],
-   "radius": 0.0213,
-   "triangles": 360
+   "radius": 0.0221,
+   "triangles": 362
   },
   "hand_proximal_phalanx_3_left": {
    "kind": "bone",
    "center": [
-    0.2683,
-    0.7827,
-    0.0496
+    0.2771,
+    0.7427,
+    0.0497
    ],
-   "radius": 0.0239,
-   "triangles": 440
+   "radius": 0.0248,
+   "triangles": 378
   },
   "hand_proximal_phalanx_3_right": {
    "kind": "bone",
    "center": [
-    -0.2683,
-    0.7827,
+    -0.2771,
+    0.7427,
     0.0497
    ],
-   "radius": 0.0239,
-   "triangles": 448
+   "radius": 0.0248,
+   "triangles": 378
   },
   "hand_proximal_phalanx_4_left": {
    "kind": "bone",
    "center": [
-    0.2472,
-    0.7876,
-    0.0488
+    0.2552,
+    0.7477,
+    0.0487
    ],
-   "radius": 0.0221,
-   "triangles": 366
+   "radius": 0.0229,
+   "triangles": 320
   },
   "hand_proximal_phalanx_4_right": {
    "kind": "bone",
    "center": [
-    -0.2472,
-    0.7876,
-    0.0488
+    -0.2552,
+    0.7477,
+    0.0487
    ],
-   "radius": 0.0221,
-   "triangles": 364
+   "radius": 0.0229,
+   "triangles": 320
   },
   "hand_proximal_phalanx_5_left": {
    "kind": "bone",
    "center": [
-    0.2293,
-    0.7977,
-    0.0491
+    0.2368,
+    0.7582,
+    0.049
    ],
-   "radius": 0.0181,
-   "triangles": 270
+   "radius": 0.0188,
+   "triangles": 310
   },
   "hand_proximal_phalanx_5_right": {
    "kind": "bone",
    "center": [
-    -0.2292,
-    0.7978,
-    0.0491
+    -0.2368,
+    0.7582,
+    0.049
    ],
-   "radius": 0.0181,
-   "triangles": 312
+   "radius": 0.0188,
+   "triangles": 310
   },
   "hip_bone_left": {
    "kind": "bone",
    "center": [
-    0.0738,
-    0.933,
-    -0.03
+    0.0689,
+    0.8954,
+    -0.0154
    ],
-   "radius": 0.1111,
-   "triangles": 1808
+   "radius": 0.113,
+   "triangles": 1632
   },
   "hip_bone_right": {
    "kind": "bone",
    "center": [
-    -0.0738,
-    0.9331,
-    -0.0299
+    -0.0689,
+    0.8954,
+    -0.0154
    ],
-   "radius": 0.1109,
-   "triangles": 1898
+   "radius": 0.113,
+   "triangles": 1636
   },
   "humerus_left": {
    "kind": "bone",
    "center": [
-    0.1904,
-    1.2611,
-    -0.0243
+    0.1966,
+    1.2367,
+    -0.0274
    ],
-   "radius": 0.1567,
-   "triangles": 962
+   "radius": 0.1619,
+   "triangles": 1262
   },
   "humerus_right": {
    "kind": "bone",
    "center": [
-    -0.1904,
-    1.2611,
-    -0.0244
+    -0.1966,
+    1.2367,
+    -0.0274
    ],
-   "radius": 0.1565,
-   "triangles": 1070
+   "radius": 0.1619,
+   "triangles": 1271
   },
   "hyoid_bone": {
    "kind": "bone",
    "center": [
-    -0.0006,
-    1.5097,
-    0.0117
+    0,
+    1.4921,
+    0.021
    ],
-   "radius": 0.0263,
-   "triangles": 1036
+   "radius": 0.0291,
+   "triangles": 1118
   },
   "incus_left": {
    "kind": "bone",
    "center": [
-    0.0421,
-    1.5839,
-    -0.0156
+    0.0471,
+    1.5735,
+    -0.0072
    ],
-   "radius": 0.0037,
-   "triangles": 1004,
-   "approximate": true
+   "radius": 0.0041,
+   "triangles": 1744
   },
   "incus_right": {
    "kind": "bone",
    "center": [
-    -0.0422,
-    1.5838,
-    -0.0163
+    -0.0471,
+    1.5735,
+    -0.0072
    ],
-   "radius": 0.0037,
-   "triangles": 1004,
-   "approximate": true
+   "radius": 0.0041,
+   "triangles": 1766
   },
   "inferior_nasal_concha_left": {
    "kind": "bone",
    "center": [
-    0.0103,
-    1.5685,
-    0.0517
+    0.0097,
+    1.5542,
+    0.0581
    ],
-   "radius": 0.0193,
-   "triangles": 662
+   "radius": 0.0206,
+   "triangles": 448
   },
   "inferior_nasal_concha_right": {
    "kind": "bone",
    "center": [
-    -0.0116,
-    1.5666,
-    0.0481
+    -0.0097,
+    1.5542,
+    0.0581
    ],
-   "radius": 0.0204,
-   "triangles": 636
+   "radius": 0.0206,
+   "triangles": 448
   },
   "intermediate_cuneiform_left": {
    "kind": "bone",
    "center": [
-    0.092,
-    0.0552,
-    0.02
+    0.0836,
+    0.0495,
+    0.0113
    ],
-   "radius": 0.0133,
-   "triangles": 440
+   "radius": 0.0135,
+   "triangles": 422
   },
   "intermediate_cuneiform_right": {
    "kind": "bone",
    "center": [
-    -0.0919,
-    0.0552,
-    0.0201
+    -0.0836,
+    0.0495,
+    0.0113
    ],
-   "radius": 0.0132,
-   "triangles": 430
+   "radius": 0.0135,
+   "triangles": 424
   },
   "lacrimal_bone_left": {
    "kind": "bone",
    "center": [
-    0.0126,
-    1.5905,
-    0.0577
+    0.0118,
+    1.5765,
+    0.0689
    ],
-   "radius": 0.015,
-   "triangles": 604
+   "radius": 0.0139,
+   "triangles": 568
   },
   "lacrimal_bone_right": {
    "kind": "bone",
    "center": [
-    -0.0128,
-    1.5927,
-    0.0582
+    -0.0118,
+    1.5765,
+    0.0689
    ],
    "radius": 0.0139,
-   "triangles": 658
+   "triangles": 568
   },
   "lateral_cuneiform_left": {
    "kind": "bone",
    "center": [
-    0.1001,
-    0.0504,
-    0.013
+    0.0934,
+    0.0445,
+    0.007
    ],
-   "radius": 0.0158,
-   "triangles": 648
+   "radius": 0.0161,
+   "triangles": 578
   },
   "lateral_cuneiform_right": {
    "kind": "bone",
    "center": [
-    -0.1,
-    0.0504,
-    0.013
+    -0.0934,
+    0.0445,
+    0.007
    ],
-   "radius": 0.0158,
-   "triangles": 600
+   "radius": 0.0161,
+   "triangles": 580
   },
   "lunate_left": {
    "kind": "bone",
    "center": [
-    0.2446,
-    0.8817,
-    0.0189
+    0.2525,
+    0.8449,
+    0.0178
    ],
-   "radius": 0.0106,
-   "triangles": 308
+   "radius": 0.0112,
+   "triangles": 1306
   },
   "lunate_right": {
    "kind": "bone",
    "center": [
-    -0.2445,
-    0.8818,
-    0.0188
+    -0.2525,
+    0.8449,
+    0.0178
    ],
-   "radius": 0.0108,
-   "triangles": 324
+   "radius": 0.0112,
+   "triangles": 1310
   },
   "malleus_left": {
    "kind": "bone",
    "center": [
-    0.0425,
-    1.5835,
-    -0.0123
+    0.0482,
+    1.5729,
+    -0.0039
    ],
-   "radius": 0.0047,
-   "triangles": 1260,
-   "approximate": true
+   "radius": 0.0046,
+   "triangles": 1610
   },
   "malleus_right": {
    "kind": "bone",
    "center": [
-    -0.0426,
-    1.5834,
-    -0.013
+    -0.0482,
+    1.5729,
+    -0.0039
    ],
-   "radius": 0.0047,
-   "triangles": 1260,
-   "approximate": true
+   "radius": 0.0046,
+   "triangles": 1594
   },
   "mandible": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.542,
-    0.0318
+    0,
+    1.5283,
+    0.0428
    ],
-   "radius": 0.0742,
-   "triangles": 2348
+   "radius": 0.0723,
+   "triangles": 4500
   },
   "maxilla_left": {
    "kind": "bone",
    "center": [
-    0.0213,
-    1.5768,
-    0.0548
+    0.0229,
+    1.5621,
+    0.067
    ],
-   "radius": 0.0463,
-   "triangles": 3598
+   "radius": 0.0454,
+   "triangles": 3622
   },
   "maxilla_right": {
    "kind": "bone",
    "center": [
-    -0.0239,
-    1.5768,
-    0.0567
+    -0.0229,
+    1.5621,
+    0.067
    ],
-   "radius": 0.0463,
-   "triangles": 3660
+   "radius": 0.0454,
+   "triangles": 3626
   },
   "medial_cuneiform_left": {
    "kind": "bone",
    "center": [
-    0.0801,
-    0.0484,
-    0.0263
+    0.0706,
+    0.0424,
+    0.0155
    ],
-   "radius": 0.0204,
-   "triangles": 872
+   "radius": 0.0207,
+   "triangles": 804
   },
   "medial_cuneiform_right": {
    "kind": "bone",
    "center": [
-    -0.0801,
-    0.0484,
-    0.0262
+    -0.0706,
+    0.0424,
+    0.0155
    ],
-   "radius": 0.0204,
-   "triangles": 838
+   "radius": 0.0207,
+   "triangles": 806
   },
   "metacarpal_1_left": {
    "kind": "bone",
    "center": [
-    0.291,
-    0.857,
-    0.0386
+    0.3005,
+    0.8194,
+    0.0383
    ],
-   "radius": 0.0243,
-   "triangles": 556
+   "radius": 0.0251,
+   "triangles": 538
   },
   "metacarpal_1_right": {
    "kind": "bone",
    "center": [
-    -0.2909,
-    0.8569,
-    0.0387
+    -0.3005,
+    0.8194,
+    0.0383
    ],
-   "radius": 0.0242,
-   "triangles": 526
+   "radius": 0.0251,
+   "triangles": 536
   },
   "metacarpal_2_left": {
    "kind": "bone",
    "center": [
-    0.2772,
-    0.8311,
-    0.0298
+    0.2863,
+    0.7926,
+    0.0292
    ],
-   "radius": 0.0357,
-   "triangles": 592
+   "radius": 0.0372,
+   "triangles": 570
   },
   "metacarpal_2_right": {
    "kind": "bone",
    "center": [
-    -0.2773,
-    0.831,
-    0.0299
+    -0.2863,
+    0.7926,
+    0.0292
    ],
-   "radius": 0.036,
-   "triangles": 610
+   "radius": 0.0372,
+   "triangles": 570
   },
   "metacarpal_3_left": {
    "kind": "bone",
    "center": [
-    0.2623,
-    0.8309,
-    0.0276
+    0.271,
+    0.7927,
+    0.0269
    ],
-   "radius": 0.0351,
-   "triangles": 586
+   "radius": 0.0362,
+   "triangles": 532
   },
   "metacarpal_3_right": {
    "kind": "bone",
    "center": [
-    -0.2624,
-    0.8311,
-    0.0275
+    -0.271,
+    0.7927,
+    0.0269
    ],
-   "radius": 0.0349,
-   "triangles": 586
+   "radius": 0.0362,
+   "triangles": 538
   },
   "metacarpal_4_left": {
    "kind": "bone",
    "center": [
-    0.2476,
-    0.8333,
-    0.0289
+    0.2557,
+    0.795,
+    0.0283
    ],
-   "radius": 0.0311,
-   "triangles": 432
+   "radius": 0.0322,
+   "triangles": 456
   },
   "metacarpal_4_right": {
    "kind": "bone",
    "center": [
-    -0.2476,
-    0.8333,
-    0.0289
+    -0.2557,
+    0.795,
+    0.0283
    ],
-   "radius": 0.0313,
-   "triangles": 422
+   "radius": 0.0322,
+   "triangles": 456
   },
   "metacarpal_5_left": {
    "kind": "bone",
    "center": [
-    0.2353,
-    0.8375,
-    0.0323
+    0.243,
+    0.7994,
+    0.0317
    ],
-   "radius": 0.0286,
-   "triangles": 468
+   "radius": 0.0297,
+   "triangles": 374
   },
   "metacarpal_5_right": {
    "kind": "bone",
    "center": [
-    -0.2353,
-    0.8376,
-    0.0323
+    -0.243,
+    0.7994,
+    0.0317
    ],
-   "radius": 0.0287,
-   "triangles": 428
+   "radius": 0.0297,
+   "triangles": 376
   },
   "metatarsal_1_left": {
    "kind": "bone",
    "center": [
-    0.0896,
-    0.0344,
-    0.0611
+    0.0712,
+    0.0279,
+    0.0526
    ],
-   "radius": 0.0338,
-   "triangles": 944
+   "radius": 0.0347,
+   "triangles": 870
   },
   "metatarsal_1_right": {
    "kind": "bone",
    "center": [
-    -0.0896,
-    0.0344,
-    0.0611
+    -0.0712,
+    0.0279,
+    0.0526
    ],
-   "radius": 0.0338,
-   "triangles": 908
+   "radius": 0.0347,
+   "triangles": 870
   },
   "metatarsal_2_left": {
    "kind": "bone",
    "center": [
-    0.106,
-    0.0359,
-    0.0549
+    0.0894,
+    0.0293,
+    0.0499
    ],
-   "radius": 0.0394,
-   "triangles": 618
+   "radius": 0.0408,
+   "triangles": 544
   },
   "metatarsal_2_right": {
    "kind": "bone",
    "center": [
-    -0.106,
-    0.0358,
-    0.0549
+    -0.0894,
+    0.0293,
+    0.0499
    ],
-   "radius": 0.0392,
-   "triangles": 612
+   "radius": 0.0408,
+   "triangles": 540
   },
   "metatarsal_3_left": {
    "kind": "bone",
    "center": [
-    0.116,
-    0.033,
-    0.0495
+    0.1007,
+    0.0264,
+    0.0474
    ],
-   "radius": 0.0368,
-   "triangles": 628
+   "radius": 0.0378,
+   "triangles": 552
   },
   "metatarsal_3_right": {
    "kind": "bone",
    "center": [
-    -0.116,
-    0.0331,
-    0.0496
+    -0.1007,
+    0.0264,
+    0.0474
    ],
-   "radius": 0.0368,
-   "triangles": 620
+   "radius": 0.0378,
+   "triangles": 552
   },
   "metatarsal_4_left": {
    "kind": "bone",
    "center": [
-    0.1222,
-    0.0284,
-    0.0382
+    0.1093,
+    0.0217,
+    0.0379
    ],
-   "radius": 0.0364,
-   "triangles": 610
+   "radius": 0.0373,
+   "triangles": 486
   },
   "metatarsal_4_right": {
    "kind": "bone",
    "center": [
-    -0.1223,
-    0.0285,
-    0.0383
+    -0.1093,
+    0.0217,
+    0.0379
    ],
-   "radius": 0.0363,
-   "triangles": 554
+   "radius": 0.0373,
+   "triangles": 488
   },
   "metatarsal_5_left": {
    "kind": "bone",
    "center": [
-    0.1294,
-    0.0233,
-    0.0222
+    0.1194,
+    0.0163,
+    0.0228
    ],
-   "radius": 0.0377,
-   "triangles": 702
+   "radius": 0.0395,
+   "triangles": 608
   },
   "metatarsal_5_right": {
    "kind": "bone",
    "center": [
-    -0.1294,
-    0.0233,
-    0.0222
+    -0.1194,
+    0.0163,
+    0.0228
    ],
-   "radius": 0.0377,
-   "triangles": 670
+   "radius": 0.0395,
+   "triangles": 608
   },
   "nasal_bone_left": {
    "kind": "bone",
    "center": [
-    0.0023,
-    1.5958,
-    0.0794
+    0.0042,
+    1.5802,
+    0.0898
    ],
-   "radius": 0.0186,
-   "triangles": 388
+   "radius": 0.0184,
+   "triangles": 250
   },
   "nasal_bone_right": {
    "kind": "bone",
    "center": [
-    -0.0049,
-    1.5953,
-    0.0802
+    -0.0042,
+    1.5802,
+    0.0898
    ],
-   "radius": 0.0188,
-   "triangles": 392
+   "radius": 0.0184,
+   "triangles": 250
   },
   "navicular_left": {
    "kind": "bone",
    "center": [
-    0.0773,
-    0.0595,
-    0.0077
+    0.073,
+    0.053,
+    -0.0031
    ],
-   "radius": 0.0206,
-   "triangles": 624
+   "radius": 0.0217,
+   "triangles": 664
   },
   "navicular_right": {
    "kind": "bone",
    "center": [
-    -0.0775,
-    0.0596,
-    0.0077
+    -0.073,
+    0.053,
+    -0.0031
    ],
-   "radius": 0.0206,
-   "triangles": 618
+   "radius": 0.0217,
+   "triangles": 664
   },
   "occipital_bone": {
    "kind": "bone",
    "center": [
-    -0.0006,
-    1.6093,
-    -0.0585
+    0,
+    1.5938,
+    -0.0455
    ],
-   "radius": 0.0734,
-   "triangles": 4912
+   "radius": 0.0715,
+   "triangles": 4620
   },
   "palatine_bone_left": {
    "kind": "bone",
    "center": [
-    0.013,
-    1.5699,
-    0.0266
+    0.0139,
+    1.5549,
+    0.0424
    ],
-   "radius": 0.0309,
-   "triangles": 1606
+   "radius": 0.0255,
+   "triangles": 1356
   },
   "palatine_bone_right": {
    "kind": "bone",
    "center": [
-    -0.0143,
-    1.57,
-    0.0266
+    -0.0139,
+    1.5549,
+    0.0424
    ],
-   "radius": 0.0306,
-   "triangles": 1486
+   "radius": 0.0255,
+   "triangles": 1358
   },
   "parietal_bone_left": {
    "kind": "bone",
    "center": [
-    0.0335,
-    1.6551,
-    -0.0416
+    0.0334,
+    1.6383,
+    -0.0289
    ],
-   "radius": 0.0819,
-   "triangles": 3732
+   "radius": 0.0803,
+   "triangles": 3828
   },
   "parietal_bone_right": {
    "kind": "bone",
    "center": [
-    -0.0357,
-    1.6552,
-    -0.0435
+    -0.0344,
+    1.6384,
+    -0.0306
    ],
-   "radius": 0.0837,
-   "triangles": 3694
+   "radius": 0.0819,
+   "triangles": 3914
   },
   "patella_left": {
    "kind": "bone",
    "center": [
-    0.0814,
-    0.4592,
-    0.0118
+    0.0844,
+    0.4351,
+    0.0073
    ],
-   "radius": 0.0216,
-   "triangles": 304
+   "radius": 0.0224,
+   "triangles": 264
   },
   "patella_right": {
    "kind": "bone",
    "center": [
-    -0.0815,
-    0.4593,
-    0.0119
+    -0.0844,
+    0.4351,
+    0.0073
    ],
-   "radius": 0.0215,
-   "triangles": 304
+   "radius": 0.0224,
+   "triangles": 264
   },
   "pisiform_left": {
    "kind": "bone",
    "center": [
-    0.2359,
-    0.8736,
-    0.0323
+    0.2439,
+    0.8366,
+    0.0321
    ],
-   "radius": 0.0063,
-   "triangles": 210
+   "radius": 0.0067,
+   "triangles": 1088
   },
   "pisiform_right": {
    "kind": "bone",
    "center": [
-    -0.2361,
-    0.8736,
-    0.0325
+    -0.2439,
+    0.8366,
+    0.0321
    ],
-   "radius": 0.0065,
-   "triangles": 190
+   "radius": 0.0067,
+   "triangles": 1090
   },
   "radius_left": {
    "kind": "bone",
    "center": [
-    0.2495,
-    0.9987,
-    -0.0056
+    0.2578,
+    0.9656,
+    -0.0076
    ],
-   "radius": 0.1202,
-   "triangles": 406
+   "radius": 0.1244,
+   "triangles": 442
   },
   "radius_right": {
    "kind": "bone",
    "center": [
-    -0.2498,
-    0.9985,
-    -0.006
+    -0.2578,
+    0.9656,
+    -0.0076
    ],
-   "radius": 0.1202,
-   "triangles": 408
+   "radius": 0.1244,
+   "triangles": 440
   },
   "rib_1_left": {
    "kind": "bone",
    "center": [
-    0.0411,
-    1.4184,
-    -0.0026
+    0.0437,
+    1.4076,
+    0.0018
    ],
-   "radius": 0.0453,
-   "triangles": 1010
+   "radius": 0.0461,
+   "triangles": 1362
   },
   "rib_1_right": {
    "kind": "bone",
    "center": [
-    -0.0424,
-    1.4184,
-    -0.0025
+    -0.0437,
+    1.4076,
+    0.0018
    ],
-   "radius": 0.0453,
-   "triangles": 1032
+   "radius": 0.0461,
+   "triangles": 1348
   },
   "rib_10_left": {
    "kind": "bone",
    "center": [
-    0.069,
-    1.1691,
-    -0.0355
+    0.075,
+    1.1417,
+    -0.0305
    ],
-   "radius": 0.0948,
-   "triangles": 1500
+   "radius": 0.1035,
+   "triangles": 822
   },
   "rib_10_right": {
    "kind": "bone",
    "center": [
-    -0.0703,
-    1.1691,
-    -0.0355
+    -0.075,
+    1.1416,
+    -0.0306
    ],
-   "radius": 0.0948,
-   "triangles": 1500
+   "radius": 0.1035,
+   "triangles": 822
   },
   "rib_11_left": {
    "kind": "bone",
    "center": [
-    0.0632,
-    1.143,
-    -0.043
+    0.0698,
+    1.1159,
+    -0.0376
    ],
-   "radius": 0.0793,
-   "triangles": 1070
+   "radius": 0.0878,
+   "triangles": 894
   },
   "rib_11_right": {
    "kind": "bone",
    "center": [
-    -0.0645,
-    1.143,
-    -0.043
+    -0.0698,
+    1.1158,
+    -0.0376
    ],
-   "radius": 0.0793,
-   "triangles": 1070
+   "radius": 0.0878,
+   "triangles": 924
   },
   "rib_12_left": {
    "kind": "bone",
    "center": [
-    0.051,
-    1.1284,
-    -0.0529
+    0.0524,
+    1.0962,
+    -0.0459
    ],
-   "radius": 0.0528,
-   "triangles": 730
+   "radius": 0.0601,
+   "triangles": 930
   },
   "rib_12_right": {
    "kind": "bone",
    "center": [
     -0.0524,
-    1.1284,
-    -0.053
+    1.0962,
+    -0.046
    ],
-   "radius": 0.0529,
-   "triangles": 740
+   "radius": 0.0601,
+   "triangles": 942
   },
   "rib_2_left": {
    "kind": "bone",
    "center": [
-    0.0552,
-    1.3944,
-    0.0089
+    0.0583,
+    1.3815,
+    0.0107
    ],
-   "radius": 0.0727,
-   "triangles": 1230
+   "radius": 0.073,
+   "triangles": 1264
   },
   "rib_2_right": {
    "kind": "bone",
    "center": [
-    -0.0565,
-    1.3945,
-    0.0089
+    -0.0583,
+    1.3815,
+    0.0107
    ],
-   "radius": 0.0727,
-   "triangles": 1230
+   "radius": 0.073,
+   "triangles": 1284
   },
   "rib_3_left": {
    "kind": "bone",
    "center": [
-    0.0602,
-    1.368,
-    0.0081
+    0.0648,
+    1.3544,
+    0.0068
    ],
-   "radius": 0.0873,
-   "triangles": 1594
+   "radius": 0.0885,
+   "triangles": 1128
   },
   "rib_3_right": {
    "kind": "bone",
    "center": [
-    -0.0615,
-    1.368,
-    0.008
+    -0.0648,
+    1.3544,
+    0.0068
    ],
-   "radius": 0.0873,
-   "triangles": 1594
+   "radius": 0.0885,
+   "triangles": 1158
   },
   "rib_4_left": {
    "kind": "bone",
    "center": [
-    0.0646,
-    1.3413,
-    0.0077
+    0.0705,
+    1.3268,
+    0.0079
    ],
-   "radius": 0.1,
-   "triangles": 1946
+   "radius": 0.1025,
+   "triangles": 988
   },
   "rib_4_right": {
    "kind": "bone",
    "center": [
-    -0.0663,
-    1.3413,
-    0.0077
+    -0.0706,
+    1.3268,
+    0.0079
    ],
-   "radius": 0.1001,
-   "triangles": 1942
+   "radius": 0.1024,
+   "triangles": 988
   },
   "rib_5_left": {
    "kind": "bone",
    "center": [
-    0.0699,
-    1.3099,
-    0.0052
+    0.0734,
+    1.2951,
+    0.0074
    ],
-   "radius": 0.1083,
-   "triangles": 2136
+   "radius": 0.1118,
+   "triangles": 874
   },
   "rib_5_right": {
    "kind": "bone",
    "center": [
-    -0.0712,
-    1.3098,
-    0.0052
+    -0.0734,
+    1.2951,
+    0.0075
    ],
-   "radius": 0.1083,
-   "triangles": 2136
+   "radius": 0.1118,
+   "triangles": 880
   },
   "rib_6_left": {
    "kind": "bone",
    "center": [
-    0.0729,
-    1.2805,
-    -0.0014
+    0.0772,
+    1.2658,
+    0.0008
    ],
-   "radius": 0.1141,
-   "triangles": 2258
+   "radius": 0.1189,
+   "triangles": 884
   },
   "rib_6_right": {
    "kind": "bone",
    "center": [
-    -0.0746,
-    1.2799,
-    -0.0014
+    -0.0773,
+    1.2658,
+    0.0008
    ],
-   "radius": 0.1137,
-   "triangles": 2254
+   "radius": 0.1189,
+   "triangles": 864
   },
   "rib_7_left": {
    "kind": "bone",
    "center": [
-    0.0741,
-    1.2508,
-    -0.0076
+    0.079,
+    1.2345,
+    -0.0058
    ],
-   "radius": 0.1113,
-   "triangles": 2206
+   "radius": 0.1164,
+   "triangles": 1018
   },
   "rib_7_right": {
    "kind": "bone",
    "center": [
-    -0.0754,
-    1.2508,
-    -0.0077
+    -0.0791,
+    1.2344,
+    -0.0057
    ],
-   "radius": 0.1113,
-   "triangles": 2206
+   "radius": 0.1163,
+   "triangles": 1008
   },
   "rib_8_left": {
    "kind": "bone",
    "center": [
-    0.072,
-    1.2211,
-    -0.0164
+    0.0762,
+    1.2019,
+    -0.0146
    ],
-   "radius": 0.1093,
-   "triangles": 1832
+   "radius": 0.1146,
+   "triangles": 988
   },
   "rib_8_right": {
    "kind": "bone",
    "center": [
-    -0.0733,
-    1.2211,
-    -0.0164
+    -0.0763,
+    1.2018,
+    -0.0147
    ],
-   "radius": 0.1093,
-   "triangles": 1832
+   "radius": 0.1147,
+   "triangles": 986
   },
   "rib_9_left": {
    "kind": "bone",
    "center": [
-    0.0712,
-    1.1959,
-    -0.0284
+    0.0758,
+    1.1722,
+    -0.0271
    ],
-   "radius": 0.1018,
-   "triangles": 1666
+   "radius": 0.1099,
+   "triangles": 1000
   },
   "rib_9_right": {
    "kind": "bone",
    "center": [
-    -0.0725,
-    1.1958,
-    -0.0284
+    -0.0758,
+    1.1722,
+    -0.0271
    ],
-   "radius": 0.1018,
-   "triangles": 1666
+   "radius": 0.1099,
+   "triangles": 986
   },
   "sacrum": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    0.9331,
-    -0.0629
+    0,
+    0.9141,
+    -0.0493
    ],
-   "radius": 0.0843,
-   "triangles": 5058
+   "radius": 0.074,
+   "triangles": 5000
   },
   "scaphoid_left": {
    "kind": "bone",
    "center": [
-    0.2612,
-    0.8821,
-    0.019
+    0.2698,
+    0.8454,
+    0.0181
    ],
-   "radius": 0.0129,
-   "triangles": 304
+   "radius": 0.0135,
+   "triangles": 312
   },
   "scaphoid_right": {
    "kind": "bone",
    "center": [
-    -0.2612,
-    0.8822,
-    0.0191
+    -0.2698,
+    0.8454,
+    0.0181
    ],
-   "radius": 0.013,
-   "triangles": 302
+   "radius": 0.0135,
+   "triangles": 312
   },
   "scapula_left": {
    "kind": "bone",
    "center": [
-    0.1118,
-    1.345,
-    -0.0511
+    0.1171,
+    1.3268,
+    -0.0558
    ],
-   "radius": 0.0983,
-   "triangles": 6180
+   "radius": 0.0984,
+   "triangles": 2618
   },
   "scapula_right": {
    "kind": "bone",
    "center": [
-    -0.1118,
-    1.3451,
-    -0.0511
+    -0.1172,
+    1.3269,
+    -0.0558
    ],
-   "radius": 0.0982,
-   "triangles": 5756
+   "radius": 0.0983,
+   "triangles": 2554
   },
   "sphenoid_bone": {
    "kind": "bone",
    "center": [
-    -0.0006,
-    1.5918,
-    0.0177
+    0,
+    1.5761,
+    0.0289
    ],
-   "radius": 0.0638,
-   "triangles": 4238
+   "radius": 0.0628,
+   "triangles": 4640
   },
   "stapes_left": {
    "kind": "bone",
    "center": [
-    0.0394,
-    1.5807,
-    -0.0147
+    0.043,
+    1.5718,
+    -0.0044
    ],
-   "radius": 0.002,
-   "triangles": 1376,
-   "approximate": true
+   "radius": 0.0024,
+   "triangles": 2258
   },
   "stapes_right": {
    "kind": "bone",
    "center": [
-    -0.0396,
-    1.5806,
-    -0.0154
+    -0.043,
+    1.5718,
+    -0.0044
    ],
-   "radius": 0.002,
-   "triangles": 1376,
-   "approximate": true
+   "radius": 0.0024,
+   "triangles": 2240
   },
   "sternum": {
    "kind": "bone",
    "center": [
-    0,
-    1.3227,
-    0.0723
+    -0.0001,
+    1.3032,
+    0.0719
    ],
-   "radius": 0.0888,
-   "triangles": 5566
+   "radius": 0.0976,
+   "triangles": 5880
   },
   "talus_left": {
    "kind": "bone",
    "center": [
-    0.0699,
-    0.064,
-    -0.0228
+    0.0747,
+    0.0585,
+    -0.0366
    ],
-   "radius": 0.0294,
-   "triangles": 1144
+   "radius": 0.0304,
+   "triangles": 1186
   },
   "talus_right": {
    "kind": "bone",
    "center": [
-    -0.0699,
-    0.0641,
-    -0.0228
+    -0.0747,
+    0.0585,
+    -0.0366
    ],
-   "radius": 0.0295,
-   "triangles": 1184
+   "radius": 0.0304,
+   "triangles": 1188
   },
   "temporal_bone_left": {
    "kind": "bone",
    "center": [
-    0.0421,
-    1.5916,
-    -0.0157
+    0.041,
+    1.5767,
+    -0.0034
    ],
-   "radius": 0.0528,
-   "triangles": 2828
+   "radius": 0.0521,
+   "triangles": 5000
   },
   "temporal_bone_right": {
    "kind": "bone",
    "center": [
-    -0.0433,
-    1.5917,
-    -0.0156
+    -0.041,
+    1.5768,
+    -0.0034
    ],
-   "radius": 0.0529,
-   "triangles": 2906
+   "radius": 0.0521,
+   "triangles": 5000
   },
   "tibia_left": {
    "kind": "bone",
    "center": [
-    0.0722,
-    0.262,
-    -0.0168
+    0.0765,
+    0.245,
+    -0.0289
    ],
-   "radius": 0.1912,
-   "triangles": 620
+   "radius": 0.1803,
+   "triangles": 832
   },
   "tibia_right": {
    "kind": "bone",
    "center": [
-    -0.0722,
-    0.2621,
-    -0.0165
+    -0.0765,
+    0.245,
+    -0.0289
    ],
-   "radius": 0.1909,
-   "triangles": 634
+   "radius": 0.1803,
+   "triangles": 840
   },
   "trapezium_left": {
    "kind": "bone",
    "center": [
-    0.2733,
-    0.8739,
-    0.0261
+    0.2822,
+    0.8369,
+    0.0254
    ],
-   "radius": 0.012,
-   "triangles": 348
+   "radius": 0.0125,
+   "triangles": 428
   },
   "trapezium_right": {
    "kind": "bone",
    "center": [
-    -0.2733,
-    0.8739,
-    0.0262
+    -0.2822,
+    0.8369,
+    0.0254
    ],
-   "radius": 0.0122,
-   "triangles": 424
+   "radius": 0.0125,
+   "triangles": 428
   },
   "trapezoid_left": {
    "kind": "bone",
    "center": [
-    0.2678,
-    0.8671,
-    0.021
+    0.2765,
+    0.8299,
+    0.02
    ],
-   "radius": 0.0091,
-   "triangles": 396
+   "radius": 0.0095,
+   "triangles": 354
   },
   "trapezoid_right": {
    "kind": "bone",
    "center": [
-    -0.2677,
-    0.8672,
-    0.021
+    -0.2765,
+    0.8299,
+    0.02
    ],
-   "radius": 0.009,
+   "radius": 0.0095,
    "triangles": 354
   },
   "triquetrum_left": {
    "kind": "bone",
    "center": [
-    0.2373,
-    0.8738,
-    0.0221
+    0.2452,
+    0.8368,
+    0.0214
    ],
-   "radius": 0.0091,
-   "triangles": 300
+   "radius": 0.0094,
+   "triangles": 170
   },
   "triquetrum_right": {
    "kind": "bone",
    "center": [
-    -0.2375,
-    0.8738,
-    0.0222
+    -0.2452,
+    0.8368,
+    0.0214
    ],
-   "radius": 0.0092,
+   "radius": 0.0094,
    "triangles": 170
   },
   "ulna_left": {
    "kind": "bone",
    "center": [
-    0.222,
-    1.007,
-    -0.0161
+    0.2294,
+    0.9741,
+    -0.0188
    ],
-   "radius": 0.1278,
-   "triangles": 434
+   "radius": 0.1322,
+   "triangles": 498
   },
   "ulna_right": {
    "kind": "bone",
    "center": [
-    -0.222,
-    1.0069,
-    -0.0159
+    -0.2294,
+    0.9741,
+    -0.0188
    ],
-   "radius": 0.1277,
-   "triangles": 482
+   "radius": 0.1322,
+   "triangles": 496
   },
   "vertebra_c1": {
    "kind": "bone",
    "center": [
-    -0.0006,
-    1.5499,
-    -0.0359
+    0,
+    1.5337,
+    -0.0214
    ],
-   "radius": 0.0414,
-   "triangles": 1514
+   "radius": 0.0436,
+   "triangles": 1712
   },
   "vertebra_c2": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.5339,
-    -0.0384
+    0,
+    1.5208,
+    -0.026
    ],
    "radius": 0.0328,
-   "triangles": 2028
+   "triangles": 2042
   },
   "vertebra_c3": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.5095,
-    -0.037
+    0,
+    1.4972,
+    -0.0269
    ],
-   "radius": 0.0322,
-   "triangles": 1766
+   "radius": 0.0324,
+   "triangles": 2110
   },
   "vertebra_c4": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.4965,
-    -0.0351
+    0.0001,
+    1.4839,
+    -0.0265
    ],
-   "radius": 0.0304,
-   "triangles": 2062
+   "radius": 0.0326,
+   "triangles": 1716
   },
   "vertebra_c5": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.484,
-    -0.0366
+    0,
+    1.4709,
+    -0.0298
    ],
-   "radius": 0.0331,
-   "triangles": 1934
+   "radius": 0.0343,
+   "triangles": 2058
   },
   "vertebra_c6": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.4713,
-    -0.0396
+    0,
+    1.4568,
+    -0.035
    ],
-   "radius": 0.0358,
-   "triangles": 1928
+   "radius": 0.0368,
+   "triangles": 1884
   },
   "vertebra_c7": {
    "kind": "bone",
    "center": [
-    -0.0006,
-    1.4564,
-    -0.0444
+    0,
+    1.4428,
+    -0.0421
    ],
-   "radius": 0.0367,
-   "triangles": 1520
+   "radius": 0.0396,
+   "triangles": 1770
   },
   "vertebra_l1": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.1217,
-    -0.0306
+    0,
+    1.0947,
+    -0.0292
    ],
-   "radius": 0.046,
-   "triangles": 2404
+   "radius": 0.047,
+   "triangles": 2568
   },
   "vertebra_l2": {
    "kind": "bone",
    "center": [
-    -0.0006,
-    1.0941,
-    -0.0255
+    0,
+    1.0657,
+    -0.0241
    ],
-   "radius": 0.0448,
-   "triangles": 2492
+   "radius": 0.0469,
+   "triangles": 2172
   },
   "vertebra_l3": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.0668,
-    -0.0276
+    0,
+    1.0342,
+    -0.0232
    ],
-   "radius": 0.0458,
-   "triangles": 2454
+   "radius": 0.0462,
+   "triangles": 2514
   },
   "vertebra_l4": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.0391,
-    -0.0317
+    0,
+    1.0058,
+    -0.0241
    ],
-   "radius": 0.0438,
-   "triangles": 2630
+   "radius": 0.0459,
+   "triangles": 3040
   },
   "vertebra_l5": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.0078,
-    -0.0413
+    0,
+    0.9736,
+    -0.0291
    ],
-   "radius": 0.0525,
-   "triangles": 2640
+   "radius": 0.0549,
+   "triangles": 2956
   },
   "vertebra_t1": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.4402,
-    -0.048
+    0,
+    1.4288,
+    -0.0474
    ],
-   "radius": 0.0391,
-   "triangles": 1398
+   "radius": 0.0413,
+   "triangles": 1524
   },
   "vertebra_t10": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.2066,
-    -0.0541
+    0.0001,
+    1.1883,
+    -0.0532
    ],
-   "radius": 0.0459,
-   "triangles": 2160
+   "radius": 0.0475,
+   "triangles": 2486
   },
   "vertebra_t11": {
    "kind": "bone",
    "center": [
-    -0.0006,
-    1.1806,
-    -0.0472
+    0,
+    1.1601,
+    -0.0451
    ],
-   "radius": 0.0463,
-   "triangles": 2006
+   "radius": 0.046,
+   "triangles": 1482
   },
   "vertebra_t12": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.1539,
-    -0.038
+    0,
+    1.1299,
+    -0.0367
    ],
-   "radius": 0.0448,
-   "triangles": 2062
+   "radius": 0.0461,
+   "triangles": 2142
   },
   "vertebra_t2": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.4216,
-    -0.0526
+    0,
+    1.4109,
+    -0.0528
    ],
-   "radius": 0.038,
-   "triangles": 1570
+   "radius": 0.0402,
+   "triangles": 1698
   },
   "vertebra_t3": {
    "kind": "bone",
    "center": [
-    -0.0006,
-    1.4002,
-    -0.061
+    0,
+    1.3896,
+    -0.0615
    ],
-   "radius": 0.042,
-   "triangles": 1696
+   "radius": 0.0434,
+   "triangles": 1852
   },
   "vertebra_t4": {
    "kind": "bone",
    "center": [
-    -0.0006,
-    1.3777,
-    -0.0651
+    0,
+    1.366,
+    -0.0653
    ],
-   "radius": 0.0398,
-   "triangles": 1684
+   "radius": 0.0405,
+   "triangles": 1806
   },
   "vertebra_t5": {
    "kind": "bone",
    "center": [
-    -0.0006,
-    1.3466,
-    -0.067
+    0,
+    1.3381,
+    -0.0661
    ],
-   "radius": 0.0425,
-   "triangles": 1832
+   "radius": 0.0424,
+   "triangles": 1760
   },
   "vertebra_t6": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.3173,
+    0,
+    1.305,
     -0.0668
    ],
-   "radius": 0.0452,
-   "triangles": 1830
+   "radius": 0.0475,
+   "triangles": 1500
   },
   "vertebra_t7": {
    "kind": "bone",
    "center": [
-    -0.0005,
-    1.2887,
-    -0.0662
+    0,
+    1.2768,
+    -0.065
    ],
    "radius": 0.0444,
-   "triangles": 2094
+   "triangles": 2192
   },
   "vertebra_t8": {
    "kind": "bone",
    "center": [
-    -0.0008,
-    1.2615,
-    -0.0635
+    0,
+    1.2468,
+    -0.0634
    ],
-   "radius": 0.0435,
-   "triangles": 2048
+   "radius": 0.0446,
+   "triangles": 1245
   },
   "vertebra_t9": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.2339,
-    -0.0581
+    0,
+    1.2193,
+    -0.0586
    ],
-   "radius": 0.0444,
-   "triangles": 2040
+   "radius": 0.0449,
+   "triangles": 2338
   },
   "vomer": {
    "kind": "bone",
    "center": [
-    -0.0007,
-    1.5745,
-    0.0383
+    0,
+    1.5597,
+    0.0515
    ],
-   "radius": 0.0343,
-   "triangles": 1586
+   "radius": 0.031,
+   "triangles": 732
   },
   "zygomatic_bone_left": {
    "kind": "bone",
    "center": [
-    0.0476,
-    1.5868,
-    0.0416
+    0.047,
+    1.5719,
+    0.0522
    ],
-   "radius": 0.0305,
-   "triangles": 1056
+   "radius": 0.0298,
+   "triangles": 1116
   },
   "zygomatic_bone_right": {
    "kind": "bone",
    "center": [
-    -0.0489,
-    1.5868,
-    0.0416
+    -0.047,
+    1.5719,
+    0.0522
    ],
-   "radius": 0.0303,
-   "triangles": 1146
+   "radius": 0.0298,
+   "triangles": 1118
   },
-  "ctx_context": {
+  "ctx_on_mandible": {
    "kind": "context",
    "center": [
-    -0.0007,
-    1.2678,
-    0.0219
+    0,
+    1.51,
+    0.0631
    ],
-   "radius": 0.2987,
-   "triangles": 81040
+   "radius": 0.0395,
+   "triangles": 8608
+  },
+  "ctx_on_maxilla_left": {
+   "kind": "context",
+   "center": [
+    0.0149,
+    1.5325,
+    0.0695
+   ],
+   "radius": 0.0305,
+   "triangles": 4102
+  },
+  "ctx_on_maxilla_right": {
+   "kind": "context",
+   "center": [
+    -0.0149,
+    1.5324,
+    0.0695
+   ],
+   "radius": 0.0304,
+   "triangles": 4102
+  },
+  "ctx_on_rib_1_left": {
+   "kind": "context",
+   "center": [
+    0.0388,
+    1.3789,
+    0.0397
+   ],
+   "radius": 0.0189,
+   "triangles": 394
+  },
+  "ctx_on_rib_1_right": {
+   "kind": "context",
+   "center": [
+    -0.0388,
+    1.3789,
+    0.0396
+   ],
+   "radius": 0.0189,
+   "triangles": 378
+  },
+  "ctx_on_rib_10_left": {
+   "kind": "context",
+   "center": [
+    0.104,
+    1.0717,
+    0.05
+   ],
+   "radius": 0.0432,
+   "triangles": 258
+  },
+  "ctx_on_rib_10_right": {
+   "kind": "context",
+   "center": [
+    -0.104,
+    1.0717,
+    0.05
+   ],
+   "radius": 0.0432,
+   "triangles": 260
+  },
+  "ctx_on_rib_2_left": {
+   "kind": "context",
+   "center": [
+    0.0293,
+    1.3423,
+    0.0696
+   ],
+   "radius": 0.0195,
+   "triangles": 336
+  },
+  "ctx_on_rib_2_right": {
+   "kind": "context",
+   "center": [
+    -0.0293,
+    1.3422,
+    0.0696
+   ],
+   "radius": 0.0194,
+   "triangles": 354
+  },
+  "ctx_on_rib_3_left": {
+   "kind": "context",
+   "center": [
+    0.0341,
+    1.311,
+    0.0799
+   ],
+   "radius": 0.0213,
+   "triangles": 334
+  },
+  "ctx_on_rib_3_right": {
+   "kind": "context",
+   "center": [
+    -0.034,
+    1.311,
+    0.0799
+   ],
+   "radius": 0.0213,
+   "triangles": 316
+  },
+  "ctx_on_rib_4_left": {
+   "kind": "context",
+   "center": [
+    0.0435,
+    1.2823,
+    0.0911
+   ],
+   "radius": 0.0302,
+   "triangles": 298
+  },
+  "ctx_on_rib_4_right": {
+   "kind": "context",
+   "center": [
+    -0.0434,
+    1.2823,
+    0.091
+   ],
+   "radius": 0.0303,
+   "triangles": 292
+  },
+  "ctx_on_rib_5_left": {
+   "kind": "context",
+   "center": [
+    0.0518,
+    1.2511,
+    0.1015
+   ],
+   "radius": 0.0375,
+   "triangles": 256
+  },
+  "ctx_on_rib_5_right": {
+   "kind": "context",
+   "center": [
+    -0.0518,
+    1.2511,
+    0.1015
+   ],
+   "radius": 0.0375,
+   "triangles": 266
+  },
+  "ctx_on_rib_6_left": {
+   "kind": "context",
+   "center": [
+    0.055,
+    1.2244,
+    0.1014
+   ],
+   "radius": 0.0493,
+   "triangles": 270
+  },
+  "ctx_on_rib_6_right": {
+   "kind": "context",
+   "center": [
+    -0.055,
+    1.2245,
+    0.1015
+   ],
+   "radius": 0.0494,
+   "triangles": 258
+  },
+  "ctx_on_rib_7_left": {
+   "kind": "context",
+   "center": [
+    0.0604,
+    1.1973,
+    0.0936
+   ],
+   "radius": 0.064,
+   "triangles": 310
+  },
+  "ctx_on_rib_7_right": {
+   "kind": "context",
+   "center": [
+    -0.0603,
+    1.1974,
+    0.0936
+   ],
+   "radius": 0.0639,
+   "triangles": 298
+  },
+  "ctx_on_rib_8_left": {
+   "kind": "context",
+   "center": [
+    0.0778,
+    1.152,
+    0.0833
+   ],
+   "radius": 0.0557,
+   "triangles": 338
+  },
+  "ctx_on_rib_8_right": {
+   "kind": "context",
+   "center": [
+    -0.0778,
+    1.152,
+    0.0833
+   ],
+   "radius": 0.0557,
+   "triangles": 334
+  },
+  "ctx_on_rib_9_left": {
+   "kind": "context",
+   "center": [
+    0.0962,
+    1.1057,
+    0.0635
+   ],
+   "radius": 0.0469,
+   "triangles": 394
+  },
+  "ctx_on_rib_9_right": {
+   "kind": "context",
+   "center": [
+    -0.0962,
+    1.1057,
+    0.0635
+   ],
+   "radius": 0.0469,
+   "triangles": 386
+  },
+  "ctx_on_vertebra_c2": {
+   "kind": "context",
+   "center": [
+    0,
+    1.5091,
+    -0.0088
+   ],
+   "radius": 0.012,
+   "triangles": 536
+  },
+  "ctx_on_vertebra_c3": {
+   "kind": "context",
+   "center": [
+    0,
+    1.4937,
+    -0.008
+   ],
+   "radius": 0.0129,
+   "triangles": 414
+  },
+  "ctx_on_vertebra_c4": {
+   "kind": "context",
+   "center": [
+    0,
+    1.477,
+    -0.0085
+   ],
+   "radius": 0.0144,
+   "triangles": 486
+  },
+  "ctx_on_vertebra_c5": {
+   "kind": "context",
+   "center": [
+    0,
+    1.4612,
+    -0.0105
+   ],
+   "radius": 0.016,
+   "triangles": 462
+  },
+  "ctx_on_vertebra_c6": {
+   "kind": "context",
+   "center": [
+    0,
+    1.4466,
+    -0.0144
+   ],
+   "radius": 0.0155,
+   "triangles": 464
+  },
+  "ctx_on_vertebra_c7": {
+   "kind": "context",
+   "center": [
+    0,
+    1.433,
+    -0.0194
+   ],
+   "radius": 0.0179,
+   "triangles": 576
+  },
+  "ctx_on_vertebra_l1": {
+   "kind": "context",
+   "center": [
+    0,
+    1.0912,
+    -0.0048
+   ],
+   "radius": 0.025,
+   "triangles": 790
+  },
+  "ctx_on_vertebra_l2": {
+   "kind": "context",
+   "center": [
+    0,
+    1.0572,
+    -0.0006
+   ],
+   "radius": 0.0243,
+   "triangles": 678
+  },
+  "ctx_on_vertebra_l3": {
+   "kind": "context",
+   "center": [
+    0,
+    1.0208,
+    -0.0002
+   ],
+   "radius": 0.0257,
+   "triangles": 772
+  },
+  "ctx_on_vertebra_l4": {
+   "kind": "context",
+   "center": [
+    0,
+    0.9871,
+    -0.0052
+   ],
+   "radius": 0.0268,
+   "triangles": 676
+  },
+  "ctx_on_vertebra_l5": {
+   "kind": "context",
+   "center": [
+    0,
+    0.9526,
+    -0.0152
+   ],
+   "radius": 0.0261,
+   "triangles": 660
+  },
+  "ctx_on_vertebra_t1": {
+   "kind": "context",
+   "center": [
+    0,
+    1.4156,
+    -0.0258
+   ],
+   "radius": 0.0176,
+   "triangles": 504
+  },
+  "ctx_on_vertebra_t10": {
+   "kind": "context",
+   "center": [
+    0,
+    1.1868,
+    -0.0304
+   ],
+   "radius": 0.0232,
+   "triangles": 820
+  },
+  "ctx_on_vertebra_t11": {
+   "kind": "context",
+   "center": [
+    0,
+    1.1559,
+    -0.0216
+   ],
+   "radius": 0.0254,
+   "triangles": 786
+  },
+  "ctx_on_vertebra_t12": {
+   "kind": "context",
+   "center": [
+    0,
+    1.1233,
+    -0.0129
+   ],
+   "radius": 0.0244,
+   "triangles": 684
+  },
+  "ctx_on_vertebra_t2": {
+   "kind": "context",
+   "center": [
+    0,
+    1.3956,
+    -0.0327
+   ],
+   "radius": 0.0191,
+   "triangles": 536
+  },
+  "ctx_on_vertebra_t3": {
+   "kind": "context",
+   "center": [
+    0,
+    1.3746,
+    -0.041
+   ],
+   "radius": 0.0198,
+   "triangles": 580
+  },
+  "ctx_on_vertebra_t4": {
+   "kind": "context",
+   "center": [
+    0,
+    1.3519,
+    -0.0475
+   ],
+   "radius": 0.0211,
+   "triangles": 642
+  },
+  "ctx_on_vertebra_t5": {
+   "kind": "context",
+   "center": [
+    0,
+    1.3263,
+    -0.0498
+   ],
+   "radius": 0.0211,
+   "triangles": 726
+  },
+  "ctx_on_vertebra_t6": {
+   "kind": "context",
+   "center": [
+    0,
+    1.2993,
+    -0.0509
+   ],
+   "radius": 0.0227,
+   "triangles": 844
+  },
+  "ctx_on_vertebra_t7": {
+   "kind": "context",
+   "center": [
+    0,
+    1.2713,
+    -0.0482
+   ],
+   "radius": 0.0236,
+   "triangles": 864
+  },
+  "ctx_on_vertebra_t8": {
+   "kind": "context",
+   "center": [
+    0,
+    1.2443,
+    -0.0439
+   ],
+   "radius": 0.022,
+   "triangles": 802
+  },
+  "ctx_on_vertebra_t9": {
+   "kind": "context",
+   "center": [
+    0,
+    1.2155,
+    -0.038
+   ],
+   "radius": 0.0219,
+   "triangles": 706
   }
  }
 }

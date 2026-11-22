@@ -4,7 +4,7 @@ import { useFrame, useThree } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib'
 import { useViewer, type ViewName } from '../state/store'
-import { useHud, INSETS } from '../state/hud'
+import { useHud, INSETS, topInset } from '../state/hud'
 import { registry } from './registry'
 
 const DIRS: Record<ViewName, THREE.Vector3> = {
@@ -54,7 +54,7 @@ export function CameraRig() {
   /** Distance at which a half-width × half-height extent fits the free screen area, with a small margin. */
   const fitBox = (halfW: number, halfH: number, bottomInset: number) => {
     const tanV = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2)
-    const freeFrac = Math.max(0.35, (size.height - INSETS.top - bottomInset) / size.height)
+    const freeFrac = Math.max(0.35, (size.height - topInset(useViewer.getState().explodeOpen) - bottomInset) / size.height)
     const tanH = tanV * camera.aspect
     return Math.max(halfH / (tanV * freeFrac), halfW / (tanH * 0.9)) * 1.06
   }
@@ -62,7 +62,7 @@ export function CameraRig() {
   /** Orbit target that puts `point` in the middle of the free screen area. */
   const framedTarget = (point: THREE.Vector3, dir: THREE.Vector3, dist: number, bottomInset: number) => {
     const vFov = THREE.MathUtils.degToRad(camera.fov)
-    const shiftPx = (INSETS.top - bottomInset) / 2
+    const shiftPx = (topInset(useViewer.getState().explodeOpen) - bottomInset) / 2
     const shift = (shiftPx / size.height) * 2 * dist * Math.tan(vFov / 2)
     const right = new THREE.Vector3().crossVectors(camera.up, dir)
     if (right.lengthSq() < 1e-6) right.set(1, 0, 0)
@@ -126,6 +126,9 @@ export function CameraRig() {
     if (!command || !c || !home.current) return
     const bottom = useViewer.getState().selectedId ? INSETS.panel : INSETS.bottom
     if (command.kind === 'reset') {
+      // Frame the skeleton as it is now (exploded or not).
+      const box = new THREE.Box3().setFromObject(registry.root!)
+      home.current = { center: box.getCenter(new THREE.Vector3()), size: box.getSize(new THREE.Vector3()) }
       const v = homeView()
       flyTo(v.target, v.dir, v.dist, 900)
     } else if (command.kind === 'view') {

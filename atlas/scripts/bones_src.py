@@ -195,25 +195,24 @@ bone("mandible", "Mandible", "Mandibula", "Skull", "midline", "irregular",
 
 # =============================================================== Auditory ossicles
 
-OSS_NOTE = "3D shape is simplified: the source dataset has no ossicle meshes."
 paired("malleus", "Malleus", "Malleus", "Skull", "irregular",
        ["Head (in the epitympanic recess)", "Neck", "Handle (manubrium) attached to the tympanic membrane",
         "Lateral and anterior processes"],
        ["incus_{s}"],
        "Fixation of the ossicular chain causes conductive hearing loss.",
-       spellings=["hammer"], subregion="Auditory ossicles", note=OSS_NOTE)
+       spellings=["hammer"], subregion="Auditory ossicles")
 paired("incus", "Incus", "Incus", "Skull", "irregular",
        ["Body (articulates with the malleus head)", "Short process", "Long process",
         "Lenticular process (articulates with the stapes)"],
        ["malleus_{s}", "stapes_{s}"],
        "Erosion of the long process of the incus is common in chronic otitis media.",
-       spellings=["anvil"], subregion="Auditory ossicles", note=OSS_NOTE)
+       spellings=["anvil"], subregion="Auditory ossicles")
 paired("stapes", "Stapes", "Stapes", "Skull", "irregular",
        ["Smallest bone in the body", "Head and neck", "Anterior and posterior crura",
         "Base (footplate) in the oval window"],
        ["incus_{s}"],
        "Otosclerosis fixes the stapes footplate in the oval window; treated by stapedectomy.",
-       spellings=["stirrup"], subregion="Auditory ossicles", note=OSS_NOTE)
+       spellings=["stirrup"], subregion="Auditory ossicles")
 
 # =============================================================== Neck
 
@@ -325,8 +324,7 @@ bone("coccyx", "Coccyx", "Os coccygis", "Vertebral column", "midline", "irregula
      ["Three to five fused rudimentary vertebrae", "Coccygeal cornua", "Attachment for the anococcygeal ligament and gluteus maximus"],
      ["sacrum"],
      "Coccydynia (tailbone pain) often follows a fall onto the buttocks.",
-     ["tailbone", "tail bone", "os coccygis"], subregion="Sacrum and coccyx",
-     note="In the male model the coccyx is an approximate shape: BodyParts3D has no coccyx mesh. The female model uses a real scan.")
+     ["tailbone", "tail bone", "os coccygis"], subregion="Sacrum and coccyx")
 
 # =============================================================== Thorax
 

@@ -24,6 +24,5 @@
   ],
   "reviewStatus": "draft",
   "reviewer": "",
-  "lastUpdated": "2026-11-22",
-  "modelNote": "3D shape is simplified: the source dataset has no ossicle meshes."
+  "lastUpdated": "2026-11-22"
 }

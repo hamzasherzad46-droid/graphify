@@ -4,6 +4,7 @@ import { usePrefs, useViewer } from './state/store'
 import { TopBar } from './ui/TopBar'
 import { Dock } from './ui/Dock'
 import { HudReadout } from './ui/HudReadout'
+import { ExplodeBar } from './ui/ExplodeBar'
 import { InfoPanel } from './ui/InfoPanel'
 import { LabelsOverlay } from './ui/LabelsOverlay'
 import { Loader } from './ui/Loader'
@@ -29,6 +30,7 @@ export default function App() {
       <LabelsOverlay />
       <TopBar onMenu={() => setMenu(true)} />
       <HudReadout />
+      <ExplodeBar />
       <Dock />
       <InfoPanel />
       <Loader done={loaded} />

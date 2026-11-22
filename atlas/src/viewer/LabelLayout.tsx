@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import * as THREE from 'three'
 import { useThree } from '@react-three/fiber'
 import { useViewer } from '../state/store'
-import { useHud, INSETS, type LabelItem } from '../state/hud'
+import { useHud, INSETS, topInset, type LabelItem } from '../state/hud'
 import { BONE_BY_ID } from '../data/bones'
 import { registry, anchors } from './registry'
 
@@ -25,8 +25,8 @@ function textWidth(s: string) {
  * the camera comes to rest (labels fade out while it moves).
  */
 function layout(camera: THREE.PerspectiveCamera, W: number, H: number): LabelItem[] {
-  const { selectedId, ghost } = useViewer.getState()
-  const top = INSETS.top + 6
+  const { selectedId, ghost, explodeOpen } = useViewer.getState()
+  const top = topInset(explodeOpen) + 6
   const bottom = H - (selectedId ? INSETS.panel : INSETS.bottom) - 6
   const capacity = Math.min(MAX_PER_SIDE, Math.max(0, Math.floor((bottom - top) / ROW)))
   if (capacity === 0) return []
@@ -104,6 +104,8 @@ export function LabelLayout() {
   const hidden = useViewer((s) => s.hidden)
   const isolated = useViewer((s) => s.isolated)
   const ghost = useViewer((s) => s.ghost)
+  const explodeOpen = useViewer((s) => s.explodeOpen)
+  const bonesVersion = useHud((s) => s.bonesVersion)
 
   useEffect(() => {
     if (!on || !loaded || !controls) {
@@ -126,7 +128,7 @@ export function LabelLayout() {
       controls.removeEventListener('change', onChange)
       window.clearTimeout(timer)
     }
-  }, [on, loaded, controls, camera, size, selectedId, hidden, isolated, ghost])
+  }, [on, loaded, controls, camera, size, selectedId, hidden, isolated, ghost, explodeOpen, bonesVersion])
 
   return null
 }

@@ -14,4 +14,5 @@ export const IsolateIcon = (p: P) => (<svg {...base(p)}><rect x="8" y="8" width=
 export const HideIcon = (p: P) => (<svg {...base(p)}><path d="M3 12s3.5-6 9-6c1.6 0 3 .5 4.2 1.2M21 12s-3.5 6-9 6c-1.6 0-3-.5-4.2-1.2" /><path d="M4 20L20 4" /></svg>)
 export const FlagIcon = (p: P) => (<svg {...base(p)}><path d="M5 21V4M5 4h11l-2 4 2 4H5" /></svg>)
 export const ChevronIcon = (p: P) => (<svg {...base(p)}><path d="M6 15l6-6 6 6" /></svg>)
+export const ExplodeIcon = (p: P) => (<svg {...base(p)}><rect x="9.5" y="9.5" width="5" height="5" rx="0.8" /><path d="M4 4l3.5 3.5M20 4l-3.5 3.5M4 20l3.5-3.5M20 20l-3.5-3.5" /><path d="M4 7.5V4h3.5M20 7.5V4h-3.5M4 16.5V20h3.5M20 16.5V20h-3.5" /></svg>)
 export const InfoIcon = (p: P) => (<svg {...base(p)}><circle cx="12" cy="12" r="8.5" /><path d="M12 11v5M12 8h.01" /></svg>)

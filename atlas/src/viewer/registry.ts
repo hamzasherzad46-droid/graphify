@@ -8,6 +8,9 @@ export const registry = {
   root: null as Group | null,
   bones: new Map<string, Mesh>(),
   context: [] as Mesh[],
+  /** Context mesh → the bone it moves and hides with. */
+  host: new Map<Mesh, string>(),
+  contextRest: new Map<Mesh, Vector3>(),
   rest: new Map<string, Vector3>(),
   radius: new Map<string, number>(),
 }

@@ -19,7 +19,12 @@ export const useHud = create<{
   elevation: number
   labels: LabelItem[]
   moving: boolean
-}>(() => ({ orientation: 'Anterior', azimuth: 0, elevation: 0, labels: [], moving: false }))
+  /** Bumped when bones finish moving (explode, drag), so labels are laid out again. */
+  bonesVersion: number
+}>(() => ({ orientation: 'Anterior', azimuth: 0, elevation: 0, labels: [], moving: false, bonesVersion: 0 }))
 
 /** Screen space the overlays cover (px), so the 3D view frames bones inside the free area. */
-export const INSETS = { top: 124, bottom: 92, panel: 236 }
+export const INSETS = { top: 124, bottom: 92, panel: 236, explodeBar: 96 }
+
+/** Top inset in px, including the explode controls when they are open. */
+export const topInset = (explodeOpen: boolean) => INSETS.top + (explodeOpen ? INSETS.explodeBar : 0)

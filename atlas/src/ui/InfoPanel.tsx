@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { BONE_BY_ID, SIDE_SHORT } from '../data/bones'
 import type { Bone } from '../data/types'
+import { meshInfo, modelSource } from '../data/models'
 import { usePrefs, useViewer } from '../state/store'
 import { ChevronIcon, CloseIcon, FlagIcon, FocusIcon, GhostIcon, HideIcon, IsolateIcon } from './Icons'
 import { ReportSheet } from './ReportSheet'
@@ -12,6 +13,7 @@ export function InfoPanel() {
   const id = useViewer((s) => s.selectedId)
   const expanded = useViewer((s) => s.panelExpanded)
   const ghost = useViewer((s) => s.ghost)
+  const sex = useViewer((s) => s.sex)
   const v = useViewer.getState
   const override = usePrefs((s) => (id ? s.reviewOverrides[id] : undefined))
   const reviewerMode = usePrefs((s) => s.reviewerMode)
@@ -132,7 +134,17 @@ export function InfoPanel() {
                   <p className="clinical">{b.clinical}</p>
                 </section>
               )}
-              {b.modelNote && <p className="model-note">{b.modelNote}</p>}
+              {b.sexDifferences && (
+                <section>
+                  <h3>Female and male</h3>
+                  <p>{b.sexDifferences}</p>
+                </section>
+              )}
+              <section>
+                <h3>3D model ({sex})</h3>
+                <p className="muted small">{modelSource(sex, b.id)}</p>
+                {b.modelNote && meshInfo(sex, b.id)?.approximate && <p className="model-note">{b.modelNote}</p>}
+              </section>
               <footer className="panel-foot">
                 <button className="report" onClick={() => setReporting(true)}>
                   <FlagIcon /> Report an error

@@ -78,7 +78,7 @@ export const useViewer = create<ViewerState>((set, get) => ({
   showAll: () => set({ hidden: [], isolated: null }),
   setGhost: (ghost) => set({ ghost }),
   setLabels: (labels) => set({ labels }),
-  setSex: (sex) => set({ sex }),
+  setSex: (sex) => set((s) => (s.sex === sex ? {} : { sex, loaded: false })),
   setPanelExpanded: (panelExpanded) => set({ panelExpanded }),
   setLoaded: (loaded) => set({ loaded }),
 }))

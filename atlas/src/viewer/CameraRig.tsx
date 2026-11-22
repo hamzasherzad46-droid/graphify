@@ -46,6 +46,7 @@ export function CameraRig() {
   const command = useViewer((s) => s.camera)
   const loaded = useViewer((s) => s.loaded)
   const home = useRef<{ center: THREE.Vector3; size: THREE.Vector3 } | null>(null)
+  const first = useRef(true)
 
   /** Distance that fits a sphere of `radius` inside the free screen area (between the overlays). */
   const fitDistance = (radius: number, bottomInset: number) => fitBox(radius, radius, bottomInset) + radius * 0.5
@@ -104,6 +105,13 @@ export function CameraRig() {
     if (!loaded || !registry.root || !controls.current) return
     const box = new THREE.Box3().setFromObject(registry.root)
     home.current = { center: box.getCenter(new THREE.Vector3()), size: box.getSize(new THREE.Vector3()) }
+    const sel = useViewer.getState().selectedId
+    if (sel && home.current && camera.position.lengthSq() > 0 && first.current === false) {
+      // Switching skeletons keeps the selected bone in view.
+      useViewer.getState().focus(sel)
+      return
+    }
+    first.current = false
     const { target, dir, dist } = homeView()
     controls.current.target.copy(target)
     camera.position.copy(target).addScaledVector(dir, dist)

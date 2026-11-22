@@ -15,7 +15,7 @@ export function Disclaimer({ onClose }: { onClose?: () => void }) {
           This is a <strong>beta</strong>. Bone content is under academic review: each bone shows whether it is a draft or has been
           reviewed. If you spot a mistake, use “Report an error” on that bone.
         </p>
-        <p className="muted small">3D models are based on BodyParts3D (© DBCLS, CC BY 4.0). Full credits are in the menu.</p>
+        <p className="muted small">3D models are based on BodyParts3D (© DBCLS) and the Visible Human Female (HuBMAP), both CC BY 4.0. Full credits are in the menu.</p>
         <div className="modal-actions">
           <button
             className="btn primary wide"

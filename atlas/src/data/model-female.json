@@ -1,0 +1,2289 @@
+{
+ "sex": "female",
+ "source": "Visible Human Female via HuBMAP HRA v1.5 (CC BY 4.0) + BodyParts3D 4.0 (© DBCLS, CC BY 4.0), fitted",
+ "triangles": 353434,
+ "meshes": {
+  "calcaneus_left": {
+   "kind": "bone",
+   "center": [
+    0.139,
+    0.0227,
+    -0.0998
+   ],
+   "radius": 0.0385,
+   "triangles": 1122,
+   "origin": "derived"
+  },
+  "calcaneus_right": {
+   "kind": "bone",
+   "center": [
+    -0.1457,
+    0.0229,
+    -0.0954
+   ],
+   "radius": 0.0384,
+   "triangles": 1076,
+   "origin": "derived"
+  },
+  "capitate_left": {
+   "kind": "bone",
+   "center": [
+    0.24,
+    0.824,
+    -0.1068
+   ],
+   "radius": 0.0116,
+   "triangles": 388,
+   "origin": "derived"
+  },
+  "capitate_right": {
+   "kind": "bone",
+   "center": [
+    -0.2235,
+    0.8144,
+    -0.1023
+   ],
+   "radius": 0.0117,
+   "triangles": 406,
+   "origin": "derived"
+  },
+  "clavicle_left": {
+   "kind": "bone",
+   "center": [
+    0.0672,
+    1.3054,
+    -0.0628
+   ],
+   "radius": 0.0702,
+   "triangles": 826,
+   "origin": "derived"
+  },
+  "clavicle_right": {
+   "kind": "bone",
+   "center": [
+    -0.0717,
+    1.3027,
+    -0.0616
+   ],
+   "radius": 0.07,
+   "triangles": 820,
+   "origin": "derived"
+  },
+  "coccyx": {
+   "kind": "bone",
+   "center": [
+    0.0004,
+    0.8094,
+    -0.1593
+   ],
+   "radius": 0.0237,
+   "triangles": 1390,
+   "origin": "scan"
+  },
+  "cuboid_left": {
+   "kind": "bone",
+   "center": [
+    0.1666,
+    0.0314,
+    -0.0664
+   ],
+   "radius": 0.0175,
+   "triangles": 806,
+   "origin": "derived"
+  },
+  "cuboid_right": {
+   "kind": "bone",
+   "center": [
+    -0.1736,
+    0.0321,
+    -0.0621
+   ],
+   "radius": 0.0176,
+   "triangles": 822,
+   "origin": "derived"
+  },
+  "ethmoid_bone": {
+   "kind": "bone",
+   "center": [
+    -0.0053,
+    1.4862,
+    0.0119
+   ],
+   "radius": 0.0269,
+   "triangles": 8618,
+   "origin": "derived"
+  },
+  "femur_left": {
+   "kind": "bone",
+   "center": [
+    0.125,
+    0.606,
+    -0.0699
+   ],
+   "radius": 0.2136,
+   "triangles": 3599,
+   "origin": "scan"
+  },
+  "femur_right": {
+   "kind": "bone",
+   "center": [
+    -0.1296,
+    0.606,
+    -0.0661
+   ],
+   "radius": 0.2136,
+   "triangles": 3599,
+   "origin": "scan"
+  },
+  "fibula_left": {
+   "kind": "bone",
+   "center": [
+    0.1634,
+    0.2132,
+    -0.1074
+   ],
+   "radius": 0.169,
+   "triangles": 1210,
+   "origin": "scan"
+  },
+  "fibula_right": {
+   "kind": "bone",
+   "center": [
+    -0.1681,
+    0.2132,
+    -0.1037
+   ],
+   "radius": 0.169,
+   "triangles": 1210,
+   "origin": "scan"
+  },
+  "foot_distal_phalanx_1_left": {
+   "kind": "bone",
+   "center": [
+    0.1974,
+    0.0102,
+    0.043
+   ],
+   "radius": 0.013,
+   "triangles": 366,
+   "origin": "derived"
+  },
+  "foot_distal_phalanx_1_right": {
+   "kind": "bone",
+   "center": [
+    -0.2053,
+    0.0115,
+    0.0467
+   ],
+   "radius": 0.0129,
+   "triangles": 404,
+   "origin": "derived"
+  },
+  "foot_distal_phalanx_2_left": {
+   "kind": "bone",
+   "center": [
+    0.2192,
+    0.0094,
+    0.0439
+   ],
+   "radius": 0.0062,
+   "triangles": 238,
+   "origin": "derived"
+  },
+  "foot_distal_phalanx_2_right": {
+   "kind": "bone",
+   "center": [
+    -0.227,
+    0.0109,
+    0.0475
+   ],
+   "radius": 0.0063,
+   "triangles": 196,
+   "origin": "derived"
+  },
+  "foot_distal_phalanx_3_left": {
+   "kind": "bone",
+   "center": [
+    0.2294,
+    0.0091,
+    0.0337
+   ],
+   "radius": 0.0057,
+   "triangles": 336,
+   "origin": "derived"
+  },
+  "foot_distal_phalanx_3_right": {
+   "kind": "bone",
+   "center": [
+    -0.2371,
+    0.0106,
+    0.037
+   ],
+   "radius": 0.0057,
+   "triangles": 258,
+   "origin": "derived"
+  },
+  "foot_distal_phalanx_4_left": {
+   "kind": "bone",
+   "center": [
+    0.2356,
+    0.0092,
+    0.0172
+   ],
+   "radius": 0.0058,
+   "triangles": 226,
+   "origin": "derived"
+  },
+  "foot_distal_phalanx_4_right": {
+   "kind": "bone",
+   "center": [
+    -0.2432,
+    0.0109,
+    0.0206
+   ],
+   "radius": 0.0058,
+   "triangles": 240,
+   "origin": "derived"
+  },
+  "foot_distal_phalanx_5_left": {
+   "kind": "bone",
+   "center": [
+    0.2382,
+    0.0082,
+    -0.0011
+   ],
+   "radius": 0.0051,
+   "triangles": 220,
+   "origin": "derived"
+  },
+  "foot_distal_phalanx_5_right": {
+   "kind": "bone",
+   "center": [
+    -0.2456,
+    0.0098,
+    0.0023
+   ],
+   "radius": 0.0052,
+   "triangles": 210,
+   "origin": "derived"
+  },
+  "foot_middle_phalanx_2_left": {
+   "kind": "bone",
+   "center": [
+    0.2126,
+    0.0116,
+    0.0345
+   ],
+   "radius": 0.0082,
+   "triangles": 322,
+   "origin": "derived"
+  },
+  "foot_middle_phalanx_2_right": {
+   "kind": "bone",
+   "center": [
+    -0.2205,
+    0.0131,
+    0.0381
+   ],
+   "radius": 0.0082,
+   "triangles": 258,
+   "origin": "derived"
+  },
+  "foot_middle_phalanx_3_left": {
+   "kind": "bone",
+   "center": [
+    0.2235,
+    0.0104,
+    0.025
+   ],
+   "radius": 0.0079,
+   "triangles": 288,
+   "origin": "derived"
+  },
+  "foot_middle_phalanx_3_right": {
+   "kind": "bone",
+   "center": [
+    -0.2311,
+    0.0121,
+    0.0284
+   ],
+   "radius": 0.0079,
+   "triangles": 292,
+   "origin": "derived"
+  },
+  "foot_middle_phalanx_4_left": {
+   "kind": "bone",
+   "center": [
+    0.2303,
+    0.0096,
+    0.0099
+   ],
+   "radius": 0.0066,
+   "triangles": 280,
+   "origin": "derived"
+  },
+  "foot_middle_phalanx_4_right": {
+   "kind": "bone",
+   "center": [
+    -0.2378,
+    0.0111,
+    0.0134
+   ],
+   "radius": 0.0066,
+   "triangles": 342,
+   "origin": "derived"
+  },
+  "foot_middle_phalanx_5_left": {
+   "kind": "bone",
+   "center": [
+    0.2346,
+    0.0086,
+    -0.0059
+   ],
+   "radius": 0.0043,
+   "triangles": 224,
+   "origin": "derived"
+  },
+  "foot_middle_phalanx_5_right": {
+   "kind": "bone",
+   "center": [
+    -0.242,
+    0.0102,
+    -0.0026
+   ],
+   "radius": 0.0044,
+   "triangles": 136,
+   "origin": "derived"
+  },
+  "foot_proximal_phalanx_1_left": {
+   "kind": "bone",
+   "center": [
+    0.1835,
+    0.0132,
+    0.0261
+   ],
+   "radius": 0.0172,
+   "triangles": 502,
+   "origin": "derived"
+  },
+  "foot_proximal_phalanx_1_right": {
+   "kind": "bone",
+   "center": [
+    -0.1913,
+    0.0143,
+    0.0301
+   ],
+   "radius": 0.0171,
+   "triangles": 468,
+   "origin": "derived"
+  },
+  "foot_proximal_phalanx_2_left": {
+   "kind": "bone",
+   "center": [
+    0.2014,
+    0.0136,
+    0.0189
+   ],
+   "radius": 0.0141,
+   "triangles": 374,
+   "origin": "derived"
+  },
+  "foot_proximal_phalanx_2_right": {
+   "kind": "bone",
+   "center": [
+    -0.2091,
+    0.0149,
+    0.0225
+   ],
+   "radius": 0.014,
+   "triangles": 392,
+   "origin": "derived"
+  },
+  "foot_proximal_phalanx_3_left": {
+   "kind": "bone",
+   "center": [
+    0.2121,
+    0.0126,
+    0.0094
+   ],
+   "radius": 0.0137,
+   "triangles": 388,
+   "origin": "derived"
+  },
+  "foot_proximal_phalanx_3_right": {
+   "kind": "bone",
+   "center": [
+    -0.2197,
+    0.0138,
+    0.0129
+   ],
+   "radius": 0.0137,
+   "triangles": 398,
+   "origin": "derived"
+  },
+  "foot_proximal_phalanx_4_left": {
+   "kind": "bone",
+   "center": [
+    0.2192,
+    0.0116,
+    -0.003
+   ],
+   "radius": 0.0133,
+   "triangles": 418,
+   "origin": "derived"
+  },
+  "foot_proximal_phalanx_4_right": {
+   "kind": "bone",
+   "center": [
+    -0.2267,
+    0.013,
+    0.0004
+   ],
+   "radius": 0.0133,
+   "triangles": 418,
+   "origin": "derived"
+  },
+  "foot_proximal_phalanx_5_left": {
+   "kind": "bone",
+   "center": [
+    0.2254,
+    0.0095,
+    -0.0175
+   ],
+   "radius": 0.0133,
+   "triangles": 386,
+   "origin": "derived"
+  },
+  "foot_proximal_phalanx_5_right": {
+   "kind": "bone",
+   "center": [
+    -0.2327,
+    0.0108,
+    -0.014
+   ],
+   "radius": 0.0133,
+   "triangles": 386,
+   "origin": "derived"
+  },
+  "frontal_bone": {
+   "kind": "bone",
+   "center": [
+    -0.0053,
+    1.5423,
+    0.0101
+   ],
+   "radius": 0.0615,
+   "triangles": 5112,
+   "origin": "derived"
+  },
+  "hamate_left": {
+   "kind": "bone",
+   "center": [
+    0.229,
+    0.8216,
+    -0.1029
+   ],
+   "radius": 0.0119,
+   "triangles": 440,
+   "origin": "derived"
+  },
+  "hamate_right": {
+   "kind": "bone",
+   "center": [
+    -0.2123,
+    0.8123,
+    -0.0989
+   ],
+   "radius": 0.0116,
+   "triangles": 490,
+   "origin": "derived"
+  },
+  "hand_distal_phalanx_1_left": {
+   "kind": "bone",
+   "center": [
+    0.2968,
+    0.7636,
+    -0.072
+   ],
+   "radius": 0.0122,
+   "triangles": 262,
+   "origin": "derived"
+  },
+  "hand_distal_phalanx_1_right": {
+   "kind": "bone",
+   "center": [
+    -0.2765,
+    0.7514,
+    -0.0669
+   ],
+   "radius": 0.0124,
+   "triangles": 228,
+   "origin": "derived"
+  },
+  "hand_distal_phalanx_2_left": {
+   "kind": "bone",
+   "center": [
+    0.2879,
+    0.7066,
+    -0.067
+   ],
+   "radius": 0.0095,
+   "triangles": 318,
+   "origin": "derived"
+  },
+  "hand_distal_phalanx_2_right": {
+   "kind": "bone",
+   "center": [
+    -0.2657,
+    0.695,
+    -0.062
+   ],
+   "radius": 0.0096,
+   "triangles": 208,
+   "origin": "derived"
+  },
+  "hand_distal_phalanx_3_left": {
+   "kind": "bone",
+   "center": [
+    0.2608,
+    0.6971,
+    -0.0601
+   ],
+   "radius": 0.0092,
+   "triangles": 260,
+   "origin": "derived"
+  },
+  "hand_distal_phalanx_3_right": {
+   "kind": "bone",
+   "center": [
+    -0.2382,
+    0.6865,
+    -0.0554
+   ],
+   "radius": 0.009,
+   "triangles": 170,
+   "origin": "derived"
+  },
+  "hand_distal_phalanx_4_left": {
+   "kind": "bone",
+   "center": [
+    0.2366,
+    0.7051,
+    -0.0589
+   ],
+   "radius": 0.0077,
+   "triangles": 192,
+   "origin": "derived"
+  },
+  "hand_distal_phalanx_4_right": {
+   "kind": "bone",
+   "center": [
+    -0.2142,
+    0.6957,
+    -0.0548
+   ],
+   "radius": 0.0078,
+   "triangles": 112,
+   "origin": "derived"
+  },
+  "hand_distal_phalanx_5_left": {
+   "kind": "bone",
+   "center": [
+    0.2123,
+    0.718,
+    -0.0671
+   ],
+   "radius": 0.0076,
+   "triangles": 198,
+   "origin": "derived"
+  },
+  "hand_distal_phalanx_5_right": {
+   "kind": "bone",
+   "center": [
+    -0.1908,
+    0.7096,
+    -0.0638
+   ],
+   "radius": 0.0077,
+   "triangles": 184,
+   "origin": "derived"
+  },
+  "hand_middle_phalanx_2_left": {
+   "kind": "bone",
+   "center": [
+    0.2834,
+    0.7192,
+    -0.0804
+   ],
+   "radius": 0.0127,
+   "triangles": 300,
+   "origin": "derived"
+  },
+  "hand_middle_phalanx_2_right": {
+   "kind": "bone",
+   "center": [
+    -0.2618,
+    0.7078,
+    -0.0754
+   ],
+   "radius": 0.0129,
+   "triangles": 256,
+   "origin": "derived"
+  },
+  "hand_middle_phalanx_3_left": {
+   "kind": "bone",
+   "center": [
+    0.258,
+    0.7124,
+    -0.0739
+   ],
+   "radius": 0.0148,
+   "triangles": 366,
+   "origin": "derived"
+  },
+  "hand_middle_phalanx_3_right": {
+   "kind": "bone",
+   "center": [
+    -0.2361,
+    0.702,
+    -0.0695
+   ],
+   "radius": 0.0149,
+   "triangles": 330,
+   "origin": "derived"
+  },
+  "hand_middle_phalanx_4_left": {
+   "kind": "bone",
+   "center": [
+    0.2353,
+    0.7181,
+    -0.0736
+   ],
+   "radius": 0.0147,
+   "triangles": 326,
+   "origin": "derived"
+  },
+  "hand_middle_phalanx_4_right": {
+   "kind": "bone",
+   "center": [
+    -0.214,
+    0.7085,
+    -0.0696
+   ],
+   "radius": 0.0147,
+   "triangles": 306,
+   "origin": "derived"
+  },
+  "hand_middle_phalanx_5_left": {
+   "kind": "bone",
+   "center": [
+    0.2135,
+    0.7321,
+    -0.0766
+   ],
+   "radius": 0.0113,
+   "triangles": 252,
+   "origin": "derived"
+  },
+  "hand_middle_phalanx_5_right": {
+   "kind": "bone",
+   "center": [
+    -0.1926,
+    0.7236,
+    -0.073
+   ],
+   "radius": 0.0117,
+   "triangles": 206,
+   "origin": "derived"
+  },
+  "hand_proximal_phalanx_1_left": {
+   "kind": "bone",
+   "center": [
+    0.2883,
+    0.7834,
+    -0.0799
+   ],
+   "radius": 0.0149,
+   "triangles": 336,
+   "origin": "derived"
+  },
+  "hand_proximal_phalanx_1_right": {
+   "kind": "bone",
+   "center": [
+    -0.2695,
+    0.7716,
+    -0.0747
+   ],
+   "radius": 0.0152,
+   "triangles": 316,
+   "origin": "derived"
+  },
+  "hand_proximal_phalanx_2_left": {
+   "kind": "bone",
+   "center": [
+    0.2739,
+    0.7418,
+    -0.0922
+   ],
+   "radius": 0.0191,
+   "triangles": 384,
+   "origin": "derived"
+  },
+  "hand_proximal_phalanx_2_right": {
+   "kind": "bone",
+   "center": [
+    -0.2535,
+    0.7307,
+    -0.0876
+   ],
+   "radius": 0.0191,
+   "triangles": 360,
+   "origin": "derived"
+  },
+  "hand_proximal_phalanx_3_left": {
+   "kind": "bone",
+   "center": [
+    0.2527,
+    0.741,
+    -0.0884
+   ],
+   "radius": 0.0215,
+   "triangles": 440,
+   "origin": "derived"
+  },
+  "hand_proximal_phalanx_3_right": {
+   "kind": "bone",
+   "center": [
+    -0.2322,
+    0.7307,
+    -0.084
+   ],
+   "radius": 0.0215,
+   "triangles": 448,
+   "origin": "derived"
+  },
+  "hand_proximal_phalanx_4_left": {
+   "kind": "bone",
+   "center": [
+    0.2334,
+    0.7451,
+    -0.0885
+   ],
+   "radius": 0.0199,
+   "triangles": 366,
+   "origin": "derived"
+  },
+  "hand_proximal_phalanx_4_right": {
+   "kind": "bone",
+   "center": [
+    -0.2136,
+    0.7355,
+    -0.0844
+   ],
+   "radius": 0.0198,
+   "triangles": 364,
+   "origin": "derived"
+  },
+  "hand_proximal_phalanx_5_left": {
+   "kind": "bone",
+   "center": [
+    0.2171,
+    0.7537,
+    -0.087
+   ],
+   "radius": 0.0163,
+   "triangles": 270,
+   "origin": "derived"
+  },
+  "hand_proximal_phalanx_5_right": {
+   "kind": "bone",
+   "center": [
+    -0.1972,
+    0.7451,
+    -0.0832
+   ],
+   "radius": 0.0163,
+   "triangles": 312,
+   "origin": "derived"
+  },
+  "hip_bone_left": {
+   "kind": "bone",
+   "center": [
+    0.0779,
+    0.837,
+    -0.0826
+   ],
+   "radius": 0.1232,
+   "triangles": 7000,
+   "origin": "scan"
+  },
+  "hip_bone_right": {
+   "kind": "bone",
+   "center": [
+    -0.0794,
+    0.8366,
+    -0.0848
+   ],
+   "radius": 0.1243,
+   "triangles": 7000,
+   "origin": "scan"
+  },
+  "humerus_left": {
+   "kind": "bone",
+   "center": [
+    0.1728,
+    1.177,
+    -0.1019
+   ],
+   "radius": 0.1413,
+   "triangles": 962,
+   "origin": "derived"
+  },
+  "humerus_right": {
+   "kind": "bone",
+   "center": [
+    -0.1713,
+    1.1701,
+    -0.0988
+   ],
+   "radius": 0.1409,
+   "triangles": 1070,
+   "origin": "derived"
+  },
+  "hyoid_bone": {
+   "kind": "bone",
+   "center": [
+    -0.0053,
+    1.4091,
+    -0.0175
+   ],
+   "radius": 0.0244,
+   "triangles": 1036,
+   "origin": "derived"
+  },
+  "incus_left": {
+   "kind": "bone",
+   "center": [
+    0.0343,
+    1.4779,
+    -0.0429
+   ],
+   "radius": 0.0035,
+   "triangles": 1004,
+   "origin": "derived",
+   "approximate": true
+  },
+  "incus_right": {
+   "kind": "bone",
+   "center": [
+    -0.0438,
+    1.4777,
+    -0.0435
+   ],
+   "radius": 0.0035,
+   "triangles": 1004,
+   "origin": "derived",
+   "approximate": true
+  },
+  "inferior_nasal_concha_left": {
+   "kind": "bone",
+   "center": [
+    0.0048,
+    1.4635,
+    0.0195
+   ],
+   "radius": 0.0179,
+   "triangles": 662,
+   "origin": "derived"
+  },
+  "inferior_nasal_concha_right": {
+   "kind": "bone",
+   "center": [
+    -0.0155,
+    1.4618,
+    0.0162
+   ],
+   "radius": 0.0189,
+   "triangles": 636,
+   "origin": "derived"
+  },
+  "intermediate_cuneiform_left": {
+   "kind": "bone",
+   "center": [
+    0.1625,
+    0.0444,
+    -0.0475
+   ],
+   "radius": 0.0122,
+   "triangles": 440,
+   "origin": "derived"
+  },
+  "intermediate_cuneiform_right": {
+   "kind": "bone",
+   "center": [
+    -0.1695,
+    0.045,
+    -0.0434
+   ],
+   "radius": 0.0121,
+   "triangles": 430,
+   "origin": "derived"
+  },
+  "lacrimal_bone_left": {
+   "kind": "bone",
+   "center": [
+    0.007,
+    1.4839,
+    0.0251
+   ],
+   "radius": 0.0139,
+   "triangles": 604,
+   "origin": "derived"
+  },
+  "lacrimal_bone_right": {
+   "kind": "bone",
+   "center": [
+    -0.0165,
+    1.486,
+    0.0255
+   ],
+   "radius": 0.0129,
+   "triangles": 658,
+   "origin": "derived"
+  },
+  "lateral_cuneiform_left": {
+   "kind": "bone",
+   "center": [
+    0.1695,
+    0.0401,
+    -0.055
+   ],
+   "radius": 0.0145,
+   "triangles": 648,
+   "origin": "derived"
+  },
+  "lateral_cuneiform_right": {
+   "kind": "bone",
+   "center": [
+    -0.1764,
+    0.0407,
+    -0.051
+   ],
+   "radius": 0.0144,
+   "triangles": 600,
+   "origin": "derived"
+  },
+  "lunate_left": {
+   "kind": "bone",
+   "center": [
+    0.2292,
+    0.8331,
+    -0.1051
+   ],
+   "radius": 0.0096,
+   "triangles": 308,
+   "origin": "derived"
+  },
+  "lunate_right": {
+   "kind": "bone",
+   "center": [
+    -0.2128,
+    0.8238,
+    -0.1011
+   ],
+   "radius": 0.0099,
+   "triangles": 324,
+   "origin": "derived"
+  },
+  "malleus_left": {
+   "kind": "bone",
+   "center": [
+    0.0346,
+    1.4775,
+    -0.0398
+   ],
+   "radius": 0.0043,
+   "triangles": 1260,
+   "origin": "derived",
+   "approximate": true
+  },
+  "malleus_right": {
+   "kind": "bone",
+   "center": [
+    -0.0442,
+    1.4774,
+    -0.0404
+   ],
+   "radius": 0.0043,
+   "triangles": 1260,
+   "origin": "derived",
+   "approximate": true
+  },
+  "mandible": {
+   "kind": "bone",
+   "center": [
+    -0.0053,
+    1.439,
+    0.0011
+   ],
+   "radius": 0.0687,
+   "triangles": 2348,
+   "origin": "derived"
+  },
+  "maxilla_left": {
+   "kind": "bone",
+   "center": [
+    0.0151,
+    1.4712,
+    0.0224
+   ],
+   "radius": 0.0429,
+   "triangles": 3598,
+   "origin": "derived"
+  },
+  "maxilla_right": {
+   "kind": "bone",
+   "center": [
+    -0.0268,
+    1.4712,
+    0.0241
+   ],
+   "radius": 0.0429,
+   "triangles": 3660,
+   "origin": "derived"
+  },
+  "medial_cuneiform_left": {
+   "kind": "bone",
+   "center": [
+    0.153,
+    0.0382,
+    -0.0401
+   ],
+   "radius": 0.0183,
+   "triangles": 872,
+   "origin": "derived"
+  },
+  "medial_cuneiform_right": {
+   "kind": "bone",
+   "center": [
+    -0.1602,
+    0.0388,
+    -0.0361
+   ],
+   "radius": 0.0183,
+   "triangles": 838,
+   "origin": "derived"
+  },
+  "metacarpal_1_left": {
+   "kind": "bone",
+   "center": [
+    0.2717,
+    0.8096,
+    -0.0903
+   ],
+   "radius": 0.0218,
+   "triangles": 556,
+   "origin": "derived"
+  },
+  "metacarpal_1_right": {
+   "kind": "bone",
+   "center": [
+    -0.2541,
+    0.7983,
+    -0.0853
+   ],
+   "radius": 0.0219,
+   "triangles": 526,
+   "origin": "derived"
+  },
+  "metacarpal_2_left": {
+   "kind": "bone",
+   "center": [
+    0.2596,
+    0.7869,
+    -0.1009
+   ],
+   "radius": 0.0323,
+   "triangles": 592,
+   "origin": "derived"
+  },
+  "metacarpal_2_right": {
+   "kind": "bone",
+   "center": [
+    -0.2414,
+    0.7762,
+    -0.0963
+   ],
+   "radius": 0.0325,
+   "triangles": 610,
+   "origin": "derived"
+  },
+  "metacarpal_3_left": {
+   "kind": "bone",
+   "center": [
+    0.2461,
+    0.787,
+    -0.1025
+   ],
+   "radius": 0.0316,
+   "triangles": 586,
+   "origin": "derived"
+  },
+  "metacarpal_3_right": {
+   "kind": "bone",
+   "center": [
+    -0.228,
+    0.7771,
+    -0.0983
+   ],
+   "radius": 0.0315,
+   "triangles": 586,
+   "origin": "derived"
+  },
+  "metacarpal_4_left": {
+   "kind": "bone",
+   "center": [
+    0.2327,
+    0.7883,
+    -0.1013
+   ],
+   "radius": 0.028,
+   "triangles": 432,
+   "origin": "derived"
+  },
+  "metacarpal_4_right": {
+   "kind": "bone",
+   "center": [
+    -0.2146,
+    0.7788,
+    -0.0971
+   ],
+   "radius": 0.0281,
+   "triangles": 422,
+   "origin": "derived"
+  },
+  "metacarpal_5_left": {
+   "kind": "bone",
+   "center": [
+    0.2217,
+    0.7915,
+    -0.0976
+   ],
+   "radius": 0.0258,
+   "triangles": 468,
+   "origin": "derived"
+  },
+  "metacarpal_5_right": {
+   "kind": "bone",
+   "center": [
+    -0.2035,
+    0.7827,
+    -0.0938
+   ],
+   "radius": 0.0259,
+   "triangles": 428,
+   "origin": "derived"
+  },
+  "metatarsal_1_left": {
+   "kind": "bone",
+   "center": [
+    0.1668,
+    0.0268,
+    -0.0099
+   ],
+   "radius": 0.0307,
+   "triangles": 944,
+   "origin": "derived"
+  },
+  "metatarsal_1_right": {
+   "kind": "bone",
+   "center": [
+    -0.1742,
+    0.0277,
+    -0.006
+   ],
+   "radius": 0.0306,
+   "triangles": 908,
+   "origin": "derived"
+  },
+  "metatarsal_2_left": {
+   "kind": "bone",
+   "center": [
+    0.1806,
+    0.0284,
+    -0.0178
+   ],
+   "radius": 0.0358,
+   "triangles": 618,
+   "origin": "derived"
+  },
+  "metatarsal_2_right": {
+   "kind": "bone",
+   "center": [
+    -0.1879,
+    0.0293,
+    -0.014
+   ],
+   "radius": 0.0356,
+   "triangles": 612,
+   "origin": "derived"
+  },
+  "metatarsal_3_left": {
+   "kind": "bone",
+   "center": [
+    0.1889,
+    0.0261,
+    -0.0241
+   ],
+   "radius": 0.0336,
+   "triangles": 628,
+   "origin": "derived"
+  },
+  "metatarsal_3_right": {
+   "kind": "bone",
+   "center": [
+    -0.1962,
+    0.0271,
+    -0.0203
+   ],
+   "radius": 0.0336,
+   "triangles": 620,
+   "origin": "derived"
+  },
+  "metatarsal_4_left": {
+   "kind": "bone",
+   "center": [
+    0.1935,
+    0.0218,
+    -0.0348
+   ],
+   "radius": 0.0331,
+   "triangles": 610,
+   "origin": "derived"
+  },
+  "metatarsal_4_right": {
+   "kind": "bone",
+   "center": [
+    -0.2007,
+    0.0229,
+    -0.0309
+   ],
+   "radius": 0.033,
+   "triangles": 554,
+   "origin": "derived"
+  },
+  "metatarsal_5_left": {
+   "kind": "bone",
+   "center": [
+    0.1987,
+    0.017,
+    -0.0495
+   ],
+   "radius": 0.0338,
+   "triangles": 702,
+   "origin": "derived"
+  },
+  "metatarsal_5_right": {
+   "kind": "bone",
+   "center": [
+    -0.2058,
+    0.0181,
+    -0.0457
+   ],
+   "radius": 0.0339,
+   "triangles": 670,
+   "origin": "derived"
+  },
+  "nasal_bone_left": {
+   "kind": "bone",
+   "center": [
+    -0.0025,
+    1.4888,
+    0.0451
+   ],
+   "radius": 0.0172,
+   "triangles": 388,
+   "origin": "derived"
+  },
+  "nasal_bone_right": {
+   "kind": "bone",
+   "center": [
+    -0.0093,
+    1.4884,
+    0.0459
+   ],
+   "radius": 0.0174,
+   "triangles": 392,
+   "origin": "derived"
+  },
+  "navicular_left": {
+   "kind": "bone",
+   "center": [
+    0.1474,
+    0.0474,
+    -0.0573
+   ],
+   "radius": 0.0187,
+   "triangles": 624,
+   "origin": "derived"
+  },
+  "navicular_right": {
+   "kind": "bone",
+   "center": [
+    -0.1544,
+    0.048,
+    -0.0533
+   ],
+   "radius": 0.0186,
+   "triangles": 618,
+   "origin": "derived"
+  },
+  "occipital_bone": {
+   "kind": "bone",
+   "center": [
+    -0.0053,
+    1.5013,
+    -0.0824
+   ],
+   "radius": 0.0682,
+   "triangles": 4912,
+   "origin": "derived"
+  },
+  "palatine_bone_left": {
+   "kind": "bone",
+   "center": [
+    0.0073,
+    1.4648,
+    -0.0037
+   ],
+   "radius": 0.0286,
+   "triangles": 1606,
+   "origin": "derived"
+  },
+  "palatine_bone_right": {
+   "kind": "bone",
+   "center": [
+    -0.018,
+    1.465,
+    -0.0037
+   ],
+   "radius": 0.0283,
+   "triangles": 1486,
+   "origin": "derived"
+  },
+  "parietal_bone_left": {
+   "kind": "bone",
+   "center": [
+    0.0263,
+    1.5438,
+    -0.0669
+   ],
+   "radius": 0.0758,
+   "triangles": 3732,
+   "origin": "derived"
+  },
+  "parietal_bone_right": {
+   "kind": "bone",
+   "center": [
+    -0.0378,
+    1.5438,
+    -0.0687
+   ],
+   "radius": 0.0776,
+   "triangles": 3694,
+   "origin": "derived"
+  },
+  "patella_left": {
+   "kind": "bone",
+   "center": [
+    0.1343,
+    0.4238,
+    -0.0259
+   ],
+   "radius": 0.0258,
+   "triangles": 414,
+   "origin": "scan"
+  },
+  "patella_right": {
+   "kind": "bone",
+   "center": [
+    -0.139,
+    0.4238,
+    -0.0221
+   ],
+   "radius": 0.0258,
+   "triangles": 414,
+   "origin": "scan"
+  },
+  "pisiform_left": {
+   "kind": "bone",
+   "center": [
+    0.2216,
+    0.8239,
+    -0.0936
+   ],
+   "radius": 0.0058,
+   "triangles": 210,
+   "origin": "derived"
+  },
+  "pisiform_right": {
+   "kind": "bone",
+   "center": [
+    -0.2049,
+    0.815,
+    -0.0896
+   ],
+   "radius": 0.0059,
+   "triangles": 190,
+   "origin": "derived"
+  },
+  "radius_left": {
+   "kind": "bone",
+   "center": [
+    0.2312,
+    0.9402,
+    -0.1141
+   ],
+   "radius": 0.1083,
+   "triangles": 406,
+   "origin": "derived"
+  },
+  "radius_right": {
+   "kind": "bone",
+   "center": [
+    -0.2199,
+    0.9304,
+    -0.1104
+   ],
+   "radius": 0.1082,
+   "triangles": 408,
+   "origin": "derived"
+  },
+  "rib_1_left": {
+   "kind": "bone",
+   "center": [
+    0.0353,
+    1.3128,
+    -0.0646
+   ],
+   "radius": 0.041,
+   "triangles": 1010,
+   "origin": "derived"
+  },
+  "rib_1_right": {
+   "kind": "bone",
+   "center": [
+    -0.0402,
+    1.3111,
+    -0.0639
+   ],
+   "radius": 0.0409,
+   "triangles": 1032,
+   "origin": "derived"
+  },
+  "rib_10_left": {
+   "kind": "bone",
+   "center": [
+    0.0648,
+    1.0914,
+    -0.1232
+   ],
+   "radius": 0.0852,
+   "triangles": 1500,
+   "origin": "derived"
+  },
+  "rib_10_right": {
+   "kind": "bone",
+   "center": [
+    -0.061,
+    1.0889,
+    -0.1217
+   ],
+   "radius": 0.0852,
+   "triangles": 1500,
+   "origin": "derived"
+  },
+  "rib_11_left": {
+   "kind": "bone",
+   "center": [
+    0.06,
+    1.0689,
+    -0.1326
+   ],
+   "radius": 0.0713,
+   "triangles": 1070,
+   "origin": "derived"
+  },
+  "rib_11_right": {
+   "kind": "bone",
+   "center": [
+    -0.0554,
+    1.0665,
+    -0.1313
+   ],
+   "radius": 0.0713,
+   "triangles": 1070,
+   "origin": "derived"
+  },
+  "rib_12_left": {
+   "kind": "bone",
+   "center": [
+    0.0492,
+    1.0568,
+    -0.1394
+   ],
+   "radius": 0.0481,
+   "triangles": 730,
+   "origin": "derived"
+  },
+  "rib_12_right": {
+   "kind": "bone",
+   "center": [
+    -0.0443,
+    1.0548,
+    -0.1387
+   ],
+   "radius": 0.0482,
+   "triangles": 740,
+   "origin": "derived"
+  },
+  "rib_2_left": {
+   "kind": "bone",
+   "center": [
+    0.0481,
+    1.2898,
+    -0.057
+   ],
+   "radius": 0.0658,
+   "triangles": 1230,
+   "origin": "derived"
+  },
+  "rib_2_right": {
+   "kind": "bone",
+   "center": [
+    -0.0528,
+    1.2882,
+    -0.0564
+   ],
+   "radius": 0.0657,
+   "triangles": 1230,
+   "origin": "derived"
+  },
+  "rib_3_left": {
+   "kind": "bone",
+   "center": [
+    0.053,
+    1.2664,
+    -0.0608
+   ],
+   "radius": 0.0788,
+   "triangles": 1594,
+   "origin": "derived"
+  },
+  "rib_3_right": {
+   "kind": "bone",
+   "center": [
+    -0.057,
+    1.2648,
+    -0.0599
+   ],
+   "radius": 0.0787,
+   "triangles": 1594,
+   "origin": "derived"
+  },
+  "rib_4_left": {
+   "kind": "bone",
+   "center": [
+    0.0575,
+    1.2424,
+    -0.0643
+   ],
+   "radius": 0.0902,
+   "triangles": 1946,
+   "origin": "derived"
+  },
+  "rib_4_right": {
+   "kind": "bone",
+   "center": [
+    -0.0608,
+    1.2406,
+    -0.0634
+   ],
+   "radius": 0.0901,
+   "triangles": 1942,
+   "origin": "derived"
+  },
+  "rib_5_left": {
+   "kind": "bone",
+   "center": [
+    0.0628,
+    1.2134,
+    -0.0704
+   ],
+   "radius": 0.0975,
+   "triangles": 2136,
+   "origin": "derived"
+  },
+  "rib_5_right": {
+   "kind": "bone",
+   "center": [
+    -0.0647,
+    1.2115,
+    -0.0692
+   ],
+   "radius": 0.0979,
+   "triangles": 2136,
+   "origin": "derived"
+  },
+  "rib_6_left": {
+   "kind": "bone",
+   "center": [
+    0.0661,
+    1.1876,
+    -0.0798
+   ],
+   "radius": 0.1028,
+   "triangles": 2258,
+   "origin": "derived"
+  },
+  "rib_6_right": {
+   "kind": "bone",
+   "center": [
+    -0.0672,
+    1.185,
+    -0.0785
+   ],
+   "radius": 0.1026,
+   "triangles": 2254,
+   "origin": "derived"
+  },
+  "rib_7_left": {
+   "kind": "bone",
+   "center": [
+    0.0677,
+    1.1624,
+    -0.089
+   ],
+   "radius": 0.101,
+   "triangles": 2206,
+   "origin": "derived"
+  },
+  "rib_7_right": {
+   "kind": "bone",
+   "center": [
+    -0.0674,
+    1.16,
+    -0.0875
+   ],
+   "radius": 0.1008,
+   "triangles": 2206,
+   "origin": "derived"
+  },
+  "rib_8_left": {
+   "kind": "bone",
+   "center": [
+    0.0664,
+    1.1363,
+    -0.1002
+   ],
+   "radius": 0.0989,
+   "triangles": 1832,
+   "origin": "derived"
+  },
+  "rib_8_right": {
+   "kind": "bone",
+   "center": [
+    -0.0649,
+    1.1338,
+    -0.0986
+   ],
+   "radius": 0.0986,
+   "triangles": 1832,
+   "origin": "derived"
+  },
+  "rib_9_left": {
+   "kind": "bone",
+   "center": [
+    0.0661,
+    1.1149,
+    -0.1139
+   ],
+   "radius": 0.092,
+   "triangles": 1666,
+   "origin": "derived"
+  },
+  "rib_9_right": {
+   "kind": "bone",
+   "center": [
+    -0.0637,
+    1.1123,
+    -0.1124
+   ],
+   "radius": 0.0917,
+   "triangles": 1666,
+   "origin": "derived"
+  },
+  "sacrum": {
+   "kind": "bone",
+   "center": [
+    0,
+    0.8711,
+    -0.13
+   ],
+   "radius": 0.0772,
+   "triangles": 6000,
+   "origin": "scan"
+  },
+  "scaphoid_left": {
+   "kind": "bone",
+   "center": [
+    0.2441,
+    0.8334,
+    -0.1049
+   ],
+   "radius": 0.0117,
+   "triangles": 304,
+   "origin": "derived"
+  },
+  "scaphoid_right": {
+   "kind": "bone",
+   "center": [
+    -0.2279,
+    0.8235,
+    -0.1005
+   ],
+   "radius": 0.0117,
+   "triangles": 302,
+   "origin": "derived"
+  },
+  "scapula_left": {
+   "kind": "bone",
+   "center": [
+    0.099,
+    1.2548,
+    -0.1171
+   ],
+   "radius": 0.0885,
+   "triangles": 6180,
+   "origin": "derived"
+  },
+  "scapula_right": {
+   "kind": "bone",
+   "center": [
+    -0.103,
+    1.2501,
+    -0.1153
+   ],
+   "radius": 0.0877,
+   "triangles": 5756,
+   "origin": "derived"
+  },
+  "sphenoid_bone": {
+   "kind": "bone",
+   "center": [
+    -0.0053,
+    1.4851,
+    -0.012
+   ],
+   "radius": 0.0591,
+   "triangles": 4238,
+   "origin": "derived"
+  },
+  "stapes_left": {
+   "kind": "bone",
+   "center": [
+    0.0318,
+    1.4749,
+    -0.042
+   ],
+   "radius": 0.0018,
+   "triangles": 1376,
+   "origin": "derived",
+   "approximate": true
+  },
+  "stapes_right": {
+   "kind": "bone",
+   "center": [
+    -0.0414,
+    1.4748,
+    -0.0426
+   ],
+   "radius": 0.0018,
+   "triangles": 1376,
+   "origin": "derived",
+   "approximate": true
+  },
+  "sternum": {
+   "kind": "bone",
+   "center": [
+    -0.0005,
+    1.2182,
+    -0.0069
+   ],
+   "radius": 0.0802,
+   "triangles": 5566,
+   "origin": "derived"
+  },
+  "talus_left": {
+   "kind": "bone",
+   "center": [
+    0.1366,
+    0.0505,
+    -0.0834
+   ],
+   "radius": 0.0268,
+   "triangles": 1144,
+   "origin": "derived"
+  },
+  "talus_right": {
+   "kind": "bone",
+   "center": [
+    -0.1433,
+    0.0509,
+    -0.0792
+   ],
+   "radius": 0.0268,
+   "triangles": 1184,
+   "origin": "derived"
+  },
+  "temporal_bone_left": {
+   "kind": "bone",
+   "center": [
+    0.0343,
+    1.4849,
+    -0.0429
+   ],
+   "radius": 0.0489,
+   "triangles": 2828,
+   "origin": "derived"
+  },
+  "temporal_bone_right": {
+   "kind": "bone",
+   "center": [
+    -0.0449,
+    1.485,
+    -0.0429
+   ],
+   "radius": 0.049,
+   "triangles": 2906,
+   "origin": "derived"
+  },
+  "tibia_left": {
+   "kind": "bone",
+   "center": [
+    0.1267,
+    0.2288,
+    -0.0807
+   ],
+   "radius": 0.1723,
+   "triangles": 3000,
+   "origin": "scan"
+  },
+  "tibia_right": {
+   "kind": "bone",
+   "center": [
+    -0.1321,
+    0.2288,
+    -0.0769
+   ],
+   "radius": 0.1723,
+   "triangles": 3000,
+   "origin": "scan"
+  },
+  "trapezium_left": {
+   "kind": "bone",
+   "center": [
+    0.2553,
+    0.8253,
+    -0.0997
+   ],
+   "radius": 0.0112,
+   "triangles": 348,
+   "origin": "derived"
+  },
+  "trapezium_right": {
+   "kind": "bone",
+   "center": [
+    -0.2387,
+    0.815,
+    -0.0952
+   ],
+   "radius": 0.0113,
+   "triangles": 424,
+   "origin": "derived"
+  },
+  "trapezoid_left": {
+   "kind": "bone",
+   "center": [
+    0.2504,
+    0.8203,
+    -0.1049
+   ],
+   "radius": 0.0083,
+   "triangles": 396,
+   "origin": "derived"
+  },
+  "trapezoid_right": {
+   "kind": "bone",
+   "center": [
+    -0.2335,
+    0.8101,
+    -0.1005
+   ],
+   "radius": 0.0083,
+   "triangles": 354,
+   "origin": "derived"
+  },
+  "triquetrum_left": {
+   "kind": "bone",
+   "center": [
+    0.2226,
+    0.8252,
+    -0.1031
+   ],
+   "radius": 0.0083,
+   "triangles": 300,
+   "origin": "derived"
+  },
+  "triquetrum_right": {
+   "kind": "bone",
+   "center": [
+    -0.2063,
+    0.8161,
+    -0.0992
+   ],
+   "radius": 0.0084,
+   "triangles": 170,
+   "origin": "derived"
+  },
+  "ulna_left": {
+   "kind": "bone",
+   "center": [
+    0.2062,
+    0.9484,
+    -0.123
+   ],
+   "radius": 0.1154,
+   "triangles": 434,
+   "origin": "derived"
+  },
+  "ulna_right": {
+   "kind": "bone",
+   "center": [
+    -0.1951,
+    0.94,
+    -0.119
+   ],
+   "radius": 0.1154,
+   "triangles": 482,
+   "origin": "derived"
+  },
+  "vertebra_c1": {
+   "kind": "bone",
+   "center": [
+    -0.0052,
+    1.4464,
+    -0.0616
+   ],
+   "radius": 0.0438,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_c2": {
+   "kind": "bone",
+   "center": [
+    -0.007,
+    1.4348,
+    -0.0663
+   ],
+   "radius": 0.036,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_c3": {
+   "kind": "bone",
+   "center": [
+    -0.0062,
+    1.4089,
+    -0.0653
+   ],
+   "radius": 0.0321,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_c4": {
+   "kind": "bone",
+   "center": [
+    -0.0061,
+    1.3942,
+    -0.068
+   ],
+   "radius": 0.0326,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_c5": {
+   "kind": "bone",
+   "center": [
+    -0.0051,
+    1.3802,
+    -0.072
+   ],
+   "radius": 0.0331,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_c6": {
+   "kind": "bone",
+   "center": [
+    -0.0055,
+    1.3651,
+    -0.0823
+   ],
+   "radius": 0.0358,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_c7": {
+   "kind": "bone",
+   "center": [
+    -0.0033,
+    1.3496,
+    -0.0944
+   ],
+   "radius": 0.0383,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_l1": {
+   "kind": "bone",
+   "center": [
+    0.0039,
+    1.0514,
+    -0.1264
+   ],
+   "radius": 0.0461,
+   "triangles": 2800,
+   "origin": "scan"
+  },
+  "vertebra_l2": {
+   "kind": "bone",
+   "center": [
+    0.0029,
+    1.013,
+    -0.1232
+   ],
+   "radius": 0.0522,
+   "triangles": 2800,
+   "origin": "scan"
+  },
+  "vertebra_l3": {
+   "kind": "bone",
+   "center": [
+    0.003,
+    0.9827,
+    -0.1202
+   ],
+   "radius": 0.0505,
+   "triangles": 2800,
+   "origin": "scan"
+  },
+  "vertebra_l4": {
+   "kind": "bone",
+   "center": [
+    0.0031,
+    0.954,
+    -0.1162
+   ],
+   "radius": 0.0494,
+   "triangles": 2800,
+   "origin": "scan"
+  },
+  "vertebra_l5": {
+   "kind": "bone",
+   "center": [
+    -0.0006,
+    0.9253,
+    -0.1139
+   ],
+   "radius": 0.0525,
+   "triangles": 2800,
+   "origin": "scan"
+  },
+  "vertebra_t1": {
+   "kind": "bone",
+   "center": [
+    -0.0038,
+    1.3331,
+    -0.1043
+   ],
+   "radius": 0.0426,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_t10": {
+   "kind": "bone",
+   "center": [
+    0.0013,
+    1.1363,
+    -0.1311
+   ],
+   "radius": 0.0419,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_t11": {
+   "kind": "bone",
+   "center": [
+    0.0008,
+    1.1127,
+    -0.1309
+   ],
+   "radius": 0.0403,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_t12": {
+   "kind": "bone",
+   "center": [
+    0.0019,
+    1.0862,
+    -0.1285
+   ],
+   "radius": 0.0411,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_t2": {
+   "kind": "bone",
+   "center": [
+    -0.0023,
+    1.3148,
+    -0.1125
+   ],
+   "radius": 0.0395,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_t3": {
+   "kind": "bone",
+   "center": [
+    -0.0023,
+    1.2945,
+    -0.1191
+   ],
+   "radius": 0.0382,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_t4": {
+   "kind": "bone",
+   "center": [
+    -0.0015,
+    1.271,
+    -0.1254
+   ],
+   "radius": 0.0437,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_t5": {
+   "kind": "bone",
+   "center": [
+    -0.0013,
+    1.2497,
+    -0.1291
+   ],
+   "radius": 0.0423,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_t6": {
+   "kind": "bone",
+   "center": [
+    -0.0021,
+    1.2268,
+    -0.1298
+   ],
+   "radius": 0.0434,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_t7": {
+   "kind": "bone",
+   "center": [
+    -0.0011,
+    1.2026,
+    -0.1332
+   ],
+   "radius": 0.0421,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_t8": {
+   "kind": "bone",
+   "center": [
+    0.0001,
+    1.1796,
+    -0.1339
+   ],
+   "radius": 0.041,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vertebra_t9": {
+   "kind": "bone",
+   "center": [
+    0.0007,
+    1.1582,
+    -0.1325
+   ],
+   "radius": 0.0413,
+   "triangles": 2600,
+   "origin": "scan"
+  },
+  "vomer": {
+   "kind": "bone",
+   "center": [
+    -0.0053,
+    1.4691,
+    0.0071
+   ],
+   "radius": 0.0318,
+   "triangles": 1586,
+   "origin": "derived"
+  },
+  "zygomatic_bone_left": {
+   "kind": "bone",
+   "center": [
+    0.0394,
+    1.4805,
+    0.0101
+   ],
+   "radius": 0.0283,
+   "triangles": 1056,
+   "origin": "derived"
+  },
+  "zygomatic_bone_right": {
+   "kind": "bone",
+   "center": [
+    -0.05,
+    1.4805,
+    0.0102
+   ],
+   "radius": 0.0281,
+   "triangles": 1146,
+   "origin": "derived"
+  },
+  "ctx_context": {
+   "kind": "context",
+   "center": [
+    0.0025,
+    1.1809,
+    -0.0428
+   ],
+   "radius": 0.2884,
+   "triangles": 81040
+  }
+ }
+}

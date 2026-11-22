@@ -26,6 +26,25 @@ ROMAN = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII
 SIDES = ["left", "right"]
 
 
+# Typical female–male differences, shown in the panel for bones where they are taught. Keyed by bone id
+# without the side suffix. Population tendencies, not rules: individuals overlap.
+SEX_DIFF = {
+    "hip_bone": "Female pelvis: wider and shallower, with a round or oval inlet, a subpubic angle of about 80–90° "
+                "(about 50–60° in males), a wider greater sciatic notch, everted ischial tuberosities and a more "
+                "triangular obturator foramen. These adapt it for childbirth.",
+    "sacrum": "Female sacrum: shorter, wider and less curved, with a less prominent promontory, which widens the pelvic inlet.",
+    "coccyx": "Female coccyx: usually more mobile and set more posteriorly, enlarging the pelvic outlet.",
+    "femur": "Females: the wider pelvis gives a larger Q-angle (more oblique femoral shaft); the femoral head is on average smaller.",
+    "frontal_bone": "Female: a more vertical forehead with frontal bossing, smaller superciliary arches and glabella, and "
+                    "sharper supraorbital margins. Male: a sloping forehead and prominent brow ridges.",
+    "temporal_bone": "Female mastoid processes are usually smaller; males tend to have larger, more projecting mastoids.",
+    "occipital_bone": "Female: a smaller external occipital protuberance and fainter nuchal lines than in males.",
+    "mandible": "Female: a smaller mandible with a pointed chin and less flared gonial angles. "
+                "Male: a squarer chin and more everted angles.",
+    "sternum": "Male: the body of the sternum is usually more than twice the length of the manubrium; in females it is often shorter.",
+}
+
+
 def bone(id, name, latin, region, side, type, features, articulations, clinical, spellings=(), subregion="", note=""):
     spellings = [s.lower() for s in ([name] + list(spellings))]
     seen = []
@@ -53,6 +72,9 @@ def bone(id, name, latin, region, side, type, features, articulations, clinical,
         del b["subregion"]
     if note:
         b["modelNote"] = note
+    base = id.removesuffix("_left").removesuffix("_right")
+    if base in SEX_DIFF:
+        b["sexDifferences"] = SEX_DIFF[base]
     BONES.append(b)
 
 
@@ -304,7 +326,7 @@ bone("coccyx", "Coccyx", "Os coccygis", "Vertebral column", "midline", "irregula
      ["sacrum"],
      "Coccydynia (tailbone pain) often follows a fall onto the buttocks.",
      ["tailbone", "tail bone", "os coccygis"], subregion="Sacrum and coccyx",
-     note="3D shape is approximate: the source dataset has no coccyx mesh.")
+     note="In the male model the coccyx is an approximate shape: BodyParts3D has no coccyx mesh. The female model uses a real scan.")
 
 # =============================================================== Thorax
 

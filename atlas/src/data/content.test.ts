@@ -1,9 +1,10 @@
 import { describe, expect, it } from 'vitest'
 import { BONES, BONE_BY_ID, GROUPS, REGIONS } from './bones'
-import model from './model-male.json'
+import male from './model-male.json'
+import female from './model-female.json'
 
 const TYPES = ['long', 'short', 'flat', 'irregular', 'sesamoid']
-const meshes = model.meshes as Record<string, { kind: string }>
+const MODELS = { male: male.meshes, female: female.meshes } as Record<string, Record<string, { kind: string; origin?: string }>>
 
 describe('bone content', () => {
   it('has all 206 bones', () => {
@@ -20,7 +21,7 @@ describe('bone content', () => {
     for (const a of b.articulations) expect(BONE_BY_ID.has(a), `articulation ${a}`).toBe(true)
     expect(b.acceptedSpellings).toContain(b.name.toLowerCase())
     expect(b.clinical.length, 'clinical is one line').toBeLessThan(160)
-    expect(meshes[id]?.kind, 'mesh in skeleton-male.glb').toBe('bone')
+    for (const [sex, meshes] of Object.entries(MODELS)) expect(meshes[id]?.kind, `mesh in skeleton-${sex}.glb`).toBe('bone')
   })
   it('articulations are mutual', () => {
     for (const b of BONES)
@@ -34,6 +35,11 @@ describe('bone content', () => {
     expect(count('Thorax')).toBe(25)
     expect(count('Upper limb') + count('Hand')).toBe(64)
     expect(count('Pelvis') + count('Lower limb') + count('Foot')).toBe(62)
+  })
+  it('female model: real scanned pelvis, spine and legs; everything else derived', () => {
+    const scanned = Object.entries(MODELS.female).filter(([, m]) => m.origin === 'scan').map(([id]) => id)
+    expect(scanned).toHaveLength(24 + 2 + 2 + 8) // C1–L5, sacrum + coccyx, hip bones, femur/patella/tibia/fibula ×2
+    for (const id of ['vertebra_l5', 'sacrum', 'coccyx', 'hip_bone_left', 'femur_right']) expect(scanned).toContain(id)
   })
   it('every group names known regions or bones', () => {
     for (const g of GROUPS) {

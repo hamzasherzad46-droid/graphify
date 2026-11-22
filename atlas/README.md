@@ -18,7 +18,7 @@ npm run build:preview              # dist-artifact/: shareable preview for sandb
 | Step | What | Status |
 | --- | --- | --- |
 | 1 | Male skeleton: rotate / zoom / pan / select, info panel | **Done**, awaiting phone test |
-| 2 | Female skeleton and toggle | Next (toggle is shown, disabled) |
+| 2 | Female skeleton and toggle | **Done**, awaiting phone test |
 | 3 | Exploded view, drag, reassemble | — |
 | 4 | Typing Test | — |
 | 5 | Flashcards (FSRS), Quiz, Weak Bones | — |
@@ -90,6 +90,29 @@ npm test
 is four tapering segments at the sacral apex. The malleus, incus and stapes are simplified shapes at typical
 adult sizes, placed in the tympanic cavity. The script finds that cavity by ray-casting each temporal bone for
 the external acoustic meatus. Each of these bones says so in its info panel.
+
+## Female skeleton (step 2)
+
+`public/models/skeleton-female.glb` (1.18 MB, 206 bones, 160 cm). No free, complete female skeleton with separate bones
+exists, so it combines:
+
+- **Real female bones (36)** from the Visible Human Female, via the HuBMAP Human Reference Atlas *3D Reference Organ
+  Set for Female v1.5* (CC BY 4.0, doi:10.48539/HBM352.BTSQ.586): C1–L5, sacrum, coccyx, hip bones, femur, patella,
+  tibia, fibula. These carry the main sex differences (pelvis shape, subpubic angle, sacrum).
+  The donor has six lumbar vertebrae; Atlas shows the standard five (the top one is left out and the spine above lowered
+  by 34 mm).
+- **Derived bones (170)**: skull, ossicles, hyoid, thorax, upper limbs, hands and feet from the BodyParts3D model, scaled
+  by the measured female/male long-bone ratio (0.904; head 0.926), placed by a best fit to the female thoracic vertebrae
+  (or, for the feet, the female ankle), with typical female skull adjustments (brow ridge, mastoids, occipital
+  protuberance, gonial angles; 2–3 mm).
+
+Each bone's panel says which it is ("3D model"), and bones with typical sex differences have a "Female and male"
+section (`sexDifferences` in the bone's JSON).
+
+```bash
+curl -o /tmp/hra-f.glb https://cdn.humanatlas.io/digital-objects/ref-organ/united-female/v1.5/assets/3d-vh-f-united.glb  # 212 MB
+npm run model -- /tmp/bp3d/package/model female /tmp/hra-f.glb   # scripts/female.mjs does the fitting
+```
 
 ## Performance (measured in headless Chromium, 390×844)
 

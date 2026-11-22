@@ -27,6 +27,28 @@ export function Credits({ onBack }: { onBack: () => void }) {
         </section>
 
         <section>
+          <h3>Visible Human Female (HuBMAP)</h3>
+          <p>
+            Female skeleton, real bones (vertebrae C1–L5, sacrum, coccyx, hip bones, femur, patella, tibia, fibula): Human Reference
+            Atlas, 3D Reference Organ Set for Female v1.5, K. Browne and H. Schlehlein, HuBMAP, licensed under{' '}
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">
+              CC BY 4.0
+            </a>{' '}
+            (
+            <a href="https://doi.org/10.48539/HBM352.BTSQ.586" target="_blank" rel="noreferrer">
+              doi:10.48539/HBM352.BTSQ.586
+            </a>
+            ), built from the Visible Human Project® female dataset, courtesy of the U.S. National Library of Medicine.
+          </p>
+          <p className="muted small">
+            Modified for Atlas: meshes simplified; the hip bone's ilium, ischium and pubis merged; the donor has six lumbar vertebrae
+            (a normal variant), so the uppermost was left out and the spine above it lowered, to show the standard five. The female
+            skull, thorax, upper limbs and feet are derived from the BodyParts3D model, scaled by the female/male long-bone ratio and
+            fitted to these bones, with typical female skull adjustments.
+          </p>
+        </section>
+
+        <section>
           <h3>Z-Anatomy</h3>
           <p>
             Z-Anatomy, the open-source 3D anatomy atlas (
@@ -41,8 +63,8 @@ export function Credits({ onBack }: { onBack: () => void }) {
         <section>
           <h3>Approximate shapes</h3>
           <p className="muted small">
-            BodyParts3D has no coccyx or auditory ossicle meshes. Atlas adds simplified shapes for the coccyx, malleus, incus and stapes;
-            they are marked on each bone.
+            BodyParts3D has no coccyx or auditory ossicle meshes. Atlas adds simplified shapes for the male coccyx and for the malleus,
+            incus and stapes of both skeletons; they are marked on each bone.
           </p>
         </section>
 

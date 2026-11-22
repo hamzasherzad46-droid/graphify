@@ -5,7 +5,7 @@ import type { Sex } from '../data/types'
 
 export const MODEL_URL: Record<Sex, string> = {
   male: 'models/skeleton-male.glb',
-  female: 'models/skeleton-male.glb', // step 2 replaces this with the female model
+  female: 'models/skeleton-female.glb',
 }
 
 // The shareable preview build (`npm run build:preview`) runs on a sandboxed host that may block

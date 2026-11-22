@@ -19,8 +19,10 @@ export interface Bone {
   reviewStatus: ReviewStatus
   reviewer: string
   lastUpdated: string
-  /** Set when the 3D shape is approximate (not from the source dataset). */
+  /** Shown when the 3D shape is approximate (not from the source dataset) in the current model. */
   modelNote?: string
+  /** How the bone typically differs between females and males (only where it does). */
+  sexDifferences?: string
 }
 
 export type Sex = 'male' | 'female'

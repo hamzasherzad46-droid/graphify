@@ -1,12 +1,10 @@
 import { useViewer } from '../state/store'
 import { MenuIcon } from './Icons'
 import { SearchBar } from './SearchBar'
-import { useToast } from './toastStore'
 
 export function TopBar({ onMenu }: { onMenu: () => void }) {
   const sex = useViewer((s) => s.sex)
   const setSex = useViewer((s) => s.setSex)
-  const toast = useToast((s) => s.show)
   return (
     <header className="topbar">
       <div className="topbar-row">
@@ -24,13 +22,7 @@ export function TopBar({ onMenu }: { onMenu: () => void }) {
           <button role="radio" aria-checked={sex === 'male'} className={sex === 'male' ? 'on' : ''} onClick={() => setSex('male')}>
             Male
           </button>
-          <button
-            role="radio"
-            aria-checked={sex === 'female'}
-            aria-disabled
-            className="soon"
-            onClick={() => toast('The female skeleton is added in the next build step.')}
-          >
+          <button role="radio" aria-checked={sex === 'female'} className={sex === 'female' ? 'on' : ''} onClick={() => setSex('female')}>
             Female
           </button>
         </div>

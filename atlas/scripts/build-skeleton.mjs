@@ -30,9 +30,9 @@ import { execFileSync } from 'node:child_process'
 import { fileURLToPath } from 'node:url'
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..')
-const [atlasDir, sex = 'male'] = process.argv.slice(2)
-if (!atlasDir) {
-  console.error('usage: build-skeleton.mjs <bodyparts3d-model-dir> [male]')
+const [atlasDir, sex = 'male', hraFile] = process.argv.slice(2)
+if (!atlasDir || (sex === 'female' && !hraFile)) {
+  console.error('usage: build-skeleton.mjs <bodyparts3d-model-dir> [male | female <3d-vh-f-united.glb>]')
   process.exit(1)
 }
 
@@ -395,6 +395,13 @@ for (const side of ['left', 'right']) {
   }
 }
 
+/* ---------------- female: real Visible Human Female bones + fitted derived parts (see female.mjs) ---------------- */
+
+if (sex === 'female') {
+  const { feminize } = await import('./female.mjs')
+  await feminize({ byId, approx, hraFile, merge, bounds })
+}
+
 /* ---------------- write GLB ---------------- */
 
 // Context meshes (cartilage, discs, teeth) are never selected individually: one mesh, one draw call.
@@ -438,7 +445,8 @@ function writeGlb(file) {
     const n = json.accessors.push({ bufferView: view(m.nrm, 34962), componentType: 5126, count: m.nrm.length / 3, type: 'VEC3' }) - 1
     const i = json.accessors.push({ bufferView: view(idx, 34963), componentType: small ? 5123 : 5125, count: idx.length, type: 'SCALAR' }) - 1
     json.meshes.push({ name: m.id, primitives: [{ attributes: { POSITION: p, NORMAL: n }, indices: i }] })
-    const extras = { kind: m.kind, source: m.sources.length ? `BodyParts3D 4.0: ${m.sources.join('; ')}` : 'generated' }
+    const extras = { kind: m.kind, source: m.sourceLabel ?? (m.sources.length ? `BodyParts3D 4.0: ${m.sources.join('; ')}` : 'generated') }
+    if (m.origin) extras.origin = m.origin
     if (approx[m.id]) extras.approximate = approx[m.id]
     json.scenes[0].nodes.push(json.nodes.push({ name: m.id, mesh: json.meshes.length - 1, translation: m.center, extras }) - 1)
   }
@@ -474,10 +482,13 @@ execFileSync(gt, ['draco', raw, out, '--quantize-position', '12', '--quantize-no
 const r4 = (v) => Math.round(v * 10000) / 10000
 const manifest = {
   sex,
-  source: 'BodyParts3D 4.0 (© DBCLS, CC BY 4.0)',
+  source:
+    sex === 'female'
+      ? 'Visible Human Female via HuBMAP HRA v1.5 (CC BY 4.0) + BodyParts3D 4.0 (© DBCLS, CC BY 4.0), fitted'
+      : 'BodyParts3D 4.0 (© DBCLS, CC BY 4.0)',
   triangles: tris,
   meshes: Object.fromEntries(
-    meshes.map((m) => [m.id, { kind: m.kind, center: m.center.map(r4), radius: r4(m.radius), triangles: m.idx.length / 3, ...(approx[m.id] ? { approximate: true } : {}) }]),
+    meshes.map((m) => [m.id, { kind: m.kind, center: m.center.map(r4), radius: r4(m.radius), triangles: m.idx.length / 3, ...(m.origin ? { origin: m.origin } : {}), ...(approx[m.id] ? { approximate: true } : {}) }]),
   ),
 }
 mkdirSync(join(root, 'src', 'data'), { recursive: true })

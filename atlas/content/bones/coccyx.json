@@ -25,5 +25,6 @@
   "reviewStatus": "draft",
   "reviewer": "",
   "lastUpdated": "2026-11-22",
-  "modelNote": "3D shape is approximate: the source dataset has no coccyx mesh."
+  "modelNote": "In the male model the coccyx is an approximate shape: BodyParts3D has no coccyx mesh. The female model uses a real scan.",
+  "sexDifferences": "Female coccyx: usually more mobile and set more posteriorly, enlarging the pelvic outlet."
 }

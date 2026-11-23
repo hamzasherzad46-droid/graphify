@@ -4,6 +4,7 @@ import { useThree } from '@react-three/fiber'
 import { useViewer } from '../state/store'
 import { registry } from './registry'
 import { dragState } from './dragState'
+import { labelAt } from './labelDom'
 
 const TAP_MOVE = 8 // px
 const TAP_TIME = 450 // ms
@@ -30,7 +31,6 @@ export function Picking() {
     const pointers = new Set<number>()
     let down: { x: number; y: number; t: number; multi: boolean; moved: boolean } | null = null
     let last = { t: 0, x: 0, y: 0, id: null as string | null }
-    let holdTimer = 0
     let drag: { id: string; plane: THREE.Plane; start: THREE.Vector3; base: [number, number, number] } | null = null
 
     const setRay = (x: number, y: number) => {
@@ -66,19 +66,15 @@ export function Picking() {
       if (controls) controls.enabled = true
     }
 
+    // Press-and-hold is decided from the events' own timestamps (when the finger really moved), not a timer: on a
+    // busy device a quick drag's first move can be handled late, and a timer would mistake it for a hold.
     const onDown = (e: PointerEvent) => {
       pointers.add(e.pointerId)
-      window.clearTimeout(holdTimer)
       if (pointers.size > 1) {
         if (down) down.multi = true
         return
       }
-      down = { x: e.clientX, y: e.clientY, t: performance.now(), multi: false, moved: false }
-      const { x, y } = down
-      if (useViewer.getState().studying) return // no dragging bones out during a test
-      holdTimer = window.setTimeout(() => {
-        if (down && !down.multi && !down.moved) startDrag(x, y)
-      }, HOLD)
+      down = { x: e.clientX, y: e.clientY, t: e.timeStamp, multi: false, moved: false }
     }
     const onMove = (e: PointerEvent) => {
       if (drag) {
@@ -90,14 +86,17 @@ export function Picking() {
         }
         return
       }
-      if (down && Math.hypot(e.clientX - down.x, e.clientY - down.y) > TAP_MOVE) {
+      if (down && !down.moved && Math.hypot(e.clientX - down.x, e.clientY - down.y) > TAP_MOVE) {
         down.moved = true
-        window.clearTimeout(holdTimer)
+        // Held still for HOLD ms before moving: pull the bone out instead of turning the model.
+        if (!down.multi && e.timeStamp - down.t >= HOLD && !useViewer.getState().studying) {
+          startDrag(down.x, down.y)
+          if (drag) onMove(e)
+        }
       }
     }
     const onUp = (e: PointerEvent) => {
       pointers.delete(e.pointerId)
-      window.clearTimeout(holdTimer)
       if (drag) {
         if (pointers.size === 0) endDrag()
         down = null
@@ -106,7 +105,16 @@ export function Picking() {
       const d = down
       if (!d || pointers.size > 0) return
       down = null
-      if (d.multi || d.moved || Math.hypot(e.clientX - d.x, e.clientY - d.y) > TAP_MOVE || performance.now() - d.t > TAP_TIME) return
+      if (d.multi || d.moved || Math.hypot(e.clientX - d.x, e.clientY - d.y) > TAP_MOVE || e.timeStamp - d.t > TAP_TIME) return
+      const s0 = useViewer.getState()
+      if (!s0.studying) {
+        const lab = labelAt(e.clientX, e.clientY)
+        if (lab) {
+          if (lab.group) s0.frameCluster(lab.id)
+          else s0.select(lab.id, { focus: true })
+          return
+        }
+      }
       const id = pick(e.clientX, e.clientY)?.id ?? null
       const now = performance.now()
       const isDouble = now - last.t < DOUBLE_TAP && Math.hypot(e.clientX - last.x, e.clientY - last.y) < 30
@@ -125,18 +133,16 @@ export function Picking() {
     }
     const onCancel = (e: PointerEvent) => {
       pointers.delete(e.pointerId)
-      window.clearTimeout(holdTimer)
       down = null
       if (drag) endDrag()
     }
     el.addEventListener('pointerdown', onDown)
-    el.addEventListener('pointermove', onMove)
+    el.addEventListener('pointermove', onMove, true) // capture: runs before the orbit controls see the move
     el.addEventListener('pointerup', onUp)
     el.addEventListener('pointercancel', onCancel)
     return () => {
-      window.clearTimeout(holdTimer)
       el.removeEventListener('pointerdown', onDown)
-      el.removeEventListener('pointermove', onMove)
+      el.removeEventListener('pointermove', onMove, true)
       el.removeEventListener('pointerup', onUp)
       el.removeEventListener('pointercancel', onCancel)
       endDrag()

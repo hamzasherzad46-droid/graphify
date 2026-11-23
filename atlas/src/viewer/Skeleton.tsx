@@ -5,6 +5,7 @@ import { useViewer } from '../state/store'
 import { createMaterials } from './materials'
 import { registry, anchors } from './registry'
 import { MODEL_URL, preloadModel, useModel } from './modelUrls'
+import { buildBvhs } from './bvh'
 import type { Sex } from '../data/types'
 
 void preloadModel(MODEL_URL.male)
@@ -61,6 +62,7 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
         m.raycast = () => {} // context meshes (cartilage, discs, teeth) are never picked
       }
     })
+    buildBvhs([...registry.bones.values()])
     useViewer.getState().setLoaded(true)
   }, [scene])
 

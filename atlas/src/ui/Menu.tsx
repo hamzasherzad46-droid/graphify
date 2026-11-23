@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { usePrefs, useViewer, type Theme } from '../state/store'
+import { usePrefs, type Theme } from '../state/store'
 import { CloseIcon } from './Icons'
 import { Credits } from './Credits'
 import { Disclaimer } from './Disclaimer'
@@ -15,7 +15,6 @@ function download(name: string, data: unknown) {
 
 export function Menu({ onClose }: { onClose: () => void }) {
   const p = usePrefs()
-  const labels = useViewer((s) => s.labels)
   const [page, setPage] = useState<'menu' | 'credits' | 'disclaimer'>('menu')
   if (page === 'credits') return <Credits onBack={() => setPage('menu')} />
   if (page === 'disclaimer') return <Disclaimer onClose={() => setPage('menu')} />
@@ -40,10 +39,16 @@ export function Menu({ onClose }: { onClose: () => void }) {
             ))}
           </div>
         </div>
-        <label className="row">
+        <div className="row">
           <span>Labels</span>
-          <input type="checkbox" className="switch" checked={labels} onChange={(e) => useViewer.getState().setLabels(e.target.checked)} />
-        </label>
+          <div className="segmented small">
+            {(['all', 'main', 'none'] as const).map((d) => (
+              <button key={d} className={p.labelDensity === d ? 'on' : ''} onClick={() => p.setLabelDensity(d)}>
+                {d === 'all' ? 'All' : d === 'main' ? 'Main bones' : 'None'}
+              </button>
+            ))}
+          </div>
+        </div>
         <button className="row link" onClick={() => setPage('credits')}>
           Credits and attribution <span aria-hidden>›</span>
         </button>

@@ -102,6 +102,31 @@ the skull (`src/viewer/explode.ts`, tested in `explode.test.ts`).
 **Hold a bone (0.3 s), then drag** to pull it out; a quick drag still rotates. **Reassemble** eases everything home.
 Bones ease towards their targets each frame, and frames are only rendered while something moves.
 
+## Labels (upgrade step 1)
+
+Labels never disappear. Dock → labels button: **All / Main bones / None** (default Main bones, `content/labels.json`);
+the selected bone is always labelled.
+
+- Laid out **every rendered frame** (`src/viewer/LabelLayout.tsx`, written straight to the DOM), so they follow their
+  bones while rotating, zooming and panning. Boxes glide to their slots; a label that changes column cross-fades.
+- Two columns at the screen edges (`labelLayout.ts`, tested): labels keep their anchors' vertical order and slide apart;
+  spacing is enforced on the animated positions both ways, so they never overlap or leave the screen, even mid-glide.
+  An overfull column hands labels nearest the centre to the other column.
+- Leader lines end exactly on a point of the bone. If another bone is in front (BVH raycasts, a few labels a frame), the
+  line turns faded and dashed; nothing is hidden.
+- **All**: 206 legible labels can't fit a phone screen at whole-body zoom, so when a column is full, whole clusters
+  share one group label ("Phalanges of the hand (14)"), then regions ("Hand, left (27)"); bones off the screen are
+  summarised by region. Every bone is always covered. Tap a group label to fly there; its bones get their own labels.
+  Long names use standard short forms on the model ("C7", "Prox. phalanx, little finger"); the panel shows the full name.
+- Tapping a label selects and focuses its bone. Labels don't take touches themselves (taps are matched to them), so a
+  drag that starts on a label still turns the model.
+- Press-and-hold to pull a bone out is now decided from the input events' timestamps, so on a busy device a quick drag
+  is never mistaken for a hold.
+
+Verified in a 278-sample run (full 360° turn in 5° steps, pole to pole and back, drags, zoom, pan, a selected bone,
+All with grouping): 0 overlaps, 0 labels off screen, 0 detached leader lines, Main bones always 32 labels, All always
+covering 206 bones. Label engine cost: about 1.3 ms a frame (Main) and 2.5 ms (All), median, measured in development.
+
 ## Study modes (steps 4–5)
 
 **Study** (top bar) opens the modes and their settings: region (whole skeleton or a group), male or female

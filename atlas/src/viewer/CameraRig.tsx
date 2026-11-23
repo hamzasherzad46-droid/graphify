@@ -195,6 +195,11 @@ export function CameraRig() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [command])
 
+  // Development only: expose the controls for automated tests (exact rotations).
+  useEffect(() => {
+    if (import.meta.env.DEV && controls.current) Object.assign((window as unknown as { __atlas?: object }).__atlas ?? {}, { controls: controls.current, invalidate })
+  })
+
   // A touch or drag cancels a running flight.
   useEffect(() => {
     const c = controls.current

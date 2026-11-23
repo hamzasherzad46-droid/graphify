@@ -3,6 +3,8 @@ import { createJSONStorage, persist } from 'zustand/middleware'
 import { appStorage } from '../lib/storage'
 import type { ReviewStatus, Sex } from '../data/types'
 
+export type LabelDensity = 'all' | 'main' | 'none'
+
 export type ViewName = 'anterior' | 'posterior' | 'left' | 'right' | 'superior' | 'inferior'
 export type Theme = 'dark' | 'light' | 'system'
 
@@ -32,7 +34,6 @@ interface ViewerState {
   hidden: string[]
   isolated: string[] | null
   ghost: boolean
-  labels: boolean
   camera: CameraCommand | null
   panelExpanded: boolean
   loaded: boolean
@@ -58,6 +59,8 @@ interface ViewerState {
   setOnTap: (fn: ((id: string | null) => void) | null) => void
   /** Frame the region around a bone without pointing at it ("tap the bone" questions). */
   frameRegion: (id: string) => void
+  /** Fly to a bone's cluster (e.g. the hand's phalanges), framing them all. */
+  frameCluster: (id: string) => void
   select: (id: string | null, opts?: { focus?: boolean }) => void
   focus: (id: string) => void
   setView: (view: ViewName) => void
@@ -66,7 +69,6 @@ interface ViewerState {
   isolate: (id: string) => void
   showAll: () => void
   setGhost: (on: boolean) => void
-  setLabels: (on: boolean) => void
   setSex: (sex: Sex) => void
   setPanelExpanded: (on: boolean) => void
   setLoaded: (on: boolean) => void
@@ -80,7 +82,6 @@ export const useViewer = create<ViewerState>((set, get) => ({
   hidden: [],
   isolated: null,
   ghost: false,
-  labels: false,
   camera: null,
   panelExpanded: false,
   loaded: false,
@@ -103,7 +104,6 @@ export const useViewer = create<ViewerState>((set, get) => ({
       hidden: [],
       isolated: null,
       ghost: false,
-      labels: false,
       explodeOpen: false,
       explodeAmount: 0,
       dragged: {},
@@ -116,6 +116,7 @@ export const useViewer = create<ViewerState>((set, get) => ({
       ...(h && frame && h.target[0] ? { camera: { kind: 'frame' as const, id: h.target[0], n: ++n } } : {}),
     }),
   setOnTap: (onTap) => set({ onTap }),
+  frameCluster: (id) => set({ camera: { kind: 'frame', id, n: ++n } }),
   frameRegion: (id) => set({ highlight: null, camera: { kind: 'frame', id, n: ++n, region: true } }),
   select: (id, opts) =>
     set((s) => ({
@@ -133,7 +134,6 @@ export const useViewer = create<ViewerState>((set, get) => ({
   isolate: (id) => set({ isolated: [id], selectedId: id, hidden: get().hidden.filter((h) => h !== id), camera: { kind: 'focus', id, n: ++n, tight: true } }),
   showAll: () => set({ hidden: [], isolated: null }),
   setGhost: (ghost) => set({ ghost }),
-  setLabels: (labels) => set({ labels }),
   setSex: (sex) => set((s) => (s.sex === sex ? {} : { sex, loaded: false })),
   setPanelExpanded: (panelExpanded) => set({ panelExpanded }),
   setLoaded: (loaded) => set({ loaded }),
@@ -152,6 +152,9 @@ export interface StudySettings {
 export const DEFAULT_STUDY: StudySettings = { area: 'all', sex: 'male', count: 20, timeLimit: 0, perQuestion: 20, newPerDay: 15, sound: true }
 
 interface PrefsState {
+  /** Bone labels in the 3D view: every bone, the main bones (content/labels.json), or none. */
+  labelDensity: LabelDensity
+  setLabelDensity: (d: LabelDensity) => void
   study: StudySettings
   setStudy: (s: Partial<StudySettings>) => void
   theme: Theme
@@ -173,6 +176,8 @@ interface PrefsState {
 export const usePrefs = create<PrefsState>()(
   persist(
     (set, get) => ({
+      labelDensity: 'main',
+      setLabelDensity: (labelDensity) => set({ labelDensity }),
       study: DEFAULT_STUDY,
       setStudy: (s) => set({ study: { ...get().study, ...s } }),
       theme: 'dark',

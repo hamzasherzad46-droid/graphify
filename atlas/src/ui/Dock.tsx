@@ -1,4 +1,5 @@
-import { useViewer, type ViewName } from '../state/store'
+import { useState } from 'react'
+import { usePrefs, useViewer, type LabelDensity, type ViewName } from '../state/store'
 import { useHud } from '../state/hud'
 import { ExplodeIcon, GhostIcon, LabelIcon, ResetIcon } from './Icons'
 
@@ -12,7 +13,8 @@ const VIEWS: [ViewName, string, string][] = [
 ]
 
 export function Dock() {
-  const labels = useViewer((s) => s.labels)
+  const density = usePrefs((s) => s.labelDensity)
+  const [labelMenu, setLabelMenu] = useState(false)
   const ghost = useViewer((s) => s.ghost)
   const explodeOpen = useViewer((s) => s.explodeOpen)
   const orientation = useHud((s) => s.orientation)
@@ -27,7 +29,14 @@ export function Dock() {
         ))}
       </div>
       <div className="tools">
-        <button className={`tool ${labels ? 'on' : ''}`} aria-pressed={labels} aria-label="Labels" title="Labels" onClick={() => s().setLabels(!labels)}>
+        <button
+          className={`tool ${density !== 'none' ? 'on' : ''}`}
+          aria-haspopup="menu"
+          aria-expanded={labelMenu}
+          aria-label={`Labels: ${DENSITY_LABEL[density]}`}
+          title="Labels"
+          onClick={() => setLabelMenu(!labelMenu)}
+        >
           <LabelIcon />
         </button>
         <button
@@ -46,9 +55,30 @@ export function Dock() {
           <ResetIcon />
         </button>
       </div>
+      {labelMenu && (
+        <div className="label-menu" role="menu" aria-label="Labels">
+          <span className="k">Labels</span>
+          {(['all', 'main', 'none'] as LabelDensity[]).map((d) => (
+            <button
+              key={d}
+              role="menuitemradio"
+              aria-checked={density === d}
+              className={density === d ? 'on' : ''}
+              onClick={() => {
+                usePrefs.getState().setLabelDensity(d)
+                setLabelMenu(false)
+              }}
+            >
+              {DENSITY_LABEL[d]}
+            </button>
+          ))}
+        </div>
+      )}
     </nav>
   )
 }
+
+const DENSITY_LABEL: Record<LabelDensity, string> = { all: 'All', main: 'Main bones', none: 'None' }
 
 function orientationMatches(o: string, v: ViewName) {
   return o.toLowerCase().startsWith(v)

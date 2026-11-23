@@ -626,17 +626,12 @@ textarea:focus-visible {
 
 /* ---------- labels ---------- */
 
+/* Positions are set every frame by viewer/LabelLayout (transform, points, cx/cy). */
 .labels {
   position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 4;
-  transition: opacity 0.18s ease;
-}
-
-.labels.moving {
-  opacity: 0;
-  transition-duration: 0.08s;
 }
 
 .leaders {
@@ -650,32 +645,104 @@ textarea:focus-visible {
 .leaders polyline {
   fill: none;
   stroke: var(--line-strong);
-  stroke-width: 0.75;
+  stroke-width: 0.8;
+  transition: opacity 0.25s ease;
+}
+
+.leaders polyline.sel {
+  stroke: var(--accent);
+  stroke-width: 1;
+}
+
+/* Bone behind something: the leader stays, faded and dashed. */
+.leaders polyline.occ {
+  stroke-dasharray: 2 3;
+  opacity: 0.55;
 }
 
 .leaders circle {
   fill: var(--accent);
+  transition: opacity 0.25s ease;
 }
 
-.leaders .sel polyline {
-  stroke: var(--accent);
+.leaders circle.occ {
+  opacity: 0.45;
 }
 
 .label {
   position: absolute;
-  transform: translateY(-50%);
+  left: 0;
+  top: 0;
+  height: 16px; /* = LABEL_H in viewer/LabelLayout.tsx */
+  max-width: calc(50vw - 14px); /* = maxLabelWidth: the columns can never meet */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 4px;
   font-size: 11.5px;
   font-weight: 500;
-  line-height: 1;
-  padding: 3px 0;
+  line-height: 16px;
   color: var(--text);
   white-space: nowrap;
-  pointer-events: auto;
+  pointer-events: none; /* taps are matched in viewer/Picking (labelAt), so drags still turn the model */
   text-shadow: 0 0 6px var(--bg), 0 0 2px var(--bg);
+  will-change: transform;
+  animation: label-in 0.25s ease;
+  transition: color 0.2s ease, opacity 0.25s ease;
+}
+
+.label:not([data-ready]) {
+  opacity: 0;
+}
+
+.label.occ {
+  color: var(--text-2);
 }
 
 .label.sel {
   color: var(--accent);
+  font-weight: 600;
+}
+
+@keyframes label-in {
+  from {
+    opacity: 0;
+  }
+}
+
+.label-menu {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 8px);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  background: var(--surface-solid);
+  box-shadow: var(--shadow);
+}
+
+.label-menu .k {
+  padding: 0 8px 0 6px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.label-menu button {
+  height: 34px;
+  padding: 0 12px;
+  border-radius: 7px;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.label-menu button.on {
+  color: var(--accent);
+  background: var(--accent-soft);
 }
 
 /* ---------- info panel ---------- */
@@ -2015,4 +2082,11 @@ textarea:focus-visible {
   text-transform: uppercase;
   color: var(--muted);
   margin-right: 4px;
+}
+
+.label.group {
+  color: var(--accent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 35%, transparent);
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--bg) 70%, transparent);
 }

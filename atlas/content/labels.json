@@ -1,0 +1,10 @@
+{
+  "description": "Bones labelled in 'Main bones' mode. The selected bone is always labelled as well.",
+  "main": [
+    "frontal_bone", "parietal_bone_left", "parietal_bone_right", "temporal_bone_left", "temporal_bone_right",
+    "occipital_bone", "mandible", "sternum", "clavicle_left", "clavicle_right", "scapula_left", "scapula_right",
+    "humerus_left", "humerus_right", "radius_left", "radius_right", "ulna_left", "ulna_right",
+    "hip_bone_left", "hip_bone_right", "sacrum", "coccyx", "femur_left", "femur_right", "patella_left", "patella_right",
+    "tibia_left", "tibia_right", "fibula_left", "fibula_right", "calcaneus_left", "calcaneus_right"
+  ]
+}

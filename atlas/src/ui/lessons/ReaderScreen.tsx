@@ -1,11 +1,12 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react'
-import { figureUrl, loadSection, plain, sectionLabel, useReading, type Block, type ChoiceQuestion, type Section } from '../../learn/textbook'
+import { figureUrl, hasClassic, loadClassic, loadSection, plain, type Classic, sectionLabel, useReading, type Block, type ChoiceQuestion, type Section } from '../../learn/textbook'
 import { useNav } from '../../state/nav'
 import { usePrefs, type Theme } from '../../state/store'
 import { haptic } from '../../lib/feedback'
 import { PageHead } from './PageHead'
 import { Rich } from './Rich'
 import { FigureZoom } from './FigureZoom'
+import { Annotatable } from './Annotatable'
 
 const SIZES = [15, 16, 17.5, 19, 21]
 /** Height of the sticky header: a paragraph this far from the top is the one being read. */
@@ -65,7 +66,8 @@ function Reader({ section }: { section: Section }) {
       last = now
       // The paragraph at the top of the screen, under the header (none while still above the text).
       let para: string | null = null
-      for (const p of el.querySelectorAll<HTMLElement>('[data-pid]')) {
+      // Main text only: Gray's classic reference is collapsed when the section is opened again.
+      for (const p of el.querySelectorAll<HTMLElement>('.key-points [data-pid], .reader-body [data-pid]')) {
         if (p.offsetTop <= el.scrollTop + TOP + 1) para = p.dataset.pid ?? null
         else break
       }
@@ -97,6 +99,7 @@ function Reader({ section }: { section: Section }) {
         <p className="eyebrow">{section.num.includes('.') ? `Section ${section.num}` : `Chapter ${section.num}`}</p>
         <h1 className="reader-title">{section.num.includes('.') ? section.title : section.chapter.title}</h1>
 
+        <Annotatable doc={`tb:${section.id}`} docLabel={label}>
         {section.keyPoints.length > 0 && <KeyPoints section={section} onBone={onBone} />}
         {section.objectives.length > 0 && (
           <details className="objectives">
@@ -115,6 +118,8 @@ function Reader({ section }: { section: Section }) {
         <div className="reader-body">
           <Blocks blocks={section.blocks} onBone={onBone} onRef={onRef} onZoom={setZoom} />
         </div>
+        {hasClassic(section.id) && <ClassicReference id={section.id} onBone={onBone} onZoom={setZoom} />}
+        </Annotatable>
 
         {section.glossary.length > 0 && (
           <details className="glossary">
@@ -153,6 +158,43 @@ function Reader({ section }: { section: Section }) {
   )
 }
 
+/** Gray's Anatomy (1918) on the same bones: collapsed, loaded when opened, one entry per bone. */
+function ClassicReference({ id, onBone, onZoom }: { id: string; onBone: (b: string) => void; onZoom: (f: Extract<Block, { t: 'fig' }>) => void }) {
+  const [data, setData] = useState<Classic | null>(null)
+  const [open, setOpen] = useState(false)
+  useEffect(() => {
+    if (open && !data) void loadClassic(id).then(setData)
+  }, [open, data, id])
+  return (
+    <details className="classic" onToggle={(e) => setOpen((e.target as HTMLDetailsElement).open)}>
+      <summary>
+        <span className="classic-k">Classic reference</span>
+        <span className="classic-t">Gray’s Anatomy (1918)</span>
+      </summary>
+      {open && !data && <p className="muted">Loading…</p>}
+      {data && (
+        <>
+          <p className="classic-note">
+            From Henry Gray’s <em>Anatomy of the Human Body</em>, {data.source.edition} (1918), in the public domain. Some terminology is historical
+            (for example <em>os innominatum</em>, <em>vertebræ</em>, <em>lateralward</em>, and older names of muscles and landmarks), and a few facts have
+            since been revised: for exams, use the terms in the main text above.
+          </p>
+          {data.entries.map((e) => (
+            <details key={e.slug} className="classic-entry">
+              <summary>{e.title}</summary>
+              <Blocks blocks={e.blocks} onBone={onBone} onRef={() => {}} onZoom={onZoom} />
+            </details>
+          ))}
+          <p className="muted small classic-source">
+            Source: Gray H. <em>Anatomy of the Human Body</em>. 20th ed., ed. W. H. Lewis. Philadelphia: Lea &amp; Febiger; 1918. Public domain. Text and figures (H. V.
+            Carter and others) as transcribed for Bartleby.com (2000). Two damaged figures are left out.
+          </p>
+        </>
+      )}
+    </details>
+  )
+}
+
 function KeyPoints({ section, onBone }: { section: Section; onBone: (b: string) => void }) {
   const [more, setMore] = useState(false)
   return (
@@ -160,7 +202,7 @@ function KeyPoints({ section, onBone }: { section: Section; onBone: (b: string) 
       <h2>Key points</h2>
       <ul>
         {section.keyPoints.map((k) => (
-          <li key={k.id}>
+          <li key={k.id} data-pid={k.id}>
             <Rich inl={k.lead} onBone={onBone} />
             {more && k.rest.length > 0 && (
               <span className="kp-rest">

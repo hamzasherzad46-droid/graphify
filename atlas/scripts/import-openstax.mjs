@@ -117,7 +117,7 @@ function blocks(node, ctx, level = 2) {
           id,
           label: ctx.labels.get(id),
           title: textOf(child(c, 'title')),
-          src: webpName(src),
+          src: `textbook/${webpName(src)}`,
           alt: media?.getAttribute('alt') ?? '',
           caption: child(c, 'caption') ? inline(child(c, 'caption'), ctx) : [],
         })

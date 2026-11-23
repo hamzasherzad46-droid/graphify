@@ -3429,6 +3429,7 @@ textarea:focus-visible {
 .bone-link,
 .ref-link {
   display: inline;
+  outline-offset: 2px;
   padding: 0;
   border: 0;
   background: none;
@@ -3768,4 +3769,234 @@ textarea:focus-visible {
 /* Jumps to a figure or paragraph land below the sticky header. */
 .reader [id] {
   scroll-margin-top: 84px;
+}
+
+/* ---------- Highlights ---------- */
+
+:root,
+[data-theme='dark'] {
+  --hl-yellow: rgba(250, 204, 21, 0.3);
+  --hl-teal: rgba(45, 212, 191, 0.28);
+  --hl-pink: rgba(244, 114, 182, 0.3);
+  --hl-blue: rgba(96, 165, 250, 0.32);
+}
+
+[data-theme='light'] {
+  --hl-yellow: rgba(253, 224, 71, 0.6);
+  --hl-teal: rgba(94, 234, 212, 0.5);
+  --hl-pink: rgba(249, 168, 212, 0.55);
+  --hl-blue: rgba(147, 197, 253, 0.6);
+}
+
+/* Highlights are drawn behind the text: the root makes its own stacking context and the layer sits under it. */
+.annot-root {
+  position: relative;
+  isolation: isolate;
+}
+
+.annot-layer {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.hl {
+  position: absolute;
+  border-radius: 3px;
+  transition: box-shadow 0.15s ease;
+}
+
+.hl.active {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.hl-yellow {
+  background: var(--hl-yellow);
+}
+
+.hl-teal {
+  background: var(--hl-teal);
+}
+
+.hl-pink {
+  background: var(--hl-pink);
+}
+
+.hl-blue {
+  background: var(--hl-blue);
+}
+
+.reader ::selection {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.annot-bar {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+  background: var(--surface-solid);
+  box-shadow: var(--shadow);
+  font-size: 13.5px;
+  line-height: 1;
+  white-space: nowrap;
+  animation: annot-in 0.14s ease-out;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+@keyframes annot-in {
+  from {
+    opacity: 0;
+    scale: 0.94;
+  }
+}
+
+.swatch {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12);
+}
+
+/* Swatches show the colour at full strength, so all four read clearly in both themes. */
+.swatch.hl-yellow {
+  background: #facc15;
+}
+
+.swatch.hl-teal {
+  background: #2dd4bf;
+}
+
+.swatch.hl-pink {
+  background: #f472b6;
+}
+
+.swatch.hl-blue {
+  background: #60a5fa;
+}
+
+.swatch.on {
+  border-color: var(--text);
+}
+
+.annot-sep {
+  width: 1px;
+  height: 22px;
+  background: var(--line-strong);
+  margin: 0 2px;
+}
+
+.annot-btn {
+  padding: 8px 8px;
+  border-radius: 8px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.annot-btn:active {
+  background: var(--raise);
+}
+
+.annot-btn.danger {
+  color: var(--bad);
+}
+
+/* ---------- Classic reference (Gray's 1918) ---------- */
+
+.classic {
+  margin: 2em 0 0;
+  border: 1px solid var(--line-strong);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.classic > summary {
+  display: grid;
+  gap: 2px;
+  padding: 0.85em 1.1em;
+  cursor: pointer;
+  list-style: none;
+  background: var(--raise);
+}
+
+.classic > summary::-webkit-details-marker {
+  display: none;
+}
+
+.classic > summary::after {
+  content: 'Show';
+  position: absolute;
+  right: 1.1em;
+  font-size: 0.75em;
+  color: var(--accent);
+}
+
+.classic {
+  position: relative;
+}
+
+.classic[open] > summary::after {
+  content: 'Hide';
+}
+
+.classic-k {
+  font-size: 0.62em;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--draft);
+}
+
+.classic-t {
+  font-weight: 600;
+}
+
+.classic > :not(summary) {
+  margin-left: 1.1em;
+  margin-right: 1.1em;
+}
+
+.classic-note {
+  margin-top: 1em;
+  padding: 0.7em 0.9em;
+  border-left: 3px solid var(--draft);
+  border-radius: 6px;
+  background: var(--draft-soft);
+  font-size: 0.86em;
+  line-height: 1.55;
+  color: var(--text-2);
+}
+
+.classic-entry {
+  border-top: 1px solid var(--line);
+  /* Gray's prose is denser: a touch smaller, in the reader's rhythm. */
+  font-size: 0.94em;
+}
+
+.classic-entry > summary {
+  padding: 0.8em 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.classic-entry p {
+  margin: 0 0 1em;
+}
+
+.classic-entry .rfig-img {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.classic-source {
+  margin-bottom: 1.2em !important;
 }

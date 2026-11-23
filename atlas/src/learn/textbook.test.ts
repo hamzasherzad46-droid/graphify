@@ -61,7 +61,7 @@ describe('textbook content (OpenStax A&P 2e, chapters 6–9)', () => {
   it('has every figure file, with a label and alt text', () => {
     for (const s of sections)
       for (const f of figs(s.blocks)) {
-        expect(existsSync(join(MEDIA, f.src)), f.src).toBe(true)
+        expect(existsSync(join(MEDIA, '..', f.src)), f.src).toBe(true)
         expect(f.label, f.id).toMatch(/^Figure \d\.\d+$/)
         expect(f.alt.length, f.id).toBeGreaterThan(10)
       }
@@ -79,5 +79,35 @@ describe('textbook content (OpenStax A&P 2e, chapters 6–9)', () => {
       expect(s.quickCheck.length, s.id).toBeGreaterThanOrEqual(2)
       for (const q of s.quickCheck) expect(q.answer >= 0 && q.answer < q.options.length, q.id).toBe(true)
     }
+  })
+})
+
+describe("classic reference (Gray's Anatomy, 1918)", () => {
+  const CDIR = join(__dirname, '..', '..', 'content', 'classic')
+  const classics = readdirSync(CDIR).map((f) => JSON.parse(readFileSync(join(CDIR, f), 'utf8')))
+  it('covers the region sections, each bone chapter starting with its text', () => {
+    expect(classics.map((c) => c.section).sort()).toEqual(['s7-2', 's7-3', 's7-4', 's8-1', 's8-2', 's8-3', 's8-4'])
+    for (const c of classics)
+      for (const e of c.entries) {
+        const first = e.blocks.find((b: Block) => b.t === 'p') as Extract<Block, { t: 'p' }>
+        const text = first.inl.map((x) => (typeof x === 'string' ? x : x.t)).join('')
+        expect(text, e.title).toMatch(/^[A-Z(]/)
+        expect(text.length, e.title).toBeGreaterThan(40)
+      }
+  })
+  it('has no markup, entity or footnote leftovers', () => {
+    const all = JSON.stringify(classics)
+    expect(all).not.toMatch(/<[A-Za-z/]|&[a-z#0-9]+;|\(\*\d/)
+  })
+  it('has every figure file and links only to real bones', () => {
+    for (const c of classics)
+      for (const e of c.entries)
+        for (const b of e.blocks as Block[]) {
+          if (b.t === 'fig') expect(existsSync(join(MEDIA, '..', b.src)), b.src).toBe(true)
+          if (b.t === 'p') for (const x of b.inl) if (typeof x !== 'string' && 'bone' in x && x.bone) expect(BONE_BY_ID.has(x.bone), x.t).toBe(true)
+        }
+  })
+  it('is marked public domain with the 1918 edition', () => {
+    for (const c of classics) expect(c.source).toMatchObject({ year: 1918, license: 'Public domain' })
   })
 })

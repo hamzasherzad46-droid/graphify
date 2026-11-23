@@ -237,10 +237,30 @@ opened from Home form a stack backed by browser history, so the phone's back but
   text, figures that open full screen (pinch or double-tap to zoom), key terms, a 3-question quick check from the
   section's review questions, and the attribution. Reading position (the paragraph at the top of the screen) is saved
   as you read; *Continue reading* on Home returns to it, even after the app is closed.
-- **Classic reference (Gray's Anatomy, 1918)**: not added yet. No trustworthy copy of the text is reachable from the
-  build environment.
+- **Classic reference (Gray's Anatomy, 1918)**: under each region section, collapsed and loaded only when opened, one
+  entry per bone (48 chapters of Osteology, 718 paragraphs, 210 of Carter's figures), with a note that some
+  terminology is historical. Imported by `scripts/import-grays.mjs` from the 1918 text as transcribed for
+  Bartleby.com, read from the copy at theodora.com (Bartleby closed in 2025; Wikisource has only Embryology).
+  Public domain. Two figures are damaged on the source site and are left out. Run with `NODE_USE_ENV_PROXY=1` behind
+  a proxy.
 - Tests (`src/learn/textbook.test.ts`): all sections present and in a topic, CC BY 4.0 source and changes, bone links
   valid, the "axis" rule, every figure file present with label and alt text, unique paragraph ids, quick checks valid.
+
+### Highlighter (step 3)
+
+- Select text (long-press or drag) in the textbook, the key points or the classic reference: a toolbar offers
+  **yellow, teal, pink, blue** and **Copy**. Tap a highlight to recolour, copy or delete it. Selections snap to whole
+  words and can span paragraphs. Tapping a bone name inside a highlight still opens it in 3D.
+- **Saved the instant it is made**, on the device (`src/lib/idb.ts`, IndexedDB), with a synchronous localStorage
+  journal until IndexedDB confirms; the journal is replayed on the next launch, so a highlight survives the app being
+  closed straight away. Deletes keep a tombstone for the future cloud sync. `navigator.storage.persist()` is requested.
+- **Anchoring** (`src/learn/anchor.ts`, tested): the paragraph's stable source id, the quoted text, 32 characters
+  either side and the offsets. If the text changes slightly, the quote is found again by its surrounding text (and
+  despite spacing changes); if it is gone, the highlight is kept but not drawn.
+- **Drawing** (`src/ui/lessons/Annotatable.tsx`): coloured bands behind the text, computed from DOM ranges and redrawn
+  when the layout changes (text size, images, rotation); the text itself is never modified. Works in every browser.
+- Bone names are spans with button semantics (not `<button>`s), and stop being focusable while pressed, so a drag that
+  starts on a bone name selects text.
 
 ## Progress (step 6)
 

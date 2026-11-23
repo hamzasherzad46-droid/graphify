@@ -21,13 +21,17 @@ export interface Result {
 export const useSession = create<{
   mode: Mode | null
   launcher: boolean
+  progress: boolean
+  setProgress: (on: boolean) => void
   open: (mode: Mode) => void
   close: () => void
   setLauncher: (on: boolean) => void
 }>((set) => ({
   mode: null,
   launcher: false,
-  open: (mode) => set({ mode, launcher: false }),
+  progress: false,
+  setProgress: (progress) => set({ progress }),
+  open: (mode) => set({ mode, launcher: false, progress: false }),
   close: () => set({ mode: null }),
   setLauncher: (launcher) => set({ launcher }),
 }))

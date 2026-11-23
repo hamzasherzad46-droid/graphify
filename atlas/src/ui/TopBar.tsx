@@ -1,5 +1,5 @@
 import { useViewer } from '../state/store'
-import { MenuIcon } from './Icons'
+import { MenuIcon, ProgressIcon } from './Icons'
 import { useSession } from '../learn/session'
 import { SearchBar } from './SearchBar'
 
@@ -16,6 +16,9 @@ export function TopBar({ onMenu }: { onMenu: () => void }) {
         </div>
         <button className="study-btn" onClick={() => useSession.getState().setLauncher(true)}>
           Study
+        </button>
+        <button className="icon-btn" onClick={() => useSession.getState().setProgress(true)} aria-label="Progress">
+          <ProgressIcon />
         </button>
         <button className="icon-btn" onClick={onMenu} aria-label="Menu">
           <MenuIcon />

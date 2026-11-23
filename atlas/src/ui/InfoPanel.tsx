@@ -2,6 +2,8 @@ import { useRef, useState } from 'react'
 import { BONE_BY_ID, SIDE_SHORT } from '../data/bones'
 import type { Bone } from '../data/types'
 import { meshInfo, modelSource } from '../data/models'
+import { useProgress } from '../state/progress'
+import { boneAccuracy } from '../learn/mastery'
 import { usePrefs, useViewer } from '../state/store'
 import { ChevronIcon, CloseIcon, FlagIcon, FocusIcon, GhostIcon, HideIcon, IsolateIcon } from './Icons'
 import { ReportSheet } from './ReportSheet'
@@ -14,6 +16,7 @@ export function InfoPanel() {
   const expanded = useViewer((s) => s.panelExpanded)
   const ghost = useViewer((s) => s.ghost)
   const sex = useViewer((s) => s.sex)
+  const stats = useProgress((s) => s.stats)
   const v = useViewer.getState
   const override = usePrefs((s) => (id ? s.reviewOverrides[id] : undefined))
   const reviewerMode = usePrefs((s) => s.reviewerMode)
@@ -99,6 +102,7 @@ export function InfoPanel() {
             </div>
             <div className="panel-body">
               {b.subregion && <p className="subregion">{b.subregion}</p>}
+              <YourProgress acc={boneAccuracy(stats, b)} />
               {b.features.length > 0 && (
                 <section>
                   <h3>Key features</h3>
@@ -169,5 +173,21 @@ export function InfoPanel() {
       </section>
       {reporting && b && <ReportSheet bone={b} onClose={() => setReporting(false)} />}
     </>
+  )
+}
+
+function YourProgress({ acc }: { acc: { seen: number; correct: number; mastered: boolean } }) {
+  return (
+    <p className="your-progress small">
+      <span className="k">Your answers</span>
+      {acc.seen ? (
+        <>
+          {acc.correct} of {acc.seen} right ({Math.round((acc.correct / acc.seen) * 100)}%)
+          {acc.mastered && <span className="mastered-tag">Mastered</span>}
+        </>
+      ) : (
+        <span className="muted">Not practised yet</span>
+      )}
+    </p>
   )
 }

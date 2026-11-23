@@ -2,6 +2,8 @@ export interface BoneStat {
   seen: number
   correct: number
   last: string // ISO date of the last answer
+  /** Most recent answers, oldest first: '1' right, '0' wrong (up to 10). */
+  recent?: string
 }
 
 /** Error rate with a little smoothing, so one miss out of one doesn't outrank four out of five. */

@@ -12,10 +12,13 @@ import { Disclaimer } from './ui/Disclaimer'
 import { Menu } from './ui/Menu'
 import { Toast } from './ui/Toast'
 import { useSession } from './learn/session'
-import { StudyLauncher } from './ui/study/StudyLauncher'
-import { StudySession } from './ui/study/StudySession'
+
 
 const Viewer = lazy(() => import('./viewer/Viewer'))
+// Study and progress screens load on first use (they bring FSRS and the session code).
+const StudyLauncher = lazy(() => import('./ui/study/StudyLauncher').then((m) => ({ default: m.StudyLauncher })))
+const StudySession = lazy(() => import('./ui/study/StudySession').then((m) => ({ default: m.StudySession })))
+const ProgressScreen = lazy(() => import('./ui/ProgressScreen').then((m) => ({ default: m.ProgressScreen })))
 
 export default function App() {
   const theme = useResolvedTheme()
@@ -24,6 +27,7 @@ export default function App() {
   const [menu, setMenu] = useState(false)
   const mode = useSession((s) => s.mode)
   const launcher = useSession((s) => s.launcher)
+  const progress = useSession((s) => s.progress)
   return (
     <div className="app">
       <div className="stage" aria-label="3D skeleton. Drag to rotate, pinch to zoom, two fingers to pan, tap a bone to select it, double-tap to focus.">
@@ -33,7 +37,9 @@ export default function App() {
       </div>
       <div className="hud-frame" aria-hidden />
       {mode ? (
-        <StudySession key={mode} mode={mode} />
+        <Suspense fallback={null}>
+          <StudySession key={mode} mode={mode} />
+        </Suspense>
       ) : (
         <>
           <LabelsOverlay />
@@ -47,7 +53,10 @@ export default function App() {
       <Loader done={loaded} />
       <Toast />
       {menu && <Menu onClose={() => setMenu(false)} />}
-      {launcher && !mode && <StudyLauncher />}
+      <Suspense fallback={null}>
+        {launcher && !mode && <StudyLauncher />}
+        {progress && !mode && <ProgressScreen onClose={() => useSession.getState().setProgress(false)} />}
+      </Suspense>
       {!accepted && <Disclaimer />}
     </div>
   )

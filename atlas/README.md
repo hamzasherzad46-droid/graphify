@@ -22,7 +22,7 @@ npm run build:preview              # dist-artifact/: shareable preview for sandb
 | 3 | Exploded view, drag, reassemble | **Done**, awaiting phone test |
 | 4 | Typing Test | **Done**, awaiting phone test |
 | 5 | Flashcards (FSRS), Quiz, Weak Bones | **Done**, awaiting phone test |
-| 6 | Progress tracking and polish | — |
+| 6 | Progress tracking and polish | **Done**, awaiting phone test |
 
 ### Step 1 includes
 
@@ -124,6 +124,22 @@ side it is best seen (`frame` camera command); explore controls are hidden and t
 
 Every answer is recorded per bone in `useProgress` (on this device, through `appStorage`), which also keeps the
 study days and flashcard states, for step 6.
+
+## Progress (step 6)
+
+Top bar → progress icon. All computed from data saved on the device (`useProgress`, via `appStorage`):
+
+- **Bones mastered** (of 206), **accuracy** (all answers), **bones seen**, **days in a row** (and the longest run;
+  a streak survives until the end of the day after the last study day). No badges.
+- **Mastered** = answered at least 3 times, the last 3 right, and ≥ 80 % right overall. Answers are pooled by bone
+  name (left and right femur count together); counts are over all 206 bone ids (`src/learn/mastery.ts`, tested).
+- **Mastery by region** (meter list: mastered and seen), **study days** heat map (15 weeks, one teal ramp, tap a
+  day for its count), **weakest bones** with *Practise weak bones*, and an **accuracy-per-bone** table.
+- Each bone's info panel shows *Your answers* (right / total, Mastered tag).
+- Reset progress (with confirmation). Cloud sync later only needs a new `appStorage` backend.
+
+Polish in this step: study and progress screens load on first use (main bundle 120 → 88 KB gzipped); the beta label
+wraps instead of being cut off on narrow phones.
 
 ## Female skeleton (step 2)
 

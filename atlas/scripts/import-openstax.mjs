@@ -156,7 +156,7 @@ function blocks(node, ctx, level = 2) {
   return out
 }
 
-const webpName = (src) => src.replace(/^.*\//, '').replace(/\.[a-z]+$/i, '.webp')
+const webpName = (src) => src.replace(/^.*\//, '').replace(/\.[a-z]+$/i, '').replace(/[^A-Za-z0-9_.-]+/g, '-').replace(/-+$/, '') + '.webp'
 
 /* ── Questions ──────────────────────────────────────────────────────────────────────────────────────────────── */
 

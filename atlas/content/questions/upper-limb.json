@@ -1,0 +1,644 @@
+{
+ "description": "Exam-style questions (not real exam papers). type: sba (single best answer), short (short answer), label (name the bone lit in the 3D model). answer: index into options. whyNot: one line per option, empty for the answer.",
+ "questions": [
+  {
+   "type": "sba",
+   "stem": "Which part of the clavicle articulates with the manubrium?",
+   "options": [
+    "shaft",
+    "sternal end",
+    "acromial end",
+    "coracoid process"
+   ],
+   "answer": 1,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.1 The Pectoral Girdle, Review Questions, question 1 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-01",
+   "topic": "upper-limb",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "clavicle_left",
+   "why": "The medial (sternal) end of the clavicle articulates with the clavicular notch of the manubrium at the sternoclavicular joint. This is the only bony joint attaching the whole upper limb to the axial skeleton.",
+   "whyNot": [
+    "The shaft is the middle part of the clavicle and does not articulate with any bone.",
+    "",
+    "The acromial end is the lateral end; it articulates with the acromion of the scapula at the acromioclavicular joint.",
+    "The coracoid process belongs to the scapula, not the clavicle."
+   ],
+   "tip": "Remember the chain: upper limb → scapula → clavicle → sternum. The sternoclavicular joint is the only bony link between the upper limb and the trunk.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "A shoulder separation results from injury to the ________.",
+   "options": [
+    "glenohumeral joint",
+    "costoclavicular joint",
+    "acromioclavicular joint",
+    "sternoclavicular joint"
+   ],
+   "answer": 2,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.1 The Pectoral Girdle, Review Questions, question 2 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-02",
+   "topic": "upper-limb",
+   "frequency": "core",
+   "level": "undergraduate",
+   "bone": "scapula_left",
+   "why": "A \"shoulder separation\" is an injury to the acromioclavicular (AC) joint, where the lateral end of the clavicle meets the acromion. In a severe injury the coracoclavicular ligament also tears and the clavicle rides up, leaving a visible step at the top of the shoulder.",
+   "whyNot": [
+    "Injury to the glenohumeral joint is a shoulder dislocation, not a separation.",
+    "There is no costoclavicular joint: the costoclavicular ligament binds the clavicle to the first rib.",
+    "",
+    "Injury to the sternoclavicular joint is a sternoclavicular dislocation, which is uncommon."
+   ],
+   "tip": "Examiners use everyday words on purpose: \"separation\" means the AC joint; \"dislocation\" of the shoulder means the glenohumeral joint.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "Which feature lies between the spine and superior border of the scapula?",
+   "options": [
+    "suprascapular notch",
+    "glenoid cavity",
+    "superior angle",
+    "supraspinous fossa"
+   ],
+   "answer": 3,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.1 The Pectoral Girdle, Review Questions, question 3 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-03",
+   "topic": "upper-limb",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "scapula_left",
+   "why": "On the back of the scapula, the spine divides the surface into two fossae. The supraspinous fossa lies above the spine, between it and the superior border, and holds the supraspinatus muscle.",
+   "whyNot": [
+    "The suprascapular notch is a notch in the superior border itself, next to the base of the coracoid process.",
+    "The glenoid cavity is the shallow socket at the lateral angle, for the head of the humerus.",
+    "The superior angle is the corner where the superior and medial borders meet.",
+    ""
+   ],
+   "tip": "The supraspinatus tendon, from this fossa, is the rotator cuff tendon most often torn or inflamed.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "What structure is an extension of the spine of the scapula?",
+   "options": [
+    "acromion",
+    "coracoid process",
+    "supraglenoid tubercle",
+    "glenoid cavity"
+   ],
+   "answer": 0,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.1 The Pectoral Girdle, Review Questions, question 4 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-04",
+   "topic": "upper-limb",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "scapula_left",
+   "why": "The spine of the scapula runs across its back and continues laterally as the acromion, a flat process that forms the bony point of the shoulder. The acromion articulates with the clavicle at the acromioclavicular joint.",
+   "whyNot": [
+    "",
+    "The coracoid process projects forward from the superior border, not from the spine.",
+    "The supraglenoid tubercle is a small bump just above the glenoid cavity, for the long head of biceps brachii.",
+    "The glenoid cavity is the joint surface for the humerus, not a continuation of the spine."
+   ],
+   "tip": "The acromion is the highest point of the shoulder and is easy to feel. It is the landmark for measuring arm length and for intramuscular injections into the deltoid.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "Name the short, hook-like bony process of the scapula that projects anteriorly.",
+   "options": [
+    "acromial process",
+    "clavicle",
+    "coracoid process",
+    "glenoid fossa"
+   ],
+   "answer": 2,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.1 The Pectoral Girdle, Review Questions, question 5 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-05",
+   "topic": "upper-limb",
+   "frequency": "common",
+   "level": "foundation",
+   "bone": "scapula_left",
+   "why": "The coracoid process is a short, hook-like process that projects forward from the superior border of the scapula, below the lateral end of the clavicle. Its name means \"like a crow's beak\".",
+   "whyNot": [
+    "The acromial process (acromion) projects laterally from the spine of the scapula, above the shoulder joint.",
+    "The clavicle is a separate bone, not a process of the scapula.",
+    "",
+    "The glenoid fossa (cavity) is the shallow socket of the shoulder joint, not a process."
+   ],
+   "tip": "The coracoid process anchors three muscles (pectoralis minor, coracobrachialis and the short head of biceps brachii) and the coracoclavicular ligament.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "How many bones are there in the upper limbs combined?",
+   "options": [
+    "20",
+    "30",
+    "40",
+    "60"
+   ],
+   "answer": 3,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.2 Bones of the Upper Limb, Review Questions, question 1 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-06",
+   "topic": "upper-limb",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "humerus_left",
+   "why": "Each upper limb has 30 bones: the humerus, radius and ulna, 8 carpals, 5 metacarpals and 14 phalanges. Two limbs therefore have 60.",
+   "whyNot": [
+    "20 is too few: one hand alone has 27 bones.",
+    "30 is the number in one upper limb, not both.",
+    "40 does not match any correct count.",
+    ""
+   ],
+   "tip": "Watch whether the question counts the pectoral girdle. The clavicle and scapula belong to the pectoral girdle, not to the upper limb, so they are not part of the 30.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "Which bony landmark is located on the lateral side of the proximal humerus?",
+   "options": [
+    "greater tubercle",
+    "trochlea",
+    "lateral epicondyle",
+    "lesser tubercle"
+   ],
+   "answer": 0,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.2 Bones of the Upper Limb, Review Questions, question 2 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-07",
+   "topic": "upper-limb",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "humerus_left",
+   "why": "The greater tubercle is the large projection on the lateral side of the upper end of the humerus. It gives attachment to three rotator cuff muscles: supraspinatus, infraspinatus and teres minor.",
+   "whyNot": [
+    "",
+    "The trochlea is at the lower end of the humerus, on the medial side, where it meets the ulna.",
+    "The lateral epicondyle is at the lower end of the humerus, not the upper end.",
+    "The lesser tubercle is on the front of the upper end of the humerus, facing medially."
+   ],
+   "tip": "The intertubercular (bicipital) groove between the two tubercles carries the tendon of the long head of biceps brachii.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "Which region of the humerus articulates with the radius as part of the elbow joint?",
+   "options": [
+    "trochlea",
+    "styloid process",
+    "capitulum",
+    "olecranon process"
+   ],
+   "answer": 2,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.2 Bones of the Upper Limb, Review Questions, question 3 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-08",
+   "topic": "upper-limb",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "humerus_left",
+   "why": "The capitulum is the rounded knob on the lateral side of the lower end of the humerus. The cup-shaped head of the radius articulates with it at the elbow.",
+   "whyNot": [
+    "The trochlea is the pulley-shaped surface on the medial side; it articulates with the trochlear notch of the ulna.",
+    "The styloid processes are at the lower ends of the radius and ulna, at the wrist.",
+    "",
+    "The olecranon process is part of the ulna, not the humerus."
+   ],
+   "tip": "Capitulum means \"little head\" and meets the head of the radius; trochlea means \"pulley\" and meets the ulna. Lateral goes with lateral: capitulum and radius are both on the thumb side.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "Which is the lateral-most carpal bone of the proximal row?",
+   "options": [
+    "trapezium",
+    "hamate",
+    "pisiform",
+    "scaphoid"
+   ],
+   "answer": 3,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.2 Bones of the Upper Limb, Review Questions, question 4 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-09",
+   "topic": "upper-limb",
+   "frequency": "core",
+   "level": "undergraduate",
+   "bone": "scaphoid_left",
+   "why": "The proximal row of carpal bones, from lateral (thumb side) to medial, is scaphoid, lunate, triquetrum and pisiform. The scaphoid is therefore the most lateral bone of the proximal row.",
+   "whyNot": [
+    "The trapezium is the most lateral bone of the distal row, not the proximal row.",
+    "The hamate is the most medial bone of the distal row.",
+    "The pisiform is the most medial bone of the proximal row.",
+    ""
+   ],
+   "tip": "The scaphoid is the carpal bone most often fractured, usually by a fall onto an outstretched hand. Tenderness in the anatomical snuffbox is the key sign, and the proximal part of the bone can lose its blood supply (avascular necrosis).",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "The radius bone ________.",
+   "options": [
+    "is found on the medial side of the forearm",
+    "has a head that articulates with the radial notch of the ulna",
+    "does not articulate with any of the carpal bones",
+    "has the radial tuberosity located near its distal end"
+   ],
+   "answer": 1,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.2 Bones of the Upper Limb, Review Questions, question 5 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-10",
+   "topic": "upper-limb",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "radius_left",
+   "why": "The disc-shaped head of the radius sits in the radial notch of the ulna, held there by the annular ligament. This proximal radioulnar joint lets the radius rotate during pronation and supination.",
+   "whyNot": [
+    "The radius is on the lateral (thumb) side of the forearm; the ulna is on the medial side.",
+    "",
+    "The lower end of the radius articulates with the scaphoid and lunate at the wrist (radiocarpal) joint.",
+    "The radial tuberosity is near the upper end of the radius, where the biceps brachii tendon inserts."
+   ],
+   "tip": "In anatomical position the radius is on the thumb side. In pronation the radius crosses over the ulna, which stays still.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Describe the shape and palpable line formed by the clavicle and scapula.",
+   "answerText": "The clavicle extends laterally across the anterior shoulder and can be palpated along its entire length. At its lateral end, the clavicle articulates with the acromion of the scapula, which forms the bony tip of the shoulder. The acromion is continuous with the spine of the scapula, which can be palpated medially and posteriorly along its length. Together, the clavicle, acromion, and spine of the scapula form a V-shaped line that serves as an important area for muscle attachment.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.1 The Pectoral Girdle, Critical Thinking Questions, question 1 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-11",
+   "topic": "upper-limb",
+   "frequency": "common",
+   "level": "foundation",
+   "bone": "scapula_left",
+   "why": "Both bones lie just under the skin along this line, so it can be felt along its whole length. That makes it a useful landmark in examination of the shoulder, and the clavicle and acromion are easy to feel in a fracture or AC joint injury.",
+   "tip": "Feel it on yourself: run a finger along the clavicle to its lateral end, over the acromion at the tip of the shoulder, then back along the spine of the scapula.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Discuss two possible injuries of the pectoral girdle that may occur following a strong blow to the shoulder or a hard fall onto an outstretched hand.",
+   "answerText": "A blow to the shoulder or falling onto an outstretched hand passes strong forces through the scapula to the clavicle and sternum. A hard fall may thus cause a fracture of the clavicle (broken collarbone) or may injure the ligaments of the acromioclavicular joint. In a severe case, the coracoclavicular ligament may also rupture, resulting in complete dislocation of the acromioclavicular joint (a “shoulder separation”).",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.1 The Pectoral Girdle, Critical Thinking Questions, question 2 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-12",
+   "topic": "upper-limb",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "clavicle_left",
+   "why": "Force from a fall travels up the limb to the scapula and then along the clavicle, which acts as a strut holding the shoulder away from the trunk. The clavicle may break, or the ligaments of the acromioclavicular joint may tear.",
+   "tip": "The clavicle usually breaks at the junction of its middle and lateral thirds, its weakest point. It is one of the most commonly fractured bones in the body.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Your friend runs out of gas and you have to help push their car. Discuss the sequence of bones and joints that convey the forces passing from your hand, through your upper limb and your pectoral girdle, and to your axial skeleton.",
+   "answerText": "As you push against the car, forces will pass from the metacarpal bones of your hand into the carpal bones at the base of your hand. Forces will then pass through the midcarpal and radiocarpal joints into the radius and ulna bones of the forearm. These will pass the force through the elbow joint into the humerus of the arm, and then through the glenohumeral joint into the scapula. The force will travel through the acromioclavicular joint into the clavicle, and then through the sternoclavicular joint into the sternum, which is part of the axial skeleton.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.2 Bones of the Upper Limb, Critical Thinking Questions, question 1 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-13",
+   "topic": "upper-limb",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "clavicle_left",
+   "why": "The question tests the chain of bones and joints between the hand and the trunk. Name every joint in order: midcarpal, radiocarpal, elbow, glenohumeral, acromioclavicular and sternoclavicular.",
+   "tip": "The sternoclavicular joint is the only bony connection between the upper limb and the axial skeleton; everything else depends on muscles holding the scapula to the trunk.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Name the bones in the wrist and hand, and describe or sketch out their locations and articulations.",
+   "answerText": "The base of the hand is formed by the eight carpal bones arranged in two rows (distal and proximal) of four bones each. The proximal row contains (from lateral to medial) the scaphoid, lunate, triquetrum, and pisiform bones. The distal row contains (from medial to lateral) the hamate, capitate, trapezoid, and trapezium bones. (Use the mnemonic “So Long To Pinky, Here Comes The Thumb” to remember this sequence). The rows of the proximal and distal carpal bones articulate with each other at the midcarpal joint. The palm of the hand contains the five metacarpal bones, which are numbered 1–5 starting on the thumb side. The proximal ends of the metacarpal bones articulate with the distal row of the carpal bones. The distal ends of the metacarpal bones articulate with the proximal phalanx bones of the thumb and fingers. The thumb (digit 1) has both a proximal and distal phalanx bone. The fingers (digits 2–5) all contain proximal, middle, and distal phalanges.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.2 Bones of the Upper Limb, Critical Thinking Questions, question 2 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "ul-14",
+   "topic": "upper-limb",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "scaphoid_left",
+   "why": "Learn the carpal bones in two rows of four, then add the five metacarpals and fourteen phalanges. Each finger has three phalanges, but the thumb has only two.",
+   "tip": "The memory aid \"So Long To Pinky, Here Comes The Thumb\" gives the proximal row from lateral to medial (scaphoid, lunate, triquetrum, pisiform), then the distal row from medial to lateral (hamate, capitate, trapezoid, trapezium).",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ul-15",
+   "topic": "upper-limb",
+   "type": "label",
+   "frequency": "core",
+   "level": "undergraduate",
+   "bone": "scaphoid_left",
+   "label": "scaphoid_left",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Lunate",
+    "Scaphoid",
+    "Trapezium",
+    "Capitate"
+   ],
+   "answer": 1,
+   "why": "The scaphoid is the boat-shaped bone on the thumb side of the proximal row of carpal bones. It bridges the two rows and articulates with the radius above.",
+   "whyNot": [
+    "The lunate is the crescent-shaped bone next to the scaphoid, in the middle of the proximal row.",
+    "",
+    "The trapezium is in the distal row, at the base of the thumb.",
+    "The capitate is the largest carpal bone, in the middle of the distal row."
+   ],
+   "tip": "The scaphoid gets its blood supply mainly from its distal end, so a fracture through its waist can leave the proximal part without blood (avascular necrosis).",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ul-16",
+   "topic": "upper-limb",
+   "type": "label",
+   "frequency": "advanced",
+   "level": "undergraduate",
+   "bone": "hamate_left",
+   "label": "hamate_left",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Capitate",
+    "Pisiform",
+    "Triquetrum",
+    "Hamate"
+   ],
+   "answer": 3,
+   "why": "The hamate is the wedge-shaped bone on the little-finger side of the distal row of carpal bones. It has a hook (the hook of the hamate) that projects towards the palm.",
+   "whyNot": [
+    "The capitate lies next to the hamate, in the middle of the distal row.",
+    "The pisiform is a small, pea-shaped bone on the front of the triquetrum, in the proximal row.",
+    "The triquetrum is in the proximal row, above the hamate.",
+    ""
+   ],
+   "tip": "The hook of the hamate gives attachment to the flexor retinaculum and lies next to the ulnar nerve in the ulnar canal (Guyon's canal). It can fracture in golfers and baseball players.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ul-17",
+   "topic": "upper-limb",
+   "type": "label",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "ulna_left",
+   "label": "ulna_left",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Radius",
+    "Humerus",
+    "Ulna",
+    "Fibula"
+   ],
+   "answer": 2,
+   "why": "The ulna is the medial bone of the forearm. Its large upper end (the olecranon and trochlear notch) forms the elbow joint with the humerus, and its small lower end (the head, with a styloid process) lies on the little-finger side of the wrist.",
+   "whyNot": [
+    "The radius is the lateral bone of the forearm, on the thumb side.",
+    "The humerus is the bone of the arm, above the elbow.",
+    "",
+    "The fibula is the slender lateral bone of the leg, not the forearm."
+   ],
+   "tip": "The ulna is large at the elbow and small at the wrist; the radius is the opposite. That is why the radius, not the ulna, takes the force of a fall onto the hand.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ul-18",
+   "topic": "upper-limb",
+   "type": "sba",
+   "frequency": "core",
+   "level": "medical",
+   "bone": "humerus_left",
+   "stem": "A fracture of the surgical neck of the humerus is most likely to injure which nerve?",
+   "options": [
+    "Radial nerve",
+    "Axillary nerve",
+    "Ulnar nerve",
+    "Median nerve"
+   ],
+   "answer": 1,
+   "why": "The axillary nerve wraps around the surgical neck of the humerus with the posterior circumflex humeral artery. A fracture here can injure it, weakening the deltoid and causing loss of sensation over the lower part of the deltoid.",
+   "whyNot": [
+    "The radial nerve is at risk in a fracture of the shaft of the humerus, where it runs in the radial groove.",
+    "",
+    "The ulnar nerve is at risk behind the medial epicondyle.",
+    "The median nerve is at risk in a supracondylar fracture, just above the elbow."
+   ],
+   "tip": "Match the fracture site to the nerve: surgical neck → axillary; shaft (radial groove) → radial; medial epicondyle → ulnar; supracondylar → median (and the brachial artery).",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ul-19",
+   "topic": "upper-limb",
+   "type": "sba",
+   "frequency": "core",
+   "level": "undergraduate",
+   "bone": "radius_left",
+   "stem": "An older woman with osteoporosis falls onto her outstretched hand. Her wrist has a \"dinner fork\" deformity, with the distal fragment displaced backwards. What is the most likely fracture?",
+   "options": [
+    "Smith fracture",
+    "Scaphoid fracture",
+    "Colles fracture",
+    "Monteggia fracture"
+   ],
+   "answer": 2,
+   "why": "A Colles fracture is a fracture of the distal radius, about 2–3 cm above the wrist, with the distal fragment displaced dorsally (backwards). The dorsal displacement gives the wrist the shape of a dinner fork seen from the side.",
+   "whyNot": [
+    "A Smith fracture is also a distal radius fracture, but the fragment is displaced towards the palm (volar), usually after a fall on the back of the hand.",
+    "A scaphoid fracture causes tenderness in the anatomical snuffbox, without a dinner-fork deformity.",
+    "",
+    "A Monteggia fracture is a fracture of the upper ulna with dislocation of the head of the radius."
+   ],
+   "tip": "Colles and Smith fractures are mirror images: Colles is displaced dorsally (a fall on the outstretched hand), Smith towards the palm. Both are common in osteoporosis.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ul-20",
+   "topic": "upper-limb",
+   "type": "sba",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "trapezium_left",
+   "stem": "Which carpal bone forms the saddle joint at the base of the thumb with the first metacarpal?",
+   "options": [
+    "Trapezium",
+    "Trapezoid",
+    "Scaphoid",
+    "Capitate"
+   ],
+   "answer": 0,
+   "why": "The base of the first metacarpal articulates with the trapezium at the carpometacarpal joint of the thumb. It is a saddle joint, which allows the thumb to move into opposition.",
+   "whyNot": [
+    "",
+    "The trapezoid articulates with the base of the second metacarpal.",
+    "The scaphoid is in the proximal row and does not reach the metacarpals.",
+    "The capitate articulates mainly with the third metacarpal."
+   ],
+   "tip": "A simple memory aid: trapeziUM goes with the thUMb. Osteoarthritis of this joint is very common in older adults.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ul-21",
+   "topic": "upper-limb",
+   "type": "sba",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "humerus_left",
+   "stem": "Which bony landmark is felt on the medial side of the elbow, with the ulnar nerve passing behind it?",
+   "options": [
+    "Lateral epicondyle",
+    "Olecranon",
+    "Capitulum",
+    "Medial epicondyle"
+   ],
+   "answer": 3,
+   "why": "The medial epicondyle is a prominent projection on the medial side of the lower end of the humerus. The ulnar nerve runs in a groove on its back, just under the skin.",
+   "whyNot": [
+    "The lateral epicondyle is on the lateral side of the elbow; the ulnar nerve does not pass behind it.",
+    "The olecranon is the point of the elbow, on the back of the ulna.",
+    "The capitulum is a joint surface on the front of the lower humerus and cannot be felt under the skin.",
+    ""
+   ],
+   "tip": "Knocking the ulnar nerve against the medial epicondyle causes tingling in the little finger: the \"funny bone\".",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ul-22",
+   "topic": "upper-limb",
+   "type": "short",
+   "frequency": "advanced",
+   "level": "medical",
+   "bone": "scaphoid_left",
+   "stem": "Describe the boundaries of the anatomical snuffbox and name the bones that form its floor.",
+   "answerText": "Lateral (radial) boundary: the tendons of abductor pollicis longus and extensor pollicis brevis. Medial (ulnar) boundary: the tendon of extensor pollicis longus. Floor: the scaphoid and the trapezium. The radial artery crosses the floor.",
+   "why": "The snuffbox is the hollow on the back of the wrist at the base of the thumb, seen when the thumb is extended. Its floor is the easiest place to press on the scaphoid.",
+   "tip": "Tenderness in the snuffbox after a fall means a scaphoid fracture until proven otherwise, even if the first X-ray looks normal.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ul-23",
+   "topic": "upper-limb",
+   "type": "sba",
+   "frequency": "common",
+   "level": "foundation",
+   "bone": "ulna_left",
+   "stem": "Which part of the ulna forms the point of the elbow?",
+   "options": [
+    "Coronoid process",
+    "Olecranon",
+    "Radial tuberosity",
+    "Trochlea"
+   ],
+   "answer": 1,
+   "why": "The olecranon is the large, curved process at the upper end of the ulna. It forms the point of the elbow, and the triceps brachii inserts into it.",
+   "whyNot": [
+    "The coronoid process projects forward from the front of the upper ulna, below the trochlear notch.",
+    "",
+    "The radial tuberosity is on the radius, not the ulna.",
+    "The trochlea is on the humerus, not the ulna."
+   ],
+   "tip": "The olecranon and the two epicondyles form a straight line when the elbow is extended and a triangle when it is bent. A change in this pattern suggests a dislocation or fracture.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ul-24",
+   "topic": "upper-limb",
+   "type": "sba",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "hand_proximal_phalanx_1_left",
+   "stem": "How many phalanges are there in one hand?",
+   "options": [
+    "10",
+    "12",
+    "14",
+    "15"
+   ],
+   "answer": 2,
+   "why": "Each finger has three phalanges (proximal, middle and distal), and the thumb has two (proximal and distal). Four fingers × 3 + 2 = 14.",
+   "whyNot": [
+    "10 would mean two phalanges in every digit.",
+    "12 counts only the four fingers.",
+    "",
+    "15 would mean three phalanges in every digit, but the thumb has no middle phalanx."
+   ],
+   "tip": "The thumb has no middle phalanx. The same pattern holds in the foot: the big toe has two phalanges and the other toes three.",
+   "reviewStatus": "draft"
+  }
+ ]
+}

@@ -16,8 +16,8 @@ interface Drawn {
 }
 /** The floating toolbar: for a fresh selection, or for an existing highlight that was tapped. */
 type Bar = ({ kind: 'new'; segs: Segment[]; text: string } | { kind: 'edit'; id: string }) & { at: Box; width: number }
-/** The note popover: reading a note, or writing it. */
-interface Pop {
+/** The note popover: reading a note, or writing it. Positions are relative to the popover's positioned parent. */
+export interface Pop {
   id: string
   mode: 'view' | 'edit'
   at: Box
@@ -338,7 +338,7 @@ export function Annotatable({ doc, docLabel, children, className }: { doc: strin
   )
 }
 
-function NoteGlyph() {
+export function NoteGlyph() {
   return (
     <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden>
       <path d="M3 2.5h7.5L13 5v8.5H3z" fill="currentColor" opacity="0.18" />
@@ -348,7 +348,7 @@ function NoteGlyph() {
 }
 
 /** A note, right beside its text: read it, edit it (saved on every keystroke) or delete it. */
-function NotePopover({ a, pop, onMode, onClose, onDelete }: { a: Annotation; pop: Pop; onMode: (m: 'view' | 'edit') => void; onClose: () => void; onDelete: () => void }) {
+export function NotePopover({ a, pop, onMode, onClose, onDelete }: { a: Annotation; pop: Pop; onMode: (m: 'view' | 'edit') => void; onClose: () => void; onDelete: () => void }) {
   const box = useRef<HTMLDivElement>(null)
   const area = useRef<HTMLTextAreaElement>(null)
   const quote = a.segs.map((s) => s.quote).join(' … ')
@@ -394,7 +394,7 @@ function NotePopover({ a, pop, onMode, onClose, onDelete }: { a: Annotation; pop
 
   return (
     <div ref={box} className="note-pop" role="dialog" aria-label="Note" style={{ left, top, width }}>
-      <p className="note-quote">{a.scope === 'para' ? 'On this paragraph' : `“${quote.length > 90 ? `${quote.slice(0, 88)}…` : quote}”`}</p>
+      <p className="note-quote">{!a.segs.length ? 'On this question' : a.scope === 'para' ? 'On this paragraph' : `“${quote.length > 90 ? `${quote.slice(0, 88)}…` : quote}”`}</p>
       {pop.mode === 'edit' ? (
         <>
           <textarea
@@ -407,7 +407,7 @@ function NotePopover({ a, pop, onMode, onClose, onDelete }: { a: Annotation; pop
             aria-label="Note"
           />
           <div className="note-actions">
-            {a.scope !== 'para' && !a.color && (
+            {a.segs.length > 0 && a.scope !== 'para' && !a.color && (
               <button className="link-btn" onPointerDown={(e) => e.preventDefault()} onClick={toParagraph}>
                 Attach to the whole paragraph
               </button>

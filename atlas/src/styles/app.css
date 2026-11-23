@@ -4118,3 +4118,334 @@ textarea:focus-visible {
   font-size: 11.5px;
   color: var(--muted);
 }
+
+/* ---------- Exam-style questions ---------- */
+
+.topic-count {
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.topic-count.soon {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.exam-note {
+  margin-top: -4px;
+}
+
+.exam-progress {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.exam-progress > div {
+  display: grid;
+}
+
+.exam-progress .num {
+  font-size: 20px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.exam-progress .k {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.exam-progress .link-btn {
+  margin-left: auto;
+}
+
+.exam-filters {
+  display: grid;
+  gap: 8px;
+  margin: 14px 0 4px;
+}
+
+.chip-row {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.chip-row::-webkit-scrollbar {
+  display: none;
+}
+
+.chip-row .chip {
+  flex: none;
+}
+
+.q-list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.q-card {
+  position: relative;
+  padding: 14px 16px 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--raise);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.q-card.revealed {
+  border-color: var(--line-strong);
+}
+
+.q-tags {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.tag {
+  padding: 2px 8px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+
+.tag.freq-core {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tag.freq-advanced {
+  border-color: var(--draft);
+  color: var(--draft);
+}
+
+.q-type {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.q-tags {
+  padding-right: 34px;
+}
+
+/* The question's note pin sits in the card's top-right corner. */
+.q-note {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.note-pin.inline {
+  position: static;
+  width: 32px;
+  height: 32px;
+  color: var(--muted);
+  animation: none;
+}
+
+.note-pin.inline.has {
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+/* The question's note opens under its pin, aligned to the card's right edge. */
+.q-note .note-pop {
+  left: auto !important;
+  right: 0;
+  top: 38px !important;
+  width: min(300px, calc(100vw - 48px)) !important;
+}
+
+.q-stem {
+  margin: 0 0 12px;
+  font-weight: 500;
+}
+
+.q-num {
+  color: var(--accent);
+}
+
+.q-snapshot {
+  position: relative;
+  height: 220px;
+  margin: 0 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background:
+    radial-gradient(70% 70% at 50% 45%, var(--accent-soft), transparent 70%),
+    var(--bg);
+  overflow: hidden;
+  touch-action: none;
+}
+
+.snapshot-canvas {
+  position: absolute !important;
+  inset: 0;
+}
+
+.q-snapshot-hint {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  font-size: 11px;
+  color: var(--muted);
+  pointer-events: none;
+}
+
+.q-options {
+  display: grid;
+  gap: 6px;
+}
+
+.q-options .qc-opt {
+  font-size: 15px;
+}
+
+.q-show {
+  margin-top: 4px;
+}
+
+.q-explain {
+  margin-top: 14px;
+  font-size: 15px;
+  animation: sp-rise 0.22s ease-out;
+}
+
+.q-explain h3 {
+  margin: 14px 0 4px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.q-explain p {
+  margin: 0;
+}
+
+.q-verdict {
+  margin: 0;
+  font-weight: 600;
+}
+
+.q-verdict.good {
+  color: var(--good);
+}
+
+.q-verdict.bad {
+  color: var(--text);
+}
+
+.q-model {
+  padding: 10px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  background: var(--bg);
+}
+
+.q-model h3 {
+  margin-top: 0;
+}
+
+.q-whynot {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.q-whynot li {
+  display: flex;
+  gap: 8px;
+  color: var(--text-2);
+}
+
+.q-tip {
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-left: 3px solid var(--draft);
+  border-radius: 8px;
+  background: var(--draft-soft);
+}
+
+.q-tip h3 {
+  margin-top: 0;
+  color: var(--draft);
+}
+
+.q-self {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.q-foot {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.q-3d {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.q-3d svg {
+  width: 17px;
+  height: 17px;
+  color: var(--accent);
+}
+
+.q-source {
+  font-size: 11.5px !important;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.review {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-size: 10.5px;
+  font-weight: 600;
+}
+
+.review.draft {
+  background: var(--draft-soft);
+  color: var(--draft);
+}
+
+.review.reviewed {
+  background: var(--accent-soft);
+  color: var(--accent);
+}

@@ -3,6 +3,7 @@ import { minutes, sectionLabel, sectionsFor, useReading } from '../../learn/text
 import { useNav } from '../../state/nav'
 import { ChevronRightIcon } from '../Icons'
 import { PageHead } from './PageHead'
+import { ExamQuestions } from './ExamQuestions'
 
 /** One topic: its textbook sections or its exam-style questions. */
 export function TopicScreen({ area, topic }: { area: 'textbook' | 'exam'; topic: string }) {
@@ -16,8 +17,9 @@ export function TopicScreen({ area, topic }: { area: 'textbook' | 'exam'; topic:
       <PageHead eyebrow={area === 'exam' ? 'Exam-style questions' : 'Textbook'} title={t.title} />
       <div className="page-body">
         <p className="muted">{t.blurb}.</p>
+        {area === 'exam' && <p className="muted small exam-note">Exam-style questions: written in the style of anatomy exams, with the reasoning explained. Not real exam papers.</p>}
         {area === 'exam' ? (
-          <div className="empty-note">Questions for this topic are being written.</div>
+          <ExamQuestions topic={topic} />
         ) : (
           <ul className="topic-list">
             {sections.map((s) => {

@@ -276,6 +276,30 @@ opened from Home form a stack backed by browser history, so the phone's back but
 - Tests (`src/learn/annotations.test.ts`): the journal wins over an older stored copy (no lost keystrokes), empty notes
   are dropped only after the journal is replayed, deletes keep tombstones, every change is journalled synchronously.
 
+### Exam-style questions (step 5)
+
+Lessons → **Exam-style questions** → a topic. The Skull (20) and the Upper limb (24) are ready
+(`content/questions/*.json`); the other topics say "Coming soon". Never presented as real exam papers: the section is
+labelled "Exam-style questions", and every Atlas question's source says it is not from a real exam paper.
+
+- **Sources**: the OpenStax review and critical thinking questions of sections 7.2, 8.1 and 8.2 (wording unchanged,
+  CC BY 4.0, cited with section and question number), plus Atlas-written questions on high-yield topics (foramen
+  magnum, pterion and the middle meningeal artery, TMJ, hard palate, the orbit, V1–V3 exits, the hyoid; nerve injuries
+  in humeral fractures, Colles and Smith fractures, the thumb's saddle joint, the snuffbox, the olecranon).
+- **Each question**: single best answer, short answer, or **label the 3D model** (the bone lit on a small model of its
+  own, turning slowly and draggable, with its neighbours dimmed; `src/viewer/BoneSnapshot.tsx`, mounted only near
+  the screen). Choosing an answer (or *Show answer*) reveals: the answer, **Why this is the answer** (2–4 sentences),
+  **Why the others are wrong** (one line per option), an **Exam tip** (the trap), **See it in 3D**, the source and
+  the review status (all *Draft, awaiting academic review*). Tags: Core / Common / Advanced and Foundation /
+  Undergraduate / Medical, with filters for both.
+- Answers are saved on the device (`useExam`): progress per topic (answered, % correct), *Start again*. Short answers
+  are self-marked (*I knew it* / *I missed parts*).
+- Explanations can be highlighted (the same highlighter, document `eq:<id>`), and each card has a **note pin** for a
+  note on the whole question.
+- Tests (`src/learn/questions.test.ts`): unique ids, real topics and bones, tags and review status, OpenStax sources
+  cite CC BY 4.0, 2–4 sentence explanations, four options with one line on each wrong option, label answers name the
+  lit bone, answers spread across A–D. All question text was spell-checked (British English, as the rest of the app).
+
 ## Progress (step 6)
 
 Top bar → progress icon. All computed from data saved on the device (`useProgress`, via `appStorage`):

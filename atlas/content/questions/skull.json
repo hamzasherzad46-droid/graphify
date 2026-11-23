@@ -1,0 +1,528 @@
+{
+ "description": "Exam-style questions (not real exam papers). type: sba (single best answer), short (short answer), label (name the bone lit in the 3D model). answer: index into options. whyNot: one line per option, empty for the answer.",
+ "questions": [
+  {
+   "type": "sba",
+   "stem": "Which of the following is a bone of the brain case?",
+   "options": [
+    "parietal bone",
+    "zygomatic bone",
+    "maxillary bone",
+    "lacrimal bone"
+   ],
+   "answer": 0,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.2 The Skull, Review Questions, question 1 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "skull-01",
+   "topic": "skull",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "parietal_bone_left",
+   "why": "The brain case (cranium) is formed by eight bones: the paired parietal and temporal bones and the single frontal, occipital, sphenoid and ethmoid bones. The parietal bones form most of the roof and upper sides of the brain case, so they are cranial bones.",
+   "whyNot": [
+    "",
+    "The zygomatic bone is a facial bone: it forms the cheek and part of the lateral wall and floor of the orbit.",
+    "The maxillary bone (maxilla) is a facial bone: it forms the upper jaw, most of the hard palate and the floor of the orbit.",
+    "The lacrimal bone is a small facial bone in the medial wall of the orbit."
+   ],
+   "tip": "Bones that help to form the orbit are not all facial bones: the frontal, sphenoid and ethmoid bones form parts of the orbit but are cranial bones. Learn the eight cranial bones as a list.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "The lambdoid suture joins the parietal bone to the ________.",
+   "options": [
+    "frontal bone",
+    "occipital bone",
+    "other parietal bone",
+    "temporal bone"
+   ],
+   "answer": 1,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.2 The Skull, Review Questions, question 2 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "skull-02",
+   "topic": "skull",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "occipital_bone",
+   "why": "The lambdoid suture lies on the back of the skull and is shaped like an upside-down V, like the Greek letter lambda. It joins the occipital bone to both parietal bones.",
+   "whyNot": [
+    "The frontal bone meets the parietal bones at the coronal suture.",
+    "",
+    "The two parietal bones meet each other at the sagittal suture, in the midline.",
+    "The temporal bone meets the parietal bone at the squamous suture, on the side of the skull."
+   ],
+   "tip": "Link each suture to where it lies: coronal at the front (like a crown), sagittal in the midline, lambdoid at the back (shaped like λ), squamous on the side.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "The middle cranial fossa ________.",
+   "options": [
+    "is bounded anteriorly by the petrous ridge",
+    "is bounded posteriorly by the lesser wing of the sphenoid bone",
+    "is divided at the midline by a small area of the ethmoid bone",
+    "has the foramen rotundum, foramen ovale, and foramen spinosum"
+   ],
+   "answer": 3,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.2 The Skull, Review Questions, question 3 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "skull-03",
+   "topic": "skull",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "sphenoid_bone",
+   "why": "The middle cranial fossa extends from the lesser wings of the sphenoid bone in front to the petrous ridges of the temporal bones behind. Its floor, the greater wing of the sphenoid, has three openings on each side: the foramen rotundum, foramen ovale and foramen spinosum.",
+   "whyNot": [
+    "The petrous ridge is the posterior boundary of the middle fossa, not the anterior one.",
+    "The lesser wing of the sphenoid is the anterior boundary of the middle fossa, not the posterior one.",
+    "The middle fossa is divided in the midline by the sella turcica of the sphenoid bone. The ethmoid bone (crista galli and cribriform plate) divides the anterior fossa.",
+    ""
+   ],
+   "tip": "Swapping \"anteriorly\" and \"posteriorly\" is a favourite trap. Anterior fossa: frontal bone to lesser wings. Middle fossa: lesser wings to petrous ridges. Posterior fossa: petrous ridges to occipital bone.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "The paranasal sinuses are ________.",
+   "options": [
+    "air-filled spaces found within the frontal, maxilla, sphenoid, and ethmoid bones only",
+    "air-filled spaces found within all bones of the skull",
+    "not connected to the nasal cavity",
+    "divided at the midline by the nasal septum"
+   ],
+   "answer": 0,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.2 The Skull, Review Questions, question 4 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "skull-04",
+   "topic": "skull",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "maxilla_left",
+   "why": "The paranasal sinuses are air-filled spaces lined by mucous membrane, found in only four bones: the frontal, maxillary, sphenoid and ethmoid bones. They open into the nasal cavity, lighten the skull and add resonance to the voice.",
+   "whyNot": [
+    "",
+    "Most skull bones have no sinus: only the frontal, maxillary, sphenoid and ethmoid bones contain one.",
+    "All of the sinuses drain into the nasal cavity, which is how nasal infections spread into them.",
+    "The nasal septum divides the nasal cavity into right and left halves; it does not divide the sinuses."
+   ],
+   "tip": "The sinuses are named after the bones that hold them. The maxillary sinus is the largest, and its drainage opening sits high on its wall, so it drains poorly and is often infected.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "Parts of the sphenoid bone include the ________.",
+   "options": [
+    "sella turcica",
+    "squamous portion",
+    "glabella",
+    "zygomatic process"
+   ],
+   "answer": 0,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.2 The Skull, Review Questions, question 5 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "skull-05",
+   "topic": "skull",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "sphenoid_bone",
+   "why": "The sella turcica (\"Turkish saddle\") is a saddle-shaped depression on the upper surface of the body of the sphenoid bone. Its deepest part, the hypophyseal fossa, holds the pituitary gland.",
+   "whyNot": [
+    "",
+    "The squamous portion is the flat, upper part of the temporal bone (the frontal and occipital bones also have squamous parts), not part of the sphenoid.",
+    "The glabella is the smooth area between the eyebrows, on the frontal bone.",
+    "Zygomatic processes project from the temporal, frontal and maxillary bones, not from the sphenoid."
+   ],
+   "tip": "Clinical link: surgeons reach a pituitary tumour in the sella turcica through the nose and the sphenoid sinus (transsphenoidal surgery).",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "The bony openings of the skull include the ________.",
+   "options": [
+    "carotid canal, which is located in the anterior cranial fossa",
+    "superior orbital fissure, which is located at the superior margin of the anterior orbit",
+    "mental foramen, which is located just below the orbit",
+    "hypoglossal canal, which is located in the posterior cranial fossa"
+   ],
+   "answer": 3,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.2 The Skull, Review Questions, question 6 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "skull-06",
+   "topic": "skull",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "occipital_bone",
+   "why": "The hypoglossal canal passes through the occipital bone just above each occipital condyle, in the posterior cranial fossa. It carries the hypoglossal nerve (cranial nerve XII) to the muscles of the tongue.",
+   "whyNot": [
+    "The carotid canal is in the petrous part of the temporal bone and opens into the middle cranial fossa, not the anterior fossa.",
+    "The superior orbital fissure is at the back of the orbit, between the greater and lesser wings of the sphenoid. The opening at the superior margin of the orbit is the supraorbital foramen (or notch).",
+    "The mental foramen is on the front of the mandible, below the premolar teeth. The opening just below the orbit is the infraorbital foramen.",
+    ""
+   ],
+   "tip": "Look-alike names are the trap here: supraorbital foramen versus superior orbital fissure, and mental foramen versus infraorbital foramen. Read every word of each option.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Define and list the bones that form the brain case or support the facial structures.",
+   "answerText": "The brain case is that portion of the skull that surrounds and protects the brain. It is subdivided into the rounded top of the skull, called the calvaria, and the base of the skull. There are eight bones that form the brain case. These are the paired parietal and temporal bones, plus the unpaired frontal, occipital, sphenoid, and ethmoid bones. The facial bones support the facial structures, and form the upper and lower jaws, nasal cavity, nasal septum, and orbit. There are 14 facial bones. These are the paired maxillary, palatine, zygomatic, nasal, lacrimal, and inferior nasal conchae bones, and the unpaired vomer and mandible bones.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.2 The Skull, Critical Thinking Questions, question 1 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "skull-07",
+   "topic": "skull",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "frontal_bone",
+   "why": "Count the bones in pairs to remember them. Brain case: two paired bones (parietal, temporal) and four single bones (frontal, occipital, sphenoid, ethmoid) make eight. Face: six paired bones (maxilla, palatine, zygomatic, nasal, lacrimal, inferior nasal concha) and two single bones (vomer, mandible) make fourteen.",
+   "tip": "The hyoid bone and the six ear ossicles are not counted among the 22 bones of the skull.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Identify the major sutures of the skull, their locations, and the bones united by each.",
+   "answerText": "The coronal suture passes across the top of the anterior skull. It unites the frontal bone anteriorly with the right and left parietal bones. The sagittal suture runs at the midline on the top of the skull. It unites the right and left parietal bones with each other. The squamous suture is a curved suture located on the lateral side of the skull. It unites the squamous portion of the temporal bone to the parietal bone. The lambdoid suture is located on the posterior skull and has an inverted V-shape. It unites the occipital bone with the right and left parietal bones.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.2 The Skull, Critical Thinking Questions, question 2 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "skull-08",
+   "topic": "skull",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "parietal_bone_left",
+   "why": "Four main sutures are tested. The coronal and lambdoid sutures cross the skull from side to side, at the front and the back; the sagittal suture runs from front to back in the midline between them; the squamous suture curves along each side.",
+   "tip": "Two meeting points are also examined: bregma, where the coronal and sagittal sutures meet (the anterior fontanelle in a baby), and lambda, where the sagittal and lambdoid sutures meet (the posterior fontanelle).",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Describe the anterior, middle, and posterior cranial fossae and their boundaries, and give the midline structure that divides each into right and left areas.",
+   "answerText": "The anterior cranial fossa is the shallowest of the three cranial fossae. It extends from the frontal bone anteriorly to the lesser wing of the sphenoid bone posteriorly. It is divided at the midline by the crista galli and cribriform plates of the ethmoid bone. The middle cranial fossa is located in the central skull, and is deeper than the anterior fossa. The middle fossa extends from the lesser wing of the sphenoid bone anteriorly to the petrous ridge posteriorly. It is divided at the midline by the sella turcica. The posterior cranial fossa is the deepest fossa. It extends from the petrous ridge anteriorly to the occipital bone posteriorly. The large foramen magnum is located at the midline of the posterior fossa.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.2 The Skull, Critical Thinking Questions, question 3 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "skull-09",
+   "topic": "skull",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "sphenoid_bone",
+   "why": "The floor of the cranial cavity drops in three steps from front to back. Each fossa holds part of the brain: the anterior fossa holds the frontal lobes, the middle fossa the temporal lobes, and the posterior fossa the cerebellum and brainstem.",
+   "tip": "Know the midline structure of each fossa: crista galli and cribriform plate (anterior), sella turcica (middle), foramen magnum (posterior).",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Describe the parts of the nasal septum in both the dry and living skull.",
+   "answerText": "There are two bony parts of the nasal septum in the dry skull. The perpendicular plate of the ethmoid bone forms the superior part of the septum. The vomer bone forms the inferior and posterior parts of the septum. In the living skull, the septal cartilage completes the septum by filling in the anterior area between the bony components and extending outward into the nose.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.2 The Skull, Critical Thinking Questions, question 4 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "skull-10",
+   "topic": "skull",
+   "frequency": "common",
+   "level": "foundation",
+   "bone": "vomer",
+   "why": "On a dry skull, only the bony septum remains: the perpendicular plate of the ethmoid bone above and the vomer below and behind. In life, the septal cartilage fills the front of the septum and extends into the nose.",
+   "tip": "A deviated nasal septum usually involves the septal cartilage or its junction with the vomer, which is why it cannot be seen on a dry skull.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "skull-11",
+   "topic": "skull",
+   "type": "label",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "sphenoid_bone",
+   "label": "sphenoid_bone",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Sphenoid bone",
+    "Ethmoid bone",
+    "Temporal bone",
+    "Occipital bone"
+   ],
+   "answer": 0,
+   "why": "The sphenoid is the butterfly-shaped bone in the middle of the base of the skull. It has a central body (with the sella turcica), greater and lesser wings, and pterygoid processes, and it joins every other cranial bone.",
+   "whyNot": [
+    "",
+    "The ethmoid lies in front of the sphenoid, between the orbits, and is light and spongy.",
+    "The temporal bones form the sides of the skull, around the ears.",
+    "The occipital bone forms the back and the posterior base of the skull, around the foramen magnum."
+   ],
+   "tip": "The sphenoid is the \"keystone\" of the cranial floor: it is the only cranial bone that articulates with all the others.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "skull-12",
+   "topic": "skull",
+   "type": "label",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "ethmoid_bone",
+   "label": "ethmoid_bone",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Vomer",
+    "Ethmoid bone",
+    "Sphenoid bone",
+    "Lacrimal bone"
+   ],
+   "answer": 1,
+   "why": "The ethmoid is a light, spongy bone between the orbits. Its cribriform plate forms the roof of the nasal cavity, its perpendicular plate forms the upper nasal septum, and it carries the superior and middle nasal conchae and the ethmoid air cells.",
+   "whyNot": [
+    "The vomer is a thin bone forming the lower and back part of the nasal septum.",
+    "",
+    "The sphenoid lies behind the ethmoid, in the middle of the base of the skull.",
+    "The lacrimal bone is a tiny bone in the front of the medial wall of the orbit."
+   ],
+   "tip": "A fracture of the cribriform plate can tear the meninges: cerebrospinal fluid then leaks from the nose (CSF rhinorrhoea), and the sense of smell may be lost.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "skull-13",
+   "topic": "skull",
+   "type": "label",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "zygomatic_bone_left",
+   "label": "zygomatic_bone_left",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Maxilla",
+    "Temporal bone",
+    "Zygomatic bone",
+    "Frontal bone"
+   ],
+   "answer": 2,
+   "why": "The zygomatic bone is the cheek bone. It forms the prominence of the cheek and part of the lateral wall and floor of the orbit, and its temporal process joins the zygomatic process of the temporal bone to form the zygomatic arch.",
+   "whyNot": [
+    "The maxilla lies below and medial to the zygomatic bone and carries the upper teeth.",
+    "The temporal bone is further back, around the ear; only its zygomatic process reaches forward.",
+    "",
+    "The frontal bone forms the forehead and the roof of the orbit."
+   ],
+   "tip": "The zygomatic arch is made of two bones: the temporal process of the zygomatic bone and the zygomatic process of the temporal bone. Expect a question that swaps the two names.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "skull-14",
+   "topic": "skull",
+   "type": "sba",
+   "frequency": "core",
+   "level": "undergraduate",
+   "bone": "occipital_bone",
+   "stem": "Which structure passes through the foramen magnum?",
+   "options": [
+    "The medulla oblongata, where it becomes the spinal cord",
+    "The internal jugular vein",
+    "The hypoglossal nerve",
+    "The optic nerve"
+   ],
+   "answer": 0,
+   "why": "The foramen magnum is the large opening in the occipital bone. The medulla oblongata passes through it to become the spinal cord, together with the vertebral arteries and the spinal roots of the accessory nerve.",
+   "whyNot": [
+    "",
+    "The internal jugular vein leaves the skull through the jugular foramen.",
+    "The hypoglossal nerve leaves through the hypoglossal canal, just above the occipital condyle.",
+    "The optic nerve passes through the optic canal in the lesser wing of the sphenoid."
+   ],
+   "tip": "Raised pressure inside the skull can push the cerebellar tonsils down through the foramen magnum (\"coning\"), compressing the brainstem: a medical emergency.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "skull-15",
+   "topic": "skull",
+   "type": "sba",
+   "frequency": "core",
+   "level": "medical",
+   "bone": "temporal_bone_left",
+   "stem": "The pterion is the H-shaped junction of four bones on the side of the skull. The frontal, parietal and sphenoid bones are three of them. Which is the fourth?",
+   "options": [
+    "Temporal bone",
+    "Occipital bone",
+    "Zygomatic bone",
+    "Ethmoid bone"
+   ],
+   "answer": 0,
+   "why": "At the pterion the frontal, parietal, temporal (squamous part) and sphenoid (greater wing) bones meet. It is the thinnest part of the side of the skull, and the anterior branch of the middle meningeal artery runs just deep to it.",
+   "whyNot": [
+    "",
+    "The occipital bone is at the back of the skull; it meets the parietal and temporal bones further back, at the asterion.",
+    "The zygomatic bone is lower and further forward, in the cheek.",
+    "The ethmoid bone is deep inside the skull, between the orbits, and does not reach the side of the skull."
+   ],
+   "tip": "A blow to the side of the head at the pterion can tear the middle meningeal artery, causing an extradural haematoma. The classic exam story is a brief loss of consciousness, a lucid interval, then rapid deterioration.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "skull-16",
+   "topic": "skull",
+   "type": "sba",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "mandible",
+   "stem": "The only freely movable joint of the skull is formed by the mandible and which other bone?",
+   "options": [
+    "Maxilla",
+    "Temporal bone",
+    "Zygomatic bone",
+    "Sphenoid bone"
+   ],
+   "answer": 1,
+   "why": "The temporomandibular joint (TMJ) is a synovial joint between the head of the mandible (condylar process) and the mandibular fossa and articular tubercle of the temporal bone. An articular disc divides it into an upper and a lower joint cavity.",
+   "whyNot": [
+    "The maxilla does not form a joint with the mandible: the upper and lower teeth only touch when the mouth closes.",
+    "",
+    "The zygomatic bone lies near the joint but does not articulate with the mandible.",
+    "Muscles from the sphenoid (the pterygoid muscles) move the mandible, but the sphenoid does not articulate with it."
+   ],
+   "tip": "In dislocation of the TMJ the head of the mandible slips forward, in front of the articular tubercle, and the mouth is stuck open.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "skull-17",
+   "topic": "skull",
+   "type": "sba",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "palatine_bone_left",
+   "stem": "Which bones form the hard palate?",
+   "options": [
+    "The palatine processes of the maxillae and the horizontal plates of the palatine bones",
+    "The maxillae only",
+    "The palatine bones and the vomer",
+    "The maxillae and the pterygoid processes of the sphenoid"
+   ],
+   "answer": 0,
+   "why": "The front two thirds of the hard palate is formed by the palatine processes of the two maxillae, and the back third by the horizontal plates of the two palatine bones. Together they form the roof of the mouth and the floor of the nasal cavity.",
+   "whyNot": [
+    "",
+    "The maxillae form only the front two thirds; the palatine bones complete the back of the hard palate.",
+    "The vomer forms part of the nasal septum and sits on top of the palate; it is not part of it.",
+    "The pterygoid processes of the sphenoid lie behind the palate and give attachment to muscles; they are not part of the hard palate."
+   ],
+   "tip": "A cleft palate results from failure of these plates to fuse in the midline during development, and often occurs with a cleft lip.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "skull-18",
+   "topic": "skull",
+   "type": "short",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "ethmoid_bone",
+   "stem": "Name the seven bones that form the walls of the orbit.",
+   "answerText": "Frontal bone (roof); sphenoid bone (lesser wing in the roof, greater wing in the lateral wall); zygomatic bone (lateral wall and floor); maxilla (floor and medial wall); palatine bone (a small part of the floor, at the back); lacrimal bone and ethmoid bone (medial wall).",
+   "why": "Seven bones meet around each orbit: three cranial bones (frontal, sphenoid, ethmoid) and four facial bones (zygomatic, maxilla, palatine, lacrimal). Going round the walls one by one is the easiest way to remember them.",
+   "tip": "The medial wall (the thin orbital plate of the ethmoid) and the floor (the maxilla) are the weakest parts: they break first in a \"blow-out\" fracture from a blow to the eye.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "skull-19",
+   "topic": "skull",
+   "type": "sba",
+   "frequency": "advanced",
+   "level": "medical",
+   "bone": "sphenoid_bone",
+   "stem": "Through which opening does the mandibular nerve (the third division of the trigeminal nerve, V3) leave the skull?",
+   "options": [
+    "Foramen ovale",
+    "Foramen rotundum",
+    "Superior orbital fissure",
+    "Foramen spinosum"
+   ],
+   "answer": 0,
+   "why": "The mandibular nerve leaves the middle cranial fossa through the foramen ovale, in the greater wing of the sphenoid, to reach the infratemporal fossa. It supplies the muscles of mastication and sensation to the lower face.",
+   "whyNot": [
+    "",
+    "The foramen rotundum carries the maxillary nerve (V2).",
+    "The superior orbital fissure carries the ophthalmic nerve (V1), with cranial nerves III, IV and VI.",
+    "The foramen spinosum carries the middle meningeal artery."
+   ],
+   "tip": "The three divisions leave in order from front to back: superior orbital fissure (V1), foramen rotundum (V2), foramen ovale (V3). A common memory aid is \"Standing Room Only\".",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "skull-20",
+   "topic": "skull",
+   "type": "sba",
+   "frequency": "common",
+   "level": "foundation",
+   "bone": "hyoid_bone",
+   "stem": "Which of these bones does not articulate with any other bone?",
+   "options": [
+    "Vomer",
+    "Stapes",
+    "Hyoid bone",
+    "Mandible"
+   ],
+   "answer": 2,
+   "why": "The hyoid is a U-shaped bone in the upper neck, held in place only by muscles and ligaments from the skull above and the larynx below. It is the only bone in the body that does not form a joint with another bone, and it anchors the muscles of the tongue.",
+   "whyNot": [
+    "The vomer articulates with the sphenoid, the ethmoid, both maxillae and both palatine bones.",
+    "The stapes articulates with the incus, and its footplate fits into the oval window.",
+    "",
+    "The mandible articulates with the temporal bones at the temporomandibular joints."
+   ],
+   "tip": "A fracture of the hyoid bone in an adult is a classic forensic sign of strangulation.",
+   "reviewStatus": "draft"
+  }
+ ]
+}

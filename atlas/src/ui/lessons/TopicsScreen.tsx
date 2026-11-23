@@ -1,5 +1,6 @@
 import { useNav } from '../../state/nav'
 import { TOPICS } from '../../learn/topics'
+import { questionsFor } from '../../learn/questions'
 import { ChevronRightIcon } from '../Icons'
 import { PageHead } from './PageHead'
 
@@ -24,6 +25,9 @@ export function TopicsScreen({ area }: { area: 'textbook' | 'exam' }) {
                 <span className="topic-text">
                   <span className="topic-title">{t.title}</span>
                   <span className="topic-blurb">{t.blurb}</span>
+                  {area === 'exam' && (
+                    <span className={`topic-count ${questionsFor(t.id).length ? '' : 'soon'}`}>{questionsFor(t.id).length ? `${questionsFor(t.id).length} questions` : 'Coming soon'}</span>
+                  )}
                 </span>
                 <ChevronRightIcon className="topic-go" />
               </button>

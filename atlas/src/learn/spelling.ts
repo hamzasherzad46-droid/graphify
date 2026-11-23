@@ -4,7 +4,22 @@ import setsJson from '../../content/sets.json'
 import { BONE_BY_ID } from '../data/bones'
 
 /**
- * Letter-by-letter spelling. The answers for a bone are its name and its accepted spellings (synonyms and
+ * Everyday (lay) names. The quiz teaches the anatomical spelling, so these never complete a word; typing one shows
+ * a note instead, and they are shown after the answer as the everyday name. Anatomical synonyms (os coxae,
+ * calcaneum, hallux, the Roman-numeral forms) stay accepted.
+ */
+export const EVERYDAY = new Set(
+  [
+    'heel bone', 'heelbone', 'collarbone', 'collar bone', 'tailbone', 'tail bone', 'thigh bone', 'thighbone', 'calf bone',
+    'kneecap', 'knee cap', 'shoulder blade', 'shoulderblade', 'breastbone', 'breast bone', 'ankle bone', 'anklebone',
+    'shin bone', 'shinbone', 'cheekbone', 'cheek bone', 'lower jaw', 'lower jaw bone', 'jaw bone', 'jawbone',
+    'upper jaw', 'upper jaw bone', 'anvil', 'hammer', 'stirrup',
+  ].map(normalize),
+)
+const isEveryday = (n: string) => EVERYDAY.has(n) || /\bpinky\b/.test(n)
+
+/**
+ * Letter-by-letter spelling. The answers for a bone are its name and its anatomical alternatives (synonyms and
  * British/American forms from its content file), lower case with punctuation turned into spaces. A key is accepted
  * if what has been typed plus that key still starts at least one answer. Answers with digits ("c7") are left out:
  * the keyboard has letters only.
@@ -13,14 +28,29 @@ export function answersFor(b: Bone): string[] {
   const out: string[] = []
   for (const a of [b.name, ...b.acceptedSpellings]) {
     const n = normalize(a)
-    if (n && !/\d/.test(n) && !out.includes(n)) out.push(n)
+    if (n && !/\d/.test(n) && !out.includes(n) && (n === normalize(b.name) || !isEveryday(n))) out.push(n)
+  }
+  return out
+}
+
+/** The bone's everyday names, as written in its content file (one per spelling: "collarbone", not also "collar bone"). */
+export function everydayFor(b: Bone): string[] {
+  const out: string[] = []
+  const keys = new Set<string>()
+  for (const a of b.acceptedSpellings) {
+    const n = normalize(a)
+    const key = n.replace(/ /g, '')
+    if (isEveryday(n) && !/\bpinky\b/.test(n) && !keys.has(key)) {
+      keys.add(key)
+      out.push(n)
+    }
   }
   return out
 }
 
 export type KeyResult =
   | { ok: true; typed: string; done: boolean; target: string }
-  | { ok: false; typed: string; target: string }
+  | { ok: false; typed: string; target: string; everyday?: string }
 
 /** The answer being spelled: the first that starts with what has been typed (the bone's name, if it still fits). */
 export function targetFor(answers: string[], typed: string): string {
@@ -32,7 +62,7 @@ export function targetFor(answers: string[], typed: string): string {
  * you. `done` as soon as the typed text is a whole accepted answer ("innominate" finishes, even though
  * "innominate bone" is also accepted).
  */
-export function press(answers: string[], typed: string, key: string): KeyResult {
+export function press(answers: string[], typed: string, key: string, everyday: string[] = []): KeyResult {
   const k = key.toLowerCase()
   const tries = k === ' ' ? [typed + ' '] : [typed + k, typed + ' ' + k]
   for (const t of tries) {
@@ -41,7 +71,9 @@ export function press(answers: string[], typed: string, key: string): KeyResult 
       return { ok: true, typed: t, done, target: done ? t : targetFor(answers, t) }
     }
   }
-  return { ok: false, typed, target: targetFor(answers, typed) }
+  // Refused. If the student is spelling an everyday name ("kneecap" for the patella), say so.
+  const lay = everyday.find((e) => tries.some((t) => e.startsWith(t)))
+  return { ok: false, typed, target: targetFor(answers, typed), ...(lay ? { everyday: lay } : {}) }
 }
 
 /** The next letter of the answer being spelled (Hint), with any space before it. */

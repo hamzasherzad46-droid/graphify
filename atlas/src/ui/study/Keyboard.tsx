@@ -3,8 +3,8 @@ import { keyClick, wrongLetter } from '../../learn/sound'
 import { haptic } from '../../lib/feedback'
 
 export type KeyName = string // 'a'–'z', ' ', 'back', 'hint', 'skip'
-/** What a key press did: accepted, refused (wrong letter), or nothing (e.g. backspace at the start). */
-export type KeyOutcome = 'ok' | 'wrong' | 'none'
+/** What a key press did: accepted, refused (wrong letter), a note (an everyday name: not an error), or nothing. */
+export type KeyOutcome = 'ok' | 'wrong' | 'note' | 'none'
 
 const ROWS = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm']
 const FLASH_MS = 120
@@ -24,14 +24,14 @@ export function Keyboard({ onKey, disabled }: { onKey: (k: KeyName) => KeyOutcom
     disabledRef.current = disabled
   })
 
-  const flash = (k: string, cls: 'hit' | 'miss') => {
+  const flash = (k: string, cls: 'hit' | 'miss' | 'note') => {
     const el = keys.current.get(k)
     if (!el) return
-    el.classList.remove('hit', 'miss')
+    el.classList.remove('hit', 'miss', 'note')
     void el.offsetWidth // restart the animation
     el.classList.add(cls)
     window.clearTimeout(timers.current.get(k))
-    timers.current.set(k, window.setTimeout(() => el.classList.remove(cls), cls === 'miss' ? 280 : FLASH_MS))
+    timers.current.set(k, window.setTimeout(() => el.classList.remove(cls), cls === 'hit' ? FLASH_MS : 280))
   }
 
   const press = (k: KeyName) => {
@@ -42,6 +42,9 @@ export function Keyboard({ onKey, disabled }: { onKey: (k: KeyName) => KeyOutcom
       wrongLetter()
       haptic('medium')
       flash(k, 'miss')
+    } else if (r === 'note') {
+      haptic('light')
+      flash(k, 'note')
     } else {
       haptic('light')
       flash(k, 'hit')

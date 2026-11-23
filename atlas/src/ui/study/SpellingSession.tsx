@@ -7,7 +7,7 @@ import { useProgress } from '../../state/progress'
 import { mmss } from '../../learn/session'
 import { shuffle, nameKey } from '../../learn/pool'
 import { review } from '../../learn/deck'
-import { answersFor, friendlyIn, hint, isKnown, press, setBones, SETS, setById, targetFor, type SpellingSet } from '../../learn/spelling'
+import { answersFor, everydayFor, friendlyIn, hint, isKnown, press, setBones, SETS, setById, targetFor, type SpellingSet } from '../../learn/spelling'
 import { sessionChord, wordChime, wrongLetter } from '../../learn/sound'
 import { haptic } from '../../lib/feedback'
 import { thumbSlots } from '../../viewer/thumbSlots'
@@ -22,6 +22,8 @@ export interface SpellResult {
   typed: string
   errors: number
   hints: number
+  /** Letters (indexes into `typed`, or into the name if skipped) that a wrong key or a hint fell on. */
+  slips: number[]
   skipped: boolean
   done: boolean
   ms: number
@@ -188,9 +190,14 @@ interface Cur {
   typed: string
   errors: number
   hints: number
+  slips: number[]
   status: Status
 }
-const fresh = (): Cur => ({ typed: '', errors: 0, hints: 0, status: 'typing' })
+const fresh = (): Cur => ({ typed: '', errors: 0, hints: 0, slips: [], status: 'typing' })
+const cap = (w: string) => w.charAt(0).toUpperCase() + w.slice(1)
+/** Index of the next letter to type in `target` after `typed` (skipping a space). */
+const nextLetter = (target: string, typed: string) => (target[typed.length] === ' ' ? typed.length + 1 : typed.length)
+const addSlip = (slips: number[], k: number) => (slips.includes(k) ? slips : [...slips, k])
 
 function SpellingRun({ run, mode, timeLimit, onEnd, onClose }: {
   run: Run
@@ -220,6 +227,9 @@ function SpellingRun({ run, mode, timeLimit, onEnd, onClose }: {
   const [bottomH, setBottomH] = useState(0)
   const bone = items[i]
   const answers = useMemo(() => answersFor(bone), [bone])
+  const everyday = useMemo(() => everydayFor(bone), [bone])
+  // A short note under the word: "Kneecap is the everyday name …".
+  const [note, setNote] = useState<{ text: string; n: number } | null>(null)
 
   const update = (c: Cur) => {
     curRef.current = c
@@ -289,6 +299,7 @@ function SpellingRun({ run, mode, timeLimit, onEnd, onClose }: {
     else {
       update(fresh())
       setReject(null)
+      setNote(null)
       setI(i + 1)
     }
   }
@@ -299,7 +310,7 @@ function SpellingRun({ run, mode, timeLimit, onEnd, onClose }: {
 
   /** A bone is finished (spelled or skipped): record it, grade its FSRS card, sound, and maybe auto-advance. */
   const complete = (c: Cur, skipped: boolean) => {
-    const r: SpellResult = { bone, typed: c.typed, errors: c.errors, hints: c.hints, skipped, done: !skipped, ms: performance.now() - qStart.current }
+    const r: SpellResult = { bone, typed: skipped ? answers[0] : c.typed, errors: c.errors, hints: c.hints, slips: c.slips, skipped, done: !skipped, ms: performance.now() - qStart.current }
     const known = isKnown(r)
     resultsRef.current = [...resultsRef.current, r]
     setResults(resultsRef.current)
@@ -346,18 +357,25 @@ function SpellingRun({ run, mode, timeLimit, onEnd, onClose }: {
     if (k === 'hint') {
       const h = hint(answers, c.typed)
       if (!h.ok) return 'none'
-      const n = { ...c, typed: h.typed, hints: c.hints + 1, errors: c.errors + 1 }
+      setNote(null)
+      const n = { ...c, typed: h.typed, hints: c.hints + 1, errors: c.errors + 1, slips: addSlip(c.slips, h.typed.length - 1) }
       if (h.done) complete(n, false)
       else update(n)
       return 'ok'
     }
-    const r = press(answers, c.typed, k)
+    const r = press(answers, c.typed, k, everyday)
+    if (!r.ok && r.everyday) {
+      // Knowing the everyday name is not a spelling mistake: no error, just a pointer to the anatomical name.
+      setNote((p) => ({ text: `“${cap(r.everyday!)}” is the everyday name. Spell the anatomical name.`, n: (p?.n ?? 0) + 1 }))
+      return 'note'
+    }
     if (!r.ok) {
-      update({ ...c, errors: c.errors + 1 })
+      update({ ...c, errors: c.errors + 1, slips: addSlip(c.slips, nextLetter(r.target, c.typed)) })
       setReject((p) => ({ ch: k === ' ' ? '␣' : k, n: (p?.n ?? 0) + 1 }))
       return 'wrong'
     }
     setReject(null)
+    setNote(null)
     const n = { ...c, typed: r.typed }
     if (r.done) complete(n, false)
     else update(n)
@@ -394,6 +412,7 @@ function SpellingRun({ run, mode, timeLimit, onEnd, onClose }: {
   const target = cur.status === 'skipped' ? answers[0] : targetFor(answers, cur.typed)
   const shown = cur.status === 'skipped' ? '' : cur.typed
   const officialDiffers = cur.status === 'correct' && cur.typed !== answers[0]
+  const slipped = new Set(cur.status === 'typing' ? [] : cur.slips)
   const fontPx = Math.min(40, Math.floor((Math.min(window.innerWidth, 560) - 40) / (target.length * 0.62)))
   const progress = (i + (cur.status === 'typing' ? 0 : 1)) / items.length
 
@@ -432,7 +451,8 @@ function SpellingRun({ run, mode, timeLimit, onEnd, onClose }: {
           <span key={reject?.n ?? 0} className={reject ? 'sp-letters shake' : 'sp-letters'}>
             {[...target].map((ch, k) => {
               if (ch === ' ') return <span key={k} className="sp-gap" />
-              if (k < shown.length) return <span key={k} className="sp-l typed">{k === 0 ? ch.toUpperCase() : ch}</span>
+              const slip = slipped.has(k) ? ' slip' : ''
+              if (k < shown.length) return <span key={k} className={`sp-l typed${slip}`}>{k === 0 ? ch.toUpperCase() : ch}</span>
               if (cur.status === 'skipped') return <span key={k} className="sp-l reveal">{k === 0 ? ch.toUpperCase() : ch}</span>
               const isCursor = k === shown.length || (k === shown.length + 1 && target[shown.length] === ' ')
               return (
@@ -444,12 +464,22 @@ function SpellingRun({ run, mode, timeLimit, onEnd, onClose }: {
             })}
           </span>
         </p>
-        {cur.status === 'typing' && mode === 'learn' && <p className="sp-desc">{describe(bone)}</p>}
-        {cur.status === 'typing' && mode === 'hard' && <p className="sp-desc" aria-hidden>{'\u00a0'}</p>}
+        {cur.status === 'typing' && note && (
+          <p className="sp-desc sp-lay" key={note.n} role="status">
+            {note.text}
+          </p>
+        )}
+        {cur.status === 'typing' && !note && mode === 'learn' && <p className="sp-desc">{describe(bone)}</p>}
+        {cur.status === 'typing' && !note && mode === 'hard' && <p className="sp-desc" aria-hidden>{'\u00a0'}</p>}
         {cur.status === 'correct' && (
           <p className="sp-verdict good">
             ✓ Correct · Errors: {cur.errors}
             {cur.hints ? ` (${cur.hints} ${cur.hints === 1 ? 'hint' : 'hints'})` : ''}
+          </p>
+        )}
+        {cur.status === 'correct' && slipped.size > 0 && (
+          <p className="sp-slip-help">
+            <span className="sp-slip-key" aria-hidden /> {slipped.size === 1 ? 'The letter you slipped on' : 'The letters you slipped on'}
           </p>
         )}
         {cur.status === 'skipped' && <p className="sp-verdict bad">Skipped · added to Weak Bones</p>}
@@ -460,7 +490,8 @@ function SpellingRun({ run, mode, timeLimit, onEnd, onClose }: {
         <Keyboard onKey={onKey} />
       ) : (
         <section className="sp-result">
-          {officialDiffers && <p className="sp-official">Also called: {bone.name}</p>}
+          {officialDiffers && <p className="sp-official">Standard name: {bone.name}</p>}
+          {everyday.length > 0 && <p className="sp-official">Everyday name: {everyday.join(', ')}</p>}
           <p className="sp-latin">
             <em>{bone.latin}</em>
             {bone.side !== 'midline' && <span className="muted"> · {bone.side}</span>}
@@ -486,6 +517,19 @@ function SpellingRun({ run, mode, timeLimit, onEnd, onClose }: {
 }
 
 /* ───────────────────────────── End ───────────────────────────── */
+
+/** A spelled name with the letters the student slipped on underlined. */
+function Marked({ text, slips }: { text: string; slips: number[] }) {
+  return (
+    <span className="marked" aria-label={text}>
+      {[...text].map((ch, k) => (
+        <span key={k} className={slips.includes(k) ? 'slip' : undefined}>
+          {k === 0 ? ch.toUpperCase() : ch}
+        </span>
+      ))}
+    </span>
+  )
+}
 
 function SpellingEnd({ run, results, ms, timeUp, onShow, onClose, onRetry, onNext, onSets }: {
   run: Run
@@ -534,6 +578,8 @@ function SpellingEnd({ run, results, ms, timeUp, onShow, onClose, onRetry, onNex
   const reviewLine = knownDue.length ? `Review again ${friendlyIn(Math.min(...knownDue) - now)}` : 'Review again today, after practising the missed bones'
 
   const toPractise = [...missed.map((r) => r.bone), ...notReached]
+  // Known bones that still had a slip: the letter is worth a second look.
+  const watch = known.filter((r) => r.slips.length > 0)
 
   return (
     <div className="spell-end" role="dialog" aria-label="Spelling Quiz results">
@@ -565,6 +611,23 @@ function SpellingEnd({ run, results, ms, timeUp, onShow, onClose, onRetry, onNex
           {reviewLine}
           <span className="muted small"> · FSRS</span>
         </p>
+        {watch.length > 0 && (
+          <>
+            <h3 className="sheet-sub">Watch these letters</h3>
+            <ul className="mistakes">
+              {watch.map((r) => (
+                <li key={r.bone.id}>
+                  <div>
+                    <strong>
+                      <Marked text={r.typed} slips={r.slips} />
+                    </strong>
+                    <span className="muted small">Known, with one slip</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
         {toPractise.length > 0 && (
           <>
             <h3 className="sheet-sub">Missed</h3>
@@ -572,7 +635,9 @@ function SpellingEnd({ run, results, ms, timeUp, onShow, onClose, onRetry, onNex
               {missed.map((r) => (
                 <li key={r.bone.id}>
                   <div>
-                    <strong>{r.bone.name}</strong>
+                    <strong>
+                      <Marked text={r.typed} slips={r.slips} />
+                    </strong>
                     <span className="muted small">
                       {r.skipped ? 'Skipped' : [r.errors && `${r.errors} ${r.errors === 1 ? 'error' : 'errors'}`, r.hints && `${r.hints} ${r.hints === 1 ? 'hint' : 'hints'}`].filter(Boolean).join(' · ')}
                     </span>

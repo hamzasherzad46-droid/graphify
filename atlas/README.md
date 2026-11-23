@@ -179,8 +179,17 @@ plus **Learn / Hard** mode and a timer (none, 1, 3, 5 min). *Continue where you 
   hidden). Below: *NAME THE HIGHLIGHTED STRUCTURE*, the name building letter by letter in large light type (Learn:
   faint ghost letters to trace and a one-line description; Hard: blanks only), and the in-app keyboard.
 - **Checking letter by letter** (`src/learn/spelling.ts`, tested): a key is accepted if it continues any accepted
-  answer (the name and `acceptedSpellings`: synonyms, British/American forms); not case-sensitive; a letter typed
-  where a space goes gets the space added. A wrong key is refused: the key flashes red and shakes, the refused letter
+  answer (the name and its anatomical alternatives from `acceptedSpellings`: synonyms, Latin, British/American
+  forms); not case-sensitive; a letter typed where a space goes gets the space added.
+- **Only correct anatomical spellings count.** Everyday names (collarbone, kneecap, shin bone, anvil, …; the
+  `EVERYDAY` list) never complete a word: typing one shows "“Collarbone” is the everyday name. Spell the anatomical
+  name." in amber, with no error counted, and the everyday name is shown after the answer. Tests check that every
+  bone keeps its own name as an answer and that no everyday name slips through.
+- **Slipped letters**: every letter a wrong key or a hint fell on is underlined in amber in the finished word, and
+  again on the end screen (*Watch these letters* for known bones with a slip, and in the missed list).
+- **Content spelling audit**: every word in the names, accepted spellings, Latin, clinical notes, features and app
+  text was spell-checked; the flagged words are all valid anatomical or Latin terms. The text is British English
+  throughout (haematoma, oesophagus, tumour, centre; *practise* as a verb, *practice* as a noun). A wrong key is refused: the key flashes red and shakes, the refused letter
   shows in red at the cursor and the word shakes; errors +1. **Hint** reveals the next letter (counts as an error),
   **Skip** shows the name and adds the bone to Weak Bones.
 - **Keyboard** (`ui/study/Keyboard.tsx`): QWERTY, Hint, ⌫, Skip, space; keys act on touch-down, light teal for

@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { BONE_BY_ID } from '../data/bones'
-import { answersFor, friendlyIn, hint, isKnown, press, SETS } from './spelling'
+import { answersFor, EVERYDAY, everydayFor, friendlyIn, hint, isKnown, press, SETS } from './spelling'
+import { BONES } from '../data/bones'
+import { normalize } from '../data/search'
 
 const b = (id: string) => BONE_BY_ID.get(id)!
 const typeAll = (answers: string[], s: string) => {
@@ -24,10 +26,37 @@ describe('letter-by-letter spelling', () => {
     const a = answersFor(b('femur_left'))
     expect(press(a, 'fe', 'x')).toMatchObject({ ok: false, typed: 'fe' })
   })
-  it('accepts synonyms and British/American forms from the content', () => {
+  it('accepts anatomical synonyms and British/American forms from the content', () => {
     expect(typeAll(answersFor(b('calcaneus_left')), 'calcaneum').done).toBe(true)
     expect(typeAll(answersFor(b('calcaneus_left')), 'calcaneus').done).toBe(true)
-    expect(typeAll(answersFor(b('clavicle_left')), 'collarbone').done).toBe(true)
+    expect(typeAll(answersFor(b('calcaneus_left')), 'os calcis').done).toBe(true)
+    expect(typeAll(answersFor(b('hip_bone_left')), 'os coxae').done).toBe(true)
+    expect(typeAll(answersFor(b('talus_left')), 'astragalus').done).toBe(true)
+  })
+  it('never completes a word with an everyday name, and says why', () => {
+    for (const [id, lay] of [['clavicle_left', 'collarbone'], ['patella_left', 'kneecap'], ['incus_left', 'anvil'], ['talus_left', 'ankle bone'], ['zygomatic_bone_left', 'cheekbone']]) {
+      expect(typeAll(answersFor(b(id)), lay).done, `${id} ${lay}`).toBe(false)
+    }
+    const a = answersFor(b('clavicle_left'))
+    expect(press(a, 'c', 'o', everydayFor(b('clavicle_left')))).toMatchObject({ ok: false, everyday: 'collarbone' })
+    expect(press(a, 'cl', 'x', everydayFor(b('clavicle_left')))).not.toHaveProperty('everyday')
+  })
+  it('lists each everyday name once', () => {
+    expect(everydayFor(b('clavicle_left'))).toEqual(['collarbone'])
+    expect(everydayFor(b('femur_left'))).toEqual(['thigh bone'])
+    expect(everydayFor(b('frontal_bone'))).toEqual([])
+  })
+  it('every bone keeps at least one answer, and its own name is always one', () => {
+    for (const bone of BONES) {
+      const a = answersFor(bone)
+      if (!/\d/.test(bone.name)) expect(a[0], bone.id).toBe(normalize(bone.name))
+      expect(a.length, bone.id).toBeGreaterThan(0)
+      expect(a.some((x) => EVERYDAY.has(x) && x !== normalize(bone.name)), bone.id).toBe(false)
+    }
+  })
+  it('every everyday name in the list is used by some bone (no stale entries)', () => {
+    const all = new Set(BONES.flatMap((x) => x.acceptedSpellings.map(normalize)))
+    for (const e of EVERYDAY) expect(all.has(e), e).toBe(true)
   })
   it('adds a space for you when a letter is typed where the space goes', () => {
     const r = typeAll(answersFor(b('nasal_bone_left')), 'nasalbone')

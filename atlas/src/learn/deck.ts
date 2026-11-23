@@ -11,6 +11,11 @@ export { deckFor, type DeckCard, type Direction } from './decks'
  *   find — the name is shown; tap the bone on the model
  */
 const scheduler = fsrs(generatorParameters({ enable_fuzz: true }))
+/**
+ * For whole-set rounds outside a flashcard session (Spelling Quiz): no same-day learning steps, so a bone spelled
+ * cleanly is scheduled in days, and a missed one comes back tomorrow (it is also in Weak Bones straight away).
+ */
+const longTerm = fsrs(generatorParameters({ enable_fuzz: true, enable_short_term: false }))
 export const GRADES: { grade: Grade; label: string }[] = [
   { grade: Rating.Again, label: 'Again' },
   { grade: Rating.Hard, label: 'Hard' },
@@ -50,9 +55,9 @@ export function queue(area: string, stored: Record<string, StoredCard>, newLeft:
 }
 
 /** Next state of a card for a grade. */
-export function review(stored: StoredCard | undefined, grade: Grade, now = new Date()): StoredCard {
+export function review(stored: StoredCard | undefined, grade: Grade, now = new Date(), opts?: { longTerm?: boolean }): StoredCard {
   const card = stored ? toCard(stored) : createEmptyCard(now)
-  return fromCard(scheduler.next(card, now, grade).card)
+  return fromCard((opts?.longTerm ? longTerm : scheduler).next(card, now, grade).card)
 }
 
 /** "<1 min", "10 min", "3 d", "2 mo" — when each grade would bring the card back. */

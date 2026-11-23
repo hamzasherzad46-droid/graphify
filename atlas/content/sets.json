@@ -1,0 +1,29 @@
+{
+  "description": "Spelling Quiz sets: small focused groups. 'bones' are bone ids; a set may use one side only. 'statement' is shown when the set is mastered in a session.",
+  "sets": [
+    { "id": "cranial", "region": "Skull", "title": "The 8 cranial bones", "statement": "You can now name the 8 cranial bones from the front, the side and behind.",
+      "bones": ["frontal_bone", "parietal_bone_left", "parietal_bone_right", "occipital_bone", "temporal_bone_left", "temporal_bone_right", "sphenoid_bone", "ethmoid_bone"] },
+    { "id": "facial", "region": "Skull", "title": "The 14 facial bones", "statement": "You can now name all 14 facial bones from every side.",
+      "bones": ["nasal_bone_left", "nasal_bone_right", "maxilla_left", "maxilla_right", "zygomatic_bone_left", "zygomatic_bone_right", "lacrimal_bone_left", "lacrimal_bone_right", "palatine_bone_left", "palatine_bone_right", "inferior_nasal_concha_left", "inferior_nasal_concha_right", "vomer", "mandible"] },
+    { "id": "ossicles", "region": "Skull", "title": "The 3 ossicles of the middle ear", "statement": "You can now name the three ossicles of the middle ear.",
+      "bones": ["malleus_left", "incus_left", "stapes_left"] },
+    { "id": "cervical", "region": "Vertebral column", "title": "The 7 cervical vertebrae", "statement": "You can now name the 7 cervical vertebrae, from the atlas down to C7.",
+      "bones": ["vertebra_c1", "vertebra_c2", "vertebra_c3", "vertebra_c4", "vertebra_c5", "vertebra_c6", "vertebra_c7"] },
+    { "id": "lumbar-sacral", "region": "Vertebral column", "title": "Lumbar vertebrae, sacrum and coccyx", "statement": "You can now name the lumbar vertebrae, the sacrum and the coccyx.",
+      "bones": ["vertebra_l1", "vertebra_l2", "vertebra_l3", "vertebra_l4", "vertebra_l5", "sacrum", "coccyx"] },
+    { "id": "true-ribs", "region": "Thorax", "title": "The sternum and the 7 true ribs", "statement": "You can now name the sternum and the seven true ribs.",
+      "bones": ["sternum", "rib_1_left", "rib_2_left", "rib_3_left", "rib_4_left", "rib_5_left", "rib_6_left", "rib_7_left"] },
+    { "id": "upper-limb", "region": "Upper limb", "title": "Shoulder girdle, arm and forearm", "statement": "You can now name the bones of the shoulder girdle, arm and forearm.",
+      "bones": ["clavicle_right", "scapula_right", "humerus_right", "radius_right", "ulna_right"] },
+    { "id": "carpals", "region": "Hand", "title": "The 8 carpal bones", "statement": "You can now name all 8 carpal bones from every side.",
+      "bones": ["scaphoid_right", "lunate_right", "triquetrum_right", "pisiform_right", "trapezium_right", "trapezoid_right", "capitate_right", "hamate_right"] },
+    { "id": "metacarpals", "region": "Hand", "title": "The 5 metacarpals", "statement": "You can now name the five metacarpals.",
+      "bones": ["metacarpal_1_right", "metacarpal_2_right", "metacarpal_3_right", "metacarpal_4_right", "metacarpal_5_right"] },
+    { "id": "pelvis-lower-limb", "region": "Lower limb", "title": "Pelvis and lower limb", "statement": "You can now name the bones of the pelvis and lower limb.",
+      "bones": ["hip_bone_right", "sacrum", "coccyx", "femur_right", "patella_right", "tibia_right", "fibula_right"] },
+    { "id": "tarsals", "region": "Foot", "title": "The 7 tarsal bones", "statement": "You can now name all 7 tarsal bones from every side.",
+      "bones": ["talus_right", "calcaneus_right", "navicular_right", "cuboid_right", "medial_cuneiform_right", "intermediate_cuneiform_right", "lateral_cuneiform_right"] },
+    { "id": "metatarsals", "region": "Foot", "title": "The 5 metatarsals", "statement": "You can now name the five metatarsals.",
+      "bones": ["metatarsal_1_right", "metatarsal_2_right", "metatarsal_3_right", "metatarsal_4_right", "metatarsal_5_right"] }
+  ]
+}

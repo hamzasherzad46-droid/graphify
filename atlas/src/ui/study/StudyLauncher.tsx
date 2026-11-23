@@ -4,6 +4,7 @@ import { AREAS } from '../../learn/pool'
 import { deckFor } from '../../learn/deck'
 import { weakest } from '../../learn/weak'
 import { MODE_INFO, useSession, type Mode } from '../../learn/session'
+import { SETS, setById } from '../../learn/spelling'
 
 function Seg<T extends string | number>({ label, value, options, onChange }: { label: string; value: T; options: [T, string][]; onChange: (v: T) => void }) {
   return (
@@ -31,7 +32,7 @@ export function StudyLauncher() {
   const now = new Date().toISOString()
   const due = deckFor(s.area).filter((c) => cards[c.id] && cards[c.id].due <= now).length
   const note: Record<Mode, string> = {
-    typing: s.timeLimit ? `${s.count || 'All'} bones · ${s.timeLimit / 60} min` : `${s.count || 'All'} bones · untimed`,
+    typing: `${SETS.length} focused sets · last: ${(setById(s.spellSet ?? '') ?? SETS[0]).title}`,
     flashcards: `${due} due · up to ${s.newPerDay} new today`,
     quiz: `${s.count || 'All'} questions · ${s.perQuestion ? `${s.perQuestion} s each` : 'untimed'}`,
     weak: weakCount ? `${weakCount} bones to work on` : 'Nothing yet: missed bones appear here',
@@ -64,7 +65,7 @@ export function StudyLauncher() {
         </div>
         <Seg label="Skeleton" value={s.sex} options={[['male', 'Male'], ['female', 'Female']]} onChange={(sex) => set({ sex })} />
         <Seg label="Bones per session" value={s.count} options={[[10, '10'], [20, '20'], [50, '50'], [0, 'All']]} onChange={(count) => set({ count })} />
-        <Seg label="Typing time limit" value={s.timeLimit} options={[[0, 'None'], [60, '1 min'], [180, '3 min'], [300, '5 min']]} onChange={(timeLimit) => set({ timeLimit })} />
+        <Seg label="Spelling Quiz timer" value={s.timeLimit} options={[[0, 'None'], [60, '1 min'], [180, '3 min'], [300, '5 min']]} onChange={(timeLimit) => set({ timeLimit })} />
         <Seg label="Quiz time per question" value={s.perQuestion} options={[[0, 'None'], [10, '10 s'], [20, '20 s'], [30, '30 s']]} onChange={(perQuestion) => set({ perQuestion })} />
         <Seg label="New flashcards a day" value={s.newPerDay} options={[[10, '10'], [15, '15'], [25, '25']]} onChange={(newPerDay) => set({ newPerDay })} />
         <label className="row">

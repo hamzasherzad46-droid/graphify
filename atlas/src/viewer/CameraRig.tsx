@@ -61,7 +61,9 @@ export function CameraRig() {
     const tanV = Math.tan(THREE.MathUtils.degToRad(camera.fov) / 2)
     const freeFrac = Math.max(0.35, (size.height - topNow() - bottomInset) / size.height)
     const tanH = tanV * camera.aspect
-    return Math.max(halfH / (tanV * freeFrac), halfW / (tanH * 0.9)) * 1.06
+    const side = useViewer.getState().studying ? (useHud.getState().studyInsets.side ?? 0) : 0
+    const freeW = Math.max(0.4, (size.width - 2 * side) / size.width) * 0.9
+    return Math.max(halfH / (tanV * freeFrac), halfW / (tanH * freeW)) * 1.06
   }
 
   /** Orbit target that puts `point` in the middle of the free screen area. */
@@ -180,6 +182,30 @@ export function CameraRig() {
       const axis = home.current.center
       const out = new THREE.Vector3(p.x - axis.x, 0, p.z - axis.z)
       const dir = (out.lengthSq() > 1e-4 ? out.normalize() : new THREE.Vector3()).add(new THREE.Vector3(0, 0.25, 0.5)).normalize()
+      if (command.close) {
+        // Close (Spelling Quiz): the bone itself fills the free area. Fit its outline as seen from `dir` (the
+        // corners of its box on the screen axes), not its bounding sphere, so long thin bones seen end-on
+        // (the conchae, ribs from the front) still fill the view.
+        const box = new THREE.Box3().setFromObject(m)
+        const c = box.getCenter(new THREE.Vector3())
+        const right = new THREE.Vector3().crossVectors(camera.up, dir)
+        if (right.lengthSq() < 1e-6) right.set(1, 0, 0)
+        right.normalize()
+        const up = new THREE.Vector3().crossVectors(dir, right).normalize()
+        let hw = 0
+        let hh = 0
+        let hd = 0
+        for (let k = 0; k < 8; k++) {
+          v.set(k & 1 ? box.max.x : box.min.x, k & 2 ? box.max.y : box.min.y, k & 4 ? box.max.z : box.min.z).sub(c)
+          hw = Math.max(hw, Math.abs(v.dot(right)))
+          hh = Math.max(hh, Math.abs(v.dot(up)))
+          hd = Math.max(hd, Math.abs(v.dot(dir)))
+        }
+        const pad = 1.18
+        const dist = Math.max(fitBox(Math.max(hw, 0.003) * pad, Math.max(hh, 0.003) * pad, bottom) + hd, 0.02)
+        flyTo(framedTarget(c, dir, dist, bottom), dir, dist, 650)
+        return
+      }
       const dist = fitDistance(R, bottom)
       flyTo(framedTarget(p, dir, dist, bottom), dir, dist, 650)
     } else if (command.kind === 'focus') {
@@ -266,7 +292,7 @@ export function CameraRig() {
       rotateSpeed={0.75}
       zoomSpeed={0.9}
       panSpeed={0.9}
-      minDistance={0.03}
+      minDistance={0.012}
       maxDistance={8}
       zoomToCursor
     />

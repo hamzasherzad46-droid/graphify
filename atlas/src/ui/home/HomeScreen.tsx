@@ -10,6 +10,7 @@ import { tap } from '../../learn/sound'
 import { useToast } from '../toastStore'
 import { BookIcon, CalendarIcon, CardsIcon, ChevronRightIcon, CloseIcon, NotesIcon, SpellIcon, UserIcon } from '../Icons'
 import { areaLabel, bestTyping, currentStreak, flashcardsToday, goalToday, greeting } from './homeStats'
+import { setById } from '../../learn/spelling'
 
 const HeroSkeleton = lazy(() => import('../../viewer/HeroSkeleton'))
 
@@ -122,14 +123,17 @@ export function HomeScreen() {
         className="row-card"
         onPointerDown={press}
         onClick={() => {
-          if (last) {
+          if (last?.mode === 'typing' && last.set) {
+            usePrefs.getState().setStudy({ spellSet: last.set })
+            open('typing', { autostart: true })
+          } else if (last) {
             usePrefs.getState().setStudy({ area: last.area })
             open(last.mode)
           } else open('typing')
         }}
       >
         <span className="row-k">Continue where you left off</span>
-        <span className="row-v">{last ? `${MODE_INFO[last.mode].title} · ${areaLabel(last.area)}` : 'Start with a Spelling Quiz'}</span>
+        <span className="row-v">{last ? `${MODE_INFO[last.mode].title} · ${last.set ? (setById(last.set)?.title ?? areaLabel(last.area)) : areaLabel(last.area)}` : 'Start with a Spelling Quiz'}</span>
         <ChevronRightIcon className="row-go" />
       </button>
       <div className="streak-row">

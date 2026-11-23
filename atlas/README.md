@@ -149,15 +149,11 @@ covering 206 bones. Label engine cost: about 1.3 ms a frame (Main) and 2.5 ms (A
 ## Study modes (steps 4–5)
 
 **Study** (top bar) opens the modes and their settings: region (whole skeleton or a group), male or female
-model, bones per session (10/20/50/all), typing time limit, quiz time per question, new flashcards a day, sounds.
+model, bones per session (10/20/50/all), Spelling Quiz timer, quiz time per question, new flashcards a day, sounds.
 During a session the target bone lights up on a dimmed, see-through skeleton, framed with its neighbours from the
 side it is best seen (`frame` camera command); explore controls are hidden and taps on the model answer questions.
 
-- **Typing Test**: type the name of the lit bone. Accepted answers are the bone's name and `acceptedSpellings`,
-  compared without case, spaces or punctuation, with ordinals spelled out and British/American spellings folded
-  together (ae/oe→e, -our→-or, -re→-er, -ise→-ize: `src/learn/answer.ts`). One or two-letter slips are marked
-  "Almost" (still wrong) and the correct spelling is shown on every mistake. Soft synthesized key click. Results:
-  accuracy, seconds per bone, bones per minute, and each mistake with **Show me** (opens it in 3D).
+- **Spelling Quiz** (replaces the Typing Test; see below).
 - **Flashcards**: two cards per bone name, *Name it* (lit bone → name) and *Find it* (name → tap it, either side).
   Scheduled with **FSRS** (`ts-fsrs`, MIT, default parameters); Again / Hard / Good / Easy show when the card comes
   back. Due cards first, then new ones up to the daily limit (each bone's *Name it* card before its *Find it* card);
@@ -168,6 +164,43 @@ side it is best seen (`frame` camera command); explore controls are hidden and t
 
 Every answer is recorded per bone in `useProgress` (on this device, through `appStorage`), which also keeps the
 study days and flashcard states, for step 6.
+
+## Spelling Quiz (home upgrade step 2)
+
+Home → Spelling Quiz (or Practice) opens the set picker: **small focused sets** (`content/sets.json`, 12 sets such as
+*The 8 cranial bones*, *The 8 carpal bones*, *The 7 tarsal bones*), grouped by region with each set's best score,
+plus **Learn / Hard** mode and a timer (none, 1, 3, 5 min). *Continue where you left off* on Home restarts the last set.
+
+- **Screen**: top bar (×, `SPELLING QUIZ · 3/8`, countdown or elapsed time, thin progress line). The top part is the
+  3D view: the camera flies close to each bone (fitted to its outline as seen, so long thin bones fill the view too),
+  lit teal on a dimmed skeleton. Two **side views** (lateral, from the bone's own side; posterior) turn slowly back
+  and forth (`viewer/ThumbnailRenderer.tsx`: scissored viewports on the same canvas, no second WebGL context; each
+  view's near plane sits just in front of the bone, so deep bones such as the sphenoid or the ossicles are never
+  hidden). Below: *NAME THE HIGHLIGHTED STRUCTURE*, the name building letter by letter in large light type (Learn:
+  faint ghost letters to trace and a one-line description; Hard: blanks only), and the in-app keyboard.
+- **Checking letter by letter** (`src/learn/spelling.ts`, tested): a key is accepted if it continues any accepted
+  answer (the name and `acceptedSpellings`: synonyms, British/American forms); not case-sensitive; a letter typed
+  where a space goes gets the space added. A wrong key is refused: the key flashes red and shakes, the refused letter
+  shows in red at the cursor and the word shakes; errors +1. **Hint** reveals the next letter (counts as an error),
+  **Skip** shows the name and adds the bone to Weak Bones.
+- **Keyboard** (`ui/study/Keyboard.tsx`): QWERTY, Hint, ⌫, Skip, space; keys act on touch-down, light teal for
+  120 ms; a physical keyboard works too (Enter = Next).
+- **Done**: the word turns green, scales up with a soft glow, `✓ CORRECT · ERRORS: n`; then the Latin name in italics
+  and the clinical note in a bordered box, and **Next** (timed mode moves on by itself after 1.5 s).
+- **Grading**: a bone is *known* when spelled with no hints and at most one wrong key. Its *Name it* flashcard is
+  graded on FSRS (clean = Good, one slip = Hard, help or skip = Again), without same-day learning steps, so a clean
+  spelling is scheduled days ahead and a miss comes back tomorrow (and is in Weak Bones at once).
+- **End screen**: a one-line statement (the set's achievement line, e.g. "You can now name the 8 cranial bones from
+  the front, the side and behind", only when every bone was known; otherwise an honest count), accuracy, time,
+  errors, *Review again in 2 days* (from FSRS), missed bones with **Show me in 3D**, and **Practise missed** /
+  **Next set**.
+- **Sounds** (Web Audio, synthesized, one master gain at 40%, `latencyHint: 'interactive'`, noise buffer made once):
+  key = a soft deep thock (5 ms noise burst through a 2.5 kHz lowpass over a ~200 Hz sine body decaying in ~40 ms,
+  pitch ±4% and volume ±10% per press; backspace lower); wrong letter = a low muted "tuk"; correct word = a rising
+  E5→B5 bell chime (~350 ms), a third note (E6) on every 5-word streak; session end = a soft warm E-major chord.
+  All follow the Sounds setting.
+- **Haptics** (follow the Haptics setting): light on every key, stronger on a wrong letter, a success pattern on a
+  correct word.
 
 ## Progress (step 6)
 

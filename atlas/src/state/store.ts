@@ -13,7 +13,7 @@ export type CameraCommand =
   | { kind: 'focus'; id: string; n: number; tight?: boolean }
   | { kind: 'view'; view: ViewName; n: number }
   | { kind: 'reset'; n: number }
-  | { kind: 'frame'; id: string; n: number; region?: boolean }
+  | { kind: 'frame'; id: string; n: number; region?: boolean; close?: boolean }
 
 export interface ErrorReport {
   boneId: string
@@ -55,7 +55,11 @@ interface ViewerState {
   onTap: ((id: string | null) => void) | null
   startStudy: () => void
   endStudy: () => void
-  setHighlight: (h: { target: string[]; wrong?: string[] } | null, frame?: boolean) => void
+  /** frame: fly to the bone with its neighbours (true), close on the bone itself ('close'), or not at all. */
+  setHighlight: (h: { target: string[]; wrong?: string[] } | null, frame?: boolean | 'close') => void
+  /** Spelling Quiz: the bone shown in the two rotating side views (null = no side views). */
+  thumbs: string | null
+  setThumbs: (id: string | null) => void
   setOnTap: (fn: ((id: string | null) => void) | null) => void
   /** Frame the region around a bone without pointing at it ("tap the bone" questions). */
   frameRegion: (id: string) => void
@@ -109,12 +113,14 @@ export const useViewer = create<ViewerState>((set, get) => ({
       dragged: {},
       panelExpanded: false,
     }),
-  endStudy: () => set({ studying: false, highlight: null, onTap: null, camera: { kind: 'reset', n: ++n } }),
+  endStudy: () => set({ studying: false, highlight: null, thumbs: null, onTap: null, camera: { kind: 'reset', n: ++n } }),
   setHighlight: (h, frame = true) =>
     set({
       highlight: h ? { target: h.target, wrong: h.wrong ?? [] } : null,
-      ...(h && frame && h.target[0] ? { camera: { kind: 'frame' as const, id: h.target[0], n: ++n } } : {}),
+      ...(h && frame && h.target[0] ? { camera: { kind: 'frame' as const, id: h.target[0], n: ++n, close: frame === 'close' } } : {}),
     }),
+  thumbs: null,
+  setThumbs: (thumbs) => set({ thumbs }),
   setOnTap: (onTap) => set({ onTap }),
   frameCluster: (id) => set({ camera: { kind: 'frame', id, n: ++n } }),
   frameRegion: (id) => set({ highlight: null, camera: { kind: 'frame', id, n: ++n, region: true } }),
@@ -147,6 +153,8 @@ export interface StudySettings {
   perQuestion: number // quiz: seconds per question, 0 = none
   newPerDay: number // flashcards: new cards per day
   sound: boolean // soft keyboard click and answer tones
+  spellSet?: string // Spelling Quiz: the last set (content/sets.json id)
+  spellMode?: 'learn' | 'hard' // Learn shows ghost letters and a description; Hard shows blanks only
 }
 
 export const DEFAULT_STUDY: StudySettings = { area: 'all', sex: 'male', count: 20, timeLimit: 0, perQuestion: 20, newPerDay: 15, sound: true }

@@ -24,6 +24,7 @@ export interface SessionRecord {
   correct: number
   ms: number
   at: string // ISO time
+  set?: string // Spelling Quiz set id
 }
 
 export const today = (d = new Date()) => {

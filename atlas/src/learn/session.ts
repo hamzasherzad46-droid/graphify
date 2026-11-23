@@ -20,18 +20,21 @@ export interface Result {
 /** The running study session (not persisted). */
 export const useSession = create<{
   mode: Mode | null
-  open: (mode: Mode) => void
+  /** Start straight away with the saved settings (Continue), instead of the mode's setup screen. */
+  autostart: boolean
+  open: (mode: Mode, opts?: { autostart?: boolean }) => void
   close: () => void
 }>((set) => ({
   mode: null,
-  open: (mode) => set({ mode }),
-  close: () => set({ mode: null }),
+  autostart: false,
+  open: (mode, opts) => set({ mode, autostart: !!opts?.autostart }),
+  close: () => set({ mode: null, autostart: false }),
 }))
 
 export const mmss = (s: number) => `${Math.floor(Math.max(0, s) / 60)}:${String(Math.max(0, Math.floor(s % 60))).padStart(2, '0')}`
 
 export const MODE_INFO: Record<Mode, { title: string; blurb: string }> = {
-  typing: { title: 'Spelling Quiz', blurb: 'A bone lights up. Type its name.' },
+  typing: { title: 'Spelling Quiz', blurb: 'Spell each bone in a focused set, letter by letter.' },
   flashcards: { title: 'Flashcards', blurb: 'Spaced repetition (FSRS): name the bone, find the bone.' },
   quiz: { title: 'Quiz', blurb: 'Timed multiple choice and “tap the bone”.' },
   weak: { title: 'Weak Bones', blurb: 'The bones you miss most, mixed across question types.' },

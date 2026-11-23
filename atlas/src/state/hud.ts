@@ -7,8 +7,8 @@ export const useHud = create<{
   elevation: number
   /** Bumped when bones finish moving (explode, drag), so labels are laid out again. */
   bonesVersion: number
-  /** Screen space covered by study UI (header, prompt, on-screen keyboard), px. */
-  studyInsets: { top: number; bottom: number }
+  /** Screen space covered by study UI (header, prompt, on-screen keyboard), px. side: each side (side views). */
+  studyInsets: { top: number; bottom: number; side?: number }
 }>(() => ({ orientation: 'Anterior', azimuth: 0, elevation: 0, bonesVersion: 0, studyInsets: { top: 190, bottom: 120 } }))
 
 /** Screen space the overlays cover (px), so the 3D view frames bones inside the free area. */

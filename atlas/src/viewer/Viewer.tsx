@@ -7,10 +7,12 @@ import { Picking } from './Picking'
 import { LabelLayout } from './LabelLayout'
 import { HudFloor } from './HudFloor'
 import { ExplodeAnimator } from './ExplodeAnimator'
+import { ThumbnailRenderer } from './ThumbnailRenderer'
 
 /** The 3D view (lazy-loaded chunk: three.js and React Three Fiber). Renders only when something changes. */
 export default function Viewer({ theme }: { theme: 'dark' | 'light' }) {
   const sex = useViewer((s) => s.sex)
+  const thumbs = useViewer((s) => s.thumbs)
   return (
     <Canvas
       className="viewer-canvas"
@@ -27,6 +29,7 @@ export default function Viewer({ theme }: { theme: 'dark' | 'light' }) {
       <Picking />
       <LabelLayout />
       <ExplodeAnimator />
+      {thumbs && <ThumbnailRenderer target={thumbs} theme={theme} />}
     </Canvas>
   )
 }

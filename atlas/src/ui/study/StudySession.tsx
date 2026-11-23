@@ -7,12 +7,14 @@ import { useProgress } from '../../state/progress'
 import { QuestionRunner } from './QuestionRunner'
 import { FlashcardSession } from './FlashcardSession'
 import { Summary } from './Summary'
+import { SpellingSession } from './SpellingSession'
 
 /** A running study session: owns the 3D view until it ends. */
 export function StudySession({ mode }: { mode: Mode }) {
   const settings = usePrefs((s) => s.study)
   const [run, setRun] = useState(0)
-  const [items, setItems] = useState<Item[]>(() => (mode === 'flashcards' ? [] : buildItems(mode, settings.area, settings.count)))
+  const autostart = useSession((s) => s.autostart)
+  const [items, setItems] = useState<Item[]>(() => (mode === 'flashcards' || mode === 'typing' ? [] : buildItems(mode, settings.area, settings.count)))
   const [result, setResult] = useState<{ results: Result[]; ms: number; timeUp: boolean } | null>(null)
 
   useEffect(() => {
@@ -32,6 +34,7 @@ export function StudySession({ mode }: { mode: Mode }) {
   }
 
   if (mode === 'flashcards') return <FlashcardSession onClose={close} onShow={show} />
+  if (mode === 'typing') return <SpellingSession onClose={close} onShow={show} autostart={autostart} />
 
   if (result)
     return (
@@ -56,8 +59,8 @@ export function StudySession({ mode }: { mode: Mode }) {
       key={run}
       title={MODE_INFO[mode].title}
       items={items}
-      timeLimit={mode === 'typing' ? settings.timeLimit : 0}
-      perQuestion={mode === 'typing' ? 0 : settings.perQuestion}
+      timeLimit={0}
+      perQuestion={settings.perQuestion}
       onDone={(results, info) => {
         useViewer.getState().setHighlight(null, false)
         if (results.length)

@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { usePrefs, useViewer } from '../../state/store'
 import { MODE_INFO, useSession, type Item, type Mode, type Result } from '../../learn/session'
 import { buildItems } from '../../learn/items'
+import { useNav } from '../../state/nav'
+import { useProgress } from '../../state/progress'
 import { QuestionRunner } from './QuestionRunner'
 import { FlashcardSession } from './FlashcardSession'
 import { Summary } from './Summary'
@@ -24,6 +26,7 @@ export function StudySession({ mode }: { mode: Mode }) {
   const close = () => useSession.getState().close()
   const show = (id: string) => {
     close()
+    useNav.getState().go('3d')
     // After the session's own clean-up (endStudy), select and fly to the bone.
     window.setTimeout(() => useViewer.getState().select(id, { focus: true }), 0)
   }
@@ -57,6 +60,15 @@ export function StudySession({ mode }: { mode: Mode }) {
       perQuestion={mode === 'typing' ? 0 : settings.perQuestion}
       onDone={(results, info) => {
         useViewer.getState().setHighlight(null, false)
+        if (results.length)
+          useProgress.getState().addSession({
+            mode,
+            area: settings.area,
+            answered: results.length,
+            correct: results.filter((r) => r.verdict === 'correct').length,
+            ms: info.ms,
+            at: new Date().toISOString(),
+          })
         setResult({ results, ...info })
       }}
       onClose={close}

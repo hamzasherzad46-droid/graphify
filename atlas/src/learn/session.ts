@@ -20,26 +20,18 @@ export interface Result {
 /** The running study session (not persisted). */
 export const useSession = create<{
   mode: Mode | null
-  launcher: boolean
-  progress: boolean
-  setProgress: (on: boolean) => void
   open: (mode: Mode) => void
   close: () => void
-  setLauncher: (on: boolean) => void
 }>((set) => ({
   mode: null,
-  launcher: false,
-  progress: false,
-  setProgress: (progress) => set({ progress }),
-  open: (mode) => set({ mode, launcher: false, progress: false }),
+  open: (mode) => set({ mode }),
   close: () => set({ mode: null }),
-  setLauncher: (launcher) => set({ launcher }),
 }))
 
 export const mmss = (s: number) => `${Math.floor(Math.max(0, s) / 60)}:${String(Math.max(0, Math.floor(s % 60))).padStart(2, '0')}`
 
 export const MODE_INFO: Record<Mode, { title: string; blurb: string }> = {
-  typing: { title: 'Typing Test', blurb: 'A bone lights up. Type its name.' },
+  typing: { title: 'Spelling Quiz', blurb: 'A bone lights up. Type its name.' },
   flashcards: { title: 'Flashcards', blurb: 'Spaced repetition (FSRS): name the bone, find the bone.' },
   quiz: { title: 'Quiz', blurb: 'Timed multiple choice and “tap the bone”.' },
   weak: { title: 'Weak Bones', blurb: 'The bones you miss most, mixed across question types.' },

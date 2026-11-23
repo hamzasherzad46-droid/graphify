@@ -102,6 +102,25 @@ the skull (`src/viewer/explode.ts`, tested in `explode.test.ts`).
 **Hold a bone (0.3 s), then drag** to pull it out; a quick drag still rotates. **Reassemble** eases everything home.
 Bones ease towards their targets each frame, and frames are only rendered while something moves.
 
+## Home and tabs
+
+The app opens on **Home**; tabs: **Home · 3D · Practice · Progress · You** (`src/state/nav.ts`, `src/ui/TabBar.tsx`).
+The 3D Atlas stays mounted under the other tabs, so the model loads once and switching is instant.
+
+- **Home** (`src/ui/home/`): ATLAS wordmark, beta label and profile button; greeting with the student's name and
+  today's date; today's goal (answers today / daily goal) as a thin line. Full-width **3D Body** hero card with the
+  skeleton turning slowly under a teal rim light (`viewer/HeroSkeleton.tsx`: a clone of the loaded model in its own
+  small canvas; renders only while Home is visible; still under reduced motion). 2×2 tiles with live stats:
+  Lessons (coming next), Flashcards (due / new today, deck picker by region), Spelling Quiz (best accuracy), Notes to
+  Exam (coming later). Then *Continue where you left off* (last session) and the study streak. Tiles and cards press
+  to 0.97 with a soft click and a light haptic.
+- **Practice**: study modes and settings. **Progress**: the progress screen. **You**: name, course, daily goal,
+  appearance (dark / light / match device), labels, sounds, haptics, reviewer tools, reset progress, credits,
+  disclaimer. The first-launch screen asks for a first name (optional).
+- Haptics: Capacitor Haptics when native, else `navigator.vibrate` (Android browsers; iOS Safari has none).
+  Audio is unlocked on the first touch so the first click plays at once.
+- Finished sessions are saved (`useProgress.sessions`) for the Best score and *Continue*.
+
 ## Labels (upgrade step 1)
 
 Labels never disappear. Dock → labels button: **All / Main bones / None** (default Main bones, `content/labels.json`);

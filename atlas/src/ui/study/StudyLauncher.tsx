@@ -4,7 +4,6 @@ import { AREAS } from '../../learn/pool'
 import { deckFor } from '../../learn/deck'
 import { weakest } from '../../learn/weak'
 import { MODE_INFO, useSession, type Mode } from '../../learn/session'
-import { CloseIcon } from '../Icons'
 
 function Seg<T extends string | number>({ label, value, options, onChange }: { label: string; value: T; options: [T, string][]; onChange: (v: T) => void }) {
   return (
@@ -21,13 +20,13 @@ function Seg<T extends string | number>({ label, value, options, onChange }: { l
   )
 }
 
-/** Choose a study mode and its settings. */
+/** Practice tab: choose a study mode and its settings. */
 export function StudyLauncher() {
   const s = usePrefs((p) => p.study)
   const set = (x: Partial<StudySettings>) => usePrefs.getState().setStudy(x)
   const stats = useProgress((p) => p.stats)
   const cards = useProgress((p) => p.cards)
-  const { open, setLauncher } = useSession()
+  const { open } = useSession()
   const weakCount = weakest(stats, 999).length
   const now = new Date().toISOString()
   const due = deckFor(s.area).filter((c) => cards[c.id] && cards[c.id].due <= now).length
@@ -38,14 +37,11 @@ export function StudyLauncher() {
     weak: weakCount ? `${weakCount} bones to work on` : 'Nothing yet: missed bones appear here',
   }
   return (
-    <div className="modal-backdrop" onClick={() => setLauncher(false)}>
-      <aside className="sheet study-sheet" role="dialog" aria-modal aria-label="Study" onClick={(e) => e.stopPropagation()}>
-        <header className="sheet-head">
-          <h2>Study</h2>
-          <button className="icon-btn" aria-label="Close" onClick={() => setLauncher(false)}>
-            <CloseIcon />
-          </button>
-        </header>
+    <div className="tab-page practice">
+      <header className="page-head">
+        <h1>Practice</h1>
+      </header>
+      <div className="page-body">
         <div className="modes">
           {(Object.keys(MODE_INFO) as Mode[]).map((m) => (
             <button key={m} className="mode" disabled={m === 'weak' && !weakCount} onClick={() => open(m)}>
@@ -75,7 +71,7 @@ export function StudyLauncher() {
           <span>Keyboard and answer sounds</span>
           <input type="checkbox" className="switch" checked={s.sound} onChange={(e) => set({ sound: e.target.checked })} />
         </label>
-      </aside>
+      </div>
     </div>
   )
 }

@@ -62,9 +62,13 @@ export function FlashcardSession({ onClose, onShow }: { onClose: () => void; onS
     const p = useProgress.getState()
     p.saveCard(card.id, review(p.cards[card.id], grade), !p.cards[card.id])
     p.record(side.id, grade !== Rating.Again)
-    setStats((s) => ({ reviewed: s.reviewed + 1, again: s.again + (grade === Rating.Again ? 1 : 0) }))
+    const next = { reviewed: stats.reviewed + 1, again: stats.again + (grade === Rating.Again ? 1 : 0) }
+    setStats(next)
     // Again: see it once more before the session ends.
     if (grade === Rating.Again) setQ((list) => [...list, withRandomSide(card)])
+    // Last card: save the session (for Home's "Continue" and Progress).
+    else if (idx + 1 >= q.length)
+      p.addSession({ mode: 'flashcards', area: settings.area, answered: next.reviewed, correct: next.reviewed - next.again, ms: 0, at: new Date().toISOString() })
     setRevealed(false)
     setFound(null)
     setIdx((k) => k + 1)

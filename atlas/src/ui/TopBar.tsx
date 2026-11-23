@@ -1,9 +1,8 @@
 import { useViewer } from '../state/store'
-import { MenuIcon, ProgressIcon } from './Icons'
-import { useSession } from '../learn/session'
 import { SearchBar } from './SearchBar'
 
-export function TopBar({ onMenu }: { onMenu: () => void }) {
+/** 3D Atlas header: brand and beta label, skeleton toggle, search. */
+export function TopBar() {
   const sex = useViewer((s) => s.sex)
   const setSex = useViewer((s) => s.setSex)
   return (
@@ -14,15 +13,6 @@ export function TopBar({ onMenu }: { onMenu: () => void }) {
           <span className="brand-name">ATLAS</span>
           <span className="beta" title="Content is a draft until academically reviewed">Beta — under academic review</span>
         </div>
-        <button className="study-btn" onClick={() => useSession.getState().setLauncher(true)}>
-          Study
-        </button>
-        <button className="icon-btn" onClick={() => useSession.getState().setProgress(true)} aria-label="Progress">
-          <ProgressIcon />
-        </button>
-        <button className="icon-btn" onClick={onMenu} aria-label="Menu">
-          <MenuIcon />
-        </button>
       </div>
       <div className="topbar-row">
         <div className="segmented sex-toggle" role="radiogroup" aria-label="Skeleton">

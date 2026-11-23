@@ -51,5 +51,32 @@ function tone(freqs: number[], dur = 0.11, vol = 0.05) {
   })
 }
 
+/** Soft, short tap for cards and buttons (quieter than the keyboard click). */
+export function tap() {
+  const a = audio()
+  if (!a) return
+  const o = a.createOscillator()
+  const g = a.createGain()
+  o.type = 'sine'
+  o.frequency.setValueAtTime(320, a.currentTime)
+  o.frequency.exponentialRampToValueAtTime(180, a.currentTime + 0.04)
+  g.gain.setValueAtTime(0.0001, a.currentTime)
+  g.gain.linearRampToValueAtTime(0.045, a.currentTime + 0.004)
+  g.gain.exponentialRampToValueAtTime(0.0001, a.currentTime + 0.06)
+  o.connect(g).connect(a.destination)
+  o.start()
+  o.stop(a.currentTime + 0.07)
+}
+
+/** Browsers only allow audio after a user gesture: create and resume the context on the first touch, so the first
+ *  real sound plays without delay. */
+export function prewarmAudio() {
+  const once = () => {
+    audio()
+    window.removeEventListener('pointerdown', once, true)
+  }
+  window.addEventListener('pointerdown', once, true)
+}
+
 export const correctTone = () => tone([660, 990])
 export const wrongTone = () => tone([220, 196], 0.14, 0.045)

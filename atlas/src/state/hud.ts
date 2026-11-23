@@ -12,7 +12,8 @@ export const useHud = create<{
 }>(() => ({ orientation: 'Anterior', azimuth: 0, elevation: 0, bonesVersion: 0, studyInsets: { top: 190, bottom: 120 } }))
 
 /** Screen space the overlays cover (px), so the 3D view frames bones inside the free area. */
-export const INSETS = { top: 124, bottom: 92, panel: 236, explodeBar: 96 }
+/** bottom = dock + tab bar (58 px); the info panel covers the tab bar. */
+export const INSETS = { top: 124, bottom: 150, panel: 236, explodeBar: 96 }
 
 /** Top inset in px, including the explode controls when they are open. */
 export const topInset = (explodeOpen: boolean) => INSETS.top + (explodeOpen ? INSETS.explodeBar : 0)

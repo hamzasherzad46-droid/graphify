@@ -3,6 +3,10 @@ import { createRoot } from 'react-dom/client'
 import '@fontsource-variable/inter'
 import './styles/app.css'
 import App from './App'
+import { prewarmAudio } from './learn/sound'
+
+// Unlock audio on the first touch, so the first click sound plays without delay.
+prewarmAudio()
 
 // Development only: expose stores for automated UI tests.
 if (import.meta.env.DEV)

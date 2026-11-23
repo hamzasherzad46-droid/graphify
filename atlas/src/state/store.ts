@@ -151,7 +151,17 @@ export interface StudySettings {
 
 export const DEFAULT_STUDY: StudySettings = { area: 'all', sex: 'male', count: 20, timeLimit: 0, perQuestion: 20, newPerDay: 15, sound: true }
 
+export const COURSES = ['Nursing', 'Medicine', 'Physiotherapy', 'Dentistry', 'Sports science'] as const
+export type Course = (typeof COURSES)[number]
+
 interface PrefsState {
+  /** The student's first name (greeting), course and daily goal (answers a day). */
+  name: string
+  course: Course | ''
+  dailyGoal: number
+  /** Light vibration feedback on taps and answers (phones that support it). */
+  haptics: boolean
+  setProfile: (p: Partial<{ name: string; course: Course | ''; dailyGoal: number; haptics: boolean }>) => void
   /** Bone labels in the 3D view: every bone, the main bones (content/labels.json), or none. */
   labelDensity: LabelDensity
   setLabelDensity: (d: LabelDensity) => void
@@ -176,6 +186,11 @@ interface PrefsState {
 export const usePrefs = create<PrefsState>()(
   persist(
     (set, get) => ({
+      name: '',
+      course: '',
+      dailyGoal: 20,
+      haptics: true,
+      setProfile: (p) => set(p),
       labelDensity: 'main',
       setLabelDensity: (labelDensity) => set({ labelDensity }),
       study: DEFAULT_STUDY,

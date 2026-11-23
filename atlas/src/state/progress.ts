@@ -17,6 +17,15 @@ export interface StoredCard {
   last_review?: string
 }
 
+export interface SessionRecord {
+  mode: 'typing' | 'quiz' | 'weak' | 'flashcards'
+  area: string
+  answered: number
+  correct: number
+  ms: number
+  at: string // ISO time
+}
+
 export const today = (d = new Date()) => {
   const z = new Date(d.getTime() - d.getTimezoneOffset() * 60000)
   return z.toISOString().slice(0, 10)
@@ -33,6 +42,9 @@ interface ProgressState {
   cards: Record<string, StoredCard>
   /** New flashcards introduced today. */
   newToday: { date: string; count: number }
+  /** Finished study sessions, newest last (kept to the last 200). */
+  sessions: SessionRecord[]
+  addSession: (s: SessionRecord) => void
   record: (boneId: string, correct: boolean) => void
   saveCard: (id: string, card: StoredCard, wasNew: boolean) => void
   reset: () => void
@@ -47,6 +59,8 @@ export const useProgress = create<ProgressState>()(
       daily: {},
       cards: {},
       newToday: { date: '', count: 0 },
+      sessions: [],
+      addSession: (rec) => set((s) => ({ sessions: [...s.sessions, rec].slice(-200) })),
       record: (boneId, correct) =>
         set((s) => {
           const d = today()
@@ -64,7 +78,7 @@ export const useProgress = create<ProgressState>()(
           const count = (s.newToday.date === d ? s.newToday.count : 0) + (wasNew ? 1 : 0)
           return { cards: { ...s.cards, [id]: card }, newToday: { date: d, count }, days: s.days.includes(d) ? s.days : [...s.days, d] }
         }),
-      reset: () => set({ stats: {}, days: [], daily: {}, cards: {}, newToday: { date: '', count: 0 } }),
+      reset: () => set({ stats: {}, days: [], daily: {}, cards: {}, newToday: { date: '', count: 0 }, sessions: [] }),
     }),
     { name: 'atlas.progress.v1', storage: createJSONStorage(() => appStorage) },
   ),

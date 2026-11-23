@@ -5,7 +5,6 @@ import { summarize, regionMastery, streak, heatmap, level, byName, isMastered } 
 import { weakest } from '../learn/weak'
 import { BONE_BY_ID } from '../data/bones'
 import { withSide } from '../learn/pool'
-import { CloseIcon } from './Icons'
 
 const WEEKS = 15
 const DOW = ['Mon', '', 'Wed', '', 'Fri', '', 'Sun']
@@ -13,7 +12,7 @@ const pct = (x: number) => `${Math.round(x * 100)}%`
 const longDate = (d: string) => new Date(`${d}T12:00:00`).toLocaleDateString([], { weekday: 'short', day: 'numeric', month: 'short' })
 
 /** Progress: mastery, accuracy, streak, study days and weakest bones. Everything is computed from local data. */
-export function ProgressScreen({ onClose }: { onClose: () => void }) {
+export function ProgressScreen() {
   const stats = useProgress((s) => s.stats)
   const days = useProgress((s) => s.days)
   const daily = useProgress((s) => s.daily)
@@ -32,19 +31,15 @@ export function ProgressScreen({ onClose }: { onClose: () => void }) {
     return first ? new Date(`${first.date}T12:00:00`).toLocaleDateString([], { month: 'short' }) : ''
   })
   const startWeak = () => {
-    onClose()
     useSession.getState().open('weak')
   }
 
   return (
-    <div className="screen" role="dialog" aria-modal aria-label="Progress">
-      <header className="screen-head">
-        <h2>Progress</h2>
-        <button className="icon-btn" aria-label="Close" onClick={onClose}>
-          <CloseIcon />
-        </button>
+    <div className="tab-page progress-page">
+      <header className="page-head">
+        <h1>Progress</h1>
       </header>
-      <div className="screen-body">
+      <div className="page-body">
         <section className="kpis" aria-label="Summary">
           <div className="kpi">
             <span className="k">Bones mastered</span>

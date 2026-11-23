@@ -20,7 +20,7 @@ export const PALETTES: Record<'dark' | 'light', Palette> = {
  * fill, and a faint tinted rim. Matcaps cost one texture lookup per pixel, which keeps 300k
  * triangles at 60 fps on mid-range phones.
  */
-function makeMatcap(rim: [number, number, number]): THREE.Texture {
+export function makeMatcap(rim: [number, number, number]): THREE.Texture {
   const size = 256
   const canvas = document.createElement('canvas')
   canvas.width = canvas.height = size

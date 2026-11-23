@@ -1,20 +1,15 @@
 import { createEmptyCard, fsrs, generatorParameters, Rating, type Card, type Grade } from 'ts-fsrs'
-import type { Bone } from '../data/types'
 import type { StoredCard } from '../state/progress'
-import { bonesIn, nameKey, shuffle } from './pool'
+import { shuffle } from './pool'
+import { deckFor, type DeckCard } from './decks'
+
+export { deckFor, type DeckCard, type Direction } from './decks'
 
 /**
  * Flashcards, scheduled with FSRS (ts-fsrs, default parameters). Two cards per bone name:
  *   see  — the bone lights up on the model; recall its name
  *   find — the name is shown; tap the bone on the model
  */
-export type Direction = 'see' | 'find'
-export interface DeckCard {
-  id: string
-  dir: Direction
-  bones: Bone[] // every bone with this name (left and right)
-}
-
 const scheduler = fsrs(generatorParameters({ enable_fuzz: true }))
 export const GRADES: { grade: Grade; label: string }[] = [
   { grade: Rating.Again, label: 'Again' },
@@ -22,12 +17,6 @@ export const GRADES: { grade: Grade; label: string }[] = [
   { grade: Rating.Good, label: 'Good' },
   { grade: Rating.Easy, label: 'Easy' },
 ]
-
-export function deckFor(area: string): DeckCard[] {
-  const byName = new Map<string, Bone[]>()
-  for (const b of bonesIn(area)) byName.set(nameKey(b), [...(byName.get(nameKey(b)) ?? []), b])
-  return [...byName.entries()].flatMap(([key, bones]) => (['see', 'find'] as const).map((dir) => ({ id: `${dir}:${key}`, dir, bones })))
-}
 
 export const toCard = (s: StoredCard): Card =>
   ({ ...s, due: new Date(s.due), last_review: s.last_review ? new Date(s.last_review) : undefined }) as Card

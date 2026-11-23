@@ -12,6 +12,7 @@ import { BookIcon, CalendarIcon, CardsIcon, ChevronRightIcon, CloseIcon, NotesIc
 import { areaLabel, bestTyping, currentStreak, flashcardsToday, goalToday, greeting } from './homeStats'
 import { setById } from '../../learn/spelling'
 import { sectionInfo, sectionLabel, useReading } from '../../learn/textbook'
+import { Portal } from '../Portal'
 
 const HeroSkeleton = lazy(() => import('../../viewer/HeroSkeleton'))
 
@@ -198,41 +199,43 @@ function Tile({ icon, title, stat, soon, onClick }: { icon: ReactNode; title: st
 /** Flashcard decks by region, with what is due in each. */
 function DeckPicker({ onClose }: { onClose: () => void }) {
   return (
-    <div className="modal-backdrop" onClick={onClose}>
-      <aside className="sheet" role="dialog" aria-modal aria-label="Flashcard decks" onClick={(e) => e.stopPropagation()}>
-        <header className="sheet-head">
-          <h2>Flashcards</h2>
-          <button className="icon-btn" aria-label="Close" onClick={onClose}>
-            <CloseIcon />
-          </button>
-        </header>
-        <p className="muted small">Choose a deck. Cards come back when FSRS schedules them.</p>
-        <ul className="decks">
-          {AREAS.map((a) => {
-            const t = flashcardsToday(a.id)
-            return (
-              <li key={a.id}>
-                <button
-                  className="row link"
-                  onPointerDown={press}
-                  onClick={() => {
-                    usePrefs.getState().setStudy({ area: a.id })
-                    useSession.getState().open('flashcards')
-                  }}
-                >
-                  <span>{a.label}</span>
-                  <span className="deck-count">
-                    {t.due ? `${t.due} due` : ''}
-                    {t.due && t.newLeft ? ' · ' : ''}
-                    {t.newLeft ? `${t.newLeft} new` : ''}
-                    {!t.total && 'Done for today'}
-                  </span>
-                </button>
-              </li>
-            )
-          })}
-        </ul>
-      </aside>
-    </div>
+    <Portal>
+      <div className="modal-backdrop" onClick={onClose}>
+        <aside className="sheet" role="dialog" aria-modal aria-label="Flashcard decks" onClick={(e) => e.stopPropagation()}>
+          <header className="sheet-head">
+            <h2>Flashcards</h2>
+            <button className="icon-btn" aria-label="Close" onClick={onClose}>
+              <CloseIcon />
+            </button>
+          </header>
+          <p className="muted small">Choose a deck. Cards come back when FSRS schedules them.</p>
+          <ul className="decks">
+            {AREAS.map((a) => {
+              const t = flashcardsToday(a.id)
+              return (
+                <li key={a.id}>
+                  <button
+                    className="row link"
+                    onPointerDown={press}
+                    onClick={() => {
+                      usePrefs.getState().setStudy({ area: a.id })
+                      useSession.getState().open('flashcards')
+                    }}
+                  >
+                    <span>{a.label}</span>
+                    <span className="deck-count">
+                      {t.due ? `${t.due} due` : ''}
+                      {t.due && t.newLeft ? ' · ' : ''}
+                      {t.newLeft ? `${t.newLeft} new` : ''}
+                      {!t.total && 'Done for today'}
+                    </span>
+                  </button>
+                </li>
+              )
+            })}
+          </ul>
+        </aside>
+      </div>
+    </Portal>
   )
 }

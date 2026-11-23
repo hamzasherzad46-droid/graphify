@@ -6,13 +6,21 @@ export type Tab = 'home' | '3d' | 'practice' | 'progress' | 'you'
 export type Page =
   | { kind: 'lessons' }
   | { kind: 'topics'; area: 'textbook' | 'exam' }
-  | { kind: 'topic'; area: 'textbook' | 'exam'; topic: string }
+  | { kind: 'topic'; area: 'textbook' | 'exam'; topic: string; anchor?: string }
   | { kind: 'reader'; section: string; anchor?: string }
+  | { kind: 'mine'; what: 'highlights' | 'notes' }
 
 /**
  * Which tab is showing, and the stack of pages opened from Home. The app always opens on Home. Each pushed page is
  * also a browser history entry, so the phone's back button (or swipe back) closes it.
  */
+/** A highlight or note to flash briefly when the page it belongs to opens ("tap to jump back"). */
+export const useFlash = create<{ id: string | null; at: number; flash: (id: string) => void }>((set) => ({
+  id: null,
+  at: 0,
+  flash: (id) => set({ id, at: Date.now() }),
+}))
+
 export const useNav = create<{
   tab: Tab
   pages: Page[]

@@ -300,6 +300,25 @@ labelled "Exam-style questions", and every Atlas question's source says it is no
   cite CC BY 4.0, 2–4 sentence explanations, four options with one line on each wrong option, label answers name the
   lit bone, answers spread across A–D. All question text was spell-checked (British English, as the rest of the app).
 
+### My Highlights, My Notes and My cards (step 6)
+
+Lessons → **My Highlights** / **My Notes** (with counts).
+
+- **My Highlights**: every highlight, grouped by chapter in book order (then exam-style questions by topic), in the
+  order they appear in the text; filter by colour (with counts). **My Notes**: every note, with the text it is attached
+  to ("On this paragraph", "On this question").
+- **Tap to jump back**: the reader opens at that paragraph (opening the Classic reference and the right bone's entry
+  for a Gray's paragraph), or the exam topic opens at that question; the highlight or card glows for two seconds.
+- **Turn into flashcard** (on every highlight and note): a suggested card to check and edit before saving. A highlight
+  becomes a fill-in-the-blank card (its sentence, from the full paragraph, with the highlighted words blanked); a
+  note becomes text-on-the-front, note-on-the-back. Cards join **My cards** (`src/learn/mycards.ts`), scheduled with
+  FSRS like every other card (state under `mine:<id>`), studied from My Highlights / My Notes or Practice → My cards.
+- Sheets and dialogs render in a portal above the tab bar (`src/ui/Portal.tsx`). Before this, a sheet opened inside a
+  page (the flashcard deck picker on Home, Credits, the new card editor) sat under the tab bar, which could cover its
+  buttons.
+- Tests (`src/learn/mycards.test.ts`): the sentence around a phrase, fill-in-the-blank cards from the full paragraph
+  and from the saved context alone, whole-sentence highlights, note cards.
+
 ## Progress (step 6)
 
 Top bar → progress icon. All computed from data saved on the device (`useProgress`, via `appStorage`):

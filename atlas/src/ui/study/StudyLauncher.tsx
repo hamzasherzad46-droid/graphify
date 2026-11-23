@@ -5,6 +5,7 @@ import { deckFor } from '../../learn/deck'
 import { weakest } from '../../learn/weak'
 import { MODE_INFO, useSession, type Mode } from '../../learn/session'
 import { SETS, setById } from '../../learn/spelling'
+import { liveCards, useMyCards } from '../../learn/mycards'
 
 function Seg<T extends string | number>({ label, value, options, onChange }: { label: string; value: T; options: [T, string][]; onChange: (v: T) => void }) {
   return (
@@ -29,6 +30,7 @@ export function StudyLauncher() {
   const cards = useProgress((p) => p.cards)
   const { open } = useSession()
   const weakCount = weakest(stats, 999).length
+  const myCards = liveCards(useMyCards((p) => p.cards)).length
   const now = new Date().toISOString()
   const due = deckFor(s.area).filter((c) => cards[c.id] && cards[c.id].due <= now).length
   const note: Record<Mode, string> = {
@@ -36,6 +38,7 @@ export function StudyLauncher() {
     flashcards: `${due} due · up to ${s.newPerDay} new today`,
     quiz: `${s.count || 'All'} questions · ${s.perQuestion ? `${s.perQuestion} s each` : 'untimed'}`,
     weak: weakCount ? `${weakCount} bones to work on` : 'Nothing yet: missed bones appear here',
+    mycards: myCards ? `${myCards} ${myCards === 1 ? 'card' : 'cards'}` : 'Make one from a highlight or note (Lessons)',
   }
   return (
     <div className="tab-page practice">
@@ -45,7 +48,7 @@ export function StudyLauncher() {
       <div className="page-body">
         <div className="modes">
           {(Object.keys(MODE_INFO) as Mode[]).map((m) => (
-            <button key={m} className="mode" disabled={m === 'weak' && !weakCount} onClick={() => open(m)}>
+            <button key={m} className="mode" disabled={(m === 'weak' && !weakCount) || (m === 'mycards' && !myCards)} onClick={() => open(m)}>
               <span className="mode-title">{MODE_INFO[m].title}</span>
               <span className="mode-blurb">{MODE_INFO[m].blurb}</span>
               <span className="mode-note">{note[m]}</span>

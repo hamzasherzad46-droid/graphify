@@ -13,7 +13,7 @@ const SIZES = [15, 16, 17.5, 19, 21]
 const TOP = 70
 
 /** The textbook reader: key points, the full text, key terms, a quick check and the attribution. */
-export function ReaderScreen({ id }: { id: string }) {
+export function ReaderScreen({ id, anchor }: { id: string; anchor?: string }) {
   const [section, setSection] = useState<Section | null>(null)
   const [failed, setFailed] = useState(false)
   useEffect(() => {
@@ -21,10 +21,10 @@ export function ReaderScreen({ id }: { id: string }) {
   }, [id])
   if (failed) return <div className="tab-page lessons"><PageHead title="Not found" /></div>
   if (!section) return <div className="tab-page lessons reader-page" aria-busy />
-  return <Reader section={section} />
+  return <Reader section={section} anchor={anchor} />
 }
 
-function Reader({ section }: { section: Section }) {
+function Reader({ section, anchor }: { section: Section; anchor?: string }) {
   const size = useReading((s) => s.size)
   const [menu, setMenu] = useState(false)
   const [zoom, setZoom] = useState<Extract<Block, { t: 'fig' }> | null>(null)
@@ -44,12 +44,18 @@ function Reader({ section }: { section: Section }) {
     const el = page.current
     if (restored.current || !el) return
     restored.current = true
+    // Opened at a paragraph (from My Highlights / My Notes): go there instead of the reading position.
+    if (anchor) {
+      const p = document.querySelector<HTMLElement>(`[data-pid="${CSS.escape(anchor)}"]`)
+      if (p) el.scrollTop = Math.max(0, p.offsetTop - el.clientHeight / 3)
+      return
+    }
     const m = useReading.getState().marks[section.id]
     if (!m) return
     const p = m.para ? document.getElementById(m.para) : null
     if (p) el.scrollTop = p.offsetTop - TOP
     else if (m.frac > 0) el.scrollTop = m.frac * (el.scrollHeight - el.clientHeight)
-  }, [section.id])
+  }, [section.id, anchor])
 
   // Save progress while reading (a few times a second at most).
   useEffect(() => {
@@ -118,7 +124,7 @@ function Reader({ section }: { section: Section }) {
         <div className="reader-body">
           <Blocks blocks={section.blocks} onBone={onBone} onRef={onRef} onZoom={setZoom} />
         </div>
-        {hasClassic(section.id) && <ClassicReference id={section.id} onBone={onBone} onZoom={setZoom} />}
+        {hasClassic(section.id) && <ClassicReference id={section.id} onBone={onBone} onZoom={setZoom} openTo={anchor?.startsWith('g-') ? anchor : undefined} />}
         </Annotatable>
 
         {section.glossary.length > 0 && (
@@ -159,14 +165,24 @@ function Reader({ section }: { section: Section }) {
 }
 
 /** Gray's Anatomy (1918) on the same bones: collapsed, loaded when opened, one entry per bone. */
-function ClassicReference({ id, onBone, onZoom }: { id: string; onBone: (b: string) => void; onZoom: (f: Extract<Block, { t: 'fig' }>) => void }) {
+function ClassicReference({ id, onBone, onZoom, openTo }: { id: string; onBone: (b: string) => void; onZoom: (f: Extract<Block, { t: 'fig' }>) => void; openTo?: string }) {
   const [data, setData] = useState<Classic | null>(null)
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(!!openTo)
   useEffect(() => {
     if (open && !data) void loadClassic(id).then(setData)
   }, [open, data, id])
+  // Opened at one of its paragraphs: once loaded, scroll there.
+  useEffect(() => {
+    if (!data || !openTo) return
+    const t = window.setTimeout(() => {
+      const p = document.querySelector<HTMLElement>(`[data-pid="${CSS.escape(openTo)}"]`)
+      p?.scrollIntoView({ block: 'center' })
+    }, 60)
+    return () => window.clearTimeout(t)
+  }, [data, openTo])
+  const entryOf = (e: Classic['entries'][number]) => !!openTo && e.blocks.some((b) => b.id === openTo)
   return (
-    <details className="classic" onToggle={(e) => setOpen((e.target as HTMLDetailsElement).open)}>
+    <details className="classic" open={open} onToggle={(e) => setOpen((e.target as HTMLDetailsElement).open)}>
       <summary>
         <span className="classic-k">Classic reference</span>
         <span className="classic-t">Gray’s Anatomy (1918)</span>
@@ -180,7 +196,7 @@ function ClassicReference({ id, onBone, onZoom }: { id: string; onBone: (b: stri
             since been revised: for exams, use the terms in the main text above.
           </p>
           {data.entries.map((e) => (
-            <details key={e.slug} className="classic-entry">
+            <details key={e.slug} className="classic-entry" open={entryOf(e) || undefined}>
               <summary>{e.title}</summary>
               <Blocks blocks={e.blocks} onBone={onBone} onRef={() => {}} onZoom={onZoom} />
             </details>

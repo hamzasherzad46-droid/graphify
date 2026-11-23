@@ -2,7 +2,7 @@ import { create } from 'zustand'
 import type { Bone } from '../data/types'
 import type { Verdict } from './answer'
 
-export type Mode = 'typing' | 'quiz' | 'weak' | 'flashcards'
+export type Mode = 'typing' | 'quiz' | 'weak' | 'flashcards' | 'mycards'
 export type Kind = 'type' | 'choice' | 'tap'
 
 export interface Item {
@@ -38,4 +38,5 @@ export const MODE_INFO: Record<Mode, { title: string; blurb: string }> = {
   flashcards: { title: 'Flashcards', blurb: 'Spaced repetition (FSRS): name the bone, find the bone.' },
   quiz: { title: 'Quiz', blurb: 'Timed multiple choice and “tap the bone”.' },
   weak: { title: 'Weak Bones', blurb: 'The bones you miss most, mixed across question types.' },
+  mycards: { title: 'My cards', blurb: 'Flashcards you made from your highlights and notes.' },
 }

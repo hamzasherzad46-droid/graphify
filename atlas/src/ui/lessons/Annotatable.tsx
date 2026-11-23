@@ -3,6 +3,7 @@ import { COLORS, liveFor, useAnnotations, type Annotation, type HighlightColor }
 import { locate, offsetIn, rangeFor, segmentFor, textOf, type Segment } from '../../learn/anchor'
 import { haptic } from '../../lib/feedback'
 import { useToast } from '../toastStore'
+import { useFlash } from '../../state/nav'
 
 interface Box {
   x: number
@@ -53,6 +54,19 @@ export function Annotatable({ doc, docLabel, children, className }: { doc: strin
   const [bar, setBar] = useState<Bar | null>(null)
   const [pop, setPop] = useState<Pop | null>(null)
   const toast = useToast((s) => s.show)
+  const flashId = useFlash((s) => s.id)
+  const flashAt = useFlash((s) => s.at)
+  const [flashing, setFlashing] = useState<string | null>(null)
+  // A highlight or note just jumped to glows for two seconds.
+  useEffect(() => {
+    if (!flashId || Date.now() - flashAt > 4000 || !live.some((a) => a.id === flashId)) return
+    const on = window.setTimeout(() => setFlashing(flashId), 0)
+    const off = window.setTimeout(() => setFlashing(null), 2200)
+    return () => {
+      window.clearTimeout(on)
+      window.clearTimeout(off)
+    }
+  }, [flashId, flashAt, live])
 
   /* ── Drawing ─────────────────────────────────────────────────────────────────────────────────────────────── */
 
@@ -273,6 +287,7 @@ export function Annotatable({ doc, docLabel, children, className }: { doc: strin
                 a.color ? `hl-${a.color}` : 'hl-none',
                 hasNote(a) && a.scope !== 'para' ? 'noted' : '',
                 (bar?.kind === 'edit' && bar.id === a.id) || pop?.id === a.id ? 'active' : '',
+                flashing === a.id ? 'flash' : '',
               ].join(' ')}
               style={{ left: b.x - 1, top: b.y, width: b.w + 2, height: b.h }}
             />

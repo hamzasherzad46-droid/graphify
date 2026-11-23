@@ -6,7 +6,7 @@ import { PageHead } from './PageHead'
 import { ExamQuestions } from './ExamQuestions'
 
 /** One topic: its textbook sections or its exam-style questions. */
-export function TopicScreen({ area, topic }: { area: 'textbook' | 'exam'; topic: string }) {
+export function TopicScreen({ area, topic, anchor }: { area: 'textbook' | 'exam'; topic: string; anchor?: string }) {
   const t = topicById(topic)
   const marks = useReading((s) => s.marks)
   const push = useNav((s) => s.push)
@@ -19,7 +19,7 @@ export function TopicScreen({ area, topic }: { area: 'textbook' | 'exam'; topic:
         <p className="muted">{t.blurb}.</p>
         {area === 'exam' && <p className="muted small exam-note">Exam-style questions: written in the style of anatomy exams, with the reasoning explained. Not real exam papers.</p>}
         {area === 'exam' ? (
-          <ExamQuestions topic={topic} />
+          <ExamQuestions topic={topic} anchor={anchor} />
         ) : (
           <ul className="topic-list">
             {sections.map((s) => {

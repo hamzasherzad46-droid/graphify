@@ -13,7 +13,7 @@ const BoneSnapshot = lazy(() => import('../../viewer/BoneSnapshot'))
 const LETTERS = 'ABCD'
 
 /** A topic's exam-style questions: progress, filters, and the question cards. */
-export function ExamQuestions({ topic }: { topic: string }) {
+export function ExamQuestions({ topic, anchor }: { topic: string; anchor?: string }) {
   const all = useMemo(() => questionsFor(topic), [topic])
   const answers = useExam((s) => s.answers)
   const [freq, setFreq] = useState<Frequency | 'all'>('all')
@@ -21,6 +21,24 @@ export function ExamQuestions({ topic }: { topic: string }) {
   const shown = all.filter((q) => (freq === 'all' || q.frequency === freq) && (level === 'all' || q.level === level))
   const done = all.filter((q) => isDone(q, answers[q.id]))
   const right = done.filter((q) => isCorrect(q, answers[q.id])).length
+
+  // Jump to a question (from My Highlights / My Notes), then let it glow briefly.
+  useEffect(() => {
+    if (!anchor) return
+    // Jump at once (a smooth scroll can be cut short when content above it loads), then once more after late layout.
+    const go = () => document.querySelector<HTMLElement>(`.q-card[data-qid="${CSS.escape(anchor)}"]`)?.scrollIntoView({ block: 'start' })
+    const t1 = window.setTimeout(() => {
+      go()
+      const el = document.querySelector<HTMLElement>(`.q-card[data-qid="${CSS.escape(anchor)}"]`)
+      el?.classList.add('flash')
+      window.setTimeout(() => el?.classList.remove('flash'), 2200)
+    }, 60)
+    const t2 = window.setTimeout(go, 500)
+    return () => {
+      window.clearTimeout(t1)
+      window.clearTimeout(t2)
+    }
+  }, [anchor])
 
   if (!all.length) return <div className="empty-note">Exam-style questions for this topic are being written. The Skull and the Upper limb are ready now.</div>
 
@@ -101,7 +119,7 @@ function QuestionCard({ q, n, topicTitle }: { q: Question; n: number; topicTitle
   }
 
   return (
-    <article className={`q-card ${revealed ? 'revealed' : ''}`} aria-label={`Question ${n}`}>
+    <article className={`q-card ${revealed ? 'revealed' : ''}`} aria-label={`Question ${n}`} data-qid={q.id}>
       <header className="q-tags">
         <span className={`tag freq-${q.frequency}`}>{FREQUENCY_LABEL[q.frequency]}</span>
         <span className="tag">{LEVEL_LABEL[q.level]}</span>

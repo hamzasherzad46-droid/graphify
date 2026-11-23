@@ -12,6 +12,7 @@ import { Loader } from './ui/Loader'
 import { Disclaimer } from './ui/Disclaimer'
 import { Toast } from './ui/Toast'
 import { TabBar } from './ui/TabBar'
+import { BackIcon } from './ui/Icons'
 import { HomeScreen } from './ui/home/HomeScreen'
 import { useSession } from './learn/session'
 
@@ -34,6 +35,7 @@ export default function App() {
   const mode = useSession((s) => s.mode)
   const tab = useNav((s) => s.tab)
   const pages = useNav((s) => s.pages)
+  const returnTo = useNav((s) => s.returnTo)
   const in3d = tab === '3d' && !mode
   return (
     <div className={`app tab-${mode ? 'study' : tab}`}>
@@ -58,6 +60,11 @@ export default function App() {
               <Dock />
               <InfoPanel />
               <Loader done={loaded} />
+              {returnTo && (
+                <button className="back-pill" onClick={() => useNav.getState().go('home')}>
+                  <BackIcon /> Back to {returnTo}
+                </button>
+              )}
             </>
           )}
           {tab === 'home' && !pages.length && <HomeScreen />}

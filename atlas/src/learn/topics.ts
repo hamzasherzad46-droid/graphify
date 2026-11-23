@@ -5,7 +5,6 @@ export interface Topic {
   title: string
   blurb: string
   regions: string[]
-  sections: string[]
   /** Only in the textbook (no exam questions by region). */
   textbookOnly?: boolean
 }

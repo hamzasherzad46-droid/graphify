@@ -1,14 +1,77 @@
 {
-  "description": "Lessons topics. Regions first (exam questions and reading by body region), then whole-skeleton topics that only the textbook has. 'regions' are bone regions (content/bones); 'sections' are textbook section ids (content/textbook).",
+  "description": "Lessons topics. Regions first (exam questions and reading by body region), then whole-skeleton topics that only the textbook has. 'regions' are bone regions (content/bones). Textbook sections name their topic in content/textbook/index.json.",
   "topics": [
-    { "id": "skull", "title": "Skull", "blurb": "Cranial and facial bones, sutures, fossae, foramina, the orbit and the nasal cavity", "regions": ["Skull", "Neck"], "sections": [] },
-    { "id": "spine", "title": "Spine", "blurb": "Vertebrae by region, curvatures, discs and the sacrum and coccyx", "regions": ["Vertebral column"], "sections": [] },
-    { "id": "thorax", "title": "Thorax", "blurb": "Sternum, true, false and floating ribs, and the thoracic cage", "regions": ["Thorax"], "sections": [] },
-    { "id": "upper-limb", "title": "Upper limb", "blurb": "Pectoral girdle, humerus, radius and ulna, and the bones of the hand", "regions": ["Upper limb", "Hand"], "sections": [] },
-    { "id": "lower-limb", "title": "Lower limb", "blurb": "Femur, patella, tibia and fibula, and the bones of the foot", "regions": ["Lower limb", "Foot"], "sections": [] },
-    { "id": "pelvis", "title": "Pelvis", "blurb": "Hip bones, sacrum and coccyx, and female and male pelvis differences", "regions": ["Pelvis"], "sections": [] },
-    { "id": "bone-tissue", "title": "Bone tissue", "blurb": "What bone does, how it is built, grows, heals and is kept in balance", "regions": [], "sections": [], "textbookOnly": true },
-    { "id": "skeleton", "title": "The skeleton", "blurb": "Axial and appendicular divisions, and how the skeleton develops", "regions": [], "sections": [], "textbookOnly": true },
-    { "id": "joints", "title": "Joints", "blurb": "Joint types, synovial joints, body movements and selected joints", "regions": [], "sections": [], "textbookOnly": true }
+    {
+      "id": "skull",
+      "title": "Skull",
+      "blurb": "Cranial and facial bones, sutures, fossae, foramina, the orbit and the nasal cavity",
+      "regions": [
+        "Skull",
+        "Neck"
+      ]
+    },
+    {
+      "id": "spine",
+      "title": "Spine",
+      "blurb": "Vertebrae by region, curvatures, discs and the sacrum and coccyx",
+      "regions": [
+        "Vertebral column"
+      ]
+    },
+    {
+      "id": "thorax",
+      "title": "Thorax",
+      "blurb": "Sternum, true, false and floating ribs, and the thoracic cage",
+      "regions": [
+        "Thorax"
+      ]
+    },
+    {
+      "id": "upper-limb",
+      "title": "Upper limb",
+      "blurb": "Pectoral girdle, humerus, radius and ulna, and the bones of the hand",
+      "regions": [
+        "Upper limb",
+        "Hand"
+      ]
+    },
+    {
+      "id": "lower-limb",
+      "title": "Lower limb",
+      "blurb": "Femur, patella, tibia and fibula, and the bones of the foot",
+      "regions": [
+        "Lower limb",
+        "Foot"
+      ]
+    },
+    {
+      "id": "pelvis",
+      "title": "Pelvis",
+      "blurb": "Hip bones, sacrum and coccyx, and female and male pelvis differences",
+      "regions": [
+        "Pelvis"
+      ]
+    },
+    {
+      "id": "bone-tissue",
+      "title": "Bone tissue",
+      "blurb": "What bone does, how it is built, grows, heals and is kept in balance",
+      "regions": [],
+      "textbookOnly": true
+    },
+    {
+      "id": "skeleton",
+      "title": "The skeleton",
+      "blurb": "Axial and appendicular divisions, and how the skeleton develops",
+      "regions": [],
+      "textbookOnly": true
+    },
+    {
+      "id": "joints",
+      "title": "Joints",
+      "blurb": "Joint types, synovial joints, body movements and selected joints",
+      "regions": [],
+      "textbookOnly": true
+    }
   ]
 }

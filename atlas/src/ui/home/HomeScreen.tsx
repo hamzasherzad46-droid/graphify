@@ -11,6 +11,7 @@ import { useToast } from '../toastStore'
 import { BookIcon, CalendarIcon, CardsIcon, ChevronRightIcon, CloseIcon, NotesIcon, SpellIcon, UserIcon } from '../Icons'
 import { areaLabel, bestTyping, currentStreak, flashcardsToday, goalToday, greeting } from './homeStats'
 import { setById } from '../../learn/spelling'
+import { sectionInfo, sectionLabel, useReading } from '../../learn/textbook'
 
 const HeroSkeleton = lazy(() => import('../../viewer/HeroSkeleton'))
 
@@ -136,6 +137,7 @@ export function HomeScreen() {
         <span className="row-v">{last ? `${MODE_INFO[last.mode].title} · ${last.set ? (setById(last.set)?.title ?? areaLabel(last.area)) : areaLabel(last.area)}` : 'Start with a Spelling Quiz'}</span>
         <ChevronRightIcon className="row-go" />
       </button>
+      <ContinueReading />
       <div className="streak-row">
         <CalendarIcon />
         <span>
@@ -151,6 +153,32 @@ export function HomeScreen() {
 
       {decks && <DeckPicker onClose={() => setDecks(false)} />}
     </div>
+  )
+}
+
+/** The last textbook section opened, if it isn't finished. Opens with Lessons › Textbook › topic behind it. */
+function ContinueReading() {
+  const last = useReading((s) => s.last)
+  const mark = useReading((s) => (last ? s.marks[last] : undefined))
+  const info = last ? sectionInfo(last) : undefined
+  if (!info || !mark) return null
+  const pct = Math.round(mark.frac * 100)
+  if (mark.read && mark.frac > 0.97) return null // finished, and left at the end
+  return (
+    <button
+      className="row-card reading"
+      onPointerDown={press}
+      onClick={() =>
+        useNav.getState().open([{ kind: 'lessons' }, { kind: 'topics', area: 'textbook' }, { kind: 'topic', area: 'textbook', topic: info.topic }, { kind: 'reader', section: info.id }])
+      }
+    >
+      <span className="row-k">Continue reading</span>
+      <span className="row-v">{sectionLabel(info)}</span>
+      <span className="row-progress" aria-label={`${pct}% read`}>
+        <span style={{ transform: `scaleX(${mark.frac})` }} />
+      </span>
+      <ChevronRightIcon className="row-go" />
+    </button>
   )
 }
 

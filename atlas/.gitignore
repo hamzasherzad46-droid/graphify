@@ -7,3 +7,4 @@ coverage
 android
 ios
 dist-artifact
+.cache

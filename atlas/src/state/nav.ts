@@ -16,7 +16,11 @@ export type Page =
 export const useNav = create<{
   tab: Tab
   pages: Page[]
+  /** Set when a lesson opened the 3D view: the 3D tab shows "Back to <label>". */
+  returnTo: string | null
   go: (tab: Tab) => void
+  /** Open a bone in 3D from a lesson, with a way back. */
+  showBone: (bone: string, from: string) => void
   push: (p: Page) => void
   /** Close the top page (through history, so back button and in-app back stay in step). */
   back: () => void
@@ -27,7 +31,13 @@ export const useNav = create<{
 }>((set, get) => ({
   tab: 'home',
   pages: [],
-  go: (tab) => set({ tab }),
+  returnTo: null,
+  go: (tab) => set({ tab, ...(tab === 'home' ? { returnTo: null } : {}) }),
+  showBone: (bone, from) => {
+    set({ tab: '3d', returnTo: from })
+    // The 3D view is mounted under every tab; select and fly to the bone.
+    void import('./store').then(({ useViewer }) => useViewer.getState().select(bone, { focus: true }))
+  },
   push: (p) => {
     history.pushState({ atlasDepth: get().pages.length + 1 }, '')
     set((s) => ({ tab: 'home', pages: [...s.pages, p] }))

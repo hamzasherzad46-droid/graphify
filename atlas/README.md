@@ -211,6 +211,37 @@ plus **Learn / Hard** mode and a timer (none, 1, 3, 5 min). *Continue where you 
 - **Haptics** (follow the Haptics setting): light on every key, stronger on a wrong letter, a success pattern on a
   correct word.
 
+## Lessons (lessons upgrade)
+
+Home → **Lessons** offers **Exam-style questions** and **Textbook**, both organised by topic (`content/topics.json`):
+Skull, Spine, Thorax, Upper limb, Lower limb, Pelvis; the textbook adds Bone tissue, The skeleton and Joints. Pages
+opened from Home form a stack backed by browser history, so the phone's back button closes them.
+
+### Textbook (step 2)
+
+- **Source**: OpenStax *Anatomy and Physiology 2e*, chapters 6–9 (28 sections, 99 figures), imported by
+  `scripts/import-openstax.mjs` from the book's source repository into `content/textbook/*.json` and
+  `public/textbook/*.webp`.
+- **Licence**: the repository moved the book to **CC BY-NC-SA 4.0** on 2026-03-19 (commit `fdfa6e2`). Atlas uses the
+  last version released under **CC BY 4.0** (commit `b0058a7`, 2026-03-11); a CC licence cannot be withdrawn from
+  material already released under it. Every section ends with "Adapted from *Anatomy and Physiology 2e* by OpenStax,
+  CC BY 4.0, openstax.org.", the source commit and the list of changes. No OpenStax logo, cover or branding is used.
+- **Structure kept**: headings, paragraphs (with their stable source ids, for highlights), key terms, figures with
+  titles, captions and alt text, tables, feature boxes, learning objectives, glossary and review questions.
+- **Bone links** (`scripts/lib/bonelink.mjs`, `content/landmarks.json`): every bone name, plural and anatomical
+  synonym, vertebra codes (C1–L5), and 148 landmarks on a single bone (mastoid process → temporal bone, greater
+  trochanter → femur, …) open the bone in 3D, with a *Back to 7.2 The Skull* pill on the 3D view. "Axis" links to
+  C2 only in a sentence about the neck vertebrae. Structures formed by several bones (fossae, sutures) are not linked.
+- **Reader**: about 65 characters a line, 17.5 px text (five sizes), line height 1.7, dark / light / auto; key points
+  (the first sentence of each chapter-review paragraph, full summary one tap away), learning objectives, the full
+  text, figures that open full screen (pinch or double-tap to zoom), key terms, a 3-question quick check from the
+  section's review questions, and the attribution. Reading position (the paragraph at the top of the screen) is saved
+  as you read; *Continue reading* on Home returns to it, even after the app is closed.
+- **Classic reference (Gray's Anatomy, 1918)**: not added yet. No trustworthy copy of the text is reachable from the
+  build environment.
+- Tests (`src/learn/textbook.test.ts`): all sections present and in a topic, CC BY 4.0 source and changes, bone links
+  valid, the "axis" rule, every figure file present with label and alt text, unique paragraph ids, quick checks valid.
+
 ## Progress (step 6)
 
 Top bar → progress icon. All computed from data saved on the device (`useProgress`, via `appStorage`):

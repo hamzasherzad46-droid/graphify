@@ -4000,3 +4000,121 @@ textarea:focus-visible {
 .classic-source {
   margin-bottom: 1.2em !important;
 }
+
+/* ---------- Notes ---------- */
+
+.hl-none {
+  background: transparent;
+}
+
+/* Text with a note: a subtle dotted underline. */
+.hl.noted {
+  border-bottom: 1.5px dotted color-mix(in srgb, var(--accent) 85%, transparent);
+  border-radius: 3px 3px 0 0;
+}
+
+.annot-pins {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* Pins sit in the margin just right of the text column. */
+.note-pin {
+  position: absolute;
+  right: -22px;
+  width: 22px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border-radius: 7px;
+  color: var(--accent);
+  pointer-events: auto;
+  transition: background-color 0.15s ease;
+  animation: annot-in 0.18s ease-out;
+}
+
+.note-pin:active,
+.note-pin.on {
+  background: var(--accent-soft);
+}
+
+.annot-btn.has-note::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 5px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.note-pop {
+  position: absolute;
+  z-index: 6;
+  padding: 10px 12px 8px;
+  border: 1px solid var(--line-strong);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  background: var(--surface-solid);
+  box-shadow: var(--shadow);
+  font-size: 15px;
+  line-height: 1.5;
+  scroll-margin: 90px 0 120px;
+  animation: annot-in 0.15s ease-out;
+}
+
+.note-quote {
+  margin: 0 0 6px !important;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.note-text {
+  margin: 0 0 6px !important;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--text);
+}
+
+.note-area {
+  display: block;
+  width: 100%;
+  min-height: 76px;
+  max-height: 40vh;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--raise);
+  color: var(--text);
+  font: inherit;
+  line-height: 1.45;
+  resize: vertical;
+}
+
+.note-area:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.note-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.note-actions .link-btn {
+  margin-right: auto;
+  font-size: 12.5px;
+}
+
+.note-saved {
+  font-size: 11.5px;
+  color: var(--muted);
+}

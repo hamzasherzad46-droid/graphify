@@ -262,6 +262,20 @@ opened from Home form a stack backed by browser history, so the phone's back but
 - Bone names are spans with button semantics (not `<button>`s), and stop being focusable while pressed, so a drag that
   starts on a bone name selects text.
 
+### Notes (step 4)
+
+- **Note** in the selection toolbar (a note on those words) and in a highlight's toolbar (a note on the highlight).
+  While writing, *Attach to the whole paragraph* moves the note to the paragraph.
+- A note is never a block in the text: a small **pin** sits in the right margin beside the first line it is attached to
+  (pins on one line stack), and noted words get a subtle **dotted underline** (paragraph notes: pin only). Tap the pin,
+  or the underlined words, to open a small popover right there with the note, **Edit** and **Delete**; tap outside to
+  close.
+- **Saved on every keystroke** through the same store as highlights (IndexedDB plus the synchronous journal): closing
+  the app mid-sentence keeps every letter typed. A note left empty is not kept; deleting a highlight that has a note
+  keeps the note, and deleting a note keeps its highlight.
+- Tests (`src/learn/annotations.test.ts`): the journal wins over an older stored copy (no lost keystrokes), empty notes
+  are dropped only after the journal is replayed, deletes keep tombstones, every change is journalled synchronously.
+
 ## Progress (step 6)
 
 Top bar → progress icon. All computed from data saved on the device (`useProgress`, via `appStorage`):

@@ -21,6 +21,8 @@ export interface Annotation {
   /** Null for a note without highlighting. */
   color: HighlightColor | null
   note: string
+  /** A note on the selected words (default) or on the whole paragraph (pin only, no underline). */
+  scope?: 'text' | 'para'
   createdAt: string
   updatedAt: string
   deletedAt?: string
@@ -63,7 +65,7 @@ export const useAnnotations = create<{
   ready: boolean
   load: () => Promise<void>
   add: (a: Omit<Annotation, 'id' | 'createdAt' | 'updatedAt'>) => Annotation
-  update: (id: string, patch: Partial<Pick<Annotation, 'color' | 'note' | 'segs'>>) => void
+  update: (id: string, patch: Partial<Pick<Annotation, 'color' | 'note' | 'segs' | 'scope'>>) => void
   remove: (id: string) => void
 }>((set, get) => ({
   items: {},
@@ -82,9 +84,14 @@ export const useAnnotations = create<{
     const journal = readJournal()
     const replay = Object.values(journal).filter((a) => !items[a.id] || items[a.id].updatedAt < a.updatedAt)
     for (const a of replay) items[a.id] = a
+    // Then: a note-only annotation left empty (the app closed while its note box was still blank) is not kept.
+    const now = new Date().toISOString()
+    const blanks = Object.values(items).filter((a) => !a.deletedAt && !a.color && !a.note.trim())
+    for (const a of blanks) items[a.id] = { ...a, deletedAt: now, updatedAt: now }
     set({ items, ready: true })
-    if (replay.length)
-      putAll('annotations', replay)
+    const write = [...replay.filter((a) => !blanks.some((b) => b.id === a.id)), ...blanks.map((a) => items[a.id])]
+    if (write.length)
+      putAll('annotations', write)
         .then(() => localStorage.removeItem(JOURNAL))
         .catch(() => {})
     else if (Object.keys(journal).length) localStorage.removeItem(JOURNAL)

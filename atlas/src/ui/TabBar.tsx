@@ -23,6 +23,8 @@ export function TabBar() {
           aria-current={tab === id ? 'page' : undefined}
           onClick={() => {
             if (tab !== id) haptic('light')
+            // Home while already on Home closes any open lesson pages.
+            if (tab === id && id === 'home') useNav.getState().home()
             go(id)
           }}
         >

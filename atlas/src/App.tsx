@@ -20,6 +20,7 @@ const Viewer = lazy(() => import('./viewer/Viewer'))
 const StudyLauncher = lazy(() => import('./ui/study/StudyLauncher').then((m) => ({ default: m.StudyLauncher })))
 const StudySession = lazy(() => import('./ui/study/StudySession').then((m) => ({ default: m.StudySession })))
 const ProgressScreen = lazy(() => import('./ui/ProgressScreen').then((m) => ({ default: m.ProgressScreen })))
+const LessonsRouter = lazy(() => import('./ui/lessons/LessonsRouter').then((m) => ({ default: m.LessonsRouter })))
 const YouScreen = lazy(() => import('./ui/YouScreen').then((m) => ({ default: m.YouScreen })))
 
 /**
@@ -32,6 +33,7 @@ export default function App() {
   const accepted = usePrefs((s) => s.disclaimerAccepted)
   const mode = useSession((s) => s.mode)
   const tab = useNav((s) => s.tab)
+  const pages = useNav((s) => s.pages)
   const in3d = tab === '3d' && !mode
   return (
     <div className={`app tab-${mode ? 'study' : tab}`}>
@@ -58,8 +60,9 @@ export default function App() {
               <Loader done={loaded} />
             </>
           )}
-          {tab === 'home' && <HomeScreen />}
+          {tab === 'home' && !pages.length && <HomeScreen />}
           <Suspense fallback={<div className="tab-page" />}>
+            {tab === 'home' && pages.length > 0 && <LessonsRouter page={pages[pages.length - 1]} depth={pages.length} />}
             {tab === 'practice' && <StudyLauncher />}
             {tab === 'progress' && <ProgressScreen />}
             {tab === 'you' && <YouScreen />}

@@ -25,5 +25,7 @@ export const CardsIcon = (p: P) => (<svg {...base(p)}><rect x="7" y="5" width="1
 export const SpellIcon = (p: P) => (<svg {...base(p)}><rect x="3" y="6" width="18" height="12" rx="2" /><path d="M7 10h.01M10 10h.01M13 10h.01M16 10h.01M8 14h8" /></svg>)
 export const NotesIcon = (p: P) => (<svg {...base(p)}><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z" /><path d="M14 3v5h5" /><path d="M12 17v-6M9.5 13.5L12 11l2.5 2.5" /></svg>)
 export const ChevronRightIcon = (p: P) => (<svg {...base(p)}><path d="M10 6l6 6-6 6" /></svg>)
+export const BackIcon = (p: P) => (<svg {...base(p)}><path d="M15 6l-6 6 6 6" /></svg>)
+export const QuestionIcon = (p: P) => (<svg {...base(p)}><rect x="4" y="4" width="16" height="16" rx="3" /><path d="M9.6 9.4a2.5 2.5 0 014.8.9c0 1.7-2.4 2.1-2.4 3.7M12 16.8h.01" /></svg>)
 export const CalendarIcon = (p: P) => (<svg {...base(p)}><rect x="4" y="5.5" width="16" height="14" rx="2" /><path d="M4 10h16M9 3.5v4M15 3.5v4" /><path d="M9.5 14.5l1.8 1.8 3.5-3.5" /></svg>)
 export const InfoIcon = (p: P) => (<svg {...base(p)}><circle cx="12" cy="12" r="8.5" /><path d="M12 11v5M12 8h.01" /></svg>)

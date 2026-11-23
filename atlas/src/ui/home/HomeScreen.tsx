@@ -103,7 +103,7 @@ export function HomeScreen() {
       </button>
 
       <div className="tiles">
-        <Tile icon={<BookIcon />} title="Lessons" stat="Starts with the Skull" soon onClick={() => toast('Guided lessons arrive in a coming update, starting with the skull.')} />
+        <Tile icon={<BookIcon />} title="Lessons" stat="Exam questions · Textbook" onClick={() => useNav.getState().push({ kind: 'lessons' })} />
         <Tile
           icon={<CardsIcon />}
           title="Flashcards"

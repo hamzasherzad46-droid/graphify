@@ -40,7 +40,7 @@ export function ExamQuestions({ topic, anchor }: { topic: string; anchor?: strin
     }
   }, [anchor])
 
-  if (!all.length) return <div className="empty-note">Exam-style questions for this topic are being written. The Skull and the Upper limb are ready now.</div>
+  if (!all.length) return <div className="empty-note">Exam-style questions for this topic are being written.</div>
 
   return (
     <div className="exam">
@@ -134,7 +134,7 @@ function QuestionCard({ q, n, topicTitle }: { q: Question; n: number; topicTitle
         <div className="q-snapshot" ref={snapRef} aria-label="3D model with one bone highlighted">
           {near && (
             <Suspense fallback={null}>
-              <BoneSnapshot bone={q.label!} theme={theme} sex={sex} />
+              <BoneSnapshot bone={q.label!} theme={theme} sex={sex} elevation={q.labelElevation} />
             </Suspense>
           )}
           <span className="q-snapshot-hint">Drag to turn</span>

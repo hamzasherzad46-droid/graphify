@@ -278,14 +278,21 @@ opened from Home form a stack backed by browser history, so the phone's back but
 
 ### Exam-style questions (step 5)
 
-Lessons → **Exam-style questions** → a topic. The Skull (20) and the Upper limb (24) are ready
-(`content/questions/*.json`); the other topics say "Coming soon". Never presented as real exam papers: the section is
+Lessons → **Exam-style questions** → a topic. All six region topics are ready, 106 questions in all
+(`content/questions/*.json`): Skull 20, Spine 17, Thorax 15, Upper limb 24, Lower limb 16, Pelvis 14. Never presented as real exam papers: the section is
 labelled "Exam-style questions", and every Atlas question's source says it is not from a real exam paper.
 
-- **Sources**: the OpenStax review and critical thinking questions of sections 7.2, 8.1 and 8.2 (wording unchanged,
-  CC BY 4.0, cited with section and question number), plus Atlas-written questions on high-yield topics (foramen
-  magnum, pterion and the middle meningeal artery, TMJ, hard palate, the orbit, V1–V3 exits, the hyoid; nerve injuries
-  in humeral fractures, Colles and Smith fractures, the thumb's saddle joint, the snuffbox, the olecranon).
+- **Sources**: every OpenStax review and critical thinking question of sections 7.2, 7.3, 7.4, 8.1, 8.2, 8.3 and 8.4
+  (wording unchanged, CC BY 4.0, cited with section and question number), plus Atlas-written questions on high-yield
+  topics: foramen magnum, pterion and the middle meningeal artery, TMJ, hard palate, the orbit, V1–V3 exits, the hyoid;
+  the atlas and axis, the vertebra prominens, lumbar puncture level, scoliosis; the sternal angle, chest drains, CPR,
+  floating ribs, rib joints; nerve injuries in humeral fractures, Colles and Smith fractures, the thumb's saddle joint,
+  the snuffbox; the ASIS, the acetabulum, the sciatic nerve, the pubic symphysis, the pelvic inlet; neck of femur
+  fractures, the common fibular nerve, the patella, the malleoli, the tarsal bones, the tibial tuberosity.
+- **Label the 3D model** can set the viewing angle per question (`labelElevation`): the atlas is shown from above so
+  its ring shape is visible.
+- Answer letters are balanced across A–D in every topic; Atlas questions are rebalanced by swapping options together
+  with their "why not" lines, so the two can never get out of step. OpenStax questions keep the book's order.
 - **Each question**: single best answer, short answer, or **label the 3D model** (the bone lit on a small model of its
   own, turning slowly and draggable, with its neighbours dimmed; `src/viewer/BoneSnapshot.tsx`, mounted only near
   the screen). Choosing an answer (or *Show answer*) reveals: the answer, **Why this is the answer** (2–4 sentences),

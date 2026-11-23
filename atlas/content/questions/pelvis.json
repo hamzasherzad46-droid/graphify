@@ -1,0 +1,389 @@
+{
+ "description": "Exam-style questions (not real exam papers). type: sba (single best answer), short (short answer), label (name the bone lit in the 3D model). answer: index into options. whyNot: one line per option, empty for the answer.",
+ "questions": [
+  {
+   "type": "sba",
+   "stem": "How many bones fuse in adulthood to form the hip bone?",
+   "options": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "answer": 1,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.3 The Pelvic Girdle and Pelvis, Review Questions, question 1 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "pelvis-01",
+   "topic": "pelvis",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "hip_bone_left",
+   "why": "Each hip bone develops as three bones: the ilium, the ischium and the pubis. They meet at the acetabulum, separated by a Y-shaped plate of cartilage, and fuse into one bone in the late teens.",
+   "whyNot": [
+    "Two is too few: the hip bone forms from the ilium, ischium and pubis.",
+    "",
+    "Four is the number of bones in the pelvis (two hip bones, the sacrum and the coccyx), not in one hip bone.",
+    "Five is the number of vertebrae that fuse to form the sacrum."
+   ],
+   "tip": "Do not mix up the hip bone (three parts fused together) with the pelvis (four bones: two hip bones, the sacrum and the coccyx).",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "Which component forms the superior part of the hip bone?",
+   "options": [
+    "ilium",
+    "pubis",
+    "ischium",
+    "sacrum"
+   ],
+   "answer": 0,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.3 The Pelvic Girdle and Pelvis, Review Questions, question 2 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "pelvis-02",
+   "topic": "pelvis",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "hip_bone_left",
+   "why": "The ilium is the large, fan-shaped upper part of the hip bone. Its upper edge is the iliac crest, which you can feel at your waist.",
+   "whyNot": [
+    "",
+    "The pubis forms the front and lower part of the hip bone.",
+    "The ischium forms the back and lower part of the hip bone.",
+    "The sacrum is a separate bone of the pelvis, not part of the hip bone."
+   ],
+   "tip": "A line joining the highest points of the two iliac crests crosses the spine at about L4, a landmark for lumbar puncture.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "Which of the following supports body weight when sitting?",
+   "options": [
+    "iliac crest",
+    "ischial tuberosity",
+    "ischiopubic ramus",
+    "pubic body"
+   ],
+   "answer": 1,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.3 The Pelvic Girdle and Pelvis, Review Questions, question 3 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "pelvis-03",
+   "topic": "pelvis",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "hip_bone_left",
+   "why": "The ischial tuberosities are the rough, thick lower ends of the ischium. They carry the weight of the body when sitting.",
+   "whyNot": [
+    "The iliac crest is the upper edge of the ilium, at the waist.",
+    "",
+    "The ischiopubic ramus is the thin bar of bone below the obturator foramen; it does not carry weight in sitting.",
+    "The pubic body is at the front of the pelvis, beside the pubic symphysis."
+   ],
+   "tip": "The ischial tuberosities are the \"sitting bones\"; the hamstring muscles arise from them.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "The ischial spine is found between which of the following structures?",
+   "options": [
+    "inferior pubic ramus and ischial ramus",
+    "pectineal line and arcuate line",
+    "lesser sciatic notch and greater sciatic notch",
+    "anterior superior iliac spine and posterior superior iliac spine"
+   ],
+   "answer": 2,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.3 The Pelvic Girdle and Pelvis, Review Questions, question 4 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "pelvis-04",
+   "topic": "pelvis",
+   "frequency": "common",
+   "level": "medical",
+   "bone": "hip_bone_left",
+   "why": "The ischial spine is a pointed projection on the back of the ischium. It separates the greater sciatic notch above from the lesser sciatic notch below.",
+   "whyNot": [
+    "The inferior pubic ramus and the ischial ramus join each other to form the ischiopubic ramus; there is no spine between them.",
+    "The pectineal and arcuate lines lie on the inner surface of the hip bone, along the pelvic brim.",
+    "",
+    "The anterior and posterior superior iliac spines are at the two ends of the iliac crest."
+   ],
+   "tip": "In labour, the descent of the baby's head (its \"station\") is measured against the level of the ischial spines.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "The pelvis ________.",
+   "options": [
+    "has a subpubic angle that is larger in females",
+    "consists of the two hip bones, but does not include the sacrum or coccyx",
+    "has an obturator foramen, an opening that is defined in part by the sacrospinous and sacrotuberous ligaments",
+    "has a space located inferior to the pelvic brim called the greater pelvis"
+   ],
+   "answer": 0,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.3 The Pelvic Girdle and Pelvis, Review Questions, question 5 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "pelvis-05",
+   "topic": "pelvis",
+   "frequency": "core",
+   "level": "undergraduate",
+   "bone": "hip_bone_left",
+   "why": "The subpubic angle, below the pubic symphysis between the two ischiopubic rami, is wider in females. This is one of several ways the female pelvis is wider to allow childbirth.",
+   "whyNot": [
+    "",
+    "The pelvis includes the sacrum and the coccyx as well as the two hip bones.",
+    "The obturator foramen is closed by the obturator membrane. The sacrospinous and sacrotuberous ligaments form the greater and lesser sciatic foramina.",
+    "The space below the pelvic brim is the lesser (true) pelvis; the greater pelvis is above the brim."
+   ],
+   "tip": "The subpubic angle is more than 80 degrees in females and less than 70 degrees in males.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Describe the articulations and ligaments that unite the four bones of the pelvis to each other.",
+   "answerText": "The pelvis is formed by the combination of the right and left hip bones, the sacrum, and the coccyx. The auricular surfaces of each hip bone articulate with the auricular surface of the sacrum to form the sacroiliac joint. This joint is supported on either side by the strong anterior and posterior sacroiliac ligaments. The right and left hip bones converge anteriorly, where the pubic bodies articulate with each other to form the pubic symphysis joint. The sacrum is also attached to the hip bone by the sacrospinous ligament, which spans the sacrum to the ischial spine, and the sacrotuberous ligament, which runs from the sacrum to the ischial tuberosity. The coccyx is attached to the inferior end of the sacrum.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.3 The Pelvic Girdle and Pelvis, Critical Thinking Questions, question 1 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "pelvis-06",
+   "topic": "pelvis",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "sacrum",
+   "why": "Name the joints first (two sacroiliac joints, the pubic symphysis and the sacrococcygeal joint), then the ligaments that hold them. The sacrospinous and sacrotuberous ligaments also tie the sacrum to the ischium.",
+   "tip": "The sacrospinous and sacrotuberous ligaments turn the sciatic notches into the greater and lesser sciatic foramina, the passages from the pelvis to the buttock.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Discuss the ways in which the female pelvis is adapted for childbirth.",
+   "answerText": "Compared to the male, the female pelvis is wider to accommodate childbirth. Thus, the female pelvis has greater distances between the anterior superior iliac spines and between the ischial tuberosities. The greater width of the female pelvis results in a larger subpubic angle. This angle, formed by the anterior convergence of the right and left ischiopubic rami, is larger in females (greater than 80 degrees) than in males (less than 70 degrees). The female sacral promontory does not project anteriorly as far as it does in males, which gives the pelvic brim (pelvic inlet) of the female a rounded or oval shape. The lesser pelvic cavity is wider and more shallow in females, and the pelvic outlet is larger than in males. Thus, the greater width of the female pelvis, with its larger pelvic inlet, lesser pelvis, and pelvic outlet, are important for childbirth because the baby must pass through the pelvis during delivery.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.3 The Pelvic Girdle and Pelvis, Critical Thinking Questions, question 2 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "pelvis-07",
+   "topic": "pelvis",
+   "frequency": "core",
+   "level": "undergraduate",
+   "bone": "hip_bone_left",
+   "why": "Every difference makes the birth canal wider: a wider, rounder pelvic inlet, a less projecting sacral promontory, a wider subpubic angle, and a wider, shallower lesser pelvis with a larger outlet. The ischial tuberosities and the anterior superior iliac spines are also further apart.",
+   "tip": "Common contrasts in exams: the female pelvic inlet is oval or round, the male inlet heart-shaped; the female subpubic angle is wide, the male narrow.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "pelvis-08",
+   "topic": "pelvis",
+   "type": "label",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "hip_bone_left",
+   "label": "hip_bone_left",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Sacrum",
+    "Femur",
+    "Hip bone",
+    "Coccyx"
+   ],
+   "answer": 2,
+   "why": "The hip bone is the large, irregular bone that forms the side and front of the pelvis. It joins the sacrum behind, its partner in front at the pubic symphysis, and the head of the femur at the acetabulum.",
+   "whyNot": [
+    "The sacrum is the triangular bone at the back of the pelvis, between the two hip bones.",
+    "The femur is the thigh bone, below the hip joint.",
+    "",
+    "The coccyx is the small tailbone below the sacrum."
+   ],
+   "tip": "The hip bone is also called the os coxae or innominate bone; expect all three names in exams.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "pelvis-09",
+   "topic": "pelvis",
+   "type": "label",
+   "frequency": "common",
+   "level": "foundation",
+   "bone": "coccyx",
+   "label": "coccyx",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Coccyx",
+    "Sacrum",
+    "Fifth lumbar vertebra",
+    "Hip bone"
+   ],
+   "answer": 0,
+   "why": "The coccyx is the small, triangular bone at the very bottom of the vertebral column, below the sacrum. It is formed from about four small fused vertebrae.",
+   "whyNot": [
+    "",
+    "The sacrum is the larger bone just above the coccyx.",
+    "The fifth lumbar vertebra lies above the sacrum.",
+    "The hip bones form the sides of the pelvis."
+   ],
+   "tip": "The coccyx can be bruised or broken by a fall onto the bottom, causing pain when sitting (coccydynia).",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "pelvis-10",
+   "topic": "pelvis",
+   "type": "sba",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "hip_bone_left",
+   "stem": "Which bony landmark marks the lateral end of the inguinal ligament?",
+   "options": [
+    "Pubic tubercle",
+    "Anterior superior iliac spine",
+    "Anterior inferior iliac spine",
+    "Ischial spine"
+   ],
+   "answer": 1,
+   "why": "The anterior superior iliac spine (ASIS) is the front end of the iliac crest and can be felt at the front of the hip. The inguinal ligament runs from it down to the pubic tubercle.",
+   "whyNot": [
+    "The pubic tubercle is the medial end of the inguinal ligament, not the lateral end.",
+    "",
+    "The anterior inferior iliac spine lies below the ASIS, above the hip joint, and is hard to feel.",
+    "The ischial spine is at the back of the pelvis, deep inside."
+   ],
+   "tip": "True leg length is measured from the ASIS to the medial malleolus at the ankle.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "pelvis-11",
+   "topic": "pelvis",
+   "type": "sba",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "hip_bone_left",
+   "stem": "Which bones form the acetabulum?",
+   "options": [
+    "Ilium and ischium only",
+    "Ischium and pubis only",
+    "Ilium, ischium and sacrum",
+    "Ilium, ischium and pubis"
+   ],
+   "answer": 3,
+   "why": "All three parts of the hip bone meet at the acetabulum, the cup-shaped socket for the head of the femur. The ilium and ischium each form about two fifths of it, and the pubis about one fifth.",
+   "whyNot": [
+    "The pubis also forms part of the acetabulum.",
+    "The ilium also forms part of the acetabulum.",
+    "The sacrum is not part of the acetabulum; it joins the ilium at the sacroiliac joint.",
+    ""
+   ],
+   "tip": "The three parts meet at a Y-shaped cartilage in the acetabulum, which fuses in the late teens.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "pelvis-12",
+   "topic": "pelvis",
+   "type": "sba",
+   "frequency": "advanced",
+   "level": "medical",
+   "bone": "hip_bone_left",
+   "stem": "Which large nerve leaves the pelvis through the greater sciatic foramen, usually below the piriformis muscle, to supply the back of the thigh?",
+   "options": [
+    "Femoral nerve",
+    "Obturator nerve",
+    "Sciatic nerve",
+    "Saphenous nerve"
+   ],
+   "answer": 2,
+   "why": "The sciatic nerve, the largest nerve in the body, leaves the pelvis through the greater sciatic foramen, usually below the piriformis. It runs down the back of the thigh to supply the hamstrings and, through its branches, the leg and foot.",
+   "whyNot": [
+    "The femoral nerve leaves the pelvis at the front, under the inguinal ligament.",
+    "The obturator nerve leaves through the obturator canal, at the top of the obturator foramen.",
+    "",
+    "The saphenous nerve is a branch of the femoral nerve in the thigh; it does not leave through the sciatic foramen."
+   ],
+   "tip": "Injections into the buttock are given in the upper outer quadrant to avoid the sciatic nerve.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "pelvis-13",
+   "topic": "pelvis",
+   "type": "sba",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "hip_bone_left",
+   "stem": "Which joint, between the two hip bones at the front, is a symphysis (a cartilaginous joint with a disc of fibrocartilage)?",
+   "options": [
+    "Sacroiliac joint",
+    "Lumbosacral joint",
+    "Hip joint",
+    "Pubic symphysis"
+   ],
+   "answer": 3,
+   "why": "The pubic symphysis joins the bodies of the two pubic bones in the midline, with a disc of fibrocartilage between them. It allows only slight movement, which increases in pregnancy.",
+   "whyNot": [
+    "The sacroiliac joint is between the sacrum and the ilium, at the back of the pelvis.",
+    "The lumbosacral joint is between the fifth lumbar vertebra and the sacrum.",
+    "The hip joint is a synovial ball-and-socket joint between the femur and the acetabulum.",
+    ""
+   ],
+   "tip": "In pregnancy, hormones loosen the pubic symphysis; some women get pelvic pain from it (symphysis pubis dysfunction).",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "pelvis-14",
+   "topic": "pelvis",
+   "type": "sba",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "sacrum",
+   "stem": "Which structure forms the back of the pelvic brim (the pelvic inlet)?",
+   "options": [
+    "Sacral promontory",
+    "Coccyx",
+    "Ischial tuberosities",
+    "Iliac crests"
+   ],
+   "answer": 0,
+   "why": "The pelvic brim runs from the sacral promontory at the back, along the arcuate and pectineal lines, to the top of the pubic symphysis at the front. It divides the greater pelvis above from the lesser pelvis below.",
+   "whyNot": [
+    "",
+    "The coccyx is part of the pelvic outlet, not the inlet.",
+    "The ischial tuberosities are at the sides of the pelvic outlet.",
+    "The iliac crests are above the brim, around the greater pelvis."
+   ],
+   "tip": "The narrowest front-to-back diameter of the inlet runs from the sacral promontory to the back of the pubic symphysis (the obstetric conjugate), about 11 cm.",
+   "reviewStatus": "draft"
+  }
+ ]
+}

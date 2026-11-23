@@ -1,0 +1,443 @@
+{
+ "description": "Exam-style questions (not real exam papers). type: sba (single best answer), short (short answer), label (name the bone lit in the 3D model). answer: index into options. whyNot: one line per option, empty for the answer.",
+ "questions": [
+  {
+   "type": "sba",
+   "stem": "The cervical region of the vertebral column consists of ________.",
+   "options": [
+    "seven vertebrae",
+    "12 vertebrae",
+    "five vertebrae",
+    "a single bone derived from the fusion of five vertebrae"
+   ],
+   "answer": 0,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.3 The Vertebral Column, Review Questions, question 1 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "spine-01",
+   "topic": "spine",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "vertebra_c4",
+   "why": "The adult vertebral column has seven cervical, twelve thoracic and five lumbar vertebrae, followed by the sacrum and the coccyx. The cervical region is the neck, from C1 (the atlas) to C7.",
+   "whyNot": [
+    "",
+    "Twelve is the number of thoracic vertebrae, one for each pair of ribs.",
+    "Five is the number of lumbar vertebrae.",
+    "A single bone formed by the fusion of five vertebrae is the sacrum."
+   ],
+   "tip": "A simple way to remember the numbers is meal times: breakfast at 7 (cervical), lunch at 12 (thoracic), dinner at 5 (lumbar).",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "The primary curvatures of the vertebral column ________.",
+   "options": [
+    "include the lumbar curve",
+    "are remnants of the original fetal curvature",
+    "include the cervical curve",
+    "develop after the time of birth"
+   ],
+   "answer": 1,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.3 The Vertebral Column, Review Questions, question 2 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "spine-02",
+   "topic": "spine",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "vertebra_t6",
+   "why": "The thoracic and sacrococcygeal curves are the primary curves: they keep the C-shaped curve of the fetus, concave towards the front. The cervical and lumbar curves are secondary curves that develop after birth, as the baby holds up its head and then starts to stand and walk.",
+   "whyNot": [
+    "The lumbar curve is a secondary curve; it develops when the child starts to stand and walk.",
+    "",
+    "The cervical curve is a secondary curve; it develops when the baby starts to hold up its head.",
+    "The primary curves are present before birth; it is the secondary curves that develop after birth."
+   ],
+   "tip": "An exaggerated thoracic curve is kyphosis, an exaggerated lumbar curve is lordosis, and a sideways curve is scoliosis.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "A typical vertebra has ________.",
+   "options": [
+    "a vertebral foramen that passes through the body",
+    "a superior articular process that projects downward to articulate with the superior portion of the next lower vertebra",
+    "lamina that spans between the transverse process and spinous process",
+    "a pair of laterally projecting spinous processes"
+   ],
+   "answer": 2,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.3 The Vertebral Column, Review Questions, question 3 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "spine-03",
+   "topic": "spine",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "vertebra_l3",
+   "why": "The vertebral arch is made of two pedicles, attached to the body, and two laminae, which meet behind. Each lamina is the flat plate of bone between the transverse process and the spinous process, and together they form the roof of the vertebral foramen.",
+   "whyNot": [
+    "The vertebral foramen lies behind the body, enclosed by the vertebral arch; it does not pass through the body.",
+    "The superior articular processes project upwards, to articulate with the inferior articular processes of the vertebra above.",
+    "",
+    "There is a single spinous process, projecting backwards; the paired processes projecting sideways are the transverse processes."
+   ],
+   "tip": "A laminectomy removes the laminae to relieve pressure on the spinal cord or on the nerve roots.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "A typical lumbar vertebra has ________.",
+   "options": [
+    "a short, rounded spinous process",
+    "a bifid spinous process",
+    "articulation sites for ribs",
+    "a transverse foramen"
+   ],
+   "answer": 0,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.3 The Vertebral Column, Review Questions, question 4 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "spine-04",
+   "topic": "spine",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "vertebra_l3",
+   "why": "Lumbar vertebrae carry the most weight, so they have large, kidney-shaped bodies. Their spinous processes are short, thick and square, pointing straight backwards.",
+   "whyNot": [
+    "",
+    "A bifid (split) spinous process is typical of the cervical vertebrae from C2 to C6.",
+    "Articulation sites for ribs (costal facets) are found on the thoracic vertebrae.",
+    "A transverse foramen is found only in cervical vertebrae, where it carries the vertebral artery."
+   ],
+   "tip": "Identify a vertebra by one feature: a transverse foramen means cervical, costal facets mean thoracic, and a large body with neither means lumbar.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "Which is found only in the cervical region of the vertebral column?",
+   "options": [
+    "nuchal ligament",
+    "ligamentum flavum",
+    "supraspinous ligament",
+    "anterior longitudinal ligament"
+   ],
+   "answer": 0,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.3 The Vertebral Column, Review Questions, question 5 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "spine-05",
+   "topic": "spine",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "vertebra_c7",
+   "why": "The supraspinous ligament joins the tips of the spinous processes. In the neck it becomes the broad, sheet-like nuchal ligament, which runs from the spinous process of C7 to the external occipital protuberance of the skull and gives attachment to neck muscles.",
+   "whyNot": [
+    "",
+    "The ligamentum flavum joins the laminae of neighbouring vertebrae along the whole column.",
+    "The supraspinous ligament runs along the tips of the thoracic and lumbar spinous processes.",
+    "The anterior longitudinal ligament runs down the front of the vertebral bodies along the whole column."
+   ],
+   "tip": "The ligamentum flavum is yellow because it is rich in elastic fibres. During a lumbar puncture, the needle is felt to \"give\" as it passes through it.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Describe the vertebral column and define each region.",
+   "answerText": "Answer: The adult vertebral column consists of 24 vertebrae, plus the sacrum and coccyx. The vertebrae are subdivided into cervical, thoracic, and lumbar regions. There are seven cervical vertebrae (C1–C7), 12 thoracic vertebrae (T1–T12), and five lumbar vertebrae (L1–L5). The sacrum is derived from the fusion of five sacral vertebrae and the coccyx is formed by the fusion of four small coccygeal vertebrae.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.3 The Vertebral Column, Critical Thinking Questions, question 1 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "spine-06",
+   "topic": "spine",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "vertebra_l1",
+   "why": "Learn the column as three movable regions (7, 12 and 5 vertebrae) and two fused bones (the sacrum and the coccyx). That makes 24 separate vertebrae plus 2 fused bones in the adult.",
+   "tip": "At birth there are about 33 separate vertebrae; the sacral and coccygeal vertebrae fuse later, giving 26 bones in the adult column.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Describe a typical vertebra.",
+   "answerText": "A typical vertebra consists of an anterior body and a posterior vertebral arch. The body serves for weight bearing. The vertebral arch surrounds and protects the spinal cord. The vertebral arch is formed by the pedicles, which are attached to the posterior side of the vertebral body, and the lamina, which come together to form the top of the arch. A pair of transverse processes extends laterally from the vertebral arch, at the junction between each pedicle and lamina. The spinous process extends posteriorly from the top of the arch. A pair of superior articular processes project upward and a pair of inferior articular processes project downward. Together, the notches found in the margins of the pedicles of adjacent vertebrae form an intervertebral foramen.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.3 The Vertebral Column, Critical Thinking Questions, question 2 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "spine-07",
+   "topic": "spine",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "vertebra_t6",
+   "why": "A typical vertebra has a body in front for weight bearing and an arch behind that protects the spinal cord. Seven processes arise from the arch: one spinous, two transverse, two superior articular and two inferior articular.",
+   "tip": "Notches above and below each pedicle form the intervertebral foramina between neighbouring vertebrae, where the spinal nerves leave the vertebral canal.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Describe the sacrum.",
+   "answerText": "The sacrum is a single, triangular-shaped bone formed by the fusion of five sacral vertebrae. On the posterior sacrum, the median sacral crest is derived from the fused spinous processes, and the lateral sacral crest results from the fused transverse processes. The sacral canal contains the sacral spinal nerves, which exit via the anterior (ventral) and posterior (dorsal) sacral foramina. The sacral promontory is the anterior lip. The sacrum also forms the posterior portion of the pelvis.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.3 The Vertebral Column, Critical Thinking Questions, question 3 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "spine-08",
+   "topic": "spine",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "sacrum",
+   "why": "The sacrum is five fused vertebrae, so each of its parts matches part of a vertebra: the median crest comes from the spinous processes and the lateral crests from the transverse processes. It forms the back wall of the pelvis and joins the hip bones at the sacroiliac joints.",
+   "tip": "The sacral hiatus, at the lower end of the sacral canal, is where a needle enters for a caudal epidural injection.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Describe the structure and function of an intervertebral disc.",
+   "answerText": "An intervertebral disc fills in the space between adjacent vertebrae, where it provides padding and weight-bearing ability, and allows for movements between the vertebrae. It consists of an outer anulus fibrosus and an inner nucleus pulposus. The anulus fibrosus strongly anchors the adjacent vertebrae to each other, and the high water content of the nucleus pulposus resists compression for weight bearing and can change shape to allow for vertebral column movements.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.3 The Vertebral Column, Critical Thinking Questions, question 4 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "spine-09",
+   "topic": "spine",
+   "frequency": "core",
+   "level": "undergraduate",
+   "bone": "vertebra_l4",
+   "why": "The disc has a tough outer ring, the anulus fibrosus, that binds the vertebrae together, and a soft, watery centre, the nucleus pulposus, that spreads the load. Together they cushion the column and still allow it to bend and twist.",
+   "tip": "In a herniated (\"slipped\") disc, the nucleus pulposus pushes out through a tear in the anulus fibrosus, usually backwards and to one side at L4–L5 or L5–S1, and presses on a spinal nerve root.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Define the ligaments of the vertebral column.",
+   "answerText": "The anterior longitudinal ligament is attached to the vertebral bodies on the anterior side of the vertebral column. The supraspinous ligament is located on the posterior side, where it interconnects the thoracic and lumbar spinous processes. In the posterior neck, this ligament expands to become the nuchal ligament, which attaches to the cervical spinous processes and the base of the skull. The posterior longitudinal ligament and ligamentum flavum are located inside the vertebral canal. The posterior longitudinal ligament unites the posterior sides of the vertebral bodies. The ligamentum flavum unites the lamina of adjacent vertebrae.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.3 The Vertebral Column, Critical Thinking Questions, question 5 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "spine-10",
+   "topic": "spine",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "vertebra_l2",
+   "why": "Group the ligaments by where they lie. Outside the vertebral canal are the anterior longitudinal ligament (in front) and the supraspinous and nuchal ligaments (behind); inside the canal are the posterior longitudinal ligament and the ligamentum flavum.",
+   "tip": "The anterior longitudinal ligament is broad and strong and limits bending backwards; the posterior longitudinal ligament is narrower, so discs tend to herniate to one side of it.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "spine-11",
+   "topic": "spine",
+   "type": "label",
+   "labelElevation": 60,
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "vertebra_c1",
+   "label": "vertebra_c1",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Axis",
+    "Atlas",
+    "Seventh cervical vertebra",
+    "First thoracic vertebra"
+   ],
+   "answer": 1,
+   "why": "The atlas (C1) is a ring of bone with no body and no spinous process: it has anterior and posterior arches joined by two lateral masses. Its upper facets hold the occipital condyles of the skull.",
+   "whyNot": [
+    "The axis (C2) lies below the atlas and has the dens, a peg that projects upwards.",
+    "",
+    "The seventh cervical vertebra (C7) is at the base of the neck and has a long spinous process.",
+    "The first thoracic vertebra (T1) is below the neck and carries facets for the first ribs."
+   ],
+   "tip": "Nodding \"yes\" happens mainly at the atlanto-occipital joints (skull on atlas); shaking the head \"no\" happens mainly at the atlantoaxial joints (atlas on axis).",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "spine-12",
+   "topic": "spine",
+   "type": "label",
+   "labelElevation": 32,
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "vertebra_c2",
+   "label": "vertebra_c2",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Atlas",
+    "Third cervical vertebra",
+    "Axis",
+    "Seventh cervical vertebra"
+   ],
+   "answer": 2,
+   "why": "The axis (C2) has a tooth-like process, the dens (odontoid process), that projects upwards from its body. The dens sits against the back of the anterior arch of the atlas, held by the transverse ligament, and the atlas turns around it.",
+   "whyNot": [
+    "The atlas (C1) is the ring-shaped vertebra above the axis, with no body.",
+    "The third cervical vertebra is a typical cervical vertebra, with no dens.",
+    "",
+    "The seventh cervical vertebra is at the base of the neck, with a long spinous process."
+   ],
+   "tip": "A fracture of the dens is a classic injury in older adults after a fall onto the head.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "spine-13",
+   "topic": "spine",
+   "type": "label",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "sacrum",
+   "label": "sacrum",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Coccyx",
+    "Fifth lumbar vertebra",
+    "Hip bone",
+    "Sacrum"
+   ],
+   "answer": 3,
+   "why": "The sacrum is the large, triangular bone at the base of the vertebral column, formed from five fused vertebrae. It sits between the two hip bones, joined to them at the sacroiliac joints, and forms the back of the pelvis.",
+   "whyNot": [
+    "The coccyx is the small \"tailbone\" below the sacrum.",
+    "The fifth lumbar vertebra sits above the sacrum, at the lumbosacral joint.",
+    "The hip bones lie either side of the sacrum.",
+    ""
+   ],
+   "tip": "The sacral promontory, the front edge of the top of the sacrum, forms the back of the pelvic brim.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "spine-14",
+   "topic": "spine",
+   "type": "sba",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "vertebra_c7",
+   "stem": "Which vertebra has a long spinous process that is easily felt at the base of the neck and is used as a landmark for counting vertebrae?",
+   "options": [
+    "First cervical vertebra",
+    "Second cervical vertebra",
+    "Seventh cervical vertebra",
+    "Twelfth thoracic vertebra"
+   ],
+   "answer": 2,
+   "why": "The seventh cervical vertebra is called the vertebra prominens because its long spinous process can be seen and felt at the base of the neck. Clinicians count down the back from it.",
+   "whyNot": [
+    "The first cervical vertebra (the atlas) has no spinous process, only a small posterior tubercle.",
+    "The second cervical vertebra has a large spinous process, but it lies deep under the neck muscles.",
+    "",
+    "The twelfth thoracic vertebra is in the lower back, at the level of the last pair of ribs."
+   ],
+   "tip": "In some people the spinous process of T1, just below, is as prominent as that of C7, so check before counting down from it.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "spine-15",
+   "topic": "spine",
+   "type": "sba",
+   "frequency": "core",
+   "level": "medical",
+   "bone": "vertebra_l4",
+   "stem": "In an adult, between which vertebrae is a lumbar puncture needle normally inserted?",
+   "options": [
+    "First and second sacral vertebrae",
+    "Twelfth thoracic and first lumbar vertebrae",
+    "First and second lumbar vertebrae",
+    "Third and fourth lumbar vertebrae"
+   ],
+   "answer": 3,
+   "why": "In adults the spinal cord ends at about the level of L1–L2. A needle inserted below this, between L3 and L4 (or L4 and L5), enters the cerebrospinal fluid around the nerve roots of the cauda equina, which move aside instead of being pierced.",
+   "whyNot": [
+    "The sacral vertebrae are fused, so there is no space between them for a needle.",
+    "Between T12 and L1 the needle could reach the spinal cord itself.",
+    "The spinal cord usually ends at about L1–L2, so this level is too close to it.",
+    ""
+   ],
+   "tip": "A line joining the highest points of the iliac crests (Tuffier's line) crosses the spine at about L4: count from there.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "spine-16",
+   "topic": "spine",
+   "type": "sba",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "vertebra_t6",
+   "stem": "Which feature is found only on thoracic vertebrae?",
+   "options": [
+    "Transverse foramina",
+    "Costal facets on the body for the heads of the ribs",
+    "A bifid spinous process",
+    "A large, kidney-shaped body"
+   ],
+   "answer": 1,
+   "why": "Thoracic vertebrae articulate with the ribs, so they have costal facets. There are facets on the sides of the body for the heads of the ribs, and on most transverse processes for the tubercles of the ribs.",
+   "whyNot": [
+    "Transverse foramina are found only on cervical vertebrae.",
+    "",
+    "A bifid spinous process is typical of cervical vertebrae.",
+    "A large, kidney-shaped body is typical of lumbar vertebrae."
+   ],
+   "tip": "Thoracic spinous processes are long and slope steeply downwards, overlapping like roof tiles, which limits bending backwards.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "spine-17",
+   "topic": "spine",
+   "type": "sba",
+   "frequency": "common",
+   "level": "foundation",
+   "bone": "vertebra_t6",
+   "stem": "What is scoliosis?",
+   "options": [
+    "An exaggerated thoracic curve",
+    "An exaggerated lumbar curve",
+    "Fusion of two vertebrae",
+    "An abnormal sideways (lateral) curve of the vertebral column"
+   ],
+   "answer": 3,
+   "why": "Scoliosis is an abnormal sideways curve of the vertebral column, usually with some twisting of the vertebrae. It is most often seen in the thoracic region and commonly begins in adolescence.",
+   "whyNot": [
+    "An exaggerated thoracic curve is kyphosis (\"hunchback\").",
+    "An exaggerated lumbar curve is lordosis (\"swayback\").",
+    "Fusion of two vertebrae is not scoliosis; it can be present from birth or follow surgery.",
+    ""
+   ],
+   "tip": "Screening uses the forward-bend test: when the child bends forward, a rib hump shows on one side.",
+   "reviewStatus": "draft"
+  }
+ ]
+}

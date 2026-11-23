@@ -1,0 +1,436 @@
+{
+ "description": "Exam-style questions (not real exam papers). type: sba (single best answer), short (short answer), label (name the bone lit in the 3D model). answer: index into options. whyNot: one line per option, empty for the answer.",
+ "questions": [
+  {
+   "type": "sba",
+   "stem": "Which bony landmark of the femur serves as a site for muscle attachments?",
+   "options": [
+    "fovea capitis",
+    "lesser trochanter",
+    "head",
+    "medial condyle"
+   ],
+   "answer": 1,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.4 Bones of the Lower Limb, Review Questions, question 1 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ll-01",
+   "topic": "lower-limb",
+   "frequency": "common",
+   "level": "foundation",
+   "bone": "femur_left",
+   "why": "The lesser trochanter is a rounded projection on the back and inner side of the upper femur, below the neck. The iliopsoas, the main flexor of the hip, attaches to it.",
+   "whyNot": [
+    "The fovea capitis is a small pit on the head of the femur for the ligament of the head, not a muscle attachment.",
+    "",
+    "The head of the femur is a smooth joint surface that fits into the acetabulum.",
+    "The medial condyle is a joint surface at the knee, covered by cartilage."
+   ],
+   "tip": "The greater trochanter takes the gluteus medius and minimus; the lesser trochanter takes the iliopsoas.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "What structure contributes to the knee joint?",
+   "options": [
+    "lateral malleolus of the fibula",
+    "tibial tuberosity",
+    "medial condyle of the tibia",
+    "lateral epicondyle of the femur"
+   ],
+   "answer": 2,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.4 Bones of the Lower Limb, Review Questions, question 2 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ll-02",
+   "topic": "lower-limb",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "tibia_left",
+   "why": "The knee joint is formed by the condyles of the femur resting on the condyles of the tibia, with the patella in front. The medial condyle of the tibia is one of its joint surfaces.",
+   "whyNot": [
+    "The lateral malleolus is at the lower end of the fibula, at the ankle.",
+    "The tibial tuberosity is below the knee, where the patellar ligament attaches; it is outside the joint.",
+    "",
+    "The lateral epicondyle is a bump on the side of the femur for ligaments, not a joint surface."
+   ],
+   "tip": "The fibula takes no part in the knee joint: its head sits below the knee, against the tibia.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "Which tarsal bone articulates with the tibia and fibula?",
+   "options": [
+    "calcaneus",
+    "cuboid",
+    "navicular",
+    "talus"
+   ],
+   "answer": 3,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.4 Bones of the Lower Limb, Review Questions, question 3 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ll-03",
+   "topic": "lower-limb",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "talus_left",
+   "why": "The talus sits between the lower ends of the tibia and fibula at the ankle joint. It passes the weight of the body from the leg to the rest of the foot.",
+   "whyNot": [
+    "The calcaneus lies below the talus and forms the heel.",
+    "The cuboid is on the outer side of the foot, in front of the calcaneus.",
+    "The navicular lies in front of the talus, on the inner side of the foot.",
+    ""
+   ],
+   "tip": "No muscles attach to the talus, and its blood supply is fragile: a fracture of its neck can lead to avascular necrosis.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "What is the total number of bones found in the foot and toes?",
+   "options": [
+    "7",
+    "14",
+    "26",
+    "30"
+   ],
+   "answer": 2,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.4 Bones of the Lower Limb, Review Questions, question 4 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ll-04",
+   "topic": "lower-limb",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "metatarsal_1_left",
+   "why": "Each foot has 7 tarsal bones, 5 metatarsals and 14 phalanges: 26 bones in all. The pattern matches the hand, except that the hand has 8 carpal bones.",
+   "whyNot": [
+    "7 is the number of tarsal bones only.",
+    "14 is the number of phalanges only.",
+    "",
+    "30 is the number of bones in a whole lower limb (femur, patella, tibia, fibula and the 26 bones of the foot)."
+   ],
+   "tip": "The big toe has two phalanges and the other toes three, exactly as in the hand.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "The tibia ________.",
+   "options": [
+    "has an expanded distal end called the lateral malleolus",
+    "is not a weight-bearing bone",
+    "is firmly anchored to the fibula by an interosseous membrane",
+    "can be palpated (felt) under the skin only at its proximal and distal ends"
+   ],
+   "answer": 2,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.4 Bones of the Lower Limb, Review Questions, question 5 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "ll-05",
+   "topic": "lower-limb",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "tibia_left",
+   "why": "The tibia and fibula are joined along their length by the interosseous membrane. The membrane holds the bones together and gives attachment to muscles of the leg.",
+   "whyNot": [
+    "The lower end of the tibia forms the medial malleolus; the lateral malleolus belongs to the fibula.",
+    "The tibia is the main weight-bearing bone of the leg.",
+    "",
+    "The front border and inner surface of the tibia can be felt under the skin along the whole shin."
+   ],
+   "tip": "Because so much of the tibia lies just under the skin, its fractures are often open (the bone breaks through the skin).",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Define the regions of the lower limb, name the bones found in each region, and describe the bony landmarks that articulate together to form the hip, knee, and ankle joints.",
+   "answerText": "The lower limb is divided into three regions. The thigh is the region located between the hip and knee joints. It contains the femur and the patella. The hip joint is formed by the articulation between the acetabulum of the hip bone and the head of the femur. The leg is the region between the knee and ankle joints, and contains the tibia (medially) and the fibula (laterally). The knee joint is formed by the articulations between the medial and lateral condyles of the femur, and the medial and lateral condyles of the tibia. Also associated with the knee is the patella, which articulates with the patellar surface of the distal femur. The foot is found distal to the ankle and contains 26 bones. The ankle joint is formed by the articulations between the talus bone of the foot and the distal end of the tibia, the medial malleolus of the tibia, and the lateral malleolus of the fibula. The posterior foot contains the seven tarsal bones, which are the talus, calcaneus, navicular, cuboid, and the medial, intermediate, and lateral cuneiform bones. The anterior foot consists of the five metatarsal bones, which are numbered 1–5 starting on the medial side of the foot. The toes contain 14 phalanx bones, with the big toe (toe number 1) having a proximal and a distal phalanx, and the other toes having proximal, middle, and distal phalanges.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.4 Bones of the Lower Limb, Critical Thinking Questions, question 1 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "ll-06",
+   "topic": "lower-limb",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "femur_left",
+   "why": "Name the three regions with their bones (thigh: femur and patella; leg: tibia and fibula; foot: 26 bones), then the surfaces that meet at each joint. The hip, knee and ankle each join one region to the next.",
+   "tip": "In anatomy, the \"leg\" is only the part between the knee and the ankle; the part above the knee is the thigh.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "The talus bone of the foot receives the weight of the body from the tibia. The talus bone then distributes this weight toward the ground in two directions: one-half of the body weight is passed in a posterior direction and one-half of the weight is passed in an anterior direction. Describe the arrangement of the tarsal and metatarsal bones that are involved in both the posterior and anterior distribution of body weight.",
+   "answerText": "The talus bone articulates superiorly with the tibia and fibula at the ankle joint, with body weight passed from the tibia to the talus. Body weight from the talus is transmitted to the ground by both ends of the medial and lateral longitudinal foot arches. Weight is passed posteriorly through both arches to the calcaneus bone, which forms the heel of the foot and is in contact with the ground. On the medial side of the foot, body weight is passed anteriorly from the talus bone to the navicular bone, and then to the medial, intermediate, and lateral cuneiform bones. The cuneiform bones pass the weight anteriorly to the first, second, and third metatarsal bones, whose heads (distal ends) are in contact with the ground. On the lateral side, body weight is passed anteriorly from the talus through the calcaneus, cuboid, and fourth and fifth metatarsal bones. The talus bone thus transmits body weight posteriorly to the calcaneus and anteriorly through the navicular, cuneiform, and cuboid bones, and metatarsals one through five.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 8.4 Bones of the Lower Limb, Critical Thinking Questions, question 2 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "ll-07",
+   "topic": "lower-limb",
+   "frequency": "advanced",
+   "level": "undergraduate",
+   "bone": "calcaneus_left",
+   "why": "Weight goes from the tibia to the talus, then backwards to the calcaneus (the heel) and forwards along the arches to the heads of the metatarsals. The medial arch passes it through the navicular, the cuneiforms and metatarsals 1–3; the lateral arch through the cuboid and metatarsals 4–5.",
+   "tip": "The medial longitudinal arch is the higher one; when it collapses, the result is a flat foot (pes planus).",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ll-08",
+   "topic": "lower-limb",
+   "type": "label",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "talus_left",
+   "label": "talus_left",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Calcaneus",
+    "Navicular",
+    "Talus",
+    "Cuboid"
+   ],
+   "answer": 2,
+   "why": "The talus is the tarsal bone at the top of the foot, between the tibia and fibula above and the calcaneus below. It forms the lower part of the ankle joint.",
+   "whyNot": [
+    "The calcaneus is the heel bone, below the talus.",
+    "The navicular is in front of the talus, on the inner side of the foot.",
+    "",
+    "The cuboid is on the outer side of the foot, in front of the calcaneus."
+   ],
+   "tip": "The talus is the only bone of the foot that articulates with the bones of the leg.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ll-09",
+   "topic": "lower-limb",
+   "type": "label",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "calcaneus_left",
+   "label": "calcaneus_left",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Calcaneus",
+    "Talus",
+    "Cuboid",
+    "Navicular"
+   ],
+   "answer": 0,
+   "why": "The calcaneus is the heel bone, the largest bone of the foot. It carries the weight of the body to the ground at the heel, and the calcaneal (Achilles) tendon attaches to its back.",
+   "whyNot": [
+    "",
+    "The talus sits on top of the calcaneus.",
+    "The cuboid is in front of the calcaneus, on the outer side of the foot.",
+    "The navicular is on the inner side of the foot, in front of the talus."
+   ],
+   "tip": "A fall from a height onto the heels can fracture the calcaneus, often on both sides and sometimes with a fracture of the spine.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ll-10",
+   "topic": "lower-limb",
+   "type": "label",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "fibula_left",
+   "label": "fibula_left",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Tibia",
+    "Fibula",
+    "Radius",
+    "Ulna"
+   ],
+   "answer": 1,
+   "why": "The fibula is the thin bone on the outer side of the leg. It carries little weight but gives attachment to muscles, and its lower end forms the lateral malleolus of the ankle.",
+   "whyNot": [
+    "The tibia is the thick bone on the inner side of the leg.",
+    "",
+    "The radius is a bone of the forearm, not the leg.",
+    "The ulna is a bone of the forearm, not the leg."
+   ],
+   "tip": "Because the fibula carries little weight, pieces of it can be removed and used as bone grafts.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ll-11",
+   "topic": "lower-limb",
+   "type": "sba",
+   "frequency": "core",
+   "level": "medical",
+   "bone": "femur_left",
+   "stem": "After a fall, an older woman cannot stand. Her leg is shortened and turned outwards. Which part of the femur is most likely to be broken?",
+   "options": [
+    "Shaft of the femur",
+    "Neck of the femur",
+    "Lateral condyle of the femur",
+    "Patella"
+   ],
+   "answer": 1,
+   "why": "A fracture of the neck of the femur is common in older people with osteoporosis, usually after a simple fall. The muscles pull the leg shorter and roll it outwards.",
+   "whyNot": [
+    "A fracture of the shaft of the femur usually follows a much bigger injury, such as a road accident.",
+    "",
+    "A fracture of the lateral condyle is at the knee, not the hip.",
+    "A fracture of the patella is at the front of the knee and does not shorten the leg."
+   ],
+   "tip": "In a fracture inside the joint capsule, the arteries to the head of the femur (from the medial circumflex femoral artery) can tear, so the head may die (avascular necrosis).",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ll-12",
+   "topic": "lower-limb",
+   "type": "sba",
+   "frequency": "core",
+   "level": "medical",
+   "bone": "fibula_left",
+   "stem": "Which nerve winds around the neck of the fibula, where it can be injured, causing foot drop?",
+   "options": [
+    "Tibial nerve",
+    "Femoral nerve",
+    "Common fibular nerve",
+    "Sural nerve"
+   ],
+   "answer": 2,
+   "why": "The common fibular (peroneal) nerve winds around the neck of the fibula just under the skin. If it is injured there, the muscles that lift the foot are weakened, so the foot drops and drags when walking.",
+   "whyNot": [
+    "The tibial nerve runs deep in the back of the leg, away from the fibula.",
+    "The femoral nerve supplies the front of the thigh and ends above the knee.",
+    "",
+    "The sural nerve is a small sensory nerve on the back of the leg and the outer side of the foot."
+   ],
+   "tip": "A tight plaster cast or a fracture of the fibular neck can injure this nerve. Check for weak dorsiflexion and numbness on the top of the foot.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ll-13",
+   "topic": "lower-limb",
+   "type": "sba",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "patella_left",
+   "stem": "Which is the largest sesamoid bone in the body?",
+   "options": [
+    "Patella",
+    "Pisiform",
+    "Hyoid bone",
+    "Talus"
+   ],
+   "answer": 0,
+   "why": "A sesamoid bone develops inside a tendon. The patella develops in the tendon of the quadriceps and is the largest sesamoid bone; it improves the leverage of the quadriceps on the knee.",
+   "whyNot": [
+    "",
+    "The pisiform is a small sesamoid bone in the wrist, much smaller than the patella.",
+    "The hyoid bone is not a sesamoid bone; it is suspended by muscles and ligaments in the neck.",
+    "The talus is a tarsal bone, not a sesamoid bone."
+   ],
+   "tip": "Below the patella, the tendon continues as the patellar ligament to the tibial tuberosity.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ll-14",
+   "topic": "lower-limb",
+   "type": "sba",
+   "frequency": "common",
+   "level": "foundation",
+   "bone": "fibula_left",
+   "stem": "Which bony prominence is on the outer side of the ankle?",
+   "options": [
+    "Medial malleolus",
+    "Lateral malleolus",
+    "Head of the fibula",
+    "Tibial tuberosity"
+   ],
+   "answer": 1,
+   "why": "The lateral malleolus is the lower end of the fibula. It forms the outer side of the ankle joint and holds the talus in place.",
+   "whyNot": [
+    "The medial malleolus is the lower end of the tibia, on the inner side of the ankle.",
+    "",
+    "The head of the fibula is at the upper end of the fibula, below the knee.",
+    "The tibial tuberosity is at the front of the upper tibia, below the knee."
+   ],
+   "tip": "The lateral malleolus reaches lower and lies further back than the medial malleolus. It is often fractured when the ankle is twisted.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ll-15",
+   "topic": "lower-limb",
+   "type": "short",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "calcaneus_left",
+   "stem": "Name the seven tarsal bones.",
+   "answerText": "Talus, calcaneus, navicular, cuboid, and the medial, intermediate and lateral cuneiforms.",
+   "why": "Learn them in three groups: the talus and calcaneus at the back, the navicular in the middle on the inner side, and in front the three cuneiforms on the inner side and the cuboid on the outer side. The cuneiforms are named by position: medial, intermediate and lateral.",
+   "tip": "The calcaneus is the largest tarsal bone, and the talus is the only one that articulates with the bones of the leg.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "ll-16",
+   "topic": "lower-limb",
+   "type": "sba",
+   "frequency": "common",
+   "level": "foundation",
+   "bone": "tibia_left",
+   "stem": "What attaches to the tibial tuberosity?",
+   "options": [
+    "Anterior cruciate ligament",
+    "Iliotibial tract",
+    "Hamstring tendons",
+    "Patellar ligament"
+   ],
+   "answer": 3,
+   "why": "The tibial tuberosity is the bump on the front of the upper tibia, below the knee. The patellar ligament runs to it from the patella, so the quadriceps straightens the knee through it.",
+   "whyNot": [
+    "The anterior cruciate ligament attaches inside the knee, to the area between the condyles of the tibia.",
+    "The iliotibial tract attaches to a small tubercle on the outer side of the tibia, not the tuberosity.",
+    "The hamstring tendons attach to the back and sides of the upper tibia and fibula.",
+    ""
+   ],
+   "tip": "Osgood–Schlatter disease is painful swelling of the tibial tuberosity in active teenagers, from the repeated pull of the patellar ligament.",
+   "reviewStatus": "draft"
+  }
+ ]
+}

@@ -1,0 +1,382 @@
+{
+ "description": "Exam-style questions (not real exam papers). type: sba (single best answer), short (short answer), label (name the bone lit in the 3D model). answer: index into options. whyNot: one line per option, empty for the answer.",
+ "questions": [
+  {
+   "type": "sba",
+   "stem": "The sternum ________.",
+   "options": [
+    "consists of only two parts, the manubrium and xiphoid process",
+    "has the sternal angle located between the manubrium and body",
+    "receives direct attachments from the costal cartilages of all 12 pairs of ribs",
+    "articulates directly with the thoracic vertebrae"
+   ],
+   "answer": 1,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.4 The Thoracic Cage, Review Questions, question 1 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "thorax-01",
+   "topic": "thorax",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "sternum",
+   "why": "The sternum has three parts: the manubrium above, the body in the middle and the small xiphoid process below. The manubrium and body meet at the sternal angle, which can be felt as a ridge across the front of the chest.",
+   "whyNot": [
+    "The sternum has three parts, not two: the manubrium, the body and the xiphoid process.",
+    "",
+    "Only the true ribs (1–7) attach directly to the sternum; ribs 8–10 attach through the cartilage above, and ribs 11–12 not at all.",
+    "The sternum articulates with the clavicles and the costal cartilages, not with the vertebrae."
+   ],
+   "tip": "The sternal angle (the angle of Louis) is at the level of the second costal cartilage: it is where you start counting ribs.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "The sternal angle is the ________.",
+   "options": [
+    "junction between the body and xiphoid process",
+    "site for attachment of the clavicle",
+    "site for attachment of the floating ribs",
+    "junction between the manubrium and body"
+   ],
+   "answer": 3,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.4 The Thoracic Cage, Review Questions, question 2 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "thorax-02",
+   "topic": "thorax",
+   "frequency": "core",
+   "level": "undergraduate",
+   "bone": "sternum",
+   "why": "The sternal angle is the joint between the manubrium and the body of the sternum. The second costal cartilages attach here, so it is the landmark for finding the second rib.",
+   "whyNot": [
+    "The junction between the body and the xiphoid process is the xiphisternal joint.",
+    "The clavicle attaches at the clavicular notch of the manubrium, above the sternal angle.",
+    "The floating ribs (11 and 12) do not attach to the sternum at all.",
+    ""
+   ],
+   "tip": "The sternal angle is level with the disc between T4 and T5, where the trachea divides and the arch of the aorta begins and ends.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "The tubercle of a rib ________.",
+   "options": [
+    "is for articulation with the transverse process of a thoracic vertebra",
+    "is for articulation with the body of a thoracic vertebra",
+    "provides for passage of blood vessels and a nerve",
+    "is the area of greatest rib curvature"
+   ],
+   "answer": 0,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.4 The Thoracic Cage, Review Questions, question 3 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "thorax-03",
+   "topic": "thorax",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "rib_6_left",
+   "why": "The tubercle is a small bump on the back of the rib, where the neck meets the shaft. It articulates with the transverse process of the thoracic vertebra of the same number.",
+   "whyNot": [
+    "",
+    "It is the head of the rib that articulates with the bodies of the thoracic vertebrae.",
+    "Blood vessels and a nerve run in the costal groove, on the lower border of the rib.",
+    "The area of greatest curvature is the angle of the rib."
+   ],
+   "tip": "Head to the bodies, tubercle to the transverse process: a typical rib meets the spine at two joints.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "sba",
+   "stem": "True ribs are ________.",
+   "options": [
+    "ribs 8–12",
+    "attached via their costal cartilage to the next higher rib",
+    "made entirely of bone, and thus do not have a costal cartilage",
+    "attached via their costal cartilage directly to the sternum"
+   ],
+   "answer": 3,
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.4 The Thoracic Cage, Review Questions, question 4 (CC BY 4.0). Explanation, tips and tags by Atlas."
+   },
+   "id": "thorax-04",
+   "topic": "thorax",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "rib_4_left",
+   "why": "The true ribs are ribs 1–7. Each joins the sternum directly through its own costal cartilage, so they are also called vertebrosternal ribs.",
+   "whyNot": [
+    "Ribs 8–12 are the false ribs.",
+    "Attaching through the cartilage of the rib above describes ribs 8–10, which are false ribs.",
+    "All ribs have a costal cartilage at their front end.",
+    ""
+   ],
+   "tip": "True ribs 1–7 (vertebrosternal), false ribs 8–10 (vertebrochondral), and floating ribs 11–12 (vertebral).",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Define the parts and functions of the thoracic cage.",
+   "answerText": "The thoracic cage is formed by the 12 pairs of ribs with their costal cartilages and the sternum. The ribs are attached posteriorly to the 12 thoracic vertebrae and most are anchored anteriorly either directly or indirectly to the sternum. The thoracic cage functions to protect the heart and lungs.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.4 The Thoracic Cage, Critical Thinking Questions, question 1 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "thorax-05",
+   "topic": "thorax",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "sternum",
+   "why": "Name the three parts (the sternum, twelve pairs of ribs with their costal cartilages, and the twelve thoracic vertebrae) and say what they protect. The cage also has to move, because breathing depends on it.",
+   "tip": "In breathing, the ribs lift upwards and outwards, which widens the chest both from front to back and from side to side.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Describe the parts of the sternum.",
+   "answerText": "The sternum consists of the manubrium, body, and xiphoid process. The manubrium forms the expanded, superior end of the sternum. It has a jugular (suprasternal) notch, a pair of clavicular notches for articulation with the clavicles, and receives the costal cartilage of the first rib. The manubrium is joined to the body of the sternum at the sternal angle, which is also the site for attachment of the second rib costal cartilages. The body receives the costal cartilage attachments for ribs 3–7. The small xiphoid process forms the inferior tip of the sternum.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.4 The Thoracic Cage, Critical Thinking Questions, question 2 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "thorax-06",
+   "topic": "thorax",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "sternum",
+   "why": "Go from top to bottom: the manubrium with its notches, the sternal angle, the body with the cartilages of ribs 3–7, and the xiphoid process. Say which ribs attach to each part.",
+   "tip": "The jugular (suprasternal) notch, at the top of the manubrium, is easy to feel between the inner ends of the clavicles.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Discuss the parts of a typical rib.",
+   "answerText": "A typical rib is a flattened, curved bone. The head of a rib is attached posteriorly to the costal facets of the thoracic vertebrae. The rib tubercle articulates with the transverse process of a thoracic vertebra. The angle is the area of greatest rib curvature and forms the largest portion of the thoracic cage. The body (shaft) of a rib extends anteriorly and terminates at the attachment to its costal cartilage. The shallow costal groove runs along the inferior margin of a rib and carries blood vessels and a nerve.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.4 The Thoracic Cage, Critical Thinking Questions, question 3 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "thorax-07",
+   "topic": "thorax",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "rib_6_left",
+   "why": "Describe a rib from back to front: head, neck, tubercle, angle, then the shaft with the costal groove on its lower border, ending at the costal cartilage. Say what each part articulates with.",
+   "tip": "The intercostal vein, artery and nerve run in the costal groove, in that order from above down. A chest drain is passed just above the upper border of a rib to avoid them.",
+   "reviewStatus": "draft"
+  },
+  {
+   "type": "short",
+   "stem": "Define the classes of ribs.",
+   "answerText": "Ribs are classified based on if and how their costal cartilages attach to the sternum. True (vertebrosternal) ribs are ribs 1–7. The costal cartilage for each of these attaches directly to the sternum. False (vertebrochondral) ribs, 8–12, are attached either indirectly or not at all to the sternum. Ribs 8–10 are attached indirectly to the sternum. For these ribs, the costal cartilage of each attaches to the cartilage of the next higher rib. The last false ribs (11–12) are also called floating (vertebral) ribs, because these ribs do not attach to the sternum at all. Instead, the ribs and their small costal cartilages terminate within the muscles of the lateral abdominal wall.",
+   "source": {
+    "kind": "openstax",
+    "ref": "OpenStax, Anatomy and Physiology 2e, section 7.4 The Thoracic Cage, Critical Thinking Questions, question 4 (CC BY 4.0); model answer from the book. Explanation, tips and tags by Atlas."
+   },
+   "id": "thorax-08",
+   "topic": "thorax",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "rib_12_left",
+   "why": "Ribs are classed by how their costal cartilages reach the sternum: directly (true ribs), through the cartilage above (false ribs 8–10), or not at all (floating ribs 11–12). Give both names of each group.",
+   "tip": "The costal margin, the lower edge of the front of the chest, is formed by the joined cartilages of ribs 7–10.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "thorax-09",
+   "topic": "thorax",
+   "type": "label",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "sternum",
+   "label": "sternum",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "Clavicle",
+    "Scapula",
+    "Sternum",
+    "Hyoid bone"
+   ],
+   "answer": 2,
+   "why": "The sternum is the flat bone in the middle of the front of the chest. The clavicles and the costal cartilages of the upper ribs join it.",
+   "whyNot": [
+    "The clavicle runs sideways from the top of the sternum to the shoulder.",
+    "The scapula is on the back of the chest wall.",
+    "",
+    "The hyoid bone is in the neck, above the larynx."
+   ],
+   "tip": "The sternum contains red bone marrow throughout life, so it can be used for a bone marrow sample.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "thorax-10",
+   "topic": "thorax",
+   "type": "label",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "rib_1_left",
+   "label": "rib_1_left",
+   "stem": "Name the bone highlighted in the 3D model.",
+   "options": [
+    "First rib",
+    "Clavicle",
+    "Second rib",
+    "Twelfth rib"
+   ],
+   "answer": 0,
+   "why": "The first rib is the shortest, broadest and most curved rib, and its surfaces face up and down instead of in and out. It lies mostly behind the clavicle, so it is hard to feel.",
+   "whyNot": [
+    "",
+    "The clavicle lies in front of and above the first rib.",
+    "The second rib is longer and joins the sternum at the sternal angle.",
+    "The twelfth rib is a short floating rib at the bottom of the cage."
+   ],
+   "tip": "An extra cervical rib, or a narrow space between the clavicle and the first rib, can compress the nerves and artery to the arm (thoracic outlet syndrome).",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "thorax-11",
+   "topic": "thorax",
+   "type": "sba",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "rib_2_left",
+   "stem": "Which rib’s costal cartilage joins the sternum at the sternal angle?",
+   "options": [
+    "First rib",
+    "Second rib",
+    "Third rib",
+    "Seventh rib"
+   ],
+   "answer": 1,
+   "why": "The second costal cartilage joins the sternum at the sternal angle, where the manubrium meets the body. Because the angle is easy to feel, the second rib is the starting point for counting ribs.",
+   "whyNot": [
+    "The first costal cartilage joins the manubrium, just below the clavicle.",
+    "",
+    "The third costal cartilage joins the body of the sternum, below the sternal angle.",
+    "The seventh costal cartilage joins the lower end of the body of the sternum."
+   ],
+   "tip": "The first rib is hidden behind the clavicle, so count ribs from the second, found at the sternal angle.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "thorax-12",
+   "topic": "thorax",
+   "type": "sba",
+   "frequency": "advanced",
+   "level": "medical",
+   "bone": "rib_5_left",
+   "stem": "When a chest drain is inserted, why is it passed just above the upper border of a rib?",
+   "options": [
+    "To avoid the internal thoracic artery",
+    "Because the upper border of a rib is thinner",
+    "To avoid the intercostal vein, artery and nerve, which run along the lower border of the rib above",
+    "Because the pleura is thicker there"
+   ],
+   "answer": 2,
+   "why": "The intercostal vein, artery and nerve run in the costal groove, along the lower border of each rib. Passing just above the next rib down keeps the drain away from them.",
+   "whyNot": [
+    "The internal thoracic artery runs down the front of the chest beside the sternum, away from the usual drain site.",
+    "The reason is the position of the vessels and nerve, not the thickness of the rib.",
+    "",
+    "The pleura is the same thickness there; it does not explain the choice."
+   ],
+   "tip": "The usual site is the \"safe triangle\": between the edges of pectoralis major and latissimus dorsi, above the level of the nipple (the fifth intercostal space).",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "thorax-13",
+   "topic": "thorax",
+   "type": "sba",
+   "frequency": "core",
+   "level": "foundation",
+   "bone": "rib_12_left",
+   "stem": "Which ribs are the floating ribs?",
+   "options": [
+    "Ribs 1–7",
+    "Ribs 8–10",
+    "Ribs 1 and 2",
+    "Ribs 11 and 12"
+   ],
+   "answer": 3,
+   "why": "Ribs 11 and 12 are short ribs whose cartilages end in the muscles of the side of the abdominal wall. They do not attach to the sternum or to another rib, so they are called floating ribs.",
+   "whyNot": [
+    "Ribs 1–7 are the true ribs.",
+    "Ribs 8–10 are false ribs that attach to the cartilage of the rib above.",
+    "Ribs 1 and 2 are true ribs that join the sternum directly.",
+    ""
+   ],
+   "tip": "The twelfth rib lies close to the kidney and the pleura, which matters in surgery on the kidney.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "thorax-14",
+   "topic": "thorax",
+   "type": "sba",
+   "frequency": "common",
+   "level": "foundation",
+   "bone": "sternum",
+   "stem": "In adult cardiopulmonary resuscitation (CPR), where on the chest are compressions given?",
+   "options": [
+    "The xiphoid process",
+    "The manubrium",
+    "The lower half of the body of the sternum",
+    "The sternal angle"
+   ],
+   "answer": 2,
+   "why": "Compressions are given over the centre of the chest, on the lower half of the body of the sternum. This squeezes the heart, which lies behind it, between the sternum and the spine.",
+   "whyNot": [
+    "Pressing on the xiphoid process can break it and injure the liver.",
+    "The manubrium is too high: it lies over the great vessels, not the heart.",
+    "",
+    "The sternal angle is too high, at the level of the second ribs."
+   ],
+   "tip": "Adult compressions are 5–6 cm deep at 100–120 a minute. Ribs often break during effective CPR, especially in older people.",
+   "reviewStatus": "draft"
+  },
+  {
+   "source": {
+    "kind": "atlas",
+    "ref": "Written by Atlas for this app (not from a real exam paper)."
+   },
+   "id": "thorax-15",
+   "topic": "thorax",
+   "type": "short",
+   "frequency": "common",
+   "level": "undergraduate",
+   "bone": "vertebra_t6",
+   "stem": "Name the parts of the thoracic vertebrae that a typical rib articulates with.",
+   "answerText": "The head of the rib articulates with the costal facets (demifacets) on the bodies of two vertebrae (its own and the one above) and with the disc between them. The tubercle of the rib articulates with the costal facet on the transverse process of its own vertebra.",
+   "why": "A typical rib (ribs 3–9) forms two joints with the spine: the joint of the head with the vertebral bodies, and the costotransverse joint of the tubercle with the transverse process. Both are synovial joints that let the rib move in breathing.",
+   "tip": "Ribs 1, 10, 11 and 12 are atypical: their heads meet only one vertebra, and ribs 11 and 12 have no joint with a transverse process.",
+   "reviewStatus": "draft"
+  }
+ ]
+}

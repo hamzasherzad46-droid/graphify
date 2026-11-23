@@ -33,6 +33,8 @@ export interface Question {
   bone: string
   /** label: the bone lit in the 3D model. */
   label?: string
+  /** label: how far above the bone to look from, in degrees (default 14); vertebrae read best from above. */
+  labelElevation?: number
   source: { kind: 'openstax' | 'atlas'; ref: string }
   reviewStatus: 'draft' | 'reviewed'
 }

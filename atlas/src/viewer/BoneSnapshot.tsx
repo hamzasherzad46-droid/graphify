@@ -11,11 +11,11 @@ import type { Sex } from '../data/types'
  * reuses the model already loaded for the 3D Atlas (a clone, no second download). It turns slowly and can be turned
  * by dragging; no labels are shown, since naming the bone is the question.
  */
-export default function BoneSnapshot({ bone, theme, sex }: { bone: string; theme: 'dark' | 'light'; sex: Sex }) {
+export default function BoneSnapshot({ bone, theme, sex, elevation = 14 }: { bone: string; theme: 'dark' | 'light'; sex: Sex; elevation?: number }) {
   return (
     <Canvas className="snapshot-canvas" dpr={[1, 1.75]} gl={{ antialias: true, alpha: true, powerPreference: 'low-power' }} camera={{ fov: 30, near: 0.001, far: 10 }}>
       <Suspense fallback={null}>
-        <Scene bone={bone} theme={theme} sex={sex} />
+        <Scene bone={bone} theme={theme} sex={sex} elevation={elevation} />
       </Suspense>
     </Canvas>
   )
@@ -23,7 +23,7 @@ export default function BoneSnapshot({ bone, theme, sex }: { bone: string; theme
 
 const reducedMotion = () => typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
 
-function Scene({ bone, theme, sex }: { bone: string; theme: 'dark' | 'light'; sex: Sex }) {
+function Scene({ bone, theme, sex, elevation }: { bone: string; theme: 'dark' | 'light'; sex: Sex; elevation: number }) {
   const { scene } = useModel(MODEL_URL[sex])
   const view = useMemo(() => {
     const mats = createMaterials(theme)
@@ -59,10 +59,12 @@ function Scene({ bone, theme, sex }: { bone: string; theme: 'dark' | 'light'; se
       mats.glow.uniforms.uPush.value = THREE.MathUtils.clamp(radius * 0.02, 0.00004, 0.0025)
       ;(target as THREE.Mesh).add(glow)
     }
-    // Seen from the front, slightly above; outward for bones away from the midline.
-    const dir = new THREE.Vector3(Math.sign(centre.x) * 0.6, 0.25, 1).normalize()
+    // Seen from the front (outward for bones away from the midline), from `elevation` degrees above.
+    const flat = new THREE.Vector3(Math.sign(centre.x) * 0.6, 0, 1).normalize()
+    const el = THREE.MathUtils.degToRad(elevation)
+    const dir = flat.multiplyScalar(Math.cos(el)).setY(Math.sin(el)).normalize()
     return { object: c, radius, dir }
-  }, [scene, bone, theme])
+  }, [scene, bone, theme, elevation])
 
   const pos = useMemo(() => view.dir.clone().multiplyScalar((view.radius / Math.sin(THREE.MathUtils.degToRad(30) / 2)) * 1.05), [view])
   return (

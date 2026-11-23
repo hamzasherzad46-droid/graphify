@@ -9,9 +9,11 @@ const DIR = join(__dirname, '..', '..', 'content', 'questions')
 const all: Question[] = readdirSync(DIR).flatMap((f) => JSON.parse(readFileSync(join(DIR, f), 'utf8')).questions)
 
 describe('exam-style questions', () => {
-  it('starts with the Skull and the Upper limb', () => {
-    expect(all.filter((q) => q.topic === 'skull').length).toBeGreaterThanOrEqual(20)
-    expect(all.filter((q) => q.topic === 'upper-limb').length).toBeGreaterThanOrEqual(20)
+  it('covers every region topic', () => {
+    for (const t of TOPICS.filter((x) => !x.textbookOnly)) expect(all.filter((q) => q.topic === t.id).length, t.id).toBeGreaterThanOrEqual(14)
+  })
+  it('gives every region topic at least two "label the 3D model" questions', () => {
+    for (const t of TOPICS.filter((x) => !x.textbookOnly)) expect(all.filter((q) => q.topic === t.id && q.type === 'label').length, t.id).toBeGreaterThanOrEqual(2)
   })
   it('has unique ids, real topics, tags, a review status and a source', () => {
     expect(new Set(all.map((q) => q.id)).size).toBe(all.length)

@@ -1,0 +1,283 @@
+{
+ "topic": "skull",
+ "cards": [
+  {
+   "reviewStatus": "draft",
+   "id": "sk-sphenoid-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "sphenoid-bone",
+   "bone": "sphenoid_bone",
+   "frontView": true,
+   "elevation": 30,
+   "objective": "Identify the sphenoid bone on the skull.",
+   "front": "Name the highlighted bone.",
+   "answer": "Sphenoid bone",
+   "why": {
+    "t": "It is the single, complex bone in the centre of the skull base, and it reaches out to the sides of the skull. It is called the keystone bone because it joins with almost every other bone of the skull.",
+    "src": [
+     "s7-2#fs-id1469126"
+    ]
+   },
+   "simpler": {
+    "t": "It sits in the middle of the floor of the skull and touches almost every other skull bone, like the keystone of an arch.",
+    "src": [
+     "s7-2#fs-id1469126"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Lesser wings: the ridge between the anterior and middle cranial fossae.",
+     "src": [
+      "s7-2#fs-id1469126"
+     ]
+    },
+    {
+     "t": "Sella turcica: in the midline; its hypophyseal fossa holds the pituitary gland.",
+     "src": [
+      "s7-2#fs-id1469126"
+     ]
+    },
+    {
+     "t": "Greater wings: the anterior floor of the middle cranial fossa and part of the side of the skull.",
+     "src": [
+      "s7-2#fs-id1469126"
+     ]
+    },
+    {
+     "t": "Its body contains the sphenoid sinus, the most posterior paranasal sinus.",
+     "src": [
+      "s7-2#fs-id1882870"
+     ]
+    },
+    {
+     "t": "Its greater wing is one of the four bones that meet at the pterion.",
+     "src": [
+      "s7-2#fs-id1248497"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Because the sphenoid sinus lies just in front of and below the sella turcica, surgeons can reach a pituitary tumour through the nose and the sphenoid sinus (transsphenoidal surgery), without opening the skull.",
+    "src": [
+     "s7-2#fs-id1882870"
+    ],
+    "check": "Transsphenoidal surgery is not in OpenStax A&P 2e Ch 6–9; the sinus position is."
+   },
+   "hook": {
+    "t": "“Sphenoid” comes from the Greek for wedge: it is wedged between the other bones of the skull.",
+    "src": [],
+    "check": "Etymology (Greek sphēn, wedge) is not in OpenStax A&P 2e Ch 6–9."
+   },
+   "trap": {
+    "t": "Do not confuse it with the ethmoid, the smaller midline bone in front of it whose cribriform plates form the roof of the nasal cavity.",
+    "src": [
+     "s7-2#fs-id1977415"
+    ]
+   },
+   "source": "OpenStax A&P 2e, 7.2 The Skull"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-foramen-magnum",
+   "topic": "skull",
+   "type": "feature",
+   "level": "core",
+   "structureId": "foramen-magnum",
+   "bone": "occipital_bone",
+   "frontView": false,
+   "objective": "State which bone contains the foramen magnum.",
+   "front": "Which bone contains the foramen magnum?",
+   "answer": "Occipital bone",
+   "why": {
+    "t": "The occipital bone forms the back of the skull and the back of its base. The foramen magnum opens in that base so that the spinal cord can leave the skull.",
+    "src": [
+     "s7-2#fs-id1478275"
+    ]
+   },
+   "simpler": {
+    "t": "The bone at the back of the head has a big hole underneath, and the spinal cord passes through it.",
+    "src": [
+     "s7-2#fs-id1478275"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Lies in the midline of the posterior cranial fossa, the deepest of the three fossae.",
+     "src": [
+      "s7-2#fs-id1489044"
+     ]
+    },
+    {
+     "t": "The posterior cranial fossa holds the cerebellum.",
+     "src": [
+      "s7-2#fs-id1489044"
+     ]
+    },
+    {
+     "t": "Occipital condyles on either side form joints with the first cervical vertebra.",
+     "src": [
+      "s7-2#fs-id1478275"
+     ]
+    },
+    {
+     "t": "The hypoglossal canals open at its anterolateral margin, carrying the nerve to the tongue.",
+     "src": [
+      "s7-2#fs-id1724550"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Raised pressure inside the skull can push the lowest part of the cerebellum (the tonsils) down through the foramen magnum, compressing the brainstem: “coning”, which can stop breathing.",
+    "src": [],
+    "check": "Tonsillar herniation is not in OpenStax A&P 2e Ch 6–9."
+   },
+   "trap": {
+    "t": "The foramen magnum is in the occipital bone, not the temporal bone: the temporal bone’s opening beside the posterior fossa is the internal acoustic meatus.",
+    "src": [
+     "s7-2#fs-id1478275",
+     "s7-2#fs-id1724550"
+    ]
+   },
+   "source": "OpenStax A&P 2e, 7.2 The Skull"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-pterion-artery",
+   "topic": "skull",
+   "type": "supply",
+   "level": "distinction",
+   "structureId": "pterion",
+   "bone": "temporal_bone_left",
+   "frontView": false,
+   "objective": "Name the artery that lies deep to the pterion.",
+   "front": "Which artery lies immediately deep to the pterion?",
+   "answer": "Middle meningeal artery (anterior branch)",
+   "why": {
+    "t": "The pterion is where four skull bones meet, and it is the weakest part of the skull. A major branch of the artery that supplies the skull and the coverings of the brain runs on its inner surface, so a blow here can fracture the bone and tear the artery.",
+    "src": [
+     "s7-2#fs-id1248497",
+     "s7-2#fs-id1364278"
+    ],
+    "check": "OpenStax does not name the artery; “middle meningeal” needs an approved source."
+   },
+   "simpler": {
+    "t": "The pterion is a thin spot on the side of the head. An important artery runs just inside it, so a hard knock there can break the bone and the artery.",
+    "src": [
+     "s7-2#fs-id1248497",
+     "s7-2#fs-id1364278"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Four bones meet in an H-shaped suture: frontal, parietal, temporal (squamous part) and sphenoid (greater wing).",
+     "src": [
+      "s7-2#fs-id1248497"
+     ]
+    },
+    {
+     "t": "Surface marking: about two finger-widths above the zygomatic arch, a thumb’s width behind the zygomatic bone.",
+     "src": [
+      "s7-2#fs-id1248497"
+     ]
+    },
+    {
+     "t": "The artery enters the skull through the foramen spinosum.",
+     "src": [
+      "s7-2#fs-id2026215"
+     ],
+     "check": "OpenStax describes the artery of the foramen spinosum without naming it."
+    },
+    {
+     "t": "Its branches groove the inner surface of the skull.",
+     "src": [
+      "s7-2#fs-id2026215"
+     ]
+    },
+    {
+     "t": "It is a branch of the maxillary artery.",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e Ch 6–9."
+    }
+   ],
+   "clinical": {
+    "t": "A torn artery bleeds between the skull and the dura: an extradural haematoma. The patient may seem well at first, but the growing clot presses on the brain and can kill within hours, so it is a surgical emergency.",
+    "src": [
+     "s7-2#fs-id1364278"
+    ],
+    "check": "OpenStax says “hematoma between the brain and interior of the skull”; the term “extradural” needs an approved source."
+   },
+   "trap": {
+    "t": "An extradural haematoma is usually arterial (middle meningeal artery); a subdural haematoma is usually venous (bridging veins).",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e Ch 6–9."
+   },
+   "source": "OpenStax A&P 2e, 7.2 The Skull"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-cribriform-reverse",
+   "topic": "skull",
+   "type": "reverse",
+   "level": "core",
+   "structureId": "cribriform-plate",
+   "bone": "ethmoid_bone",
+   "frontView": false,
+   "objective": "Recognise the cribriform plate from its description.",
+   "front": "Name it: a small, flat, sieve-like part of the ethmoid bone in the roof of the nasal cavity, pierced by openings for olfactory nerve branches.",
+   "answer": "Cribriform plate",
+   "why": {
+    "t": "“Cribrum” means sieve: the plate is pierced by many small olfactory foramina. Nerve branches from the smell-sensing area of the nasal cavity pass up through them to enter the brain.",
+    "src": [
+     "s7-2#fs-id1977415"
+    ]
+   },
+   "simpler": {
+    "t": "It is a thin plate full of tiny holes, like a sieve. The nerves for smell pass through the holes from the nose to the brain.",
+    "src": [
+     "s7-2#fs-id1977415"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Lies on either side of the crista galli, in the midline of the anterior cranial fossa.",
+     "src": [
+      "s7-2#fs-id2045358"
+     ]
+    },
+    {
+     "t": "Forms the narrow roof of the nasal cavity.",
+     "src": [
+      "s7-2#fs-id1977415"
+     ]
+    },
+    {
+     "t": "The crista galli gives anterior attachment to one of the coverings of the brain.",
+     "src": [
+      "s7-2#fs-id1977415"
+     ]
+    },
+    {
+     "t": "The anterior cranial fossa, which it helps to floor, holds the frontal lobes.",
+     "src": [
+      "s7-2#fs-id2045358"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A fracture through the cribriform plate can tear the olfactory nerve fibres, causing loss of smell, and can let cerebrospinal fluid leak from the nose.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e Ch 6–9."
+   },
+   "trap": {
+    "t": "Do not mix up the cribriform plate (ethmoid bone, smell) with the optic canal (sphenoid bone, sight).",
+    "src": [
+     "s7-2#fs-id1977415",
+     "s7-2#fs-id2026215"
+    ]
+   },
+   "source": "OpenStax A&P 2e, 7.2 The Skull"
+  }
+ ]
+}

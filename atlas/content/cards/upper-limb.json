@@ -1,0 +1,409 @@
+{
+ "topic": "upper-limb",
+ "cards": [
+  {
+   "reviewStatus": "draft",
+   "id": "ul-scaphoid-foosh",
+   "topic": "upper-limb",
+   "type": "clinical",
+   "level": "higher",
+   "structureId": "scaphoid",
+   "bone": "scaphoid_left",
+   "frontView": false,
+   "objective": "Recognise a scaphoid fracture from its mechanism and site of tenderness.",
+   "front": "A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?",
+   "answer": "Scaphoid",
+   "why": {
+    "t": "The scaphoid links the proximal and distal rows of carpal bones and meets the radius directly, so it takes much of the force of a fall on the outstretched hand. It lies in the floor of the anatomical snuffbox, so tenderness there points to it.",
+    "src": [
+     "s8-2#fs-id1977414",
+     "s8-2#fs-id1882937",
+     "s8-2#fs-id1989621"
+    ],
+    "check": "“Links the two rows” and “floor of the anatomical snuffbox” are not in OpenStax A&P 2e Ch 6–9."
+   },
+   "simpler": {
+    "t": "The scaphoid is the wrist bone on the thumb side that meets the radius, so a fall onto the hand loads it heavily. It sits under the small hollow at the base of the thumb, so pain there suggests it is broken.",
+    "src": [
+     "s8-2#fs-id1977414",
+     "s8-2#fs-id1882937"
+    ],
+    "check": "The hollow at the base of the thumb (snuffbox) is not in OpenStax A&P 2e Ch 6–9."
+   },
+   "depth": [
+    {
+     "t": "The most commonly fractured carpal bone.",
+     "src": [
+      "s8-2#fs-id2637051"
+     ]
+    },
+    {
+     "t": "Its blood supply (from branches of the radial artery) enters mainly at the distal end.",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e Ch 6–9."
+    },
+    {
+     "t": "So a fracture across the waist can cut off the supply to the proximal pole.",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e Ch 6–9."
+    },
+    {
+     "t": "Risk: avascular necrosis and non-union of the proximal fragment.",
+     "src": [
+      "s8-2#fs-id2637051"
+     ],
+     "check": "OpenStax says “bone necrosis”; “non-union” and “proximal fragment” need an approved source."
+    },
+    {
+     "t": "The first X-ray can look normal; a later X-ray, once the swelling settles, shows the fracture.",
+     "src": [
+      "s8-2#fs-id2637051"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A missed scaphoid fracture can lead to avascular necrosis and later degenerative arthritis of the wrist, because its blood supply is poor. That is why a suspected fracture is treated with caution even when the first X-ray is clear.",
+    "src": [
+     "s8-2#fs-id2637051"
+    ]
+   },
+   "trap": {
+    "t": "Do not confuse it with a Colles’ fracture of the distal radius: also from a fall on the outstretched hand, but with a “dinner fork” deformity above the wrist rather than snuffbox tenderness.",
+    "src": [
+     "s8-2#fs-id2142217"
+    ]
+   },
+   "source": "OpenStax A&P 2e, 8.2 Bones of the Upper Limb"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-ulnar-nerve-epicondyle",
+   "topic": "upper-limb",
+   "type": "relation",
+   "level": "higher",
+   "structureId": "ulnar-nerve",
+   "bone": "humerus_left",
+   "frontView": true,
+   "elevation": 10,
+   "objective": "Name the nerve that lies directly posterior to the medial epicondyle.",
+   "front": "Which nerve lies directly posterior to the medial epicondyle of the humerus?",
+   "answer": "Ulnar nerve",
+   "why": {
+    "t": "The ulnar nerve runs in a shallow groove on the back of the medial epicondyle, covered only by skin and fascia. That is why a knock there sends tingling down the little-finger side of the hand.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e Ch 6–9."
+   },
+   "simpler": {
+    "t": "The nerve passes right behind the bony bump on the inner side of the elbow, just under the skin, so hitting it makes the little finger tingle.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e Ch 6–9."
+   },
+   "depth": [
+    {
+     "t": "The medial epicondyle is the origin of the powerful anterior forearm (grasping) muscles.",
+     "src": [
+      "s8-2#fs-id1949647"
+     ]
+    },
+    {
+     "t": "The nerve enters the forearm between the two heads of flexor carpi ulnaris.",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e Ch 6–9."
+    },
+    {
+     "t": "It supplies most of the small (intrinsic) muscles of the hand.",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e Ch 6–9."
+    },
+    {
+     "t": "It gives sensation to the little finger and the medial half of the ring finger.",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e Ch 6–9."
+    }
+   ],
+   "clinical": {
+    "t": "A fracture of the medial epicondyle, or long pressure on the elbow, can injure the ulnar nerve, weakening the small muscles of the hand and numbing the little finger.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e Ch 6–9."
+   },
+   "hook": {
+    "t": "The “funny bone” is not a bone: it is the ulnar nerve behind the medial epicondyle.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e Ch 6–9."
+   },
+   "trap": {
+    "t": "Only the ulnar nerve lies behind the medial epicondyle: the median nerve crosses in front of the elbow, and the radial nerve lies on the lateral side.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e Ch 6–9."
+   },
+   "source": "OpenStax A&P 2e, 8.2 Bones of the Upper Limb (bone); nerve relations await an approved source"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-clavicle-strut",
+   "topic": "upper-limb",
+   "type": "function",
+   "level": "higher",
+   "structureId": "clavicle",
+   "bone": "clavicle_left",
+   "frontView": false,
+   "objective": "Explain the main mechanical role of the clavicle.",
+   "front": "What is the main mechanical role of the clavicle?",
+   "answer": "A strut holding the shoulder out from the trunk",
+   "why": {
+    "t": "Anchored by muscles from above, the clavicle reaches out to support the scapula, holding the shoulder joint up and away from the trunk. This gives the upper limb its wide range of movement, and passes forces from the limb to the sternum and axial skeleton.",
+    "src": [
+     "s8-1#fs-id1192235"
+    ]
+   },
+   "simpler": {
+    "t": "The collarbone works like a prop: it holds the shoulder out to the side so the arm can move freely, and passes knocks on the arm to the breastbone.",
+    "src": [
+     "s8-1#fs-id1192235"
+    ]
+   },
+   "depth": [
+    {
+     "t": "The only long bone that lies horizontally.",
+     "src": [
+      "s8-1#fs-id1192235"
+     ]
+    },
+    {
+     "t": "Sternoclavicular joint: the only bony joint between the upper limb and the axial skeleton.",
+     "src": [
+      "s8-1#fs-id2241809"
+     ]
+    },
+    {
+     "t": "Its lateral (acromial) end articulates with the acromion of the scapula.",
+     "src": [
+      "s8-1#fs-id2241809"
+     ]
+    },
+    {
+     "t": "The costoclavicular ligament to the first rib supports the sternoclavicular joint.",
+     "src": [
+      "s8-1#fs-id2241809"
+     ]
+    },
+    {
+     "t": "It protects the nerves and vessels passing between the trunk and the upper limb.",
+     "src": [
+      "s8-1#fs-id1192235"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "The clavicle is the most commonly fractured bone, usually between its middle and lateral parts. With the strut broken, the shoulder drops under the weight of the limb, so the patient supports the arm with the other hand.",
+    "src": [
+     "s8-1#fs-id1866400"
+    ]
+   },
+   "trap": {
+    "t": "The upper limb’s only bony link to the axial skeleton is the sternoclavicular joint, not the shoulder (glenohumeral) joint.",
+    "src": [
+     "s8-1#fs-id2241809"
+    ]
+   },
+   "source": "OpenStax A&P 2e, 8.1 The Pectoral Girdle"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-radius-lateral",
+   "topic": "upper-limb",
+   "type": "compare",
+   "level": "core",
+   "structureId": "radius",
+   "bone": "radius_left",
+   "frontView": false,
+   "objective": "State which forearm bone is lateral in the anatomical position.",
+   "front": "Radius or ulna: which is lateral in the anatomical position?",
+   "answer": "Radius",
+   "why": {
+    "t": "In the anatomical position the palm faces forward, so the thumb points laterally. The radius runs on the thumb side of the forearm, parallel to the ulna on the little-finger side.",
+    "src": [
+     "s9-5#fs-id1547390",
+     "s8-2#fs-id1411842",
+     "s8-2#fs-id2080518"
+    ]
+   },
+   "simpler": {
+    "t": "Stand with your palms facing forward: the radius is the forearm bone on the thumb side, on the outside.",
+    "src": [
+     "s9-5#fs-id1547390",
+     "s8-2#fs-id1411842"
+    ]
+   },
+   "depth": [
+    {
+     "t": "The radial head articulates with the capitulum of the humerus.",
+     "src": [
+      "s8-2#fs-id1411842"
+     ]
+    },
+    {
+     "t": "The ulna’s trochlear notch articulates with the trochlea, the main hinge of the elbow.",
+     "src": [
+      "s8-2#fs-id2080518"
+     ]
+    },
+    {
+     "t": "Distally the radius forms the wrist joint with the scaphoid and lunate; the ulna does not touch the carpal bones.",
+     "src": [
+      "s8-2#fs-id1882937"
+     ]
+    },
+    {
+     "t": "The radial styloid reaches further distally than the ulnar styloid.",
+     "src": [
+      "s8-2#fs-id1411842"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A Colles’ fracture of the distal radius, the most common forearm fracture, follows a fall on the outstretched hand. The distal fragment is driven backwards and upwards, giving the wrist its “dinner fork” bend.",
+    "src": [
+     "s8-2#fs-id2142217"
+    ]
+   },
+   "trap": {
+    "t": "In pronation the radius crosses over the ulna, but sides are always named in the anatomical position, where the radius is lateral.",
+    "src": [
+     "s9-5#fs-id1837207",
+     "s9-5#fs-id1547390"
+    ]
+   },
+   "source": "OpenStax A&P 2e, 8.2 Bones of the Upper Limb; 9.5 Types of Body Movements"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-axillary-surgical-neck",
+   "topic": "upper-limb",
+   "type": "relation",
+   "level": "distinction",
+   "structureId": "axillary-nerve",
+   "bone": "humerus_left",
+   "frontView": true,
+   "elevation": 10,
+   "objective": "Name the nerve at risk in a fracture of the surgical neck of the humerus.",
+   "front": "Which nerve is most at risk in a fracture of the surgical neck of the humerus?",
+   "answer": "Axillary nerve",
+   "why": {
+    "t": "The surgical neck is where the expanded upper end of the humerus narrows into the shaft, and it is a common site of fracture. The axillary nerve wraps around the back of this neck, so a fracture here can stretch or tear it.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ],
+    "check": "The course of the axillary nerve is not in OpenStax A&P 2e Ch 6–9."
+   },
+   "simpler": {
+    "t": "The surgical neck is the narrow part just below the ball of the humerus. A nerve wraps around it, so breaking the bone there can damage the nerve.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ],
+    "check": "The course of the axillary nerve is not in OpenStax A&P 2e Ch 6–9."
+   },
+   "depth": [
+    {
+     "t": "A fall can drive the shaft into the head: an impacted fracture.",
+     "src": [
+      "s8-2#fs-id2030259"
+     ]
+    },
+    {
+     "t": "The posterior circumflex humeral artery runs around the neck with the nerve.",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e Ch 6–9."
+    },
+    {
+     "t": "The axillary nerve supplies the deltoid and teres minor.",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e Ch 6–9."
+    },
+    {
+     "t": "It supplies the skin over the lower deltoid (the “regimental badge” area).",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e Ch 6–9."
+    },
+    {
+     "t": "Lower down, the radial nerve lies in the radial groove, at risk in shaft fractures.",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e Ch 6–9."
+    }
+   ],
+   "clinical": {
+    "t": "Damage to the axillary nerve weakens the deltoid, so raising the arm out to the side is weak, with numbness over the lower outer shoulder.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e Ch 6–9."
+   },
+   "trap": {
+    "t": "Surgical neck (below the tubercles, often fractured, axillary nerve) is not the anatomical neck (the margin of the smooth head).",
+    "src": [
+     "s8-2#fs-id2110691",
+     "s8-2#fs-id2030259"
+    ]
+   },
+   "source": "OpenStax A&P 2e, 8.2 Bones of the Upper Limb (bone); nerve relations await an approved source"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-carpal-tunnel-roof",
+   "topic": "upper-limb",
+   "type": "feature",
+   "level": "higher",
+   "structureId": "flexor-retinaculum",
+   "bone": "scaphoid_left",
+   "frontView": false,
+   "objective": "State what forms the roof of the carpal tunnel.",
+   "front": "What forms the roof of the carpal tunnel?",
+   "answer": "The flexor retinaculum",
+   "why": {
+    "t": "The carpal bones form a U-shaped grouping that makes the walls and floor of the tunnel. The flexor retinaculum, a strong ligament, spans the top of the U as the roof and holds the bones in their arch.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   "simpler": {
+    "t": "The wrist bones make a U shape. A strong band across the top of the U closes it into a tunnel.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Attached laterally to the scaphoid and trapezium, and medially to the hamate and pisiform.",
+     "src": [
+      "s8-2#fs-id2329218"
+     ]
+    },
+    {
+     "t": "Carries the tendons of nine anterior forearm muscles and the median nerve into the hand.",
+     "src": [
+      "s8-2#fs-id2329218"
+     ],
+     "check": "OpenStax says “an important nerve”; naming it the median nerve needs an approved source."
+    },
+    {
+     "t": "Overuse or injury can make the contents swell inside this fixed space.",
+     "src": [
+      "s8-2#fs-id2329218"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Swelling in the tunnel compresses the median nerve: carpal tunnel syndrome, with pain or numbness and weakness in the parts of the hand it supplies. The bony walls and tough roof cannot stretch, so any swelling squeezes the nerve.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ],
+    "check": "OpenStax does not name the nerve; “median” needs an approved source."
+   },
+   "trap": {
+    "t": "The flexor retinaculum is the roof, not the floor: the carpal bones form the floor and walls.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   "source": "OpenStax A&P 2e, 8.2 Bones of the Upper Limb"
+  }
+ ]
+}

@@ -4,6 +4,7 @@ import { paragraphsOf } from '../../learn/paragraphs'
 import { SECTIONS } from '../../learn/textbook'
 import { QUESTIONS } from '../../learn/questions'
 import { generatedQuestion, sortedSets, useNoteSets } from '../../learn/notesExam'
+import { LAYERED, layeredById } from '../../learn/layered'
 import { TOPICS } from '../../learn/topics'
 import { cardKey, liveCards, suggestFromHighlight, suggestFromNote, useMyCards } from '../../learn/mycards'
 import { useProgress } from '../../state/progress'
@@ -20,6 +21,7 @@ const COLOR_LABEL: Record<HighlightColor, string> = { yellow: 'Yellow', teal: 'T
 /** Book order for documents: textbook sections as in the book, then exam questions by topic and number. */
 function docOrder(doc: string): number {
   if (doc.startsWith('tb:')) return SECTIONS.findIndex((s) => s.id === doc.slice(3))
+  if (doc.startsWith('fc:')) return 5000 + LAYERED.findIndex((c) => c.id === doc.slice(3))
   const q = QUESTIONS.findIndex((x) => x.id === doc.slice(3))
   if (q >= 0) return 1000 + q
   // Questions from the student's notes: newest set first, then by number.
@@ -30,6 +32,8 @@ function docOrder(doc: string): number {
 
 /** Where tapping an item goes: the reader at its paragraph, or the question in its topic. */
 function pagesFor(a: Annotation): Page[] {
+  // Flashcards open in a study session, not a page: the item stays here.
+  if (a.doc.startsWith('fc:')) return []
   if (a.doc.startsWith('tb:')) return SECTIONS.some((x) => x.id === a.doc.slice(3)) ? [{ kind: 'reader', section: a.doc.slice(3), anchor: a.segs[0]?.para }] : []
   const q = QUESTIONS.find((x) => x.id === a.doc.slice(3))
   if (q) return [{ kind: 'topic', area: 'exam', topic: q.topic, anchor: q.id }]
@@ -200,6 +204,10 @@ function groupLabel(a: Annotation): string {
   if (a.doc.startsWith('tb:')) {
     const s = SECTIONS.find((x) => x.id === a.doc.slice(3))
     return s ? (s.num.includes('.') ? `${s.num} ${s.title}` : `Chapter ${s.num}: ${s.chapterTitle}`) : a.docLabel
+  }
+  if (a.doc.startsWith('fc:')) {
+    const c = layeredById(a.doc.slice(3))
+    return c ? `Flashcard: ${c.front}` : a.docLabel
   }
   const q = QUESTIONS.find((x) => x.id === a.doc.slice(3))
   if (!q) {

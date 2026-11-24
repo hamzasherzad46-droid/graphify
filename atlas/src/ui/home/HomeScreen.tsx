@@ -13,6 +13,7 @@ import { setById } from '../../learn/spelling'
 import { sectionInfo, sectionLabel, useReading } from '../../learn/textbook'
 import { Portal } from '../Portal'
 import { useNoteSets } from '../../learn/notesExam'
+import { LAYERED } from '../../learn/layered'
 
 const HeroSkeleton = lazy(() => import('../../viewer/HeroSkeleton'))
 
@@ -209,6 +210,15 @@ function DeckPicker({ onClose }: { onClose: () => void }) {
             </button>
           </header>
           <p className="muted small">Choose a deck. Cards come back when FSRS schedules them.</p>
+          <button
+            className="row-card layered-row"
+            onPointerDown={press}
+            onClick={() => useSession.getState().open('layered')}
+          >
+            <span className="row-k">New · Layered flashcards (preview)</span>
+            <span className="row-v">{LAYERED.length} draft cards: Skull and Upper limb</span>
+            <ChevronRightIcon className="row-go" />
+          </button>
           <ul className="decks">
             {AREAS.map((a) => {
               const t = flashcardsToday(a.id)

@@ -3,6 +3,7 @@ import { useProgress } from '../../state/progress'
 import { AREAS } from '../../learn/pool'
 import { deckFor } from '../../learn/deck'
 import { weakest } from '../../learn/weak'
+import { LAYERED } from '../../learn/layered'
 import { MODE_INFO, useSession, type Mode } from '../../learn/session'
 import { SETS, setById } from '../../learn/spelling'
 import { liveCards, useMyCards } from '../../learn/mycards'
@@ -39,6 +40,7 @@ export function StudyLauncher() {
     quiz: `${s.count || 'All'} questions · ${s.perQuestion ? `${s.perQuestion} s each` : 'untimed'}`,
     weak: weakCount ? `${weakCount} bones to work on` : 'Nothing yet: missed bones appear here',
     mycards: myCards ? `${myCards} ${myCards === 1 ? 'card' : 'cards'}` : 'Make one from a highlight or note (Lessons)',
+    layered: `Preview: ${LAYERED.length} draft cards, Skull and Upper limb`,
   }
   return (
     <div className="tab-page practice">

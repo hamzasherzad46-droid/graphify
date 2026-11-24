@@ -398,6 +398,28 @@ Tests: `server/src/server.test.ts` (validation, request limits, the rate limiter
 stand-in for Claude, the HTTP stream, CORS, 429) and `src/learn/notesExam.test.ts` (conversion into Atlas questions,
 reading the event stream however it is split, error messages).
 
+## Layered flashcards (flashcards upgrade, step 1: preview)
+
+Home → Flashcards → **Layered flashcards**, or Practice → Layered flashcards. One question on the front (with the
+structure in 3D where that does not give the answer away). The back shows the answer, then three layers, all
+collapsed until tapped: **Why?** (with **Explain simpler**), **Go deeper** (at most five one-line points) and
+**Clinical**. Below them: memory hook (only where accurate), exam trap, See in 3D, and the source. The card flips with a
+soft sound; swiping up on the back opens the next layer. Highlights and note pins work on every card, as in the
+textbook. Rated Again / Hard / Good / Easy with FSRS (state under `lc:<id>`). The session ends with a summary: cards
+learnt, levels reached, weakest topics.
+
+- Content: `content/cards/<topic>.json`, loaded by `src/learn/layered.ts`; the session is
+  `src/ui/study/LayeredSession.tsx`. Levels: Core, Higher, Distinction. Types: identify, feature, relation, supply,
+  function, clinical, compare, reverse.
+- **Sources on every statement**: each records its OpenStax A&P 2e paragraph (`s8-2#fs-id2637051`) and/or `check`,
+  saying exactly what still needs an approved source. Unchecked statements carry a † in the app. A card with any
+  `check` cannot be marked reviewed.
+- Tests (`src/learn/layered.test.ts`): required fields; no duplicates by id, front or objective; one question per
+  front; short answers; layer sizes (Why 2–3 sentences, 3–5 one-line depth points); every cited OpenStax paragraph
+  exists; nothing reviewed while a check remains; the 3D front never shows the answer; British English.
+- Now: 10 example cards for review (`docs/flashcards-review.md`). Next: the level system with unlocking, converting
+  the existing name/find cards, then the full Skull and Upper limb decks.
+
 ## Progress (step 6)
 
 Top bar → progress icon. All computed from data saved on the device (`useProgress`, via `appStorage`):

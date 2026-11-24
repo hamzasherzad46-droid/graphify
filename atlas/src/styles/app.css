@@ -5415,3 +5415,295 @@ textarea:focus-visible {
 .options-hint {
   margin: 8px 0 0;
 }
+
+/* ---------- Layered flashcards ---------- */
+
+.lc-stage {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  padding: calc(env(safe-area-inset-top) + 78px) 14px calc(env(safe-area-inset-bottom) + 92px);
+  perspective: 1400px;
+}
+
+.lc {
+  flex: 1;
+  min-height: 0;
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid var(--line-strong);
+  border-radius: 20px;
+  background:
+    radial-gradient(130% 80% at 100% 0%, var(--accent-soft), transparent 55%),
+    var(--surface-solid);
+  box-shadow: var(--shadow);
+  transform-origin: center;
+  overflow: hidden;
+}
+
+.lc.turn-out {
+  animation: lc-out 0.17s ease-in forwards;
+}
+
+.lc.turn-in {
+  animation: lc-in 0.2s ease-out;
+}
+
+@keyframes lc-out {
+  to {
+    transform: rotateY(90deg);
+  }
+}
+
+@keyframes lc-in {
+  from {
+    transform: rotateY(-90deg);
+  }
+}
+
+.lc-face {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 18px 16px;
+}
+
+.lc.front .lc-face {
+  cursor: pointer;
+}
+
+.lc-scroll {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.lc-tags {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lc-type {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.tag.lvl-core {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tag.lvl-higher {
+  border-color: var(--good);
+  color: var(--good);
+}
+
+.tag.lvl-distinction {
+  border-color: var(--draft);
+  color: var(--draft);
+}
+
+.lc-question {
+  margin: 16px 0 18px;
+  font-size: 23px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+
+.lc.front .lc-question {
+  flex: none;
+}
+
+.lc-question.small {
+  margin: 10px 0 12px;
+  font-size: 15px;
+  line-height: 1.45;
+  font-weight: 400;
+  color: var(--text-2);
+}
+
+.lc-3d {
+  flex: 1;
+  min-height: 200px;
+  height: auto;
+}
+
+.lc-tap {
+  margin: auto 0 0 !important;
+  padding-top: 12px;
+  text-align: center;
+}
+
+.lc-back {
+  position: relative;
+}
+
+.lc-answer {
+  padding: 14px 16px;
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  border-left: 3px solid var(--accent);
+  border-radius: 12px;
+  background: var(--accent-soft);
+  animation: sp-rise 0.2s ease-out;
+}
+
+.lc-answer .k {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.lc-answer p {
+  margin: 4px 0 0;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.lc-layer {
+  margin-top: 8px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--raise);
+}
+
+.lc-layer.open {
+  border-color: var(--line-strong);
+}
+
+.lc-layer-head {
+  width: 100%;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.lc-chev {
+  color: var(--muted);
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+.lc-layer.open .lc-chev {
+  transform: none;
+  color: var(--accent);
+}
+
+.lc-layer-body {
+  padding: 0 14px 14px;
+  animation: sp-rise 0.18s ease-out;
+}
+
+.lc-layer-body p,
+.lc-extra p {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.lc-simpler {
+  margin-top: 10px;
+}
+
+.lc-simpler.on {
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  background: var(--accent-soft);
+}
+
+.lc-depth {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.lc-depth li::marker {
+  color: var(--accent);
+}
+
+.lc-check {
+  margin-left: 2px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--draft);
+}
+
+.lc-swipe {
+  margin: 10px 0 0 !important;
+  text-align: center;
+}
+
+.lc-extras {
+  display: grid;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.lc-extra {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px dashed var(--line-strong);
+}
+
+.lc-extra.trap {
+  border: 1px solid color-mix(in srgb, var(--draft) 40%, transparent);
+  background: var(--draft-soft);
+}
+
+.lc-extra h3 {
+  margin: 0 0 4px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.lc-extra.trap h3 {
+  color: var(--draft);
+}
+
+.lc-foot {
+  margin-top: 14px;
+}
+
+.lc-check-note {
+  margin: 6px 0 0 !important;
+}
+
+.layered-row {
+  margin: 10px 0 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lc.turn-out,
+  .lc.turn-in {
+    animation: none;
+  }
+}
+
+/* No 3D view: the question sits in the middle of the card. */
+.lc-face.no-3d .lc-question {
+  margin: auto 0;
+  padding-bottom: 24px;
+  font-size: 25px;
+}
+
+.lc-face.no-3d .lc-tap {
+  margin-top: 0 !important;
+}

@@ -1,5 +1,6 @@
 import { hasClassic, loadClassic, loadSection, plain, type Block } from './textbook'
 import { QUESTIONS } from './questions'
+import { generatedQuestion } from './notesExam'
 
 /** Plain text of each paragraph id in a list of blocks, as the reader shows it. */
 function collect(blocks: Block[], out: Map<string, string>) {
@@ -24,7 +25,7 @@ export async function paragraphsOf(doc: string): Promise<Map<string, string>> {
     collect(s.blocks, out)
     if (hasClassic(id)) for (const e of (await loadClassic(id)).entries) collect(e.blocks, out)
   } else if (kind === 'eq') {
-    const q = QUESTIONS.find((x) => x.id === id)
+    const q = QUESTIONS.find((x) => x.id === id) ?? generatedQuestion(id)?.q
     if (q) {
       if (q.answerText) out.set(`${q.id}-answer`, q.answerText)
       out.set(`${q.id}-why`, q.why)

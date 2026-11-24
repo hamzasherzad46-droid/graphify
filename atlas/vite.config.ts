@@ -39,5 +39,7 @@ export default defineConfig(({ mode }) => ({
       },
     }),
   ],
+  // Notes to Exam: in development, /api goes to the local server (atlas/server, port 8787).
+  server: { proxy: { '/api': 'http://localhost:8787' } },
   build: { chunkSizeWarningLimit: 1200, ...(mode === 'artifact' ? { outDir: 'dist-artifact' } : {}) },
 }))

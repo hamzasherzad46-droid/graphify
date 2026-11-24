@@ -3,8 +3,9 @@
  * Falls back to an in-memory map where IndexedDB is unavailable (private modes of old browsers).
  */
 const DB = 'atlas'
-const VERSION = 1
-export const STORES = ['annotations'] as const
+const VERSION = 2
+/** v1: annotations. v2: noteSets (question sets made from the student's notes). */
+export const STORES = ['annotations', 'noteSets'] as const
 export type StoreName = (typeof STORES)[number]
 
 let dbp: Promise<IDBDatabase | null> | null = null
@@ -38,6 +39,22 @@ export async function putAll<T extends { id: string }>(store: StoreName, items: 
   await new Promise<void>((resolve, reject) => {
     const tx = d.transaction(store, 'readwrite', { durability: 'strict' } as IDBTransactionOptions)
     for (const it of items) tx.objectStore(store).put(it)
+    tx.oncomplete = () => resolve()
+    tx.onerror = () => reject(tx.error)
+    tx.onabort = () => reject(tx.error)
+  })
+}
+
+/** Delete records for good (used where the student deletes their own material). */
+export async function removeAll(store: StoreName, ids: string[]): Promise<void> {
+  const d = await db()
+  if (!d) {
+    for (const id of ids) mem(store).delete(id)
+    return
+  }
+  await new Promise<void>((resolve, reject) => {
+    const tx = d.transaction(store, 'readwrite')
+    for (const id of ids) tx.objectStore(store).delete(id)
     tx.oncomplete = () => resolve()
     tx.onerror = () => reject(tx.error)
     tx.onabort = () => reject(tx.error)

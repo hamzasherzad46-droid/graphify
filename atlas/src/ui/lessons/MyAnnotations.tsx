@@ -3,6 +3,7 @@ import { COLORS, useAnnotations, type Annotation, type HighlightColor } from '..
 import { paragraphsOf } from '../../learn/paragraphs'
 import { SECTIONS } from '../../learn/textbook'
 import { QUESTIONS } from '../../learn/questions'
+import { generatedQuestion, sortedSets, useNoteSets } from '../../learn/notesExam'
 import { TOPICS } from '../../learn/topics'
 import { cardKey, liveCards, suggestFromHighlight, suggestFromNote, useMyCards } from '../../learn/mycards'
 import { useProgress } from '../../state/progress'
@@ -20,20 +21,28 @@ const COLOR_LABEL: Record<HighlightColor, string> = { yellow: 'Yellow', teal: 'T
 function docOrder(doc: string): number {
   if (doc.startsWith('tb:')) return SECTIONS.findIndex((s) => s.id === doc.slice(3))
   const q = QUESTIONS.findIndex((x) => x.id === doc.slice(3))
-  return 1000 + (q < 0 ? 999 : q)
+  if (q >= 0) return 1000 + q
+  // Questions from the student's notes: newest set first, then by number.
+  const g = generatedQuestion(doc.slice(3))
+  if (g) return 3000 + sortedSets(useNoteSets.getState().sets).indexOf(g.set) * 100 + g.n
+  return 9999
 }
 
 /** Where tapping an item goes: the reader at its paragraph, or the question in its topic. */
 function pagesFor(a: Annotation): Page[] {
   if (a.doc.startsWith('tb:')) return SECTIONS.some((x) => x.id === a.doc.slice(3)) ? [{ kind: 'reader', section: a.doc.slice(3), anchor: a.segs[0]?.para }] : []
   const q = QUESTIONS.find((x) => x.id === a.doc.slice(3))
-  return q ? [{ kind: 'topic', area: 'exam', topic: q.topic, anchor: q.id }] : []
+  if (q) return [{ kind: 'topic', area: 'exam', topic: q.topic, anchor: q.id }]
+  const g = generatedQuestion(a.doc.slice(3))
+  return g ? [{ kind: 'noteset', id: g.set.id, anchor: g.q.id }] : []
 }
 
 /** My Highlights or My Notes: everything the student marked, grouped by chapter, newest work findable in a tap. */
 export function MyAnnotations({ what }: { what: 'highlights' | 'notes' }) {
   const items = useAnnotations((s) => s.items)
   const ready = useAnnotations((s) => s.ready)
+  // Labels and links for notes on questions from the student's own notes.
+  useNoteSets((s) => s.sets)
   const [color, setColor] = useState<HighlightColor | 'all'>('all')
   const [editing, setEditing] = useState<{ a: Annotation; front: string; back: string } | null>(null)
   const myCards = useMyCards((s) => s.cards)
@@ -91,7 +100,7 @@ export function MyAnnotations({ what }: { what: 'highlights' | 'notes' }) {
     haptic('light')
     const paras = await paragraphsOf(a.doc).catch(() => new Map<string, string>())
     const para = a.segs[0] ? paras.get(a.segs[0].para) : undefined
-    const q = a.doc.startsWith('eq:') ? QUESTIONS.find((x) => x.id === a.doc.slice(3)) : undefined
+    const q = a.doc.startsWith('eq:') ? (QUESTIONS.find((x) => x.id === a.doc.slice(3)) ?? generatedQuestion(a.doc.slice(3))?.q) : undefined
     const s = what === 'notes' ? suggestFromNote(a, a.segs.length ? para : q?.stem) : suggestFromHighlight(a, para)
     setEditing({ a, ...s })
   }
@@ -193,7 +202,10 @@ function groupLabel(a: Annotation): string {
     return s ? (s.num.includes('.') ? `${s.num} ${s.title}` : `Chapter ${s.num}: ${s.chapterTitle}`) : a.docLabel
   }
   const q = QUESTIONS.find((x) => x.id === a.doc.slice(3))
-  if (!q) return a.docLabel
+  if (!q) {
+    const g = generatedQuestion(a.doc.slice(3))
+    return g ? `Notes to Exam: ${g.set.title}, question ${g.n}` : a.docLabel
+  }
   const topic = TOPICS.find((t) => t.id === q.topic)?.title ?? q.topic
   return `Exam-style questions: ${topic}, question ${QUESTIONS.filter((x) => x.topic === q.topic).indexOf(q) + 1}`
 }

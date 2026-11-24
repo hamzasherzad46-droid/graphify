@@ -7,60 +7,27 @@ import { useResolvedTheme } from '../../lib/theme'
 import { haptic } from '../../lib/feedback'
 import { topicById } from '../../learn/topics'
 import { CubeIcon } from '../Icons'
+import { useJumpToQuestion } from './useJumpToQuestion'
 import { Annotatable, NoteGlyph, NotePopover, type Pop } from './Annotatable'
 
 const BoneSnapshot = lazy(() => import('../../viewer/BoneSnapshot'))
 const LETTERS = 'ABCD'
+const REVIEW_LABEL: Record<Question['reviewStatus'], string> = { draft: 'Draft, awaiting academic review', reviewed: 'Reviewed', ai: 'AI-written, AI-checked' }
 
 /** A topic's exam-style questions: progress, filters, and the question cards. */
 export function ExamQuestions({ topic, anchor }: { topic: string; anchor?: string }) {
   const all = useMemo(() => questionsFor(topic), [topic])
-  const answers = useExam((s) => s.answers)
   const [freq, setFreq] = useState<Frequency | 'all'>('all')
   const [level, setLevel] = useState<Level | 'all'>('all')
   const shown = all.filter((q) => (freq === 'all' || q.frequency === freq) && (level === 'all' || q.level === level))
-  const done = all.filter((q) => isDone(q, answers[q.id]))
-  const right = done.filter((q) => isCorrect(q, answers[q.id])).length
 
-  // Jump to a question (from My Highlights / My Notes), then let it glow briefly.
-  useEffect(() => {
-    if (!anchor) return
-    // Jump at once (a smooth scroll can be cut short when content above it loads), then once more after late layout.
-    const go = () => document.querySelector<HTMLElement>(`.q-card[data-qid="${CSS.escape(anchor)}"]`)?.scrollIntoView({ block: 'start' })
-    const t1 = window.setTimeout(() => {
-      go()
-      const el = document.querySelector<HTMLElement>(`.q-card[data-qid="${CSS.escape(anchor)}"]`)
-      el?.classList.add('flash')
-      window.setTimeout(() => el?.classList.remove('flash'), 2200)
-    }, 60)
-    const t2 = window.setTimeout(go, 500)
-    return () => {
-      window.clearTimeout(t1)
-      window.clearTimeout(t2)
-    }
-  }, [anchor])
+  useJumpToQuestion(anchor)
 
   if (!all.length) return <div className="empty-note">Exam-style questions for this topic are being written.</div>
 
   return (
     <div className="exam">
-      <div className="exam-progress">
-        <div>
-          <span className="num">
-            {done.length}/{all.length}
-          </span>
-          <span className="k">Answered</span>
-        </div>
-        <div>
-          <span className="num">{done.length ? `${Math.round((right / done.length) * 100)}%` : '–'}</span>
-          <span className="k">Correct</span>
-        </div>
-        {done.length > 0 && (
-          <button className="link-btn" onClick={() => useExam.getState().reset(all.map((q) => q.id))}>
-            Start again
-          </button>
-        )}
-      </div>
+      <ExamProgress questions={all} />
       <div className="exam-filters">
         <Chips label="How often it comes up" value={freq} options={[['all', 'All'], ...(Object.entries(FREQUENCY_LABEL) as [Frequency, string][])]} onChange={setFreq} />
         <Chips label="Level" value={level} options={[['all', 'All levels'], ...(Object.entries(LEVEL_LABEL) as [Level, string][])]} onChange={setLevel} />
@@ -77,7 +44,33 @@ export function ExamQuestions({ topic, anchor }: { topic: string; anchor?: strin
   )
 }
 
-function Chips<T extends string>({ label, value, options, onChange }: { label: string; value: T; options: [T, string][]; onChange: (v: T) => void }) {
+/** Answered and correct, with "Start again". */
+export function ExamProgress({ questions }: { questions: Question[] }) {
+  const answers = useExam((s) => s.answers)
+  const done = questions.filter((q) => isDone(q, answers[q.id]))
+  const right = done.filter((q) => isCorrect(q, answers[q.id])).length
+  return (
+    <div className="exam-progress">
+      <div>
+        <span className="num">
+          {done.length}/{questions.length}
+        </span>
+        <span className="k">Answered</span>
+      </div>
+      <div>
+        <span className="num">{done.length ? `${Math.round((right / done.length) * 100)}%` : '–'}</span>
+        <span className="k">Correct</span>
+      </div>
+      {done.length > 0 && (
+        <button className="link-btn" onClick={() => useExam.getState().reset(questions.map((q) => q.id))}>
+          Start again
+        </button>
+      )}
+    </div>
+  )
+}
+
+export function Chips<T extends string>({ label, value, options, onChange }: { label: string; value: T; options: [T, string][]; onChange: (v: T) => void }) {
   return (
     <div className="chip-row" role="radiogroup" aria-label={label}>
       {options.map(([v, l]) => (
@@ -103,14 +96,18 @@ function useNearScreen<T extends Element>() {
   return [ref, near] as const
 }
 
-function QuestionCard({ q, n, topicTitle }: { q: Question; n: number; topicTitle: string }) {
+/**
+ * One question: options (or "Show answer"), then the explanation, which can be highlighted and annotated.
+ * `label` names the question in My Highlights / My Notes; it defaults to the built-in bank's wording.
+ */
+export function QuestionCard({ q, n, topicTitle, label: docLabel }: { q: Question; n: number; topicTitle: string; label?: string }) {
   const a = useExam((s) => s.answers[q.id])
   const theme = useResolvedTheme()
   const sex = useViewer((s) => s.sex)
   const [snapRef, near] = useNearScreen<HTMLDivElement>()
   const chosen = a?.choice
   const revealed = q.type === 'short' ? !!a : chosen !== undefined
-  const label = `Exam-style questions: ${topicTitle}, question ${n}`
+  const label = docLabel ?? `Exam-style questions: ${topicTitle}, question ${n}`
 
   const choose = (k: number) => {
     if (revealed) return
@@ -179,6 +176,12 @@ function QuestionCard({ q, n, topicTitle }: { q: Question; n: number; topicTitle
               <p data-pid={`${q.id}-answer`}>{q.answerText}</p>
             </div>
           )}
+          {q.notesQuote && (
+            <figure className="q-from-notes">
+              <figcaption>From your notes</figcaption>
+              <blockquote>{q.notesQuote}</blockquote>
+            </figure>
+          )}
           <h3>Why this is the answer</h3>
           <p data-pid={`${q.id}-why`}>{q.why}</p>
           {q.whyNot && (
@@ -211,18 +214,20 @@ function QuestionCard({ q, n, topicTitle }: { q: Question; n: number; topicTitle
             </div>
           )}
           <div className="q-foot">
-            <button
-              className="btn ghost small q-3d"
-              onClick={() => {
-                haptic('light')
-                useNav.getState().showBone(q.bone, `${topicTitle} question ${n}`)
-              }}
-            >
-              <CubeIcon /> See it in 3D
-            </button>
+            {q.bone && (
+              <button
+                className="btn ghost small q-3d"
+                onClick={() => {
+                  haptic('light')
+                  useNav.getState().showBone(q.bone, `${topicTitle} question ${n}`)
+                }}
+              >
+                <CubeIcon /> See it in 3D
+              </button>
+            )}
             <p className="q-source">
               {q.source.ref}
-              <span className={`review ${q.reviewStatus}`}>{q.reviewStatus === 'draft' ? 'Draft, awaiting academic review' : 'Reviewed'}</span>
+              <span className={`review ${q.reviewStatus}`}>{REVIEW_LABEL[q.reviewStatus]}</span>
             </p>
           </div>
         </Annotatable>

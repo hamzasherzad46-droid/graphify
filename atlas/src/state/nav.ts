@@ -2,13 +2,15 @@ import { create } from 'zustand'
 
 export type Tab = 'home' | '3d' | 'practice' | 'progress' | 'you'
 
-/** Pages opened from Home (Lessons and what it leads to), newest last. */
+/** Pages opened from Home (Lessons, Notes to Exam and what they lead to), newest last. */
 export type Page =
   | { kind: 'lessons' }
   | { kind: 'topics'; area: 'textbook' | 'exam' }
   | { kind: 'topic'; area: 'textbook' | 'exam'; topic: string; anchor?: string }
   | { kind: 'reader'; section: string; anchor?: string }
   | { kind: 'mine'; what: 'highlights' | 'notes' }
+  | { kind: 'notes' }
+  | { kind: 'noteset'; id: string; anchor?: string }
 
 /**
  * Which tab is showing, and the stack of pages opened from Home. The app always opens on Home. Each pushed page is

@@ -35,8 +35,11 @@ export interface Question {
   label?: string
   /** label: how far above the bone to look from, in degrees (default 14); vertebrae read best from above. */
   labelElevation?: number
-  source: { kind: 'openstax' | 'atlas'; ref: string }
-  reviewStatus: 'draft' | 'reviewed'
+  /** Questions made from the student's notes: the words of the notes the question tests. */
+  notesQuote?: string
+  source: { kind: 'openstax' | 'atlas' | 'ai'; ref: string }
+  /** 'ai': written from the student's notes by Atlas AI and checked by a second AI pass (Notes to Exam). */
+  reviewStatus: 'draft' | 'reviewed' | 'ai'
 }
 
 export const FREQUENCY_LABEL: Record<Frequency, string> = { core: 'Core', common: 'Common', advanced: 'Advanced' }

@@ -1,0 +1,17 @@
+{
+  "name": "atlas-notes-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Notes to Exam: turns photos of anatomy notes into exam-style questions with Claude. Holds the API key; the app never does.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node src/index.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.13.0",
+    "zod": "^4.6.7"
+  }
+}

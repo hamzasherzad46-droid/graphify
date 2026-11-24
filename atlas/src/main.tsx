@@ -5,12 +5,14 @@ import './styles/app.css'
 import App from './App'
 import { prewarmAudio } from './learn/sound'
 import { useAnnotations } from './learn/annotations'
+import { useNoteSets } from './learn/notesExam'
 
 // Unlock audio on the first touch, so the first click sound plays without delay.
 prewarmAudio()
 
 // Highlights and notes: read from the device (and replay anything a closed app had not finished writing).
 void useAnnotations.getState().load()
+void useNoteSets.getState().load()
 
 // Development only: expose stores for automated UI tests.
 if (import.meta.env.DEV)

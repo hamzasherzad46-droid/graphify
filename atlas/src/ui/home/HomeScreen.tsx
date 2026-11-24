@@ -7,12 +7,12 @@ import { AREAS } from '../../learn/pool'
 import { useResolvedTheme } from '../../lib/theme'
 import { haptic } from '../../lib/feedback'
 import { tap } from '../../learn/sound'
-import { useToast } from '../toastStore'
 import { BookIcon, CalendarIcon, CardsIcon, ChevronRightIcon, CloseIcon, NotesIcon, SpellIcon, UserIcon } from '../Icons'
 import { areaLabel, bestTyping, currentStreak, flashcardsToday, goalToday, greeting } from './homeStats'
 import { setById } from '../../learn/spelling'
 import { sectionInfo, sectionLabel, useReading } from '../../learn/textbook'
 import { Portal } from '../Portal'
+import { useNoteSets } from '../../learn/notesExam'
 
 const HeroSkeleton = lazy(() => import('../../viewer/HeroSkeleton'))
 
@@ -43,9 +43,9 @@ export function HomeScreen() {
   useProgress((s) => s.cards)
   usePrefs((s) => s.dailyGoal)
   const [decks, setDecks] = useState(false)
-  const toast = useToast((s) => s.show)
   const go = useNav((s) => s.go)
   const open = useSession((s) => s.open)
+  const setCount = useNoteSets((s) => Object.keys(s.sets).length)
 
   const goal = goalToday()
   const cards = flashcardsToday('all')
@@ -118,7 +118,7 @@ export function HomeScreen() {
           stat={best === null ? 'Not tried yet' : `Best: ${Math.round(best * 100)}%`}
           onClick={() => open('typing')}
         />
-        <Tile icon={<NotesIcon />} title="Notes to Exam" stat="Upload your notes" soon onClick={() => toast('Notes to Exam arrives in a coming update.')} />
+        <Tile icon={<NotesIcon />} title="Notes to Exam" stat={setCount ? `${setCount} ${setCount === 1 ? 'set' : 'sets'} saved` : 'Photograph your notes'} onClick={() => useNav.getState().push({ kind: 'notes' })} />
       </div>
 
       <button

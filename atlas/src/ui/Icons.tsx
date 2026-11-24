@@ -29,3 +29,7 @@ export const BackIcon = (p: P) => (<svg {...base(p)}><path d="M15 6l-6 6 6 6" />
 export const QuestionIcon = (p: P) => (<svg {...base(p)}><rect x="4" y="4" width="16" height="16" rx="3" /><path d="M9.6 9.4a2.5 2.5 0 014.8.9c0 1.7-2.4 2.1-2.4 3.7M12 16.8h.01" /></svg>)
 export const CalendarIcon = (p: P) => (<svg {...base(p)}><rect x="4" y="5.5" width="16" height="14" rx="2" /><path d="M4 10h16M9 3.5v4M15 3.5v4" /><path d="M9.5 14.5l1.8 1.8 3.5-3.5" /></svg>)
 export const InfoIcon = (p: P) => (<svg {...base(p)}><circle cx="12" cy="12" r="8.5" /><path d="M12 11v5M12 8h.01" /></svg>)
+export const CameraIcon = (p: P) => (<svg {...base(p)}><path d="M4 8.5A1.5 1.5 0 015.5 7h2.2l1.5-2h5.6l1.5 2h2.2A1.5 1.5 0 0120 8.5v9a1.5 1.5 0 01-1.5 1.5h-13A1.5 1.5 0 014 17.5z" /><circle cx="12" cy="13" r="3.5" /></svg>)
+export const UploadIcon = (p: P) => (<svg {...base(p)}><path d="M12 15V4M7.5 8.5L12 4l4.5 4.5" /><path d="M4 14v4.5A1.5 1.5 0 005.5 20h13a1.5 1.5 0 001.5-1.5V14" /></svg>)
+export const TorchIcon = (p: P) => (<svg {...base(p)}><path d="M13 3L6 13h5l-1 8 7-10h-5z" /></svg>)
+export const TrashIcon = (p: P) => (<svg {...base(p)}><path d="M4.5 7h15M9.5 7V4.5h5V7M6.5 7l1 12.5h9l1-12.5" /><path d="M10 11v5M14 11v5" /></svg>)

@@ -326,6 +326,78 @@ Lessons → **My Highlights** / **My Notes** (with counts).
 - Tests (`src/learn/mycards.test.ts`): the sentence around a phrase, fill-in-the-blank cards from the full paragraph
   and from the saved context alone, whole-sentence highlights, note cards.
 
+## Notes to Exam
+
+Home → **Notes to Exam**. The student photographs their own anatomy notes (or uploads photos or a PDF, or types
+them); Claude reads them and sets exam-style questions on exactly what they wrote; a second, independent pass
+checks every question before the student sees it.
+
+**In the app** (`src/ui/notes/`, `src/learn/notesExam.ts`, `src/lib/image.ts`)
+
+- **Camera**: a full-screen viewfinder in the app (`getUserMedia`, rear camera, up to 4K requested), with a page
+  guide, shutter, a light toggle where the phone has one, and the last page and page count beside the shutter.
+  Up to 12 pages a set. If the camera cannot be opened (permission refused, no camera), it says why and offers the
+  phone's own camera instead (`<input capture="environment">`).
+- Each page is scaled to at most 2000 px on its longest side and re-encoded as JPEG on the device. That is sharp
+  enough for handwriting, quick to send, and strips the photo's metadata (location, camera).
+- Settings: 5, 10 or 15 questions; Foundation, Undergraduate or Medical level; mixed (about one short answer in four)
+  or single best answer only.
+- Before the first set, a sheet says what is sent, to whom (Claude, by Anthropic), what is kept, not to include
+  patient or personal details, and that the questions are AI-written. While the set is written, the screen shows the
+  stages as the server reports them ("Reading your notes", "Examiner checking") and can be cancelled.
+- **A saved set**: the review in a sentence ("2 kept as written and 1 corrected"), **Check these in your notes**
+  (lines the examiners think are wrong, with the correct fact; no questions are set on them), then the questions on
+  the same card as the built-in bank (answer, why, why not, exam tip, See it in 3D, highlights and notes), each with
+  **From your notes**, the words it tests. **What Atlas read from your notes** shows the transcript to compare
+  against the pages. Each question is labelled "AI-written, AI-checked", with a source line saying it was not
+  reviewed by an academic.
+- Sets are saved on the device only (IndexedDB `atlas` v2, store `noteSets`): the transcript, corrections and
+  questions. Photos are never stored. Deleting a set also removes its answers, highlights and notes. Highlights and
+  notes on these questions appear in My Highlights / My Notes and jump back to the set.
+
+**The server** (`server/`, Node 22.18+, no build step): the Claude API key must never be in the app, so the app
+calls a small server that holds it.
+
+- `POST /api/notes-to-exam` takes the notes and settings as JSON and answers with server-sent events (`stage`, then
+  `result` or `error`). Limits: 12 images of up to 5 MB, a 30 MB PDF, 40,000 characters of text. Each device gets one
+  set at a time and 12 an hour (`RATE_PER_HOUR`); failed sets are not counted. CORS is limited to the app's origins
+  (`ALLOWED_ORIGINS`).
+- **Two passes**, both with Claude Opus 5.5 at high effort, streamed, with structured outputs (a JSON schema the API
+  enforces):
+  1. *First examiner*: transcribes the notes faithfully (`[illegible]` where it cannot read), decides whether they are
+     readable anatomy notes, lists factual errors as corrections, and writes the questions.
+  2. *Second examiner*: checks each draft against anatomical fact and the question standards, then keeps, fixes or
+     drops it, giving a reason. It also checks the corrections.
+- **One job only**: both system prompts (`server/src/prompts.ts`) confine the model to turning anatomy notes into exam
+  questions. Text in the notes is treated as material, never as instructions. Notes that are not anatomy, or that
+  cannot be read, get a one-sentence explanation and no questions.
+- **The standard asked for**: single best answer questions answerable from the stem, four parallel options from one
+  category with one defensible answer, no "all/none of the above"; short answers with a marking scheme; understanding
+  and application (clinical vignettes at undergraduate and medical level); every question tied to the words of the
+  notes; Terminologia Anatomica terms, correct whatever the notes say; British English.
+- Everything that comes back is checked again in code (`server/src/schema.ts`): exactly four distinct options, the
+  answer in range, a "why not" line for every wrong option and none for the answer, explanations of a sensible
+  length, a model answer for short answers, a bone id that exists in Atlas. Anything that fails is dropped, never
+  shown.
+- The system prompts are cached (`cache_control`), so repeat requests read them from the prompt cache. A refusal,
+  an over-long output, rate limits and API errors each give the student a plain message.
+
+Run it:
+
+```
+cd server && npm install
+ANTHROPIC_API_KEY=… npm start          # :8787
+# app, development: npm run dev (Vite proxies /api to :8787)
+# app, production: VITE_NOTES_API_URL=https://your-server npm run build
+```
+
+Without `VITE_NOTES_API_URL`, a production build shows Notes to Exam with the camera working and sending switched
+off ("Not connected in this preview").
+
+Tests: `server/src/server.test.ts` (validation, request limits, the rate limiter, both passes with a scripted
+stand-in for Claude, the HTTP stream, CORS, 429) and `src/learn/notesExam.test.ts` (conversion into Atlas questions,
+reading the event stream however it is split, error messages).
+
 ## Progress (step 6)
 
 Top bar → progress icon. All computed from data saved on the device (`useProgress`, via `appStorage`):
@@ -384,6 +456,8 @@ src/data/         types, bone loading, search (+ tests), model manifest
 src/state/        Zustand stores: viewer state, persisted prefs (via src/lib/storage.ts), HUD
 src/viewer/       lazy 3D chunk: Skeleton, CameraRig, Picking, LabelLayout, materials, HudFloor
 src/ui/           TopBar, SearchBar, Dock, InfoPanel, LabelsOverlay, Menu, Credits, Disclaimer, ReportSheet
+src/ui/notes/     Notes to Exam: camera, compose, saved sets
+server/           Notes to Exam server (holds the Claude API key)
 ```
 
 New body systems later: add `content/<system>/…` JSON and a model built the same way, then load it as another

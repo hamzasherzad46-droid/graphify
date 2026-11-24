@@ -272,9 +272,7 @@ function Blocks({ blocks, onBone, onRef, onZoom }: { blocks: Block[]; onBone: (b
           case 'fig':
             return (
               <figure key={b.id} id={b.id} className="rfig">
-                <button type="button" className="rfig-img" onClick={() => onZoom(b)} aria-label={`Zoom ${b.label}: ${b.title}`}>
-                  <img src={figureUrl(b.src)} alt={b.alt} loading="lazy" decoding="async" />
-                </button>
+                <FigureImage fig={b} onZoom={onZoom} />
                 <figcaption data-pid={b.id}>
                   <strong>
                     {b.label} {b.title}
@@ -427,5 +425,25 @@ function ReaderMenu({ onClose }: { onClose: () => void }) {
         </div>
       </div>
     </>
+  )
+}
+
+/**
+ * A textbook figure that opens full screen. If the image cannot be loaded (offline before it was cached, or a preview
+ * build that leaves some figures out), its description is shown in its place.
+ */
+function FigureImage({ fig, onZoom }: { fig: Extract<Block, { t: 'fig' }>; onZoom: (b: Extract<Block, { t: 'fig' }>) => void }) {
+  const [failed, setFailed] = useState(false)
+  if (failed)
+    return (
+      <div className="rfig-missing" role="img" aria-label={fig.alt}>
+        <p className="muted small">{import.meta.env.MODE === 'artifact' ? 'This figure is not included in the preview.' : 'This figure could not be loaded.'}</p>
+        <p>{fig.alt}</p>
+      </div>
+    )
+  return (
+    <button type="button" className="rfig-img" onClick={() => onZoom(fig)} aria-label={`Zoom ${fig.label}: ${fig.title}`}>
+      <img src={figureUrl(fig.src)} alt={fig.alt} loading="lazy" decoding="async" onError={() => setFailed(true)} />
+    </button>
   )
 }

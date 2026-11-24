@@ -5707,3 +5707,21 @@ textarea:focus-visible {
 .lc-face.no-3d .lc-tap {
   margin-top: 0 !important;
 }
+
+.rfig-missing {
+  padding: 14px 16px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 10px;
+  background: var(--raise);
+}
+
+.rfig-missing p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.rfig-missing p + p {
+  margin-top: 6px;
+  color: var(--text-2);
+}

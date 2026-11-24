@@ -219,7 +219,8 @@ opened from Home form a stack backed by browser history, so the phone's back but
 
 ### Textbook (step 2)
 
-- **Source**: OpenStax *Anatomy and Physiology 2e*, chapters 6–9 (28 sections, 99 figures), imported by
+- **Source**: OpenStax *Anatomy and Physiology 2e*, chapters 6–9 (the skeleton: 28 sections), 12–16 (the nervous system) and 20
+  (blood vessels and circulation), 61 sections and 253 figures in all, imported by
   `scripts/import-openstax.mjs` from the book's source repository into `content/textbook/*.json` and
   `public/textbook/*.webp`.
 - **Licence**: the repository moved the book to **CC BY-NC-SA 4.0** on 2026-03-19 (commit `fdfa6e2`). Atlas uses the

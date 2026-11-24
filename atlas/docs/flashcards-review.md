@@ -2,7 +2,7 @@
 
 Draft cards written to the layered standard, for review before the full Skull and Upper limb decks are written. All 10 are in the app (Home → Flashcards → Layered flashcards).
 
-**How sources are marked.** Every statement records the OpenStax A&P 2e paragraph it comes from. A **†** marks a statement that is correct by standard anatomy but is not in the imported OpenStax chapters (6–9). Each one is listed under *Needs a source* with exactly what must be checked. Nothing is marked reviewed.
+**How sources are marked.** Every statement records the OpenStax A&P 2e paragraph it comes from. A **†** marks a statement not yet confirmed by the imported OpenStax chapters (6–9, 12–16 and 20) or a reviewer: the anatomy is standard, but it is not presented as verified until it is confirmed. Each one is listed under *Needs confirming*, and all of them together in `flashcards-unconfirmed.md`. Nothing is marked reviewed.
 
 | # | Card | Level | Type | Topic | † statements |
 |---|---|---|---|---|---|
@@ -49,10 +49,10 @@ Draft cards written to the layered standard, for review before the full Skull an
 
 **Source.** OpenStax A&P 2e, 7.2 The Skull. Paragraphs used: s7-2#fs-id1248497, s7-2#fs-id1469126, s7-2#fs-id1882870, s7-2#fs-id1977415.
 
-**Needs a source.**
+**Needs confirming.**
 
-- “Because the sphenoid sinus lies just in front of and below the sella turcica, surgeons can…”: Transsphenoidal surgery is not in OpenStax A&P 2e Ch 6–9; the sinus position is.
-- ““Sphenoid” comes from the Greek for wedge: it is wedged between the other bones of the sku…”: Etymology (Greek sphēn, wedge) is not in OpenStax A&P 2e Ch 6–9.
+- “Because the sphenoid sinus lies just in front of and below the sella turcica, surgeons can…”: Transsphenoidal surgery is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the sinus position is.
+- ““Sphenoid” comes from the Greek for wedge: it is wedged between the other bones of the sku…”: Etymology (Greek sphēn, wedge) is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 
 ---
 
@@ -83,9 +83,9 @@ Draft cards written to the layered standard, for review before the full Skull an
 
 **Source.** OpenStax A&P 2e, 7.2 The Skull. Paragraphs used: s7-2#fs-id1478275, s7-2#fs-id1489044, s7-2#fs-id1724550.
 
-**Needs a source.**
+**Needs confirming.**
 
-- “Raised pressure inside the skull can push the lowest part of the cerebellum (the tonsils) …”: Tonsillar herniation is not in OpenStax A&P 2e Ch 6–9.
+- “Raised pressure inside the skull can push the lowest part of the cerebellum (the tonsils) …”: Tonsillar herniation is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 
 ---
 
@@ -117,13 +117,13 @@ Draft cards written to the layered standard, for review before the full Skull an
 
 **Source.** OpenStax A&P 2e, 7.2 The Skull. Paragraphs used: s7-2#fs-id1248497, s7-2#fs-id1364278, s7-2#fs-id2026215.
 
-**Needs a source.**
+**Needs confirming.**
 
 - “The pterion is where four skull bones meet, and it is the weakest part of the skull. A maj…”: OpenStax does not name the artery; “middle meningeal” needs an approved source.
 - “The artery enters the skull through the foramen spinosum.”: OpenStax describes the artery of the foramen spinosum without naming it.
-- “It is a branch of the maxillary artery.”: Not in OpenStax A&P 2e Ch 6–9.
+- “It is a branch of the maxillary artery.”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - “A torn artery bleeds between the skull and the dura: an extradural haematoma. The patient …”: OpenStax says “hematoma between the brain and interior of the skull”; the term “extradural” needs an approved source.
-- “An extradural haematoma is usually arterial (middle meningeal artery); a subdural haematom…”: Not in OpenStax A&P 2e Ch 6–9.
+- “An extradural haematoma is usually arterial (middle meningeal artery); a subdural haematom…”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 
 ---
 
@@ -152,11 +152,11 @@ Draft cards written to the layered standard, for review before the full Skull an
 
 **Exam trap.** Do not mix up the cribriform plate (ethmoid bone, smell) with the optic canal (sphenoid bone, sight).
 
-**Source.** OpenStax A&P 2e, 7.2 The Skull. Paragraphs used: s7-2#fs-id1977415, s7-2#fs-id2026215, s7-2#fs-id2045358.
+**Source.** OpenStax A&P 2e, 7.2 The Skull. Paragraphs used: s13-4#fs-id1521213, s14-1#fs-id2817840, s7-2#fs-id1977415, s7-2#fs-id2026215, s7-2#fs-id2045358.
 
-**Needs a source.**
+**Needs confirming.**
 
-- “A fracture through the cribriform plate can tear the olfactory nerve fibres, causing loss …”: Not in OpenStax A&P 2e Ch 6–9.
+- “A fracture through the cribriform plate can tear the olfactory nerve fibres, causing loss …”: OpenStax confirms that head trauma can shear the olfactory axons and cause loss of smell (anosmia); a fracture of the cribriform plate and a leak of cerebrospinal fluid from the nose are not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 
 ---
 
@@ -188,12 +188,12 @@ Draft cards written to the layered standard, for review before the full Skull an
 
 **Source.** OpenStax A&P 2e, 8.2 Bones of the Upper Limb. Paragraphs used: s8-2#fs-id1882937, s8-2#fs-id1977414, s8-2#fs-id1989621, s8-2#fs-id2142217, s8-2#fs-id2637051.
 
-**Needs a source.**
+**Needs confirming.**
 
-- “The scaphoid links the proximal and distal rows of carpal bones and meets the radius direc…”: “Links the two rows” and “floor of the anatomical snuffbox” are not in OpenStax A&P 2e Ch 6–9.
-- “The scaphoid is the wrist bone on the thumb side that meets the radius, so a fall onto the…”: The hollow at the base of the thumb (snuffbox) is not in OpenStax A&P 2e Ch 6–9.
-- “Its blood supply (from branches of the radial artery) enters mainly at the distal end.”: Not in OpenStax A&P 2e Ch 6–9.
-- “So a fracture across the waist can cut off the supply to the proximal pole.”: Not in OpenStax A&P 2e Ch 6–9.
+- “The scaphoid links the proximal and distal rows of carpal bones and meets the radius direc…”: “Links the two rows” and “floor of the anatomical snuffbox” are not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “The scaphoid is the wrist bone on the thumb side that meets the radius, so a fall onto the…”: The hollow at the base of the thumb (snuffbox) is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “Its blood supply (from branches of the radial artery) enters mainly at the distal end.”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “So a fracture across the waist can cut off the supply to the proximal pole.”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - “Risk: avascular necrosis and non-union of the proximal fragment.”: OpenStax says “bone necrosis”; “non-union” and “proximal fragment” need an approved source.
 
 ---
@@ -227,16 +227,16 @@ Draft cards written to the layered standard, for review before the full Skull an
 
 **Source.** OpenStax A&P 2e, 8.2 Bones of the Upper Limb (bone); nerve relations await an approved source. Paragraphs used: s8-2#fs-id1949647.
 
-**Needs a source.**
+**Needs confirming.**
 
-- “The ulnar nerve runs in a shallow groove on the back of the medial epicondyle, covered onl…”: Not in OpenStax A&P 2e Ch 6–9.
-- “The nerve passes right behind the bony bump on the inner side of the elbow, just under the…”: Not in OpenStax A&P 2e Ch 6–9.
-- “The nerve enters the forearm between the two heads of flexor carpi ulnaris.”: Not in OpenStax A&P 2e Ch 6–9.
-- “It supplies most of the small (intrinsic) muscles of the hand.”: Not in OpenStax A&P 2e Ch 6–9.
-- “It gives sensation to the little finger and the medial half of the ring finger.”: Not in OpenStax A&P 2e Ch 6–9.
-- “A fracture of the medial epicondyle, or long pressure on the elbow, can injure the ulnar n…”: Not in OpenStax A&P 2e Ch 6–9.
-- “The “funny bone” is not a bone: it is the ulnar nerve behind the medial epicondyle.”: Not in OpenStax A&P 2e Ch 6–9.
-- “Only the ulnar nerve lies behind the medial epicondyle: the median nerve crosses in front …”: Not in OpenStax A&P 2e Ch 6–9.
+- “The ulnar nerve runs in a shallow groove on the back of the medial epicondyle, covered onl…”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “The nerve passes right behind the bony bump on the inner side of the elbow, just under the…”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “The nerve enters the forearm between the two heads of flexor carpi ulnaris.”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “It supplies most of the small (intrinsic) muscles of the hand.”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “It gives sensation to the little finger and the medial half of the ring finger.”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “A fracture of the medial epicondyle, or long pressure on the elbow, can injure the ulnar n…”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “The “funny bone” is not a bone: it is the ulnar nerve behind the medial epicondyle.”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “Only the ulnar nerve lies behind the medial epicondyle: the median nerve crosses in front …”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 
 ---
 
@@ -327,17 +327,17 @@ Draft cards written to the layered standard, for review before the full Skull an
 
 **Exam trap.** Surgical neck (below the tubercles, often fractured, axillary nerve) is not the anatomical neck (the margin of the smooth head).
 
-**Source.** OpenStax A&P 2e, 8.2 Bones of the Upper Limb (bone); nerve relations await an approved source. Paragraphs used: s8-2#fs-id2030259, s8-2#fs-id2110691.
+**Source.** OpenStax A&P 2e, 8.2 Bones of the Upper Limb (bone); nerve relations await an approved source. Paragraphs used: s20-5#fs-id1595346, s8-2#fs-id2030259, s8-2#fs-id2110691.
 
-**Needs a source.**
+**Needs confirming.**
 
-- “The surgical neck is where the expanded upper end of the humerus narrows into the shaft, a…”: The course of the axillary nerve is not in OpenStax A&P 2e Ch 6–9.
-- “The surgical neck is the narrow part just below the ball of the humerus. A nerve wraps aro…”: The course of the axillary nerve is not in OpenStax A&P 2e Ch 6–9.
-- “The posterior circumflex humeral artery runs around the neck with the nerve.”: Not in OpenStax A&P 2e Ch 6–9.
-- “The axillary nerve supplies the deltoid and teres minor.”: Not in OpenStax A&P 2e Ch 6–9.
-- “It supplies the skin over the lower deltoid (the “regimental badge” area).”: Not in OpenStax A&P 2e Ch 6–9.
-- “Lower down, the radial nerve lies in the radial groove, at risk in shaft fractures.”: Not in OpenStax A&P 2e Ch 6–9.
-- “Damage to the axillary nerve weakens the deltoid, so raising the arm out to the side is we…”: Not in OpenStax A&P 2e Ch 6–9.
+- “The surgical neck is where the expanded upper end of the humerus narrows into the shaft, a…”: The course of the axillary nerve is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “The surgical neck is the narrow part just below the ball of the humerus. A nerve wraps aro…”: The course of the axillary nerve is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “The posterior circumflex humeral artery runs around the neck with the nerve.”: OpenStax mentions the humeral circumflex arteries near the head of the humerus; that the posterior one winds around the surgical neck with the axillary nerve is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “The axillary nerve supplies the deltoid and teres minor.”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “It supplies the skin over the lower deltoid (the “regimental badge” area).”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “Lower down, the radial nerve lies in the radial groove, at risk in shaft fractures.”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- “Damage to the axillary nerve weakens the deltoid, so raising the arm out to the side is we…”: Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 
 ---
 
@@ -367,7 +367,7 @@ Draft cards written to the layered standard, for review before the full Skull an
 
 **Source.** OpenStax A&P 2e, 8.2 Bones of the Upper Limb. Paragraphs used: s8-2#fs-id2329218.
 
-**Needs a source.**
+**Needs confirming.**
 
 - “Carries the tendons of nine anterior forearm muscles and the median nerve into the hand.”: OpenStax says “an important nerve”; naming it the median nerve needs an approved source.
 - “Swelling in the tunnel compresses the median nerve: carpal tunnel syndrome, with pain or n…”: OpenStax does not name the nerve; “median” needs an approved source.

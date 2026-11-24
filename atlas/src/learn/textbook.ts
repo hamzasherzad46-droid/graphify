@@ -4,7 +4,7 @@ import { appStorage } from '../lib/storage'
 import indexJson from '../../content/textbook/index.json'
 
 /**
- * The textbook: OpenStax Anatomy and Physiology 2e, chapters 6–9 (CC BY 4.0 release, imported by
+ * The textbook: OpenStax Anatomy and Physiology 2e, chapters 6–9, 12–16 and 20 (CC BY 4.0 release, imported by
  * scripts/import-openstax.mjs). Each section is its own JSON file, loaded when it is opened.
  */
 export type Inline =

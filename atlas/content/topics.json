@@ -72,6 +72,20 @@
       "blurb": "Joint types, synovial joints, body movements and selected joints",
       "regions": [],
       "textbookOnly": true
+    },
+    {
+      "id": "nervous",
+      "title": "Nervous system",
+      "blurb": "Nervous tissue, the brain, spinal cord and nerves, the somatic and autonomic systems, and the neurological exam",
+      "regions": [],
+      "textbookOnly": true
+    },
+    {
+      "id": "vessels",
+      "title": "Blood vessels and circulation",
+      "blurb": "Arteries, veins and capillaries, blood flow and pressure, and the circulatory routes",
+      "regions": [],
+      "textbookOnly": true
     }
   ]
 }

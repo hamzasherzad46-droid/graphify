@@ -1,4 +1,5 @@
-// Imports the skeletal system chapters (6–9) of OpenStax Anatomy and Physiology 2e into content/textbook/ as
+// Imports chapters 6–9 (skeletal system), 12–16 (nervous system) and 20 (blood vessels and circulation) of OpenStax
+// Anatomy and Physiology 2e into content/textbook/ as
 // structured JSON, with figures re-encoded to public/textbook/.
 //
 // Source and licence: the book's source repository (github.com/openstax/osbooks-anatomy-physiology) at commit PIN,
@@ -21,12 +22,19 @@ const OUT = join(ROOT, 'content', 'textbook')
 const MEDIA = join(ROOT, 'public', 'textbook')
 const REPORT = process.argv.includes('--report')
 
-/** Chapters 6–9 in book order: [module, Atlas topic]. The first module of each chapter is its introduction. */
+/** Chapters in book order: [module, Atlas topic]. The first module of each chapter is its introduction. */
 const CHAPTERS = [
   { num: 6, title: 'Bone Tissue and the Skeletal System', modules: [['m46290', 'bone-tissue'], ['m46341', 'bone-tissue'], ['m46282', 'bone-tissue'], ['m46281', 'bone-tissue'], ['m46301', 'bone-tissue'], ['m46342', 'bone-tissue'], ['m46305', 'bone-tissue'], ['m46295', 'bone-tissue']] },
   { num: 7, title: 'Axial Skeleton', modules: [['m46347', 'skeleton'], ['m46344', 'skeleton'], ['m46355', 'skull'], ['m46352', 'spine'], ['m46350', 'thorax'], ['m46348', 'skeleton']] },
   { num: 8, title: 'The Appendicular Skeleton', modules: [['m46370', 'skeleton'], ['m46374', 'upper-limb'], ['m46368', 'upper-limb'], ['m46375', 'pelvis'], ['m46364', 'lower-limb'], ['m46376', 'skeleton']] },
   { num: 9, title: 'Joints', modules: [['m46402', 'joints'], ['m46383', 'joints'], ['m46403', 'joints'], ['m46381', 'joints'], ['m46394', 'joints'], ['m46398', 'joints'], ['m46377', 'joints'], ['m46388', 'joints']] },
+  // Sources for the layered flashcards' nerve and vessel statements (read in the Textbook; no exam questions by region).
+  { num: 12, title: 'The Nervous System and Nervous Tissue', modules: [['m46504', 'nervous'], ['m46500', 'nervous'], ['m46509', 'nervous'], ['m46531', 'nervous'], ['m46526', 'nervous'], ['m46503', 'nervous']] },
+  { num: 13, title: 'Anatomy of the Nervous System', modules: [['m46528', 'nervous'], ['m46535', 'nervous'], ['m46533', 'nervous'], ['m46719', 'nervous'], ['m46553', 'nervous']] },
+  { num: 14, title: 'The Somatic Nervous System', modules: [['m46561', 'nervous'], ['m46577', 'nervous'], ['m46557', 'nervous'], ['m46574', 'nervous']] },
+  { num: 15, title: 'The Autonomic Nervous System', modules: [['m46590', 'nervous'], ['m46582', 'nervous'], ['m46579', 'nervous'], ['m46581', 'nervous'], ['m46587', 'nervous']] },
+  { num: 16, title: 'The Neurological Exam', modules: [['m46593', 'nervous'], ['m46594', 'nervous'], ['m46650', 'nervous'], ['m46607', 'nervous'], ['m46640', 'nervous'], ['m46604', 'nervous']] },
+  { num: 20, title: 'The Cardiovascular System: Blood Vessels and Circulation', modules: [['m46600', 'vessels'], ['m46597', 'vessels'], ['m46635', 'vessels'], ['m46586', 'vessels'], ['m46603', 'vessels'], ['m46646', 'vessels'], ['m46610', 'vessels']] },
 ]
 
 /** What Atlas changed, listed at the end of every section (CC BY 4.0 asks for changes to be indicated). */
@@ -44,7 +52,13 @@ async function cached(path, binary = false) {
   const file = join(CACHE, path.replace(/^\.\.\/\.\.\//, '').replace(/\//g, '__'))
   if (!existsSync(file)) {
     mkdirSync(CACHE, { recursive: true })
-    const res = await fetch(`${RAW}/${path.replace(/^\.\.\/\.\.\//, '')}`)
+    let res
+    // GitHub rate-limits bursts of downloads (429): wait and try again, longer each time.
+    for (let attempt = 0; ; attempt++) {
+      res = await fetch(`${RAW}/${path.replace(/^\.\.\/\.\.\//, '')}`)
+      if (res.status !== 429 || attempt >= 8) break
+      await new Promise((r) => setTimeout(r, 5000 * 2 ** Math.min(attempt, 4)))
+    }
     if (!res.ok) throw new Error(`${res.status} ${path}`)
     writeFileSync(file, Buffer.from(await res.arrayBuffer()))
   }
@@ -224,6 +238,7 @@ for (const ch of CHAPTERS) {
     }
   }
   ch.modules.forEach(([m, topic], k) => {
+    link.setMode({ nerves: topic === 'nervous' })
     const doc = docs.get(m)
     const ctx = { labels, images: new Set(), docTitle: (d) => (titles.has(d) ? `${sectionNumber.get(d)} ${titles.get(d)}` : '') }
     const meta = doc.getElementsByTagName('metadata')[0]

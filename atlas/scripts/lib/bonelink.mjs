@@ -13,6 +13,12 @@ const NEVER = new Set(['hammer', 'anvil', 'stirrup', 'innominate', 'pinky', 'cun
 const sentence = (before, after) => before.slice(before.search(/[^.!?]*$/)) + after.slice(0, after.search(/[.!?]|$/))
 const AXIS_OK = (before, after) => !/\b(an?|around|along|about|single|second|long)\s+$/i.test(before) && /\b(atlas|C2|C1|dens|vertebra|cervical|atlantoaxial)\b/i.test(sentence(before, after).replace(/\baxis\b/gi, ''))
 
+/** In the nervous system chapters "C1"–"L5" name spinal nerves or cord levels ("spinal nerves C4 through T1", "the T1
+ *  chain ganglion"), so there they are linked only after the word vertebra ("vertebra T5"). */
+const CODE_OK = (before, nerves) => !nerves || /\bvertebra[e]?\s+$/i.test(before)
+/** "radius" is the bone, except in a paragraph about blood vessels and flow ("the radius of the blood vessel"). */
+const RADIUS_OK = (para) => !/\b(vessels?|resistance|viscosity|lumen|arterioles?|blood flow|diameter)\b/i.test(para)
+
 const plurals = (f) => {
   if (/ bone$/.test(f)) return [f + 's']
   if (/a$/.test(f)) return [f + 'e', f + 's']
@@ -56,12 +62,14 @@ export function linker(landmarks) {
     const m = match.match(/^([CTL])(\d+)$/)
     if (m) {
       // Vertebra codes are written in capitals ("C7", "T12"); "c7" in prose is not one.
+      if (!CODE_OK(before, mode.nerves)) return null
       const [lo, hi] = VERT[m[1]]
       const n = Number(m[2])
       return n >= lo && n <= hi ? `vertebra_${m[1].toLowerCase()}${n}` : null
     }
     const key = match.toLowerCase().replace(/[\s-]+/g, ' ')
     if (key === 'axis' && !AXIS_OK(before, after)) return null
+    if (key === 'radius' && !RADIUS_OK(para)) return null
     if (key === 'atlas' || key === 'axis') contexts.push(`${before.slice(-30)}[${match}]${after.slice(0, 30)}`)
     return vocab.get(key) ?? null
   }
@@ -92,8 +100,12 @@ export function linker(landmarks) {
     return null
   }
 
-  const inline = (items) =>
-    items.flatMap((x) => {
+  // The whole paragraph being linked ("radius" depends on what it is about), and the chapter's conventions.
+  let para = ''
+  let mode = { nerves: false }
+  const inline = (items) => {
+    para = items.map((x) => (typeof x === 'string' ? x : x.t)).join('')
+    return items.flatMap((x) => {
       if (typeof x === 'string') return linkText(x)
       if (x.k === 'term') {
         const bone = linkTerm(x.t)
@@ -102,6 +114,7 @@ export function linker(landmarks) {
       }
       return [x]
     })
+  }
 
   const blocks = (list) =>
     list.map((b) => {
@@ -132,5 +145,7 @@ export function linker(landmarks) {
     console.log('\nUnlinked key terms:\n ' + [...unlinked.keys()].sort().join(' | '))
   }
 
-  return { inline, inlines: (l) => l.map(inline), blocks, bonesIn, report }
+  /** Set before linking a chapter: `nerves` for the nervous system chapters (see CODE_OK). */
+  const setMode = (m) => (mode = { nerves: false, ...m })
+  return { inline, inlines: (l) => l.map(inline), blocks, bonesIn, report, setMode }
 }

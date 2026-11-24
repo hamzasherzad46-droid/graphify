@@ -17,9 +17,9 @@ const inlines = (b: Block): Inline[] =>
 const all = (s: Section) => [...s.blocks.flatMap(inlines), ...s.keyPoints.flatMap((k) => [...k.lead, ...k.rest]), ...s.objectives.flat(), ...s.quickCheck.flatMap((q) => [...q.stem, ...q.options.flat()])]
 const figs = (bs: Block[]): Extract<Block, { t: 'fig' }>[] => bs.flatMap((b) => (b.t === 'fig' ? [b] : b.t === 'note' ? figs(b.blocks) : []))
 
-describe('textbook content (OpenStax A&P 2e, chapters 6–9)', () => {
-  it('has all 28 sections, each in the index and in an Atlas topic', () => {
-    expect(sections).toHaveLength(28)
+describe('textbook content (OpenStax A&P 2e, chapters 6–9, 12–16 and 20)', () => {
+  it('has all 61 sections, each in the index and in an Atlas topic', () => {
+    expect(sections).toHaveLength(61)
     const topics = new Set(TOPICS.map((t) => t.id))
     for (const s of sections) {
       expect(index.sections.some((x: { id: string }) => x.id === s.id), s.id).toBe(true)
@@ -62,7 +62,7 @@ describe('textbook content (OpenStax A&P 2e, chapters 6–9)', () => {
     for (const s of sections)
       for (const f of figs(s.blocks)) {
         expect(existsSync(join(MEDIA, '..', f.src)), f.src).toBe(true)
-        expect(f.label, f.id).toMatch(/^Figure \d\.\d+$/)
+        expect(f.label, f.id).toMatch(/^Figure \d{1,2}\.\d+$/)
         expect(f.alt.length, f.id).toBeGreaterThan(10)
       }
   })

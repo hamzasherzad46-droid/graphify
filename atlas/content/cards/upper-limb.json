@@ -20,7 +20,7 @@
      "s8-2#fs-id1882937",
      "s8-2#fs-id1989621"
     ],
-    "check": "“Links the two rows” and “floor of the anatomical snuffbox” are not in OpenStax A&P 2e Ch 6–9."
+    "check": "“Links the two rows” and “floor of the anatomical snuffbox” are not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "simpler": {
     "t": "The scaphoid is the wrist bone on the thumb side that meets the radius, so a fall onto the hand loads it heavily. It sits under the small hollow at the base of the thumb, so pain there suggests it is broken.",
@@ -28,7 +28,7 @@
      "s8-2#fs-id1977414",
      "s8-2#fs-id1882937"
     ],
-    "check": "The hollow at the base of the thumb (snuffbox) is not in OpenStax A&P 2e Ch 6–9."
+    "check": "The hollow at the base of the thumb (snuffbox) is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "depth": [
     {
@@ -40,12 +40,12 @@
     {
      "t": "Its blood supply (from branches of the radial artery) enters mainly at the distal end.",
      "src": [],
-     "check": "Not in OpenStax A&P 2e Ch 6–9."
+     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
     },
     {
      "t": "So a fracture across the waist can cut off the supply to the proximal pole.",
      "src": [],
-     "check": "Not in OpenStax A&P 2e Ch 6–9."
+     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
     },
     {
      "t": "Risk: avascular necrosis and non-union of the proximal fragment.",
@@ -91,12 +91,12 @@
    "why": {
     "t": "The ulnar nerve runs in a shallow groove on the back of the medial epicondyle, covered only by skin and fascia. That is why a knock there sends tingling down the little-finger side of the hand.",
     "src": [],
-    "check": "Not in OpenStax A&P 2e Ch 6–9."
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "simpler": {
     "t": "The nerve passes right behind the bony bump on the inner side of the elbow, just under the skin, so hitting it makes the little finger tingle.",
     "src": [],
-    "check": "Not in OpenStax A&P 2e Ch 6–9."
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "depth": [
     {
@@ -108,33 +108,33 @@
     {
      "t": "The nerve enters the forearm between the two heads of flexor carpi ulnaris.",
      "src": [],
-     "check": "Not in OpenStax A&P 2e Ch 6–9."
+     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
     },
     {
      "t": "It supplies most of the small (intrinsic) muscles of the hand.",
      "src": [],
-     "check": "Not in OpenStax A&P 2e Ch 6–9."
+     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
     },
     {
      "t": "It gives sensation to the little finger and the medial half of the ring finger.",
      "src": [],
-     "check": "Not in OpenStax A&P 2e Ch 6–9."
+     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
     }
    ],
    "clinical": {
     "t": "A fracture of the medial epicondyle, or long pressure on the elbow, can injure the ulnar nerve, weakening the small muscles of the hand and numbing the little finger.",
     "src": [],
-    "check": "Not in OpenStax A&P 2e Ch 6–9."
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "hook": {
     "t": "The “funny bone” is not a bone: it is the ulnar nerve behind the medial epicondyle.",
     "src": [],
-    "check": "Not in OpenStax A&P 2e Ch 6–9."
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "trap": {
     "t": "Only the ulnar nerve lies behind the medial epicondyle: the median nerve crosses in front of the elbow, and the radial nerve lies on the lateral side.",
     "src": [],
-    "check": "Not in OpenStax A&P 2e Ch 6–9."
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "source": "OpenStax A&P 2e, 8.2 Bones of the Upper Limb (bone); nerve relations await an approved source"
   },
@@ -294,14 +294,14 @@
     "src": [
      "s8-2#fs-id2110691"
     ],
-    "check": "The course of the axillary nerve is not in OpenStax A&P 2e Ch 6–9."
+    "check": "The course of the axillary nerve is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "simpler": {
     "t": "The surgical neck is the narrow part just below the ball of the humerus. A nerve wraps around it, so breaking the bone there can damage the nerve.",
     "src": [
      "s8-2#fs-id2110691"
     ],
-    "check": "The course of the axillary nerve is not in OpenStax A&P 2e Ch 6–9."
+    "check": "The course of the axillary nerve is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "depth": [
     {
@@ -312,29 +312,31 @@
     },
     {
      "t": "The posterior circumflex humeral artery runs around the neck with the nerve.",
-     "src": [],
-     "check": "Not in OpenStax A&P 2e Ch 6–9."
+     "src": [
+      "s20-5#fs-id1595346"
+     ],
+     "check": "OpenStax mentions the humeral circumflex arteries near the head of the humerus; that the posterior one winds around the surgical neck with the axillary nerve is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
     },
     {
      "t": "The axillary nerve supplies the deltoid and teres minor.",
      "src": [],
-     "check": "Not in OpenStax A&P 2e Ch 6–9."
+     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
     },
     {
      "t": "It supplies the skin over the lower deltoid (the “regimental badge” area).",
      "src": [],
-     "check": "Not in OpenStax A&P 2e Ch 6–9."
+     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
     },
     {
      "t": "Lower down, the radial nerve lies in the radial groove, at risk in shaft fractures.",
      "src": [],
-     "check": "Not in OpenStax A&P 2e Ch 6–9."
+     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
     }
    ],
    "clinical": {
     "t": "Damage to the axillary nerve weakens the deltoid, so raising the arm out to the side is weak, with numbness over the lower outer shoulder.",
     "src": [],
-    "check": "Not in OpenStax A&P 2e Ch 6–9."
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "trap": {
     "t": "Surgical neck (below the tubercles, often fractured, axillary nerve) is not the anatomical neck (the margin of the smooth head).",

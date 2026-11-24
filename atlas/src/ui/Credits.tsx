@@ -79,6 +79,36 @@ export function Credits({ onBack }: { onBack: () => void }) {
           </section>
 
           <section>
+            <h3>OpenStax Anatomy and Physiology 2e</h3>
+            <p>
+              Textbook chapters 6–9 (bone tissue, axial and appendicular skeleton, joints), 12–16 (the nervous system) and 20 (blood
+              vessels and circulation) are adapted from <em>Anatomy and Physiology 2e</em> by J. Gordon Betts et al., OpenStax, licensed
+              under{' '}
+              <a href={BY} target="_blank" rel="noreferrer">
+                CC BY 4.0
+              </a>
+              .{' '}
+              <a href="https://openstax.org/details/books/anatomy-and-physiology-2e" target="_blank" rel="noreferrer">
+                openstax.org/details/books/anatomy-and-physiology-2e
+              </a>
+            </p>
+            <p className="muted small">
+              Taken from the book’s source repository at the last release under CC BY 4.0 (commit b0058a7); later releases use a
+              different licence. The changes Atlas made are listed at the end of every textbook section. Exam-style questions and
+              flashcards cite the paragraphs they draw on.
+            </p>
+          </section>
+
+          <section>
+            <h3>Gray’s Anatomy (1918)</h3>
+            <p>
+              The textbook’s Classic reference: Henry Gray, <em>Anatomy of the Human Body</em>, 20th edition, revised by Warren H. Lewis
+              (Lea &amp; Febiger, 1918), in the public domain. Some of its terms and facts are out of date; Atlas uses it as a secondary
+              source only.
+            </p>
+          </section>
+
+          <section>
             <h3>Software</h3>
             <p className="muted small">
               three.js (MIT), React and React Three Fiber (MIT), Zustand (MIT), Draco decoder (Apache 2.0), glTF-Transform (MIT),

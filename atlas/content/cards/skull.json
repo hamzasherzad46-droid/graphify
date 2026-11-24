@@ -63,12 +63,12 @@
     "src": [
      "s7-2#fs-id1882870"
     ],
-    "check": "Transsphenoidal surgery is not in OpenStax A&P 2e Ch 6–9; the sinus position is."
+    "check": "Transsphenoidal surgery is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the sinus position is."
    },
    "hook": {
     "t": "“Sphenoid” comes from the Greek for wedge: it is wedged between the other bones of the skull.",
     "src": [],
-    "check": "Etymology (Greek sphēn, wedge) is not in OpenStax A&P 2e Ch 6–9."
+    "check": "Etymology (Greek sphēn, wedge) is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "trap": {
     "t": "Do not confuse it with the ethmoid, the smaller midline bone in front of it whose cribriform plates form the roof of the nasal cavity.",
@@ -131,7 +131,7 @@
    "clinical": {
     "t": "Raised pressure inside the skull can push the lowest part of the cerebellum (the tonsils) down through the foramen magnum, compressing the brainstem: “coning”, which can stop breathing.",
     "src": [],
-    "check": "Tonsillar herniation is not in OpenStax A&P 2e Ch 6–9."
+    "check": "Tonsillar herniation is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "trap": {
     "t": "The foramen magnum is in the occipital bone, not the temporal bone: the temporal bone’s opening beside the posterior fossa is the internal acoustic meatus.",
@@ -198,7 +198,7 @@
     {
      "t": "It is a branch of the maxillary artery.",
      "src": [],
-     "check": "Not in OpenStax A&P 2e Ch 6–9."
+     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
     }
    ],
    "clinical": {
@@ -211,7 +211,7 @@
    "trap": {
     "t": "An extradural haematoma is usually arterial (middle meningeal artery); a subdural haematoma is usually venous (bridging veins).",
     "src": [],
-    "check": "Not in OpenStax A&P 2e Ch 6–9."
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "source": "OpenStax A&P 2e, 7.2 The Skull"
   },
@@ -267,8 +267,11 @@
    ],
    "clinical": {
     "t": "A fracture through the cribriform plate can tear the olfactory nerve fibres, causing loss of smell, and can let cerebrospinal fluid leak from the nose.",
-    "src": [],
-    "check": "Not in OpenStax A&P 2e Ch 6–9."
+    "src": [
+     "s14-1#fs-id2817840",
+     "s13-4#fs-id1521213"
+    ],
+    "check": "OpenStax confirms that head trauma can shear the olfactory axons and cause loss of smell (anosmia); a fracture of the cribriform plate and a leak of cerebrospinal fluid from the nose are not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    "trap": {
     "t": "Do not mix up the cribriform plate (ethmoid bone, smell) with the optic canal (sphenoid bone, sight).",

@@ -67,7 +67,7 @@ export function LessonsScreen() {
             <ChevronRightIcon className="topic-go" />
           </button>
         </div>
-        <p className="muted small lesson-foot">Skeletal system now. Muscles, vessels and other systems follow.</p>
+        <p className="muted small lesson-foot">Skeletal system now, with nervous system and blood vessel chapters to read. Muscles and other systems follow.</p>
       </div>
     </div>
   )

@@ -91,6 +91,10 @@ describe('layered flashcards', () => {
     for (const c of cards) if (c.frontView && c.type !== 'identify') expect(norm(c.answer), c.id).not.toContain(norm(BONE_BY_ID.get(c.bone)!.name))
   })
 
+  it('names a bone exactly as the bone database does (one source of truth)', () => {
+    for (const c of cards) if (c.type === 'identify') expect(c.answer, c.id).toBe(BONE_BY_ID.get(c.bone)!.name)
+  })
+
   it('writes British English', () => {
     for (const c of cards) for (const t of [c.front, c.answer, c.objective, ...factsOf(c).map((f) => f.t)]) expect(t, c.id).not.toMatch(AMERICAN)
   })

@@ -35,7 +35,7 @@ export function authorPrompt(bones: BoneRef[]): string {
 You are the first examiner. You receive photographs, a PDF or typed text of the student's notes, and settings for the set.
 
 1. Read the notes. Write a faithful transcript of what is there, in reading order. Keep the student's words; mark anything you cannot read as [illegible]. Never invent content that is not in the notes.
-2. Decide the status. "unreadable": too blurred, dark or partial to read reliably. "not_anatomy": not anatomy study notes (for example other subjects, or no notes at all). In both cases write one helpful sentence in "message", and return no questions. Otherwise "ok" with an empty message.
+2. Decide the status. "unreadable": too blurred, dark or partial to read reliably. "not_anatomy": not anatomy study notes (for example other subjects, or no notes at all). In both cases write one helpful sentence in "message", and return no questions. Otherwise, "ok" with an empty message.
 3. Note any factual errors in the notes under corrections.
 4. Write the requested number of questions, of the requested types and level. If the notes are too short to support that many good questions, write fewer good ones rather than padding.
 

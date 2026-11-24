@@ -5,14 +5,17 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run check:text && tsc -b && vite build",
     "preview": "vite preview",
-    "build:preview": "tsc -b && vite build --mode artifact && node scripts/preview-assets.mjs",
+    "build:preview": "npm run check:text && tsc -b && vite build --mode artifact && node scripts/preview-assets.mjs",
     "lint": "eslint .",
     "test": "vitest run",
     "content": "python3 scripts/bones_src.py",
     "model": "node scripts/build-skeleton.mjs",
-    "cap:sync": "npm run build && npx cap sync"
+    "cap:sync": "npm run build && npx cap sync",
+    "check:text": "node scripts/textcheck.mjs",
+    "check:grammar": "node scripts/textcheck.mjs --grammar",
+    "dictionary": "node scripts/build-dictionary.mjs"
   },
   "dependencies": {
     "@fontsource-variable/inter": "^5.3.0",
@@ -36,14 +39,17 @@
     "@types/three": "^0.187.0",
     "@vitejs/plugin-react": "^6.3.0",
     "@xmldom/xmldom": "^0.9.12",
+    "dictionary-en-gb": "^3.0.0",
     "eslint": "^10.15.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.8",
     "globals": "^17.14.0",
     "jsdom": "^31.0.1",
+    "nspell": "^2.1.5",
     "sharp": "^0.35.5",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.73.0",
+    "varcon": "^1.0.1",
     "vite": "^8.3.8",
     "vite-plugin-pwa": "^2.0.0",
     "vitest": "^5.1.1"

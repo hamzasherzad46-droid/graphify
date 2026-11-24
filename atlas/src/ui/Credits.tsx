@@ -40,7 +40,7 @@ export function Credits({ onBack }: { onBack: () => void }) {
             </p>
             <p className="muted small">
               Used: the male skeleton (all 206 bones, teeth, costal cartilages) and intervertebral discs. Modified for Atlas: bones
-              renamed to Atlas ids, the three parts of the sternum merged, meshes simplified and re-centred, units converted to metres,
+              renamed to Atlas IDs, the three parts of the sternum merged, meshes simplified and re-centred, units converted to metres,
               Draco-compressed.
             </p>
           </section>

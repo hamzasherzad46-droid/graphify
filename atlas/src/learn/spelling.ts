@@ -10,8 +10,8 @@ import { BONE_BY_ID } from '../data/bones'
  */
 export const EVERYDAY = new Set(
   [
-    'heel bone', 'heelbone', 'collarbone', 'collar bone', 'tailbone', 'tail bone', 'thigh bone', 'thighbone', 'calf bone',
-    'kneecap', 'knee cap', 'shoulder blade', 'shoulderblade', 'breastbone', 'breast bone', 'ankle bone', 'anklebone',
+    'heel bone', 'collarbone', 'collar bone', 'tailbone', 'tail bone', 'thigh bone', 'thighbone', 'calf bone',
+    'kneecap', 'knee cap', 'shoulder blade', 'breastbone', 'breast bone', 'ankle bone', 'anklebone',
     'shin bone', 'shinbone', 'cheekbone', 'cheek bone', 'lower jaw', 'lower jaw bone', 'jaw bone', 'jawbone',
     'upper jaw', 'upper jaw bone', 'anvil', 'hammer', 'stirrup',
   ].map(normalize),

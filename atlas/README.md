@@ -327,6 +327,32 @@ Lessons → **My Highlights** / **My Notes** (with counts).
 - Tests (`src/learn/mycards.test.ts`): the sentence around a phrase, fill-in-the-blank cards from the full paragraph
   and from the saved context alone, whole-sentence highlights, note cards.
 
+## Spelling, consistency and grammar (content upgrade, step 1)
+
+One standard everywhere: **British English with -ise spellings**, checked over every piece of text the app shows
+(content, textbook, Gray's, interface, the Notes to Exam server's prompts and messages).
+
+- **Dictionary** (`data/dictionary.json`, built by `npm run dictionary`): an en-GB base (dictionary-en-gb, via nspell)
+  plus every word of Terminologia Anatomica (TA98 and TA2: English converted to British spelling, Latin as
+  published; from Wikidata, CC0, saved in `data/sources/terminologia.json` by `scripts/fetch-terminologia.mjs`).
+  Hand-kept sections: `approved` (by a person), `proposed` (added by Claude, awaiting approval; they pass meanwhile),
+  `historical` (accepted only in Gray's 1918 text), `decisions` (fetus, grey, disc, -ise), `keep` (British medical
+  spellings that differ from general British: specialty, sulfur), `forms` (one form per word: brainstem,
+  anteroposterior, rib cage), `names` (proper names kept as their owners spell them) and `corrections` (typing errors
+  in the imported books).
+- **Check** (`npm run check:text`, run before every build and inside `npm test`): fails on any word in no dictionary,
+  any American spelling (VarCon's verified pairs and safe medical rules: hem- → haem- but never hemi-, -emia → -aemia,
+  -ize → -ise), a broken decision, a form the dictionary rules out, or a bone or landmark name written in another
+  case. Writes `docs/text-report.md`, with everything awaiting approval.
+- **Grammar**: fast rules in every check; `npm run check:grammar` adds LanguageTool (en-GB, LGPL), run offline from
+  jars that `tools/languagetool/pom.xml` fetches into `.cache/languagetool`.
+- **Imports**: both importers apply the same standard (`scripts/lib/textnorm.mjs`) and list it among their changes.
+  OpenStax: British spelling, one form per word, typing errors corrected, and spaces kept at the edges of italics.
+  Gray's: æ and œ written ae and oe, Windows-1252 characters decoded (dashes, quotes, œ), transcription errors
+  corrected, and a 1918 table ranking human populations by skull indices (discredited race typology, with terms now
+  recognised as offensive) replaced by a note.
+- The Spelling Quiz accepts the alternative spellings listed for each bone and always shows the official name.
+
 ## Notes to Exam
 
 Home → **Notes to Exam**. The student photographs their own anatomy notes (or uploads photos or a PDF, or types

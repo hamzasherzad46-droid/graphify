@@ -13,6 +13,7 @@ import sharp from 'sharp'
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { linker } from './lib/bonelink.mjs'
+import { normaliseDeep, summary as spellingSummary } from './lib/textnorm.mjs'
 
 export const PIN = 'b0058a743bdd2cc08196abaaa7d5469970c0d80c'
 const RAW = `https://raw.githubusercontent.com/openstax/osbooks-anatomy-physiology/${PIN}`
@@ -41,11 +42,13 @@ const CHAPTERS = [
 const CHANGES = [
   'Sections are grouped by Atlas topic.',
   'The chapter review summary of each section is shown at its top as key points: the first sentence of each summary paragraph, with the rest of the paragraph one tap away.',
+  'Spelling follows British English (for example haemorrhage, fibre, colour), with one form for each word across Atlas (for example brainstem, anteroposterior).',
+  'Typing errors in the source are corrected; each correction is listed in Atlas’s spelling dictionary.',
   'Links to videos, interactive exercises and external websites are removed.',
   'Three review questions per section are shown as a quick check; the other review and critical thinking questions are used among the exam-style questions.',
   'Bone names and bone landmarks link to the Atlas 3D model.',
   'Figures are resized and re-encoded for the web; their content is unchanged.',
-  'Otherwise the text, figures, captions and key terms are as published.',
+  'Otherwise, the text, figures, captions and key terms are as published.',
 ]
 
 async function cached(path, binary = false) {
@@ -84,7 +87,13 @@ function inline(node, ctx) {
     if (c.nodeType === 3) push(clean(c.data))
     else if (c.nodeType !== 1) continue
     else if (c.localName === 'term') push({ k: 'term', t: textOf(c) })
-    else if (c.localName === 'emphasis') push({ k: c.getAttribute('effect') === 'bold' ? 'strong' : 'em', t: textOf(c) })
+    else if (c.localName === 'emphasis') {
+      // Spaces at the edge of an emphasis ("<emphasis>not </emphasis>activate") belong to the text around it.
+      const raw = clean(c.textContent ?? '')
+      if (/^\s/.test(raw)) push(' ')
+      push({ k: c.getAttribute('effect') === 'bold' ? 'strong' : 'em', t: raw.trim() })
+      if (/\s$/.test(raw)) push(' ')
+    }
     else if (c.localName === 'sup' || c.localName === 'sub') push({ k: c.localName, t: textOf(c) })
     else if (c.localName === 'link') {
       const t = textOf(c)
@@ -250,7 +259,8 @@ for (const ch of CHAPTERS) {
     const q = questions(doc, ctx)
     const num = sectionNumber.get(m)
     const id = k === 0 ? `ch${ch.num}` : `s${ch.num}-${k}`
-    const section = {
+    const section = normaliseDeep(
+      {
       id,
       num,
       title: k === 0 ? 'Introduction' : titles.get(m),
@@ -272,8 +282,10 @@ for (const ch of CHAPTERS) {
         license: 'CC BY 4.0',
         url: 'https://openstax.org/details/books/anatomy-and-physiology-2e',
       },
-      changes: CHANGES,
-    }
+      },
+      'openstax',
+    )
+    section.changes = CHANGES
     writeFileSync(join(OUT, `${id}.json`), JSON.stringify(section))
     for (const i of ctx.images) allImages.add(i)
     index.push({ id, num, title: section.title, chapter: ch.num, chapterTitle: ch.title, topic, keyPoints: section.keyPoints.length, figures: body.filter((b) => b.t === 'fig').length, words: JSON.stringify(body).split(/\s+/).length, bones: link.bonesIn(body) })
@@ -295,5 +307,5 @@ for (const src of allImages) {
   have.delete(name)
 }
 for (const stale of have) rmSync(join(MEDIA, stale))
-console.log(`${index.length} sections, ${allImages.size} figures (${(bytes / 1e6).toFixed(1)} MB)`)
+console.log(`${index.length} sections, ${allImages.size} figures (${(bytes / 1e6).toFixed(1)} MB); ${spellingSummary()}`)
 if (REPORT) link.report()

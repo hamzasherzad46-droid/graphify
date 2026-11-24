@@ -84,7 +84,7 @@ export const figureUrl = (src: string) => `${import.meta.env.BASE_URL}${src}`
 /** Gray's Anatomy (1918) for a section: the bones' chapters from the classic text. */
 export interface Classic {
   section: string
-  source: { work: string; author: string; edition: string; publisher: string; year: number; license: string; transcription: string }
+  source: { work: string; author: string; edition: string; publisher: string; year: number; license: string; transcription: string; changes: string }
   entries: { slug: string; title: string; blocks: Block[] }[]
 }
 const classics = import.meta.glob<Classic>('../../content/classic/*.json', { import: 'default' })

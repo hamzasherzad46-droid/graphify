@@ -10,6 +10,7 @@ import sharp from 'sharp'
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { linker } from './lib/bonelink.mjs'
+import { normaliseDeep, summary as spellingSummary } from './lib/textnorm.mjs'
 
 const BASE = 'https://www.theodora.com/anatomy/'
 const ROOT = join(import.meta.dirname, '..')
@@ -41,13 +42,13 @@ async function cached(name, binary = false) {
   return binary ? readFileSync(file) : readFileSync(file, 'latin1')
 }
 
+const CP1252 = { 128: '€', 130: '‚', 131: 'ƒ', 132: '„', 133: '…', 134: '†', 135: '‡', 136: 'ˆ', 137: '‰', 138: 'Š', 139: '‹', 140: 'Œ', 142: 'Ž', 145: '‘', 146: '’', 147: '“', 148: '”', 149: '•', 150: '–', 151: '—', 152: '˜', 153: '™', 154: 'š', 155: '›', 156: 'œ', 158: 'ž', 159: 'Ÿ' }
 const decode = (s) =>
   s
     .replace(/&#(\d+);/g, (_, n) => {
       const c = Number(n)
-      // Windows-1252 punctuation written as numeric entities.
-      const cp = { 150: '–', 151: '—', 145: '‘', 146: '’', 147: '“', 148: '”', 133: '…' }[c]
-      return cp ?? String.fromCodePoint(c)
+      // Windows-1252 characters written as numeric entities (128–159 are not Unicode code points for text).
+      return CP1252[c] ?? String.fromCodePoint(c)
     })
     .replace(/&nbsp;/g, ' ')
     .replace(/&amp;/g, '&')
@@ -79,6 +80,12 @@ function inline(html) {
     last = m.index + m[0].length
   }
   push(decode(s.slice(last).replace(/<[^>]+>/g, '')))
+  // A run-in heading that has lost its full stop and dash ("by Age</B>At birth"): restore them, as elsewhere in Gray's.
+  for (let i = 1; i < out.length; i++) {
+    if (out[i - 1]?.k !== 'strong' || !/[a-z]$/.test(out[i - 1].t)) continue
+    if (typeof out[i] === 'string' && /^[A-Z][a-z]/.test(out[i])) out[i] = `.—${out[i]}`
+    else if (out[i]?.k === 'strong' && /^[A-Z][a-z]/.test(out[i].t)) out.splice(i, 0, '.—') // "by Age</B><B>At birth"
+  }
   // A few stray "<" in the source HTML (e.g. "Cervicales).<The") are typos, not text.
   for (let i = 0; i < out.length; i++) if (typeof out[i] === 'string') out[i] = out[i].replace(/<(?=[A-Za-z])/g, '')
   const tidy = out.map((x) => (typeof x === 'string' ? x.replace(/\s+/g, ' ') : x))
@@ -130,6 +137,25 @@ async function page(slug) {
   return { slug, title, blocks, images }
 }
 
+/**
+ * Gray's 1918 follows its cranial indices with a table (after Duckworth) ranking human populations by skull shape. That
+ * racial typology is discredited, and the table uses terms now recognised as offensive: it is replaced by a note. The
+ * indices themselves, which are anatomy, are kept.
+ */
+function withoutRaceTable(blocks) {
+  const text = (b) => (b.inl ? plain(b.inl) : '')
+  const start = blocks.findIndex((b) => text(b).startsWith('The following table, modified from that given by Duckworth'))
+  if (start < 0) return blocks
+  const end = blocks.findIndex((b, k) => k > start && text(b).startsWith('The chief function of the skull'))
+  if (end < 0) throw new Error('Gray’s: the end of the skull classification table was not found')
+  const note = {
+    t: 'p',
+    id: blocks[start].id,
+    inl: ['[Atlas: Gray’s 1918 text here gives a table ranking human populations by these skull indices. That racial typology has been discredited, and the table uses terms now recognised as offensive, so it is left out. The indices themselves are described above.]'],
+  }
+  return [...blocks.slice(0, start), note, ...blocks.slice(end)]
+}
+
 const link = linker(JSON.parse(readFileSync(join(ROOT, 'content', 'landmarks.json'), 'utf8')).landmarks)
 rmSync(OUT, { recursive: true, force: true })
 mkdirSync(OUT, { recursive: true })
@@ -142,7 +168,7 @@ for (const [section, slugs] of Object.entries(MAP)) {
     const p = await page(slug)
     for (const [src, name] of p.images) wanted.set(name, src)
     paras += p.blocks.filter((b) => b.t === 'p').length
-    entries.push({ slug: p.slug, title: p.title, blocks: link.blocks(p.blocks) })
+    entries.push(normaliseDeep({ slug: p.slug, title: p.title, blocks: link.blocks(withoutRaceTable(p.blocks)) }, 'grays'))
   }
   writeFileSync(
     join(OUT, `${section}.json`),
@@ -156,6 +182,7 @@ for (const [section, slugs] of Object.entries(MAP)) {
         year: 1918,
         license: 'Public domain',
         transcription: 'Bartleby.com (2000), read from www.theodora.com/anatomy',
+        changes: 'Spelling follows modern British English: æ and œ are written ae and oe (vertebrae), American spellings are made British, transcription errors are corrected and lost hyphens restored (one-half). One table is left out (see the note in “The Interior of the Skull”).',
       },
       entries,
     }),
@@ -193,4 +220,4 @@ if (missing.size)
     writeFileSync(join(OUT, f), JSON.stringify(j))
   }
 const bytes = [...wanted.keys()].filter((f) => !missing.has(f)).reduce((s, f) => s + readFileSync(join(MEDIA, f)).length, 0)
-console.log(`${Object.keys(MAP).length} sections, ${Object.values(MAP).flat().length} pages, ${paras} paragraphs, ${wanted.size} figures (${(bytes / 1e6).toFixed(1)} MB)`)
+console.log(`${Object.keys(MAP).length} sections, ${Object.values(MAP).flat().length} pages, ${paras} paragraphs, ${wanted.size} figures (${(bytes / 1e6).toFixed(1)} MB); ${spellingSummary()}`)

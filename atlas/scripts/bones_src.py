@@ -373,7 +373,7 @@ paired("scapula", "Scapula", "Scapula", "Upper limb", "flat",
         "Superior, medial and lateral borders", "Suprascapular notch"],
        ["clavicle_{s}", "humerus_{s}"],
        "Damage to the long thoracic nerve paralyses serratus anterior and causes a winged scapula.",
-       ["shoulder blade", "shoulderblade"], subregion="Shoulder girdle")
+       ["shoulder blade"], subregion="Shoulder girdle")
 
 paired("humerus", "Humerus", "Humerus", "Upper limb", "long",
        ["Head, anatomical and surgical necks", "Greater and lesser tubercles, intertubercular sulcus",
@@ -543,7 +543,7 @@ TARSALS = [
                                              "Sustentaculum tali", "Fibular (peroneal) trochlea", "Facets for the talus"],
      ["talus_{s}", "cuboid_{s}"],
      "Falls from height cause calcaneal fractures, often with associated lumbar spine fractures.",
-     ["calcaneum", "heel bone", "heelbone", "os calcis"]),
+     ["calcaneum", "heel bone", "os calcis"]),
     ("navicular", "Navicular", "Os naviculare", ["Boat-shaped, on the medial side of the foot", "Navicular tuberosity (tibialis posterior)",
                                                  "Concave facet for the head of the talus"],
      ["talus_{s}", "medial_cuneiform_{s}", "intermediate_cuneiform_{s}", "lateral_cuneiform_{s}", "cuboid_{s}"],

@@ -192,8 +192,8 @@ function ClassicReference({ id, onBone, onZoom, openTo }: { id: string; onBone: 
         <>
           <p className="classic-note">
             From Henry Gray’s <em>Anatomy of the Human Body</em>, {data.source.edition} (1918), in the public domain. Some terminology is historical
-            (for example <em>os innominatum</em>, <em>vertebræ</em>, <em>lateralward</em>, and older names of muscles and landmarks), and a few facts have
-            since been revised: for exams, use the terms in the main text above.
+            (for example <em>os innominatum</em>, <em>lateralward</em>, and older names of muscles and landmarks), and a few facts have since been revised:
+            for exams, use the terms in the main text above. {data.source.changes}
           </p>
           {data.entries.map((e) => (
             <details key={e.slug} className="classic-entry" open={entryOf(e) || undefined}>

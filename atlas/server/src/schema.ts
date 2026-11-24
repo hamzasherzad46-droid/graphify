@@ -37,7 +37,7 @@ export const authorJsonSchema = (boneIds: string[]) => ({
   required: ['status', 'message', 'transcript', 'title', 'corrections', 'questions'],
   properties: {
     status: { type: 'string', enum: [...STATUSES] },
-    message: { type: 'string', description: 'For a status other than ok: one sentence for the student. Otherwise empty.' },
+    message: { type: 'string', description: 'For a status other than ok: one sentence for the student. Otherwise, empty.' },
     transcript: { type: 'string', description: 'A faithful transcription of the notes, with [illegible] where words cannot be read.' },
     title: { type: 'string', description: 'A short title for the set, from the notes (for example "Bones of the forearm").' },
     corrections: {

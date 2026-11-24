@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- LanguageTool (LGPL 2.1) for Atlas's grammar check. `mvn -q dependency:copy-dependencies` puts the jars in
+     ../../.cache/languagetool; scripts/grammar.mjs runs it offline with British English rules. -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.atlas</groupId>
+  <artifactId>atlas-grammar</artifactId>
+  <version>1.0</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.languagetool</groupId>
+      <artifactId>language-en</artifactId>
+      <version>6.8</version>
+    </dependency>
+    <dependency>
+      <groupId>org.languagetool</groupId>
+      <artifactId>languagetool-commandline</artifactId>
+      <version>6.8</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <outputDirectory>${project.basedir}/../../.cache/languagetool</outputDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

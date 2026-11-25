@@ -6282,3 +6282,8 @@ textarea:focus-visible {
   white-space: pre-line;
   font-size: 14px;
 }
+
+/* A glossary term and the punctuation touching it stay on one line. */
+.term-wrap {
+  white-space: nowrap;
+}

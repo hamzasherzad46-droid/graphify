@@ -32,21 +32,35 @@ function useTerms(texts: string[]): Piece[][] {
   }, [re, key])
 }
 
+/** Opening punctuation that belongs with the term after it, and closing punctuation that belongs with the term before it. */
+const OPENING = /[(“‘[]+$/
+const CLOSING = /^[)”’\]:;,.!?]+/
+
+/**
+ * Text with tappable glossary terms. A term and the punctuation touching it never split across lines
+ * (“(tympanic membrane).” stays together).
+ */
 function Pieces({ pieces }: { pieces: Piece[] }) {
   const { open } = useContext(Gloss)
-  return (
-    <>
-      {pieces.map((p, k) =>
-        typeof p === 'string' ? (
-          p
-        ) : (
-          <button key={k} type="button" className="term" onClick={() => open(p.term)} aria-label={`${p.text}: show the definition`}>
-            {p.text}
-          </button>
-        ),
-      )}
-    </>
-  )
+  const out: ReactNode[] = []
+  const text = pieces.map((p) => (typeof p === 'string' ? p : null))
+  pieces.forEach((p, k) => {
+    if (typeof p === 'string') return
+    const before = text[k - 1]?.match(OPENING)?.[0] ?? ''
+    const after = text[k + 1]?.match(CLOSING)?.[0] ?? ''
+    if (before) text[k - 1] = text[k - 1]!.slice(0, -before.length)
+    if (after) text[k + 1] = text[k + 1]!.slice(after.length)
+    out[k] = (
+      <span key={k} className="term-wrap">
+        {before}
+        <button type="button" className="term" onClick={() => open(p.term)} aria-label={`${p.text}: show the definition`}>
+          {p.text}
+        </button>
+        {after}
+      </span>
+    )
+  })
+  return <>{pieces.map((p, k) => (typeof p === 'string' ? text[k] : out[k]))}</>
 }
 
 const Dagger = ({ f }: { f: { check?: string } }) =>

@@ -132,7 +132,7 @@ bone("ethmoid_bone", "Ethmoid bone", "Os ethmoidale", "Skull", "midline", "irreg
      ["frontal_bone", "sphenoid_bone", "vomer", "nasal_bone_left", "nasal_bone_right", "maxilla_left", "maxilla_right",
       "lacrimal_bone_left", "lacrimal_bone_right", "palatine_bone_left", "palatine_bone_right",
       "inferior_nasal_concha_left", "inferior_nasal_concha_right"],
-     "Cribriform plate fracture can cause CSF rhinorrhoea and loss of smell (anosmia).",
+     "Cribriform plate fracture can cause cerebrospinal fluid (CSF) rhinorrhoea and loss of smell (anosmia).",
      subregion="Cranial bones")
 
 # =============================================================== SKULL — facial
@@ -494,7 +494,7 @@ for n in range(1, 6):
 # =============================================================== Pelvis
 
 paired("hip_bone", "Hip bone", "Os coxae", "Pelvis", "irregular",
-       ["Ilium, ischium and pubis fused at the acetabulum", "Iliac crest, ASIS and PSIS", "Acetabulum",
+       ["Ilium, ischium and pubis fused at the acetabulum", "Iliac crest, anterior superior iliac spine (ASIS) and posterior superior iliac spine (PSIS)", "Acetabulum",
         "Obturator foramen", "Greater and lesser sciatic notches", "Ischial tuberosity and ischial spine", "Pubic symphysis surface"],
        ["sacrum", "hip_bone_{o}", "femur_{s}"],
        "The ASIS is a key landmark for measuring leg length and locating the inguinal ligament.",

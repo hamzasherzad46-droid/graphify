@@ -1,16 +1,18 @@
 # Atlas text check
 
-15,185 pieces of text, 336,935 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 0 approved + 780 proposed.
+15,250 pieces of text, 338,130 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 0 approved + 180 proposed.
 
-**Result: PASS.** Unknown words: 0. American spellings: 0. Names written two ways: 0. Grammar rule hits: 8.
+**Result: PASS.** Unknown words: 0. American spellings: 0. Names written two ways or in the wrong case: 0. Abbreviations not written out at first use: 0. Grammar rule hits: 8; LanguageTool: 15.
 
 ## Spelling decisions (enforced)
 
-- **fetus**, not foetus: Standard in British medical writing, and the en-GB dictionary’s form.
+- **fetus**, not foetus: Standard in British medical writing, and the en-GB dictionary’s form; agreed.
 - **fetal**, not foetal: As fetus.
 - **grey**, not gray: British spelling; “Gray” stays only as the name (Henry Gray, Gray’s Anatomy).
 - **disc**, not disk: British anatomical spelling (intervertebral disc, optic disc).
 - **-ise**, not -ize: One standard for the whole app (organise, recognise, ossification is unaffected).
+- **specialty**, not speciality, specialities: British medical usage (NHS specialty training); agreed.
+- **sulfur**, not sulphur, sulphate, sulphates, sulphide, sulphuric: British medical and scientific usage (BNF, IUPAC): sulfur, sulfate, sulfide, sulfuric; agreed.
 - **specialty** kept: British medical usage (NHS specialty training), not general “speciality”.
 - **specialties** kept: As specialty.
 - **sulfur** kept: British medical and scientific usage (BNF, IUPAC), not general “sulphur”.
@@ -21,68 +23,99 @@
 
 ## One form per word (enforced; the left-hand form is never used)
 
-brain-stem → **brainstem** · brain stem → **brainstem** · brain-stems → **brainstems** · brain stems → **brainstems** · vertebro-chondral → **vertebrochondral** · vertebro-sternal → **vertebrosternal** · antero-posterior → **anteroposterior** · postero-lateral → **posterolateral** · postero-inferior → **posteroinferior** · postero-superior → **posterosuperior** · postero-medial → **posteromedial** · antero-lateral → **anterolateral** · antero-medial → **anteromedial** · antero-inferior → **anteroinferior** · antero-superior → **anterosuperior** · orbito-sphenoids → **orbitosphenoids** · orbito-sphenoid → **orbitosphenoid** · carotico-clinoid → **caroticoclinoid** · concavoconvex → **concavo-convex** · onehalf → **one-half** · cupshaped → **cup-shaped** · coneshaped → **cone-shaped** · demi-facets → **demifacets** · demi-facet → **demifacet** · mid-thoracic → **midthoracic** · over-production → **overproduction** · fingerlike → **finger-like** · brain-case → **braincase** · atlantooccipital → **atlanto-occipital** · disk → **disc** · disks → **discs** · homoeostasis → **homeostasis** · math → **maths** · Mom → **Mum** · grayscale → **greyscale** · centermost → **centremost** · zig-zag → **zigzag** · zig-zags → **zigzags** · dietician → **dietitian** · dieticians → **dietitians** · nonsteroidal → **non-steroidal** · nonathlete → **non-athlete** · nonresponsive → **non-responsive** · nonspecifically → **non-specifically** · nonrehearsed → **non-rehearsed** · nonconjugate → **non-conjugate** · ribcage → **rib cage** · seatbelt → **seat belt** · adrenalin → **adrenaline** · afterward → **afterwards**
+brain-stem → **brainstem** · brain stem → **brainstem** · brain-stems → **brainstems** · brain stems → **brainstems** · vertebro-chondral → **vertebrochondral** · vertebro-sternal → **vertebrosternal** · antero-posterior → **anteroposterior** · postero-lateral → **posterolateral** · postero-inferior → **posteroinferior** · postero-superior → **posterosuperior** · postero-medial → **posteromedial** · antero-lateral → **anterolateral** · antero-medial → **anteromedial** · antero-inferior → **anteroinferior** · antero-superior → **anterosuperior** · orbito-sphenoids → **orbitosphenoids** · orbito-sphenoid → **orbitosphenoid** · carotico-clinoid → **caroticoclinoid** · concavoconvex → **concavo-convex** · onehalf → **one-half** · cupshaped → **cup-shaped** · coneshaped → **cone-shaped** · demi-facets → **demifacets** · demi-facet → **demifacet** · mid-thoracic → **midthoracic** · over-production → **overproduction** · fingerlike → **finger-like** · brain-case → **braincase** · atlantooccipital → **atlanto-occipital** · disk → **disc** · disks → **discs** · homoeostasis → **homeostasis** · math → **maths** · Mom → **Mum** · grayscale → **greyscale** · centermost → **centremost** · zig-zag → **zigzag** · zig-zags → **zigzags** · dietician → **dietitian** · dieticians → **dietitians** · nonsteroidal → **non-steroidal** · nonathlete → **non-athlete** · nonresponsive → **non-responsive** · nonspecifically → **non-specifically** · nonrehearsed → **non-rehearsed** · nonconjugate → **non-conjugate** · ribcage → **rib cage** · seatbelt → **seat belt** · adrenalin → **adrenaline** · afterward → **afterwards** · zig zags → **zigzags**
 
 ## Corrections made to the imported books
 
 - **OpenStax:** “andenosine” → “adenosine”; “diecephalon” → “diencephalon”; “hyperhtermia” → “hyperthermia”; “invertebral” → “intervertebral”; “nintey” → “ninety”; “osteoctyes” → “osteocytes”; “ostegenic” → “osteogenic”; “propanolol” → “propranolol”; “Pouseille” → “Poiseuille”; “symphisis” → “symphysis”; “telecephalon” → “telencephalon”; “tempomandibular” → “temporomandibular”; “Korvinian” → “Korbinian”; “Creutzfeld-Jacob” → “Creutzfeldt–Jakob”; “ACH molecules” → “ACh molecules”; “80 mv” → “80 mV”; “anterio and lateral” → “anterior and lateral”; “intermural” → “intramural”; “Parasymphatho-mimetics” → “Parasympathomimetics”; “intercranial sinuses” → “intracranial sinuses”; “Latin root “effere”” → “Latin root “ferre””; “KHz” → “kHz”; “kidneys , called” → “kidneys, called”; “embryo,the heart” → “embryo, the heart”; “Creutzfeld–Jacob” → “Creutzfeldt–Jakob”
 - **Gray’s:** “andposterior” → “and posterior”; “assits” → “assists”; “clacaneofibular” → “calcaneofibular”; “covex” → “convex”; “Cribiform” → “Cribriform”; “internalcuneiform” → “internal cuneiform”; “machanical” → “mechanical”; “Obsturator” → “Obturator”; “Procéss” → “Process”; “triquetum” → “triquetrum”; “zyogmatic” → “zygomatic”; “Occipita bone” → “Occipital bone”; “tentorum” → “tentorium”; “area facians” → “area facialis”; “atlantoöccipital” → “atlanto-occipital”; “mastoöccipital” → “masto-occipital”; “petroöccipital” → “petro-occipital”; “zygomaticoörbital” → “zygomatico-orbital”; “proötic” → “prootic”; “raphé” → “raphe”; “sternebroe” → “sternebrae”; “fibuloe” → “fibulae”; “costoe” → “costae”; “is the the larger” → “is the larger”
 
-## Proposed words (780, awaiting approval; they pass the check meanwhile)
+## Words that match no source (awaiting your decision) (180)
 
-**Medical, scientific or Latin term.** (620)
+**OpenStax text: term or word** (57)
 
-absorber · acetylcholine · acetylcholinesterase · adduct · adducts · adenosine · adenylate · adipocytes · af · afterload · agnosia · agnosias · aldosterone · amacrine · aminobutyric · amyotrophic · anaphylactic · anaxonic · angioblasts · angiogenesis · angioreceptors · angiotensin · angiotensinogen · angulate · anosmia · anoxia · antecubital · anterograde · anteroinferior · anteroposterior · anterosuperior · antianxiety · anticholinergic · anticholinergics · antidiuretic · antipsychotic · appositional · arthroplasty · arthroun · articulus · astro · astrocyte · astrocytes · athero · autoregulation · autoregulatory · avascular · avulsion · axonal · axoplasm · backflow · baroreception · baroreceptor · baroreceptors · basale · basophils · biaxial · bifid · bifida · bilayer · biogenic · bisphosphonate · bisphosphonates · blocky · bottommost · braincase · calcaneum · calcidiol · calcis · calcitonin · calcitriol · callout · callouts · capsaicin · capsulitis · carboxyl · cardioacceleration · cardioaccelerator · cardiogenic · cardioinhibitor · cardiomotor · catecholamines · catheterisation · centremost · cerebro · cerebrocerebellum · chemoreceptor · chemoreceptors · chiasma · cholinergic · chondroblasts · chondrocyte · chondrocytes · chondroitin · chorion · chorionic · chromaffin · circumvallate · coccydynia · coelom · cofactor · cogito · collagenous · comminuted · comparator · contralateral · contralaterally · contrecoup · cortico · corticobulbar · corticosteroids · costo · counterblow · coxal · craniofacial · craniosacral · craniosynostosis · cribrum · crura · cul · cuneatus · cyclase · cyte · cytoarchitecture · cytosol · dacryocystorhinostomy · decussate · decussates · demifacet · demifacets · demineralisation · demyelinating · demyelination · dendritic · dendro · denervation · deoxygenated · dermatome · dermatomes · dia · diapedesis · diaphyseal · diarthrodial · diarthroses · diarthrosis · diarthrotic · dimenhydrinate · diploe · disinhibit · disinhibition · distalis · distensible · distractors · disynaptic · dorsiflexes · dorsoventrally · eccrine · ectoderm · ectodermal · ectopic · ef · effector · effectors · electrochemical · electrophysiology · embolus · embryologic · emesis · endarterectomy · endocytosis · endoderm · endosteal · endothelins · engrained · enkephalin · enkephalon · enteroviruses · enzymatically · ependymal · epi · equilibrate · erythematosus · erythropoiesis · erythropoietin · eversion · everted · excitatory · exocytosis · expiratory · exteroceptor · extradural · extrapyramidal · fasciculation · femoropatellar · fenestrated · ferre · fibrocartilaginous · flavum · flickr · fluorapatite · foosball · foveal · glia · glial · glucocorticoid · glutamate · glutamatergic · gly · glycine · glycinergic · gnosis · gonial · graphaesthesia · greenstick · greyscale · guanosine · gustation · haemangioblasts · haematoma · haematopoiesis · haemostasis · haemostatic · hemianopia · hemisection · hindbrain · histologically · homunculus · hyaline · hyaluronic · hydrolase · hydrostatic · hydroxyapatite · hydroxyl · hyperaldosteronism · hypercalcaemia · hypercontractility · hyperextension · hyperflexia · hyperflexion · hyperpolarisation · hyperpolarisations · hyperpolarise · hyperpolarised · hyperpolarises · hyperpolarising · hyperthermia · hypervolaemia · hypocalcaemia · hypokinetic · hypophyseal · hypotension · hypotonicity · hypovolaemia · hypovolaemic · hypoxaemia · hypoxia · imperfecta · incoordination · ine · infoldings · innominate · innominatum · inotropic · insipidus · interaural · intercellular · interneuron · interneurons · internuclear · interoception · interoceptor · interocular · interventional · interzone · intorsion · intracellular · intramembranous · intraparenchymal · invagination · ionotropic · ipsilateral · ipsilaterally · ischial · juxtaglomerular · kah · kephalon · ketamine · ketoacidosis · kinaesthesia · kinaesthetic · lah · lamella · lamellae · lamellar · lamellated · laminectomy · lateralisation · laterality · lateralward · licensure · ligand · ligands · lipoproteins · lobectomy · lyses · lytic · macromolecules · macrophage · malar · massa · mastoiditis · mechanoreception · mechanoreceptor · mechanoreceptors · mediolaterally · medullar · melanocytes · meningocele · merocrine · mesenchymal · mesenchyme · mesoderm · mesodermal · metabotropic · metaphyseal · metaphysic · metarteriole · metarterioles · metoprolol · microcirculation · microelectrode · microglia · microglial · micrograph · microvilli · midface · midsagittal · midsagittally · midshaft · midthoracic · millivolts · mineralisation · modulatory · monocytes · monophosphate · monosaccharides · monosynaptic · moveable · mucosal · multangular · multiaxial · multimodal · multinucleated · multipolar · multisensory · muscarine · muscarinic · mydriasis · myel · myelin · myelinated · myelinating · myelination · myelomeningocele · myogenic · natriuretic · nephr · nephrine · neuraxis · neuroanatomy · neuroaxis · neurochemicals · neurochemistry · neurodegenerative · neurodiagnostic · neuroectoderm · neuroeffector · neuroendocrine · neuroepithelium · neurogenic · neuromodulators · neuromuscular · neuropathology · neuropeptide · neuropeptides · neurophysiologist · neurophysiology · neuropsychologist · neuroscientist · neurosecretory · nicotinic · nociception · nociceptor · nociceptors · noradrenaline · norepinephrine · notochord · occulta · odontoid · odorant · olfaction · oligo · oligodendrocyte · oligodendrocytes · oncotic · ophthalmoplegia · ophthalmoscope · opposable · opsin · opsins · organismal · ortho · orthostatic · osmolarity · osmoreceptor · osmoreceptors · ossicular · oste · osteoblast · osteoblastic · osteoblasts · osteoclast · osteoclasts · osteocyte · osteocytes · osteogenesis · osteogenic · osteoid · osteology · osteon · osteons · osteoporotic · osteoprogenitor · otitis · otosclerosis · outpocket · outpocketings · overconsumption · overlearned · paed · parasympathomimetic · parasympathomimetics · peptidases · percept · perfuse · peri · perilunate · peroneal · peroneus · phagocytosis · phenylephrine · phosphatase · phospholipase · phospholipid · phospholipids · photoisomerisation · photomicrograph · photopigment · photopigments · photoreception · photoreceptor · photoreceptors · phototransduction · pilocarpine · pinky · planus · plegic · pluripotent · pneumothorax · polyaxial · polycythaemia · ponto · postcapillary · posteroinferior · praxis · pre · precapillary · preload · premotor · pressor · presynaptic · proliferative · prominens · pronated · proprioception · proprioceptive · proprioceptor · proprioceptors · prosopa · prosopagnosia · prostaglandins · proteopathy · proximalis · pseudoephedrine · racquet · radiograph · radiographs · radiologic · reabsorption · regionalisation · renin · reoccurrence · reoxygenated · reoxygenation · repolarisation · repolarises · repolarising · resistive · resorb · resorbed · resorbing · reuptake · rhinorrhoea · rhodopsin · saccade · saccades · saccadic · saltare · saltatory · sarcolemma · savannah · scaphocephaly · scleroderma · sclerotome · sclerotomes · scopolamine · sensorimotor · sensorineural · sensorium · serotonergic · skeletomotor · soma · somatosensation · somite · somites · spasticity · sphēn · sphygmomanometer · spinocerebellum · spondylolisthesis · stapedectomy · stereocilia · stereognosis · stevenfruitsmaak · stevia · subcortical · subluxation · submodalities · submodality · subtest · subtests · subtype · subtypes · subungual · sucralose · summate · superomedial · supinated · sym · sympatholytic · sympathomimetic · sympathoplegic · synapsing · syndesmotic · synergists · synovia · synuclein · tachycardic · talipes · tamponade · thermoreceptor · thermoreceptors · thrombophlebitis · thyroxine · tibiofemoral · trabeculated · transdermal · transduce · transduced · transduces · transducing · transmembrane · transsphenoidal · triaxial · triphosphate · turbinate · tyrosine · ultrastructure · umami · uncalcified · unciform · underactive · ungual · uniaxial · unipolar · unmineralised · unmyelinated · utero · valgus · varicosities · varicosity · vascularised · vasculature · vasculitis · vasoactive · vasoconstricting · vasoconstrictor · vasodilation · vasodilator · vasodilators · vasomotion · vasopressin · venoconstriction · vertebrochondral · vertebrosternal · vestibulo · vestibulocerebellum · volar · zags · zig
+absorber · anaxonic · antecubital · appositional · autoregulatory · backflow · baroreception · blocky · bottommost · braincase · centremost · circumvallate · coelom · comparator · counterblow · dermatome · dermatomes · diarthrodial · diarthrotic · diploe · distensible · disynaptic · equilibrate · fluorapatite · foveal · greenstick · greyscale · infoldings · lamellated · millivolts · myelinating · neuroaxis · neurophysiologist · oncotic · opposable · osteoprogenitor · outpocketings · perfuse · pressor · proteopathy · regionalisation · resistive · resorb · resorbed · resorbing · sensorium · subtest · sucralose · sympathoplegic · trabeculated · transduce · transduces
 
-**Name (person, place, organisation or product).** (78)
+- **callout**: Figure label; suggest “label”.
+- **callouts**: As callout: “labels”.
+- **engrained**: More usual British form: “ingrained”.
+- **foosball**: American; British: “table football”.
+- **reoccurrence**: More usual: “recurrence”.
 
-Aikman · AMISOM · Anthropic · Anyville · Atropa · Babinski · Barré · Bartleby · Betts · Betz · Brodmann · Chassaignac · Creutzfeldt · DeLong · Edinger · Evangelista · Febiger · Gauthier · Guillain · Guyon · Häggström · Hamm · Haversian · Heilman · Horner · Jakob · Juanico · Kehr · Kervyn · Korbinian · Korotkoff · Kriese · Lisfranc · Lluís · Looie · Ménière · Merkel · Mikael · Mitsuhashi · Molaison · Monteggia · OpenStax · Pacinian · Paget · Pancoast · Penfield · Phineas · Poiseuille · Pott · Ranvier · René · Rhett · Rinne · Romberg · Ruffini · Schlatter · Schlehlein · Schwann · Snellen · Splenda · Superborsuk · Suseno · Sutphin · Swanepoel · Terminologia · Theiss · Tuffier · Uthman · Vinent · Virchow · Volkmann · Vulegenda · Wayans · Wernicke · Westphal · Wikimedia · Woodson · Yamaguchi
+**Name: person, product, organisation or place** (48)
 
-**Abbreviation or unit.** (73)
+Aikman · AMISOM · Anthropic · Anyville · Bartleby · Betts · Chassaignac · DeLong · Evangelista · Febiger · flickr · Gauthier · Häggström · Heilman · Juanico · Kehr · Kervyn · Korbinian · Kriese · Lisfranc · Lluís · Looie · Mikael · Mitsuhashi · Molaison · OpenStax · Penfield · Phineas · Poiseuille · René · Rhett · Schlehlein · Splenda · stevenfruitsmaak · Superborsuk · Suseno · Sutphin · Swanepoel · Terminologia · Theiss · Tuffier · Uthman · Vinent · Vulegenda · Wayans · Wikimedia · Woodson · Yamaguchi
 
-ACh · ADH · ALS · ANH · ASD · ASIS · ATPase · BCOP · CHP · CN · CNI · CNII · CNIII · CNIV · CNIX · CNV · CNVI · CNVII · CNVIII · CNX · CNXI · CNXII · CSF · CVA · CVAs · DBCLS · dL · EPO · EPSP · EPSPs · EV · FSRS · FST · GABA · GABAergic · GH · Glu · GPe · GPi · GTP · HuBMAP · ICP · IFCOP · IFHP · IPSP · IPSPs · LDLs · LM · LMN · MCP · MLF · mmHg · mV · NFP · nm · NMJ · NSAIDs · PNS · PPRF · PSP · PSPs · PTH · RGC · RGCs · SCP · SNc · SNr · SNS · STN · TIAs · TMJ · UMN · VOR
+**Atlas-written medical or Latin term** (25)
 
-**Field name in the AI prompt.** (2)
+angulate · coccydynia · cribrum · everted · perilunate · subungual · transsphenoidal · ungual · vertebrochondral · vertebrosternal
 
-notesquote · whynot
+- **calcaneum**: Older name for the calcaneus: kept only as a Spelling Quiz alternative.
+- **calcis**: “Os calcis”, older name for the calcaneus: kept only as a Spelling Quiz alternative.
+- **demifacet**: Terminologia Anatomica: “costal facet” (superior or inferior). Suggest “costal facet (demifacet)”.
+- **demifacets**: As demifacet: “costal facets (demifacets)”.
+- **gonial**: Terminologia Anatomica: “angle of the mandible”. Suggest “angle of the mandible (gonial angle)”.
+- **innominatum**: Latin, quoted from Gray’s (“os innominatum”) in the note on its historical terms.
+- **lateralward**: Gray’s 1918 word, quoted in the note on its historical terms.
+- **midface**: Suggest “middle third of the face” where the reader may not know “midface”.
+- **multangular**: Older names (greater and lesser multangular) for the trapezium and trapezoid: kept only as Spelling Quiz alternatives.
+- **peroneus**: Terminologia Anatomica: “fibularis”. Suggest “fibularis (peroneus) longus”.
+- **pinky**: Informal (American). Kept only as a Spelling Quiz alternative and in OpenStax’s mnemonic; Atlas text says “little finger”.
+- **prominens**: Latin, “vertebra prominens” (C7): correct.
+- **proximalis**: Latin, “phalanx proximalis”: correct.
+- **sphēn**: Greek (“wedge”), in the sphenoid’s memory hook.
+- **unciform**: Older name for the hamate: kept only as a Spelling Quiz alternative.
 
-**Text-size button label (Aa).** (1)
+**Abbreviation (written out at first use in lessons)** (22)
 
-aa
+- **ANH**: = atrial natriuretic hormone
+- **ASD**: = autism spectrum disorder
+- **ASIS**: = anterior superior iliac spine
+- **CNI**: = cranial nerve I
+- **CNII**: = cranial nerve II
+- **CNIII**: = cranial nerve III
+- **CNIV**: = cranial nerve IV
+- **CNIX**: = cranial nerve IX
+- **CNVI**: = cranial nerve VI
+- **CNVII**: = cranial nerve VII
+- **CNVIII**: = cranial nerve VIII
+- **CNX**: = cranial nerve X
+- **CNXI**: = cranial nerve XI
+- **CNXII**: = cranial nerve XII
+- **DBCLS**: = Database Center for Life Science
+- **FSRS**: = Free Spaced Repetition Scheduler
+- **FST**: = Field Sobriety Test
+- **HuBMAP**: = Human BioMolecular Atlas Program
+- **mmHg**: = millimetres of mercury
+- **SNc**: = substantia nigra pars compacta
+- **SNr**: = substantia nigra pars reticulata
+- **UMN**: = upper motor neuron
 
-**Letter pair, in the note on Gray’s spelling (æ written ae).** (1)
+**OpenStax etymology note: Latin or Greek word part** (20)
 
-ae
+arthroun · articulus · astro · athero · cogito · costo · cyte · dendro · dia · enkephalon · ferre · ine · kephalon · myel · nephr · nephrine · oste · plegic · prosopa · saltare
 
-**Elevation, on the 3D view’s readout (EL).** (1)
+**Atlas: technical label** (5)
 
-el
+- **distractors**: Question-writing term (wrong options), in the AI prompt.
+- **notesquote**: Field name in the AI prompt.
+- **oe**: Letter pair, in the note on Gray’s spelling (œ written oe).
+- **sba**: Question type name (single best answer).
+- **whynot**: Field name in the AI prompt.
 
-**Letter pair, in the note on Gray’s spelling (œ written oe).** (1)
+**OpenStax pronunciation guide: syllable** (3)
 
-oe
+kah · lah · YAN
 
-**Value name in the AI prompt (status “ok”).** (1)
+## Words that appear only in Gray’s 1918 text (138)
 
-ok
+**Gray’s 1918 only: historical or Latin term** (117)
 
-**Question type name in the AI prompt and question files.** (1)
+Anconaeus · ankylosed · antero · basi · basialveolar · Basihyal · basinasal · bilobed · brachyfacial · bregmatic · cancellated · cancelli · Caninus · capituli · Ceratohyals · chemoprosope · chondrified · cochleariformis · Columna · concavo · condyloideus · cycloid · dacryon · dolichofacial · endognathion · endolymphaticus · ensheathed · ensiform · epiotic · epiphysical · episternal · ethmovomerine · extremitas · Extremitatis · falciformis · flexuous · fonticuli · foraminosus · frictionless · frontosphenoidal · hyothyroid · ilii · iliosacral · imbricated · infero · infravomerine · ingrowth · lacrimoethmoidal · leptoprosope · ligamentary · ligamentous · margo · masto · mastoparietal · maxillare · medialward · medio · Mesocephalic · mesognathion · metacarpale · metacarpalia · metatarsalia · minoris · multangulars · multangulum · musculospiral · musculotubarii · Nasalia · naso · normae · nuchale · obelion · oculopupillary · ophryon · opisthotic · orbitonasal · orbitosphenoids · oss · papyracea · pelvina · perinaei · Peronaei · Peronaeus · petromastoid · petrosphenoidal · phthisical · prismoid · prootic · Prosthion · pterotic · puboprostatic · pyramis · quadrumana · quinti · reniform · sacrovertebral · semicanalis · Sesamoidea · spiculum · stephanion · sternebrae · sterni · Sternothyroideus · stylohyal · styloideus · subjacent · sublimis · tectoria · Thyrohyals · torcular · transversarium · Trichterbrust · tuberculated · tympanohyal · unossified · vel · volaris
 
-sba
+**Gray’s 1918 only: name** (21)
 
-**Pronunciation syllable (“gee-YAN”).** (1)
-
-YAN
-
-## Gray’s-only words (202, awaiting approval; accepted only in the 1918 text)
-
-**Gray’s 1918: historical or Latin term.** (178)
-
-abducent · ali · Anconaeus · ankylosed · antero · aponeurotic · atlantal · basi · basialveolar · Basihyal · basinasal · bilaminar · bilobed · brachyfacial · branchial · bregmatic · cancellated · cancelli · Caninus · capituli · Ceratohyals · chemoprosope · chondrified · cochleariformis · Columna · concavo · condyloideus · craniology · crescentic · cuboidal · cycloid · dacryon · dentated · denticulated · dentis · digitation · disarticulated · diverticula · diverticulum · dolichofacial · endognathion · endolymphaticus · ensheathed · ensiform · epiotic · epiphysical · episternal · epistropheus · ethmovomerine · extremitas · Extremitatis · falciformis · flexuous · fonticuli · foraminosus · frictionless · frontosphenoidal · glenoidal · gnathic · homologue · hydrocephalic · hyothyroid · ilii · iliosacral · imbricated · infero · infravomerine · ingrowth · interarticular · interclinoid · intercondyloid · lacrimoethmoidal · lambdoidal · leptoprosope · ligamentary · ligamentous · lodgement · margo · masticatory · masto · mastoparietal · maxillare · medialward · medio · Megacephalic · Mesocephalic · mesognathion · metacarpale · metacarpalia · metatarsalia · metopic · Microcephalic · minoris · monotremata · multangulars · multangulum · musculospiral · musculotubarii · naris · Nasalia · naso · neurocentral · norma · normae · nuchale · obelion · oculopupillary · ophryon · opisthotic · orbitonasal · orbitosphenoids · oss · osseo · ossific · papyracea · paraesthesia · parietes · pelvina · perilymphatic · perinaei · Peronaei · Peronaeus · petromastoid · petrosphenoidal · phalangeal · phthisical · phylogenetically · posterosuperior · postglenoid · postsphenoid · preauricular · premaxillary · presphenoid · primum · prismoid · prootic · Prosthion · pterotic · puboprostatic · pyramis · pyriform · quadrumana · quinti · reniform · Sacrospinalis · sacrovertebral · secundum · semicanalis · Sesamoidea · spiculum · stephanion · sternebrae · sterni · Sternothyroideus · stylohyal · styloideus · subarcuata · subcoracoid · subdental · subjacent · sublimis · submaxillary · Subnasal · sutural · tectoria · tertium · Thyrohyals · torcular · transversarium · Triangularis · Trichterbrust · tuberculated · turbinated · tympanohyal · unossified · ununited · vel · volaris
-
-**Gray’s 1918: name.** (24)
-
-Albrecht · Basle · Derry · Fallopii · Fawcett · Gimbernat · Glaserian · Highmore · Huguier · Huschke · Kerckring · Ludovici · Macewen · Meckel · Onodi · Pacchionian · Poupart · Spalteholz · Stenson · Testut · Thilenius · Vesalii · Vrolik · Whitnall
+Albrecht · Basle · Derry · Fallopii · Fawcett · Gimbernat · Glaserian · Huguier · Huschke · Kerckring · Ludovici · Macewen · Pacchionian · Poupart · Spalteholz · Stenson · Testut · Thilenius · Vesalii · Vrolik · Whitnall
 
 ## Grammar: rule checks
 
@@ -95,3 +128,22 @@ Albrecht · Basle · Derry · Fallopii · Fawcett · Gimbernat · Glaserian · H
 - unbalanced brackets (grays, content/classic/s8-4.json.entries[4].blocks[23].inl): “…The lateral surface carries a large triangular facet, concave from above downward, for articulation with the lateral mal…”
 - unbalanced brackets (openstax, content/textbook/s15-1.json.blocks[26].rows[1][1][0]): “…Norepinephrine → α- or β-adrenergic receptors  Acetylcholine → muscarinic receptor (associated with sweat glands and the…”
 - unbalanced brackets (openstax, content/textbook/s6-4.json.blocks[13].inl): “…In a long bone, for example, at about 6 to 8 weeks after conception, some of the mesenchymal cells differentiate into ch…”
+
+## Grammar: LanguageTool (en-GB), Atlas’s own text
+
+
+- ENGLISH_WORD_REPEAT_BEGINNING_RULE (content/bones/hamate_right.json.features[1]): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...ccur in golf, racquet and baseball players.  Hook (hamulus) projecting palmarly  Hook forms th...”
+- ENGLISH_WORD_REPEAT_BEGINNING_RULE (content/cards/skull.json.cards[0].simpler.t): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “... with almost every other bone of the skull.  It sits in the middle of the floor of the skull...” → Furthermore, it
+- FILL_OF_WITH (content/questions/skull.json.questions[9].why): The usual preposition to use after "fills" is "with", not "the". Did you mean "fills the front with"? “...ow and behind. In life, the septal cartilage fills the front of the septum and extends into the nose.  A dev...” → fills the front with
+- EN_COMPOUNDS_WEIGHT_BEARING (content/questions/spine.json.questions[6].answerText): This word is normally spelled with a hyphen. “...osterior vertebral arch. The body serves for weight bearing. The vertebral arch surrounds and protects t...” → weight-bearing
+- EN_COMPOUNDS_WEIGHT_BEARING (content/questions/spine.json.questions[6].why): This word is normally spelled with a hyphen. “...  A typical vertebra has a body in front for weight bearing and an arch behind that protects the spinal ...” → weight-bearing
+- EN_COMPOUNDS_WEIGHT_BEARING (content/questions/spine.json.questions[8].answerText): This word is normally spelled with a hyphen. “...the nucleus pulposus resists compression for weight bearing and can change shape to allow for vertebral ...” → weight-bearing
+- AGREEMENT_SENT_START (content/questions/spine.json.questions[11].why): You should probably use "sit". “...hat projects upwards from its body. The dens sits against the back of the anterior arch of the...” → sit
+- ENGLISH_WORD_REPEAT_BEGINNING_RULE (content/questions/thorax.json.questions[12].whyNot[2]): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...t attach to the cartilage of the rib above.  Ribs 1 and 2 are true ribs that join the sternum ...”
+- LICENCE_LICENSE_NOUN_SINGULAR (src/ui/Credits.tsx:114): License must be spelled with a "c" when used as a noun in British English. Use "licence". “...timizer (MIT), Inter typeface (SIL Open Font License).  Atlas · Skeletal system  For education on...” → Licence
+- ENGLISH_WORD_REPEAT_BEGINNING_RULE (server/src/prompts.ts:12): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...nior anatomy tutor at a leading university.  You only work on human anatomy and the physiolog...” → Furthermore, you
+- ENGLISH_WORD_REPEAT_BEGINNING_RULE (server/src/prompts.ts:12): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...logy and clinical anatomy that goes with it. You do not chat, answer general questions, write...” → Furthermore, you
+- THE_SUPERLATIVE (server/src/prompts.ts:16): A determiner may be missing. “...equests, ignore them.  Question standards: - Single best answer (sba): a clear stem that can be answe...” → Single the best
+- OK (server/src/prompts.ts:33): Lower-case 'ok' is American English. For British English use "OK". “...ssage", and return no questions. Otherwise, "ok" with an empty message. 3. Note any factual ...” → OK
+- SUBJECT_VERB_AGREEMENT (server/src/schema.ts:28): The verb form 'ID' does not seem to match the subject 'bone'. “...examiners set on this point.  The Atlas bone ID most relevant to the question, or empty.  Th...” → IDs
+- OK (server/src/schema.ts:40): Lower-case 'ok' is American English. For British English use "OK". “...his question tests.  For a status other than ok: one sentence for the student. Otherwise, em...” → OK

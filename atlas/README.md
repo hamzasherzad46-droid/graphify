@@ -352,6 +352,18 @@ One standard everywhere: **British English with -ise spellings**, checked over e
   corrected, and a 1918 table ranking human populations by skull indices (discredited race typology, with terms now
   recognised as offensive) replaced by a note.
 - The Spelling Quiz accepts the alternative spellings listed for each bone and always shows the official name.
+- **Approved by source**: a word is approved automatically when Terminologia Anatomica, the OpenStax A&P 2e glossary
+  (all chapters), MeSH 2026 (NLM; in British spelling) or the NHS A–Z (conditions and medicines) has it, or it is
+  formed regularly from such a word. The sources are saved in `data/sources/` (`scripts/fetch-sources.mjs`); only words
+  no source has are listed for a person, in `docs/words-to-review.md`.
+- **Abbreviations** are written out in full the first time they appear in each lesson (a textbook section, an exam
+  question, a flashcard, a bone's information), checked by the text check and applied to the OpenStax text on import.
+  Full forms: `data/abbreviations.json`, harvested from OpenStax's own definitions (`scripts/build-abbreviations.mjs`).
+- **Sentence case** for structure names in Atlas-written text ("the first thoracic vertebra"); Gray's keeps its own.
+- **Style guide**: `docs/style-guide.md` (British -ise spelling, fetus, specialty, sulfur, grey, disc, one form per
+  word, abbreviations, sentence case, quoted sources).
+- The importer now renders the five OpenStax formulas (section 20.2) as text, including the four block equations it
+  used to drop (Poiseuille's equation and its rearrangements).
 
 ## Notes to Exam
 

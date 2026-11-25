@@ -20,7 +20,7 @@ function fromText(s: NoteSet) {
 /** What the second examiner did, in a sentence. */
 function reviewText(r: NoteSet['review']): string {
   const bits = [r.kept ? `${r.kept} kept as written` : '', r.fixed ? `${r.fixed} corrected` : '', r.dropped ? `${r.dropped} removed` : ''].filter(Boolean)
-  if (!bits.length) return 'Every question was checked by a second examiner.'
+  if (!bits.length) return 'A second examiner checked every question.'
   const list = bits.length > 1 ? `${bits.slice(0, -1).join(', ')} and ${bits.at(-1)}` : bits[0]
   return `Checked by a second examiner: ${list}.`
 }

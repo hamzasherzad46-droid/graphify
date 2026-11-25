@@ -3333,7 +3333,7 @@
    "not": [
     "foetus"
    ],
-   "why": "Standard in British medical writing, and the en-GB dictionary’s form."
+   "why": "Standard in British medical writing, and the en-GB dictionary’s form; agreed."
   },
   "fetal": {
    "use": "fetal",
@@ -3362,994 +3362,1032 @@
     "-ize"
    ],
    "why": "One standard for the whole app (organise, recognise, ossification is unaffected)."
+  },
+  "specialty": {
+   "use": "specialty",
+   "not": [
+    "speciality",
+    "specialities"
+   ],
+   "why": "British medical usage (NHS specialty training); agreed."
+  },
+  "sulfur": {
+   "use": "sulfur",
+   "not": [
+    "sulphur",
+    "sulphate",
+    "sulphates",
+    "sulphide",
+    "sulphuric"
+   ],
+   "why": "British medical and scientific usage (BNF, IUPAC): sulfur, sulfate, sulfide, sulfuric; agreed."
   }
  },
  "approved": {},
  "proposed": {
-  "aa": "Text-size button label (Aa).",
-  "absorber": "Medical, scientific or Latin term.",
-  "acetylcholine": "Medical, scientific or Latin term.",
-  "acetylcholinesterase": "Medical, scientific or Latin term.",
-  "ACh": "Abbreviation or unit.",
-  "adduct": "Medical, scientific or Latin term.",
-  "adducts": "Medical, scientific or Latin term.",
-  "adenosine": "Medical, scientific or Latin term.",
-  "adenylate": "Medical, scientific or Latin term.",
-  "ADH": "Abbreviation or unit.",
-  "adipocytes": "Medical, scientific or Latin term.",
-  "ae": "Letter pair, in the note on Gray’s spelling (æ written ae).",
-  "af": "Medical, scientific or Latin term.",
-  "afterload": "Medical, scientific or Latin term.",
-  "agnosia": "Medical, scientific or Latin term.",
-  "agnosias": "Medical, scientific or Latin term.",
-  "Aikman": "Name (person, place, organisation or product).",
-  "aldosterone": "Medical, scientific or Latin term.",
-  "ALS": "Abbreviation or unit.",
-  "amacrine": "Medical, scientific or Latin term.",
-  "aminobutyric": "Medical, scientific or Latin term.",
-  "AMISOM": "Name (person, place, organisation or product).",
-  "amyotrophic": "Medical, scientific or Latin term.",
-  "anaphylactic": "Medical, scientific or Latin term.",
-  "anaxonic": "Medical, scientific or Latin term.",
-  "angioblasts": "Medical, scientific or Latin term.",
-  "angiogenesis": "Medical, scientific or Latin term.",
-  "angioreceptors": "Medical, scientific or Latin term.",
-  "angiotensin": "Medical, scientific or Latin term.",
-  "angiotensinogen": "Medical, scientific or Latin term.",
-  "angulate": "Medical, scientific or Latin term.",
-  "ANH": "Abbreviation or unit.",
-  "anosmia": "Medical, scientific or Latin term.",
-  "anoxia": "Medical, scientific or Latin term.",
-  "antecubital": "Medical, scientific or Latin term.",
-  "anterograde": "Medical, scientific or Latin term.",
-  "anteroinferior": "Medical, scientific or Latin term.",
-  "anteroposterior": "Medical, scientific or Latin term.",
-  "anterosuperior": "Medical, scientific or Latin term.",
-  "Anthropic": "Name (person, place, organisation or product).",
-  "antianxiety": "Medical, scientific or Latin term.",
-  "anticholinergic": "Medical, scientific or Latin term.",
-  "antidiuretic": "Medical, scientific or Latin term.",
-  "antipsychotic": "Medical, scientific or Latin term.",
-  "Anyville": "Name (person, place, organisation or product).",
-  "appositional": "Medical, scientific or Latin term.",
-  "arthroplasty": "Medical, scientific or Latin term.",
-  "arthroun": "Medical, scientific or Latin term.",
-  "articulus": "Medical, scientific or Latin term.",
-  "ASD": "Abbreviation or unit.",
-  "ASIS": "Abbreviation or unit.",
-  "astro": "Medical, scientific or Latin term.",
-  "astrocyte": "Medical, scientific or Latin term.",
-  "astrocytes": "Medical, scientific or Latin term.",
-  "athero": "Medical, scientific or Latin term.",
-  "ATPase": "Abbreviation or unit.",
-  "Atropa": "Name (person, place, organisation or product).",
-  "autoregulation": "Medical, scientific or Latin term.",
-  "autoregulatory": "Medical, scientific or Latin term.",
-  "avascular": "Medical, scientific or Latin term.",
-  "avulsion": "Medical, scientific or Latin term.",
-  "axonal": "Medical, scientific or Latin term.",
-  "axoplasm": "Medical, scientific or Latin term.",
-  "Babinski": "Name (person, place, organisation or product).",
-  "backflow": "Medical, scientific or Latin term.",
-  "baroreception": "Medical, scientific or Latin term.",
-  "baroreceptor": "Medical, scientific or Latin term.",
-  "baroreceptors": "Medical, scientific or Latin term.",
-  "Barré": "Name (person, place, organisation or product).",
-  "Bartleby": "Name (person, place, organisation or product).",
-  "basale": "Medical, scientific or Latin term.",
-  "basophils": "Medical, scientific or Latin term.",
-  "BCOP": "Abbreviation or unit.",
-  "Betts": "Name (person, place, organisation or product).",
-  "Betz": "Name (person, place, organisation or product).",
-  "biaxial": "Medical, scientific or Latin term.",
-  "bifid": "Medical, scientific or Latin term.",
-  "bifida": "Medical, scientific or Latin term.",
-  "bilayer": "Medical, scientific or Latin term.",
-  "biogenic": "Medical, scientific or Latin term.",
-  "bisphosphonates": "Medical, scientific or Latin term.",
-  "blocky": "Medical, scientific or Latin term.",
-  "bottommost": "Medical, scientific or Latin term.",
-  "braincase": "Medical, scientific or Latin term.",
-  "Brodmann": "Name (person, place, organisation or product).",
-  "calcaneum": "Medical, scientific or Latin term.",
-  "calcidiol": "Medical, scientific or Latin term.",
-  "calcis": "Medical, scientific or Latin term.",
-  "calcitonin": "Medical, scientific or Latin term.",
-  "calcitriol": "Medical, scientific or Latin term.",
-  "callout": "Medical, scientific or Latin term.",
-  "callouts": "Medical, scientific or Latin term.",
-  "capsaicin": "Medical, scientific or Latin term.",
-  "capsulitis": "Medical, scientific or Latin term.",
-  "carboxyl": "Medical, scientific or Latin term.",
-  "cardioacceleration": "Medical, scientific or Latin term.",
-  "cardioaccelerator": "Medical, scientific or Latin term.",
-  "cardiogenic": "Medical, scientific or Latin term.",
-  "cardioinhibitor": "Medical, scientific or Latin term.",
-  "cardiomotor": "Medical, scientific or Latin term.",
-  "catecholamines": "Medical, scientific or Latin term.",
-  "catheterisation": "Medical, scientific or Latin term.",
-  "centremost": "Medical, scientific or Latin term.",
-  "cerebro": "Medical, scientific or Latin term.",
-  "cerebrocerebellum": "Medical, scientific or Latin term.",
-  "Chassaignac": "Name (person, place, organisation or product).",
-  "chemoreceptor": "Medical, scientific or Latin term.",
-  "chemoreceptors": "Medical, scientific or Latin term.",
-  "chiasma": "Medical, scientific or Latin term.",
-  "cholinergic": "Medical, scientific or Latin term.",
-  "chondroblasts": "Medical, scientific or Latin term.",
-  "chondrocyte": "Medical, scientific or Latin term.",
-  "chondrocytes": "Medical, scientific or Latin term.",
-  "chondroitin": "Medical, scientific or Latin term.",
-  "chorion": "Medical, scientific or Latin term.",
-  "chorionic": "Medical, scientific or Latin term.",
-  "CHP": "Abbreviation or unit.",
-  "chromaffin": "Medical, scientific or Latin term.",
-  "circumvallate": "Medical, scientific or Latin term.",
-  "CN": "Abbreviation or unit.",
-  "CNI": "Abbreviation or unit.",
-  "CNII": "Abbreviation or unit.",
-  "CNIII": "Abbreviation or unit.",
-  "CNIV": "Abbreviation or unit.",
-  "CNIX": "Abbreviation or unit.",
-  "CNV": "Abbreviation or unit.",
-  "CNVI": "Abbreviation or unit.",
-  "CNVII": "Abbreviation or unit.",
-  "CNVIII": "Abbreviation or unit.",
-  "CNX": "Abbreviation or unit.",
-  "CNXI": "Abbreviation or unit.",
-  "CNXII": "Abbreviation or unit.",
-  "coccydynia": "Medical, scientific or Latin term.",
-  "coelom": "Medical, scientific or Latin term.",
-  "cofactor": "Medical, scientific or Latin term.",
-  "collagenous": "Medical, scientific or Latin term.",
-  "comminuted": "Medical, scientific or Latin term.",
-  "comparator": "Medical, scientific or Latin term.",
-  "contralateral": "Medical, scientific or Latin term.",
-  "contralaterally": "Medical, scientific or Latin term.",
-  "contrecoup": "Medical, scientific or Latin term.",
-  "cortico": "Medical, scientific or Latin term.",
-  "corticobulbar": "Medical, scientific or Latin term.",
-  "corticosteroids": "Medical, scientific or Latin term.",
-  "costo": "Medical, scientific or Latin term.",
-  "counterblow": "Medical, scientific or Latin term.",
-  "coxal": "Medical, scientific or Latin term.",
-  "craniofacial": "Medical, scientific or Latin term.",
-  "craniosacral": "Medical, scientific or Latin term.",
-  "craniosynostosis": "Medical, scientific or Latin term.",
-  "Creutzfeldt": "Name (person, place, organisation or product).",
-  "cribrum": "Medical, scientific or Latin term.",
-  "crura": "Medical, scientific or Latin term.",
-  "CSF": "Abbreviation or unit.",
-  "cul": "Medical, scientific or Latin term.",
-  "cuneatus": "Medical, scientific or Latin term.",
-  "CVA": "Abbreviation or unit.",
-  "CVAs": "Abbreviation or unit.",
-  "cyclase": "Medical, scientific or Latin term.",
-  "cyte": "Medical, scientific or Latin term.",
-  "cytoarchitecture": "Medical, scientific or Latin term.",
-  "cytosol": "Medical, scientific or Latin term.",
-  "DBCLS": "Abbreviation or unit.",
-  "decussate": "Medical, scientific or Latin term.",
-  "decussates": "Medical, scientific or Latin term.",
-  "DeLong": "Name (person, place, organisation or product).",
-  "demifacet": "Medical, scientific or Latin term.",
-  "demifacets": "Medical, scientific or Latin term.",
-  "demineralisation": "Medical, scientific or Latin term.",
-  "demyelinating": "Medical, scientific or Latin term.",
-  "demyelination": "Medical, scientific or Latin term.",
-  "dendritic": "Medical, scientific or Latin term.",
-  "dendro": "Medical, scientific or Latin term.",
-  "denervation": "Medical, scientific or Latin term.",
-  "deoxygenated": "Medical, scientific or Latin term.",
-  "dermatome": "Medical, scientific or Latin term.",
-  "dermatomes": "Medical, scientific or Latin term.",
-  "dia": "Medical, scientific or Latin term.",
-  "diapedesis": "Medical, scientific or Latin term.",
-  "diaphyseal": "Medical, scientific or Latin term.",
-  "diarthrodial": "Medical, scientific or Latin term.",
-  "diarthroses": "Medical, scientific or Latin term.",
-  "diarthrosis": "Medical, scientific or Latin term.",
-  "diarthrotic": "Medical, scientific or Latin term.",
-  "dimenhydrinate": "Medical, scientific or Latin term.",
-  "diploe": "Medical, scientific or Latin term.",
-  "disinhibit": "Medical, scientific or Latin term.",
-  "disinhibition": "Medical, scientific or Latin term.",
-  "distalis": "Medical, scientific or Latin term.",
-  "distensible": "Medical, scientific or Latin term.",
-  "distractors": "Medical, scientific or Latin term.",
-  "disynaptic": "Medical, scientific or Latin term.",
-  "dL": "Abbreviation or unit.",
-  "dorsiflexes": "Medical, scientific or Latin term.",
-  "dorsoventrally": "Medical, scientific or Latin term.",
-  "eccrine": "Medical, scientific or Latin term.",
-  "ectoderm": "Medical, scientific or Latin term.",
-  "ectodermal": "Medical, scientific or Latin term.",
-  "ectopic": "Medical, scientific or Latin term.",
-  "Edinger": "Name (person, place, organisation or product).",
-  "ef": "Medical, scientific or Latin term.",
-  "effector": "Medical, scientific or Latin term.",
-  "effectors": "Medical, scientific or Latin term.",
-  "el": "Elevation, on the 3D view’s readout (EL).",
-  "electrochemical": "Medical, scientific or Latin term.",
-  "electrophysiology": "Medical, scientific or Latin term.",
-  "embolus": "Medical, scientific or Latin term.",
-  "embryologic": "Medical, scientific or Latin term.",
-  "emesis": "Medical, scientific or Latin term.",
-  "endarterectomy": "Medical, scientific or Latin term.",
-  "endocytosis": "Medical, scientific or Latin term.",
-  "endoderm": "Medical, scientific or Latin term.",
-  "endosteal": "Medical, scientific or Latin term.",
-  "endothelins": "Medical, scientific or Latin term.",
-  "engrained": "Medical, scientific or Latin term.",
-  "enkephalin": "Medical, scientific or Latin term.",
-  "enkephalon": "Medical, scientific or Latin term.",
-  "enteroviruses": "Medical, scientific or Latin term.",
-  "enzymatically": "Medical, scientific or Latin term.",
-  "ependymal": "Medical, scientific or Latin term.",
-  "epi": "Medical, scientific or Latin term.",
-  "EPO": "Abbreviation or unit.",
-  "EPSP": "Abbreviation or unit.",
-  "EPSPs": "Abbreviation or unit.",
-  "equilibrate": "Medical, scientific or Latin term.",
-  "erythematosus": "Medical, scientific or Latin term.",
-  "erythropoiesis": "Medical, scientific or Latin term.",
-  "erythropoietin": "Medical, scientific or Latin term.",
-  "EV": "Abbreviation or unit.",
-  "Evangelista": "Name (person, place, organisation or product).",
-  "eversion": "Medical, scientific or Latin term.",
-  "everted": "Medical, scientific or Latin term.",
-  "excitatory": "Medical, scientific or Latin term.",
-  "exocytosis": "Medical, scientific or Latin term.",
-  "expiratory": "Medical, scientific or Latin term.",
-  "exteroceptor": "Medical, scientific or Latin term.",
-  "extradural": "Medical, scientific or Latin term.",
-  "extrapyramidal": "Medical, scientific or Latin term.",
-  "fasciculation": "Medical, scientific or Latin term.",
-  "Febiger": "Name (person, place, organisation or product).",
-  "femoropatellar": "Medical, scientific or Latin term.",
-  "fenestrated": "Medical, scientific or Latin term.",
-  "ferre": "Medical, scientific or Latin term.",
-  "fibrocartilaginous": "Medical, scientific or Latin term.",
-  "flavum": "Medical, scientific or Latin term.",
-  "flickr": "Medical, scientific or Latin term.",
-  "fluorapatite": "Medical, scientific or Latin term.",
-  "foosball": "Medical, scientific or Latin term.",
-  "foveal": "Medical, scientific or Latin term.",
-  "FSRS": "Abbreviation or unit.",
-  "FST": "Abbreviation or unit.",
-  "GABA": "Abbreviation or unit.",
-  "GABAergic": "Abbreviation or unit.",
-  "Gauthier": "Name (person, place, organisation or product).",
-  "GH": "Abbreviation or unit.",
-  "glia": "Medical, scientific or Latin term.",
-  "glial": "Medical, scientific or Latin term.",
-  "Glu": "Abbreviation or unit.",
-  "glucocorticoid": "Medical, scientific or Latin term.",
-  "glutamate": "Medical, scientific or Latin term.",
-  "glutamatergic": "Medical, scientific or Latin term.",
-  "gly": "Medical, scientific or Latin term.",
-  "glycine": "Medical, scientific or Latin term.",
-  "glycinergic": "Medical, scientific or Latin term.",
-  "gnosis": "Medical, scientific or Latin term.",
-  "gonial": "Medical, scientific or Latin term.",
-  "GPe": "Abbreviation or unit.",
-  "GPi": "Abbreviation or unit.",
-  "graphaesthesia": "Medical, scientific or Latin term.",
-  "greenstick": "Medical, scientific or Latin term.",
-  "greyscale": "Medical, scientific or Latin term.",
-  "GTP": "Abbreviation or unit.",
-  "guanosine": "Medical, scientific or Latin term.",
-  "Guillain": "Name (person, place, organisation or product).",
-  "gustation": "Medical, scientific or Latin term.",
-  "Guyon": "Name (person, place, organisation or product).",
-  "haemangioblasts": "Medical, scientific or Latin term.",
-  "haematoma": "Medical, scientific or Latin term.",
-  "haematopoiesis": "Medical, scientific or Latin term.",
-  "haemostasis": "Medical, scientific or Latin term.",
-  "haemostatic": "Medical, scientific or Latin term.",
-  "Hamm": "Name (person, place, organisation or product).",
-  "Haversian": "Name (person, place, organisation or product).",
-  "Heilman": "Name (person, place, organisation or product).",
-  "hemianopia": "Medical, scientific or Latin term.",
-  "hemisection": "Medical, scientific or Latin term.",
-  "hindbrain": "Medical, scientific or Latin term.",
-  "homunculus": "Medical, scientific or Latin term.",
-  "Horner": "Name (person, place, organisation or product).",
-  "HuBMAP": "Abbreviation or unit.",
-  "hyaline": "Medical, scientific or Latin term.",
-  "hyaluronic": "Medical, scientific or Latin term.",
-  "hydrolase": "Medical, scientific or Latin term.",
-  "hydrostatic": "Medical, scientific or Latin term.",
-  "hydroxyapatite": "Medical, scientific or Latin term.",
-  "hydroxyl": "Medical, scientific or Latin term.",
-  "hyperaldosteronism": "Medical, scientific or Latin term.",
-  "hypercalcaemia": "Medical, scientific or Latin term.",
-  "hypercontractility": "Medical, scientific or Latin term.",
-  "hyperextension": "Medical, scientific or Latin term.",
-  "hyperflexia": "Medical, scientific or Latin term.",
-  "hyperflexion": "Medical, scientific or Latin term.",
-  "hyperpolarisation": "Medical, scientific or Latin term.",
-  "hyperpolarisations": "Medical, scientific or Latin term.",
-  "hyperpolarise": "Medical, scientific or Latin term.",
-  "hyperpolarised": "Medical, scientific or Latin term.",
-  "hyperpolarises": "Medical, scientific or Latin term.",
-  "hyperpolarising": "Medical, scientific or Latin term.",
-  "hyperthermia": "Medical, scientific or Latin term.",
-  "hypervolaemia": "Medical, scientific or Latin term.",
-  "hypocalcaemia": "Medical, scientific or Latin term.",
-  "hypokinetic": "Medical, scientific or Latin term.",
-  "hypophyseal": "Medical, scientific or Latin term.",
-  "hypotension": "Medical, scientific or Latin term.",
-  "hypotonicity": "Medical, scientific or Latin term.",
-  "hypovolaemia": "Medical, scientific or Latin term.",
-  "hypovolaemic": "Medical, scientific or Latin term.",
-  "hypoxaemia": "Medical, scientific or Latin term.",
-  "hypoxia": "Medical, scientific or Latin term.",
-  "Häggström": "Name (person, place, organisation or product).",
-  "ICP": "Abbreviation or unit.",
-  "IFCOP": "Abbreviation or unit.",
-  "IFHP": "Abbreviation or unit.",
-  "imperfecta": "Medical, scientific or Latin term.",
-  "incoordination": "Medical, scientific or Latin term.",
-  "ine": "Medical, scientific or Latin term.",
-  "infoldings": "Medical, scientific or Latin term.",
-  "innominate": "Medical, scientific or Latin term.",
-  "innominatum": "Medical, scientific or Latin term.",
-  "inotropic": "Medical, scientific or Latin term.",
-  "insipidus": "Medical, scientific or Latin term.",
-  "interaural": "Medical, scientific or Latin term.",
-  "intercellular": "Medical, scientific or Latin term.",
-  "interneuron": "Medical, scientific or Latin term.",
-  "interneurons": "Medical, scientific or Latin term.",
-  "internuclear": "Medical, scientific or Latin term.",
-  "interoception": "Medical, scientific or Latin term.",
-  "interoceptor": "Medical, scientific or Latin term.",
-  "interocular": "Medical, scientific or Latin term.",
-  "interventional": "Medical, scientific or Latin term.",
-  "interzone": "Medical, scientific or Latin term.",
-  "intorsion": "Medical, scientific or Latin term.",
-  "intracellular": "Medical, scientific or Latin term.",
-  "intramembranous": "Medical, scientific or Latin term.",
-  "intraparenchymal": "Medical, scientific or Latin term.",
-  "invagination": "Medical, scientific or Latin term.",
-  "ionotropic": "Medical, scientific or Latin term.",
-  "ipsilateral": "Medical, scientific or Latin term.",
-  "ipsilaterally": "Medical, scientific or Latin term.",
-  "IPSP": "Abbreviation or unit.",
-  "IPSPs": "Abbreviation or unit.",
-  "ischial": "Medical, scientific or Latin term.",
-  "Jakob": "Name (person, place, organisation or product).",
-  "Juanico": "Name (person, place, organisation or product).",
-  "juxtaglomerular": "Medical, scientific or Latin term.",
-  "kah": "Medical, scientific or Latin term.",
-  "Kehr": "Name (person, place, organisation or product).",
-  "kephalon": "Medical, scientific or Latin term.",
-  "Kervyn": "Name (person, place, organisation or product).",
-  "ketamine": "Medical, scientific or Latin term.",
-  "ketoacidosis": "Medical, scientific or Latin term.",
-  "kinaesthesia": "Medical, scientific or Latin term.",
-  "kinaesthetic": "Medical, scientific or Latin term.",
-  "Korbinian": "Name (person, place, organisation or product).",
-  "Korotkoff": "Name (person, place, organisation or product).",
-  "Kriese": "Name (person, place, organisation or product).",
-  "lah": "Medical, scientific or Latin term.",
-  "lamella": "Medical, scientific or Latin term.",
-  "lamellae": "Medical, scientific or Latin term.",
-  "lamellar": "Medical, scientific or Latin term.",
-  "lamellated": "Medical, scientific or Latin term.",
-  "laminectomy": "Medical, scientific or Latin term.",
-  "lateralisation": "Medical, scientific or Latin term.",
-  "laterality": "Medical, scientific or Latin term.",
-  "lateralward": "Medical, scientific or Latin term.",
-  "LDLs": "Abbreviation or unit.",
-  "licensure": "Medical, scientific or Latin term.",
-  "ligand": "Medical, scientific or Latin term.",
-  "ligands": "Medical, scientific or Latin term.",
-  "lipoproteins": "Medical, scientific or Latin term.",
-  "Lisfranc": "Name (person, place, organisation or product).",
-  "Lluís": "Name (person, place, organisation or product).",
-  "LM": "Abbreviation or unit.",
-  "LMN": "Abbreviation or unit.",
-  "lobectomy": "Medical, scientific or Latin term.",
-  "Looie": "Name (person, place, organisation or product).",
-  "lyses": "Medical, scientific or Latin term.",
-  "lytic": "Medical, scientific or Latin term.",
-  "macromolecules": "Medical, scientific or Latin term.",
-  "macrophage": "Medical, scientific or Latin term.",
-  "malar": "Medical, scientific or Latin term.",
-  "massa": "Medical, scientific or Latin term.",
-  "MCP": "Abbreviation or unit.",
-  "mechanoreception": "Medical, scientific or Latin term.",
-  "mechanoreceptor": "Medical, scientific or Latin term.",
-  "mechanoreceptors": "Medical, scientific or Latin term.",
-  "mediolaterally": "Medical, scientific or Latin term.",
-  "medullar": "Medical, scientific or Latin term.",
-  "melanocytes": "Medical, scientific or Latin term.",
-  "meningocele": "Medical, scientific or Latin term.",
-  "Merkel": "Name (person, place, organisation or product).",
-  "merocrine": "Medical, scientific or Latin term.",
-  "mesenchymal": "Medical, scientific or Latin term.",
-  "mesenchyme": "Medical, scientific or Latin term.",
-  "mesoderm": "Medical, scientific or Latin term.",
-  "mesodermal": "Medical, scientific or Latin term.",
-  "metabotropic": "Medical, scientific or Latin term.",
-  "metaphyseal": "Medical, scientific or Latin term.",
-  "metaphysic": "Medical, scientific or Latin term.",
-  "metarteriole": "Medical, scientific or Latin term.",
-  "metarterioles": "Medical, scientific or Latin term.",
-  "metoprolol": "Medical, scientific or Latin term.",
-  "microcirculation": "Medical, scientific or Latin term.",
-  "microelectrode": "Medical, scientific or Latin term.",
-  "microglia": "Medical, scientific or Latin term.",
-  "microglial": "Medical, scientific or Latin term.",
-  "micrograph": "Medical, scientific or Latin term.",
-  "microvilli": "Medical, scientific or Latin term.",
-  "midface": "Medical, scientific or Latin term.",
-  "midsagittal": "Medical, scientific or Latin term.",
-  "midsagittally": "Medical, scientific or Latin term.",
-  "midthoracic": "Medical, scientific or Latin term.",
-  "Mikael": "Name (person, place, organisation or product).",
-  "millivolts": "Medical, scientific or Latin term.",
-  "mineralisation": "Medical, scientific or Latin term.",
-  "Mitsuhashi": "Name (person, place, organisation or product).",
-  "MLF": "Abbreviation or unit.",
-  "mmHg": "Abbreviation or unit.",
-  "modulatory": "Medical, scientific or Latin term.",
-  "Molaison": "Name (person, place, organisation or product).",
-  "monocytes": "Medical, scientific or Latin term.",
-  "monophosphate": "Medical, scientific or Latin term.",
-  "monosaccharides": "Medical, scientific or Latin term.",
-  "monosynaptic": "Medical, scientific or Latin term.",
-  "Monteggia": "Name (person, place, organisation or product).",
-  "moveable": "Medical, scientific or Latin term.",
-  "mucosal": "Medical, scientific or Latin term.",
-  "multangular": "Medical, scientific or Latin term.",
-  "multiaxial": "Medical, scientific or Latin term.",
-  "multimodal": "Medical, scientific or Latin term.",
-  "multinucleated": "Medical, scientific or Latin term.",
-  "multipolar": "Medical, scientific or Latin term.",
-  "multisensory": "Medical, scientific or Latin term.",
-  "muscarine": "Medical, scientific or Latin term.",
-  "muscarinic": "Medical, scientific or Latin term.",
-  "mV": "Abbreviation or unit.",
-  "mydriasis": "Medical, scientific or Latin term.",
-  "myel": "Medical, scientific or Latin term.",
-  "myelin": "Medical, scientific or Latin term.",
-  "myelinated": "Medical, scientific or Latin term.",
-  "myelinating": "Medical, scientific or Latin term.",
-  "myelination": "Medical, scientific or Latin term.",
-  "myelomeningocele": "Medical, scientific or Latin term.",
-  "myogenic": "Medical, scientific or Latin term.",
-  "Ménière": "Name (person, place, organisation or product).",
-  "natriuretic": "Medical, scientific or Latin term.",
-  "nephr": "Medical, scientific or Latin term.",
-  "nephrine": "Medical, scientific or Latin term.",
-  "neuraxis": "Medical, scientific or Latin term.",
-  "neuroaxis": "Medical, scientific or Latin term.",
-  "neurochemicals": "Medical, scientific or Latin term.",
-  "neurochemistry": "Medical, scientific or Latin term.",
-  "neurodegenerative": "Medical, scientific or Latin term.",
-  "neurodiagnostic": "Medical, scientific or Latin term.",
-  "neuroectoderm": "Medical, scientific or Latin term.",
-  "neuroeffector": "Medical, scientific or Latin term.",
-  "neuroendocrine": "Medical, scientific or Latin term.",
-  "neuroepithelium": "Medical, scientific or Latin term.",
-  "neurogenic": "Medical, scientific or Latin term.",
-  "neuromodulators": "Medical, scientific or Latin term.",
-  "neuromuscular": "Medical, scientific or Latin term.",
-  "neuropathology": "Medical, scientific or Latin term.",
-  "neuropeptide": "Medical, scientific or Latin term.",
-  "neuropeptides": "Medical, scientific or Latin term.",
-  "neurophysiology": "Medical, scientific or Latin term.",
-  "neuropsychologist": "Medical, scientific or Latin term.",
-  "neuroscientist": "Medical, scientific or Latin term.",
-  "neurosecretory": "Medical, scientific or Latin term.",
-  "NFP": "Abbreviation or unit.",
-  "nicotinic": "Medical, scientific or Latin term.",
-  "nm": "Abbreviation or unit.",
-  "NMJ": "Abbreviation or unit.",
-  "nociception": "Medical, scientific or Latin term.",
-  "nociceptor": "Medical, scientific or Latin term.",
-  "nociceptors": "Medical, scientific or Latin term.",
-  "noradrenaline": "Medical, scientific or Latin term.",
-  "norepinephrine": "Medical, scientific or Latin term.",
-  "notesquote": "Field name in the AI prompt.",
-  "notochord": "Medical, scientific or Latin term.",
-  "NSAIDs": "Abbreviation or unit.",
-  "occulta": "Medical, scientific or Latin term.",
-  "odontoid": "Medical, scientific or Latin term.",
-  "odorant": "Medical, scientific or Latin term.",
-  "oe": "Letter pair, in the note on Gray’s spelling (œ written oe).",
-  "ok": "Value name in the AI prompt (status “ok”).",
-  "olfaction": "Medical, scientific or Latin term.",
-  "oligo": "Medical, scientific or Latin term.",
-  "oligodendrocyte": "Medical, scientific or Latin term.",
-  "oligodendrocytes": "Medical, scientific or Latin term.",
-  "oncotic": "Medical, scientific or Latin term.",
-  "OpenStax": "Name (person, place, organisation or product).",
-  "ophthalmoplegia": "Medical, scientific or Latin term.",
-  "ophthalmoscope": "Medical, scientific or Latin term.",
-  "opposable": "Medical, scientific or Latin term.",
-  "opsin": "Medical, scientific or Latin term.",
-  "opsins": "Medical, scientific or Latin term.",
-  "organismal": "Medical, scientific or Latin term.",
-  "ortho": "Medical, scientific or Latin term.",
-  "orthostatic": "Medical, scientific or Latin term.",
-  "osmolarity": "Medical, scientific or Latin term.",
-  "osmoreceptor": "Medical, scientific or Latin term.",
-  "osmoreceptors": "Medical, scientific or Latin term.",
-  "ossicular": "Medical, scientific or Latin term.",
-  "oste": "Medical, scientific or Latin term.",
-  "osteoblast": "Medical, scientific or Latin term.",
-  "osteoblastic": "Medical, scientific or Latin term.",
-  "osteoblasts": "Medical, scientific or Latin term.",
-  "osteoclast": "Medical, scientific or Latin term.",
-  "osteoclasts": "Medical, scientific or Latin term.",
-  "osteocyte": "Medical, scientific or Latin term.",
-  "osteocytes": "Medical, scientific or Latin term.",
-  "osteogenesis": "Medical, scientific or Latin term.",
-  "osteogenic": "Medical, scientific or Latin term.",
-  "osteoid": "Medical, scientific or Latin term.",
-  "osteology": "Medical, scientific or Latin term.",
-  "osteon": "Medical, scientific or Latin term.",
-  "osteons": "Medical, scientific or Latin term.",
-  "osteoprogenitor": "Medical, scientific or Latin term.",
-  "otitis": "Medical, scientific or Latin term.",
-  "outpocket": "Medical, scientific or Latin term.",
-  "outpocketings": "Medical, scientific or Latin term.",
-  "overconsumption": "Medical, scientific or Latin term.",
-  "overlearned": "Medical, scientific or Latin term.",
-  "Pacinian": "Name (person, place, organisation or product).",
-  "paed": "Medical, scientific or Latin term.",
-  "Paget": "Name (person, place, organisation or product).",
-  "Pancoast": "Name (person, place, organisation or product).",
-  "parasympathomimetic": "Medical, scientific or Latin term.",
-  "Penfield": "Name (person, place, organisation or product).",
-  "peptidases": "Medical, scientific or Latin term.",
-  "percept": "Medical, scientific or Latin term.",
-  "perfuse": "Medical, scientific or Latin term.",
-  "peri": "Medical, scientific or Latin term.",
-  "perilunate": "Medical, scientific or Latin term.",
-  "peroneal": "Medical, scientific or Latin term.",
-  "peroneus": "Medical, scientific or Latin term.",
-  "phagocytosis": "Medical, scientific or Latin term.",
-  "phenylephrine": "Medical, scientific or Latin term.",
-  "Phineas": "Name (person, place, organisation or product).",
-  "phosphatase": "Medical, scientific or Latin term.",
-  "phospholipase": "Medical, scientific or Latin term.",
-  "phospholipid": "Medical, scientific or Latin term.",
-  "phospholipids": "Medical, scientific or Latin term.",
-  "photoisomerisation": "Medical, scientific or Latin term.",
-  "photomicrograph": "Medical, scientific or Latin term.",
-  "photopigment": "Medical, scientific or Latin term.",
-  "photopigments": "Medical, scientific or Latin term.",
-  "photoreception": "Medical, scientific or Latin term.",
-  "photoreceptor": "Medical, scientific or Latin term.",
-  "photoreceptors": "Medical, scientific or Latin term.",
-  "phototransduction": "Medical, scientific or Latin term.",
-  "pilocarpine": "Medical, scientific or Latin term.",
-  "pinky": "Medical, scientific or Latin term.",
-  "planus": "Medical, scientific or Latin term.",
-  "plegic": "Medical, scientific or Latin term.",
-  "pluripotent": "Medical, scientific or Latin term.",
-  "pneumothorax": "Medical, scientific or Latin term.",
-  "PNS": "Abbreviation or unit.",
-  "Poiseuille": "Name (person, place, organisation or product).",
-  "polyaxial": "Medical, scientific or Latin term.",
-  "polycythaemia": "Medical, scientific or Latin term.",
-  "ponto": "Medical, scientific or Latin term.",
-  "posteroinferior": "Medical, scientific or Latin term.",
-  "Pott": "Name (person, place, organisation or product).",
-  "PPRF": "Abbreviation or unit.",
-  "praxis": "Medical, scientific or Latin term.",
-  "pre": "Medical, scientific or Latin term.",
-  "precapillary": "Medical, scientific or Latin term.",
-  "preload": "Medical, scientific or Latin term.",
-  "premotor": "Medical, scientific or Latin term.",
-  "pressor": "Medical, scientific or Latin term.",
-  "presynaptic": "Medical, scientific or Latin term.",
-  "proliferative": "Medical, scientific or Latin term.",
-  "prominens": "Medical, scientific or Latin term.",
-  "pronated": "Medical, scientific or Latin term.",
-  "proprioception": "Medical, scientific or Latin term.",
-  "proprioceptive": "Medical, scientific or Latin term.",
-  "proprioceptor": "Medical, scientific or Latin term.",
-  "proprioceptors": "Medical, scientific or Latin term.",
-  "prosopa": "Medical, scientific or Latin term.",
-  "prosopagnosia": "Medical, scientific or Latin term.",
-  "prostaglandins": "Medical, scientific or Latin term.",
-  "proteopathy": "Medical, scientific or Latin term.",
-  "proximalis": "Medical, scientific or Latin term.",
-  "pseudoephedrine": "Medical, scientific or Latin term.",
-  "PSP": "Abbreviation or unit.",
-  "PSPs": "Abbreviation or unit.",
-  "PTH": "Abbreviation or unit.",
-  "racquet": "Medical, scientific or Latin term.",
-  "radiograph": "Medical, scientific or Latin term.",
-  "radiographs": "Medical, scientific or Latin term.",
-  "radiologic": "Medical, scientific or Latin term.",
-  "Ranvier": "Name (person, place, organisation or product).",
-  "reabsorption": "Medical, scientific or Latin term.",
-  "regionalisation": "Medical, scientific or Latin term.",
-  "renin": "Medical, scientific or Latin term.",
-  "René": "Name (person, place, organisation or product).",
-  "reoccurrence": "Medical, scientific or Latin term.",
-  "reoxygenated": "Medical, scientific or Latin term.",
-  "reoxygenation": "Medical, scientific or Latin term.",
-  "repolarisation": "Medical, scientific or Latin term.",
-  "repolarises": "Medical, scientific or Latin term.",
-  "repolarising": "Medical, scientific or Latin term.",
-  "resistive": "Medical, scientific or Latin term.",
-  "resorb": "Medical, scientific or Latin term.",
-  "resorbed": "Medical, scientific or Latin term.",
-  "resorbing": "Medical, scientific or Latin term.",
-  "reuptake": "Medical, scientific or Latin term.",
-  "RGC": "Abbreviation or unit.",
-  "RGCs": "Abbreviation or unit.",
-  "Rhett": "Name (person, place, organisation or product).",
-  "rhinorrhoea": "Medical, scientific or Latin term.",
-  "rhodopsin": "Medical, scientific or Latin term.",
-  "Rinne": "Name (person, place, organisation or product).",
-  "Romberg": "Name (person, place, organisation or product).",
-  "Ruffini": "Name (person, place, organisation or product).",
-  "saccade": "Medical, scientific or Latin term.",
-  "saltare": "Medical, scientific or Latin term.",
-  "saltatory": "Medical, scientific or Latin term.",
-  "sarcolemma": "Medical, scientific or Latin term.",
-  "savannah": "Medical, scientific or Latin term.",
-  "sba": "Question type name in the AI prompt and question files.",
-  "scaphocephaly": "Medical, scientific or Latin term.",
-  "Schlatter": "Name (person, place, organisation or product).",
-  "Schlehlein": "Name (person, place, organisation or product).",
-  "Schwann": "Name (person, place, organisation or product).",
-  "scleroderma": "Medical, scientific or Latin term.",
-  "sclerotome": "Medical, scientific or Latin term.",
-  "sclerotomes": "Medical, scientific or Latin term.",
-  "scopolamine": "Medical, scientific or Latin term.",
-  "SCP": "Abbreviation or unit.",
-  "sensorimotor": "Medical, scientific or Latin term.",
-  "sensorineural": "Medical, scientific or Latin term.",
-  "sensorium": "Medical, scientific or Latin term.",
-  "serotonergic": "Medical, scientific or Latin term.",
-  "skeletomotor": "Medical, scientific or Latin term.",
-  "SNc": "Abbreviation or unit.",
-  "Snellen": "Name (person, place, organisation or product).",
-  "SNr": "Abbreviation or unit.",
-  "SNS": "Abbreviation or unit.",
-  "soma": "Medical, scientific or Latin term.",
-  "somatosensation": "Medical, scientific or Latin term.",
-  "somite": "Medical, scientific or Latin term.",
-  "somites": "Medical, scientific or Latin term.",
-  "spasticity": "Medical, scientific or Latin term.",
-  "sphygmomanometer": "Medical, scientific or Latin term.",
-  "sphēn": "Medical, scientific or Latin term.",
-  "spinocerebellum": "Medical, scientific or Latin term.",
-  "Splenda": "Name (person, place, organisation or product).",
-  "stapedectomy": "Medical, scientific or Latin term.",
-  "stereocilia": "Medical, scientific or Latin term.",
-  "stereognosis": "Medical, scientific or Latin term.",
-  "stevenfruitsmaak": "Medical, scientific or Latin term.",
-  "stevia": "Medical, scientific or Latin term.",
-  "STN": "Abbreviation or unit.",
-  "subcortical": "Medical, scientific or Latin term.",
-  "subluxation": "Medical, scientific or Latin term.",
-  "submodalities": "Medical, scientific or Latin term.",
-  "submodality": "Medical, scientific or Latin term.",
-  "subtest": "Medical, scientific or Latin term.",
-  "subtests": "Medical, scientific or Latin term.",
-  "subtype": "Medical, scientific or Latin term.",
-  "subtypes": "Medical, scientific or Latin term.",
-  "sucralose": "Medical, scientific or Latin term.",
-  "summate": "Medical, scientific or Latin term.",
-  "Superborsuk": "Name (person, place, organisation or product).",
-  "superomedial": "Medical, scientific or Latin term.",
-  "supinated": "Medical, scientific or Latin term.",
-  "Suseno": "Name (person, place, organisation or product).",
-  "Sutphin": "Name (person, place, organisation or product).",
-  "Swanepoel": "Name (person, place, organisation or product).",
-  "sym": "Medical, scientific or Latin term.",
-  "sympatholytic": "Medical, scientific or Latin term.",
-  "sympathomimetic": "Medical, scientific or Latin term.",
-  "sympathoplegic": "Medical, scientific or Latin term.",
-  "synapsing": "Medical, scientific or Latin term.",
-  "syndesmotic": "Medical, scientific or Latin term.",
-  "synergists": "Medical, scientific or Latin term.",
-  "synovia": "Medical, scientific or Latin term.",
-  "synuclein": "Medical, scientific or Latin term.",
-  "tachycardic": "Medical, scientific or Latin term.",
-  "talipes": "Medical, scientific or Latin term.",
-  "tamponade": "Medical, scientific or Latin term.",
-  "Terminologia": "Name (person, place, organisation or product).",
-  "Theiss": "Name (person, place, organisation or product).",
-  "thermoreceptor": "Medical, scientific or Latin term.",
-  "thermoreceptors": "Medical, scientific or Latin term.",
-  "thrombophlebitis": "Medical, scientific or Latin term.",
-  "thyroxine": "Medical, scientific or Latin term.",
-  "TIAs": "Abbreviation or unit.",
-  "tibiofemoral": "Medical, scientific or Latin term.",
-  "TMJ": "Abbreviation or unit.",
-  "trabeculated": "Medical, scientific or Latin term.",
-  "transdermal": "Medical, scientific or Latin term.",
-  "transduce": "Medical, scientific or Latin term.",
-  "transduced": "Medical, scientific or Latin term.",
-  "transduces": "Medical, scientific or Latin term.",
-  "transducing": "Medical, scientific or Latin term.",
-  "transmembrane": "Medical, scientific or Latin term.",
-  "transsphenoidal": "Medical, scientific or Latin term.",
-  "triaxial": "Medical, scientific or Latin term.",
-  "triphosphate": "Medical, scientific or Latin term.",
-  "Tuffier": "Name (person, place, organisation or product).",
-  "turbinate": "Medical, scientific or Latin term.",
-  "tyrosine": "Medical, scientific or Latin term.",
-  "ultrastructure": "Medical, scientific or Latin term.",
-  "umami": "Medical, scientific or Latin term.",
-  "UMN": "Abbreviation or unit.",
-  "uncalcified": "Medical, scientific or Latin term.",
-  "unciform": "Medical, scientific or Latin term.",
-  "underactive": "Medical, scientific or Latin term.",
-  "ungual": "Medical, scientific or Latin term.",
-  "uniaxial": "Medical, scientific or Latin term.",
-  "unipolar": "Medical, scientific or Latin term.",
-  "unmineralised": "Medical, scientific or Latin term.",
-  "unmyelinated": "Medical, scientific or Latin term.",
-  "utero": "Medical, scientific or Latin term.",
-  "Uthman": "Name (person, place, organisation or product).",
-  "valgus": "Medical, scientific or Latin term.",
-  "varicosities": "Medical, scientific or Latin term.",
-  "varicosity": "Medical, scientific or Latin term.",
-  "vascularised": "Medical, scientific or Latin term.",
-  "vasculature": "Medical, scientific or Latin term.",
-  "vasculitis": "Medical, scientific or Latin term.",
-  "vasoactive": "Medical, scientific or Latin term.",
-  "vasoconstricting": "Medical, scientific or Latin term.",
-  "vasoconstrictor": "Medical, scientific or Latin term.",
-  "vasodilation": "Medical, scientific or Latin term.",
-  "vasodilator": "Medical, scientific or Latin term.",
-  "vasodilators": "Medical, scientific or Latin term.",
-  "vasomotion": "Medical, scientific or Latin term.",
-  "vasopressin": "Medical, scientific or Latin term.",
-  "venoconstriction": "Medical, scientific or Latin term.",
-  "vertebrochondral": "Medical, scientific or Latin term.",
-  "vertebrosternal": "Medical, scientific or Latin term.",
-  "vestibulo": "Medical, scientific or Latin term.",
-  "vestibulocerebellum": "Medical, scientific or Latin term.",
-  "Vinent": "Name (person, place, organisation or product).",
-  "Virchow": "Name (person, place, organisation or product).",
-  "volar": "Medical, scientific or Latin term.",
-  "Volkmann": "Name (person, place, organisation or product).",
-  "VOR": "Abbreviation or unit.",
-  "Vulegenda": "Name (person, place, organisation or product).",
-  "Wayans": "Name (person, place, organisation or product).",
-  "Wernicke": "Name (person, place, organisation or product).",
-  "Westphal": "Name (person, place, organisation or product).",
-  "whynot": "Field name in the AI prompt.",
-  "Wikimedia": "Name (person, place, organisation or product).",
-  "Woodson": "Name (person, place, organisation or product).",
-  "Yamaguchi": "Name (person, place, organisation or product).",
-  "YAN": "Pronunciation syllable (“gee-YAN”).",
-  "zags": "Medical, scientific or Latin term.",
-  "zig": "Medical, scientific or Latin term.",
-  "anticholinergics": "Medical, scientific or Latin term.",
-  "bisphosphonate": "Medical, scientific or Latin term.",
-  "dacryocystorhinostomy": "Medical, scientific or Latin term.",
-  "histologically": "Medical, scientific or Latin term.",
-  "mastoiditis": "Medical, scientific or Latin term.",
-  "midshaft": "Medical, scientific or Latin term.",
-  "neuroanatomy": "Medical, scientific or Latin term.",
-  "neurophysiologist": "Medical, scientific or Latin term.",
-  "osteoporotic": "Medical, scientific or Latin term.",
-  "otosclerosis": "Medical, scientific or Latin term.",
-  "parasympathomimetics": "Medical, scientific or Latin term.",
-  "postcapillary": "Medical, scientific or Latin term.",
-  "saccades": "Medical, scientific or Latin term.",
-  "saccadic": "Medical, scientific or Latin term.",
-  "spondylolisthesis": "Medical, scientific or Latin term.",
-  "subungual": "Medical, scientific or Latin term.",
-  "cogito": "Medical, scientific or Latin term."
+  "absorber": {
+   "group": "OpenStax text: term or word"
+  },
+  "Aikman": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "AMISOM": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "anaxonic": {
+   "group": "OpenStax text: term or word"
+  },
+  "angulate": {
+   "group": "Atlas-written medical or Latin term"
+  },
+  "ANH": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= atrial natriuretic hormone"
+  },
+  "antecubital": {
+   "group": "OpenStax text: term or word"
+  },
+  "Anthropic": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Anyville": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "appositional": {
+   "group": "OpenStax text: term or word"
+  },
+  "arthroun": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "articulus": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "ASD": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= autism spectrum disorder"
+  },
+  "ASIS": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= anterior superior iliac spine"
+  },
+  "astro": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "athero": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "autoregulatory": {
+   "group": "OpenStax text: term or word"
+  },
+  "backflow": {
+   "group": "OpenStax text: term or word"
+  },
+  "baroreception": {
+   "group": "OpenStax text: term or word"
+  },
+  "Bartleby": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Betts": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "blocky": {
+   "group": "OpenStax text: term or word"
+  },
+  "bottommost": {
+   "group": "OpenStax text: term or word"
+  },
+  "braincase": {
+   "group": "OpenStax text: term or word"
+  },
+  "calcaneum": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "Older name for the calcaneus: kept only as a Spelling Quiz alternative."
+  },
+  "calcis": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "“Os calcis”, older name for the calcaneus: kept only as a Spelling Quiz alternative."
+  },
+  "callout": {
+   "group": "OpenStax text: term or word",
+   "suggestion": "Figure label; suggest “label”."
+  },
+  "callouts": {
+   "group": "OpenStax text: term or word",
+   "suggestion": "As callout: “labels”."
+  },
+  "centremost": {
+   "group": "OpenStax text: term or word"
+  },
+  "Chassaignac": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "circumvallate": {
+   "group": "OpenStax text: term or word"
+  },
+  "CNI": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= cranial nerve I"
+  },
+  "CNII": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= cranial nerve II"
+  },
+  "CNIII": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= cranial nerve III"
+  },
+  "CNIV": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= cranial nerve IV"
+  },
+  "CNIX": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= cranial nerve IX"
+  },
+  "CNVI": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= cranial nerve VI"
+  },
+  "CNVII": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= cranial nerve VII"
+  },
+  "CNVIII": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= cranial nerve VIII"
+  },
+  "CNX": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= cranial nerve X"
+  },
+  "CNXI": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= cranial nerve XI"
+  },
+  "CNXII": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= cranial nerve XII"
+  },
+  "coccydynia": {
+   "group": "Atlas-written medical or Latin term"
+  },
+  "coelom": {
+   "group": "OpenStax text: term or word"
+  },
+  "comparator": {
+   "group": "OpenStax text: term or word"
+  },
+  "costo": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "counterblow": {
+   "group": "OpenStax text: term or word"
+  },
+  "cribrum": {
+   "group": "Atlas-written medical or Latin term"
+  },
+  "cyte": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "DBCLS": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= Database Center for Life Science"
+  },
+  "DeLong": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "demifacet": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "Terminologia Anatomica: “costal facet” (superior or inferior). Suggest “costal facet (demifacet)”."
+  },
+  "demifacets": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "As demifacet: “costal facets (demifacets)”."
+  },
+  "dendro": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "dermatome": {
+   "group": "OpenStax text: term or word"
+  },
+  "dermatomes": {
+   "group": "OpenStax text: term or word"
+  },
+  "dia": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "diarthrodial": {
+   "group": "OpenStax text: term or word"
+  },
+  "diarthrotic": {
+   "group": "OpenStax text: term or word"
+  },
+  "diploe": {
+   "group": "OpenStax text: term or word"
+  },
+  "distensible": {
+   "group": "OpenStax text: term or word"
+  },
+  "distractors": {
+   "group": "Atlas: technical label",
+   "suggestion": "Question-writing term (wrong options), in the AI prompt."
+  },
+  "disynaptic": {
+   "group": "OpenStax text: term or word"
+  },
+  "engrained": {
+   "group": "OpenStax text: term or word",
+   "suggestion": "More usual British form: “ingrained”."
+  },
+  "enkephalon": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "equilibrate": {
+   "group": "OpenStax text: term or word"
+  },
+  "Evangelista": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "everted": {
+   "group": "Atlas-written medical or Latin term"
+  },
+  "Febiger": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "ferre": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "flickr": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "fluorapatite": {
+   "group": "OpenStax text: term or word"
+  },
+  "foosball": {
+   "group": "OpenStax text: term or word",
+   "suggestion": "American; British: “table football”."
+  },
+  "foveal": {
+   "group": "OpenStax text: term or word"
+  },
+  "FSRS": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= Free Spaced Repetition Scheduler"
+  },
+  "FST": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= Field Sobriety Test"
+  },
+  "Gauthier": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "gonial": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "Terminologia Anatomica: “angle of the mandible”. Suggest “angle of the mandible (gonial angle)”."
+  },
+  "greenstick": {
+   "group": "OpenStax text: term or word"
+  },
+  "greyscale": {
+   "group": "OpenStax text: term or word"
+  },
+  "Heilman": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "HuBMAP": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= Human BioMolecular Atlas Program"
+  },
+  "Häggström": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "ine": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "infoldings": {
+   "group": "OpenStax text: term or word"
+  },
+  "innominatum": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "Latin, quoted from Gray’s (“os innominatum”) in the note on its historical terms."
+  },
+  "Juanico": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "kah": {
+   "group": "OpenStax pronunciation guide: syllable"
+  },
+  "Kehr": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "kephalon": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "Kervyn": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Korbinian": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Kriese": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "lah": {
+   "group": "OpenStax pronunciation guide: syllable"
+  },
+  "lamellated": {
+   "group": "OpenStax text: term or word"
+  },
+  "lateralward": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "Gray’s 1918 word, quoted in the note on its historical terms."
+  },
+  "Lisfranc": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Lluís": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Looie": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "midface": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "Suggest “middle third of the face” where the reader may not know “midface”."
+  },
+  "Mikael": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "millivolts": {
+   "group": "OpenStax text: term or word"
+  },
+  "Mitsuhashi": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "mmHg": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= millimetres of mercury"
+  },
+  "Molaison": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "multangular": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "Older names (greater and lesser multangular) for the trapezium and trapezoid: kept only as Spelling Quiz alternatives."
+  },
+  "myel": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "myelinating": {
+   "group": "OpenStax text: term or word"
+  },
+  "nephr": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "nephrine": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "neuroaxis": {
+   "group": "OpenStax text: term or word"
+  },
+  "notesquote": {
+   "group": "Atlas: technical label",
+   "suggestion": "Field name in the AI prompt."
+  },
+  "oe": {
+   "group": "Atlas: technical label",
+   "suggestion": "Letter pair, in the note on Gray’s spelling (œ written oe)."
+  },
+  "oncotic": {
+   "group": "OpenStax text: term or word"
+  },
+  "OpenStax": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "opposable": {
+   "group": "OpenStax text: term or word"
+  },
+  "oste": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "osteoprogenitor": {
+   "group": "OpenStax text: term or word"
+  },
+  "outpocketings": {
+   "group": "OpenStax text: term or word"
+  },
+  "Penfield": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "perfuse": {
+   "group": "OpenStax text: term or word"
+  },
+  "perilunate": {
+   "group": "Atlas-written medical or Latin term"
+  },
+  "peroneus": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "Terminologia Anatomica: “fibularis”. Suggest “fibularis (peroneus) longus”."
+  },
+  "Phineas": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "pinky": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "Informal (American). Kept only as a Spelling Quiz alternative and in OpenStax’s mnemonic; Atlas text says “little finger”."
+  },
+  "plegic": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "Poiseuille": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "pressor": {
+   "group": "OpenStax text: term or word"
+  },
+  "prominens": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "Latin, “vertebra prominens” (C7): correct."
+  },
+  "prosopa": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "proteopathy": {
+   "group": "OpenStax text: term or word"
+  },
+  "proximalis": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "Latin, “phalanx proximalis”: correct."
+  },
+  "regionalisation": {
+   "group": "OpenStax text: term or word"
+  },
+  "René": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "reoccurrence": {
+   "group": "OpenStax text: term or word",
+   "suggestion": "More usual: “recurrence”."
+  },
+  "resistive": {
+   "group": "OpenStax text: term or word"
+  },
+  "resorb": {
+   "group": "OpenStax text: term or word"
+  },
+  "resorbed": {
+   "group": "OpenStax text: term or word"
+  },
+  "resorbing": {
+   "group": "OpenStax text: term or word"
+  },
+  "Rhett": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "saltare": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  },
+  "sba": {
+   "group": "Atlas: technical label",
+   "suggestion": "Question type name (single best answer)."
+  },
+  "Schlehlein": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "sensorium": {
+   "group": "OpenStax text: term or word"
+  },
+  "SNc": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= substantia nigra pars compacta"
+  },
+  "SNr": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= substantia nigra pars reticulata"
+  },
+  "sphēn": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "Greek (“wedge”), in the sphenoid’s memory hook."
+  },
+  "Splenda": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "stevenfruitsmaak": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "subtest": {
+   "group": "OpenStax text: term or word"
+  },
+  "sucralose": {
+   "group": "OpenStax text: term or word"
+  },
+  "Superborsuk": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Suseno": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Sutphin": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Swanepoel": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "sympathoplegic": {
+   "group": "OpenStax text: term or word"
+  },
+  "Terminologia": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Theiss": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "trabeculated": {
+   "group": "OpenStax text: term or word"
+  },
+  "transduce": {
+   "group": "OpenStax text: term or word"
+  },
+  "transduces": {
+   "group": "OpenStax text: term or word"
+  },
+  "transsphenoidal": {
+   "group": "Atlas-written medical or Latin term"
+  },
+  "Tuffier": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "UMN": {
+   "group": "Abbreviation (written out at first use in lessons)",
+   "suggestion": "= upper motor neuron"
+  },
+  "unciform": {
+   "group": "Atlas-written medical or Latin term",
+   "suggestion": "Older name for the hamate: kept only as a Spelling Quiz alternative."
+  },
+  "ungual": {
+   "group": "Atlas-written medical or Latin term"
+  },
+  "Uthman": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "vertebrochondral": {
+   "group": "Atlas-written medical or Latin term"
+  },
+  "vertebrosternal": {
+   "group": "Atlas-written medical or Latin term"
+  },
+  "Vinent": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Vulegenda": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Wayans": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "whynot": {
+   "group": "Atlas: technical label",
+   "suggestion": "Field name in the AI prompt."
+  },
+  "Wikimedia": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Woodson": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "Yamaguchi": {
+   "group": "Name: person, product, organisation or place"
+  },
+  "YAN": {
+   "group": "OpenStax pronunciation guide: syllable"
+  },
+  "neurophysiologist": {
+   "group": "OpenStax text: term or word"
+  },
+  "subungual": {
+   "group": "Atlas-written medical or Latin term"
+  },
+  "cogito": {
+   "group": "OpenStax etymology note: Latin or Greek word part"
+  }
  },
  "historical": {
-  "abducent": "Gray’s 1918: historical or Latin term.",
-  "Albrecht": "Gray’s 1918: name.",
-  "ali": "Gray’s 1918: historical or Latin term.",
-  "Anconaeus": "Gray’s 1918: historical or Latin term.",
-  "ankylosed": "Gray’s 1918: historical or Latin term.",
-  "antero": "Gray’s 1918: historical or Latin term.",
-  "aponeurotic": "Gray’s 1918: historical or Latin term.",
-  "atlantal": "Gray’s 1918: historical or Latin term.",
-  "basi": "Gray’s 1918: historical or Latin term.",
-  "basialveolar": "Gray’s 1918: historical or Latin term.",
-  "Basihyal": "Gray’s 1918: historical or Latin term.",
-  "basinasal": "Gray’s 1918: historical or Latin term.",
-  "Basle": "Gray’s 1918: name.",
-  "bilaminar": "Gray’s 1918: historical or Latin term.",
-  "bilobed": "Gray’s 1918: historical or Latin term.",
-  "brachyfacial": "Gray’s 1918: historical or Latin term.",
-  "branchial": "Gray’s 1918: historical or Latin term.",
-  "bregmatic": "Gray’s 1918: historical or Latin term.",
-  "cancellated": "Gray’s 1918: historical or Latin term.",
-  "cancelli": "Gray’s 1918: historical or Latin term.",
-  "Caninus": "Gray’s 1918: historical or Latin term.",
-  "capituli": "Gray’s 1918: historical or Latin term.",
-  "Ceratohyals": "Gray’s 1918: historical or Latin term.",
-  "chemoprosope": "Gray’s 1918: historical or Latin term.",
-  "chondrified": "Gray’s 1918: historical or Latin term.",
-  "cochleariformis": "Gray’s 1918: historical or Latin term.",
-  "Columna": "Gray’s 1918: historical or Latin term.",
-  "concavo": "Gray’s 1918: historical or Latin term.",
-  "condyloideus": "Gray’s 1918: historical or Latin term.",
-  "craniology": "Gray’s 1918: historical or Latin term.",
-  "crescentic": "Gray’s 1918: historical or Latin term.",
-  "cuboidal": "Gray’s 1918: historical or Latin term.",
-  "cycloid": "Gray’s 1918: historical or Latin term.",
-  "dacryon": "Gray’s 1918: historical or Latin term.",
-  "dentated": "Gray’s 1918: historical or Latin term.",
-  "denticulated": "Gray’s 1918: historical or Latin term.",
-  "dentis": "Gray’s 1918: historical or Latin term.",
-  "Derry": "Gray’s 1918: name.",
-  "digitation": "Gray’s 1918: historical or Latin term.",
-  "disarticulated": "Gray’s 1918: historical or Latin term.",
-  "diverticula": "Gray’s 1918: historical or Latin term.",
-  "diverticulum": "Gray’s 1918: historical or Latin term.",
-  "dolichofacial": "Gray’s 1918: historical or Latin term.",
-  "endognathion": "Gray’s 1918: historical or Latin term.",
-  "endolymphaticus": "Gray’s 1918: historical or Latin term.",
-  "ensheathed": "Gray’s 1918: historical or Latin term.",
-  "ensiform": "Gray’s 1918: historical or Latin term.",
-  "epiotic": "Gray’s 1918: historical or Latin term.",
-  "epiphysical": "Gray’s 1918: historical or Latin term.",
-  "episternal": "Gray’s 1918: historical or Latin term.",
-  "epistropheus": "Gray’s 1918: historical or Latin term.",
-  "ethmovomerine": "Gray’s 1918: historical or Latin term.",
-  "extremitas": "Gray’s 1918: historical or Latin term.",
-  "Extremitatis": "Gray’s 1918: historical or Latin term.",
-  "falciformis": "Gray’s 1918: historical or Latin term.",
-  "Fallopii": "Gray’s 1918: name.",
-  "Fawcett": "Gray’s 1918: name.",
-  "flexuous": "Gray’s 1918: historical or Latin term.",
-  "fonticuli": "Gray’s 1918: historical or Latin term.",
-  "foraminosus": "Gray’s 1918: historical or Latin term.",
-  "frictionless": "Gray’s 1918: historical or Latin term.",
-  "frontosphenoidal": "Gray’s 1918: historical or Latin term.",
-  "Gimbernat": "Gray’s 1918: name.",
-  "Glaserian": "Gray’s 1918: name.",
-  "glenoidal": "Gray’s 1918: historical or Latin term.",
-  "gnathic": "Gray’s 1918: historical or Latin term.",
-  "Highmore": "Gray’s 1918: name.",
-  "homologue": "Gray’s 1918: historical or Latin term.",
-  "Huguier": "Gray’s 1918: name.",
-  "Huschke": "Gray’s 1918: name.",
-  "hydrocephalic": "Gray’s 1918: historical or Latin term.",
-  "hyothyroid": "Gray’s 1918: historical or Latin term.",
-  "ilii": "Gray’s 1918: historical or Latin term.",
-  "iliosacral": "Gray’s 1918: historical or Latin term.",
-  "imbricated": "Gray’s 1918: historical or Latin term.",
-  "infero": "Gray’s 1918: historical or Latin term.",
-  "infravomerine": "Gray’s 1918: historical or Latin term.",
-  "ingrowth": "Gray’s 1918: historical or Latin term.",
-  "interarticular": "Gray’s 1918: historical or Latin term.",
-  "interclinoid": "Gray’s 1918: historical or Latin term.",
-  "intercondyloid": "Gray’s 1918: historical or Latin term.",
-  "Kerckring": "Gray’s 1918: name.",
-  "lacrimoethmoidal": "Gray’s 1918: historical or Latin term.",
-  "lambdoidal": "Gray’s 1918: historical or Latin term.",
-  "leptoprosope": "Gray’s 1918: historical or Latin term.",
-  "ligamentary": "Gray’s 1918: historical or Latin term.",
-  "ligamentous": "Gray’s 1918: historical or Latin term.",
-  "lodgement": "Gray’s 1918: historical or Latin term.",
-  "Ludovici": "Gray’s 1918: name.",
-  "Macewen": "Gray’s 1918: name.",
-  "margo": "Gray’s 1918: historical or Latin term.",
-  "masticatory": "Gray’s 1918: historical or Latin term.",
-  "masto": "Gray’s 1918: historical or Latin term.",
-  "mastoparietal": "Gray’s 1918: historical or Latin term.",
-  "maxillare": "Gray’s 1918: historical or Latin term.",
-  "Meckel": "Gray’s 1918: name.",
-  "medialward": "Gray’s 1918: historical or Latin term.",
-  "medio": "Gray’s 1918: historical or Latin term.",
-  "Megacephalic": "Gray’s 1918: historical or Latin term.",
-  "Mesocephalic": "Gray’s 1918: historical or Latin term.",
-  "mesognathion": "Gray’s 1918: historical or Latin term.",
-  "metacarpale": "Gray’s 1918: historical or Latin term.",
-  "metacarpalia": "Gray’s 1918: historical or Latin term.",
-  "metatarsalia": "Gray’s 1918: historical or Latin term.",
-  "metopic": "Gray’s 1918: historical or Latin term.",
-  "Microcephalic": "Gray’s 1918: historical or Latin term.",
-  "minoris": "Gray’s 1918: historical or Latin term.",
-  "monotremata": "Gray’s 1918: historical or Latin term.",
-  "multangulars": "Gray’s 1918: historical or Latin term.",
-  "multangulum": "Gray’s 1918: historical or Latin term.",
-  "musculospiral": "Gray’s 1918: historical or Latin term.",
-  "musculotubarii": "Gray’s 1918: historical or Latin term.",
-  "naris": "Gray’s 1918: historical or Latin term.",
-  "Nasalia": "Gray’s 1918: historical or Latin term.",
-  "naso": "Gray’s 1918: historical or Latin term.",
-  "neurocentral": "Gray’s 1918: historical or Latin term.",
-  "norma": "Gray’s 1918: historical or Latin term.",
-  "normae": "Gray’s 1918: historical or Latin term.",
-  "nuchale": "Gray’s 1918: historical or Latin term.",
-  "obelion": "Gray’s 1918: historical or Latin term.",
-  "oculopupillary": "Gray’s 1918: historical or Latin term.",
-  "Onodi": "Gray’s 1918: name.",
-  "ophryon": "Gray’s 1918: historical or Latin term.",
-  "opisthotic": "Gray’s 1918: historical or Latin term.",
-  "orbitonasal": "Gray’s 1918: historical or Latin term.",
-  "orbitosphenoids": "Gray’s 1918: historical or Latin term.",
-  "oss": "Gray’s 1918: historical or Latin term.",
-  "osseo": "Gray’s 1918: historical or Latin term.",
-  "ossific": "Gray’s 1918: historical or Latin term.",
-  "Pacchionian": "Gray’s 1918: name.",
-  "papyracea": "Gray’s 1918: historical or Latin term.",
-  "paraesthesia": "Gray’s 1918: historical or Latin term.",
-  "parietes": "Gray’s 1918: historical or Latin term.",
-  "pelvina": "Gray’s 1918: historical or Latin term.",
-  "perilymphatic": "Gray’s 1918: historical or Latin term.",
-  "perinaei": "Gray’s 1918: historical or Latin term.",
-  "Peronaei": "Gray’s 1918: historical or Latin term.",
-  "Peronaeus": "Gray’s 1918: historical or Latin term.",
-  "petromastoid": "Gray’s 1918: historical or Latin term.",
-  "petrosphenoidal": "Gray’s 1918: historical or Latin term.",
-  "phalangeal": "Gray’s 1918: historical or Latin term.",
-  "phthisical": "Gray’s 1918: historical or Latin term.",
-  "phylogenetically": "Gray’s 1918: historical or Latin term.",
-  "posterosuperior": "Gray’s 1918: historical or Latin term.",
-  "postglenoid": "Gray’s 1918: historical or Latin term.",
-  "postsphenoid": "Gray’s 1918: historical or Latin term.",
-  "Poupart": "Gray’s 1918: name.",
-  "preauricular": "Gray’s 1918: historical or Latin term.",
-  "premaxillary": "Gray’s 1918: historical or Latin term.",
-  "presphenoid": "Gray’s 1918: historical or Latin term.",
-  "primum": "Gray’s 1918: historical or Latin term.",
-  "prismoid": "Gray’s 1918: historical or Latin term.",
-  "prootic": "Gray’s 1918: historical or Latin term.",
-  "Prosthion": "Gray’s 1918: historical or Latin term.",
-  "pterotic": "Gray’s 1918: historical or Latin term.",
-  "puboprostatic": "Gray’s 1918: historical or Latin term.",
-  "pyramis": "Gray’s 1918: historical or Latin term.",
-  "pyriform": "Gray’s 1918: historical or Latin term.",
-  "quadrumana": "Gray’s 1918: historical or Latin term.",
-  "quinti": "Gray’s 1918: historical or Latin term.",
-  "reniform": "Gray’s 1918: historical or Latin term.",
-  "Sacrospinalis": "Gray’s 1918: historical or Latin term.",
-  "sacrovertebral": "Gray’s 1918: historical or Latin term.",
-  "secundum": "Gray’s 1918: historical or Latin term.",
-  "semicanalis": "Gray’s 1918: historical or Latin term.",
-  "Sesamoidea": "Gray’s 1918: historical or Latin term.",
-  "Spalteholz": "Gray’s 1918: name.",
-  "spiculum": "Gray’s 1918: historical or Latin term.",
-  "Stenson": "Gray’s 1918: name.",
-  "stephanion": "Gray’s 1918: historical or Latin term.",
-  "sternebrae": "Gray’s 1918: historical or Latin term.",
-  "sterni": "Gray’s 1918: historical or Latin term.",
-  "Sternothyroideus": "Gray’s 1918: historical or Latin term.",
-  "stylohyal": "Gray’s 1918: historical or Latin term.",
-  "styloideus": "Gray’s 1918: historical or Latin term.",
-  "subarcuata": "Gray’s 1918: historical or Latin term.",
-  "subcoracoid": "Gray’s 1918: historical or Latin term.",
-  "subdental": "Gray’s 1918: historical or Latin term.",
-  "subjacent": "Gray’s 1918: historical or Latin term.",
-  "sublimis": "Gray’s 1918: historical or Latin term.",
-  "submaxillary": "Gray’s 1918: historical or Latin term.",
-  "Subnasal": "Gray’s 1918: historical or Latin term.",
-  "sutural": "Gray’s 1918: historical or Latin term.",
-  "tectoria": "Gray’s 1918: historical or Latin term.",
-  "tertium": "Gray’s 1918: historical or Latin term.",
-  "Testut": "Gray’s 1918: name.",
-  "Thilenius": "Gray’s 1918: name.",
-  "Thyrohyals": "Gray’s 1918: historical or Latin term.",
-  "torcular": "Gray’s 1918: historical or Latin term.",
-  "transversarium": "Gray’s 1918: historical or Latin term.",
-  "Triangularis": "Gray’s 1918: historical or Latin term.",
-  "Trichterbrust": "Gray’s 1918: historical or Latin term.",
-  "tuberculated": "Gray’s 1918: historical or Latin term.",
-  "turbinated": "Gray’s 1918: historical or Latin term.",
-  "tympanohyal": "Gray’s 1918: historical or Latin term.",
-  "unossified": "Gray’s 1918: historical or Latin term.",
-  "ununited": "Gray’s 1918: historical or Latin term.",
-  "vel": "Gray’s 1918: historical or Latin term.",
-  "Vesalii": "Gray’s 1918: name.",
-  "volaris": "Gray’s 1918: historical or Latin term.",
-  "Vrolik": "Gray’s 1918: name.",
-  "Whitnall": "Gray’s 1918: name."
+  "Albrecht": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "Anconaeus": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "ankylosed": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "antero": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "basi": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "basialveolar": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Basihyal": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "basinasal": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Basle": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "bilobed": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "brachyfacial": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "bregmatic": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "cancellated": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "cancelli": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Caninus": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "capituli": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Ceratohyals": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "chemoprosope": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "chondrified": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "cochleariformis": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Columna": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "concavo": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "condyloideus": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "cycloid": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "dacryon": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Derry": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "dolichofacial": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "endognathion": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "endolymphaticus": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "ensheathed": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "ensiform": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "epiotic": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "epiphysical": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "episternal": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "ethmovomerine": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "extremitas": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Extremitatis": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "falciformis": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Fallopii": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "Fawcett": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "flexuous": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "fonticuli": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "foraminosus": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "frictionless": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "frontosphenoidal": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Gimbernat": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "Glaserian": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "Huguier": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "Huschke": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "hyothyroid": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "ilii": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "iliosacral": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "imbricated": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "infero": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "infravomerine": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "ingrowth": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Kerckring": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "lacrimoethmoidal": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "leptoprosope": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "ligamentary": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "ligamentous": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Ludovici": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "Macewen": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "margo": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "masto": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "mastoparietal": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "maxillare": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "medialward": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "medio": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Mesocephalic": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "mesognathion": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "metacarpale": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "metacarpalia": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "metatarsalia": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "minoris": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "multangulars": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "multangulum": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "musculospiral": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "musculotubarii": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Nasalia": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "naso": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "normae": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "nuchale": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "obelion": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "oculopupillary": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "ophryon": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "opisthotic": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "orbitonasal": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "orbitosphenoids": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "oss": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Pacchionian": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "papyracea": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "pelvina": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "perinaei": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Peronaei": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Peronaeus": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "petromastoid": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "petrosphenoidal": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "phthisical": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Poupart": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "prismoid": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "prootic": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Prosthion": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "pterotic": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "puboprostatic": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "pyramis": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "quadrumana": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "quinti": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "reniform": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "sacrovertebral": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "semicanalis": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Sesamoidea": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Spalteholz": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "spiculum": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Stenson": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "stephanion": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "sternebrae": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "sterni": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Sternothyroideus": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "stylohyal": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "styloideus": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "subjacent": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "sublimis": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "tectoria": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Testut": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "Thilenius": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "Thyrohyals": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "torcular": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "transversarium": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Trichterbrust": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "tuberculated": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "tympanohyal": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "unossified": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "vel": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Vesalii": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "volaris": {
+   "group": "Gray’s 1918 only: historical or Latin term"
+  },
+  "Vrolik": {
+   "group": "Gray’s 1918 only: name"
+  },
+  "Whitnall": {
+   "group": "Gray’s 1918 only: name"
+  }
  },
  "forms": {
   "brain-stem": "brainstem",
@@ -4401,7 +4439,8 @@
   "ribcage": "rib cage",
   "seatbelt": "seat belt",
   "adrenalin": "adrenaline",
-  "afterward": "afterwards"
+  "afterward": "afterwards",
+  "zig zags": "zigzags"
  },
  "names": {
   "Database Center for Life Science": "Organisation (BodyParts3D publisher): its own spelling.",
@@ -4423,7 +4462,9 @@
   "BodyParts3D": "Database name.",
   "SIL Open Font License": "Licence name.",
   "Ph.D.": "Degree abbreviation.",
-  "ΔP": "Symbol (pressure difference)."
+  "ΔP": "Symbol (pressure difference).",
+  "Anatomy of the Human Body": "Title of Gray’s Anatomy.",
+  "Human Reference Atlas": "Name of the HuBMAP atlas."
  },
  "keep": {
   "specialty": "British medical usage (NHS specialty training), not general “speciality”.",

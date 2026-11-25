@@ -39,3 +39,42 @@ describe('the text check', () => {
     expect(() => execFileSync('node', [join(ROOT, 'scripts', 'textcheck.mjs')], { stdio: 'pipe' })).not.toThrow()
   }, 60000)
 })
+
+describe('authoritative sources', async () => {
+  const { sourceOf, derivedFrom } = await import('./sources.mjs')
+  it('approves British forms of source words, never the American form itself', () => {
+    expect(sourceOf('haematoma')).toBeTruthy() // MeSH has "hematoma"
+    expect(sourceOf('hematoma')).toBeNull()
+    expect(sourceOf('rhinorrhoea')).toBeTruthy()
+    expect(sourceOf('osteoblast')).toBeTruthy() // OpenStax glossary
+  })
+  it('approves words formed regularly from source words', () => {
+    expect(derivedFrom('reoxygenation')).toMatch(/oxygenation/)
+    expect(derivedFrom('hyperpolarising')).toMatch(/hyperpolarisation/)
+    expect(derivedFrom('qwertyfoo')).toBeNull()
+  })
+})
+
+describe('abbreviations', async () => {
+  const { firstUses, partsOf } = await import('./abbreviations.mjs')
+  const run = (texts, fix = true) => {
+    const holder = { texts: [...texts] }
+    const r = firstUses(partsOf(holder), { fix })
+    return { ...r, texts: holder.texts }
+  }
+  it('writes an abbreviation out the first time it appears in a lesson, once', () => {
+    const r = run(['The CNS is the brain and spinal cord.', 'The CNS is protected by bone.'])
+    expect(r.texts).toEqual(['The central nervous system (CNS) is the brain and spinal cord.', 'The CNS is protected by bone.'])
+  })
+  it('leaves one already defined, either way round', () => {
+    expect(run(['the central nervous system (CNS) and the CNS']).written).toEqual([])
+    expect(run(['CNS (central nervous system) and CNS']).written).toEqual([])
+  })
+  it('counts a plural as its singular, and skips names and units', () => {
+    expect(run(['potentials (PSPs). An excitatory PSP']).written).toEqual([])
+    expect(run(['Photo: Benjamin J. DeLong. 120 mmHg.']).written).toEqual([])
+  })
+  it('capitalises a full form that starts a sentence', () => {
+    expect(run(['CSF bathes the brain.']).texts[0]).toBe('Cerebrospinal fluid (CSF) bathes the brain.')
+  })
+})

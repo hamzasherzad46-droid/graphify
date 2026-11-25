@@ -25,7 +25,7 @@ const question = (boneIds: string[]) => ({
     why: { type: 'string', description: 'Why this is the answer: two to four sentences.' },
     whyNot: { type: 'array', items: { type: 'string' }, description: 'sba: one line per option, in option order, empty string for the answer. short: empty.' },
     tip: { type: 'string', description: 'The exam tip: the trap examiners set on this point.' },
-    bone: { type: 'string', enum: ['', ...boneIds], description: 'The Atlas bone id most relevant to the question, or empty.' },
+    bone: { type: 'string', enum: ['', ...boneIds], description: 'The Atlas bone ID most relevant to the question, or empty.' },
     notesQuote: { type: 'string', description: 'The words of the transcript this question tests.' },
   },
 })

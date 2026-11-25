@@ -304,7 +304,7 @@
    "frequency": "common",
    "level": "foundation",
    "bone": "scapula_left",
-   "why": "Both bones lie just under the skin along this line, so it can be felt along its whole length. That makes it a useful landmark in examination of the shoulder, and the clavicle and acromion are easy to feel in a fracture or AC joint injury.",
+   "why": "Both bones lie just under the skin along this line, so it can be felt along its whole length. That makes it a useful landmark in examination of the shoulder, and the clavicle and acromion are easy to feel in a fracture or acromioclavicular (AC) joint injury.",
    "tip": "Feel it on yourself: run a finger along the clavicle to its lateral end, over the acromion at the tip of the shoulder, then back along the spine of the scapula.",
    "reviewStatus": "draft"
   },
@@ -327,7 +327,7 @@
   },
   {
    "type": "short",
-   "stem": "Your friend runs out of petrol and you have to help push their car. Discuss the sequence of bones and joints that convey the forces passing from your hand, through your upper limb and your pectoral girdle, and to your axial skeleton.",
+   "stem": "Your friend runs out of petrol, and you have to help push their car. Discuss the sequence of bones and joints that convey the forces passing from your hand, through your upper limb and your pectoral girdle, and to your axial skeleton.",
    "answerText": "As you push against the car, forces will pass from the metacarpal bones of your hand into the carpal bones at the base of your hand. Forces will then pass through the midcarpal and radiocarpal joints into the radius and ulna bones of the forearm. These will pass the force through the elbow joint into the humerus of the arm, and then through the glenohumeral joint into the scapula. The force will travel through the acromioclavicular joint into the clavicle, and then through the sternoclavicular joint into the sternum, which is part of the axial skeleton.",
    "source": {
     "kind": "openstax",

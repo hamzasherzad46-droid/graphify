@@ -14,6 +14,8 @@ import { join, relative } from 'node:path'
 import { execFileSync } from 'node:child_process'
 import ts from 'typescript'
 import { setKeep, setKnownWords, speller, toBritish } from './lib/british.mjs'
+import { derivedFrom, sourceNames, sourceOf } from './lib/sources.mjs'
+import { firstUses, partsOf, sectionParts } from './lib/abbreviations.mjs'
 
 const ROOT = join(import.meta.dirname, '..')
 const GRAMMAR = process.argv.includes('--grammar')
@@ -22,6 +24,8 @@ const extraWords = [...dict.terminologia.words, ...Object.keys(dict.approved), .
 setKnownWords(extraWords)
 setKeep(Object.keys(dict.keep ?? {}))
 const extra = new Set(extraWords.map((w) => w.toLowerCase()))
+/** Words known without asking anyone: the en-GB base, Terminologia Anatomica, approved words and kept spellings. */
+const settled = new Set([...dict.terminologia.words, ...Object.keys(dict.approved), ...Object.keys(dict.keep ?? {})].map((w) => w.toLowerCase()))
 const proposed = new Set(Object.keys(dict.proposed).map((w) => w.toLowerCase()))
 const historical = new Set(Object.keys(dict.historical ?? {}).map((w) => w.toLowerCase()))
 /** Proper names are kept as their owners spell them: removed from the text before the word checks. */
@@ -138,7 +142,9 @@ const bases = (w) => {
   add(/ily$/, 'y')
   return out.filter((b) => b.length > 2)
 }
-const isKnown = (w, lower) => speller.correct(w) || speller.correct(lower) || extra.has(lower)
+const isKnown = (w, lower) => speller.correct(w) || speller.correct(lower) || settled.has(lower)
+/** The authoritative source that approves a word (or a form it is inflected from), or null. */
+const approvedBy = (lower) => sourceOf(lower) ?? bases(lower).map(sourceOf).find(Boolean) ?? null
 const cache = new Map()
 function verdict(word, source) {
   const key = source === 'grays' ? `g:${word}` : word
@@ -148,8 +154,11 @@ function verdict(word, source) {
   const british = toBritish(word)
   if (decisionsNot.has(lower) && !(lower === 'gray' && word === 'Gray')) v = { kind: 'decision', fix: decisionsNot.get(lower) }
   else if (british) v = { kind: 'american', fix: british }
-  else if (!isKnown(word, lower) && !bases(lower).some((b) => isKnown(b, b)) && !(source === 'grays' && historical.has(lower))) v = { kind: 'unknown' }
-  else if (proposed.has(lower) && !speller.correct(lower)) v = 'proposed'
+  else if (isKnown(word, lower) || bases(lower).some((b) => isKnown(b, b))) v = 'ok'
+  else if (approvedBy(lower)) v = { kind: 'source', source: approvedBy(lower) }
+  else if (derivedFrom(lower)) v = { kind: 'source', source: 'Formed from a source word', from: derivedFrom(lower) }
+  else if (proposed.has(lower) || (source === 'grays' && historical.has(lower))) v = 'proposed'
+  else v = { kind: 'unknown' }
   cache.set(key, v)
   return v
 }
@@ -157,6 +166,7 @@ function verdict(word, source) {
 const unknown = new Map() // word → { count, where: Set, sources: Set }
 const american = new Map()
 const usedProposed = new Map()
+const bySourceWords = new Map() // approved by an authoritative source
 const note = (map, w, t, extraInfo) => {
   const e = map.get(w) ?? { count: 0, where: new Set(), sources: new Set(), ...extraInfo }
   e.count++
@@ -170,11 +180,12 @@ for (const t of texts) {
     if (/\d$/.test(t.text.slice(0, m.index))) continue // "10th", "3rd"
     if (/^\d/.test(t.text.slice(m.index + m[0].length)) && m[0].length <= 3) continue // "C7"-like codes are not words
     let w = m[0].replace(/['’]s$/, '').replace(/['’]$/, '')
-    if (w.length < 2 || ROMAN.test(w)) continue
+    if (w.length < 2 || ROMAN.test(w) || /[\u0370-\u03ff]/u.test(w)) continue // Greek letters are symbols in formulas (8ηλ, πr⁴)
     words++
     const v = verdict(w, t.source)
     if (v === 'ok') continue
     if (v === 'proposed') note(usedProposed, w.toLowerCase(), t)
+    else if (v.kind === 'source') note(bySourceWords, w.toLowerCase(), t, { source: v.source, from: v.from })
     else if (v.kind === 'unknown') note(unknown, w, t)
     else if (!t.alt) note(american, w, t, { fix: v.fix, kind: v.kind })
   }
@@ -232,6 +243,33 @@ for (const [joined, e] of forms) {
   if (hyph && closedWords.has(joined) && speller.correct(joined) !== speller.correct(hyph.replace('-', ''))) continue
   if (hyph && closedWords.has(joined) && !(dict.forms ?? {})[hyph] && !(dict.forms ?? {})[joined]) inconsistent.push({ kind: 'hyphen', name: joined, form: hyph, count: e.get(hyph), closed: [...allText.matchAll(new RegExp(`\\b${joined}\\b`, 'gi'))].length })
 }
+
+// 4. Sentence case in Atlas-written text: a structure's name is never in Title Case except to start a sentence
+// ("the first thoracic vertebra", not "the First Thoracic Vertebra"). Gray's keeps its own capitals; OpenStax headings
+// keep theirs.
+const taPhrases = new Set(JSON.parse(readFileSync(join(ROOT, 'data', 'sources', 'terminologia.json'), 'utf8')).terms.map((t) => (t.en ?? '').toLowerCase()).filter((t) => t.includes(' ')))
+const structurePhrases = new Set([...taPhrases, ...[...names].map((n) => n.toLowerCase())])
+// Citations of titles (source lines: "8.1 The Pectoral Girdle") keep the title's capitals.
+for (const t of prose.filter((x) => ['atlas', 'ui', 'server'].includes(x.source) && !/\.(source|ref)\b/.test(x.where)))
+  for (const m of withoutNames(t.text).matchAll(/(?<![.!?:]\s|^)\b([A-Z][a-z]+(?: [A-Z][a-z]+)+)\b/g)) {
+    const phrase = m[1].toLowerCase()
+    const hit = [...structurePhrases].find((p) => phrase === p || phrase.endsWith(` ${p}`) || phrase.startsWith(`${p} `))
+    if (hit) inconsistent.push({ kind: 'case', name: m[1].toLowerCase(), form: m[1], count: 1, where: [t.where] })
+  }
+
+/* ── Abbreviations: written out in full the first time each appears in a lesson ────────────────────────────── */
+
+const abbrMissing = []
+const lesson = (where, parts) => {
+  for (const u of firstUses(parts).undefined) abbrMissing.push({ where, token: u.token, context: u.context, full: u.full })
+}
+for (const f of files(join(ROOT, 'content', 'textbook'), ['.json'])) {
+  const d = JSON.parse(readFileSync(f, 'utf8'))
+  if (d.blocks) lesson(relative(ROOT, f), sectionParts(d))
+}
+for (const f of files(join(ROOT, 'content', 'questions'), ['.json'])) for (const q of JSON.parse(readFileSync(f, 'utf8')).questions) lesson(`${relative(ROOT, f)} ${q.id}`, partsOf(q))
+for (const f of files(join(ROOT, 'content', 'cards'), ['.json'])) for (const c of JSON.parse(readFileSync(f, 'utf8')).cards) lesson(`${relative(ROOT, f)} ${c.id}`, partsOf(c))
+for (const f of files(join(ROOT, 'content', 'bones'), ['.json'])) lesson(relative(ROOT, f), partsOf(JSON.parse(readFileSync(f, 'utf8'))))
 
 /* ── Grammar: fast rules (every build), LanguageTool (with --grammar) ───────────────────────────────────────── */
 
@@ -294,18 +332,63 @@ const bySource = (map) => {
   return out
 }
 const list = (map, fmt) => [...map].sort((a, b) => b[1].count - a[1].count || a[0].localeCompare(b[0])).map(fmt)
-const fail = unknown.size + american.size + inconsistent.length
+const fail = unknown.size + american.size + inconsistent.length + abbrMissing.length
 const L = [
   '# Atlas text check',
   '',
   `${texts.length.toLocaleString('en-GB')} pieces of text, ${words.toLocaleString('en-GB')} words. Standard: British English (-ise); dictionary: en-GB base + ${dict.terminologia.words.length.toLocaleString('en-GB')} Terminologia Anatomica words + ${Object.keys(dict.approved).length} approved + ${Object.keys(dict.proposed).length} proposed.`,
   '',
-  `**Result: ${fail ? 'FAIL' : 'PASS'}.** Unknown words: ${unknown.size}. American spellings: ${american.size}. Names written two ways: ${inconsistent.length}. Grammar rule hits: ${grammar.length}${languageTool ? `; LanguageTool: ${languageTool.length}` : ''}.`,
+  `**Result: ${fail ? 'FAIL' : 'PASS'}.** Unknown words: ${unknown.size}. American spellings: ${american.size}. Names written two ways or in the wrong case: ${inconsistent.length}. Abbreviations not written out at first use: ${abbrMissing.length}. Grammar rule hits: ${grammar.length}${languageTool ? `; LanguageTool: ${languageTool.length}` : ''}.`,
   '',
 ]
 if (unknown.size) L.push('## Unknown words (fix or approve)', '', `By source: ${JSON.stringify(bySource(unknown))}`, '', '| Word | Count | Where |', '|---|---|---|', ...list(unknown, ([w, e]) => `| ${w} | ${e.count} | ${[...e.where].join('<br>')} |`), '')
+if (abbrMissing.length) L.push('## Abbreviations not written out at first use', '', ...abbrMissing.map((a) => `- ${a.where}: **${a.token}**${a.full ? ` (${a.full})` : ' (no full form known)'} in “…${a.context}…”`), '')
 if (american.size) L.push('## American spellings', '', '| Word | British | Count | Where |', '|---|---|---|---|', ...list(american, ([w, e]) => `| ${w} | ${e.fix} | ${e.count} | ${[...e.where].join('<br>')} |`), '')
 if (inconsistent.length) L.push('## Names written two ways', '', ...inconsistent.map((i) => (i.kind === 'case' || i.kind === 'form' ? `- “${i.form}” (${i.count}×) should be “${i.name}”: ${i.where.join(', ')}` : `- “${i.form}” (${i.count}×) and “${i.name}” (${i.closed}×)`)), '')
+// --prune: drop proposed and Gray's-only words that are no longer used, or that a source now approves.
+if (process.argv.includes('--prune')) {
+  const needed = new Set(usedProposed.keys())
+  for (const key of ['proposed', 'historical']) for (const w of Object.keys(dict[key] ?? {})) if (!needed.has(w.toLowerCase())) delete dict[key][w]
+  writeFileSync(join(ROOT, 'data', 'dictionary.json'), JSON.stringify(dict, null, 1) + '\n')
+}
+
+// The words no authoritative source has, grouped, with a suggested correction where one helps.
+function wordsToReview() {
+  const lines = []
+  const sections = [
+    ['Words that match no source (awaiting your decision)', dict.proposed],
+    ['Words that appear only in Gray’s 1918 text', dict.historical ?? {}],
+  ]
+  let total = 0
+  for (const [title, obj] of sections) {
+    const by = new Map()
+    for (const [w, e] of Object.entries(obj)) by.set(e.group, [...(by.get(e.group) ?? []), [w, e.suggestion]])
+    const n = Object.keys(obj).length
+    total += n
+    lines.push(`## ${title} (${n})`, '')
+    for (const [g, ws] of [...by].sort((a, b) => b[1].length - a[1].length)) {
+      lines.push(`**${g}** (${ws.length})`, '')
+      const plain = ws.filter(([, sug]) => !sug).map(([w]) => w).sort((a, b) => a.localeCompare(b))
+      const withSug = ws.filter(([, sug]) => sug).sort((a, b) => a[0].localeCompare(b[0]))
+      if (plain.length) lines.push(plain.join(' · '), '')
+      for (const [w, sug] of withSug) lines.push(`- **${w}**: ${sug}`)
+      if (withSug.length) lines.push('')
+    }
+  }
+  return { lines, total }
+}
+const review = wordsToReview()
+writeFileSync(
+  join(ROOT, 'docs', 'words-to-review.md'),
+  [
+    '# Words to review',
+    '',
+    `Every word Atlas shows is checked against the en-GB dictionary, Terminologia Anatomica, the OpenStax A&P 2e glossary, MeSH (in British spelling) and the NHS A–Z, including words formed regularly from those. These ${review.total} match none of them. Each passes the check until you decide: approve it, or apply the suggestion.`,
+    '',
+    ...review.lines,
+  ].join('\n'),
+)
+
 // What a person decides: the standard, and every word and change awaiting approval.
 const group = (obj) => {
   const by = new Map()
@@ -326,16 +409,11 @@ L.push(
   '',
   ...Object.entries(dict.corrections ?? {}).map(([src, list]) => `- **${src === 'openstax' ? 'OpenStax' : 'Gray’s'}:** ${Object.entries(list).map(([a, b]) => `“${a}” → “${b}”`).join('; ')}`),
   '',
-  `## Proposed words (${Object.keys(dict.proposed).length}, awaiting approval; they pass the check meanwhile)`,
-  '',
-  ...group(dict.proposed).flatMap(([why, ws]) => [`**${why}** (${ws.length})`, '', ws.sort((a, b) => a.localeCompare(b)).join(' · '), '']),
-  `## Gray’s-only words (${Object.keys(dict.historical ?? {}).length}, awaiting approval; accepted only in the 1918 text)`,
-  '',
-  ...group(dict.historical ?? {}).flatMap(([why, ws]) => [`**${why}** (${ws.length})`, '', ws.sort((a, b) => a.localeCompare(b)).join(' · '), '']),
+  ...review.lines,
 )
 L.push('## Grammar: rule checks', '', grammar.length ? '' : 'None.', ...grammar.slice(0, 200).map((g) => `- ${g.rule} (${g.source}, ${g.where}): “…${g.text.replace(/\n/g, ' ')}…”`), '')
 if (languageTool) L.push('## Grammar: LanguageTool (en-GB), Atlas’s own text', '', languageTool.length ? '' : 'None.', ...languageTool.map((m) => `- ${m.rule} (${m.where}): ${m.message} “${m.context}”${m.suggestion ? ` → ${m.suggestion}` : ''}`), '')
 writeFileSync(join(ROOT, 'docs', 'text-report.md'), L.join('\n'))
 console.log(L.slice(0, 5).join('\n'))
-if (process.argv.includes('--json')) writeFileSync(join(ROOT, '.cache', 'textcheck.json'), JSON.stringify({ unknown: [...unknown].map(([w, e]) => [w, e.count, [...e.where], [...e.sources]]), american: [...american].map(([w, e]) => [w, e.fix, e.count, [...e.where], [...e.sources]]), inconsistent, grammar, languageTool }, null, 1))
+if (process.argv.includes('--json')) writeFileSync(join(ROOT, '.cache', 'textcheck.json'), JSON.stringify({ abbrMissing, proposedUsed: [...usedProposed].map(([w, e]) => [w, e.count, [...e.where], [...e.sources]]), bySource: [...bySourceWords].map(([w, e]) => [w, e.source, e.count, e.from]), unknown: [...unknown].map(([w, e]) => [w, e.count, [...e.where], [...e.sources]]), american: [...american].map(([w, e]) => [w, e.fix, e.count, [...e.where], [...e.sources]]), inconsistent, grammar, languageTool }, null, 1))
 process.exit(fail ? 1 : 0)

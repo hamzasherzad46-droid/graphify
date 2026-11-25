@@ -94,6 +94,7 @@ const SURE = [
   [/([^ae])emi(a|as|c)$/, '$1aemi$2'],
   [/^(hyper|hypo|an|poly|leuk)?hem(?=at|o|or|ang|ost|og)/, '$1haem'],
   [/([^a])esthe(sia|sias|tic|tics|tist|tists)$/, '$1aesthe$2'],
+  [/rrhea$/, 'rrhoea'],
 ]
 
 const matchCase = (src, out) => (src === src.toUpperCase() && src.length > 1 ? out.toUpperCase() : src[0] === src[0].toUpperCase() ? out[0].toUpperCase() + out.slice(1) : out)

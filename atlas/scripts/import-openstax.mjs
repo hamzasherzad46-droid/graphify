@@ -14,6 +14,7 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync
 import { join } from 'node:path'
 import { linker } from './lib/bonelink.mjs'
 import { normaliseDeep, summary as spellingSummary } from './lib/textnorm.mjs'
+import { firstUses, sectionParts } from './lib/abbreviations.mjs'
 
 export const PIN = 'b0058a743bdd2cc08196abaaa7d5469970c0d80c'
 const RAW = `https://raw.githubusercontent.com/openstax/osbooks-anatomy-physiology/${PIN}`
@@ -40,14 +41,15 @@ const CHAPTERS = [
 
 /** What Atlas changed, listed at the end of every section (CC BY 4.0 asks for changes to be indicated). */
 const CHANGES = [
-  'Sections are grouped by Atlas topic.',
-  'The chapter review summary of each section is shown at its top as key points: the first sentence of each summary paragraph, with the rest of the paragraph one tap away.',
+  'Atlas groups the sections by topic.',
+  'Atlas shows each section’s chapter review summary at its top as key points: the first sentence of each summary paragraph, with the rest of the paragraph one tap away.',
   'Spelling follows British English (for example haemorrhage, fibre, colour), with one form for each word across Atlas (for example brainstem, anteroposterior).',
   'Typing errors in the source are corrected; each correction is listed in Atlas’s spelling dictionary.',
+  'Each abbreviation is written out in full the first time it appears in the section (for example, central nervous system (CNS)).',
   'Links to videos, interactive exercises and external websites are removed.',
-  'Three review questions per section are shown as a quick check; the other review and critical thinking questions are used among the exam-style questions.',
+  'Three review questions per section appear as a quick check; the other review and critical thinking questions appear among the exam-style questions.',
   'Bone names and bone landmarks link to the Atlas 3D model.',
-  'Figures are resized and re-encoded for the web; their content is unchanged.',
+  'Atlas resizes and re-encodes the figures for the web; their content is unchanged.',
   'Otherwise, the text, figures, captions and key terms are as published.',
 ]
 
@@ -77,6 +79,36 @@ const textOf = (n) => clean(n?.textContent ?? '').trim()
 /* ── Inline content ─────────────────────────────────────────────────────────────────────────────────────────── */
 // Inline = string | { k: 'term' | 'em' | 'strong' | 'sup' | 'sub', t: string } | { k: 'ref', t: string, to: id }
 
+/**
+ * MathML as readable text (the textbook shows formulas inline): a fraction as "(top) ÷ (bottom)", a power with
+ * superscript digits (r⁴), and the rows of a table separated by semicolons. Only section 20.2 uses MathML.
+ */
+const SUPER = { 0: '⁰', 1: '¹', 2: '²', 3: '³', 4: '⁴', 5: '⁵', 6: '⁶', 7: '⁷', 8: '⁸', 9: '⁹' }
+function mathText(n) {
+  const kids = () => els(n).map(mathText)
+  const wrap = (t) => (/^[\p{L}\d²³⁴]+$/u.test(t) ? t : `(${t.replace(/^\((.*)\)$/, '$1')})`)
+  switch (n.localName) {
+    case 'mfrac': {
+      const [top, bottom] = kids()
+      return `${wrap(top)} ÷ ${wrap(bottom)}`
+    }
+    case 'msup': {
+      const [b, e] = kids()
+      return `${b}${[...e].map((ch) => SUPER[ch] ?? ch).join('')}`
+    }
+    case 'mtable':
+      // Rows, with a row that is just "or" read as a word between the others.
+      return els(n).map(mathText).filter(Boolean).join('; ').replace(/; or; /g, ', or ')
+    case 'mtext':
+    case 'mi':
+    case 'mn':
+    case 'mo':
+      return (n.textContent ?? '').replace(/\u00a0/g, ' ').replace(/-/g, ' − ').replace(/\s+/g, ' ').trim()
+    default:
+      return kids().join(' ').replace(/\s+/g, ' ').replace(/\( /g, '(').replace(/ \)/g, ')').trim()
+  }
+}
+
 function inline(node, ctx) {
   const out = []
   const push = (x) => {
@@ -102,7 +134,8 @@ function inline(node, ctx) {
       else if (target && ctx.labels.has(target)) push({ k: 'ref', t: t || ctx.labels.get(target), to: target })
       else if (c.getAttribute('document')) push(t || ctx.docTitle(c.getAttribute('document')))
       else push(t)
-    } else if (c.localName === 'newline') push(' ')
+    } else if (c.localName === 'math') push(mathText(c))
+    else if (c.localName === 'newline') push(' ')
     else for (const x of inline(c, ctx)) push(x)
   }
   // Tidy whitespace at the edges.
@@ -124,6 +157,13 @@ function blocks(node, ctx, level = 2) {
       case 'para': {
         const inl = inline(c, ctx)
         if (inl.length) out.push({ t: 'p', id, inl })
+        break
+      }
+      case 'equation': {
+        // A formula on its own line (section 20.2: Poiseuille’s equation and its rearrangements).
+        const math = c.getElementsByTagName('m:math')[0] ?? [...c.getElementsByTagName('*')].find((e) => e.localName === 'math')
+        const text = math ? mathText(math) : textOf(c)
+        if (text) out.push({ t: 'p', id, inl: [text] })
         break
       }
       case 'list':
@@ -231,6 +271,8 @@ rmSync(OUT, { recursive: true, force: true })
 mkdirSync(OUT, { recursive: true })
 mkdirSync(MEDIA, { recursive: true })
 const index = []
+let abbrWritten = 0
+const abbrMissing = []
 const allImages = new Set()
 const sectionNumber = new Map()
 for (const ch of CHAPTERS) ch.modules.forEach(([m], k) => sectionNumber.set(m, k === 0 ? `${ch.num}` : `${ch.num}.${k}`))
@@ -286,6 +328,9 @@ for (const ch of CHAPTERS) {
       'openstax',
     )
     section.changes = CHANGES
+    const abbr = firstUses(sectionParts(section), { fix: true })
+    abbrWritten += abbr.written.length
+    for (const u of abbr.undefined) abbrMissing.push(`${id} ${u.token}: …${u.context}…`)
     writeFileSync(join(OUT, `${id}.json`), JSON.stringify(section))
     for (const i of ctx.images) allImages.add(i)
     index.push({ id, num, title: section.title, chapter: ch.num, chapterTitle: ch.title, topic, keyPoints: section.keyPoints.length, figures: body.filter((b) => b.t === 'fig').length, words: JSON.stringify(body).split(/\s+/).length, bones: link.bonesIn(body) })
@@ -307,5 +352,6 @@ for (const src of allImages) {
   have.delete(name)
 }
 for (const stale of have) rmSync(join(MEDIA, stale))
-console.log(`${index.length} sections, ${allImages.size} figures (${(bytes / 1e6).toFixed(1)} MB); ${spellingSummary()}`)
+console.log(`${index.length} sections, ${allImages.size} figures (${(bytes / 1e6).toFixed(1)} MB); ${spellingSummary()}; abbreviations written out: ${abbrWritten}`)
+if (abbrMissing.length) console.log(`No full form for:\n  ${abbrMissing.join('\n  ')}`)
 if (REPORT) link.report()

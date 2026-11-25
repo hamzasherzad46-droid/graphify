@@ -23,7 +23,7 @@ const STANDARDS = `Question standards:
 - "whyNot": one line per option, in option order, saying exactly why that option is wrong; the line for the correct answer is an empty string.
 - "tip": the trap examiners set on this point (a look-alike name, a swapped boundary, a common misconception).
 - "frequency": core (examined almost everywhere), common, or advanced. "level": as requested.
-- "bone": the Atlas bone id most relevant to the question, from the list below, or an empty string when no single bone fits (soft tissue, a joint as a whole, a nerve).
+- "bone": the Atlas bone ID most relevant to the question, from the list below, or an empty string when no single bone fits (soft tissue, a joint as a whole, a nerve).
 
 Accuracy:
 - Every answer and explanation must be correct by current anatomical knowledge (Terminologia Anatomica English terms), whatever the notes say. Where the notes are wrong, do not build a question on the error; list it under corrections instead, with the student's words, the problem and the correct fact. Do not flag anything that is correct; when unsure, leave it.
@@ -41,7 +41,7 @@ You are the first examiner. You receive photographs, a PDF or typed text of the 
 
 ${STANDARDS}
 
-Atlas bone ids (use exactly as written):
+Atlas bone IDs (use exactly as written):
 ${bones.map((b) => `${b.id} = ${b.name}`).join('\n')}`
 }
 
@@ -52,12 +52,12 @@ You are the second examiner. You receive the transcript of the student's notes, 
 - Is the keyed answer correct by current anatomical knowledge? Is it the single best answer, with no other option defensible?
 - Is every explanation line correct, and does each "whyNot" line match its own option?
 - Is the stem clear and unambiguous, free of clues to the answer, and is the question within the notes (notesQuote)?
-- Do the distractors meet the option standards? Are terms, spelling (British English) and the bone id right?
+- Do the distractors meet the option standards? Are terms, spelling (British English) and the bone ID right?
 Then return the final set: keep good questions unchanged, fix questions that can be fixed (verdict "fixed", say what you changed), and drop questions that cannot be made sound (verdict "dropped", say why). Give a review entry for every draft question, by its index. Also check the corrections: remove any that are not genuine errors, fix any that are inaccurate, and add any genuine error the first examiner missed.
 
 ${STANDARDS}
 
-Atlas bone ids (use exactly as written):
+Atlas bone IDs (use exactly as written):
 ${bones.map((b) => `${b.id} = ${b.name}`).join('\n')}`
 }
 

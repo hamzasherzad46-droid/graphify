@@ -1,6 +1,7 @@
 import { useViewer } from '../state/store'
 import { useHud } from '../state/hud'
-import { BONE_BY_ID } from '../data/bones'
+import { BONE_BY_ID, SIDED_REGIONS } from '../data/bones'
+import { SideSwitch } from './RegionPicker'
 
 /** Orientation readout and visibility status, top-left under the header. */
 export function HudReadout() {
@@ -11,6 +12,7 @@ export function HudReadout() {
   const explodeOpen = useViewer((s) => s.explodeOpen)
   const moved = useViewer((s) => Object.keys(s.dragged).length + (s.explodeAmount > 0 ? 1 : 0))
   const reassemble = useViewer((s) => s.reassemble)
+  const sided = useViewer((s) => SIDED_REGIONS.has(s.region) && !!s.regionIds)
   const pad = (n: number) => String(Math.abs(n)).padStart(3, '0')
   return (
     <div className={`hud-readout ${explodeOpen ? 'below-explode' : ''}`}>
@@ -26,6 +28,7 @@ export function HudReadout() {
           Bones moved<span className="chip-action">Reassemble</span>
         </button>
       )}
+      {sided && !isolated && <SideSwitch compact />}
       {(isolated || hidden.length > 0) && (
         <button className="chip status" onClick={showAll}>
           {isolated ? `Isolated: ${BONE_BY_ID.get(isolated[0])?.name ?? ''}` : `${hidden.length} hidden`}

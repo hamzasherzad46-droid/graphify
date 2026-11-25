@@ -2,6 +2,7 @@ import { create } from 'zustand'
 import { createJSONStorage, persist } from 'zustand/middleware'
 import { appStorage } from '../lib/storage'
 import type { ReviewStatus, Sex } from '../data/types'
+import { regionBones, type RegionSide } from '../data/bones'
 
 export type LabelDensity = 'all' | 'main' | 'none'
 
@@ -14,6 +15,8 @@ export type CameraCommand =
   | { kind: 'view'; view: ViewName; n: number }
   | { kind: 'reset'; n: number }
   | { kind: 'frame'; id: string; n: number; region?: boolean; close?: boolean }
+  /** Frame every bone on show (the region view), from the front. */
+  | { kind: 'fit'; n: number }
 
 export interface ErrorReport {
   boneId: string
@@ -33,6 +36,11 @@ interface ViewerState {
   selectedId: string | null
   hidden: string[]
   isolated: string[] | null
+  /** 3D region view: a regions.json group ('all' = whole skeleton), the side for limbs, and the bones it shows. */
+  region: string
+  regionSide: RegionSide
+  regionIds: string[] | null
+  showRegion: (region: string, side?: RegionSide) => void
   ghost: boolean
   camera: CameraCommand | null
   panelExpanded: boolean
@@ -85,6 +93,28 @@ export const useViewer = create<ViewerState>((set, get) => ({
   selectedId: null,
   hidden: [],
   isolated: null,
+  region: 'all',
+  // Limbs one at a time by default: both hands (or arms) side by side are each too small to study.
+  regionSide: 'right',
+  regionIds: null,
+  showRegion: (region, side) => {
+    const regionSide = side ?? get().regionSide
+    const ids = region === 'all' ? null : regionBones(region, regionSide).map((b) => b.id)
+    set({
+      region,
+      regionSide,
+      regionIds: ids,
+      isolated: null,
+      hidden: [],
+      selectedId: null,
+      panelExpanded: false,
+      // The exploded view takes the region on show; start it assembled.
+      explodeGroup: region,
+      explodeAmount: 0,
+      dragged: {},
+      camera: { kind: 'fit', n: ++n },
+    })
+  },
   ghost: false,
   camera: null,
   panelExpanded: false,
@@ -107,13 +137,23 @@ export const useViewer = create<ViewerState>((set, get) => ({
       selectedId: null,
       hidden: [],
       isolated: null,
+      regionIds: null,
       ghost: false,
       explodeOpen: false,
       explodeAmount: 0,
       dragged: {},
       panelExpanded: false,
     }),
-  endStudy: () => set({ studying: false, highlight: null, thumbs: null, onTap: null, camera: { kind: 'reset', n: ++n } }),
+  endStudy: () =>
+    set((s) => ({
+      studying: false,
+      highlight: null,
+      thumbs: null,
+      onTap: null,
+      // Back to the region view the student left.
+      regionIds: s.region === 'all' ? null : regionBones(s.region, s.regionSide).map((b) => b.id),
+      camera: { kind: 'reset', n: ++n },
+    })),
   setHighlight: (h, frame = true) =>
     set({
       highlight: h ? { target: h.target, wrong: h.wrong ?? [] } : null,
@@ -131,6 +171,8 @@ export const useViewer = create<ViewerState>((set, get) => ({
       // Selecting a hidden bone (e.g. from search) shows it again.
       hidden: id ? s.hidden.filter((h) => h !== id) : s.hidden,
       isolated: id && s.isolated && !s.isolated.includes(id) ? null : s.isolated,
+      // A bone outside the region on show (e.g. from search) brings back the whole skeleton.
+      ...(id && s.regionIds && !s.regionIds.includes(id) ? { region: 'all', regionIds: null, explodeGroup: 'all' } : {}),
       camera: id && opts?.focus ? { kind: 'focus', id, n: ++n } : s.camera,
     })),
   focus: (id) => set({ camera: { kind: 'focus', id, n: ++n } }),

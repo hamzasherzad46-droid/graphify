@@ -102,6 +102,23 @@ the skull (`src/viewer/explode.ts`, tested in `explode.test.ts`).
 **Hold a bone (0.3 s), then drag** to pull it out; a quick drag still rotates. **Reassemble** eases everything home.
 Bones ease towards their targets each frame, and frames are only rendered while something moves.
 
+## Region views (3D)
+
+3D tab → **View** (top right) opens **Show in 3D**: Whole skeleton, Skull, Spine, Thorax, Upper limb, Hand,
+Pelvis, Lower limb or Foot (the groups in `content/regions.json`). Choosing one hides every other bone and flies
+the camera in so that part fills the screen (the foot from above, the rest from the front).
+
+- The limbs, hand and foot are shown one side at a time (the body's right at first), with a **Left / Both /
+  Right** switch on the 3D view; the skull and trunk are always shown whole.
+- Cartilage, discs and teeth show with their own bones only.
+- Labels: "Main bones" labels every bone in a region view (the hand and spine have no "main" bones); "None" still
+  hides them.
+- Isolate a bone inside a region, then **Show all**, and you are back in the region. Searching for a bone outside
+  it brings back the whole skeleton. Study sessions use the whole skeleton and return to the region afterwards.
+  The exploded view explodes the region on show. Switching male and female keeps it.
+- Code: `regionBones()` in `src/data/bones.ts`, `showRegion()` in `src/state/store.ts`, `src/ui/RegionPicker.tsx`;
+  tests in `src/state/region.test.ts`.
+
 ## Home and tabs
 
 The app opens on **Home**; tabs: **Home · 3D · Practice · Progress · You** (`src/state/nav.ts`, `src/ui/TabBar.tsx`).

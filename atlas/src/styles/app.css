@@ -7098,3 +7098,139 @@ textarea:focus-visible {
 .page-head.with-back h1 {
   font-size: 22px;
 }
+
+/* ---------- 3D region views ---------- */
+
+.region-btn {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0 10px 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--text);
+  font-size: 13.5px;
+  max-width: 60%;
+}
+
+.region-btn.on {
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface));
+}
+
+.region-btn-k {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.region-btn-v {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.region-btn.on .region-btn-v {
+  color: var(--accent);
+}
+
+.region-btn-chev {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  color: var(--muted);
+  transform: rotate(180deg);
+}
+
+.region-sheet h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.region-sheet-hint {
+  margin: 4px 0 14px;
+  line-height: 1.45;
+}
+
+.region-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.region-tile {
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  min-height: 104px;
+  padding: 12px 10px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--raise);
+  color: var(--text);
+  text-align: left;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+}
+
+.region-tile:active {
+  transform: scale(0.97);
+}
+
+.region-tile.on {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.region-tile-title {
+  font-size: 14.5px;
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.region-tile.on .region-tile-title {
+  color: var(--accent);
+}
+
+.region-tile-about {
+  font-size: 12px;
+  line-height: 1.3;
+  color: var(--text-2);
+}
+
+.region-tile-count {
+  margin-top: auto;
+  padding-top: 4px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.region-side {
+  display: grid;
+  gap: 4px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.region-side .seg {
+  margin-top: 8px;
+}
+
+.seg.side-switch.compact {
+  pointer-events: auto;
+  width: 180px;
+  padding: 3px;
+  background: var(--surface);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.seg.side-switch.compact button {
+  min-height: 32px;
+  font-size: 13px;
+}

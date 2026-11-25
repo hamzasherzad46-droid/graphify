@@ -94,8 +94,25 @@ export function CameraRig() {
     invalidate()
   }
 
-  const homeView = (dir = DIRS.anterior) => {
-    const h = home.current!
+  /** The box round the bones on show: the region view's bones, or the whole skeleton (as it is now). */
+  const shownBox = () => {
+    const ids = useViewer.getState().regionIds
+    const box = new THREE.Box3()
+    if (ids) for (const id of ids) {
+      const m = registry.bones.get(id)
+      if (m) box.expandByObject(m)
+    }
+    return box.isEmpty() ? new THREE.Box3().setFromObject(registry.root!) : box
+  }
+
+  /** The view a region is best seen from: the foot from above and in front, the rest from the front. */
+  const regionDir = () => {
+    const r = useViewer.getState().region
+    return r === 'foot' ? new THREE.Vector3(0, 1, 0.55).normalize() : r === 'all' ? DIRS.anterior : new THREE.Vector3(0.28, 0.12, 1).normalize()
+  }
+
+  const homeView = (dir = DIRS.anterior, box?: THREE.Box3) => {
+    const h = box ? { center: box.getCenter(new THREE.Vector3()), size: box.getSize(new THREE.Vector3()) } : home.current!
     // Project the model's box onto the screen axes for this view direction.
     const half = h.size.clone().multiplyScalar(0.5)
     const right = new THREE.Vector3().crossVectors(camera.up, dir)
@@ -119,7 +136,8 @@ export function CameraRig() {
       return
     }
     first.current = false
-    const { target, dir, dist } = homeView()
+    const region = useViewer.getState().regionIds ? shownBox() : undefined
+    const { target, dir, dist } = homeView(region ? regionDir() : DIRS.anterior, region)
     controls.current.target.copy(target)
     camera.position.copy(target).addScaledVector(dir, dist)
     controls.current.update()
@@ -132,11 +150,12 @@ export function CameraRig() {
     const c = controls.current
     if (!command || !c || !home.current) return
     const bottom = bottomNow()
-    if (command.kind === 'reset') {
-      // Frame the skeleton as it is now (exploded or not).
+    if (command.kind === 'reset' || command.kind === 'fit') {
+      // Frame the skeleton as it is now (exploded or not), or the region on show.
       const box = new THREE.Box3().setFromObject(registry.root!)
       home.current = { center: box.getCenter(new THREE.Vector3()), size: box.getSize(new THREE.Vector3()) }
-      const v = homeView()
+      const region = useViewer.getState().regionIds && !useViewer.getState().studying
+      const v = region ? homeView(regionDir(), shownBox()) : homeView()
       flyTo(v.target, v.dir, v.dist, 900)
     } else if (command.kind === 'view') {
       // Keep what you are looking at; turn the camera to the preset direction.
@@ -148,7 +167,7 @@ export function CameraRig() {
         const dist = camera.position.distanceTo(c.target)
         flyTo(framedTarget(p, dir, dist, bottom), dir, dist)
       } else {
-        const v = homeView(dir)
+        const v = homeView(dir, useViewer.getState().regionIds ? shownBox() : undefined)
         flyTo(v.target, dir, v.dist)
       }
     } else if (command.kind === 'frame') {

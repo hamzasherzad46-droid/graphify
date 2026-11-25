@@ -35,6 +35,7 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
   const selectedId = useViewer((s) => s.selectedId)
   const hidden = useViewer((s) => s.hidden)
   const isolated = useViewer((s) => s.isolated)
+  const regionIds = useViewer((s) => s.regionIds)
   const ghost = useViewer((s) => s.ghost)
   const highlight = useViewer((s) => s.highlight)
 
@@ -58,7 +59,9 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
       } else {
         registry.context.push(m)
         registry.contextRest.set(m, m.position.clone())
-        if (m.userData.host) registry.host.set(m, m.userData.host)
+        // Each context mesh sits on one bone: named in its data, or in its name (ctx_on_<bone id>).
+        const host = (m.userData.host as string | undefined) ?? (m.name.startsWith('ctx_on_') ? m.name.slice(7) : undefined)
+        if (host) registry.host.set(m, host)
         m.raycast = () => {} // context meshes (cartilage, discs, teeth) are never picked
       }
     })
@@ -70,7 +73,7 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
   useLayoutEffect(() => {
     const ghostAll = ghost && !selectedId
     for (const [id, m] of registry.bones) {
-      m.visible = !hidden.includes(id) && (!isolated || isolated.includes(id))
+      m.visible = !hidden.includes(id) && (!isolated || isolated.includes(id)) && (!regionIds || regionIds.includes(id))
       const isSel = id === selectedId
       m.material = highlight
         ? highlight.target.includes(id)
@@ -87,7 +90,7 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
     }
     for (const m of registry.context) {
       const host = registry.host.get(m)
-      m.visible = !isolated && !(host && hidden.includes(host))
+      m.visible = !isolated && !(host && hidden.includes(host)) && (!regionIds || (!!host && regionIds.includes(host)))
       m.material = highlight ? mats.dim : ghost ? mats.contextGhost : mats.context
     }
     glow.shell.removeFromParent()
@@ -97,7 +100,7 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
     if (sel && sel.visible) {
       const r = registry.radius.get(glowId!) ?? 0.05
       // The x-ray silhouette is only useful when other bones can hide this one.
-      for (const g of isolated ? [glow.shell] : [glow.shell, glow.xray]) {
+      for (const g of isolated || regionIds ? [glow.shell] : [glow.shell, glow.xray]) {
         g.geometry = sel.geometry
         g.raycast = () => {}
         sel.add(g)
@@ -107,7 +110,7 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
       glow.xray.renderOrder = 3
     }
     invalidate()
-  }, [selectedId, hidden, isolated, ghost, highlight, mats, glow, invalidate, scene])
+  }, [selectedId, hidden, isolated, regionIds, ghost, highlight, mats, glow, invalidate, scene])
 
   return <primitive object={scene} />
 }

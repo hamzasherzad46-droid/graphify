@@ -1,4 +1,4 @@
-import { BONES, GROUPS } from '../data/bones'
+import { BONES, GROUPS, regionBones } from '../data/bones'
 import type { Bone } from '../data/types'
 import { canon } from './answer'
 
@@ -17,10 +17,7 @@ export function shuffle<T>(xs: T[], rng: Rng = Math.random): T[] {
 export const AREAS = [{ id: 'all', label: 'Whole skeleton' }, ...GROUPS.map((g) => ({ id: g.id, label: g.label }))]
 
 export function bonesIn(area: string): Bone[] {
-  if (area === 'all') return BONES
-  const g = GROUPS.find((x) => x.id === area)
-  if (!g) return BONES
-  return BONES.filter((b) => g.regions.includes(b.region) || (g.bones ?? []).includes(b.id))
+  return regionBones(area)
 }
 
 /** Same name = same answer (left and right femur). */

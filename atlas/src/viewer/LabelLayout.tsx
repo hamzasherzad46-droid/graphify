@@ -51,24 +51,27 @@ export function LabelLayout() {
   const selectedId = useViewer((s) => s.selectedId)
   const hidden = useViewer((s) => s.hidden)
   const isolated = useViewer((s) => s.isolated)
+  const regionIds = useViewer((s) => s.regionIds)
   const studying = useViewer((s) => s.studying)
   const sex = useViewer((s) => s.sex)
+  // A region view (the hand, the spine) is studied bone by bone: "Main bones" labels every bone in it.
+  const shown = regionIds && density === 'main' ? 'all' : density
 
   const ids = useMemo(() => {
     if (!loaded || studying) return []
-    const visible = (id: string) => registry.bones.has(id) && !hidden.includes(id) && (!isolated || isolated.includes(id))
+    const visible = (id: string) => registry.bones.has(id) && !hidden.includes(id) && (!isolated || isolated.includes(id)) && (!regionIds || regionIds.includes(id))
     const set = new Set<string>()
-    if (density === 'all') for (const id of registry.bones.keys()) if (visible(id)) set.add(id)
-    if (density === 'main') for (const id of MAIN) if (visible(id)) set.add(id)
+    if (shown === 'all') for (const id of registry.bones.keys()) if (visible(id)) set.add(id)
+    if (shown === 'main') for (const id of MAIN) if (visible(id)) set.add(id)
     if (selectedId && visible(selectedId)) set.add(selectedId)
     return [...set]
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [density, loaded, studying, selectedId, hidden, isolated, sex])
+  }, [shown, loaded, studying, selectedId, hidden, isolated, regionIds, sex])
 
   useEffect(() => {
-    useLabelSet.setState({ ids, selected: selectedId, groupIds: density === 'all' && ids.length ? ALL_GROUP_IDS : [] })
+    useLabelSet.setState({ ids, selected: selectedId, groupIds: shown === 'all' && ids.length ? ALL_GROUP_IDS : [] })
     invalidate()
-  }, [ids, selectedId, density, invalidate])
+  }, [ids, selectedId, shown, invalidate])
 
   const state = useRef({
     pos: new Map<string, { x: number; y: number }>(),
@@ -152,7 +155,7 @@ export function LabelLayout() {
       const b = BONE_BY_ID.get(id)!
       const a = anchorPx.get(id)!
       // "All", zoomed in: bones off the screen are summarised by region ("Skull (29)"), not by small clusters.
-      const far = density === 'all' && offScreen(a) && id !== selected
+      const far = shown === 'all' && offScreen(a) && id !== selected
       return {
         id,
         ax: a.ax,

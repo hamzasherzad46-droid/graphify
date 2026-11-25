@@ -2,7 +2,9 @@ import { createServer, type IncomingMessage, type ServerResponse } from 'node:ht
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import Anthropic from '@anthropic-ai/sdk'
-import { claudeCaller, notesToExam, PipelineError, type Caller } from './pipeline.ts'
+import { claudeCaller, PipelineError, type Caller } from './pipeline.ts'
+import { generate } from './generate.ts'
+import { MarkError, markAnswer, parseMarkBody } from './marking.ts'
 import { parseRequest, RequestError, RateLimiter } from './request.ts'
 import type { BoneRef } from './prompts.ts'
 import { BodyError, parseReadBody, parseTopicsBody, readPages, splitTopics } from './reading.ts'
@@ -10,7 +12,9 @@ import { BodyError, parseReadBody, parseTopicsBody, readPages, splitTopics } fro
 /**
  * Notes to Exam server. The Claude API key stays here (ANTHROPIC_API_KEY); pages and notes are held in memory only for
  * the request and never written anywhere.
- *   POST /api/notes-to-exam  notes and settings → server-sent events ("stage", then "result" or "error")
+ *   POST /api/notes-to-exam  chosen parts and settings → server-sent events: "progress", a "batch" of checked questions or
+ *                            cards as each topic is ready, "chunkError" for a topic that failed, then "done" or "error"
+ *   POST /api/notes/mark     a short answer and its marking points → points hit and missed, score and a tip (JSON)
  *   POST /api/notes/read     up to 6 page images → their transcripts (JSON)
  *   POST /api/notes/topics   the text of every page, slide and section → the topics (JSON)
  *
@@ -46,7 +50,7 @@ export function handler(caller: Caller, limiter: RateLimiter, reads: RateLimiter
     }
     if (req.method === 'OPTIONS') return void res.writeHead(204).end()
     if (req.method === 'GET' && req.url === '/health') return void res.writeHead(200, { 'Content-Type': 'application/json' }).end('{"ok":true}')
-    if (req.method !== 'POST' || !['/api/notes-to-exam', '/api/notes/read', '/api/notes/topics'].includes(req.url ?? '')) return void res.writeHead(404).end()
+    if (req.method !== 'POST' || !['/api/notes-to-exam', '/api/notes/read', '/api/notes/topics', '/api/notes/mark'].includes(req.url ?? '')) return void res.writeHead(404).end()
     if (origin && !ORIGINS.includes(origin) && !ORIGINS.includes('*')) return void res.writeHead(403).end()
     if (req.url !== '/api/notes-to-exam') return reading(req, res, caller, reads)
 
@@ -77,8 +81,19 @@ export function handler(caller: Caller, limiter: RateLimiter, reads: RateLimiter
     // Keep the connection alive through proxies during long thinking.
     const ping = setInterval(() => res.write(': ping\n\n'), 15000)
     try {
-      const result = await notesToExam(parsed.notes, parsed.settings, BONES, caller, (stage) => send('stage', { stage }))
-      send('result', result)
+      const r = await generate(
+        parsed.parts,
+        parsed.settings,
+        BONES,
+        caller,
+        {
+          progress: (done, total) => send('progress', { done, total }),
+          batch: (b) => send('batch', b),
+          chunkError: (topic, message) => send('chunkError', { topic, message }),
+        },
+        parsed.focus,
+      )
+      send('done', r)
     } catch (e) {
       limiter.refund(client)
       send('error', { message: e instanceof PipelineError ? e.message : 'Something went wrong. Please try again.' })
@@ -103,10 +118,12 @@ async function reading(req: IncomingMessage, res: ServerResponse, caller: Caller
   try {
     const raw = await readBody(req)
     if (req.url === '/api/notes/read') reply(200, { pages: await readPages(parseReadBody(raw), caller) })
+    else if (req.url === '/api/notes/mark') reply(200, await markAnswer(parseMarkBody(raw), caller))
     else reply(200, { topics: await splitTopics(parseTopicsBody(raw), caller) })
   } catch (e) {
     reads.refund(client)
     if (e instanceof BodyError || e instanceof RequestError) reply(e.status ?? 400, { error: e.message })
+    else if (e instanceof MarkError) reply(400, { error: e.message })
     else if (e instanceof PipelineError) reply(502, { error: e.message })
     else {
       console.error(e)

@@ -136,7 +136,7 @@ describe('reading endpoints', () => {
     try {
       const bad = await post(s.url, '/api/notes/read', { pages: [] })
       expect(bad.status).toBe(400)
-      expect((await bad.json()).error).toMatch(/pages at a time/)
+      expect(((await bad.json()) as { error: string }).error).toMatch(/pages at a time/)
       // The refund leaves the one request this hour for a good one.
       expect((await post(s.url, '/api/notes/read', { pages: [page('p1')] })).status).toBe(200)
       expect((await post(s.url, '/api/notes/read', { pages: [page('p1')] })).status).toBe(429)

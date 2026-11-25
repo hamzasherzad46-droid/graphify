@@ -1,7 +1,7 @@
 import { z } from 'zod'
-import { LEVELS } from './schema.ts'
-import type { Settings } from './prompts.ts'
-import type { Notes } from './pipeline.ts'
+import { LEVELS, TYPES } from './schema.ts'
+import type { Mode, Settings } from './prompts.ts'
+import type { Part } from './generate.ts'
 
 export class RequestError extends Error {
   readonly status?: number
@@ -11,30 +11,27 @@ export class RequestError extends Error {
   }
 }
 
-/** Limits, matched to what the Claude API accepts: up to 5 MB an image, PDFs up to 32 MB in all. */
-export const LIMITS = { pages: 12, imageBytes: 5 * 1024 * 1024, pdfBytes: 30 * 1024 * 1024, textChars: 40000 }
+/** Limits for one set: parts of the student's material (already read and checked by the student), and settings. */
+export const LIMITS = { parts: 400, refChars: 120, textChars: 200000, focus: 30, focusChars: 400 }
+export const COUNTS: Record<Mode, number[]> = { quick: [5, 10], mock: [20, 30, 40], flashcards: [10, 20, 30], weak: [5, 10] }
 
-const b64bytes = (s: string) => Math.floor((s.length * 3) / 4) - (s.endsWith('==') ? 2 : s.endsWith('=') ? 1 : 0)
-const BASE64 = /^[A-Za-z0-9+/]+={0,2}$/
-
-const TOO_MANY = `Up to ${LIMITS.pages} pages at a time.`
-const TOO_LONG = 'The typed notes are too long for one set.'
-const STUDENT_MESSAGES = [TOO_MANY, TOO_LONG]
+const TOO_LONG = 'The chosen topics are too long for one set. Choose fewer topics.'
+const NO_TEXT = 'Choose some material with text first.'
+const STUDENT_MESSAGES = [TOO_LONG, NO_TEXT]
 
 const Body = z.object({
-  images: z
-    .array(z.object({ mediaType: z.enum(['image/jpeg', 'image/png', 'image/webp']), data: z.string() }))
-    .max(LIMITS.pages, TOO_MANY)
-    .default([]),
-  pdf: z.string().optional(),
-  text: z.string().max(LIMITS.textChars, TOO_LONG).optional(),
-  count: z.union([z.literal(5), z.literal(10), z.literal(15)]),
+  mode: z.enum(['quick', 'mock', 'flashcards', 'weak']),
+  count: z.number().int(),
   level: z.enum(LEVELS),
-  mix: z.enum(['sba', 'mixed']),
+  types: z.array(z.enum(TYPES)).min(1).max(4).default(['sba']),
+  parts: z
+    .array(z.object({ ref: z.string().trim().min(1).max(LIMITS.refChars), topic: z.string().trim().min(1).max(LIMITS.refChars), text: z.string() }))
+    .max(LIMITS.parts),
+  focus: z.array(z.string().max(LIMITS.focusChars)).max(LIMITS.focus).optional(),
 })
 
 /** Check a request body; throws RequestError with a message fit to show the student. */
-export function parseRequest(raw: string): { notes: Notes; settings: Settings } {
+export function parseRequest(raw: string): { parts: Part[]; settings: Settings; focus?: string[] } {
   let json: unknown
   try {
     json = JSON.parse(raw)
@@ -43,21 +40,16 @@ export function parseRequest(raw: string): { notes: Notes; settings: Settings } 
   }
   const r = Body.safeParse(json)
   if (!r.success) {
-    // Our own messages are written for the student; zod's defaults are not.
     const message = r.error.issues.map((i) => i.message).find((m) => STUDENT_MESSAGES.includes(m))
     throw new RequestError(message ?? 'The request was not valid.')
   }
   const b = r.data
-  for (const img of b.images) {
-    if (!BASE64.test(img.data)) throw new RequestError('A page could not be read. Please take the photo again.')
-    if (b64bytes(img.data) > LIMITS.imageBytes) throw new RequestError('A page photo is too large. Please take it again.', 413)
-  }
-  if (b.pdf !== undefined) {
-    if (!BASE64.test(b.pdf)) throw new RequestError('The PDF could not be read.')
-    if (b64bytes(b.pdf) > LIMITS.pdfBytes) throw new RequestError('The PDF is too large. Use a shorter file.', 413)
-  }
-  if (!b.images.length && !b.pdf && !b.text?.trim()) throw new RequestError('Add a photo, a PDF or some typed notes first.')
-  return { notes: { images: b.images, pdf: b.pdf, text: b.text }, settings: { count: b.count, level: b.level, mix: b.mix } }
+  if (!COUNTS[b.mode].includes(b.count)) throw new RequestError('The request was not valid.')
+  const parts = b.parts.filter((p) => p.text.trim())
+  if (!parts.length) throw new RequestError(NO_TEXT)
+  if (parts.reduce((n, p) => n + p.text.length, 0) > LIMITS.textChars) throw new RequestError(TOO_LONG, 413)
+  if (new Set(parts.map((p) => p.ref)).size !== parts.length) throw new RequestError('The request was not valid.')
+  return { parts, settings: { mode: b.mode, count: b.count, level: b.level, types: [...new Set(b.types)] }, focus: b.focus }
 }
 
 /**

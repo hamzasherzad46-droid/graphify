@@ -9,6 +9,7 @@ import { shuffle, nameKey } from '../../learn/pool'
 import { review } from '../../learn/deck'
 import { answersFor, everydayFor, friendlyIn, hint, isKnown, press, setBones, SETS, setById, targetFor, type SpellingSet } from '../../learn/spelling'
 import { sessionChord, wordChime, wrongLetter } from '../../learn/sound'
+import { Choice, Group } from '../Settings'
 import { haptic } from '../../lib/feedback'
 import { thumbSlots } from '../../viewer/thumbSlots'
 import { CloseIcon, ChevronRightIcon } from '../Icons'
@@ -133,27 +134,19 @@ function SpellingSetup({ current, mode, timeLimit, onStart, onClose }: { current
       </header>
       <div className="spell-setup-body">
         <p className="muted">Choose a small set. Each bone lights up in 3D; spell its name letter by letter.</p>
-        <div className="row">
-          <span>Mode</span>
-          <div className="segmented small" role="radiogroup" aria-label="Mode">
-            {(['learn', 'hard'] as const).map((m) => (
-              <button key={m} role="radio" aria-checked={mode === m} className={mode === m ? 'on' : ''} onClick={() => set({ spellMode: m })}>
-                {m === 'learn' ? 'Learn' : 'Hard'}
-              </button>
-            ))}
-          </div>
-        </div>
-        <p className="muted small mode-help">{mode === 'learn' ? 'Learn: the name shows as faint letters to trace, with a short description.' : 'Hard: blanks only. No description.'}</p>
-        <div className="row">
-          <span>Timer</span>
-          <div className="segmented small" role="radiogroup" aria-label="Timer">
-            {TIMERS.map(([v, l]) => (
-              <button key={v} role="radio" aria-checked={timeLimit === v} className={timeLimit === v ? 'on' : ''} onClick={() => set({ timeLimit: v })}>
-                {l}
-              </button>
-            ))}
-          </div>
-        </div>
+        <Group>
+          <Choice
+            label="Mode"
+            hint={mode === 'learn' ? 'The name shows as faint letters to trace, with a short description.' : 'Blanks only, with no description.'}
+            value={mode}
+            options={[
+              ['learn', 'Learn'],
+              ['hard', 'Hard'],
+            ]}
+            onChange={(spellMode) => set({ spellMode })}
+          />
+          <Choice label="Timer" hint="Time for the whole set" value={timeLimit} options={TIMERS} onChange={(v) => set({ timeLimit: v })} />
+        </Group>
         {regions.map((r) => (
           <section key={r} className="set-group">
             <h3 className="sheet-sub">{r}</h3>

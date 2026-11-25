@@ -87,7 +87,7 @@ export function FlashcardSession({ onClose, onShow }: { onClose: () => void; onS
           <p className="muted">
             {stats.again ? `${stats.again} marked Again. ` : ''}
             {nextDue
-              ? `Next card due ${new Date(nextDue).toLocaleString([], { weekday: 'short', hour: '2-digit', minute: '2-digit' })}.`
+              ? `Next card due ${new Date(nextDue).toLocaleString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' })}.`
               : 'No cards scheduled yet.'}
           </p>
           <div className="modal-actions">

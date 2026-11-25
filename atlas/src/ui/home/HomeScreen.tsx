@@ -68,7 +68,7 @@ export function HomeScreen() {
           <span className="brand-mark" aria-hidden />
           <span className="brand-name">ATLAS</span>
           <span className="beta" title="Content is a draft until academically reviewed">
-            Beta — under academic review
+            Beta
           </span>
         </div>
         <button className="icon-btn profile" aria-label="You" onClick={() => go('you')}>
@@ -81,7 +81,7 @@ export function HomeScreen() {
           {greeting(now)}
           {name ? `, ${name}` : ''}.
         </h1>
-        <p className="muted">{now.toLocaleDateString([], { weekday: 'long', day: 'numeric', month: 'long' })}</p>
+        <p className="muted">{now.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</p>
         <div className="goal" aria-label={`Today's goal: ${goal.done} of ${goal.goal} answers`}>
           <span className="k">Today’s goal</span>
           <span className="goal-bar" aria-hidden>

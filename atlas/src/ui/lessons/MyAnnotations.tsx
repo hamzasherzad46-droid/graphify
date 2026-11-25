@@ -167,7 +167,7 @@ export function MyAnnotations({ what }: { what: 'highlights' | 'notes' }) {
                         {!a.segs.length ? 'On this question' : a.scope === 'para' && what === 'notes' ? `On the paragraph: “${short(a.segs[0].quote, 80)}”` : `“${short(a.segs.map((s) => s.quote).join(' … '), what === 'notes' ? 90 : 240)}”`}
                       </p>
                       {what === 'highlights' && a.note.trim() && <p className="mine-has-note">Note: {short(a.note, 90)}</p>}
-                      <span className="mine-date">{new Date(a.updatedAt).toLocaleDateString([], { day: 'numeric', month: 'short' })}</span>
+                      <span className="mine-date">{new Date(a.updatedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}</span>
                     </button>
                     <div className="mine-actions">
                       {card ? (

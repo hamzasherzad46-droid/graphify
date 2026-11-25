@@ -49,7 +49,7 @@ export function MyCardsSession({ onClose }: { onClose: () => void }) {
           <h2>{done.reviewed ? `${done.reviewed} reviewed` : 'All caught up'}</h2>
           <p className="muted">
             {done.again ? `${done.again} marked Again. ` : ''}
-            {next ? `Next card due ${new Date(next).toLocaleString([], { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}.` : ''}
+            {next ? `Next card due ${new Date(next).toLocaleString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}.` : ''}
           </p>
           <button className="btn primary" onClick={onClose}>
             Done

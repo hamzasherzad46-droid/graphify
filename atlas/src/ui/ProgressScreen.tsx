@@ -9,7 +9,7 @@ import { withSide } from '../learn/pool'
 const WEEKS = 15
 const DOW = ['Mon', '', 'Wed', '', 'Fri', '', 'Sun']
 const pct = (x: number) => `${Math.round(x * 100)}%`
-const longDate = (d: string) => new Date(`${d}T12:00:00`).toLocaleDateString([], { weekday: 'short', day: 'numeric', month: 'short' })
+const longDate = (d: string) => new Date(`${d}T12:00:00`).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })
 
 /** Progress: mastery, accuracy, streak, study days and weakest bones. Everything is computed from local data. */
 export function ProgressScreen() {
@@ -28,7 +28,7 @@ export function ProgressScreen() {
   const names = useMemo(() => [...byName(stats).values()].filter((n) => n.seen > 0).sort((a, b) => a.correct / a.seen - b.correct / b.seen || b.seen - a.seen), [stats])
   const months = grid.map((w, i) => {
     const first = w.find((c) => c && c.date.endsWith('-01')) ?? (i === 0 ? w[0] : null)
-    return first ? new Date(`${first.date}T12:00:00`).toLocaleDateString([], { month: 'short' }) : ''
+    return first ? new Date(`${first.date}T12:00:00`).toLocaleDateString('en-GB', { month: 'short' }) : ''
   })
   const startWeak = () => {
     useSession.getState().open('weak')
@@ -66,7 +66,7 @@ export function ProgressScreen() {
             <span className="sub">Longest {st.longest}</span>
           </div>
         </section>
-        <p className="muted small rule">Mastered: answered at least 3 times, the last 3 right, and 80 % right overall. Left and right count together.</p>
+        <p className="muted small rule">Mastered: answered at least 3 times, the last 3 right, and 80% right overall. Left and right count together.</p>
 
         <section aria-labelledby="by-region">
           <h3 id="by-region">Mastery by region</h3>

@@ -11,7 +11,7 @@ export function TopBar() {
         <div className="brand">
           <span className="brand-mark" aria-hidden />
           <span className="brand-name">ATLAS</span>
-          <span className="beta" title="Content is a draft until academically reviewed">Beta — under academic review</span>
+          <span className="beta" title="Content is a draft until academically reviewed">Beta</span>
         </div>
       </div>
       <div className="topbar-row">

@@ -200,10 +200,10 @@ textarea:focus-visible {
   color: var(--draft);
   border: 1px solid color-mix(in srgb, var(--draft) 40%, transparent);
   background: var(--draft-soft);
-  border-radius: 3px;
-  padding: 2px 6px;
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-weight: 600;
   min-width: 0;
-  max-width: 132px; /* wraps onto two lines on narrow phones rather than cutting the label */
 }
 
 .icon-btn {
@@ -1676,52 +1676,6 @@ textarea:focus-visible {
 
 .mistakes li > div {
   display: grid;
-}
-
-.modes {
-  display: grid;
-  gap: 8px;
-  margin-top: 4px;
-}
-
-.mode {
-  display: grid;
-  gap: 2px;
-  text-align: left;
-  padding: 12px 14px;
-  border: 1px solid var(--line-strong);
-  border-radius: 12px;
-  background: var(--raise);
-}
-
-.mode:disabled {
-  opacity: 0.5;
-}
-
-.mode-title {
-  font-size: 15.5px;
-  font-weight: 600;
-}
-
-.mode-blurb {
-  font-size: 13px;
-  color: var(--text-2);
-}
-
-.mode-note {
-  font-size: 11.5px;
-  color: var(--accent);
-  margin-top: 2px;
-}
-
-.area-row {
-  min-height: 36px;
-  border-bottom: 0;
-}
-
-.area-chips {
-  padding-bottom: 10px;
-  border-bottom: 1px solid var(--line);
 }
 
 /* ---------- full screens (progress) ---------- */
@@ -6312,7 +6266,7 @@ textarea:focus-visible {
   background: radial-gradient(120% 140% at 100% 0%, var(--accent-soft), transparent 65%), var(--raise);
 }
 
-.mode-title {
+.mode-card .mode-title {
   font-weight: 650;
   font-size: 14.5px;
 }
@@ -6321,7 +6275,7 @@ textarea:focus-visible {
   color: var(--accent);
 }
 
-.mode-blurb {
+.mode-card .mode-blurb {
   font-size: 12.5px;
   line-height: 1.4;
   color: var(--text-2);
@@ -6688,4 +6642,459 @@ textarea:focus-visible {
 
 .review-from {
   margin: 0 0 4px;
+}
+
+/* ---------- settings (You, Practice): grouped cards ---------- */
+
+.pref-group {
+  margin-top: 28px;
+}
+
+.page-body > .pref-group:first-child {
+  margin-top: 12px;
+}
+
+.pref-group-title {
+  margin: 0 4px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--text-2);
+}
+
+.pref-card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface-solid);
+  overflow: hidden;
+}
+
+[data-theme='light'] .pref-card {
+  border-color: transparent;
+  box-shadow: 0 1px 2px rgba(20, 40, 45, 0.06), 0 6px 20px rgba(20, 40, 45, 0.05);
+}
+
+.pref-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  min-height: 60px;
+  padding: 14px 18px;
+  text-align: left;
+  color: var(--text);
+  font: inherit;
+}
+
+.pref-row + .pref-row {
+  border-top: 1px solid var(--line);
+}
+
+.pref-row.stack {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  padding: 16px 18px 18px;
+}
+
+.pref-label {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  flex: 1;
+}
+
+.pref-name {
+  font-size: 15.5px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.pref-hint {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.pref-value {
+  font-size: 15px;
+  color: var(--text-2);
+  font-feature-settings: 'tnum';
+}
+
+.pref-end {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  color: var(--muted);
+  flex: none;
+}
+
+.pref-end svg {
+  width: 18px;
+  height: 18px;
+}
+
+.pref-row.link:active:not(:disabled) {
+  background: var(--raise);
+}
+
+.pref-row.link:disabled {
+  opacity: 0.45;
+}
+
+.pref-row.link.danger .pref-name {
+  color: var(--bad);
+}
+
+.pref-note {
+  margin: 10px 4px 0;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+/* A choice: equal segments across the card. */
+.seg {
+  display: grid;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 12px;
+  background: var(--raise);
+  border: 1px solid var(--line);
+}
+
+.seg button {
+  min-height: 40px;
+  padding: 0 6px;
+  border-radius: 9px;
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--text-2);
+  white-space: nowrap;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.seg button.on {
+  background: var(--accent);
+  color: var(--accent-text);
+  font-weight: 600;
+  box-shadow: 0 2px 10px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+.pref-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pref-chips .chip {
+  min-height: 40px;
+  padding: 0 16px;
+  font-size: 14.5px;
+}
+
+.field-row input,
+.field-row select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--raise);
+  color: var(--text);
+  font: inherit;
+  font-size: 16px;
+}
+
+.field-row select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--muted) 50%), linear-gradient(135deg, var(--muted) 50%, transparent 50%);
+  background-position: calc(100% - 20px) 50%, calc(100% - 15px) 50%;
+  background-size: 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: 36px;
+}
+
+.field-row input:focus,
+.field-row select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+/* Bigger, modern switch inside settings cards. */
+.pref-row .switch {
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  border: 0;
+  background: color-mix(in srgb, var(--text) 16%, transparent);
+}
+
+.pref-row .switch::after {
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.pref-row .switch:checked {
+  background: var(--accent);
+}
+
+.pref-row .switch:checked::after {
+  transform: translateX(20px);
+  background: #fff;
+}
+
+.confirm-row .pref-name {
+  color: var(--bad);
+}
+
+.confirm-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.you .version {
+  margin: 28px 0 8px;
+  text-align: center;
+}
+
+/* Profile card at the top of You. */
+.profile-card {
+  margin-top: 8px;
+  padding: 20px;
+  border-radius: 22px;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent);
+  background: radial-gradient(120% 120% at 100% 0%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 60%), var(--surface-solid);
+}
+
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  flex: none;
+  background: linear-gradient(140deg, var(--accent), color-mix(in srgb, var(--accent) 45%, #1d4ed8));
+  color: var(--accent-text);
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.avatar svg {
+  width: 28px;
+  height: 28px;
+}
+
+.profile-who {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.profile-who strong {
+  font-size: 19px;
+  font-weight: 650;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile-who span {
+  font-size: 14px;
+  color: var(--text-2);
+}
+
+.profile-stats {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.profile-stats > div:not(.goal-ring) {
+  display: grid;
+  gap: 2px;
+}
+
+.profile-stats .num {
+  font-size: 24px;
+  font-weight: 650;
+  font-feature-settings: 'tnum';
+  letter-spacing: -0.01em;
+}
+
+.profile-stats .num small {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.profile-stats .k {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.goal-ring {
+  margin-left: auto;
+  width: 48px;
+  height: 48px;
+}
+
+.goal-ring svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.goal-ring circle {
+  fill: none;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+}
+
+.goal-ring .track {
+  stroke: var(--line);
+}
+
+.goal-ring .fill {
+  stroke: var(--accent);
+  transition: stroke-dasharray 0.5s ease;
+}
+
+/* Practice: modes as roomy cards with an icon, then one settings card. */
+.modes {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.mode {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px;
+  text-align: left;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface-solid);
+  color: var(--text);
+  transition: transform 0.15s ease, border-color 0.2s;
+}
+
+[data-theme='light'] .mode,
+[data-theme='light'] .settings-card {
+  border-color: transparent;
+  box-shadow: 0 1px 2px rgba(20, 40, 45, 0.06), 0 6px 20px rgba(20, 40, 45, 0.05);
+}
+
+.mode:active:not(:disabled) {
+  transform: scale(0.985);
+}
+
+.mode:disabled {
+  opacity: 0.5;
+}
+
+.mode-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  flex: none;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.mode-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.mode-text {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  flex: 1;
+}
+
+.mode .mode-title {
+  font-size: 16.5px;
+  font-weight: 600;
+}
+
+.mode .mode-blurb {
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: var(--text-2);
+}
+
+.mode-note {
+  margin-top: 3px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.mode-go,
+.settings-card > svg {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  color: var(--muted);
+}
+
+.mode-go svg {
+  width: 100%;
+  height: 100%;
+}
+
+.settings-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface-solid);
+  text-align: left;
+  color: var(--text);
+}
+
+.settings-card-text {
+  display: grid;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.page-head.with-back {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 10px;
+}
+
+.page-head.with-back h1 {
+  font-size: 22px;
 }

@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { COURSES, usePrefs, type Theme } from '../state/store'
-import { useProgress } from '../state/progress'
+import { today, useProgress } from '../state/progress'
+import { streak } from '../learn/mastery'
+import { Choice, Field, Group, LinkRow, Toggle } from './Settings'
+import { UserIcon } from './Icons'
 import { Credits } from './Credits'
 import { Disclaimer } from './Disclaimer'
 
@@ -11,21 +14,6 @@ function download(name: string, data: unknown) {
   a.download = name
   a.click()
   setTimeout(() => URL.revokeObjectURL(url), 1000)
-}
-
-function Seg<T extends string | number>({ label, value, options, onChange }: { label: string; value: T; options: [T, string][]; onChange: (v: T) => void }) {
-  return (
-    <div className="row">
-      <span>{label}</span>
-      <div className="segmented small" role="radiogroup" aria-label={label}>
-        {options.map(([v, l]) => (
-          <button key={String(v)} role="radio" aria-checked={value === v} className={value === v ? 'on' : ''} onClick={() => onChange(v)}>
-            {l}
-          </button>
-        ))}
-      </div>
-    </div>
-  )
 }
 
 /** You: profile, study goal, appearance, sounds and haptics, reviewer tools, data, about. */
@@ -41,99 +29,161 @@ export function YouScreen() {
         <h1>You</h1>
       </header>
       <div className="page-body">
-        <section>
-          <h3 className="sheet-sub">Profile</h3>
-          <label className="field">
-            <span>Name</span>
+        <ProfileCard />
+
+        <Group title="Profile">
+          <Field label="Name">
             <input value={p.name} maxLength={40} autoComplete="given-name" placeholder="Your first name" onChange={(e) => p.setProfile({ name: e.target.value })} />
-          </label>
-          <label className="field">
-            <span>Course</span>
+          </Field>
+          <Field label="Course">
             <select value={p.course} onChange={(e) => p.setProfile({ course: e.target.value as typeof p.course })}>
               <option value="">Choose your course</option>
               {COURSES.map((c) => (
                 <option key={c}>{c}</option>
               ))}
             </select>
-          </label>
-          <Seg label="Daily goal (answers)" value={p.dailyGoal} options={[[10, '10'], [20, '20'], [30, '30'], [50, '50']]} onChange={(dailyGoal) => p.setProfile({ dailyGoal })} />
-        </section>
+          </Field>
+          <Choice
+            label="Daily goal"
+            hint="Answers and reviews a day"
+            value={p.dailyGoal}
+            options={[
+              [10, '10'],
+              [20, '20'],
+              [30, '30'],
+              [50, '50'],
+            ]}
+            onChange={(dailyGoal) => p.setProfile({ dailyGoal })}
+          />
+        </Group>
 
-        <section>
-          <h3 className="sheet-sub">App</h3>
-          <Seg label="Appearance" value={p.theme} options={([['dark', 'Dark'], ['light', 'Light'], ['system', 'Match device']] as [Theme, string][])} onChange={(t) => p.setTheme(t)} />
-          <Seg label="Labels in 3D" value={p.labelDensity} options={[['all', 'All'], ['main', 'Main bones'], ['none', 'None']]} onChange={(d) => p.setLabelDensity(d)} />
-          <label className="row">
-            <span>Sounds</span>
-            <input type="checkbox" className="switch" checked={p.study.sound} onChange={(e) => p.setStudy({ sound: e.target.checked })} />
-          </label>
-          <label className="row">
-            <span>Haptics</span>
-            <input type="checkbox" className="switch" checked={p.haptics} onChange={(e) => p.setProfile({ haptics: e.target.checked })} />
-          </label>
-        </section>
+        <Group title="Appearance">
+          <Choice
+            label="Theme"
+            value={p.theme}
+            options={
+              [
+                ['dark', 'Dark'],
+                ['light', 'Light'],
+                ['system', 'Device'],
+              ] as [Theme, string][]
+            }
+            onChange={(t) => p.setTheme(t)}
+          />
+          <Choice
+            label="Labels in 3D"
+            hint="Names shown on the model"
+            value={p.labelDensity}
+            options={[
+              ['all', 'All'],
+              ['main', 'Main bones'],
+              ['none', 'None'],
+            ]}
+            onChange={(d) => p.setLabelDensity(d)}
+          />
+        </Group>
 
-        <section>
-          <h3 className="sheet-sub">For academic reviewers</h3>
-          <label className="row">
-            <span>Reviewer mode</span>
-            <input type="checkbox" className="switch" checked={p.reviewerMode} onChange={(e) => p.setReviewerMode(e.target.checked)} />
-          </label>
+        <Group title="Sound and touch">
+          <Toggle label="Sounds" hint="Keyboard clicks and answer sounds" checked={p.study.sound} onChange={(sound) => p.setStudy({ sound })} />
+          <Toggle label="Haptics" hint="Small vibrations on answers and taps" checked={p.haptics} onChange={(haptics) => p.setProfile({ haptics })} />
+        </Group>
+
+        <Group title="For academic reviewers">
+          <Toggle label="Reviewer mode" hint="Edit and sign off bone content" checked={p.reviewerMode} onChange={(on) => p.setReviewerMode(on)} />
           {p.reviewerMode && (
             <>
-              <label className="field">
-                <span>Reviewer name</span>
+              <Field label="Reviewer name">
                 <input value={p.reviewerName} onChange={(e) => p.setReviewerName(e.target.value)} placeholder="Shown on reviewed bones" />
-              </label>
-              <button className="row link" disabled={!reviews} onClick={() => download('atlas-reviews.json', p.reviewOverrides)}>
-                Export review changes ({reviews}) <span aria-hidden>↓</span>
-              </button>
+              </Field>
+              <LinkRow label="Export review changes" value={reviews} disabled={!reviews} onClick={() => download('atlas-reviews.json', p.reviewOverrides)} end={<DownloadMark />} />
             </>
           )}
-          <button className="row link" disabled={!p.reports.length} onClick={() => download('atlas-error-reports.json', p.reports)}>
-            Export error reports ({p.reports.length}) <span aria-hidden>↓</span>
-          </button>
-        </section>
+          <LinkRow label="Export error reports" value={p.reports.length} disabled={!p.reports.length} onClick={() => download('atlas-error-reports.json', p.reports)} end={<DownloadMark />} />
+        </Group>
 
-        <section>
-          <h3 className="sheet-sub">Data</h3>
-          <p className="muted small">Your progress is saved on this device only. Cloud sync comes later.</p>
+        <Group title="Your data" note="Your progress is saved on this device only.">
           {confirm ? (
-            <div className="confirm">
-              <span>Erase all progress and flashcard schedules?</span>
-              <button className="btn ghost" onClick={() => setConfirm(false)}>
-                Cancel
-              </button>
-              <button
-                className="btn danger"
-                onClick={() => {
-                  reset()
-                  setConfirm(false)
-                }}
-              >
-                Erase
-              </button>
+            <div className="pref-row stack confirm-row" role="alert">
+              <span className="pref-label">
+                <span className="pref-name">Erase all progress?</span>
+                <span className="pref-hint">Answers, streaks and flashcard schedules on this device. This cannot be undone.</span>
+              </span>
+              <div className="confirm-actions">
+                <button className="btn ghost" onClick={() => setConfirm(false)}>
+                  Cancel
+                </button>
+                <button
+                  className="btn danger"
+                  onClick={() => {
+                    reset()
+                    setConfirm(false)
+                  }}
+                >
+                  Erase
+                </button>
+              </div>
             </div>
           ) : (
-            <button className="row link" onClick={() => setConfirm(true)}>
-              Reset progress <span aria-hidden>›</span>
-            </button>
+            <LinkRow label="Reset progress" danger onClick={() => setConfirm(true)} />
           )}
-        </section>
+        </Group>
 
-        <section>
-          <h3 className="sheet-sub">About</h3>
-          <button className="row link" onClick={() => setPage('credits')}>
-            Credits and attribution <span aria-hidden>›</span>
-          </button>
-          <button className="row link" onClick={() => setPage('disclaimer')}>
-            Educational use disclaimer <span aria-hidden>›</span>
-          </button>
-          <p className="muted small version">Atlas · skeletal system · content in academic review</p>
-        </section>
+        <Group title="About">
+          <LinkRow label="Credits and attribution" onClick={() => setPage('credits')} />
+          <LinkRow label="Educational use disclaimer" onClick={() => setPage('disclaimer')} />
+        </Group>
+        <p className="muted small version">Atlas · Skeletal system · Content in academic review</p>
       </div>
       {page === 'credits' && <Credits onBack={() => setPage('you')} />}
       {page === 'disclaimer' && <Disclaimer onClose={() => setPage('you')} />}
+    </div>
+  )
+}
+
+const DownloadMark = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round">
+    <path d="M12 4v11M7.5 10.5L12 15l4.5-4.5M5 19.5h14" />
+  </svg>
+)
+
+/** Who is studying, with today's progress and the streak. */
+function ProfileCard() {
+  const name = usePrefs((s) => s.name.trim())
+  const course = usePrefs((s) => s.course)
+  const goal = usePrefs((s) => s.dailyGoal)
+  const days = useProgress((s) => s.days)
+  const done = useProgress((s) => s.daily[today()] ?? 0)
+  const run = streak(days, today()).current
+  return (
+    <div className="profile-card">
+      <div className="profile-top">
+        <span className="avatar" aria-hidden>
+          {name ? name[0].toUpperCase() : <UserIcon />}
+        </span>
+        <span className="profile-who">
+          <strong>{name || 'Welcome'}</strong>
+          <span>{course || 'Add your name and course below'}</span>
+        </span>
+      </div>
+      <div className="profile-stats">
+        <div>
+          <span className="num">{run}</span>
+          <span className="k">Day streak</span>
+        </div>
+        <div>
+          <span className="num">
+            {Math.min(done, goal)}
+            <small>/{goal}</small>
+          </span>
+          <span className="k">Today’s goal</span>
+        </div>
+        <div className="goal-ring" aria-label={`${Math.round(Math.min(1, done / goal) * 100)}% of today’s goal`}>
+          <svg viewBox="0 0 36 36">
+            <circle cx="18" cy="18" r="15.5" className="track" />
+            {done > 0 && <circle cx="18" cy="18" r="15.5" className="fill" style={{ strokeDasharray: `${Math.min(1, done / goal) * 97.4} 97.4` }} />}
+          </svg>
+        </div>
+      </div>
     </div>
   )
 }

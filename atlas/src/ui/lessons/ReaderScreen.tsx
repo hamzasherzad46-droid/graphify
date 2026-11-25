@@ -418,7 +418,7 @@ function ReaderMenu({ onClose }: { onClose: () => void }) {
           <div className="segmented small" role="radiogroup" aria-label="Theme">
             {(['dark', 'light', 'system'] as Theme[]).map((t) => (
               <button key={t} role="radio" aria-checked={theme === t} className={theme === t ? 'on' : ''} onClick={() => usePrefs.getState().setTheme(t)}>
-                {t === 'system' ? 'Auto' : t === 'dark' ? 'Dark' : 'Light'}
+                {t === 'system' ? 'Device' : t === 'dark' ? 'Dark' : 'Light'}
               </button>
             ))}
           </div>

@@ -26,7 +26,7 @@ Organisation names: none written with a British spelling where the owner uses an
 - **docx**: Internal use only; students see “Word” or “.docx”. Use “Word”, or “.docx” for the file type.
 - **PDFs**: Internal use only; students see “PDF”. Use “PDF” (“PDF files”).
 - **acromiale**: Approved only as part of the full term “os acromiale”. Use “os acromiale”.
-- **pinky**: Kept only as a Spelling Quiz alternative (and in Gray’s text, as published). One exception, pending your decision: OpenStax 8.2’s mnemonic “So Long To Pinky, Here Comes The Thumb”. Use “little finger”.
+- **pinky**: Kept only as a Spelling Quiz alternative (and in Gray’s text, as published). One exception, approved by the reviewer on 25 November 2026: OpenStax 8.2’s mnemonic “So Long To Pinky, Here Comes The Thumb”. Use “little finger”.
 - **calcaneum**: Kept only as a Spelling Quiz alternative (and in Gray’s text, as published). Use “calcaneus”.
 - **calcis**: Kept only as a Spelling Quiz alternative (and in Gray’s text, as published). Use “calcaneus” (“os calcis” only as a Spelling Quiz alternative).
 

@@ -168,7 +168,7 @@ phalanges = lesson(
     variations={'facts': []},
     clinical={
         'items': [
-            CLIN('A child’s injured finger has an X-ray.', 'Possibly nothing: each phalanx has a normal growth plate.',
+            CLIN('A child’s injured finger has an X-ray.', 'There may be no injury: each phalanx has a normal growth plate.',
                  'Rely on one dark line alone to diagnose a fracture.', 'Cartilage is less dense than bone, so a normal plate looks dark and can be mistaken for a break.', SMALL_BONES),
             CLIN('A ball strikes the tip of a straight finger.', 'The tendon that straightens the fingertip tears from the distal phalanx, sometimes with a fragment of bone (mallet finger).',
                  'Straighten the tip of the finger.', 'Without its tendon, nothing pulls the distal phalanx straight.', check=NOT_IN),

@@ -240,7 +240,7 @@
   "items": [
    {
     "injury": "A child’s injured finger has an X-ray.",
-    "damaged": "Possibly nothing: each phalanx has a normal growth plate.",
+    "damaged": "There may be no injury: each phalanx has a normal growth plate.",
     "cannotDo": "Rely on one dark line alone to diagnose a fracture.",
     "why": "Cartilage is less dense than bone, so a normal plate looks dark and can be mistaken for a break.",
     "src": [

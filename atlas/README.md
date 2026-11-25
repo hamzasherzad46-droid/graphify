@@ -513,8 +513,14 @@ asked for). The lesson ends with three check questions answered on the page.
   of each kind; three check questions with four options and answers in different places; every source exists; drafts
   only while a check remains; at most 20 words a sentence and 3 sentences a paragraph. The text check treats each lesson
   as one lesson for abbreviations.
-- Now: 5 samples for review (`docs/structures-review.md`, written by `npm run structures:review`). Next: the remaining
-  Skull and Upper limb structures.
+- All 31 Skull and Upper limb structures (16 Skull, 15 Upper limb; the auditory ossicles, the metacarpals and the
+  phalanges of the hand as group lessons). Authored by `scripts/content/structures_*.py` (shared helpers in
+  `structures_lib.py`); the full text is in `docs/structures-review.md` (`npm run structures:review`).
+- **† checklist**: `docs/dagger-checklist.md` (and PDF), every statement awaiting a source check, with where it appears
+  and a proposed source (Gray’s 1918 quoted as support only, Terminologia Anatomica entries, a current textbook), for
+  sign-off (`npm run review:checklist`).
+- **Flashcards**: one card per structure in the approved layered format (`scripts/content/cards_v2.py`), built from the
+  lesson’s own statements so every source and † carries over; the ten reviewed samples are kept unchanged.
 
 ## Progress (step 6)
 

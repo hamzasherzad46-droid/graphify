@@ -1,6 +1,6 @@
 # Atlas: † statements for sign-off
 
-25 November 2026. 131 statements are marked † in the app: not confirmed by the imported OpenStax A&P 2e chapters (6–9, 12–16 and 20) or by review. Each stays marked until it is signed off here.
+25 November 2026. 147 statements are marked † in the app: not confirmed by the imported OpenStax A&P 2e chapters (6–9, 12–16 and 20) or by review. Each stays marked until it is signed off here.
 
 **Proposed sources.** For each statement: any sentence of *Gray’s Anatomy* (1918) that supports it, quoted in full (a secondary source: it can support a statement but cannot approve one on its own); the Terminologia Anatomica (TA2) entry for each name it uses; and a current textbook in which to confirm it. No page numbers are given: please record the edition and page you use.
 
@@ -1114,7 +1114,77 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 109. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Why”
+### 109. Flashcard 2.7 (“Name the highlighted bone.”), layer “Go deeper”, point 2
+
+> Body: the front of the U.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 110. Flashcard 2.7 (“Name the highlighted bone.”), layer “Clinical”
+
+> Strong pressure on the front of the neck, as in strangulation. The hyoid bone may break. The hyoid moves with the tongue, larynx and pharynx in swallowing and speaking.
+
+- **What is missing:** A fracture of the hyoid is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20); its role in swallowing and speech is.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 111. Flashcard 2.12 (“Name the highlighted bone.”), layer “Go deeper”, point 4
+
+> Upper and side edges: meet the frontal bone above and the maxillae at the sides.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 112. Flashcard 2.12 (“Name the highlighted bone.”), layer “Clinical”
+
+> A blow to the nose. The nasal bones break: these are the bones damaged when the nose is broken. The thin bones form the bony bridge, so a blow drives them sideways or inwards.
+
+- **What is missing:** OpenStax says these bones break in a broken nose; displacement of the bridge is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 113. Flashcard 2.14 (“Which auditory ossicle is attached to the oval window?”), layer “Go deeper”, point 5
+
+> Footplate of the stapes: its flat base fills the oval window.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 114. Flashcard 2.14 (“Which auditory ossicle is attached to the oval window?”), layer “Clinical”
+
+> Abnormal bone growth fixes the stapes in the oval window (otosclerosis). The stapes must move to send vibrations through the oval window.
+
+- **What is missing:** Otosclerosis is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20); the role of the oval window is.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 115. Flashcard 2.18 (“Name the highlighted bone.”), layer “Clinical”
+
+> A septum bent to one side, from development or an injury. It affects the bony and cartilage parts of the septum, including the vomer. The septum divides the nasal cavity, so bending it narrows one side.
+
+- **What is missing:** A deviated septum is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20); the septum’s role is.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 116. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Why”
 
 > The scaphoid links the proximal and distal rows of carpal bones and meets the radius directly, so it takes much of the force of a fall on the outstretched hand. It lies in the floor of the anatomical snuffbox, so tenderness there points to it.
 
@@ -1125,7 +1195,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 110. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Explain simpler”
+### 117. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Explain simpler”
 
 > The scaphoid is the wrist bone on the thumb side that meets the radius, so a fall onto the hand loads it heavily. It sits under the small hollow at the base of the thumb, so pain there suggests it is broken.
 
@@ -1136,7 +1206,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 111. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 2
+### 118. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 2
 
 > Its blood supply (from branches of the radial artery) enters mainly at the distal end.
 
@@ -1147,7 +1217,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 112. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 3
+### 119. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 3
 
 > So a fracture across the waist can cut off the supply to the proximal pole.
 
@@ -1157,7 +1227,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 113. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 4
+### 120. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 4
 
 > Risk: avascular necrosis and non-union of the proximal fragment.
 
@@ -1167,7 +1237,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 114. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Why”
+### 121. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Why”
 
 > The ulnar nerve runs in a shallow groove on the back of the medial epicondyle, covered only by skin and fascia. That is why a knock there sends tingling down the little-finger side of the hand.
 
@@ -1178,7 +1248,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 115. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Explain simpler”
+### 122. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Explain simpler”
 
 > The nerve passes right behind the bony bump on the inner side of the elbow, just under the skin, so hitting it makes the little finger tingle.
 
@@ -1189,7 +1259,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 116. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 2
+### 123. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 2
 
 > The nerve enters the forearm between the two heads of flexor carpi ulnaris.
 
@@ -1200,7 +1270,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 117. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 3
+### 124. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 3
 
 > It supplies most of the small (intrinsic) muscles of the hand.
 
@@ -1211,7 +1281,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 118. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 4
+### 125. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 4
 
 > It gives sensation to the little finger and the medial half of the ring finger.
 
@@ -1222,7 +1292,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 119. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Clinical”
+### 126. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Clinical”
 
 > A fracture of the medial epicondyle, or long pressure on the elbow, can injure the ulnar nerve, weakening the small muscles of the hand and numbing the little finger.
 
@@ -1233,7 +1303,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 120. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Memory hook”
+### 127. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Memory hook”
 
 > The “funny bone” is not a bone: it is the ulnar nerve behind the medial epicondyle.
 
@@ -1244,7 +1314,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 121. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Exam trap”
+### 128. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Exam trap”
 
 > Only the ulnar nerve lies behind the medial epicondyle: the median nerve crosses in front of the elbow, and the radial nerve lies on the lateral side.
 
@@ -1255,7 +1325,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 122. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Why”
+### 129. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Why”
 
 > The surgical neck is where the expanded upper end of the humerus narrows into the shaft, and it is a common site of fracture. The axillary nerve wraps around the back of this neck, so a fracture here can stretch or tear it.
 
@@ -1266,7 +1336,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 123. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Explain simpler”
+### 130. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Explain simpler”
 
 > The surgical neck is the narrow part just below the ball of the humerus. A nerve wraps around it, so breaking the bone there can damage the nerve.
 
@@ -1277,7 +1347,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 124. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 2
+### 131. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 2
 
 > The posterior circumflex humeral artery runs around the neck with the nerve.
 
@@ -1288,7 +1358,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 125. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 3
+### 132. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 3
 
 > The axillary nerve supplies the deltoid and teres minor.
 
@@ -1299,7 +1369,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 126. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 4
+### 133. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 4
 
 > It supplies the skin over the lower deltoid (the “regimental badge” area).
 
@@ -1310,7 +1380,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 127. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 5
+### 134. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 5
 
 > Lower down, the radial nerve lies in the radial groove, at risk in shaft fractures.
 
@@ -1321,7 +1391,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 128. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Clinical”
+### 135. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Clinical”
 
 > Damage to the axillary nerve weakens the deltoid, so raising the arm out to the side is weak, with numbness over the lower outer shoulder.
 
@@ -1332,7 +1402,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 129. Flashcard 2.10 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 2
+### 136. Flashcard 2.25 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 2
 
 > Carries nine tendons from three muscles, plus the median nerve.
 
@@ -1343,7 +1413,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 130. Flashcard 2.10 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 3
+### 137. Flashcard 2.25 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 3
 
 > Flexor digitorum superficialis (four), flexor digitorum profundus (four) and flexor pollicis longus (one).
 
@@ -1354,13 +1424,103 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 131. Flashcard 2.10 (“What forms the roof of the carpal tunnel?”), layer “Clinical”
+### 138. Flashcard 2.25 (“What forms the roof of the carpal tunnel?”), layer “Clinical”
 
 > Swelling in the tunnel compresses the median nerve: carpal tunnel syndrome, with pain or numbness and weakness in the parts of the hand it supplies. The bony walls and tough roof cannot stretch, so any swelling squeezes the nerve.
 
 - **What is missing:** OpenStax does not name the nerve; “median” needs an approved source.
 - **Gray’s 1918:** no supporting sentence in the imported chapters.
 - **Terminologia Anatomica:** carpal tunnel (TA2 2551); median nerve (TA2 6459)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 139. Flashcard 2.26 (“Name the highlighted bone.”), layer “Go deeper”, point 1
+
+> Rounded head: its upper end is rounded, fitting a hollow formed by the scaphoid and lunate.
+
+- **What is missing:** OpenStax gives its name and its joints with the scaphoid and lunate; the rounded head fitting their hollow is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 140. Flashcard 2.26 (“Name the highlighted bone.”), layer “Clinical”
+
+> A violent fall onto the hand with the wrist bent far back. The capitate and the rest of the hand dislocate backwards around the lunate (perilunate dislocation). The lunate stays attached to the radius while the ligaments around it tear.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 141. Flashcard 2.28 (“Name the highlighted bone.”), layer “Clinical”
+
+> A golf club, bat or racquet handle strikes the base of the palm. The hook of the hamate breaks. The handle presses directly on the hook, which projects forwards.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 142. Flashcard 2.29 (“How many phalanges does the thumb have?”), layer “Go deeper”, point 5
+
+> Base, shaft and head: each phalanx has a base nearest the palm, a shaft and a head.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 143. Flashcard 2.31 (“Name the highlighted bone.”), layer “Clinical”
+
+> A fall onto the outstretched hand with the wrist bent far back. The lunate dislocates forwards, into the carpal tunnel. The dislocated bone takes up space in the tunnel and presses on the median nerve.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 144. Flashcard 2.32 (“Which metacarpals are firmly anchored and do not move?”), layer “Clinical”
+
+> A punch that lands on a hard object. The neck of the fifth metacarpal breaks (“boxer’s fracture”). The fifth metacarpal is the most mobile of the palm bones and takes the force of a badly aimed punch.
+
+- **What is missing:** The fracture is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20); the mobility of the fifth metacarpal is.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 145. Flashcard 2.33 (“Name the highlighted bone.”), layer “Clinical”
+
+> A fall onto the heel of the hand on the little-finger side. The pisiform breaks. A forearm muscle tendon attaches to it and pulls on the broken bone.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 146. Flashcard 2.38 (“Name the highlighted bone.”), layer “Clinical”
+
+> A hard bony lump on the back of the hand, at the base of the index and middle fingers. There is extra bone (a carpal boss) where the trapezoid and capitate meet the second and third metacarpals. The lump catches the tendons that run over the back of the wrist.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 147. Flashcard 2.39 (“Name the highlighted bone.”), layer “Clinical”
+
+> A twisting fall on the hand. The articular disc between the ulna and the triquetrum tears. The disc unites the lower ends of the radius and ulna, and the triquetrum presses on it.
+
+- **What is missing:** OpenStax describes the disc; a tear of the disc in a fall is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
 - **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________

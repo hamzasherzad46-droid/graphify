@@ -414,6 +414,1007 @@
     ]
    },
    "source": "OpenStax A&P 2e, 8.2 Bones of the Upper Limb. On review, Atlas lists the tunnel’s contents as nine tendons from three muscles, plus the median nerve (OpenStax: “tendons of nine muscles”)."
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-capitate-identify",
+   "topic": "upper-limb",
+   "type": "identify",
+   "level": "core",
+   "structureId": "capitate",
+   "bone": "capitate_left",
+   "frontView": true,
+   "objective": "Identify the capitate on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Capitate",
+   "why": {
+    "t": "The head-shaped bone in the centre of the wrist, third in the second row of carpal bones (capitate). It mainly meets the third metacarpal, the palm bone of the middle finger.",
+    "src": [
+     "s8-2#fs-id1977414",
+     "glossary:capitate",
+     "s8-2#fs-id1242304",
+     "s8-2#fs-id2002490"
+    ]
+   },
+   "simpler": {
+    "t": "The capitate is the wrist bone in the middle of your wrist.",
+    "src": [
+     "glossary:capitate"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Rounded head: its upper end is rounded, fitting a hollow formed by the scaphoid and lunate.",
+     "src": [
+      "glossary:capitate"
+     ],
+     "check": "OpenStax gives its name and its joints with the scaphoid and lunate; the rounded head fitting their hollow is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+    },
+    {
+     "t": "Surface for the third metacarpal: its lower surface, at the carpometacarpal joint.",
+     "src": [
+      "glossary:capitate",
+      "glossary:carpometacarpal joint"
+     ]
+    },
+    {
+     "t": "Side surfaces: it meets the trapezoid on the thumb side and the hamate on the other.",
+     "src": [
+      "glossary:capitate"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A violent fall onto the hand with the wrist bent far back. The capitate and the rest of the hand dislocate backwards around the lunate (perilunate dislocation). The lunate stays attached to the radius while the ligaments around it tear.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   "trap": {
+    "t": "The capitate is third in the distal row from the thumb side, between the trapezoid and the hamate.",
+    "src": [
+     "glossary:capitate"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4",
+   "hook": {
+    "t": "“Capitate” means head-shaped.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   }
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-clavicle-identify",
+   "topic": "upper-limb",
+   "type": "identify",
+   "level": "core",
+   "structureId": "clavicle",
+   "bone": "clavicle_left",
+   "frontView": true,
+   "objective": "Identify the clavicle on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Clavicle",
+   "why": {
+    "t": "The S-shaped collarbone at the front of the shoulder, joining the arm to the trunk (clavicle). It is the only long bone in the body that lies horizontally.",
+    "src": [
+     "s8-1#fs-id1371880",
+     "s8-1#fs-id1192235"
+    ]
+   },
+   "simpler": {
+    "t": "The clavicle is your collarbone.",
+    "src": [
+     "s8-1#fs-id1371880"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Shaft: the curved middle part between the two ends.",
+     "src": [
+      "s8-1#fs-id2241809"
+     ]
+    },
+    {
+     "t": "Underside of the acromial end: the strong coracoclavicular ligament anchors here, tying it to the coracoid process.",
+     "src": [
+      "s8-1#fs-id1200622"
+     ]
+    },
+    {
+     "t": "Near the sternal end: the costoclavicular ligament ties it to the first rib below.",
+     "src": [
+      "s8-1#fs-id2241809"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A fall onto the outstretched arms, or a strong blow to the side of the shoulder. The clavicle breaks, usually between its middle and outer parts. It is the bone broken most often.",
+    "src": [
+     "s8-1#fs-id1866400"
+    ]
+   },
+   "trap": {
+    "t": "The clavicle forms from membrane, not cartilage: the only limb or girdle bone to do so.",
+    "src": [
+     "s8-5#fs-id1375181"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.1 The Pectoral Girdle; 8.5; 9.4; 20.5"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-hamate-identify",
+   "topic": "upper-limb",
+   "type": "identify",
+   "level": "core",
+   "structureId": "hamate",
+   "bone": "hamate_left",
+   "frontView": true,
+   "objective": "Identify the hamate on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Hamate",
+   "why": {
+    "t": "The hooked wrist bone on the little-finger side, fourth in the second row of carpal bones (hamate). A hook projects from its front, and it anchors the inner end of the flexor retinaculum.",
+    "src": [
+     "s8-2#fs-id1977414",
+     "glossary:hamate",
+     "s8-2#fs-id2329218"
+    ]
+   },
+   "simpler": {
+    "t": "The hamate is the wrist bone below your ring and little fingers.",
+    "src": [
+     "glossary:hamate",
+     "s8-2#fs-id1242304"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Hook of the hamate: a prominent bony extension on its front.",
+     "src": [
+      "s8-2#fs-id1977414",
+      "glossary:hook of the hamate bone"
+     ]
+    },
+    {
+     "t": "Surfaces for the fourth and fifth metacarpals: its lower surface, at the carpometacarpal joints.",
+     "src": [
+      "glossary:hamate"
+     ]
+    },
+    {
+     "t": "Upper surfaces: it meets the lunate and triquetrum above.",
+     "src": [
+      "glossary:hamate"
+     ]
+    },
+    {
+     "t": "Side surface: it meets the capitate on the thumb side.",
+     "src": [
+      "glossary:hamate"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A golf club, bat or racquet handle strikes the base of the palm. The hook of the hamate breaks. The handle presses directly on the hook, which projects forwards.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   "trap": {
+    "t": "The hamate carries the fourth and fifth metacarpals; the capitate carries mainly the third.",
+    "src": [
+     "glossary:hamate",
+     "glossary:capitate"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4",
+   "hook": {
+    "t": "“Hamate” means hooked bone.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   }
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-hand-phalanges-feature",
+   "topic": "upper-limb",
+   "type": "feature",
+   "level": "core",
+   "structureId": "hand-phalanges",
+   "bone": "hand_proximal_phalanx_3_left",
+   "frontView": false,
+   "objective": "State the phalanges of the thumb.",
+   "front": "How many phalanges does the thumb have?",
+   "answer": "Two: proximal and distal",
+   "why": {
+    "t": "The thumb (digit 1) has two: a proximal and a distal phalanx. Each finger, digits 2 to 5, has three: proximal, middle and distal.",
+    "src": [
+     "s8-2#fs-id2002490"
+    ]
+   },
+   "simpler": {
+    "t": "The phalanges are the bones of your fingers and thumb.",
+    "src": [
+     "s8-2#fs-id2002490"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Proximal phalanges: the nearest to the palm; each meets a metacarpal head at a knuckle joint.",
+     "src": [
+      "s8-2#fs-id2002490",
+      "s8-2#fs-id1242304"
+     ]
+    },
+    {
+     "t": "Middle phalanges: only in the fingers, between the proximal and distal phalanges.",
+     "src": [
+      "s8-2#fs-id2002490"
+     ]
+    },
+    {
+     "t": "Distal phalanges: the tips of the fingers and thumb.",
+     "src": [
+      "s8-2#fs-id2002490"
+     ]
+    },
+    {
+     "t": "Interphalangeal joints: the joints between neighbouring phalanges.",
+     "src": [
+      "s8-2#fs-id2002490",
+      "glossary:interphalangeal joint"
+     ]
+    },
+    {
+     "t": "Base, shaft and head: each phalanx has a base nearest the palm, a shaft and a head.",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+    }
+   ],
+   "clinical": {
+    "t": "A child’s injured finger has an X-ray. There may be no injury: each phalanx has a normal growth plate. Cartilage is less dense than bone, so a normal plate looks dark and can be mistaken for a break.",
+    "src": [
+     "s8-5#fs-id1972676"
+    ]
+   },
+   "trap": {
+    "t": "The thumb has two phalanges, with no middle phalanx; each finger has three.",
+    "src": [
+     "s8-2#fs-id2002490"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4; 9.5; 20.5"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-humerus-identify",
+   "topic": "upper-limb",
+   "type": "identify",
+   "level": "core",
+   "structureId": "humerus",
+   "bone": "humerus_left",
+   "frontView": true,
+   "objective": "Identify the humerus on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Humerus",
+   "why": {
+    "t": "The long bone of the upper arm, running from the shoulder to the elbow (humerus). It is a long bone: a hollow shaft (diaphysis) with a wider end at each end (epiphysis).",
+    "src": [
+     "s8-2#fs-id2110691",
+     "s8-2#fs-id1415448",
+     "s6-3#fs-id1025647"
+    ]
+   },
+   "simpler": {
+    "t": "The humerus is the bone of your upper arm.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Its round head faces inwards (medially) and fits the shallow socket of the shoulder blade.",
+     "src": [
+      "s8-2#fs-id2110691"
+     ]
+    },
+    {
+     "t": "At the elbow it meets the ulna on the inner side and the radius on the outer side.",
+     "src": [
+      "s8-2#fs-id2444175"
+     ]
+    },
+    {
+     "t": "Head: the large, smooth, round top.",
+     "src": [
+      "s8-2#fs-id2110691"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A fall onto the hand or elbow breaks the bone across the surgical neck. The narrow neck is where the wide top meets the shaft, so force concentrates there.",
+    "src": [
+     "s8-2#fs-id2030259",
+     "s8-2#fs-id2110691"
+    ]
+   },
+   "trap": {
+    "t": "The surgical neck, not the anatomical neck, is the common fracture site.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5; 9.6; 20.5"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-lunate-identify",
+   "topic": "upper-limb",
+   "type": "identify",
+   "level": "core",
+   "structureId": "lunate",
+   "bone": "lunate_left",
+   "frontView": true,
+   "objective": "Identify the lunate on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Lunate",
+   "why": {
+    "t": "A moon-shaped wrist bone in the middle of the first row of carpal bones (lunate). With the scaphoid, it is one of only two carpal bones that meet the radius directly.",
+    "src": [
+     "s8-2#fs-id1977414",
+     "glossary:lunate",
+     "s8-2#fs-id1882937"
+    ]
+   },
+   "simpler": {
+    "t": "The lunate is a small wrist bone in the middle of your wrist.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Surface for the radius: its upper surface meets the radius directly at the wrist joint.",
+     "src": [
+      "s8-2#fs-id1882937"
+     ]
+    },
+    {
+     "t": "Surfaces for the second row: its lower surface meets the capitate and hamate at the midcarpal joint.",
+     "src": [
+      "glossary:lunate",
+      "s8-2#fs-id932152"
+     ]
+    },
+    {
+     "t": "Side surfaces: it meets the scaphoid on the thumb side and the triquetrum on the other.",
+     "src": [
+      "glossary:lunate"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A fall onto the outstretched hand with the wrist bent far back. The lunate dislocates forwards, into the carpal tunnel. The dislocated bone takes up space in the tunnel and presses on the median nerve.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   "trap": {
+    "t": "The lunate meets the radius directly; the triquetrum beside it meets the articular disc instead.",
+    "src": [
+     "s8-2#fs-id1882937",
+     "reviewer:2026-11-25"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4",
+   "hook": {
+    "t": "“Lunate” means moon-shaped.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   }
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-metacarpals-feature",
+   "topic": "upper-limb",
+   "type": "feature",
+   "level": "higher",
+   "structureId": "metacarpals",
+   "bone": "metacarpal_3_left",
+   "frontView": false,
+   "objective": "State which metacarpals are immobile.",
+   "front": "Which metacarpals are firmly anchored and do not move?",
+   "answer": "The second and third",
+   "why": {
+    "t": "The second and third are fixed, giving the palm a firm middle. The fourth and fifth move forwards in a power grip, pressing the inner hand against the object.",
+    "src": [
+     "s8-2#fs-id1436751"
+    ]
+   },
+   "simpler": {
+    "t": "The metacarpals are the five bones of your palm.",
+    "src": [
+     "s8-2#fs-id1242304"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Base: the upper end, which meets a carpal bone at a carpometacarpal joint.",
+     "src": [
+      "s8-2#fs-id1242304",
+      "glossary:carpometacarpal joint"
+     ]
+    },
+    {
+     "t": "Shaft: the long middle part of each bone.",
+     "src": [
+      "glossary:metacarpal bone"
+     ]
+    },
+    {
+     "t": "Head: the expanded lower end, which forms a knuckle.",
+     "src": [
+      "s8-2#fs-id1242304"
+     ]
+    },
+    {
+     "t": "Second and third metacarpals: firmly anchored, so they do not move.",
+     "src": [
+      "s8-2#fs-id1436751"
+     ]
+    },
+    {
+     "t": "Fourth and fifth metacarpals: can move a little forwards and backwards; the fifth moves most.",
+     "src": [
+      "s8-2#fs-id1436751"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A punch that lands on a hard object. The neck of the fifth metacarpal breaks (“boxer’s fracture”). The fifth metacarpal is the most mobile of the palm bones and takes the force of a badly aimed punch.",
+    "src": [
+     "s8-2#fs-id1436751"
+    ],
+    "check": "The fracture is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the mobility of the fifth metacarpal is."
+   },
+   "trap": {
+    "t": "The metacarpals are numbered from the thumb: the first is at the base of the thumb.",
+    "src": [
+     "s8-2#fs-id1242304"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4; 9.5; 20.5"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-pisiform-identify",
+   "topic": "upper-limb",
+   "type": "identify",
+   "level": "core",
+   "structureId": "pisiform",
+   "bone": "pisiform_left",
+   "frontView": true,
+   "objective": "Identify the pisiform on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Pisiform",
+   "why": {
+    "t": "A small pea-shaped bone on the front of the triquetrum, at the base of the hand (pisiform). It sits on the front of the triquetrum, not in line with the other bones of its row.",
+    "src": [
+     "s8-2#fs-id1977414",
+     "glossary:pisiform"
+    ]
+   },
+   "simpler": {
+    "t": "The pisiform is the small round wrist bone at the base of your palm, on the little-finger side.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Facet for the triquetrum: a flat surface on its back, where it meets the triquetrum.",
+     "src": [
+      "glossary:pisiform"
+     ]
+    },
+    {
+     "t": "Front surface: projects forwards, so you can feel it at the base of the hand.",
+     "src": [
+      "s8-2#fs-id1977414"
+     ]
+    },
+    {
+     "t": "Attachment of the flexor retinaculum: the inner end of the flexor retinaculum anchors to it.",
+     "src": [
+      "s8-2#fs-id2329218"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A fall onto the heel of the hand on the little-finger side. The pisiform breaks. A forearm muscle tendon attaches to it and pulls on the broken bone.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   "trap": {
+    "t": "The pisiform sits on the triquetrum, not on the hamate, though both are on the little-finger side.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5",
+   "hook": {
+    "t": "“Pisiform” means pea-shaped.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   }
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-radius-identify",
+   "topic": "upper-limb",
+   "type": "identify",
+   "level": "core",
+   "structureId": "radius",
+   "bone": "radius_left",
+   "frontView": true,
+   "objective": "Identify the radius on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Radius",
+   "why": {
+    "t": "The lateral bone of the forearm, on the thumb side (radius). It turns around the ulna as the palm turns backwards and forwards (pronation and supination).",
+    "src": [
+     "s8-2#fs-id1411842",
+     "s8-2#fs-id1415448",
+     "s9-5#fs-id1837207"
+    ]
+   },
+   "simpler": {
+    "t": "The radius is the forearm bone on the thumb side.",
+    "src": [
+     "s8-2#fs-id1411842"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Neck: the narrow part just below the head.",
+     "src": [
+      "s8-2#fs-id1411842"
+     ]
+    },
+    {
+     "t": "Radial tuberosity: an oval bump below the neck, on the inner side, where a muscle attaches.",
+     "src": [
+      "s8-2#fs-id1411842"
+     ]
+    },
+    {
+     "t": "Ulnar notch: a shallow hollow at the lower end that meets the head of the ulna.",
+     "src": [
+      "s8-2#fs-id1411842"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A fall onto the outstretched hand, often in an older person with osteoporosis. The lower end of the radius breaks across, and the lower fragment is pushed backwards and upwards (Colles fracture). The hand is carried backwards with the displaced fragment.",
+    "src": [
+     "s8-2#fs-id2142217"
+    ]
+   },
+   "trap": {
+    "t": "The radius is lateral (thumb side), and its head is at the elbow, not the wrist.",
+    "src": [
+     "s8-2#fs-id1415448",
+     "s8-2#fs-id1411842"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5; 9.4; 9.5; 9.6; 20.5"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-scaphoid-identify",
+   "topic": "upper-limb",
+   "type": "identify",
+   "level": "core",
+   "structureId": "scaphoid",
+   "bone": "scaphoid_left",
+   "frontView": true,
+   "objective": "Identify the scaphoid on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Scaphoid",
+   "why": {
+    "t": "A small boat-shaped wrist bone on the thumb side of the first row of carpal bones (scaphoid). The scaphoid and lunate meet the radius at the wrist joint; the triquetrum meets the articular disc over the ulna.",
+    "src": [
+     "s8-2#fs-id1977414",
+     "s8-2#fs-id1882937",
+     "reviewer:2026-11-25"
+    ]
+   },
+   "simpler": {
+    "t": "The scaphoid is a small wrist bone at the base of the thumb.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Surface for the radius: it meets the end of the radius directly at the wrist joint.",
+     "src": [
+      "s8-2#fs-id1882937"
+     ]
+    },
+    {
+     "t": "Front (palmar) surface: it anchors the flexor retinaculum, the band that roofs the carpal tunnel.",
+     "src": [
+      "s8-2#fs-id2329218"
+     ]
+    },
+    {
+     "t": "Below it are the trapezium, trapezoid and capitate of the second row.",
+     "src": [
+      "glossary:scaphoid"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A scaphoid fracture is missed because the first X-ray looks normal. It affects the bone itself, which has a poor blood supply. With little blood reaching it, the broken bone heals slowly.",
+    "src": [
+     "s8-2#fs-id2637051"
+    ]
+   },
+   "trap": {
+    "t": "Only the scaphoid and lunate meet the radius directly; the triquetrum meets the articular disc.",
+    "src": [
+     "s8-2#fs-id1882937",
+     "reviewer:2026-11-25"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5",
+   "hook": {
+    "t": "“Scaphoid” means boat-shaped.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   }
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-scapula-identify",
+   "topic": "upper-limb",
+   "type": "identify",
+   "level": "core",
+   "structureId": "scapula",
+   "bone": "scapula_left",
+   "frontView": true,
+   "objective": "Identify the scapula on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Scapula",
+   "why": {
+    "t": "The flat, triangular shoulder blade at the back of the shoulder (scapula). With the clavicle it forms the shoulder (pectoral) girdle, which anchors the arm to the trunk.",
+    "src": [
+     "s8-1#fs-id1471081",
+     "s8-1#fs-id1371880",
+     "s8-1#fs-id1968095"
+    ]
+   },
+   "simpler": {
+    "t": "The scapula is your shoulder blade.",
+    "src": [
+     "s8-1#fs-id1471081"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Glenoid cavity: the shallow socket for the head of the humerus.",
+     "src": [
+      "s8-1#fs-id1725063"
+     ]
+    },
+    {
+     "t": "Supraglenoid and infraglenoid tubercles: small bumps above and below the socket, for arm muscles.",
+     "src": [
+      "s8-1#fs-id1725063"
+     ]
+    },
+    {
+     "t": "Muscles lie in front of it and behind it, so it does not touch the ribs.",
+     "src": [
+      "s8-1#fs-id1968095"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A strong blow to the outer shoulder, such as a player driven into the boards. The acromioclavicular and coracoclavicular ligaments tear (a “shoulder separation”). The scapula separates from the clavicle and the weight of the arm pulls it down.",
+    "src": [
+     "s8-1#fs-id1200622"
+    ]
+   },
+   "trap": {
+    "t": "The acromion forms the tip of the shoulder; the coracoid process is the hook at the front.",
+    "src": [
+     "s8-1#fs-id1475196"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.1 The Pectoral Girdle; 8.5; 9.6"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-trapezium-identify",
+   "topic": "upper-limb",
+   "type": "identify",
+   "level": "core",
+   "structureId": "trapezium",
+   "bone": "trapezium_left",
+   "frontView": true,
+   "objective": "Identify the trapezium on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Trapezium",
+   "why": {
+    "t": "The wrist bone at the base of the thumb, first in the second row of carpal bones (trapezium). Its saddle joint with the first metacarpal gives humans their opposable thumbs.",
+    "src": [
+     "s8-2#fs-id1977414",
+     "glossary:trapezium",
+     "s9-4#fs-id1837120"
+    ]
+   },
+   "simpler": {
+    "t": "The trapezium is the wrist bone at the base of your thumb.",
+    "src": [
+     "glossary:trapezium",
+     "s9-4#fs-id1837120"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Saddle surface: its surface for the first metacarpal is saddle-shaped: concave one way and convex the other.",
+     "src": [
+      "s9-4#fs-id1837120"
+     ]
+    },
+    {
+     "t": "Surface for the second metacarpal: a small surface beside it, for the second metacarpal.",
+     "src": [
+      "glossary:trapezium"
+     ]
+    },
+    {
+     "t": "Surfaces for the scaphoid and trapezoid: it meets the scaphoid above and the trapezoid beside it.",
+     "src": [
+      "glossary:trapezium"
+     ]
+    },
+    {
+     "t": "Front surface: with the scaphoid, it anchors the outer end of the flexor retinaculum.",
+     "src": [
+      "s8-2#fs-id2329218"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "An injury to the joint at the base of the thumb. It affects the first carpometacarpal (saddle) joint. Opposition is produced at this joint, by flexion and abduction of the thumb.",
+    "src": [
+     "s9-5#fs-id1354267",
+     "s9-4#fs-id1837120"
+    ]
+   },
+   "trap": {
+    "t": "The trapezium is next to the thumb; the trapezoid is beside it, towards the index finger.",
+    "src": [
+     "glossary:trapezium",
+     "glossary:trapezoid"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4; 9.5",
+   "hook": {
+    "t": "“Trapezium” means table.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   }
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-trapezoid-identify",
+   "topic": "upper-limb",
+   "type": "identify",
+   "level": "core",
+   "structureId": "trapezoid",
+   "bone": "trapezoid_left",
+   "frontView": true,
+   "objective": "Identify the trapezoid on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Trapezoid",
+   "why": {
+    "t": "A small wrist bone at the base of the index finger, second in the second row of carpal bones (trapezoid). It meets only one metacarpal, the second, which is firmly anchored and does not move.",
+    "src": [
+     "s8-2#fs-id1977414",
+     "glossary:trapezoid",
+     "s8-2#fs-id1242304",
+     "s8-2#fs-id1436751"
+    ]
+   },
+   "simpler": {
+    "t": "The trapezoid is a small wrist bone at the base of your index finger.",
+    "src": [
+     "glossary:trapezoid",
+     "s8-2#fs-id1242304"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Surface for the second metacarpal: its lower surface, at the carpometacarpal joint.",
+     "src": [
+      "glossary:trapezoid",
+      "glossary:carpometacarpal joint"
+     ]
+    },
+    {
+     "t": "Surface for the scaphoid: its upper surface.",
+     "src": [
+      "glossary:trapezoid"
+     ]
+    },
+    {
+     "t": "Side surfaces: it meets the trapezium on one side and the capitate on the other.",
+     "src": [
+      "glossary:trapezoid"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A hard bony lump on the back of the hand, at the base of the index and middle fingers. There is extra bone (a carpal boss) where the trapezoid and capitate meet the second and third metacarpals. The lump catches the tendons that run over the back of the wrist.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   "trap": {
+    "t": "The trapezoid meets only the second metacarpal; the trapezium meets the first and second.",
+    "src": [
+     "glossary:trapezoid",
+     "glossary:trapezium"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4",
+   "hook": {
+    "t": "“Trapezoid” means “resembles a table”.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   }
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-triquetrum-identify",
+   "topic": "upper-limb",
+   "type": "identify",
+   "level": "core",
+   "structureId": "triquetrum",
+   "bone": "triquetrum_left",
+   "frontView": true,
+   "objective": "Identify the triquetrum on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Triquetrum",
+   "why": {
+    "t": "A three-cornered wrist bone, third in the first row of carpal bones (triquetrum). At the wrist joint it meets the articular disc over the ulna, not bone.",
+    "src": [
+     "s8-2#fs-id1977414",
+     "glossary:triquetrum",
+     "s8-2#fs-id1882937",
+     "reviewer:2026-11-25"
+    ]
+   },
+   "simpler": {
+    "t": "The triquetrum is a small wrist bone on the little-finger side.",
+    "src": [
+     "glossary:triquetrum"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Facet for the pisiform: a small surface on its front, where the pisiform sits.",
+     "src": [
+      "glossary:triquetrum",
+      "s8-2#fs-id1977414"
+     ]
+    },
+    {
+     "t": "Surface for the wrist joint: its upper surface meets the articular disc over the ulna.",
+     "src": [
+      "s8-2#fs-id1882937",
+      "reviewer:2026-11-25"
+     ]
+    },
+    {
+     "t": "Surface for the hamate: its lower surface meets the hamate at the midcarpal joint.",
+     "src": [
+      "glossary:triquetrum",
+      "s8-2#fs-id932152"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A twisting fall on the hand. The articular disc between the ulna and the triquetrum tears. The disc unites the lower ends of the radius and ulna, and the triquetrum presses on it.",
+    "src": [
+     "s9-4#fs-id1061087"
+    ],
+    "check": "OpenStax describes the disc; a tear of the disc in a fall is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   "trap": {
+    "t": "The bump you feel at the base of the palm is the pisiform, which sits on the triquetrum.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4",
+   "hook": {
+    "t": "“Triquetrum” means three-cornered.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   }
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "ul-ulna-identify",
+   "topic": "upper-limb",
+   "type": "identify",
+   "level": "core",
+   "structureId": "ulna",
+   "bone": "ulna_left",
+   "frontView": true,
+   "objective": "Identify the ulna on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Ulna",
+   "why": {
+    "t": "The medial bone of the forearm, on the little-finger side (ulna). Its hooked upper end grips the humerus and forms the hinge of the elbow.",
+    "src": [
+     "s8-2#fs-id2080518",
+     "s8-2#fs-id1415448",
+     "s9-6#fs-id1355969"
+    ]
+   },
+   "simpler": {
+    "t": "The ulna is the forearm bone on the little-finger side.",
+    "src": [
+     "s8-2#fs-id2080518",
+     "s8-2#fs-id2002490"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Radial notch: a small smooth area beside the notch, where the head of the radius turns.",
+     "src": [
+      "s8-2#fs-id2080518"
+     ]
+    },
+    {
+     "t": "Ulnar tuberosity: a rough area on the front, just below the coronoid process.",
+     "src": [
+      "s8-2#fs-id2080518"
+     ]
+    },
+    {
+     "t": "Head and styloid process: the small rounded lower end, with a short projection behind it.",
+     "src": [
+      "s8-2#fs-id1266017"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Repeated forceful straightening of the forearm, as in baseball pitching. It affects the ulnar collateral ligament on the inner side of the elbow. This ligament stops the elbow moving sideways and over-straightening; its front part resists over-straightening most.",
+    "src": [
+     "s9-6#fs-id2430675"
+    ]
+   },
+   "trap": {
+    "t": "The ulna’s head is at the wrist; the bony point of the elbow is the olecranon.",
+    "src": [
+     "s8-2#fs-id1266017",
+     "s8-2#fs-id2080518"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5; 9.4; 9.5; 9.6; 20.5"
   }
  ]
 }

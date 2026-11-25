@@ -281,6 +281,1039 @@
     ]
    },
    "source": "OpenStax A&P 2e, 7.2 The Skull"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-ethmoid-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "ethmoid",
+   "bone": "ethmoid_bone",
+   "frontView": true,
+   "objective": "Identify the ethmoid bone on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Ethmoid bone",
+   "why": {
+    "t": "A single midline bone between the orbits that forms the roof and upper walls of the nasal cavity (ethmoid bone). The nerve fibres for smell pass through its cribriform plate into the brain.",
+    "src": [
+     "s7-2#fs-id1971405",
+     "s7-2#fs-id1977415",
+     "s14-1#fs-id2351449"
+    ]
+   },
+   "simpler": {
+    "t": "The ethmoid bone sits behind the top of your nose, between your eyes.",
+    "src": [
+     "s7-2#fs-id1971405",
+     "s7-2#fs-id1897403"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Cribriform plates: flat plates either side of it (“sieve”), pierced by small olfactory foramina.",
+     "src": [
+      "s7-2#fs-id1977415"
+     ]
+    },
+    {
+     "t": "Perpendicular plate: forms the upper part of the nasal septum.",
+     "src": [
+      "s7-2#fs-id2228601",
+      "s7-2#fs-id2125356"
+     ]
+    },
+    {
+     "t": "Superior and middle nasal conchae: thin curved plates projecting from each side wall of the nasal cavity.",
+     "src": [
+      "s7-2#fs-id2228601",
+      "s7-2#fs-id1475747"
+     ]
+    },
+    {
+     "t": "Ethmoid air cells: many small air spaces with very thin walls, between the nasal cavity and the orbit.",
+     "src": [
+      "s7-2#fs-id1897403",
+      "s7-2#fs-id1882870"
+     ]
+    },
+    {
+     "t": "Orbital surface: forms much of the medial wall of each orbit, with the lacrimal bone.",
+     "src": [
+      "s7-2#fs-id1897403",
+      "s7-2#fs-id1887927"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Blunt force to the face, as in a car accident. The olfactory nerve fibres are sheared where they pass through the cribriform plate. The frontal lobe moves relative to the ethmoid bone, tearing the fine fibres.",
+    "src": [
+     "s14-1#fs-id2817840",
+     "s14-1#fs-id2441552"
+    ]
+   },
+   "trap": {
+    "t": "The inferior nasal concha is a separate bone; only the superior and middle conchae belong to the ethmoid.",
+    "src": [
+     "s7-2#fs-id1475747"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull; 7.5; 14.1"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-frontal-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "frontal",
+   "bone": "frontal_bone",
+   "frontView": true,
+   "objective": "Identify the frontal bone on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Frontal bone",
+   "why": {
+    "t": "The single bone of the forehead, which also forms the roof of each orbit (frontal bone). Inside the skull, it forms most of the floor of the anterior cranial fossa.",
+    "src": [
+     "s7-2#fs-id1283984",
+     "s7-2#fs-id2045358"
+    ]
+   },
+   "simpler": {
+    "t": "The frontal bone is your forehead bone.",
+    "src": [
+     "s7-2#fs-id1283984"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Glabella: a slight hollow between the eyebrows, at the front midline.",
+     "src": [
+      "s7-2#fs-id1283984"
+     ]
+    },
+    {
+     "t": "Supraorbital margin: the upper rim of each orbit.",
+     "src": [
+      "s7-2#fs-id1283984"
+     ]
+    },
+    {
+     "t": "Supraorbital foramen: an opening near the middle of each margin, for a sensory nerve to the forehead.",
+     "src": [
+      "s7-2#fs-id1283984"
+     ]
+    },
+    {
+     "t": "Brow ridges: rounded thickenings just above each margin, behind the eyebrows.",
+     "src": [
+      "s7-2#fs-id1283984"
+     ]
+    },
+    {
+     "t": "Orbital part: a flat region that forms the roof of the orbits and the floor of the anterior cranial fossa.",
+     "src": [
+      "s7-2#fs-id1283984"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A cold or sinus congestion. The lining of the frontal sinus swells and blocks its narrow passage to the nasal cavity. The blocked sinus fills with fluid, and the pressure causes pain.",
+    "src": [
+     "s7-2#fs-id1977054",
+     "s7-2#fs-id1882870"
+    ]
+   },
+   "trap": {
+    "t": "The frontal bone forms the roof of the orbit; the floor is mainly the maxilla.",
+    "src": [
+     "s7-2#fs-id1887927"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull; 7.5; 9.2; 14.1"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-hyoid-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "hyoid",
+   "bone": "hyoid_bone",
+   "frontView": true,
+   "objective": "Identify the hyoid bone on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Hyoid bone",
+   "why": {
+    "t": "A small U-shaped bone in the upper neck that touches no other bone (hyoid bone). It is the base of the tongue, and it moves when you swallow and speak.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   },
+   "simpler": {
+    "t": "The hyoid is a small U-shaped bone in your neck, below your jaw.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   },
+   "depth": [
+    {
+     "t": "U shape: a small curved bone, open at the back.",
+     "src": [
+      "s7-2#fs-id1399933"
+     ]
+    },
+    {
+     "t": "Body: the front of the U.",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+    },
+    {
+     "t": "Tips: the two ends of the U, pointing backwards.",
+     "src": [
+      "s7-2#fs-id1399933"
+     ]
+    },
+    {
+     "t": "Muscle attachments: small muscles attach to it from above and from below.",
+     "src": [
+      "s7-2#fs-id1399933"
+     ]
+    },
+    {
+     "t": "Ligament attachment: a ligament from the styloid process of the temporal bone supports it.",
+     "src": [
+      "s7-2#fs-id1882965"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Strong pressure on the front of the neck, as in strangulation. The hyoid bone may break. The hyoid moves with the tongue, larynx and pharynx in swallowing and speaking.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ],
+    "check": "A fracture of the hyoid is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); its role in swallowing and speech is."
+   },
+   "trap": {
+    "t": "The hyoid is not a skull bone: it touches no other bone at all.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-inferior-nasal-concha-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "inferior-nasal-concha",
+   "bone": "inferior_nasal_concha_left",
+   "frontView": true,
+   "objective": "Identify the inferior nasal concha on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Inferior nasal concha",
+   "why": {
+    "t": "A curved plate of bone projecting into the nasal cavity from its lower side wall (inferior nasal concha). Unlike the other two conchae, it is a separate bone, not part of the ethmoid.",
+    "src": [
+     "s7-2#fs-id1698818",
+     "s7-2#fs-id1475747"
+    ]
+   },
+   "simpler": {
+    "t": "The inferior nasal concha is a curved shelf of bone inside your nose.",
+    "src": [
+     "s7-2#fs-id1698818"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Curved plate: curves downwards as it projects into the nasal cavity.",
+     "src": [
+      "s7-2#fs-id1698818",
+      "s7-2#fs-id1475747"
+     ]
+    },
+    {
+     "t": "Size: the largest of the three nasal conchae.",
+     "src": [
+      "s7-2#fs-id1698818"
+     ]
+    },
+    {
+     "t": "Attached edge: fixed to the lower part of the side wall of the nasal cavity.",
+     "src": [
+      "s7-2#fs-id1698818"
+     ]
+    },
+    {
+     "t": "Visible from the front: it can easily be seen looking into the front opening of the nasal cavity.",
+     "src": [
+      "s7-2#fs-id1698818"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Heavy crying. Nothing is damaged: the tear drain behind the inferior concha is overloaded. Extra tears entering the nasal cavity behind the concha also drain forwards.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   "trap": {
+    "t": "The inferior concha is a separate bone, unlike the superior and middle conchae of the ethmoid.",
+    "src": [
+     "s7-2#fs-id1475747"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull; 7.5"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-lacrimal-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "lacrimal",
+   "bone": "lacrimal_bone_left",
+   "frontView": true,
+   "objective": "Identify the lacrimal bone on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Lacrimal bone",
+   "why": {
+    "t": "A small rectangular bone at the front of the inner wall of the orbit (lacrimal bone). Tears drain from the eye through a canal beside it into the nose.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   "simpler": {
+    "t": "The lacrimal bone is a tiny bone at the inner corner of your eye socket.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Shape: a small, rectangular plate of bone.",
+     "src": [
+      "s7-2#fs-id886176"
+     ]
+    },
+    {
+     "t": "Lacrimal fossa: a shallow hollow in its front part.",
+     "src": [
+      "s7-2#fs-id886176"
+     ]
+    },
+    {
+     "t": "Nasolacrimal canal: runs down from the fossa towards the nasal cavity.",
+     "src": [
+      "s7-2#fs-id886176"
+     ]
+    },
+    {
+     "t": "Orbital surface: forms the front of the medial wall of the orbit.",
+     "src": [
+      "s7-2#fs-id886176"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Crying, or an irritated eye, increases the flow of tears. Nothing is damaged: the tear drain is working, but overloaded. Tears normally drain backwards in the nasal cavity; extra fluid also drains forwards.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   "trap": {
+    "t": "The nasolacrimal duct opens into the nasal cavity, behind the inferior concha, not into the mouth.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-mandible-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "mandible",
+   "bone": "mandible",
+   "frontView": true,
+   "objective": "Identify the mandible on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Mandible",
+   "why": {
+    "t": "The lower jaw: the only skull bone that moves (mandible). It is one of two unpaired facial bones; the other is the vomer.",
+    "src": [
+     "s7-2#fs-id1891273",
+     "s7-2#fs-id1861377"
+    ]
+   },
+   "simpler": {
+    "t": "The mandible is your lower jaw bone.",
+    "src": [
+     "s7-2#fs-id1891273"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Body: the horizontal, U-shaped part that holds the lower teeth.",
+     "src": [
+      "s7-2#fs-id1891273"
+     ]
+    },
+    {
+     "t": "Ramus: the upright part at the back of each side (“ramus” means branch).",
+     "src": [
+      "s7-2#fs-id1891273"
+     ]
+    },
+    {
+     "t": "Angle: the corner where the body and ramus meet.",
+     "src": [
+      "s7-2#fs-id1891273"
+     ]
+    },
+    {
+     "t": "Alveolar process: the top edge of the body, which anchors the lower teeth.",
+     "src": [
+      "s7-2#fs-id1327677"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Opening the mouth too wide, as in a large bite, or a blow to the jaw. The jaw joint dislocates: the condyle moves in front of the articular tubercle. The condyle is stuck in front of the tubercle and cannot slide back.",
+    "src": [
+     "s9-6#fs-id1933265"
+    ]
+   },
+   "trap": {
+    "t": "The condyle forms the jaw joint; the coronoid process is the front projection, for a biting muscle.",
+    "src": [
+     "s7-2#fs-id1370107"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull; 7.5; 9.6; 13.4"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-maxilla-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "maxilla",
+   "bone": "maxilla_left",
+   "frontView": true,
+   "objective": "Identify the maxilla on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Maxilla",
+   "why": {
+    "t": "One of two bones forming the upper jaw, most of the hard palate and part of the orbit floor (maxilla). It contains the largest paranasal sinus, the maxillary sinus, just below the orbit.",
+    "src": [
+     "s7-2#fs-id2307253",
+     "s7-2#fs-id1882870"
+    ]
+   },
+   "simpler": {
+    "t": "The maxilla is your upper jaw bone.",
+    "src": [
+     "s7-2#fs-id2307253"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Alveolar process: the curved lower edge that holds the upper teeth.",
+     "src": [
+      "s7-2#fs-id2307253"
+     ]
+    },
+    {
+     "t": "Palatine process: a shelf that meets its partner to form the front three-quarters of the hard palate.",
+     "src": [
+      "s7-2#fs-id2307253"
+     ]
+    },
+    {
+     "t": "Orbital surface: forms most of the inner floor of the orbit.",
+     "src": [
+      "s7-2#fs-id1887927"
+     ]
+    },
+    {
+     "t": "Maxillary sinus: the largest paranasal sinus, below the orbit.",
+     "src": [
+      "s7-2#fs-id1882870"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A sinus infection, often after a cold. It affects the maxillary sinus, the sinus most often infected. The sinus opens into the nasal cavity high on its inner wall, so it drains poorly.",
+    "src": [
+     "s7-2#fs-id1882870",
+     "s7-2#fs-id1977054"
+    ]
+   },
+   "trap": {
+    "t": "The maxillae form the front three-quarters of the hard palate; the palatine bones form the back quarter.",
+    "src": [
+     "s7-2#fs-id2307253",
+     "s7-2#fs-id1965938"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4; 7.5; 9.2"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-nasal-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "nasal",
+   "bone": "nasal_bone_left",
+   "frontView": true,
+   "objective": "Identify the nasal bone on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Nasal bone",
+   "why": {
+    "t": "One of two small bones that form the bridge of the nose (nasal bone). They also support the cartilages that form the sides of the nose.",
+    "src": [
+     "s7-2#fs-id1899580"
+    ]
+   },
+   "simpler": {
+    "t": "The nasal bones form the hard top of your nose.",
+    "src": [
+     "s7-2#fs-id1899580"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Midline joint: the two bones meet each other in the midline.",
+     "src": [
+      "s7-2#fs-id1899580"
+     ]
+    },
+    {
+     "t": "Bridge of the nose: together they form its bony base.",
+     "src": [
+      "s7-2#fs-id1899580"
+     ]
+    },
+    {
+     "t": "Lower edges: support the cartilages of the side walls of the nose.",
+     "src": [
+      "s7-2#fs-id1899580"
+     ]
+    },
+    {
+     "t": "Upper and side edges: meet the frontal bone above and the maxillae at the sides.",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+    }
+   ],
+   "clinical": {
+    "t": "A blow to the nose. The nasal bones break: these are the bones damaged when the nose is broken. The thin bones form the bony bridge, so a blow drives them sideways or inwards.",
+    "src": [
+     "s7-2#fs-id1899580"
+    ],
+    "check": "OpenStax says these bones break in a broken nose; displacement of the bridge is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   "trap": {
+    "t": "The nasal bones form only the bridge of the nose; cartilage, missing from the dry skull, shapes the rest.",
+    "src": [
+     "s7-2#fs-id1899580",
+     "s7-2#fs-id2125356"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-occipital-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "occipital",
+   "bone": "occipital_bone",
+   "frontView": true,
+   "objective": "Identify the occipital bone on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Occipital bone",
+   "why": {
+    "t": "The single bone of the back and base of the skull, around the foramen magnum (occipital bone). Its condyles rest on the first cervical vertebra, so the skull sits on the vertebral column.",
+    "src": [
+     "s7-2#fs-id1478275",
+     "s7-3#fs-id2228247"
+    ]
+   },
+   "simpler": {
+    "t": "The occipital bone is the bone at the back of your head.",
+    "src": [
+     "s7-2#fs-id1478275"
+    ]
+   },
+   "depth": [
+    {
+     "t": "External occipital protuberance: a small bump at the back midline, where a ligament of the neck attaches.",
+     "src": [
+      "s7-2#fs-id1478275"
+     ]
+    },
+    {
+     "t": "Superior nuchal lines: lines either side of the bump: the highest point where neck muscles attach.",
+     "src": [
+      "s7-2#fs-id1478275"
+     ]
+    },
+    {
+     "t": "Foramen magnum: the large opening (“great aperture”) in the base, for the spinal cord.",
+     "src": [
+      "s7-2#fs-id1478275",
+      "s7-2#fs-id1489044"
+     ]
+    },
+    {
+     "t": "Hypoglossal canals: openings at the front edge of the foramen magnum, for a nerve to the tongue.",
+     "src": [
+      "s7-2#fs-id1724550"
+     ]
+    },
+    {
+     "t": "Venous grooves: large curved grooves on the inner wall, ending at the jugular foramen.",
+     "src": [
+      "s7-2#fs-id1391977"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A blow to the front or side of the head. The base of the occipital bone may break on the opposite side (contrecoup), a basilar fracture. In a contrecoup fracture, the bone breaks opposite the point of impact.",
+    "src": [
+     "s7-2#fs-id1972896"
+    ]
+   },
+   "trap": {
+    "t": "The occipital condyles meet the first cervical vertebra (atlas), not the second (axis).",
+    "src": [
+     "s7-2#fs-id1478275",
+     "s7-3#fs-id2228247"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull; 7.3; 7.5; 13.2; 16.3; 20.5"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-ossicles-feature",
+   "topic": "skull",
+   "type": "feature",
+   "level": "core",
+   "structureId": "ossicles",
+   "bone": "malleus_left",
+   "frontView": false,
+   "objective": "Name the ossicle at the oval window.",
+   "front": "Which auditory ossicle is attached to the oval window?",
+   "answer": "The stapes",
+   "why": {
+    "t": "The stapes is attached to the inner ear, at the oval window of the cochlea. Vibrations passing through the oval window set the fluid of the cochlea moving in waves.",
+    "src": [
+     "s14-1#fs-id2744243",
+     "s14-1#fs-id2479589",
+     "s14-1#fs-id2480192"
+    ]
+   },
+   "simpler": {
+    "t": "The ossicles are three tiny bones in your ear that pass sound inwards.",
+    "src": [
+     "s14-1#fs-id2744243",
+     "s14-1#fs-id2480192"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Malleus: “Hammer”: attached to the eardrum, and joined to the incus.",
+     "src": [
+      "s14-1#fs-id2744243"
+     ]
+    },
+    {
+     "t": "Incus: “Anvil”: between the other two, joined to both.",
+     "src": [
+      "s14-1#fs-id2744243"
+     ]
+    },
+    {
+     "t": "Stapes: “Stirrup”: joined to the incus, and attached to the inner ear at the oval window.",
+     "src": [
+      "s14-1#fs-id2744243",
+      "s14-1#fs-id2479589"
+     ]
+    },
+    {
+     "t": "A chain of joints: the three are joined end to end, from the eardrum to the inner ear.",
+     "src": [
+      "s14-1#fs-id2744243"
+     ]
+    },
+    {
+     "t": "Footplate of the stapes: its flat base fills the oval window.",
+     "src": [],
+     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+    }
+   ],
+   "clinical": {
+    "t": "Abnormal bone growth fixes the stapes in the oval window (otosclerosis). The stapes must move to send vibrations through the oval window.",
+    "src": [
+     "s14-1#fs-id2480192"
+    ],
+    "check": "Otosclerosis is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the role of the oval window is."
+   },
+   "trap": {
+    "t": "The malleus is attached to the eardrum; it is the stapes that meets the oval window.",
+    "src": [
+     "s14-1#fs-id2744243",
+     "s14-1#fs-id2479589"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 14.1 Sensory Perception; 7.2 The Skull"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-palatine-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "palatine",
+   "bone": "palatine_bone_left",
+   "frontView": true,
+   "objective": "Identify the palatine bone on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Palatine bone",
+   "why": {
+    "t": "One of a pair of irregular bones that form the back quarter of the hard palate (palatine bone). They also form small parts of the side walls of the nasal cavity and of the orbit.",
+    "src": [
+     "s7-2#fs-id1965938"
+    ]
+   },
+   "simpler": {
+    "t": "The palatine bones form the back of the bony roof of your mouth.",
+    "src": [
+     "s7-2#fs-id1965938"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Horizontal plate: its largest region; with its partner it forms the back quarter of the hard palate.",
+     "src": [
+      "s7-2#fs-id1965938"
+     ]
+    },
+    {
+     "t": "Nasal part: adds small areas to the side walls of the nasal cavity.",
+     "src": [
+      "s7-2#fs-id1965938"
+     ]
+    },
+    {
+     "t": "Orbital part: a small contribution to the orbit.",
+     "src": [
+      "s7-2#fs-id1965938",
+      "s7-2#fs-id1887927"
+     ]
+    },
+    {
+     "t": "Shape: an irregular bone, paired with its partner.",
+     "src": [
+      "s7-2#fs-id1965938"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "The two halves of the hard palate fail to fuse during development (cleft palate). The palatine plates and palatine processes leave a gap in the midline. The gap connects the mouth and nasal cavity, so no seal forms.",
+    "src": [
+     "s7-2#fs-id1547568"
+    ]
+   },
+   "trap": {
+    "t": "The palatine bones form only the back quarter of the hard palate.",
+    "src": [
+     "s7-2#fs-id1965938"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-parietal-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "parietal",
+   "bone": "parietal_bone_left",
+   "frontView": true,
+   "objective": "Identify the parietal bone on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Parietal bone",
+   "why": {
+    "t": "One of a pair of curved bones forming most of the upper sides and top of the skull (parietal bone). The two parietal bones meet along the top of the skull at the sagittal suture.",
+    "src": [
+     "s7-2#fs-id1975652",
+     "s7-2#fs-id1248497"
+    ]
+   },
+   "simpler": {
+    "t": "The parietal bones form the top and sides of your head.",
+    "src": [
+     "s7-2#fs-id1975652"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Sagittal border: meets the other parietal bone at the sagittal suture.",
+     "src": [
+      "s7-2#fs-id1248497"
+     ]
+    },
+    {
+     "t": "Frontal border: meets the frontal bone at the coronal suture.",
+     "src": [
+      "s7-2#fs-id1248497"
+     ]
+    },
+    {
+     "t": "Occipital border: meets the occipital bone at the lambdoid suture.",
+     "src": [
+      "s7-2#fs-id1248497"
+     ]
+    },
+    {
+     "t": "Squamous border: meets the squamous part of the temporal bone at the squamous suture.",
+     "src": [
+      "s7-2#fs-id1248497"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "The sagittal suture closes too early (craniosynostosis). The joint between the two parietal bones fuses. Growth is diverted to the sides of the skull, which grow upwards.",
+    "src": [
+     "s7-5#fs-id1031698",
+     "s7-5#fs-id2339105"
+    ]
+   },
+   "trap": {
+    "t": "The sagittal suture joins the two parietal bones; the coronal suture joins them to the frontal bone.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull; 7.5; 9.2; 20.5"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-temporal-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "temporal",
+   "bone": "temporal_bone_left",
+   "frontView": true,
+   "objective": "Identify the temporal bone on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Temporal bone",
+   "why": {
+    "t": "The bone of the lower side of the skull, around the ear (temporal bone). Its petrous part houses the middle and inner ear.",
+    "src": [
+     "s7-2#fs-id1471081",
+     "s7-2#fs-id1882965",
+     "s7-2#fs-id2010718"
+    ]
+   },
+   "simpler": {
+    "t": "The temporal bone is the skull bone around your ear.",
+    "src": [
+     "s7-2#fs-id1471081",
+     "s7-2#fs-id1882965"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Squamous part: the flattened upper part.",
+     "src": [
+      "s7-2#fs-id2010718"
+     ]
+    },
+    {
+     "t": "Zygomatic process: projects forwards to form the back of the zygomatic arch.",
+     "src": [
+      "s7-2#fs-id2010718"
+     ]
+    },
+    {
+     "t": "Mastoid process: a large bump behind the earlobe, where muscles attach.",
+     "src": [
+      "s7-2#fs-id2010718"
+     ]
+    },
+    {
+     "t": "Petrous part: a dense diagonal ridge inside the skull, holding the middle and inner ear.",
+     "src": [
+      "s7-2#fs-id2010718"
+     ]
+    },
+    {
+     "t": "Mandibular fossa and articular tubercle: a hollow and a ridge in front of the ear canal, for the jaw joint.",
+     "src": [
+      "s7-2#fs-id1882965"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A blow that fractures the base of the skull (basilar fracture). It affects the internal carotid artery, in the carotid canal of the temporal bone. The internal carotid is one of the two main arteries supplying the brain.",
+    "src": [
+     "s7-2#fs-id1972896",
+     "s20-5#fs-id2643816"
+    ]
+   },
+   "trap": {
+    "t": "The mastoid process is the bump behind the ear; the styloid process is a separate, pen-like spike.",
+    "src": [
+     "s7-2#fs-id2010718",
+     "s7-2#fs-id1882965"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull; 7.5; 9.6; 13.4; 14.1; 20.5"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-vomer-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "vomer",
+   "bone": "vomer",
+   "frontView": true,
+   "objective": "Identify the vomer on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Vomer",
+   "why": {
+    "t": "A single, triangular bone that forms the lower and back part of the nasal septum (vomer). Seen from behind, it forms the whole height of the nasal septum.",
+    "src": [
+     "s7-2#fs-id1254996"
+    ]
+   },
+   "simpler": {
+    "t": "The vomer is a bone in the middle of your nose, at the lower back.",
+    "src": [
+     "s7-2#fs-id1254996"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Triangular shape: a flat, triangular plate in the midline.",
+     "src": [
+      "s7-2#fs-id1254996"
+     ]
+    },
+    {
+     "t": "Upper edge: lies below the perpendicular plate of the ethmoid.",
+     "src": [
+      "s7-2#fs-id2125356"
+     ]
+    },
+    {
+     "t": "Front edge: the septal cartilage fills the gap between it and the perpendicular plate.",
+     "src": [
+      "s7-2#fs-id2125356"
+     ]
+    },
+    {
+     "t": "Back edge: divides the two back openings of the nasal cavity.",
+     "src": [
+      "s7-2#fs-id1254996"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A septum bent to one side, from development or an injury. It affects the bony and cartilage parts of the septum, including the vomer. The septum divides the nasal cavity, so bending it narrows one side.",
+    "src": [
+     "s7-2#fs-id1211287"
+    ],
+    "check": "A deviated septum is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the septum’s role is."
+   },
+   "trap": {
+    "t": "The vomer forms the lower and back septum; the ethmoid’s perpendicular plate forms the upper part.",
+    "src": [
+     "s7-2#fs-id2125356"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "sk-zygomatic-identify",
+   "topic": "skull",
+   "type": "identify",
+   "level": "core",
+   "structureId": "zygomatic",
+   "bone": "zygomatic_bone_left",
+   "frontView": true,
+   "objective": "Identify the zygomatic bone on the skeleton.",
+   "front": "Name the highlighted bone.",
+   "answer": "Zygomatic bone",
+   "why": {
+    "t": "The cheekbone, which forms much of the outer wall of the orbit (zygomatic bone). Its temporal process forms the front of the zygomatic arch.",
+    "src": [
+     "s7-2#fs-id2159036",
+     "s7-2#fs-id1285208"
+    ]
+   },
+   "simpler": {
+    "t": "The zygomatic bone is your cheekbone.",
+    "src": [
+     "s7-2#fs-id2159036"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Orbital part: forms much of the lateral wall and the lateral floor of the orbit.",
+     "src": [
+      "s7-2#fs-id2159036",
+      "s7-2#fs-id1887927"
+     ]
+    },
+    {
+     "t": "Orbital margin: the outer and lower rim of the front opening of the orbit.",
+     "src": [
+      "s7-2#fs-id2159036"
+     ]
+    },
+    {
+     "t": "Temporal process: a short projection backwards, forming the front of the zygomatic arch.",
+     "src": [
+      "s7-2#fs-id2159036"
+     ]
+    },
+    {
+     "t": "Upward part: rises at the outer edge of the orbit; a landmark for finding the pterion.",
+     "src": [
+      "s7-2#fs-id1248497"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A blow to the side of the head, just behind the upward part of the zygomatic bone. It affects the pterion, with a major artery to the brain’s coverings just inside it. The pterion is the weakest part of the skull, and bleeding there presses on the brain.",
+    "src": [
+     "s7-2#fs-id1248497",
+     "s7-2#fs-id1364278"
+    ]
+   },
+   "trap": {
+    "t": "The zygomatic arch has two parts: the front from the zygomatic bone, the back from the temporal bone.",
+    "src": [
+     "s7-2#fs-id1285208"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4"
   }
  ]
 }

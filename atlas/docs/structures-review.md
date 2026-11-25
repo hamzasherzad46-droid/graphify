@@ -1284,7 +1284,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 ### 8. Clinical reasoning
 
 1. **Injury:** A child’s injured finger has an X-ray.  
-   **Damaged:** Possibly nothing: each phalanx has a normal growth plate.  
+   **Damaged:** There may be no injury: each phalanx has a normal growth plate.  
    **Patient can’t:** Rely on one dark line alone to diagnose a fracture.  
    **Why:** Cartilage is less dense than bone, so a normal plate looks dark and can be mistaken for a break. <sub>[8.5 ¶fs-id1972676]</sub>
 

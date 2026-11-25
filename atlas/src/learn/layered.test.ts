@@ -6,6 +6,7 @@ import { TOPICS } from './topics'
 import { factsOf, LEVELS, needsReview, layeredParagraphs, TYPE_NAME, type LayeredCard } from './layered'
 
 const DIR = join(__dirname, '..', '..', 'content', 'cards')
+const glossary: Record<string, unknown> = JSON.parse(readFileSync(join(__dirname, '..', '..', 'data', 'glossary.json'), 'utf8')).terms
 const cards: LayeredCard[] = readdirSync(DIR).flatMap((f) => JSON.parse(readFileSync(join(DIR, f), 'utf8')).cards)
 
 /** Paragraph ids in each imported OpenStax section. */
@@ -40,7 +41,11 @@ describe('layered flashcards', () => {
   it('has no duplicates, by id or by learning objective', () => {
     expect(new Set(cards.map((c) => c.id)).size).toBe(cards.length)
     expect(new Set(cards.map((c) => norm(c.objective))).size).toBe(cards.length)
-    expect(new Set(cards.map((c) => norm(c.front))).size).toBe(cards.length)
+    // Fronts are unique, except “Name the highlighted bone.”, where the 3D view differs: those are unique by bone.
+    const asked = cards.filter((c) => c.type !== 'identify')
+    expect(new Set(asked.map((c) => norm(c.front))).size).toBe(asked.length)
+    const named = cards.filter((c) => c.type === 'identify')
+    expect(new Set(named.map((c) => c.bone)).size).toBe(named.length)
   })
 
   it('keeps the front to one question and the answer short', () => {
@@ -75,6 +80,10 @@ describe('layered flashcards', () => {
       for (const f of factsOf(c)) {
         expect(f.src.length > 0 || !!f.check, `${c.id}: ${f.t}`).toBe(true)
         for (const s of f.src) {
+          if (s.startsWith('glossary:')) {
+            expect(glossary[s.slice(9)], `${c.id}: ${s}`).toBeTruthy()
+            continue
+          }
           if (s.startsWith('reviewer:')) {
             expect(s, c.id).toMatch(/^reviewer:\d{4}-\d{2}-\d{2}$/)
             continue

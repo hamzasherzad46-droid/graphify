@@ -1,0 +1,368 @@
+{
+ "reviewStatus": "draft",
+ "id": "frontal",
+ "bone": "frontal_bone",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 7.5; 9.2; 14.1",
+ "oneLine": {
+  "main": {
+   "t": "The single bone of the forehead, which also forms the roof of each orbit (frontal bone).",
+   "src": [
+    "s7-2#fs-id1283984"
+   ]
+  },
+  "simpler": {
+   "t": "The frontal bone is your forehead bone.",
+   "src": [
+    "s7-2#fs-id1283984"
+   ]
+  },
+  "deeper": {
+   "t": "Inside the skull, it forms most of the floor of the anterior cranial fossa.",
+   "src": [
+    "s7-2#fs-id1283984",
+    "s7-2#fs-id2045358"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It forms the forehead, at the front of the brain case.",
+    "src": [
+     "s7-2#fs-id1283984",
+     "s7-2#fs-id1351960"
+    ]
+   },
+   {
+    "t": "Behind, it meets the two parietal bones at the coronal suture.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   },
+   {
+    "t": "Below, it forms the upper margin and the roof of each orbit.",
+    "src": [
+     "s7-2#fs-id1283984",
+     "s7-2#fs-id1887927"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It forms your forehead and the top of your eye sockets.",
+   "src": [
+    "s7-2#fs-id1283984"
+   ]
+  },
+  "deeper": {
+   "t": "It is one of the eight brain case bones, and one of four that meet at the pterion.",
+   "src": [
+    "s7-2#fs-id1351960",
+    "s7-2#fs-id1248497"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Glabella",
+    "t": "A slight hollow between the eyebrows, at the front midline.",
+    "src": [
+     "s7-2#fs-id1283984"
+    ]
+   },
+   {
+    "name": "Supraorbital margin",
+    "t": "The upper rim of each orbit.",
+    "src": [
+     "s7-2#fs-id1283984"
+    ]
+   },
+   {
+    "name": "Supraorbital foramen",
+    "t": "An opening near the middle of each margin, for a sensory nerve to the forehead.",
+    "src": [
+     "s7-2#fs-id1283984"
+    ]
+   },
+   {
+    "name": "Brow ridges",
+    "t": "Rounded thickenings just above each margin, behind the eyebrows.",
+    "src": [
+     "s7-2#fs-id1283984"
+    ]
+   },
+   {
+    "name": "Orbital part",
+    "t": "A flat region that forms the roof of the orbits and the floor of the anterior cranial fossa.",
+    "src": [
+     "s7-2#fs-id1283984"
+    ]
+   },
+   {
+    "name": "Frontal sinus",
+    "t": "An air-filled space just above the eyebrows: the most anterior paranasal sinus.",
+    "src": [
+     "s7-2#fs-id1882870"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It has a curved front, rims over the eyes and a flat part extending back inside the skull.",
+   "src": [
+    "s7-2#fs-id1283984"
+   ]
+  },
+  "deeper": {
+   "t": "The frontal sinus may be one space, or divided at the midline into left and right.",
+   "src": [
+    "s7-2#fs-id1882870"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Its curved front encloses the frontal lobes of the brain, which lie in the anterior cranial fossa.",
+    "src": [
+     "s7-2#fs-id2045358",
+     "s7-2#fs-id1256378"
+    ]
+   },
+   {
+    "t": "The thickened rims of the orbits help protect the eyes.",
+    "src": [
+     "s7-2#fs-id1883481",
+     "s7-2#fs-id1283984"
+    ]
+   },
+   {
+    "t": "Its sinus lightens the skull and adds resonance to the voice.",
+    "src": [
+     "s7-2#fs-id1977054",
+     "s7-2#fs-id1882870"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It shields the front of the brain and the tops of the eyes.",
+   "src": [
+    "s7-2#fs-id2045358",
+    "s7-2#fs-id1883481"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "suture",
+    "name": "Coronal suture",
+    "t": "Joins it to the right and left parietal bones, across the top of the skull.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   },
+   {
+    "kind": "landmark",
+    "name": "Pterion",
+    "t": "Where the frontal, parietal, temporal and sphenoid bones meet: the weakest part of the skull.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   },
+   {
+    "kind": "brain",
+    "name": "Frontal lobes",
+    "t": "Lie in the anterior cranial fossa, which the frontal bone mostly floors.",
+    "src": [
+     "s7-2#fs-id2045358"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Ethmoid bone",
+    "t": "Its crista galli and cribriform plates lie in the midline of the same floor.",
+    "src": [
+     "s7-2#fs-id2045358"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Sensory nerve to the forehead",
+    "t": "Passes through the supraorbital foramen.",
+    "src": [
+     "s7-2#fs-id1283984"
+    ]
+   },
+   {
+    "kind": "space",
+    "name": "Orbit",
+    "t": "The frontal bone forms its roof.",
+    "src": [
+     "s7-2#fs-id1887927"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It joins the parietal bones behind and roofs the eye sockets below.",
+   "src": [
+    "s7-2#fs-id1248497",
+    "s7-2#fs-id1887927"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Like the other bones of the top and sides of the brain case, it forms directly from membrane (intramembranous ossification).",
+    "src": [
+     "s7-5#fs-id1547037"
+    ]
+   },
+   {
+    "t": "At birth, it is in two halves, which fuse in early childhood.",
+    "src": [
+     "s7-5#fs-id1241553"
+    ]
+   },
+   {
+    "t": "The anterior fontanelle, the soft spot at the front of a baby’s head, lies where it meets the parietal bones.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "The brow ridges vary in size and are generally larger in males.",
+    "src": [
+     "s7-2#fs-id1283984"
+    ]
+   },
+   {
+    "t": "The frontal sinus may be a single space or two.",
+    "src": [
+     "s7-2#fs-id1882870"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A cold or sinus congestion.",
+    "damaged": "The lining of the frontal sinus swells and blocks its narrow passage to the nasal cavity.",
+    "cannotDo": "Be free of pressure and pain above the eyebrows.",
+    "why": "The blocked sinus fills with fluid, and the pressure causes pain.",
+    "src": [
+     "s7-2#fs-id1977054",
+     "s7-2#fs-id1882870"
+    ]
+   },
+   {
+    "injury": "A strong blow to the forehead.",
+    "damaged": "The bone breaks; in a depressed fracture, it is pushed inwards.",
+    "cannotDo": "Escape the risk of bleeding inside the skull, which can injure the brain.",
+    "why": "The frontal lobes lie directly behind the bone.",
+    "src": [
+     "s7-2#fs-id1972896",
+     "s7-2#fs-id2045358"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the frontal bone takes part in both the orbit and the cranial cavity.",
+    "model": [
+     "Its front forms the forehead and the supraorbital margins.",
+     "Inside the skull it extends backwards as a flat region.",
+     "This region forms the roof of the orbits below.",
+     "And it forms most of the floor of the anterior cranial fossa above."
+    ],
+    "src": [
+     "s7-2#fs-id1283984",
+     "s7-2#fs-id1887927",
+     "s7-2#fs-id2045358"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the frontal bone with the parietal bones.",
+    "model": [
+     "The frontal bone is single and forms the forehead.",
+     "The parietal bones are paired and form most of the upper sides of the skull.",
+     "They meet at the coronal suture.",
+     "All of them form directly from membrane."
+    ],
+    "src": [
+     "s7-2#fs-id1283984",
+     "s7-2#fs-id1975652",
+     "s7-2#fs-id1248497",
+     "s7-5#fs-id1547037"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict where a patient with a blocked frontal sinus feels pain, and explain why.",
+    "model": [
+     "Just above the eyebrows, where the frontal sinus lies.",
+     "Swollen lining blocks the narrow passage to the nasal cavity.",
+     "The sinus fills with fluid.",
+     "The rising pressure causes pain."
+    ],
+    "src": [
+     "s7-2#fs-id1882870",
+     "s7-2#fs-id1977054"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which suture joins the frontal bone to the parietal bones?",
+   "options": [
+    "Sagittal",
+    "Coronal",
+    "Lambdoid",
+    "Squamous"
+   ],
+   "answer": 1,
+   "why": "The coronal suture runs across the skull between them.",
+   "src": [
+    "s7-2#fs-id1248497"
+   ]
+  },
+  {
+   "stem": "What is the glabella?",
+   "options": [
+    "The hollow between the eyebrows",
+    "The opening for the nerve to the forehead",
+    "The brow ridge",
+    "The roof of the orbit"
+   ],
+   "answer": 0,
+   "why": "The glabella is the slight depression at the front midline, between the eyebrows.",
+   "src": [
+    "s7-2#fs-id1283984"
+   ]
+  },
+  {
+   "stem": "Which part of the brain lies behind the frontal bone, in the anterior cranial fossa?",
+   "options": [
+    "Cerebellum",
+    "Temporal lobes",
+    "Brainstem",
+    "Frontal lobes"
+   ],
+   "answer": 3,
+   "why": "The anterior cranial fossa contains the frontal lobes.",
+   "src": [
+    "s7-2#fs-id2045358"
+   ]
+  }
+ ]
+}

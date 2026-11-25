@@ -1,0 +1,342 @@
+{
+ "reviewStatus": "draft",
+ "id": "occipital",
+ "bone": "occipital_bone",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 7.3; 7.5; 13.2; 16.3; 20.5",
+ "oneLine": {
+  "main": {
+   "t": "The single bone of the back and base of the skull, around the foramen magnum (occipital bone).",
+   "src": [
+    "s7-2#fs-id1478275"
+   ]
+  },
+  "simpler": {
+   "t": "The occipital bone is the bone at the back of your head.",
+   "src": [
+    "s7-2#fs-id1478275"
+   ]
+  },
+  "deeper": {
+   "t": "Its condyles rest on the first cervical vertebra, so the skull sits on the vertebral column.",
+   "src": [
+    "s7-2#fs-id1478275",
+    "s7-3#fs-id2228247"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It forms the back of the skull and the back of the base of the cranial cavity.",
+    "src": [
+     "s7-2#fs-id1478275"
+    ]
+   },
+   {
+    "t": "It meets the two parietal bones and the temporal bones at the lambdoid suture.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   },
+   {
+    "t": "Inside, it forms the floor and back wall of the posterior cranial fossa.",
+    "src": [
+     "s7-2#fs-id1489044"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is at the back of your head, down to where your skull sits on your neck.",
+   "src": [
+    "s7-2#fs-id1478275"
+   ]
+  },
+  "deeper": {
+   "t": "The posterior cranial fossa is the deepest of the three, and holds the cerebellum.",
+   "src": [
+    "s7-2#fs-id1489044"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "External occipital protuberance",
+    "t": "A small bump at the back midline, where a ligament of the neck attaches.",
+    "src": [
+     "s7-2#fs-id1478275"
+    ]
+   },
+   {
+    "name": "Superior nuchal lines",
+    "t": "Lines either side of the bump: the highest point where neck muscles attach.",
+    "src": [
+     "s7-2#fs-id1478275"
+    ]
+   },
+   {
+    "name": "Foramen magnum",
+    "t": "The large opening (“great aperture”) in the base, for the spinal cord.",
+    "src": [
+     "s7-2#fs-id1478275",
+     "s7-2#fs-id1489044"
+    ]
+   },
+   {
+    "name": "Occipital condyles",
+    "t": "Oval knobs either side of the foramen magnum, which form joints with the first cervical vertebra.",
+    "src": [
+     "s7-2#fs-id1478275"
+    ]
+   },
+   {
+    "name": "Hypoglossal canals",
+    "t": "Openings at the front edge of the foramen magnum, for a nerve to the tongue.",
+    "src": [
+     "s7-2#fs-id1724550"
+    ]
+   },
+   {
+    "name": "Venous grooves",
+    "t": "Large curved grooves on the inner wall, ending at the jugular foramen.",
+    "src": [
+     "s7-2#fs-id1391977"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It has a bump at the back, a large hole underneath and two knobs that sit on the spine.",
+   "src": [
+    "s7-2#fs-id1478275"
+   ]
+  },
+  "deeper": {
+   "t": "Above the nuchal lines only the scalp covers the skull; below them, neck muscles attach.",
+   "src": [
+    "s7-2#fs-id1478275"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Its condyles form joints with the first cervical vertebra, supporting the skull on the spine.",
+    "src": [
+     "s7-2#fs-id1478275",
+     "s7-3#fs-id2228247"
+    ]
+   },
+   {
+    "t": "The foramen magnum lets the spinal cord pass out of the skull.",
+    "src": [
+     "s7-2#fs-id1478275"
+    ]
+   },
+   {
+    "t": "Its protuberance and nuchal lines anchor a ligament and the muscles of the back of the neck.",
+    "src": [
+     "s7-2#fs-id1478275"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It holds your head on your neck and lets the spinal cord out.",
+   "src": [
+    "s7-2#fs-id1478275"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "bone",
+    "name": "First cervical vertebra (atlas)",
+    "t": "Supports the skull: it forms joints with the occipital condyles.",
+    "src": [
+     "s7-3#fs-id2228247",
+     "s7-2#fs-id1478275"
+    ]
+   },
+   {
+    "kind": "nervous system",
+    "name": "Spinal cord",
+    "t": "Leaves the skull through the foramen magnum.",
+    "src": [
+     "s7-2#fs-id1478275"
+    ]
+   },
+   {
+    "kind": "brain",
+    "name": "Cerebellum",
+    "t": "Lies in the posterior cranial fossa.",
+    "src": [
+     "s7-2#fs-id1489044"
+    ]
+   },
+   {
+    "kind": "arteries",
+    "name": "Vertebral arteries",
+    "t": "Enter the skull through the foramen magnum to supply the brain and spinal cord.",
+    "src": [
+     "s20-5#fs-id2009844"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Hypoglossal nerve",
+    "t": "The motor nerve of the tongue; it passes through the hypoglossal canal.",
+    "src": [
+     "s7-2#fs-id1724550",
+     "s16-3#fs-id1865012"
+    ]
+   },
+   {
+    "kind": "suture",
+    "name": "Lambdoid suture",
+    "t": "Joins it to the parietal and temporal bones.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits on the first neck vertebra and lets the spinal cord and two arteries through.",
+   "src": [
+    "s7-3#fs-id2228247",
+    "s7-2#fs-id1478275",
+    "s20-5#fs-id2009844"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Its upper part, behind the brain, forms from membrane; its base forms from a cartilage model.",
+    "src": [
+     "s7-5#fs-id1547037",
+     "s7-5#fs-id2251103"
+    ],
+    "check": "OpenStax says the top and sides of the brain case form from membrane, and its floor from cartilage; how this divides the occipital bone needs an approved source."
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A blow to the front or side of the head.",
+    "damaged": "The base of the occipital bone may break on the opposite side (contrecoup), a basilar fracture.",
+    "cannotDo": "Rely on the site of the blow to show where the skull broke.",
+    "why": "In a contrecoup fracture, the bone breaks opposite the point of impact.",
+    "src": [
+     "s7-2#fs-id1972896"
+    ]
+   },
+   {
+    "injury": "Bleeding or swelling raises the pressure inside the skull.",
+    "damaged": "The lowest part of the cerebellum is pushed down through the foramen magnum.",
+    "cannotDo": "Keep breathing and heart rate regulated: the brainstem is compressed.",
+    "why": "The pons and medulla, at the foramen magnum, regulate breathing and the heart.",
+    "src": [
+     "s13-2#fs-id1523364"
+    ],
+    "check": "Herniation through the foramen magnum is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the brainstem’s role is."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the skull is supported on the vertebral column.",
+    "model": [
+     "The occipital bone has an oval condyle on each side of the foramen magnum.",
+     "The condyles form joints with the first cervical vertebra.",
+     "This vertebra is called the atlas because it supports the skull.",
+     "So the skull rests on top of the vertebral column."
+    ],
+    "src": [
+     "s7-2#fs-id1478275",
+     "s7-3#fs-id2228247"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the foramen magnum and the hypoglossal canal.",
+    "model": [
+     "The foramen magnum is the large opening in the base of the occipital bone.",
+     "It carries the spinal cord and the vertebral arteries.",
+     "The hypoglossal canal is a small opening at its front edge.",
+     "It carries the hypoglossal nerve, the motor nerve of the tongue."
+    ],
+    "src": [
+     "s7-2#fs-id1478275",
+     "s20-5#fs-id2009844",
+     "s7-2#fs-id1724550",
+     "s16-3#fs-id1865012"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict why a blow to the forehead can break the occipital bone.",
+    "model": [
+     "This is a contrecoup (counterblow) fracture.",
+     "The bone at the point of impact does not break.",
+     "Instead, the skull breaks on the opposite side.",
+     "At the base of the skull this gives a basilar fracture."
+    ],
+    "src": [
+     "s7-2#fs-id1972896"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "What passes through the foramen magnum?",
+   "options": [
+    "The optic nerve",
+    "The spinal cord",
+    "The facial nerve",
+    "The internal carotid artery"
+   ],
+   "answer": 1,
+   "why": "The foramen magnum allows passage of the spinal cord as it exits the skull.",
+   "src": [
+    "s7-2#fs-id1478275"
+   ]
+  },
+  {
+   "stem": "Which bone do the occipital condyles meet?",
+   "options": [
+    "Axis (second cervical vertebra)",
+    "Sphenoid bone",
+    "Atlas (first cervical vertebra)",
+    "Temporal bone"
+   ],
+   "answer": 2,
+   "why": "They form joints with the first cervical vertebra, the atlas.",
+   "src": [
+    "s7-2#fs-id1478275",
+    "s7-3#fs-id2228247"
+   ]
+  },
+  {
+   "stem": "Which part of the brain lies in the posterior cranial fossa?",
+   "options": [
+    "Frontal lobes",
+    "Temporal lobes",
+    "Pituitary gland",
+    "Cerebellum"
+   ],
+   "answer": 3,
+   "why": "The posterior cranial fossa contains the cerebellum.",
+   "src": [
+    "s7-2#fs-id1489044"
+   ]
+  }
+ ]
+}

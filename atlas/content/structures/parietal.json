@@ -1,0 +1,330 @@
+{
+ "reviewStatus": "draft",
+ "id": "parietal",
+ "bone": "parietal_bone_left",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 7.5; 9.2; 20.5",
+ "oneLine": {
+  "main": {
+   "t": "One of a pair of curved bones forming most of the upper sides and top of the skull (parietal bone).",
+   "src": [
+    "s7-2#fs-id1975652"
+   ]
+  },
+  "simpler": {
+   "t": "The parietal bones form the top and sides of your head.",
+   "src": [
+    "s7-2#fs-id1975652"
+   ]
+  },
+  "deeper": {
+   "t": "The two parietal bones meet along the top of the skull at the sagittal suture.",
+   "src": [
+    "s7-2#fs-id1248497"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It forms most of the upper side of the skull; the right and left meet at the top.",
+    "src": [
+     "s7-2#fs-id1975652"
+    ]
+   },
+   {
+    "t": "The frontal bone is in front, the temporal bone below and the occipital bone behind.",
+    "src": [
+     "s7-2#fs-id1975652"
+    ]
+   },
+   {
+    "t": "It is one of the flat bones that form the top and sides of the brain case.",
+    "src": [
+     "s7-2#fs-id1256378"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It forms most of the top and side of your head.",
+   "src": [
+    "s7-2#fs-id1975652"
+   ]
+  },
+  "deeper": {
+   "t": "It is one of the four bones that meet at the pterion, the weakest part of the skull.",
+   "src": [
+    "s7-2#fs-id1248497"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Sagittal border",
+    "t": "Meets the other parietal bone at the sagittal suture.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   },
+   {
+    "name": "Frontal border",
+    "t": "Meets the frontal bone at the coronal suture.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   },
+   {
+    "name": "Occipital border",
+    "t": "Meets the occipital bone at the lambdoid suture.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   },
+   {
+    "name": "Squamous border",
+    "t": "Meets the squamous part of the temporal bone at the squamous suture.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   },
+   {
+    "name": "Grooves on the inner surface",
+    "t": "Branches of the artery that supplies the brain’s coverings mark the inner surface of the skull.",
+    "src": [
+     "s7-2#fs-id2026215"
+    ],
+    "check": "OpenStax says the artery’s branches groove the inner surface of the skull; that this includes the parietal bone needs an approved source."
+   }
+  ],
+  "simpler": {
+   "t": "It is a curved plate of bone, joined to its neighbours by sutures.",
+   "src": [
+    "s7-2#fs-id1975652",
+    "s7-2#fs-id1248497"
+   ]
+  },
+  "deeper": {
+   "t": "Its sutures twist tightly, interlocking it with its neighbours to strengthen the skull.",
+   "src": [
+    "s7-2#fs-id1195048"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "As a curved flat bone of the brain case, it encloses and protects the brain.",
+    "src": [
+     "s7-2#fs-id1256378"
+    ]
+   },
+   {
+    "t": "Its twisting sutures interlock with the neighbouring bones, adding strength.",
+    "src": [
+     "s7-2#fs-id1195048"
+    ]
+   },
+   {
+    "t": "Sutures are fibrous joints that allow almost no movement.",
+    "src": [
+     "s9-2#fs-id2663393"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is a strong, curved shield over the brain.",
+   "src": [
+    "s7-2#fs-id1256378"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "suture",
+    "name": "Sagittal suture",
+    "t": "Unites the right and left parietal bones along the midline.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   },
+   {
+    "kind": "suture",
+    "name": "Coronal suture",
+    "t": "Joins it to the frontal bone.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   },
+   {
+    "kind": "suture",
+    "name": "Lambdoid suture",
+    "t": "Joins it to the occipital bone.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   },
+   {
+    "kind": "suture",
+    "name": "Squamous suture",
+    "t": "Joins it to the temporal bone.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   },
+   {
+    "kind": "vein",
+    "name": "Superior sagittal sinus",
+    "t": "A large vein of the brain’s coverings, running in the midline beneath the top of the skull.",
+    "src": [
+     "s20-5#fs-id977085"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Sutures join it to the frontal, occipital and temporal bones, and to its partner.",
+   "src": [
+    "s7-2#fs-id1248497"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms directly from membrane (intramembranous ossification), like the other bones of the top and sides of the brain case.",
+    "src": [
+     "s7-5#fs-id1547037"
+    ]
+   },
+   {
+    "t": "In a baby, wide areas of connective tissue (fontanelles) separate it from its neighbours.",
+    "src": [
+     "s9-2#fs-id2293668",
+     "s7-5#fs-id1547037"
+    ]
+   },
+   {
+    "t": "The fontanelles narrow greatly during the first year, as the bones enlarge, and become sutures.",
+    "src": [
+     "s9-2#fs-id2293668"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "The sagittal suture closes too early (craniosynostosis).",
+    "damaged": "The joint between the two parietal bones fuses.",
+    "cannotDo": "Grow across the top of the head: the head becomes long and narrow (scaphocephaly).",
+    "why": "Growth is diverted to the sides of the skull, which grow upwards.",
+    "src": [
+     "s7-5#fs-id1031698",
+     "s7-5#fs-id2339105"
+    ]
+   },
+   {
+    "injury": "A blow to the side of the head.",
+    "damaged": "A linear fracture, with lines radiating from the point of impact.",
+    "cannotDo": "Escape the risk of bleeding inside the skull, which can injure the brain.",
+    "why": "A fracture of the brain case can tear the vessels inside it.",
+    "src": [
+     "s7-2#fs-id1972896"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why a newborn’s skull can change shape during birth.",
+    "model": [
+     "The brain case bones are still separated by wide fontanelles.",
+     "These are areas of dense connective tissue.",
+     "They let the bones push closer together or overlap slightly.",
+     "So the head can pass through the birth canal."
+    ],
+    "src": [
+     "s9-2#fs-id2293668",
+     "s7-5#fs-id1547037"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare a suture with a fontanelle.",
+    "model": [
+     "Both are fibrous joints between skull bones.",
+     "A fontanelle is a wide area of connective tissue in a baby’s skull.",
+     "A suture is a narrow, convoluted fibrous joint in the adult skull.",
+     "Fontanelles narrow into sutures as the bones grow."
+    ],
+    "src": [
+     "s9-2#fs-id2663393",
+     "s9-2#fs-id2293668"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict the head shape if the sagittal suture fuses too early, and explain it.",
+    "model": [
+     "The skull cannot widen across the top.",
+     "Growth is diverted to the sides, which grow upwards.",
+     "The head becomes long, narrow and wedge-shaped (scaphocephaly).",
+     "The brain still has room to grow normally."
+    ],
+    "src": [
+     "s7-5#fs-id1031698"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which suture joins the two parietal bones?",
+   "options": [
+    "Coronal",
+    "Lambdoid",
+    "Sagittal",
+    "Squamous"
+   ],
+   "answer": 2,
+   "why": "The sagittal suture unites the right and left parietal bones.",
+   "src": [
+    "s7-2#fs-id1248497"
+   ]
+  },
+  {
+   "stem": "How do the parietal bones develop?",
+   "options": [
+    "Directly from membrane (intramembranous ossification)",
+    "From a cartilage model",
+    "From the sphenoid",
+    "From the notochord"
+   ],
+   "answer": 0,
+   "why": "The bones of the top and sides of the brain case form directly from membrane.",
+   "src": [
+    "s7-5#fs-id1547037"
+   ]
+  },
+  {
+   "stem": "What is scaphocephaly?",
+   "options": [
+    "A fracture of the parietal bone",
+    "Bleeding at the pterion",
+    "An open fontanelle",
+    "A long, narrow head from early fusion of the sagittal suture"
+   ],
+   "answer": 3,
+   "why": "Early closure of the sagittal suture diverts growth upwards at the sides.",
+   "src": [
+    "s7-5#fs-id1031698"
+   ]
+  }
+ ]
+}

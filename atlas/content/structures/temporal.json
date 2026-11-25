@@ -1,0 +1,380 @@
+{
+ "reviewStatus": "draft",
+ "id": "temporal",
+ "bone": "temporal_bone_left",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 7.5; 9.6; 13.4; 14.1; 20.5",
+ "oneLine": {
+  "main": {
+   "t": "The bone of the lower side of the skull, around the ear (temporal bone).",
+   "src": [
+    "s7-2#fs-id1471081",
+    "s7-2#fs-id1882965"
+   ]
+  },
+  "simpler": {
+   "t": "The temporal bone is the skull bone around your ear.",
+   "src": [
+    "s7-2#fs-id1471081",
+    "s7-2#fs-id1882965"
+   ]
+  },
+  "deeper": {
+   "t": "Its petrous part houses the middle and inner ear.",
+   "src": [
+    "s7-2#fs-id2010718"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It forms the lower side of the skull, below the parietal bone.",
+    "src": [
+     "s7-2#fs-id1471081",
+     "s7-2#fs-id1975652"
+    ]
+   },
+   {
+    "t": "It is paired: one on each side of the brain case.",
+    "src": [
+     "s7-2#fs-id1351960"
+    ]
+   },
+   {
+    "t": "Its zygomatic process reaches forwards to form the back of the zygomatic arch.",
+    "src": [
+     "s7-2#fs-id2010718",
+     "s7-2#fs-id1285208"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is at the side of your head, around and behind your ear.",
+   "src": [
+    "s7-2#fs-id1471081",
+    "s7-2#fs-id2010718"
+   ]
+  },
+  "deeper": {
+   "t": "Inside the skull, its petrous ridge separates the middle and posterior cranial fossae.",
+   "src": [
+    "s7-2#fs-id1838522",
+    "s7-2#fs-id1489044"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Squamous part",
+    "t": "The flattened upper part.",
+    "src": [
+     "s7-2#fs-id2010718"
+    ]
+   },
+   {
+    "name": "Zygomatic process",
+    "t": "Projects forwards to form the back of the zygomatic arch.",
+    "src": [
+     "s7-2#fs-id2010718"
+    ]
+   },
+   {
+    "name": "Mastoid process",
+    "t": "A large bump behind the earlobe, where muscles attach.",
+    "src": [
+     "s7-2#fs-id2010718"
+    ]
+   },
+   {
+    "name": "Petrous part",
+    "t": "A dense diagonal ridge inside the skull, holding the middle and inner ear.",
+    "src": [
+     "s7-2#fs-id2010718"
+    ]
+   },
+   {
+    "name": "External and internal acoustic meatuses",
+    "t": "The ear canal outside; inside, an opening for nerves of hearing, balance and the face.",
+    "src": [
+     "s7-2#fs-id1882965",
+     "s7-2#fs-id1724550"
+    ]
+   },
+   {
+    "name": "Mandibular fossa and articular tubercle",
+    "t": "A hollow and a ridge in front of the ear canal, for the jaw joint.",
+    "src": [
+     "s7-2#fs-id1882965"
+    ]
+   },
+   {
+    "name": "Styloid process",
+    "t": "A pen-like spike pointing down, for small muscles and a ligament to the hyoid.",
+    "src": [
+     "s7-2#fs-id1882965"
+    ]
+   },
+   {
+    "name": "Stylomastoid foramen and carotid canal",
+    "t": "Openings for the nerve to the face muscles, and a major artery to the brain.",
+    "src": [
+     "s7-2#fs-id1882965"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It has a flat upper part, a bump behind the ear and a dense ridge that holds the ear.",
+   "src": [
+    "s7-2#fs-id2010718"
+   ]
+  },
+  "deeper": {
+   "t": "Its name may come from the temple, where hair often turns grey first, marking the passage of time.",
+   "src": [
+    "s7-2#fs-id1471081"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Its dense petrous part encloses the small bones and canals of hearing and balance.",
+    "src": [
+     "s7-2#fs-id2010718",
+     "s14-1#fs-id2479589"
+    ]
+   },
+   {
+    "t": "In front of the ear canal, the mandibular fossa and articular tubercle make the skull’s half of the jaw joint.",
+    "src": [
+     "s7-2#fs-id1882965",
+     "s9-6#fs-id1380884"
+    ]
+   },
+   {
+    "t": "The zygomatic process joins the zygomatic bone, forming the arch from which a chewing muscle arises.",
+    "src": [
+     "s7-2#fs-id1285208"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It holds your ear, makes the socket for your jaw and anchors a chewing muscle.",
+   "src": [
+    "s7-2#fs-id2010718",
+    "s7-2#fs-id1882965",
+    "s7-2#fs-id1285208"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joint",
+    "name": "Temporomandibular joint",
+    "t": "The condyle of the mandible meets its mandibular fossa and articular tubercle.",
+    "src": [
+     "s7-2#fs-id1882965",
+     "s9-6#fs-id1380884"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Zygomatic bone",
+    "t": "Its temporal process joins the zygomatic process to form the zygomatic arch.",
+    "src": [
+     "s7-2#fs-id1285208"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Facial nerve",
+    "t": "Controls the muscles of facial expression; it leaves the skull through the stylomastoid foramen.",
+    "src": [
+     "s7-2#fs-id1882965",
+     "s13-4#fs-id1271098"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Vestibulocochlear nerve",
+    "t": "Carries hearing and balance from the inner ear, through the internal acoustic meatus.",
+    "src": [
+     "s7-2#fs-id1724550",
+     "s14-1#fs-id2479589"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Internal carotid artery",
+    "t": "Passes through its carotid canal to reach the brain.",
+    "src": [
+     "s20-5#fs-id1278587",
+     "s7-2#fs-id1882965"
+    ]
+   },
+   {
+    "kind": "bones",
+    "name": "Auditory ossicles",
+    "t": "The three tiny bones of the middle ear, inside its petrous part.",
+    "src": [
+     "s14-1#fs-id2744243",
+     "s7-2#fs-id2010718"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It holds the ear and the jaw joint, and important nerves and an artery pass through it.",
+   "src": [
+    "s7-2#fs-id2010718",
+    "s7-2#fs-id1882965"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Its flat squamous part, on the side of the brain case, forms from membrane; its base parts form from cartilage.",
+    "src": [
+     "s7-5#fs-id1547037",
+     "s7-5#fs-id2251103",
+     "s7-2#fs-id2010718"
+    ]
+   },
+   {
+    "t": "The mastoid process enlarges during early childhood.",
+    "src": [
+     "s7-5#fs-id1241553"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "The mastoid process is larger in males.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (7.2) says it is larger in the male (supporting only)."
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A blow that fractures the base of the skull (basilar fracture).",
+    "damaged": "The internal carotid artery, in the carotid canal of the temporal bone.",
+    "cannotDo": "Rely on a normal blood supply to the brain on that side.",
+    "why": "The internal carotid is one of the two main arteries supplying the brain.",
+    "src": [
+     "s7-2#fs-id1972896",
+     "s20-5#fs-id2643816"
+    ]
+   },
+   {
+    "injury": "Swelling or injury of the facial nerve as it leaves the stylomastoid foramen (as in Bell’s palsy).",
+    "damaged": "The facial nerve.",
+    "cannotDo": "Close the eye, smile or raise the eyebrow on that side.",
+    "why": "The facial nerve controls the muscles of facial expression.",
+    "src": [
+     "s13-4#fs-id1271098",
+     "s7-2#fs-id1882965"
+    ],
+    "check": "Bell’s palsy and nerve injury at the foramen are not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the nerve’s course and role are."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the temporal bone takes part in the jaw joint.",
+    "model": [
+     "The mandibular fossa is a deep oval hollow in front of the ear canal.",
+     "The articular tubercle is a smooth ridge just in front of it.",
+     "The condyle of the mandible sits in the fossa when the mouth is closed.",
+     "As the mouth opens, it glides forwards onto the tubercle."
+    ],
+    "src": [
+     "s7-2#fs-id1882965",
+     "s9-6#fs-id2608267"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the external and internal acoustic meatuses.",
+    "model": [
+     "External: the ear canal, a large opening on the side of the skull.",
+     "Sound travels in it to the eardrum.",
+     "Internal: an opening inside the skull, on the petrous ridge.",
+     "It carries the nerves of hearing, balance and the face."
+    ],
+    "src": [
+     "s7-2#fs-id1882965",
+     "s14-1#fs-id2744243",
+     "s7-2#fs-id1724550"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict what you can feel just behind your earlobe, and what it is for.",
+    "model": [
+     "The mastoid process.",
+     "A large bump on the mastoid part of the temporal bone.",
+     "Muscles attach to it.",
+     "It enlarges during early childhood."
+    ],
+    "src": [
+     "s7-2#fs-id2010718",
+     "s7-5#fs-id1241553"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which nerve leaves the skull through the stylomastoid foramen?",
+   "options": [
+    "Optic nerve",
+    "Facial nerve",
+    "Trigeminal nerve",
+    "Hypoglossal nerve"
+   ],
+   "answer": 1,
+   "why": "The nerve to the muscles of facial expression, the facial nerve, exits here.",
+   "src": [
+    "s7-2#fs-id1882965",
+    "s13-4#fs-id1271098"
+   ]
+  },
+  {
+   "stem": "Which part of the temporal bone houses the middle and inner ear?",
+   "options": [
+    "Petrous part",
+    "Squamous part",
+    "Zygomatic process",
+    "Styloid process"
+   ],
+   "answer": 0,
+   "why": "Small cavities inside the petrous ridge house the middle and inner ears.",
+   "src": [
+    "s7-2#fs-id2010718"
+   ]
+  },
+  {
+   "stem": "Which artery passes through the carotid canal?",
+   "options": [
+    "External carotid artery",
+    "Vertebral artery",
+    "Middle meningeal artery",
+    "Internal carotid artery"
+   ],
+   "answer": 3,
+   "why": "The internal carotid artery continues through the carotid canal to the brain.",
+   "src": [
+    "s20-5#fs-id1278587"
+   ]
+  }
+ ]
+}

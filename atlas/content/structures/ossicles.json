@@ -1,0 +1,328 @@
+{
+ "reviewStatus": "draft",
+ "id": "ossicles",
+ "title": "Auditory ossicles",
+ "bone": "malleus_left",
+ "bones": [
+  "malleus_left",
+  "incus_left",
+  "stapes_left"
+ ],
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 14.1 Sensory Perception; 7.2 The Skull",
+ "oneLine": {
+  "main": {
+   "t": "The three tiny bones of the middle ear: the malleus, incus and stapes (auditory ossicles).",
+   "src": [
+    "s14-1#fs-id2744243"
+   ]
+  },
+  "simpler": {
+   "t": "The ossicles are three tiny bones in your ear that pass sound inwards.",
+   "src": [
+    "s14-1#fs-id2744243",
+    "s14-1#fs-id2480192"
+   ]
+  },
+  "deeper": {
+   "t": "Their Latin names roughly mean hammer, anvil and stirrup.",
+   "src": [
+    "s14-1#fs-id2744243"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "They span the space of the middle ear, inside the petrous part of the temporal bone.",
+    "src": [
+     "s14-1#fs-id2744243",
+     "s7-2#fs-id2010718"
+    ]
+   },
+   {
+    "t": "The malleus is attached to the eardrum (tympanic membrane).",
+    "src": [
+     "s14-1#fs-id2744243"
+    ]
+   },
+   {
+    "t": "The stapes is attached to the inner ear, at the oval window of the cochlea.",
+    "src": [
+     "s14-1#fs-id2744243",
+     "s14-1#fs-id2479589"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They sit deep in your ear, between the eardrum and the inner ear.",
+   "src": [
+    "s14-1#fs-id2744243"
+   ]
+  },
+  "deeper": {
+   "t": "The ear canal leading to the eardrum enters the skull through the external acoustic meatus.",
+   "src": [
+    "s14-1#fs-id2744243"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Malleus",
+    "t": "“Hammer”: attached to the eardrum, and joined to the incus.",
+    "src": [
+     "s14-1#fs-id2744243"
+    ]
+   },
+   {
+    "name": "Incus",
+    "t": "“Anvil”: between the other two, joined to both.",
+    "src": [
+     "s14-1#fs-id2744243"
+    ]
+   },
+   {
+    "name": "Stapes",
+    "t": "“Stirrup”: joined to the incus, and attached to the inner ear at the oval window.",
+    "src": [
+     "s14-1#fs-id2744243",
+     "s14-1#fs-id2479589"
+    ]
+   },
+   {
+    "name": "A chain of joints",
+    "t": "The three are joined end to end, from the eardrum to the inner ear.",
+    "src": [
+     "s14-1#fs-id2744243"
+    ]
+   },
+   {
+    "name": "Footplate of the stapes",
+    "t": "Its flat base fills the oval window.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "They are a chain of three tiny bones: hammer, anvil and stirrup.",
+   "src": [
+    "s14-1#fs-id2744243"
+   ]
+  },
+  "deeper": {
+   "t": "The stapes is the smallest bone in the body.",
+   "src": [],
+   "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Sound makes the eardrum vibrate; the ossicles pass the vibrations along to the inner ear.",
+    "src": [
+     "s14-1#fs-id2744243",
+     "s14-1#fs-id2480192"
+    ]
+   },
+   {
+    "t": "Vibrations passing through the oval window set the fluid of the cochlea moving in waves.",
+    "src": [
+     "s14-1#fs-id2480192"
+    ]
+   },
+   {
+    "t": "The fluid waves match the frequencies of the sound.",
+    "src": [
+     "s14-1#fs-id2480192"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They pass the eardrum’s vibrations along to the fluid of the inner ear.",
+   "src": [
+    "s14-1#fs-id2744243",
+    "s14-1#fs-id2480192"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "membrane",
+    "name": "Tympanic membrane (eardrum)",
+    "t": "Vibrates when sound strikes it; the malleus is attached to it.",
+    "src": [
+     "s14-1#fs-id2744243"
+    ]
+   },
+   {
+    "kind": "organ",
+    "name": "Cochlea",
+    "t": "The inner ear organ of hearing, attached to the stapes through the oval window.",
+    "src": [
+     "s14-1#fs-id2479589"
+    ]
+   },
+   {
+    "kind": "opening",
+    "name": "Round window",
+    "t": "A membrane-covered opening that bulges as the fluid in the cochlea moves.",
+    "src": [
+     "s14-1#fs-id2480192"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Temporal bone",
+    "t": "Its petrous part contains the middle and inner ear.",
+    "src": [
+     "s7-2#fs-id2010718"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Vestibulocochlear nerve",
+    "t": "Carries the signals of hearing from the cochlea to the brainstem.",
+    "src": [
+     "s14-1#fs-id2479589"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They link the eardrum to the cochlea, deep in the temporal bone.",
+   "src": [
+    "s14-1#fs-id2744243",
+    "s14-1#fs-id2479589",
+    "s7-2#fs-id2010718"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "They form from cartilage of the embryonic pharyngeal arches.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Abnormal bone growth fixes the stapes in the oval window (otosclerosis).",
+    "damaged": "The stapes.",
+    "cannotDo": "Hear well: sound is no longer passed into the inner ear.",
+    "why": "The stapes must move to send vibrations through the oval window.",
+    "src": [
+     "s14-1#fs-id2480192"
+    ],
+    "check": "Otosclerosis is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the role of the oval window is."
+   },
+   {
+    "injury": "A blast, or something pushed into the ear canal.",
+    "damaged": "The eardrum tears.",
+    "cannotDo": "Hear normally on that side.",
+    "why": "The malleus is attached to the eardrum, which must vibrate to move the ossicles.",
+    "src": [
+     "s14-1#fs-id2744243"
+    ],
+    "check": "A torn eardrum is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the eardrum’s role is."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how sound reaches the inner ear.",
+    "model": [
+     "Sound waves travel down the ear canal and strike the eardrum, which vibrates.",
+     "The malleus, attached to the eardrum, passes the vibration to the incus.",
+     "The incus passes it to the stapes.",
+     "The stapes moves the oval window, sending waves through the fluid of the cochlea."
+    ],
+    "src": [
+     "s14-1#fs-id2744243",
+     "s14-1#fs-id2480192"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the attachments of the malleus and the stapes.",
+    "model": [
+     "The malleus is attached to the eardrum, at the outer end of the chain.",
+     "The stapes is attached to the inner ear, at the oval window.",
+     "The incus links them.",
+     "So vibration passes from the outer to the inner ear."
+    ],
+    "src": [
+     "s14-1#fs-id2744243",
+     "s14-1#fs-id2479589"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict the effect on hearing if the stapes cannot move, and explain it.",
+    "model": [
+     "Hearing is reduced.",
+     "The stapes cannot move the oval window.",
+     "So little vibration reaches the fluid of the cochlea.",
+     "The sound-sensing cells are hardly stimulated."
+    ],
+    "src": [
+     "s14-1#fs-id2480192"
+    ],
+    "check": "Hearing loss from a fixed stapes is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the role of the oval window is."
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which ossicle is attached to the eardrum?",
+   "options": [
+    "Incus",
+    "Stapes",
+    "Malleus",
+    "Cochlea"
+   ],
+   "answer": 2,
+   "why": "The malleus is attached to the tympanic membrane.",
+   "src": [
+    "s14-1#fs-id2744243"
+   ]
+  },
+  {
+   "stem": "Which ossicle is attached to the oval window?",
+   "options": [
+    "Stapes",
+    "Malleus",
+    "Incus",
+    "All three"
+   ],
+   "answer": 0,
+   "why": "The cochlea is attached to the stapes through the oval window.",
+   "src": [
+    "s14-1#fs-id2479589"
+   ]
+  },
+  {
+   "stem": "Which bone houses the middle ear?",
+   "options": [
+    "Sphenoid bone",
+    "Occipital bone",
+    "Parietal bone",
+    "Temporal bone"
+   ],
+   "answer": 3,
+   "why": "Cavities inside the petrous part of the temporal bone house the middle and inner ears.",
+   "src": [
+    "s7-2#fs-id2010718"
+   ]
+  }
+ ]
+}

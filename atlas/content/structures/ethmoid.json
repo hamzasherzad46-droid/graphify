@@ -1,0 +1,359 @@
+{
+ "reviewStatus": "draft",
+ "id": "ethmoid",
+ "bone": "ethmoid_bone",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 7.5; 14.1",
+ "oneLine": {
+  "main": {
+   "t": "A single midline bone between the orbits that forms the roof and upper walls of the nasal cavity (ethmoid bone).",
+   "src": [
+    "s7-2#fs-id1971405"
+   ]
+  },
+  "simpler": {
+   "t": "The ethmoid bone sits behind the top of your nose, between your eyes.",
+   "src": [
+    "s7-2#fs-id1971405",
+    "s7-2#fs-id1897403"
+   ]
+  },
+  "deeper": {
+   "t": "The nerve fibres for smell pass through its cribriform plate into the brain.",
+   "src": [
+    "s7-2#fs-id1977415",
+    "s14-1#fs-id2351449"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It lies in the midline, between the orbit and the upper nasal cavity on each side.",
+    "src": [
+     "s7-2#fs-id1971405",
+     "s7-2#fs-id1897403"
+    ]
+   },
+   {
+    "t": "Inside the skull, it forms a small midline area of the floor of the anterior cranial fossa.",
+    "src": [
+     "s7-2#fs-id1977415"
+    ]
+   },
+   {
+    "t": "It forms the upper nasal septum and part of the medial wall of each orbit.",
+    "src": [
+     "s7-2#fs-id1971405"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is deep behind the bridge of your nose, between your eye sockets.",
+   "src": [
+    "s7-2#fs-id1971405",
+    "s7-2#fs-id1897403"
+   ]
+  },
+  "deeper": {
+   "t": "Though counted with the brain case, it also helps form the nasal septum, nasal walls and orbits.",
+   "src": [
+    "s7-2#fs-id1861377"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Crista galli",
+    "t": "A small upward projection in the midline (“rooster’s comb”). It anchors one of the coverings of the brain.",
+    "src": [
+     "s7-2#fs-id1977415"
+    ]
+   },
+   {
+    "name": "Cribriform plates",
+    "t": "Flat plates either side of it (“sieve”), pierced by small olfactory foramina.",
+    "src": [
+     "s7-2#fs-id1977415"
+    ]
+   },
+   {
+    "name": "Perpendicular plate",
+    "t": "Forms the upper part of the nasal septum.",
+    "src": [
+     "s7-2#fs-id2228601",
+     "s7-2#fs-id2125356"
+    ]
+   },
+   {
+    "name": "Superior and middle nasal conchae",
+    "t": "Thin curved plates projecting from each side wall of the nasal cavity.",
+    "src": [
+     "s7-2#fs-id2228601",
+     "s7-2#fs-id1475747"
+    ]
+   },
+   {
+    "name": "Ethmoid air cells",
+    "t": "Many small air spaces with very thin walls, between the nasal cavity and the orbit.",
+    "src": [
+     "s7-2#fs-id1897403",
+     "s7-2#fs-id1882870"
+    ]
+   },
+   {
+    "name": "Orbital surface",
+    "t": "Forms much of the medial wall of each orbit, with the lacrimal bone.",
+    "src": [
+     "s7-2#fs-id1897403",
+     "s7-2#fs-id1887927"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It has a sieve-like roof, a central plate in the nose and two scroll-like plates on each side.",
+   "src": [
+    "s7-2#fs-id1977415",
+    "s7-2#fs-id2228601",
+    "s7-2#fs-id1475747"
+   ]
+  },
+  "deeper": {
+   "t": "The superior concha is the smallest; it is hidden above and behind the middle concha.",
+   "src": [
+    "s7-2#fs-id1475747"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Its cribriform plates are pierced by olfactory foramina, letting the fibres for smell reach the brain.",
+    "src": [
+     "s7-2#fs-id1977415",
+     "s14-1#fs-id2351449"
+    ]
+   },
+   {
+    "t": "Its curved conchae swirl incoming air, helping to warm and moisten it.",
+    "src": [
+     "s7-2#fs-id1475747"
+    ]
+   },
+   {
+    "t": "Mucus on the conchae traps dust, pollen, bacteria and viruses.",
+    "src": [
+     "s7-2#fs-id1475747"
+    ]
+   },
+   {
+    "t": "Its air cells are part of the paranasal sinuses, which lighten the skull.",
+    "src": [
+     "s7-2#fs-id1897403",
+     "s7-2#fs-id1977054"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It lets the nerves for smell through, and helps warm and clean the air you breathe.",
+   "src": [
+    "s7-2#fs-id1977415",
+    "s7-2#fs-id1475747"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "nerve",
+    "name": "Olfactory nerve",
+    "t": "Its fibres pass from the nasal lining through the cribriform plate to the olfactory bulb.",
+    "src": [
+     "s14-1#fs-id2351449",
+     "s7-2#fs-id1977415"
+    ]
+   },
+   {
+    "kind": "brain",
+    "name": "Frontal lobe",
+    "t": "The olfactory bulb lies on its underside, just above the cribriform plate.",
+    "src": [
+     "s14-1#fs-id2351449"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Vomer",
+    "t": "With the perpendicular plate and the septal cartilage, forms the nasal septum.",
+    "src": [
+     "s7-2#fs-id2125356"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Lacrimal bone",
+    "t": "Together they form much of the medial wall of the orbit.",
+    "src": [
+     "s7-2#fs-id1887927"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Frontal bone",
+    "t": "Forms most of the floor of the anterior cranial fossa, around the ethmoid’s small midline part.",
+    "src": [
+     "s7-2#fs-id2045358"
+    ]
+   },
+   {
+    "kind": "covering",
+    "name": "Covering of the brain",
+    "t": "One of the layers covering the brain is anchored to the crista galli.",
+    "src": [
+     "s7-2#fs-id1977415"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "The nerves for smell pass through it to the brain, and it joins the bones of the nose and orbit.",
+   "src": [
+    "s14-1#fs-id2351449",
+    "s7-2#fs-id2125356",
+    "s7-2#fs-id1887927"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Like the bones of the skull base and face, it forms from a cartilage model (endochondral ossification).",
+    "src": [
+     "s7-5#fs-id2251103"
+    ]
+   },
+   {
+    "t": "The paranasal sinuses, including its air cells, enlarge during childhood.",
+    "src": [
+     "s7-5#fs-id1241553"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Blunt force to the face, as in a car accident.",
+    "damaged": "The olfactory nerve fibres are sheared where they pass through the cribriform plate.",
+    "cannotDo": "Smell (anosmia); food may taste bland.",
+    "why": "The frontal lobe moves relative to the ethmoid bone, tearing the fine fibres.",
+    "src": [
+     "s14-1#fs-id2817840",
+     "s14-1#fs-id2441552"
+    ]
+   },
+   {
+    "injury": "A fracture through the cribriform plate.",
+    "damaged": "The coverings of the brain over the plate tear.",
+    "cannotDo": "Keep the nose dry: the clear fluid around the brain (cerebrospinal fluid) leaks from the nose.",
+    "why": "The thin plate is all that separates the nasal cavity from the cranial cavity.",
+    "src": [
+     "s7-2#fs-id1977415"
+    ],
+    "check": "Leakage of cerebrospinal fluid from the nose is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the plate’s position is."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how a blow to the face can cause loss of smell.",
+    "model": [
+     "Olfactory nerve fibres pass through the cribriform plate of the ethmoid bone.",
+     "They reach the olfactory bulb on the underside of the frontal lobe.",
+     "In a blow, the frontal lobe moves relative to the ethmoid bone.",
+     "The fibres are sheared, causing anosmia."
+    ],
+    "src": [
+     "s14-1#fs-id2351449",
+     "s14-1#fs-id2817840"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the perpendicular plate of the ethmoid with the vomer.",
+    "model": [
+     "Both form part of the bony nasal septum.",
+     "The perpendicular plate forms its upper part.",
+     "The triangular vomer forms its lower and back parts.",
+     "Septal cartilage fills the gap between them at the front."
+    ],
+    "src": [
+     "s7-2#fs-id2125356"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict which nasal conchae you would see looking into the front of a dry skull, and explain why.",
+    "model": [
+     "The inferior and middle conchae.",
+     "The inferior concha is the largest.",
+     "The middle concha, part of the ethmoid, lies just above it.",
+     "The small superior concha is hidden above and behind the middle one."
+    ],
+    "src": [
+     "s7-2#fs-id1475747"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "What passes through the cribriform plate?",
+   "options": [
+    "The optic nerve",
+    "Fibres of the olfactory nerve",
+    "The internal carotid artery",
+    "The facial nerve"
+   ],
+   "answer": 1,
+   "why": "Olfactory axons pass through the olfactory foramina of the cribriform plate.",
+   "src": [
+    "s14-1#fs-id2351449",
+    "s7-2#fs-id1977415"
+   ]
+  },
+  {
+   "stem": "Which nasal conchae are part of the ethmoid bone?",
+   "options": [
+    "Superior and middle",
+    "Inferior only",
+    "Middle and inferior",
+    "All three"
+   ],
+   "answer": 0,
+   "why": "The superior and middle conchae belong to the ethmoid; the inferior concha is a separate bone.",
+   "src": [
+    "s7-2#fs-id1475747"
+   ]
+  },
+  {
+   "stem": "What does the crista galli anchor?",
+   "options": [
+    "The nasal septum",
+    "The olfactory bulb",
+    "The eyeball",
+    "One of the coverings of the brain"
+   ],
+   "answer": 3,
+   "why": "It is an anterior attachment point for one of the covering layers of the brain.",
+   "src": [
+    "s7-2#fs-id1977415"
+   ]
+  }
+ ]
+}

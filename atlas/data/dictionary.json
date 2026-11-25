@@ -3563,6 +3563,10 @@
   "cogito": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)"
  },
  "proposed": {
+  "MakeHuman": "Proposed: name of the open-source human-body project whose CC0 base mesh gives the 3D models their skin (Credits).",
+  "Bastioni": "Proposed: name (Manuel Bastioni, original author of MakeHuman), in Credits.",
+  "Palmius": "Proposed: name (Joel Palmius, MakeHuman Team), in Credits.",
+  "Hauquier": "Proposed: name (Jonas Hauquier, MakeHuman Team), in Credits.",
   "cloze": "Proposed: the standard name for a fill-in-the-blank question (“cloze test”). Used only in the question service’s instructions to the AI; students see “Fill in the blank”.",
   "answerText": "Proposed: a field name in the question service’s instructions to the AI (the model answer). Never shown to students."
  },
@@ -4182,6 +4186,7 @@
   "meshoptimizer": "Software name.",
   "Zustand": "Software name.",
   "github.com/LluisV/Z-Anatomy": "Web address.",
+  "github.com/makehumancommunity/makehuman": "Web address.",
   "doi:10.48539/HBM352.BTSQ.586": "DOI.",
   "creativecommons.org/licenses/by/4.0": "Web address.",
   "openstax.org/details/books/anatomy-and-physiology-2e": "Web address.",

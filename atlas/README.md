@@ -91,6 +91,32 @@ npm test
 `scripts/lib/mesh.mjs` reads the FBX (three's FBXLoader in Node), welds, simplifies with meshoptimizer (≤0.15 %
 relative error, ≤5k triangles per bone), recomputes normals and writes the GLB.
 
+## 3D model upgrade, step 1: skin (`models-src/skin-*.glb`)
+
+Body surfaces for the coming layered models (skin → fat → muscles → organs → skeleton), not yet shown in the app (the
+layer controls come in step 5). Built from **MakeHuman** (CC0): its base mesh and macro body-shape targets, with
+MakeHuman's even mix of ethnicities, age 25.
+
+- **Builds**: female slim and lightly toned (muscle 0.55, weight 0.38 on MakeHuman's 0–1 sliders, 0.5 = average);
+  male lean and athletic (muscle 0.72, weight 0.38). No body hair; a smooth, simplified genital area.
+- **Re-posed to the anatomical position** with MakeHuman's own rig (linear blend skinning): every limb segment is
+  turned and stretched onto the matching Atlas bones (shoulder, elbow, wrist, knuckles and finger joints, hip, knee,
+  ankle, ball of the foot), the spine and head follow the Atlas spinal curve, and the turn to palms-forward is shared
+  along the arm (shoulder 30 %, forearm 65–100 %).
+- **Fitted to the skeleton**: the torso is widened and deepened slice by slice where the ribcage or pelvis needs room
+  (lean soft-tissue margins: 12 mm at the sides, 8 mm over the sternum, 6 mm over the spine); then every bone point is
+  checked exactly (generalised winding number) and the skin moved out, as a smooth local bump, wherever bone is outside
+  it or less than 3 mm under it. Result: no bone outside the male skin; one point of the ~130,000 on the female
+  pelvis.
+- 13,380 vertices, 26,756 triangles, with MakeHuman's UVs (for the skin textures in step 4); 86 kB each, Draco.
+
+```bash
+# MakeHuman data (base.obj, default.mhskel, default_weights.mhw, targets/macrodetails/*) from
+# github.com/makehumancommunity/makehuman, makehuman/data
+node scripts/model/export-bones.mjs public/models/skeleton-male.glb /tmp/fit/male      # and female
+python3 scripts/model/build_skin.py <makehuman data> /tmp/fit /tmp/fit                 # numpy, scipy, libigl
+```
+
 ## Exploded view (step 3)
 
 Dock → explode button. Choose the whole skeleton or one region (skull, spine, thorax, upper limb, hand, pelvis,

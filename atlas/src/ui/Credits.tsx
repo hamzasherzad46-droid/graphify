@@ -79,6 +79,25 @@ export function Credits({ onBack }: { onBack: () => void }) {
           </section>
 
           <section>
+            <h3>MakeHuman</h3>
+            <p>
+              Body surface (skin) of the male and female models: generated from the MakeHuman base mesh and body-shape targets, released
+              under{' '}
+              <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noreferrer">
+                CC0 1.0
+              </a>{' '}
+              by the MakeHuman Team (Data Collection AB, Joel Palmius, Jonas Hauquier; original by Manuel Bastioni).{' '}
+              <a href="https://github.com/makehumancommunity/makehuman" target="_blank" rel="noreferrer">
+                github.com/makehumancommunity/makehuman
+              </a>
+            </p>
+            <p className="muted small">
+              Modified for Atlas: a slim female and a lean male body shape, re-posed to the anatomical position and fitted over the Atlas
+              skeletons.
+            </p>
+          </section>
+
+          <section>
             <h3>OpenStax Anatomy and Physiology 2e</h3>
             <p>
               Textbook chapters 6–9 (bone tissue, axial and appendicular skeleton, joints), 12–16 (the nervous system) and 20 (blood

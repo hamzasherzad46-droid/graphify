@@ -7,6 +7,8 @@ import json, os
 
 OUT = os.path.join(os.path.dirname(__file__), '..', '..', 'content', 'structures')
 NOT_IN = 'Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).'
+# A fact supplied or corrected by the academic reviewer (review of 25 November 2026).
+REVIEWER = 'reviewer:2026-11-25'
 
 
 def F(t, *src, check=None):
@@ -107,6 +109,12 @@ def lesson(**k):
 humerus = lesson(
     id='humerus', bone='humerus_left', topic='upper-limb',
     source='OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5; 9.6; 20.5',
+    changes=[
+        'Shoulder dislocation: OpenStax 9.6 says most dislocations of the humerus are downward (inferior). On review, Atlas describes the usual '
+        'type: forwards and downwards (anterior dislocation, over 95% of cases).',
+        'Supracondylar fracture: OpenStax 8.2 describes a fall onto the tip of the elbow. On review, Atlas gives the commonest type, a fall on an '
+        'outstretched hand with the elbow straight (†, awaiting a source).',
+    ],
     oneLine={
         'main': F('The long bone of the upper arm, running from the shoulder to the elbow (humerus).', HUM_PROX, REGIONS),
         'simpler': F('The humerus is the bone of your upper arm.', HUM_PROX),
@@ -177,10 +185,13 @@ humerus = lesson(
                  'Move the shoulder without pain.', 'The narrow neck is where the wide top meets the shaft, so force concentrates there.', HUM_FX, HUM_PROX),
             CLIN('A fracture of the middle of the shaft.', 'The radial nerve in the radial groove.', 'Lift the wrist and fingers (wrist drop).',
                  'The radial nerve supplies the muscles on the back of the forearm that extend the wrist and fingers.', check=NOT_IN),
-            CLIN('A child falls onto the tip of the elbow and breaks the bone just above the epicondyles (supracondylar fracture).', 'The artery to the forearm (brachial artery), squeezed by swelling.',
-                 'Keep the forearm muscles healthy: without blood they can quickly be damaged for good.', 'The brachial artery runs down to the elbow right beside the broken bone.', HUM_SUPRA, ARM_ARTERIES),
-            CLIN('A fall onto the hand or elbow with the arm raised fully out to the side.', 'The shoulder joint: the head of the humerus dislocates downwards.',
-                 'Move the shoulder.', 'Muscles and ligaments strongly support the head in front, above and behind, so it comes out downwards.', GH_INJ),
+            CLIN('A child falls on an outstretched hand with the elbow straight (the commonest type). The bone breaks just above the epicondyles (supracondylar fracture).',
+                 'The artery to the forearm (brachial artery), squeezed by swelling.',
+                 'Keep the forearm muscles healthy: without blood they can quickly be damaged for good.', 'The brachial artery runs down to the elbow right beside the broken bone.', HUM_SUPRA, ARM_ARTERIES, REVIEWER,
+                 check='Mechanism: OpenStax 8.2 describes a fall onto the tip of the elbow. The reviewer gives the commonest type, a fall on an outstretched hand with the elbow straight; this needs an approved source.'),
+            CLIN('A fall onto the hand or elbow with the arm raised fully out to the side.',
+                 'The shoulder joint: the head of the humerus usually dislocates forwards and downwards (anterior dislocation, over 95% of cases).',
+                 'Move the shoulder.', 'The underside of the joint has the least support. The head is forced out below it and comes to rest in front.', GH_INJ, REVIEWER),
         ],
     },
     tutorial={
@@ -189,9 +200,9 @@ humerus = lesson(
                 ['Wrist drop: the patient cannot lift (extend) the wrist.', 'The fingers cannot be straightened at the knuckles.',
                  'The radial nerve supplies the extensor muscles on the back of the forearm.', 'Triceps is usually spared: its branches leave the nerve above the groove.',
                  'Numbness over the back of the hand near the thumb.'], check=NOT_IN),
-            TUT('explain', 'Explain why most dislocations of the shoulder are downward (inferior).',
-                ['The glenoid cavity is small and shallow: about a third of the size of the head.', 'Muscles and ligaments support the head in front, above and behind.',
-                 'The underside has the least support.', 'Force on a fully raised arm drives the head out downwards.'], GH_SHAPE, GH_INJ),
+            TUT('explain', 'Explain why the shoulder usually dislocates forwards and downwards (anterior dislocation).',
+                ['The glenoid cavity is small and shallow: about a third of the size of the head.', 'The underside of the joint has the least support.',
+                 'Force on a fully raised arm drives the head out through the weak underside.', 'It comes to rest forwards and downwards: anterior dislocation, over 95% of cases.'], GH_SHAPE, GH_INJ, REVIEWER),
             TUT('compare', 'Compare the anatomical neck and the surgical neck of the humerus.',
                 ['Anatomical neck: the edge of the smooth joint surface of the head.', 'Surgical neck: where the wide top joins the narrow shaft.',
                  'The surgical neck is a common fracture site.', 'Fractures there can be impacted, with the shaft driven into the head.'], HUM_PROX, HUM_FX),
@@ -305,10 +316,11 @@ scapula = lesson(
 scaphoid = lesson(
     id='scaphoid', bone='scaphoid_left', topic='upper-limb',
     source='OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5',
+    changes=['Wrist joint: worded on review as “the scaphoid and lunate meet the radius; the triquetrum meets the articular disc over the ulna”, as OpenStax 8.2 describes.'],
     oneLine={
         'main': F('A small boat-shaped wrist bone on the thumb side of the first row of carpal bones (scaphoid).', CARPALS),
         'simpler': F('The scaphoid is a small wrist bone at the base of the thumb.', CARPALS),
-        'deeper': F('It is one of only three carpal bones that form the wrist joint with the radius.', RADIOCARPAL),
+        'deeper': F('The scaphoid and lunate meet the radius at the wrist joint; the triquetrum meets the articular disc over the ulna.', RADIOCARPAL, REVIEWER),
     },
     where={
         'facts': [
@@ -317,7 +329,7 @@ scaphoid = lesson(
             F('Below it are the trapezium, trapezoid and capitate of the second row.', 'glossary:scaphoid'),
         ],
         'simpler': F('It sits in your wrist, just below the end of the forearm, on the thumb side.', CARPALS, RADIOCARPAL),
-        'deeper': F('Only the scaphoid, lunate and triquetrum take part in the wrist joint.', RADIOCARPAL),
+        'deeper': F('With the lunate it meets the radius directly. The triquetrum, beside them, meets the articular disc over the ulna.', RADIOCARPAL, REVIEWER),
     },
     features={
         'items': [
@@ -332,14 +344,14 @@ scaphoid = lesson(
     formFunction={
         'facts': [
             F('It sits on the thumb side and meets the radius directly. So a fall on the outstretched hand drives force through it.', RADIOCARPAL, FOOSH),
-            F('With the lunate and triquetrum it forms the wrist (radiocarpal) joint.', RADIOCARPAL),
+            F('At the wrist (radiocarpal) joint, the scaphoid and lunate meet the radius. The triquetrum meets the articular disc over the ulna.', RADIOCARPAL, REVIEWER),
             F('With the second row it forms the midcarpal joint. These two joints make all the movements of the wrist.', MIDCARPAL),
         ],
         'simpler': F('It helps the wrist bend and passes force from the hand to the forearm.', MIDCARPAL, FOOSH),
     },
     relations={
         'items': [
-            REL('joint', 'Wrist (radiocarpal) joint', 'With the lunate and triquetrum, it meets the radius here.', RADIOCARPAL),
+            REL('joint', 'Wrist (radiocarpal) joint', 'The scaphoid and lunate meet the radius here; the triquetrum meets the articular disc over the ulna.', RADIOCARPAL, REVIEWER),
             REL('joint', 'Midcarpal joint', 'The joint between the first and second rows of carpal bones.', MIDCARPAL),
             REL('ligament', 'Flexor retinaculum', 'Attached on the thumb side to the trapezium and scaphoid.', RETINACULUM),
             REL('artery', 'Radial artery', 'Its branches enter mainly at the far (distal) end of the scaphoid.', ARM_ARTERIES,
@@ -379,7 +391,7 @@ scaphoid = lesson(
     check=[
         MCQ('Which carpal bone is fractured most often?', ['Lunate', 'Scaphoid', 'Hamate', 'Trapezium'], 1, 'The scaphoid is the most commonly fractured carpal bone.', SCAPH_FX),
         MCQ('Which forearm bone does the scaphoid meet at the wrist joint?', ['Radius', 'Ulna', 'Both', 'Neither'], 0,
-            'The scaphoid and lunate meet the radius; the end of the ulna does not touch the carpal bones.', RADIOCARPAL),
+            'The scaphoid and lunate meet the radius at the wrist joint; the triquetrum meets the articular disc over the ulna.', RADIOCARPAL, REVIEWER),
         MCQ('Why can a scaphoid fracture lead to death of part of the bone?', ['It is crushed by the radius', 'It is pulled apart by tendons', 'It is too small to hold a cast', 'Its blood supply is poor'], 3,
             'With a poor blood supply it heals slowly, and part of it can die (necrosis).', SCAPH_FX),
     ],
@@ -388,6 +400,7 @@ scaphoid = lesson(
 sphenoid = lesson(
     id='sphenoid', bone='sphenoid_bone', topic='skull',
     source='OpenStax A&P 2e: 7.2 The Skull; 6.4; 14.2',
+    changes=['Superior orbital fissure: OpenStax 7.2 places it under the lesser wing. On review, Atlas says it lies between the lesser and greater wings.'],
     oneLine={
         'main': F('A single, complex bone in the centre of the skull base that joins almost every other skull bone (sphenoid bone).', SPH),
         'simpler': F('The sphenoid is a winged bone in the middle of the floor of the skull.', SPH),
@@ -408,7 +421,7 @@ sphenoid = lesson(
             FEAT('Greater wings', 'Form the front of the middle fossa and part of the side of the skull.', SPH),
             FEAT('Sella turcica', 'A saddle-shaped seat in the midline. Its hollow (hypophyseal fossa) holds the pituitary gland.', SPH),
             FEAT('Optic canal', 'Beside the sella turcica. It carries the optic nerve from the eye to the brain.', 'glossary:optic canal', 's7-2#fs-id2026215'),
-            FEAT('Superior orbital fissure', 'A slit into the back of the orbit. It carries nerves to the eye muscles and the forehead.', FORAMINA),
+            FEAT('Superior orbital fissure', 'A slit between the lesser and greater wings of the sphenoid, into the back of the orbit. It carries nerves to the eye muscles and the forehead.', FORAMINA, REVIEWER),
             FEAT('Foramen rotundum, foramen ovale and foramen spinosum', 'Openings in the floor of the middle fossa for nerves to the face and an artery to the brain’s coverings.', FORAMINA,
                  check='OpenStax places these in the floor of the middle cranial fossa; that they lie in the sphenoid’s greater wing is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).'),
             FEAT('Medial and lateral pterygoid plates', 'Thin wing-shaped plates underneath. The lateral plates anchor chewing muscles.', PTERYGOID),
@@ -467,7 +480,7 @@ sphenoid = lesson(
                  'The outer part of the visual field is lost on both sides.', 'The patient cannot see objects to their left and right.'], CHIASM, SPH),
             TUT('compare', 'Compare the optic canal and the superior orbital fissure.',
                 ['Optic canal: at the front outer corner of the sella turcica.', 'It carries the optic nerve.',
-                 'Superior orbital fissure: beside the optic canal, under the lesser wing.', 'It carries nerves to the eye muscles and sensory nerves to the forehead.'], FORAMINA),
+                 'Superior orbital fissure: beside the optic canal, between the lesser and greater wings of the sphenoid.', 'It carries nerves to the eye muscles and sensory nerves to the forehead.'], FORAMINA, REVIEWER),
         ],
     },
     check=[

@@ -4,6 +4,9 @@
  "bone": "sphenoid_bone",
  "topic": "skull",
  "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4; 14.2",
+ "changes": [
+  "Superior orbital fissure: OpenStax 7.2 places it under the lesser wing. On review, Atlas says it lies between the lesser and greater wings."
+ ],
  "oneLine": {
   "main": {
    "t": "A single, complex bone in the centre of the skull base that joins almost every other skull bone (sphenoid bone).",
@@ -92,9 +95,10 @@
    },
    {
     "name": "Superior orbital fissure",
-    "t": "A slit into the back of the orbit. It carries nerves to the eye muscles and the forehead.",
+    "t": "A slit between the lesser and greater wings of the sphenoid, into the back of the orbit. It carries nerves to the eye muscles and the forehead.",
     "src": [
-     "s7-2#fs-id2026215"
+     "s7-2#fs-id2026215",
+     "reviewer:2026-11-25"
     ]
    },
    {
@@ -312,11 +316,12 @@
     "model": [
      "Optic canal: at the front outer corner of the sella turcica.",
      "It carries the optic nerve.",
-     "Superior orbital fissure: beside the optic canal, under the lesser wing.",
+     "Superior orbital fissure: beside the optic canal, between the lesser and greater wings of the sphenoid.",
      "It carries nerves to the eye muscles and sensory nerves to the forehead."
     ],
     "src": [
-     "s7-2#fs-id2026215"
+     "s7-2#fs-id2026215",
+     "reviewer:2026-11-25"
     ]
    }
   ]

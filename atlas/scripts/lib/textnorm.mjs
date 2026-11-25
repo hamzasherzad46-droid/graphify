@@ -10,6 +10,12 @@ setKnownWords([...dict.terminologia.words, ...Object.keys(dict.approved), ...Obj
 setKeep(Object.keys(dict.keep ?? {}))
 const FORMS = Object.entries(dict.forms ?? {}).map(([from, to]) => [new RegExp(`\\b${from.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi'), from, to])
 
+/** Proper names (data/dictionary.json "names"), longest first. The importers read the original text, so a name is
+ * always matched as its owner spells it. */
+const NAMES = Object.keys(dict.names ?? {})
+  .sort((a, b) => b.length - a.length)
+  .map((n) => new RegExp(n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g'))
+
 const matchCase = (src, out) => (src[0] === src[0].toUpperCase() ? out[0].toUpperCase() + out.slice(1) : out)
 
 export const stats = { british: new Map(), forms: new Map(), corrections: new Map(), ligatures: 0 }
@@ -32,9 +38,12 @@ export function normalise(text, source) {
       count(stats.forms, `${from} → ${to}`)
       return matchCase(m, to)
     })
+  // Proper names keep their owners' spelling ("U.S. Department of Defense"): held out of the British conversion.
+  const held = []
+  for (const re of NAMES) t = t.replace(re, (m) => `\uE000${held.push(m) - 1}\uE001`)
   const b = britishText(t)
   for (const [from, to] of b.changes) count(stats.british, `${from.toLowerCase()} → ${to.toLowerCase()}`)
-  return b.text
+  return b.text.replace(/\uE000(\d+)\uE001/g, (_, k) => held[Number(k)])
 }
 
 /** Keys whose values are identifiers or links, never text. */

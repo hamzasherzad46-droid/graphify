@@ -18,7 +18,7 @@ const lessons = readdirSync(DIR)
   .sort((a, b) => (ORDER.indexOf(a.id) + 1 || 99) - (ORDER.indexOf(b.id) + 1 || 99))
 
 /** "s8-2#fs-id2110691" → "8.2 ¶fs-id2110691"; "glossary:optic canal" → "glossary: optic canal". */
-const ref = (s) => (s.startsWith('glossary:') ? `glossary: ${s.slice(9)}` : `${s.split('#')[0].slice(1).replace('-', '.')} ¶${s.split('#')[1]}`)
+const ref = (s) => (s.startsWith('reviewer:') ? `reviewer, ${s.slice(9)}` : s.startsWith('glossary:') ? `glossary: ${s.slice(9)}` : `${s.split('#')[0].slice(1).replace('-', '.')} ¶${s.split('#')[1]}`)
 const srcOf = (f) => {
   const parts = f.src.map(ref)
   if (f.check) parts.push(`† ${f.check}`)

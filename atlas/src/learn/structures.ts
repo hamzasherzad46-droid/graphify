@@ -52,6 +52,8 @@ export interface Structure {
   bone: string
   topic: string
   source: string
+  /** Where Atlas differs from OpenStax, and why (shown with the source). */
+  changes?: string[]
   reviewStatus: 'draft' | 'reviewed'
   oneLine: { main: Fact; simpler: Fact; deeper: Fact }
   where: { facts: Fact[]; simpler: Fact; deeper: Fact }

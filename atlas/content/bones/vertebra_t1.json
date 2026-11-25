@@ -9,7 +9,7 @@
   "type": "irregular",
   "features": [
     "Heart-shaped body",
-    "Full costal facet for rib 1 and a demifacet for rib 2",
+    "Full costal facet for rib 1 and a costal facet (demifacet) for rib 2",
     "Costal facets on the transverse processes",
     "Long spinous process angled downwards",
     "Small circular vertebral foramen"
@@ -31,5 +31,5 @@
   ],
   "reviewStatus": "draft",
   "reviewer": "",
-  "lastUpdated": "2026-11-22"
+  "lastUpdated": "2026-11-25"
 }

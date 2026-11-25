@@ -25,7 +25,7 @@
     "vomer",
     "inferior_nasal_concha_right"
   ],
-  "clinical": "Le Fort fractures classify midface fractures by the level at which the maxilla separates.",
+  "clinical": "Le Fort fractures classify fractures of the middle third of the face by the level at which the maxilla separates.",
   "acceptedSpellings": [
     "maxilla",
     "upper jaw",
@@ -33,5 +33,5 @@
   ],
   "reviewStatus": "draft",
   "reviewer": "",
-  "lastUpdated": "2026-11-22"
+  "lastUpdated": "2026-11-25"
 }

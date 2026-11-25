@@ -39,7 +39,7 @@ SEX_DIFF = {
                     "sharper supraorbital margins. Male: a sloping forehead and prominent brow ridges.",
     "temporal_bone": "Female mastoid processes are usually smaller; males tend to have larger, more projecting mastoids.",
     "occipital_bone": "Female: a smaller external occipital protuberance and fainter nuchal lines than in males.",
-    "mandible": "Female: a smaller mandible with a pointed chin and less flared gonial angles. "
+    "mandible": "Female: a smaller mandible with a pointed chin and less flared angles of the mandible (gonial angles). "
                 "Male: a squarer chin and more everted angles.",
     "sternum": "Male: the body of the sternum is usually more than twice the length of the manubrium; in females it is often shorter.",
 }
@@ -162,7 +162,7 @@ paired("maxilla", "Maxilla", "Maxilla", "Skull", "irregular",
         "Palatine process (anterior hard palate)", "Frontal and zygomatic processes", "Infraorbital foramen"],
        ["maxilla_{o}", "frontal_bone", "ethmoid_bone", "nasal_bone_{s}", "lacrimal_bone_{s}", "zygomatic_bone_{s}",
         "palatine_bone_{s}", "vomer", "inferior_nasal_concha_{s}"],
-       "Le Fort fractures classify midface fractures by the level at which the maxilla separates.",
+       "Le Fort fractures classify fractures of the middle third of the face by the level at which the maxilla separates.",
        spellings=["upper jaw", "upper jaw bone"], subregion="Facial bones")
 
 paired("palatine_bone", "Palatine bone", "Os palatinum", "Skull", "irregular",
@@ -271,7 +271,7 @@ for n in range(1, 13):
     if n <= 10:
         feat.insert(2, "Costal facets on the transverse processes")
     if n == 1:
-        feat[1] = "Full costal facet for rib 1 and a demifacet for rib 2"
+        feat[1] = "Full costal facet for rib 1 and a costal facet (demifacet) for rib 2"
     if n in (11, 12):
         feat[1] = f"Single full costal facet for rib {n}; no transverse costal facet"
     if n == 12:

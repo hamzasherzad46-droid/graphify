@@ -75,6 +75,10 @@ describe('layered flashcards', () => {
       for (const f of factsOf(c)) {
         expect(f.src.length > 0 || !!f.check, `${c.id}: ${f.t}`).toBe(true)
         for (const s of f.src) {
+          if (s.startsWith('reviewer:')) {
+            expect(s, c.id).toMatch(/^reviewer:\d{4}-\d{2}-\d{2}$/)
+            continue
+          }
           const [section, pid] = s.split('#')
           expect(idsOf(section).has(pid), `${c.id}: ${s}`).toBe(true)
         }

@@ -395,6 +395,11 @@ function Foot({ s }: { s: Structure }) {
         {s.source}
         <span className="review draft">{s.reviewStatus === 'reviewed' ? 'Reviewed' : 'Draft, awaiting academic review'}</span>
       </p>
+      {s.changes?.map((c) => (
+        <p key={c} className="q-source">
+          {c}
+        </p>
+      ))}
       {checks.length > 0 && <p className="q-source lc-check-note">† Awaiting a source check before review.</p>}
       <p className="q-source">Definitions: OpenStax Anatomy and Physiology 2e glossary (CC BY 4.0).</p>
     </div>

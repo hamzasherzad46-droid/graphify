@@ -4,6 +4,9 @@
  "bone": "scaphoid_left",
  "topic": "upper-limb",
  "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5",
+ "changes": [
+  "Wrist joint: worded on review as “the scaphoid and lunate meet the radius; the triquetrum meets the articular disc over the ulna”, as OpenStax 8.2 describes."
+ ],
  "oneLine": {
   "main": {
    "t": "A small boat-shaped wrist bone on the thumb side of the first row of carpal bones (scaphoid).",
@@ -18,9 +21,10 @@
    ]
   },
   "deeper": {
-   "t": "It is one of only three carpal bones that form the wrist joint with the radius.",
+   "t": "The scaphoid and lunate meet the radius at the wrist joint; the triquetrum meets the articular disc over the ulna.",
    "src": [
-    "s8-2#fs-id1882937"
+    "s8-2#fs-id1882937",
+    "reviewer:2026-11-25"
    ]
   }
  },
@@ -54,9 +58,10 @@
    ]
   },
   "deeper": {
-   "t": "Only the scaphoid, lunate and triquetrum take part in the wrist joint.",
+   "t": "With the lunate it meets the radius directly. The triquetrum, beside them, meets the articular disc over the ulna.",
    "src": [
-    "s8-2#fs-id1882937"
+    "s8-2#fs-id1882937",
+    "reviewer:2026-11-25"
    ]
   }
  },
@@ -114,9 +119,10 @@
     ]
    },
    {
-    "t": "With the lunate and triquetrum it forms the wrist (radiocarpal) joint.",
+    "t": "At the wrist (radiocarpal) joint, the scaphoid and lunate meet the radius. The triquetrum meets the articular disc over the ulna.",
     "src": [
-     "s8-2#fs-id1882937"
+     "s8-2#fs-id1882937",
+     "reviewer:2026-11-25"
     ]
    },
    {
@@ -139,9 +145,10 @@
    {
     "kind": "joint",
     "name": "Wrist (radiocarpal) joint",
-    "t": "With the lunate and triquetrum, it meets the radius here.",
+    "t": "The scaphoid and lunate meet the radius here; the triquetrum meets the articular disc over the ulna.",
     "src": [
-     "s8-2#fs-id1882937"
+     "s8-2#fs-id1882937",
+     "reviewer:2026-11-25"
     ]
    },
    {
@@ -294,9 +301,10 @@
     "Neither"
    ],
    "answer": 0,
-   "why": "The scaphoid and lunate meet the radius; the end of the ulna does not touch the carpal bones.",
+   "why": "The scaphoid and lunate meet the radius at the wrist joint; the triquetrum meets the articular disc over the ulna.",
    "src": [
-    "s8-2#fs-id1882937"
+    "s8-2#fs-id1882937",
+    "reviewer:2026-11-25"
    ]
   },
   {

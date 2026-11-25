@@ -1,0 +1,604 @@
+# Atlas: † statements for sign-off
+
+25 November 2026. 55 statements are marked † in the app: not confirmed by the imported OpenStax A&P 2e chapters (6–9, 12–16 and 20) or by review. Each stays marked until it is signed off here.
+
+**Proposed sources.** For each statement: any sentence of *Gray’s Anatomy* (1918) that supports it, quoted in full (a secondary source: it can support a statement but cannot approve one on its own); the Terminologia Anatomica (TA2) entry for each name it uses; and a current textbook in which to confirm it. No page numbers are given: please record the edition and page you use.
+
+**To sign off**, tick one box for each statement and record the source. *Confirmed*: Atlas removes the † and records your source. *Change*: write the correct wording. *Remove*: Atlas deletes the statement.
+
+### 1. Structure lesson: Humerus, layer “Relations”
+
+> Axillary nerve: Winds around the surgical neck.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** axillary nerve (TA2 6440)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 2. Structure lesson: Humerus, layer “Relations”
+
+> Radial nerve: Lies in the radial (spiral) groove on the back of the shaft.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918** (8.2, “The Humerus”; supporting only): “About the middle of this surface is a rough, triangular elevation, the deltoid tuberosity for the insertion of the Deltoideus; below this is the radial sulcus, directed obliquely from behind, forward, and downward, and transmitting the radial nerve and profunda artery.”
+- **Terminologia Anatomica:** radial nerve (TA2 6431)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 3. Structure lesson: Humerus, layer “Relations”
+
+> Ulnar nerve: Passes behind the medial epicondyle.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918** (8.2, “The Humerus”; supporting only): “The medial epicondyle, larger and more prominent than the lateral, is directed a little backward; it gives attachment to the ulnar collateral ligament of the elbow-joint, to the Pronator teres, and to a common tendon of origin of some of the Flexor muscles of the forearm; the ulnar nerve runs in a groove on the back of this epicondyle.”
+- **Terminologia Anatomica:** ulnar nerve (TA2 6449)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 4. Structure lesson: Humerus, layer “Variations”
+
+> A few people have a small hook of bone above the medial epicondyle (supracondylar process). It can press on the median nerve.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** median nerve (TA2 6459)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 5. Structure lesson: Humerus, layer “Clinical reasoning”
+
+> Injury: A fracture of the middle of the shaft. Damaged: The radial nerve in the radial groove. Patient can’t: Lift the wrist and fingers (wrist drop). Why: The radial nerve supplies the muscles on the back of the forearm that extend the wrist and fingers.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918** (8.2, “The Humerus”; supporting only): “About the middle of this surface is a rough, triangular elevation, the deltoid tuberosity for the insertion of the Deltoideus; below this is the radial sulcus, directed obliquely from behind, forward, and downward, and transmitting the radial nerve and profunda artery.”
+- **Terminologia Anatomica:** radial nerve (TA2 6431)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 6. Structure lesson: Humerus, layer “Clinical reasoning”
+
+> Injury: A child falls on an outstretched hand with the elbow straight (the commonest type). The bone breaks just above the epicondyles (supracondylar fracture). Damaged: The artery to the forearm (brachial artery), squeezed by swelling. Patient can’t: Keep the forearm muscles healthy: without blood they can quickly be damaged for good. Why: The brachial artery runs down to the elbow right beside the broken bone.
+
+- **What is missing:** Mechanism: OpenStax 8.2 describes a fall onto the tip of the elbow. The reviewer gives the commonest type, a fall on an outstretched hand with the elbow straight; this needs an approved source.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 7. Structure lesson: Humerus, layer “Tutorial questions”
+
+> Predict the deficit if the radial nerve is damaged in the radial (spiral) groove, and explain why.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918** (8.2, “The Humerus”; supporting only): “About the middle of this surface is a rough, triangular elevation, the deltoid tuberosity for the insertion of the Deltoideus; below this is the radial sulcus, directed obliquely from behind, forward, and downward, and transmitting the radial nerve and profunda artery.”
+- **Terminologia Anatomica:** radial nerve (TA2 6431); triceps brachii muscle (TA2 2471)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 8. Structure lesson: Scapula, layer “Key features”
+
+> Suprascapular notch: A notch in the top border. The suprascapular nerve passes through it.
+
+- **What is missing:** OpenStax gives the notch’s position; the nerve passing through it is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918** (8.1, “The Scapula (Shoulder Blade)”; supporting only): “This notch is converted into a foramen by the superior transverse ligament, and serves for the passage of the suprascapular nerve; sometimes the ligament is ossified.”
+- **Terminologia Anatomica:** suprascapular nerve (TA2 6411); suprascapular notch (TA2 1158)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 9. Structure lesson: Scapula, layer “Relations”
+
+> Long thoracic nerve: Supplies serratus anterior, which holds the scapula against the chest wall.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918** (8.1, “The Scapula (Shoulder Blade)”; supporting only): “These triangular areas and the intervening ridge afford attachment to the Serratus anterior.”
+- **Terminologia Anatomica:** long thoracic nerve (TA2 6410); serratus anterior muscle (TA2 2307)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+- **Note:** The Gray’s sentence supports the muscle’s attachment to the scapula only, not its nerve.
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 10. Structure lesson: Scapula, layer “Variations”
+
+> In some adults part of the acromion never fuses to the rest (os acromiale). It can be mistaken for a fracture.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918** (8.1, “The Scapula (Shoulder Blade)”; supporting only): “Failure of bony union between the acromion and spine sometimes occurs, the junction being effected by fibrous tissue, or by an imperfect articulation; in some cases of supposed fracture of the acromion with ligamentous union, it is probable that the detached segment was never united to the rest of the bone.”
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter); or an imaging text for its appearance on X-ray
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 11. Structure lesson: Scapula, layer “Clinical reasoning”
+
+> Injury: Injury to the long thoracic nerve. Damaged: Serratus anterior. Patient can’t: Push against a wall without the scapula sticking out (“winging”). Why: Serratus anterior holds the scapula flat against the chest wall.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** long thoracic nerve (TA2 6410); serratus anterior muscle (TA2 2307)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 12. Structure lesson: Scaphoid, layer “Key features”
+
+> Waist: The narrow middle part. Most fractures happen here.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** scaphoid bone (TA2 1250)
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 13. Structure lesson: Scaphoid, layer “Relations”
+
+> Radial artery: Its branches enter mainly at the far (distal) end of the scaphoid.
+
+- **What is missing:** OpenStax traces the radial artery to the wrist; where its branches enter the scaphoid is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** radial artery (TA2 4641); scaphoid bone (TA2 1250)
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 14. Structure lesson: Scaphoid, layer “Relations”
+
+> Anatomical snuffbox: It lies in the floor of this hollow at the base of the thumb.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** anatomical snuff box (TA2 301)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 15. Structure lesson: Scaphoid, layer “Development”
+
+> Its ossification centre appears in early childhood, at about five years.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918** (8.2, “The Phalanges of the Hand”; supporting only): “Ossification of the Bones of the Hand.—The carpal bones are each ossified from a single centre, and ossification proceeds in the following order (Fig. 234): in the capitate and hamate, during the first year, the former preceding the latter; in the triangular, during the third year; in the lunate and greater multangular, during the fifth year, the former preceding the latter; in the navicular, during the sixth year; in the lesser multangular, during the eighth year; and in the pisiform, about the twelfth year”
+- **Confirm in:** Standring (ed.), *Gray’s Anatomy: The Anatomical Basis of Clinical Practice*, current edition (development and ossification), or a skeletal-maturation atlas (Greulich and Pyle)
+- **Note:** Gray’s 1918 gives the sixth year for the scaphoid (its “navicular”); Atlas says about five years. Please confirm which is right.
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 16. Structure lesson: Scaphoid, layer “Tutorial questions”
+
+> Predict which part of the scaphoid dies after a fracture across its waist, and explain why.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 17. Structure lesson: Sphenoid bone, layer “Key features”
+
+> Foramen rotundum, foramen ovale and foramen spinosum: Openings in the floor of the middle fossa for nerves to the face and an artery to the brain’s coverings.
+
+- **What is missing:** OpenStax places these in the floor of the middle cranial fossa; that they lie in the sphenoid’s greater wing is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918** (7.2, “The Sphenoid Bone”; supporting only): “It is pierced by the foramen ovale and foramen spinosum, and at its posterior part is the spina angularis, which is frequently grooved on its medial surface for the chorda tympani nerve.”
+- **Terminologia Anatomica:** foramen rotundum (TA2 621); foramen ovale (TA2 622); foramen spinosum (TA2 624)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 18. Structure lesson: Sphenoid bone, layer “Relations”
+
+> Maxillary nerve: Leaves through the foramen rotundum to supply the cheek, nose and upper teeth.
+
+- **What is missing:** OpenStax describes the nerve without naming it; “maxillary nerve” needs an approved source.
+- **Gray’s 1918** (7.2, “The Sphenoid Bone”; supporting only): “At its anterior and medial part is a circular aperture, the foramen rotundum, for the transmission of the maxillary nerve.”
+- **Terminologia Anatomica:** maxillary nerve (TA2 6216); foramen rotundum (TA2 621)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 19. Structure lesson: Sphenoid bone, layer “Relations”
+
+> Middle meningeal artery: Enters through the foramen spinosum to supply the coverings of the brain.
+
+- **What is missing:** OpenStax describes the artery without naming it; “middle meningeal artery” needs an approved source.
+- **Gray’s 1918** (7.2, “The Sphenoid Bone”; supporting only): “Lastly, in the posterior angle, near to and in front of the spine, is a short canal, sometimes double, the foramen spinosum, which transmits the middle meningeal vessels and a recurrent branch from the mandibular nerve.”
+- **Terminologia Anatomica:** middle meningeal artery (TA2 4431); foramen spinosum (TA2 624)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 20. Structure lesson: Sphenoid bone, layer “Variations”
+
+> The size of the sphenoid sinus varies a great deal from person to person.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918** (7.2, “The Sphenoid Bone”; supporting only): “They vary considerably in form and size, are seldom symmetrical, and are often partially subdivided by irregular bony laminae.”
+- **Terminologia Anatomica:** sphenoidal sinus (TA2 3178)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 21. Structure lesson: Mandible, layer “Relations”
+
+> Inferior alveolar nerve: The nerve to the lower teeth: enters the mandibular foramen.
+
+- **What is missing:** OpenStax describes the nerve without naming it; “inferior alveolar nerve” needs an approved source.
+- **Gray’s 1918** (7.2, “The Mandible (Lower Jaw)”; supporting only): “The medial surface (Fig. 177) presents about its centre the oblique mandibular foramen, for the entrance of the inferior alveolar vessels and nerve.”
+- **Terminologia Anatomica:** inferior alveolar nerve (TA2 6274); mandibular foramen (TA2 865)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 22. Structure lesson: Mandible, layer “Development”
+
+> Like other flat bones of the face, most of it forms directly from membrane (intramembranous ossification).
+
+- **What is missing:** OpenStax says the flat bones of the face develop this way; that this includes most of the mandible needs an approved source.
+- **Gray’s 1918** (7.2, “The Mandible (Lower Jaw)”; supporting only): “Ossification.—The mandible is ossified in the fibrous membrane covering the outer surfaces of Meckel’s cartilages.”
+- **Confirm in:** Standring (ed.), *Gray’s Anatomy: The Anatomical Basis of Clinical Practice*, current edition (development and ossification), or a skeletal-maturation atlas (Greulich and Pyle)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 23. Structure lesson: Mandible, layer “Variations”
+
+> In males the angle of the mandible tends to be squarer and more flared.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter), or a forensic anthropology text on sex estimation from the skull
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 24. Flashcard 2.1 (“Name the highlighted bone.”), layer “Clinical”
+
+> Because the sphenoid sinus lies just in front of and below the sella turcica, surgeons can reach a pituitary tumour through the nose and the sphenoid sinus (transsphenoidal surgery), without opening the skull.
+
+- **What is missing:** Transsphenoidal surgery is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20); the sinus position is.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** sphenoidal sinus (TA2 3178); sella turcica (TA2 589)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter), or a neurology or neurosurgery text for the clinical point
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 25. Flashcard 2.1 (“Name the highlighted bone.”), layer “Memory hook”
+
+> “Sphenoid” comes from the Greek for wedge: it is wedged between the other bones of the skull.
+
+- **What is missing:** Etymology (Greek sphēn, wedge) is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** the *Oxford English Dictionary*, entry “sphenoid” (etymology)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 26. Flashcard 2.2 (“Which bone contains the foramen magnum?”), layer “Clinical”
+
+> Raised pressure inside the skull can push the lowest part of the cerebellum (the tonsils) down through the foramen magnum, compressing the brainstem: “coning”, which can stop breathing.
+
+- **What is missing:** Tonsillar herniation is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** foramen magnum (TA2 553)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter), or a neurology or neurosurgery text for the clinical point
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 27. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Why”
+
+> The pterion is where four skull bones meet, and it is the weakest part of the skull. A major branch of the artery that supplies the skull and the coverings of the brain runs on its inner surface, so a blow here can fracture the bone and tear the artery.
+
+- **What is missing:** OpenStax does not name the artery; “middle meningeal” needs an approved source.
+- **Gray’s 1918** (7.2, “The Parietal Bone”; supporting only): “Its inner surface is marked by a deep groove, sometimes a canal, for the anterior divisions of the middle meningeal artery.”
+- **Terminologia Anatomica:** middle meningeal artery (TA2 4431)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 28. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Go deeper”, point 3
+
+> The artery enters the skull through the foramen spinosum.
+
+- **What is missing:** OpenStax describes the artery of the foramen spinosum without naming it.
+- **Gray’s 1918** (7.2, “The Sphenoid Bone”; supporting only): “Lastly, in the posterior angle, near to and in front of the spine, is a short canal, sometimes double, the foramen spinosum, which transmits the middle meningeal vessels and a recurrent branch from the mandibular nerve.”
+- **Terminologia Anatomica:** middle meningeal artery (TA2 4431); foramen spinosum (TA2 624)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 29. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Go deeper”, point 5
+
+> It is a branch of the maxillary artery.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** maxillary artery (TA2 4422); middle meningeal artery (TA2 4431)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 30. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Clinical”
+
+> A torn artery bleeds between the skull and the dura: an extradural haematoma. The patient may seem well at first, but the growing clot presses on the brain and can kill within hours, so it is a surgical emergency.
+
+- **What is missing:** OpenStax says “a haematoma (collection of blood) between the brain and interior of the skull”; the term “extradural” needs an approved source.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** epidural space (TA2 5383, 5381)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter), or a neurology or neurosurgery text for the clinical point
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 31. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Exam trap”
+
+> An extradural haematoma is usually arterial (middle meningeal artery); a subdural haematoma is usually venous (bridging veins).
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter), or a neurology or neurosurgery text for the clinical point
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 32. Flashcard 2.4 (“Name it: a small, flat, sieve-like part of the ethmoid bone in the roof of the nasal cavity, pierced by openings for olfactory nerve branches.”), layer “Clinical”
+
+> A fracture through the cribriform plate can tear the olfactory nerve fibres, causing loss of smell, and can let cerebrospinal fluid leak from the nose.
+
+- **What is missing:** OpenStax confirms that head trauma can shear the olfactory axons and cause loss of smell (anosmia); a fracture of the cribriform plate and a leak of cerebrospinal fluid from the nose are not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** cribriform plate (TA2 722); olfactory nerve (TA2 6181)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (head and neck chapter), or a neurology or neurosurgery text for the clinical point
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 33. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Why”
+
+> The scaphoid links the proximal and distal rows of carpal bones and meets the radius directly, so it takes much of the force of a fall on the outstretched hand. It lies in the floor of the anatomical snuffbox, so tenderness there points to it.
+
+- **What is missing:** “Links the two rows” and “floor of the anatomical snuffbox” are not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** anatomical snuff box (TA2 301)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 34. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Explain simpler”
+
+> The scaphoid is the wrist bone on the thumb side that meets the radius, so a fall onto the hand loads it heavily. It sits under the small hollow at the base of the thumb, so pain there suggests it is broken.
+
+- **What is missing:** The hollow at the base of the thumb (snuffbox) is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** anatomical snuff box (TA2 301)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 35. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 2
+
+> Its blood supply (from branches of the radial artery) enters mainly at the distal end.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** radial artery (TA2 4641)
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 36. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 3
+
+> So a fracture across the waist can cut off the supply to the proximal pole.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 37. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 4
+
+> Risk: avascular necrosis and non-union of the proximal fragment.
+
+- **What is missing:** OpenStax says “bone necrosis”; “non-union” and “proximal fragment” need an approved source.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 38. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Why”
+
+> The ulnar nerve runs in a shallow groove on the back of the medial epicondyle, covered only by skin and fascia. That is why a knock there sends tingling down the little-finger side of the hand.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918** (8.2, “The Humerus”; supporting only): “The medial epicondyle, larger and more prominent than the lateral, is directed a little backward; it gives attachment to the ulnar collateral ligament of the elbow-joint, to the Pronator teres, and to a common tendon of origin of some of the Flexor muscles of the forearm; the ulnar nerve runs in a groove on the back of this epicondyle.”
+- **Terminologia Anatomica:** ulnar nerve (TA2 6449)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 39. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Explain simpler”
+
+> The nerve passes right behind the bony bump on the inner side of the elbow, just under the skin, so hitting it makes the little finger tingle.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** ulnar nerve (TA2 6449)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 40. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 2
+
+> The nerve enters the forearm between the two heads of flexor carpi ulnaris.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** ulnar nerve (TA2 6449); flexor carpi ulnaris muscle (TA2 2483)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 41. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 3
+
+> It supplies most of the small (intrinsic) muscles of the hand.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** ulnar nerve (TA2 6449)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 42. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 4
+
+> It gives sensation to the little finger and the medial half of the ring finger.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** ulnar nerve (TA2 6449)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 43. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Clinical”
+
+> A fracture of the medial epicondyle, or long pressure on the elbow, can injure the ulnar nerve, weakening the small muscles of the hand and numbing the little finger.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** ulnar nerve (TA2 6449)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 44. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Memory hook”
+
+> The “funny bone” is not a bone: it is the ulnar nerve behind the medial epicondyle.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** ulnar nerve (TA2 6449)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 45. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Exam trap”
+
+> Only the ulnar nerve lies behind the medial epicondyle: the median nerve crosses in front of the elbow, and the radial nerve lies on the lateral side.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** ulnar nerve (TA2 6449); median nerve (TA2 6459)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 46. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Why”
+
+> The surgical neck is where the expanded upper end of the humerus narrows into the shaft, and it is a common site of fracture. The axillary nerve wraps around the back of this neck, so a fracture here can stretch or tear it.
+
+- **What is missing:** The course of the axillary nerve is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** axillary nerve (TA2 6440); surgical neck of the humerus (TA2 1183)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 47. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Explain simpler”
+
+> The surgical neck is the narrow part just below the ball of the humerus. A nerve wraps around it, so breaking the bone there can damage the nerve.
+
+- **What is missing:** The course of the axillary nerve is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** axillary nerve (TA2 6440)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 48. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 2
+
+> The posterior circumflex humeral artery runs around the neck with the nerve.
+
+- **What is missing:** OpenStax mentions the humeral circumflex arteries near the head of the humerus; that the posterior one winds around the surgical neck with the axillary nerve is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** “posterior circumflex humeral artery” is listed as posterior humeral circumflex artery (TA2 4631); axillary nerve (TA2 6440)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 49. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 3
+
+> The axillary nerve supplies the deltoid and teres minor.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** axillary nerve (TA2 6440); deltoid muscle (TA2 2452); teres minor muscle (TA2 2459)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 50. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 4
+
+> It supplies the skin over the lower deltoid (the “regimental badge” area).
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** axillary nerve (TA2 6440)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 51. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 5
+
+> Lower down, the radial nerve lies in the radial groove, at risk in shaft fractures.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918** (8.2, “The Humerus”; supporting only): “About the middle of this surface is a rough, triangular elevation, the deltoid tuberosity for the insertion of the Deltoideus; below this is the radial sulcus, directed obliquely from behind, forward, and downward, and transmitting the radial nerve and profunda artery.”
+- **Terminologia Anatomica:** radial nerve (TA2 6431)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 52. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Clinical”
+
+> Damage to the axillary nerve weakens the deltoid, so raising the arm out to the side is weak, with numbness over the lower outer shoulder.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** axillary nerve (TA2 6440); deltoid muscle (TA2 2452)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 53. Flashcard 2.10 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 2
+
+> Carries nine tendons from three muscles, plus the median nerve.
+
+- **What is missing:** OpenStax 8.2 says “tendons of nine muscles” and does not name the nerve. The reviewer gives nine tendons from three muscles, plus the median nerve; this needs an approved source.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** carpal tunnel (TA2 2551); median nerve (TA2 6459)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 54. Flashcard 2.10 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 3
+
+> Flexor digitorum superficialis (four), flexor digitorum profundus (four) and flexor pollicis longus (one).
+
+- **What is missing:** OpenStax 8.2 says “tendons of nine muscles” and does not name the nerve. The reviewer gives nine tendons from three muscles, plus the median nerve; this needs an approved source.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** flexor digitorum superficialis muscle (TA2 2486); flexor digitorum profundus muscle (TA2 2491); flexor pollicis longus muscle (TA2 2492)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 55. Flashcard 2.10 (“What forms the roof of the carpal tunnel?”), layer “Clinical”
+
+> Swelling in the tunnel compresses the median nerve: carpal tunnel syndrome, with pain or numbness and weakness in the parts of the hand it supplies. The bony walls and tough roof cannot stretch, so any swelling squeezes the nerve.
+
+- **What is missing:** OpenStax does not name the nerve; “median” needs an approved source.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Terminologia Anatomica:** carpal tunnel (TA2 2551); median nerve (TA2 6459)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________

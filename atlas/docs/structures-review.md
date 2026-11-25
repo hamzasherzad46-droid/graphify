@@ -10,7 +10,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 | # | Structure | Topic | Statements | † |
 |---|---|---|---|---|
-| 1 | Humerus | Upper limb | 48 | 6 |
+| 1 | Humerus | Upper limb | 48 | 7 |
 | 2 | Scapula | Upper limb | 41 | 4 |
 | 3 | Scaphoid | Upper limb | 34 | 5 |
 | 4 | Sphenoid bone | Skull | 40 | 4 |
@@ -101,15 +101,15 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
    **Patient can’t:** Lift the wrist and fingers (wrist drop).  
    **Why:** The radial nerve supplies the muscles on the back of the forearm that extend the wrist and fingers. † <sub>[† Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).]</sub>
 
-3. **Injury:** A child falls onto the tip of the elbow and breaks the bone just above the epicondyles (supracondylar fracture).  
+3. **Injury:** A child falls on an outstretched hand with the elbow straight (the commonest type). The bone breaks just above the epicondyles (supracondylar fracture).  
    **Damaged:** The artery to the forearm (brachial artery), squeezed by swelling.  
    **Patient can’t:** Keep the forearm muscles healthy: without blood they can quickly be damaged for good.  
-   **Why:** The brachial artery runs down to the elbow right beside the broken bone. <sub>[8.2 ¶fs-id2166864; 20.5 ¶fs-id1595346]</sub>
+   **Why:** The brachial artery runs down to the elbow right beside the broken bone. † <sub>[8.2 ¶fs-id2166864; 20.5 ¶fs-id1595346; reviewer, 2026-11-25; † Mechanism: OpenStax 8.2 describes a fall onto the tip of the elbow. The reviewer gives the commonest type, a fall on an outstretched hand with the elbow straight; this needs an approved source.]</sub>
 
 4. **Injury:** A fall onto the hand or elbow with the arm raised fully out to the side.  
-   **Damaged:** The shoulder joint: the head of the humerus dislocates downwards.  
+   **Damaged:** The shoulder joint: the head of the humerus usually dislocates forwards and downwards (anterior dislocation, over 95% of cases).  
    **Patient can’t:** Move the shoulder.  
-   **Why:** Muscles and ligaments strongly support the head in front, above and behind, so it comes out downwards. <sub>[9.6 ¶fs-id1894060]</sub>
+   **Why:** The underside of the joint has the least support. The head is forced out below it and comes to rest in front. <sub>[9.6 ¶fs-id1894060; reviewer, 2026-11-25]</sub>
 
 ### 9. Tutorial questions
 
@@ -121,12 +121,12 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
    - Triceps is usually spared: its branches leave the nerve above the groove.
    - Numbness over the back of the hand near the thumb.
 
-2. *Explain.* **Explain why most dislocations of the shoulder are downward (inferior).** <sub>[9.6 ¶fs-id1231336; 9.6 ¶fs-id1894060]</sub>
+2. *Explain.* **Explain why the shoulder usually dislocates forwards and downwards (anterior dislocation).** <sub>[9.6 ¶fs-id1231336; 9.6 ¶fs-id1894060; reviewer, 2026-11-25]</sub>
 
    - The glenoid cavity is small and shallow: about a third of the size of the head.
-   - Muscles and ligaments support the head in front, above and behind.
-   - The underside has the least support.
-   - Force on a fully raised arm drives the head out downwards.
+   - The underside of the joint has the least support.
+   - Force on a fully raised arm drives the head out through the weak underside.
+   - It comes to rest forwards and downwards: anterior dislocation, over 95% of cases.
 
 3. *Compare.* **Compare the anatomical neck and the surgical neck of the humerus.** <sub>[8.2 ¶fs-id2110691; 8.2 ¶fs-id2030259]</sub>
 
@@ -282,7 +282,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 *Simpler.* The scaphoid is a small wrist bone at the base of the thumb. <sub>[8.2 ¶fs-id1977414]</sub>
 
-*Deeper.* It is one of only three carpal bones that form the wrist joint with the radius. <sub>[8.2 ¶fs-id1882937]</sub>
+*Deeper.* The scaphoid and lunate meet the radius at the wrist joint; the triquetrum meets the articular disc over the ulna. <sub>[8.2 ¶fs-id1882937; reviewer, 2026-11-25]</sub>
 
 ### 2. Where it is
 
@@ -292,7 +292,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 *Simpler.* It sits in your wrist, just below the end of the forearm, on the thumb side. <sub>[8.2 ¶fs-id1977414; 8.2 ¶fs-id1882937]</sub>
 
-*Deeper.* Only the scaphoid, lunate and triquetrum take part in the wrist joint. <sub>[8.2 ¶fs-id1882937]</sub>
+*Deeper.* With the lunate it meets the radius directly. The triquetrum, beside them, meets the articular disc over the ulna. <sub>[8.2 ¶fs-id1882937; reviewer, 2026-11-25]</sub>
 
 ### 3. Key features
 
@@ -308,14 +308,14 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 ### 4. Form → function
 
 - It sits on the thumb side and meets the radius directly. So a fall on the outstretched hand drives force through it. <sub>[8.2 ¶fs-id1882937; 8.2 ¶fs-id1989621]</sub>
-- With the lunate and triquetrum it forms the wrist (radiocarpal) joint. <sub>[8.2 ¶fs-id1882937]</sub>
+- At the wrist (radiocarpal) joint, the scaphoid and lunate meet the radius. The triquetrum meets the articular disc over the ulna. <sub>[8.2 ¶fs-id1882937; reviewer, 2026-11-25]</sub>
 - With the second row it forms the midcarpal joint. These two joints make all the movements of the wrist. <sub>[8.2 ¶fs-id932152]</sub>
 
 *Simpler.* It helps the wrist bend and passes force from the hand to the forearm. <sub>[8.2 ¶fs-id932152; 8.2 ¶fs-id1989621]</sub>
 
 ### 5. Relations
 
-- *joint* **Wrist (radiocarpal) joint.** With the lunate and triquetrum, it meets the radius here. <sub>[8.2 ¶fs-id1882937]</sub>
+- *joint* **Wrist (radiocarpal) joint.** The scaphoid and lunate meet the radius here; the triquetrum meets the articular disc over the ulna. <sub>[8.2 ¶fs-id1882937; reviewer, 2026-11-25]</sub>
 - *joint* **Midcarpal joint.** The joint between the first and second rows of carpal bones. <sub>[8.2 ¶fs-id932152]</sub>
 - *ligament* **Flexor retinaculum.** Attached on the thumb side to the trapezium and scaphoid. <sub>[8.2 ¶fs-id2329218]</sub>
 - *artery* **Radial artery.** Its branches enter mainly at the far (distal) end of the scaphoid. † <sub>[20.5 ¶fs-id1595346; † OpenStax traces the radial artery to the wrist; where its branches enter the scaphoid is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).]</sub>
@@ -375,7 +375,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 2. Which forearm bone does the scaphoid meet at the wrist joint?  
    **A. Radius** · B. Ulna · C. Both · D. Neither  
-   *The scaphoid and lunate meet the radius; the end of the ulna does not touch the carpal bones.* <sub>[8.2 ¶fs-id1882937]</sub>
+   *The scaphoid and lunate meet the radius at the wrist joint; the triquetrum meets the articular disc over the ulna.* <sub>[8.2 ¶fs-id1882937; reviewer, 2026-11-25]</sub>
 
 3. Why can a scaphoid fracture lead to death of part of the bone?  
    A. It is crushed by the radius · B. It is pulled apart by tendons · C. It is too small to hold a cast · **D. Its blood supply is poor**  
@@ -411,7 +411,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 - **Greater wings.** Form the front of the middle fossa and part of the side of the skull. <sub>[7.2 ¶fs-id1469126]</sub>
 - **Sella turcica.** A saddle-shaped seat in the midline. Its hollow (hypophyseal fossa) holds the pituitary gland. <sub>[7.2 ¶fs-id1469126]</sub>
 - **Optic canal.** Beside the sella turcica. It carries the optic nerve from the eye to the brain. <sub>[glossary: optic canal; 7.2 ¶fs-id2026215]</sub>
-- **Superior orbital fissure.** A slit into the back of the orbit. It carries nerves to the eye muscles and the forehead. <sub>[7.2 ¶fs-id2026215]</sub>
+- **Superior orbital fissure.** A slit between the lesser and greater wings of the sphenoid, into the back of the orbit. It carries nerves to the eye muscles and the forehead. <sub>[7.2 ¶fs-id2026215; reviewer, 2026-11-25]</sub>
 - **Foramen rotundum, foramen ovale and foramen spinosum.** Openings in the floor of the middle fossa for nerves to the face and an artery to the brain’s coverings. † <sub>[7.2 ¶fs-id2026215; † OpenStax places these in the floor of the middle cranial fossa; that they lie in the sphenoid’s greater wing is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).]</sub>
 - **Medial and lateral pterygoid plates.** Thin wing-shaped plates underneath. The lateral plates anchor chewing muscles. <sub>[7.2 ¶fs-id1355530]</sub>
 - **Sphenoid sinus.** An air-filled space in its body: the most posterior paranasal sinus. <sub>[7.2 ¶fs-id1882870]</sub>
@@ -476,11 +476,11 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
    - The outer part of the visual field is lost on both sides.
    - The patient cannot see objects to their left and right.
 
-3. *Compare.* **Compare the optic canal and the superior orbital fissure.** <sub>[7.2 ¶fs-id2026215]</sub>
+3. *Compare.* **Compare the optic canal and the superior orbital fissure.** <sub>[7.2 ¶fs-id2026215; reviewer, 2026-11-25]</sub>
 
    - Optic canal: at the front outer corner of the sella turcica.
    - It carries the optic nerve.
-   - Superior orbital fissure: beside the optic canal, under the lesser wing.
+   - Superior orbital fissure: beside the optic canal, between the lesser and greater wings of the sphenoid.
    - It carries nerves to the eye muscles and sensory nerves to the forehead.
 
 ### Check yourself
@@ -622,7 +622,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## Awaiting a source check (22)
+## Awaiting a source check (23)
 
 Each needs an approved source (OpenStax A&P 2e, or a reviewer) before the lesson can be marked reviewed.
 
@@ -631,6 +631,7 @@ Each needs an approved source (OpenStax A&P 2e, or a reviewer) before the lesson
 - **Humerus: Ulnar nerve.** “Passes behind the medial epicondyle.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Humerus.** “A few people have a small hook of bone above the medial epicondyle (supracondylar process). It can press on the median nerve.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Humerus.** “The radial nerve supplies the muscles on the back of the forearm that extend the wrist and fingers.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- **Humerus.** “The brachial artery runs down to the elbow right beside the broken bone.” — Mechanism: OpenStax 8.2 describes a fall onto the tip of the elbow. The reviewer gives the commonest type, a fall on an outstretched hand with the elbow straight; this needs an approved source.
 - **Humerus.** “Predict the deficit if the radial nerve is damaged in the radial (spiral) groove, and explain why.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Scapula: Suprascapular notch.** “A notch in the top border. The suprascapular nerve passes through it.” — OpenStax gives the notch’s position; the nerve passing through it is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Scapula: Long thoracic nerve.** “Supplies serratus anterior, which holds the scapula against the chest wall.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).

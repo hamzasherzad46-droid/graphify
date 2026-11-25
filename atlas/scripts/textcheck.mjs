@@ -13,7 +13,7 @@ import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { execFileSync } from 'node:child_process'
 import ts from 'typescript'
-import { setKeep, setKnownWords, speller, toBritish } from './lib/british.mjs'
+import { britishText, setKeep, setKnownWords, speller, toBritish } from './lib/british.mjs'
 import { derivedFrom, sourceNames, sourceOf } from './lib/sources.mjs'
 import { firstUses, partsOf, sectionParts } from './lib/abbreviations.mjs'
 import { restrictedHits } from './lib/restricted.mjs'
@@ -204,6 +204,29 @@ for (const t of texts) {
 // (identifiers, comments) is not collected, so every collected text is student-facing except the server's prompts.
 const restricted = restrictedHits(texts, dict.restricted)
 
+/* ── Proper names keep their owners' spelling ────────────────────────────────────────────────────────────────── */
+
+// 1. A listed name (data/dictionary.json "names") must never appear made British ("Department of Defence").
+// 2. Any organisation-style name (Department, Bureau, Centers, Organization, Institute, Program …) written with a
+//    British spelling is listed for a person to check against the owner's own spelling.
+const misspeltNames = []
+for (const name of Object.keys(dict.names ?? {})) {
+  const british = britishText(name).text
+  if (british === name) continue
+  for (const t of texts) if (t.text.includes(british)) misspeltNames.push({ name, found: british, where: t.where })
+}
+const ORG = /\b(?:[A-Z][\w.]*\s+)*(?:Department|Bureau|Centres?|Organisation|Institute|Agency|Association|Society|Council|Foundation|Programme|Administration|Laboratory|Service)\s+(?:of|for)\s+(?:[A-Z][\w’']*\s*(?:and\s+)?)+/g
+// Names that end in the word (“World Health Organisation”, “National Cancer Programme”).
+const ORG_END = /\b(?:[A-Z][\w.]*\s+)+(?:Organisation|Programme|Centres?)\b/g
+const nameWatch = []
+for (const t of texts.filter((x) => ['openstax', 'atlas', 'ui', 'server'].includes(x.source)))
+  for (const m of [...t.text.matchAll(ORG), ...t.text.matchAll(ORG_END)]) {
+    const b = britishText(m[0]).text
+    // Written in a British form that differs from the American one: could be a converted name.
+    const american = m[0].replace(/Defence/g, 'Defense').replace(/Labour/g, 'Labor').replace(/Centres?/g, (c) => c.replace('tre', 'ter')).replace(/Organisation/g, 'Organization').replace(/Programme/g, 'Program')
+    if (american !== m[0] && b === m[0] && !(m[0].trim() in (dict.notNames ?? {}))) nameWatch.push({ text: m[0].trim(), where: t.where })
+  }
+
 /* ── Consistency: one form per name ─────────────────────────────────────────────────────────────────────────── */
 
 const prose = texts.filter((t) => !t.alt)
@@ -346,16 +369,19 @@ const bySource = (map) => {
   return out
 }
 const list = (map, fmt) => [...map].sort((a, b) => b[1].count - a[1].count || a[0].localeCompare(b[0])).map(fmt)
-const fail = unknown.size + american.size + inconsistent.length + abbrMissing.length + restricted.length
+const fail = unknown.size + american.size + inconsistent.length + abbrMissing.length + restricted.length + misspeltNames.length
 const L = [
   '# Atlas text check',
   '',
   `${texts.length.toLocaleString('en-GB')} pieces of text, ${words.toLocaleString('en-GB')} words. Standard: British English (-ise); dictionary: en-GB base + ${dict.terminologia.words.length.toLocaleString('en-GB')} Terminologia Anatomica words + ${Object.keys(dict.approved).length} approved + ${Object.keys(dict.proposed).length} proposed.`,
   '',
-  `**Result: ${fail ? 'FAIL' : 'PASS'}.** Unknown words: ${unknown.size}. American spellings: ${american.size}. Names written two ways or in the wrong case: ${inconsistent.length}. Abbreviations not written out at first use: ${abbrMissing.length}. Restricted words out of place: ${restricted.length}. Grammar rule hits: ${grammar.length}${languageTool ? `; LanguageTool: ${languageTool.length}` : ''}.`,
+  `**Result: ${fail ? 'FAIL' : 'PASS'}.** Unknown words: ${unknown.size}. American spellings: ${american.size}. Names written two ways or in the wrong case: ${inconsistent.length}. Abbreviations not written out at first use: ${abbrMissing.length}. Restricted words out of place: ${restricted.length}. Names not in their owners’ spelling: ${misspeltNames.length}. Grammar rule hits: ${grammar.length}${languageTool ? `; LanguageTool: ${languageTool.length}` : ''}.`,
   '',
 ]
 if (unknown.size) L.push('## Unknown words (fix or approve)', '', `By source: ${JSON.stringify(bySource(unknown))}`, '', '| Word | Count | Where |', '|---|---|---|', ...list(unknown, ([w, e]) => `| ${w} | ${e.count} | ${[...e.where].join('<br>')} |`), '')
+if (misspeltNames.length) L.push('## Names not in their owners’ spelling', '', ...misspeltNames.map((n) => `- “${n.found}” should be “${n.name}”: ${n.where}`), '')
+if (nameWatch.length) L.push('## Organisation names with a British spelling (check against the owner’s spelling)', '', ...nameWatch.map((n) => `- “${n.text}”: ${n.where}`), '')
+else L.push('Organisation names: none written with a British spelling where the owner uses an American one.', '')
 if (restricted.length) L.push('## Restricted words out of place', '', ...restricted.map((r) => `- **${r.word}** at ${r.where}: use ${r.use}, in “…${r.context}…”`), '')
 if (abbrMissing.length) L.push('## Abbreviations not written out at first use', '', ...abbrMissing.map((a) => `- ${a.where}: **${a.token}**${a.full ? ` (${a.full})` : ' (no full form known)'} in “…${a.context}…”`), '')
 if (american.size) L.push('## American spellings', '', '| Word | British | Count | Where |', '|---|---|---|---|', ...list(american, ([w, e]) => `| ${w} | ${e.fix} | ${e.count} | ${[...e.where].join('<br>')} |`), '')
@@ -372,7 +398,7 @@ function wordsToReview() {
   const lines = []
   const sections = [
     ['Words that match no source (awaiting your decision)', dict.proposed],
-    ['Words that appear only in Gray’s 1918 text', dict.historical ?? {}],
+    ['Words that appear only in Gray’s 1918 text (awaiting your decision)', Object.fromEntries(Object.entries(dict.historical ?? {}).filter(([, e]) => !e.reviewed))],
   ]
   let total = 0
   for (const [title, obj] of sections) {
@@ -398,7 +424,7 @@ writeFileSync(
   [
     '# Words to review',
     '',
-    `Every word Atlas shows is checked against the en-GB dictionary, Terminologia Anatomica, the OpenStax A&P 2e glossary, MeSH (in British spelling) and the NHS A–Z, including words formed regularly from those. These ${review.total} match none of them. Each passes the check until you decide: approve it, or apply the suggestion.`,
+    `Every word Atlas shows is checked against the en-GB dictionary, Terminologia Anatomica, the OpenStax A&P 2e glossary, MeSH (in British spelling) and the NHS A–Z, including words formed regularly from those. These ${review.total} match none of them and await a decision. Words approved on review (${Object.values(dict.approved).filter((n) => /^Approved on review/.test(n)).length}, and ${Object.values(dict.historical ?? {}).filter((e) => e.reviewed).length} Gray’s 1918 terms) are no longer listed.`,
     '',
     ...review.lines,
   ].join('\n'),
@@ -431,5 +457,5 @@ L.push('## Grammar: rule checks', '', grammar.length ? '' : 'None.', ...grammar.
 if (languageTool) L.push('## Grammar: LanguageTool (en-GB), Atlas’s own text', '', languageTool.length ? '' : 'None.', ...languageTool.map((m) => `- ${m.rule} (${m.where}): ${m.message} “${m.context}”${m.suggestion ? ` → ${m.suggestion}` : ''}`), '')
 writeFileSync(join(ROOT, 'docs', 'text-report.md'), L.join('\n'))
 console.log(L.slice(0, 5).join('\n'))
-if (process.argv.includes('--json')) writeFileSync(join(ROOT, '.cache', 'textcheck.json'), JSON.stringify({ abbrMissing, restricted, proposedUsed: [...usedProposed].map(([w, e]) => [w, e.count, [...e.where], [...e.sources], e.ctx ?? []]), bySource: [...bySourceWords].map(([w, e]) => [w, e.source, e.count, e.from]), unknown: [...unknown].map(([w, e]) => [w, e.count, [...e.where], [...e.sources]]), american: [...american].map(([w, e]) => [w, e.fix, e.count, [...e.where], [...e.sources]]), inconsistent, grammar, languageTool }, null, 1))
+if (process.argv.includes('--json')) writeFileSync(join(ROOT, '.cache', 'textcheck.json'), JSON.stringify({ abbrMissing, restricted, misspeltNames, nameWatch, proposedUsed: [...usedProposed].map(([w, e]) => [w, e.count, [...e.where], [...e.sources], e.ctx ?? []]), bySource: [...bySourceWords].map(([w, e]) => [w, e.source, e.count, e.from]), unknown: [...unknown].map(([w, e]) => [w, e.count, [...e.where], [...e.sources]]), american: [...american].map(([w, e]) => [w, e.fix, e.count, [...e.where], [...e.sources]]), inconsistent, grammar, languageTool }, null, 1))
 process.exit(fail ? 1 : 0)

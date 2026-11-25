@@ -164,6 +164,7 @@ const wanted = new Map()
 let paras = 0
 for (const [section, slugs] of Object.entries(MAP)) {
   const entries = []
+  link.setMode({ hand: section === 's8-2' })
   for (const slug of slugs) {
     const p = await page(slug)
     for (const [src, name] of p.images) wanted.set(name, src)

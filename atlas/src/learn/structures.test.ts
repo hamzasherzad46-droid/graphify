@@ -100,6 +100,7 @@ describe('structure lessons', () => {
         expect(f.src.length > 0 || !!f.check, `${s.id}: ${f.t}`).toBe(true)
         for (const src of f.src) {
           if (src.startsWith('glossary:')) expect(glossary[src.slice(9)], `${s.id}: ${src}`).toBeTruthy()
+          else if (src.startsWith('reviewer:')) expect(src, s.id).toMatch(/^reviewer:\d{4}-\d{2}-\d{2}$/)
           else {
             const [section, pid] = src.split('#')
             expect(idsOf(section).has(pid), `${s.id}: ${src}`).toBe(true)

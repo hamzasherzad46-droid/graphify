@@ -1,8 +1,10 @@
 # Atlas text check
 
-15,855 pieces of text, 343,683 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 5 approved + 180 proposed.
+15,862 pieces of text, 343,970 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 177 approved + 0 proposed.
 
-**Result: PASS.** Unknown words: 0. American spellings: 0. Names written two ways or in the wrong case: 0. Abbreviations not written out at first use: 0. Restricted words out of place: 0. Grammar rule hits: 8; LanguageTool: 15.
+**Result: PASS.** Unknown words: 0. American spellings: 0. Names written two ways or in the wrong case: 0. Abbreviations not written out at first use: 0. Restricted words out of place: 0. Names not in their owners’ spelling: 0. Grammar rule hits: 8.
+
+Organisation names: none written with a British spelling where the owner uses an American one.
 
 ## Spelling decisions (enforced)
 
@@ -24,102 +26,22 @@
 - **docx**: Internal use only; students see “Word” or “.docx”. Use “Word”, or “.docx” for the file type.
 - **PDFs**: Internal use only; students see “PDF”. Use “PDF” (“PDF files”).
 - **acromiale**: Approved only as part of the full term “os acromiale”. Use “os acromiale”.
+- **pinky**: Kept only as a Spelling Quiz alternative (and in Gray’s text, as published). Use “little finger”.
+- **calcaneum**: Kept only as a Spelling Quiz alternative (and in Gray’s text, as published). Use “calcaneus”.
+- **calcis**: Kept only as a Spelling Quiz alternative (and in Gray’s text, as published). Use “calcaneus” (“os calcis” only as a Spelling Quiz alternative).
 
 ## One form per word (enforced; the left-hand form is never used)
 
-brain-stem → **brainstem** · brain stem → **brainstem** · brain-stems → **brainstems** · brain stems → **brainstems** · vertebro-chondral → **vertebrochondral** · vertebro-sternal → **vertebrosternal** · antero-posterior → **anteroposterior** · postero-lateral → **posterolateral** · postero-inferior → **posteroinferior** · postero-superior → **posterosuperior** · postero-medial → **posteromedial** · antero-lateral → **anterolateral** · antero-medial → **anteromedial** · antero-inferior → **anteroinferior** · antero-superior → **anterosuperior** · orbito-sphenoids → **orbitosphenoids** · orbito-sphenoid → **orbitosphenoid** · carotico-clinoid → **caroticoclinoid** · concavoconvex → **concavo-convex** · onehalf → **one-half** · cupshaped → **cup-shaped** · coneshaped → **cone-shaped** · demi-facets → **demifacets** · demi-facet → **demifacet** · mid-thoracic → **midthoracic** · over-production → **overproduction** · fingerlike → **finger-like** · brain-case → **braincase** · atlantooccipital → **atlanto-occipital** · disk → **disc** · disks → **discs** · homoeostasis → **homeostasis** · math → **maths** · Mom → **Mum** · grayscale → **greyscale** · centermost → **centremost** · zig-zag → **zigzag** · zig-zags → **zigzags** · dietician → **dietitian** · dieticians → **dietitians** · nonsteroidal → **non-steroidal** · nonathlete → **non-athlete** · nonresponsive → **non-responsive** · nonspecifically → **non-specifically** · nonrehearsed → **non-rehearsed** · nonconjugate → **non-conjugate** · ribcage → **rib cage** · seatbelt → **seat belt** · adrenalin → **adrenaline** · afterward → **afterwards** · zig zags → **zigzags**
+brain-stem → **brainstem** · brain stem → **brainstem** · brain-stems → **brainstems** · brain stems → **brainstems** · vertebro-chondral → **vertebrochondral** · vertebro-sternal → **vertebrosternal** · antero-posterior → **anteroposterior** · postero-lateral → **posterolateral** · postero-inferior → **posteroinferior** · postero-superior → **posterosuperior** · postero-medial → **posteromedial** · antero-lateral → **anterolateral** · antero-medial → **anteromedial** · antero-inferior → **anteroinferior** · antero-superior → **anterosuperior** · orbito-sphenoids → **orbitosphenoids** · orbito-sphenoid → **orbitosphenoid** · carotico-clinoid → **caroticoclinoid** · concavoconvex → **concavo-convex** · onehalf → **one-half** · cupshaped → **cup-shaped** · coneshaped → **cone-shaped** · demi-facets → **demifacets** · demi-facet → **demifacet** · mid-thoracic → **midthoracic** · over-production → **overproduction** · fingerlike → **finger-like** · brain-case → **brain case** · atlantooccipital → **atlanto-occipital** · disk → **disc** · disks → **discs** · homoeostasis → **homeostasis** · math → **maths** · Mom → **Mum** · grayscale → **greyscale** · centermost → **centremost** · zig-zag → **zigzag** · zig-zags → **zigzags** · dietician → **dietitian** · dieticians → **dietitians** · nonsteroidal → **non-steroidal** · nonathlete → **non-athlete** · nonresponsive → **non-responsive** · nonspecifically → **non-specifically** · nonrehearsed → **non-rehearsed** · nonconjugate → **non-conjugate** · ribcage → **rib cage** · seatbelt → **seat belt** · adrenalin → **adrenaline** · afterward → **afterwards** · zig zags → **zigzags** · braincase → **brain case**
 
 ## Corrections made to the imported books
 
-- **OpenStax:** “andenosine” → “adenosine”; “diecephalon” → “diencephalon”; “hyperhtermia” → “hyperthermia”; “invertebral” → “intervertebral”; “nintey” → “ninety”; “osteoctyes” → “osteocytes”; “ostegenic” → “osteogenic”; “propanolol” → “propranolol”; “Pouseille” → “Poiseuille”; “symphisis” → “symphysis”; “telecephalon” → “telencephalon”; “tempomandibular” → “temporomandibular”; “Korvinian” → “Korbinian”; “Creutzfeld-Jacob” → “Creutzfeldt–Jakob”; “ACH molecules” → “ACh molecules”; “80 mv” → “80 mV”; “anterio and lateral” → “anterior and lateral”; “intermural” → “intramural”; “Parasymphatho-mimetics” → “Parasympathomimetics”; “intercranial sinuses” → “intracranial sinuses”; “Latin root “effere”” → “Latin root “ferre””; “KHz” → “kHz”; “kidneys , called” → “kidneys, called”; “embryo,the heart” → “embryo, the heart”; “Creutzfeld–Jacob” → “Creutzfeldt–Jakob”
-- **Gray’s:** “andposterior” → “and posterior”; “assits” → “assists”; “clacaneofibular” → “calcaneofibular”; “covex” → “convex”; “Cribiform” → “Cribriform”; “internalcuneiform” → “internal cuneiform”; “machanical” → “mechanical”; “Obsturator” → “Obturator”; “Procéss” → “Process”; “triquetum” → “triquetrum”; “zyogmatic” → “zygomatic”; “Occipita bone” → “Occipital bone”; “tentorum” → “tentorium”; “area facians” → “area facialis”; “atlantoöccipital” → “atlanto-occipital”; “mastoöccipital” → “masto-occipital”; “petroöccipital” → “petro-occipital”; “zygomaticoörbital” → “zygomatico-orbital”; “proötic” → “prootic”; “raphé” → “raphe”; “sternebroe” → “sternebrae”; “fibuloe” → “fibulae”; “costoe” → “costae”; “is the the larger” → “is the larger”
+- **OpenStax:** “andenosine” → “adenosine”; “diecephalon” → “diencephalon”; “hyperhtermia” → “hyperthermia”; “invertebral” → “intervertebral”; “nintey” → “ninety”; “osteoctyes” → “osteocytes”; “ostegenic” → “osteogenic”; “propanolol” → “propranolol”; “Pouseille” → “Poiseuille”; “symphisis” → “symphysis”; “telecephalon” → “telencephalon”; “tempomandibular” → “temporomandibular”; “Korvinian” → “Korbinian”; “Creutzfeld-Jacob” → “Creutzfeldt–Jakob”; “ACH molecules” → “ACh molecules”; “80 mv” → “80 mV”; “anterio and lateral” → “anterior and lateral”; “intermural” → “intramural”; “Parasymphatho-mimetics” → “Parasympathomimetics”; “intercranial sinuses” → “intracranial sinuses”; “Latin root “effere”” → “Latin root “ferre””; “KHz” → “kHz”; “kidneys , called” → “kidneys, called”; “embryo,the heart” → “embryo, the heart”; “Creutzfeld–Jacob” → “Creutzfeldt–Jakob”; “braincase” → “brain case”; “engrained” → “ingrained”; “neuroaxis” → “neuraxis”; “reoccurrence” → “recurrence”; “callouts” → “labels”; “callout” → “label”; “foosball” → “table football”; “Foosball” → “Table Football”; “saccharine” → “saccharin”
+- **Gray’s:** “andposterior” → “and posterior”; “assits” → “assists”; “clacaneofibular” → “calcaneofibular”; “covex” → “convex”; “Cribiform” → “Cribriform”; “internalcuneiform” → “internal cuneiform”; “machanical” → “mechanical”; “Obsturator” → “Obturator”; “Procéss” → “Process”; “triquetum” → “triquetrum”; “zyogmatic” → “zygomatic”; “Occipita bone” → “Occipital bone”; “tentorum” → “tentorium”; “area facians” → “area facialis”; “atlantoöccipital” → “atlanto-occipital”; “mastoöccipital” → “masto-occipital”; “petroöccipital” → “petro-occipital”; “zygomaticoörbital” → “zygomatico-orbital”; “proötic” → “prootic”; “raphé” → “raphe”; “sternebroe” → “sternebrae”; “fibuloe” → “fibulae”; “costoe” → “costae”; “is the the larger” → “is the larger”; “chemoprosope” → “chamaeprosope”; “epiphysical” → “epiphysial”
 
-## Words that match no source (awaiting your decision) (180)
+## Words that match no source (awaiting your decision) (0)
 
-**OpenStax text: term or word** (57)
-
-absorber · anaxonic · antecubital · appositional · autoregulatory · backflow · baroreception · blocky · bottommost · braincase · centremost · circumvallate · coelom · comparator · counterblow · dermatome · dermatomes · diarthrodial · diarthrotic · diploe · distensible · disynaptic · equilibrate · fluorapatite · foveal · greenstick · greyscale · infoldings · lamellated · millivolts · myelinating · neuroaxis · neurophysiologist · oncotic · opposable · osteoprogenitor · outpocketings · perfuse · pressor · proteopathy · regionalisation · resistive · resorb · resorbed · resorbing · sensorium · subtest · sucralose · sympathoplegic · trabeculated · transduce · transduces
-
-- **callout**: Figure label; suggest “label”.
-- **callouts**: As callout: “labels”.
-- **engrained**: More usual British form: “ingrained”.
-- **foosball**: American; British: “table football”.
-- **reoccurrence**: More usual: “recurrence”.
-
-**Name: person, product, organisation or place** (48)
-
-Aikman · AMISOM · Anthropic · Anyville · Bartleby · Betts · Chassaignac · DeLong · Evangelista · Febiger · flickr · Gauthier · Häggström · Heilman · Juanico · Kehr · Kervyn · Korbinian · Kriese · Lisfranc · Lluís · Looie · Mikael · Mitsuhashi · Molaison · OpenStax · Penfield · Phineas · Poiseuille · René · Rhett · Schlehlein · Splenda · stevenfruitsmaak · Superborsuk · Suseno · Sutphin · Swanepoel · Terminologia · Theiss · Tuffier · Uthman · Vinent · Vulegenda · Wayans · Wikimedia · Woodson · Yamaguchi
-
-**Atlas-written medical or Latin term** (25)
-
-angulate · coccydynia · cribrum · everted · perilunate · subungual · transsphenoidal · ungual · vertebrochondral · vertebrosternal
-
-- **calcaneum**: Older name for the calcaneus: kept only as a Spelling Quiz alternative.
-- **calcis**: “Os calcis”, older name for the calcaneus: kept only as a Spelling Quiz alternative.
-- **demifacet**: Terminologia Anatomica: “costal facet” (superior or inferior). Suggest “costal facet (demifacet)”.
-- **demifacets**: As demifacet: “costal facets (demifacets)”.
-- **gonial**: Terminologia Anatomica: “angle of the mandible”. Suggest “angle of the mandible (gonial angle)”.
-- **innominatum**: Latin, quoted from Gray’s (“os innominatum”) in the note on its historical terms.
-- **lateralward**: Gray’s 1918 word, quoted in the note on its historical terms.
-- **midface**: Suggest “middle third of the face” where the reader may not know “midface”.
-- **multangular**: Older names (greater and lesser multangular) for the trapezium and trapezoid: kept only as Spelling Quiz alternatives.
-- **peroneus**: Terminologia Anatomica: “fibularis”. Suggest “fibularis (peroneus) longus”.
-- **pinky**: Informal (American). Kept only as a Spelling Quiz alternative and in OpenStax’s mnemonic; Atlas text says “little finger”.
-- **prominens**: Latin, “vertebra prominens” (C7): correct.
-- **proximalis**: Latin, “phalanx proximalis”: correct.
-- **sphēn**: Greek (“wedge”), in the sphenoid’s memory hook.
-- **unciform**: Older name for the hamate: kept only as a Spelling Quiz alternative.
-
-**Abbreviation (written out at first use in lessons)** (22)
-
-- **ANH**: = atrial natriuretic hormone
-- **ASD**: = autism spectrum disorder
-- **ASIS**: = anterior superior iliac spine
-- **CNI**: = cranial nerve I
-- **CNII**: = cranial nerve II
-- **CNIII**: = cranial nerve III
-- **CNIV**: = cranial nerve IV
-- **CNIX**: = cranial nerve IX
-- **CNVI**: = cranial nerve VI
-- **CNVII**: = cranial nerve VII
-- **CNVIII**: = cranial nerve VIII
-- **CNX**: = cranial nerve X
-- **CNXI**: = cranial nerve XI
-- **CNXII**: = cranial nerve XII
-- **DBCLS**: = Database Center for Life Science
-- **FSRS**: = Free Spaced Repetition Scheduler
-- **FST**: = Field Sobriety Test
-- **HuBMAP**: = Human BioMolecular Atlas Program
-- **mmHg**: = millimetres of mercury
-- **SNc**: = substantia nigra pars compacta
-- **SNr**: = substantia nigra pars reticulata
-- **UMN**: = upper motor neuron
-
-**OpenStax etymology note: Latin or Greek word part** (20)
-
-arthroun · articulus · astro · athero · cogito · costo · cyte · dendro · dia · enkephalon · ferre · ine · kephalon · myel · nephr · nephrine · oste · plegic · prosopa · saltare
-
-**Atlas: technical label** (5)
-
-- **distractors**: Question-writing term (wrong options), in the AI prompt.
-- **notesquote**: Field name in the AI prompt.
-- **oe**: Letter pair, in the note on Gray’s spelling (œ written oe).
-- **sba**: Question type name (single best answer).
-- **whynot**: Field name in the AI prompt.
-
-**OpenStax pronunciation guide: syllable** (3)
-
-kah · lah · YAN
-
-## Words that appear only in Gray’s 1918 text (138)
-
-**Gray’s 1918 only: historical or Latin term** (117)
-
-Anconaeus · ankylosed · antero · basi · basialveolar · Basihyal · basinasal · bilobed · brachyfacial · bregmatic · cancellated · cancelli · Caninus · capituli · Ceratohyals · chemoprosope · chondrified · cochleariformis · Columna · concavo · condyloideus · cycloid · dacryon · dolichofacial · endognathion · endolymphaticus · ensheathed · ensiform · epiotic · epiphysical · episternal · ethmovomerine · extremitas · Extremitatis · falciformis · flexuous · fonticuli · foraminosus · frictionless · frontosphenoidal · hyothyroid · ilii · iliosacral · imbricated · infero · infravomerine · ingrowth · lacrimoethmoidal · leptoprosope · ligamentary · ligamentous · margo · masto · mastoparietal · maxillare · medialward · medio · Mesocephalic · mesognathion · metacarpale · metacarpalia · metatarsalia · minoris · multangulars · multangulum · musculospiral · musculotubarii · Nasalia · naso · normae · nuchale · obelion · oculopupillary · ophryon · opisthotic · orbitonasal · orbitosphenoids · oss · papyracea · pelvina · perinaei · Peronaei · Peronaeus · petromastoid · petrosphenoidal · phthisical · prismoid · prootic · Prosthion · pterotic · puboprostatic · pyramis · quadrumana · quinti · reniform · sacrovertebral · semicanalis · Sesamoidea · spiculum · stephanion · sternebrae · sterni · Sternothyroideus · stylohyal · styloideus · subjacent · sublimis · tectoria · Thyrohyals · torcular · transversarium · Trichterbrust · tuberculated · tympanohyal · unossified · vel · volaris
-
-**Gray’s 1918 only: name** (21)
-
-Albrecht · Basle · Derry · Fallopii · Fawcett · Gimbernat · Glaserian · Huguier · Huschke · Kerckring · Ludovici · Macewen · Pacchionian · Poupart · Spalteholz · Stenson · Testut · Thilenius · Vesalii · Vrolik · Whitnall
+## Words that appear only in Gray’s 1918 text (awaiting your decision) (0)
 
 ## Grammar: rule checks
 
@@ -132,22 +54,3 @@ Albrecht · Basle · Derry · Fallopii · Fawcett · Gimbernat · Glaserian · H
 - unbalanced brackets (grays, content/classic/s8-4.json.entries[4].blocks[23].inl): “…The lateral surface carries a large triangular facet, concave from above downward, for articulation with the lateral mal…”
 - unbalanced brackets (openstax, content/textbook/s15-1.json.blocks[26].rows[1][1][0]): “…Norepinephrine → α- or β-adrenergic receptors  Acetylcholine → muscarinic receptor (associated with sweat glands and the…”
 - unbalanced brackets (openstax, content/textbook/s6-4.json.blocks[13].inl): “…In a long bone, for example, at about 6 to 8 weeks after conception, some of the mesenchymal cells differentiate into ch…”
-
-## Grammar: LanguageTool (en-GB), Atlas’s own text
-
-
-- ENGLISH_WORD_REPEAT_BEGINNING_RULE (content/bones/hamate_right.json.features[1]): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...ccur in golf, racquet and baseball players.  Hook (hamulus) projecting palmarly  Hook forms th...”
-- ENGLISH_WORD_REPEAT_BEGINNING_RULE (content/cards/skull.json.cards[0].simpler.t): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “... with almost every other bone of the skull.  It sits in the middle of the floor of the skull...” → Furthermore, it
-- FILL_OF_WITH (content/questions/skull.json.questions[9].why): The usual preposition to use after "fills" is "with", not "the". Did you mean "fills the front with"? “...ow and behind. In life, the septal cartilage fills the front of the septum and extends into the nose.  A dev...” → fills the front with
-- EN_COMPOUNDS_WEIGHT_BEARING (content/questions/spine.json.questions[6].answerText): This word is normally spelled with a hyphen. “...osterior vertebral arch. The body serves for weight bearing. The vertebral arch surrounds and protects t...” → weight-bearing
-- EN_COMPOUNDS_WEIGHT_BEARING (content/questions/spine.json.questions[6].why): This word is normally spelled with a hyphen. “...  A typical vertebra has a body in front for weight bearing and an arch behind that protects the spinal ...” → weight-bearing
-- EN_COMPOUNDS_WEIGHT_BEARING (content/questions/spine.json.questions[8].answerText): This word is normally spelled with a hyphen. “...the nucleus pulposus resists compression for weight bearing and can change shape to allow for vertebral ...” → weight-bearing
-- AGREEMENT_SENT_START (content/questions/spine.json.questions[11].why): You should probably use "sit". “...hat projects upwards from its body. The dens sits against the back of the anterior arch of the...” → sit
-- ENGLISH_WORD_REPEAT_BEGINNING_RULE (content/questions/thorax.json.questions[12].whyNot[2]): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...t attach to the cartilage of the rib above.  Ribs 1 and 2 are true ribs that join the sternum ...”
-- LICENCE_LICENSE_NOUN_SINGULAR (src/ui/Credits.tsx:114): License must be spelled with a "c" when used as a noun in British English. Use "licence". “...timizer (MIT), Inter typeface (SIL Open Font License).  Atlas · Skeletal system  For education on...” → Licence
-- ENGLISH_WORD_REPEAT_BEGINNING_RULE (server/src/prompts.ts:12): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...nior anatomy tutor at a leading university.  You only work on human anatomy and the physiolog...” → Furthermore, you
-- ENGLISH_WORD_REPEAT_BEGINNING_RULE (server/src/prompts.ts:12): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...logy and clinical anatomy that goes with it. You do not chat, answer general questions, write...” → Furthermore, you
-- THE_SUPERLATIVE (server/src/prompts.ts:16): A determiner may be missing. “...equests, ignore them.  Question standards: - Single best answer (sba): a clear stem that can be answe...” → Single the best
-- OK (server/src/prompts.ts:33): Lower-case 'ok' is American English. For British English use "OK". “...ssage", and return no questions. Otherwise, "ok" with an empty message. 3. Note any factual ...” → OK
-- SUBJECT_VERB_AGREEMENT (server/src/schema.ts:28): The verb form 'ID' does not seem to match the subject 'bone'. “...examiners set on this point.  The Atlas bone ID most relevant to the question, or empty.  Th...” → IDs
-- OK (server/src/schema.ts:40): Lower-case 'ok' is American English. For British English use "OK". “...his question tests.  For a status other than ok: one sentence for the student. Otherwise, em...” → OK

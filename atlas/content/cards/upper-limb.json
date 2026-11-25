@@ -379,11 +379,19 @@
      ]
     },
     {
-     "t": "Carries the tendons of nine anterior forearm muscles and the median nerve into the hand.",
+     "t": "Carries nine tendons from three muscles, plus the median nerve.",
      "src": [
-      "s8-2#fs-id2329218"
+      "s8-2#fs-id2329218",
+      "reviewer:2026-11-25"
      ],
-     "check": "OpenStax says “an important nerve”; naming it the median nerve needs an approved source."
+     "check": "OpenStax 8.2 says “tendons of nine muscles” and does not name the nerve. The reviewer gives nine tendons from three muscles, plus the median nerve; this needs an approved source."
+    },
+    {
+     "t": "Flexor digitorum superficialis (four), flexor digitorum profundus (four) and flexor pollicis longus (one).",
+     "src": [
+      "reviewer:2026-11-25"
+     ],
+     "check": "OpenStax 8.2 says “tendons of nine muscles” and does not name the nerve. The reviewer gives nine tendons from three muscles, plus the median nerve; this needs an approved source."
     },
     {
      "t": "Overuse or injury can make the contents swell inside this fixed space.",
@@ -405,7 +413,7 @@
      "s8-2#fs-id2329218"
     ]
    },
-   "source": "OpenStax A&P 2e, 8.2 Bones of the Upper Limb"
+   "source": "OpenStax A&P 2e, 8.2 Bones of the Upper Limb. On review, Atlas lists the tunnel’s contents as nine tendons from three muscles, plus the median nerve (OpenStax: “tendons of nine muscles”)."
   }
  ]
 }

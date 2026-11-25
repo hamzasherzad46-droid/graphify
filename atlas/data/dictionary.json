@@ -3388,1011 +3388,730 @@
   "pptx": "Approved by reviewer, with a restriction (see restricted).",
   "docx": "Approved by reviewer, with a restriction (see restricted).",
   "PDFs": "Approved by reviewer, with a restriction (see restricted).",
-  "acromiale": "Approved by reviewer, with a restriction (see restricted)."
+  "acromiale": "Approved by reviewer, with a restriction (see restricted).",
+  "absorber": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "Aikman": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "AMISOM": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "anaxonic": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "angulate": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term)",
+  "ANH": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = atrial natriuretic hormone",
+  "antecubital": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "Anthropic": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Anyville": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "appositional": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "arthroun": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "articulus": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "ASD": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = autism spectrum disorder",
+  "ASIS": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = anterior superior iliac spine",
+  "astro": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "athero": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "autoregulatory": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "backflow": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "baroreception": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "Bartleby": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Betts": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "blocky": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "bottommost": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "calcaneum": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): Older name for the calcaneus: kept only as a Spelling Quiz alternative.",
+  "calcis": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): “Os calcis”, older name for the calcaneus: kept only as a Spelling Quiz alternative.",
+  "centremost": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "Chassaignac": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "circumvallate": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "CNI": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = cranial nerve I",
+  "CNII": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = cranial nerve II",
+  "CNIII": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = cranial nerve III",
+  "CNIV": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = cranial nerve IV",
+  "CNIX": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = cranial nerve IX",
+  "CNVI": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = cranial nerve VI",
+  "CNVII": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = cranial nerve VII",
+  "CNVIII": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = cranial nerve VIII",
+  "CNX": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = cranial nerve X",
+  "CNXI": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = cranial nerve XI",
+  "CNXII": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = cranial nerve XII",
+  "coccydynia": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term)",
+  "coelom": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "comparator": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "costo": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "counterblow": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "cribrum": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term)",
+  "cyte": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "DBCLS": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = Database Center for Life Science",
+  "DeLong": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "demifacet": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): Terminologia Anatomica: “costal facet” (superior or inferior). Suggest “costal facet (demifacet)”.",
+  "demifacets": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): As demifacet: “costal facets (demifacets)”.",
+  "dendro": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "dermatome": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "dermatomes": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "dia": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "diarthrodial": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "diarthrotic": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "diploe": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "distensible": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "distractors": "Approved on review, 25 November 2026 (Atlas: technical label): Question-writing term (wrong options), in the AI prompt.",
+  "disynaptic": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "enkephalon": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "equilibrate": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "Evangelista": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "everted": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term)",
+  "Febiger": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "ferre": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "flickr": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "fluorapatite": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "foveal": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "FSRS": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = Free Spaced Repetition Scheduler",
+  "FST": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = Field Sobriety Test",
+  "Gauthier": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "gonial": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): Terminologia Anatomica: “angle of the mandible”. Suggest “angle of the mandible (gonial angle)”.",
+  "greenstick": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "greyscale": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "Heilman": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "HuBMAP": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = Human BioMolecular Atlas Program",
+  "Häggström": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "ine": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "infoldings": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "innominatum": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): Latin, quoted from Gray’s (“os innominatum”) in the note on its historical terms.",
+  "Juanico": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "kah": "Approved on review, 25 November 2026 (OpenStax pronunciation guide: syllable)",
+  "Kehr": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "kephalon": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "Kervyn": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Korbinian": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Kriese": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "lah": "Approved on review, 25 November 2026 (OpenStax pronunciation guide: syllable)",
+  "lamellated": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "lateralward": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): Gray’s 1918 word, quoted in the note on its historical terms.",
+  "Lisfranc": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Lluís": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Looie": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Mikael": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "millivolts": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "Mitsuhashi": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "mmHg": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = millimetres of mercury",
+  "Molaison": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "multangular": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): Older names (greater and lesser multangular) for the trapezium and trapezoid: kept only as Spelling Quiz alternatives.",
+  "myel": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "myelinating": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "nephr": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "nephrine": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "notesquote": "Approved on review, 25 November 2026 (Atlas: technical label): Field name in the AI prompt.",
+  "oe": "Approved on review, 25 November 2026 (Atlas: technical label): Letter pair, in the note on Gray’s spelling (œ written oe).",
+  "oncotic": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "OpenStax": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "opposable": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "oste": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "osteoprogenitor": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "outpocketings": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "Penfield": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "perfuse": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "perilunate": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term)",
+  "peroneus": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): Terminologia Anatomica: “fibularis”. Suggest “fibularis (peroneus) longus”.",
+  "Phineas": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "pinky": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): Informal (American). Kept only as a Spelling Quiz alternative and in OpenStax’s mnemonic; Atlas text says “little finger”.",
+  "plegic": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "Poiseuille": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "pressor": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "prominens": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): Latin, “vertebra prominens” (C7): correct.",
+  "prosopa": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "proteopathy": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "proximalis": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): Latin, “phalanx proximalis”: correct.",
+  "regionalisation": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "René": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "resistive": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "resorb": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "resorbed": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "resorbing": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "Rhett": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "saltare": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)",
+  "sba": "Approved on review, 25 November 2026 (Atlas: technical label): Question type name (single best answer).",
+  "Schlehlein": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "sensorium": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "SNc": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = substantia nigra pars compacta",
+  "SNr": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = substantia nigra pars reticulata",
+  "sphēn": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): Greek (“wedge”), in the sphenoid’s memory hook.",
+  "Splenda": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "stevenfruitsmaak": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "subtest": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "sucralose": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "Superborsuk": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Suseno": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Sutphin": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Swanepoel": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "sympathoplegic": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "Terminologia": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Theiss": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "trabeculated": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "transduce": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "transduces": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "transsphenoidal": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term)",
+  "Tuffier": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "UMN": "Approved on review, 25 November 2026 (Abbreviation (written out at first use in lessons)): = upper motor neuron",
+  "unciform": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term): Older name for the hamate: kept only as a Spelling Quiz alternative.",
+  "ungual": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term)",
+  "Uthman": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "vertebrochondral": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term)",
+  "vertebrosternal": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term)",
+  "Vinent": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Vulegenda": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Wayans": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "whynot": "Approved on review, 25 November 2026 (Atlas: technical label): Field name in the AI prompt.",
+  "Wikimedia": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Woodson": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "Yamaguchi": "Approved on review, 25 November 2026 (Name: person, product, organisation or place)",
+  "YAN": "Approved on review, 25 November 2026 (OpenStax pronunciation guide: syllable)",
+  "neurophysiologist": "Approved on review, 25 November 2026 (OpenStax text: term or word)",
+  "subungual": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term)",
+  "cogito": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)"
  },
- "proposed": {
-  "absorber": {
-   "group": "OpenStax text: term or word"
-  },
-  "Aikman": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "AMISOM": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "anaxonic": {
-   "group": "OpenStax text: term or word"
-  },
-  "angulate": {
-   "group": "Atlas-written medical or Latin term"
-  },
-  "ANH": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= atrial natriuretic hormone"
-  },
-  "antecubital": {
-   "group": "OpenStax text: term or word"
-  },
-  "Anthropic": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Anyville": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "appositional": {
-   "group": "OpenStax text: term or word"
-  },
-  "arthroun": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "articulus": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "ASD": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= autism spectrum disorder"
-  },
-  "ASIS": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= anterior superior iliac spine"
-  },
-  "astro": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "athero": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "autoregulatory": {
-   "group": "OpenStax text: term or word"
-  },
-  "backflow": {
-   "group": "OpenStax text: term or word"
-  },
-  "baroreception": {
-   "group": "OpenStax text: term or word"
-  },
-  "Bartleby": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Betts": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "blocky": {
-   "group": "OpenStax text: term or word"
-  },
-  "bottommost": {
-   "group": "OpenStax text: term or word"
-  },
-  "braincase": {
-   "group": "OpenStax text: term or word"
-  },
-  "calcaneum": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "Older name for the calcaneus: kept only as a Spelling Quiz alternative."
-  },
-  "calcis": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "“Os calcis”, older name for the calcaneus: kept only as a Spelling Quiz alternative."
-  },
-  "callout": {
-   "group": "OpenStax text: term or word",
-   "suggestion": "Figure label; suggest “label”."
-  },
-  "callouts": {
-   "group": "OpenStax text: term or word",
-   "suggestion": "As callout: “labels”."
-  },
-  "centremost": {
-   "group": "OpenStax text: term or word"
-  },
-  "Chassaignac": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "circumvallate": {
-   "group": "OpenStax text: term or word"
-  },
-  "CNI": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= cranial nerve I"
-  },
-  "CNII": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= cranial nerve II"
-  },
-  "CNIII": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= cranial nerve III"
-  },
-  "CNIV": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= cranial nerve IV"
-  },
-  "CNIX": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= cranial nerve IX"
-  },
-  "CNVI": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= cranial nerve VI"
-  },
-  "CNVII": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= cranial nerve VII"
-  },
-  "CNVIII": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= cranial nerve VIII"
-  },
-  "CNX": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= cranial nerve X"
-  },
-  "CNXI": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= cranial nerve XI"
-  },
-  "CNXII": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= cranial nerve XII"
-  },
-  "coccydynia": {
-   "group": "Atlas-written medical or Latin term"
-  },
-  "coelom": {
-   "group": "OpenStax text: term or word"
-  },
-  "comparator": {
-   "group": "OpenStax text: term or word"
-  },
-  "costo": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "counterblow": {
-   "group": "OpenStax text: term or word"
-  },
-  "cribrum": {
-   "group": "Atlas-written medical or Latin term"
-  },
-  "cyte": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "DBCLS": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= Database Center for Life Science"
-  },
-  "DeLong": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "demifacet": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "Terminologia Anatomica: “costal facet” (superior or inferior). Suggest “costal facet (demifacet)”."
-  },
-  "demifacets": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "As demifacet: “costal facets (demifacets)”."
-  },
-  "dendro": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "dermatome": {
-   "group": "OpenStax text: term or word"
-  },
-  "dermatomes": {
-   "group": "OpenStax text: term or word"
-  },
-  "dia": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "diarthrodial": {
-   "group": "OpenStax text: term or word"
-  },
-  "diarthrotic": {
-   "group": "OpenStax text: term or word"
-  },
-  "diploe": {
-   "group": "OpenStax text: term or word"
-  },
-  "distensible": {
-   "group": "OpenStax text: term or word"
-  },
-  "distractors": {
-   "group": "Atlas: technical label",
-   "suggestion": "Question-writing term (wrong options), in the AI prompt."
-  },
-  "disynaptic": {
-   "group": "OpenStax text: term or word"
-  },
-  "engrained": {
-   "group": "OpenStax text: term or word",
-   "suggestion": "More usual British form: “ingrained”."
-  },
-  "enkephalon": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "equilibrate": {
-   "group": "OpenStax text: term or word"
-  },
-  "Evangelista": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "everted": {
-   "group": "Atlas-written medical or Latin term"
-  },
-  "Febiger": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "ferre": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "flickr": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "fluorapatite": {
-   "group": "OpenStax text: term or word"
-  },
-  "foosball": {
-   "group": "OpenStax text: term or word",
-   "suggestion": "American; British: “table football”."
-  },
-  "foveal": {
-   "group": "OpenStax text: term or word"
-  },
-  "FSRS": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= Free Spaced Repetition Scheduler"
-  },
-  "FST": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= Field Sobriety Test"
-  },
-  "Gauthier": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "gonial": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "Terminologia Anatomica: “angle of the mandible”. Suggest “angle of the mandible (gonial angle)”."
-  },
-  "greenstick": {
-   "group": "OpenStax text: term or word"
-  },
-  "greyscale": {
-   "group": "OpenStax text: term or word"
-  },
-  "Heilman": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "HuBMAP": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= Human BioMolecular Atlas Program"
-  },
-  "Häggström": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "ine": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "infoldings": {
-   "group": "OpenStax text: term or word"
-  },
-  "innominatum": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "Latin, quoted from Gray’s (“os innominatum”) in the note on its historical terms."
-  },
-  "Juanico": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "kah": {
-   "group": "OpenStax pronunciation guide: syllable"
-  },
-  "Kehr": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "kephalon": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "Kervyn": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Korbinian": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Kriese": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "lah": {
-   "group": "OpenStax pronunciation guide: syllable"
-  },
-  "lamellated": {
-   "group": "OpenStax text: term or word"
-  },
-  "lateralward": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "Gray’s 1918 word, quoted in the note on its historical terms."
-  },
-  "Lisfranc": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Lluís": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Looie": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "midface": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "Suggest “middle third of the face” where the reader may not know “midface”."
-  },
-  "Mikael": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "millivolts": {
-   "group": "OpenStax text: term or word"
-  },
-  "Mitsuhashi": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "mmHg": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= millimetres of mercury"
-  },
-  "Molaison": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "multangular": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "Older names (greater and lesser multangular) for the trapezium and trapezoid: kept only as Spelling Quiz alternatives."
-  },
-  "myel": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "myelinating": {
-   "group": "OpenStax text: term or word"
-  },
-  "nephr": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "nephrine": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "neuroaxis": {
-   "group": "OpenStax text: term or word"
-  },
-  "notesquote": {
-   "group": "Atlas: technical label",
-   "suggestion": "Field name in the AI prompt."
-  },
-  "oe": {
-   "group": "Atlas: technical label",
-   "suggestion": "Letter pair, in the note on Gray’s spelling (œ written oe)."
-  },
-  "oncotic": {
-   "group": "OpenStax text: term or word"
-  },
-  "OpenStax": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "opposable": {
-   "group": "OpenStax text: term or word"
-  },
-  "oste": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "osteoprogenitor": {
-   "group": "OpenStax text: term or word"
-  },
-  "outpocketings": {
-   "group": "OpenStax text: term or word"
-  },
-  "Penfield": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "perfuse": {
-   "group": "OpenStax text: term or word"
-  },
-  "perilunate": {
-   "group": "Atlas-written medical or Latin term"
-  },
-  "peroneus": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "Terminologia Anatomica: “fibularis”. Suggest “fibularis (peroneus) longus”."
-  },
-  "Phineas": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "pinky": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "Informal (American). Kept only as a Spelling Quiz alternative and in OpenStax’s mnemonic; Atlas text says “little finger”."
-  },
-  "plegic": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "Poiseuille": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "pressor": {
-   "group": "OpenStax text: term or word"
-  },
-  "prominens": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "Latin, “vertebra prominens” (C7): correct."
-  },
-  "prosopa": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "proteopathy": {
-   "group": "OpenStax text: term or word"
-  },
-  "proximalis": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "Latin, “phalanx proximalis”: correct."
-  },
-  "regionalisation": {
-   "group": "OpenStax text: term or word"
-  },
-  "René": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "reoccurrence": {
-   "group": "OpenStax text: term or word",
-   "suggestion": "More usual: “recurrence”."
-  },
-  "resistive": {
-   "group": "OpenStax text: term or word"
-  },
-  "resorb": {
-   "group": "OpenStax text: term or word"
-  },
-  "resorbed": {
-   "group": "OpenStax text: term or word"
-  },
-  "resorbing": {
-   "group": "OpenStax text: term or word"
-  },
-  "Rhett": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "saltare": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "sba": {
-   "group": "Atlas: technical label",
-   "suggestion": "Question type name (single best answer)."
-  },
-  "Schlehlein": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "sensorium": {
-   "group": "OpenStax text: term or word"
-  },
-  "SNc": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= substantia nigra pars compacta"
-  },
-  "SNr": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= substantia nigra pars reticulata"
-  },
-  "sphēn": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "Greek (“wedge”), in the sphenoid’s memory hook."
-  },
-  "Splenda": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "stevenfruitsmaak": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "subtest": {
-   "group": "OpenStax text: term or word"
-  },
-  "sucralose": {
-   "group": "OpenStax text: term or word"
-  },
-  "Superborsuk": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Suseno": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Sutphin": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Swanepoel": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "sympathoplegic": {
-   "group": "OpenStax text: term or word"
-  },
-  "Terminologia": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Theiss": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "trabeculated": {
-   "group": "OpenStax text: term or word"
-  },
-  "transduce": {
-   "group": "OpenStax text: term or word"
-  },
-  "transduces": {
-   "group": "OpenStax text: term or word"
-  },
-  "transsphenoidal": {
-   "group": "Atlas-written medical or Latin term"
-  },
-  "Tuffier": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "UMN": {
-   "group": "Abbreviation (written out at first use in lessons)",
-   "suggestion": "= upper motor neuron"
-  },
-  "unciform": {
-   "group": "Atlas-written medical or Latin term",
-   "suggestion": "Older name for the hamate: kept only as a Spelling Quiz alternative."
-  },
-  "ungual": {
-   "group": "Atlas-written medical or Latin term"
-  },
-  "Uthman": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "vertebrochondral": {
-   "group": "Atlas-written medical or Latin term"
-  },
-  "vertebrosternal": {
-   "group": "Atlas-written medical or Latin term"
-  },
-  "Vinent": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Vulegenda": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Wayans": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "whynot": {
-   "group": "Atlas: technical label",
-   "suggestion": "Field name in the AI prompt."
-  },
-  "Wikimedia": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Woodson": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "Yamaguchi": {
-   "group": "Name: person, product, organisation or place"
-  },
-  "YAN": {
-   "group": "OpenStax pronunciation guide: syllable"
-  },
-  "neurophysiologist": {
-   "group": "OpenStax text: term or word"
-  },
-  "subungual": {
-   "group": "Atlas-written medical or Latin term"
-  },
-  "cogito": {
-   "group": "OpenStax etymology note: Latin or Greek word part"
-  }
- },
+ "proposed": {},
  "historical": {
   "Albrecht": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "Anconaeus": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "ankylosed": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "antero": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "basi": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "basialveolar": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Basihyal": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "basinasal": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Basle": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "bilobed": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "brachyfacial": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "bregmatic": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "cancellated": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "cancelli": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Caninus": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "capituli": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Ceratohyals": {
-   "group": "Gray’s 1918 only: historical or Latin term"
-  },
-  "chemoprosope": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "chondrified": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "cochleariformis": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Columna": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "concavo": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "condyloideus": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "cycloid": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "dacryon": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Derry": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "dolichofacial": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "endognathion": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "endolymphaticus": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "ensheathed": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "ensiform": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "epiotic": {
-   "group": "Gray’s 1918 only: historical or Latin term"
-  },
-  "epiphysical": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "episternal": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "ethmovomerine": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "extremitas": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Extremitatis": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "falciformis": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Fallopii": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "Fawcett": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "flexuous": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "fonticuli": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "foraminosus": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "frictionless": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "frontosphenoidal": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Gimbernat": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "Glaserian": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "Huguier": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "Huschke": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "hyothyroid": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "ilii": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "iliosacral": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "imbricated": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "infero": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "infravomerine": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "ingrowth": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Kerckring": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "lacrimoethmoidal": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "leptoprosope": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "ligamentary": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "ligamentous": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Ludovici": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "Macewen": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "margo": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "masto": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "mastoparietal": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "maxillare": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "medialward": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "medio": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Mesocephalic": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "mesognathion": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "metacarpale": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "metacarpalia": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "metatarsalia": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "minoris": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "multangulars": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "multangulum": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "musculospiral": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "musculotubarii": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Nasalia": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "naso": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "normae": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "nuchale": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "obelion": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "oculopupillary": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "ophryon": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "opisthotic": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "orbitonasal": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "orbitosphenoids": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "oss": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Pacchionian": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "papyracea": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "pelvina": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "perinaei": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Peronaei": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Peronaeus": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "petromastoid": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "petrosphenoidal": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "phthisical": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Poupart": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "prismoid": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "prootic": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Prosthion": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "pterotic": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "puboprostatic": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "pyramis": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "quadrumana": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "quinti": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "reniform": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "sacrovertebral": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "semicanalis": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Sesamoidea": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Spalteholz": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "spiculum": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Stenson": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "stephanion": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "sternebrae": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "sterni": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Sternothyroideus": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "stylohyal": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "styloideus": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "subjacent": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "sublimis": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "tectoria": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Testut": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "Thilenius": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "Thyrohyals": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "torcular": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "transversarium": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Trichterbrust": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "tuberculated": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "tympanohyal": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "unossified": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "vel": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Vesalii": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "volaris": {
-   "group": "Gray’s 1918 only: historical or Latin term"
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "reviewed": "2026-11-25"
   },
   "Vrolik": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
   },
   "Whitnall": {
-   "group": "Gray’s 1918 only: name"
+   "group": "Gray’s 1918 only: name",
+   "reviewed": "2026-11-25"
+  },
+  "chamaeprosope": {
+   "group": "Gray’s 1918 only: historical or Latin term",
+   "suggestion": "Corrected transcription of Gray’s “chamæprosope” (short-faced).",
+   "reviewed": "2026-11-25"
   }
  },
  "forms": {
@@ -4423,7 +4142,7 @@
   "mid-thoracic": "midthoracic",
   "over-production": "overproduction",
   "fingerlike": "finger-like",
-  "brain-case": "braincase",
+  "brain-case": "brain case",
   "atlantooccipital": "atlanto-occipital",
   "disk": "disc",
   "disks": "discs",
@@ -4446,7 +4165,8 @@
   "seatbelt": "seat belt",
   "adrenalin": "adrenaline",
   "afterward": "afterwards",
-  "zig zags": "zigzags"
+  "zig zags": "zigzags",
+  "braincase": "brain case"
  },
  "names": {
   "Database Center for Life Science": "Organisation (BodyParts3D publisher): its own spelling.",
@@ -4470,7 +4190,13 @@
   "Ph.D.": "Degree abbreviation.",
   "ΔP": "Symbol (pressure difference).",
   "Anatomy of the Human Body": "Title of Gray’s Anatomy.",
-  "Human Reference Atlas": "Name of the HuBMAP atlas."
+  "Human Reference Atlas": "Name of the HuBMAP atlas.",
+  "U.S. Department of Defense": "US government department: its own (American) spelling.",
+  "Department of Defense": "US government department: its own (American) spelling.",
+  "Bureau of Labor Statistics": "US government agency: its own (American) spelling.",
+  "Bureau of Labor": "US government agency (Bureau of Labor Statistics): its own spelling.",
+  "Centers for Disease Control and Prevention": "US government agency: its own (American) spelling.",
+  "World Health Organization": "International organisation: its own spelling."
  },
  "keep": {
   "specialty": "British medical usage (NHS specialty training), not general “speciality”.",
@@ -4507,7 +4233,16 @@
    "KHz": "kHz",
    "kidneys , called": "kidneys, called",
    "embryo,the heart": "embryo, the heart",
-   "Creutzfeld–Jacob": "Creutzfeldt–Jakob"
+   "Creutzfeld–Jacob": "Creutzfeldt–Jakob",
+   "braincase": "brain case",
+   "engrained": "ingrained",
+   "neuroaxis": "neuraxis",
+   "reoccurrence": "recurrence",
+   "callouts": "labels",
+   "callout": "label",
+   "foosball": "table football",
+   "Foosball": "Table Football",
+   "saccharine": "saccharin"
   },
   "grays": {
    "andposterior": "and posterior",
@@ -4533,7 +4268,9 @@
    "sternebroe": "sternebrae",
    "fibuloe": "fibulae",
    "costoe": "costae",
-   "is the the larger": "is the larger"
+   "is the the larger": "is the larger",
+   "chemoprosope": "chamaeprosope",
+   "epiphysical": "epiphysial"
   }
  },
  "restricted": {
@@ -4556,6 +4293,36 @@
    "allow": "os acromiale",
    "use": "“os acromiale”",
    "why": "Approved only as part of the full term “os acromiale”."
+  },
+  "pinky": {
+   "allow": null,
+   "onlyIn": [
+    "acceptedSpellings",
+    "grays"
+   ],
+   "use": "“little finger”",
+   "why": "Kept only as a Spelling Quiz alternative (and in Gray’s text, as published)."
+  },
+  "calcaneum": {
+   "allow": null,
+   "onlyIn": [
+    "acceptedSpellings",
+    "grays"
+   ],
+   "use": "“calcaneus”",
+   "why": "Kept only as a Spelling Quiz alternative (and in Gray’s text, as published)."
+  },
+  "calcis": {
+   "allow": null,
+   "onlyIn": [
+    "acceptedSpellings",
+    "grays"
+   ],
+   "use": "“calcaneus” (“os calcis” only as a Spelling Quiz alternative)",
+   "why": "Kept only as a Spelling Quiz alternative (and in Gray’s text, as published)."
   }
+ },
+ "notNames": {
+  "The Cardiovascular Centres": "Heading (OpenStax 20.4): centres in the brainstem, not an organisation; British spelling is right."
  }
 }

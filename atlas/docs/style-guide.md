@@ -32,6 +32,12 @@ every rule marked **(checked)**, before every build and in the tests; `docs/text
 - Terminologia Anatomica English terms; older names only as alternatives (the Spelling Quiz accepts them but always
   shows the official name).
 
+- **Proper names keep their owners’ spelling**, never made British: “U.S. Department of Defense”, “Centers for
+  Disease Control and Prevention”, “World Health Organization”, “Database Center for Life Science”. The importers hold
+  every listed name (`names` in `data/dictionary.json`) out of the spelling conversion. **(checked)**: a listed name
+  in British spelling fails the check, and any other organisation name written with a British spelling is listed
+  for review.
+
 ## Abbreviations
 
 - **Written out in full the first time they appear in each lesson**: “the central nervous system (CNS)”, then “CNS”.

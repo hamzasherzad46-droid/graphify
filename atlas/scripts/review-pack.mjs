@@ -22,7 +22,7 @@ const sectionName = (id) => {
   return s ? (s.num.includes('.') ? `${s.num} ${s.title}` : `chapter ${s.num} introduction`) : id
 }
 /** "s8-2#fs-id2110691" → "OpenStax 8.2 Bones of the Upper Limb, ¶fs-id2110691". */
-const ref = (src) => (src.startsWith('glossary:') ? `OpenStax glossary: “${src.slice(9)}”` : `OpenStax ${sectionName(src.split('#')[0])}, ¶${src.split('#')[1]}`)
+const ref = (src) => (src.startsWith('reviewer:') ? `Atlas academic reviewer, ${new Date(src.slice(9)).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}` : src.startsWith('glossary:') ? `OpenStax glossary: “${src.slice(9)}”` : `OpenStax ${sectionName(src.split('#')[0])}, ¶${src.split('#')[1]}`)
 
 let daggers = 0
 /** A statement: plain with its sources, or (when it awaits a source check) highlighted, with what was and was not found. */
@@ -141,7 +141,7 @@ function where(path) {
 }
 
 const used = new Map(check.proposedUsed.map((x) => [x[0], { count: x[1], ctx: x[4] ?? [] }]))
-const all = [...Object.entries(dict.proposed), ...Object.entries(dict.historical ?? {})]
+const all = [...Object.entries(dict.proposed), ...Object.entries(dict.historical ?? {}).filter(([, e]) => !e.reviewed)]
 const TYPES = ['Medical term', 'Name', 'Abbreviation', 'Possible typo', 'Other (not a medical term: general words, syllables, internal labels)']
 const groups = new Map(TYPES.map((t) => [t, []]))
 for (const [word, info] of all) {

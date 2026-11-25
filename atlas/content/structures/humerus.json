@@ -4,6 +4,10 @@
  "bone": "humerus_left",
  "topic": "upper-limb",
  "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5; 9.6; 20.5",
+ "changes": [
+  "Shoulder dislocation: OpenStax 9.6 says most dislocations of the humerus are downward (inferior). On review, Atlas describes the usual type: forwards and downwards (anterior dislocation, over 95% of cases).",
+  "Supracondylar fracture: OpenStax 8.2 describes a fall onto the tip of the elbow. On review, Atlas gives the commonest type, a fall on an outstretched hand with the elbow straight (†, awaiting a source)."
+ ],
  "oneLine": {
   "main": {
    "t": "The long bone of the upper arm, running from the shoulder to the elbow (humerus).",
@@ -311,22 +315,25 @@
     "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
    },
    {
-    "injury": "A child falls onto the tip of the elbow and breaks the bone just above the epicondyles (supracondylar fracture).",
+    "injury": "A child falls on an outstretched hand with the elbow straight (the commonest type). The bone breaks just above the epicondyles (supracondylar fracture).",
     "damaged": "The artery to the forearm (brachial artery), squeezed by swelling.",
     "cannotDo": "Keep the forearm muscles healthy: without blood they can quickly be damaged for good.",
     "why": "The brachial artery runs down to the elbow right beside the broken bone.",
     "src": [
      "s8-2#fs-id2166864",
-     "s20-5#fs-id1595346"
-    ]
+     "s20-5#fs-id1595346",
+     "reviewer:2026-11-25"
+    ],
+    "check": "Mechanism: OpenStax 8.2 describes a fall onto the tip of the elbow. The reviewer gives the commonest type, a fall on an outstretched hand with the elbow straight; this needs an approved source."
    },
    {
     "injury": "A fall onto the hand or elbow with the arm raised fully out to the side.",
-    "damaged": "The shoulder joint: the head of the humerus dislocates downwards.",
+    "damaged": "The shoulder joint: the head of the humerus usually dislocates forwards and downwards (anterior dislocation, over 95% of cases).",
     "cannotDo": "Move the shoulder.",
-    "why": "Muscles and ligaments strongly support the head in front, above and behind, so it comes out downwards.",
+    "why": "The underside of the joint has the least support. The head is forced out below it and comes to rest in front.",
     "src": [
-     "s9-6#fs-id1894060"
+     "s9-6#fs-id1894060",
+     "reviewer:2026-11-25"
     ]
    }
   ]
@@ -348,16 +355,17 @@
    },
    {
     "kind": "explain",
-    "q": "Explain why most dislocations of the shoulder are downward (inferior).",
+    "q": "Explain why the shoulder usually dislocates forwards and downwards (anterior dislocation).",
     "model": [
      "The glenoid cavity is small and shallow: about a third of the size of the head.",
-     "Muscles and ligaments support the head in front, above and behind.",
-     "The underside has the least support.",
-     "Force on a fully raised arm drives the head out downwards."
+     "The underside of the joint has the least support.",
+     "Force on a fully raised arm drives the head out through the weak underside.",
+     "It comes to rest forwards and downwards: anterior dislocation, over 95% of cases."
     ],
     "src": [
      "s9-6#fs-id1231336",
-     "s9-6#fs-id1894060"
+     "s9-6#fs-id1894060",
+     "reviewer:2026-11-25"
     ]
    },
    {

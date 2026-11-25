@@ -70,6 +70,8 @@ export function linker(landmarks) {
     const key = match.toLowerCase().replace(/[\s-]+/g, ' ')
     if (key === 'axis' && !AXIS_OK(before, after)) return null
     if (key === 'radius' && !RADIUS_OK(para)) return null
+    // Gray's calls the scaphoid of the hand the “navicular”: in the upper-limb chapter it is the scaphoid, not the foot's bone.
+    if ((key === 'navicular' || key === 'navicular bone') && mode.hand) return 'scaphoid_left'
     if (key === 'atlas' || key === 'axis') contexts.push(`${before.slice(-30)}[${match}]${after.slice(0, 30)}`)
     return vocab.get(key) ?? null
   }

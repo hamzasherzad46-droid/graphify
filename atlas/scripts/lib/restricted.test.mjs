@@ -22,4 +22,10 @@ describe('restricted words', () => {
     expect(hits('The acromiale is unfused.', 'atlas')).toEqual(['acromiale'])
     expect(hits('The acromiale is unfused.', 'server')).toEqual(['acromiale'])
   })
+  it('keeps pinky, calcaneum and os calcis to Spelling Quiz alternatives (and Gray’s text)', () => {
+    const at = (text, where, source = 'atlas') => restrictedHits([{ text, where, source }], rules).map((h) => h.word)
+    expect(at('distal phalanx of the pinky', 'content/bones/x.json.acceptedSpellings[6]')).toEqual([])
+    expect(at('the os calcis', 'content/classic/s8-4.json.entries[4]', 'grays')).toEqual([])
+    expect(at('The pinky and the calcaneum.', 'content/bones/x.json.clinical')).toEqual(['pinky', 'calcaneum'])
+  })
 })

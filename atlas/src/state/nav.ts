@@ -12,7 +12,8 @@ export type Page =
   | { kind: 'notes' }
   | { kind: 'noteset'; id: string; anchor?: string }
   | { kind: 'structure'; id: string; anchor?: string }
-  | { kind: 'notesdoc'; id: string }
+  | { kind: 'notesdoc'; id: string; anchor?: string }
+  | { kind: 'notesreview' }
 
 /**
  * Which tab is showing, and the stack of pages opened from Home. The app always opens on Home. Each pushed page is

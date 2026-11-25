@@ -13,7 +13,7 @@ export interface MyCard {
   front: string
   back: string
   /** Where it came from, to show and to jump back to. */
-  from: { annotation: string; doc: string; docLabel: string }
+  from: { annotation?: string; doc: string; docLabel: string }
   createdAt: string
   deletedAt?: string
 }

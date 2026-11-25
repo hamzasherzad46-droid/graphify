@@ -3562,7 +3562,10 @@
   "subungual": "Approved on review, 25 November 2026 (Atlas-written medical or Latin term)",
   "cogito": "Approved on review, 25 November 2026 (OpenStax etymology note: Latin or Greek word part)"
  },
- "proposed": {},
+ "proposed": {
+  "cloze": "Proposed: the standard name for a fill-in-the-blank question (“cloze test”). Used only in the question service’s instructions to the AI; students see “Fill in the blank”.",
+  "answerText": "Proposed: a field name in the question service’s instructions to the AI (the model answer). Never shown to students."
+ },
  "historical": {
   "Albrecht": {
    "group": "Gray’s 1918 only: name",

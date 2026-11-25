@@ -405,20 +405,76 @@ exactly what it says; a second, independent pass checks every question before th
   phone's own camera instead (`<input capture="environment">`).
 - Each page is scaled to at most 2000 px on its longest side and re-encoded as JPEG on the device. That is sharp
   enough for handwriting, quick to send, and strips the photo's metadata (location, camera).
-- Settings: 5, 10 or 15 questions; Foundation, Undergraduate or Medical level; mixed (about one short answer in four)
-  or single best answer only.
-- Before the first set, a sheet says what is sent, to whom (Claude, by Anthropic), what is kept, not to include
-  patient or personal details, and that the questions are AI-written. While the set is written, the screen shows the
-  stages as the server reports them ("Reading your notes", "Examiner checking") and can be cancelled.
-- **A saved set**: the review in a sentence ("2 kept as written and 1 corrected"), **Check these in your notes**
-  (lines the examiners think are wrong, with the correct fact; no questions are set on them), then the questions on
-  the same card as the built-in bank (answer, why, why not, exam tip, See it in 3D, highlights and notes), each with
-  **From your notes**, the words it tests. **What Atlas read from your notes** shows the transcript to compare
-  against the pages. Each question is labelled "AI-written, AI-checked", with a source line saying it was not
-  reviewed by an academic.
-- Sets are saved on the device only (IndexedDB `atlas`, store `noteSets`): the transcript, corrections and
-  questions. Photos are never stored. Deleting a set also removes its answers, highlights and notes. Highlights and
-  notes on these questions appear in My Highlights / My Notes and jump back to the set.
+- Material arrives as before (photos, files, typed notes); photos are still read on the server, everything else on
+  the device.
+- Sets are saved on the device only (IndexedDB `atlas`, store `noteSets`): the parts sent (refs, not the text), the
+  findings, questions and cards. Photos are never stored. Deleting a set also removes its answers, highlights and
+  notes. Each question is labelled "AI-written, AI-checked", with a source line saying it was not reviewed by an
+  academic.
+
+**Writing a set** (content upgrade, step 4: `src/learn/notesExam.ts`, `server/src/generate.ts`, `server/src/prompts.ts`)
+
+- **What to make**: *Quick quiz* (5 or 10 questions), *Mock exam* (20, 30 or 40, timed, answers held until
+  **Finish exam**, then a score of all questions), *Flashcards* (10, 20 or 30, added to My cards for spaced review)
+  and *Weak spots* (5 or 10 new questions on what the student got wrong). Level: Foundation, Undergraduate or
+  Medical. Question types, any mix: single best answer, true or false, fill in the blank, short answer.
+- **Modules**: a set can be filed under a module (course or unit); saved sets are grouped by module.
+- **In the background**: the set opens at once and fills in as each topic is checked ("6 questions ready, checked by
+  a second examiner. Topics: 2 of 5."), with **Stop**. The student can answer while it is written. A set left
+  writing when Atlas closes is marked "stopped" next time, keeping what was written.
+- **Every question cites its part** of the material (`Lecture 3, slide 12`): **From your notes** shows the words it
+  tests, and **Open** jumps to that slide or page, highlighted.
+- **Two examiners per topic** (Claude Opus 5.5, structured outputs): the first writes the questions (or cards) and
+  notes errors in the material and places where two parts disagree; the second checks each draft against anatomical
+  fact and the material it cites, and keeps, fixes or drops it. A saved set shows **Your material disagrees with
+  itself** (both quotes, both places) and **Check these in your notes** (the line, the problem, the correct fact).
+  A finding reported twice (a topic split over two batches) is shown once.
+- **Checked again in code** (`server/src/schema.ts`): a cited part that was really sent; for single best answer, four
+  distinct options with a "why not" for each wrong one; true or false as a statement with options True, False; fill
+  in the blank with exactly one blank and an answer of one to four words; short answers with a model answer and two
+  to six marking points; a bone id that exists. Anything that fails is dropped, never shown.
+
+**Answering and marking** (step 5: `src/ui/lessons/ExamQuestions.tsx`, `src/learn/questions.ts`,
+`server/src/marking.ts`)
+
+- **Fill in the blank**: typed answers are compared after folding case, punctuation, a leading "the/a/an" and British
+  and American spellings; the answer and any accepted alternatives count, and one slip in a word of five letters or
+  more counts as right, with a spelling note.
+- **Short answer**: the student writes an answer and taps **Mark my answer**. The marking service checks it against
+  each marking point in turn: a tick or cross per point, the student's own words that earned it (or what was
+  missing), a score (points hit, never a number the model chooses) and one tip. 60% of the points counts as right.
+  The answer is treated as material to mark, never as instructions. **Show the answer instead** lets the student mark
+  themselves, as before.
+
+**Coverage, gaps, review and reminders** (step 6: `src/learn/notesExam.ts`, `src/learn/notesReview.ts`,
+`src/learn/reminders.ts`)
+
+- **Coverage**: once questions are answered, a table by topic: parts tested out of parts sent, and the share right
+  (below 60% shown in red). **Gaps** lists parts with no questions yet.
+- **Practise my weak spots** writes a new set on the parts behind the missed questions, told which points were
+  missed, so the new questions test the same facts from another angle.
+- **Spaced review (FSRS)**: every answered generated question is scheduled with the same scheduler as the
+  flashcards (right → Good, wrong → Again; once a day at most). **Review** on the Notes to Exam page and the Home
+  tile show how many are due; the review page brings them back unanswered.
+- **Reminders**: an optional daily reminder at a chosen time. In the phone app it is a local notification
+  (`@capacitor/local-notifications`, nothing sent anywhere); in a browser, Atlas can remind only while it is open,
+  and says so.
+
+**Speed** (step 7: `scripts/bench-notes.cjs`)
+
+- The material is cut into chunks by topic (up to 12,000 characters each), with the questions shared out by size.
+  The **first 5 questions** come from a small first chunk written at low effort, so they arrive first; the other
+  chunks are written 3 at a time at medium effort (mock exams at high effort, for the full standard).
+- `node scripts/bench-notes.cjs "Lecture 5.pptx" --mode quick --count 10 --runs 3` drives the built app in a
+  headless browser through a real lecture: opening the files, finding topics, the first 5 questions on screen, the
+  whole set, then a reload with the network off to check the set is still there. It prints a table with the 15 s
+  target for the first 5 questions. Run it against the real server (with the API key) and a build made with
+  `VITE_NOTES_API_URL` (see the top of the script).
+- Measured here with a scripted stand-in for Claude that takes 1.2 s per call (so this is Atlas's own overhead, not
+  Claude's speed): 120-slide PowerPoint, opened in 0.5 s, topics in 1.3 s, first 5 questions in 2.5 s (two calls:
+  writer and checker), 10 questions in 5.3 s, a 40-question mock exam in 5.3 s, offline reload kept every question.
+  The time with the real model depends on Claude's response time for two calls and has not been measured here (no API
+  key in this environment).
 
 **The server** (`server/`, Node 22.18+, no build step): the Claude API key must never be in the app, so the app
 calls a small server that holds it.
@@ -426,27 +482,15 @@ calls a small server that holds it.
 - `POST /api/notes/read` takes up to 6 page images (each with its ref) and returns their transcripts and legibility;
   `POST /api/notes/topics` takes the text of up to 400 parts and returns the topics, covering every part exactly once
   in order (`server/src/reading.ts`; both at medium effort; 120 requests an hour, 3 at a time, `READS_PER_HOUR`).
-- `POST /api/notes-to-exam` takes the notes and settings as JSON and answers with server-sent events (`stage`, then
-  `result` or `error`). Limits: 12 images of up to 5 MB, a 30 MB PDF, 40,000 characters of text. Each device gets one
-  set at a time and 12 an hour (`RATE_PER_HOUR`); failed sets are not counted. CORS is limited to the app's origins
+- `POST /api/notes-to-exam` takes the chosen parts (each with its ref and topic; up to 400 parts and 200,000
+  characters) and the settings, and answers with server-sent events: `progress`, a `batch` as each chunk is checked,
+  `chunkError` for a chunk that failed (the rest carry on), then `done` or `error`. Each device gets one set at a time
+  and 12 an hour (`RATE_PER_HOUR`); failed sets are not counted. CORS is limited to the app's origins
   (`ALLOWED_ORIGINS`).
-- **Two passes**, both with Claude Opus 5.5 at high effort, streamed, with structured outputs (a JSON schema the API
-  enforces):
-  1. *First examiner*: transcribes the notes faithfully (`[illegible]` where it cannot read), decides whether they are
-     readable anatomy notes, lists factual errors as corrections, and writes the questions.
-  2. *Second examiner*: checks each draft against anatomical fact and the question standards, then keeps, fixes or
-     drops it, giving a reason. It also checks the corrections.
-- **One job only**: both system prompts (`server/src/prompts.ts`) confine the model to turning anatomy notes into exam
-  questions. Text in the notes is treated as material, never as instructions. Notes that are not anatomy, or that
-  cannot be read, get a one-sentence explanation and no questions.
-- **The standard asked for**: single best answer questions answerable from the stem, four parallel options from one
-  category with one defensible answer, no "all/none of the above"; short answers with a marking scheme; understanding
-  and application (clinical vignettes at undergraduate and medical level); every question tied to the words of the
-  notes; Terminologia Anatomica terms, correct whatever the notes say; British English.
-- Everything that comes back is checked again in code (`server/src/schema.ts`): exactly four distinct options, the
-  answer in range, a "why not" line for every wrong option and none for the answer, explanations of a sensible
-  length, a model answer for short answers, a bone id that exists in Atlas. Anything that fails is dropped, never
-  shown.
+- `POST /api/notes/mark` marks one short answer (up to 6 points, 3,000 characters), counted with the reading
+  requests.
+- **One job only**: the system prompts (`server/src/prompts.ts`, `server/src/marking.ts`) confine the model to its
+  task. Text in the material, or in a student's answer, is treated as material, never as instructions.
 - The system prompts are cached (`cache_control`), so repeat requests read them from the prompt cache. A refusal,
   an over-long output, rate limits and API errors each give the student a plain message.
 
@@ -465,9 +509,7 @@ questions are switched off ("Not connected in this preview").
 Tests: `server/src/reading.test.ts` (page reading, topics always covering every part, request checks, the endpoints,
 parallel limits), `src/learn/extract.test.ts` and `src/learn/notesDocs.test.ts` (PowerPoint, Word and PDF test files
 in `src/learn/fixtures`, made by `scripts/content/notes_fixtures.py`: slides, levels, tables, speaker notes,
-picture-only slides, sections, references, topics), `server/src/server.test.ts` (validation, request limits, the rate limiter, both passes with a scripted
-stand-in for Claude, the HTTP stream, CORS, 429) and `src/learn/notesExam.test.ts` (conversion into Atlas questions,
-reading the event stream however it is split, error messages).
+picture-only slides, sections, references, topics), `server/src/server.test.ts` (chunk planning, both passes for questions and flashcards with a scripted stand-in for Claude, validation of every question type, marking, request limits, the rate limiter, the HTTP stream, CORS, 429) and `src/learn/notesExam.test.ts` (conversion into Atlas questions with their parts, fill-in and short-answer marking, coverage, gaps, missed points, due reviews, reading the event stream however it is split, error messages).
 
 ## Layered flashcards (flashcards upgrade, step 1: preview)
 

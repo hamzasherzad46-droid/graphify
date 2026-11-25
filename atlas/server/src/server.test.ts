@@ -266,7 +266,7 @@ describe('short-answer marking', () => {
   const req = { stem: 'Name the lateral forearm bone and its wrist joints.', model: 'The radius; it meets the scaphoid and lunate.', points: ['Radius is the lateral forearm bone', 'It meets the scaphoid and lunate at the wrist'], answer: 'The radius, which joins the scaphoid.' }
 
   it('scores from the points hit, in order, with evidence and a tip', async () => {
-    const caller = fake(() => ({ points: [{ hit: true, evidence: 'The radius' }, { hit: false, evidence: 'The lunate is not mentioned.' }], tip: 'Name both carpal bones that meet the radius.' }))
+    const caller = fake(() => ({ points: [{ hit: true, evidence: '“The radius”' }, { hit: false, evidence: 'The lunate is not mentioned.' }], tip: 'Name both carpal bones that meet the radius.' }))
     const m = await markAnswer(parseMarkBody(JSON.stringify(req)), caller)
     expect(m).toEqual({
       score: 1,
@@ -277,6 +277,7 @@ describe('short-answer marking', () => {
       ],
       tip: 'Name both carpal bones that meet the radius.',
     })
+    // Quotation marks round the evidence are the app's to add, so the model's own are taken off.
     expect(caller.calls[0].text).toContain('<answer>')
   })
   it('refuses a mark that does not cover every point, and an empty answer', async () => {

@@ -7,14 +7,20 @@ import { CameraSheet } from './CameraSheet'
 import { useNav } from '../../state/nav'
 import { haptic } from '../../lib/feedback'
 import type { PagePhoto } from '../../lib/image'
-import { LEVEL_LABEL, isDone, useExam, type Level } from '../../learn/questions'
-import { apiReady, LIMITS, NotesError, requestSet, sortedSets, toQuestions, useNoteSets, type NotesSettings, type ServerResult, type Stage } from '../../learn/notesExam'
-import { notesForQuestions, readingState, refsText, shortName, topicsByFile, useNoteDocs, NOT_FOR_QUESTIONS, type NoteDoc } from '../../learn/notesDocs'
+import { LEVEL_LABEL, isCorrect, isDone, useExam, type Level } from '../../learn/questions'
+import { apiReady, dueQuestions, MODE_INFO, NotesError, sortedSets, startSet, TYPE_INFO, useNoteSets, type Mode, type NotesSettings, type QType } from '../../learn/notesExam'
+import { chosenParts, readingState, refsText, shortName, topicsByFile, useNoteDocs, NOT_FOR_QUESTIONS, type NoteDoc } from '../../learn/notesDocs'
+import { useMyCards } from '../../learn/mycards'
+import { useProgress } from '../../state/progress'
+import { Reminders } from './Reminders'
 import { count, docStatus, KIND_LABEL } from './docStatus'
 
 const SETTINGS_KEY = 'atlas.notes.settings'
 const CONSENT_KEY = 'atlas.notes.consent'
-const DEFAULTS: NotesSettings = { count: 10, level: 'undergraduate', mix: 'mixed' }
+const DEFAULTS: NotesSettings = { mode: 'quick', count: 10, level: 'undergraduate', types: ['sba', 'tf'] }
+/** Most material one set can use (characters), matching the server. */
+const MAX_CHARS = 200000
+const MODULE_KEY = 'atlas.notes.module'
 /** Pages a camera session can take. */
 const CAMERA_PAGES = 40
 const ACCEPT =
@@ -22,19 +28,15 @@ const ACCEPT =
 
 function loadSettings(): NotesSettings {
   try {
-    return { ...DEFAULTS, ...(JSON.parse(localStorage.getItem(SETTINGS_KEY) ?? '{}') as Partial<NotesSettings>) }
+    const s = { ...DEFAULTS, ...(JSON.parse(localStorage.getItem(SETTINGS_KEY) ?? '{}') as Partial<NotesSettings>) }
+    // Settings saved by an older version (no mode or types) start from the defaults.
+    return MODE_INFO[s.mode]?.counts.includes(s.count) && Array.isArray(s.types) ? s : DEFAULTS
   } catch {
     return DEFAULTS
   }
 }
 
-type Phase = { kind: 'compose' } | { kind: 'working'; stage: Stage; started: number } | { kind: 'error'; message: string } | { kind: 'not-used'; result: ServerResult }
-
-const STEPS: { stage: Stage; label: string; detail: string }[] = [
-  { stage: 'sending', label: 'Sending your notes', detail: 'Securely, to the Atlas question service.' },
-  { stage: 'reading', label: 'Writing questions', detail: 'Questions on exactly what your material says, each linked to where it comes from.' },
-  { stage: 'checking', label: 'Examiner checking', detail: 'A second examiner checks every answer and explanation, and fixes or removes any that are not sound.' },
-]
+type Phase = { kind: 'compose' } | { kind: 'error'; message: string }
 
 /**
  * Notes to Exam. 1 Add your material: photos, PDFs, PowerPoint (with speaker notes), Word or typed notes. Atlas reads
@@ -53,7 +55,6 @@ export function NotesScreen() {
   const [confirmClear, setConfirmClear] = useState(false)
   const [phase, setPhase] = useState<Phase>({ kind: 'compose' })
   const [fileErrors, setFileErrors] = useState<string[]>([])
-  const abort = useRef<AbortController | null>(null)
   const fileInput = useRef<HTMLInputElement>(null)
   const cameraInput = useRef<HTMLInputElement>(null)
   const sets = useNoteSets((s) => s.sets)
@@ -61,8 +62,11 @@ export function NotesScreen() {
 
   useEffect(() => {
     void useNoteDocs.getState().load()
-    return () => abort.current?.abort()
   }, [])
+  const [module, setModule] = useState(() => localStorage.getItem(MODULE_KEY) ?? '')
+  const modules = [...new Set(Object.values(sets).flatMap((s) => (s.module ? [s.module] : [])))].sort()
+  const cards = useProgress((s) => s.cards)
+  const due = dueQuestions(sets, cards)
 
   const change = (s: Partial<NotesSettings>) => {
     const next = { ...settings, ...s }
@@ -91,54 +95,38 @@ export function NotesScreen() {
   const r = readingState(docs)
   const busyReading = r.opening || r.waiting > 0
   const chosenTopics = topics ?? topicsByFile(docs)
-  const text = notesForQuestions(docs, chosenTopics)
-  const tooLong = text.length > LIMITS.textChars
-  const canSend = ready && !busyReading && text.trim().length > 0 && !tooLong
+  const parts = chosenParts(docs, chosenTopics)
+  const size = parts.reduce((n, p) => n + p.text.length, 0)
+  const tooLong = size > MAX_CHARS
+  const info = MODE_INFO[settings.mode]
+  const canSend = ready && !busyReading && parts.length > 0 && !tooLong && (!info.types || settings.types.length > 0)
+  const setMode = (mode: Mode) => change({ mode, count: MODE_INFO[mode].counts.includes(settings.count) ? settings.count : MODE_INFO[mode].counts[0] })
+  const toggleType = (t: QType) => change({ types: settings.types.includes(t) ? settings.types.filter((x) => x !== t) : [...settings.types, t] })
 
   const send = async () => {
     if (!canSend) return
     if (localStorage.getItem(CONSENT_KEY) !== '1') return setConsent(true)
     haptic('light')
-    const ctrl = new AbortController()
-    abort.current = ctrl
-    setPhase({ kind: 'working', stage: 'sending', started: Date.now() })
+    setPhase({ kind: 'compose' })
     try {
-      const res = await requestSet({ images: [], text }, settings, (stage) => setPhase((ph) => (ph.kind === 'working' ? { ...ph, stage } : ph)), ctrl.signal)
-      if (res.status !== 'ok') return setPhase({ kind: 'not-used', result: res })
-      const id = crypto.randomUUID().slice(0, 8)
-      await useNoteSets.getState().save({
-        id,
-        title: res.title,
-        createdAt: new Date().toISOString(),
+      localStorage.setItem(MODULE_KEY, module)
+    } catch {
+      /* private mode */
+    }
+    try {
+      const id = await startSet({
         settings,
-        from: { pages: 0, pdf: false, typed: false, files: docs.map((d) => shortName(d.name)) },
-        transcript: res.transcript,
-        corrections: res.corrections,
-        questions: toQuestions(id, res.questions),
-        review: res.review,
+        module,
+        parts,
+        files: docs.map((d) => shortName(d.name)),
+        // Flashcards go to My cards, scheduled like every other card; each remembers where it came from.
+        onCards: (cs, set) => cs.map((c) => useMyCards.getState().add({ front: c.front, back: c.back, from: { doc: `nd:${c.refPart ?? ''}`, docLabel: `${set.title}: ${c.ref}` } })),
       })
-      haptic('success')
-      setPhase({ kind: 'compose' })
       useNav.getState().push({ kind: 'noteset', id })
     } catch (e) {
-      if (ctrl.signal.aborted) return setPhase({ kind: 'compose' })
       setPhase({ kind: 'error', message: e instanceof NotesError ? e.message : 'Something went wrong. Please try again.' })
-    } finally {
-      abort.current = null
     }
   }
-
-  if (phase.kind === 'working')
-    return (
-      <Working
-        stage={phase.stage}
-        started={phase.started}
-        onCancel={() => {
-          abort.current?.abort()
-          setPhase({ kind: 'compose' })
-        }}
-      />
-    )
 
   return (
     <div className="tab-page lessons notes">
@@ -157,11 +145,6 @@ export function NotesScreen() {
         {phase.kind === 'error' && (
           <div className="notes-banner bad" role="alert">
             <strong>The questions could not be written.</strong> {phase.message}
-          </div>
-        )}
-        {phase.kind === 'not-used' && (
-          <div className="notes-banner bad" role="alert">
-            <strong>{phase.result.status === 'unreadable' ? 'Atlas could not read these notes.' : 'These do not look like anatomy notes.'}</strong> {phase.result.message}
           </div>
         )}
 
@@ -255,45 +238,65 @@ export function NotesScreen() {
 
         <section className="notes-options" aria-labelledby="notes-step-3">
           <h3 id="notes-step-3" className="notes-step">
-            <span className="st-n">{docs.length ? 3 : 2}</span> Questions
+            <span className="st-n">{docs.length ? 3 : 2}</span> What to make
           </h3>
-          <h4>Number of questions</h4>
-          <Chips
-            label="Number of questions"
-            value={String(settings.count)}
-            options={[
-              ['5', '5'],
-              ['10', '10'],
-              ['15', '15'],
-            ]}
-            onChange={(v) => change({ count: Number(v) as NotesSettings['count'] })}
-          />
-          <h4>Level</h4>
-          <Chips label="Level" value={settings.level} options={Object.entries(LEVEL_LABEL) as [Level, string][]} onChange={(level) => change({ level })} />
-          <h4>Question types</h4>
-          <Chips
-            label="Question types"
-            value={settings.mix}
-            options={[
-              ['mixed', 'Mixed'],
-              ['sba', 'Single best answer only'],
-            ]}
-            onChange={(mix) => change({ mix })}
-          />
-          <p className="muted small options-hint">
-            {settings.mix === 'mixed' ? 'Mostly single best answer, with about one short-answer question in four.' : 'Every question has four options and one best answer.'}
-          </p>
+          <div className="mode-grid" role="radiogroup" aria-label="What to make">
+            {(Object.keys(MODE_INFO) as Mode[]).map((m) => (
+              <button key={m} role="radio" aria-checked={settings.mode === m} className={`mode-card ${settings.mode === m ? 'on' : ''}`} onClick={() => setMode(m)}>
+                <span className="mode-title">{MODE_INFO[m].label}</span>
+                <span className="mode-blurb">{MODE_INFO[m].blurb}</span>
+              </button>
+            ))}
+          </div>
+          {settings.mode === 'weak' && <p className="muted small options-hint">For weak spots, start from a set you have answered: open it and choose “Practise my weak spots”. From here, it covers the topics you choose.</p>}
+          <h4>{settings.mode === 'flashcards' ? 'Number of cards' : 'Number of questions'}</h4>
+          <Chips label="How many" value={String(settings.count)} options={info.counts.map((n) => [String(n), String(n)] as [string, string])} onChange={(v) => change({ count: Number(v) })} />
+          {settings.mode !== 'flashcards' && (
+            <>
+              <h4>Level</h4>
+              <Chips label="Level" value={settings.level} options={Object.entries(LEVEL_LABEL) as [Level, string][]} onChange={(level) => change({ level })} />
+              <h4>Question types</h4>
+              <div className="chip-row type-chips" role="group" aria-label="Question types">
+                {(Object.keys(TYPE_INFO) as QType[]).map((t) => (
+                  <button key={t} className={`chip ${settings.types.includes(t) ? 'on' : ''}`} aria-pressed={settings.types.includes(t)} onClick={() => toggleType(t)}>
+                    {TYPE_INFO[t]}
+                  </button>
+                ))}
+              </div>
+              {!settings.types.length && <p className="field-error">Choose at least one question type.</p>}
+            </>
+          )}
+          <h4>Module</h4>
+          <label className="field module-field">
+            <span className="sr-only">Module</span>
+            <input list="notes-modules" value={module} placeholder="For example, Anatomy 101 (optional)" onChange={(e) => setModule(e.target.value)} maxLength={60} />
+            <datalist id="notes-modules">
+              {modules.map((m) => (
+                <option key={m} value={m} />
+              ))}
+            </datalist>
+          </label>
         </section>
 
         {tooLong && <p className="field-error">The chosen topics are more than one set can use. Choose fewer topics for this set.</p>}
         <button className="btn primary wide notes-send" disabled={!canSend} onClick={send}>
-          {busyReading ? 'Reading your material…' : 'Write my exam questions'}
+          {busyReading ? 'Reading your material…' : settings.mode === 'flashcards' ? 'Write my flashcards' : settings.mode === 'mock' ? 'Write my mock exam' : 'Write my questions'}
         </button>
         <p className="muted small notes-privacy">
           PDF files, slides and Word files are read on this device. Photos and scanned pages, and the text of the topics you choose, are sent to the Atlas question service, which uses Claude (by
           Anthropic). Nothing you send is stored there; your files’ text and your questions are saved on this device only.
         </p>
 
+        {due.length > 0 && (
+          <button className="topic-row due-row" onClick={() => useNav.getState().push({ kind: 'notesreview' })}>
+            <span className="topic-text">
+              <span className="topic-title">Review due: {count(due.length, ['question', 'questions'])}</span>
+              <span className="topic-blurb">Questions from your sets, brought back at the right time to make them stick.</span>
+            </span>
+            <ChevronRightIcon className="topic-go" />
+          </button>
+        )}
+        <Reminders />
         <SavedSets sets={sortedSets(sets)} />
       </div>
 
@@ -491,75 +494,48 @@ function Consent({ onAgree, onCancel }: { onAgree: () => void; onCancel: () => v
   )
 }
 
-/** While the set is written: the three steps, the time so far, and a way to stop. */
-function Working({ stage, started, onCancel }: { stage: Stage; started: number; onCancel: () => void }) {
-  const [secs, setSecs] = useState(0)
-  useEffect(() => {
-    const t = window.setInterval(() => setSecs(Math.max(0, Math.round((Date.now() - started) / 1000))), 1000)
-    return () => window.clearInterval(t)
-  }, [started])
-  const at = STEPS.findIndex((s) => s.stage === stage)
-  return (
-    <div className="tab-page lessons notes">
-      <PageHead title="Notes to Exam" />
-      <div className="page-body">
-        <div className="working" role="status" aria-live="polite">
-          <div className="working-mark" aria-hidden>
-            <span />
-          </div>
-          <h2>Writing your exam questions</h2>
-          <p className="muted">This usually takes one to three minutes. Keep Atlas open.</p>
-          <ol className="working-steps">
-            {STEPS.map((s, k) => (
-              <li key={s.stage} className={k < at ? 'done' : k === at ? 'now' : ''}>
-                <span className="step-dot" aria-hidden />
-                <span className="step-text">
-                  <span className="step-label">
-                    {s.label}
-                    {k < at && <span className="sr-only"> (done)</span>}
-                  </span>
-                  {k === at && <span className="step-detail">{s.detail}</span>}
-                </span>
-              </li>
-            ))}
-          </ol>
-          <p className="working-time muted small">
-            {Math.floor(secs / 60)}:{String(secs % 60).padStart(2, '0')}
-          </p>
-          <button className="btn ghost" onClick={onCancel}>
-            Cancel
-          </button>
-        </div>
-      </div>
-    </div>
-  )
+/** One line on a set: what it is and where the student has got to. */
+function setLine(s: ReturnType<typeof sortedSets>[number], answers: ReturnType<typeof useExam.getState>['answers']): string {
+  const date = new Date(s.createdAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })
+  const mode = s.settings.mode ? MODE_INFO[s.settings.mode].label : 'Questions'
+  if (s.status === 'writing') return `${mode} · being written: ${s.questions.length + (s.cards?.length ?? 0)} so far`
+  if (s.settings.mode === 'flashcards') return `${mode} · ${count(s.cards?.length ?? 0, ['card', 'cards'])} in My cards · ${date}`
+  const done = s.questions.filter((q) => isDone(q, answers[q.id])).length
+  if (s.settings.mode === 'mock' && s.finishedAt) {
+    const right = s.questions.filter((q) => isCorrect(q, answers[q.id])).length
+    return `${mode} · ${date} · Score ${right} of ${s.questions.length} (${Math.round((100 * right) / Math.max(1, s.questions.length))}%)`
+  }
+  return `${mode} · ${count(s.questions.length, ['question', 'questions'])} · ${date} · ${done === s.questions.length && done ? 'All answered' : done ? `${done} answered` : 'Not started'}`
 }
 
+/** Saved sets, grouped by module (sets with no module last). */
 function SavedSets({ sets }: { sets: ReturnType<typeof sortedSets> }) {
   const answers = useExam((s) => s.answers)
   if (!sets.length) return null
+  const groups = [...new Set(sets.map((s) => s.module ?? ''))].sort((a, b) => (a && b ? a.localeCompare(b) : a ? -1 : 1))
   return (
-    <section className="saved-sets" aria-label="Your question sets">
-      <h3>Your question sets</h3>
-      <ul className="topic-list">
-        {sets.map((s) => {
-          const done = s.questions.filter((q) => isDone(q, answers[q.id])).length
-          return (
-            <li key={s.id}>
-              <button className="topic-row" onClick={() => useNav.getState().push({ kind: 'noteset', id: s.id })}>
-                <span className="topic-text">
-                  <span className="topic-title">{s.title}</span>
-                  <span className="topic-blurb">
-                    {s.questions.length} questions · {new Date(s.createdAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })} ·{' '}
-                    {done === s.questions.length ? 'All answered' : done ? `${done} answered` : 'Not started'}
-                  </span>
-                </span>
-                <ChevronRightIcon className="topic-go" />
-              </button>
-            </li>
-          )
-        })}
-      </ul>
+    <section className="saved-sets" aria-label="Your sets">
+      <h3>Your sets</h3>
+      {groups.map((g) => (
+        <div key={g || 'none'} className="module-group">
+          {groups.length > 1 && <h4 className="module-name">{g || 'No module'}</h4>}
+          <ul className="topic-list">
+            {sets
+              .filter((s) => (s.module ?? '') === g)
+              .map((s) => (
+                <li key={s.id}>
+                  <button className="topic-row" onClick={() => useNav.getState().push({ kind: 'noteset', id: s.id })}>
+                    <span className="topic-text">
+                      <span className="topic-title">{s.title}</span>
+                      <span className="topic-blurb">{setLine(s, answers)}</span>
+                    </span>
+                    <ChevronRightIcon className="topic-go" />
+                  </button>
+                </li>
+              ))}
+          </ul>
+        </div>
+      ))}
     </section>
   )
 }

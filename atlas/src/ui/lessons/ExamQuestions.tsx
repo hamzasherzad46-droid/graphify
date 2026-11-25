@@ -1,5 +1,8 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react'
-import { FREQUENCY_LABEL, isCorrect, isDone, LEVEL_LABEL, questionsFor, TYPE_LABEL, useExam, type Frequency, type Level, type Question } from '../../learn/questions'
+import { checkCloze, FREQUENCY_LABEL, isCorrect, isDone, LEVEL_LABEL, questionsFor, TYPE_LABEL, useExam, type Frequency, type Level, type Question } from '../../learn/questions'
+import { apiReady, markShortAnswer, NotesError } from '../../learn/notesExam'
+import { scheduleAnswer } from '../../learn/notesReview'
+import { useNoteDocs } from '../../learn/notesDocs'
 import { useAnnotations } from '../../learn/annotations'
 import { useNav } from '../../state/nav'
 import { useViewer } from '../../state/store'
@@ -100,20 +103,50 @@ function useNearScreen<T extends Element>() {
  * One question: options (or "Show answer"), then the explanation, which can be highlighted and annotated.
  * `label` names the question in My Highlights / My Notes; it defaults to the built-in bank's wording.
  */
-export function QuestionCard({ q, n, topicTitle, label: docLabel }: { q: Question; n: number; topicTitle: string; label?: string }) {
+export function QuestionCard({ q, n, topicTitle, label: docLabel, deferReveal = false }: { q: Question; n: number; topicTitle: string; label?: string; deferReveal?: boolean }) {
   const a = useExam((s) => s.answers[q.id])
   const theme = useResolvedTheme()
   const sex = useViewer((s) => s.sex)
   const [snapRef, near] = useNearScreen<HTMLDivElement>()
+  const [typed, setTyped] = useState('')
+  const [marking, setMarking] = useState<'idle' | 'busy' | { error: string }>('idle')
   const chosen = a?.choice
-  const revealed = q.type === 'short' ? !!a : chosen !== undefined
+  const answered = q.type === 'short' ? !!a : q.type === 'cloze' ? a?.text !== undefined : chosen !== undefined
+  // A mock exam keeps the answers back until it is finished.
+  const revealed = answered && !deferReveal
   const label = docLabel ?? `Exam-style questions: ${topicTitle}, question ${n}`
+  const cloze = q.type === 'cloze' && a?.text !== undefined ? checkCloze(q, a.text) : null
+  // Questions written from notes join spaced review once answered.
+  const schedule = () => scheduleAnswer(q, useExam.getState().answers[q.id])
 
   const choose = (k: number) => {
-    if (revealed) return
-    haptic(k === q.answer ? 'success' : 'medium')
+    if (answered) return
+    haptic(deferReveal ? 'light' : k === q.answer ? 'success' : 'medium')
     useExam.getState().choose(q.id, k)
+    schedule()
   }
+  const submitCloze = () => {
+    if (!typed.trim() || answered) return
+    useExam.getState().write(q.id, typed.trim())
+    const v = checkCloze(q, typed)
+    haptic(deferReveal ? 'light' : v === 'wrong' ? 'medium' : 'success')
+    schedule()
+  }
+  const mark = async () => {
+    if (!typed.trim()) return
+    setMarking('busy')
+    useExam.getState().write(q.id, typed.trim())
+    try {
+      const m = await markShortAnswer(q, typed.trim())
+      useExam.getState().setMark(q.id, m)
+      haptic(m.score === m.max ? 'success' : 'light')
+      schedule()
+      setMarking('idle')
+    } catch (e) {
+      setMarking({ error: e instanceof NotesError ? e.message : 'Your answer could not be marked just now.' })
+    }
+  }
+  const canMark = q.type === 'short' && !!q.points?.length && apiReady()
 
   return (
     <article className={`q-card ${revealed ? 'revealed' : ''}`} aria-label={`Question ${n}`} data-qid={q.id}>
@@ -139,12 +172,12 @@ export function QuestionCard({ q, n, topicTitle, label: docLabel }: { q: Questio
       )}
 
       {q.options && (
-        <div className="q-options" role="group" aria-label="Answers">
+        <div className={`q-options ${q.type === 'tf' ? 'tf' : ''}`} role="group" aria-label="Answers">
           {q.options.map((o, k) => {
-            const state = !revealed ? '' : k === q.answer ? 'right' : k === chosen ? 'wrong' : 'dim'
+            const state = !answered ? '' : !revealed ? (k === chosen ? 'picked' : 'dim') : k === q.answer ? 'right' : k === chosen ? 'wrong' : 'dim'
             return (
-              <button key={k} className={`qc-opt ${state}`} disabled={revealed} onClick={() => choose(k)}>
-                <span className="qc-letter">{LETTERS[k]}</span>
+              <button key={k} className={`qc-opt ${state}`} disabled={answered} onClick={() => choose(k)}>
+                {q.type !== 'tf' && <span className="qc-letter">{LETTERS[k]}</span>}
                 <span>{o}</span>
               </button>
             )
@@ -152,36 +185,77 @@ export function QuestionCard({ q, n, topicTitle, label: docLabel }: { q: Questio
         </div>
       )}
 
-      {q.type === 'short' && !revealed && (
-        <button
-          className="btn ghost wide q-show"
-          onClick={() => {
-            haptic('light')
-            useExam.getState().reveal(q.id)
-          }}
-        >
-          Show answer
-        </button>
+      {q.type === 'cloze' &&
+        (answered ? (
+          <p className={`q-typed ${revealed ? (cloze === 'wrong' ? 'bad' : 'good') : ''}`}>
+            <span className="k">Your answer</span> {a?.text}
+          </p>
+        ) : (
+          <form
+            className="q-write"
+            onSubmit={(e) => {
+              e.preventDefault()
+              submitCloze()
+            }}
+          >
+            <input value={typed} onChange={(e) => setTyped(e.target.value)} placeholder="Type the missing word or words" aria-label="Your answer" autoCapitalize="off" spellCheck={false} />
+            <button className="btn primary small" disabled={!typed.trim()}>
+              Check
+            </button>
+          </form>
+        ))}
+
+      {q.type === 'short' && !answered && (
+        <div className="q-write short">
+          {canMark && (
+            <>
+              <textarea rows={4} value={typed} onChange={(e) => setTyped(e.target.value)} placeholder="Write your answer, as you would in the exam." aria-label="Your answer" />
+              <button className="btn primary small" disabled={!typed.trim() || marking === 'busy'} onClick={() => void mark()}>
+                {marking === 'busy' ? 'Marking…' : 'Mark my answer'}
+              </button>
+              {typeof marking === 'object' && (
+                <p className="field-error" role="alert">
+                  {marking.error}
+                </p>
+              )}
+            </>
+          )}
+          <button
+            className={`btn ghost ${canMark ? 'small' : 'wide'} q-show`}
+            onClick={() => {
+              haptic('light')
+              useExam.getState().reveal(q.id)
+            }}
+          >
+            {canMark ? 'Show the answer instead' : 'Show answer'}
+          </button>
+        </div>
       )}
+      {answered && !revealed && <p className="muted small q-held">Answer saved. You will see the answers when you finish the exam.</p>}
 
       {revealed && (
         <Annotatable doc={`eq:${q.id}`} docLabel={label} className="q-explain">
-          {q.type !== 'short' ? (
+          {q.type === 'cloze' ? (
+            <p className={`q-verdict ${cloze === 'wrong' ? 'bad' : 'good'}`} role="status">
+              {cloze === 'correct' ? '✓ Correct.' : cloze === 'close' ? `✓ Nearly: check the spelling. The answer is “${q.answerText}”.` : `Not quite. The answer is “${q.answerText}”.`}
+            </p>
+          ) : q.type === 'tf' ? (
+            <p className={`q-verdict ${chosen === q.answer ? 'good' : 'bad'}`} role="status">
+              {chosen === q.answer ? `✓ Correct: ${q.options![q.answer!].toLowerCase()}.` : `Not quite: the statement is ${q.options![q.answer!].toLowerCase()}.`}
+            </p>
+          ) : q.type !== 'short' ? (
             <p className={`q-verdict ${chosen === q.answer ? 'good' : 'bad'}`} role="status">
               {chosen === q.answer ? '✓ Correct.' : `Not quite. The answer is ${LETTERS[q.answer!]}: ${q.options![q.answer!]}.`}
             </p>
+          ) : a?.mark ? (
+            <MarkResult q={q} />
           ) : (
             <div className="q-model">
               <h3>Answer</h3>
               <p data-pid={`${q.id}-answer`}>{q.answerText}</p>
             </div>
           )}
-          {q.notesQuote && (
-            <figure className="q-from-notes">
-              <figcaption>From your notes</figcaption>
-              <blockquote>{q.notesQuote}</blockquote>
-            </figure>
-          )}
+          {q.notesQuote && <FromNotes q={q} />}
           <h3>Why this is the answer</h3>
           <p data-pid={`${q.id}-why`}>{q.why}</p>
           {q.whyNot && (
@@ -202,13 +276,25 @@ export function QuestionCard({ q, n, topicTitle, label: docLabel }: { q: Questio
             <h3>Exam tip</h3>
             <p data-pid={`${q.id}-tip`}>{q.tip}</p>
           </div>
-          {q.type === 'short' && (
+          {q.type === 'short' && !a?.mark && (
             <div className="q-self" role="group" aria-label="How did you do?">
               <span className="muted small">How did you do?</span>
-              <button className={`chip ${a?.self === 'knew' ? 'on' : ''}`} onClick={() => useExam.getState().mark(q.id, 'knew')}>
+              <button
+                className={`chip ${a?.self === 'knew' ? 'on' : ''}`}
+                onClick={() => {
+                  useExam.getState().mark(q.id, 'knew')
+                  schedule()
+                }}
+              >
                 I knew it
               </button>
-              <button className={`chip ${a?.self === 'missed' ? 'on' : ''}`} onClick={() => useExam.getState().mark(q.id, 'missed')}>
+              <button
+                className={`chip ${a?.self === 'missed' ? 'on' : ''}`}
+                onClick={() => {
+                  useExam.getState().mark(q.id, 'missed')
+                  schedule()
+                }}
+              >
                 I missed parts
               </button>
             </div>
@@ -233,6 +319,64 @@ export function QuestionCard({ q, n, topicTitle, label: docLabel }: { q: Questio
         </Annotatable>
       )}
     </article>
+  )
+}
+
+/** “From your notes: Lecture 3, slide 12”, with the words tested; tap to open that part of the material. */
+function FromNotes({ q }: { q: Question }) {
+  const docId = q.refPart?.split(':')[0]
+  const exists = useNoteDocs((s) => !!docId && s.docs.some((d) => d.id === docId && d.parts.some((p) => p.id === q.refPart)))
+  return (
+    <figure className="q-from-notes">
+      <figcaption>
+        From your notes{q.ref ? `: ${q.ref}` : ''}
+        {exists && (
+          <button className="link-btn" onClick={() => useNav.getState().push({ kind: 'notesdoc', id: docId!, anchor: q.refPart })}>
+            Open
+          </button>
+        )}
+      </figcaption>
+      <blockquote>{q.notesQuote}</blockquote>
+    </figure>
+  )
+}
+
+/** A marked short answer: the score, each point hit or missed with the evidence, the student’s answer and a tip. */
+function MarkResult({ q }: { q: Question }) {
+  const a = useExam((s) => s.answers[q.id])
+  const m = a?.mark
+  if (!m) return null
+  return (
+    <div className="q-mark">
+      <p className={`q-verdict ${m.score / m.max >= 0.6 ? 'good' : 'bad'}`} role="status">
+        {m.score} out of {m.max} {m.max === 1 ? 'point' : 'points'}
+      </p>
+      <ul className="mark-points">
+        {m.points.map((p, k) => (
+          <li key={k} className={p.hit ? 'hit' : 'miss'}>
+            <span className="mark-sign" aria-label={p.hit ? 'Point earned' : 'Point missed'}>
+              {p.hit ? '✓' : '✗'}
+            </span>
+            <span>
+              <strong>{p.point}</strong>
+              {p.evidence && <span className="mark-evidence"> {p.hit ? `“${p.evidence}”` : p.evidence}</span>}
+            </span>
+          </li>
+        ))}
+      </ul>
+      {m.tip && (
+        <p className="mark-tip">
+          <span className="k">Tip</span> {m.tip}
+        </p>
+      )}
+      <details className="mark-yours">
+        <summary>Your answer and the model answer</summary>
+        <p>{a?.text}</p>
+        <p data-pid={`${q.id}-answer`}>
+          <span className="k">Model answer</span> {q.answerText}
+        </p>
+      </details>
+    </div>
   )
 }
 

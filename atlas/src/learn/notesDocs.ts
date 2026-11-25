@@ -133,6 +133,19 @@ export function notesForQuestions(docs: NoteDoc[], topics: Topic[]): string {
   return out.join('\n\n')
 }
 
+/** The chosen parts, each with its full reference, part id, topic and text: what is sent for questions. */
+export function chosenParts(docs: NoteDoc[], topics: Topic[]): { ref: string; partId: string; topic: string; text: string }[] {
+  const topicOf = new Map(topics.filter((t) => t.chosen).flatMap((t) => t.parts.map((id) => [id, t.title] as const)))
+  const out: { ref: string; partId: string; topic: string; text: string }[] = []
+  for (const d of docs)
+    for (const p of d.parts) {
+      const text = partText(p).trim()
+      const topic = topicOf.get(p.id)
+      if (topic && text) out.push({ ref: fullRef(d, p), partId: p.id, topic, text })
+    }
+  return out
+}
+
 /** Topics as the server returns them (by full reference) → topics of part ids. */
 export function topicsFromServer(docs: NoteDoc[], raw: { title: string; summary: string; refs: string[] }[]): Topic[] {
   const byRef = new Map(docs.flatMap((d) => d.parts.map((p) => [fullRef(d, p), p.id] as const)))

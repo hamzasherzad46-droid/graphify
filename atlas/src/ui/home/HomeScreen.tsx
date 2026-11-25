@@ -12,7 +12,7 @@ import { areaLabel, bestTyping, currentStreak, flashcardsToday, goalToday, greet
 import { setById } from '../../learn/spelling'
 import { sectionInfo, sectionLabel, useReading } from '../../learn/textbook'
 import { Portal } from '../Portal'
-import { useNoteSets } from '../../learn/notesExam'
+import { dueQuestions, useNoteSets } from '../../learn/notesExam'
 import { LAYERED } from '../../learn/layered'
 
 const HeroSkeleton = lazy(() => import('../../viewer/HeroSkeleton'))
@@ -47,6 +47,12 @@ export function HomeScreen() {
   const go = useNav((s) => s.go)
   const open = useSession((s) => s.open)
   const setCount = useNoteSets((s) => Object.keys(s.sets).length)
+  const noteSets = useNoteSets((s) => s.sets)
+  const dueCount = dueQuestions(noteSets, useProgress((s) => s.cards)).length
+  // Review reminders in the browser: a notification at the chosen time, while Atlas is open.
+  useEffect(() => {
+    void import('../../learn/reminders').then((r) => r.startBrowserReminder(() => dueQuestions(useNoteSets.getState().sets, useProgress.getState().cards).length))
+  }, [])
 
   const goal = goalToday()
   const cards = flashcardsToday('all')
@@ -119,7 +125,7 @@ export function HomeScreen() {
           stat={best === null ? 'Not tried yet' : `Best: ${Math.round(best * 100)}%`}
           onClick={() => open('typing')}
         />
-        <Tile icon={<NotesIcon />} title="Notes to Exam" stat={setCount ? `${setCount} ${setCount === 1 ? 'set' : 'sets'} saved` : 'Photograph your notes'} onClick={() => useNav.getState().push({ kind: 'notes' })} />
+        <Tile icon={<NotesIcon />} title="Notes to Exam" stat={dueCount ? `${dueCount} to review today` : setCount ? `${setCount} ${setCount === 1 ? 'set' : 'sets'} saved` : 'Slides, notes and photos'} onClick={() => useNav.getState().push({ kind: 'notes' })} />
       </div>
 
       <button

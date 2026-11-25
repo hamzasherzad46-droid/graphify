@@ -68,11 +68,14 @@ export function parseMarkBody(raw: string): MarkRequest {
 
 const Result = z.object({ points: z.array(z.object({ hit: z.boolean(), evidence: z.string() })), tip: z.string() })
 
+/** The app shows evidence in quotation marks, so marks the model put round it are taken off. */
+const unquote = (s: string) => s.trim().replace(/^["“”‘’']+|["“”‘’']+$/g, '').trim()
+
 export async function markAnswer(req: MarkRequest, caller: Caller): Promise<Mark> {
   const text = `Question: ${req.stem}\n\nModel answer: ${req.model}\n\nMarking points:\n${req.points.map((p, k) => `${k + 1}. ${p}`).join('\n')}\n\nStudent’s answer:\n<answer>\n${req.answer}\n</answer>`
   const r = Result.safeParse(await caller.json(MARK_PROMPT, [{ type: 'text', text }], markJsonSchema, { effort: 'medium' }))
   // One verdict per point, in order; anything else is not a usable mark.
   if (!r.success || r.data.points.length !== req.points.length) throw new PipelineError('bad_output', 'Your answer could not be marked just now. Please try again.')
-  const points = req.points.map((point, k) => ({ point, hit: r.data.points[k].hit, evidence: r.data.points[k].evidence.trim() }))
+  const points = req.points.map((point, k) => ({ point, hit: r.data.points[k].hit, evidence: unquote(r.data.points[k].evidence) }))
   return { score: points.filter((p) => p.hit).length, max: points.length, points, tip: r.data.tip.trim() }
 }

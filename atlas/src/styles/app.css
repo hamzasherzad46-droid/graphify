@@ -6287,3 +6287,405 @@ textarea:focus-visible {
 .term-wrap {
   white-space: nowrap;
 }
+
+/* ---------- Notes to Exam: modes, sets, marking, coverage ---------- */
+
+.mode-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.mode-card {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--raise);
+  text-align: left;
+  color: var(--text);
+}
+
+.mode-card.on {
+  border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+  background: radial-gradient(120% 140% at 100% 0%, var(--accent-soft), transparent 65%), var(--raise);
+}
+
+.mode-title {
+  font-weight: 650;
+  font-size: 14.5px;
+}
+
+.mode-card.on .mode-title {
+  color: var(--accent);
+}
+
+.mode-blurb {
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--text-2);
+}
+
+.type-chips {
+  flex-wrap: wrap;
+}
+
+.module-field input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+
+.due-row {
+  margin-top: 18px;
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+
+.reminders {
+  margin-top: 14px;
+}
+
+.reminders .muted {
+  margin: 4px 0 0;
+}
+
+.reminder-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+}
+
+.reminder-row input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--accent);
+}
+
+.reminder-row input[type='time'] {
+  margin-left: auto;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+
+.module-name {
+  margin: 14px 0 6px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.q-options.tf {
+  grid-template-columns: 1fr 1fr;
+}
+
+.q-options.tf .qc-opt {
+  justify-content: center;
+  font-weight: 600;
+}
+
+.qc-opt.picked {
+  border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+  background: var(--accent-soft);
+}
+
+.q-write {
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+.q-write.short {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.q-write input,
+.q-write textarea {
+  flex: 1;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: 15px;
+  resize: vertical;
+}
+
+.q-typed {
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.q-typed.good {
+  border-color: color-mix(in srgb, var(--good) 50%, transparent);
+}
+
+.q-typed.bad {
+  border-color: color-mix(in srgb, var(--bad) 50%, transparent);
+}
+
+.q-typed .k,
+.mark-tip .k,
+.mark-yours .k {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.q-held {
+  margin: 8px 0 0;
+}
+
+.q-mark {
+  display: grid;
+  gap: 8px;
+}
+
+.mark-points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.mark-points li {
+  display: flex;
+  gap: 8px;
+  font-size: 14.5px;
+  line-height: 1.45;
+}
+
+.mark-sign {
+  flex: none;
+  width: 18px;
+  font-weight: 700;
+}
+
+.mark-points .hit .mark-sign {
+  color: var(--good);
+}
+
+.mark-points .miss .mark-sign {
+  color: var(--bad);
+}
+
+.mark-evidence {
+  color: var(--text-2);
+}
+
+.mark-tip {
+  margin: 0;
+  padding: 10px 12px;
+  border-left: 3px solid var(--draft);
+  border-radius: 8px;
+  background: var(--draft-soft);
+}
+
+.mark-yours summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 13.5px;
+}
+
+.mark-yours p {
+  margin: 8px 0 0;
+}
+
+.q-from-notes figcaption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.q-from-notes figcaption .link-btn {
+  margin-left: auto;
+  font-size: 13px;
+}
+
+.writing-bar {
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  border-radius: 12px;
+  background: var(--raise);
+}
+
+.writing-bar .row-progress {
+  display: block;
+  margin-top: 8px;
+}
+
+.writing-bar .muted {
+  margin: 8px 0 0;
+}
+
+.writing-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.writing-line .link-btn {
+  margin-left: auto;
+}
+
+.working-mark.small {
+  flex: none;
+  width: 18px;
+  height: 18px;
+}
+
+.set-errors {
+  margin: 10px 0;
+  font-size: 13.5px;
+  color: var(--text-2);
+}
+
+.mock-bar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+  padding: 10px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  background: var(--surface-solid);
+}
+
+.mock-bar.done {
+  position: static;
+  display: grid;
+  gap: 2px;
+}
+
+.mock-time {
+  font-size: 18px;
+  font-weight: 650;
+  font-feature-settings: 'tnum';
+}
+
+.mock-bar .btn {
+  margin-left: auto;
+}
+
+.set-section-title {
+  margin: 22px 0 6px;
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.set-cards {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.set-cards .btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.card-list li {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--raise);
+}
+
+.card-list li.deleted {
+  opacity: 0.5;
+}
+
+.card-front {
+  margin: 0;
+  font-weight: 600;
+}
+
+.card-back {
+  margin: 4px 0;
+  color: var(--text-2);
+}
+
+.coverage {
+  margin-top: 22px;
+  display: grid;
+  gap: 10px;
+}
+
+.coverage h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.coverage-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.coverage-table th,
+.coverage-table td {
+  padding: 8px 6px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  font-weight: 400;
+}
+
+.coverage-table thead th {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.coverage-table tbody th {
+  font-weight: 600;
+}
+
+.coverage-table tr.weak td:last-child {
+  color: var(--bad);
+  font-weight: 600;
+}
+
+.part.cited {
+  border-color: color-mix(in srgb, var(--accent) 60%, transparent);
+  box-shadow: 0 0 0 2px var(--accent-soft);
+}
+
+.review-from {
+  margin: 0 0 4px;
+}

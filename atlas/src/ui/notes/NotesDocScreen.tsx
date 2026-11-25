@@ -11,9 +11,15 @@ const STATE_LABEL: Partial<Record<Part['state'], string>> = {
 }
 
 /** One file's text, page by page or slide by slide: check what Atlas read, and correct it. */
-export function NotesDocScreen({ id }: { id: string }) {
+export function NotesDocScreen({ id, anchor }: { id: string; anchor?: string }) {
   const doc = useNoteDocs((s) => s.docs.find((d) => d.id === id))
   useEffect(() => void useNoteDocs.getState().load(), [])
+  // Opened from a question (“From your notes”): go to the part it cites.
+  useEffect(() => {
+    if (!anchor || !doc) return
+    const t = window.setTimeout(() => document.getElementById(`part-${anchor}`)?.scrollIntoView({ block: 'start' }), 60)
+    return () => window.clearTimeout(t)
+  }, [anchor, doc])
   if (!doc)
     return (
       <div className="tab-page lessons notes">
@@ -38,7 +44,7 @@ export function NotesDocScreen({ id }: { id: string }) {
         {doc.skippedPictures > 0 && <p className="muted small">Pictures inside Word files are not read. If a picture holds notes, add it as a photo.</p>}
         <ol className="part-list">
           {doc.parts.map((p) => (
-            <PartItem key={p.id} doc={doc} p={p} />
+            <PartItem key={p.id} doc={doc} p={p} cited={p.id === anchor} />
           ))}
         </ol>
       </div>
@@ -46,12 +52,12 @@ export function NotesDocScreen({ id }: { id: string }) {
   )
 }
 
-function PartItem({ doc, p }: { doc: NoteDoc; p: Part }) {
+function PartItem({ doc, p, cited }: { doc: NoteDoc; p: Part; cited?: boolean }) {
   const text = p.text
   const label = STATE_LABEL[p.state]
   const rows = Math.min(14, Math.max(3, text.split('\n').length + 1))
   return (
-    <li className={`part ${p.state}`}>
+    <li id={`part-${p.id}`} className={`part ${p.state} ${cited ? 'cited' : ''}`}>
       <div className="part-head">
         <span className="part-ref">{p.ref.charAt(0).toUpperCase() + p.ref.slice(1)}</span>
         {p.origin === 'read' && p.state === 'ready' && <span className="tag part-tag">Read from an image</span>}

@@ -43,6 +43,11 @@ export function Credits({ onBack }: { onBack: () => void }) {
               renamed to Atlas IDs, the three parts of the sternum merged, meshes simplified and re-centred, units converted to metres,
               Draco-compressed.
             </p>
+            <p className="muted small">
+              Also used: the muscles, tendons, aponeuroses and fasciae of the muscular system, simplified and moved off the bones where
+              they overlapped them. The female model’s muscles are these same muscles fitted to the female skeleton (each bone’s male →
+              female difference carried to the surrounding muscles); no free female muscle set exists.
+            </p>
           </section>
 
           <section>

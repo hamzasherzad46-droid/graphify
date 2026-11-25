@@ -91,7 +91,7 @@ npm test
 `scripts/lib/mesh.mjs` reads the FBX (three's FBXLoader in Node), welds, simplifies with meshoptimizer (≤0.15 %
 relative error, ≤5k triangles per bone), recomputes normals and writes the GLB.
 
-## 3D model upgrade, step 1: skin (`models-src/skin-*.glb`)
+## 3D model upgrade, step 1: skin (`models-src/skin-*.glb`, refitted over the muscles in step 2)
 
 Body surfaces for the coming layered models (skin → fat → muscles → organs → skeleton), not yet shown in the app (the
 layer controls come in step 5). Built from **MakeHuman** (CC0): its base mesh and macro body-shape targets, with
@@ -115,6 +115,37 @@ MakeHuman's even mix of ethnicities, age 25.
 # github.com/makehumancommunity/makehuman, makehuman/data
 node scripts/model/export-bones.mjs public/models/skeleton-male.glb /tmp/fit/male      # and female
 python3 scripts/model/build_skin.py <makehuman data> /tmp/fit /tmp/fit                 # numpy, scipy, libigl
+```
+
+## 3D model upgrade, step 2: muscles (`models-src/muscles-*.glb`)
+
+683 meshes per body from **Z-Anatomy**'s muscular system (CC BY-SA 4.0): muscles (left and right separate), tendons,
+aponeuroses, fasciae, tendon sheaths and bursae. Each GLB node is named by its Atlas id
+(`vastus_lateralis_muscle_left`) with extras `{layer, kind, side, za}`.
+
+- **Male:** the muscles belong to the same Z-Anatomy body as the male skeleton. Their offset from the skeleton GLB
+  (2.25 mm in height, from the skeleton build's floor) is measured on matched bones every build; the build stops if
+  any bone disagrees by more than 1.5 mm.
+- **Female:** no free female muscle set exists, so the male muscles are fitted to the female skeleton. Each bone has a
+  male → female transform (exact for the 170 bones derived from the male; fitted by iterative closest points for the
+  36 real Visible Human Female bones, 2–5.5 mm mean residual), plus the real bones' local shape differences. Each
+  muscle point follows its nearest bone (a soft minimum over distance, so it blends only where two bones are about as
+  close: at joints and across the abdominal wall).
+- **On the bones, not in them:** muscle surface that dips into bone (attachments) is moved onto the bone surface as
+  smooth patches.
+- **Skin refitted over the muscles** with a lean subcutaneous layer (3 mm male, 4 mm female; 1.5 mm over the face,
+  hands and feet): no muscle point outside either skin.
+- **Layers** (`scripts/model/layers.py`, listed in `docs/muscle-layers.md`): *superficial* = seen from the skin (a
+  walk inward from every skin point finds it first) or in the textbook surface layer; *deep* = otherwise, or placed
+  in a deep layer by standard anatomy (for example brachialis, flexor digitorum profundus, vastus intermedius,
+  erector spinae, internal oblique); *connective* = tendons, aponeuroses (including the linea alba), fasciae,
+  sheaths, bursae, ligaments. Fasciae wrap whole muscle groups, so the viewer shows them only on request.
+- 479,501 triangles per body (from 2,323,591), 2.3 MB with Draco. Levels of detail come in the performance step.
+
+```bash
+node scripts/model/export-za.mjs /tmp/za/Resources/Models/FBX SkeletalSystem100 /tmp/fit/zaskel
+node scripts/model/export-za.mjs /tmp/za/Resources/Models/FBX MuscularSystem100 /tmp/fit/muscles-male
+python3 scripts/model/build_muscles.py /tmp/fit && python3 scripts/model/write_muscles.py /tmp/fit /tmp/fit
 ```
 
 ## Exploded view (step 3)

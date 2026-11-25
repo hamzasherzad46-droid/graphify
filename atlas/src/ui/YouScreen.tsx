@@ -6,6 +6,7 @@ import { Choice, Field, Group, LinkRow, Toggle } from './Settings'
 import { UserIcon } from './Icons'
 import { Credits } from './Credits'
 import { Disclaimer } from './Disclaimer'
+import { Privacy } from './Privacy'
 
 function download(name: string, data: unknown) {
   const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }))
@@ -20,7 +21,7 @@ function download(name: string, data: unknown) {
 export function YouScreen() {
   const p = usePrefs()
   const reset = useProgress((s) => s.reset)
-  const [page, setPage] = useState<'you' | 'credits' | 'disclaimer'>('you')
+  const [page, setPage] = useState<'you' | 'credits' | 'disclaimer' | 'privacy'>('you')
   const [confirm, setConfirm] = useState(false)
   const reviews = Object.keys(p.reviewOverrides).length
   return (
@@ -131,11 +132,13 @@ export function YouScreen() {
         <Group title="About">
           <LinkRow label="Credits and attribution" onClick={() => setPage('credits')} />
           <LinkRow label="Educational use disclaimer" onClick={() => setPage('disclaimer')} />
+          <LinkRow label="Privacy policy" onClick={() => setPage('privacy')} />
         </Group>
         <p className="muted small version">Atlas · Skeletal system · Content in academic review</p>
       </div>
       {page === 'credits' && <Credits onBack={() => setPage('you')} />}
       {page === 'disclaimer' && <Disclaimer onClose={() => setPage('you')} />}
+      {page === 'privacy' && <Privacy onBack={() => setPage('you')} />}
     </div>
   )
 }

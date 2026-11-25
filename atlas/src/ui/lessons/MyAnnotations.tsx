@@ -14,6 +14,7 @@ import { haptic } from '../../lib/feedback'
 import { useToast } from '../toastStore'
 import { ChevronRightIcon } from '../Icons'
 import { PageHead } from './PageHead'
+import { nameOf, structureById, STRUCTURES } from '../../learn/structures'
 import { Portal } from '../Portal'
 
 const COLOR_LABEL: Record<HighlightColor, string> = { yellow: 'Yellow', teal: 'Teal', pink: 'Pink', blue: 'Blue' }
@@ -21,6 +22,7 @@ const COLOR_LABEL: Record<HighlightColor, string> = { yellow: 'Yellow', teal: 'T
 /** Book order for documents: textbook sections as in the book, then exam questions by topic and number. */
 function docOrder(doc: string): number {
   if (doc.startsWith('tb:')) return SECTIONS.findIndex((s) => s.id === doc.slice(3))
+  if (doc.startsWith('st:')) return 4000 + STRUCTURES.findIndex((s) => s.id === doc.slice(3))
   if (doc.startsWith('fc:')) return 5000 + LAYERED.findIndex((c) => c.id === doc.slice(3))
   const q = QUESTIONS.findIndex((x) => x.id === doc.slice(3))
   if (q >= 0) return 1000 + q
@@ -34,6 +36,7 @@ function docOrder(doc: string): number {
 function pagesFor(a: Annotation): Page[] {
   // Flashcards open in a study session, not a page: the item stays here.
   if (a.doc.startsWith('fc:')) return []
+  if (a.doc.startsWith('st:')) return structureById(a.doc.slice(3)) ? [{ kind: 'structure', id: a.doc.slice(3), anchor: a.segs[0]?.para }] : []
   if (a.doc.startsWith('tb:')) return SECTIONS.some((x) => x.id === a.doc.slice(3)) ? [{ kind: 'reader', section: a.doc.slice(3), anchor: a.segs[0]?.para }] : []
   const q = QUESTIONS.find((x) => x.id === a.doc.slice(3))
   if (q) return [{ kind: 'topic', area: 'exam', topic: q.topic, anchor: q.id }]
@@ -204,6 +207,10 @@ function groupLabel(a: Annotation): string {
   if (a.doc.startsWith('tb:')) {
     const s = SECTIONS.find((x) => x.id === a.doc.slice(3))
     return s ? (s.num.includes('.') ? `${s.num} ${s.title}` : `Chapter ${s.num}: ${s.chapterTitle}`) : a.docLabel
+  }
+  if (a.doc.startsWith('st:')) {
+    const s = structureById(a.doc.slice(3))
+    return s ? `Structure: ${nameOf(s)}` : a.docLabel
   }
   if (a.doc.startsWith('fc:')) {
     const c = layeredById(a.doc.slice(3))

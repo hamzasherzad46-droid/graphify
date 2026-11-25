@@ -1,0 +1,368 @@
+{
+ "reviewStatus": "draft",
+ "id": "sphenoid",
+ "bone": "sphenoid_bone",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4; 14.2",
+ "oneLine": {
+  "main": {
+   "t": "A single, complex bone in the centre of the skull base that joins almost every other skull bone (sphenoid bone).",
+   "src": [
+    "s7-2#fs-id1469126"
+   ]
+  },
+  "simpler": {
+   "t": "The sphenoid is a winged bone in the middle of the floor of the skull.",
+   "src": [
+    "s7-2#fs-id1469126"
+   ]
+  },
+  "deeper": {
+   "t": "It is one of the eight bones of the brain case.",
+   "src": [
+    "s7-2#fs-id1351960"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It forms much of the floor of the middle of the skull base.",
+    "src": [
+     "s7-2#fs-id1469126"
+    ]
+   },
+   {
+    "t": "Its outer parts reach the sides of the skull, just in front of the temporal bone.",
+    "src": [
+     "s7-2#fs-id1469126"
+    ]
+   },
+   {
+    "t": "Behind each eye, it forms the back wall of the eye socket (orbit).",
+    "src": [
+     "s7-2#fs-id1887927"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "The sphenoid sits deep in the middle of your head, behind your eyes.",
+   "src": [
+    "s7-2#fs-id1469126",
+    "s7-2#fs-id1887927"
+   ]
+  },
+  "deeper": {
+   "t": "Because it joins with almost every other bone of the skull, it is called a “keystone” bone.",
+   "src": [
+    "s7-2#fs-id1469126"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Lesser wings",
+    "t": "Form the ridge between the front and middle hollows (fossae) of the skull floor.",
+    "src": [
+     "s7-2#fs-id1469126"
+    ]
+   },
+   {
+    "name": "Greater wings",
+    "t": "Form the front of the middle fossa and part of the side of the skull.",
+    "src": [
+     "s7-2#fs-id1469126"
+    ]
+   },
+   {
+    "name": "Sella turcica",
+    "t": "A saddle-shaped seat in the midline. Its hollow (hypophyseal fossa) holds the pituitary gland.",
+    "src": [
+     "s7-2#fs-id1469126"
+    ]
+   },
+   {
+    "name": "Optic canal",
+    "t": "Beside the sella turcica. It carries the optic nerve from the eye to the brain.",
+    "src": [
+     "glossary:optic canal",
+     "s7-2#fs-id2026215"
+    ]
+   },
+   {
+    "name": "Superior orbital fissure",
+    "t": "A slit into the back of the orbit. It carries nerves to the eye muscles and the forehead.",
+    "src": [
+     "s7-2#fs-id2026215"
+    ]
+   },
+   {
+    "name": "Foramen rotundum, foramen ovale and foramen spinosum",
+    "t": "Openings in the floor of the middle fossa for nerves to the face and an artery to the brain’s coverings.",
+    "src": [
+     "s7-2#fs-id2026215"
+    ],
+    "check": "OpenStax places these in the floor of the middle cranial fossa; that they lie in the sphenoid’s greater wing is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "name": "Medial and lateral pterygoid plates",
+    "t": "Thin wing-shaped plates underneath. The lateral plates anchor chewing muscles.",
+    "src": [
+     "s7-2#fs-id1355530"
+    ]
+   },
+   {
+    "name": "Sphenoid sinus",
+    "t": "An air-filled space in its body: the most posterior paranasal sinus.",
+    "src": [
+     "s7-2#fs-id1882870"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It has wings, a saddle that holds the pituitary gland and holes for nerves to the eye and face.",
+   "src": [
+    "s7-2#fs-id1469126",
+    "s7-2#fs-id2026215"
+   ]
+  },
+  "deeper": {
+   "t": "Its lesser wings mark the border between the front (anterior) and middle cranial fossae.",
+   "src": [
+    "s7-2#fs-id1469126"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Its central position lets it act as a keystone, linking almost every other bone of the skull.",
+    "src": [
+     "s7-2#fs-id1469126"
+    ]
+   },
+   {
+    "t": "Nerves and vessels pass through its openings between the brain and the eye, face and jaws.",
+    "src": [
+     "s7-2#fs-id2026215"
+    ]
+   },
+   {
+    "t": "Its air-filled sinus lightens the skull and adds resonance to the voice.",
+    "src": [
+     "s7-2#fs-id1977054",
+     "s7-2#fs-id1882870"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It locks the skull bones together and lets nerves pass through to the face.",
+   "src": [
+    "s7-2#fs-id1469126",
+    "s7-2#fs-id2026215"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "gland",
+    "name": "Pituitary gland",
+    "t": "Sits in the hypophyseal fossa of the sella turcica.",
+    "src": [
+     "s7-2#fs-id1469126"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Optic nerve",
+    "t": "Passes through the optic canal.",
+    "src": [
+     "s7-2#fs-id2026215"
+    ]
+   },
+   {
+    "kind": "nerves",
+    "name": "Nerves to the eye muscles",
+    "t": "Pass through the superior orbital fissure.",
+    "src": [
+     "s7-2#fs-id2026215"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Maxillary nerve",
+    "t": "Leaves through the foramen rotundum to supply the cheek, nose and upper teeth.",
+    "src": [
+     "s7-2#fs-id2026215"
+    ],
+    "check": "OpenStax describes the nerve without naming it; “maxillary nerve” needs an approved source."
+   },
+   {
+    "kind": "artery",
+    "name": "Middle meningeal artery",
+    "t": "Enters through the foramen spinosum to supply the coverings of the brain.",
+    "src": [
+     "s7-2#fs-id2026215"
+    ],
+    "check": "OpenStax describes the artery without naming it; “middle meningeal artery” needs an approved source."
+   },
+   {
+    "kind": "muscles",
+    "name": "Chewing muscles",
+    "t": "Attach to the lateral pterygoid plates.",
+    "src": [
+     "s7-2#fs-id1355530"
+    ]
+   },
+   {
+    "kind": "bones",
+    "name": "Pterion",
+    "t": "Its greater wing is one of four bones meeting at the pterion, the thinnest part of the skull.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "The pituitary gland sits on it, and nerves to the eye and face pass through it.",
+   "src": [
+    "s7-2#fs-id1469126",
+    "s7-2#fs-id2026215"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Bones of the skull base form by replacing cartilage with bone (endochondral ossification).",
+    "src": [
+     "s6-4#fs-id1966864"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "The size of the sphenoid sinus varies a great deal from person to person.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A tumour of the pituitary gland grows upwards out of the sella turcica.",
+    "damaged": "The optic chiasm, where nerve fibres from the two eyes cross.",
+    "cannotDo": "See objects to the right and left: the outer parts of both visual fields are lost.",
+    "why": "The crossing fibres sit just above the pituitary gland and are pressed on first.",
+    "src": [
+     "s14-2#fs-id2365874",
+     "s7-2#fs-id1469126"
+    ]
+   },
+   {
+    "injury": "A hard blow to the side of the head at the pterion.",
+    "damaged": "The artery just inside the skull there; blood collects and presses on the brain.",
+    "cannotDo": "Stay well: the patient may seem fine at first, then worsen and can die within hours without treatment.",
+    "why": "The pterion is the thinnest part of the skull, with a major artery right under it.",
+    "src": [
+     "s7-2#fs-id1364278",
+     "s7-2#fs-id1248497"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the sphenoid is called the keystone of the skull.",
+    "model": [
+     "It is a single bone in the centre of the skull base.",
+     "Almost every other bone of the skull joins with it.",
+     "It forms much of the central skull base and part of the sides.",
+     "Parts of the cranial fossae and the back of each orbit are sphenoid bone."
+    ],
+    "src": [
+     "s7-2#fs-id1469126",
+     "s7-2#fs-id1887927"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "A pituitary tumour grows up out of the sella turcica. Predict the visual problem and explain it.",
+    "model": [
+     "It presses on the optic chiasm just above.",
+     "The crossing fibres are affected; fibres to the same side are not.",
+     "The outer part of the visual field is lost on both sides.",
+     "The patient cannot see objects to their left and right."
+    ],
+    "src": [
+     "s14-2#fs-id2365874",
+     "s7-2#fs-id1469126"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the optic canal and the superior orbital fissure.",
+    "model": [
+     "Optic canal: at the front outer corner of the sella turcica.",
+     "It carries the optic nerve.",
+     "Superior orbital fissure: beside the optic canal, under the lesser wing.",
+     "It carries nerves to the eye muscles and sensory nerves to the forehead."
+    ],
+    "src": [
+     "s7-2#fs-id2026215"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "What sits in the sella turcica?",
+   "options": [
+    "The optic chiasm",
+    "The pituitary gland",
+    "The sphenoid sinus",
+    "The brainstem"
+   ],
+   "answer": 1,
+   "why": "The hypophyseal fossa of the sella turcica holds the pituitary gland.",
+   "src": [
+    "s7-2#fs-id1469126"
+   ]
+  },
+  {
+   "stem": "Which opening carries the optic nerve?",
+   "options": [
+    "Foramen ovale",
+    "Superior orbital fissure",
+    "Optic canal",
+    "Foramen rotundum"
+   ],
+   "answer": 2,
+   "why": "The optic canal, beside the sella turcica, carries the optic nerve.",
+   "src": [
+    "s7-2#fs-id2026215"
+   ]
+  },
+  {
+   "stem": "What attaches to the lateral pterygoid plates?",
+   "options": [
+    "Chewing muscles",
+    "The pituitary gland",
+    "The optic nerve",
+    "Muscles of facial expression"
+   ],
+   "answer": 0,
+   "why": "The lateral pterygoid plates anchor chewing muscles that act on the mandible.",
+   "src": [
+    "s7-2#fs-id1355530"
+   ]
+  }
+ ]
+}

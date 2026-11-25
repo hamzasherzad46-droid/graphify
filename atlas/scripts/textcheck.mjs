@@ -270,6 +270,7 @@ for (const f of files(join(ROOT, 'content', 'textbook'), ['.json'])) {
 for (const f of files(join(ROOT, 'content', 'questions'), ['.json'])) for (const q of JSON.parse(readFileSync(f, 'utf8')).questions) lesson(`${relative(ROOT, f)} ${q.id}`, partsOf(q))
 for (const f of files(join(ROOT, 'content', 'cards'), ['.json'])) for (const c of JSON.parse(readFileSync(f, 'utf8')).cards) lesson(`${relative(ROOT, f)} ${c.id}`, partsOf(c))
 for (const f of files(join(ROOT, 'content', 'bones'), ['.json'])) lesson(relative(ROOT, f), partsOf(JSON.parse(readFileSync(f, 'utf8'))))
+for (const f of files(join(ROOT, 'content', 'structures'), ['.json'])) lesson(relative(ROOT, f), partsOf(JSON.parse(readFileSync(f, 'utf8'))))
 
 /* ── Grammar: fast rules (every build), LanguageTool (with --grammar) ───────────────────────────────────────── */
 

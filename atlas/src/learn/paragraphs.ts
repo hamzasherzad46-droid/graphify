@@ -2,6 +2,7 @@ import { hasClassic, loadClassic, loadSection, plain, type Block } from './textb
 import { QUESTIONS } from './questions'
 import { generatedQuestion } from './notesExam'
 import { layeredById, layeredParagraphs } from './layered'
+import { structureById, structureParagraphs } from './structures'
 
 /** Plain text of each paragraph id in a list of blocks, as the reader shows it. */
 function collect(blocks: Block[], out: Map<string, string>) {
@@ -28,6 +29,9 @@ export async function paragraphsOf(doc: string): Promise<Map<string, string>> {
   } else if (kind === 'fc') {
     const c = layeredById(id)
     if (c) return layeredParagraphs(c)
+  } else if (kind === 'st') {
+    const s = structureById(id)
+    if (s) return structureParagraphs(s)
   } else if (kind === 'eq') {
     const q = QUESTIONS.find((x) => x.id === id) ?? generatedQuestion(id)?.q
     if (q) {

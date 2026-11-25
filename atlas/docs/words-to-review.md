@@ -1,8 +1,8 @@
 # Words to review
 
-Every word Atlas shows is checked against the en-GB dictionary, Terminologia Anatomica, the OpenStax A&P 2e glossary, MeSH (in British spelling) and the NHS A–Z, including words formed regularly from those. These 318 match none of them. Each passes the check until you decide: approve it, or apply the suggestion.
+Every word Atlas shows is checked against the en-GB dictionary, Terminologia Anatomica, the OpenStax A&P 2e glossary, MeSH (in British spelling) and the NHS A–Z, including words formed regularly from those. These 319 match none of them. Each passes the check until you decide: approve it, or apply the suggestion.
 
-## Words that match no source (awaiting your decision) (180)
+## Words that match no source (awaiting your decision) (181)
 
 **OpenStax text: term or word** (57)
 
@@ -78,6 +78,10 @@ arthroun · articulus · astro · athero · cogito · costo · cyte · dendro ·
 **OpenStax pronunciation guide: syllable** (3)
 
 kah · lah · YAN
+
+**Latin anatomical term** (1)
+
+- **acromiale**: os acromiale (unfused acromion); keep
 
 ## Words that appear only in Gray’s 1918 text (138)
 

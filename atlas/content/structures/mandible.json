@@ -1,0 +1,386 @@
+{
+ "reviewStatus": "draft",
+ "id": "mandible",
+ "bone": "mandible",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 7.5; 9.6; 13.4",
+ "oneLine": {
+  "main": {
+   "t": "The lower jaw: the only skull bone that moves (mandible).",
+   "src": [
+    "s7-2#fs-id1891273"
+   ]
+  },
+  "simpler": {
+   "t": "The mandible is your lower jaw bone.",
+   "src": [
+    "s7-2#fs-id1891273"
+   ]
+  },
+  "deeper": {
+   "t": "It is one of two unpaired facial bones; the other is the vomer.",
+   "src": [
+    "s7-2#fs-id1861377"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It forms the lower jaw, below the upper jaw bones (maxillae).",
+    "src": [
+     "s7-2#fs-id1861377",
+     "s7-2#fs-id1891273"
+    ]
+   },
+   {
+    "t": "At the back, each side rises to meet the temporal bone just in front of the ear canal.",
+    "src": [
+     "s7-2#fs-id1370107",
+     "s7-2#fs-id1882965"
+    ]
+   },
+   {
+    "t": "The hyoid bone lies just below it, in the upper neck.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It forms your chin and lower jaw, and hinges just in front of your ears.",
+   "src": [
+    "s7-2#fs-id1891273",
+    "s7-2#fs-id1882965"
+   ]
+  },
+  "deeper": {
+   "t": "Each condyle sits in the mandibular fossa of the temporal bone, with a disc between them.",
+   "src": [
+    "s9-6#fs-id1380884"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Body",
+    "t": "The horizontal, U-shaped part that holds the lower teeth.",
+    "src": [
+     "s7-2#fs-id1891273"
+    ]
+   },
+   {
+    "name": "Ramus",
+    "t": "The upright part at the back of each side (“ramus” means branch).",
+    "src": [
+     "s7-2#fs-id1891273"
+    ]
+   },
+   {
+    "name": "Angle",
+    "t": "The corner where the body and ramus meet.",
+    "src": [
+     "s7-2#fs-id1891273"
+    ]
+   },
+   {
+    "name": "Condylar process",
+    "t": "The back projection, topped by the condyle. It forms the jaw joint with the temporal bone.",
+    "src": [
+     "s7-2#fs-id1370107"
+    ]
+   },
+   {
+    "name": "Coronoid process",
+    "t": "The flat front projection. A biting muscle attaches to it.",
+    "src": [
+     "s7-2#fs-id1370107"
+    ]
+   },
+   {
+    "name": "Mandibular foramen",
+    "t": "An opening on the inner ramus. The nerve and vessels to the lower teeth enter here.",
+    "src": [
+     "s7-2#fs-id1327677"
+    ]
+   },
+   {
+    "name": "Mental foramen",
+    "t": "An opening at the front. A sensory nerve to the chin comes out here.",
+    "src": [
+     "s7-2#fs-id1327677"
+    ]
+   },
+   {
+    "name": "Alveolar process",
+    "t": "The top edge of the body, which anchors the lower teeth.",
+    "src": [
+     "s7-2#fs-id1327677"
+    ]
+   },
+   {
+    "name": "Mylohyoid line",
+    "t": "A ridge inside the body. The muscle forming the floor of the mouth attaches here.",
+    "src": [
+     "s7-2#fs-id1327677"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It has a curved body for the teeth and two upright parts that reach up to the skull.",
+   "src": [
+    "s7-2#fs-id1891273"
+   ]
+  },
+  "deeper": {
+   "t": "The condylar process forms the jaw joint; the coronoid process anchors a biting muscle.",
+   "src": [
+    "s7-2#fs-id1370107"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "As the mouth opens, the jaw hinges down and the condyle glides forwards onto a bony bump (articular tubercle). This lets the mouth open wide.",
+    "src": [
+     "s9-6#fs-id2608267"
+    ]
+   },
+   {
+    "t": "A flexible disc between the condyle and the temporal bone smooths the movement.",
+    "src": [
+     "s9-6#fs-id1380884"
+    ]
+   },
+   {
+    "t": "Its processes and ridges give attachment to the strong chewing muscles.",
+    "src": [
+     "s7-2#fs-id1370107",
+     "s7-2#fs-id1399296"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It hinges and slides at the jaw joint, so you can open wide and chew.",
+   "src": [
+    "s9-6#fs-id2608267"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joint",
+    "name": "Temporomandibular joint",
+    "t": "The condyle meets the mandibular fossa and articular tubercle of the temporal bone.",
+    "src": [
+     "s9-6#fs-id1380884"
+    ]
+   },
+   {
+    "kind": "muscles",
+    "name": "Chewing muscles",
+    "t": "Arise from the zygomatic arch and fill the temporal and infratemporal fossae. They move the mandible.",
+    "src": [
+     "s7-2#fs-id1285208",
+     "s7-2#fs-id1399296"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Trigeminal nerve",
+    "t": "Controls the chewing muscles and gives feeling to the face.",
+    "src": [
+     "s13-4#fs-id1271098"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Inferior alveolar nerve",
+    "t": "The nerve to the lower teeth: enters the mandibular foramen.",
+    "src": [
+     "s7-2#fs-id1327677"
+    ],
+    "check": "OpenStax describes the nerve without naming it; “inferior alveolar nerve” needs an approved source."
+   },
+   {
+    "kind": "ligament",
+    "name": "Ligament to the lingula",
+    "t": "From the base of the skull to the lingula. It steadies the jaw as the mouth opens and closes.",
+    "src": [
+     "s7-2#fs-id1327677",
+     "s9-6#fs-id2608267"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Floor of the mouth",
+    "t": "The muscle forming the floor of the mouth attaches to the mylohyoid lines.",
+    "src": [
+     "s7-2#fs-id1327677"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Chewing muscles move it, and nerves to the lower teeth and chin run through it.",
+   "src": [
+    "s7-2#fs-id1399296",
+    "s7-2#fs-id1327677"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "At birth, it is in two halves. They fuse during the first year into one U-shaped bone.",
+    "src": [
+     "s7-2#fs-id1891273"
+    ]
+   },
+   {
+    "t": "In childhood the jaws grow as the teeth come in. This enlarges the face.",
+    "src": [
+     "s7-5#fs-id1241553"
+    ]
+   },
+   {
+    "t": "Like other flat bones of the face, most of it forms directly from membrane (intramembranous ossification).",
+    "src": [
+     "s6-4#fs-id1804592"
+    ],
+    "check": "OpenStax says the flat bones of the face develop this way; that this includes most of the mandible needs an approved source."
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "In males the angle of the mandible tends to be squarer and more flared.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Opening the mouth too wide, as in a large bite, or a blow to the jaw.",
+    "damaged": "The jaw joint dislocates: the condyle moves in front of the articular tubercle.",
+    "cannotDo": "Close the mouth.",
+    "why": "The condyle is stuck in front of the tubercle and cannot slide back.",
+    "src": [
+     "s9-6#fs-id1933265"
+    ]
+   },
+   {
+    "injury": "A dental injection near the mandibular foramen.",
+    "damaged": "The sensory nerve to the lower teeth.",
+    "cannotDo": "Feel the lower teeth on that side.",
+    "why": "The nerve is reached before it enters the foramen and runs through the bone to the teeth.",
+    "src": [
+     "s7-2#fs-id1327677"
+    ]
+   },
+   {
+    "injury": "Arthritis, grinding of the teeth or damage to the disc (temporomandibular joint disorder).",
+    "damaged": "The jaw joint and its disc.",
+    "cannotDo": "Chew comfortably; sometimes move the jaw at all (“lock jaw”).",
+    "why": "The worn or damaged joint surfaces no longer glide smoothly.",
+    "src": [
+     "s9-6#fs-id1933265"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the temporomandibular joint lets the mouth open wide.",
+    "model": [
+     "The mandible hinges downwards.",
+     "At the same time the condyle and disc glide forwards onto the articular tubercle.",
+     "The net movement of the condyle is forwards and downwards.",
+     "The disc smooths the movement between the bones."
+    ],
+    "src": [
+     "s9-6#fs-id1380884",
+     "s9-6#fs-id2608267"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "A patient yawns widely and cannot close their mouth. Predict where the condyle is.",
+    "model": [
+     "The jaw joint has dislocated.",
+     "The condyle has moved forwards, in front of the articular tubercle.",
+     "It cannot slide back into the mandibular fossa.",
+     "So the mouth stays open."
+    ],
+    "src": [
+     "s9-6#fs-id1933265",
+     "s9-6#fs-id2608267"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the mandibular foramen and the mental foramen.",
+    "model": [
+     "Mandibular foramen: on the inner side of the ramus.",
+     "The nerve and vessels to the lower teeth enter it.",
+     "Mental foramen: at the front of the body, on each side.",
+     "A sensory nerve to the chin comes out through it."
+    ],
+    "src": [
+     "s7-2#fs-id1327677"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which bone of the skull can move?",
+   "options": [
+    "Maxilla",
+    "Mandible",
+    "Zygomatic bone",
+    "Temporal bone"
+   ],
+   "answer": 1,
+   "why": "The mandible is the only skull bone that moves.",
+   "src": [
+    "s7-2#fs-id1891273"
+   ]
+  },
+  {
+   "stem": "Which part of the mandible forms the temporomandibular joint?",
+   "options": [
+    "Coronoid process",
+    "Angle",
+    "Mental protuberance",
+    "Condyle"
+   ],
+   "answer": 3,
+   "why": "The condyle meets the mandibular fossa and articular tubercle of the temporal bone.",
+   "src": [
+    "s7-2#fs-id1370107"
+   ]
+  },
+  {
+   "stem": "To numb the lower teeth, where must a dentist inject?",
+   "options": [
+    "Where the nerve enters the mandibular foramen",
+    "At the mental foramen",
+    "Into the jaw joint",
+    "Below the hyoid bone"
+   ],
+   "answer": 0,
+   "why": "The nerve to the lower teeth must be reached before it enters the mandibular foramen.",
+   "src": [
+    "s7-2#fs-id1327677"
+   ]
+  }
+ ]
+}

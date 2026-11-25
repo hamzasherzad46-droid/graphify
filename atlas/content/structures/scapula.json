@@ -1,0 +1,370 @@
+{
+ "reviewStatus": "draft",
+ "id": "scapula",
+ "bone": "scapula_left",
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.1 The Pectoral Girdle; 8.5; 9.6",
+ "oneLine": {
+  "main": {
+   "t": "The flat, triangular shoulder blade at the back of the shoulder (scapula).",
+   "src": [
+    "s8-1#fs-id1471081"
+   ]
+  },
+  "simpler": {
+   "t": "The scapula is your shoulder blade.",
+   "src": [
+    "s8-1#fs-id1471081"
+   ]
+  },
+  "deeper": {
+   "t": "With the clavicle it forms the shoulder (pectoral) girdle, which anchors the arm to the trunk.",
+   "src": [
+    "s8-1#fs-id1371880",
+    "s8-1#fs-id1968095"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It lies at the back of the shoulder.",
+    "src": [
+     "s8-1#fs-id1471081"
+    ]
+   },
+   {
+    "t": "Muscles lie in front of it and behind it, so it does not touch the ribs.",
+    "src": [
+     "s8-1#fs-id1968095"
+    ]
+   },
+   {
+    "t": "Outwards, it meets the humerus at the shoulder joint and the clavicle at the tip of the shoulder.",
+    "src": [
+     "s8-1#fs-id1471081",
+     "s8-1#fs-id1475196"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits on your upper back, behind your shoulder.",
+   "src": [
+    "s8-1#fs-id1471081"
+   ]
+  },
+  "deeper": {
+   "t": "It has no joint with the ribs. Muscles cover it on both sides.",
+   "src": [
+    "s8-1#fs-id1968095"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Glenoid cavity",
+    "t": "The shallow socket for the head of the humerus.",
+    "src": [
+     "s8-1#fs-id1725063"
+    ]
+   },
+   {
+    "name": "Spine",
+    "t": "The ridge across the back. With the acromion and clavicle it makes a V-shaped line for muscles.",
+    "src": [
+     "s8-1#fs-id1475196"
+    ]
+   },
+   {
+    "name": "Acromion",
+    "t": "The flat outer end of the spine. It is the bony tip of the shoulder and meets the clavicle.",
+    "src": [
+     "s8-1#fs-id1475196"
+    ]
+   },
+   {
+    "name": "Coracoid process",
+    "t": "A hook at the front shaped like a crow’s beak. It anchors chest and arm muscles and a strong ligament.",
+    "src": [
+     "s8-1#fs-id1475196"
+    ]
+   },
+   {
+    "name": "Supraspinous, infraspinous and subscapular fossae",
+    "t": "Broad hollows. They give large areas for muscles that move the arm.",
+    "src": [
+     "s8-1#fs-id1989073"
+    ]
+   },
+   {
+    "name": "Inferior angle",
+    "t": "The lowest corner. Several powerful muscles of the shoulder and arm attach here.",
+    "src": [
+     "s8-1#fs-id1725063"
+    ]
+   },
+   {
+    "name": "Supraglenoid and infraglenoid tubercles",
+    "t": "Small bumps above and below the socket, for arm muscles.",
+    "src": [
+     "s8-1#fs-id1725063"
+    ]
+   },
+   {
+    "name": "Suprascapular notch",
+    "t": "A notch in the top border. The suprascapular nerve passes through it.",
+    "src": [
+     "s8-1#fs-id1725063"
+    ],
+    "check": "OpenStax gives the notch’s position; the nerve passing through it is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "It has a shallow socket for the arm bone, a ridge across the back and two hooks at the top.",
+   "src": [
+    "s8-1#fs-id1725063",
+    "s8-1#fs-id1475196"
+   ]
+  },
+  "deeper": {
+   "t": "The spine, acromion and clavicle form a V-shaped line where neck and back muscles attach.",
+   "src": [
+    "s8-1#fs-id1475196"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Its socket is shallow, so the arm can move very widely. The cost is a less stable joint.",
+    "src": [
+     "s9-6#fs-id2305343",
+     "s9-6#fs-id1231336"
+    ]
+   },
+   {
+    "t": "A small rim of fibrocartilage (glenoid labrum) deepens the socket slightly.",
+    "src": [
+     "s9-6#fs-id1231336"
+    ]
+   },
+   {
+    "t": "Its broad hollows and ridges give big areas for the muscles that move and steady the arm.",
+    "src": [
+     "s8-1#fs-id1989073",
+     "s8-1#fs-id1475196"
+    ]
+   },
+   {
+    "t": "It is not joined to the ribs by bone. It moves with the clavicle as one unit.",
+    "src": [
+     "s8-1#fs-id1968095",
+     "s8-1#fs-id1471081"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Its shallow socket lets your arm move freely, and its wide surfaces hold strong muscles.",
+   "src": [
+    "s9-6#fs-id2305343",
+    "s8-1#fs-id1989073"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "muscle",
+    "name": "Rotator cuff",
+    "t": "Supraspinatus, infraspinatus, teres minor and subscapularis start on the scapula and attach to the humerus.",
+    "src": [
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "Shoulder (glenohumeral) joint",
+    "t": "Ball-and-socket joint between the glenoid cavity and the head of the humerus.",
+    "src": [
+     "s9-6#fs-id2305343"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "Acromioclavicular joint",
+    "t": "Where the acromion meets the clavicle. Its own ligaments are fairly weak.",
+    "src": [
+     "s8-1#fs-id1200622"
+    ]
+   },
+   {
+    "kind": "ligament",
+    "name": "Coracoclavicular ligament",
+    "t": "A very strong band from the coracoid to the clavicle. It gives the acromioclavicular joint its main support.",
+    "src": [
+     "s8-1#fs-id1200622"
+    ]
+   },
+   {
+    "kind": "bursa",
+    "name": "Subacromial bursa",
+    "t": "A fluid sac that stops the rotator cuff tendons rubbing on the scapula.",
+    "src": [
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Long thoracic nerve",
+    "t": "Supplies serratus anterior, which holds the scapula against the chest wall.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "The muscles that hold the shoulder joint together start on the scapula.",
+   "src": [
+    "s9-6#fs-id2429784"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms by replacing a cartilage model with bone (endochondral ossification), like all girdle bones except the clavicle.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "In some adults part of the acromion never fuses to the rest (os acromiale). It can be mistaken for a fracture.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A strong blow to the outer shoulder, such as a player driven into the boards.",
+    "damaged": "The acromioclavicular and coracoclavicular ligaments tear (a “shoulder separation”).",
+    "cannotDo": "Hold the shoulder up: it droops.",
+    "why": "The scapula separates from the clavicle and the weight of the arm pulls it down.",
+    "src": [
+     "s8-1#fs-id1200622"
+    ]
+   },
+   {
+    "injury": "Repeated use with the arm raised out to the side, as in throwing, swimming or racquet sports.",
+    "damaged": "The rotator cuff tendons, bursae or glenoid labrum.",
+    "cannotDo": "Raise and use the arm without pain.",
+    "why": "These tendons and the bursae become inflamed or torn with repeated use in raising the arm.",
+    "src": [
+     "s9-6#fs-id1894060"
+    ]
+   },
+   {
+    "injury": "Injury to the long thoracic nerve.",
+    "damaged": "Serratus anterior.",
+    "cannotDo": "Push against a wall without the scapula sticking out (“winging”).",
+    "why": "Serratus anterior holds the scapula flat against the chest wall.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the shape of the scapula trades stability for mobility at the shoulder.",
+    "model": [
+     "The glenoid cavity is small and shallow: about a third of the size of the humeral head.",
+     "The joint capsule is thin and loose.",
+     "The glenoid labrum deepens the socket only slightly.",
+     "The rotator cuff muscles give the main support, acting as “dynamic ligaments”."
+    ],
+    "src": [
+     "s9-6#fs-id1231336",
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "A rugby player lands on the point of the shoulder. Predict the injury and what you would see.",
+    "model": [
+     "Dislocation of the acromioclavicular joint (shoulder separation).",
+     "Both the acromioclavicular and coracoclavicular ligaments rupture.",
+     "The acromion is forced under the end of the clavicle.",
+     "The shoulder droops as the weight of the arm pulls the scapula down."
+    ],
+    "src": [
+     "s8-1#fs-id1200622"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the coracoid process and the acromion.",
+    "model": [
+     "Coracoid: a hook at the front that curves forwards and outwards.",
+     "It anchors chest and arm muscles and the coracoclavicular ligament.",
+     "Acromion: the flat outer end of the spine of the scapula.",
+     "It forms the tip of the shoulder and meets the clavicle."
+    ],
+    "src": [
+     "s8-1#fs-id1475196",
+     "s8-1#fs-id1200622"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which part of the scapula forms the bony tip of the shoulder?",
+   "options": [
+    "Coracoid process",
+    "Acromion",
+    "Glenoid cavity",
+    "Inferior angle"
+   ],
+   "answer": 1,
+   "why": "The acromion is the flat outer end of the spine of the scapula and forms the tip of the shoulder.",
+   "src": [
+    "s8-1#fs-id1475196"
+   ]
+  },
+  {
+   "stem": "Which ligament gives the acromioclavicular joint its main support?",
+   "options": [
+    "Coracohumeral ligament",
+    "Glenohumeral ligaments",
+    "Coracoclavicular ligament",
+    "Costoclavicular ligament"
+   ],
+   "answer": 2,
+   "why": "The very strong coracoclavicular ligament anchors the coracoid process to the underside of the clavicle.",
+   "src": [
+    "s8-1#fs-id1200622"
+   ]
+  },
+  {
+   "stem": "Why does the scapula not touch the ribs?",
+   "options": [
+    "It is held away by the clavicle alone",
+    "A layer of cartilage separates them",
+    "It sits above the level of the ribs",
+    "Muscles lie both in front of it and behind it"
+   ],
+   "answer": 3,
+   "why": "Muscles cover it on both sides, so it does not articulate with the ribs of the thoracic cage.",
+   "src": [
+    "s8-1#fs-id1968095"
+   ]
+  }
+ ]
+}

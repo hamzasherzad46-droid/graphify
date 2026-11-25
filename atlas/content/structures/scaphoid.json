@@ -1,0 +1,317 @@
+{
+ "reviewStatus": "draft",
+ "id": "scaphoid",
+ "bone": "scaphoid_left",
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5",
+ "oneLine": {
+  "main": {
+   "t": "A small boat-shaped wrist bone on the thumb side of the first row of carpal bones (scaphoid).",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  "simpler": {
+   "t": "The scaphoid is a small wrist bone at the base of the thumb.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  "deeper": {
+   "t": "It is one of only three carpal bones that form the wrist joint with the radius.",
+   "src": [
+    "s8-2#fs-id1882937"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It is the outermost bone of the first (proximal) row of carpal bones, on the thumb side.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "t": "Above it is the radius. Beside it, on the inner side, is the lunate.",
+    "src": [
+     "s8-2#fs-id1882937",
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "t": "Below it are the trapezium, trapezoid and capitate of the second row.",
+    "src": [
+     "glossary:scaphoid"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits in your wrist, just below the end of the forearm, on the thumb side.",
+   "src": [
+    "s8-2#fs-id1977414",
+    "s8-2#fs-id1882937"
+   ]
+  },
+  "deeper": {
+   "t": "Only the scaphoid, lunate and triquetrum take part in the wrist joint.",
+   "src": [
+    "s8-2#fs-id1882937"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Boat shape",
+    "t": "“Scaphoid” means boat-shaped.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "name": "Surface for the radius",
+    "t": "It meets the end of the radius directly at the wrist joint.",
+    "src": [
+     "s8-2#fs-id1882937"
+    ]
+   },
+   {
+    "name": "Front (palmar) surface",
+    "t": "It anchors the flexor retinaculum, the band that roofs the carpal tunnel.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "name": "Waist",
+    "t": "The narrow middle part. Most fractures happen here.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "It is small and boat-shaped, and it sits right against the end of the radius.",
+   "src": [
+    "s8-2#fs-id1977414",
+    "s8-2#fs-id1882937"
+   ]
+  },
+  "deeper": {
+   "t": "With the other carpal bones it forms the walls and floor of the carpal tunnel.",
+   "src": [
+    "s8-2#fs-id2329218"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "It sits on the thumb side and meets the radius directly. So a fall on the outstretched hand drives force through it.",
+    "src": [
+     "s8-2#fs-id1882937",
+     "s8-2#fs-id1989621"
+    ]
+   },
+   {
+    "t": "With the lunate and triquetrum it forms the wrist (radiocarpal) joint.",
+    "src": [
+     "s8-2#fs-id1882937"
+    ]
+   },
+   {
+    "t": "With the second row it forms the midcarpal joint. These two joints make all the movements of the wrist.",
+    "src": [
+     "s8-2#fs-id932152"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It helps the wrist bend and passes force from the hand to the forearm.",
+   "src": [
+    "s8-2#fs-id932152",
+    "s8-2#fs-id1989621"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joint",
+    "name": "Wrist (radiocarpal) joint",
+    "t": "With the lunate and triquetrum, it meets the radius here.",
+    "src": [
+     "s8-2#fs-id1882937"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "Midcarpal joint",
+    "t": "The joint between the first and second rows of carpal bones.",
+    "src": [
+     "s8-2#fs-id932152"
+    ]
+   },
+   {
+    "kind": "ligament",
+    "name": "Flexor retinaculum",
+    "t": "Attached on the thumb side to the trapezium and scaphoid.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Radial artery",
+    "t": "Its branches enter mainly at the far (distal) end of the scaphoid.",
+    "src": [
+     "s20-5#fs-id1595346"
+    ],
+    "check": "OpenStax traces the radial artery to the wrist; where its branches enter the scaphoid is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "kind": "space",
+    "name": "Anatomical snuffbox",
+    "t": "It lies in the floor of this hollow at the base of the thumb.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "It forms joints with the forearm and the other wrist bones.",
+   "src": [
+    "s8-2#fs-id1882937",
+    "s8-2#fs-id932152"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms by replacing a cartilage model with bone (endochondral ossification), like all limb bones except the clavicle.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Its ossification centre appears in early childhood, at about five years.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A fall onto the outstretched hand.",
+    "damaged": "The scaphoid: the carpal bone fractured most often.",
+    "cannotDo": "Use the wrist without deep pain on the thumb side.",
+    "why": "Force passes from the hand to the radius through the scaphoid.",
+    "src": [
+     "s8-2#fs-id2637051",
+     "s8-2#fs-id1989621",
+     "s8-2#fs-id1882937"
+    ]
+   },
+   {
+    "injury": "A scaphoid fracture is missed because the first X-ray looks normal.",
+    "damaged": "The bone itself, which has a poor blood supply.",
+    "cannotDo": "Heal quickly: part of the bone can die (necrosis), leading later to arthritis of the wrist.",
+    "why": "With little blood reaching it, the broken bone heals slowly.",
+    "src": [
+     "s8-2#fs-id2637051"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why a scaphoid fracture can be missed, and why that matters.",
+    "model": [
+     "Deep pain at the outer wrist can be taken for a sprain.",
+     "The fracture may not show on an X-ray until weeks later, once swelling settles.",
+     "Its blood supply is poor, so it heals slowly.",
+     "Untreated, part of the bone can die, leading to arthritis of the wrist."
+    ],
+    "src": [
+     "s8-2#fs-id2637051"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict which part of the scaphoid dies after a fracture across its waist, and explain why.",
+    "model": [
+     "The near (proximal) part.",
+     "Blood vessels enter mainly at the far (distal) end.",
+     "A break across the waist cuts the near part off from its supply.",
+     "Without blood, it dies (avascular necrosis)."
+    ],
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "kind": "compare",
+    "q": "Compare a scaphoid fracture with a Colles fracture after a fall on the outstretched hand.",
+    "model": [
+     "Both follow a fall onto the outstretched hand.",
+     "Scaphoid: deep pain at the outer wrist; may not show on the first X-ray.",
+     "Colles: the end of the radius breaks and is pushed backwards and upwards.",
+     "Colles gives a “dinner fork” bend just above the wrist."
+    ],
+    "src": [
+     "s8-2#fs-id2637051",
+     "s8-2#fs-id2142217"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which carpal bone is fractured most often?",
+   "options": [
+    "Lunate",
+    "Scaphoid",
+    "Hamate",
+    "Trapezium"
+   ],
+   "answer": 1,
+   "why": "The scaphoid is the most commonly fractured carpal bone.",
+   "src": [
+    "s8-2#fs-id2637051"
+   ]
+  },
+  {
+   "stem": "Which forearm bone does the scaphoid meet at the wrist joint?",
+   "options": [
+    "Radius",
+    "Ulna",
+    "Both",
+    "Neither"
+   ],
+   "answer": 0,
+   "why": "The scaphoid and lunate meet the radius; the end of the ulna does not touch the carpal bones.",
+   "src": [
+    "s8-2#fs-id1882937"
+   ]
+  },
+  {
+   "stem": "Why can a scaphoid fracture lead to death of part of the bone?",
+   "options": [
+    "It is crushed by the radius",
+    "It is pulled apart by tendons",
+    "It is too small to hold a cast",
+    "Its blood supply is poor"
+   ],
+   "answer": 3,
+   "why": "With a poor blood supply it heals slowly, and part of it can die (necrosis).",
+   "src": [
+    "s8-2#fs-id2637051"
+   ]
+  }
+ ]
+}

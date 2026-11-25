@@ -10,12 +10,14 @@ import { Summary } from './Summary'
 import { SpellingSession } from './SpellingSession'
 import { MyCardsSession } from './MyCardsSession'
 import { LayeredSession } from './LayeredSession'
+import { LAYERED } from '../../learn/layered'
 
 /** A running study session: owns the 3D view until it ends. */
 export function StudySession({ mode }: { mode: Mode }) {
   const settings = usePrefs((s) => s.study)
   const [run, setRun] = useState(0)
   const autostart = useSession((s) => s.autostart)
+  const bone = useSession((s) => s.bone)
   const [items, setItems] = useState<Item[]>(() => (mode === 'flashcards' || mode === 'typing' || mode === 'mycards' || mode === 'layered' ? [] : buildItems(mode, settings.area, settings.count)))
   const [result, setResult] = useState<{ results: Result[]; ms: number; timeUp: boolean } | null>(null)
 
@@ -37,7 +39,7 @@ export function StudySession({ mode }: { mode: Mode }) {
 
   if (mode === 'flashcards') return <FlashcardSession onClose={close} onShow={show} />
   if (mode === 'mycards') return <MyCardsSession onClose={close} />
-  if (mode === 'layered') return <LayeredSession onClose={close} onShow={show} />
+  if (mode === 'layered') return <LayeredSession onClose={close} onShow={show} cards={bone ? LAYERED.filter((c) => c.bone === bone) : undefined} />
   if (mode === 'typing') return <SpellingSession onClose={close} onShow={show} autostart={autostart} />
 
   if (result)

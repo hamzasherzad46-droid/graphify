@@ -459,6 +459,31 @@ learnt, levels reached, weakest topics.
 - Now: 10 example cards for review (`docs/flashcards-review.md`). Next: the level system with unlocking, converting
   the existing name/find cards, then the full Skull and Upper limb decks.
 
+## Structure lessons (content upgrade, step 2: samples)
+
+Home → Lessons → Textbook → Skull or Upper limb → **Structure by structure**. Each structure in nine layers. Shown
+first: **1 In one line**, **2 Where it is**, **3 Key features**. Under **Go deeper**: **4 Form → function**,
+**5 Relations**, **6 Development**, **7 Variations**, **8 Clinical reasoning** (injury → structure damaged → what the
+patient can’t do → why) and **9 Tutorial questions** (explain, compare, predict; the model answer stays hidden until
+asked for). The lesson ends with three check questions answered on the page.
+
+- **Explain simpler** on layers 1–5 and **Explain deeper** on layers 1–3. Plain English first, then the term
+  (“faces inwards (medially)”).
+- **Tap a term** (dotted underline, first use in each section) for its OpenStax glossary definition and **Say it**
+  (the device’s en-GB voice). The glossary (`data/glossary.json`, 3,027 terms) loads only when a lesson opens.
+- **Links**: See in 3D, the layered flashcards on the same bone, and its exam-style questions. Highlights and notes
+  work as in the textbook (`st:<id>`), and appear in My Highlights and My Notes.
+- Content: `content/structures/<id>.json`, loaded by `src/learn/structures.ts`; the page is
+  `src/ui/lessons/StructureScreen.tsx`. Authored by `scripts/content/structures_v1.py`.
+- **Sources on every statement**: an OpenStax A&P 2e paragraph (`s8-2#fs-id2110691`), a glossary entry
+  (`glossary:optic canal`) and/or `check`, saying what still needs an approved source. Unchecked statements carry a †.
+- Tests (`src/learn/structures.test.ts`): every layer present; clinical reasoning in four parts; one tutorial question
+  of each kind; three check questions with four options and answers in different places; every source exists; drafts
+  only while a check remains; at most 20 words a sentence and 3 sentences a paragraph. The text check treats each lesson
+  as one lesson for abbreviations.
+- Now: 5 samples for review (`docs/structures-review.md`, written by `npm run structures:review`). Next: the remaining
+  Skull and Upper limb structures.
+
 ## Progress (step 6)
 
 Top bar → progress icon. All computed from data saved on the device (`useProgress`, via `appStorage`):

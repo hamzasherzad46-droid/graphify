@@ -1,6 +1,6 @@
 # Atlas text check
 
-15,250 pieces of text, 338,130 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 0 approved + 180 proposed.
+15,777 pieces of text, 342,785 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 0 approved + 181 proposed.
 
 **Result: PASS.** Unknown words: 0. American spellings: 0. Names written two ways or in the wrong case: 0. Abbreviations not written out at first use: 0. Grammar rule hits: 8; LanguageTool: 15.
 
@@ -30,7 +30,7 @@ brain-stem → **brainstem** · brain stem → **brainstem** · brain-stems → 
 - **OpenStax:** “andenosine” → “adenosine”; “diecephalon” → “diencephalon”; “hyperhtermia” → “hyperthermia”; “invertebral” → “intervertebral”; “nintey” → “ninety”; “osteoctyes” → “osteocytes”; “ostegenic” → “osteogenic”; “propanolol” → “propranolol”; “Pouseille” → “Poiseuille”; “symphisis” → “symphysis”; “telecephalon” → “telencephalon”; “tempomandibular” → “temporomandibular”; “Korvinian” → “Korbinian”; “Creutzfeld-Jacob” → “Creutzfeldt–Jakob”; “ACH molecules” → “ACh molecules”; “80 mv” → “80 mV”; “anterio and lateral” → “anterior and lateral”; “intermural” → “intramural”; “Parasymphatho-mimetics” → “Parasympathomimetics”; “intercranial sinuses” → “intracranial sinuses”; “Latin root “effere”” → “Latin root “ferre””; “KHz” → “kHz”; “kidneys , called” → “kidneys, called”; “embryo,the heart” → “embryo, the heart”; “Creutzfeld–Jacob” → “Creutzfeldt–Jakob”
 - **Gray’s:** “andposterior” → “and posterior”; “assits” → “assists”; “clacaneofibular” → “calcaneofibular”; “covex” → “convex”; “Cribiform” → “Cribriform”; “internalcuneiform” → “internal cuneiform”; “machanical” → “mechanical”; “Obsturator” → “Obturator”; “Procéss” → “Process”; “triquetum” → “triquetrum”; “zyogmatic” → “zygomatic”; “Occipita bone” → “Occipital bone”; “tentorum” → “tentorium”; “area facians” → “area facialis”; “atlantoöccipital” → “atlanto-occipital”; “mastoöccipital” → “masto-occipital”; “petroöccipital” → “petro-occipital”; “zygomaticoörbital” → “zygomatico-orbital”; “proötic” → “prootic”; “raphé” → “raphe”; “sternebroe” → “sternebrae”; “fibuloe” → “fibulae”; “costoe” → “costae”; “is the the larger” → “is the larger”
 
-## Words that match no source (awaiting your decision) (180)
+## Words that match no source (awaiting your decision) (181)
 
 **OpenStax text: term or word** (57)
 
@@ -106,6 +106,10 @@ arthroun · articulus · astro · athero · cogito · costo · cyte · dendro ·
 **OpenStax pronunciation guide: syllable** (3)
 
 kah · lah · YAN
+
+**Latin anatomical term** (1)
+
+- **acromiale**: os acromiale (unfused acromion); keep
 
 ## Words that appear only in Gray’s 1918 text (138)
 

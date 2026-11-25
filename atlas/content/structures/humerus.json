@@ -1,0 +1,423 @@
+{
+ "reviewStatus": "draft",
+ "id": "humerus",
+ "bone": "humerus_left",
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5; 9.6; 20.5",
+ "oneLine": {
+  "main": {
+   "t": "The long bone of the upper arm, running from the shoulder to the elbow (humerus).",
+   "src": [
+    "s8-2#fs-id2110691",
+    "s8-2#fs-id1415448"
+   ]
+  },
+  "simpler": {
+   "t": "The humerus is the bone of your upper arm.",
+   "src": [
+    "s8-2#fs-id2110691"
+   ]
+  },
+  "deeper": {
+   "t": "It is a long bone: a hollow shaft (diaphysis) with a wider end at each end (epiphysis).",
+   "src": [
+    "s6-3#fs-id1025647"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It sits in the arm, between the shoulder above and the elbow below.",
+    "src": [
+     "s8-2#fs-id1415448"
+    ]
+   },
+   {
+    "t": "Its round head faces inwards (medially) and fits the shallow socket of the shoulder blade.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ]
+   },
+   {
+    "t": "At the elbow it meets the ulna on the inner side and the radius on the outer side.",
+    "src": [
+     "s8-2#fs-id2444175"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It runs from your shoulder down to your elbow.",
+   "src": [
+    "s8-2#fs-id1415448"
+   ]
+  },
+  "deeper": {
+   "t": "It forms the shoulder (glenohumeral) joint above and part of the elbow joint below.",
+   "src": [
+    "s9-6#fs-id2305343",
+    "s8-2#fs-id2444175"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Head",
+    "t": "The large, smooth, round top. It forms the shoulder joint with the glenoid cavity of the scapula.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ]
+   },
+   {
+    "name": "Anatomical neck",
+    "t": "The edge of the smooth head. It marks where the joint surface ends.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ]
+   },
+   {
+    "name": "Greater and lesser tubercles",
+    "t": "Two bumps near the top. The rotator cuff muscles attach to them.",
+    "src": [
+     "s8-2#fs-id2110691",
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "name": "Intertubercular (bicipital) groove",
+    "t": "The groove between the tubercles. A tendon of biceps brachii runs in it.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ]
+   },
+   {
+    "name": "Surgical neck",
+    "t": "Where the wide top narrows into the shaft. It is a common site of fracture.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ]
+   },
+   {
+    "name": "Deltoid tuberosity",
+    "t": "A rough V-shaped area halfway down the outer shaft. The deltoid muscle attaches here.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ]
+   },
+   {
+    "name": "Medial and lateral epicondyles",
+    "t": "Bony points either side of the elbow. Forearm muscles start from them.",
+    "src": [
+     "s8-2#fs-id1949647"
+    ]
+   },
+   {
+    "name": "Trochlea and capitulum",
+    "t": "The pulley-shaped trochlea meets the ulna. The knob-like capitulum meets the radius.",
+    "src": [
+     "s8-2#fs-id2444175"
+    ]
+   },
+   {
+    "name": "Olecranon fossa",
+    "t": "A hollow at the back. It takes the tip of the ulna when the elbow straightens.",
+    "src": [
+     "s8-2#fs-id2444175"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Its top end makes the shoulder joint and its bottom end makes the elbow joint.",
+   "src": [
+    "s8-2#fs-id2110691",
+    "s8-2#fs-id2444175"
+   ]
+  },
+  "deeper": {
+   "t": "The bone usually breaks at the surgical neck, not the anatomical neck.",
+   "src": [
+    "s8-2#fs-id2110691",
+    "s8-2#fs-id2030259"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "The big round head sits in a socket about a third of its size. This gives the shoulder its huge range of movement.",
+    "src": [
+     "s9-6#fs-id1231336",
+     "s9-6#fs-id2305343"
+    ]
+   },
+   {
+    "t": "The price is stability: the shoulder relies on muscles, not bone, to hold the head in place.",
+    "src": [
+     "s9-6#fs-id2305343",
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "t": "The medial epicondyle is larger than the lateral one. The strong gripping muscles of the forearm pull on it.",
+    "src": [
+     "s8-2#fs-id1949647"
+    ]
+   },
+   {
+    "t": "Hollows above the elbow surfaces make room for the forearm bones. So the elbow can bend and straighten fully.",
+    "src": [
+     "s8-2#fs-id2444175"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Its shape lets the shoulder move freely and the elbow bend and straighten fully.",
+   "src": [
+    "s9-6#fs-id2305343",
+    "s8-2#fs-id2444175"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "muscle",
+    "name": "Rotator cuff",
+    "t": "Supraspinatus, infraspinatus, teres minor and subscapularis attach to the tubercles. They hold the head in its socket.",
+    "src": [
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Deltoid",
+    "t": "Attaches to the deltoid tuberosity on the outer shaft.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Biceps brachii",
+    "t": "One of its tendons runs in the intertubercular groove.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Humeral circumflex arteries",
+    "t": "Branches of the axillary artery that supply the area near the head.",
+    "src": [
+     "s20-5#fs-id1595346"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Brachial artery",
+    "t": "Runs down the arm and splits near the elbow into the radial and ulnar arteries.",
+    "src": [
+     "s20-5#fs-id1595346"
+    ]
+   },
+   {
+    "kind": "nerves",
+    "name": "Four major nerves",
+    "t": "Four major nerves of the upper limb lie close to the humerus. Fractures can damage them.",
+    "src": [
+     "s8-2#fs-id2166864"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Axillary nerve",
+    "t": "Winds around the surgical neck.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "kind": "nerve",
+    "name": "Radial nerve",
+    "t": "Lies in the radial (spiral) groove on the back of the shaft.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "kind": "nerve",
+    "name": "Ulnar nerve",
+    "t": "Passes behind the medial epicondyle.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "Muscles that move the shoulder attach near the top. Important nerves and arteries run close to the bone.",
+   "src": [
+    "s9-6#fs-id2429784",
+    "s8-2#fs-id2166864"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms by replacing a cartilage model with bone (endochondral ossification), like all limb bones except the clavicle.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Bone first appears in the shaft by about the twelfth week. Centres in the ends appear later, usually after birth.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Growth plates between the shaft and ends let the bone lengthen. They close at adult size.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "A few people have a small hook of bone above the medial epicondyle (supracondylar process). It can press on the median nerve.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A fall onto the hand or elbow breaks the bone across the surgical neck.",
+    "damaged": "The surgical neck; the shaft can be driven into the head (impacted fracture).",
+    "cannotDo": "Move the shoulder without pain.",
+    "why": "The narrow neck is where the wide top meets the shaft, so force concentrates there.",
+    "src": [
+     "s8-2#fs-id2030259",
+     "s8-2#fs-id2110691"
+    ]
+   },
+   {
+    "injury": "A fracture of the middle of the shaft.",
+    "damaged": "The radial nerve in the radial groove.",
+    "cannotDo": "Lift the wrist and fingers (wrist drop).",
+    "why": "The radial nerve supplies the muscles on the back of the forearm that extend the wrist and fingers.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "injury": "A child falls onto the tip of the elbow and breaks the bone just above the epicondyles (supracondylar fracture).",
+    "damaged": "The artery to the forearm (brachial artery), squeezed by swelling.",
+    "cannotDo": "Keep the forearm muscles healthy: without blood they can quickly be damaged for good.",
+    "why": "The brachial artery runs down to the elbow right beside the broken bone.",
+    "src": [
+     "s8-2#fs-id2166864",
+     "s20-5#fs-id1595346"
+    ]
+   },
+   {
+    "injury": "A fall onto the hand or elbow with the arm raised fully out to the side.",
+    "damaged": "The shoulder joint: the head of the humerus dislocates downwards.",
+    "cannotDo": "Move the shoulder.",
+    "why": "Muscles and ligaments strongly support the head in front, above and behind, so it comes out downwards.",
+    "src": [
+     "s9-6#fs-id1894060"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "predict",
+    "q": "Predict the deficit if the radial nerve is damaged in the radial (spiral) groove, and explain why.",
+    "model": [
+     "Wrist drop: the patient cannot lift (extend) the wrist.",
+     "The fingers cannot be straightened at the knuckles.",
+     "The radial nerve supplies the extensor muscles on the back of the forearm.",
+     "Triceps is usually spared: its branches leave the nerve above the groove.",
+     "Numbness over the back of the hand near the thumb."
+    ],
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "kind": "explain",
+    "q": "Explain why most dislocations of the shoulder are downward (inferior).",
+    "model": [
+     "The glenoid cavity is small and shallow: about a third of the size of the head.",
+     "Muscles and ligaments support the head in front, above and behind.",
+     "The underside has the least support.",
+     "Force on a fully raised arm drives the head out downwards."
+    ],
+    "src": [
+     "s9-6#fs-id1231336",
+     "s9-6#fs-id1894060"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the anatomical neck and the surgical neck of the humerus.",
+    "model": [
+     "Anatomical neck: the edge of the smooth joint surface of the head.",
+     "Surgical neck: where the wide top joins the narrow shaft.",
+     "The surgical neck is a common fracture site.",
+     "Fractures there can be impacted, with the shaft driven into the head."
+    ],
+    "src": [
+     "s8-2#fs-id2110691",
+     "s8-2#fs-id2030259"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which part of the humerus meets the radius at the elbow?",
+   "options": [
+    "Capitulum",
+    "Trochlea",
+    "Olecranon fossa",
+    "Medial epicondyle"
+   ],
+   "answer": 0,
+   "why": "The knob-like capitulum meets the radius; the pulley-shaped trochlea meets the ulna.",
+   "src": [
+    "s8-2#fs-id2444175"
+   ]
+  },
+  {
+   "stem": "Where does the deltoid muscle attach to the humerus?",
+   "options": [
+    "Greater tubercle",
+    "Intertubercular groove",
+    "Deltoid tuberosity",
+    "Lateral epicondyle"
+   ],
+   "answer": 2,
+   "why": "The deltoid tuberosity is the rough V-shaped area halfway down the outer shaft.",
+   "src": [
+    "s8-2#fs-id2110691"
+   ]
+  },
+  {
+   "stem": "Why is the medial epicondyle larger than the lateral epicondyle?",
+   "options": [
+    "It bears the weight of the forearm",
+    "The strong gripping muscles of the forearm pull on it",
+    "It forms the elbow joint with the ulna",
+    "It protects the brachial artery"
+   ],
+   "answer": 1,
+   "why": "The powerful gripping muscles of the front of the forearm start from it, so it is larger and stronger.",
+   "src": [
+    "s8-2#fs-id1949647"
+   ]
+  }
+ ]
+}

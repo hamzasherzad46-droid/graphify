@@ -3383,7 +3383,13 @@
    "why": "British medical and scientific usage (BNF, IUPAC): sulfur, sulfate, sulfide, sulfuric; agreed."
   }
  },
- "approved": {},
+ "approved": {
+  "examinable": "Approved by reviewer: able to be examined.",
+  "pptx": "Approved by reviewer, with a restriction (see restricted).",
+  "docx": "Approved by reviewer, with a restriction (see restricted).",
+  "PDFs": "Approved by reviewer, with a restriction (see restricted).",
+  "acromiale": "Approved by reviewer, with a restriction (see restricted)."
+ },
  "proposed": {
   "absorber": {
    "group": "OpenStax text: term or word"
@@ -3971,26 +3977,6 @@
   },
   "cogito": {
    "group": "OpenStax etymology note: Latin or Greek word part"
-  },
-  "acromiale": {
-   "group": "Latin anatomical term",
-   "suggestion": "os acromiale (unfused acromion); keep"
-  },
-  "pptx": {
-   "group": "File format",
-   "suggestion": ".pptx (PowerPoint); keep"
-  },
-  "docx": {
-   "group": "File format",
-   "suggestion": ".docx (Word); keep"
-  },
-  "PDFs": {
-   "group": "Abbreviation: plural",
-   "suggestion": "plural of PDF; keep"
-  },
-  "examinable": {
-   "group": "General word",
-   "suggestion": "able to be examined (Oxford English Dictionary); keep"
   }
  },
  "historical": {
@@ -4548,6 +4534,28 @@
    "fibuloe": "fibulae",
    "costoe": "costae",
    "is the the larger": "is the larger"
+  }
+ },
+ "restricted": {
+  "pptx": {
+   "allow": ".pptx",
+   "use": "“PowerPoint”, or “.pptx” for the file type",
+   "why": "Internal use only; students see “PowerPoint” or “.pptx”."
+  },
+  "docx": {
+   "allow": ".docx",
+   "use": "“Word”, or “.docx” for the file type",
+   "why": "Internal use only; students see “Word” or “.docx”."
+  },
+  "PDFs": {
+   "allow": null,
+   "use": "“PDF” (“PDF files”)",
+   "why": "Internal use only; students see “PDF”."
+  },
+  "acromiale": {
+   "allow": "os acromiale",
+   "use": "“os acromiale”",
+   "why": "Approved only as part of the full term “os acromiale”."
   }
  }
 }

@@ -310,7 +310,7 @@ export const useNoteDocs = create<{
       for (const f of files) {
         const kind = kindOf(f.name, f.type)
         if (kind === 'old-office') problems.push(`“${f.name}” is an older Office file. Save it as .pptx or .docx and add it again.`)
-        else if (kind === 'other') problems.push(`“${f.name}” is not a file Atlas can read. Add PDFs, PowerPoint, Word, photos or text files.`)
+        else if (kind === 'other') problems.push(`“${f.name}” is not a file Atlas can read. Add PDF, PowerPoint, Word, photo or text files.`)
         else if (f.size > FILE_LIMIT) problems.push(`“${f.name}” is larger than ${FILE_LIMIT / 1024 / 1024} MB.`)
         else {
           const doc = newDoc(f.name, kind)

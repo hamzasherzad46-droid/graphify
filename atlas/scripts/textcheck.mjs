@@ -16,6 +16,7 @@ import ts from 'typescript'
 import { setKeep, setKnownWords, speller, toBritish } from './lib/british.mjs'
 import { derivedFrom, sourceNames, sourceOf } from './lib/sources.mjs'
 import { firstUses, partsOf, sectionParts } from './lib/abbreviations.mjs'
+import { restrictedHits } from './lib/restricted.mjs'
 
 const ROOT = join(import.meta.dirname, '..')
 const GRAMMAR = process.argv.includes('--grammar')
@@ -184,12 +185,24 @@ for (const t of texts) {
     words++
     const v = verdict(w, t.source)
     if (v === 'ok') continue
-    if (v === 'proposed') note(usedProposed, w.toLowerCase(), t)
+    if (v === 'proposed') {
+      note(usedProposed, w.toLowerCase(), t)
+      // A short quote around the first two uses, for the reviewer.
+      const e = usedProposed.get(w.toLowerCase())
+      e.ctx ??= []
+      if (e.ctx.length < 2) e.ctx.push([t.where, t.text.slice(Math.max(0, m.index - 50), m.index + m[0].length + 50).replace(/\s+/g, ' ').trim()])
+    }
     else if (v.kind === 'source') note(bySourceWords, w.toLowerCase(), t, { source: v.source, from: v.from })
     else if (v.kind === 'unknown') note(unknown, w, t)
     else if (!t.alt) note(american, w, t, { fix: v.fix, kind: v.kind })
   }
 }
+
+/* ── Restricted words: allowed only in a set form (and some only in internal text) ─────────────────────────── */
+
+// "pptx" only as ".pptx"; "PDFs" never in what students see; "acromiale" only in "os acromiale". Internal text
+// (identifiers, comments) is not collected, so every collected text is student-facing except the server's prompts.
+const restricted = restrictedHits(texts, dict.restricted)
 
 /* ── Consistency: one form per name ─────────────────────────────────────────────────────────────────────────── */
 
@@ -333,16 +346,17 @@ const bySource = (map) => {
   return out
 }
 const list = (map, fmt) => [...map].sort((a, b) => b[1].count - a[1].count || a[0].localeCompare(b[0])).map(fmt)
-const fail = unknown.size + american.size + inconsistent.length + abbrMissing.length
+const fail = unknown.size + american.size + inconsistent.length + abbrMissing.length + restricted.length
 const L = [
   '# Atlas text check',
   '',
   `${texts.length.toLocaleString('en-GB')} pieces of text, ${words.toLocaleString('en-GB')} words. Standard: British English (-ise); dictionary: en-GB base + ${dict.terminologia.words.length.toLocaleString('en-GB')} Terminologia Anatomica words + ${Object.keys(dict.approved).length} approved + ${Object.keys(dict.proposed).length} proposed.`,
   '',
-  `**Result: ${fail ? 'FAIL' : 'PASS'}.** Unknown words: ${unknown.size}. American spellings: ${american.size}. Names written two ways or in the wrong case: ${inconsistent.length}. Abbreviations not written out at first use: ${abbrMissing.length}. Grammar rule hits: ${grammar.length}${languageTool ? `; LanguageTool: ${languageTool.length}` : ''}.`,
+  `**Result: ${fail ? 'FAIL' : 'PASS'}.** Unknown words: ${unknown.size}. American spellings: ${american.size}. Names written two ways or in the wrong case: ${inconsistent.length}. Abbreviations not written out at first use: ${abbrMissing.length}. Restricted words out of place: ${restricted.length}. Grammar rule hits: ${grammar.length}${languageTool ? `; LanguageTool: ${languageTool.length}` : ''}.`,
   '',
 ]
 if (unknown.size) L.push('## Unknown words (fix or approve)', '', `By source: ${JSON.stringify(bySource(unknown))}`, '', '| Word | Count | Where |', '|---|---|---|', ...list(unknown, ([w, e]) => `| ${w} | ${e.count} | ${[...e.where].join('<br>')} |`), '')
+if (restricted.length) L.push('## Restricted words out of place', '', ...restricted.map((r) => `- **${r.word}** at ${r.where}: use ${r.use}, in “…${r.context}…”`), '')
 if (abbrMissing.length) L.push('## Abbreviations not written out at first use', '', ...abbrMissing.map((a) => `- ${a.where}: **${a.token}**${a.full ? ` (${a.full})` : ' (no full form known)'} in “…${a.context}…”`), '')
 if (american.size) L.push('## American spellings', '', '| Word | British | Count | Where |', '|---|---|---|---|', ...list(american, ([w, e]) => `| ${w} | ${e.fix} | ${e.count} | ${[...e.where].join('<br>')} |`), '')
 if (inconsistent.length) L.push('## Names written two ways', '', ...inconsistent.map((i) => (i.kind === 'case' || i.kind === 'form' ? `- “${i.form}” (${i.count}×) should be “${i.name}”: ${i.where.join(', ')}` : `- “${i.form}” (${i.count}×) and “${i.name}” (${i.closed}×)`)), '')
@@ -401,6 +415,7 @@ L.push(
   '',
   ...Object.values(dict.decisions).map((d) => `- **${d.use}**, not ${d.not.join(', ')}: ${d.why}`),
   ...Object.entries(dict.keep ?? {}).map(([w, why]) => `- **${w}** kept: ${why}`),
+  ...Object.entries(dict.restricted ?? {}).map(([w, r]) => `- **${w}**: ${r.why} Use ${r.use}.`),
   '',
   '## One form per word (enforced; the left-hand form is never used)',
   '',
@@ -416,5 +431,5 @@ L.push('## Grammar: rule checks', '', grammar.length ? '' : 'None.', ...grammar.
 if (languageTool) L.push('## Grammar: LanguageTool (en-GB), Atlas’s own text', '', languageTool.length ? '' : 'None.', ...languageTool.map((m) => `- ${m.rule} (${m.where}): ${m.message} “${m.context}”${m.suggestion ? ` → ${m.suggestion}` : ''}`), '')
 writeFileSync(join(ROOT, 'docs', 'text-report.md'), L.join('\n'))
 console.log(L.slice(0, 5).join('\n'))
-if (process.argv.includes('--json')) writeFileSync(join(ROOT, '.cache', 'textcheck.json'), JSON.stringify({ abbrMissing, proposedUsed: [...usedProposed].map(([w, e]) => [w, e.count, [...e.where], [...e.sources]]), bySource: [...bySourceWords].map(([w, e]) => [w, e.source, e.count, e.from]), unknown: [...unknown].map(([w, e]) => [w, e.count, [...e.where], [...e.sources]]), american: [...american].map(([w, e]) => [w, e.fix, e.count, [...e.where], [...e.sources]]), inconsistent, grammar, languageTool }, null, 1))
+if (process.argv.includes('--json')) writeFileSync(join(ROOT, '.cache', 'textcheck.json'), JSON.stringify({ abbrMissing, restricted, proposedUsed: [...usedProposed].map(([w, e]) => [w, e.count, [...e.where], [...e.sources], e.ctx ?? []]), bySource: [...bySourceWords].map(([w, e]) => [w, e.source, e.count, e.from]), unknown: [...unknown].map(([w, e]) => [w, e.count, [...e.where], [...e.sources]]), american: [...american].map(([w, e]) => [w, e.fix, e.count, [...e.where], [...e.sources]]), inconsistent, grammar, languageTool }, null, 1))
 process.exit(fail ? 1 : 0)

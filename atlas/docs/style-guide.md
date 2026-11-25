@@ -13,6 +13,10 @@ every rule marked **(checked)**, before every build and in the tests; `docs/text
   - **sulfur**, **sulfate**, **sulfide**, **sulfuric**: never sulphur, sulphate (BNF and IUPAC usage).
   - **grey** (grey matter): never gray. “Gray” is only the name (Henry Gray, Gray’s Anatomy).
   - **disc** (intervertebral disc, optic disc): never disk.
+- **Restricted words** **(checked)**:
+  - **pptx**, **docx**, **PDFs**: internal use only. Students see “PowerPoint”, “Word” and “PDF” (“PDF files”), or
+    “.pptx” and “.docx” for the file type.
+  - **acromiale**: only in the full term “os acromiale”; flagged anywhere else.
 - **One form per word** (brainstem, anteroposterior, rib cage, non-steroidal, adrenaline): the full list is `forms`
   in `data/dictionary.json`. **(checked)**
 - **Approved words**: a word is approved when it is in the en-GB dictionary, Terminologia Anatomica, the OpenStax A&P 2e

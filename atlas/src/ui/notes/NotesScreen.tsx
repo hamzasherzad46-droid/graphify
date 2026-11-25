@@ -239,7 +239,7 @@ export function NotesScreen() {
             <ul className="notes-tips">
               <li>PDF, PowerPoint (.pptx, with speaker notes), Word (.docx), photos and text files. Add several at once.</li>
               <li>Photos: one page per photo, flat, in good even light. Handwriting and diagram labels are read too.</li>
-              <li>PDFs, slides and Word files are read on this device. Only photos and scanned pages are sent to be read.</li>
+              <li>PDF files, slides and Word files are read on this device. Only photos and scanned pages are sent to be read.</li>
             </ul>
           )}
         </section>
@@ -290,7 +290,7 @@ export function NotesScreen() {
           {busyReading ? 'Reading your material…' : 'Write my exam questions'}
         </button>
         <p className="muted small notes-privacy">
-          PDFs, slides and Word files are read on this device. Photos and scanned pages, and the text of the topics you choose, are sent to the Atlas question service, which uses Claude (by
+          PDF files, slides and Word files are read on this device. Photos and scanned pages, and the text of the topics you choose, are sent to the Atlas question service, which uses Claude (by
           Anthropic). Nothing you send is stored there; your files’ text and your questions are saved on this device only.
         </p>
 

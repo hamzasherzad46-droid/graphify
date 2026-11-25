@@ -62,6 +62,7 @@ const dict = {
   forms: old.forms ?? {},
   names: old.names ?? {},
   keep: old.keep ?? {},
+  restricted: old.restricted ?? {},
   corrections: old.corrections ?? {},
 }
 writeFileSync(OUT, JSON.stringify(dict, null, 1) + '\n')

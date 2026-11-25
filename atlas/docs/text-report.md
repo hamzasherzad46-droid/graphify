@@ -1,8 +1,8 @@
 # Atlas text check
 
-15,855 pieces of text, 343,681 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 0 approved + 185 proposed.
+15,855 pieces of text, 343,683 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 5 approved + 180 proposed.
 
-**Result: PASS.** Unknown words: 0. American spellings: 0. Names written two ways or in the wrong case: 0. Abbreviations not written out at first use: 0. Grammar rule hits: 8.
+**Result: PASS.** Unknown words: 0. American spellings: 0. Names written two ways or in the wrong case: 0. Abbreviations not written out at first use: 0. Restricted words out of place: 0. Grammar rule hits: 8; LanguageTool: 15.
 
 ## Spelling decisions (enforced)
 
@@ -20,6 +20,10 @@
 - **sulfates** kept: As sulfur.
 - **sulfide** kept: As sulfur.
 - **sulfuric** kept: As sulfur.
+- **pptx**: Internal use only; students see “PowerPoint” or “.pptx”. Use “PowerPoint”, or “.pptx” for the file type.
+- **docx**: Internal use only; students see “Word” or “.docx”. Use “Word”, or “.docx” for the file type.
+- **PDFs**: Internal use only; students see “PDF”. Use “PDF” (“PDF files”).
+- **acromiale**: Approved only as part of the full term “os acromiale”. Use “os acromiale”.
 
 ## One form per word (enforced; the left-hand form is never used)
 
@@ -30,7 +34,7 @@ brain-stem → **brainstem** · brain stem → **brainstem** · brain-stems → 
 - **OpenStax:** “andenosine” → “adenosine”; “diecephalon” → “diencephalon”; “hyperhtermia” → “hyperthermia”; “invertebral” → “intervertebral”; “nintey” → “ninety”; “osteoctyes” → “osteocytes”; “ostegenic” → “osteogenic”; “propanolol” → “propranolol”; “Pouseille” → “Poiseuille”; “symphisis” → “symphysis”; “telecephalon” → “telencephalon”; “tempomandibular” → “temporomandibular”; “Korvinian” → “Korbinian”; “Creutzfeld-Jacob” → “Creutzfeldt–Jakob”; “ACH molecules” → “ACh molecules”; “80 mv” → “80 mV”; “anterio and lateral” → “anterior and lateral”; “intermural” → “intramural”; “Parasymphatho-mimetics” → “Parasympathomimetics”; “intercranial sinuses” → “intracranial sinuses”; “Latin root “effere”” → “Latin root “ferre””; “KHz” → “kHz”; “kidneys , called” → “kidneys, called”; “embryo,the heart” → “embryo, the heart”; “Creutzfeld–Jacob” → “Creutzfeldt–Jakob”
 - **Gray’s:** “andposterior” → “and posterior”; “assits” → “assists”; “clacaneofibular” → “calcaneofibular”; “covex” → “convex”; “Cribiform” → “Cribriform”; “internalcuneiform” → “internal cuneiform”; “machanical” → “mechanical”; “Obsturator” → “Obturator”; “Procéss” → “Process”; “triquetum” → “triquetrum”; “zyogmatic” → “zygomatic”; “Occipita bone” → “Occipital bone”; “tentorum” → “tentorium”; “area facians” → “area facialis”; “atlantoöccipital” → “atlanto-occipital”; “mastoöccipital” → “masto-occipital”; “petroöccipital” → “petro-occipital”; “zygomaticoörbital” → “zygomatico-orbital”; “proötic” → “prootic”; “raphé” → “raphe”; “sternebroe” → “sternebrae”; “fibuloe” → “fibulae”; “costoe” → “costae”; “is the the larger” → “is the larger”
 
-## Words that match no source (awaiting your decision) (185)
+## Words that match no source (awaiting your decision) (180)
 
 **OpenStax text: term or word** (57)
 
@@ -107,23 +111,6 @@ arthroun · articulus · astro · athero · cogito · costo · cyte · dendro ·
 
 kah · lah · YAN
 
-**File format** (2)
-
-- **docx**: .docx (Word); keep
-- **pptx**: .pptx (PowerPoint); keep
-
-**Latin anatomical term** (1)
-
-- **acromiale**: os acromiale (unfused acromion); keep
-
-**Abbreviation: plural** (1)
-
-- **PDFs**: plural of PDF; keep
-
-**General word** (1)
-
-- **examinable**: able to be examined (Oxford English Dictionary); keep
-
 ## Words that appear only in Gray’s 1918 text (138)
 
 **Gray’s 1918 only: historical or Latin term** (117)
@@ -145,3 +132,22 @@ Albrecht · Basle · Derry · Fallopii · Fawcett · Gimbernat · Glaserian · H
 - unbalanced brackets (grays, content/classic/s8-4.json.entries[4].blocks[23].inl): “…The lateral surface carries a large triangular facet, concave from above downward, for articulation with the lateral mal…”
 - unbalanced brackets (openstax, content/textbook/s15-1.json.blocks[26].rows[1][1][0]): “…Norepinephrine → α- or β-adrenergic receptors  Acetylcholine → muscarinic receptor (associated with sweat glands and the…”
 - unbalanced brackets (openstax, content/textbook/s6-4.json.blocks[13].inl): “…In a long bone, for example, at about 6 to 8 weeks after conception, some of the mesenchymal cells differentiate into ch…”
+
+## Grammar: LanguageTool (en-GB), Atlas’s own text
+
+
+- ENGLISH_WORD_REPEAT_BEGINNING_RULE (content/bones/hamate_right.json.features[1]): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...ccur in golf, racquet and baseball players.  Hook (hamulus) projecting palmarly  Hook forms th...”
+- ENGLISH_WORD_REPEAT_BEGINNING_RULE (content/cards/skull.json.cards[0].simpler.t): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “... with almost every other bone of the skull.  It sits in the middle of the floor of the skull...” → Furthermore, it
+- FILL_OF_WITH (content/questions/skull.json.questions[9].why): The usual preposition to use after "fills" is "with", not "the". Did you mean "fills the front with"? “...ow and behind. In life, the septal cartilage fills the front of the septum and extends into the nose.  A dev...” → fills the front with
+- EN_COMPOUNDS_WEIGHT_BEARING (content/questions/spine.json.questions[6].answerText): This word is normally spelled with a hyphen. “...osterior vertebral arch. The body serves for weight bearing. The vertebral arch surrounds and protects t...” → weight-bearing
+- EN_COMPOUNDS_WEIGHT_BEARING (content/questions/spine.json.questions[6].why): This word is normally spelled with a hyphen. “...  A typical vertebra has a body in front for weight bearing and an arch behind that protects the spinal ...” → weight-bearing
+- EN_COMPOUNDS_WEIGHT_BEARING (content/questions/spine.json.questions[8].answerText): This word is normally spelled with a hyphen. “...the nucleus pulposus resists compression for weight bearing and can change shape to allow for vertebral ...” → weight-bearing
+- AGREEMENT_SENT_START (content/questions/spine.json.questions[11].why): You should probably use "sit". “...hat projects upwards from its body. The dens sits against the back of the anterior arch of the...” → sit
+- ENGLISH_WORD_REPEAT_BEGINNING_RULE (content/questions/thorax.json.questions[12].whyNot[2]): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...t attach to the cartilage of the rib above.  Ribs 1 and 2 are true ribs that join the sternum ...”
+- LICENCE_LICENSE_NOUN_SINGULAR (src/ui/Credits.tsx:114): License must be spelled with a "c" when used as a noun in British English. Use "licence". “...timizer (MIT), Inter typeface (SIL Open Font License).  Atlas · Skeletal system  For education on...” → Licence
+- ENGLISH_WORD_REPEAT_BEGINNING_RULE (server/src/prompts.ts:12): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...nior anatomy tutor at a leading university.  You only work on human anatomy and the physiolog...” → Furthermore, you
+- ENGLISH_WORD_REPEAT_BEGINNING_RULE (server/src/prompts.ts:12): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...logy and clinical anatomy that goes with it. You do not chat, answer general questions, write...” → Furthermore, you
+- THE_SUPERLATIVE (server/src/prompts.ts:16): A determiner may be missing. “...equests, ignore them.  Question standards: - Single best answer (sba): a clear stem that can be answe...” → Single the best
+- OK (server/src/prompts.ts:33): Lower-case 'ok' is American English. For British English use "OK". “...ssage", and return no questions. Otherwise, "ok" with an empty message. 3. Note any factual ...” → OK
+- SUBJECT_VERB_AGREEMENT (server/src/schema.ts:28): The verb form 'ID' does not seem to match the subject 'bone'. “...examiners set on this point.  The Atlas bone ID most relevant to the question, or empty.  Th...” → IDs
+- OK (server/src/schema.ts:40): Lower-case 'ok' is American English. For British English use "OK". “...his question tests.  For a status other than ok: one sentence for the student. Otherwise, em...” → OK

@@ -1,0 +1,324 @@
+{
+ "reviewStatus": "draft",
+ "id": "hamate",
+ "bone": "hamate_left",
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4",
+ "oneLine": {
+  "main": {
+   "t": "The hooked wrist bone on the little-finger side, fourth in the second row of carpal bones (hamate).",
+   "src": [
+    "s8-2#fs-id1977414",
+    "glossary:hamate"
+   ]
+  },
+  "simpler": {
+   "t": "The hamate is the wrist bone below your ring and little fingers.",
+   "src": [
+    "glossary:hamate",
+    "s8-2#fs-id1242304"
+   ]
+  },
+  "deeper": {
+   "t": "A hook projects from its front, and it anchors the inner end of the flexor retinaculum.",
+   "src": [
+    "s8-2#fs-id1977414",
+    "s8-2#fs-id2329218"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It is the fourth bone of the distal row, counting from the thumb side.",
+    "src": [
+     "glossary:hamate"
+    ]
+   },
+   {
+    "t": "Above it are the lunate and triquetrum. The capitate is on its thumb side.",
+    "src": [
+     "glossary:hamate"
+    ]
+   },
+   {
+    "t": "Below it are the fourth and fifth metacarpals.",
+    "src": [
+     "glossary:hamate"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits on the little-finger side of the wrist, below the ring and little fingers.",
+   "src": [
+    "glossary:hamate",
+    "s8-2#fs-id1242304"
+   ]
+  },
+  "deeper": {
+   "t": "The metacarpals it carries can move a little forwards and backwards, unlike the second and third.",
+   "src": [
+    "glossary:hamate",
+    "s8-2#fs-id1436751"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Name",
+    "t": "“Hamate” means hooked bone.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "name": "Hook of the hamate",
+    "t": "A prominent bony extension on its front.",
+    "src": [
+     "s8-2#fs-id1977414",
+     "glossary:hook of the hamate bone"
+    ]
+   },
+   {
+    "name": "Surfaces for the fourth and fifth metacarpals",
+    "t": "Its lower surface, at the carpometacarpal joints.",
+    "src": [
+     "glossary:hamate"
+    ]
+   },
+   {
+    "name": "Upper surfaces",
+    "t": "It meets the lunate and triquetrum above.",
+    "src": [
+     "glossary:hamate"
+    ]
+   },
+   {
+    "name": "Side surface",
+    "t": "It meets the capitate on the thumb side.",
+    "src": [
+     "glossary:hamate"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "The hamate is a small bone with a hook on its front.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  "deeper": {
+   "t": "On the little-finger side, the flexor retinaculum attaches to it and to the pisiform.",
+   "src": [
+    "s8-2#fs-id2329218"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "With the pisiform, it anchors the inner end of the flexor retinaculum.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "t": "It carries the fourth and fifth metacarpals, which move a little during a power grip.",
+    "src": [
+     "glossary:hamate",
+     "s8-2#fs-id1436751"
+    ]
+   },
+   {
+    "t": "The forward movement of the fifth metacarpal strengthens the grip of the inner hand.",
+    "src": [
+     "s8-2#fs-id1436751"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It anchors the carpal tunnel’s roof and supports the palm bones of the ring and little fingers.",
+   "src": [
+    "s8-2#fs-id2329218",
+    "glossary:hamate"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joint",
+    "name": "Midcarpal joint",
+    "t": "Its upper surfaces meet the lunate and triquetrum.",
+    "src": [
+     "s8-2#fs-id932152",
+     "glossary:hamate"
+    ]
+   },
+   {
+    "kind": "bones",
+    "name": "Fourth and fifth metacarpals",
+    "t": "Meet its lower surface.",
+    "src": [
+     "glossary:hamate"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Capitate",
+    "t": "Its neighbour on the thumb side.",
+    "src": [
+     "glossary:hamate"
+    ]
+   },
+   {
+    "kind": "ligament",
+    "name": "Flexor retinaculum",
+    "t": "Attached on the little-finger side to the hamate and pisiform.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Ulnar nerve",
+    "t": "Passes beside the hook of the hamate into the hand.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "It joins the first row above, the capitate beside it and the palm bones of the ring and little fingers.",
+   "src": [
+    "glossary:hamate"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms by replacing a cartilage model with bone (endochondral ossification), like all limb bones except the clavicle.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Its single ossification centre appears during the first year, just after the capitate.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the first year, after the capitate (supporting only)."
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Overuse of the tendons or a wrist injury makes the contents of the carpal tunnel swell.",
+    "damaged": "The nerve in the tunnel, whose walls and floor the carpal bones form.",
+    "cannotDo": "Use the hand without pain, numbness or weakness (carpal tunnel syndrome).",
+    "why": "The bony walls and floor and the tough roof cannot stretch, so swelling presses on the nerve.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "injury": "A golf club, bat or racquet handle strikes the base of the palm.",
+    "damaged": "The hook of the hamate breaks.",
+    "cannotDo": "Grip firmly without pain at the base of the palm.",
+    "why": "The handle presses directly on the hook, which projects forwards.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the fourth and fifth metacarpals strengthen a power grip, and the hamate’s part.",
+    "model": [
+     "The hamate carries the fourth and fifth metacarpals.",
+     "These metacarpals can move a little forwards and backwards.",
+     "The fifth moves most.",
+     "Moving forwards in a grip, they press the inner hand firmly against the object."
+    ],
+    "src": [
+     "glossary:hamate",
+     "s8-2#fs-id1436751"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the two ends of the flexor retinaculum.",
+    "model": [
+     "On the thumb side it attaches to the trapezium and scaphoid.",
+     "On the little-finger side it attaches to the hamate and pisiform.",
+     "It spans the top of the U-shaped carpal bones.",
+     "So it forms the roof of the carpal tunnel."
+    ],
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "A golfer strikes the ground and has pain at the base of the palm. Predict the fracture and why.",
+    "model": [
+     "A fracture of the hook of the hamate.",
+     "The club handle lies across the base of the palm.",
+     "The hook projects forwards, so the handle presses on it.",
+     "Gripping is painful."
+    ],
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "What projects from the front of the hamate?",
+   "options": [
+    "A styloid process",
+    "A hook",
+    "A tuberosity",
+    "A head"
+   ],
+   "answer": 1,
+   "why": "The hook of the hamate projects from its front.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  {
+   "stem": "Which metacarpals does the hamate meet?",
+   "options": [
+    "First and second",
+    "Second and third",
+    "Fourth and fifth",
+    "Third only"
+   ],
+   "answer": 2,
+   "why": "It meets the fourth and fifth metacarpals.",
+   "src": [
+    "glossary:hamate"
+   ]
+  },
+  {
+   "stem": "Which carpal bones anchor the inner (medial) end of the flexor retinaculum?",
+   "options": [
+    "Trapezium and scaphoid",
+    "Lunate and triquetrum",
+    "Capitate and trapezoid",
+    "Hamate and pisiform"
+   ],
+   "answer": 3,
+   "why": "Medially, the flexor retinaculum attaches to the hamate and pisiform.",
+   "src": [
+    "s8-2#fs-id2329218"
+   ]
+  }
+ ]
+}

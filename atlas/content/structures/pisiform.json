@@ -1,0 +1,304 @@
+{
+ "reviewStatus": "draft",
+ "id": "pisiform",
+ "bone": "pisiform_left",
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5",
+ "oneLine": {
+  "main": {
+   "t": "A small pea-shaped bone on the front of the triquetrum, at the base of the hand (pisiform).",
+   "src": [
+    "s8-2#fs-id1977414",
+    "glossary:pisiform"
+   ]
+  },
+  "simpler": {
+   "t": "The pisiform is the small round wrist bone at the base of your palm, on the little-finger side.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  "deeper": {
+   "t": "It sits on the front of the triquetrum, not in line with the other bones of its row.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It is the fourth bone of the first row, counting from the thumb side.",
+    "src": [
+     "glossary:pisiform",
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "t": "Unlike the rest of its row, it sits on the front (anterior) surface of the triquetrum.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "t": "From there it projects forwards, forming the bump at the inner base of the hand.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Feel the bump at the base of your palm, below the little finger: that is the pisiform.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  "deeper": {
+   "t": "Its only joint is with the triquetrum.",
+   "src": [
+    "glossary:pisiform"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Pea shape",
+    "t": "“Pisiform” means pea-shaped.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "name": "Facet for the triquetrum",
+    "t": "A flat surface on its back, where it meets the triquetrum.",
+    "src": [
+     "glossary:pisiform"
+    ]
+   },
+   {
+    "name": "Front surface",
+    "t": "Projects forwards, so you can feel it at the base of the hand.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "name": "Attachment of the flexor retinaculum",
+    "t": "The inner end of the flexor retinaculum anchors to it.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is a small round bone that you can feel through the skin.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  "deeper": {
+   "t": "It lies within the tendon of a forearm muscle (flexor carpi ulnaris), like a kneecap within its tendon.",
+   "src": [],
+   "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "It anchors the inner end of the flexor retinaculum, which holds the carpal bones in their U shape.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "t": "It is the only carpal bone out of line with its row: it sits on the triquetrum.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "The pisiform anchors the band that roofs the carpal tunnel.",
+   "src": [
+    "s8-2#fs-id2329218"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "bone",
+    "name": "Triquetrum",
+    "t": "Its only joint: it sits on the triquetrum’s front surface.",
+    "src": [
+     "glossary:pisiform",
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "kind": "ligament",
+    "name": "Flexor retinaculum",
+    "t": "Attached on the little-finger side to the hamate and pisiform.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "kind": "space",
+    "name": "Carpal tunnel",
+    "t": "The flexor retinaculum it anchors forms the roof of the tunnel.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Flexor carpi ulnaris",
+    "t": "Its tendon attaches to the pisiform.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "kind": "nerve and artery",
+    "name": "Ulnar nerve and artery",
+    "t": "Pass beside it into the hand, outside the carpal tunnel.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "It sits on the triquetrum and anchors the roof of the carpal tunnel.",
+   "src": [
+    "s8-2#fs-id1977414",
+    "s8-2#fs-id2329218"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms by replacing a cartilage model with bone (endochondral ossification), like all limb bones except the clavicle.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Its single ossification centre appears last of the carpal bones, at about the twelfth year.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives about the twelfth year (supporting only)."
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A fall onto the heel of the hand on the little-finger side.",
+    "damaged": "The pisiform breaks.",
+    "cannotDo": "Bend the wrist towards the little-finger side without pain.",
+    "why": "A forearm muscle tendon attaches to it and pulls on the broken bone.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "injury": "Long pressure on the base of the palm, as in long-distance cycling.",
+    "damaged": "The ulnar nerve beside the pisiform.",
+    "cannotDo": "Spread and close the fingers strongly; the little finger may feel numb.",
+    "why": "The nerve passes beside the pisiform and the hook of the hamate into the hand.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why you can feel the pisiform when you cannot feel most carpal bones.",
+    "model": [
+     "It sits on the front of the triquetrum, not in line with its row.",
+     "It projects forwards.",
+     "So it forms a bump at the inner base of the hand.",
+     "Most carpal bones lie deeper, in their two rows."
+    ],
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the pisiform and the hook of the hamate.",
+    "model": [
+     "Both are on the little-finger side of the hand.",
+     "The pisiform is a whole bone sitting on the triquetrum.",
+     "The hook is a bony extension on the front of the hamate.",
+     "The flexor retinaculum attaches on this side to the hamate and pisiform."
+    ],
+    "src": [
+     "s8-2#fs-id1977414",
+     "glossary:hook of the hamate bone",
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "After a long ride, a cyclist’s little finger feels numb. Predict the nerve affected and where.",
+    "model": [
+     "The ulnar nerve.",
+     "It is pressed where it passes beside the pisiform into the hand.",
+     "The pressure comes from leaning on the handlebars.",
+     "The median nerve, in the carpal tunnel, is spared."
+    ],
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "What does “pisiform” mean?",
+   "options": [
+    "Hook-shaped",
+    "Moon-shaped",
+    "Pea-shaped",
+    "Three-cornered"
+   ],
+   "answer": 2,
+   "why": "“Pisiform” means pea-shaped.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  {
+   "stem": "Which bone does the pisiform sit on?",
+   "options": [
+    "Triquetrum",
+    "Hamate",
+    "Lunate",
+    "Ulna"
+   ],
+   "answer": 0,
+   "why": "It sits on the front surface of the triquetrum.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  {
+   "stem": "What attaches to the pisiform?",
+   "options": [
+    "The annular ligament",
+    "The interosseous membrane",
+    "The coracoclavicular ligament",
+    "The flexor retinaculum"
+   ],
+   "answer": 3,
+   "why": "The flexor retinaculum attaches medially to the hamate and pisiform.",
+   "src": [
+    "s8-2#fs-id2329218"
+   ]
+  }
+ ]
+}

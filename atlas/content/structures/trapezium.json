@@ -1,0 +1,329 @@
+{
+ "reviewStatus": "draft",
+ "id": "trapezium",
+ "bone": "trapezium_left",
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4; 9.5",
+ "oneLine": {
+  "main": {
+   "t": "The wrist bone at the base of the thumb, first in the second row of carpal bones (trapezium).",
+   "src": [
+    "s8-2#fs-id1977414",
+    "glossary:trapezium"
+   ]
+  },
+  "simpler": {
+   "t": "The trapezium is the wrist bone at the base of your thumb.",
+   "src": [
+    "glossary:trapezium",
+    "s9-4#fs-id1837120"
+   ]
+  },
+  "deeper": {
+   "t": "Its saddle joint with the first metacarpal gives humans their opposable thumbs.",
+   "src": [
+    "s9-4#fs-id1837120"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It is the first bone of the second (distal) row, counting from the thumb side.",
+    "src": [
+     "glossary:trapezium"
+    ]
+   },
+   {
+    "t": "The scaphoid is above it. The trapezoid is beside it, towards the little finger.",
+    "src": [
+     "glossary:trapezium"
+    ]
+   },
+   {
+    "t": "Below it are the first and second metacarpals.",
+    "src": [
+     "glossary:trapezium"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits at the base of your thumb, just above the thumb’s palm bone.",
+   "src": [
+    "glossary:trapezium",
+    "s9-4#fs-id1837120"
+   ]
+  },
+  "deeper": {
+   "t": "It is one of the four carpal bones the flexor retinaculum attaches to.",
+   "src": [
+    "s8-2#fs-id2329218"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Name",
+    "t": "“Trapezium” means table.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "name": "Saddle surface",
+    "t": "Its surface for the first metacarpal is saddle-shaped: concave one way and convex the other.",
+    "src": [
+     "s9-4#fs-id1837120"
+    ]
+   },
+   {
+    "name": "Surface for the second metacarpal",
+    "t": "A small surface beside it, for the second metacarpal.",
+    "src": [
+     "glossary:trapezium"
+    ]
+   },
+   {
+    "name": "Surfaces for the scaphoid and trapezoid",
+    "t": "It meets the scaphoid above and the trapezoid beside it.",
+    "src": [
+     "glossary:trapezium"
+    ]
+   },
+   {
+    "name": "Front surface",
+    "t": "With the scaphoid, it anchors the outer end of the flexor retinaculum.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It has a saddle-shaped joint surface for the thumb.",
+   "src": [
+    "s9-4#fs-id1837120"
+   ]
+  },
+  "deeper": {
+   "t": "The saddle shape lets the thumb move within the plane of the palm and out in front of it.",
+   "src": [
+    "s9-4#fs-id1837120"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "The saddle joint is biaxial: the thumb can move in two planes.",
+    "src": [
+     "s9-4#fs-id1837120"
+    ]
+   },
+   {
+    "t": "Opposition, touching the thumb to a fingertip, combines flexion and abduction at this joint.",
+    "src": [
+     "s9-5#fs-id1354267"
+    ]
+   },
+   {
+    "t": "Its front anchors the flexor retinaculum, which roofs the carpal tunnel.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Its saddle shape lets your thumb swing across to touch your fingertips.",
+   "src": [
+    "s9-4#fs-id1837120",
+    "s9-5#fs-id1354267"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joint",
+    "name": "First carpometacarpal joint",
+    "t": "A saddle joint with the first metacarpal, at the base of the thumb.",
+    "src": [
+     "s9-4#fs-id1837120"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Second metacarpal",
+    "t": "Meets a small surface beside the saddle.",
+    "src": [
+     "glossary:trapezium"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Scaphoid",
+    "t": "Meets it above.",
+    "src": [
+     "glossary:trapezium"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Trapezoid",
+    "t": "Its neighbour in the second row.",
+    "src": [
+     "glossary:trapezium"
+    ]
+   },
+   {
+    "kind": "ligament",
+    "name": "Flexor retinaculum",
+    "t": "Attached on the thumb side to the trapezium and scaphoid.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It carries the thumb’s palm bone and anchors the roof of the carpal tunnel.",
+   "src": [
+    "s9-4#fs-id1837120",
+    "s8-2#fs-id2329218"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms by replacing a cartilage model with bone (endochondral ossification), like all limb bones except the clavicle.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Its single ossification centre appears at about the fifth year.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the fifth year (as the “greater multangular”) (supporting only)."
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "An injury to the joint at the base of the thumb.",
+    "damaged": "The first carpometacarpal (saddle) joint.",
+    "cannotDo": "Touch the tip of the thumb to the tip of a finger (opposition).",
+    "why": "Opposition is produced at this joint, by flexion and abduction of the thumb.",
+    "src": [
+     "s9-5#fs-id1354267",
+     "s9-4#fs-id1837120"
+    ]
+   },
+   {
+    "injury": "Years of pinching and gripping.",
+    "damaged": "The joint between the trapezium and the first metacarpal wears (osteoarthritis).",
+    "cannotDo": "Pinch, open jars or turn keys without pain at the base of the thumb.",
+    "why": "This saddle joint takes the force of every pinch and grip.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the trapezium makes the thumb opposable.",
+    "model": [
+     "It forms a saddle joint with the first metacarpal.",
+     "A saddle joint is biaxial: the thumb moves in two planes.",
+     "The first metacarpal is separate from the others, so it moves freely.",
+     "Flexion with abduction at this joint brings the thumb to the fingertips."
+    ],
+    "src": [
+     "s9-4#fs-id1837120",
+     "s8-2#fs-id1436751",
+     "s9-5#fs-id1354267"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the trapezium and the trapezoid.",
+    "model": [
+     "Both are in the second row, on the thumb side.",
+     "The trapezium (“table”) is first; the trapezoid (“resembles a table”) is second.",
+     "The trapezium meets the first and second metacarpals; the trapezoid meets only the second.",
+     "Only the trapezium anchors the flexor retinaculum."
+    ],
+    "src": [
+     "s8-2#fs-id1977414",
+     "glossary:trapezium",
+     "glossary:trapezoid",
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict which thumb movements are lost if the first carpometacarpal joint is fused.",
+    "model": [
+     "Opposition: touching the thumb to a fingertip.",
+     "Flexion and extension of the thumb at this joint.",
+     "Abduction and adduction of the thumb.",
+     "The joints further along the thumb still bend."
+    ],
+    "src": [
+     "s9-5#fs-id1354267",
+     "s9-5#fs-id2227353",
+     "s9-5#fs-id1751608"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "What type of joint lies between the trapezium and the first metacarpal?",
+   "options": [
+    "Hinge",
+    "Pivot",
+    "Saddle",
+    "Plane"
+   ],
+   "answer": 2,
+   "why": "The first carpometacarpal joint is a saddle joint.",
+   "src": [
+    "s9-4#fs-id1837120"
+   ]
+  },
+  {
+   "stem": "Which bones does the trapezium meet below?",
+   "options": [
+    "First and second metacarpals",
+    "Second metacarpal only",
+    "Third metacarpal",
+    "Fourth and fifth metacarpals"
+   ],
+   "answer": 0,
+   "why": "It meets the first and second metacarpals.",
+   "src": [
+    "glossary:trapezium"
+   ]
+  },
+  {
+   "stem": "Which thumb movement combines flexion and abduction at the first carpometacarpal joint?",
+   "options": [
+    "Reposition",
+    "Extension",
+    "Adduction",
+    "Opposition"
+   ],
+   "answer": 3,
+   "why": "Opposition brings the tip of the thumb to the tip of a finger.",
+   "src": [
+    "s9-5#fs-id1354267"
+   ]
+  }
+ ]
+}

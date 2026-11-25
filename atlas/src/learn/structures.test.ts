@@ -55,7 +55,8 @@ function texts(s: Structure): [string, string][] {
 
 describe('structure lessons', () => {
   it('has the five review samples', () => {
-    expect(lessons.map((s) => s.id).sort()).toEqual(['humerus', 'mandible', 'scaphoid', 'scapula', 'sphenoid'])
+    expect(lessons.length).toBeGreaterThanOrEqual(5)
+    for (const id of ['humerus', 'mandible', 'scaphoid', 'scapula', 'sphenoid']) expect(lessons.map((s) => s.id)).toContain(id)
   })
 
   it('uses real bones and topics, and every layer', () => {

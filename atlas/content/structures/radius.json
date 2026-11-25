@@ -1,0 +1,364 @@
+{
+ "reviewStatus": "draft",
+ "id": "radius",
+ "bone": "radius_left",
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5; 9.4; 9.5; 9.6; 20.5",
+ "oneLine": {
+  "main": {
+   "t": "The lateral bone of the forearm, on the thumb side (radius).",
+   "src": [
+    "s8-2#fs-id1411842",
+    "s8-2#fs-id1415448"
+   ]
+  },
+  "simpler": {
+   "t": "The radius is the forearm bone on the thumb side.",
+   "src": [
+    "s8-2#fs-id1411842"
+   ]
+  },
+  "deeper": {
+   "t": "It turns around the ulna as the palm turns backwards and forwards (pronation and supination).",
+   "src": [
+    "s9-5#fs-id1837207"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It runs from the elbow to the wrist, alongside the ulna.",
+    "src": [
+     "s8-2#fs-id1411842",
+     "s8-2#fs-id1415448"
+    ]
+   },
+   {
+    "t": "In the anatomical position it is lateral, on the thumb side; the ulna is medial.",
+    "src": [
+     "s8-2#fs-id1415448",
+     "s8-2#fs-id1411842"
+    ]
+   },
+   {
+    "t": "Its head meets the humerus and ulna at the elbow. Its lower end meets the carpal bones at the wrist.",
+    "src": [
+     "s8-2#fs-id1411842"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It runs from your elbow to your wrist on the thumb side.",
+   "src": [
+    "s8-2#fs-id1411842"
+   ]
+  },
+  "deeper": {
+   "t": "When the palm faces backwards, the radius crosses over the ulna and the two form an X.",
+   "src": [
+    "s9-5#fs-id1547390"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Head",
+    "t": "A disc at the top. Its hollow meets the capitulum of the humerus; its rim turns against the ulna.",
+    "src": [
+     "s8-2#fs-id1411842"
+    ]
+   },
+   {
+    "name": "Neck",
+    "t": "The narrow part just below the head.",
+    "src": [
+     "s8-2#fs-id1411842"
+    ]
+   },
+   {
+    "name": "Radial tuberosity",
+    "t": "An oval bump below the neck, on the inner side, where a muscle attaches.",
+    "src": [
+     "s8-2#fs-id1411842"
+    ]
+   },
+   {
+    "name": "Interosseous border",
+    "t": "A ridge on the inner side of the shaft. The interosseous membrane attaches along it.",
+    "src": [
+     "s8-2#fs-id1411842"
+    ]
+   },
+   {
+    "name": "Ulnar notch",
+    "t": "A shallow hollow at the lower end that meets the head of the ulna.",
+    "src": [
+     "s8-2#fs-id1411842"
+    ]
+   },
+   {
+    "name": "Styloid process",
+    "t": "A pointed projection at the lower outer end. Ligaments of the wrist joint attach to it.",
+    "src": [
+     "s8-2#fs-id1411842"
+    ]
+   },
+   {
+    "name": "Carpal surface",
+    "t": "The smooth lower end. It meets the scaphoid and lunate at the wrist joint.",
+    "src": [
+     "s8-2#fs-id1411842",
+     "s8-2#fs-id1882937"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It has a round head at the elbow and a wide end at the wrist.",
+   "src": [
+    "s8-2#fs-id1411842"
+   ]
+  },
+  "deeper": {
+   "t": "Its styloid process reaches further down than the ulna’s. This limits how far the hand bends to the thumb side.",
+   "src": [
+    "s8-2#fs-id1411842"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Its disc-shaped head turns within a ring of ligament at a pivot joint.",
+    "src": [
+     "s9-4#fs-id1636208",
+     "s9-6#fs-id2602265"
+    ]
+   },
+   {
+    "t": "Its shaft is slightly curved, so as the head turns, its lower end swings across the ulna.",
+    "src": [
+     "s9-5#fs-id1837207"
+    ]
+   },
+   {
+    "t": "The broad lower end meets two carpal bones directly, so force from a fall on the hand passes into it.",
+    "src": [
+     "s8-2#fs-id1882937",
+     "s8-2#fs-id1989621"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Its round head spins. This lets your forearm twist and your palm turn over.",
+   "src": [
+    "s9-4#fs-id1636208",
+    "s9-5#fs-id1837207"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joint",
+    "name": "Elbow joint",
+    "t": "Its head meets the capitulum (humeroradial joint), inside the same capsule as the elbow hinge.",
+    "src": [
+     "s9-6#fs-id1355969",
+     "s8-2#fs-id1411842"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "Proximal radioulnar joint",
+    "t": "A pivot joint: the head turns in the radial notch of the ulna.",
+    "src": [
+     "s9-4#fs-id1636208",
+     "s9-5#fs-id1401596"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "Distal radioulnar joint",
+    "t": "The ulnar notch meets the head of the ulna.",
+    "src": [
+     "s8-2#fs-id1411842"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "Wrist (radiocarpal) joint",
+    "t": "A condyloid joint: the lower end meets the scaphoid and lunate.",
+    "src": [
+     "s9-4#fs-id1434553",
+     "s8-2#fs-id1882937"
+    ]
+   },
+   {
+    "kind": "ligament",
+    "name": "Annular ligament",
+    "t": "Encircles the head and holds it against the ulna as it turns.",
+    "src": [
+     "s9-6#fs-id2602265"
+    ]
+   },
+   {
+    "kind": "membrane",
+    "name": "Interosseous membrane",
+    "t": "A sheet of dense connective tissue joining the shafts of the radius and ulna.",
+    "src": [
+     "s8-2#fs-id1266017",
+     "s8-2#fs-id1411842"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Radial artery",
+    "t": "Runs down the forearm alongside the radius to the wrist.",
+    "src": [
+     "s20-5#fs-id1595346"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It joins the humerus, the ulna and the wrist bones, and the radial artery runs beside it.",
+   "src": [
+    "s8-2#fs-id1411842",
+    "s20-5#fs-id1595346"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms by replacing a cartilage model with bone (endochondral ossification).",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Bone first appears in the shaft by about the twelfth week. Centres in the ends appear later, usually after birth.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A fall onto the outstretched hand, often in an older person with osteoporosis.",
+    "damaged": "The lower end of the radius breaks across, and the lower fragment is pushed backwards and upwards (Colles fracture).",
+    "cannotDo": "Use the wrist normally: the forearm has a “dinner fork” bend just above it.",
+    "why": "The hand is carried backwards with the displaced fragment.",
+    "src": [
+     "s8-2#fs-id2142217"
+    ]
+   },
+   {
+    "injury": "A young child is lifted or swung by the hand.",
+    "damaged": "The head of the radius slips partly out of the annular ligament (“pulled elbow”).",
+    "cannotDo": "Turn the palm up, and the child holds the arm still.",
+    "why": "The annular ligament normally holds the head in place as it turns.",
+    "src": [
+     "s9-6#fs-id2602265"
+    ],
+    "check": "“Pulled elbow” (radial head subluxation) in young children is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the radius and ulna move as the forearm turns from palm forwards to palm backwards.",
+    "model": [
+     "This movement is pronation.",
+     "The head of the radius turns at the proximal radioulnar joint, a pivot joint.",
+     "The shaft is slightly curved, so the lower end of the radius crosses over the ulna.",
+     "The two bones end in an X shape; supination returns them to parallel."
+    ],
+    "src": [
+     "s9-5#fs-id1837207",
+     "s9-5#fs-id1547390"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the styloid processes of the radius and the ulna.",
+    "model": [
+     "Radius: a pointed projection at its lower outer end.",
+     "Ulna: a short projection from the back of its head.",
+     "The radial styloid reaches further down.",
+     "So the hand bends less far to the thumb side than to the little-finger side."
+    ],
+    "src": [
+     "s8-2#fs-id1411842",
+     "s8-2#fs-id1266017"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "A 70-year-old woman falls on her outstretched hand. Predict the fracture and how the wrist looks.",
+    "model": [
+     "A Colles fracture: the lower end of the radius breaks across.",
+     "The lower fragment is pushed backwards and upwards.",
+     "The forearm has a “dinner fork” bend just above the wrist.",
+     "It is the most common forearm fracture, especially with osteoporosis."
+    ],
+    "src": [
+     "s8-2#fs-id2142217"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which part of the radius meets the capitulum of the humerus?",
+   "options": [
+    "Ulnar notch",
+    "Head",
+    "Styloid process",
+    "Radial tuberosity"
+   ],
+   "answer": 1,
+   "why": "The small hollow on the top of the head meets the capitulum at the elbow.",
+   "src": [
+    "s8-2#fs-id1411842"
+   ]
+  },
+  {
+   "stem": "At which joint does the head of the radius turn during pronation?",
+   "options": [
+    "Proximal radioulnar joint",
+    "Wrist (radiocarpal) joint",
+    "Midcarpal joint",
+    "Humeroulnar joint"
+   ],
+   "answer": 0,
+   "why": "The proximal radioulnar joint is a pivot joint: the head turns in the radial notch of the ulna.",
+   "src": [
+    "s9-4#fs-id1636208",
+    "s9-5#fs-id1837207"
+   ]
+  },
+  {
+   "stem": "What causes the “dinner fork” shape after a Colles fracture?",
+   "options": [
+    "The ulna dislocates forwards",
+    "The scaphoid breaks",
+    "The wrist swells",
+    "The lower fragment of the radius is pushed backwards"
+   ],
+   "answer": 3,
+   "why": "The distal fragment is driven backwards and upwards, carrying the hand with it.",
+   "src": [
+    "s8-2#fs-id2142217"
+   ]
+  }
+ ]
+}

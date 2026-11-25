@@ -1,0 +1,376 @@
+{
+ "reviewStatus": "draft",
+ "id": "ulna",
+ "bone": "ulna_left",
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5; 9.4; 9.5; 9.6; 20.5",
+ "oneLine": {
+  "main": {
+   "t": "The medial bone of the forearm, on the little-finger side (ulna).",
+   "src": [
+    "s8-2#fs-id2080518",
+    "s8-2#fs-id1415448"
+   ]
+  },
+  "simpler": {
+   "t": "The ulna is the forearm bone on the little-finger side.",
+   "src": [
+    "s8-2#fs-id2080518",
+    "s8-2#fs-id2002490"
+   ]
+  },
+  "deeper": {
+   "t": "Its hooked upper end grips the humerus and forms the hinge of the elbow.",
+   "src": [
+    "s8-2#fs-id2080518",
+    "s9-6#fs-id1355969"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It runs from the elbow to the wrist, parallel to the radius, on the medial side.",
+    "src": [
+     "s8-2#fs-id2080518"
+    ]
+   },
+   {
+    "t": "Its upper end forms the bony point of the elbow.",
+    "src": [
+     "s8-2#fs-id2080518"
+    ]
+   },
+   {
+    "t": "At the wrist it does not touch the carpal bones directly.",
+    "src": [
+     "s8-2#fs-id1882937"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It runs from the point of your elbow down to the little-finger side of your wrist.",
+   "src": [
+    "s8-2#fs-id2080518"
+   ]
+  },
+  "deeper": {
+   "t": "A pad of fibrocartilage between the radius and the ulna’s styloid process meets the triquetrum.",
+   "src": [
+    "s8-2#fs-id1882937"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Trochlear notch",
+    "t": "A large C-shaped hollow, like a crescent spanner. It wraps around the trochlea of the humerus.",
+    "src": [
+     "s8-2#fs-id2080518"
+    ]
+   },
+   {
+    "name": "Olecranon",
+    "t": "The bony point of the elbow. It fits into the olecranon fossa of the humerus when the elbow straightens.",
+    "src": [
+     "s8-2#fs-id2080518",
+     "s8-2#fs-id2444175"
+    ]
+   },
+   {
+    "name": "Coronoid process",
+    "t": "The lip below the notch. It fits into the coronoid fossa when the elbow bends fully.",
+    "src": [
+     "s8-2#fs-id2080518",
+     "s8-2#fs-id2444175"
+    ]
+   },
+   {
+    "name": "Radial notch",
+    "t": "A small smooth area beside the notch, where the head of the radius turns.",
+    "src": [
+     "s8-2#fs-id2080518"
+    ]
+   },
+   {
+    "name": "Ulnar tuberosity",
+    "t": "A rough area on the front, just below the coronoid process.",
+    "src": [
+     "s8-2#fs-id2080518"
+    ]
+   },
+   {
+    "name": "Interosseous border",
+    "t": "A ridge on the outer side of the shaft. The interosseous membrane attaches along it.",
+    "src": [
+     "s8-2#fs-id1266017"
+    ]
+   },
+   {
+    "name": "Head and styloid process",
+    "t": "The small rounded lower end, with a short projection behind it.",
+    "src": [
+     "s8-2#fs-id1266017"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Its big hooked top end wraps around the humerus; its small head is at the wrist.",
+   "src": [
+    "s8-2#fs-id2080518",
+    "s8-2#fs-id1266017"
+   ]
+  },
+  "deeper": {
+   "t": "The ulna’s head is at its lower end. The radius is the other way round: its head is at the elbow.",
+   "src": [
+    "s8-2#fs-id1266017",
+    "s8-2#fs-id1411842"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "The C-shaped notch wraps around the pulley-shaped trochlea, so the elbow can only bend and straighten.",
+    "src": [
+     "s8-2#fs-id2080518",
+     "s9-4#fs-id2523908"
+    ]
+   },
+   {
+    "t": "The olecranon and coronoid process fit into hollows of the humerus. So the elbow can straighten and bend fully.",
+    "src": [
+     "s8-2#fs-id2444175"
+    ]
+   },
+   {
+    "t": "In pronation, it is the radius that turns; its lower end crosses over the ulna.",
+    "src": [
+     "s9-5#fs-id1837207"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Its hook makes a strong hinge, so your elbow bends and straightens like a door.",
+   "src": [
+    "s8-2#fs-id2080518",
+    "s9-4#fs-id2523908"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joint",
+    "name": "Elbow (humeroulnar) joint",
+    "t": "A uniaxial hinge joint between the trochlea and the trochlear notch.",
+    "src": [
+     "s9-6#fs-id1355969",
+     "s9-4#fs-id2523908"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "Proximal radioulnar joint",
+    "t": "The radial notch meets the head of the radius.",
+    "src": [
+     "s8-2#fs-id2080518"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "Distal radioulnar joint",
+    "t": "Its head meets the ulnar notch of the radius.",
+    "src": [
+     "s8-2#fs-id1411842"
+    ]
+   },
+   {
+    "kind": "ligament",
+    "name": "Ulnar collateral ligament",
+    "t": "A triangular band from the medial epicondyle to the inner side of the upper ulna.",
+    "src": [
+     "s9-6#fs-id2430675"
+    ]
+   },
+   {
+    "kind": "membrane",
+    "name": "Interosseous membrane",
+    "t": "Joins the shafts of the ulna and radius.",
+    "src": [
+     "s8-2#fs-id1266017"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Ulnar artery",
+    "t": "Runs down the forearm alongside the ulna to the wrist.",
+    "src": [
+     "s20-5#fs-id1595346"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Ulnar nerve",
+    "t": "Passes behind the medial epicondyle and enters the forearm beside the ulna.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "It hinges with the humerus and joins the radius at both ends.",
+   "src": [
+    "s9-6#fs-id1355969",
+    "s8-2#fs-id2080518",
+    "s8-2#fs-id1411842"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms by replacing a cartilage model with bone (endochondral ossification).",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Bone first appears in the shaft by about the twelfth week. Centres in the ends appear later, usually after birth.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "With the elbow straight, the forearm angles 5–15 degrees outwards from the arm (the carrying angle).",
+    "src": [
+     "s8-2#fs-id1483561"
+    ]
+   },
+   {
+    "t": "The carrying angle is larger in females, to clear their wider pelvis.",
+    "src": [
+     "s8-2#fs-id1483561"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Repeated forceful straightening of the forearm, as in baseball pitching.",
+    "damaged": "The ulnar collateral ligament on the inner side of the elbow.",
+    "cannotDo": "Throw forcefully; the ligament may need reconstruction (“Tommy John surgery”).",
+    "why": "This ligament stops the elbow moving sideways and over-straightening; its front part resists over-straightening most.",
+    "src": [
+     "s9-6#fs-id2430675"
+    ]
+   },
+   {
+    "injury": "A fall onto the point of the elbow.",
+    "damaged": "The olecranon breaks.",
+    "cannotDo": "Straighten the elbow against resistance.",
+    "why": "The muscle that straightens the elbow (triceps) pulls on the olecranon, drawing the fragment away.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the elbow can only bend and straighten.",
+    "model": [
+     "The humeroulnar joint is a hinge joint.",
+     "The C-shaped trochlear notch wraps around the pulley-shaped trochlea.",
+     "This allows movement around a single axis.",
+     "Strong collateral ligaments also prevent side-to-side movement."
+    ],
+    "src": [
+     "s9-4#fs-id2523908",
+     "s8-2#fs-id2080518",
+     "s9-6#fs-id2430675"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the upper and lower ends of the ulna and the radius.",
+    "model": [
+     "Ulna: a large upper end with the trochlear notch, and a small head below.",
+     "Radius: a small disc-shaped head above, and a broad lower end.",
+     "The lower end of the radius meets two carpal bones.",
+     "The lower end of the ulna does not touch the carpal bones directly."
+    ],
+    "src": [
+     "s8-2#fs-id2080518",
+     "s8-2#fs-id1266017",
+     "s8-2#fs-id1411842",
+     "s8-2#fs-id1882937"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "A baseball pitcher has pain on the inner side of the elbow when throwing. Predict the injured structure and its normal job.",
+    "model": [
+     "The ulnar collateral ligament.",
+     "It runs from the medial epicondyle to the inner side of the upper ulna.",
+     "It stops sideways movement and over-straightening of the elbow.",
+     "Forceful repeated throwing strains it; it may need reconstruction."
+    ],
+    "src": [
+     "s9-6#fs-id2430675"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which part of the ulna forms the bony point of the elbow?",
+   "options": [
+    "Coronoid process",
+    "Ulnar tuberosity",
+    "Olecranon",
+    "Styloid process"
+   ],
+   "answer": 2,
+   "why": "The olecranon forms the bony tip of the elbow.",
+   "src": [
+    "s8-2#fs-id2080518"
+   ]
+  },
+  {
+   "stem": "Which bone does the trochlear notch of the ulna meet?",
+   "options": [
+    "Humerus",
+    "Radius",
+    "Scaphoid",
+    "Lunate"
+   ],
+   "answer": 0,
+   "why": "It wraps around the trochlea of the humerus at the elbow.",
+   "src": [
+    "s8-2#fs-id2080518"
+   ]
+  },
+  {
+   "stem": "What is the carrying angle?",
+   "options": [
+    "The angle of the radial head",
+    "The bend of the wrist in a Colles fracture",
+    "The angle between the hand and the forearm",
+    "The outward angle of the forearm from the arm"
+   ],
+   "answer": 3,
+   "why": "With the elbow straight, the forearm angles 5–15 degrees outwards from the arm.",
+   "src": [
+    "s8-2#fs-id1483561"
+   ]
+  }
+ ]
+}

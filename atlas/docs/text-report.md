@@ -1,6 +1,6 @@
 # Atlas text check
 
-15,862 pieces of text, 343,970 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 177 approved + 0 proposed.
+16,688 pieces of text, 351,309 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 177 approved + 0 proposed.
 
 **Result: PASS.** Unknown words: 0. American spellings: 0. Names written two ways or in the wrong case: 0. Abbreviations not written out at first use: 0. Restricted words out of place: 0. Names not in their owners’ spelling: 0. Grammar rule hits: 8.
 
@@ -26,7 +26,7 @@ Organisation names: none written with a British spelling where the owner uses an
 - **docx**: Internal use only; students see “Word” or “.docx”. Use “Word”, or “.docx” for the file type.
 - **PDFs**: Internal use only; students see “PDF”. Use “PDF” (“PDF files”).
 - **acromiale**: Approved only as part of the full term “os acromiale”. Use “os acromiale”.
-- **pinky**: Kept only as a Spelling Quiz alternative (and in Gray’s text, as published). Use “little finger”.
+- **pinky**: Kept only as a Spelling Quiz alternative (and in Gray’s text, as published). One exception, pending your decision: OpenStax 8.2’s mnemonic “So Long To Pinky, Here Comes The Thumb”. Use “little finger”.
 - **calcaneum**: Kept only as a Spelling Quiz alternative (and in Gray’s text, as published). Use “calcaneus”.
 - **calcis**: Kept only as a Spelling Quiz alternative (and in Gray’s text, as published). Use “calcaneus” (“os calcis” only as a Spelling Quiz alternative).
 

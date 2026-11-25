@@ -1,0 +1,326 @@
+{
+ "reviewStatus": "draft",
+ "id": "trapezoid",
+ "bone": "trapezoid_left",
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4",
+ "oneLine": {
+  "main": {
+   "t": "A small wrist bone at the base of the index finger, second in the second row of carpal bones (trapezoid).",
+   "src": [
+    "s8-2#fs-id1977414",
+    "glossary:trapezoid",
+    "s8-2#fs-id1242304"
+   ]
+  },
+  "simpler": {
+   "t": "The trapezoid is a small wrist bone at the base of your index finger.",
+   "src": [
+    "glossary:trapezoid",
+    "s8-2#fs-id1242304"
+   ]
+  },
+  "deeper": {
+   "t": "It meets only one metacarpal, the second, which is firmly anchored and does not move.",
+   "src": [
+    "glossary:trapezoid",
+    "s8-2#fs-id1436751"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It is the second bone of the distal row, counting from the thumb side.",
+    "src": [
+     "glossary:trapezoid"
+    ]
+   },
+   {
+    "t": "The trapezium is beside it on the thumb side, and the capitate on the other side.",
+    "src": [
+     "glossary:trapezoid"
+    ]
+   },
+   {
+    "t": "The scaphoid is above it, and the second metacarpal below.",
+    "src": [
+     "glossary:trapezoid"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits between the base of the thumb and the middle of the wrist.",
+   "src": [
+    "glossary:trapezoid"
+   ]
+  },
+  "deeper": {
+   "t": "Ligaments hold it together with the other bones of its row.",
+   "src": [
+    "s8-2#fs-id932152"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Name",
+    "t": "“Trapezoid” means “resembles a table”.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "name": "Surface for the second metacarpal",
+    "t": "Its lower surface, at the carpometacarpal joint.",
+    "src": [
+     "glossary:trapezoid",
+     "glossary:carpometacarpal joint"
+    ]
+   },
+   {
+    "name": "Surface for the scaphoid",
+    "t": "Its upper surface.",
+    "src": [
+     "glossary:trapezoid"
+    ]
+   },
+   {
+    "name": "Side surfaces",
+    "t": "It meets the trapezium on one side and the capitate on the other.",
+    "src": [
+     "glossary:trapezoid"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is a small block of bone with joints on four sides.",
+   "src": [
+    "glossary:trapezoid"
+   ]
+  },
+  "deeper": {
+   "t": "Its joints with its neighbours are plane (gliding) joints, which allow small sliding movements.",
+   "src": [
+    "s9-4#fs-id1482998"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "It supports the second metacarpal, which is firmly anchored and does not move.",
+    "src": [
+     "glossary:trapezoid",
+     "s8-2#fs-id1436751"
+    ]
+   },
+   {
+    "t": "Its plane joints with the neighbouring carpal bones allow only small sliding movements.",
+    "src": [
+     "s9-4#fs-id1482998"
+    ]
+   },
+   {
+    "t": "With the other carpal bones it forms the walls and floor of the carpal tunnel.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It gives the index finger’s palm bone a firm base.",
+   "src": [
+    "glossary:trapezoid",
+    "s8-2#fs-id1436751"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "bone",
+    "name": "Second metacarpal",
+    "t": "Meets its lower surface at the carpometacarpal joint.",
+    "src": [
+     "glossary:trapezoid",
+     "glossary:carpometacarpal joint"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Scaphoid",
+    "t": "Meets it above, at the midcarpal joint.",
+    "src": [
+     "glossary:trapezoid",
+     "s8-2#fs-id932152"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Trapezium",
+    "t": "Its neighbour on the thumb side.",
+    "src": [
+     "glossary:trapezoid"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Capitate",
+    "t": "Its neighbour on the little-finger side.",
+    "src": [
+     "glossary:trapezoid"
+    ]
+   },
+   {
+    "kind": "joints",
+    "name": "Intercarpal joints",
+    "t": "Plane joints between neighbouring carpal bones.",
+    "src": [
+     "s9-4#fs-id1482998"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is wedged between the trapezium, the capitate, the scaphoid and the second metacarpal.",
+   "src": [
+    "glossary:trapezoid"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms by replacing a cartilage model with bone (endochondral ossification), like all limb bones except the clavicle.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Its single ossification centre appears at about the eighth year.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the eighth year (as the “lesser multangular”) (supporting only)."
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Overuse of the tendons or a wrist injury makes the contents of the carpal tunnel swell.",
+    "damaged": "The nerve in the tunnel, whose walls and floor the carpal bones form.",
+    "cannotDo": "Use the hand without pain, numbness or weakness (carpal tunnel syndrome).",
+    "why": "The bony walls and floor and the tough roof cannot stretch, so swelling presses on the nerve.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "injury": "A hard bony lump on the back of the hand, at the base of the index and middle fingers.",
+    "damaged": "Extra bone (a carpal boss) where the trapezoid and capitate meet the second and third metacarpals.",
+    "cannotDo": "Bend the wrist back fully without pain over the lump.",
+    "why": "The lump catches the tendons that run over the back of the wrist.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the second metacarpal hardly moves.",
+    "model": [
+     "The second and third metacarpals are firmly anchored in place.",
+     "The second metacarpal meets the trapezoid (and the trapezium).",
+     "The distal carpal bones are held together by ligaments.",
+     "The fourth and fifth metacarpals, by contrast, move a little."
+    ],
+    "src": [
+     "s8-2#fs-id1436751",
+     "glossary:trapezoid",
+     "glossary:trapezium",
+     "s8-2#fs-id932152"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the joints of the trapezoid with those of the trapezium.",
+    "model": [
+     "The trapezoid has plane joints with its neighbours, allowing small sliding movements.",
+     "It meets only the second metacarpal, which is immobile.",
+     "The trapezium forms a saddle joint with the first metacarpal.",
+     "So the thumb moves widely while the base of the index finger stays fixed."
+    ],
+    "src": [
+     "s9-4#fs-id1482998",
+     "glossary:trapezoid",
+     "s8-2#fs-id1436751",
+     "s9-4#fs-id1837120"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Using the order of the carpal bones, predict where the trapezoid lies.",
+    "model": [
+     "The second row runs from the thumb side: trapezium, trapezoid, capitate, hamate.",
+     "So the trapezoid is second from the thumb side.",
+     "It lies between the trapezium and the capitate.",
+     "The scaphoid is above it and the second metacarpal below."
+    ],
+    "src": [
+     "s8-2#fs-id1977414",
+     "s8-2#fs-id2328943",
+     "glossary:trapezoid"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which metacarpal does the trapezoid meet?",
+   "options": [
+    "First",
+    "Second",
+    "Third",
+    "Fifth"
+   ],
+   "answer": 1,
+   "why": "It meets only the second metacarpal.",
+   "src": [
+    "glossary:trapezoid"
+   ]
+  },
+  {
+   "stem": "What type of joints join the trapezoid to its neighbouring carpal bones?",
+   "options": [
+    "Saddle joints",
+    "Hinge joints",
+    "Plane (gliding) joints",
+    "Pivot joints"
+   ],
+   "answer": 2,
+   "why": "Intercarpal joints are plane joints.",
+   "src": [
+    "s9-4#fs-id1482998"
+   ]
+  },
+  {
+   "stem": "Which bone lies directly above (proximal to) the trapezoid?",
+   "options": [
+    "Lunate",
+    "Triquetrum",
+    "Radius",
+    "Scaphoid"
+   ],
+   "answer": 3,
+   "why": "The scaphoid lies above it.",
+   "src": [
+    "glossary:trapezoid"
+   ]
+  }
+ ]
+}

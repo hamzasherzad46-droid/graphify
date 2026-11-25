@@ -1,0 +1,317 @@
+{
+ "reviewStatus": "draft",
+ "id": "lunate",
+ "bone": "lunate_left",
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4",
+ "oneLine": {
+  "main": {
+   "t": "A moon-shaped wrist bone in the middle of the first row of carpal bones (lunate).",
+   "src": [
+    "s8-2#fs-id1977414",
+    "glossary:lunate"
+   ]
+  },
+  "simpler": {
+   "t": "The lunate is a small wrist bone in the middle of your wrist.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  "deeper": {
+   "t": "With the scaphoid, it is one of only two carpal bones that meet the radius directly.",
+   "src": [
+    "s8-2#fs-id1882937"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It is the second bone of the first (proximal) row, counting from the thumb side.",
+    "src": [
+     "glossary:lunate",
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "t": "Above it is the radius. Below it are the capitate and hamate.",
+    "src": [
+     "glossary:lunate"
+    ]
+   },
+   {
+    "t": "The scaphoid lies beside it on the thumb side, and the triquetrum on the little-finger side.",
+    "src": [
+     "glossary:lunate"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits in the middle of the wrist, just below the end of the radius.",
+   "src": [
+    "glossary:lunate"
+   ]
+  },
+  "deeper": {
+   "t": "Only three carpal bones take part in the wrist joint: the scaphoid, lunate and triquetrum.",
+   "src": [
+    "s8-2#fs-id1882937"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Moon shape",
+    "t": "“Lunate” means moon-shaped.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "name": "Surface for the radius",
+    "t": "Its upper surface meets the radius directly at the wrist joint.",
+    "src": [
+     "s8-2#fs-id1882937"
+    ]
+   },
+   {
+    "name": "Surfaces for the second row",
+    "t": "Its lower surface meets the capitate and hamate at the midcarpal joint.",
+    "src": [
+     "glossary:lunate",
+     "s8-2#fs-id932152"
+    ]
+   },
+   {
+    "name": "Side surfaces",
+    "t": "It meets the scaphoid on the thumb side and the triquetrum on the other.",
+    "src": [
+     "glossary:lunate"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is a small curved bone with joints on four sides.",
+   "src": [
+    "glossary:lunate"
+   ]
+  },
+  "deeper": {
+   "t": "Ligaments unite it with the other three bones of its row, so they work as one unit.",
+   "src": [
+    "s8-2#fs-id1882937"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Its upper surface meets the radius, so it shares the wrist joint with the scaphoid.",
+    "src": [
+     "s8-2#fs-id1882937"
+    ]
+   },
+   {
+    "t": "Its lower surface takes part in the midcarpal joint. The two joints together make all wrist movements.",
+    "src": [
+     "s8-2#fs-id932152"
+    ]
+   },
+   {
+    "t": "With the other carpal bones it forms the walls and floor of the carpal tunnel.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is one of the bones the wrist bends on.",
+   "src": [
+    "s8-2#fs-id932152"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joint",
+    "name": "Wrist (radiocarpal) joint",
+    "t": "A condyloid joint: the lunate and scaphoid meet the radius.",
+    "src": [
+     "s9-4#fs-id1434553",
+     "s8-2#fs-id1882937"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "Midcarpal joint",
+    "t": "Its lower surface meets the capitate and hamate.",
+    "src": [
+     "s8-2#fs-id932152",
+     "glossary:lunate"
+    ]
+   },
+   {
+    "kind": "bones",
+    "name": "Scaphoid and triquetrum",
+    "t": "Its neighbours in the first row, joined to it by ligaments.",
+    "src": [
+     "glossary:lunate",
+     "s8-2#fs-id1882937"
+    ]
+   },
+   {
+    "kind": "space",
+    "name": "Carpal tunnel",
+    "t": "The carpal bones form its walls and floor.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Median nerve",
+    "t": "Runs through the carpal tunnel, in front of the lunate.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "It joins the radius above, the second row below and its two neighbours at the sides.",
+   "src": [
+    "glossary:lunate"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms by replacing a cartilage model with bone (endochondral ossification), like all limb bones except the clavicle.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Its single ossification centre appears at about the fifth year.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the fifth year (supporting only)."
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Overuse of the tendons or a wrist injury makes the contents of the carpal tunnel swell.",
+    "damaged": "The nerve in the tunnel, whose walls and floor the carpal bones form.",
+    "cannotDo": "Use the hand without pain, numbness or weakness (carpal tunnel syndrome).",
+    "why": "The bony walls and floor and the tough roof cannot stretch, so swelling presses on the nerve.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "injury": "A fall onto the outstretched hand with the wrist bent far back.",
+    "damaged": "The lunate dislocates forwards, into the carpal tunnel.",
+    "cannotDo": "Feel the thumb, index and middle fingers normally.",
+    "why": "The dislocated bone takes up space in the tunnel and presses on the median nerve.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain which carpal bones form the wrist joint, and how.",
+    "model": [
+     "Three carpal bones take part: the scaphoid, lunate and triquetrum.",
+     "The scaphoid and lunate meet the radius directly.",
+     "The triquetrum meets the articular disc over the ulna.",
+     "The ulna itself does not touch the carpal bones."
+    ],
+    "src": [
+     "s8-2#fs-id1882937",
+     "reviewer:2026-11-25"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the lunate and the scaphoid.",
+    "model": [
+     "Both are in the first row, and both meet the radius directly.",
+     "The scaphoid is boat-shaped and outermost, on the thumb side.",
+     "The lunate is moon-shaped and second from the thumb side.",
+     "The scaphoid is the carpal bone broken most often."
+    ],
+    "src": [
+     "s8-2#fs-id1977414",
+     "s8-2#fs-id1882937",
+     "s8-2#fs-id2637051"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict the effect of the lunate dislocating forwards into the carpal tunnel.",
+    "model": [
+     "It takes up space in the tunnel.",
+     "It presses on the median nerve.",
+     "Numbness of the thumb, index and middle fingers.",
+     "Weakness of the small muscles of the thumb."
+    ],
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which bones meet the lower surface of the lunate?",
+   "options": [
+    "Capitate and hamate",
+    "The radius",
+    "Trapezium and trapezoid",
+    "The pisiform"
+   ],
+   "answer": 0,
+   "why": "Its lower surface meets the capitate and hamate at the midcarpal joint.",
+   "src": [
+    "glossary:lunate"
+   ]
+  },
+  {
+   "stem": "What does “lunate” mean?",
+   "options": [
+    "Boat-shaped",
+    "Moon-shaped",
+    "Pea-shaped",
+    "Hooked"
+   ],
+   "answer": 1,
+   "why": "“Lunate” means moon-shaped.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  {
+   "stem": "Which two carpal bones meet the radius directly?",
+   "options": [
+    "Triquetrum and pisiform",
+    "Capitate and hamate",
+    "Trapezium and trapezoid",
+    "Scaphoid and lunate"
+   ],
+   "answer": 3,
+   "why": "The scaphoid and lunate meet the radius; the triquetrum meets the articular disc over the ulna.",
+   "src": [
+    "s8-2#fs-id1882937",
+    "reviewer:2026-11-25"
+   ]
+  }
+ ]
+}

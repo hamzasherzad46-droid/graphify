@@ -1,0 +1,327 @@
+{
+ "reviewStatus": "draft",
+ "id": "triquetrum",
+ "bone": "triquetrum_left",
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4",
+ "oneLine": {
+  "main": {
+   "t": "A three-cornered wrist bone, third in the first row of carpal bones (triquetrum).",
+   "src": [
+    "s8-2#fs-id1977414",
+    "glossary:triquetrum"
+   ]
+  },
+  "simpler": {
+   "t": "The triquetrum is a small wrist bone on the little-finger side.",
+   "src": [
+    "glossary:triquetrum"
+   ]
+  },
+  "deeper": {
+   "t": "At the wrist joint it meets the articular disc over the ulna, not bone.",
+   "src": [
+    "s8-2#fs-id1882937",
+    "reviewer:2026-11-25"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It is the third bone of the first row, counting from the thumb side.",
+    "src": [
+     "glossary:triquetrum"
+    ]
+   },
+   {
+    "t": "The lunate is beside it on the thumb side. The hamate is below it.",
+    "src": [
+     "glossary:triquetrum"
+    ]
+   },
+   {
+    "t": "The pisiform sits on its front surface.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits on the little-finger side of the wrist.",
+   "src": [
+    "glossary:triquetrum"
+   ]
+  },
+  "deeper": {
+   "t": "It is one of only three carpal bones that take part in the wrist joint.",
+   "src": [
+    "s8-2#fs-id1882937"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Three corners",
+    "t": "“Triquetrum” means three-cornered.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "name": "Facet for the pisiform",
+    "t": "A small surface on its front, where the pisiform sits.",
+    "src": [
+     "glossary:triquetrum",
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "name": "Surface for the wrist joint",
+    "t": "Its upper surface meets the articular disc over the ulna.",
+    "src": [
+     "s8-2#fs-id1882937",
+     "reviewer:2026-11-25"
+    ]
+   },
+   {
+    "name": "Surface for the hamate",
+    "t": "Its lower surface meets the hamate at the midcarpal joint.",
+    "src": [
+     "glossary:triquetrum",
+     "s8-2#fs-id932152"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is a small three-cornered bone that carries the pisiform on its front.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  "deeper": {
+   "t": "Ligaments join it to the other bones of its row, so the row works as a unit.",
+   "src": [
+    "s8-2#fs-id1882937"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "It meets the fibrocartilage pad that spans the radius and the ulna’s styloid process.",
+    "src": [
+     "s8-2#fs-id1882937"
+    ]
+   },
+   {
+    "t": "It carries the pisiform, which forms the bump at the base of the hand.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "t": "Its joint with the hamate is part of the midcarpal joint, which helps the wrist move.",
+    "src": [
+     "s8-2#fs-id932152"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It helps the wrist move and holds the pisiform in place.",
+   "src": [
+    "s8-2#fs-id932152",
+    "s8-2#fs-id1977414"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joint",
+    "name": "Wrist (radiocarpal) joint",
+    "t": "It meets the articular disc over the ulna.",
+    "src": [
+     "s8-2#fs-id1882937",
+     "reviewer:2026-11-25"
+    ]
+   },
+   {
+    "kind": "disc",
+    "name": "Articular disc",
+    "t": "A pad of fibrocartilage between the lower ends of the radius and ulna.",
+    "src": [
+     "s9-4#fs-id1061087",
+     "s8-2#fs-id1882937"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "Midcarpal joint",
+    "t": "Its lower surface meets the hamate.",
+    "src": [
+     "s8-2#fs-id932152",
+     "glossary:triquetrum"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Lunate",
+    "t": "Its neighbour on the thumb side, joined to it by ligaments.",
+    "src": [
+     "glossary:triquetrum",
+     "s8-2#fs-id1882937"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Pisiform",
+    "t": "Sits on its front surface.",
+    "src": [
+     "s8-2#fs-id1977414",
+     "glossary:pisiform"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It joins the lunate, the hamate and the pisiform, and the disc over the ulna.",
+   "src": [
+    "glossary:triquetrum",
+    "s8-2#fs-id1882937"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms by replacing a cartilage model with bone (endochondral ossification), like all limb bones except the clavicle.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Its single ossification centre appears at about the third year.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the third year (supporting only)."
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A fall onto the outstretched hand.",
+    "damaged": "A small chip of bone breaks off the back of the triquetrum: the second most common carpal fracture.",
+    "cannotDo": "Use the wrist without pain on the back of the little-finger side.",
+    "why": "Ligaments and nearby bones strike or pull on its back surface as the wrist is forced backwards.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "injury": "A twisting fall on the hand.",
+    "damaged": "The articular disc between the ulna and the triquetrum tears.",
+    "cannotDo": "Turn the forearm or grip without pain on the little-finger side.",
+    "why": "The disc unites the lower ends of the radius and ulna, and the triquetrum presses on it.",
+    "src": [
+     "s9-4#fs-id1061087"
+    ],
+    "check": "OpenStax describes the disc; a tear of the disc in a fall is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the triquetrum takes part in the wrist joint without touching the ulna.",
+    "model": [
+     "The wrist joint is formed above by the radius and the fibrocartilage pad.",
+     "The pad spans the radius and the ulna’s styloid process.",
+     "The triquetrum meets this pad (the articular disc over the ulna).",
+     "The ulna itself does not touch any carpal bone."
+    ],
+    "src": [
+     "s8-2#fs-id1882937",
+     "glossary:radiocarpal joint",
+     "reviewer:2026-11-25"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the triquetrum and the pisiform.",
+    "model": [
+     "Both are in the first row, on the little-finger side.",
+     "The triquetrum is three-cornered and third from the thumb side.",
+     "The pisiform is pea-shaped and sits on the front of the triquetrum.",
+     "Only the pisiform anchors the flexor retinaculum."
+    ],
+    "src": [
+     "s8-2#fs-id1977414",
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Press the bump at the base of the palm, below the little finger. Predict what you feel, and what lies beneath.",
+    "model": [
+     "The bump is the pisiform.",
+     "It projects forwards from the front of the triquetrum.",
+     "The triquetrum lies behind it.",
+     "The flexor retinaculum attaches to the pisiform."
+    ],
+    "src": [
+     "s8-2#fs-id1977414",
+     "s8-2#fs-id2329218"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which bone sits on the front of the triquetrum?",
+   "options": [
+    "Hamate",
+    "Lunate",
+    "Pisiform",
+    "Capitate"
+   ],
+   "answer": 2,
+   "why": "The small pisiform sits on the front of the triquetrum.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  {
+   "stem": "What does the triquetrum meet at the wrist joint?",
+   "options": [
+    "The articular disc over the ulna",
+    "The radius directly",
+    "The head of the ulna directly",
+    "The trapezium"
+   ],
+   "answer": 0,
+   "why": "It meets the fibrocartilage pad that spans the radius and the ulna’s styloid process.",
+   "src": [
+    "s8-2#fs-id1882937",
+    "reviewer:2026-11-25"
+   ]
+  },
+  {
+   "stem": "Which bone lies below (distal to) the triquetrum?",
+   "options": [
+    "Capitate",
+    "Trapezoid",
+    "Scaphoid",
+    "Hamate"
+   ],
+   "answer": 3,
+   "why": "Its lower surface meets the hamate.",
+   "src": [
+    "glossary:triquetrum"
+   ]
+  }
+ ]
+}

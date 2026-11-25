@@ -8,12 +8,13 @@
 export function restrictedHits(texts, rules) {
   const hits = []
   for (const [word, r] of Object.entries(rules ?? {})) {
-    const re = new RegExp(`(?<![A-Za-z])${word}(?![A-Za-z])`, 'g')
+    // Words restricted to a place are matched in any case ("Pinky"); the others exactly ("PDFs", not "pdfs").
+    const re = new RegExp(`(?<![A-Za-z])${word}(?![A-Za-z])`, r.onlyIn ? 'gi' : 'g')
     const fullTerm = !!r.allow && !r.allow.startsWith('.')
     for (const t of texts) {
       if (r.onlyIn) {
         if (r.onlyIn.includes(t.source) || r.onlyIn.some((f) => t.where.includes(`.${f}`))) continue
-        for (const m of t.text.matchAll(re)) hits.push({ word, use: r.use, where: t.where, context: t.text.slice(Math.max(0, m.index - 30), m.index + word.length + 30) })
+        for (const m of t.text.matchAll(re)) if (!(r.allowText ?? []).some((x) => t.text.includes(x) && x.toLowerCase().includes(m[0].toLowerCase()))) hits.push({ word, use: r.use, where: t.where, context: t.text.slice(Math.max(0, m.index - 30), m.index + word.length + 30) })
         continue
       }
       if (t.source === 'server' && !fullTerm) continue

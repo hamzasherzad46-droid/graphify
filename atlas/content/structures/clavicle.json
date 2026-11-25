@@ -1,0 +1,368 @@
+{
+ "reviewStatus": "draft",
+ "id": "clavicle",
+ "bone": "clavicle_left",
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.1 The Pectoral Girdle; 8.5; 9.4; 20.5",
+ "oneLine": {
+  "main": {
+   "t": "The S-shaped collarbone at the front of the shoulder, joining the arm to the trunk (clavicle).",
+   "src": [
+    "s8-1#fs-id1371880"
+   ]
+  },
+  "simpler": {
+   "t": "The clavicle is your collarbone.",
+   "src": [
+    "s8-1#fs-id1371880"
+   ]
+  },
+  "deeper": {
+   "t": "It is the only long bone in the body that lies horizontally.",
+   "src": [
+    "s8-1#fs-id1192235"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It lies at the front of the shoulder, so you can feel its whole length.",
+    "src": [
+     "s8-1#fs-id1371880"
+    ]
+   },
+   {
+    "t": "Its inner (medial) end joins the sternum. Its outer (lateral) end joins the acromion of the scapula.",
+    "src": [
+     "s8-1#fs-id2241809"
+    ]
+   },
+   {
+    "t": "With the scapula it forms the shoulder (pectoral) girdle.",
+    "src": [
+     "s8-1#fs-id1371880"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It runs across the top of your chest, from your breastbone out to your shoulder.",
+   "src": [
+    "s8-1#fs-id1371880",
+    "s8-1#fs-id2241809"
+   ]
+  },
+  "deeper": {
+   "t": "Its joint with the sternum is the only bony joint between the upper limb and the axial skeleton.",
+   "src": [
+    "s8-1#fs-id2241809"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Sternal end",
+    "t": "The triangular inner end. It meets the manubrium of the sternum at the sternoclavicular joint.",
+    "src": [
+     "s8-1#fs-id2241809"
+    ]
+   },
+   {
+    "name": "Acromial end",
+    "t": "The outer end. It meets the acromion at the acromioclavicular joint.",
+    "src": [
+     "s8-1#fs-id2241809",
+     "s8-1#fs-id1475196"
+    ]
+   },
+   {
+    "name": "Shaft",
+    "t": "The curved middle part between the two ends.",
+    "src": [
+     "s8-1#fs-id2241809"
+    ]
+   },
+   {
+    "name": "Underside of the acromial end",
+    "t": "The strong coracoclavicular ligament anchors here, tying it to the coracoid process.",
+    "src": [
+     "s8-1#fs-id1200622"
+    ]
+   },
+   {
+    "name": "Near the sternal end",
+    "t": "The costoclavicular ligament ties it to the first rib below.",
+    "src": [
+     "s8-1#fs-id2241809"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It has an inner end, an outer end and a curved shaft between them.",
+   "src": [
+    "s8-1#fs-id2241809"
+   ]
+  },
+  "deeper": {
+   "t": "The rough areas where muscles attach are more marked in manual workers.",
+   "src": [
+    "s8-1#fs-id2241809"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Anchored by muscles from above, it acts as a strut that holds the scapula out to the side.",
+    "src": [
+     "s8-1#fs-id1192235"
+    ]
+   },
+   {
+    "t": "This keeps the shoulder joint away from the trunk, giving the arm the widest range of movement.",
+    "src": [
+     "s8-1#fs-id1192235"
+    ]
+   },
+   {
+    "t": "It passes forces acting on the upper limb to the sternum and the axial skeleton.",
+    "src": [
+     "s8-1#fs-id1192235"
+    ]
+   },
+   {
+    "t": "It shields the nerves and blood vessels passing between the trunk and the upper limb.",
+    "src": [
+     "s8-1#fs-id1192235"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "The clavicle props your shoulder out to the side and passes force from your arm to your chest.",
+   "src": [
+    "s8-1#fs-id1192235"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joint",
+    "name": "Sternoclavicular joint",
+    "t": "A saddle joint with the manubrium. It lets the clavicle move up, down, forwards and back.",
+    "src": [
+     "s9-4#fs-id1837120",
+     "s8-1#fs-id2241809"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "Acromioclavicular joint",
+    "t": "A plane (gliding) joint with the acromion. Its own ligaments are fairly weak.",
+    "src": [
+     "s9-4#fs-id1482998",
+     "s8-1#fs-id1200622"
+    ]
+   },
+   {
+    "kind": "ligament",
+    "name": "Coracoclavicular ligament",
+    "t": "A very strong band to the coracoid process. It is the main support of the acromioclavicular joint.",
+    "src": [
+     "s8-1#fs-id1200622"
+    ]
+   },
+   {
+    "kind": "ligament",
+    "name": "Costoclavicular ligament",
+    "t": "Ties the sternal end to the first rib and supports the sternoclavicular joint.",
+    "src": [
+     "s8-1#fs-id2241809"
+    ]
+   },
+   {
+    "kind": "disc",
+    "name": "Articular disc",
+    "t": "A pad of fibrocartilage inside the sternoclavicular joint unites the bones strongly.",
+    "src": [
+     "s9-4#fs-id1061087"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Subclavian artery",
+    "t": "Its name means “under the clavicle”. It becomes the axillary artery as it passes into the armpit.",
+    "src": [
+     "s20-5#fs-id2381708",
+     "s20-5#fs-id1351620"
+    ]
+   },
+   {
+    "kind": "vein",
+    "name": "Subclavian vein",
+    "t": "The axillary vein becomes the subclavian vein as it passes into the thorax.",
+    "src": [
+     "s20-5#fs-id2931123"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It joins the breastbone and the shoulder blade, and important vessels and nerves pass beneath it.",
+   "src": [
+    "s8-1#fs-id2241809",
+    "s8-1#fs-id1866400"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms directly from membrane (intramembranous ossification), with no cartilage model: the only limb or girdle bone to do so.",
+    "src": [
+     "s8-5#fs-id1375181",
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "The clavicle is the first bone in the body to start ossifying, in the fifth week of development.",
+    "src": [
+     "s8-5#fs-id1375181"
+    ]
+   },
+   {
+    "t": "Its ossification is not complete until about the age of 25.",
+    "src": [
+     "s8-5#fs-id1375181"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "In females, it tends to be shorter, thinner and less curved.",
+    "src": [
+     "s8-1#fs-id2241809"
+    ]
+   },
+   {
+    "t": "In males, it is heavier, longer and more curved, with rougher areas where muscles attach.",
+    "src": [
+     "s8-1#fs-id2241809"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A fall onto the outstretched arms, or a strong blow to the side of the shoulder.",
+    "damaged": "The clavicle breaks, usually between its middle and outer parts. It is the bone broken most often.",
+    "cannotDo": "Hold the arm up: the shoulder drops, and the patient supports the arm with the other hand.",
+    "why": "The strong sternoclavicular joint rarely gives way, so the bone breaks. The weight of the arm then pulls the outer part down.",
+    "src": [
+     "s8-1#fs-id1866400"
+    ]
+   },
+   {
+    "injury": "A complete fracture of the clavicle.",
+    "damaged": "The bone only, in most cases. The vessels and nerves beneath it are rarely hurt.",
+    "cannotDo": "Move the shoulder without pain, though feeling and blood supply in the arm are usually normal.",
+    "why": "Muscles across the shoulder pull the fragments forwards and inwards, away from the vessels and nerves.",
+    "src": [
+     "s8-1#fs-id1866400"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why a fall on the outstretched arm breaks the clavicle rather than dislocating the sternoclavicular joint.",
+    "model": [
+     "The sternoclavicular joint is strong and rarely dislocated.",
+     "Force from the arm passes along the clavicle to the sternum.",
+     "The bone gives way first, usually between its middle and outer parts.",
+     "This makes the clavicle the bone broken most often."
+    ],
+    "src": [
+     "s8-1#fs-id1866400",
+     "s8-1#fs-id1192235"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare how the clavicle and the humerus develop.",
+    "model": [
+     "Clavicle: directly from membrane (intramembranous ossification), with no cartilage model.",
+     "Humerus: a cartilage model replaced by bone (endochondral ossification).",
+     "The clavicle starts in the fifth week. The humerus has a primary centre in its shaft by the twelfth week.",
+     "The clavicle is not fully ossified until about 25."
+    ],
+    "src": [
+     "s8-5#fs-id1375181",
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict how a patient holds their arm after a complete fracture of the clavicle, and explain why.",
+    "model": [
+     "The shoulder and outer fragment drop under the weight of the arm.",
+     "The patient supports the sagging arm with the other hand.",
+     "Muscles pull the outer fragment forwards and inwards.",
+     "So the two fragments override each other."
+    ],
+    "src": [
+     "s8-1#fs-id1866400"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which is the only bony joint between the upper limb and the axial skeleton?",
+   "options": [
+    "Acromioclavicular joint",
+    "Sternoclavicular joint",
+    "Shoulder (glenohumeral) joint",
+    "Costoclavicular joint"
+   ],
+   "answer": 1,
+   "why": "The sternoclavicular joint, between the sternal end of the clavicle and the manubrium, is the only one.",
+   "src": [
+    "s8-1#fs-id2241809"
+   ]
+  },
+  {
+   "stem": "How does the clavicle develop?",
+   "options": [
+    "From a cartilage model (endochondral ossification)",
+    "From two halves that fuse at birth",
+    "Directly from membrane (intramembranous ossification)",
+    "From the first rib"
+   ],
+   "answer": 2,
+   "why": "It is the only limb or girdle bone that forms directly from membrane, without a cartilage model.",
+   "src": [
+    "s8-5#fs-id1375181"
+   ]
+  },
+  {
+   "stem": "Where does the clavicle usually break?",
+   "options": [
+    "Between its middle and outer parts",
+    "At the sternal end",
+    "At the acromial end",
+    "Where the costoclavicular ligament attaches"
+   ],
+   "answer": 0,
+   "why": "Excess force usually breaks it between the middle and lateral parts of the bone.",
+   "src": [
+    "s8-1#fs-id1866400"
+   ]
+  }
+ ]
+}

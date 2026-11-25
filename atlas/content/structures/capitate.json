@@ -1,0 +1,322 @@
+{
+ "reviewStatus": "draft",
+ "id": "capitate",
+ "bone": "capitate_left",
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4",
+ "oneLine": {
+  "main": {
+   "t": "The head-shaped bone in the centre of the wrist, third in the second row of carpal bones (capitate).",
+   "src": [
+    "s8-2#fs-id1977414",
+    "glossary:capitate"
+   ]
+  },
+  "simpler": {
+   "t": "The capitate is the wrist bone in the middle of your wrist.",
+   "src": [
+    "glossary:capitate"
+   ]
+  },
+  "deeper": {
+   "t": "It mainly meets the third metacarpal, the palm bone of the middle finger.",
+   "src": [
+    "glossary:capitate",
+    "s8-2#fs-id1242304",
+    "s8-2#fs-id2002490"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It is the third bone of the distal row, counting from the thumb side.",
+    "src": [
+     "glossary:capitate"
+    ]
+   },
+   {
+    "t": "Above it are the scaphoid and lunate.",
+    "src": [
+     "glossary:capitate"
+    ]
+   },
+   {
+    "t": "The trapezoid is on its thumb side and the hamate on the other; below it is mainly the third metacarpal.",
+    "src": [
+     "glossary:capitate"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits in the centre of the wrist, in line with your middle finger.",
+   "src": [
+    "glossary:capitate",
+    "s8-2#fs-id1242304"
+   ]
+  },
+  "deeper": {
+   "t": "It is the largest of the carpal bones.",
+   "src": [],
+   "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Name",
+    "t": "“Capitate” means head-shaped.",
+    "src": [
+     "s8-2#fs-id1977414"
+    ]
+   },
+   {
+    "name": "Rounded head",
+    "t": "Its upper end is rounded, fitting a hollow formed by the scaphoid and lunate.",
+    "src": [
+     "glossary:capitate"
+    ],
+    "check": "OpenStax gives its name and its joints with the scaphoid and lunate; the rounded head fitting their hollow is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "name": "Surface for the third metacarpal",
+    "t": "Its lower surface, at the carpometacarpal joint.",
+    "src": [
+     "glossary:capitate",
+     "glossary:carpometacarpal joint"
+    ]
+   },
+   {
+    "name": "Side surfaces",
+    "t": "It meets the trapezoid on the thumb side and the hamate on the other.",
+    "src": [
+     "glossary:capitate"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is the central wrist bone, named for its head-like shape.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  "deeper": {
+   "t": "Two bones meet it above, one on each side, and the metacarpals below, mainly the third.",
+   "src": [
+    "glossary:capitate"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Its central position lines it up with the third metacarpal and the middle finger.",
+    "src": [
+     "glossary:capitate",
+     "s8-2#fs-id1242304"
+    ]
+   },
+   {
+    "t": "It supports the third metacarpal, which is firmly anchored and does not move.",
+    "src": [
+     "s8-2#fs-id1436751",
+     "glossary:capitate"
+    ]
+   },
+   {
+    "t": "Its upper surface takes part in the midcarpal joint, which helps the wrist move.",
+    "src": [
+     "s8-2#fs-id932152",
+     "glossary:capitate"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits at the centre of the wrist and gives the middle finger’s palm bone a firm base.",
+   "src": [
+    "glossary:capitate",
+    "s8-2#fs-id1436751"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joint",
+    "name": "Midcarpal joint",
+    "t": "Its upper surface meets the scaphoid and lunate.",
+    "src": [
+     "s8-2#fs-id932152",
+     "glossary:capitate"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Third metacarpal",
+    "t": "Its main joint below, at the carpometacarpal joint.",
+    "src": [
+     "glossary:capitate"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Trapezoid",
+    "t": "Its neighbour on the thumb side.",
+    "src": [
+     "glossary:capitate"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Hamate",
+    "t": "Lies beside it on the little-finger side.",
+    "src": [
+     "glossary:capitate"
+    ]
+   },
+   {
+    "kind": "space",
+    "name": "Carpal tunnel",
+    "t": "The carpal bones form its walls and floor.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is surrounded by bones: the first row above, its neighbours beside it and the middle finger’s palm bone below.",
+   "src": [
+    "glossary:capitate"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms by replacing a cartilage model with bone (endochondral ossification), like all limb bones except the clavicle.",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Its single ossification centre appears first of the carpal bones, during the first year.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the first year, before the hamate (supporting only)."
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Overuse of the tendons or a wrist injury makes the contents of the carpal tunnel swell.",
+    "damaged": "The nerve in the tunnel, whose walls and floor the carpal bones form.",
+    "cannotDo": "Use the hand without pain, numbness or weakness (carpal tunnel syndrome).",
+    "why": "The bony walls and floor and the tough roof cannot stretch, so swelling presses on the nerve.",
+    "src": [
+     "s8-2#fs-id2329218"
+    ]
+   },
+   {
+    "injury": "A violent fall onto the hand with the wrist bent far back.",
+    "damaged": "The capitate and the rest of the hand dislocate backwards around the lunate (perilunate dislocation).",
+    "cannotDo": "Move the wrist; the fingers may also be numb.",
+    "why": "The lunate stays attached to the radius while the ligaments around it tear.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the second and third metacarpals give the hand a stable centre.",
+    "model": [
+     "They are firmly anchored and immobile.",
+     "The third meets the central capitate; the second meets the trapezoid.",
+     "The fourth and fifth move a little, for gripping.",
+     "The first is separate, for free thumb movement."
+    ],
+    "src": [
+     "s8-2#fs-id1436751",
+     "glossary:capitate",
+     "glossary:trapezoid"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the capitate and the hamate.",
+    "model": [
+     "Both are in the second row, towards the little-finger side.",
+     "The capitate is head-shaped and third from the thumb side.",
+     "The hamate is hooked and fourth.",
+     "The capitate meets mainly the third metacarpal; the hamate meets the fourth and fifth."
+    ],
+    "src": [
+     "s8-2#fs-id1977414",
+     "glossary:capitate",
+     "glossary:hamate"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict the effect of a fall that dislocates the capitate backwards around the lunate.",
+    "model": [
+     "The lunate stays attached to the radius.",
+     "The capitate and the hand move backwards behind it.",
+     "The wrist is deformed and cannot be moved.",
+     "The median nerve may be pressed on."
+    ],
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "What does “capitate” mean?",
+   "options": [
+    "Hooked",
+    "Table",
+    "Head-shaped",
+    "Pea-shaped"
+   ],
+   "answer": 2,
+   "why": "“Capitate” means head-shaped.",
+   "src": [
+    "s8-2#fs-id1977414"
+   ]
+  },
+  {
+   "stem": "Which metacarpal does the capitate mainly meet?",
+   "options": [
+    "Third",
+    "First",
+    "Second",
+    "Fifth"
+   ],
+   "answer": 0,
+   "why": "It meets primarily the third metacarpal.",
+   "src": [
+    "glossary:capitate"
+   ]
+  },
+  {
+   "stem": "Which bones meet the upper surface of the capitate?",
+   "options": [
+    "Radius and ulna",
+    "Hamate and triquetrum",
+    "Trapezium and trapezoid",
+    "Scaphoid and lunate"
+   ],
+   "answer": 3,
+   "why": "Its upper surface meets the scaphoid and lunate.",
+   "src": [
+    "glossary:capitate"
+   ]
+  }
+ ]
+}

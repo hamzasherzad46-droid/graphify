@@ -1,0 +1,298 @@
+{
+ "reviewStatus": "draft",
+ "id": "inferior-nasal-concha",
+ "bone": "inferior_nasal_concha_left",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 7.5",
+ "oneLine": {
+  "main": {
+   "t": "A curved plate of bone projecting into the nasal cavity from its lower side wall (inferior nasal concha).",
+   "src": [
+    "s7-2#fs-id1698818"
+   ]
+  },
+  "simpler": {
+   "t": "The inferior nasal concha is a curved shelf of bone inside your nose.",
+   "src": [
+    "s7-2#fs-id1698818"
+   ]
+  },
+  "deeper": {
+   "t": "Unlike the other two conchae, it is a separate bone, not part of the ethmoid.",
+   "src": [
+    "s7-2#fs-id1475747"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It projects from the lower part of each side wall of the nasal cavity.",
+    "src": [
+     "s7-2#fs-id1698818"
+    ]
+   },
+   {
+    "t": "The middle concha, part of the ethmoid, lies just above it.",
+    "src": [
+     "s7-2#fs-id1211287"
+    ]
+   },
+   {
+    "t": "It is paired: one on each side.",
+    "src": [
+     "s7-2#fs-id1698818",
+     "s7-2#fs-id1861377"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sticks out from the side wall, low down inside your nose.",
+   "src": [
+    "s7-2#fs-id1698818"
+   ]
+  },
+  "deeper": {
+   "t": "The tear drain (nasolacrimal duct) opens into the nasal cavity behind it.",
+   "src": [
+    "s7-2#fs-id886176"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Curved plate",
+    "t": "Curves downwards as it projects into the nasal cavity.",
+    "src": [
+     "s7-2#fs-id1698818",
+     "s7-2#fs-id1475747"
+    ]
+   },
+   {
+    "name": "Size",
+    "t": "The largest of the three nasal conchae.",
+    "src": [
+     "s7-2#fs-id1698818"
+    ]
+   },
+   {
+    "name": "Attached edge",
+    "t": "Fixed to the lower part of the side wall of the nasal cavity.",
+    "src": [
+     "s7-2#fs-id1698818"
+    ]
+   },
+   {
+    "name": "Visible from the front",
+    "t": "It can easily be seen looking into the front opening of the nasal cavity.",
+    "src": [
+     "s7-2#fs-id1698818"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is a curved shelf, the biggest of three on each side of the nose.",
+   "src": [
+    "s7-2#fs-id1698818",
+    "s7-2#fs-id1475747"
+   ]
+  },
+  "deeper": {
+   "t": "The conchae are named for their positions: superior, middle and inferior.",
+   "src": [
+    "s7-2#fs-id1475747"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Its downward curve swirls incoming air, helping to warm and moisten it before it reaches the lungs.",
+    "src": [
+     "s7-2#fs-id1475747"
+    ]
+   },
+   {
+    "t": "Mucus on its lining traps dust, pollen, bacteria and viruses.",
+    "src": [
+     "s7-2#fs-id1475747"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It stirs the air you breathe, so the air is warmed, moistened and cleaned.",
+   "src": [
+    "s7-2#fs-id1475747"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "bone",
+    "name": "Middle nasal concha",
+    "t": "Part of the ethmoid bone, just above it.",
+    "src": [
+     "s7-2#fs-id1211287",
+     "s7-2#fs-id1475747"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Ethmoid bone",
+    "t": "Forms the superior and middle conchae.",
+    "src": [
+     "s7-2#fs-id1475747"
+    ]
+   },
+   {
+    "kind": "duct",
+    "name": "Nasolacrimal duct",
+    "t": "Opens into the nasal cavity behind it.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   {
+    "kind": "space",
+    "name": "Nasal cavity",
+    "t": "It projects into the lower part of each side.",
+    "src": [
+     "s7-2#fs-id1698818"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits below the ethmoid’s conchae, with the tear drain opening behind it.",
+   "src": [
+    "s7-2#fs-id1475747",
+    "s7-2#fs-id886176"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "The inferior concha forms from a cartilage model (endochondral ossification).",
+    "src": [
+     "s7-5#fs-id2251103"
+    ],
+    "check": "OpenStax 7.5 says the facial bones form from cartilage; that this applies to the inferior nasal concha needs an approved source."
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Heavy crying.",
+    "damaged": "Nothing is damaged: the tear drain behind the inferior concha is overloaded.",
+    "cannotDo": "Keep the nose dry.",
+    "why": "Extra tears entering the nasal cavity behind the concha also drain forwards.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   {
+    "injury": "A cold or an allergy.",
+    "damaged": "The lining over the conchae swells.",
+    "cannotDo": "Breathe easily through the nose.",
+    "why": "The swollen lining narrows the air passages around the conchae.",
+    "src": [
+     "s7-2#fs-id1475747"
+    ],
+    "check": "Swelling of the lining narrowing the nasal passages is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the nasal conchae prepare the air you breathe.",
+    "model": [
+     "They are curved plates projecting into the nasal cavity.",
+     "They swirl the incoming air.",
+     "This helps warm and moisten it.",
+     "Mucus on them traps dust, pollen, bacteria and viruses."
+    ],
+    "src": [
+     "s7-2#fs-id1475747"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the inferior nasal concha with the middle and superior conchae.",
+    "model": [
+     "The inferior concha is a separate bone; the other two are part of the ethmoid.",
+     "It is the largest; the superior is the smallest.",
+     "The inferior and middle conchae can be seen from the front.",
+     "The superior concha is hidden above and behind the middle one."
+    ],
+    "src": [
+     "s7-2#fs-id1475747"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict what happens to dust you breathe in through your nose.",
+    "model": [
+     "The conchae swirl the incoming air.",
+     "Dust meets the mucus on their lining.",
+     "It is trapped there.",
+     "So cleaner, warmer, moister air moves on towards the lungs."
+    ],
+    "src": [
+     "s7-2#fs-id1475747"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which nasal concha is a separate bone?",
+   "options": [
+    "Superior",
+    "Middle",
+    "Inferior",
+    "None of them"
+   ],
+   "answer": 2,
+   "why": "The inferior nasal concha is an independent bone of the skull.",
+   "src": [
+    "s7-2#fs-id1475747"
+   ]
+  },
+  {
+   "stem": "Which is the largest nasal concha?",
+   "options": [
+    "Inferior",
+    "Middle",
+    "Superior",
+    "They are the same size"
+   ],
+   "answer": 0,
+   "why": "The inferior concha is the largest.",
+   "src": [
+    "s7-2#fs-id1698818"
+   ]
+  },
+  {
+   "stem": "What do the nasal conchae do to incoming air?",
+   "options": [
+    "Cool and dry it",
+    "Remove oxygen from it",
+    "Speed it up",
+    "Swirl it, so it is warmed and moistened"
+   ],
+   "answer": 3,
+   "why": "They swirl the air, which helps warm and moisturise it.",
+   "src": [
+    "s7-2#fs-id1475747"
+   ]
+  }
+ ]
+}

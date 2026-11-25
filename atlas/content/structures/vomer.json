@@ -1,0 +1,305 @@
+{
+ "reviewStatus": "draft",
+ "id": "vomer",
+ "bone": "vomer",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4",
+ "oneLine": {
+  "main": {
+   "t": "A single, triangular bone that forms the lower and back part of the nasal septum (vomer).",
+   "src": [
+    "s7-2#fs-id1254996"
+   ]
+  },
+  "simpler": {
+   "t": "The vomer is a bone in the middle of your nose, at the lower back.",
+   "src": [
+    "s7-2#fs-id1254996"
+   ]
+  },
+  "deeper": {
+   "t": "Seen from behind, it forms the whole height of the nasal septum.",
+   "src": [
+    "s7-2#fs-id1254996"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It lies in the midline, in the lower and back part of the nasal septum.",
+    "src": [
+     "s7-2#fs-id1254996"
+    ]
+   },
+   {
+    "t": "Above it is the perpendicular plate of the ethmoid; in front is the septal cartilage.",
+    "src": [
+     "s7-2#fs-id2125356"
+    ]
+   },
+   {
+    "t": "It is one of only two unpaired facial bones; the other is the mandible.",
+    "src": [
+     "s7-2#fs-id1861377"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is in the middle of your nose, at the back and bottom.",
+   "src": [
+    "s7-2#fs-id1254996"
+   ]
+  },
+  "deeper": {
+   "t": "Looking into the front of the nose, you see only a small part of it.",
+   "src": [
+    "s7-2#fs-id1254996"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Triangular shape",
+    "t": "A flat, triangular plate in the midline.",
+    "src": [
+     "s7-2#fs-id1254996"
+    ]
+   },
+   {
+    "name": "Upper edge",
+    "t": "Lies below the perpendicular plate of the ethmoid.",
+    "src": [
+     "s7-2#fs-id2125356"
+    ]
+   },
+   {
+    "name": "Front edge",
+    "t": "The septal cartilage fills the gap between it and the perpendicular plate.",
+    "src": [
+     "s7-2#fs-id2125356"
+    ]
+   },
+   {
+    "name": "Back edge",
+    "t": "Divides the two back openings of the nasal cavity.",
+    "src": [
+     "s7-2#fs-id1254996"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is a flat triangle of bone standing upright in the middle of the nose.",
+   "src": [
+    "s7-2#fs-id1254996"
+   ]
+  },
+  "deeper": {
+   "t": "In the dry skull, the septal cartilage is missing, leaving a gap in front of it.",
+   "src": [
+    "s7-2#fs-id2125356"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "With the ethmoid and the septal cartilage, it divides the nasal cavity into right and left halves.",
+    "src": [
+     "s7-2#fs-id1211287",
+     "s7-2#fs-id2125356"
+    ]
+   },
+   {
+    "t": "The septal cartilage at its front edge extends into the nose and separates the nostrils.",
+    "src": [
+     "s7-2#fs-id2125356"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It helps split your nose into two separate airways.",
+   "src": [
+    "s7-2#fs-id1211287",
+    "s7-2#fs-id2125356"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "bone",
+    "name": "Ethmoid bone",
+    "t": "Its perpendicular plate forms the upper part of the septum.",
+    "src": [
+     "s7-2#fs-id2125356"
+    ]
+   },
+   {
+    "kind": "cartilage",
+    "name": "Septal cartilage",
+    "t": "Forms the front of the septum, between the vomer and the perpendicular plate.",
+    "src": [
+     "s7-2#fs-id2125356"
+    ]
+   },
+   {
+    "kind": "space",
+    "name": "Nasal cavity",
+    "t": "The septum divides it into two halves.",
+    "src": [
+     "s7-2#fs-id1211287"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Sphenoid bone",
+    "t": "Its upper border meets the body of the sphenoid.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "It forms the nasal septum with part of the ethmoid and a plate of cartilage.",
+   "src": [
+    "s7-2#fs-id2125356"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).",
+    "src": [
+     "s6-4#fs-id1804592"
+    ],
+    "check": "OpenStax 6.4 says the flat bones of the face form from membrane, but 7.5 says the facial bones form from cartilage; which applies to the vomer needs an approved source."
+   },
+   {
+    "t": "It forms from two thin plates, which are almost completely united by puberty.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (7.2) says so (supporting only)."
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "The nasal septum is often bent to one side (a deviated septum).",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A septum bent to one side, from development or an injury.",
+    "damaged": "The bony and cartilage parts of the septum, including the vomer.",
+    "cannotDo": "Breathe freely through the narrower side.",
+    "why": "The septum divides the nasal cavity, so bending it narrows one side.",
+    "src": [
+     "s7-2#fs-id1211287"
+    ],
+    "check": "A deviated septum is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the septum’s role is."
+   },
+   {
+    "injury": "A blow to the nose that breaks the septum.",
+    "damaged": "The septal cartilage and the vomer.",
+    "cannotDo": "Breathe evenly through both sides of the nose.",
+    "why": "The broken septum shifts into one side of the nasal cavity.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the vomer looks so different from the front and from behind.",
+    "model": [
+     "From the front, the perpendicular plate forms the upper septum.",
+     "Only a small part of the vomer shows below it.",
+     "From behind, looking into the back openings of the nose, the vomer is seen in full.",
+     "There it forms the whole height of the septum."
+    ],
+    "src": [
+     "s7-2#fs-id1254996",
+     "s7-2#fs-id2125356"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the three parts of the nasal septum.",
+    "model": [
+     "Perpendicular plate of the ethmoid: the upper part.",
+     "Vomer: the lower and back parts.",
+     "Septal cartilage: the front, between the two bones.",
+     "The cartilage also separates the nostrils, and is absent in the dry skull."
+    ],
+    "src": [
+     "s7-2#fs-id2125356"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict what the nasal septum of a dry skull looks like from the front, and explain why.",
+    "model": [
+     "The perpendicular plate is seen as the upper septum.",
+     "A small part of the vomer shows below.",
+     "There is a gap at the front between them.",
+     "The septal cartilage that fills it in life is not found in the dry skull."
+    ],
+    "src": [
+     "s7-2#fs-id2125356"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which part of the nasal septum does the vomer form?",
+   "options": [
+    "The upper part",
+    "The lower and back part",
+    "The front part",
+    "None of it"
+   ],
+   "answer": 1,
+   "why": "It forms the posterior-inferior part of the nasal septum.",
+   "src": [
+    "s7-2#fs-id1254996"
+   ]
+  },
+  {
+   "stem": "What fills the gap between the vomer and the perpendicular plate at the front?",
+   "options": [
+    "Septal cartilage",
+    "The inferior nasal concha",
+    "The palatine bone",
+    "Air"
+   ],
+   "answer": 0,
+   "why": "The septal cartilage fills the gap.",
+   "src": [
+    "s7-2#fs-id2125356"
+   ]
+  },
+  {
+   "stem": "Which are the two unpaired facial bones?",
+   "options": [
+    "Nasal and lacrimal",
+    "Maxilla and palatine",
+    "Zygomatic and vomer",
+    "Vomer and mandible"
+   ],
+   "answer": 3,
+   "why": "The unpaired facial bones are the vomer and the mandible.",
+   "src": [
+    "s7-2#fs-id1861377"
+   ]
+  }
+ ]
+}

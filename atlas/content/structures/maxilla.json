@@ -1,0 +1,334 @@
+{
+ "reviewStatus": "draft",
+ "id": "maxilla",
+ "bone": "maxilla_left",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4; 7.5; 9.2",
+ "oneLine": {
+  "main": {
+   "t": "One of two bones forming the upper jaw, most of the hard palate and part of the orbit floor (maxilla).",
+   "src": [
+    "s7-2#fs-id2307253"
+   ]
+  },
+  "simpler": {
+   "t": "The maxilla is your upper jaw bone.",
+   "src": [
+    "s7-2#fs-id2307253"
+   ]
+  },
+  "deeper": {
+   "t": "It contains the largest paranasal sinus, the maxillary sinus, just below the orbit.",
+   "src": [
+    "s7-2#fs-id1882870"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "The two maxillae meet in the midline to form the upper jaw.",
+    "src": [
+     "s7-2#fs-id2307253",
+     "s7-2#fs-id1845434"
+    ]
+   },
+   {
+    "t": "Each forms the inner (medial) floor of the orbit and the side of the base of the nose.",
+    "src": [
+     "s7-2#fs-id2307253",
+     "s7-2#fs-id1887927"
+    ]
+   },
+   {
+    "t": "Its lower edge holds the upper teeth.",
+    "src": [
+     "s7-2#fs-id2307253"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It forms your upper jaw, just below the eye.",
+   "src": [
+    "s7-2#fs-id2307253"
+   ]
+  },
+  "deeper": {
+   "t": "With the palatine bones, it forms the hard palate between the mouth and the nose.",
+   "src": [
+    "s7-2#fs-id2307253",
+    "s7-2#fs-id1965938"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Alveolar process",
+    "t": "The curved lower edge that holds the upper teeth.",
+    "src": [
+     "s7-2#fs-id2307253"
+    ]
+   },
+   {
+    "name": "Infraorbital foramen",
+    "t": "An opening just below the orbit, for a sensory nerve to the nose, upper lip and front of the cheek.",
+    "src": [
+     "s7-2#fs-id2307253"
+    ]
+   },
+   {
+    "name": "Palatine process",
+    "t": "A shelf that meets its partner to form the front three-quarters of the hard palate.",
+    "src": [
+     "s7-2#fs-id2307253"
+    ]
+   },
+   {
+    "name": "Orbital surface",
+    "t": "Forms most of the inner floor of the orbit.",
+    "src": [
+     "s7-2#fs-id1887927"
+    ]
+   },
+   {
+    "name": "Maxillary sinus",
+    "t": "The largest paranasal sinus, below the orbit.",
+    "src": [
+     "s7-2#fs-id1882870"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It has a ridge holding the upper teeth, a shelf forming the roof of the mouth and a large sinus.",
+   "src": [
+    "s7-2#fs-id2307253",
+    "s7-2#fs-id1882870"
+   ]
+  },
+  "deeper": {
+   "t": "Each tooth sits in a deep socket called an alveolus.",
+   "src": [
+    "s7-2#fs-id2307253"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Its alveolar process anchors the upper teeth in deep sockets.",
+    "src": [
+     "s7-2#fs-id2307253"
+    ]
+   },
+   {
+    "t": "Its palatine processes meet in the midline, separating the mouth from the nasal cavity.",
+    "src": [
+     "s7-2#fs-id2307253"
+    ]
+   },
+   {
+    "t": "The large maxillary sinus lightens the skull, but its opening is high on the inner wall, so it drains poorly.",
+    "src": [
+     "s7-2#fs-id1977054",
+     "s7-2#fs-id1882870"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It holds your upper teeth and forms most of the roof of your mouth.",
+   "src": [
+    "s7-2#fs-id2307253"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joints",
+    "name": "Upper teeth",
+    "t": "Each tooth root is held in its socket by a fibrous joint (gomphosis).",
+    "src": [
+     "s9-2#fs-id1747622",
+     "s7-2#fs-id2307253"
+    ]
+   },
+   {
+    "kind": "bones",
+    "name": "Palatine bones",
+    "t": "Their horizontal plates complete the back quarter of the hard palate.",
+    "src": [
+     "s7-2#fs-id1965938"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Sensory nerve to the face",
+    "t": "Leaves through the infraorbital foramen to supply the nose, upper lip and front of the cheek.",
+    "src": [
+     "s7-2#fs-id2307253"
+    ]
+   },
+   {
+    "kind": "space",
+    "name": "Orbit",
+    "t": "The maxilla forms most of its inner floor, with a small part from the palatine bone.",
+    "src": [
+     "s7-2#fs-id1887927"
+    ]
+   },
+   {
+    "kind": "space",
+    "name": "Nasal cavity",
+    "t": "The hard palate forms its floor, and the maxilla the side of the base of the nose.",
+    "src": [
+     "s7-2#fs-id2307253"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It holds the upper teeth and joins the palatine bones, the orbit and the nose.",
+   "src": [
+    "s7-2#fs-id2307253",
+    "s7-2#fs-id1965938"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "The right and left maxillae come together in the midline during embryonic development.",
+    "src": [
+     "s7-2#fs-id1845434"
+    ]
+   },
+   {
+    "t": "Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).",
+    "src": [
+     "s6-4#fs-id1804592"
+    ],
+    "check": "OpenStax 6.4 says the flat bones of the face form from membrane, but 7.5 says the facial bones form from cartilage; which applies to the maxilla needs an approved source."
+   },
+   {
+    "t": "In childhood the jaws grow as the teeth appear, and the sinuses enlarge.",
+    "src": [
+     "s7-5#fs-id1241553"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A sinus infection, often after a cold.",
+    "damaged": "The maxillary sinus, the sinus most often infected.",
+    "cannotDo": "Clear the sinus easily: pressure and pain build below the eye.",
+    "why": "The sinus opens into the nasal cavity high on its inner wall, so it drains poorly.",
+    "src": [
+     "s7-2#fs-id1882870",
+     "s7-2#fs-id1977054"
+    ]
+   },
+   {
+    "injury": "A blow to the eye from in front, as from a ball.",
+    "damaged": "The thin floor of the orbit breaks into the maxillary sinus below (blow-out fracture).",
+    "cannotDo": "Look upwards without double vision.",
+    "why": "An eye muscle and orbital fat can be trapped in the break.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the maxillary sinus is the one most often infected.",
+    "model": [
+     "It is the largest paranasal sinus.",
+     "Its connection to the nasal cavity is high on its inner wall.",
+     "So it is difficult to drain.",
+     "Trapped fluid and mucus allow infection and cause pressure and pain."
+    ],
+    "src": [
+     "s7-2#fs-id1882870",
+     "s7-2#fs-id1977054"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the parts the maxillae and the palatine bones play in the hard palate.",
+    "model": [
+     "The palatine processes of the maxillae form the front three-quarters.",
+     "The horizontal plates of the palatine bones form the back quarter.",
+     "All four meet in the midline.",
+     "Together they separate the mouth from the nasal cavity."
+    ],
+    "src": [
+     "s7-2#fs-id2307253",
+     "s7-2#fs-id1965938"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "A sensory nerve leaves the skull through the infraorbital foramen. Predict where a patient is numb if it is injured.",
+    "model": [
+     "The side of the nose.",
+     "The upper lip.",
+     "The front of the cheek.",
+     "On the same side as the injured nerve."
+    ],
+    "src": [
+     "s7-2#fs-id2307253"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which is the largest paranasal sinus?",
+   "options": [
+    "Frontal sinus",
+    "Maxillary sinus",
+    "Sphenoid sinus",
+    "Ethmoid air cells"
+   ],
+   "answer": 1,
+   "why": "The maxillary sinus is the largest.",
+   "src": [
+    "s7-2#fs-id1882870"
+   ]
+  },
+  {
+   "stem": "Which part of the hard palate do the maxillae form?",
+   "options": [
+    "The front three-quarters",
+    "The back quarter",
+    "The whole palate",
+    "None of it"
+   ],
+   "answer": 0,
+   "why": "Their palatine processes form the anterior three-quarters of the hard palate.",
+   "src": [
+    "s7-2#fs-id2307253"
+   ]
+  },
+  {
+   "stem": "What does the alveolar process of the maxilla hold?",
+   "options": [
+    "The eyeball",
+    "The tongue",
+    "The nasal septum",
+    "The upper teeth"
+   ],
+   "answer": 3,
+   "why": "It contains the sockets of the upper teeth.",
+   "src": [
+    "s7-2#fs-id2307253"
+   ]
+  }
+ ]
+}

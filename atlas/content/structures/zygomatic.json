@@ -1,0 +1,314 @@
+{
+ "reviewStatus": "draft",
+ "id": "zygomatic",
+ "bone": "zygomatic_bone_left",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4",
+ "oneLine": {
+  "main": {
+   "t": "The cheekbone, which forms much of the outer wall of the orbit (zygomatic bone).",
+   "src": [
+    "s7-2#fs-id2159036"
+   ]
+  },
+  "simpler": {
+   "t": "The zygomatic bone is your cheekbone.",
+   "src": [
+    "s7-2#fs-id2159036"
+   ]
+  },
+  "deeper": {
+   "t": "Its temporal process forms the front of the zygomatic arch.",
+   "src": [
+    "s7-2#fs-id2159036",
+    "s7-2#fs-id1285208"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It forms the cheek, at the outer and lower rim of the orbit.",
+    "src": [
+     "s7-2#fs-id2159036"
+    ]
+   },
+   {
+    "t": "It forms much of the outer (lateral) wall and outer floor of the orbit.",
+    "src": [
+     "s7-2#fs-id2159036",
+     "s7-2#fs-id1887927"
+    ]
+   },
+   {
+    "t": "Behind, its temporal process joins the zygomatic process of the temporal bone.",
+    "src": [
+     "s7-2#fs-id1285208"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is the bone you feel at the top of your cheek, below and beside your eye.",
+   "src": [
+    "s7-2#fs-id2159036"
+   ]
+  },
+  "deeper": {
+   "t": "The pterion lies a thumb’s width behind its upward part, about two finger widths above the arch.",
+   "src": [
+    "s7-2#fs-id1248497"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Orbital part",
+    "t": "Forms much of the lateral wall and the lateral floor of the orbit.",
+    "src": [
+     "s7-2#fs-id2159036",
+     "s7-2#fs-id1887927"
+    ]
+   },
+   {
+    "name": "Orbital margin",
+    "t": "The outer and lower rim of the front opening of the orbit.",
+    "src": [
+     "s7-2#fs-id2159036"
+    ]
+   },
+   {
+    "name": "Temporal process",
+    "t": "A short projection backwards, forming the front of the zygomatic arch.",
+    "src": [
+     "s7-2#fs-id2159036"
+    ]
+   },
+   {
+    "name": "Upward part",
+    "t": "Rises at the outer edge of the orbit; a landmark for finding the pterion.",
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It has a part that walls in the eye socket and a part that reaches back into the arch.",
+   "src": [
+    "s7-2#fs-id2159036"
+   ]
+  },
+  "deeper": {
+   "t": "The arch works like a drawbridge: two processes, one from each bone, meet in the middle.",
+   "src": [
+    "s7-2#fs-id1285208"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "The lateral wall of each orbit angles 45 degrees away from the midline, widening side (peripheral) vision.",
+    "src": [
+     "s7-2#fs-id1883481"
+    ]
+   },
+   {
+    "t": "The thickened margins of the orbit help protect the eye.",
+    "src": [
+     "s7-2#fs-id1883481"
+    ]
+   },
+   {
+    "t": "The arch it helps form is a bridge of bone from which a major chewing muscle arises.",
+    "src": [
+     "s7-2#fs-id1285208"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It shapes your cheek, guards the side of your eye and anchors a chewing muscle.",
+   "src": [
+    "s7-2#fs-id2159036",
+    "s7-2#fs-id1883481",
+    "s7-2#fs-id1285208"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "bone",
+    "name": "Temporal bone",
+    "t": "Its zygomatic process joins the temporal process to complete the arch.",
+    "src": [
+     "s7-2#fs-id1285208"
+    ]
+   },
+   {
+    "kind": "space",
+    "name": "Orbit",
+    "t": "Forms its lateral wall and lateral floor; the maxilla forms the inner floor.",
+    "src": [
+     "s7-2#fs-id1887927"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Chewing muscle",
+    "t": "A major muscle that pulls the mandible up in biting and chewing arises from the arch.",
+    "src": [
+     "s7-2#fs-id1285208"
+    ]
+   },
+   {
+    "kind": "spaces",
+    "name": "Temporal and infratemporal fossae",
+    "t": "The spaces above and below the arch, filled by chewing muscles.",
+    "src": [
+     "s7-2#fs-id1399296"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It joins the temporal bone in the arch and forms the outer wall of the eye socket.",
+   "src": [
+    "s7-2#fs-id1285208",
+    "s7-2#fs-id1887927"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).",
+    "src": [
+     "s6-4#fs-id1804592"
+    ],
+    "check": "OpenStax 6.4 says the flat bones of the face form from membrane, but 7.5 says the facial bones form from cartilage; which applies to the zygomatic bone needs an approved source."
+   },
+   {
+    "t": "The flat bones of the face are the last to ossify from membrane. They reach adult size at the end of the adolescent growth spurt.",
+    "src": [
+     "s6-4#fs-id1639567"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A blow to the side of the head, just behind the upward part of the zygomatic bone.",
+    "damaged": "The pterion, with a major artery to the brain’s coverings just inside it.",
+    "cannotDo": "Be left without close watching: a haematoma can build up over hours.",
+    "why": "The pterion is the weakest part of the skull, and bleeding there presses on the brain.",
+    "src": [
+     "s7-2#fs-id1248497",
+     "s7-2#fs-id1364278"
+    ]
+   },
+   {
+    "injury": "A punch or blow to the cheek.",
+    "damaged": "The zygomatic bone or arch breaks and may be pushed inwards.",
+    "cannotDo": "Open the mouth fully, if the broken arch presses on the jaw beneath.",
+    "why": "Part of the mandible and chewing muscles lie just deep to the arch.",
+    "src": [
+     "s7-2#fs-id1399296"
+    ],
+    "check": "The fracture and its effect on opening the mouth are not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the zygomatic arch is built.",
+    "model": [
+     "It spans from the cheek to just above the ear canal.",
+     "At the front is the short temporal process of the zygomatic bone.",
+     "Behind is the longer zygomatic process of the temporal bone.",
+     "The two join like the ends of a drawbridge."
+    ],
+    "src": [
+     "s7-2#fs-id1285208"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the parts the zygomatic bone and the maxilla play in the orbit.",
+    "model": [
+     "The zygomatic bone forms the lateral wall and lateral floor.",
+     "The maxilla forms most of the medial floor.",
+     "The zygomatic bone also forms the outer, lower rim.",
+     "The lateral wall angles outwards, widening side vision."
+    ],
+    "src": [
+     "s7-2#fs-id1887927",
+     "s7-2#fs-id2159036",
+     "s7-2#fs-id1883481"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict how to find the pterion on a living head, using the zygomatic bone.",
+    "model": [
+     "Find the upward part of the zygomatic bone, at the outer edge of the eye.",
+     "Move a thumb’s width behind it.",
+     "Then about two finger widths above the zygomatic arch.",
+     "This is the pterion, the weakest part of the skull."
+    ],
+    "src": [
+     "s7-2#fs-id1248497"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which bone forms the front of the zygomatic arch?",
+   "options": [
+    "Temporal bone",
+    "Zygomatic bone",
+    "Maxilla",
+    "Sphenoid bone"
+   ],
+   "answer": 1,
+   "why": "The temporal process of the zygomatic bone forms the front of the arch.",
+   "src": [
+    "s7-2#fs-id1285208"
+   ]
+  },
+  {
+   "stem": "Which part of the orbit does the zygomatic bone mainly form?",
+   "options": [
+    "Lateral wall",
+    "Roof",
+    "Medial wall",
+    "Back"
+   ],
+   "answer": 0,
+   "why": "It forms the lateral wall and lateral floor.",
+   "src": [
+    "s7-2#fs-id1887927"
+   ]
+  },
+  {
+   "stem": "What arises from the zygomatic arch?",
+   "options": [
+    "A muscle of facial expression",
+    "The optic nerve",
+    "The facial nerve",
+    "A muscle that pulls the jaw up in chewing"
+   ],
+   "answer": 3,
+   "why": "One of the major muscles that raises the mandible arises from the arch.",
+   "src": [
+    "s7-2#fs-id1285208"
+   ]
+  }
+ ]
+}

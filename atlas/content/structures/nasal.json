@@ -1,0 +1,301 @@
+{
+ "reviewStatus": "draft",
+ "id": "nasal",
+ "bone": "nasal_bone_left",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4",
+ "oneLine": {
+  "main": {
+   "t": "One of two small bones that form the bridge of the nose (nasal bone).",
+   "src": [
+    "s7-2#fs-id1899580"
+   ]
+  },
+  "simpler": {
+   "t": "The nasal bones form the hard top of your nose.",
+   "src": [
+    "s7-2#fs-id1899580"
+   ]
+  },
+  "deeper": {
+   "t": "They also support the cartilages that form the sides of the nose.",
+   "src": [
+    "s7-2#fs-id1899580"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "The two nasal bones meet in the midline at the bridge of the nose.",
+    "src": [
+     "s7-2#fs-id1899580"
+    ]
+   },
+   {
+    "t": "They form the bony base of the nose, above its cartilages.",
+    "src": [
+     "s7-2#fs-id1899580"
+    ]
+   },
+   {
+    "t": "They are paired facial bones.",
+    "src": [
+     "s7-2#fs-id1861377"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Feel the hard top of your nose: those are the nasal bones.",
+   "src": [
+    "s7-2#fs-id1899580"
+   ]
+  },
+  "deeper": {
+   "t": "Below them, the nose is shaped by cartilage, which is not seen in a dry skull.",
+   "src": [
+    "s7-2#fs-id1899580",
+    "s7-2#fs-id2125356"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Midline joint",
+    "t": "The two bones meet each other in the midline.",
+    "src": [
+     "s7-2#fs-id1899580"
+    ]
+   },
+   {
+    "name": "Bridge of the nose",
+    "t": "Together they form its bony base.",
+    "src": [
+     "s7-2#fs-id1899580"
+    ]
+   },
+   {
+    "name": "Lower edges",
+    "t": "Support the cartilages of the side walls of the nose.",
+    "src": [
+     "s7-2#fs-id1899580"
+    ]
+   },
+   {
+    "name": "Upper and side edges",
+    "t": "Meet the frontal bone above and the maxillae at the sides.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "They are two small bones side by side at the top of the nose.",
+   "src": [
+    "s7-2#fs-id1899580"
+   ]
+  },
+  "deeper": {
+   "t": "As facial bones, they are joined to their neighbours by sutures.",
+   "src": [
+    "s9-2#fs-id2663393"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Together they form a firm bridge that holds the shape of the upper nose.",
+    "src": [
+     "s7-2#fs-id1899580"
+    ]
+   },
+   {
+    "t": "They support the softer cartilages of the side walls of the nose.",
+    "src": [
+     "s7-2#fs-id1899580"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They give your nose a firm top and hold up its softer parts.",
+   "src": [
+    "s7-2#fs-id1899580"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "bone",
+    "name": "Other nasal bone",
+    "t": "Its partner, meeting it in the midline.",
+    "src": [
+     "s7-2#fs-id1899580"
+    ]
+   },
+   {
+    "kind": "cartilage",
+    "name": "Cartilages of the nose",
+    "t": "The side-wall cartilages rest on them.",
+    "src": [
+     "s7-2#fs-id1899580"
+    ]
+   },
+   {
+    "kind": "cartilage",
+    "name": "Septal cartilage",
+    "t": "Forms the front of the nasal septum and separates the nostrils.",
+    "src": [
+     "s7-2#fs-id2125356"
+    ]
+   },
+   {
+    "kind": "bones",
+    "name": "Frontal bone and maxillae",
+    "t": "Meet them above and at the sides.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "They meet each other in the midline and hold up the cartilages of the nose.",
+   "src": [
+    "s7-2#fs-id1899580"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).",
+    "src": [
+     "s6-4#fs-id1804592"
+    ],
+    "check": "OpenStax 6.4 says the flat bones of the face form from membrane, but 7.5 says the facial bones form from cartilage; which applies to the nasal bone needs an approved source."
+   },
+   {
+    "t": "The flat bones of the face are the last to ossify from membrane. They reach adult size at the end of the adolescent growth spurt.",
+    "src": [
+     "s6-4#fs-id1639567"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A blow to the nose.",
+    "damaged": "The nasal bones break: these are the bones damaged when the nose is broken.",
+    "cannotDo": "Keep the nose straight: the bridge may be pushed to one side.",
+    "why": "The thin bones form the bony bridge, so a blow drives them sideways or inwards.",
+    "src": [
+     "s7-2#fs-id1899580"
+    ],
+    "check": "OpenStax says these bones break in a broken nose; displacement of the bridge is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "injury": "A broken nose with a swollen, blocked nostril.",
+    "damaged": "Blood collects under the lining of the septal cartilage (septal haematoma).",
+    "cannotDo": "Breathe through that side of the nose.",
+    "why": "The cartilage depends on that lining for nourishment, so trapped blood threatens it.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why a broken nose is usually a break of the nasal bones.",
+    "model": [
+     "The nasal bones form the bony bridge of the nose.",
+     "They are small and project at the front of the face.",
+     "The rest of the nose is cartilage, which bends rather than breaks.",
+     "So a blow breaks the nasal bones."
+    ],
+    "src": [
+     "s7-2#fs-id1899580",
+     "s7-2#fs-id2125356"
+    ],
+    "check": "That cartilage bends rather than breaks is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the bony and the cartilage parts of the nose.",
+    "model": [
+     "Bone: the nasal bones form the bridge.",
+     "Cartilage: plates form the side walls and the front of the septum.",
+     "The bones support the side-wall cartilages.",
+     "Cartilage is not seen in a dry skull."
+    ],
+    "src": [
+     "s7-2#fs-id1899580",
+     "s7-2#fs-id2125356"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict why a skull in a museum seems to have no nose.",
+    "model": [
+     "Only the nasal bones, at the bridge, are bone.",
+     "The rest of the nose is cartilage.",
+     "Cartilage is not found in the dry skull.",
+     "So a large opening is left below the nasal bones."
+    ],
+    "src": [
+     "s7-2#fs-id1899580",
+     "s7-2#fs-id2125356"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "How many nasal bones are there?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four"
+   ],
+   "answer": 1,
+   "why": "Two small nasal bones join to form the bridge of the nose.",
+   "src": [
+    "s7-2#fs-id1899580"
+   ]
+  },
+  {
+   "stem": "What do the nasal bones support?",
+   "options": [
+    "The cartilages of the side walls of the nose",
+    "The upper teeth",
+    "The eyeball",
+    "The tongue"
+   ],
+   "answer": 0,
+   "why": "They support the cartilages that form the lateral walls of the nose.",
+   "src": [
+    "s7-2#fs-id1899580"
+   ]
+  },
+  {
+   "stem": "Which bones are damaged when the nose is broken?",
+   "options": [
+    "Vomer",
+    "Ethmoid bone",
+    "Lacrimal bones",
+    "Nasal bones"
+   ],
+   "answer": 3,
+   "why": "The nasal bones are damaged when the nose is broken.",
+   "src": [
+    "s7-2#fs-id1899580"
+   ]
+  }
+ ]
+}

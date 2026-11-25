@@ -162,7 +162,7 @@ parietal = lesson(
             F('It is one of the flat bones that form the top and sides of the brain case.', CALVARIA),
         ],
         'simpler': F('It forms most of the top and side of your head.', PARIETAL),
-        'deeper': F('It is one of the four bones that meet at the pterion, the weakest part of the skull.', SUTURES),
+        'deeper': F('The parietal is one of the four bones that meet at the pterion, the weakest part of the skull.', SUTURES),
     },
     features={
         'items': [
@@ -460,7 +460,7 @@ ethmoid = lesson(
     },
     development={
         'facts': [
-            F('Like the bones of the skull base and face, it forms from a cartilage model (endochondral ossification).', DEV_ENDO),
+            F('Like the bones of the skull base, it forms from a cartilage model (endochondral ossification).', DEV_ENDO),
             F('The paranasal sinuses, including its air cells, enlarge during childhood.', FACE_DEV),
         ],
     },

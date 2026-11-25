@@ -1,0 +1,308 @@
+{
+ "reviewStatus": "draft",
+ "id": "lacrimal",
+ "bone": "lacrimal_bone_left",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4",
+ "oneLine": {
+  "main": {
+   "t": "A small rectangular bone at the front of the inner wall of the orbit (lacrimal bone).",
+   "src": [
+    "s7-2#fs-id886176"
+   ]
+  },
+  "simpler": {
+   "t": "The lacrimal bone is a tiny bone at the inner corner of your eye socket.",
+   "src": [
+    "s7-2#fs-id886176"
+   ]
+  },
+  "deeper": {
+   "t": "Tears drain from the eye through a canal beside it into the nose.",
+   "src": [
+    "s7-2#fs-id886176"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It forms the front part of the medial wall of the orbit.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   {
+    "t": "With the ethmoid bone, it makes up much of the medial wall.",
+    "src": [
+     "s7-2#fs-id1887927"
+    ]
+   },
+   {
+    "t": "It is paired: one in each orbit.",
+    "src": [
+     "s7-2#fs-id1861377"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits at the inner corner of each eye socket.",
+   "src": [
+    "s7-2#fs-id886176"
+   ]
+  },
+  "deeper": {
+   "t": "Its canal opens into the nasal cavity, behind the inferior nasal concha.",
+   "src": [
+    "s7-2#fs-id886176"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Shape",
+    "t": "A small, rectangular plate of bone.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   {
+    "name": "Lacrimal fossa",
+    "t": "A shallow hollow in its front part.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   {
+    "name": "Nasolacrimal canal",
+    "t": "Runs down from the fossa towards the nasal cavity.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   {
+    "name": "Orbital surface",
+    "t": "Forms the front of the medial wall of the orbit.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is a tiny plate of bone with a hollow and a canal for tears.",
+   "src": [
+    "s7-2#fs-id886176"
+   ]
+  },
+  "deeper": {
+   "t": "Tears drain into the canal at the inner (medial) corner of the eye.",
+   "src": [
+    "s7-2#fs-id886176"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Tears keep the surface of the eye moist, then drain at the inner corner into its canal.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   {
+    "t": "The duct carries them down into the nasal cavity.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   {
+    "t": "With a flood of tears, some fluid drains forwards in the nose, causing a runny nose.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It holds the start of the drain that takes tears from your eye into your nose.",
+   "src": [
+    "s7-2#fs-id886176"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "bone",
+    "name": "Ethmoid bone",
+    "t": "Behind it; together they form much of the medial wall of the orbit.",
+    "src": [
+     "s7-2#fs-id1887927"
+    ]
+   },
+   {
+    "kind": "duct",
+    "name": "Nasolacrimal duct",
+    "t": "Carries tears from the eye down into the nasal cavity.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Inferior nasal concha",
+    "t": "The duct opens into the nasal cavity behind it.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   {
+    "kind": "space",
+    "name": "Orbit",
+    "t": "Forms the front of its medial wall.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits beside the ethmoid bone in the eye socket, at the top of the tear drain.",
+   "src": [
+    "s7-2#fs-id1887927",
+    "s7-2#fs-id886176"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).",
+    "src": [
+     "s6-4#fs-id1804592"
+    ],
+    "check": "OpenStax 6.4 says the flat bones of the face form from membrane, but 7.5 says the facial bones form from cartilage; which applies to the lacrimal bone needs an approved source."
+   },
+   {
+    "t": "The flat bones of the face are the last to ossify from membrane. They reach adult size at the end of the adolescent growth spurt.",
+    "src": [
+     "s6-4#fs-id1639567"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Crying, or an irritated eye, increases the flow of tears.",
+    "damaged": "Nothing is damaged: the tear drain is working, but overloaded.",
+    "cannotDo": "Keep the nose dry: tears run forwards out of the nose.",
+    "why": "Tears normally drain backwards in the nasal cavity; extra fluid also drains forwards.",
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   {
+    "injury": "A baby’s tear duct has not fully opened.",
+    "damaged": "The nasolacrimal duct is blocked.",
+    "cannotDo": "Drain tears: the eye waters all the time.",
+    "why": "Tears can leave the eye only through this duct into the nose.",
+    "src": [
+     "s7-2#fs-id886176"
+    ],
+    "check": "A blocked tear duct in babies is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the duct’s course is."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why crying gives you a runny nose.",
+    "model": [
+     "Tears drain at the inner corner of the eye into the nasolacrimal canal.",
+     "The duct opens into the nasal cavity, behind the inferior nasal concha.",
+     "Normally the fluid drains backwards.",
+     "With many tears, some also drains forwards and out of the nose."
+    ],
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the lacrimal and ethmoid bones in the medial wall of the orbit.",
+    "model": [
+     "Both form much of the medial wall.",
+     "The lacrimal bone is small and lies in front.",
+     "The ethmoid lies behind it, between the orbit and the nasal cavity.",
+     "The ethmoid contains air cells; the lacrimal bone holds the tear canal."
+    ],
+    "src": [
+     "s7-2#fs-id1887927",
+     "s7-2#fs-id886176",
+     "s7-2#fs-id1897403"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict where eye drops go after you blink.",
+    "model": [
+     "They drain at the inner corner of the eye.",
+     "They pass into the nasolacrimal canal, beside the lacrimal bone.",
+     "The duct carries them down into the nasal cavity.",
+     "They drain backwards in the nose."
+    ],
+    "src": [
+     "s7-2#fs-id886176"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Where does the nasolacrimal duct open?",
+   "options": [
+    "Into the mouth",
+    "Into the nasal cavity",
+    "Into the orbit",
+    "Into the maxillary sinus"
+   ],
+   "answer": 1,
+   "why": "It opens into the nasal cavity, behind the inferior nasal concha.",
+   "src": [
+    "s7-2#fs-id886176"
+   ]
+  },
+  {
+   "stem": "Which part of the orbit does the lacrimal bone form?",
+   "options": [
+    "The front of the medial wall",
+    "The roof",
+    "The lateral wall",
+    "The floor"
+   ],
+   "answer": 0,
+   "why": "It forms the anterior, medial wall of the orbit.",
+   "src": [
+    "s7-2#fs-id886176"
+   ]
+  },
+  {
+   "stem": "Why does crying give you a runny nose?",
+   "options": [
+    "The nasal bones swell",
+    "The sinuses fill",
+    "Mucus is made faster",
+    "Extra tears drain forwards in the nasal cavity"
+   ],
+   "answer": 3,
+   "why": "With increased tears, some fluid drains anteriorly in the nasal cavity.",
+   "src": [
+    "s7-2#fs-id886176"
+   ]
+  }
+ ]
+}

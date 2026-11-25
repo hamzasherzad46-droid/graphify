@@ -1,0 +1,316 @@
+{
+ "reviewStatus": "draft",
+ "id": "hyoid",
+ "bone": "hyoid_bone",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull",
+ "oneLine": {
+  "main": {
+   "t": "A small U-shaped bone in the upper neck that touches no other bone (hyoid bone).",
+   "src": [
+    "s7-2#fs-id1399933"
+   ]
+  },
+  "simpler": {
+   "t": "The hyoid is a small U-shaped bone in your neck, below your jaw.",
+   "src": [
+    "s7-2#fs-id1399933"
+   ]
+  },
+  "deeper": {
+   "t": "It is the base of the tongue, and it moves when you swallow and speak.",
+   "src": [
+    "s7-2#fs-id1399933"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It lies in the upper neck, near the level of the lower edge of the mandible.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   },
+   {
+    "t": "The tips of the U point backwards.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   },
+   {
+    "t": "It is not part of the skull: it does not touch any other bone.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits at the top of your neck, just under your jaw.",
+   "src": [
+    "s7-2#fs-id1399933"
+   ]
+  },
+  "deeper": {
+   "t": "A ligament from the styloid process of the temporal bone helps support it.",
+   "src": [
+    "s7-2#fs-id1882965"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "U shape",
+    "t": "A small curved bone, open at the back.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   },
+   {
+    "name": "Body",
+    "t": "The front of the U.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   },
+   {
+    "name": "Tips",
+    "t": "The two ends of the U, pointing backwards.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   },
+   {
+    "name": "Muscle attachments",
+    "t": "Small muscles attach to it from above and from below.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   },
+   {
+    "name": "Ligament attachment",
+    "t": "A ligament from the styloid process of the temporal bone supports it.",
+    "src": [
+     "s7-2#fs-id1882965"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is a small U of bone, held in place by muscles.",
+   "src": [
+    "s7-2#fs-id1399933"
+   ]
+  },
+  "deeper": {
+   "t": "It is one of the very few bones that join no other bone.",
+   "src": [
+    "s7-2#fs-id1399933"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Held only by muscles and a ligament, it can move up, down, forwards and back.",
+    "src": [
+     "s7-2#fs-id1399933",
+     "s7-2#fs-id1882965"
+    ]
+   },
+   {
+    "t": "It forms a base for the tongue above and is attached to the larynx below.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   },
+   {
+    "t": "Its movements are coordinated with the tongue, larynx and pharynx in swallowing and speaking.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It hangs in the neck on muscles and helps you swallow and talk.",
+   "src": [
+    "s7-2#fs-id1399933"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "organ",
+    "name": "Tongue",
+    "t": "The hyoid is its base.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   },
+   {
+    "kind": "organ",
+    "name": "Larynx",
+    "t": "Attached below it.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   },
+   {
+    "kind": "organ",
+    "name": "Pharynx",
+    "t": "Attached behind it.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Styloid process of the temporal bone",
+    "t": "Gives off a ligament that supports the hyoid.",
+    "src": [
+     "s7-2#fs-id1882965"
+    ]
+   },
+   {
+    "kind": "muscles",
+    "name": "Small muscles of the neck",
+    "t": "Attach from above and below, moving it up, down, forwards and back.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "The tongue sits on it, and the larynx and pharynx are attached to it.",
+   "src": [
+    "s7-2#fs-id1399933"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It forms from cartilage of the second and third pharyngeal arches.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Strong pressure on the front of the neck, as in strangulation.",
+    "damaged": "The hyoid bone may break.",
+    "cannotDo": "Swallow or speak without pain.",
+    "why": "The hyoid moves with the tongue, larynx and pharynx in swallowing and speaking.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ],
+    "check": "A fracture of the hyoid is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); its role in swallowing and speech is."
+   },
+   {
+    "injury": "Weakness of the small muscles attached to the hyoid, for example after a stroke.",
+    "damaged": "The muscles that move the hyoid.",
+    "cannotDo": "Swallow safely: food may enter the airway.",
+    "why": "Swallowing needs the hyoid to move in step with the larynx and pharynx.",
+    "src": [
+     "s7-2#fs-id1399933"
+    ],
+    "check": "Swallowing problems after a stroke are not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the hyoid’s role is."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the hyoid can move, although it touches no other bone.",
+    "model": [
+     "It is held in position by small muscles that attach from above and below.",
+     "A ligament from the styloid process also supports it.",
+     "With no joint to another bone, it is free to move.",
+     "The muscles move it up, down, forwards and back."
+    ],
+    "src": [
+     "s7-2#fs-id1399933",
+     "s7-2#fs-id1882965"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the hyoid bone with the bones of the skull.",
+    "model": [
+     "The 22 skull bones are joined; 21 are united by sutures, and the mandible moves at its joint.",
+     "The hyoid touches no other bone.",
+     "So it is not part of the skull.",
+     "It is held in place by muscles and a ligament instead."
+    ],
+    "src": [
+     "s7-2#fs-id1899464",
+     "s9-2#fs-id2663393",
+     "s7-2#fs-id1399933"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Place your fingers under your jaw and swallow. Predict what you feel, and explain why.",
+    "model": [
+     "The hyoid moves.",
+     "Muscles attached to it pull it during swallowing.",
+     "It moves in step with the tongue, larynx and pharynx.",
+     "The larynx, attached below it, moves too."
+    ],
+    "src": [
+     "s7-2#fs-id1399933"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which bone does the hyoid touch?",
+   "options": [
+    "The mandible",
+    "None",
+    "The temporal bone",
+    "The first cervical vertebra"
+   ],
+   "answer": 1,
+   "why": "It is an independent bone that does not contact any other bone.",
+   "src": [
+    "s7-2#fs-id1399933"
+   ]
+  },
+  {
+   "stem": "What shape is the hyoid bone?",
+   "options": [
+    "U-shaped",
+    "S-shaped",
+    "Triangular",
+    "Ring-shaped"
+   ],
+   "answer": 0,
+   "why": "It is a small U-shaped bone.",
+   "src": [
+    "s7-2#fs-id1399933"
+   ]
+  },
+  {
+   "stem": "What does the hyoid form a base for?",
+   "options": [
+    "The larynx",
+    "The pharynx",
+    "The thyroid gland",
+    "The tongue"
+   ],
+   "answer": 3,
+   "why": "It serves as the base for the tongue above; the larynx and pharynx are attached to it.",
+   "src": [
+    "s7-2#fs-id1399933"
+   ]
+  }
+ ]
+}

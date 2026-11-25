@@ -1,0 +1,309 @@
+{
+ "reviewStatus": "draft",
+ "id": "palatine",
+ "bone": "palatine_bone_left",
+ "topic": "skull",
+ "source": "OpenStax A&P 2e: 7.2 The Skull; 6.4",
+ "oneLine": {
+  "main": {
+   "t": "One of a pair of irregular bones that form the back quarter of the hard palate (palatine bone).",
+   "src": [
+    "s7-2#fs-id1965938"
+   ]
+  },
+  "simpler": {
+   "t": "The palatine bones form the back of the bony roof of your mouth.",
+   "src": [
+    "s7-2#fs-id1965938"
+   ]
+  },
+  "deeper": {
+   "t": "They also form small parts of the side walls of the nasal cavity and of the orbit.",
+   "src": [
+    "s7-2#fs-id1965938"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "Its horizontal plate meets its partner in the midline, at the back of the hard palate.",
+    "src": [
+     "s7-2#fs-id1965938"
+    ]
+   },
+   {
+    "t": "In front of it are the palatine processes of the maxillae.",
+    "src": [
+     "s7-2#fs-id2307253",
+     "s7-2#fs-id1965938"
+    ]
+   },
+   {
+    "t": "It is best seen looking at the skull from below.",
+    "src": [
+     "s7-2#fs-id1965938"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits at the back of the bony roof of your mouth.",
+   "src": [
+    "s7-2#fs-id1965938"
+   ]
+  },
+  "deeper": {
+   "t": "The palatine bone also adds a small part to the floor of the orbit, beside the maxilla.",
+   "src": [
+    "s7-2#fs-id1887927"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Horizontal plate",
+    "t": "Its largest region; with its partner it forms the back quarter of the hard palate.",
+    "src": [
+     "s7-2#fs-id1965938"
+    ]
+   },
+   {
+    "name": "Nasal part",
+    "t": "Adds small areas to the side walls of the nasal cavity.",
+    "src": [
+     "s7-2#fs-id1965938"
+    ]
+   },
+   {
+    "name": "Orbital part",
+    "t": "A small contribution to the orbit.",
+    "src": [
+     "s7-2#fs-id1965938",
+     "s7-2#fs-id1887927"
+    ]
+   },
+   {
+    "name": "Shape",
+    "t": "An irregular bone, paired with its partner.",
+    "src": [
+     "s7-2#fs-id1965938"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Its main part is a flat plate at the back of the roof of the mouth.",
+   "src": [
+    "s7-2#fs-id1965938"
+   ]
+  },
+  "deeper": {
+   "t": "So it reaches from the roof of the mouth up into the nose and the orbit.",
+   "src": [
+    "s7-2#fs-id1965938"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "With the maxillae, it completes the hard palate, which separates the mouth from the nasal cavity.",
+    "src": [
+     "s7-2#fs-id1965938",
+     "s7-2#fs-id2307253"
+    ]
+   },
+   {
+    "t": "A complete palate keeps the mouth and nose apart, so an infant can suckle.",
+    "src": [
+     "s7-2#fs-id1547568"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It finishes the roof of your mouth, sealing it off from your nose.",
+   "src": [
+    "s7-2#fs-id1965938",
+    "s7-2#fs-id2307253"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "bones",
+    "name": "Maxillae",
+    "t": "Their palatine processes form the front three-quarters of the hard palate.",
+    "src": [
+     "s7-2#fs-id2307253"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Other palatine bone",
+    "t": "Its partner, meeting it in the midline.",
+    "src": [
+     "s7-2#fs-id1965938"
+    ]
+   },
+   {
+    "kind": "space",
+    "name": "Nasal cavity",
+    "t": "The hard palate forms its floor; the palatine bone adds to its side walls.",
+    "src": [
+     "s7-2#fs-id2307253",
+     "s7-2#fs-id1965938"
+    ]
+   },
+   {
+    "kind": "space",
+    "name": "Orbit",
+    "t": "A small part of the floor, beside the maxilla.",
+    "src": [
+     "s7-2#fs-id1887927"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It joins the maxillae and its partner to make the roof of the mouth.",
+   "src": [
+    "s7-2#fs-id1965938",
+    "s7-2#fs-id2307253"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "During development, its horizontal plate and the maxillae’s palatine processes fuse in the midline, forming the hard palate.",
+    "src": [
+     "s7-2#fs-id1845434",
+     "s7-2#fs-id1547568"
+    ]
+   },
+   {
+    "t": "Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).",
+    "src": [
+     "s6-4#fs-id1804592"
+    ],
+    "check": "OpenStax 6.4 says the flat bones of the face form from membrane, but 7.5 says the facial bones form from cartilage; which applies to the palatine bone needs an approved source."
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "The two halves of the hard palate fail to fuse during development (cleft palate).",
+    "damaged": "The palatine plates and palatine processes leave a gap in the midline.",
+    "cannotDo": "Suckle well: the infant is at risk of malnutrition until surgery.",
+    "why": "The gap connects the mouth and nasal cavity, so no seal forms.",
+    "src": [
+     "s7-2#fs-id1547568"
+    ]
+   },
+   {
+    "injury": "In a severe cleft palate, the gap continues forwards.",
+    "damaged": "The alveolar processes of the maxillae, above the front teeth, also fail to join.",
+    "cannotDo": "Close the upper lip: a cleft lip is also present.",
+    "why": "The lip forms over the joining maxillae at the same time as the palate.",
+    "src": [
+     "s7-2#fs-id1547568",
+     "s7-2#fs-id1845434"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the hard palate forms.",
+    "model": [
+     "The right and left maxillae come together in the midline.",
+     "Their palatine processes join.",
+     "The horizontal plates of the palatine bones join behind them.",
+     "All four fuse in the midline to form the hard palate."
+    ],
+    "src": [
+     "s7-2#fs-id1845434",
+     "s7-2#fs-id1547568"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare cleft lip and cleft palate.",
+    "model": [
+     "Cleft lip: the two sides of the upper lip fail to fuse.",
+     "It affects about 1 in 1000 births, mostly males.",
+     "Cleft palate: the two halves of the hard palate fail to fuse; about 1 in 2500 births, more often females.",
+     "Cleft palate is more severe, as it makes suckling difficult."
+    ],
+    "src": [
+     "s7-2#fs-id1363721",
+     "s7-2#fs-id1547568"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict why a baby with a cleft palate struggles to feed.",
+    "model": [
+     "The gap connects the mouth with the nasal cavity.",
+     "So the baby cannot seal the mouth.",
+     "Without a seal, it cannot suckle well.",
+     "Surgical repair is needed to prevent malnutrition."
+    ],
+    "src": [
+     "s7-2#fs-id1547568"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which part of the hard palate do the palatine bones form?",
+   "options": [
+    "The front three-quarters",
+    "The back quarter",
+    "The whole palate",
+    "None of it"
+   ],
+   "answer": 1,
+   "why": "Their horizontal plates form the posterior quarter of the hard palate.",
+   "src": [
+    "s7-2#fs-id1965938"
+   ]
+  },
+  {
+   "stem": "Which bones join the palatine bones to form the hard palate?",
+   "options": [
+    "The maxillae",
+    "The vomer",
+    "The nasal bones",
+    "The zygomatic bones"
+   ],
+   "answer": 0,
+   "why": "The palatine processes of the maxillae form the rest of the hard palate.",
+   "src": [
+    "s7-2#fs-id2307253",
+    "s7-2#fs-id1965938"
+   ]
+  },
+  {
+   "stem": "Why does a cleft palate make feeding difficult?",
+   "options": [
+    "The tongue is missing",
+    "The teeth cannot form",
+    "The jaw cannot open",
+    "The mouth and nose are connected, so no seal forms"
+   ],
+   "answer": 3,
+   "why": "The gap connects the oral and nasal cavities, so suckling is very difficult.",
+   "src": [
+    "s7-2#fs-id1547568"
+   ]
+  }
+ ]
+}

@@ -1,6 +1,6 @@
 # Atlas: † statements for sign-off
 
-25 November 2026. 55 statements are marked † in the app: not confirmed by the imported OpenStax A&P 2e chapters (6–9, 12–16 and 20) or by review. Each stays marked until it is signed off here.
+25 November 2026. 85 statements are marked † in the app: not confirmed by the imported OpenStax A&P 2e chapters (6–9, 12–16 and 20) or by review. Each stays marked until it is signed off here.
 
 **Proposed sources.** For each statement: any sentence of *Gray’s Anatomy* (1918) that supports it, quoted in full (a secondary source: it can support a statement but cannot approve one on its own); the Terminologia Anatomica (TA2) entry for each name it uses; and a current textbook in which to confirm it. No page numbers are given: please record the edition and page you use.
 
@@ -255,7 +255,308 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 24. Flashcard 2.1 (“Name the highlighted bone.”), layer “Clinical”
+### 24. Structure lesson: Capitate, layer “Where it is”
+
+> It is the largest of the carpal bones.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 25. Structure lesson: Capitate, layer “Key features”
+
+> Rounded head: Its upper end is rounded, fitting a hollow formed by the scaphoid and lunate.
+
+- **What is missing:** OpenStax gives its name and its joints with the scaphoid and lunate; the rounded head fitting their hollow is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 26. Structure lesson: Capitate, layer “Development”
+
+> Its single ossification centre appears first of the carpal bones, during the first year.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the first year, before the hamate (supporting only).
+- **Gray’s 1918** (8.2, “The Phalanges of the Hand”; supporting only): “Ossification of the Bones of the Hand.—The carpal bones are each ossified from a single centre, and ossification proceeds in the following order (Fig. 234): in the capitate and hamate, during the first year, the former preceding the latter; in the triangular, during the third year; in the lunate and greater multangular, during the fifth year, the former preceding the latter; in the navicular, during the sixth year; in the lesser multangular, during the eighth year; and in the pisiform, about the twelfth year”
+- **Confirm in:** Standring (ed.), *Gray’s Anatomy: The Anatomical Basis of Clinical Practice*, current edition (development and ossification), or a skeletal-maturation atlas (Greulich and Pyle)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 27. Structure lesson: Capitate, layer “Clinical reasoning”
+
+> Injury: A violent fall onto the hand with the wrist bent far back. Damaged: The capitate and the rest of the hand dislocate backwards around the lunate (perilunate dislocation). Patient can’t: Move the wrist; the fingers may also be numb. Why: The lunate stays attached to the radius while the ligaments around it tear.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 28. Structure lesson: Capitate, layer “Tutorial questions”
+
+> Predict the effect of a fall that dislocates the capitate backwards around the lunate.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 29. Structure lesson: Hamate, layer “Relations”
+
+> Ulnar nerve: Passes beside the hook of the hamate into the hand.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 30. Structure lesson: Hamate, layer “Development”
+
+> Its single ossification centre appears during the first year, just after the capitate.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the first year, after the capitate (supporting only).
+- **Gray’s 1918** (8.2, “The Phalanges of the Hand”; supporting only): “Ossification of the Bones of the Hand.—The carpal bones are each ossified from a single centre, and ossification proceeds in the following order (Fig. 234): in the capitate and hamate, during the first year, the former preceding the latter; in the triangular, during the third year; in the lunate and greater multangular, during the fifth year, the former preceding the latter; in the navicular, during the sixth year; in the lesser multangular, during the eighth year; and in the pisiform, about the twelfth year”
+- **Confirm in:** Standring (ed.), *Gray’s Anatomy: The Anatomical Basis of Clinical Practice*, current edition (development and ossification), or a skeletal-maturation atlas (Greulich and Pyle)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 31. Structure lesson: Hamate, layer “Clinical reasoning”
+
+> Injury: A golf club, bat or racquet handle strikes the base of the palm. Damaged: The hook of the hamate breaks. Patient can’t: Grip firmly without pain at the base of the palm. Why: The handle presses directly on the hook, which projects forwards.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 32. Structure lesson: Hamate, layer “Tutorial questions”
+
+> A golfer strikes the ground and has pain at the base of the palm. Predict the fracture and why.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 33. Structure lesson: Lunate, layer “Relations”
+
+> Median nerve: Runs through the carpal tunnel, in front of the lunate.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 34. Structure lesson: Lunate, layer “Development”
+
+> Its single ossification centre appears at about the fifth year.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the fifth year (supporting only).
+- **Gray’s 1918** (8.2, “The Phalanges of the Hand”; supporting only): “Ossification of the Bones of the Hand.—The carpal bones are each ossified from a single centre, and ossification proceeds in the following order (Fig. 234): in the capitate and hamate, during the first year, the former preceding the latter; in the triangular, during the third year; in the lunate and greater multangular, during the fifth year, the former preceding the latter; in the navicular, during the sixth year; in the lesser multangular, during the eighth year; and in the pisiform, about the twelfth year”
+- **Confirm in:** Standring (ed.), *Gray’s Anatomy: The Anatomical Basis of Clinical Practice*, current edition (development and ossification), or a skeletal-maturation atlas (Greulich and Pyle)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 35. Structure lesson: Lunate, layer “Clinical reasoning”
+
+> Injury: A fall onto the outstretched hand with the wrist bent far back. Damaged: The lunate dislocates forwards, into the carpal tunnel. Patient can’t: Feel the thumb, index and middle fingers normally. Why: The dislocated bone takes up space in the tunnel and presses on the median nerve.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 36. Structure lesson: Lunate, layer “Tutorial questions”
+
+> Predict the effect of the lunate dislocating forwards into the carpal tunnel.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 37. Structure lesson: Pisiform, layer “Key features”
+
+> It lies within the tendon of a forearm muscle (flexor carpi ulnaris), like a kneecap within its tendon.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 38. Structure lesson: Pisiform, layer “Relations”
+
+> Flexor carpi ulnaris: Its tendon attaches to the pisiform.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 39. Structure lesson: Pisiform, layer “Relations”
+
+> Ulnar nerve and artery: Pass beside it into the hand, outside the carpal tunnel.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 40. Structure lesson: Pisiform, layer “Development”
+
+> Its single ossification centre appears last of the carpal bones, at about the twelfth year.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives about the twelfth year (supporting only).
+- **Gray’s 1918** (8.2, “The Phalanges of the Hand”; supporting only): “Ossification of the Bones of the Hand.—The carpal bones are each ossified from a single centre, and ossification proceeds in the following order (Fig. 234): in the capitate and hamate, during the first year, the former preceding the latter; in the triangular, during the third year; in the lunate and greater multangular, during the fifth year, the former preceding the latter; in the navicular, during the sixth year; in the lesser multangular, during the eighth year; and in the pisiform, about the twelfth year”
+- **Confirm in:** Standring (ed.), *Gray’s Anatomy: The Anatomical Basis of Clinical Practice*, current edition (development and ossification), or a skeletal-maturation atlas (Greulich and Pyle)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 41. Structure lesson: Pisiform, layer “Clinical reasoning”
+
+> Injury: A fall onto the heel of the hand on the little-finger side. Damaged: The pisiform breaks. Patient can’t: Bend the wrist towards the little-finger side without pain. Why: A forearm muscle tendon attaches to it and pulls on the broken bone.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 42. Structure lesson: Pisiform, layer “Clinical reasoning”
+
+> Injury: Long pressure on the base of the palm, as in long-distance cycling. Damaged: The ulnar nerve beside the pisiform. Patient can’t: Spread and close the fingers strongly; the little finger may feel numb. Why: The nerve passes beside the pisiform and the hook of the hamate into the hand.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 43. Structure lesson: Pisiform, layer “Tutorial questions”
+
+> After a long ride, a cyclist’s little finger feels numb. Predict the nerve affected and where.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 44. Structure lesson: Radius, layer “Clinical reasoning”
+
+> Injury: A young child is lifted or swung by the hand. Damaged: The head of the radius slips partly out of the annular ligament (“pulled elbow”). Patient can’t: Turn the palm up, and the child holds the arm still. Why: The annular ligament normally holds the head in place as it turns.
+
+- **What is missing:** “Pulled elbow” (radial head subluxation) in young children is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 45. Structure lesson: Trapezium, layer “Development”
+
+> Its single ossification centre appears at about the fifth year.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the fifth year (as the “greater multangular”) (supporting only).
+- **Gray’s 1918** (8.2, “The Phalanges of the Hand”; supporting only): “Ossification of the Bones of the Hand.—The carpal bones are each ossified from a single centre, and ossification proceeds in the following order (Fig. 234): in the capitate and hamate, during the first year, the former preceding the latter; in the triangular, during the third year; in the lunate and greater multangular, during the fifth year, the former preceding the latter; in the navicular, during the sixth year; in the lesser multangular, during the eighth year; and in the pisiform, about the twelfth year”
+- **Confirm in:** Standring (ed.), *Gray’s Anatomy: The Anatomical Basis of Clinical Practice*, current edition (development and ossification), or a skeletal-maturation atlas (Greulich and Pyle)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 46. Structure lesson: Trapezium, layer “Clinical reasoning”
+
+> Injury: Years of pinching and gripping. Damaged: The joint between the trapezium and the first metacarpal wears (osteoarthritis). Patient can’t: Pinch, open jars or turn keys without pain at the base of the thumb. Why: This saddle joint takes the force of every pinch and grip.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 47. Structure lesson: Trapezoid, layer “Development”
+
+> Its single ossification centre appears at about the eighth year.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the eighth year (as the “lesser multangular”) (supporting only).
+- **Gray’s 1918** (8.2, “The Phalanges of the Hand”; supporting only): “Ossification of the Bones of the Hand.—The carpal bones are each ossified from a single centre, and ossification proceeds in the following order (Fig. 234): in the capitate and hamate, during the first year, the former preceding the latter; in the triangular, during the third year; in the lunate and greater multangular, during the fifth year, the former preceding the latter; in the navicular, during the sixth year; in the lesser multangular, during the eighth year; and in the pisiform, about the twelfth year”
+- **Confirm in:** Standring (ed.), *Gray’s Anatomy: The Anatomical Basis of Clinical Practice*, current edition (development and ossification), or a skeletal-maturation atlas (Greulich and Pyle)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 48. Structure lesson: Trapezoid, layer “Clinical reasoning”
+
+> Injury: A hard bony lump on the back of the hand, at the base of the index and middle fingers. Damaged: Extra bone (a carpal boss) where the trapezoid and capitate meet the second and third metacarpals. Patient can’t: Bend the wrist back fully without pain over the lump. Why: The lump catches the tendons that run over the back of the wrist.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 49. Structure lesson: Triquetrum, layer “Development”
+
+> Its single ossification centre appears at about the third year.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the third year (supporting only).
+- **Gray’s 1918** (8.2, “The Phalanges of the Hand”; supporting only): “Ossification of the Bones of the Hand.—The carpal bones are each ossified from a single centre, and ossification proceeds in the following order (Fig. 234): in the capitate and hamate, during the first year, the former preceding the latter; in the triangular, during the third year; in the lunate and greater multangular, during the fifth year, the former preceding the latter; in the navicular, during the sixth year; in the lesser multangular, during the eighth year; and in the pisiform, about the twelfth year”
+- **Confirm in:** Standring (ed.), *Gray’s Anatomy: The Anatomical Basis of Clinical Practice*, current edition (development and ossification), or a skeletal-maturation atlas (Greulich and Pyle)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 50. Structure lesson: Triquetrum, layer “Clinical reasoning”
+
+> Injury: A fall onto the outstretched hand. Damaged: A small chip of bone breaks off the back of the triquetrum: the second most common carpal fracture. Patient can’t: Use the wrist without pain on the back of the little-finger side. Why: Ligaments and nearby bones strike or pull on its back surface as the wrist is forced backwards.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 51. Structure lesson: Triquetrum, layer “Clinical reasoning”
+
+> Injury: A twisting fall on the hand. Damaged: The articular disc between the ulna and the triquetrum tears. Patient can’t: Turn the forearm or grip without pain on the little-finger side. Why: The disc unites the lower ends of the radius and ulna, and the triquetrum presses on it.
+
+- **What is missing:** OpenStax describes the disc; a tear of the disc in a fall is not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 52. Structure lesson: Ulna, layer “Relations”
+
+> Ulnar nerve: Passes behind the medial epicondyle and enters the forearm beside the ulna.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918** (8.2, “The Humerus”; supporting only): “The medial epicondyle, larger and more prominent than the lateral, is directed a little backward; it gives attachment to the ulnar collateral ligament of the elbow-joint, to the Pronator teres, and to a common tendon of origin of some of the Flexor muscles of the forearm; the ulnar nerve runs in a groove on the back of this epicondyle.”
+- **Terminologia Anatomica:** ulnar nerve (TA2 6449)
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (upper limb chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 53. Structure lesson: Ulna, layer “Clinical reasoning”
+
+> Injury: A fall onto the point of the elbow. Damaged: The olecranon breaks. Patient can’t: Straighten the elbow against resistance. Why: The muscle that straightens the elbow (triceps) pulls on the olecranon, drawing the fragment away.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–9, 12–16, 20).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 54. Flashcard 2.1 (“Name the highlighted bone.”), layer “Clinical”
 
 > Because the sphenoid sinus lies just in front of and below the sella turcica, surgeons can reach a pituitary tumour through the nose and the sphenoid sinus (transsphenoidal surgery), without opening the skull.
 
@@ -266,7 +567,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 25. Flashcard 2.1 (“Name the highlighted bone.”), layer “Memory hook”
+### 55. Flashcard 2.1 (“Name the highlighted bone.”), layer “Memory hook”
 
 > “Sphenoid” comes from the Greek for wedge: it is wedged between the other bones of the skull.
 
@@ -276,7 +577,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 26. Flashcard 2.2 (“Which bone contains the foramen magnum?”), layer “Clinical”
+### 56. Flashcard 2.2 (“Which bone contains the foramen magnum?”), layer “Clinical”
 
 > Raised pressure inside the skull can push the lowest part of the cerebellum (the tonsils) down through the foramen magnum, compressing the brainstem: “coning”, which can stop breathing.
 
@@ -287,7 +588,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 27. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Why”
+### 57. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Why”
 
 > The pterion is where four skull bones meet, and it is the weakest part of the skull. A major branch of the artery that supplies the skull and the coverings of the brain runs on its inner surface, so a blow here can fracture the bone and tear the artery.
 
@@ -298,7 +599,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 28. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Go deeper”, point 3
+### 58. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Go deeper”, point 3
 
 > The artery enters the skull through the foramen spinosum.
 
@@ -309,7 +610,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 29. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Go deeper”, point 5
+### 59. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Go deeper”, point 5
 
 > It is a branch of the maxillary artery.
 
@@ -320,7 +621,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 30. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Clinical”
+### 60. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Clinical”
 
 > A torn artery bleeds between the skull and the dura: an extradural haematoma. The patient may seem well at first, but the growing clot presses on the brain and can kill within hours, so it is a surgical emergency.
 
@@ -331,7 +632,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 31. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Exam trap”
+### 61. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Exam trap”
 
 > An extradural haematoma is usually arterial (middle meningeal artery); a subdural haematoma is usually venous (bridging veins).
 
@@ -341,7 +642,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 32. Flashcard 2.4 (“Name it: a small, flat, sieve-like part of the ethmoid bone in the roof of the nasal cavity, pierced by openings for olfactory nerve branches.”), layer “Clinical”
+### 62. Flashcard 2.4 (“Name it: a small, flat, sieve-like part of the ethmoid bone in the roof of the nasal cavity, pierced by openings for olfactory nerve branches.”), layer “Clinical”
 
 > A fracture through the cribriform plate can tear the olfactory nerve fibres, causing loss of smell, and can let cerebrospinal fluid leak from the nose.
 
@@ -352,7 +653,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 33. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Why”
+### 63. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Why”
 
 > The scaphoid links the proximal and distal rows of carpal bones and meets the radius directly, so it takes much of the force of a fall on the outstretched hand. It lies in the floor of the anatomical snuffbox, so tenderness there points to it.
 
@@ -363,7 +664,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 34. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Explain simpler”
+### 64. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Explain simpler”
 
 > The scaphoid is the wrist bone on the thumb side that meets the radius, so a fall onto the hand loads it heavily. It sits under the small hollow at the base of the thumb, so pain there suggests it is broken.
 
@@ -374,7 +675,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 35. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 2
+### 65. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 2
 
 > Its blood supply (from branches of the radial artery) enters mainly at the distal end.
 
@@ -385,7 +686,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 36. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 3
+### 66. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 3
 
 > So a fracture across the waist can cut off the supply to the proximal pole.
 
@@ -395,7 +696,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 37. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 4
+### 67. Flashcard 2.5 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 4
 
 > Risk: avascular necrosis and non-union of the proximal fragment.
 
@@ -405,7 +706,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 38. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Why”
+### 68. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Why”
 
 > The ulnar nerve runs in a shallow groove on the back of the medial epicondyle, covered only by skin and fascia. That is why a knock there sends tingling down the little-finger side of the hand.
 
@@ -416,7 +717,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 39. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Explain simpler”
+### 69. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Explain simpler”
 
 > The nerve passes right behind the bony bump on the inner side of the elbow, just under the skin, so hitting it makes the little finger tingle.
 
@@ -427,7 +728,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 40. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 2
+### 70. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 2
 
 > The nerve enters the forearm between the two heads of flexor carpi ulnaris.
 
@@ -438,7 +739,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 41. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 3
+### 71. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 3
 
 > It supplies most of the small (intrinsic) muscles of the hand.
 
@@ -449,7 +750,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 42. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 4
+### 72. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 4
 
 > It gives sensation to the little finger and the medial half of the ring finger.
 
@@ -460,7 +761,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 43. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Clinical”
+### 73. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Clinical”
 
 > A fracture of the medial epicondyle, or long pressure on the elbow, can injure the ulnar nerve, weakening the small muscles of the hand and numbing the little finger.
 
@@ -471,7 +772,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 44. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Memory hook”
+### 74. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Memory hook”
 
 > The “funny bone” is not a bone: it is the ulnar nerve behind the medial epicondyle.
 
@@ -482,7 +783,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 45. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Exam trap”
+### 75. Flashcard 2.6 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Exam trap”
 
 > Only the ulnar nerve lies behind the medial epicondyle: the median nerve crosses in front of the elbow, and the radial nerve lies on the lateral side.
 
@@ -493,7 +794,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 46. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Why”
+### 76. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Why”
 
 > The surgical neck is where the expanded upper end of the humerus narrows into the shaft, and it is a common site of fracture. The axillary nerve wraps around the back of this neck, so a fracture here can stretch or tear it.
 
@@ -504,7 +805,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 47. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Explain simpler”
+### 77. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Explain simpler”
 
 > The surgical neck is the narrow part just below the ball of the humerus. A nerve wraps around it, so breaking the bone there can damage the nerve.
 
@@ -515,7 +816,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 48. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 2
+### 78. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 2
 
 > The posterior circumflex humeral artery runs around the neck with the nerve.
 
@@ -526,7 +827,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 49. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 3
+### 79. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 3
 
 > The axillary nerve supplies the deltoid and teres minor.
 
@@ -537,7 +838,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 50. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 4
+### 80. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 4
 
 > It supplies the skin over the lower deltoid (the “regimental badge” area).
 
@@ -548,7 +849,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 51. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 5
+### 81. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 5
 
 > Lower down, the radial nerve lies in the radial groove, at risk in shaft fractures.
 
@@ -559,7 +860,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 52. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Clinical”
+### 82. Flashcard 2.9 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Clinical”
 
 > Damage to the axillary nerve weakens the deltoid, so raising the arm out to the side is weak, with numbness over the lower outer shoulder.
 
@@ -570,7 +871,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 53. Flashcard 2.10 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 2
+### 83. Flashcard 2.10 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 2
 
 > Carries nine tendons from three muscles, plus the median nerve.
 
@@ -581,7 +882,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 54. Flashcard 2.10 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 3
+### 84. Flashcard 2.10 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 3
 
 > Flexor digitorum superficialis (four), flexor digitorum profundus (four) and flexor pollicis longus (one).
 
@@ -592,7 +893,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 55. Flashcard 2.10 (“What forms the roof of the carpal tunnel?”), layer “Clinical”
+### 85. Flashcard 2.10 (“What forms the roof of the carpal tunnel?”), layer “Clinical”
 
 > Swelling in the tunnel compresses the median nerve: carpal tunnel syndrome, with pain or numbness and weakness in the parts of the hand it supplies. The bony walls and tough roof cannot stretch, so any swelling squeezes the nerve.
 

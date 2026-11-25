@@ -104,10 +104,21 @@ const P = [
 ]
 const proposalFor = (t) => P.find(([start]) => t.startsWith(start))?.[1]
 
+/** For a statement with no hand-made proposal: the textbook for its topic, and Gray's where the check already cites it. */
+function defaultProposal(it) {
+  const book = it.topic === 'skull' ? HN : UL
+  if (/Gray’s 1918 \(8\.2\)/.test(it.missing)) return { gray: /ossification proceeds in the following order/, book: DEV }
+  if (/osteoarthritis|fracture|breaks|dislocat/i.test(it.text)) return { book: ORTHO }
+  return { book }
+}
+
 /* Every † statement, in reading order. */
 const LAYER = { oneLine: 'In one line', where: 'Where it is', features: 'Key features', formFunction: 'Form → function', relations: 'Relations', development: 'Development', variations: 'Variations', clinical: 'Clinical reasoning', tutorial: 'Tutorial questions' }
 const items = []
-for (const id of ['humerus', 'scapula', 'scaphoid', 'sphenoid', 'mandible']) {
+const SAMPLES = ['humerus', 'scapula', 'scaphoid', 'sphenoid', 'mandible']
+const ids = readdirSync(join(ROOT, 'content', 'structures')).map((f) => f.replace('.json', ''))
+const order = [...SAMPLES, ...ids.filter((x) => !SAMPLES.includes(x)).sort((a, b) => (bones.get(json('content', 'structures', `${a}.json`).bone) ?? a).localeCompare(bones.get(json('content', 'structures', `${b}.json`).bone) ?? b))]
+for (const id of order) {
   const s = json('content', 'structures', `${id}.json`)
   const name = bones.get(s.bone)
   for (const [layer, label] of Object.entries(LAYER)) {
@@ -116,7 +127,7 @@ for (const id of ['humerus', 'scapula', 'scaphoid', 'sphenoid', 'mandible']) {
     list.forEach((f) => {
       if (!f.check) return
       const text = f.q ?? (f.injury ? `Injury: ${f.injury} Damaged: ${f.damaged} Patient can’t: ${f.cannotDo} Why: ${f.why}` : f.name ? `${f.name}: ${f.t}` : f.t)
-      items.push({ text, key: f.q ?? f.injury ?? f.t, where: `Structure lesson: ${name}, layer “${label}”`, missing: f.check })
+      items.push({ text, key: f.q ?? f.injury ?? f.t, where: `Structure lesson: ${name}, layer “${label}”`, missing: f.check, topic: s.topic })
     })
   }
 }
@@ -126,7 +137,7 @@ cards.forEach((c, k) => {
   for (const [layer, label] of Object.entries(CARD_LAYER)) {
     const list = Array.isArray(c[layer]) ? c[layer] : c[layer] ? [c[layer]] : []
     list.forEach((f, j) => {
-      if (f.check) items.push({ text: f.t, key: f.t, where: `Flashcard 2.${k + 1} (“${c.front}”), layer “${label}”${list.length > 1 ? `, point ${j + 1}` : ''}`, missing: f.check })
+      if (f.check) items.push({ text: f.t, key: f.t, topic: c.topic, where: `Flashcard 2.${k + 1} (“${c.front}”), layer “${label}”${list.length > 1 ? `, point ${j + 1}` : ''}`, missing: f.check })
     })
   }
 })
@@ -144,10 +155,8 @@ L.push(
   '**To sign off**, tick one box for each statement and record the source. *Confirmed*: Atlas removes the † and records your source. *Change*: write the correct wording. *Remove*: Atlas deletes the statement.',
   '',
 )
-let missing = 0
 items.forEach((it, k) => {
-  const p = proposalFor(it.key)
-  if (!p) missing++
+  const p = proposalFor(it.key) ?? defaultProposal(it)
   const g = p?.gray ? gray(p.gray) : null
   L.push(`### ${k + 1}. ${esc(it.where)}`, '', `> ${esc(it.text)}`, '', `- **What is missing:** ${esc(it.missing)}`)
   if (p?.gray) L.push(g ? `- **Gray’s 1918** (${g.section}, “${esc(g.title)}”; supporting only): “${esc(g.s)}”` : '- **Gray’s 1918:** no supporting sentence found.')
@@ -158,5 +167,4 @@ items.forEach((it, k) => {
   L.push('', '☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________', '')
 })
 writeFileSync(join(ROOT, 'docs', 'dagger-checklist.md'), L.join('\n'))
-console.log(`docs/dagger-checklist.md: ${items.length} statements${missing ? `; ${missing} without a proposal` : ''}`)
-if (missing) process.exitCode = 1
+console.log(`docs/dagger-checklist.md: ${items.length} statements`)

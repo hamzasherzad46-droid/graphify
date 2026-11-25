@@ -61,33 +61,38 @@ export function parseRequest(raw: string): { notes: Notes; settings: Settings } 
 }
 
 /**
- * Per-client limits: one set at a time, and `perHour` sets in a rolling hour. take() returns 0 when allowed (and
- * counts the request), else the milliseconds to wait. A request that fails before reaching Claude is refunded.
+ * Per-client limits: `concurrent` requests at a time (one set at a time; a few pages read in parallel), and `perHour`
+ * in a rolling hour. take() returns 0 when allowed (and counts the request), else the milliseconds to wait. A request
+ * that fails before reaching Claude is refunded.
  */
 export class RateLimiter {
   private readonly perHour: number
   private readonly now: () => number
+  private readonly concurrent: number
   private readonly log = new Map<string, number[]>()
-  private readonly busy = new Set<string>()
-  constructor(perHour: number, now: () => number = Date.now) {
+  private readonly busy = new Map<string, number>()
+  constructor(perHour: number, now: () => number = Date.now, concurrent = 1) {
     this.perHour = perHour
     this.now = now
+    this.concurrent = concurrent
   }
   take(client: string): number {
     const t = this.now()
-    if (this.busy.has(client)) return 30000
+    if ((this.busy.get(client) ?? 0) >= this.concurrent) return 30000
     const recent = (this.log.get(client) ?? []).filter((x) => t - x < 3600000)
     if (recent.length >= this.perHour) return 3600000 - (t - recent[0])
     recent.push(t)
     this.log.set(client, recent)
-    this.busy.add(client)
+    this.busy.set(client, (this.busy.get(client) ?? 0) + 1)
     return 0
   }
   isBusy(client: string) {
-    return this.busy.has(client)
+    return (this.busy.get(client) ?? 0) >= this.concurrent
   }
   done(client: string) {
-    this.busy.delete(client)
+    const n = (this.busy.get(client) ?? 1) - 1
+    if (n > 0) this.busy.set(client, n)
+    else this.busy.delete(client)
   }
   refund(client: string) {
     const list = this.log.get(client)

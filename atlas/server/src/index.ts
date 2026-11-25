@@ -5,17 +5,21 @@ import Anthropic from '@anthropic-ai/sdk'
 import { claudeCaller, notesToExam, PipelineError, type Caller } from './pipeline.ts'
 import { parseRequest, RequestError, RateLimiter } from './request.ts'
 import type { BoneRef } from './prompts.ts'
+import { BodyError, parseReadBody, parseTopicsBody, readPages, splitTopics } from './reading.ts'
 
 /**
- * Notes to Exam server. One endpoint: POST /api/notes-to-exam with the notes and settings as JSON; the answer is a
- * stream of server-sent events ("stage", then "result" or "error"). The Claude API key stays here (ANTHROPIC_API_KEY);
- * photos are held in memory only for the request and never written anywhere.
+ * Notes to Exam server. The Claude API key stays here (ANTHROPIC_API_KEY); pages and notes are held in memory only for
+ * the request and never written anywhere.
+ *   POST /api/notes-to-exam  notes and settings → server-sent events ("stage", then "result" or "error")
+ *   POST /api/notes/read     up to 6 page images → their transcripts (JSON)
+ *   POST /api/notes/topics   the text of every page, slide and section → the topics (JSON)
  *
  * Environment:
  *   ANTHROPIC_API_KEY   required
  *   PORT                default 8787
  *   ALLOWED_ORIGINS     comma-separated origins allowed to call it (default: the app's dev and Capacitor origins)
  *   RATE_PER_HOUR       sets per client per hour (default 12)
+ *   READS_PER_HOUR      page-reading and topic requests per client per hour (default 120; 3 at a time)
  *   BONES_DIR           Atlas content/bones (default: ../content/bones next to this server)
  */
 
@@ -31,7 +35,7 @@ const ORIGINS = (process.env.ALLOWED_ORIGINS ?? 'http://localhost:5174,http://lo
   .map((s) => s.trim())
   .filter(Boolean)
 
-export function handler(caller: Caller, limiter: RateLimiter) {
+export function handler(caller: Caller, limiter: RateLimiter, reads: RateLimiter = new RateLimiter(120, Date.now, 3)) {
   return async (req: IncomingMessage, res: ServerResponse) => {
     const origin = req.headers.origin ?? ''
     if (ORIGINS.includes(origin) || ORIGINS.includes('*')) {
@@ -42,8 +46,9 @@ export function handler(caller: Caller, limiter: RateLimiter) {
     }
     if (req.method === 'OPTIONS') return void res.writeHead(204).end()
     if (req.method === 'GET' && req.url === '/health') return void res.writeHead(200, { 'Content-Type': 'application/json' }).end('{"ok":true}')
-    if (req.method !== 'POST' || req.url !== '/api/notes-to-exam') return void res.writeHead(404).end()
+    if (req.method !== 'POST' || !['/api/notes-to-exam', '/api/notes/read', '/api/notes/topics'].includes(req.url ?? '')) return void res.writeHead(404).end()
     if (origin && !ORIGINS.includes(origin) && !ORIGINS.includes('*')) return void res.writeHead(403).end()
+    if (req.url !== '/api/notes-to-exam') return reading(req, res, caller, reads)
 
     // One set at a time, a limited number an hour, per client (device id, falling back to the address).
     const client = String(req.headers['x-atlas-client'] ?? req.socket.remoteAddress ?? 'unknown').slice(0, 80)
@@ -86,6 +91,32 @@ export function handler(caller: Caller, limiter: RateLimiter) {
   }
 }
 
+/** Page reading and topics: one JSON answer each. */
+async function reading(req: IncomingMessage, res: ServerResponse, caller: Caller, reads: RateLimiter) {
+  const reply = (status: number, body: unknown) => res.writeHead(status, { 'Content-Type': 'application/json' }).end(JSON.stringify(body))
+  const client = String(req.headers['x-atlas-client'] ?? req.socket.remoteAddress ?? 'unknown').slice(0, 80)
+  const wait = reads.take(client)
+  if (wait > 0) {
+    res.setHeader('Retry-After', String(Math.ceil(wait / 1000)))
+    return reply(429, { error: reads.isBusy(client) ? 'Atlas is still reading your last pages.' : 'You have read a lot of pages this hour. Please try again later.' })
+  }
+  try {
+    const raw = await readBody(req)
+    if (req.url === '/api/notes/read') reply(200, { pages: await readPages(parseReadBody(raw), caller) })
+    else reply(200, { topics: await splitTopics(parseTopicsBody(raw), caller) })
+  } catch (e) {
+    reads.refund(client)
+    if (e instanceof BodyError || e instanceof RequestError) reply(e.status ?? 400, { error: e.message })
+    else if (e instanceof PipelineError) reply(502, { error: e.message })
+    else {
+      console.error(e)
+      reply(500, { error: 'Something went wrong. Please try again.' })
+    }
+  } finally {
+    reads.done(client)
+  }
+}
+
 const MAX_BODY = 40 * 1024 * 1024
 function readBody(req: IncomingMessage): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -109,7 +140,9 @@ if (import.meta.main) {
     process.exit(1)
   }
   const port = Number(process.env.PORT ?? 8787)
-  createServer(handler(claudeCaller(new Anthropic()), new RateLimiter(Number(process.env.RATE_PER_HOUR ?? 12)))).listen(port, () =>
+  createServer(
+    handler(claudeCaller(new Anthropic()), new RateLimiter(Number(process.env.RATE_PER_HOUR ?? 12)), new RateLimiter(Number(process.env.READS_PER_HOUR ?? 120), Date.now, 3)),
+  ).listen(port, () =>
     console.log(`Notes to Exam server on :${port} (${BONES.length} bones; origins: ${ORIGINS.join(', ')})`),
   )
 }

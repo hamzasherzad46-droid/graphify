@@ -367,9 +367,35 @@ One standard everywhere: **British English with -ise spellings**, checked over e
 
 ## Notes to Exam
 
-Home → **Notes to Exam**. The student photographs their own anatomy notes (or uploads photos or a PDF, or types
-them); Claude reads them and sets exam-style questions on exactly what they wrote; a second, independent pass
-checks every question before the student sees it.
+Home → **Notes to Exam**. The student adds their own material: lecture slides, handouts, Word notes, photos of
+handwritten pages or typed notes. Atlas reads it, sorts it into topics, and Claude sets exam-style questions on
+exactly what it says; a second, independent pass checks every question before the student sees it.
+
+**Adding and reading material** (content upgrade, step 3: `src/learn/extract.ts`, `src/learn/notesDocs.ts`,
+`src/ui/notes/NotesScreen.tsx`, `src/ui/notes/NotesDocScreen.tsx`)
+
+- **Files**: PDF, PowerPoint `.pptx` (slide titles, bullets with their levels, tables, **speaker notes**), Word
+  `.docx` (split into sections at headings; lists and tables kept), photos and text files. Several at once, up to
+  100 MB each. Older `.ppt` and `.doc` files get a message asking for `.pptx` or `.docx`.
+- **Read on the device**: PDF text (pdf.js, in a worker), slides and Word files never leave the phone at this stage.
+  Only pages with no text of their own are sent to be read: photos, scanned PDF pages (drawn at up to 2000 px) and
+  slides that are only a picture (their largest picture). The server transcribes them faithfully, with `[illegible]`
+  where it cannot read and the labels of diagrams; the student is told which pages need checking.
+- **Progress** for each file: "Opening: 12 of 40 pages", then "Reading handwriting and scans: 3 of 8", then a summary
+  ("40 slides · 12 with speaker notes · 2 read from pictures · 1 to check"). Pages are sent 6 to a request, 3
+  requests at a time; a failed batch can be retried.
+- **Check the text**: every page, slide and section can be opened and corrected; questions are written on that text.
+- **Topics**: Atlas sorts every part into the lecture's topics (titles, one-line summary, where they are: "Lecture 3:
+  slides 3–9"). Title slides, contents and references go in "Not for questions", unticked. The student ticks the topics
+  to be examined on; "Use whole files instead" makes one topic per file without the service.
+- Each part is sent for questions under its reference (`[From: Lecture 3, slide 12]`), ready for questions that cite
+  where they come from (step 4).
+- **Kept on the device** (IndexedDB `atlas` v3, store `noteDrafts`): every file's text, edits and topics, so a lecture
+  read once is there next time, offline too. Page images are held in memory only until read, never stored.
+- Measured in headless Chromium (production build): a 120-slide PowerPoint with speaker notes opens in 0.43 s; a
+  100-page PDF in 0.41 s; a 30-page scanned PDF is drawn in 1.5 s and handed to the reader.
+- While another tab is showing, the 3D view no longer draws frames (`frameloop` paused), so reading files and lessons
+  get the whole device.
 
 **In the app** (`src/ui/notes/`, `src/learn/notesExam.ts`, `src/lib/image.ts`)
 
@@ -390,13 +416,16 @@ checks every question before the student sees it.
   **From your notes**, the words it tests. **What Atlas read from your notes** shows the transcript to compare
   against the pages. Each question is labelled "AI-written, AI-checked", with a source line saying it was not
   reviewed by an academic.
-- Sets are saved on the device only (IndexedDB `atlas` v2, store `noteSets`): the transcript, corrections and
+- Sets are saved on the device only (IndexedDB `atlas`, store `noteSets`): the transcript, corrections and
   questions. Photos are never stored. Deleting a set also removes its answers, highlights and notes. Highlights and
   notes on these questions appear in My Highlights / My Notes and jump back to the set.
 
 **The server** (`server/`, Node 22.18+, no build step): the Claude API key must never be in the app, so the app
 calls a small server that holds it.
 
+- `POST /api/notes/read` takes up to 6 page images (each with its ref) and returns their transcripts and legibility;
+  `POST /api/notes/topics` takes the text of up to 400 parts and returns the topics, covering every part exactly once
+  in order (`server/src/reading.ts`; both at medium effort; 120 requests an hour, 3 at a time, `READS_PER_HOUR`).
 - `POST /api/notes-to-exam` takes the notes and settings as JSON and answers with server-sent events (`stage`, then
   `result` or `error`). Limits: 12 images of up to 5 MB, a 30 MB PDF, 40,000 characters of text. Each device gets one
   set at a time and 12 an hour (`RATE_PER_HOUR`); failed sets are not counted. CORS is limited to the app's origins
@@ -430,10 +459,13 @@ ANTHROPIC_API_KEY=… npm start          # :8787
 # app, production: VITE_NOTES_API_URL=https://your-server npm run build
 ```
 
-Without `VITE_NOTES_API_URL`, a production build shows Notes to Exam with the camera working and sending switched
-off ("Not connected in this preview").
+Without `VITE_NOTES_API_URL`, a production build still opens files and shows their text; reading photos, topics and
+questions are switched off ("Not connected in this preview").
 
-Tests: `server/src/server.test.ts` (validation, request limits, the rate limiter, both passes with a scripted
+Tests: `server/src/reading.test.ts` (page reading, topics always covering every part, request checks, the endpoints,
+parallel limits), `src/learn/extract.test.ts` and `src/learn/notesDocs.test.ts` (PowerPoint, Word and PDF test files
+in `src/learn/fixtures`, made by `scripts/content/notes_fixtures.py`: slides, levels, tables, speaker notes,
+picture-only slides, sections, references, topics), `server/src/server.test.ts` (validation, request limits, the rate limiter, both passes with a scripted
 stand-in for Claude, the HTTP stream, CORS, 429) and `src/learn/notesExam.test.ts` (conversion into Atlas questions,
 reading the event stream however it is split, error messages).
 

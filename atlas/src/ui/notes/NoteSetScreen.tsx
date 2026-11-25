@@ -13,6 +13,7 @@ import { useToast } from '../toastStore'
 const plural = (n: number, one: string, many = `${one}s`) => `${n} ${n === 1 ? one : many}`
 
 function fromText(s: NoteSet) {
+  if (s.from.files?.length) return s.from.files.length > 1 ? `${s.from.files.slice(0, -1).join(', ')} and ${s.from.files.at(-1)}` : s.from.files[0]
   const parts = [s.from.pages ? `${plural(s.from.pages, 'page')} of notes` : '', s.from.pdf ? 'your PDF' : '', s.from.typed ? 'your typed notes' : ''].filter(Boolean)
   return parts.length > 1 ? `${parts.slice(0, -1).join(', ')} and ${parts.at(-1)}` : parts[0]
 }

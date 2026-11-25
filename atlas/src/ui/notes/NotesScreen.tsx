@@ -6,13 +6,19 @@ import { CameraIcon, ChevronRightIcon, CloseIcon, NotesIcon, UploadIcon } from '
 import { CameraSheet } from './CameraSheet'
 import { useNav } from '../../state/nav'
 import { haptic } from '../../lib/feedback'
-import { photoFromFile, toBase64, type PagePhoto } from '../../lib/image'
+import type { PagePhoto } from '../../lib/image'
 import { LEVEL_LABEL, isDone, useExam, type Level } from '../../learn/questions'
 import { apiReady, LIMITS, NotesError, requestSet, sortedSets, toQuestions, useNoteSets, type NotesSettings, type ServerResult, type Stage } from '../../learn/notesExam'
+import { notesForQuestions, readingState, refsText, shortName, topicsByFile, useNoteDocs, NOT_FOR_QUESTIONS, type NoteDoc } from '../../learn/notesDocs'
+import { count, docStatus, KIND_LABEL } from './docStatus'
 
 const SETTINGS_KEY = 'atlas.notes.settings'
 const CONSENT_KEY = 'atlas.notes.consent'
 const DEFAULTS: NotesSettings = { count: 10, level: 'undergraduate', mix: 'mixed' }
+/** Pages a camera session can take. */
+const CAMERA_PAGES = 40
+const ACCEPT =
+  '.pdf,.pptx,.docx,.txt,.md,image/*,application/pdf,application/vnd.openxmlformats-officedocument.presentationml.presentation,application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 
 function loadSettings(): NotesSettings {
   try {
@@ -22,45 +28,41 @@ function loadSettings(): NotesSettings {
   }
 }
 
-type Pdf = { name: string; size: number; data: string }
 type Phase = { kind: 'compose' } | { kind: 'working'; stage: Stage; started: number } | { kind: 'error'; message: string } | { kind: 'not-used'; result: ServerResult }
 
 const STEPS: { stage: Stage; label: string; detail: string }[] = [
   { stage: 'sending', label: 'Sending your notes', detail: 'Securely, to the Atlas question service.' },
-  { stage: 'reading', label: 'Reading your notes', detail: 'Transcribing every page and writing questions on what you wrote.' },
+  { stage: 'reading', label: 'Writing questions', detail: 'Questions on exactly what your material says, each linked to where it comes from.' },
   { stage: 'checking', label: 'Examiner checking', detail: 'A second examiner checks every answer and explanation, and fixes or removes any that are not sound.' },
 ]
 
-/** Notes to Exam: photograph, upload or type your notes; get exam-style questions on exactly what you wrote. */
+/**
+ * Notes to Exam. 1 Add your material: photos, PDFs, PowerPoint (with speaker notes), Word or typed notes. Atlas reads
+ * it (on this device where it can) and shows how far it has got. 2 Check the text. 3 Choose topics. 4 Get questions.
+ */
 export function NotesScreen() {
-  const [pages, setPages] = useState<PagePhoto[]>([])
-  const [pdf, setPdf] = useState<Pdf | null>(null)
-  const [text, setText] = useState('')
-  const [typing, setTyping] = useState(false)
+  const docs = useNoteDocs((s) => s.docs)
+  const topics = useNoteDocs((s) => s.topics)
+  const readError = useNoteDocs((s) => s.readError)
   const [settings, setSettings] = useState<NotesSettings>(loadSettings)
   const [camera, setCamera] = useState(false)
+  const [shots, setShots] = useState<PagePhoto[]>([])
+  const [typing, setTyping] = useState(false)
+  const [typed, setTyped] = useState('')
   const [consent, setConsent] = useState(false)
+  const [confirmClear, setConfirmClear] = useState(false)
   const [phase, setPhase] = useState<Phase>({ kind: 'compose' })
-  const [fileError, setFileError] = useState('')
+  const [fileErrors, setFileErrors] = useState<string[]>([])
   const abort = useRef<AbortController | null>(null)
-  const photoInput = useRef<HTMLInputElement>(null)
+  const fileInput = useRef<HTMLInputElement>(null)
   const cameraInput = useRef<HTMLInputElement>(null)
-  const pdfInput = useRef<HTMLInputElement>(null)
   const sets = useNoteSets((s) => s.sets)
   const ready = apiReady()
 
-  // Thumbnails are object URLs: release them when the page closes; cancel a request still running.
-  const pagesRef = useRef(pages)
   useEffect(() => {
-    pagesRef.current = pages
-  }, [pages])
-  useEffect(
-    () => () => {
-      abort.current?.abort()
-      pagesRef.current.forEach((p) => URL.revokeObjectURL(p.url))
-    },
-    [],
-  )
+    void useNoteDocs.getState().load()
+    return () => abort.current?.abort()
+  }, [])
 
   const change = (s: Partial<NotesSettings>) => {
     const next = { ...settings, ...s }
@@ -72,72 +74,50 @@ export function NotesScreen() {
     }
   }
 
-  const addPage = (p: PagePhoto) => setPages((ps) => (ps.length < LIMITS.pages ? [...ps, p] : (URL.revokeObjectURL(p.url), ps)))
-  const removePage = (k: number) =>
-    setPages((ps) => {
-      URL.revokeObjectURL(ps[k].url)
-      return ps.filter((_, j) => j !== k)
-    })
-
-  const addPhotos = async (files: FileList | null) => {
-    setFileError('')
-    const list = [...(files ?? [])]
-    const room = LIMITS.pages - pagesRef.current.length
-    if (list.length > room) setFileError(`Up to ${LIMITS.pages} pages at a time: the first ${room} ${room === 1 ? 'was' : 'were'} added.`)
-    for (const f of list.slice(0, Math.max(0, room))) {
-      try {
-        addPage(await photoFromFile(f))
-      } catch {
-        setFileError(`“${f.name}” could not be opened as a photo.`)
-      }
-    }
+  const addFiles = async (list: FileList | null) => {
+    const files = [...(list ?? [])]
+    if (!files.length) return
+    haptic('light')
+    setFileErrors(await useNoteDocs.getState().addFiles(files))
   }
 
-  const addPdf = async (file: File | undefined) => {
-    setFileError('')
-    if (!file) return
-    if (file.type !== 'application/pdf') return setFileError('Choose a PDF file.')
-    if (file.size > LIMITS.pdfBytes) return setFileError('That PDF is larger than 20 MB. Export only the pages you need.')
-    setPdf({ name: file.name, size: file.size, data: await toBase64(file) })
+  const closeCamera = () => {
+    setCamera(false)
+    useNoteDocs.getState().addPhotos(shots)
+    shots.forEach((p) => URL.revokeObjectURL(p.url))
+    setShots([])
   }
 
-  const hasNotes = pages.length > 0 || !!pdf || text.trim().length > 0
+  const r = readingState(docs)
+  const busyReading = r.opening || r.waiting > 0
+  const chosenTopics = topics ?? topicsByFile(docs)
+  const text = notesForQuestions(docs, chosenTopics)
   const tooLong = text.length > LIMITS.textChars
+  const canSend = ready && !busyReading && text.trim().length > 0 && !tooLong
 
   const send = async () => {
-    if (!hasNotes || tooLong || !ready) return
+    if (!canSend) return
     if (localStorage.getItem(CONSENT_KEY) !== '1') return setConsent(true)
     haptic('light')
     const ctrl = new AbortController()
     abort.current = ctrl
     setPhase({ kind: 'working', stage: 'sending', started: Date.now() })
     try {
-      const r = await requestSet(
-        { images: pages.map((p) => ({ mediaType: 'image/jpeg', data: p.data })), pdf: pdf?.data, text: text.trim() || undefined },
-        settings,
-        (stage) => setPhase((ph) => (ph.kind === 'working' ? { ...ph, stage } : ph)),
-        ctrl.signal,
-      )
-      if (r.status !== 'ok') return setPhase({ kind: 'not-used', result: r })
+      const res = await requestSet({ images: [], text }, settings, (stage) => setPhase((ph) => (ph.kind === 'working' ? { ...ph, stage } : ph)), ctrl.signal)
+      if (res.status !== 'ok') return setPhase({ kind: 'not-used', result: res })
       const id = crypto.randomUUID().slice(0, 8)
       await useNoteSets.getState().save({
         id,
-        title: r.title,
+        title: res.title,
         createdAt: new Date().toISOString(),
         settings,
-        from: { pages: pages.length, pdf: !!pdf, typed: !!text.trim() },
-        transcript: r.transcript,
-        corrections: r.corrections,
-        questions: toQuestions(id, r.questions),
-        review: r.review,
+        from: { pages: 0, pdf: false, typed: false, files: docs.map((d) => shortName(d.name)) },
+        transcript: res.transcript,
+        corrections: res.corrections,
+        questions: toQuestions(id, res.questions),
+        review: res.review,
       })
       haptic('success')
-      // The photos have done their job; they are not kept.
-      pages.forEach((p) => URL.revokeObjectURL(p.url))
-      setPages([])
-      setPdf(null)
-      setText('')
-      setTyping(false)
       setPhase({ kind: 'compose' })
       useNav.getState().push({ kind: 'noteset', id })
     } catch (e) {
@@ -148,25 +128,32 @@ export function NotesScreen() {
     }
   }
 
-  const cancel = () => {
-    abort.current?.abort()
-    setPhase({ kind: 'compose' })
-  }
-
-  if (phase.kind === 'working') return <Working stage={phase.stage} started={phase.started} onCancel={cancel} />
+  if (phase.kind === 'working')
+    return (
+      <Working
+        stage={phase.stage}
+        started={phase.started}
+        onCancel={() => {
+          abort.current?.abort()
+          setPhase({ kind: 'compose' })
+        }}
+      />
+    )
 
   return (
     <div className="tab-page lessons notes">
       <PageHead title="Notes to Exam" />
       <div className="page-body">
-        <p className="notes-intro">Photograph your anatomy notes. Atlas reads them and sets exam-style questions on exactly what you wrote, then a second examiner checks every answer.</p>
+        <p className="notes-intro">
+          Add your lecture slides, handouts or notes. Atlas reads them, sorts them into topics and sets exam-style questions on exactly what they say; a second examiner checks every answer.
+        </p>
 
         {!ready && (
           <div className="notes-banner" role="note">
-            <strong>Not connected in this preview.</strong> Notes to Exam needs the Atlas question service, which is not set up on this copy of the app. You can try the camera; sending is switched off.
+            <strong>Not connected in this preview.</strong> Atlas can open your files and show their text, but reading photos, finding topics and writing questions need the Atlas question service,
+            which is not set up on this copy of the app.
           </div>
         )}
-
         {phase.kind === 'error' && (
           <div className="notes-banner bad" role="alert">
             <strong>The questions could not be written.</strong> {phase.message}
@@ -178,7 +165,10 @@ export function NotesScreen() {
           </div>
         )}
 
-        <section className="notes-capture" aria-label="Your notes">
+        <section className="notes-capture" aria-labelledby="notes-step-1">
+          <h3 id="notes-step-1" className="notes-step">
+            <span className="st-n">1</span> Your material
+          </h3>
           <div className="capture-actions">
             <button
               className="capture-btn primary"
@@ -190,72 +180,84 @@ export function NotesScreen() {
               <CameraIcon />
               <span>Take photos</span>
             </button>
-            <button className="capture-btn" onClick={() => photoInput.current?.click()}>
+            <button className="capture-btn" onClick={() => fileInput.current?.click()}>
               <UploadIcon />
-              <span>Upload photos</span>
+              <span>Add files</span>
             </button>
-            <button className="capture-btn" onClick={() => pdfInput.current?.click()}>
+            <button className="capture-btn" onClick={() => setTyping((t) => !t)} aria-expanded={typing}>
               <NotesIcon />
-              <span>Upload a PDF</span>
+              <span>Type notes</span>
             </button>
           </div>
-          <input ref={photoInput} type="file" accept="image/*" multiple hidden onChange={(e) => (void addPhotos(e.target.files), (e.target.value = ''))} />
-          <input ref={cameraInput} type="file" accept="image/*" capture="environment" multiple hidden onChange={(e) => (void addPhotos(e.target.files), (e.target.value = ''))} />
-          <input ref={pdfInput} type="file" accept="application/pdf" hidden onChange={(e) => (void addPdf(e.target.files?.[0]), (e.target.value = ''))} />
-
-          {fileError && (
-            <p className="field-error" role="alert">
-              {fileError}
+          <input ref={fileInput} type="file" accept={ACCEPT} multiple hidden onChange={(e) => (void addFiles(e.target.files), (e.target.value = ''))} />
+          <input ref={cameraInput} type="file" accept="image/*" capture="environment" multiple hidden onChange={(e) => (void addFiles(e.target.files), (e.target.value = ''))} />
+          {fileErrors.map((m) => (
+            <p key={m} className="field-error" role="alert">
+              {m}
             </p>
-          )}
+          ))}
 
-          {pages.length > 0 && (
-            <ol className="page-thumbs" aria-label="Pages">
-              {pages.map((p, k) => (
-                <li key={p.url}>
-                  <img src={p.url} alt={`Page ${k + 1}`} />
-                  <span className="page-num">{k + 1}</span>
-                  <button className="page-remove" aria-label={`Remove page ${k + 1}`} onClick={() => removePage(k)}>
-                    <CloseIcon />
-                  </button>
-                </li>
-              ))}
-            </ol>
-          )}
-          {pdf && (
-            <div className="pdf-chip">
-              <NotesIcon />
-              <span className="pdf-name">{pdf.name}</span>
-              <span className="muted small">{(pdf.size / 1024 / 1024).toFixed(1)} MB</span>
-              <button className="icon-btn" aria-label="Remove the PDF" onClick={() => setPdf(null)}>
-                <CloseIcon />
-              </button>
-            </div>
-          )}
-
-          {typing ? (
+          {typing && (
             <label className="field notes-text">
               <span>Typed notes</span>
-              <textarea rows={7} value={text} placeholder="Type or paste your notes here." onChange={(e) => setText(e.target.value)} />
-              {tooLong && <span className="field-error">That is more than one set can use ({LIMITS.textChars.toLocaleString('en-GB')} characters). Split it into two sets.</span>}
+              <textarea rows={6} value={typed} placeholder="Type or paste your notes here." onChange={(e) => setTyped(e.target.value)} />
+              <button
+                className="btn ghost small"
+                disabled={!typed.trim()}
+                onClick={() => {
+                  useNoteDocs.getState().addTyped(typed)
+                  setTyped('')
+                  setTyping(false)
+                }}
+              >
+                Add these notes
+              </button>
             </label>
-          ) : (
-            <button className="link-btn type-instead" onClick={() => setTyping(true)}>
-              Type or paste notes instead
-            </button>
           )}
 
-          {!hasNotes && (
+          {docs.length > 0 ? (
+            <>
+              <ul className="doc-list" aria-label="Your files">
+                {docs.map((d) => (
+                  <DocRow key={d.id} d={d} />
+                ))}
+              </ul>
+              <ReadingSummary />
+              {readError && (
+                <div className="notes-banner bad" role="alert">
+                  <strong>Some pages could not be read.</strong> {readError}{' '}
+                  <button className="link-btn" onClick={() => useNoteDocs.getState().retry()}>
+                    Try again
+                  </button>
+                </div>
+              )}
+              <button className="link-btn clear-docs" onClick={() => setConfirmClear(true)}>
+                Remove all files
+              </button>
+            </>
+          ) : (
             <ul className="notes-tips">
-              <li>One page per photo, flat, with the whole page in the frame.</li>
-              <li>Good, even light; no shadow across the writing.</li>
-              <li>Up to {LIMITS.pages} pages a set. Diagrams and labels are read too.</li>
+              <li>PDF, PowerPoint (.pptx, with speaker notes), Word (.docx), photos and text files. Add several at once.</li>
+              <li>Photos: one page per photo, flat, in good even light. Handwriting and diagram labels are read too.</li>
+              <li>PDFs, slides and Word files are read on this device. Only photos and scanned pages are sent to be read.</li>
             </ul>
           )}
         </section>
 
-        <section className="notes-options" aria-label="Question settings">
-          <h3>Questions</h3>
+        {docs.length > 0 && (
+          <section className="notes-topics" aria-labelledby="notes-step-2">
+            <h3 id="notes-step-2" className="notes-step">
+              <span className="st-n">2</span> Topics
+            </h3>
+            <Topics busy={busyReading} />
+          </section>
+        )}
+
+        <section className="notes-options" aria-labelledby="notes-step-3">
+          <h3 id="notes-step-3" className="notes-step">
+            <span className="st-n">{docs.length ? 3 : 2}</span> Questions
+          </h3>
+          <h4>Number of questions</h4>
           <Chips
             label="Number of questions"
             value={String(settings.count)}
@@ -266,9 +268,9 @@ export function NotesScreen() {
             ]}
             onChange={(v) => change({ count: Number(v) as NotesSettings['count'] })}
           />
-          <h3>Level</h3>
+          <h4>Level</h4>
           <Chips label="Level" value={settings.level} options={Object.entries(LEVEL_LABEL) as [Level, string][]} onChange={(level) => change({ level })} />
-          <h3>Question types</h3>
+          <h4>Question types</h4>
           <Chips
             label="Question types"
             value={settings.mix}
@@ -278,14 +280,18 @@ export function NotesScreen() {
             ]}
             onChange={(mix) => change({ mix })}
           />
-          <p className="muted small options-hint">{settings.mix === 'mixed' ? 'Mostly single best answer, with about one short-answer question in four.' : 'Every question has four options and one best answer.'}</p>
+          <p className="muted small options-hint">
+            {settings.mix === 'mixed' ? 'Mostly single best answer, with about one short-answer question in four.' : 'Every question has four options and one best answer.'}
+          </p>
         </section>
 
-        <button className="btn primary wide notes-send" disabled={!hasNotes || tooLong || !ready} onClick={send}>
-          Write my exam questions
+        {tooLong && <p className="field-error">The chosen topics are more than one set can use. Choose fewer topics for this set.</p>}
+        <button className="btn primary wide notes-send" disabled={!canSend} onClick={send}>
+          {busyReading ? 'Reading your material…' : 'Write my exam questions'}
         </button>
         <p className="muted small notes-privacy">
-          Your notes are sent to the Atlas question service, which uses Claude (by Anthropic) to read them. Photos are used for this set only and are not stored; the questions and the text read from your notes are saved on this device.
+          PDFs, slides and Word files are read on this device. Photos and scanned pages, and the text of the topics you choose, are sent to the Atlas question service, which uses Claude (by
+          Anthropic). Nothing you send is stored there; your files’ text and your questions are saved on this device only.
         </p>
 
         <SavedSets sets={sortedSets(sets)} />
@@ -293,12 +299,12 @@ export function NotesScreen() {
 
       {camera && (
         <CameraSheet
-          pages={pages}
-          max={LIMITS.pages}
-          onAdd={addPage}
-          onClose={() => setCamera(false)}
+          pages={shots}
+          max={CAMERA_PAGES}
+          onAdd={(p) => setShots((s) => [...s, p])}
+          onClose={closeCamera}
           onFallback={() => {
-            setCamera(false)
+            closeCamera()
             cameraInput.current?.click()
           }}
         />
@@ -317,7 +323,141 @@ export function NotesScreen() {
           }}
         />
       )}
+      {confirmClear && (
+        <Portal>
+          <div className="modal-backdrop" onClick={() => setConfirmClear(false)}>
+            <aside className="sheet" role="dialog" aria-modal aria-label="Remove all files?" onClick={(e) => e.stopPropagation()}>
+              <h2>Remove all files?</h2>
+              <p className="muted">Their text and topics are removed from this device. Question sets you have made stay.</p>
+              <div className="modal-actions">
+                <button className="btn ghost" onClick={() => setConfirmClear(false)}>
+                  Keep them
+                </button>
+                <button
+                  className="btn danger"
+                  onClick={() => {
+                    void useNoteDocs.getState().clear()
+                    setConfirmClear(false)
+                  }}
+                >
+                  Remove
+                </button>
+              </div>
+            </aside>
+          </div>
+        </Portal>
+      )}
     </div>
+  )
+}
+
+function DocRow({ d }: { d: NoteDoc }) {
+  const s = docStatus(d)
+  return (
+    <li className="doc-row">
+      <button className="topic-row doc-open" disabled={d.stage !== 'done'} onClick={() => useNav.getState().push({ kind: 'notesdoc', id: d.id })} aria-label={`${d.name}: check the text`}>
+        <span className={`doc-kind k-${d.kind}`} aria-hidden>
+          {KIND_LABEL[d.kind]}
+        </span>
+        <span className="topic-text">
+          <span className="topic-title">{shortName(d.name)}</span>
+          <span className={`topic-blurb ${s.tone}`}>{s.line}</span>
+          {s.progress !== null && (
+            <span className="row-progress" aria-hidden>
+              <span style={{ transform: `scaleX(${s.progress})` }} />
+            </span>
+          )}
+        </span>
+        {d.stage === 'done' && <ChevronRightIcon className="topic-go" />}
+      </button>
+      <button className="icon-btn doc-remove" aria-label={`Remove ${d.name}`} onClick={() => useNoteDocs.getState().removeDoc(d.id)}>
+        <CloseIcon />
+      </button>
+    </li>
+  )
+}
+
+function ReadingSummary() {
+  const docs = useNoteDocs((s) => s.docs)
+  const r = readingState(docs)
+  if (r.opening || r.waiting)
+    return (
+      <p className="muted small reading-note" role="status">
+        Atlas is reading your material. You can keep adding files.
+      </p>
+    )
+  if (r.illegible || r.partly)
+    return (
+      <p className="small reading-note warn" role="status">
+        {r.illegible ? `${count(r.illegible, ['page', 'pages'])} could not be read. ` : ''}
+        {r.partly ? `${count(r.partly, ['page has', 'pages have'])} words Atlas could not read, marked [illegible]. ` : ''}
+        Open a file to check its text and correct it.
+      </p>
+    )
+  return null
+}
+
+function Topics({ busy }: { busy: boolean }) {
+  const docs = useNoteDocs((s) => s.docs)
+  const topics = useNoteDocs((s) => s.topics)
+  const state = useNoteDocs((s) => s.topicsState)
+  const store = useNoteDocs.getState()
+  const parts = new Map(docs.flatMap((d) => d.parts.map((p) => [p.id, { d, p }] as const)))
+
+  if (!topics)
+    return (
+      <div className="topics-empty">
+        <p className="muted small">Atlas sorts your material into the topics it covers. Then you choose which topics to be examined on.</p>
+        {typeof state === 'object' && (
+          <p className="field-error" role="alert">
+            {state.error}
+          </p>
+        )}
+        <div className="topics-actions">
+          <button className="btn ghost" disabled={busy || state === 'working' || !apiReady()} onClick={() => void store.findTopics()}>
+            {state === 'working' ? 'Finding topics…' : busy ? 'Waiting for reading to finish' : 'Find topics'}
+          </button>
+          <button className="link-btn" disabled={busy} onClick={store.useFiles}>
+            Use whole files instead
+          </button>
+        </div>
+      </div>
+    )
+
+  const chosen = topics.filter((t) => t.chosen).length
+  return (
+    <>
+      <p className="muted small">
+        {chosen} of {count(topics.length, ['topic', 'topics'])} chosen for questions.
+      </p>
+      <ul className="topic-checks">
+        {topics.map((t) => {
+          const ps = t.parts.map((id) => parts.get(id)).filter((x) => !!x)
+          const files = [...new Set(ps.map((x) => x.d.id))]
+          const where = files
+            .map((f) => {
+              const inFile = ps.filter((x) => x.d.id === f)
+              return docs.length > 1 ? `${shortName(inFile[0].d.name)}: ${refsText(inFile.map((x) => x.p))}` : refsText(inFile.map((x) => x.p))
+            })
+            .join('; ')
+          return (
+            <li key={t.id}>
+              <label className={`topic-check ${t.chosen ? 'on' : ''} ${t.title === NOT_FOR_QUESTIONS ? 'skip' : ''}`}>
+                <input type="checkbox" checked={t.chosen} onChange={() => store.toggleTopic(t.id)} />
+                <span className="topic-text">
+                  <span className="topic-title">{t.title}</span>
+                  {t.summary && <span className="topic-blurb">{t.summary}</span>}
+                  <span className="topic-where">{where}</span>
+                </span>
+              </label>
+            </li>
+          )
+        })}
+      </ul>
+      <button className="link-btn" onClick={store.clearTopics}>
+        Sort into topics again
+      </button>
+    </>
   )
 }
 
@@ -329,7 +469,10 @@ function Consent({ onAgree, onCancel }: { onAgree: () => void; onCancel: () => v
         <aside className="sheet" role="dialog" aria-modal aria-label="Before you send your notes" onClick={(e) => e.stopPropagation()}>
           <h2>Before you send your notes</h2>
           <ul className="consent-list">
-            <li>Your photos, PDF or typed notes are sent over an encrypted connection to the Atlas question service, which uses Claude, an AI model made by Anthropic, to read them and write the questions.</li>
+            <li>
+              Your photos, PDF or typed notes are sent over an encrypted connection to the Atlas question service, which uses Claude, an AI model made by Anthropic, to read them and write the
+              questions.
+            </li>
             <li>Atlas does not store your photos. The questions, and the text read from your notes, are saved on this device only.</li>
             <li>Do not include anything private, such as patient details or other people’s personal information.</li>
             <li>The questions are written and checked by AI, not by an academic. If anything disagrees with your lecture notes or textbook, trust those.</li>

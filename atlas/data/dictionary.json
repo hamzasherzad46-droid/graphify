@@ -3975,6 +3975,22 @@
   "acromiale": {
    "group": "Latin anatomical term",
    "suggestion": "os acromiale (unfused acromion); keep"
+  },
+  "pptx": {
+   "group": "File format",
+   "suggestion": ".pptx (PowerPoint); keep"
+  },
+  "docx": {
+   "group": "File format",
+   "suggestion": ".docx (Word); keep"
+  },
+  "PDFs": {
+   "group": "Abbreviation: plural",
+   "suggestion": "plural of PDF; keep"
+  },
+  "examinable": {
+   "group": "General word",
+   "suggestion": "able to be examined (Oxford English Dictionary); keep"
   }
  },
  "historical": {

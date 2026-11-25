@@ -33,17 +33,17 @@ const MAX_TOKENS = 64000
 
 /** The two calls the pipeline makes; replaced by a fake in tests. */
 export interface Caller {
-  json(system: string, content: Anthropic.Beta.BetaContentBlockParam[], schema: Record<string, unknown>): Promise<unknown>
+  json(system: string, content: Anthropic.Beta.BetaContentBlockParam[], schema: Record<string, unknown>, opts?: { effort?: 'low' | 'medium' | 'high' }): Promise<unknown>
 }
 
 /**
- * One structured call to Claude: streamed (long outputs), effort high (quality matters more than speed here),
+ * One structured call to Claude: streamed (long outputs), effort high by default (quality matters more than speed here),
  * adaptive thinking (the default on this model), the output held to `schema` by structured outputs, and server-side
  * fallbacks so a request declined by a safety classifier is retried on a suitable model instead of failing.
  */
 export function claudeCaller(client: Anthropic): Caller {
   return {
-    async json(system, content, schema) {
+    async json(system, content, schema, opts) {
       let message: Anthropic.Beta.BetaMessage
       try {
         const stream = client.beta.messages.stream({
@@ -52,7 +52,7 @@ export function claudeCaller(client: Anthropic): Caller {
           betas: ['server-side-fallback-2026-07-01'],
           fallbacks: 'default',
           system: [{ type: 'text', text: system, cache_control: { type: 'ephemeral' } }],
-          output_config: { effort: 'high', format: { type: 'json_schema', schema } },
+          output_config: { effort: opts?.effort ?? 'high', format: { type: 'json_schema', schema } },
           messages: [{ role: 'user', content }],
         })
         message = await stream.finalMessage()

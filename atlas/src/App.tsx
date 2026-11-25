@@ -41,7 +41,7 @@ export default function App() {
     <div className={`app tab-${mode ? 'study' : tab}`}>
       <div className="stage" aria-hidden={!in3d && !mode} aria-label="3D skeleton. Drag to rotate, pinch to zoom, two fingers to pan, tap a bone to select it, double-tap to focus.">
         <Suspense fallback={null}>
-          <Viewer theme={theme} />
+          <Viewer theme={theme} paused={!in3d && !mode} />
         </Suspense>
       </div>
       {mode ? (

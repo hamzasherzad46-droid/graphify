@@ -32,7 +32,7 @@ export default defineConfig(({ mode }) => ({
       workbox: {
         // App shell, fonts, bone data, Draco decoder and the skeleton model are precached:
         // after the first visit the app opens offline.
-        globPatterns: ['**/*.{js,css,html,woff2,svg,png,wasm,glb}'],
+        globPatterns: ['**/*.{js,mjs,css,html,woff2,svg,png,wasm,glb}'],
         // JS fallback decoder (preview build only), and three's own decoder copies, which are unused (decoder path is draco/).
         globIgnores: ['draco/draco_decoder.js', 'assets/draco_*'],
         maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,

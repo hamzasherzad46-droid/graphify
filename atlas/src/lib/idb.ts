@@ -3,9 +3,9 @@
  * Falls back to an in-memory map where IndexedDB is unavailable (private modes of old browsers).
  */
 const DB = 'atlas'
-const VERSION = 2
-/** v1: annotations. v2: noteSets (question sets made from the student's notes). */
-export const STORES = ['annotations', 'noteSets'] as const
+const VERSION = 3
+/** v1: annotations. v2: noteSets (question sets made from the student's notes). v3: noteDrafts (the material being read). */
+export const STORES = ['annotations', 'noteSets', 'noteDrafts'] as const
 export type StoreName = (typeof STORES)[number]
 
 let dbp: Promise<IDBDatabase | null> | null = null

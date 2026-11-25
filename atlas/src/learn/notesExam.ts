@@ -55,7 +55,7 @@ export interface NoteSet {
   createdAt: string
   settings: NotesSettings
   /** What was sent: page photos, a PDF, typed text. */
-  from: { pages: number; pdf: boolean; typed: boolean }
+  from: { pages: number; pdf: boolean; typed: boolean; files?: string[] }
   transcript: string
   corrections: Correction[]
   questions: Question[]
@@ -137,7 +137,7 @@ export const API_BASE: string | null = import.meta.env.VITE_NOTES_API_URL ? Stri
 export const apiReady = () => API_BASE !== null
 
 /** A random id for this device, so the server can share its hourly limit fairly. Not linked to the student. */
-function clientId(): string {
+export function clientId(): string {
   const KEY = 'atlas.notes.client'
   try {
     const old = localStorage.getItem(KEY)

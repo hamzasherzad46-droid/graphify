@@ -7,6 +7,7 @@ import { MyAnnotations } from './MyAnnotations'
 import { NotesScreen } from '../notes/NotesScreen'
 import { NoteSetScreen } from '../notes/NoteSetScreen'
 import { StructureScreen } from './StructureScreen'
+import { NotesDocScreen } from '../notes/NotesDocScreen'
 
 /** The page on top of Home's stack. Keyed so each page starts at the top. */
 export function LessonsRouter({ page, depth }: { page: Page; depth: number }) {
@@ -26,6 +27,8 @@ export function LessonsRouter({ page, depth }: { page: Page; depth: number }) {
       return <NotesScreen key={key} />
     case 'noteset':
       return <NoteSetScreen key={key} id={page.id} anchor={page.anchor} />
+    case 'notesdoc':
+      return <NotesDocScreen key={key} id={page.id} />
     case 'structure':
       return <StructureScreen key={key} id={page.id} anchor={page.anchor} />
     default:

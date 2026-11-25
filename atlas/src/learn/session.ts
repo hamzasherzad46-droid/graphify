@@ -22,16 +22,16 @@ export const useSession = create<{
   mode: Mode | null
   /** Start straight away with the saved settings (Continue), instead of the mode's setup screen. */
   autostart: boolean
-  /** Layered flashcards: only the cards on this bone (opened from a structure lesson). */
-  bone: string | null
-  open: (mode: Mode, opts?: { autostart?: boolean; bone?: string }) => void
+  /** Layered flashcards: only the cards on these bones (opened from a structure lesson). */
+  bones: string[] | null
+  open: (mode: Mode, opts?: { autostart?: boolean; bones?: string[] }) => void
   close: () => void
 }>((set) => ({
   mode: null,
   autostart: false,
-  bone: null,
-  open: (mode, opts) => set({ mode, autostart: !!opts?.autostart, bone: opts?.bone ?? null }),
-  close: () => set({ mode: null, autostart: false, bone: null }),
+  bones: null,
+  open: (mode, opts) => set({ mode, autostart: !!opts?.autostart, bones: opts?.bones ?? null }),
+  close: () => set({ mode: null, autostart: false, bones: null }),
 }))
 
 export const mmss = (s: number) => `${Math.floor(Math.max(0, s) / 60)}:${String(Math.max(0, Math.floor(s % 60))).padStart(2, '0')}`

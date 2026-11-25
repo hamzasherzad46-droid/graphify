@@ -1,0 +1,360 @@
+{
+ "reviewStatus": "draft",
+ "id": "metacarpals",
+ "title": "Metacarpal bones",
+ "bone": "metacarpal_3_left",
+ "bones": [
+  "metacarpal_1_left",
+  "metacarpal_2_left",
+  "metacarpal_3_left",
+  "metacarpal_4_left",
+  "metacarpal_5_left"
+ ],
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4; 9.5; 20.5",
+ "oneLine": {
+  "main": {
+   "t": "The five long bones of the palm, between the wrist and the fingers (metacarpal bones).",
+   "src": [
+    "s8-2#fs-id1242304",
+    "glossary:metacarpal bone"
+   ]
+  },
+  "simpler": {
+   "t": "The metacarpals are the five bones of your palm.",
+   "src": [
+    "s8-2#fs-id1242304"
+   ]
+  },
+  "deeper": {
+   "t": "They are numbered 1 to 5, starting at the thumb.",
+   "src": [
+    "s8-2#fs-id1242304"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "They lie between the carpal bones of the wrist and the bones of the fingers and thumb.",
+    "src": [
+     "s8-2#fs-id1242304"
+    ]
+   },
+   {
+    "t": "Each base meets a carpal bone of the second row.",
+    "src": [
+     "s8-2#fs-id1242304"
+    ]
+   },
+   {
+    "t": "Their lower ends form the knuckles, at the base of the fingers.",
+    "src": [
+     "s8-2#fs-id1242304"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They make up your palm, from your wrist to your knuckles.",
+   "src": [
+    "s8-2#fs-id1242304"
+   ]
+  },
+  "deeper": {
+   "t": "The first metacarpal, at the base of the thumb, is separate from the others.",
+   "src": [
+    "s8-2#fs-id1436751"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Base",
+    "t": "The upper end, which meets a carpal bone at a carpometacarpal joint.",
+    "src": [
+     "s8-2#fs-id1242304",
+     "glossary:carpometacarpal joint"
+    ]
+   },
+   {
+    "name": "Shaft",
+    "t": "The long middle part of each bone.",
+    "src": [
+     "glossary:metacarpal bone"
+    ]
+   },
+   {
+    "name": "Head",
+    "t": "The expanded lower end, which forms a knuckle.",
+    "src": [
+     "s8-2#fs-id1242304"
+    ]
+   },
+   {
+    "name": "First metacarpal",
+    "t": "Separate from the others, at the base of the thumb; its base forms a saddle joint with the trapezium.",
+    "src": [
+     "s8-2#fs-id1436751",
+     "s9-4#fs-id1837120"
+    ]
+   },
+   {
+    "name": "Second and third metacarpals",
+    "t": "Firmly anchored, so they do not move.",
+    "src": [
+     "s8-2#fs-id1436751"
+    ]
+   },
+   {
+    "name": "Fourth and fifth metacarpals",
+    "t": "Can move a little forwards and backwards; the fifth moves most.",
+    "src": [
+     "s8-2#fs-id1436751"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Each has a base at the wrist end, a shaft and a head that forms a knuckle.",
+   "src": [
+    "s8-2#fs-id1242304",
+    "glossary:metacarpal bone"
+   ]
+  },
+  "deeper": {
+   "t": "Each head meets the base of a proximal phalanx at a metacarpophalangeal joint.",
+   "src": [
+    "s8-2#fs-id1242304",
+    "glossary:metacarpophalangeal joint"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "The first metacarpal is separate, so the thumb can move freely on its own.",
+    "src": [
+     "s8-2#fs-id1436751"
+    ]
+   },
+   {
+    "t": "The second and third are fixed, giving the palm a firm middle.",
+    "src": [
+     "s8-2#fs-id1436751"
+    ]
+   },
+   {
+    "t": "The fourth and fifth move forwards in a power grip, pressing the inner hand against the object.",
+    "src": [
+     "s8-2#fs-id1436751"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "A free thumb bone, a firm middle and movable outer bones help you grip.",
+   "src": [
+    "s8-2#fs-id1436751"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joints",
+    "name": "Carpometacarpal joints",
+    "t": "Between the second row of carpal bones and the bases of the metacarpals.",
+    "src": [
+     "glossary:carpometacarpal joint"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "First carpometacarpal joint",
+    "t": "A saddle joint between the trapezium and the first metacarpal.",
+    "src": [
+     "s9-4#fs-id1837120"
+    ]
+   },
+   {
+    "kind": "joints",
+    "name": "Metacarpophalangeal (knuckle) joints",
+    "t": "Condyloid joints between the metacarpal heads and the proximal phalanges.",
+    "src": [
+     "s9-4#fs-id1434553"
+    ]
+   },
+   {
+    "kind": "bones",
+    "name": "Carpal bones",
+    "t": "The trapezium carries the first and second, and the trapezoid the second. The capitate carries mainly the third, and the hamate the fourth and fifth.",
+    "src": [
+     "glossary:trapezium",
+     "glossary:trapezoid",
+     "glossary:capitate",
+     "glossary:hamate"
+    ]
+   },
+   {
+    "kind": "arteries",
+    "name": "Palmar arches",
+    "t": "The radial and ulnar arteries join at the wrist to form the palmar arches that supply the hand.",
+    "src": [
+     "s20-5#fs-id1595346"
+    ]
+   },
+   {
+    "kind": "veins",
+    "name": "Palmar venous arches",
+    "t": "The digital veins join in the hand to form the palmar venous arches.",
+    "src": [
+     "s20-5#fs-id3239091"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They join the wrist bones above and the finger bones below.",
+   "src": [
+    "s8-2#fs-id1242304"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "They form by replacing a cartilage model with bone (endochondral ossification).",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Each has two ossification centres: one for the shaft, and one for the head (in the first, for the base).",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives two centres for each metacarpal (supporting only)."
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "The first metacarpal ossifies like a phalanx, so some anatomists count the thumb as having three phalanges.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives two centres for each metacarpal (supporting only)."
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A punch that lands on a hard object.",
+    "damaged": "The neck of the fifth metacarpal breaks (“boxer’s fracture”).",
+    "cannotDo": "Make a fist with a normal knuckle: the little-finger knuckle sinks.",
+    "why": "The fifth metacarpal is the most mobile of the palm bones and takes the force of a badly aimed punch.",
+    "src": [
+     "s8-2#fs-id1436751"
+    ],
+    "check": "The fracture is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the mobility of the fifth metacarpal is."
+   },
+   {
+    "injury": "A blow along the bent thumb, as in a punch.",
+    "damaged": "The base of the first metacarpal breaks into the saddle joint (Bennett fracture).",
+    "cannotDo": "Pinch or touch the thumb to the fingertips without pain.",
+    "why": "The break enters the saddle joint on which opposition depends.",
+    "src": [
+     "s9-4#fs-id1837120",
+     "s9-5#fs-id1354267"
+    ],
+    "check": "The fracture is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the saddle joint and opposition are."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the thumb’s metacarpal moves so much more than the others.",
+    "model": [
+     "The first metacarpal is separate from the other four.",
+     "Its base forms a saddle joint with the trapezium, which is biaxial.",
+     "So it moves within the plane of the palm and out in front of it.",
+     "Flexion with abduction here produces opposition."
+    ],
+    "src": [
+     "s8-2#fs-id1436751",
+     "s9-4#fs-id1837120",
+     "s9-5#fs-id1354267"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the movement of the second and third metacarpals with that of the fourth and fifth.",
+    "model": [
+     "The second and third are firmly anchored and immobile.",
+     "The fourth and fifth move a little forwards and backwards.",
+     "The fifth moves most.",
+     "Their forward movement strengthens the grip of the inner hand."
+    ],
+    "src": [
+     "s8-2#fs-id1436751"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "A man punches a wall and the knuckle of his little finger sinks. Predict the injury and explain it.",
+    "model": [
+     "A fracture of the neck of the fifth metacarpal (boxer’s fracture).",
+     "The head tips towards the palm.",
+     "So the knuckle sinks when he makes a fist.",
+     "The fifth metacarpal is the most mobile and least protected."
+    ],
+    "src": [
+     "s8-2#fs-id1436751"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which metacarpal is at the base of the thumb?",
+   "options": [
+    "First",
+    "Second",
+    "Third",
+    "Fifth"
+   ],
+   "answer": 0,
+   "why": "The metacarpals are numbered from the thumb: the first is at its base.",
+   "src": [
+    "s8-2#fs-id1242304"
+   ]
+  },
+  {
+   "stem": "Which metacarpals are firmly anchored and do not move?",
+   "options": [
+    "First and second",
+    "Fourth and fifth",
+    "Second and third",
+    "Third and fourth"
+   ],
+   "answer": 2,
+   "why": "The second and third are firmly anchored.",
+   "src": [
+    "s8-2#fs-id1436751"
+   ]
+  },
+  {
+   "stem": "What forms the knuckles?",
+   "options": [
+    "The bases of the metacarpals",
+    "The second row of carpal bones",
+    "The proximal phalanges",
+    "The heads (lower ends) of the metacarpals"
+   ],
+   "answer": 3,
+   "why": "The expanded distal end of each metacarpal forms a knuckle.",
+   "src": [
+    "s8-2#fs-id1242304"
+   ]
+  }
+ ]
+}

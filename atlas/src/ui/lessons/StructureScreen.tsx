@@ -10,7 +10,7 @@ import { QUESTIONS } from '../../learn/questions'
 import { topicById } from '../../learn/topics'
 import { haptic } from '../../lib/feedback'
 import { tap } from '../../learn/sound'
-import { loadGlossary, nameOf, needsReview, pronounce, splitTerms, structureById, termMatcher, TUTORIAL_NAME, type Fact, type GlossaryEntry, type Piece, type Structure } from '../../learn/structures'
+import { bonesOf, loadGlossary, nameOf, needsReview, pronounce, splitTerms, structureById, termMatcher, TUTORIAL_NAME, type Fact, type GlossaryEntry, type Piece, type Structure } from '../../learn/structures'
 
 const LETTERS = 'ABCD'
 
@@ -356,15 +356,16 @@ function Check({ s }: { s: Structure }) {
 function Links({ s, name }: { s: Structure; name: string }) {
   const showBone = useNav((x) => x.showBone)
   const push = useNav((x) => x.push)
-  const cards = LAYERED.filter((c) => c.bone === s.bone).length
-  const questions = QUESTIONS.filter((q) => q.bone === s.bone)
+  const covered = new Set(bonesOf(s))
+  const cards = LAYERED.filter((c) => covered.has(c.bone)).length
+  const questions = QUESTIONS.filter((q) => covered.has(q.bone))
   return (
     <div className="st-links">
       <button className="chip st-link" onClick={() => showBone(s.bone, name)}>
         <CubeIcon /> See in 3D
       </button>
       {cards > 0 && (
-        <button className="chip st-link" onClick={() => useSession.getState().open('layered', { bone: s.bone })}>
+        <button className="chip st-link" onClick={() => useSession.getState().open('layered', { bones: bonesOf(s) })}>
           <CardsIcon /> {cards} {cards === 1 ? 'flashcard' : 'flashcards'}
         </button>
       )}

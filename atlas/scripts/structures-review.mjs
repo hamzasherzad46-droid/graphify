@@ -48,12 +48,12 @@ const factsOf = (s) => [
 ]
 lessons.forEach((s, k) => {
   const f = factsOf(s)
-  out.push(`| ${k + 1} | ${bones.get(s.bone)} | ${s.topic === 'skull' ? 'Skull' : 'Upper limb'} | ${f.length + s.check.length} | ${f.filter((x) => x.check).length} |`)
+  out.push(`| ${k + 1} | ${s.title ?? bones.get(s.bone)} | ${s.topic === 'skull' ? 'Skull' : 'Upper limb'} | ${f.length + s.check.length} | ${f.filter((x) => x.check).length} |`)
 })
 out.push('')
 
 lessons.forEach((s, k) => {
-  const name = bones.get(s.bone)
+  const name = s.title ?? bones.get(s.bone)
   out.push('---', '', `## ${k + 1}. ${name}`, '', `*${s.source} · id \`${s.id}\` · bone \`${s.bone}\` · ${s.reviewStatus}*`, '')
   out.push('### 1. In one line', '', `**${line(s.oneLine.main)}**`, '', `*Simpler.* ${line(s.oneLine.simpler)}`, '', `*Deeper.* ${line(s.oneLine.deeper)}`, '')
   out.push('### 2. Where it is', '', ...s.where.facts.map((f) => `- ${line(f)}`), '', `*Simpler.* ${line(s.where.simpler)}`, '', `*Deeper.* ${line(s.where.deeper)}`, '')

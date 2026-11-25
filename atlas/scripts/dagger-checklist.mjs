@@ -120,7 +120,7 @@ const ids = readdirSync(join(ROOT, 'content', 'structures')).map((f) => f.replac
 const order = [...SAMPLES, ...ids.filter((x) => !SAMPLES.includes(x)).sort((a, b) => (bones.get(json('content', 'structures', `${a}.json`).bone) ?? a).localeCompare(bones.get(json('content', 'structures', `${b}.json`).bone) ?? b))]
 for (const id of order) {
   const s = json('content', 'structures', `${id}.json`)
-  const name = bones.get(s.bone)
+  const name = s.title ?? bones.get(s.bone)
   for (const [layer, label] of Object.entries(LAYER)) {
     const v = s[layer]
     const list = [...(v.items ?? []), ...(v.facts ?? []), ...['main', 'simpler', 'deeper'].map((k) => v[k]).filter(Boolean)]

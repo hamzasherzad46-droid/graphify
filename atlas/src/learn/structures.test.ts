@@ -63,6 +63,12 @@ describe('structure lessons', () => {
     const topics = new Set(TOPICS.map((t) => t.id))
     for (const s of lessons) {
       expect(BONE_BY_ID.has(s.bone), s.id).toBe(true)
+      // A group lesson names its group and lists every bone it covers, its main bone among them.
+      if (s.bones) {
+        expect(s.title, s.id).toBeTruthy()
+        expect(s.bones, s.id).toContain(s.bone)
+        for (const b of s.bones) expect(BONE_BY_ID.has(b), `${s.id}: ${b}`).toBe(true)
+      } else expect(s.title, s.id).toBeUndefined()
       expect(topics.has(s.topic), s.id).toBe(true)
       expect(s.source, s.id).toMatch(/^OpenStax A&P 2e: /)
       expect(s.where.facts.length, s.id).toBeGreaterThanOrEqual(2)

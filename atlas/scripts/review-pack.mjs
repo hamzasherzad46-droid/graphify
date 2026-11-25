@@ -44,7 +44,7 @@ const out = []
 const lessonOut = []
 lessons.forEach((s, k) => {
   const L = lessonOut
-  L.push(`### 1.${k + 1} ${bones.get(s.bone)}`, '', `*${s.source}. Status: ${s.reviewStatus}.*`, '')
+  L.push(`### 1.${k + 1} ${s.title ?? bones.get(s.bone)}`, '', `*${s.source}. Status: ${s.reviewStatus}.*`, '')
   L.push('**1. In one line**', '', `- ${said(s.oneLine.main)}`, `- *Explain simpler:* ${said(s.oneLine.simpler)}`, `- *Explain deeper:* ${said(s.oneLine.deeper)}`, '')
   L.push('**2. Where it is**', '', ...s.where.facts.map((f) => `- ${said(f)}`), `- *Explain simpler:* ${said(s.where.simpler)}`, `- *Explain deeper:* ${said(s.where.deeper)}`, '')
   L.push('**3. Key features**', '', ...s.features.items.map((f) => `- **${esc(f.name)}.** ${said(f)}`), `- *Explain simpler:* ${said(s.features.simpler)}`, `- *Explain deeper:* ${said(s.features.deeper)}`, '')

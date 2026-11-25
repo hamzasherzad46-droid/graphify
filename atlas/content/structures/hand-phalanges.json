@@ -1,0 +1,347 @@
+{
+ "reviewStatus": "draft",
+ "id": "hand-phalanges",
+ "title": "Phalanges of the hand",
+ "bone": "hand_proximal_phalanx_3_left",
+ "bones": [
+  "hand_proximal_phalanx_1_left",
+  "hand_proximal_phalanx_2_left",
+  "hand_proximal_phalanx_3_left",
+  "hand_proximal_phalanx_4_left",
+  "hand_proximal_phalanx_5_left",
+  "hand_middle_phalanx_2_left",
+  "hand_middle_phalanx_3_left",
+  "hand_middle_phalanx_4_left",
+  "hand_middle_phalanx_5_left",
+  "hand_distal_phalanx_1_left",
+  "hand_distal_phalanx_2_left",
+  "hand_distal_phalanx_3_left",
+  "hand_distal_phalanx_4_left",
+  "hand_distal_phalanx_5_left"
+ ],
+ "topic": "upper-limb",
+ "source": "OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4; 9.5; 20.5",
+ "oneLine": {
+  "main": {
+   "t": "The 14 bones of the fingers and thumb (phalanges).",
+   "src": [
+    "s8-2#fs-id2002490",
+    "glossary:phalanx bone of the hand"
+   ]
+  },
+  "simpler": {
+   "t": "The phalanges are the bones of your fingers and thumb.",
+   "src": [
+    "s8-2#fs-id2002490"
+   ]
+  },
+  "deeper": {
+   "t": "The name comes from the Greek “phalanx”, a rectangular block of soldiers.",
+   "src": [
+    "s8-2#fs-id2002490"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "The thumb (digit 1) has two: a proximal and a distal phalanx.",
+    "src": [
+     "s8-2#fs-id2002490"
+    ]
+   },
+   {
+    "t": "Each finger, digits 2 to 5, has three: proximal, middle and distal.",
+    "src": [
+     "s8-2#fs-id2002490"
+    ]
+   },
+   {
+    "t": "The proximal phalanges meet the heads of the metacarpals at the knuckles.",
+    "src": [
+     "s8-2#fs-id1242304"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "There are two in your thumb and three in each finger.",
+   "src": [
+    "s8-2#fs-id2002490"
+   ]
+  },
+  "deeper": {
+   "t": "The anatomical name for the thumb is the pollex.",
+   "src": [
+    "s8-2#fs-id2002490",
+    "glossary:pollex"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Proximal phalanges",
+    "t": "The nearest to the palm; each meets a metacarpal head at a knuckle joint.",
+    "src": [
+     "s8-2#fs-id2002490",
+     "s8-2#fs-id1242304"
+    ]
+   },
+   {
+    "name": "Middle phalanges",
+    "t": "Only in the fingers, between the proximal and distal phalanges.",
+    "src": [
+     "s8-2#fs-id2002490"
+    ]
+   },
+   {
+    "name": "Distal phalanges",
+    "t": "The tips of the fingers and thumb.",
+    "src": [
+     "s8-2#fs-id2002490"
+    ]
+   },
+   {
+    "name": "Interphalangeal joints",
+    "t": "The joints between neighbouring phalanges.",
+    "src": [
+     "s8-2#fs-id2002490",
+     "glossary:interphalangeal joint"
+    ]
+   },
+   {
+    "name": "Base, shaft and head",
+    "t": "Each phalanx has a base nearest the palm, a shaft and a head.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ],
+  "simpler": {
+   "t": "Each finger has a near, a middle and an end bone; the thumb has no middle one.",
+   "src": [
+    "s8-2#fs-id2002490"
+   ]
+  },
+  "deeper": {
+   "t": "So the thumb has one interphalangeal joint, and each finger has two.",
+   "src": [
+    "s8-2#fs-id2002490"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Interphalangeal joints are hinge joints: they only bend and straighten.",
+    "src": [
+     "s9-4#fs-id2523908"
+    ]
+   },
+   {
+    "t": "Knuckle (metacarpophalangeal) joints are condyloid, so the fingers can bend and also spread apart.",
+    "src": [
+     "s9-4#fs-id1434553"
+    ]
+   },
+   {
+    "t": "Spreading the fingers apart is abduction; bringing them together is adduction.",
+    "src": [
+     "s9-5#fs-id1751608"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Knuckle joints bend and spread; the joints along the fingers only bend.",
+   "src": [
+    "s9-4#fs-id1434553",
+    "s9-4#fs-id2523908"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "joints",
+    "name": "Metacarpophalangeal (knuckle) joints",
+    "t": "Condyloid joints between the metacarpal heads and the proximal phalanges.",
+    "src": [
+     "s9-4#fs-id1434553",
+     "glossary:metacarpophalangeal joint"
+    ]
+   },
+   {
+    "kind": "joints",
+    "name": "Interphalangeal joints",
+    "t": "Hinge joints between neighbouring phalanges.",
+    "src": [
+     "s9-4#fs-id2523908",
+     "glossary:interphalangeal joint"
+    ]
+   },
+   {
+    "kind": "bones",
+    "name": "Metacarpals",
+    "t": "Meet the proximal phalanges at the knuckles.",
+    "src": [
+     "s8-2#fs-id1242304"
+    ]
+   },
+   {
+    "kind": "arteries",
+    "name": "Digital arteries",
+    "t": "Branch from the palmar arches to supply the fingers.",
+    "src": [
+     "s20-5#fs-id1595346"
+    ]
+   },
+   {
+    "kind": "veins",
+    "name": "Digital veins",
+    "t": "Drain the fingers into the palmar venous arches.",
+    "src": [
+     "s20-5#fs-id3239091"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They hinge on each other and join the palm bones at the knuckles.",
+   "src": [
+    "s9-4#fs-id2523908",
+    "s8-2#fs-id1242304"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "They form by replacing a cartilage model with bone (endochondral ossification).",
+    "src": [
+     "s8-5#fs-id1397163"
+    ]
+   },
+   {
+    "t": "Small bones like these develop only one secondary ossification centre, so each has one growth plate.",
+    "src": [
+     "s8-5#fs-id1972676"
+    ]
+   },
+   {
+    "t": "A growth plate is cartilage, less dense than bone, so it looks dark on an X-ray.",
+    "src": [
+     "s8-5#fs-id1972676"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": []
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A child’s injured finger has an X-ray.",
+    "damaged": "Possibly nothing: each phalanx has a normal growth plate.",
+    "cannotDo": "Rely on one dark line alone to diagnose a fracture.",
+    "why": "Cartilage is less dense than bone, so a normal plate looks dark and can be mistaken for a break.",
+    "src": [
+     "s8-5#fs-id1972676"
+    ]
+   },
+   {
+    "injury": "A ball strikes the tip of a straight finger.",
+    "damaged": "The tendon that straightens the fingertip tears from the distal phalanx, sometimes with a fragment of bone (mallet finger).",
+    "cannotDo": "Straighten the tip of the finger.",
+    "why": "Without its tendon, nothing pulls the distal phalanx straight.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the thumb has one interphalangeal joint, but each finger has two.",
+    "model": [
+     "The thumb has two phalanges: proximal and distal.",
+     "Each finger has three: proximal, middle and distal.",
+     "An interphalangeal joint lies between each pair of neighbouring phalanges.",
+     "So the thumb has one, and each finger has two."
+    ],
+    "src": [
+     "s8-2#fs-id2002490"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the knuckle (metacarpophalangeal) joints with the interphalangeal joints.",
+    "model": [
+     "Knuckle joints are condyloid: biaxial.",
+     "They allow bending and straightening, and spreading and closing the fingers.",
+     "Interphalangeal joints are hinge joints: uniaxial.",
+     "They allow only bending and straightening."
+    ],
+    "src": [
+     "s9-4#fs-id1434553",
+     "s9-4#fs-id2523908"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "A cricket ball strikes the tip of a straight finger, and the tip now droops. Predict the injury and explain it.",
+    "model": [
+     "Mallet finger.",
+     "The tendon that straightens the fingertip has torn from the distal phalanx.",
+     "A small piece of bone may come away with it.",
+     "Nothing now pulls the fingertip straight."
+    ],
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20)."
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "How many phalanges are in each hand?",
+   "options": [
+    "5",
+    "10",
+    "14",
+    "19"
+   ],
+   "answer": 2,
+   "why": "The thumb has two and each finger three: 14 in all.",
+   "src": [
+    "s8-2#fs-id2002490"
+   ]
+  },
+  {
+   "stem": "What type of joint is an interphalangeal joint?",
+   "options": [
+    "Condyloid",
+    "Hinge",
+    "Saddle",
+    "Plane"
+   ],
+   "answer": 1,
+   "why": "Interphalangeal joints are hinge joints.",
+   "src": [
+    "s9-4#fs-id2523908"
+   ]
+  },
+  {
+   "stem": "Which digit has no middle phalanx?",
+   "options": [
+    "Index finger",
+    "Middle finger",
+    "Little finger",
+    "Thumb"
+   ],
+   "answer": 3,
+   "why": "The thumb has only proximal and distal phalanges.",
+   "src": [
+    "s8-2#fs-id2002490"
+   ]
+  }
+ ]
+}

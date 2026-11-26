@@ -44,9 +44,8 @@ export function Credits({ onBack }: { onBack: () => void }) {
               Draco-compressed.
             </p>
             <p className="muted small">
-              Also used: the muscles, tendons, aponeuroses and fasciae of the muscular system, simplified and moved off the bones where
-              they overlapped them. The female model’s muscles are these same muscles fitted to the female skeleton (each bone’s male →
-              female difference carried to the surrounding muscles); no free female muscle set exists.
+              Also used (male model): the muscles, tendons, aponeuroses and fasciae of the muscular system, the eyeballs, and the nasal
+              cartilages; simplified, otherwise unchanged.
             </p>
           </section>
 

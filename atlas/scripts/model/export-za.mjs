@@ -37,7 +37,8 @@ root.traverse((o) => {
   const raw = worldGeometry(o)
   for (let i = 1; i < raw.pos.length; i += 3) raw.pos[i] -= minY
   const n0 = raw.idx.length / 3
-  const cap = Math.max(150, Math.min(Number(maxTris), Math.round(n0 * 0.25)))
+  // error 0: the original mesh, only welded (for checking the simplified models against it).
+  const cap = Number(error) === 0 ? Infinity : Math.max(150, Math.min(Number(maxTris), Math.round(n0 * 0.25)))
   const g = cleanMesh(raw, { maxTris: cap, error: Number(error) })
   if (!g.idx.length) return
   before += n0

@@ -28,6 +28,10 @@ def write_glb(path, meshes):
         attrs = {'POSITION': acc(m['pos'].astype(np.float32), 5126, 'VEC3', 34962, True), 'NORMAL': acc(m['nrm'].astype(np.float32), 5126, 'VEC3', 34962)}
         if m.get('uv') is not None:
             attrs['TEXCOORD_0'] = acc(m['uv'].astype(np.float32), 5126, 'VEC2', 34962)
+        if m.get('color') is not None:  # baked ambient occlusion, as grey
+            attrs['COLOR_0'] = acc(np.repeat(m['color'].astype(np.float32)[:, None], 3, axis=1), 5126, 'VEC3', 34962)
+        if m.get('fibre') is not None:  # custom attribute (glTF: names of custom attributes start with _)
+            attrs['_FIBRE'] = acc(m['fibre'].astype(np.float32), 5126, 'VEC3', 34962)
         idx = m['idx'].reshape(-1)
         idx = idx.astype(np.uint16) if len(m['pos']) < 65536 else idx.astype(np.uint32)
         i = acc(idx, 5123 if idx.dtype == np.uint16 else 5125, 'SCALAR', 34963)

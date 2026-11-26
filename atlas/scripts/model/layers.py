@@ -46,9 +46,13 @@ def kind_of(name):
         return 'sheath'
     if 'tendon' in n:
         return 'tendon'
+    if n.startswith(('palmar_aponeurosis', 'plantar_aponeurosis')):
+        return 'fascia'  # thickenings of the deep fascia of the palm and sole (shown with the fascia layer)
     if 'aponeuros' in n or 'linea_alba' in n:  # the linea alba is the aponeuroses meeting in the midline
         return 'aponeurosis'
-    if any(k in n for k in ('fascia', 'retinacul', 'septum', 'tract', 'linea_alba', 'sheath')) and 'tensor_fasciae' not in n:
+    if 'retinacul' in n:
+        return 'ligament'  # retinacula are bands that hold tendons down at the wrist and ankle, not sleeves: shown
+    if any(k in n for k in ('fascia', 'septum', 'tract', 'linea_alba', 'sheath')) and 'tensor_fasciae' not in n:
         return 'fascia'
     return 'muscle'
 

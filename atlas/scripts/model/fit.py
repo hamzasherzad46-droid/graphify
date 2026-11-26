@@ -350,7 +350,10 @@ def _enclose(S, tris, inner, gap, rounds, stiffness, tol):
         d, j = cKDTree(S).query(inner)
         out = wn < 0.5
         depth = ((inner - S[j]) * N[j]).sum(1)  # >0: beyond the skin along its normal
-        need = np.where(out, np.maximum(depth, 0) + gap, np.where(d < gap, gap - d, 0))
+        # Inside the skin but closer than `gap` under it: only if it lies on the inner side of that skin point (a hand
+        # beside the hip, or one knee against the other, is outside the hip's or the other knee's skin, not under it).
+        under = depth < 0
+        need = np.where(out, np.maximum(depth, 0) + gap, np.where(under & (-depth < gap), gap + depth, 0))
         bad = need > tol
         report.append((int(out.sum()), float(need.max()) if len(need) else 0.0))
         if not bad.any():

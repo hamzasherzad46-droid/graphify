@@ -91,7 +91,7 @@ npm test
 `scripts/lib/mesh.mjs` reads the FBX (three's FBXLoader in Node), welds, simplifies with meshoptimizer (≤0.15 %
 relative error, ≤5k triangles per bone), recomputes normals and writes the GLB.
 
-## 3D model upgrade, step 1: skin (`models-src/skin-*.glb`, refitted over the muscles in step 2)
+## 3D model upgrade, step 1: skin (male; part of `models-src/layers-male.glb` since step 2)
 
 Body surfaces for the coming layered models (skin → fat → muscles → organs → skeleton), not yet shown in the app (the
 layer controls come in step 5). Built from **MakeHuman** (CC0): its base mesh and macro body-shape targets, with
@@ -117,35 +117,48 @@ node scripts/model/export-bones.mjs public/models/skeleton-male.glb /tmp/fit/mal
 python3 scripts/model/build_skin.py <makehuman data> /tmp/fit /tmp/fit                 # numpy, scipy, libigl
 ```
 
-## 3D model upgrade, step 2: muscles (`models-src/muscles-*.glb`)
+## 3D model upgrade, step 2: the male layered model (`models-src/layers-male.glb`)
 
-683 meshes per body from **Z-Anatomy**'s muscular system (CC BY-SA 4.0): muscles (left and right separate), tendons,
-aponeuroses, fasciae, tendon sheaths and bursae. Each GLB node is named by its Atlas id
-(`vastus_lateralis_muscle_left`) with extras `{layer, kind, side, za}`.
+**Male only.** The female skeleton is partly derived from the male and no free female muscle set exists, so the
+female model shows the skeleton alone ("Female muscles coming soon" when layers ship) until real female anatomy is
+available. No adapted or guessed female soft tissue is built.
 
-- **Male:** the muscles belong to the same Z-Anatomy body as the male skeleton. Their offset from the skeleton GLB
-  (2.25 mm in height, from the skeleton build's floor) is measured on matched bones every build; the build stops if
-  any bone disagrees by more than 1.5 mm.
-- **Female:** no free female muscle set exists, so the male muscles are fitted to the female skeleton. Each bone has a
-  male → female transform (exact for the 170 bones derived from the male; fitted by iterative closest points for the
-  36 real Visible Human Female bones, 2–5.5 mm mean residual), plus the real bones' local shape differences. Each
-  muscle point follows its nearest bone (a soft minimum over distance, so it blends only where two bones are about as
-  close: at joints and across the abdominal wall).
-- **On the bones, not in them:** muscle surface that dips into bone (attachments) is moved onto the bone surface as
-  smooth patches.
-- **Skin refitted over the muscles** with a lean subcutaneous layer (3 mm male, 4 mm female; 1.5 mm over the face,
-  hands and feet): no muscle point outside either skin.
-- **Layers** (`scripts/model/layers.py`, listed in `docs/muscle-layers.md`): *superficial* = seen from the skin (a
-  walk inward from every skin point finds it first) or in the textbook surface layer; *deep* = otherwise, or placed
-  in a deep layer by standard anatomy (for example brachialis, flexor digitorum profundus, vastus intermedius,
-  erector spinae, internal oblique); *connective* = tendons, aponeuroses (including the linea alba), fasciae,
-  sheaths, bursae, ligaments. Fasciae wrap whole muscle groups, so the viewer shows them only on request.
-- 479,501 triangles per body (from 2,323,591), 2.3 MB with Draco. Levels of detail come in the performance step.
+From **Z-Anatomy** (CC BY-SA 4.0), in the male skeleton's space (offset measured on matched bones every build; the
+build stops if any bone disagrees by more than 1.5 mm):
+
+- **683 meshes of the muscular system**, left and right separate: muscles, tendons, aponeuroses, fasciae, retinacula,
+  tendon sheaths and bursae, including every intrinsic muscle of the hand and foot. **Unchanged** apart from
+  simplification (479,501 triangles from 2,323,591): checked mesh by mesh against the originals
+  (`scripts/model/verify_muscles.py`, `docs/muscle-check.tsv`). Where muscles attach they dip into bone, as modelled in
+  the source; that part is inside the opaque bone.
+- **Eyes** (sclera, cornea, iris; from the nervous system) and **nasal cartilages** (major alar, septal and its lateral
+  processes). Z-Anatomy has no external ear, so the model has none.
+- **Layers** (`scripts/model/layers.py`, `docs/muscle-layers.md`): *superficial* (seen from the skin, or in the
+  textbook surface layer), *deep* (otherwise, or placed deep by standard anatomy), *connective* (tendons, aponeuroses
+  including the linea alba, retinacula, ligaments; and fasciae, sheaths and bursae, which include the palmar and
+  plantar aponeuroses as thickenings of the deep fascia and are shown only on request).
+- **Skin** (MakeHuman, step 1) shrink-wrapped onto the outer envelope of everything under it plus a lean fat layer
+  (2.5 mm; 1.2 mm on the face, hands and feet). The envelope is built on a voxel grid (3 mm; 1.5 mm for the head and
+  feet) with exact inside/outside, so the skin follows the outer surface, not the walls where muscles overlap; each
+  skin point only follows tissue over its own body part's bones. **Hidden by default**: shown only from the layer
+  control.
+- **Per vertex:** baked ambient occlusion (creases between muscles darken; smoothed, never below 0.42) and fibre
+  direction (the gradient of a harmonic field from one end of each muscle to the other).
+
+**Materials** (`src/viewer/anatomyMaterials.ts`): muscle deep red-brown with a satin sheen, fibres and fascicles drawn
+along the baked direction (faded out below a pixel, so no shimmer), a slightly different tone per muscle; tendons,
+aponeuroses and ligaments silvery grey-white and fibrous (aponeuroses a little darker and cooler); eyes glossy with a
+clear cornea; cartilage pale blue-white. Lighting: warm key, cool fill, cyan rim, all fixed to the camera so the rim
+always sits behind the model.
 
 ```bash
 node scripts/model/export-za.mjs /tmp/za/Resources/Models/FBX SkeletalSystem100 /tmp/fit/zaskel
 node scripts/model/export-za.mjs /tmp/za/Resources/Models/FBX MuscularSystem100 /tmp/fit/muscles-male
-python3 scripts/model/build_muscles.py /tmp/fit && python3 scripts/model/write_muscles.py /tmp/fit /tmp/fit
+node scripts/model/export-za.mjs /tmp/za/Resources/Models/FBX MuscularSystem100 /tmp/fit/muscles-orig 100000000 0
+node scripts/model/export-za.mjs /tmp/za/Resources/Models/FBX NervousSystem100 /tmp/fit/nervous
+python3 scripts/model/build_layers.py /tmp/fit        # /tmp/fit/mhd: the MakeHuman data, for the rig's body parts
+python3 scripts/model/write_layers.py /tmp/fit /tmp/fit/layers-male.glb
+python3 scripts/model/verify_muscles.py /tmp/fit/muscles-male /tmp/fit/muscles-orig docs/muscle-check.tsv
 ```
 
 ## Exploded view (step 3)

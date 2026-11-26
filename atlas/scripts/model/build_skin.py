@@ -294,6 +294,8 @@ def build(sex, mhdir, bonedir):
 
 if __name__ == '__main__':
     mhdir, bonedir, out = sys.argv[1:4]
-    for sex in ('female', 'male'):
+    # Male only: the female model shows the skeleton alone until real female anatomy (muscles, breast tissue) is
+    # available; no adapted or guessed female soft tissue is built.
+    for sex in ('male',):
         S, VT, tris, ttex, P = build(sex, mhdir, bonedir)
         np.savez(f'{out}/skin-{sex}.npz', pos=S, uv=VT, tris=tris, ttex=ttex)

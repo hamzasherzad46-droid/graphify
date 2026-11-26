@@ -42,6 +42,8 @@ def kind_of(name):
         return 'bursa'
     if 'ligament' in n or 'tarsus' in n:  # the eyelids' tarsal plates are connective tissue, not muscle
         return 'ligament'
+    if 'fibrous_sheath' in n:
+        return 'ligament'  # the fibrous sheaths of the fingers hold the flexor tendons down: shown, like the retinacula
     if 'tendon_sheath' in n or 'tendon sheath' in n:
         return 'sheath'
     if 'tendon' in n:

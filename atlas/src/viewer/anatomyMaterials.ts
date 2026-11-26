@@ -12,7 +12,7 @@ import * as THREE from 'three'
 export type TissueKind = 'muscle' | 'tendon' | 'aponeurosis' | 'fascia' | 'sheath' | 'bursa' | 'ligament' | 'eye' | 'cartilage'
 
 const MUSCLE = new THREE.Color('#7c2a22')
-const TENDON = new THREE.Color('#b9bcbd') // silvery grey-white, cooler and darker than bone's warm ivory
+const TENDON = new THREE.Color('#cdc3b6') // pearly off-white: close enough to muscle in tone that it never reads as white paint
 
 /** A stable small number from a name, for per-muscle colour variation. */
 function hash(s: string): number {
@@ -82,28 +82,59 @@ export function tissueMaterial(kind: TissueKind, name: string): THREE.Material {
   if (kind === 'muscle') {
     const c = MUSCLE.clone().offsetHSL((h - 0.5) * 0.02, (h - 0.5) * 0.08, (h - 0.5) * 0.05)
     return withFibres(
-      new THREE.MeshPhysicalMaterial({ color: c, vertexColors: true, roughness: 0.58, sheen: 0.55, sheenRoughness: 0.45, sheenColor: new THREE.Color('#e9a397'), clearcoat: 0.06, clearcoatRoughness: 0.5 }),
+      new THREE.MeshPhysicalMaterial({ color: c, vertexColors: true, roughness: 0.5, sheen: 0.65, sheenRoughness: 0.42, sheenColor: new THREE.Color('#eba79b'), clearcoat: 0.14, clearcoatRoughness: 0.45 }),
       { spacing: 0.0011, depth: 0.32, streak: 0.12 },
     )
   }
   if (kind === 'tendon' || kind === 'aponeurosis' || kind === 'ligament') {
-    // Aponeuroses (broad sheets such as the scalp's) a little darker and cooler than cord-like tendons.
-    const c = TENDON.clone().offsetHSL(kind === 'aponeurosis' ? 0.02 : 0, 0, (h - 0.5) * 0.04 + (kind === 'aponeurosis' ? -0.1 : 0))
+    const c = TENDON.clone().offsetHSL(0, 0, (h - 0.5) * 0.03)
+    // Thin sheets and bands (the scalp's galea aponeurotica, the retinacula at the wrist and ankle, the transverse metacarpal ligament) are see-through,
+    // so the skull's shape, frontalis and occipitalis, and the tendons beneath read through them.
+    const sheer = /epicranial|retinacul|transverse_metacarpal/i.test(name)
     return withFibres(
-      new THREE.MeshPhysicalMaterial({ color: c, vertexColors: true, roughness: 0.36, sheen: 1.0, sheenRoughness: 0.28, sheenColor: new THREE.Color('#dff1f5'), clearcoat: 0.25, clearcoatRoughness: 0.3 }),
-      { spacing: 0.0006, depth: 0.45, streak: 0.08 },
+      new THREE.MeshPhysicalMaterial({
+        color: c, vertexColors: true, roughness: 0.46, sheen: 0.7, sheenRoughness: 0.35, sheenColor: new THREE.Color('#e9eff1'), clearcoat: 0.1, clearcoatRoughness: 0.4,
+        ...(sheer ? { transparent: true, opacity: 0.38, depthWrite: false } : {}),
+      }),
+      { spacing: 0.0006, depth: 0.4, streak: 0.06 },
     )
   }
   if (kind === 'fascia' || kind === 'sheath' || kind === 'bursa') {
     return new THREE.MeshPhysicalMaterial({ color: '#e4e1d8', vertexColors: true, roughness: 0.4, transparent: true, opacity: 0.35, depthWrite: false, sheen: 0.6, sheenColor: new THREE.Color('#ffffff') })
   }
   if (kind === 'eye') {
-    if (/cornea/i.test(name)) return new THREE.MeshPhysicalMaterial({ color: '#ffffff', roughness: 0.02, transmission: 0.95, thickness: 0.0006, ior: 1.376, transparent: true, opacity: 0.25, clearcoat: 1, depthWrite: false })
-    if (/iris/i.test(name)) return new THREE.MeshPhysicalMaterial({ color: '#5a3a26', roughness: 0.55, vertexColors: true })
-    return new THREE.MeshPhysicalMaterial({ color: '#efe9e1', roughness: 0.22, clearcoat: 1, clearcoatRoughness: 0.08, vertexColors: true })
+    // Anatomical, not glossy: no highlight dot. The cornea is a faint clear layer; the sclera soft off-white and matte.
+    if (/cornea/i.test(name)) return new THREE.MeshPhysicalMaterial({ color: '#ffffff', roughness: 0.6, transparent: true, opacity: 0.06, depthWrite: false })
+    // The back of the eye (retina), seen through the pupil: dark.
+    if (/retina/i.test(name)) return new THREE.MeshPhysicalMaterial({ color: '#160d0b', roughness: 0.9, side: THREE.DoubleSide })
+    if (/iris/i.test(name)) return new THREE.MeshPhysicalMaterial({ color: '#5e4a3c', roughness: 0.8, vertexColors: true })
+    return new THREE.MeshPhysicalMaterial({ color: '#e3dacd', roughness: 0.72, vertexColors: true })
   }
-  // Hyaline cartilage: pale blue-white, slightly glossy.
-  return new THREE.MeshPhysicalMaterial({ color: '#d7dde2', roughness: 0.38, clearcoat: 0.3, sheen: 0.3, vertexColors: true })
+  // Hyaline cartilage (nose, ribs): pale ivory-grey, slightly translucent and glassy.
+  return cartilageMaterial()
+}
+
+/** Hyaline cartilage (nose, costal cartilages): pale ivory-grey, slightly translucent and glassy. */
+export function cartilageMaterial(): THREE.MeshPhysicalMaterial {
+  return new THREE.MeshPhysicalMaterial({ color: '#d6d0c4', roughness: 0.32, clearcoat: 0.55, clearcoatRoughness: 0.25, sheen: 0.35, sheenColor: new THREE.Color('#f4efe6'), transparent: true, opacity: 0.88 })
+}
+
+/** A soft round shadow on the ground under the model (a radial gradient, no shadow maps: cheap on phones). */
+export function groundShadow(radius = 0.45): THREE.Mesh {
+  const c = document.createElement('canvas')
+  c.width = c.height = 128
+  const g = c.getContext('2d')!
+  const grad = g.createRadialGradient(64, 64, 0, 64, 64, 64)
+  grad.addColorStop(0, 'rgba(0,0,0,0.55)')
+  grad.addColorStop(0.5, 'rgba(0,0,0,0.22)')
+  grad.addColorStop(1, 'rgba(0,0,0,0)')
+  g.fillStyle = grad
+  g.fillRect(0, 0, 128, 128)
+  const m = new THREE.Mesh(new THREE.PlaneGeometry(radius * 2, radius * 1.2), new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(c), transparent: true, depthWrite: false }))
+  m.rotation.x = -Math.PI / 2
+  m.position.y = 0.001
+  m.renderOrder = -1
+  return m
 }
 
 /**
@@ -112,14 +143,16 @@ export function tissueMaterial(kind: TissueKind, name: string): THREE.Material {
  * light always sits behind the model whichever way it is turned.
  */
 export function anatomyLights(): THREE.Object3D[] {
-  const key = new THREE.DirectionalLight('#fff4ea', 2.6)
-  key.position.set(1.0, 1.4, 1.0)
-  const fill = new THREE.DirectionalLight('#cfe0ff', 0.75)
-  fill.position.set(-1.6, 0.2, 0.6)
-  const rim = new THREE.DirectionalLight('#46e0d0', 1.6)
-  rim.position.set(-1.0, 0.8, -1.6)
-  const rim2 = new THREE.DirectionalLight('#46e0d0', 0.9)
-  rim2.position.set(1.4, 0.3, -1.6)
-  const amb = new THREE.HemisphereLight('#f2ece6', '#1b1414', 0.35)
-  return [key, fill, rim, rim2, amb]
+  // Soft key from the upper front-left, gentle fill from the right, a subtle cyan rim from behind, ambient for overall
+  // brightness. (Camera-relative: x right, y up, z towards the viewer.)
+  const key = new THREE.DirectionalLight('#fff6ee', 2.4)
+  key.position.set(-1.1, 1.5, 1.2)
+  const fill = new THREE.DirectionalLight('#e6eeff', 1.0)
+  fill.position.set(1.6, 0.3, 0.8)
+  const rim = new THREE.DirectionalLight('#46e0d0', 0.7)
+  rim.position.set(0.3, 0.9, -1.6)
+  const front = new THREE.DirectionalLight('#ffffff', 0.45)
+  front.position.set(0, 0.2, 1.6)
+  const amb = new THREE.HemisphereLight('#f6f0ea', '#2a2020', 0.75)
+  return [key, fill, rim, front, amb]
 }

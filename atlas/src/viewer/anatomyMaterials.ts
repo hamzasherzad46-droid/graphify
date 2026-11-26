@@ -11,8 +11,8 @@ import * as THREE from 'three'
 
 export type TissueKind = 'muscle' | 'tendon' | 'aponeurosis' | 'fascia' | 'sheath' | 'bursa' | 'ligament' | 'eye' | 'cartilage'
 
-const MUSCLE = new THREE.Color('#7c2a22')
-const TENDON = new THREE.Color('#cdc3b6') // pearly off-white: close enough to muscle in tone that it never reads as white paint
+const MUSCLE = new THREE.Color('#b1463b') // studio muscle red: lighter and warmer, shapes read in soft light
+const TENDON = new THREE.Color('#dcc9c0') // soft pinkish-white: pale but close in tone to the muscle, never white paint
 
 /** A stable small number from a name, for per-muscle colour variation. */
 function hash(s: string): number {
@@ -82,7 +82,7 @@ export function tissueMaterial(kind: TissueKind, name: string): THREE.Material {
   if (kind === 'muscle') {
     const c = MUSCLE.clone().offsetHSL((h - 0.5) * 0.02, (h - 0.5) * 0.08, (h - 0.5) * 0.05)
     return withFibres(
-      new THREE.MeshPhysicalMaterial({ color: c, vertexColors: true, roughness: 0.5, sheen: 0.65, sheenRoughness: 0.42, sheenColor: new THREE.Color('#eba79b'), clearcoat: 0.14, clearcoatRoughness: 0.45 }),
+      new THREE.MeshPhysicalMaterial({ color: c, vertexColors: true, roughness: 0.5, sheen: 0.65, sheenRoughness: 0.42, sheenColor: new THREE.Color('#f2b6aa'), clearcoat: 0.14, clearcoatRoughness: 0.45 }),
       { spacing: 0.0011, depth: 0.32, streak: 0.12 },
     )
   }
@@ -93,7 +93,7 @@ export function tissueMaterial(kind: TissueKind, name: string): THREE.Material {
     const sheer = /epicranial|retinacul|transverse_metacarpal/i.test(name)
     return withFibres(
       new THREE.MeshPhysicalMaterial({
-        color: c, vertexColors: true, roughness: 0.46, sheen: 0.7, sheenRoughness: 0.35, sheenColor: new THREE.Color('#e9eff1'), clearcoat: 0.1, clearcoatRoughness: 0.4,
+        color: c, vertexColors: true, roughness: 0.46, sheen: 0.7, sheenRoughness: 0.35, sheenColor: new THREE.Color('#f6eeea'), clearcoat: 0.1, clearcoatRoughness: 0.4,
         ...(sheer ? { transparent: true, opacity: 0.38, depthWrite: false } : {}),
       }),
       { spacing: 0.0006, depth: 0.4, streak: 0.06 },
@@ -142,17 +142,58 @@ export function groundShadow(radius = 0.45): THREE.Mesh {
  * Positions are relative to the camera (add the directional lights to the camera, pointing down its -Z), so the rim
  * light always sits behind the model whichever way it is turned.
  */
+/** Bone for the studio look: warm cream ivory. */
+export function studioBoneMaterial(): THREE.MeshStandardMaterial {
+  return new THREE.MeshStandardMaterial({ color: '#d8c59c', roughness: 0.7 })
+}
+
+/**
+ * Studio backdrop: a blue-grey gradient behind the model and a softly lit floor that fades into it, with a soft
+ * contact shadow under the feet. Returns the background texture (for scene.background) and the floor.
+ */
+export function studioBackdrop(): { background: THREE.Texture; floor: THREE.Object3D } {
+  const c = document.createElement('canvas')
+  c.width = 4
+  c.height = 256
+  const g = c.getContext('2d')!
+  const grad = g.createLinearGradient(0, 0, 0, 256)
+  grad.addColorStop(0, '#2b3442')
+  grad.addColorStop(0.55, '#3d4859')
+  grad.addColorStop(1, '#4a5a6f')
+  g.fillStyle = grad
+  g.fillRect(0, 0, 4, 256)
+  const background = new THREE.CanvasTexture(c)
+  background.colorSpace = THREE.SRGBColorSpace
+  const f = document.createElement('canvas')
+  f.width = f.height = 256
+  const fg = f.getContext('2d')!
+  const fr = fg.createRadialGradient(128, 128, 0, 128, 128, 128)
+  fr.addColorStop(0, 'rgba(120,140,165,0.55)')
+  fr.addColorStop(0.6, 'rgba(95,112,135,0.3)')
+  fr.addColorStop(1, 'rgba(70,85,105,0)')
+  fg.fillStyle = fr
+  fg.fillRect(0, 0, 256, 256)
+  const tex = new THREE.CanvasTexture(f)
+  tex.colorSpace = THREE.SRGBColorSpace
+  const floor = new THREE.Group()
+  const disc = new THREE.Mesh(new THREE.PlaneGeometry(4, 4), new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false }))
+  disc.rotation.x = -Math.PI / 2
+  floor.add(disc, groundShadow(0.42))
+  return { background, floor }
+}
+
 export function anatomyLights(): THREE.Object3D[] {
-  // Soft key from the upper front-left, gentle fill from the right, a subtle cyan rim from behind, ambient for overall
-  // brightness. (Camera-relative: x right, y up, z towards the viewer.)
-  const key = new THREE.DirectionalLight('#fff6ee', 2.4)
-  key.position.set(-1.1, 1.5, 1.2)
-  const fill = new THREE.DirectionalLight('#e6eeff', 1.0)
-  fill.position.set(1.6, 0.3, 0.8)
-  const rim = new THREE.DirectionalLight('#46e0d0', 0.7)
+  // Soft, bright studio light: a broad key from the upper front-left, a gentle fill from the right, a low front light
+  // to open the shadows, a faint cyan rim from behind, and sky/floor ambient. (Camera-relative: x right, y up, z
+  // towards the viewer.)
+  const key = new THREE.DirectionalLight('#fff4ec', 2.7)
+  key.position.set(-1.2, 1.6, 1.3)
+  const fill = new THREE.DirectionalLight('#e8eefc', 1.1)
+  fill.position.set(1.6, 0.4, 0.9)
+  const front = new THREE.DirectionalLight('#ffffff', 0.6)
+  front.position.set(0, 0.1, 1.6)
+  const rim = new THREE.DirectionalLight('#7fe6dc', 0.35)
   rim.position.set(0.3, 0.9, -1.6)
-  const front = new THREE.DirectionalLight('#ffffff', 0.45)
-  front.position.set(0, 0.2, 1.6)
-  const amb = new THREE.HemisphereLight('#f6f0ea', '#2a2020', 0.75)
-  return [key, fill, rim, front, amb]
+  const amb = new THREE.HemisphereLight('#f4f2f0', '#55606f', 0.62)
+  return [key, fill, front, rim, amb]
 }

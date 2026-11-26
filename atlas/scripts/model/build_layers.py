@@ -151,6 +151,15 @@ def shrink_wrap(S, tris, inner, gap, parts, B, regions, rounds=8):
             step -= (step * N).sum(1, keepdims=True) * N  # sideways only
             S2 = np.where(move[:, None], S2 + 0.5 * step, S2)
     S2 = project(S2)
+    # The face keeps its own shape (lips, eyelids, nostrils): its move onto the tissue is smoothed strongly across the
+    # head, so the face as a whole sits on the tissue while its small features keep their form.
+    head = parts == 'head'
+    if head.any():
+        D = S2 - S
+        hidx = np.where(head & move)[0]
+        for _ in range(40):
+            D[hidx] = 0.5 * D[hidx] + 0.5 * np.array([D[nb[i]].mean(0) if len(nb[i]) else D[i] for i in hidx])
+        S2 = np.where((head & move)[:, None], S + D, S2)
     # Points that stayed (the ears, which have no tissue under them in the source, and the mouth's inside) move with
     # the skin around them, so they stay attached: their offset is the smooth continuation of their neighbours'.
     if (~move).any():
@@ -254,7 +263,8 @@ def main(work):
     d = np.load(f'{work}/skin-male.npz')
     S, tris = d['pos'], d['tris'].astype(np.int64)
     fitted = [n for n in mus if not any(k in n.lower() for k in INTERIOR)]
-    inner = merged([mus[n] for n in fitted] + [(v, f) for v, f, k in extra.values()] + [(BV, BF)])
+    # The eyelids rest on the eye: the eyes are not tissue the skin must cover (the nose cartilages are).
+    inner = merged([mus[n] for n in fitted] + [(v, f) for v, f, k in extra.values() if k != 'eye'] + [(BV, BF)])
     head_y = B['mandible'][0][:, 1].min() - 0.02
     ankle_y = max(B['talus_left'][0][:, 1].max(), B['talus_right'][0][:, 1].max()) + 0.02
     wrist_y = max(B['capitate_left'][0][:, 1].max(), B['capitate_right'][0][:, 1].max()) + 0.01

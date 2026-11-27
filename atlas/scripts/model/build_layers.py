@@ -235,6 +235,15 @@ def main(work):
     # The Z-Anatomy muscles unchanged (aligned and simplified only). Where they meet bone (attachments) they dip into
     # it, as modelled in the source; that part is hidden inside the opaque bone.
     mus = {n: (v + off, f) for n, (v, f) in raw.items()}
+    mus1 = mus
+    import os
+    if os.path.exists(f'{work}/remeshed-male.npz'):
+        # The rebuilt muscles (remesh.py): clean, smooth surfaces checked against the originals; two levels of detail.
+        r = np.load(f'{work}/remeshed-male.npz')
+        rn = list(r['names'])
+        mus = {n: (r[f'v{i}'], r[f'f{i}'].astype(np.int64)) for i, n in enumerate(rn)}
+        mus1 = {n: (r[f'v1_{i}'], r[f'f1_{i}'].astype(np.int64)) for i, n in enumerate(rn)}
+        log('using the rebuilt muscles (remeshed-male.npz): two levels of detail')
     inside0 = int((igl.fast_winding_number(BV, BF, np.vstack([v for v, f in mus.values()])) > 0.5).sum())
     log(f'{len(mus)} muscle meshes, unchanged from Z-Anatomy; {inside0} of their points lie inside bone (attachments)')
     extra = {}
@@ -264,7 +273,7 @@ def main(work):
     S, tris = d['pos'], d['tris'].astype(np.int64)
     fitted = [n for n in mus if not any(k in n.lower() for k in INTERIOR)]
     # The eyelids rest on the eye: the eyes are not tissue the skin must cover (the nose cartilages are).
-    inner = merged([mus[n] for n in fitted] + [(v, f) for v, f, k in extra.values() if k != 'eye'] + [(BV, BF)])
+    inner = merged([mus1[n] for n in fitted] + [(v, f) for v, f, k in extra.values() if k != 'eye'] + [(BV, BF)])
     head_y = B['mandible'][0][:, 1].min() - 0.02
     ankle_y = max(B['talus_left'][0][:, 1].max(), B['talus_right'][0][:, 1].max()) + 0.02
     wrist_y = max(B['capitate_left'][0][:, 1].max(), B['capitate_right'][0][:, 1].max()) + 0.01
@@ -279,19 +288,26 @@ def main(work):
     log(f'skin shrink-wrapped: enclosure rounds {[r[0] for r in rep]}; skin to the surface under it: median {np.median(gapd) * 1000:.1f} mm, '
         f'95% within {np.quantile(gapd, 0.95) * 1000:.1f} mm, max {gapd.max() * 1000:.1f} mm')
 
-    # Ambient occlusion (creases between muscles darken) and fibre directions.
-    allv, allf = merged([mus[n] for n in mus] + [(v, f) for v, f, k in extra.values()] + [(BV, BF)])
+    # Ambient occlusion (creases between muscles darken), baked on the lighter level of detail and carried to the
+    # detailed one (nearest point); fibre directions on each level.
+    allv, allf = merged([mus1[n] for n in mus1] + [(v, f) for v, f, k in extra.values()] + [(BV, BF)])
     names = list(mus) + list(extra)
-    hits = visible_counts(S2, tris, {n: mus[n] for n in mus if layers.kind_of(n) != 'fascia'})
+    hits = visible_counts(S2, tris, {n: mus1[n] for n in mus1 if layers.kind_of(n) != 'fascia'})
     out = {'names': np.array(names), 'skin_pos': S2, 'skin_uv': d['uv'], 'skin_tris': d['tris'], 'skin_ttex': d['ttex'],
            'hits': np.array([hits.get(n, 0) for n in names])}
     for i, n in enumerate(names):
         v, f = mus[n] if n in mus else extra[n][:2]
-        N = fit.vertex_normals(v, f.astype(np.int64))
-        ao = igl.ambient_occlusion(allv, allf, v + N * 0.0004, N, 48)
-        out[f'v{i}'], out[f'f{i}'], out[f'ao{i}'] = v, f, (1 - ao).astype(np.float32)
-        out[f'fib{i}'] = harmonic_fibres(v, f).astype(np.float32) if n in mus else np.zeros_like(v, dtype=np.float32)
-        out[f'kind{i}'] = np.array(layers.kind_of(n) if n in mus else extra[n][2])
+        v1, f1 = mus1[n] if n in mus1 else extra[n][:2]
+        f, f1 = f.astype(np.int64), f1.astype(np.int64)
+        N1 = fit.vertex_normals(v1, f1)
+        ao1 = (1 - igl.ambient_occlusion(allv, allf, v1 + N1 * 0.0004, N1, 48)).astype(np.float32)
+        ao = ao1[cKDTree(v1).query(v)[1]]
+        out[f'v{i}'], out[f'f{i}'], out[f'ao{i}'] = v, f, ao
+        out[f'v1_{i}'], out[f'f1_{i}'], out[f'ao1_{i}'] = v1, f1, ao1
+        ism = n in mus
+        out[f'fib{i}'] = harmonic_fibres(v, f).astype(np.float32) if ism else np.zeros_like(v, dtype=np.float32)
+        out[f'fib1_{i}'] = harmonic_fibres(v1, f1).astype(np.float32) if ism else np.zeros_like(v1, dtype=np.float32)
+        out[f'kind{i}'] = np.array(layers.kind_of(n) if ism else extra[n][2])
         if i % 100 == 0:
             log(f'   occlusion and fibres: {i}/{len(names)}')
     np.savez(f'{work}/layers-male.npz', **out)

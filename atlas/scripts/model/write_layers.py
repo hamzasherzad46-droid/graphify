@@ -2,7 +2,7 @@
 cartilage (extras {layer, kind, side, za}; baked occlusion as COLOR_0; fibre direction as _FIBRE), and the skin
 (extras {layer: 'skin', hidden: true}: shown only from the layer control).
 
-    python3 scripts/model/write_layers.py <work dir> <out.glb>
+    python3 scripts/model/write_layers.py <work dir> <out.glb> [lod: 0 detailed (default) | 1 phones]
 """
 import sys
 import numpy as np
@@ -13,7 +13,7 @@ from glb import write_glb, split_uv_seams
 EYE_BACK = 0.002  # m: a presentation choice (the Z-Anatomy eye is about 2 mm proud of where it reads naturally)
 
 
-def main(work, out):
+def main(work, out, lod=0):
     d = np.load(f'{work}/layers-male.npz')
     names = list(d['names'])
     vh = dict(zip(names, d['hits']))
@@ -23,7 +23,8 @@ def main(work, out):
         best[base(n)] = max(best.get(base(n), 0), int(vh.get(n, 0)))
     meshes, count = [], {}
     for i, n in enumerate(names):
-        v, f = d[f'v{i}'], d[f'f{i}'].astype(np.int64)
+        pre = '' if lod == 0 else '1_'
+        v, f = d[f'v{pre}{i}'], d[f'f{pre}{i}'].astype(np.int64)
         if str(d[f'kind{i}']) == 'eye':
             v = v - np.array([0, 0, EYE_BACK])  # eyes a little back in the orbits, framed by orbicularis oculi
         stored = str(d[f'kind{i}'])
@@ -32,10 +33,10 @@ def main(work, out):
         count[layer] = count.get(layer, 0) + 1
         # Occlusion: smoothed over the mesh (no speckle) and kept between 0.42 and 1, so creases darken but nothing
         # goes black (surfaces buried inside a neighbour would otherwise read as fully hidden).
-        ao = fit.smooth_field(d[f'ao{i}'][:, None].astype(np.float64), fit.neighbours(f, len(v)), 3)[:, 0]
+        ao = fit.smooth_field(d[f'ao{pre}{i}'][:, None].astype(np.float64), fit.neighbours(f, len(v)), 3)[:, 0]
         ao = 0.42 + 0.58 * np.clip(ao, 0, 1) ** 0.8
         meshes.append({'name': layers.atlas_id(n), 'pos': v, 'nrm': fit.vertex_normals(v, f), 'uv': None, 'idx': f,
-                       'color': ao, 'fibre': d[f'fib{i}'] if kind in ('muscle', 'tendon', 'aponeurosis', 'ligament') else None,
+                       'color': ao, 'fibre': d[f'fib{pre}{i}'] if kind in ('muscle', 'tendon', 'aponeurosis', 'ligament') else None,
                        'extras': {'layer': layer, 'kind': kind, 'side': layers.side_of(n), 'za': n}})
     # The retina (Z-Anatomy nervous system): the dark back of the eye that the pupil shows.
     off = layers.za_offset(f'{work}/zaskel', f'{work}/male')
@@ -53,4 +54,4 @@ def main(work, out):
 
 
 if __name__ == '__main__':
-    main(*sys.argv[1:3])
+    main(sys.argv[1], sys.argv[2], int(sys.argv[3]) if len(sys.argv) > 3 else 0)

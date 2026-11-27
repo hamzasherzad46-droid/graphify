@@ -117,7 +117,7 @@ node scripts/model/export-bones.mjs public/models/skeleton-male.glb /tmp/fit/mal
 python3 scripts/model/build_skin.py <makehuman data> /tmp/fit /tmp/fit                 # numpy, scipy, libigl
 ```
 
-## 3D model upgrade, step 2: the male layered model (`models-src/layers-male.glb`)
+## 3D model upgrade, step 2: the male layered model (`models-src/layers-male.glb`, `layers-male-phone.glb`)
 
 **Male only.** The female skeleton is partly derived from the male and no free female muscle set exists, so the
 female model shows the skeleton alone ("Female muscles coming soon" when layers ship) until real female anatomy is
@@ -164,7 +164,10 @@ node scripts/model/export-za.mjs /tmp/za/Resources/Models/FBX MuscularSystem100 
 node scripts/model/export-za.mjs /tmp/za/Resources/Models/FBX NervousSystem100 /tmp/fit/nervous
 python3 scripts/model/remesh.py /tmp/fit              # writes /tmp/fit/remeshed-male.npz and remesh-check.tsv
 python3 scripts/model/build_layers.py /tmp/fit        # /tmp/fit/mhd: the MakeHuman data, for the rig's body parts
-python3 scripts/model/write_layers.py /tmp/fit /tmp/fit/layers-male.glb
+python3 scripts/model/write_layers.py /tmp/fit /tmp/fit/layers-male.glb 0        # detailed level (tablets, desktop)
+python3 scripts/model/write_layers.py /tmp/fit /tmp/fit/layers-male-lod1.glb 1   # phone level
+npx gltf-transform draco /tmp/fit/layers-male.glb models-src/layers-male.glb
+npx gltf-transform draco /tmp/fit/layers-male-lod1.glb models-src/layers-male-phone.glb
 python3 scripts/model/verify_muscles.py /tmp/fit/muscles-male /tmp/fit/muscles-orig docs/muscle-check.tsv
 ```
 

@@ -239,12 +239,12 @@ def main(work):
     mus1 = mus
     source = 'unchanged from Z-Anatomy'
     if os.path.exists(f'{work}/remeshed-male.npz'):
-        # The rebuilt muscles (remesh.py): clean, smooth surfaces checked against the originals; two levels of detail.
+        # The muscles from remesh.py: smoothed, checked against the originals; two levels of detail.
         r = np.load(f'{work}/remeshed-male.npz')
         rn = list(r['names'])
         mus = {n: (r[f'v{i}'], r[f'f{i}'].astype(np.int64)) for i, n in enumerate(rn)}
         mus1 = {n: (r[f'v1_{i}'], r[f'f1_{i}'].astype(np.int64)) for i, n in enumerate(rn)}
-        source = 'rebuilt as smooth surfaces (remesh.py), within 1.2 mm of Z-Anatomy'
+        source = 'smoothed and simplified (remesh.py), within 1.2 mm of Z-Anatomy'
         log('using the rebuilt muscles (remeshed-male.npz): two levels of detail')
     inside0 = int((igl.fast_winding_number(BV, BF, np.vstack([v for v, f in mus.values()])) > 0.5).sum())
     log(f'{len(mus)} muscle meshes, {source}; {inside0} of their points lie inside bone (attachments)')

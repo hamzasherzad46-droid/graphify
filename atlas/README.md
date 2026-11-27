@@ -127,14 +127,15 @@ From **Z-Anatomy** (CC BY-SA 4.0), in the male skeleton's space (offset measured
 build stops if any bone disagrees by more than 1.5 mm):
 
 - **683 meshes of the muscular system**, left and right separate: muscles, tendons, aponeuroses, fasciae, retinacula,
-  tendon sheaths and bursae, including every intrinsic muscle of the hand and foot. **Rebuilt as clean, smooth
-  surfaces** (`scripts/model/remesh.py`): each closed mesh is voxelised at a size set by its own thickness (0.3–1 mm),
-  inside and outside decided exactly (generalised winding number), lightly blurred so edges are rounded rather than
-  stepped, surfaced with marching cubes and decimated; open sheets and any mesh the rebuild would move too far keep
-  their own triangles, gently smoothed (or not at all, for the few coarse sheets that smoothing would shrink). Every mesh is checked against the full-resolution original (95th percentile of
+  tendon sheaths and bursae, including every intrinsic muscle of the hand and foot. **Lightly smoothed and
+  simplified** (`scripts/model/remesh.py`), never reshaped: each mesh is smoothed (Taubin smoothing, which barely shrinks) and
+  decimated to a triangle budget proportional to its surface area; a few coarse sheets that smoothing would still shrink
+  keep their original triangles. A voxel rebuild (exact inside/outside, marching cubes) is tried for closed meshes but
+  kept only if it wears no hole through a thin part; only 15 small meshes keep it, since most muscles are sheets
+  thinner than the voxel would allow. Every mesh is checked against the full-resolution original (95th percentile of
   the two-sided surface distance: at most 1.2 mm for the detailed level, 1.5 mm for the phone level; more triangles
-  are given until it is; `docs/remesh-check.tsv`). Two levels: about 1.18 million triangles (tablets, desktop) and
-  about 479,000 (phones). Where muscles attach they dip into bone, as modelled in the source; that part is inside the
+  are given until it is; `docs/remesh-check.tsv`). Two levels: about 1.15 million triangles (tablets, desktop) and
+  about 478,000 (phones). Where muscles attach they dip into bone, as modelled in the source; that part is inside the
   opaque bone.
 - **Eyes** (sclera, cornea, iris; from the nervous system) and **nasal cartilages** (major alar, septal and its lateral
   processes). Z-Anatomy has no external ear, so the model has none.

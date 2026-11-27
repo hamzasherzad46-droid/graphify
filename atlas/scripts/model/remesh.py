@@ -1,4 +1,4 @@
-"""Rebuilds every Z-Anatomy muscle as a clean, smooth surface, true to the original.
+"""Smooths every Z-Anatomy muscle into a clean surface, true to the original, at two levels of detail.
 
     python3 scripts/model/remesh.py <work dir>
 
@@ -11,7 +11,8 @@ outside decided exactly (generalised winding number), lightly blurred so edges a
 surfaced (marching cubes), then decimated to a triangle budget proportional to the mesh's surface area. Open meshes
 (fasciae, sheaths: sheets) keep their original triangles, gently smoothed. Any rebuilt mesh that strays from its
 original by more than MAX_P95 (95th percentile of the two-sided surface distance) is replaced by the smoothed
-original, given more triangles until it is within the limit, or (coarse sheets that shrink when smoothed) kept as the
+original (as is any rebuild with a hole worn through a thin part: a sheet thinner than its voxel), given more
+triangles until it is within the limit, or (coarse sheets that shrink when smoothed) kept as the
 original itself, so the anatomy never changes.
 """
 import sys
@@ -30,6 +31,8 @@ LOD1_TRIS = 450_000
 MAX_P95 = 0.0012  # m (detailed level and rebuild acceptance)
 MAX_P95_LOD1 = 0.0015  # m (phone level)
 MIN_TRIS = 120
+HOLE_GAP = 0.0008  # m
+MAX_HOLE_POINTS = 3
 
 
 def area(v, f):
@@ -60,6 +63,22 @@ def p95_two_sided(a, b):
     da = np.sqrt(igl.point_mesh_squared_distance(a[0], b[0], b[1])[0])
     db = np.sqrt(igl.point_mesh_squared_distance(b[0], a[0], a[1])[0])
     return float(np.quantile(np.concatenate([da, db]), 0.95))
+
+
+def holes(orig, new):
+    """Points just inside the original that the new surface leaves outside, well away from it: holes worn through thin
+    sheets (a rim within HOLE_GAP of the original passes the distance check, so this looks for them directly)."""
+    v, f = orig
+    n = fit.vertex_normals(v, f)
+    P = np.vstack([v + n * d for d in (-0.0006, -0.0003, -0.00015, 0.00015, 0.0003, 0.0006)])  # either winding
+    P = P[igl.fast_winding_number(v, f, P) > 0.5]
+    if not len(P):
+        return 0
+    out = P[igl.fast_winding_number(new[0], new[1], P) < 0.5]
+    if not len(out):
+        return 0
+    far = np.sqrt(igl.point_mesh_squared_distance(out, new[0], new[1])[0]) > HOLE_GAP
+    return int(far.sum())
 
 
 def voxel_surface(v, f):
@@ -104,9 +123,11 @@ def work(args):
             v0, f0 = decimate(*s, budget0)
             v0 = taubin(v0, f0, 2)
             err = p95_two_sided((v0, f0), orig)
-            if err <= MAX_P95:
+            if err <= MAX_P95 and holes(orig, (v0, f0)) <= MAX_HOLE_POINTS:
                 method = 'rebuilt'
                 v1, f1 = decimate(v0, f0, budget1)
+                if holes(orig, (v1, f1)) > MAX_HOLE_POINTS:
+                    v1, f1 = decimate(taubin(v, f, 3), f, budget1)
                 return name, method, (v0, f0), (v1, f1), err, p95_two_sided((v1, f1), orig)
     v0 = taubin(v, f, 3)
     v0, f0 = decimate(v0, f, budget0)

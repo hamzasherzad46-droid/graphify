@@ -1,0 +1,684 @@
+za_name	method	lod0_p95_mm	lod1_p95_mm	lod0_tris	lod1_tris
+(Abdominal_part_of_pectoralis_major_muscle)l	rebuilt	1.148	1.462	1806	624
+(Abdominal_part_of_pectoralis_major_muscle)r	rebuilt	0.958	1.185	1806	998
+(Adductor_minimus)l	smoothed original	0.458	0.712	842	292
+(Adductor_minimus)r	smoothed original	0.455	0.719	842	292
+(Iliopectineal_bursa)l	rebuilt	1.001	1.324	180	62
+(Iliopectineal_bursa)r	smoothed original	0.285	0.681	180	62
+(Opponens_digiti_minimi_muscle_of_foot)l	smoothed original	0.615	0.917	120	60
+(Opponens_digiti_minimi_muscle_of_foot)r	smoothed original	0.603	0.945	120	60
+Abductor_digiti_minimi_of_footl	smoothed original	0.432	0.999	532	184
+Abductor_digiti_minimi_of_footr	smoothed original	0.439	0.877	532	184
+Abductor_digiti_minimi_of_handl	smoothed original	0.348	0.841	264	92
+Abductor_digiti_minimi_of_handr	smoothed original	0.433	1.204	264	92
+Abductor_hallucisl	smoothed original	0.365	0.655	682	236
+Abductor_hallucisr	smoothed original	0.352	0.709	682	236
+Abductor_pollicis_brevisl	smoothed original	0.539	1.438	228	78
+Abductor_pollicis_brevisr	smoothed original	0.506	1.109	228	78
+Abductor_pollicis_longusl	smoothed original	0.281	0.546	934	322
+Abductor_pollicis_longusr	smoothed original	0.298	0.603	934	322
+Acromial_part_of_deltoid_musclel	rebuilt	0.735	1.084	2634	912
+Acromial_part_of_deltoid_muscler	rebuilt	0.622	0.992	2634	912
+Adductor_brevisl	rebuilt	0.878	1.212	1942	672
+Adductor_brevisr	rebuilt	0.971	1.273	1944	672
+Adductor_longusl	rebuilt	0.840	1.259	3514	1216
+Adductor_longusr	rebuilt	0.789	1.129	3512	1216
+Adductor_magnusl	rebuilt	1.133	1.341	7838	4338
+Adductor_magnusr	smoothed original	0.314	0.502	7838	2712
+Anconeus_musclel	smoothed original	0.378	0.657	580	200
+Anconeus_muscler	smoothed original	0.396	0.742	580	200
+Anserine_bursal	smoothed original	0.227	0.431	134	58
+Anserine_bursar	rebuilt	1.088	1.088	132	132
+Antebrachial_fascial	smoothed original	0.260	0.393	4460	2745
+Antebrachial_fasciar	smoothed original	0.260	0.383	4460	2745
+Anterior_belly_of_digastric_musclel	rebuilt	1.070	1.070	118	118
+Anterior_belly_of_digastric_muscler	smoothed original	0.413	0.570	120	60
+Anterior_intermuscular_septum_of_legl	original	0.000	1.440	208	208
+Anterior_intermuscular_septum_of_legr	original	0.000	1.440	208	208
+Anterior_layer_of_thoracolumbar_fascial	original	0.000	0.000	176	176
+Anterior_layer_of_thoracolumbar_fasciar	original	0.000	0.000	176	176
+Ary-epiglottic_part_of_oblique_arytenoid_musclel	rebuilt	0.590	0.785	118	60
+Ary-epiglottic_part_of_oblique_arytenoid_muscler	rebuilt	0.640	0.969	118	58
+Ascending_part_of_trapezius_musclel	rebuilt	1.187	1.455	3992	2210
+Ascending_part_of_trapezius_muscler	rebuilt	1.035	0.466	3992	2210
+Bicipitoradial_bursal	rebuilt	0.568	0.836	120	60
+Bicipitoradial_bursar	rebuilt	0.576	0.851	120	60
+Brachial_fascial	smoothed original	0.242	0.365	3018	1876
+Brachial_fasciar	smoothed original	0.242	0.331	3018	1876
+Brachialis_musclel	rebuilt	0.783	1.159	3262	1128
+Brachialis_muscler	rebuilt	0.760	1.134	3264	1130
+Brachioradialis_musclel	rebuilt	0.867	1.317	3000	1038
+Brachioradialis_muscler	rebuilt	1.041	1.335	3000	1660
+Bucinatorl	smoothed original	0.404	0.848	202	70
+Bucinatorr	rebuilt	1.059	1.329	202	70
+Bursa_of_piriformis_musclel	rebuilt	0.443	0.744	118	60
+Bursa_of_piriformis_muscler	rebuilt	0.526	0.683	118	60
+Calcaneal_tendonl	smoothed original	0.320	0.594	1905	658
+Calcaneal_tendonr	smoothed original	0.322	0.623	1905	658
+Clavicular_head_of_pectoralis_major_musclel	rebuilt	0.978	0.712	2112	850
+Clavicular_head_of_pectoralis_major_muscler	rebuilt	1.083	0.712	2114	850
+Clavicular_part_of_deltoid_musclel	rebuilt	0.719	1.190	2530	876
+Clavicular_part_of_deltoid_muscler	rebuilt	0.729	1.100	2530	876
+Clavipectoral_fascial	smoothed original	0.844	0.844	1280	1280
+Clavipectoral_fasciar	smoothed original	0.844	0.844	1280	1280
+Coccygeus_musclel	smoothed original	0.473	0.993	368	126
+Coccygeus_muscler	smoothed original	0.455	1.056	368	126
+Common_flexor_tendon_sheathl	smoothed original	0.890	1.012	864	388
+Common_flexor_tendon_sheathr	smoothed original	0.287	0.754	1087	376
+Common_tendinous_ringl	rebuilt	0.520	0.709	120	60
+Common_tendinous_ringr	rebuilt	0.520	0.988	120	60
+Common_tendon_sheath_of_fibularis_musclesl	smoothed original	0.416	1.082	164	60
+Common_tendon_sheath_of_fibularis_musclesr	smoothed original	0.762	1.302	164	60
+Coracobrachial_bursal	smoothed original	0.402	0.594	122	60
+Coracobrachial_bursar	rebuilt	0.987	0.987	122	122
+Coracobrachialis_musclel	rebuilt	0.981	1.360	1036	572
+Coracobrachialis_muscler	rebuilt	1.107	1.374	1034	572
+Corrugator_superciliil	smoothed original	0.440	1.048	120	60
+Corrugator_superciliir	smoothed original	0.420	0.787	120	60
+Cruciform_part_of_fibrous_sheath_of_digit_of_handl	smoothed original	1.190	1.190	286	286
+Cruciform_part_of_fibrous_sheath_of_digit_of_handr	smoothed original	1.134	1.134	286	286
+Crural_fascial	smoothed original	0.320	0.418	10875	6122
+Crural_fasciar	smoothed original	0.320	0.402	10875	6122
+Deep_head_of_flexor_pollicis_brevisl	smoothed original	0.438	0.893	290	100
+Deep_head_of_flexor_pollicis_brevisr	smoothed original	0.416	0.778	290	100
+Deep_head_of_pronator_teresl	smoothed original	0.358	0.867	444	154
+Deep_head_of_pronator_teresr	rebuilt	1.149	1.442	444	246
+Deep_infrapatellar_bursal	rebuilt	0.857	1.168	120	60
+Deep_infrapatellar_bursar	rebuilt	0.938	1.192	118	60
+Deep_part_of_masseterl	rebuilt	1.139	1.459	392	134
+Deep_part_of_masseterr	smoothed original	0.350	0.726	394	134
+Deltoid_fascial	smoothed original	0.385	0.533	3541	1766
+Deltoid_fasciar	smoothed original	0.385	0.515	3541	1766
+Depressor_anguli_orisl	smoothed original	0.644	0.676	212	192
+Depressor_anguli_orisr	smoothed original	0.610	0.758	212	192
+Depressor_labii_inferiorisl	smoothed original	0.471	1.465	206	70
+Depressor_labii_inferiorisr	smoothed original	0.445	0.828	206	68
+Depressor_septi_nasil	rebuilt	0.817	0.817	118	118
+Depressor_septi_nasir	rebuilt	1.112	1.223	120	60
+Descending_part_of_trapezius_musclel	rebuilt	0.844	1.034	6340	3510
+Descending_part_of_trapezius_muscler	rebuilt	0.872	1.338	6342	2194
+Diaphragm	smoothed original	0.067	0.240	33996	11768
+Diaphragmatic_fascia	smoothed original	0.304	0.304	4708	4708
+Dorsal_fascia_of_handl	smoothed original	0.767	0.966	1445	746
+Dorsal_fascia_of_handr	smoothed original	0.767	0.906	1445	746
+Dorsal_interossei_muscles_of_footl	smoothed original	0.617	1.077	622	338
+Dorsal_interossei_muscles_of_footr	smoothed original	0.667	0.940	622	340
+Dorsal_interossei_muscles_of_handl	smoothed original	0.616	1.337	640	220
+Dorsal_interossei_muscles_of_handr	smoothed original	0.588	1.403	640	220
+Dorsal_parts_of_lateral_intertransversarii_lumborum_musclesl	smoothed original	1.028	1.212	610	336
+Dorsal_parts_of_lateral_intertransversarii_lumborum_musclesr	smoothed original	1.005	1.201	610	336
+Epicranial_aponeurosisl	rebuilt	1.194	1.440	4564	2524
+Epicranial_aponeurosisr	rebuilt	1.052	1.357	4562	1578
+Extensor_carpi_radialis_brevisl	smoothed original	0.284	0.620	1326	458
+Extensor_carpi_radialis_brevisr	smoothed original	0.281	0.588	1326	458
+Extensor_carpi_radialis_longusl	smoothed original	0.261	0.487	1526	528
+Extensor_carpi_radialis_longusr	smoothed original	0.252	0.496	1526	528
+Extensor_digiti_minimil	smoothed original	0.290	0.654	884	306
+Extensor_digiti_minimir	smoothed original	0.290	0.584	884	306
+Extensor_digitorum_brevisl	smoothed original	0.372	0.825	1260	436
+Extensor_digitorum_brevisr	smoothed original	0.377	0.711	1260	436
+Extensor_digitorum_longusl	smoothed original	0.338	0.850	1767	610
+Extensor_digitorum_longusr	smoothed original	0.339	0.809	1767	611
+Extensor_digitoruml	smoothed original	0.269	0.532	2464	852
+Extensor_digitorumr	smoothed original	0.279	0.523	2464	852
+Extensor_hallucis_brevisl	smoothed original	0.453	0.903	428	146
+Extensor_hallucis_brevisr	smoothed original	0.471	0.924	426	148
+Extensor_hallucis_longusl	smoothed original	0.341	0.601	940	324
+Extensor_hallucis_longusr	smoothed original	0.344	0.612	940	324
+Extensor_indicisl	smoothed original	0.331	0.961	438	152
+Extensor_indicisr	smoothed original	0.335	0.746	438	152
+Extensor_pollicis_brevisl	smoothed original	0.423	0.962	436	150
+Extensor_pollicis_brevisr	smoothed original	0.444	0.844	436	150
+Extensor_pollicis_longusl	smoothed original	0.351	0.747	608	210
+Extensor_pollicis_longusr	smoothed original	0.333	0.690	608	210
+Extensor_retinaculum_of_wristl	rebuilt	1.057	1.428	526	288
+Extensor_retinaculum_of_wristr	rebuilt	1.016	1.470	526	288
+External_abdominal_oblique_musclel	rebuilt	0.755	1.270	21026	7278
+External_abdominal_oblique_muscler	rebuilt	0.714	1.044	21026	7278
+External_anal_sphincterl	smoothed original	0.491	0.775	120	60
+External_anal_sphincterr	rebuilt	0.942	1.265	120	60
+External_intercostal_musclesl	smoothed original	0.561	0.937	15108	5228
+External_intercostal_musclesr	smoothed original	0.547	0.968	15109	5230
+External_part_of_thyro-arytenoid_musclel	rebuilt	0.886	0.980	118	60
+External_part_of_thyro-arytenoid_muscler	rebuilt	0.759	1.313	118	60
+Fascia_latal	smoothed original	0.337	0.421	12907	8097
+Fascia_latar	smoothed original	0.337	0.423	12907	8097
+Fibularis_brevis_musclel	smoothed original	0.253	0.538	1384	478
+Fibularis_brevis_muscler	smoothed original	0.247	0.518	1384	478
+Fibularis_longus_musclel	smoothed original	0.290	0.638	2498	864
+Fibularis_longus_muscler	smoothed original	0.284	0.651	2498	864
+Fibularis_tertius_musclel	smoothed original	0.524	0.574	240	192
+Fibularis_tertius_muscler	smoothed original	0.609	1.017	240	84
+Flexor_carpi_radialisl	rebuilt	1.084	1.301	1524	844
+Flexor_carpi_radialisr	rebuilt	1.194	0.370	1524	844
+Flexor_digiti_minimi_of_footl	smoothed original	0.606	1.460	190	66
+Flexor_digiti_minimi_of_footr	smoothed original	0.577	0.862	190	66
+Flexor_digiti_minimi_of_handl	smoothed original	0.531	0.713	120	60
+Flexor_digiti_minimi_of_handr	smoothed original	0.566	0.957	120	60
+Flexor_digitorum_brevisl	smoothed original	0.364	0.829	1348	466
+Flexor_digitorum_brevisr	smoothed original	0.359	0.797	1348	466
+Flexor_digitorum_longusl	smoothed original	0.311	0.725	2820	976
+Flexor_digitorum_longusr	smoothed original	0.304	0.661	2820	976
+Flexor_digitorum_profundusl	smoothed original	0.325	0.703	2880	996
+Flexor_digitorum_profundusr	smoothed original	0.316	0.693	2880	996
+Flexor_hallucis_longusl	smoothed original	0.270	0.567	2478	858
+Flexor_hallucis_longusr	smoothed original	0.270	0.512	2478	858
+Flexor_pollicis_longusl	smoothed original	0.328	0.886	764	264
+Flexor_pollicis_longusr	smoothed original	0.355	1.035	764	264
+Flexor_retinaculum_of_anklel	rebuilt	0.777	1.017	690	238
+Flexor_retinaculum_of_ankler	rebuilt	1.062	1.463	690	380
+Flexor_retinaculum_of_wristl	rebuilt	1.030	1.335	668	370
+Flexor_retinaculum_of_wristr	rebuilt	0.905	1.337	670	370
+Frontalis_musclel	smoothed original	0.317	0.707	1310	452
+Frontalis_muscler	rebuilt	0.910	1.449	1310	452
+Genioglossus_musclel	rebuilt	0.708	1.013	410	142
+Genioglossus_muscler	rebuilt	0.703	1.026	410	142
+Geniohyoid_musclel	smoothed original	0.439	0.749	118	60
+Geniohyoid_muscler	smoothed original	0.543	0.703	118	60
+Gluteus_maximus_musclel	rebuilt	0.766	1.307	8250	2854
+Gluteus_maximus_muscler	rebuilt	0.714	1.207	8250	2854
+Gluteus_medius_musclel	rebuilt	0.663	0.856	4512	1560
+Gluteus_medius_muscler	rebuilt	0.691	0.879	4512	1560
+Gluteus_minimus_musclel	rebuilt	1.082	1.249	2502	864
+Gluteus_minimus_muscler	rebuilt	1.011	1.323	2502	864
+Gracilis_musclel	rebuilt	0.839	1.255	4494	1556
+Gracilis_muscler	rebuilt	0.827	1.193	4494	1556
+Humeral_head_of_extensor_carpi_ulnarisl	smoothed original	0.505	0.713	830	394
+Humeral_head_of_extensor_carpi_ulnarisr	smoothed original	0.505	0.639	830	394
+Humeral_head_of_flexor_carpi_ulnarisl	smoothed original	0.297	0.535	1634	564
+Humeral_head_of_flexor_carpi_ulnarisr	smoothed original	0.292	0.533	1634	564
+Humero-ulnar_head_of_flexor_digitorum_superficialisl	smoothed original	0.303	0.747	3014	1042
+Humero-ulnar_head_of_flexor_digitorum_superficialisr	smoothed original	0.305	0.669	3014	1042
+Hyoglossus_musclel	smoothed original	0.393	0.584	124	60
+Hyoglossus_muscler	rebuilt	0.919	1.154	124	60
+Iliacus_musclel	smoothed original	0.341	0.569	3908	1352
+Iliacus_muscler	smoothed original	0.338	0.601	3908	1352
+Iliococcygeus_musclel	smoothed original	0.402	0.705	710	246
+Iliococcygeus_muscler	smoothed original	0.403	0.753	712	246
+Iliocostalis_colli_muscle	smoothed original	0.458	1.089	784	270
+Iliocostalis_colli_muscler	smoothed original	0.464	0.976	784	270
+Iliocostalis_lumborum_musclel	smoothed original	0.350	0.643	3920	1356
+Iliocostalis_lumborum_muscler	smoothed original	0.345	0.649	3920	1356
+Iliocostalis_thoracis_musclel	rebuilt	1.178	1.438	2162	1196
+Iliocostalis_thoracis_muscler	rebuilt	1.037	1.337	2164	748
+Iliopectineal_archl	original	0.000	1.216	26	26
+Iliopectineal_archr	smoothed original	0.319	0.477	120	60
+Iliopsoas_fascial	smoothed original	0.976	1.050	1602	1409
+Iliopsoas_fasciar	smoothed original	0.976	1.044	1602	1408
+Iliotibial_tractl	rebuilt	0.896	1.184	10518	3640
+Iliotibial_tractr	rebuilt	0.664	0.816	10520	3640
+Inferior_extensor_retinaculum_of_anklel	smoothed original	0.632	0.776	316	114
+Inferior_extensor_retinaculum_of_ankler	rebuilt	1.160	0.690	334	192
+Inferior_fibular_retinaculuml	original	0.000	0.000	35	35
+Inferior_fibular_retinaculumr	original	0.000	0.000	35	35
+Inferior_gemellus_musclel	smoothed original	0.365	0.836	372	128
+Inferior_gemellus_muscler	smoothed original	0.343	1.201	372	128
+Inferior_head_of_lateral_pterygoid_musclel	smoothed original	0.582	0.946	120	60
+Inferior_head_of_lateral_pterygoid_muscler	smoothed original	0.610	0.973	120	60
+Inferior_oblique_musclel	smoothed original	0.390	0.816	120	60
+Inferior_oblique_muscler	smoothed original	0.358	0.691	120	60
+Inferior_pharyngeal_constrictorl	smoothed original	0.525	1.034	362	124
+Inferior_pharyngeal_constrictorr	rebuilt	1.070	1.203	362	198
+Inferior_rectus_musclel	smoothed original	0.452	0.953	120	60
+Inferior_rectus_muscler	smoothed original	0.354	0.790	120	60
+Inferior_subtendinous_bursa_of_biceps_femoris_musclel	rebuilt	0.752	1.004	118	60
+Inferior_subtendinous_bursa_of_biceps_femoris_muscler	rebuilt	0.816	1.164	120	60
+Inferior_tarsusl	rebuilt	1.076	1.076	118	118
+Inferior_tarsusr	rebuilt	1.094	1.494	118	60
+Infraspinatus_musclel	rebuilt	1.015	1.250	2802	1552
+Infraspinatus_muscler	rebuilt	1.053	1.372	2802	1552
+Inguinal_ligamentl	smoothed original	0.431	0.787	450	156
+Inguinal_ligamentr	smoothed original	0.440	0.987	450	156
+Innermost_intercostal_musclesl	smoothed original	0.563	0.984	12250	4238
+Innermost_intercostal_musclesr	smoothed original	0.563	1.016	12250	4238
+Intermediate_tendon_of_digastric_musclel	rebuilt	1.039	1.039	120	120
+Intermediate_tendon_of_digastric_muscler	rebuilt	1.085	1.258	118	60
+Intermuscular_gluteal_bursael	smoothed original	0.546	0.681	124	60
+Intermuscular_gluteal_bursaer	smoothed original	0.413	0.578	126	60
+Internal_abdominal_oblique_musclel	smoothed original	0.307	0.537	17086	5913
+Internal_abdominal_oblique_muscler	smoothed original	0.307	0.544	17086	5913
+Internal_intercostal_musclesl	smoothed original	0.634	1.032	13106	4536
+Internal_intercostal_musclesr	smoothed original	0.634	1.047	13106	4536
+Interspinales_colli_musclesl	smoothed original	1.014	1.014	120	120
+Interspinales_colli_musclesr	smoothed original	1.066	1.066	120	120
+Interspinales_lumborum_musclesl	smoothed original	1.067	1.105	206	192
+Interspinales_lumborum_musclesr	smoothed original	0.872	0.940	206	192
+Interspinales_thoracis_musclesl	smoothed original	0.657	0.882	120	60
+Interspinales_thoracis_musclesr	rebuilt	1.163	1.163	120	120
+Intertubercular_tendon_sheathl	smoothed original	0.696	1.104	118	60
+Intertubercular_tendon_sheathr	rebuilt	1.024	1.480	120	60
+Investing_abdominal_fascial	smoothed original	0.256	0.308	11106	7238
+Investing_abdominal_fasciar	smoothed original	0.256	0.305	11106	7238
+Lateral_crico-arytenoid_musclel	smoothed original	0.163	0.335	120	60
+Lateral_crico-arytenoid_muscler	smoothed original	0.183	0.287	120	60
+Lateral_femoral_intermuscular_septuml	smoothed original	0.948	1.018	588	385
+Lateral_femoral_intermuscular_septumr	smoothed original	0.948	1.012	588	385
+Lateral_head_of_flexor_hallucis_brevisl	smoothed original	0.522	1.124	414	142
+Lateral_head_of_flexor_hallucis_brevisr	smoothed original	0.535	1.061	414	142
+Lateral_head_of_gastrocnemiusl	rebuilt	0.586	0.915	4576	1584
+Lateral_head_of_gastrocnemiusr	rebuilt	0.615	0.854	4578	1584
+Lateral_head_of_triceps_brachiil	rebuilt	0.755	1.119	3348	1158
+Lateral_head_of_triceps_brachiir	rebuilt	0.741	1.054	3346	1158
+Lateral_intermuscular_septum_of_arml	smoothed original	0.736	0.895	160	101
+Lateral_intermuscular_septum_of_armr	smoothed original	0.736	0.874	160	101
+Lateral_patellar_retinaculuml	smoothed original	0.489	0.625	148	60
+Lateral_patellar_retinaculumr	smoothed original	0.489	0.734	148	60
+Lateral_rectus_musclel	rebuilt	1.084	1.084	120	120
+Lateral_rectus_muscler	smoothed original	0.356	0.926	118	60
+Lateral_subtendinous_bursa_of_gastrocnemius_musclel	smoothed original	0.411	0.654	120	60
+Lateral_subtendinous_bursa_of_gastrocnemius_muscler	rebuilt	0.988	0.988	118	118
+Latissimus_dorsi_musclel	smoothed original	0.310	0.497	19482	6744
+Latissimus_dorsi_muscler	smoothed original	0.308	0.477	19482	6744
+Levator_anguli_orisl	smoothed original	0.375	1.117	120	60
+Levator_anguli_orisr	smoothed original	0.510	0.510	120	120
+Levator_labii_superiorisl	smoothed original	0.412	0.894	120	60
+Levator_labii_superiorisr	smoothed original	0.399	0.744	120	60
+Levator_nasolabialisl	rebuilt	0.820	1.212	118	58
+Levator_nasolabialisr	rebuilt	0.795	1.161	118	60
+Levator_palpebrae_superiorisl	smoothed original	0.404	0.876	188	64
+Levator_palpebrae_superiorisr	smoothed original	0.408	0.741	188	64
+Levator_scapulael	smoothed original	0.340	0.653	1176	406
+Levator_scapulaer	smoothed original	0.338	0.650	1176	406
+Levatores_breves_costaruml	smoothed original	0.619	1.174	1124	388
+Levatores_breves_costarumr	smoothed original	0.613	1.226	1124	388
+Levatores_longi_costaruml	smoothed original	0.399	0.867	2336	808
+Levatores_longi_costarumr	smoothed original	0.392	0.832	2336	808
+Linea_alba	rebuilt	0.604	1.008	2740	948
+Long_head_of_biceps_brachiil	rebuilt	0.946	1.311	2988	1654
+Long_head_of_biceps_brachiir	rebuilt	0.874	1.369	2986	1034
+Long_head_of_biceps_femorisl	rebuilt	0.616	0.902	6724	2326
+Long_head_of_biceps_femorisr	rebuilt	0.635	1.022	6722	2326
+Long_head_of_triceps_brachiil	rebuilt	0.649	1.078	3552	1230
+Long_head_of_triceps_brachiir	rebuilt	0.641	1.028	3552	1230
+Longissimus_capitis_musclel	smoothed original	0.514	1.181	610	210
+Longissimus_capitis_muscler	smoothed original	0.470	1.178	610	210
+Longissimus_colli_musclel	smoothed original	0.449	1.047	708	244
+Longissimus_colli_muscler	smoothed original	0.461	0.965	708	244
+Longissimus_thoracis_musclel	smoothed original	0.462	0.823	6078	2104
+Longissimus_thoracis_muscler	smoothed original	0.458	0.812	6078	2104
+Longus_capitis_musclel	smoothed original	0.333	0.975	450	154
+Longus_capitis_muscler	smoothed original	0.333	0.737	450	154
+Longus_colli_musclel	smoothed original	0.419	1.198	1380	478
+Longus_colli_muscler	rebuilt	1.187	0.679	1382	758
+Lumbrical_muscles_of_footl	smoothed original	0.552	1.207	200	68
+Lumbrical_muscles_of_footr	smoothed original	0.538	1.090	200	68
+Lumbrical_muscles_of_handl	smoothed original	0.564	1.294	572	198
+Lumbrical_muscles_of_handr	smoothed original	0.562	0.917	572	314
+Masseteric_fascial	smoothed original	0.506	0.705	382	132
+Masseteric_fasciar	smoothed original	0.506	0.834	382	131
+Medial_femoral_intermuscular_septuml	smoothed original	0.245	0.363	3347	1158
+Medial_femoral_intermuscular_septumr	smoothed original	0.235	0.357	3348	1159
+Medial_head_of_flexor_hallucis_brevisl	smoothed original	0.698	1.309	282	96
+Medial_head_of_flexor_hallucis_brevisr	smoothed original	0.647	1.451	282	96
+Medial_head_of_gastrocnemiusl	rebuilt	0.624	0.863	5718	1978
+Medial_head_of_gastrocnemiusr	rebuilt	0.651	1.060	5718	1978
+Medial_head_of_triceps_brachiil	rebuilt	0.810	1.293	2562	886
+Medial_head_of_triceps_brachiir	rebuilt	0.973	1.439	2562	886
+Medial_intermuscular_septum_of_arml	smoothed original	0.572	0.741	312	146
+Medial_intermuscular_septum_of_armr	smoothed original	0.572	0.822	312	145
+Medial_patellar_retinaculuml	smoothed original	0.366	0.788	172	58
+Medial_patellar_retinaculumr	smoothed original	0.366	0.756	172	58
+Medial_pterygoid_musclel	smoothed original	0.493	0.672	328	112
+Medial_pterygoid_muscler	smoothed original	0.543	0.992	328	112
+Medial_rectus_musclel	smoothed original	0.335	0.447	120	60
+Medial_rectus_muscler	smoothed original	0.299	0.619	120	60
+Medial_subtendinous_bursa_of_gastrocnemius_musclel	rebuilt	1.047	1.047	120	120
+Medial_subtendinous_bursa_of_gastrocnemius_muscler	rebuilt	0.817	0.949	120	60
+Mentalis_musclel	rebuilt	0.682	0.975	120	60
+Mentalis_muscler	rebuilt	1.069	1.355	120	60
+Middle_layer_of_thoracolumbar_fascial	original	0.000	0.000	160	160
+Middle_layer_of_thoracolumbar_fasciar	original	0.000	0.000	160	160
+Middle_pharyngeal_constrictorl	rebuilt	1.113	1.165	292	192
+Middle_pharyngeal_constrictorr	rebuilt	1.047	1.373	294	100
+Multifidus_colli_musclel	smoothed original	0.722	1.022	564	310
+Multifidus_colli_muscler	smoothed original	0.702	1.113	564	310
+Multifidus_lumborum_musclel	smoothed original	0.539	1.100	1082	374
+Multifidus_lumborum_muscler	smoothed original	0.549	1.259	1082	374
+Multifidus_thoracis_musclel	smoothed original	0.735	1.069	1792	988
+Multifidus_thoracis_muscler	smoothed original	0.707	1.464	1792	618
+Mylohyoid_musclel	smoothed original	0.569	1.123	252	86
+Mylohyoid_muscler	smoothed original	0.624	1.154	252	88
+Nasalis_musclel	smoothed original	0.467	1.299	156	56
+Nasalis_muscler	smoothed original	0.437	0.954	156	58
+Oblique_head_of_adductor_hallucisl	smoothed original	0.533	1.074	380	130
+Oblique_head_of_adductor_hallucisr	smoothed original	0.538	0.871	380	130
+Oblique_head_of_adductor_pollicisl	smoothed original	0.701	0.701	170	170
+Oblique_head_of_adductor_pollicisr	smoothed original	0.639	1.411	170	60
+Oblique_part_of_cricothyroid_musclel	rebuilt	0.647	0.647	120	120
+Oblique_part_of_cricothyroid_muscler	rebuilt	0.539	0.770	120	60
+Obliquus_inferior_capitis_musclel	smoothed original	0.358	0.912	194	66
+Obliquus_inferior_capitis_muscler	smoothed original	0.390	0.900	194	66
+Obliquus_superior_capitis_musclel	smoothed original	0.474	0.902	156	58
+Obliquus_superior_capitis_muscler	smoothed original	0.355	0.733	156	58
+Obturator_externusl	smoothed original	0.478	0.856	1010	350
+Obturator_externusr	smoothed original	0.453	0.904	1010	350
+Obturator_internusl	smoothed original	0.365	0.730	1464	506
+Obturator_internusr	rebuilt	1.187	0.527	1464	808
+Occipitalis_musclel	smoothed original	0.460	1.016	566	196
+Occipitalis_muscler	smoothed original	0.435	0.947	566	196
+Omohyoid_musclel	smoothed original	0.330	0.859	582	200
+Omohyoid_muscler	rebuilt	1.025	1.204	582	320
+Opponens_digiti_minimi_muscle_of_handl	smoothed original	0.545	1.310	172	58
+Opponens_digiti_minimi_muscle_of_handr	smoothed original	0.476	1.127	172	58
+Opponens_pollicis_musclel	smoothed original	0.637	1.141	144	60
+Opponens_pollicis_muscler	smoothed original	0.579	0.932	144	60
+Orbicularis_oris_musclel	smoothed original	0.480	1.106	404	140
+Orbicularis_oris_muscler	rebuilt	1.077	1.449	404	140
+Orbital_part_of_orbicularis_oculil	rebuilt	0.974	1.430	518	178
+Orbital_part_of_orbicularis_oculir	rebuilt	1.138	1.421	518	284
+Palatopharyngeus_musclel	smoothed original	0.384	0.901	332	114
+Palatopharyngeus_muscler	rebuilt	1.159	1.465	332	114
+Palmar_aponeurosisl	smoothed original	0.813	1.011	1284	642
+Palmar_aponeurosisr	smoothed original	0.813	1.006	1284	643
+Palmar_interossei_musclesl	smoothed original	0.519	0.784	120	60
+Palmar_interossei_musclesr	smoothed original	0.565	0.664	120	60
+Palmaris_longus_musclel	smoothed original	0.408	0.738	1796	622
+Palmaris_longus_muscler	smoothed original	0.406	0.736	1796	622
+Palpebral_part_of_orbicularis_oculil	smoothed original	0.493	1.339	176	60
+Palpebral_part_of_orbicularis_oculir	smoothed original	0.591	0.591	176	176
+Pectineus_musclel	smoothed original	0.357	0.610	1816	628
+Pectineus_muscler	smoothed original	0.357	0.582	1816	628
+Pectoral_fascial	smoothed original	0.243	0.346	2709	1734
+Pectoral_fasciar	smoothed original	0.243	0.309	2709	1733
+Pectoralis_minor_musclel	smoothed original	0.422	0.765	1692	586
+Pectoralis_minor_muscler	smoothed original	0.433	0.721	1692	586
+Piriformis_fascial	smoothed original	0.407	0.584	925	444
+Piriformis_fasciar	smoothed original	0.407	0.600	925	444
+Piriformis_musclel	rebuilt	0.947	1.428	1262	436
+Piriformis_muscler	rebuilt	0.966	1.183	1262	696
+Plantar_aponeurosisl	smoothed original	0.770	0.935	406	243
+Plantar_aponeurosisr	smoothed original	0.770	0.970	406	242
+Plantar_interossei_musclesl	smoothed original	0.788	0.884	274	192
+Plantar_interossei_musclesr	smoothed original	0.680	1.005	274	192
+Plantar_tendon_sheath_of_fibularis_longus_musclel	rebuilt	1.128	1.258	120	60
+Plantar_tendon_sheath_of_fibularis_longus_muscler	rebuilt	1.003	1.277	118	60
+Plantaris_musclel	smoothed original	0.294	0.626	1918	664
+Plantaris_muscler	smoothed original	0.287	0.601	1918	664
+Platysmal	rebuilt	0.881	1.439	4018	1390
+Platysmar	rebuilt	0.657	0.961	4018	1390
+Popliteal_fascial	smoothed original	0.852	0.963	488	323
+Popliteal_fasciar	smoothed original	0.852	0.971	488	322
+Popliteus_musclel	rebuilt	0.900	1.383	994	344
+Popliteus_muscler	rebuilt	0.937	1.301	994	550
+Posterior_belly_of_digastric_musclel	smoothed original	0.447	0.709	272	94
+Posterior_belly_of_digastric_muscler	smoothed original	0.370	0.742	272	94
+Posterior_crico-arytenoid_musclel	rebuilt	0.685	0.853	120	60
+Posterior_crico-arytenoid_muscler	rebuilt	0.509	0.564	118	60
+Posterior_intermuscular_septum_of_legl	smoothed original	1.067	1.067	265	265
+Posterior_intermuscular_septum_of_legr	smoothed original	1.067	1.067	265	265
+Posterior_layer_of_thoracolumbar_fascial	original	0.000	0.000	313	313
+Posterior_layer_of_thoracolumbar_fasciar	original	0.000	0.000	313	313
+Procerus_musclel	smoothed original	0.476	1.067	136	60
+Procerus_muscler	smoothed original	0.449	0.861	136	60
+Pronator_quadratusl	smoothed original	0.413	0.661	594	204
+Pronator_quadratusr	smoothed original	0.378	0.668	594	204
+Psoas_majorl	rebuilt	1.193	0.594	4972	2752
+Psoas_majorr	rebuilt	1.080	1.278	4970	2752
+Pubo-analis_musclel	smoothed original	0.384	0.795	720	248
+Pubo-analis_muscler	smoothed original	0.362	0.649	720	248
+Pubococcygeus_musclel	smoothed original	0.323	0.677	884	306
+Pubococcygeus_muscler	smoothed original	0.332	0.669	884	306
+Pyramidalis_musclel	smoothed original	0.378	0.791	428	146
+Pyramidalis_muscler	smoothed original	0.393	0.654	428	146
+Quadratus_femoris_musclel	smoothed original	0.396	0.692	748	258
+Quadratus_femoris_muscler	smoothed original	0.428	0.800	748	258
+Quadratus_lumborum_musclel	rebuilt	0.974	1.212	2420	1340
+Quadratus_lumborum_muscler	rebuilt	0.948	1.395	2420	838
+Quadratus_plantae_musclel	smoothed original	0.426	0.902	484	166
+Quadratus_plantae_muscler	smoothed original	0.428	0.747	484	166
+Radial_head_of_flexor_digitorum_superficialisl	rebuilt	1.136	1.467	1164	642
+Radial_head_of_flexor_digitorum_superficialisr	smoothed original	0.387	0.609	1164	402
+Rectus_abdominis_musclel	rebuilt	0.696	0.899	8094	2800
+Rectus_abdominis_muscler	rebuilt	0.742	1.010	8094	2800
+Rectus_anterior_capitis_musclel	smoothed original	0.652	1.260	118	60
+Rectus_anterior_capitis_muscler	smoothed original	0.481	0.978	118	60
+Rectus_femoris_musclel	rebuilt	0.761	1.285	7750	2682
+Rectus_femoris_muscler	rebuilt	0.714	1.036	7750	2682
+Rectus_lateralis_capitis_musclel	smoothed original	0.397	0.518	118	60
+Rectus_lateralis_capitis_muscler	smoothed original	0.394	0.655	118	60
+Rectus_posterior_major_capitis_musclel	smoothed original	0.468	1.085	290	100
+Rectus_posterior_major_capitis_muscler	smoothed original	0.464	0.761	290	100
+Rectus_posterior_minor_capitis_musclel	smoothed original	0.501	0.768	160	60
+Rectus_posterior_minor_capitis_muscler	smoothed original	0.454	0.863	160	60
+Rhomboid_major_musclel	smoothed original	0.326	0.588	1918	664
+Rhomboid_major_muscler	smoothed original	0.333	0.573	1918	664
+Rhomboid_minor_musclel	smoothed original	0.368	0.694	584	200
+Rhomboid_minor_muscler	rebuilt	1.185	1.446	584	320
+Risorius_musclel	smoothed original	0.635	1.388	138	58
+Risorius_muscler	smoothed original	0.659	1.390	138	58
+Rotatoresl	smoothed original	0.543	1.053	4474	1548
+Rotatoresr	smoothed original	0.556	1.098	4474	1548
+Sartorius_musclel	smoothed original	0.247	0.411	4824	1670
+Sartorius_muscler	smoothed original	0.248	0.421	4824	1670
+Scalenus_anterior_musclel	smoothed original	0.403	1.022	303	104
+Scalenus_anterior_muscler	smoothed original	0.366	0.946	303	103
+Scalenus_medius_musclel	smoothed original	0.462	0.954	462	160
+Scalenus_medius_muscler	smoothed original	0.434	0.972	462	160
+Scalenus_posterior_musclel	smoothed original	0.610	1.235	278	96
+Scalenus_posterior_muscler	smoothed original	0.510	1.255	278	96
+Scapular_spinal_part_of_deltoid_musclel	rebuilt	0.683	1.079	3956	1368
+Scapular_spinal_part_of_deltoid_muscler	rebuilt	0.666	1.070	3954	1368
+Sciatic_bursa_of_gluteus_maximus_musclel	smoothed original	0.399	0.970	216	74
+Sciatic_bursa_of_gluteus_maximus_muscler	smoothed original	0.292	0.924	216	74
+Sciatic_bursa_of_obturator_internusl	rebuilt	1.029	1.071	118	60
+Sciatic_bursa_of_obturator_internusr	rebuilt	0.992	0.957	120	60
+Semimembranosus_bursal	rebuilt	0.938	1.303	120	60
+Semimembranosus_bursar	rebuilt	1.086	1.086	118	118
+Semimembranosus_musclel	rebuilt	0.608	0.809	6778	2344
+Semimembranosus_muscler	rebuilt	0.634	0.863	6776	2346
+Semispinalis_colli_musclel	smoothed original	0.503	1.291	942	324
+Semispinalis_colli_muscler	smoothed original	0.467	1.214	942	324
+Semispinalis_thoracis_musclel	smoothed original	0.396	0.911	1974	682
+Semispinalis_thoracis_muscler	smoothed original	0.398	0.911	1974	682
+Semitendinosus_musclel	rebuilt	0.925	1.200	4004	2216
+Semitendinosus_muscler	rebuilt	0.918	1.423	4004	1386
+Serratus_anterior_musclel	smoothed original	0.361	0.652	9882	3420
+Serratus_anterior_muscler	rebuilt	1.109	1.463	9882	3420
+Serratus_posterior_inferior_musclel	smoothed original	0.392	0.731	3544	1226
+Serratus_posterior_inferior_muscler	rebuilt	1.146	1.405	3542	1958
+Serratus_posterior_superior_musclel	smoothed original	0.353	0.865	2222	768
+Serratus_posterior_superior_muscler	smoothed original	0.352	0.778	2222	768
+Short_head_of_biceps_brachiil	smoothed original	0.323	0.511	2594	896
+Short_head_of_biceps_brachiir	rebuilt	1.132	0.415	2592	1432
+Short_head_of_biceps_femorisl	rebuilt	0.829	1.391	2362	816
+Short_head_of_biceps_femorisr	rebuilt	0.891	1.261	2364	1308
+Soleus_musclel	rebuilt	0.682	1.001	6222	2154
+Soleus_muscler	rebuilt	0.697	1.137	6222	2154
+Spinalis_capitis_musclel	smoothed original	0.328	0.775	1056	366
+Spinalis_capitis_muscler	smoothed original	0.340	0.714	1056	366
+Spinalis_colli_musclel	smoothed original	0.650	1.410	230	78
+Spinalis_colli_muscler	smoothed original	0.691	0.787	230	190
+Spinalis_thoracis_musclel	smoothed original	0.424	1.035	1232	424
+Spinalis_thoracis_muscler	smoothed original	0.399	1.020	1232	424
+Splenius_capitis_musclel	smoothed original	0.315	0.608	2012	696
+Splenius_capitis_muscler	rebuilt	1.168	1.341	2012	1112
+Splenius_colli_musclel	smoothed original	0.378	0.690	1718	594
+Splenius_colli_muscler	rebuilt	1.141	1.339	1718	948
+Sternocleidomastoid_musclel	smoothed original	0.322	0.539	1946	672
+Sternocleidomastoid_muscler	smoothed original	0.306	0.558	1946	672
+Sternocostal_head_of_pectoralis_major_musclel	rebuilt	0.873	1.345	8128	3222
+Sternocostal_head_of_pectoralis_major_muscler	rebuilt	0.860	1.428	8128	2812
+Sternohyoid_musclel	rebuilt	1.038	1.310	568	312
+Sternohyoid_muscler	smoothed original	0.350	0.771	570	196
+Sternothyroid_musclel	rebuilt	1.176	1.248	454	248
+Sternothyroid_muscler	smoothed original	0.303	0.650	454	156
+Straight_part_of_cricothyroid_musclel	rebuilt	0.508	1.046	120	60
+Straight_part_of_cricothyroid_muscler	rebuilt	0.530	0.681	118	60
+Stylohyoid_musclel	smoothed original	0.539	0.539	150	150
+Stylohyoid_muscler	smoothed original	0.627	0.627	150	150
+Stylopharyngeus_musclel	smoothed original	0.503	1.223	186	64
+Stylopharyngeus_muscler	smoothed original	0.444	1.440	186	64
+Subacromial_bursal	rebuilt	0.971	1.264	140	60
+Subacromial_bursar	rebuilt	0.926	1.135	142	60
+Subclavius_musclel	smoothed original	0.431	1.001	310	106
+Subclavius_muscler	smoothed original	0.454	1.319	310	106
+Subcutaneous_acromial_bursal	smoothed original	0.237	0.549	334	114
+Subcutaneous_acromial_bursar	smoothed original	0.228	0.581	334	114
+Subcutaneous_bursa_of_lateral_malleolusl	rebuilt	1.100	1.279	120	60
+Subcutaneous_bursa_of_lateral_malleolusr	rebuilt	0.680	1.036	118	60
+Subcutaneous_bursa_of_medial_malleolusl	rebuilt	1.165	1.251	134	58
+Subcutaneous_bursa_of_medial_malleolusr	smoothed original	0.457	0.639	134	58
+Subcutaneous_bursa_of_tuberosity_of_tibial	rebuilt	1.134	1.213	118	60
+Subcutaneous_bursa_of_tuberosity_of_tibiar	rebuilt	1.031	1.040	120	60
+Subcutaneous_calcaneal_bursal	smoothed original	0.297	0.847	152	60
+Subcutaneous_calcaneal_bursar	rebuilt	1.121	1.121	150	150
+Subcutaneous_infrapatellar_bursal	rebuilt	0.924	1.044	146	60
+Subcutaneous_infrapatellar_bursar	rebuilt	1.032	1.173	148	60
+Subcutaneous_prepatellar_bursal	rebuilt	0.768	1.156	120	60
+Subcutaneous_prepatellar_bursar	rebuilt	0.764	1.046	118	60
+Subcutaneous_trochanteric_bursal	rebuilt	1.195	1.383	218	74
+Subcutaneous_trochanteric_bursar	rebuilt	1.127	1.200	218	192
+Subdeltoid_bursal	smoothed original	0.389	0.870	196	66
+Subdeltoid_bursar	rebuilt	0.895	0.855	196	192
+Subfacial_prepatellar_bursal	smoothed original	0.261	0.409	120	60
+Subfacial_prepatellar_bursar	smoothed original	0.249	0.518	120	60
+Subscapularis_musclel	smoothed original	0.281	0.509	2632	910
+Subscapularis_muscler	smoothed original	0.277	0.558	2632	910
+Subtendinous_bursa_of_iliacus_musclel	rebuilt	0.949	1.191	118	60
+Subtendinous_bursa_of_iliacus_muscler	rebuilt	0.971	0.971	118	118
+Subtendinous_bursa_of_infraspinatus_musclel	rebuilt	1.121	1.394	120	60
+Subtendinous_bursa_of_infraspinatus_muscler	smoothed original	0.513	0.727	120	60
+Subtendinous_bursa_of_obturator_internusl	rebuilt	0.513	0.896	120	60
+Subtendinous_bursa_of_obturator_internusr	rebuilt	0.596	0.651	120	60
+Subtendinous_bursa_of_sartorius_musclel	rebuilt	1.136	1.466	148	60
+Subtendinous_bursa_of_sartorius_muscler	smoothed original	0.154	0.349	148	60
+Subtendinous_bursa_of_teres_major_musclel	rebuilt	0.965	1.386	118	60
+Subtendinous_bursa_of_teres_major_muscler	rebuilt	0.958	0.958	120	120
+Subtendinous_bursa_of_tibialis_anteriorl	rebuilt	0.480	0.712	118	60
+Subtendinous_bursa_of_tibialis_anteriorr	rebuilt	0.635	0.877	120	60
+Subtendinous_bursa_of_trapezius_musclel	rebuilt	1.200	1.332	272	192
+Subtendinous_bursa_of_trapezius_muscler	rebuilt	0.969	1.118	270	192
+Subtendinous_bursa_of_triceps_brachii_musclel	rebuilt	1.147	1.459	240	82
+Subtendinous_bursa_of_triceps_brachii_muscler	rebuilt	1.117	1.186	240	192
+Subtendinous_calcaneal_bursal	rebuilt	0.953	1.306	154	60
+Subtendinous_calcaneal_bursar	rebuilt	1.054	1.321	154	60
+Subtendinous_prepatellar_bursal	smoothed original	0.188	0.553	138	58
+Subtendinous_prepatellar_bursar	smoothed original	0.206	0.566	138	58
+Superficial_head_of_flexor_pollicis_brevisl	smoothed original	0.536	1.009	148	60
+Superficial_head_of_flexor_pollicis_brevisr	smoothed original	0.477	0.886	148	60
+Superficial_head_of_pronator_teresl	smoothed original	0.313	0.565	1022	352
+Superficial_head_of_pronator_teresr	smoothed original	0.313	0.639	1022	352
+Superficial_investing_cervical_fascial	smoothed original	0.541	0.638	3336	2086
+Superficial_investing_cervical_fasciar	smoothed original	0.541	0.649	3336	2087
+Superficial_layer_of_temporal_fascial	smoothed original	0.443	0.604	685	382
+Superficial_layer_of_temporal_fasciar	smoothed original	0.443	0.586	685	383
+Superficial_part_of_masseterl	smoothed original	0.367	0.601	560	194
+Superficial_part_of_masseterr	smoothed original	0.356	0.901	560	194
+Superficial_transverse_metacarpal_ligamentl	smoothed original	0.719	0.845	192	90
+Superficial_transverse_metacarpal_ligamentr	smoothed original	0.719	0.851	192	90
+Superficial_transverse_metatarsal_ligamentl	smoothed original	0.812	1.271	99	59
+Superficial_transverse_metatarsal_ligamentr	smoothed original	0.812	1.314	99	59
+Superior_bursa_of_biceps_femoris_musclel	smoothed original	0.484	1.211	120	60
+Superior_bursa_of_biceps_femoris_muscler	rebuilt	1.004	1.387	118	60
+Superior_extensor_retinaculum_of_anklel	smoothed original	0.697	0.808	260	110
+Superior_extensor_retinaculum_of_ankler	rebuilt	1.164	1.363	316	192
+Superior_fibular_retinaculuml	rebuilt	1.068	0.675	804	440
+Superior_fibular_retinaculumr	smoothed original	0.607	0.723	652	278
+Superior_gemellus_musclel	smoothed original	0.414	0.899	380	132
+Superior_gemellus_muscler	smoothed original	0.412	0.712	380	132
+Superior_head_of_lateral_pterygoid_musclel	smoothed original	0.562	0.917	120	60
+Superior_head_of_lateral_pterygoid_muscler	smoothed original	0.676	0.711	120	60
+Superior_oblique_musclel	smoothed original	0.536	1.115	122	60
+Superior_oblique_muscler	smoothed original	0.541	0.541	122	122
+Superior_pharyngeal_constrictorl	smoothed original	0.493	1.008	480	166
+Superior_pharyngeal_constrictorr	smoothed original	0.498	1.032	480	166
+Superior_rectus_musclel	smoothed original	0.281	0.616	120	60
+Superior_rectus_muscler	smoothed original	0.237	0.676	120	60
+Superior_tarsusl	smoothed original	0.400	0.749	120	60
+Superior_tarsusr	smoothed original	0.494	0.800	120	60
+Supinatorl	smoothed original	0.455	0.870	1030	356
+Supinatorr	smoothed original	0.432	0.810	1030	356
+Suprapatellar_bursal	rebuilt	0.808	1.265	424	146
+Suprapatellar_bursar	rebuilt	1.128	1.357	424	146
+Supraspinatus_musclel	rebuilt	0.926	1.494	1298	448
+Supraspinatus_muscler	rebuilt	1.087	1.451	1298	716
+Synovial_sheaths_of_digits_of_handl	smoothed original	0.508	1.392	272	94
+Synovial_sheaths_of_digits_of_handr	smoothed original	0.766	0.790	272	192
+Temporalis_musclel	smoothed original	0.298	0.503	2506	866
+Temporalis_muscler	smoothed original	0.295	0.515	2506	866
+Temporoparietalis_musclel	smoothed original	0.309	0.606	2752	952
+Temporoparietalis_muscler	rebuilt	0.923	1.060	2752	952
+Tendinous_arch_of_levator_anil	smoothed original	0.519	0.770	132	60
+Tendinous_arch_of_levator_anir	smoothed original	0.542	0.735	132	60
+Tendon_of_extensor_digitorum_longusl	smoothed original	0.483	1.129	1074	370
+Tendon_of_extensor_digitorum_longusr	smoothed original	0.485	1.232	1074	371
+Tendon_sheath_-_abd_pollicis_longus_-_ext_pollicis_brevisl	rebuilt	0.977	1.387	204	70
+Tendon_sheath_-_abd_pollicis_longus_-_ext_pollicis_brevisr	smoothed original	0.523	0.876	204	70
+Tendon_sheath_of_extensor_carpi_ulnarisl	rebuilt	1.011	1.011	118	118
+Tendon_sheath_of_extensor_carpi_ulnarisr	rebuilt	0.990	1.479	118	60
+Tendon_sheath_of_extensor_digiti_minimi_manusl	smoothed original	0.525	1.093	162	60
+Tendon_sheath_of_extensor_digiti_minimi_manusr	smoothed original	0.639	0.639	162	162
+Tendon_sheath_of_extensor_digitorum_and_extensor_indicisl	smoothed original	0.373	0.975	304	104
+Tendon_sheath_of_extensor_digitorum_and_extensor_indicisr	rebuilt	1.141	1.380	302	192
+Tendon_sheath_of_extensor_digitorum_longusl	rebuilt	1.011	1.122	332	192
+Tendon_sheath_of_extensor_digitorum_longusr	smoothed original	0.330	0.700	332	114
+Tendon_sheath_of_extensor_hallucis_longusl	smoothed original	0.336	1.259	288	100
+Tendon_sheath_of_extensor_hallucis_longusr	smoothed original	0.532	1.400	288	100
+Tendon_sheath_of_extensor_pollicis_longusl	smoothed original	0.519	0.969	126	60
+Tendon_sheath_of_extensor_pollicis_longusr	smoothed original	0.635	0.778	126	60
+Tendon_sheath_of_extensors_carpi_radialisl	rebuilt	1.147	1.147	118	118
+Tendon_sheath_of_extensors_carpi_radialisr	rebuilt	1.051	1.051	118	118
+Tendon_sheath_of_flexor_carpi_radialisl	rebuilt	1.122	1.470	120	60
+Tendon_sheath_of_flexor_carpi_radialisr	smoothed original	0.674	0.959	120	60
+Tendon_sheath_of_flexor_digitorum_longusl	rebuilt	1.010	1.080	284	192
+Tendon_sheath_of_flexor_digitorum_longusr	rebuilt	1.199	1.269	282	192
+Tendon_sheath_of_flexor_hallucis_longusl	smoothed original	0.530	1.145	206	72
+Tendon_sheath_of_flexor_hallucis_longusr	rebuilt	1.137	1.182	208	192
+Tendon_sheath_of_flexor_pollicis_longusl	smoothed original	0.388	1.336	280	96
+Tendon_sheath_of_flexor_pollicis_longusr	smoothed original	0.601	1.430	280	96
+Tendon_sheath_of_tibialis_anteriorl	smoothed original	0.328	0.891	240	92
+Tendon_sheath_of_tibialis_anteriorr	smoothed original	0.328	0.895	240	92
+Tendon_sheath_of_tibialis_posterior_musclel	smoothed original	0.296	1.098	160	60
+Tendon_sheath_of_tibialis_posterior_muscler	smoothed original	0.369	0.976	160	60
+Tensor_fasciae_latael	rebuilt	0.929	1.202	1732	598
+Tensor_fasciae_lataer	rebuilt	0.959	1.351	1732	598
+Teres_major_musclel	rebuilt	1.070	1.362	966	530
+Teres_major_muscler	rebuilt	0.880	1.076	966	530
+Teres_minor_musclel	rebuilt	1.054	1.429	1306	450
+Teres_minor_muscler	rebuilt	0.938	1.438	1306	450
+Thyro-epiglottic_part_of_thyro-arytenoid_musclel	rebuilt	1.058	1.058	120	120
+Thyro-epiglottic_part_of_thyro-arytenoid_muscler	rebuilt	0.909	1.292	118	60
+Thyrohyoid_musclel	smoothed original	0.404	0.686	158	60
+Thyrohyoid_muscler	smoothed original	0.395	0.759	158	60
+Tibialis_anterior_musclel	smoothed original	0.314	0.518	3290	1138
+Tibialis_anterior_muscler	smoothed original	0.313	0.510	3290	1138
+Tibialis_posterior_musclel	smoothed original	0.360	0.750	2506	866
+Tibialis_posterior_muscler	smoothed original	0.355	0.820	2506	866
+Transversalis_fascia	smoothed original	0.723	0.729	4207	4172
+Transverse_arytenoid_muscle	rebuilt	0.524	0.741	118	60
+Transverse_head_of_adductor_hallucisl	smoothed original	0.787	1.222	144	60
+Transverse_head_of_adductor_hallucisr	smoothed original	0.712	1.159	144	60
+Transverse_head_of_adductor_pollicisl	rebuilt	1.153	1.394	372	202
+Transverse_head_of_adductor_pollicisr	rebuilt	1.048	1.483	372	128
+Transverse_intermuscular_septum_of_legl	original	0.000	1.439	495	495
+Transverse_intermuscular_septum_of_legr	original	0.000	1.439	495	495
+Transverse_part_of_trapezius_musclel	smoothed original	0.386	0.658	2720	940
+Transverse_part_of_trapezius_muscler	smoothed original	0.390	0.629	2720	940
+Transversus_abdominis_musclel	rebuilt	0.715	1.141	19928	6898
+Transversus_abdominis_muscler	rebuilt	0.663	0.921	19928	6898
+Transversus_thoracis_musclel	smoothed original	0.686	1.323	1500	518
+Transversus_thoracis_muscler	smoothed original	0.689	1.204	1500	518
+Trochanteric_bursa_of_gluteus_maximus_musclel	rebuilt	1.099	1.324	152	60
+Trochanteric_bursa_of_gluteus_maximus_muscler	smoothed original	0.324	0.736	154	60
+Trochanteric_bursa_of_gluteus_medius_musclel	rebuilt	0.907	0.964	118	60
+Trochanteric_bursa_of_gluteus_medius_muscler	smoothed original	0.387	0.690	120	60
+Trochanteric_bursa_of_gluteus_minimus_musclel	smoothed original	0.413	0.681	120	60
+Trochanteric_bursa_of_gluteus_minimus_muscler	smoothed original	0.357	0.496	120	60
+Trochlea_of_superior_oblique_musclel	rebuilt	0.371	0.583	120	60
+Trochlea_of_superior_oblique_muscler	rebuilt	0.411	0.489	120	60
+Ulnar_head_of_extensor_carpi_ulnarisl	smoothed original	0.399	0.620	582	224
+Ulnar_head_of_extensor_carpi_ulnarisr	smoothed original	0.399	0.614	582	224
+Ulnar_head_of_flexor_carpi_ulnarisl	smoothed original	0.345	0.690	1390	480
+Ulnar_head_of_flexor_carpi_ulnarisr	smoothed original	0.346	0.591	1390	480
+Vastus_intermedius_musclel	rebuilt	0.961	1.391	5890	3260
+Vastus_intermedius_muscler	rebuilt	0.961	1.450	5890	2038
+Vastus_lateralis_musclel	rebuilt	0.697	1.161	8816	3050
+Vastus_lateralis_muscler	rebuilt	0.647	0.838	8816	3050
+Vastus_medialis_musclel	rebuilt	0.665	0.951	5980	2070
+Vastus_medialis_muscler	rebuilt	0.691	1.080	5980	2070
+Ventral_parts_of_lateral_intertransversarii_lumborum_musclesl	smoothed original	0.760	1.267	362	124
+Ventral_parts_of_lateral_intertransversarii_lumborum_musclesr	smoothed original	0.725	1.192	362	124
+Zygomaticus_major_musclel	smoothed original	0.481	1.002	208	72
+Zygomaticus_major_muscler	smoothed original	0.497	0.605	212	192
+Zygomaticus_minor_musclel	smoothed original	0.396	1.093	120	60
+Zygomaticus_minor_muscler	smoothed original	0.396	0.679	120	60

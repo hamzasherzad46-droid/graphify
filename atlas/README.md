@@ -127,10 +127,15 @@ From **Z-Anatomy** (CC BY-SA 4.0), in the male skeleton's space (offset measured
 build stops if any bone disagrees by more than 1.5 mm):
 
 - **683 meshes of the muscular system**, left and right separate: muscles, tendons, aponeuroses, fasciae, retinacula,
-  tendon sheaths and bursae, including every intrinsic muscle of the hand and foot. **Unchanged** apart from
-  simplification (479,501 triangles from 2,323,591): checked mesh by mesh against the originals
-  (`scripts/model/verify_muscles.py`, `docs/muscle-check.tsv`). Where muscles attach they dip into bone, as modelled in
-  the source; that part is inside the opaque bone.
+  tendon sheaths and bursae, including every intrinsic muscle of the hand and foot. **Rebuilt as clean, smooth
+  surfaces** (`scripts/model/remesh.py`): each closed mesh is voxelised at a size set by its own thickness (0.3–1 mm),
+  inside and outside decided exactly (generalised winding number), lightly blurred so edges are rounded rather than
+  stepped, surfaced with marching cubes and decimated; open sheets and any mesh the rebuild would move too far keep
+  their own triangles, gently smoothed (or not at all, for the few coarse sheets that smoothing would shrink). Every mesh is checked against the full-resolution original (95th percentile of
+  the two-sided surface distance: at most 1.2 mm for the detailed level, 1.5 mm for the phone level; more triangles
+  are given until it is; `docs/remesh-check.tsv`). Two levels: about 1.18 million triangles (tablets, desktop) and
+  about 479,000 (phones). Where muscles attach they dip into bone, as modelled in the source; that part is inside the
+  opaque bone.
 - **Eyes** (sclera, cornea, iris; from the nervous system) and **nasal cartilages** (major alar, septal and its lateral
   processes). Z-Anatomy has no external ear, so the model has none.
 - **Layers** (`scripts/model/layers.py`, `docs/muscle-layers.md`): *superficial* (seen from the skin, or in the
@@ -156,6 +161,7 @@ node scripts/model/export-za.mjs /tmp/za/Resources/Models/FBX SkeletalSystem100 
 node scripts/model/export-za.mjs /tmp/za/Resources/Models/FBX MuscularSystem100 /tmp/fit/muscles-male
 node scripts/model/export-za.mjs /tmp/za/Resources/Models/FBX MuscularSystem100 /tmp/fit/muscles-orig 100000000 0
 node scripts/model/export-za.mjs /tmp/za/Resources/Models/FBX NervousSystem100 /tmp/fit/nervous
+python3 scripts/model/remesh.py /tmp/fit              # writes /tmp/fit/remeshed-male.npz and remesh-check.tsv
 python3 scripts/model/build_layers.py /tmp/fit        # /tmp/fit/mhd: the MakeHuman data, for the rig's body parts
 python3 scripts/model/write_layers.py /tmp/fit /tmp/fit/layers-male.glb
 python3 scripts/model/verify_muscles.py /tmp/fit/muscles-male /tmp/fit/muscles-orig docs/muscle-check.tsv

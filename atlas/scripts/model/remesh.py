@@ -11,7 +11,8 @@ outside decided exactly (generalised winding number), lightly blurred so edges a
 surfaced (marching cubes), then decimated to a triangle budget proportional to the mesh's surface area. Open meshes
 (fasciae, sheaths: sheets) keep their original triangles, gently smoothed. Any rebuilt mesh that strays from its
 original by more than MAX_P95 (95th percentile of the two-sided surface distance) is replaced by the smoothed
-original, so the anatomy never changes.
+original, given more triangles until it is within the limit, or (coarse sheets that shrink when smoothed) kept as the
+original itself, so the anatomy never changes.
 """
 import sys
 import time
@@ -26,7 +27,8 @@ import layers
 
 LOD0_TRIS = 1_300_000
 LOD1_TRIS = 450_000
-MAX_P95 = 0.0012  # m
+MAX_P95 = 0.0012  # m (detailed level and rebuild acceptance)
+MAX_P95_LOD1 = 0.0015  # m (phone level)
 MIN_TRIS = 120
 
 
@@ -112,6 +114,33 @@ def work(args):
     return name, method, (v0, f0), (v1, f1), p95_two_sided((v0, f0), orig), p95_two_sided((v1, f1), orig)
 
 
+def tighten(name, orig, lod, limit, start):
+    """Raise a level's triangle budget until it is within `limit` of the original (or uses the source's own)."""
+    v, f = lod
+    target = max(len(f), MIN_TRIS)
+    src = (taubin(orig[0], orig[1], 3), orig[1])
+    while p95_two_sided((v, f), orig) > limit and target < len(src[1]):
+        target = min(int(target * 1.6), len(src[1]))
+        v, f = decimate(*start, target) if start is not None else decimate(*src, target)
+        if p95_two_sided((v, f), orig) > limit and start is not None:
+            v, f = decimate(*src, target)
+    return v, f
+
+
+def fix(args):
+    name, method, l0, l1, orig = args
+    if p95_two_sided(l0, orig) > MAX_P95:
+        l0 = tighten(name, orig, l0, MAX_P95, None)
+    if p95_two_sided(l1, orig) > MAX_P95_LOD1:
+        l1 = tighten(name, orig, l1, MAX_P95_LOD1, l0)
+    # Coarse sheets shrink when smoothed: keep the original itself (and the detailed level for the phone if needed).
+    if p95_two_sided(l0, orig) > MAX_P95:
+        l0, method = orig, 'original'
+    if p95_two_sided(l1, orig) > MAX_P95_LOD1:
+        l1 = l0
+    return name, method, l0, l1, p95_two_sided(l0, orig), p95_two_sided(l1, orig)
+
+
 def main(work_dir):
     t0 = time.time()
     off = layers.za_offset(f'{work_dir}/zaskel', f'{work_dir}/male')
@@ -127,6 +156,12 @@ def main(work_dir):
             out[r[0]] = r
             if k % 100 == 0:
                 print(f'[{time.time() - t0:5.0f} s] {k}/{len(jobs)}', flush=True)
+    # Any level still too far from its original gets more triangles until it is not.
+    redo = [(n, out[n][1], out[n][2], out[n][3], (O[n][0] + off, O[n][1].astype(np.int64))) for n in names if out[n][4] > MAX_P95 or out[n][5] > MAX_P95_LOD1]
+    print(f'tightening {len(redo)} meshes', flush=True)
+    with Pool(4) as pool:
+        for r in pool.imap_unordered(fix, redo):
+            out[r[0]] = r
     data = {'names': np.array(names)}
     rows = []
     for i, n in enumerate(names):

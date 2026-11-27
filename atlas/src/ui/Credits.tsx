@@ -45,7 +45,8 @@ export function Credits({ onBack }: { onBack: () => void }) {
             </p>
             <p className="muted small">
               Also used (male model): the muscles, tendons, aponeuroses and fasciae of the muscular system, the eyeballs, and the nasal
-              cartilages; simplified, otherwise unchanged.
+              cartilages. The muscles and tendons were rebuilt as smooth surfaces that stay within about a millimetre of the
+              originals; the rest were simplified, otherwise unchanged.
             </p>
           </section>
 

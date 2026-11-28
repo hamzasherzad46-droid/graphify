@@ -237,7 +237,8 @@
   "IgG": "immunoglobulin G",
   "IgA": "immunoglobulin A",
   "IgE": "immunoglobulin E",
-  "RBF": "renal blood flow"
+  "RBF": "renal blood flow",
+  "PCT": "proximal convoluted tubule"
  },
  "notAbbreviations": {
   "DeLong": "A name (photo credit).",

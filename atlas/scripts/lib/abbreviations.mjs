@@ -10,7 +10,8 @@ const NOT = new Set(Object.keys(data.notAbbreviations))
 /** Units, symbols and terms that are read as they are written (no full form is expected). */
 const READ_AS_WRITTEN = new Set(['mmHg', 'mV', 'mL', 'dL', 'nm', 'kHz', 'Hz', 'pH', 'DNA', 'RNA', 'UV', 'ST'])
 
-export const ABBR = /(?<![\p{L}\d-])((?:[A-Z]{2,}|[A-Z][a-z]?[A-Z][A-Za-z]*)s?)(?![\p{L}\d-])/gu
+// Not followed by a subscript or superscript digit: "CO₂" is carbon dioxide, not an abbreviation.
+export const ABBR = /(?<![\p{L}\d-])((?:[A-Z]{2,}|[A-Z][a-z]?[A-Z][A-Za-z]*)s?)(?![\p{L}\d₀-₉⁰-⁹-])/gu
 
 /** The abbreviation without a plural s ("EPSPs" → "EPSP"), or null when it is not an abbreviation. */
 function base(token) {
@@ -38,7 +39,7 @@ export function firstUses(parts, { fix = false } = {}) {
   const seen = new Set()
   const written = []
   const undefinedFirst = []
-  for (const part of parts) {
+  for (const [i, part] of parts.entries()) {
     let text = part.text
     let changed = false
     ABBR.lastIndex = 0
@@ -49,6 +50,11 @@ export function firstUses(parts, { fix = false } = {}) {
       seen.add(b)
       const before = text.slice(0, m.index)
       const after = text.slice(m.index + token.length)
+      // A chemical formula whose number is a separate subscript ("CO" then a subscript 2): not an abbreviation.
+      if (after === '' && parts[i + 1]?.kind === 'sub') {
+        seen.delete(b)
+        continue
+      }
       if (/\($/.test(before) || /^ \(/.test(after)) continue // defined here
       const full = fullFor(token)
       if (fix && part.set && full) {
@@ -77,7 +83,7 @@ export function partsOf(value) {
     else if (Array.isArray(v)) v.forEach((_, k) => walk(v, k))
     else if (v && typeof v === 'object') {
       // A link or emphasis inside rich text: read, not changed.
-      if (typeof v.t === 'string' && 'k' in v) return parts.push({ text: v.t })
+      if (typeof v.t === 'string' && 'k' in v) return parts.push({ text: v.t, kind: v.k })
       for (const k of Object.keys(v)) if (!SKIP.has(k)) walk(v, k)
     }
   }

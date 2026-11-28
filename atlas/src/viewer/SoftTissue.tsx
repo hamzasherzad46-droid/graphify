@@ -1,10 +1,10 @@
-import { Suspense, useEffect, useLayoutEffect, useMemo, useState } from 'react'
+import { Suspense, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import * as THREE from 'three'
 import { useThree } from '@react-three/fiber'
 import { usePrefs, useViewer, type LayerLevel } from '../state/store'
 import { loadParts, partShown, type Part } from '../data/parts'
 import { anatomyLights, organMaterial, skinMaterial, tissueMaterial, type OrganKind, type TissueKind } from './anatomyMaterials'
-import { useModel } from './modelUrls'
+import { preloadModel, useModel } from './modelUrls'
 import { registry } from './registry'
 import { buildBvhs } from './bvh'
 import { DETAILED, TISSUE_URL } from './preload'
@@ -25,26 +25,49 @@ const outermost = (p: Part, level: LayerLevel) => (level === 2 && p.layer === 'd
 export function SoftTissue({ theme }: { theme: 'dark' | 'light' }) {
   const layer = useViewer((s) => s.layer)
   const sex = useViewer((s) => s.sex)
+  const open = useViewer((s) => s.layersOpen && s.sex === 'male')
   const [need, setNeed] = useState({ organs: false, muscles: false })
   const level = sex === 'male' ? layer : 0
   if ((level >= 1 && !need.organs) || (level >= 2 && !need.muscles)) setNeed({ organs: need.organs || level >= 1, muscles: need.muscles || level >= 2 })
+  // With the layer control open, both models are downloaded and decoded in the background (organs first), so moving
+  // the slider never waits for them.
+  useEffect(() => {
+    if (!open) return
+    let stop = false
+    const idle = (f: () => void) => ('requestIdleCallback' in window ? window.requestIdleCallback(f, { timeout: 1500 }) : setTimeout(f, 300))
+    idle(() => !stop && void preloadModel(URL.organs).then(() => idle(() => !stop && void preloadModel(URL.muscles).catch(() => {}))).catch(() => {}))
+    return () => void (stop = true)
+  }, [open])
   if (sex !== 'male') return null
   return (
     <>
       {level > 0 && <StudioLights />}
       {need.organs && (
-        <Suspense fallback={null}>
+        <Suspense fallback={<Loading />}>
           <PartsModel url={URL.organs} level={level} theme={theme} />
         </Suspense>
       )}
       {need.muscles && (
-        <Suspense fallback={null}>
+        <Suspense fallback={<Loading />}>
           <PartsModel url={URL.muscles} level={level} theme={theme} />
         </Suspense>
       )}
     </>
   )
 }
+
+/** While a model loads, the layer control says so. */
+function Loading() {
+  useEffect(() => {
+    useViewer.setState({ layerLoading: true })
+    return () => useViewer.setState({ layerLoading: false })
+  }, [])
+  return null
+}
+
+/** How long a layer takes to fade in or out (none when the system asks for reduced motion). */
+const FADE_MS = 280
+const reducedMotion = () => window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false
 
 /** Soft studio lights, fixed to the camera so the model is always lit from the front. */
 function StudioLights() {
@@ -139,31 +162,83 @@ function PartsModel({ url, level, theme }: { url: string; level: LayerLevel; the
     }
   }, [scene, parts, own])
 
-  // What is shown, and how: layer, modesty, hidden parts, ghost mode and the selection.
+  // What is shown, and how: layer, modesty, hidden parts, ghost mode and the selection. A change of layer fades: what
+  // comes into view fades in while what leaves fades out.
+  const fade = useRef<{ raf: number; finish: () => void } | null>(null)
+  const lastLevel = useRef<LayerLevel | null>(null)
   useLayoutEffect(() => {
     if (!parts) return
+    fade.current?.finish()
     const lv: LayerLevel = studying ? 0 : level
+    const layerChange = lastLevel.current !== null && lastLevel.current !== lv
+    lastLevel.current = lv
+    const incoming: THREE.Mesh[] = []
+    const outgoing: THREE.Mesh[] = []
     scene.traverse((o) => {
       const m = o as THREE.Mesh
       if (!m.isMesh) return
+      let show: boolean
       if ((m.userData as { layer?: string }).layer === 'skin') {
-        m.visible = lv >= 4
+        show = lv >= 4
         m.material = ghost ? shared.ghostSkin : own.get(m)!
-        return
+      } else {
+        const p = parts.get(m.name)
+        if (!p) {
+          m.visible = false
+          return
+        }
+        const enclosed = (p.kind === 'brain' && !skullOpen) || (p.kind === 'cord' && !spineOpen) || (lv >= 4 && !ghost && p.kind !== 'eye')
+        show = partShown(p, lv, modesty) && !hiddenParts.includes(p.id) && !enclosed
+        const see = ghost && lv < 4 && outermost(p, lv)
+        m.material = p.id === partId ? shared.selected : see ? (p.layer === 'organs' ? shared.ghostOrgan : shared.ghostMuscle) : own.get(m)!
+        m.renderOrder = see ? 3 : 0
       }
-      const p = parts.get(m.name)
-      if (!p) {
-        m.visible = false
-        return
-      }
-      const enclosed = (p.kind === 'brain' && !skullOpen) || (p.kind === 'cord' && !spineOpen) || (lv >= 4 && !ghost && p.kind !== 'eye')
-      m.visible = partShown(p, lv, modesty) && !hiddenParts.includes(p.id) && !enclosed
-      const see = ghost && lv < 4 && outermost(p, lv)
-      m.material = p.id === partId ? shared.selected : see ? (p.layer === 'organs' ? shared.ghostOrgan : shared.ghostMuscle) : own.get(m)!
-      m.renderOrder = see ? 3 : 0
+      // Only a mesh's own material fades (the shared selection and ghost materials stay as they are).
+      if (layerChange && show !== m.visible && m.material === own.get(m)) (show ? incoming : outgoing).push(m)
+      else m.visible = show
     })
-    invalidate()
+    const settle = () => useViewer.getState().layerShown !== lv && useViewer.setState({ layerShown: lv })
+    if (!incoming.length && !outgoing.length) {
+      settle()
+      invalidate()
+      return
+    }
+    const mats = [...incoming, ...outgoing].map((m) => {
+      const mat = m.material as THREE.Material
+      return { m, mat, opacity: mat.opacity, transparent: mat.transparent, depthWrite: mat.depthWrite, inn: incoming.includes(m) }
+    })
+    for (const x of mats) {
+      x.m.visible = true
+      x.mat.transparent = true
+      x.mat.depthWrite = x.inn ? x.depthWrite : false
+    }
+    const t0 = performance.now()
+    const duration = reducedMotion() ? 0 : FADE_MS
+    const finish = () => {
+      cancelAnimationFrame(state.raf)
+      for (const x of mats) {
+        x.mat.opacity = x.opacity
+        x.mat.transparent = x.transparent
+        x.mat.depthWrite = x.depthWrite
+        if (!x.inn) x.m.visible = false
+      }
+      fade.current = null
+      settle()
+      invalidate()
+    }
+    const step = () => {
+      const t = duration ? Math.min(1, (performance.now() - t0) / duration) : 1
+      const e = t * t * (3 - 2 * t) // smoothstep
+      for (const x of mats) x.mat.opacity = x.opacity * (x.inn ? e : 1 - e)
+      invalidate()
+      if (t < 1) state.raf = requestAnimationFrame(step)
+      else finish()
+    }
+    const state = { raf: 0, finish }
+    fade.current = state
+    step()
   }, [scene, parts, level, ghost, partId, hiddenParts, modesty, studying, shared, own, invalidate, skullOpen, spineOpen])
+  useEffect(() => () => fade.current?.finish(), [])
 
   return <primitive object={scene} />
 }

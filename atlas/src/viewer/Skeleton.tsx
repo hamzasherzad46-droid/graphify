@@ -43,6 +43,9 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
   const lit = useViewer((s) => s.sex === 'male' && s.layer > 0 && !s.studying)
   // Ghost mode makes the outermost layer see-through: the bones only while they are outermost (with the organs at most).
   const ghostBones = useViewer((s) => s.ghost && !(s.sex === 'male' && s.layer >= 2 && !s.studying))
+  // Under the opaque skin the bones cannot be seen (and would show through it where it is thinnest): not drawn, once
+  // the skin has faded in.
+  const underSkin = useViewer((s) => s.sex === 'male' && s.layer >= 4 && s.layerShown >= 4 && !s.ghost && !s.studying)
   const litMats = useMemo(() => ({ bone: studioBoneMaterial(), context: cartilageMaterial() }), [])
 
   // Register meshes once per loaded model.
@@ -79,7 +82,7 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
   useLayoutEffect(() => {
     const ghostAll = ghost && !selectedId
     for (const [id, m] of registry.bones) {
-      m.visible = !hidden.includes(id) && (!isolated || isolated.includes(id)) && (!regionIds || regionIds.includes(id))
+      m.visible = !underSkin && !hidden.includes(id) && (!isolated || isolated.includes(id)) && (!regionIds || regionIds.includes(id))
       const isSel = id === selectedId
       m.material = highlight
         ? highlight.target.includes(id)
@@ -98,7 +101,7 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
     }
     for (const m of registry.context) {
       const host = registry.host.get(m)
-      m.visible = !isolated && !(host && hidden.includes(host)) && (!regionIds || (!!host && regionIds.includes(host)))
+      m.visible = !underSkin && !isolated && !(host && hidden.includes(host)) && (!regionIds || (!!host && regionIds.includes(host)))
       m.material = highlight ? mats.dim : ghostBones ? mats.contextGhost : lit ? litMats.context : mats.context
     }
     glow.shell.removeFromParent()
@@ -118,7 +121,7 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
       glow.xray.renderOrder = 3
     }
     invalidate()
-  }, [selectedId, hidden, isolated, regionIds, ghost, ghostBones, highlight, mats, glow, invalidate, scene, lit, litMats])
+  }, [selectedId, hidden, isolated, regionIds, ghost, ghostBones, highlight, mats, glow, invalidate, scene, lit, litMats, underSkin])
 
   return <primitive object={scene} />
 }

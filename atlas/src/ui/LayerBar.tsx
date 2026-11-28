@@ -12,6 +12,7 @@ export function LayerBar() {
   const open = useViewer((s) => s.layersOpen)
   const layer = useViewer((s) => s.layer)
   const ghost = useViewer((s) => s.ghost)
+  const loading = useViewer((s) => s.layerLoading)
   const sex = useViewer((s) => s.sex)
   const modesty = usePrefs((s) => s.modesty)
   const v = useViewer.getState
@@ -42,11 +43,14 @@ export function LayerBar() {
           </label>
           <div className="layer-ticks" aria-hidden>
             {SHORT.map((t, k) => (
-              <button key={t} tabIndex={-1} className={k === layer ? 'on' : ''} onClick={() => v().setLayer(k as LayerLevel)}>
+              <button key={t} tabIndex={-1} className={k === layer ? (loading ? 'on loading' : 'on') : ''} onClick={() => v().setLayer(k as LayerLevel)}>
                 {t}
               </button>
             ))}
           </div>
+          <span className="sr-only" role="status">
+            {loading ? `Loading ${LAYERS[layer].toLowerCase()}` : ''}
+          </span>
           <div className="explode-row">
             <div className="layer-toggles">
               <button className={`chip ${ghost ? 'on' : ''}`} aria-pressed={ghost} onClick={() => v().setGhost(!ghost)}>

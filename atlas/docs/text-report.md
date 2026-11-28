@@ -1,8 +1,8 @@
 # Atlas text check
 
-32,039 pieces of text, 585,682 words. Standard: British English (-ise); dictionary: en-GB base + 3,308 Terminologia Anatomica words + 177 approved + 173 proposed.
+32,040 pieces of text, 585,683 words. Standard: British English (-ise); dictionary: en-GB base + 3,308 Terminologia Anatomica words + 177 approved + 173 proposed.
 
-**Result: PASS.** Unknown words: 0. American spellings: 0. Names written two ways or in the wrong case: 0. Abbreviations not written out at first use: 0. Restricted words out of place: 0. Names not in their owners’ spelling: 0. Grammar rule hits: 8; LanguageTool: 15.
+**Result: PASS.** Unknown words: 0. American spellings: 0. Names written two ways or in the wrong case: 0. Abbreviations not written out at first use: 0. Restricted words out of place: 0. Names not in their owners’ spelling: 0. Grammar rule hits: 8.
 
 ## Organisation names with a British spelling (check against the owner’s spelling)
 
@@ -66,22 +66,3 @@ acholic · AEDs · agranulocyte · Agranulocyte · agranulocytes · Aimanness ·
 - unbalanced brackets (grays, content/classic/s8-4.json.entries[4].blocks[23].inl): “…The lateral surface carries a large triangular facet, concave from above downward, for articulation with the lateral mal…”
 - unbalanced brackets (openstax, content/textbook/s15-1.json.blocks[26].rows[1][1][0]): “…Norepinephrine → α- or β-adrenergic receptors  Acetylcholine → muscarinic receptor (associated with sweat glands and the…”
 - unbalanced brackets (openstax, content/textbook/s6-4.json.blocks[13].inl): “…In a long bone, for example, at about 6 to 8 weeks after conception, some of the mesenchymal cells differentiate into ch…”
-
-## Grammar: LanguageTool (en-GB), Atlas’s own text
-
-
-- ENGLISH_WORD_REPEAT_BEGINNING_RULE (content/bones/hamate_right.json.features[1]): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...ccur in golf, racquet and baseball players.  Hook (hamulus) projecting palmarly  Hook forms th...”
-- ENGLISH_WORD_REPEAT_BEGINNING_RULE (content/cards/skull.json.cards[0].simpler.t): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “... with almost every other bone of the skull.  It sits in the middle of the floor of the skull...” → Furthermore, it
-- FILL_OF_WITH (content/questions/skull.json.questions[9].why): The usual preposition to use after "fills" is "with", not "the". Did you mean "fills the front with"? “...ow and behind. In life, the septal cartilage fills the front of the septum and extends into the nose.  A dev...” → fills the front with
-- EN_COMPOUNDS_WEIGHT_BEARING (content/questions/spine.json.questions[6].answerText): This word is normally spelled with a hyphen. “...osterior vertebral arch. The body serves for weight bearing. The vertebral arch surrounds and protects t...” → weight-bearing
-- EN_COMPOUNDS_WEIGHT_BEARING (content/questions/spine.json.questions[6].why): This word is normally spelled with a hyphen. “...  A typical vertebra has a body in front for weight bearing and an arch behind that protects the spinal ...” → weight-bearing
-- EN_COMPOUNDS_WEIGHT_BEARING (content/questions/spine.json.questions[8].answerText): This word is normally spelled with a hyphen. “...the nucleus pulposus resists compression for weight bearing and can change shape to allow for vertebral ...” → weight-bearing
-- AGREEMENT_SENT_START (content/questions/spine.json.questions[11].why): You should probably use "sit". “...hat projects upwards from its body. The dens sits against the back of the anterior arch of the...” → sit
-- ENGLISH_WORD_REPEAT_BEGINNING_RULE (content/questions/thorax.json.questions[12].whyNot[2]): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...t attach to the cartilage of the rib above.  Ribs 1 and 2 are true ribs that join the sternum ...”
-- LICENCE_LICENSE_NOUN_SINGULAR (src/ui/Credits.tsx:149): License must be spelled with a "c" when used as a noun in British English. Use "licence". “...timizer (MIT), Inter typeface (SIL Open Font License).  Atlas · Skeletal system  For education on...” → Licence
-- ENGLISH_WORD_REPEAT_BEGINNING_RULE (server/src/marking.ts:12): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “... fair and exact senior anatomy tutor would.  You receive the question, the model answer and i...” → Furthermore, you
-- ENGLISH_WORD_REPEAT_BEGINNING_RULE (server/src/prompts.ts:21): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...nior anatomy tutor at a leading university.  You only work on human anatomy and the physiolog...” → Furthermore, you
-- ENGLISH_WORD_REPEAT_BEGINNING_RULE (server/src/prompts.ts:21): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...logy and clinical anatomy that goes with it. You do not chat, answer general questions, write...” → Furthermore, you
-- THE_SUPERLATIVE (server/src/prompts.ts:27): A determiner may be missing. “... tests in notesQuote.  Question standards: - Single best answer (sba): a clear stem that can be answe...” → Single the best
-- ENGLISH_WORD_REPEAT_BEGINNING_RULE (server/src/prompts.ts:77): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...the blank fair and the answer list complete? For short answer, are the marking points correct...”
-- SUBJECT_VERB_AGREEMENT (server/src/schema.ts:33): The verb form 'ID' does not seem to match the subject 'bone'. “...examiners set on this point.  The Atlas bone ID most relevant to the question, or empty.  Th...” → IDs

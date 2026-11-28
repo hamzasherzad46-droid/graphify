@@ -600,6 +600,24 @@ textarea:focus-visible {
   font-weight: 600;
 }
 
+/* The layer's model is still loading: its name pulses gently until it appears. */
+.layer-ticks button.loading {
+  animation: layer-loading 1.1s ease-in-out infinite;
+}
+
+@keyframes layer-loading {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .layer-ticks button.loading {
+    animation: none;
+    opacity: 0.6;
+  }
+}
+
 .layer-toggles {
   flex: 1;
   display: flex;

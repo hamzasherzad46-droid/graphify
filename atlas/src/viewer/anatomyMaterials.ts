@@ -104,13 +104,15 @@ function tissueMaterialFull(kind: TissueKind, name: string): THREE.Material {
   }
   if (kind === 'tendon' || kind === 'aponeurosis' || kind === 'ligament') {
     const c = TENDON.clone().offsetHSL(0, 0, (h - 0.5) * 0.03)
-    // Thin sheets and bands (the scalp's galea aponeurotica, the retinacula at the wrist and ankle, the transverse metacarpal ligament) are see-through,
-    // so the skull's shape, frontalis and occipitalis, and the tendons beneath read through them.
-    const sheer = /epicranial|retinacul|transverse_metacarpal/i.test(name)
+    // Thin bands (the retinacula at the wrist and ankle, the transverse metacarpal ligament) are see-through, so the
+    // tendons beneath read through them. The scalp's galea aponeurotica is a tough sheet: nearly opaque, so the crown
+    // reads as scalp, not bare skull, with only the skull's shape showing through.
+    const sheer = /retinacul|transverse_metacarpal/i.test(name)
+    const galea = /epicranial/i.test(name)
     return withFibres(
       new THREE.MeshPhysicalMaterial({
         color: c, vertexColors: true, roughness: 0.46, sheen: 0.7, sheenRoughness: 0.35, sheenColor: new THREE.Color('#f6eeea'), clearcoat: 0.1, clearcoatRoughness: 0.4,
-        ...(sheer ? { transparent: true, opacity: 0.38, depthWrite: false } : {}),
+        ...(sheer ? { transparent: true, opacity: 0.38, depthWrite: false } : galea ? { transparent: true, opacity: 0.9 } : {}),
       }),
       { spacing: 0.0006, depth: 0.4, streak: 0.06 },
     )

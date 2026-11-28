@@ -47,6 +47,10 @@ interface ViewerState {
   /** Soft-tissue layers on show (see LAYERS). */
   layer: LayerLevel
   setLayer: (l: LayerLevel) => void
+  /** The layer the model has finished changing to (it fades from one layer to the next). */
+  layerShown: LayerLevel
+  /** A layer's model is still downloading or decoding (the layer control says so). */
+  layerLoading: boolean
   /** The layer control is open (it and the exploded view's controls are never open together). */
   layersOpen: boolean
   setLayersOpen: (on: boolean) => void
@@ -116,6 +120,8 @@ export const useViewer = create<ViewerState>((set, get) => ({
   layer: 0,
   // Muscles and organs sit on the bones where they are: showing them puts any pulled-out bones back.
   setLayer: (layer) => set((s) => ({ layer, partId: layer === 0 ? null : s.partId, ...(layer > 0 ? { explodeAmount: 0, dragged: {} } : {}) })),
+  layerShown: 0,
+  layerLoading: false,
   layersOpen: false,
   setLayersOpen: (layersOpen) => set(layersOpen ? { layersOpen, explodeOpen: false } : { layersOpen }),
   partId: null,

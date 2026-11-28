@@ -13,7 +13,8 @@ export const useHud = create<{
 
 /** Screen space the overlays cover (px), so the 3D view frames bones inside the free area. */
 /** bottom = dock + tab bar (58 px); the info panel covers the tab bar. */
-export const INSETS = { top: 124, bottom: 150, panel: 236, explodeBar: 96 }
+export const INSETS = { top: 124, bottom: 150, panel: 236, explodeBar: 96, layerBar: 116 }
 
-/** Top inset in px, including the explode controls when they are open. */
-export const topInset = (explodeOpen: boolean) => INSETS.top + (explodeOpen ? INSETS.explodeBar : 0)
+/** Top inset in px, including the explode or layer controls when they are open. */
+export const topInset = (v: { explodeOpen: boolean; layersOpen: boolean }) =>
+  INSETS.top + (v.explodeOpen ? INSETS.explodeBar : v.layersOpen ? INSETS.layerBar : 0)

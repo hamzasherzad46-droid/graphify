@@ -91,7 +91,7 @@ npm test
 `scripts/lib/mesh.mjs` reads the FBX (three's FBXLoader in Node), welds, simplifies with meshoptimizer (≤0.15 %
 relative error, ≤5k triangles per bone), recomputes normals and writes the GLB.
 
-## 3D model upgrade, step 1: skin (male; part of `models-src/layers-male.glb` since step 2)
+## 3D model upgrade, step 1: skin (male; part of `public/models/tissue/layers-male.glb` since step 2)
 
 Body surfaces for the coming layered models (skin → fat → muscles → organs → skeleton), not yet shown in the app (the
 layer controls come in step 5). Built from **MakeHuman** (CC0): its base mesh and macro body-shape targets, with
@@ -117,7 +117,7 @@ node scripts/model/export-bones.mjs public/models/skeleton-male.glb /tmp/fit/mal
 python3 scripts/model/build_skin.py <makehuman data> /tmp/fit /tmp/fit                 # numpy, scipy, libigl
 ```
 
-## 3D model upgrade, step 2: the male layered model (`models-src/layers-male.glb`, `layers-male-phone.glb`)
+## 3D model upgrade, step 2: the male layered model (`public/models/tissue/layers-male.glb`, `layers-male-phone.glb`)
 
 **Male only.** The female skeleton is partly derived from the male and no free female muscle set exists, so the
 female model shows the skeleton alone ("Female muscles coming soon" when layers ship) until real female anatomy is
@@ -166,12 +166,12 @@ python3 scripts/model/remesh.py /tmp/fit              # writes /tmp/fit/remeshed
 python3 scripts/model/build_layers.py /tmp/fit        # /tmp/fit/mhd: the MakeHuman data, for the rig's body parts
 python3 scripts/model/write_layers.py /tmp/fit /tmp/fit/layers-male.glb 0        # detailed level (tablets, desktop)
 python3 scripts/model/write_layers.py /tmp/fit /tmp/fit/layers-male-lod1.glb 1   # phone level
-npx gltf-transform draco /tmp/fit/layers-male.glb models-src/layers-male.glb
-npx gltf-transform draco /tmp/fit/layers-male-lod1.glb models-src/layers-male-phone.glb
+npx gltf-transform draco /tmp/fit/layers-male.glb public/models/tissue/layers-male.glb
+npx gltf-transform draco /tmp/fit/layers-male-lod1.glb public/models/tissue/layers-male-phone.glb
 python3 scripts/model/verify_muscles.py /tmp/fit/muscles-male /tmp/fit/muscles-orig docs/muscle-check.tsv
 ```
 
-## 3D model upgrade, step 3: the male organs (`models-src/organs-male.glb`, `organs-male-phone.glb`)
+## 3D model upgrade, step 3: the male organs (`public/models/tissue/organs-male.glb`, `organs-male-phone.glb`)
 
 **Male only**, for the same reason as the muscles. From **Z-Anatomy** (CC BY-SA 4.0), in the male skeleton's space
 (the same measured offset as the muscles): `scripts/model/organs.py`.
@@ -208,9 +208,38 @@ node scripts/model/export-za.mjs <Z-Anatomy FBX dir> VisceralSystem100 /tmp/fit/
 node scripts/model/export-za.mjs <Z-Anatomy FBX dir> CardioVascular41 /tmp/fit/cardio-orig 100000000 0
 node scripts/model/export-za.mjs <Z-Anatomy FBX dir> LymphoidOrgans100 /tmp/fit/lymph-orig 100000000 0
 python3 scripts/model/organs.py /tmp/fit /tmp/fit/organs-male   # also needs nervous, zaskel and male (step 2)
-npx gltf-transform draco /tmp/fit/organs-male.glb models-src/organs-male.glb
-npx gltf-transform draco /tmp/fit/organs-male-lod1.glb models-src/organs-male-phone.glb
+npx gltf-transform draco /tmp/fit/organs-male.glb public/models/tissue/organs-male.glb
+npx gltf-transform draco /tmp/fit/organs-male-lod1.glb public/models/tissue/organs-male-phone.glb
 ```
+
+## 3D model upgrade, steps 4–6: muscles and organs in the app
+
+- **Layer control** (dock → Layers, `src/ui/LayerBar.tsx`): a slider from the skeleton alone, through the organs and
+  the deep and superficial muscles, to the skin (`LAYERS` in `src/state/store.ts`). **Ghost mode** makes the outermost
+  layer see-through: with the organs, the bones around them (so the brain shows through the skull); with muscles, the
+  outer muscles; with the skin, the skin. **Modesty** (on by default; also in You → Appearance) hides the genital organs
+  and the urethra. The female model shows the skeleton, with "Female muscles coming soon". Opening the exploded view
+  returns to the skeleton alone; study sessions always use the bones.
+- **Tap a muscle or organ** for its sheet (`src/ui/PartPanel.tsx`): its name as Z-Anatomy gives it, what it is, its
+  body system, side and layer; Focus, Hide and Ghost; links to its lesson (where there is one) and its textbook topic.
+  Names come from `content/parts/male.json` (1,064 parts, written by `scripts/model/part_names.py` from the models;
+  abbreviated or misspelt Z-Anatomy names are written out in their Terminologia Anatomica form, for example
+  "Bucinator" → "Buccinator", "Lat Fis-ant-Horizont" → "Anterior horizontal ramus of lateral sulcus"). Every name passes
+  the text check.
+- **Sides:** a trailing l or r marks a side only where it is not part of the word: "Liver", "Gallbladder" and
+  "Urinary bladder" are midline (the build had named them `live_right` and so on), and "Iliocostalis colli muscle", the
+  only left part without a letter, is left (`side_of` in `scripts/model/layers.py`; `scripts/model/fix_ids.py` applied
+  the rule to the built models without rebuilding them).
+- **Materials (step 4):** with muscles or organs on show the studio lights are on, and the bones turn lit ivory and the
+  cartilage glassy, to match them; the skeleton-only view keeps its HUD look.
+- **Performance (step 6):** each model loads the first time its layer is shown (`src/viewer/SoftTissue.tsx`); phones
+  (screen under 700 px, or under 4 GB of memory) get the lighter models and plainer materials (no sheen, clear coat or
+  fibre striations). Nothing that cannot be seen is drawn: the brain and spinal cord only when the skull or spine is
+  see-through or hidden, and nothing under the skin when the skin is on. The models are not precached; each is kept
+  for offline use once viewed. Measured in headless Chromium at 390 × 844 (draw calls, triangles): skeleton 253,
+  260,000; organs 389, 458,000; deep muscles 681, 636,000; all muscles 911, 837,000; skin 262, 295,000. At 1024 × 1366
+  (detailed models): up to 911 and 1.5 million. **Frame rate on phones is not yet measured on a device:** You →
+  Appearance → Frame rate shows frames per second in the 3D view for that test.
 
 ## Exploded view (step 3)
 

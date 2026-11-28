@@ -5,6 +5,7 @@ import { BONE_BY_ID } from '../data/bones'
 import { TOPICS } from './topics'
 import { factsOf, LEVELS, needsReview, layeredParagraphs, TYPE_NAME, type LayeredCard } from './layered'
 
+const PARTS: Record<string, unknown> = JSON.parse(readFileSync(join(__dirname, '..', '..', 'content', 'parts', 'male.json'), 'utf8')).parts
 const DIR = join(__dirname, '..', '..', 'content', 'cards')
 const glossary: Record<string, unknown> = JSON.parse(readFileSync(join(__dirname, '..', '..', 'data', 'glossary.json'), 'utf8')).terms
 const cards: LayeredCard[] = readdirSync(DIR).flatMap((f) => JSON.parse(readFileSync(join(DIR, f), 'utf8')).cards)
@@ -29,9 +30,12 @@ describe('layered flashcards', () => {
   it('has every required field, real topics, bones, levels and types', () => {
     const topics = new Set(TOPICS.map((t) => t.id))
     for (const c of cards) {
-      for (const k of ['id', 'level', 'topic', 'structureId', 'objective', 'source', 'reviewStatus', 'front', 'answer', 'bone'] as const) expect(c[k], `${c.id} ${k}`).toBeTruthy()
+      for (const k of ['id', 'level', 'topic', 'structureId', 'objective', 'source', 'reviewStatus', 'front', 'answer'] as const) expect(c[k], `${c.id} ${k}`).toBeTruthy()
       expect(topics.has(c.topic), c.id).toBe(true)
-      expect(BONE_BY_ID.has(c.bone), c.id).toBe(true)
+      // A card is on a bone, or on a muscle or organ of the male model: exactly one of the two.
+      expect(!!c.bone !== !!c.part, c.id).toBe(true)
+      if (c.bone) expect(BONE_BY_ID.has(c.bone), c.id).toBe(true)
+      if (c.part) expect(PARTS[c.part], c.id).toBeTruthy()
       expect(LEVELS, c.id).toContain(c.level)
       expect(Object.keys(TYPE_NAME), c.id).toContain(c.type)
       expect(c.structureId, c.id).toMatch(/^[a-z0-9-]+$/)
@@ -101,11 +105,13 @@ describe('layered flashcards', () => {
   })
 
   it('never gives the answer away with the 3D view on the front', () => {
-    for (const c of cards) if (c.frontView && c.type !== 'identify') expect(norm(c.answer), c.id).not.toContain(norm(BONE_BY_ID.get(c.bone)!.name))
+    for (const c of cards) if (c.frontView && c.bone && c.type !== 'identify') expect(norm(c.answer), c.id).not.toContain(norm(BONE_BY_ID.get(c.bone)!.name))
+    // Muscle and organ cards have no 3D front (the small 3D view shows bones only).
+    for (const c of cards) if (c.part) expect(c.frontView, c.id).toBe(false)
   })
 
   it('names a bone exactly as the bone database does (one source of truth)', () => {
-    for (const c of cards) if (c.type === 'identify') expect(c.answer, c.id).toBe(BONE_BY_ID.get(c.bone)!.name)
+    for (const c of cards) if (c.type === 'identify' && c.bone) expect(c.answer, c.id).toBe(BONE_BY_ID.get(c.bone)!.name)
   })
 
   it('writes British English', () => {

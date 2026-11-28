@@ -36,7 +36,7 @@ neutral anatomical pose, no body hair, a smooth simplified genital area.
 
 The models are CC BY-SA 4.0 (Z-Anatomy, BodyParts3D) with CC BY 4.0 (HuBMAP) and CC0 (MakeHuman) parts. Credit is
 given in the app. CC BY-SA asks that the adapted models are shared under the same licence: keep the model files
-(`public/models`, `models-src`) available, with their licence, outside the app (for example in a public repository)
+(`public/models`) available, with their licence, outside the app (for example in a public repository)
 so anyone receiving the app can also get them.
 
 ## App Store Connect

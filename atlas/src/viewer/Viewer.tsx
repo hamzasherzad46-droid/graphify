@@ -1,7 +1,9 @@
 import { Suspense, useEffect } from 'react'
 import { Canvas, useThree } from '@react-three/fiber'
-import { useViewer } from '../state/store'
+import { usePrefs, useViewer } from '../state/store'
 import { Skeleton } from './Skeleton'
+import { SoftTissue } from './SoftTissue'
+import { FpsMeter } from './FpsMeter'
 import { CameraRig } from './CameraRig'
 import { Picking } from './Picking'
 import { LabelLayout } from './LabelLayout'
@@ -16,6 +18,7 @@ import { ThumbnailRenderer } from './ThumbnailRenderer'
 export default function Viewer({ theme, paused = false }: { theme: 'dark' | 'light'; paused?: boolean }) {
   const sex = useViewer((s) => s.sex)
   const thumbs = useViewer((s) => s.thumbs)
+  const fps = usePrefs((s) => s.showFps)
   return (
     <Canvas
       className="viewer-canvas"
@@ -27,6 +30,7 @@ export default function Viewer({ theme, paused = false }: { theme: 'dark' | 'lig
       <Suspense fallback={null}>
         <Skeleton theme={theme} sex={sex} />
       </Suspense>
+      <SoftTissue theme={theme} />
       <HudFloor theme={theme} />
       <CameraRig />
       <Picking />
@@ -34,6 +38,7 @@ export default function Viewer({ theme, paused = false }: { theme: 'dark' | 'lig
       <ExplodeAnimator />
       {thumbs && <ThumbnailRenderer target={thumbs} theme={theme} />}
       <Resume paused={paused} />
+      {fps && <FpsMeter />}
     </Canvas>
   )
 }

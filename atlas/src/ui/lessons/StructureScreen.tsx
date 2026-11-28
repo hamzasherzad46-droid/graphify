@@ -369,17 +369,19 @@ function Check({ s }: { s: Structure }) {
 /** See in 3D, the flashcards and the exam-style questions on this structure. */
 function Links({ s, name }: { s: Structure; name: string }) {
   const showBone = useNav((x) => x.showBone)
+  const showPart = useNav((x) => x.showPart)
   const push = useNav((x) => x.push)
   const covered = new Set(bonesOf(s))
-  const cards = LAYERED.filter((c) => covered.has(c.bone)).length
+  // Bone lessons: every card on their bones. Muscle and organ lessons: the cards on the lesson itself.
+  const cards = LAYERED.filter((c) => (s.part ? c.structureId === s.id : !!c.bone && covered.has(c.bone))).length
   const questions = QUESTIONS.filter((q) => covered.has(q.bone))
   return (
     <div className="st-links">
-      <button className="chip st-link" onClick={() => showBone(s.bone, name)}>
+      <button className="chip st-link" onClick={() => (s.part ? showPart(s.part, name) : s.bone && showBone(s.bone, name))}>
         <CubeIcon /> See in 3D
       </button>
       {cards > 0 && (
-        <button className="chip st-link" onClick={() => useSession.getState().open('layered', { bones: bonesOf(s) })}>
+        <button className="chip st-link" onClick={() => useSession.getState().open('layered', s.part ? { structures: [s.id] } : { bones: bonesOf(s) })}>
           <CardsIcon /> {cards} {cards === 1 ? 'flashcard' : 'flashcards'}
         </button>
       )}

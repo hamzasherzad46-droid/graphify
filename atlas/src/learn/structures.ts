@@ -1,5 +1,5 @@
 /**
- * Structure lessons: one structure (a bone, for now) in nine layers. Layers 1–3 are shown first; 4–9 open under
+ * Structure lessons: one structure (a bone, or a muscle or organ of the male model) in nine layers. Layers 1–3 are shown first; 4–9 open under
  * "Go deeper".
  *   1 In one line · 2 Where · 3 Key features · 4 Form → function · 5 Relations · 6 Development · 7 Variations ·
  *   8 Clinical reasoning · 9 Tutorial questions
@@ -48,11 +48,17 @@ export interface CheckQuestion {
 
 export interface Structure {
   id: string
-  /** The Atlas bone for "See in 3D" and the matching flashcards and exam questions. */
-  bone: string
+  /** The Atlas bone for "See in 3D" and the matching flashcards and exam questions (bone lessons). */
+  bone?: string
   /** A lesson on a group of bones (“Metacarpal bones”): its title, and every bone it covers (`bone` is one of them). */
   title?: string
   bones?: string[]
+  /**
+   * Muscle and organ lessons: the part of the male model that "See in 3D" flies to (content/parts/male.json), and
+   * every part the lesson covers (both sides, every head or lobe). These lessons always have a title.
+   */
+  part?: string
+  parts?: string[]
   topic: string
   source: string
   /** Where Atlas differs from OpenStax, and why (shown with the source). */
@@ -78,13 +84,14 @@ export const STRUCTURES: Structure[] = Object.values(files).sort((a, b) => nameO
 export const structureById = (id: string) => STRUCTURES.find((s) => s.id === id)
 export const structuresFor = (topic: string) => STRUCTURES.filter((s) => s.topic === topic)
 export const structuresForBone = (bone: string) => STRUCTURES.filter((s) => bonesOf(s).includes(bone))
+export const structuresForPart = (part: string) => STRUCTURES.filter((s) => s.parts?.includes(part))
 
-/** Every bone a lesson covers. */
-export const bonesOf = (s: Pick<Structure, 'bone' | 'bones'>) => s.bones ?? [s.bone]
+/** Every bone a lesson covers (none for a muscle or organ lesson). */
+export const bonesOf = (s: Pick<Structure, 'bone' | 'bones'>) => s.bones ?? (s.bone ? [s.bone] : [])
 
-/** The structure's name, as the bone database writes it (one source of truth). */
+/** The structure's name: its title, or the bone's name as the bone database writes it (one source of truth). */
 export function nameOf(s: Pick<Structure, 'bone' | 'title'>): string {
-  return s.title ?? BONE_BY_ID.get(s.bone)?.name ?? s.bone
+  return s.title ?? (s.bone ? (BONE_BY_ID.get(s.bone)?.name ?? s.bone) : '')
 }
 
 export const TUTORIAL_NAME: Record<TutorialKind, string> = {

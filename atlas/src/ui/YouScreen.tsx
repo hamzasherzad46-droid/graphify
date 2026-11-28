@@ -82,6 +82,8 @@ export function YouScreen() {
             ]}
             onChange={(d) => p.setLabelDensity(d)}
           />
+          <Toggle label="Modesty" hint="Hide the genital organs in the 3D layers" checked={p.modesty} onChange={(on) => p.setModesty(on)} />
+          <Toggle label="Frame rate" hint="Frames per second in the 3D view, for checking speed" checked={p.showFps} onChange={(on) => p.setShowFps(on)} />
         </Group>
 
         <Group title="Sound and touch">

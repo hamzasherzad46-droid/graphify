@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { usePrefs, useViewer, type LabelDensity, type ViewName } from '../state/store'
 import { useHud } from '../state/hud'
-import { ExplodeIcon, GhostIcon, LabelIcon, ResetIcon } from './Icons'
+import { ExplodeIcon, GhostIcon, LabelIcon, LayersIcon, ResetIcon } from './Icons'
+import { preloadOrgans } from '../viewer/preload'
 
 const VIEWS: [ViewName, string, string][] = [
   ['anterior', 'ANT', 'Anterior view'],
@@ -17,6 +18,8 @@ export function Dock() {
   const [labelMenu, setLabelMenu] = useState(false)
   const ghost = useViewer((s) => s.ghost)
   const explodeOpen = useViewer((s) => s.explodeOpen)
+  const layersOpen = useViewer((s) => s.layersOpen)
+  const layer = useViewer((s) => s.layer)
   const orientation = useHud((s) => s.orientation)
   const s = useViewer.getState
   return (
@@ -38,6 +41,19 @@ export function Dock() {
           onClick={() => setLabelMenu(!labelMenu)}
         >
           <LabelIcon />
+        </button>
+        <button
+          className={`tool ${layersOpen || layer > 0 ? 'on' : ''}`}
+          aria-pressed={layersOpen}
+          aria-label="Layers: muscles and organs"
+          title="Layers"
+          onPointerEnter={preloadOrgans}
+          onClick={() => {
+            preloadOrgans()
+            s().setLayersOpen(!layersOpen)
+          }}
+        >
+          <LayersIcon />
         </button>
         <button
           className={`tool ${explodeOpen ? 'on' : ''}`}

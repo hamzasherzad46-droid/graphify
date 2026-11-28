@@ -3726,7 +3726,13 @@
   "unabsorbed": "Proposed: term or word in OpenStax chapters 10–25 (medical, scientific or everyday).",
   "untreatable": "Proposed: term or word in OpenStax chapters 10–25 (medical, scientific or everyday).",
   "vasodilate": "Proposed: term or word in OpenStax chapters 10–25 (medical, scientific or everyday).",
-  "viropause": "Proposed: term or word in OpenStax chapters 10–25 (medical, scientific or everyday)."
+  "viropause": "Proposed: term or word in OpenStax chapters 10–25 (medical, scientific or everyday).",
+  "coracobrachial": "Proposed: Terminologia Anatomica term, in the name of a part of the 3D model (content/parts/male.json).",
+  "frontomarginal": "Proposed: Terminologia Anatomica term, in the name of a part of the 3D model (content/parts/male.json).",
+  "puboanalis": "Proposed: Terminologia Anatomica term, in the name of a part of the 3D model (content/parts/male.json).",
+  "declive": "Proposed: Terminologia Anatomica term, in the name of a part of the 3D model (content/parts/male.json).",
+  "pyramis": "Proposed: Terminologia Anatomica term, in the name of a part of the 3D model (content/parts/male.json).",
+  "Jensen": "Proposed: name (Jensen, eponym of the intermediate sulcus), in the name of a part of the 3D model."
  },
  "historical": {
   "Albrecht": {

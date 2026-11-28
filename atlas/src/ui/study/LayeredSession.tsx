@@ -27,7 +27,17 @@ type Layer = 'why' | 'deeper' | 'clinical'
 const LAYERS: Layer[] = ['why', 'deeper', 'clinical']
 
 /** Layered flashcards: question → answer → Why → Go deeper → Clinical, each opened only when wanted. */
-export function LayeredSession({ onClose, onShow, cards = LAYERED }: { onClose: () => void; onShow: (bone: string) => void; cards?: LayeredCard[] }) {
+export function LayeredSession({
+  onClose,
+  onShow,
+  onShowPart,
+  cards = LAYERED,
+}: {
+  onClose: () => void
+  onShow: (bone: string) => void
+  onShowPart: (part: string) => void
+  cards?: LayeredCard[]
+}) {
   const [q, setQ] = useState<LayeredCard[]>(() => queueOf(cards))
   const [idx, setIdx] = useState(0)
   const [revealed, setRevealed] = useState(false)
@@ -74,7 +84,7 @@ export function LayeredSession({ onClose, onShow, cards = LAYERED }: { onClose: 
           className={`lc ${revealed ? 'back' : 'front'} ${turning ? `turn-${turning}` : ''}`}
           aria-label={revealed ? 'Card, answer side' : 'Card, question side'}
         >
-          {revealed ? <CardBack card={card} onShow={onShow} /> : <CardFront card={card} onFlip={flip} />}
+          {revealed ? <CardBack card={card} onShow={(c) => (c.part ? onShowPart(c.part) : c.bone && onShow(c.bone))} /> : <CardFront card={card} onFlip={flip} />}
         </article>
       </div>
       <div className="study-bottom">
@@ -112,10 +122,10 @@ function CardFront({ card, onFlip }: { card: LayeredCard; onFlip: () => void }) 
   const theme = useResolvedTheme()
   const sex = useViewer((s) => s.sex)
   return (
-    <div className={`lc-face ${card.frontView ? '' : 'no-3d'}`} onClick={(e) => !(e.target as HTMLElement).closest('.lc-3d') && onFlip()}>
+    <div className={`lc-face ${card.frontView && card.bone ? '' : 'no-3d'}`} onClick={(e) => !(e.target as HTMLElement).closest('.lc-3d') && onFlip()}>
       <CardTags card={card} />
       <p className="lc-question">{card.front}</p>
-      {card.frontView && (
+      {card.frontView && card.bone && (
         <div className="lc-3d q-snapshot" aria-label="3D model with the structure highlighted">
           <Suspense fallback={null}>
             <BoneSnapshot bone={card.bone} theme={theme} sex={sex} elevation={card.elevation} />
@@ -142,7 +152,7 @@ function Said({ f, pid, as: Tag = 'p' }: { f: Fact; pid: string; as?: 'p' | 'li'
   )
 }
 
-function CardBack({ card, onShow }: { card: LayeredCard; onShow: (bone: string) => void }) {
+function CardBack({ card, onShow }: { card: LayeredCard; onShow: (card: LayeredCard) => void }) {
   const [open, setOpen] = useState<Set<Layer>>(new Set())
   const [simpler, setSimpler] = useState(false)
   const scroller = useRef<HTMLDivElement>(null)
@@ -224,7 +234,7 @@ function CardBack({ card, onShow }: { card: LayeredCard; onShow: (bone: string) 
       </Annotatable>
 
       <div className="q-foot lc-foot">
-        <button className="btn ghost small q-3d" onClick={() => onShow(card.bone)}>
+        <button className="btn ghost small q-3d" onClick={() => onShow(card)}>
           <CubeIcon /> See in 3D
         </button>
         <p className="q-source">

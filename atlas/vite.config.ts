@@ -34,8 +34,22 @@ export default defineConfig(({ mode }) => ({
         // after the first visit the app opens offline.
         globPatterns: ['**/*.{js,mjs,css,html,woff2,svg,png,wasm,glb}'],
         // JS fallback decoder (preview build only), and three's own decoder copies, which are unused (decoder path is draco/).
-        globIgnores: ['draco/draco_decoder.js', 'assets/draco_*'],
+        // The muscle and organ models (several megabytes) are not precached: each is kept once it has been viewed.
+        globIgnores: ['draco/draco_decoder.js', 'assets/draco_*', 'models/tissue/**'],
         maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
+        runtimeCaching: [
+          {
+            urlPattern: /\/models\/tissue\/[^/]+\.glb$/,
+            handler: 'CacheFirst',
+            options: { cacheName: 'atlas-tissue-models', expiration: { maxEntries: 4 } },
+          },
+          {
+            // Textbook figures: kept as they are viewed, so a chapter read once opens offline.
+            urlPattern: /\/textbook\/[^/]+\.webp$/,
+            handler: 'CacheFirst',
+            options: { cacheName: 'atlas-textbook-figures', expiration: { maxEntries: 600 } },
+          },
+        ],
       },
     }),
   ],

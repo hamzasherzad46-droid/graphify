@@ -17,11 +17,27 @@ def za_offset(zaskel_prefix, glb_prefix):
     return -d
 
 
+# Z-Anatomy marks sides with a trailing l or r, but a few names simply end in those letters, and one left part has no
+# letter at all (Iliocostalis_colli_muscle beside Iliocostalis_colli_muscler). KNOWN holds every Z-Anatomy name in the
+# build (set by the build scripts before naming), so a bare name with a lettered partner can be given its side.
+NOT_SIDED = {'Liver', 'Gallbladder', 'Urinary_bladder'}
+KNOWN = set()
+
+
+def _lettered(n):
+    """Does n end in a side letter (rather than being a bare name whose partner carries the letter)?"""
+    return n not in NOT_SIDED and bool(re.search(r"[a-z)_*]l$|[a-z)_*]r$", n))
+
+
 def side_of(name):
     """Z-Anatomy marks sides with a trailing l / r (after the name, e.g. Deltoid_musclel)."""
-    if re.search(r'[a-z)]l\+*$', name):
+    n = name.rstrip('+')
+    if _lettered(n):
+        return 'left' if n.endswith('l') else 'right'
+    known = {k.rstrip('+') for k in KNOWN}
+    if n + 'r' in known and n + 'l' not in known:
         return 'left'
-    if re.search(r'[a-z)]r\+*$', name):
+    if n + 'l' in known and n + 'r' not in known:
         return 'right'
     return 'midline'
 
@@ -30,7 +46,7 @@ def atlas_id(name):
     """Deltoid_musclel → deltoid_muscle_left: lower case, words joined by _, side last."""
     side = side_of(name)
     base = name.rstrip('+')
-    if side != 'midline':
+    if _lettered(base):
         base = base[:-1]
     base = re.sub(r'[^a-z0-9]+', '_', base.lower()).strip('_')
     return base if side == 'midline' else f'{base}_{side}'

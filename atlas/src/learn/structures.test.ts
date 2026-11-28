@@ -8,6 +8,7 @@ import { factsOf, needsReview, splitTerms, structureParagraphs, termMatcher, typ
 const ROOT = join(__dirname, '..', '..')
 const DIR = join(ROOT, 'content', 'structures')
 const lessons: Structure[] = readdirSync(DIR).map((f) => JSON.parse(readFileSync(join(DIR, f), 'utf8')))
+const PARTS: Record<string, unknown> = JSON.parse(readFileSync(join(ROOT, 'content', 'parts', 'male.json'), 'utf8')).parts
 const glossary: Record<string, unknown> = JSON.parse(readFileSync(join(ROOT, 'data', 'glossary.json'), 'utf8')).terms
 
 const paragraphs = new Map<string, Set<string>>()
@@ -62,13 +63,22 @@ describe('structure lessons', () => {
   it('uses real bones and topics, and every layer', () => {
     const topics = new Set(TOPICS.map((t) => t.id))
     for (const s of lessons) {
-      expect(BONE_BY_ID.has(s.bone), s.id).toBe(true)
-      // A group lesson names its group and lists every bone it covers, its main bone among them.
-      if (s.bones) {
+      // A lesson is on a bone, or on a muscle or organ of the male model: exactly one of the two.
+      expect(!!s.bone !== !!s.part, s.id).toBe(true)
+      if (s.part) {
+        // A muscle or organ lesson has a title and lists every part it covers, its main part among them.
         expect(s.title, s.id).toBeTruthy()
-        expect(s.bones, s.id).toContain(s.bone)
-        for (const b of s.bones) expect(BONE_BY_ID.has(b), `${s.id}: ${b}`).toBe(true)
-      } else expect(s.title, s.id).toBeUndefined()
+        expect(s.parts, s.id).toContain(s.part)
+        for (const p of s.parts!) expect(PARTS[p], `${s.id}: ${p}`).toBeTruthy()
+      } else {
+        expect(BONE_BY_ID.has(s.bone!), s.id).toBe(true)
+        // A group lesson names its group and lists every bone it covers, its main bone among them.
+        if (s.bones) {
+          expect(s.title, s.id).toBeTruthy()
+          expect(s.bones, s.id).toContain(s.bone)
+          for (const b of s.bones) expect(BONE_BY_ID.has(b), `${s.id}: ${b}`).toBe(true)
+        } else expect(s.title, s.id).toBeUndefined()
+      }
       expect(topics.has(s.topic), s.id).toBe(true)
       expect(s.source, s.id).toMatch(/^OpenStax A&P 2e: /)
       expect(s.where.facts.length, s.id).toBeGreaterThanOrEqual(2)

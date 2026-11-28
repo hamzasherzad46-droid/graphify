@@ -13,6 +13,8 @@ export const registry = {
   contextRest: new Map<Mesh, Vector3>(),
   rest: new Map<string, Vector3>(),
   radius: new Map<string, number>(),
+  /** The soft parts of the male model (muscles, organs …) by id, once their layer has loaded. */
+  parts: new Map<string, Mesh>(),
 }
 
 /** Per bone: a surface point near its centre, in the bone's local space (label anchor). */

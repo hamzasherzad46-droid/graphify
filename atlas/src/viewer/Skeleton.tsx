@@ -6,6 +6,7 @@ import { createMaterials } from './materials'
 import { registry, anchors } from './registry'
 import { MODEL_URL, preloadModel, useModel } from './modelUrls'
 import { buildBvhs } from './bvh'
+import { cartilageMaterial, studioBoneMaterial } from './anatomyMaterials'
 import type { Sex } from '../data/types'
 
 void preloadModel(MODEL_URL.male)
@@ -38,6 +39,11 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
   const regionIds = useViewer((s) => s.regionIds)
   const ghost = useViewer((s) => s.ghost)
   const highlight = useViewer((s) => s.highlight)
+  // With muscles or organs on show (lit by the studio lights), bones are lit ivory and cartilage glassy, to match them.
+  const lit = useViewer((s) => s.sex === 'male' && s.layer > 0 && !s.studying)
+  // Ghost mode makes the outermost layer see-through: the bones only while they are outermost (with the organs at most).
+  const ghostBones = useViewer((s) => s.ghost && !(s.sex === 'male' && s.layer >= 2 && !s.studying))
+  const litMats = useMemo(() => ({ bone: studioBoneMaterial(), context: cartilageMaterial() }), [])
 
   // Register meshes once per loaded model.
   useLayoutEffect(() => {
@@ -83,15 +89,17 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
             : mats.dim
         : isSel
           ? mats.selected
-          : ghost
+          : ghostBones
             ? mats.ghost
-            : mats.bone
+            : lit
+              ? litMats.bone
+              : mats.bone
       ;(mats.ghost as THREE.MeshMatcapMaterial).opacity = ghostAll ? mats.palette.ghostOpacity * 3 : mats.palette.ghostOpacity
     }
     for (const m of registry.context) {
       const host = registry.host.get(m)
       m.visible = !isolated && !(host && hidden.includes(host)) && (!regionIds || (!!host && regionIds.includes(host)))
-      m.material = highlight ? mats.dim : ghost ? mats.contextGhost : mats.context
+      m.material = highlight ? mats.dim : ghostBones ? mats.contextGhost : lit ? litMats.context : mats.context
     }
     glow.shell.removeFromParent()
     glow.xray.removeFromParent()
@@ -110,7 +118,7 @@ export function Skeleton({ theme, sex }: { theme: 'dark' | 'light'; sex: Sex }) 
       glow.xray.renderOrder = 3
     }
     invalidate()
-  }, [selectedId, hidden, isolated, regionIds, ghost, highlight, mats, glow, invalidate, scene])
+  }, [selectedId, hidden, isolated, regionIds, ghost, ghostBones, highlight, mats, glow, invalidate, scene, lit, litMats])
 
   return <primitive object={scene} />
 }

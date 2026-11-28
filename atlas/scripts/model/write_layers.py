@@ -16,6 +16,7 @@ EYE_BACK = 0.002  # m: a presentation choice (the Z-Anatomy eye is about 2 mm pr
 def main(work, out, lod=0):
     d = np.load(f'{work}/layers-male.npz')
     names = list(d['names'])
+    layers.KNOWN.update(names + ['Retinal', 'Retinar'])
     vh = dict(zip(names, d['hits']))
     base = lambda n: layers.atlas_id(n).removesuffix('_left').removesuffix('_right')
     best = {}

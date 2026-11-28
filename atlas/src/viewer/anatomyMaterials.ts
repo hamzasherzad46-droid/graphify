@@ -76,8 +76,24 @@ float vnoise(vec3 p) {
   return m
 }
 
-/** One material per mesh (they share the same shader program). */
-export function tissueMaterial(kind: TissueKind, name: string): THREE.Material {
+/**
+ * A plain version for phones: the same colours and baked occlusion, without sheen, clear coat or fibre striations
+ * (about a third of the shading cost per pixel).
+ */
+function lite(m: THREE.MeshPhysicalMaterial): THREE.MeshStandardMaterial {
+  return new THREE.MeshStandardMaterial({
+    color: m.color, vertexColors: m.vertexColors, roughness: m.roughness, transparent: m.transparent, opacity: m.opacity,
+    depthWrite: m.depthWrite, side: m.side,
+  })
+}
+
+/** One material per mesh (they share the same shader program). `plain`: the phone version (see lite). */
+export function tissueMaterial(kind: TissueKind, name: string, plain = false): THREE.Material {
+  const m = tissueMaterialFull(kind, name)
+  return plain && m instanceof THREE.MeshPhysicalMaterial ? lite(m) : m
+}
+
+function tissueMaterialFull(kind: TissueKind, name: string): THREE.Material {
   const h = hash(name)
   if (kind === 'muscle') {
     const c = MUSCLE.clone().offsetHSL((h - 0.5) * 0.02, (h - 0.5) * 0.08, (h - 0.5) * 0.05)
@@ -114,7 +130,6 @@ export function tissueMaterial(kind: TissueKind, name: string): THREE.Material {
   return cartilageMaterial()
 }
 
-/** Hyaline cartilage (nose, costal cartilages): pale ivory-grey, slightly translucent and glassy. */
 export type OrganKind =
   | 'heart' | 'artery' | 'vein' | 'lung' | 'airway' | 'liver' | 'bile' | 'gut' | 'mouth' | 'gland' | 'kidney' | 'urinary'
   | 'spleen' | 'brain' | 'cord' | 'genital' | 'membrane'
@@ -127,7 +142,12 @@ const ORGAN: Record<OrganKind, string> = {
 }
 
 /** Organs: moist, so a soft clear coat over a satin base; baked occlusion in the vertex colours. */
-export function organMaterial(kind: OrganKind, name: string): THREE.Material {
+export function organMaterial(kind: OrganKind, name: string, plain = false): THREE.Material {
+  const m = organMaterialFull(kind, name)
+  return plain && m instanceof THREE.MeshPhysicalMaterial ? lite(m) : m
+}
+
+function organMaterialFull(kind: OrganKind, name: string): THREE.Material {
   const h = hash(name)
   let colour = ORGAN[kind] ?? ORGAN.gut
   if (kind === 'heart' && /leaflet/i.test(name)) colour = '#e3cfc0' // valve leaflets: thin, pale fibrous tissue
@@ -146,8 +166,14 @@ export function organMaterial(kind: OrganKind, name: string): THREE.Material {
   })
 }
 
+/** Hyaline cartilage (nose, costal cartilages): pale ivory-grey, slightly translucent and glassy. */
 export function cartilageMaterial(): THREE.MeshPhysicalMaterial {
   return new THREE.MeshPhysicalMaterial({ color: '#d6d0c4', roughness: 0.32, clearcoat: 0.55, clearcoatRoughness: 0.25, sheen: 0.35, sheenColor: new THREE.Color('#f4efe6'), transparent: true, opacity: 0.88 })
+}
+
+/** Skin: a warm, matte tone (the MakeHuman surface has no texture). */
+export function skinMaterial(): THREE.MeshStandardMaterial {
+  return new THREE.MeshStandardMaterial({ color: '#d9a88c', roughness: 0.65 })
 }
 
 /** A soft round shadow on the ground under the model (a radial gradient, no shadow maps: cheap on phones). */

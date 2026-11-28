@@ -54,6 +54,10 @@ export function Credits({ onBack }: { onBack: () => void }) {
               the source surfaces of the stomach, intestines and a few other organs closed with smooth patches; the brain, coarse
               in the source, rounded by subdivision (within 2 mm of the original).
             </p>
+            <p className="muted small">
+              The names shown for muscles and organs are Z-Anatomy’s; a few that it abbreviates or misspells are written out in
+              full.
+            </p>
           </section>
 
           <section>

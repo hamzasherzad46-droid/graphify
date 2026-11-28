@@ -17,6 +17,8 @@ export type CameraCommand =
   | { kind: 'frame'; id: string; n: number; region?: boolean; close?: boolean }
   /** Frame every bone on show (the region view), from the front. */
   | { kind: 'fit'; n: number }
+  /** Fly to a soft part (muscle or organ). */
+  | { kind: 'part'; id: string; n: number }
 
 export interface ErrorReport {
   boneId: string
@@ -31,9 +33,29 @@ export interface ReviewOverride {
   date: string
 }
 
+/**
+ * Layers of the male model, from the inside out: each step adds one. 0 = the skeleton only (the bone view every study
+ * mode uses), 1 + organs, 2 + deep muscles, 3 + superficial muscles, 4 + skin. Muscles and organs exist for the male
+ * model only; the female model is the skeleton.
+ */
+export const LAYERS = ['Skeleton', 'Organs', 'Deep muscles', 'Superficial muscles', 'Skin'] as const
+export type LayerLevel = 0 | 1 | 2 | 3 | 4
+
 interface ViewerState {
   sex: Sex
   selectedId: string | null
+  /** Soft-tissue layers on show (see LAYERS). */
+  layer: LayerLevel
+  setLayer: (l: LayerLevel) => void
+  /** The layer control is open (it and the exploded view's controls are never open together). */
+  layersOpen: boolean
+  setLayersOpen: (on: boolean) => void
+  /** The selected muscle, organ or other soft part (content/parts/male.json id); a bone and a part are never both selected. */
+  partId: string | null
+  selectPart: (id: string | null, opts?: { focus?: boolean }) => void
+  /** Soft parts hidden by hand ("Show all" brings them back). */
+  hiddenParts: string[]
+  hidePart: (id: string) => void
   hidden: string[]
   isolated: string[] | null
   /** 3D region view: a regions.json group ('all' = whole skeleton), the side for limbs, and the bones it shows. */
@@ -91,6 +113,22 @@ let n = 0
 export const useViewer = create<ViewerState>((set, get) => ({
   sex: 'male',
   selectedId: null,
+  layer: 0,
+  // Muscles and organs sit on the bones where they are: showing them puts any pulled-out bones back.
+  setLayer: (layer) => set((s) => ({ layer, partId: layer === 0 ? null : s.partId, ...(layer > 0 ? { explodeAmount: 0, dragged: {} } : {}) })),
+  layersOpen: false,
+  setLayersOpen: (layersOpen) => set(layersOpen ? { layersOpen, explodeOpen: false } : { layersOpen }),
+  partId: null,
+  hiddenParts: [],
+  hidePart: (id) => set((s) => ({ hiddenParts: [...new Set([...s.hiddenParts, id])], partId: s.partId === id ? null : s.partId })),
+  selectPart: (id, opts) =>
+    set((s) => ({
+      partId: id,
+      selectedId: id ? null : s.selectedId,
+      hiddenParts: id ? s.hiddenParts.filter((h) => h !== id) : s.hiddenParts,
+      panelExpanded: id ? s.panelExpanded : false,
+      camera: id && opts?.focus ? { kind: 'part', id, n: ++n } : s.camera,
+    })),
   hidden: [],
   isolated: null,
   region: 'all',
@@ -123,7 +161,8 @@ export const useViewer = create<ViewerState>((set, get) => ({
   explodeGroup: 'all',
   explodeAmount: 0,
   dragged: {},
-  setExplodeOpen: (explodeOpen) => set({ explodeOpen }),
+  // The exploded view is of the bones: opening it shows the skeleton alone.
+  setExplodeOpen: (explodeOpen) => set(explodeOpen ? { explodeOpen, layersOpen: false, layer: 0, partId: null } : { explodeOpen }),
   setExplodeGroup: (explodeGroup) => set({ explodeGroup }),
   setExplodeAmount: (explodeAmount) => set({ explodeAmount }),
   setDragged: (id, offset) => set((s) => ({ dragged: { ...s.dragged, [id]: offset } })),
@@ -135,6 +174,8 @@ export const useViewer = create<ViewerState>((set, get) => ({
     set({
       studying: true,
       selectedId: null,
+      partId: null,
+      layer: 0,
       hidden: [],
       isolated: null,
       regionIds: null,
@@ -167,6 +208,7 @@ export const useViewer = create<ViewerState>((set, get) => ({
   select: (id, opts) =>
     set((s) => ({
       selectedId: id,
+      partId: id ? null : s.partId,
       panelExpanded: id ? s.panelExpanded : false,
       // Selecting a hidden bone (e.g. from search) shows it again.
       hidden: id ? s.hidden.filter((h) => h !== id) : s.hidden,
@@ -180,9 +222,9 @@ export const useViewer = create<ViewerState>((set, get) => ({
   resetView: () => set({ camera: { kind: 'reset', n: ++n } }),
   hide: (id) => set((s) => ({ hidden: [...new Set([...s.hidden, id])], selectedId: s.selectedId === id ? null : s.selectedId })),
   isolate: (id) => set({ isolated: [id], selectedId: id, hidden: get().hidden.filter((h) => h !== id), camera: { kind: 'focus', id, n: ++n, tight: true } }),
-  showAll: () => set({ hidden: [], isolated: null }),
+  showAll: () => set({ hidden: [], isolated: null, hiddenParts: [] }),
   setGhost: (ghost) => set({ ghost }),
-  setSex: (sex) => set((s) => (s.sex === sex ? {} : { sex, loaded: false })),
+  setSex: (sex) => set((s) => (s.sex === sex ? {} : { sex, loaded: false, partId: null })),
   setPanelExpanded: (panelExpanded) => set({ panelExpanded }),
   setLoaded: (loaded) => set({ loaded }),
 }))
@@ -212,6 +254,12 @@ interface PrefsState {
   /** Light vibration feedback on taps and answers (phones that support it). */
   haptics: boolean
   setProfile: (p: Partial<{ name: string; course: Course | ''; dailyGoal: number; haptics: boolean }>) => void
+  /** Modesty: the genital organs and the urethra stay hidden in the 3D view (on by default). */
+  modesty: boolean
+  setModesty: (on: boolean) => void
+  /** Frame rate readout in the 3D view (for checking performance on a device). */
+  showFps: boolean
+  setShowFps: (on: boolean) => void
   /** Bone labels in the 3D view: every bone, the main bones (content/labels.json), or none. */
   labelDensity: LabelDensity
   setLabelDensity: (d: LabelDensity) => void
@@ -241,6 +289,10 @@ export const usePrefs = create<PrefsState>()(
       dailyGoal: 20,
       haptics: true,
       setProfile: (p) => set(p),
+      modesty: true,
+      setModesty: (modesty) => set({ modesty }),
+      showFps: false,
+      setShowFps: (showFps) => set({ showFps }),
       labelDensity: 'main',
       setLabelDensity: (labelDensity) => set({ labelDensity }),
       study: DEFAULT_STUDY,

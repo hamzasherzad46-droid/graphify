@@ -54,6 +54,8 @@ export function LabelLayout() {
   const regionIds = useViewer((s) => s.regionIds)
   const studying = useViewer((s) => s.studying)
   const sex = useViewer((s) => s.sex)
+  // Bone labels make sense while the bones can be seen: with the muscles on (male model), only the selected bone's.
+  const covered = useViewer((s) => s.sex === 'male' && s.layer >= 2)
   // A region view (the hand, the spine) is studied bone by bone: "Main bones" labels every bone in it.
   const shown = regionIds && density === 'main' ? 'all' : density
 
@@ -61,12 +63,12 @@ export function LabelLayout() {
     if (!loaded || studying) return []
     const visible = (id: string) => registry.bones.has(id) && !hidden.includes(id) && (!isolated || isolated.includes(id)) && (!regionIds || regionIds.includes(id))
     const set = new Set<string>()
-    if (shown === 'all') for (const id of registry.bones.keys()) if (visible(id)) set.add(id)
-    if (shown === 'main') for (const id of MAIN) if (visible(id)) set.add(id)
+    if (shown === 'all' && !covered) for (const id of registry.bones.keys()) if (visible(id)) set.add(id)
+    if (shown === 'main' && !covered) for (const id of MAIN) if (visible(id)) set.add(id)
     if (selectedId && visible(selectedId)) set.add(selectedId)
     return [...set]
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [shown, loaded, studying, selectedId, hidden, isolated, regionIds, sex])
+  }, [shown, loaded, studying, selectedId, hidden, isolated, regionIds, sex, covered])
 
   useEffect(() => {
     useLabelSet.setState({ ids, selected: selectedId, groupIds: shown === 'all' && ids.length ? ALL_GROUP_IDS : [] })
@@ -107,8 +109,8 @@ export function LabelLayout() {
     const v = useViewer.getState()
     const box: LayoutBox = {
       width: W,
-      top: topInset(v.explodeOpen) + 20, // below the orientation readout
-      bottom: H - (v.selectedId ? INSETS.panel : INSETS.bottom) - 6,
+      top: topInset(v) + 20, // below the orientation readout
+      bottom: H - (v.selectedId || v.partId ? INSETS.panel : INSETS.bottom) - 6,
       row: 22,
       minRow: LABEL_H, // a label box is exactly one minimum row tall, so boxes never overlap
       edge: 10,

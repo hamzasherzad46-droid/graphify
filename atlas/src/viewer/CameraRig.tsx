@@ -9,8 +9,8 @@ import { registry } from './registry'
 import { BONES, BONE_BY_ID } from '../data/bones'
 
 /** Top of the free screen area: below the header, explode bar or study prompt. */
-const topNow = () => (useViewer.getState().studying ? useHud.getState().studyInsets.top : topInset(useViewer.getState().explodeOpen))
-const bottomNow = () => (useViewer.getState().studying ? useHud.getState().studyInsets.bottom : useViewer.getState().selectedId ? INSETS.panel : INSETS.bottom)
+const topNow = () => (useViewer.getState().studying ? useHud.getState().studyInsets.top : topInset(useViewer.getState()))
+const bottomNow = () => (useViewer.getState().studying ? useHud.getState().studyInsets.bottom : useViewer.getState().selectedId || useViewer.getState().partId ? INSETS.panel : INSETS.bottom)
 
 const DIRS: Record<ViewName, THREE.Vector3> = {
   anterior: new THREE.Vector3(0, 0, 1),
@@ -40,12 +40,19 @@ interface Tween {
   dur: number
 }
 
+/** The centre of a soft part (its vertices sit where they are in the body, around the model's origin). */
+function partCentre(m: THREE.Mesh): THREE.Vector3 {
+  m.geometry.computeBoundingSphere()
+  return m.geometry.boundingSphere!.center.clone().applyMatrix4(m.matrixWorld)
+}
+
 const ease = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2)
 
 export function CameraRig() {
   const camera = useThree((s) => s.camera) as THREE.PerspectiveCamera
   const size = useThree((s) => s.size)
   const invalidate = useThree((s) => s.invalidate)
+  const gl = useThree((s) => s.gl)
   const controls = useRef<OrbitControlsImpl>(null)
   const tween = useRef<Tween | null>(null)
   const command = useViewer((s) => s.camera)
@@ -160,10 +167,11 @@ export function CameraRig() {
     } else if (command.kind === 'view') {
       // Keep what you are looking at; turn the camera to the preset direction.
       const dir = DIRS[command.view]
-      const sel = useViewer.getState().selectedId
-      const m = sel ? registry.bones.get(sel) : null
+      const { selectedId: sel, partId } = useViewer.getState()
+      const m = sel ? registry.bones.get(sel) : partId ? registry.parts.get(partId) : null
       if (m) {
-        const p = m.getWorldPosition(new THREE.Vector3())
+        // A part's vertices are placed in the model, not around its node: use the centre of its bounds.
+        const p = sel ? m.getWorldPosition(new THREE.Vector3()) : partCentre(m)
         const dist = camera.position.distanceTo(c.target)
         flyTo(framedTarget(p, dir, dist, bottom), dir, dist)
       } else {
@@ -227,6 +235,15 @@ export function CameraRig() {
       }
       const dist = fitDistance(R, bottom)
       flyTo(framedTarget(p, dir, dist, bottom), dir, dist, 650)
+    } else if (command.kind === 'part') {
+      // A muscle or organ: its bounding sphere, seen from where the camera is now.
+      const m = registry.parts.get(command.id)
+      if (!m) return
+      m.geometry.computeBoundingSphere()
+      const sphere = m.geometry.boundingSphere!.clone().applyMatrix4(m.matrixWorld)
+      const dir = camera.position.clone().sub(c.target).normalize()
+      const dist = fitDistance(Math.max(sphere.radius * 1.25, 0.04), bottom)
+      flyTo(framedTarget(sphere.center, dir, dist, bottom), dir, dist)
     } else if (command.kind === 'focus') {
       const m = registry.bones.get(command.id)
       if (!m) return
@@ -240,9 +257,9 @@ export function CameraRig() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [command])
 
-  // Development only: expose the controls for automated tests (exact rotations).
+  // Development only: expose the controls and renderer for automated tests (exact rotations, draw counts).
   useEffect(() => {
-    if (import.meta.env.DEV && controls.current) Object.assign((window as unknown as { __atlas?: object }).__atlas ?? {}, { controls: controls.current, invalidate })
+    if (import.meta.env.DEV && controls.current) Object.assign((window as unknown as { __atlas?: object }).__atlas ?? {}, { controls: controls.current, invalidate, gl })
   })
 
   // A touch or drag cancels a running flight.

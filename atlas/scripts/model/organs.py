@@ -327,6 +327,7 @@ def main(work, out):
         a = (1 - igl.ambient_occlusion(allv, allf, v + N * 0.0004, N, 32)).astype(np.float64)
         ao1[n] = fit.smooth_field(a[:, None], fit.neighbours(f, len(v)), 3)[:, 0]
     print('occlusion baked', flush=True)
+    layers.KNOWN.update(names)
     rows = []
     for lod in (1, 0):
         meshes = []

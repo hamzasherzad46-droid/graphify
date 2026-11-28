@@ -5,6 +5,8 @@ import { useNav } from './state/nav'
 import { TopBar } from './ui/TopBar'
 import { Dock } from './ui/Dock'
 import { HudReadout } from './ui/HudReadout'
+import { LayerBar } from './ui/LayerBar'
+import { PartPanel } from './ui/PartPanel'
 import { ExplodeBar } from './ui/ExplodeBar'
 import { InfoPanel } from './ui/InfoPanel'
 import { LabelsOverlay } from './ui/LabelsOverlay'
@@ -57,8 +59,10 @@ export default function App() {
               <TopBar />
               <HudReadout />
               <ExplodeBar />
+              <LayerBar />
               <Dock />
               <InfoPanel />
+              <PartPanel />
               <Loader done={loaded} />
               {returnTo && (
                 <button className="back-pill" onClick={() => useNav.getState().go('home')}>

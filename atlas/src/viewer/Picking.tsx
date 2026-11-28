@@ -38,16 +38,19 @@ export function Picking() {
       ndc.set(((x - r.left) / r.width) * 2 - 1, -((y - r.top) / r.height) * 2 + 1)
       ray.setFromCamera(ndc, camera)
     }
-    const pick = (x: number, y: number): { id: string; point: THREE.Vector3 } | null => {
+    const pick = (x: number, y: number): { id: string; point: THREE.Vector3; part: boolean } | null => {
       setRay(x, y)
       const objects = [...registry.bones.values()].filter((m) => m.visible)
+      // Soft parts on show (muscles, organs) are picked too, except in a study session. A bone hidden behind them
+      // cannot be pulled out (press and hold picks what is in front).
+      if (!useViewer.getState().studying) for (const m of registry.parts.values()) if (m.visible && m.parent?.visible !== false) objects.push(m)
       const hit = ray.intersectObjects(objects, false)[0]
-      return hit ? { id: hit.object.name, point: hit.point } : null
+      return hit ? { id: hit.object.name, point: hit.point, part: registry.parts.get(hit.object.name) === hit.object } : null
     }
 
     const startDrag = (x: number, y: number) => {
       const hit = pick(x, y)
-      if (!hit) return
+      if (!hit || hit.part) return
       const normal = camera.getWorldDirection(new THREE.Vector3())
       drag = {
         id: hit.id,
@@ -115,7 +118,16 @@ export function Picking() {
           return
         }
       }
-      const id = pick(e.clientX, e.clientY)?.id ?? null
+      const hit = pick(e.clientX, e.clientY)
+      if (hit?.part) {
+        // A muscle or organ: select it (double-tap flies to it).
+        const now = performance.now()
+        const twice = now - last.t < DOUBLE_TAP && Math.hypot(e.clientX - last.x, e.clientY - last.y) < 30 && last.id === hit.id
+        useViewer.getState().selectPart(hit.id, { focus: twice })
+        last = twice ? { t: 0, x: 0, y: 0, id: null } : { t: now, x: e.clientX, y: e.clientY, id: hit.id }
+        return
+      }
+      const id = hit?.id ?? null
       const now = performance.now()
       const isDouble = now - last.t < DOUBLE_TAP && Math.hypot(e.clientX - last.x, e.clientY - last.y) < 30
       const s = useViewer.getState()
@@ -129,6 +141,7 @@ export function Picking() {
         return
       }
       s.select(id)
+      if (!id) s.selectPart(null)
       last = { t: now, x: e.clientX, y: e.clientY, id }
     }
     const onCancel = (e: PointerEvent) => {

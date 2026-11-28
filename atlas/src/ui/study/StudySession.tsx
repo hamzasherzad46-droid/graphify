@@ -18,6 +18,7 @@ export function StudySession({ mode }: { mode: Mode }) {
   const [run, setRun] = useState(0)
   const autostart = useSession((s) => s.autostart)
   const bones = useSession((s) => s.bones)
+  const structures = useSession((s) => s.structures)
   const [items, setItems] = useState<Item[]>(() => (mode === 'flashcards' || mode === 'typing' || mode === 'mycards' || mode === 'layered' ? [] : buildItems(mode, settings.area, settings.count)))
   const [result, setResult] = useState<{ results: Result[]; ms: number; timeUp: boolean } | null>(null)
 
@@ -36,10 +37,16 @@ export function StudySession({ mode }: { mode: Mode }) {
     // After the session's own clean-up (endStudy), select and fly to the bone.
     window.setTimeout(() => useViewer.getState().select(id, { focus: true }), 0)
   }
+  /** A muscle or organ: the male model, with its layer on show. */
+  const showPart = (id: string) => {
+    close()
+    window.setTimeout(() => useNav.getState().showPart(id, ''), 0)
+  }
+  const layered = (c: (typeof LAYERED)[number]) => (bones ? !!c.bone && bones.includes(c.bone) : true) && (structures ? structures.includes(c.structureId) : true)
 
   if (mode === 'flashcards') return <FlashcardSession onClose={close} onShow={show} />
   if (mode === 'mycards') return <MyCardsSession onClose={close} />
-  if (mode === 'layered') return <LayeredSession onClose={close} onShow={show} cards={bones ? LAYERED.filter((c) => bones.includes(c.bone)) : undefined} />
+  if (mode === 'layered') return <LayeredSession onClose={close} onShow={show} onShowPart={showPart} cards={bones || structures ? LAYERED.filter(layered) : undefined} />
   if (mode === 'typing') return <SpellingSession onClose={close} onShow={show} autostart={autostart} />
 
   if (result)

@@ -25,8 +25,10 @@ export interface LayeredCard {
   level: CardLevel
   /** The structure the card is about (a slug: 'scaphoid', 'pterion', 'ulnar-nerve'). */
   structureId: string
-  /** The Atlas bone for the 3D view and "See in 3D". */
-  bone: string
+  /** The Atlas bone for the 3D view and "See in 3D" (bone cards). */
+  bone?: string
+  /** Muscle and organ cards: the part of the male model for "See in 3D" (content/parts/male.json). */
+  part?: string
   /** Show the bone on the front (only where it does not give the answer away). */
   frontView: boolean
   /** Front 3D view: degrees above the bone to look from. */

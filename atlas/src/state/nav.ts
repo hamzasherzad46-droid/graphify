@@ -34,6 +34,8 @@ export const useNav = create<{
   go: (tab: Tab) => void
   /** Open a bone in 3D from a lesson, with a way back. */
   showBone: (bone: string, from: string) => void
+  /** Open a muscle or organ in 3D (male model, its layer on show) from a lesson, with a way back. */
+  showPart: (part: string, from: string) => void
   push: (p: Page) => void
   /** Close the top page (through history, so back button and in-app back stay in step). */
   back: () => void
@@ -50,6 +52,17 @@ export const useNav = create<{
     set({ tab: '3d', returnTo: from })
     // The 3D view is mounted under every tab; select and fly to the bone.
     void import('./store').then(({ useViewer }) => useViewer.getState().select(bone, { focus: true }))
+  },
+  showPart: (part, from) => {
+    set({ tab: '3d', returnTo: from })
+    void Promise.all([import('./store'), import('../data/parts')]).then(async ([{ useViewer }, { loadParts, layerFor }]) => {
+      const p = (await loadParts()).get(part)
+      if (!p) return
+      const v = useViewer.getState()
+      v.setSex('male')
+      v.setLayer(Math.max(v.layer, layerFor(p)) as 1 | 2 | 3)
+      v.selectPart(part, { focus: true })
+    })
   },
   push: (p) => {
     history.pushState({ atlasDepth: get().pages.length + 1 }, '')

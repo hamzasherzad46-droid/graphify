@@ -108,7 +108,7 @@ export function Credits({ onBack }: { onBack: () => void }) {
             </p>
             <p className="muted small">
               Modified for Atlas: a slim female and a lean male body shape, re-posed to the anatomical position and fitted over the Atlas
-              skeletons.
+              skeletons; the male eyelids reshaped round the eyes after fitting.
             </p>
           </section>
 

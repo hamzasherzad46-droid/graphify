@@ -152,6 +152,22 @@ export function CameraRig() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [loaded])
 
+  // Opening or closing the layer or explode controls changes the free screen area: while the whole model is in view
+  // (not zoomed in, nothing selected), it is framed again inside the new area, from the same direction.
+  useEffect(() => {
+    if (!loaded) return
+    return useViewer.subscribe((s, prev) => {
+      if (s.layersOpen === prev.layersOpen && s.explodeOpen === prev.explodeOpen) return
+      const c = controls.current
+      if (!c || !home.current || s.studying || s.selectedId || s.partId || s.regionIds) return
+      const dir = camera.position.clone().sub(c.target).normalize()
+      const v = homeView(dir)
+      if (camera.position.distanceTo(c.target) < v.dist * 0.6) return // zoomed in: leave the view as it is
+      flyTo(v.target, dir, v.dist, 500)
+    })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loaded])
+
   // Camera commands from the UI.
   useEffect(() => {
     const c = controls.current

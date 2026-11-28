@@ -237,9 +237,17 @@ npx gltf-transform draco /tmp/fit/organs-male-lod1.glb public/models/tissue/orga
   fibre striations). Nothing that cannot be seen is drawn: the brain and spinal cord only when the skull or spine is
   see-through or hidden, and nothing under the skin when the skin is on. The models are not precached; each is kept
   for offline use once viewed. Measured in headless Chromium at 390 × 844 (draw calls, triangles): skeleton 253,
-  260,000; organs 389, 458,000; deep muscles 681, 636,000; all muscles 911, 837,000; skin 262, 295,000. At 1024 × 1366
+  260,000; organs 389, 458,000; deep muscles 681, 636,000; all muscles 911, 837,000; skin 10, 34,000 (under the opaque skin neither muscles nor bones are drawn). At 1024 × 1366
   (detailed models): up to 911 and 1.5 million. **Frame rate on phones is not yet measured on a device:** You →
   Appearance → Frame rate shows frames per second in the 3D view for that test.
+- **Smoothness:** a change of layer cross-fades (280 ms; at once when the system asks for reduced motion), and the
+  bones under the skin go only once it has faded in. Opening the layer control downloads and decodes the organs, then
+  the muscles, in the background; a layer still loading pulses its name on the slider. Opening or closing the layer or
+  explode controls frames the whole model again inside the space left free (unless zoomed in or something is selected).
+- **Skin repairs** (`scripts/model/fix_eyelids.mjs`, on the built models): fitting the skin to the skull had crumpled
+  the eyelids and folded them across the eyes. Each opening is now an almond centred on the cornea, with the lids lying
+  smoothly on the eyeball. Under the opaque skin the bones are not drawn (they showed through it as specks where it is
+  thinnest). The scalp's galea aponeurotica is nearly opaque, so the crown reads as scalp rather than bare skull.
 
 ## Exploded view (step 3)
 

@@ -158,7 +158,9 @@ function inline(node, ctx) {
     if (c.nodeType === 3) {
       // A word run straight on after a key term ("quadratus femoris</term>laterally", 11.6) gets its space back.
       const t = clean(c.data)
-      push(c.previousSibling?.localName === 'term' && /^[a-z]{2}/.test(t) ? ` ${t}` : t)
+      // So does a word run straight on after a numeric subscript ("CO<sub>2</sub>to be released", 22.1).
+      const runOn = (c.previousSibling?.localName === 'term' || (c.previousSibling?.localName === 'sub' && /^\d+$/.test(textOf(c.previousSibling)))) && /^[a-z]{2}/.test(t)
+      push(runOn ? ` ${t}` : t)
     }
     else if (c.nodeType !== 1) continue
     else if (c.localName === 'term') push({ k: 'term', t: textOf(c) })

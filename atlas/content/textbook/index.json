@@ -1187,7 +1187,7 @@
    "topic": "endocrine",
    "keyPoints": 1,
    "figures": 2,
-   "words": 1964,
+   "words": 1965,
    "bones": []
   },
   {
@@ -1324,7 +1324,7 @@
    "topic": "heart",
    "keyPoints": 1,
    "figures": 4,
-   "words": 1748,
+   "words": 1749,
    "bones": []
   },
   {
@@ -1574,7 +1574,7 @@
    "topic": "respiratory",
    "keyPoints": 2,
    "figures": 10,
-   "words": 3247,
+   "words": 3248,
    "bones": [
     "ethmoid_bone",
     "frontal_bone",

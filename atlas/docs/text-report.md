@@ -1,6 +1,6 @@
 # Atlas text check
 
-32,044 pieces of text, 582,085 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 177 approved + 173 proposed.
+32,044 pieces of text, 582,088 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 177 approved + 173 proposed.
 
 **Result: PASS.** Unknown words: 0. American spellings: 0. Names written two ways or in the wrong case: 0. Abbreviations not written out at first use: 0. Restricted words out of place: 0. Names not in their owners’ spelling: 0. Grammar rule hits: 8; LanguageTool: 15.
 

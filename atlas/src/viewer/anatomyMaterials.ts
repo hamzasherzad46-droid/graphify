@@ -115,6 +115,36 @@ export function tissueMaterial(kind: TissueKind, name: string): THREE.Material {
 }
 
 /** Hyaline cartilage (nose, costal cartilages): pale ivory-grey, slightly translucent and glassy. */
+export type OrganKind =
+  | 'heart' | 'artery' | 'vein' | 'lung' | 'airway' | 'liver' | 'bile' | 'gut' | 'mouth' | 'gland' | 'kidney' | 'urinary'
+  | 'spleen' | 'brain' | 'cord' | 'genital' | 'membrane'
+
+// Organ colours: natural tissue tones, with the textbook convention for vessels (arteries red, veins blue).
+const ORGAN: Record<OrganKind, string> = {
+  heart: '#9a3a31', artery: '#b8332b', vein: '#3f5d9a', lung: '#d39189', airway: '#e2d3c2', liver: '#7a3026',
+  bile: '#5d7a3c', gut: '#d49a86', mouth: '#c0605a', gland: '#d6a56e', kidney: '#8a3a2e', urinary: '#d8b39a',
+  spleen: '#6f2b3b', brain: '#e2c2b6', cord: '#ebdfcf', genital: '#c98e7c', membrane: '#efe0b4',
+}
+
+/** Organs: moist, so a soft clear coat over a satin base; baked occlusion in the vertex colours. */
+export function organMaterial(kind: OrganKind, name: string): THREE.Material {
+  const h = hash(name)
+  let colour = ORGAN[kind] ?? ORGAN.gut
+  if (kind === 'heart' && /leaflet/i.test(name)) colour = '#e3cfc0' // valve leaflets: thin, pale fibrous tissue
+  if (kind === 'gland' && /thyroid/i.test(name)) colour = '#a9493f'
+  if (kind === 'gland' && /suprarenal/i.test(name)) colour = '#d8a43f'
+  if (kind === 'mouth' && /gingiva/i.test(name)) colour = '#d27c78'
+  const c = new THREE.Color(colour).offsetHSL(0, 0, (h - 0.5) * 0.03)
+  if (kind === 'membrane') {
+    return new THREE.MeshPhysicalMaterial({ color: c, vertexColors: true, roughness: 0.4, transparent: true, opacity: 0.3, depthWrite: false, side: THREE.DoubleSide })
+  }
+  const wet = kind === 'brain' || kind === 'cord' ? 0.15 : 0.35
+  return new THREE.MeshPhysicalMaterial({
+    color: c, vertexColors: true, roughness: kind === 'lung' ? 0.7 : 0.5, sheen: 0.4, sheenRoughness: 0.5,
+    sheenColor: new THREE.Color('#ffe6dc'), clearcoat: wet, clearcoatRoughness: 0.35,
+  })
+}
+
 export function cartilageMaterial(): THREE.MeshPhysicalMaterial {
   return new THREE.MeshPhysicalMaterial({ color: '#d6d0c4', roughness: 0.32, clearcoat: 0.55, clearcoatRoughness: 0.25, sheen: 0.35, sheenColor: new THREE.Color('#f4efe6'), transparent: true, opacity: 0.88 })
 }

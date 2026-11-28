@@ -27,17 +27,12 @@
    },
    "depth": [
     {
-     "t": "Long head: arises above the glenoid cavity.",
+     "t": "Long head: arises from the tubercle above the glenoid cavity.",
      "src": [
       "s11-5#fig-ch11_05_05",
       "s8-2#fs-id2110691"
-     ]
-    },
-    {
-     "t": "Short head: arises from the coracoid process of the scapula.",
-     "src": [
-      "s11-5#fig-ch11_05_05"
-     ]
+     ],
+     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which head of the biceps arises where (OpenStax lists both origins, not which head each belongs to)."
     },
     {
      "t": "Belly: the plump middle of the muscle.",
@@ -46,15 +41,14 @@
      ]
     },
     {
-     "t": "Fusiform shape: a spindle-shaped belly that tapers towards each end.",
+     "t": "The triceps brachii, at the back of the arm, is its antagonist.",
      "src": [
-      "s11-1#fs-id2292670"
-     ],
-     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the biceps brachii itself is fusiform (11.1 uses it as the example of a belly)."
+      "s11-1#tbl-ch11_01"
+     ]
     }
    ],
    "clinical": {
-    "t": "Damage to the lower motor neurons that supply the biceps. The reflex needs the spindle’s sensory fibre, the spinal synapse and the motor neuron intact.",
+    "t": "If the lower motor neurons to the biceps are damaged, tapping its tendon gives no normal reflex. The reflex needs the sensory fibre, the spinal synapse and the motor neuron intact.",
     "src": [
      "s16-4#fs-id1956663"
     ]
@@ -93,7 +87,7 @@
     ]
    },
    "simpler": {
-    "t": "The calf muscles lift your heel so you can stand on tiptoe and push off when walking.",
+    "t": "The calf muscles point your foot down, as when you jump or tap your foot.",
     "src": [
      "s11-6#fs-id2421915",
      "s11-6#fig-ch11_06_05"
@@ -128,7 +122,7 @@
     }
    ],
    "clinical": {
-    "t": "Tapping the calcaneal tendon with a reflex hammer. Stretch of the muscle excites its own motor neurons through the spinal cord.",
+    "t": "If the reflex arc is damaged, tapping the calcaneal tendon gives no ankle reflex. Normally the stretch excites the motor neurons of the gastrocnemius and soleus through the spinal cord.",
     "src": [
      "s16-4#fs-id1956663"
     ]
@@ -155,9 +149,10 @@
    "front": "Which muscle is the major abductor of the arm?",
    "answer": "Deltoid",
    "why": {
-    "t": "The thick muscle that makes the rounded shape of the shoulder, and the main muscle that lifts the arm sideways. Its fibres arch over the shoulder, so pulling on the humerus lifts the arm away from the body.",
+    "t": "It is the major abductor of the arm, and it also helps to flex, extend and rotate it. Its fibres arch over the shoulder, so pulling on the humerus lifts the arm away from the body.",
     "src": [
-     "s11-5#fs-id2501482"
+     "s11-5#fs-id2501482",
+     "glossary:deltoid"
     ]
    },
    "simpler": {
@@ -184,23 +179,14 @@
      "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the middle (acromial) fibres are the ones that abduct."
     },
     {
-     "t": "Spinal (back) part: arises from the spine of the scapula.",
-     "src": [
-      "s11-5#fig-ch11_05_03",
-      "s11-5#fs-id2501482"
-     ],
-     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts)."
-    },
-    {
-     "t": "Shape: thick and triangular, like the Greek letter delta, which gives it its name.",
+     "t": "Its thickness gives the shoulder its rounded outline.",
      "src": [
       "s11-5#fs-id2501482"
-     ],
-     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The origin of the name (the Greek letter delta)."
+     ]
     }
    ],
    "clinical": {
-    "t": "A fracture of the surgical neck of the humerus after a fall. Without its nerve, the deltoid cannot contract, so abduction is weak.",
+    "t": "A fracture of the surgical neck of the humerus can injure the axillary nerve. The deltoid then cannot contract, so lifting the arm sideways is weak.",
     "src": [
      "s8-2#fs-id2030259"
     ],
@@ -227,9 +213,10 @@
    "front": "Which nerve supplies the diaphragm?",
    "answer": "Phrenic nerve",
    "why": {
-    "t": "The phrenic nerve comes from the cervical plexus in the neck. It reaches the diaphragm at the base of the thorax.",
+    "t": "It comes from the cervical plexus in the neck and reaches the diaphragm at the base of the thorax. Contracting, it moves down towards the abdomen and makes the thoracic cavity larger.",
     "src": [
-     "s13-4#fs-id1472046"
+     "s13-4#fs-id1472046",
+     "s22-3#fs-id1882180"
     ]
    },
    "simpler": {
@@ -268,7 +255,7 @@
     }
    ],
    "clinical": {
-    "t": "Damage to the pons or medulla, after a stroke or from drugs such as morphine. Without signals from the centres, the diaphragm and intercostals do not contract.",
+    "t": "In central sleep apnoea, the respiratory centres do not drive the diaphragm regularly, so breathing stops for short periods. Damage to the pons or medulla, or drugs such as morphine, can cause it.",
     "src": [
      "s22-3#fs-id2582598",
      "s22-3#fs-id2096099"
@@ -309,38 +296,30 @@
    },
    "depth": [
     {
-     "t": "Biceps femoris: the lateral hamstring.",
-     "src": [
-      "s11-6#fig-ch11_06_03"
-     ]
-    },
-    {
-     "t": "Semitendinosus: a medial hamstring with a long tendon.",
-     "src": [
-      "s11-6#fig-ch11_06_03"
-     ],
-     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The long tendon of the semitendinosus."
-    },
-    {
-     "t": "Semimembranosus: a medial hamstring, deep to the semitendinosus.",
-     "src": [
-      "s11-6#fig-ch11_06_03"
-     ],
-     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the semimembranosus lies deep to the semitendinosus."
-    },
-    {
      "t": "Popliteal fossa: the diamond-shaped space behind the knee, bordered by their tendons.",
      "src": [
       "s11-6#fs-id2012638"
      ]
+    },
+    {
+     "t": "Crossing the back of the knee, they flex the leg, as when kneeling.",
+     "src": [
+      "s11-6#fs-id2012638",
+      "s11-6#fig-ch11_06_03"
+     ]
+    },
+    {
+     "t": "They oppose the quadriceps, which extend the knee.",
+     "src": [
+      "s11-1#tbl-ch11_01"
+     ]
     }
    ],
    "clinical": {
-    "t": "A sudden sprint, with the hip flexed and the knee straightening. They are stretched across two joints while contracting hard to slow the leg.",
+    "t": "Compression or irritation of the sciatic nerve, or of the spinal nerves that form it, causes sciatica: pain on moving the hip and leg.",
     "src": [
-     "s11-6#fs-id2012638"
-    ],
-    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Hamstring strains."
+     "s13-4#fs-id1472046"
+    ]
    },
    "trap": {
     "t": "The hamstrings flex the knee and extend the hip; the quadriceps extend the knee.",
@@ -410,7 +389,7 @@
     }
    ],
    "clinical": {
-    "t": "Tapping the patellar ligament below the kneecap. Stretching the muscle activates its spindles, which excite its motor neurons directly.",
+    "t": "If the reflex arc is damaged, tapping the patellar ligament gives no knee-jerk reflex. Normally the stretch activates muscle spindles, which excite the quadriceps’ motor neurons directly.",
     "src": [
      "s16-4#fs-id1956663"
     ]
@@ -478,7 +457,7 @@
     }
    ],
    "clinical": {
-    "t": "Years of throwing fast pitches overhead. Repeated overhead movement squeezes the tendons beneath the acromion.",
+    "t": "Years of throwing fast pitches overhead can pinch and inflame the rotator cuff tendons. They may even tear away from the bone.",
     "src": [
      "s11-5#fs-id2421860",
      "s9-6#fs-id1894060"
@@ -517,7 +496,8 @@
     "src": [
      "s11-3#tbl-ch11_05",
      "s11-3#fs-id2455581"
-    ]
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That one muscle tilts the head towards its own side (OpenStax says “to the side”)."
    },
    "simpler": {
     "t": "It is the long muscle on each side of your neck that turns your head.",
@@ -553,14 +533,14 @@
     }
    ],
    "clinical": {
-    "t": "A baby born with a shortened sternocleidomastoid on one side. The short muscle pulls constantly, tilting to its own side and turning to the opposite.",
+    "t": "A baby born with one short sternocleidomastoid holds the head tilted to that side, with the face turned away (congenital torticollis).",
     "src": [
      "s11-3#tbl-ch11_05"
     ],
     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Congenital torticollis."
    },
    "trap": {
-    "t": "Acting alone, it turns the face away from its own side but tilts the head towards it.",
+    "t": "Acting alone, it turns the face to the opposite side; the two together flex the head.",
     "src": [
      "s11-3#tbl-ch11_05",
      "s11-3#fs-id2455581"

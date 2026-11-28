@@ -76,8 +76,7 @@ deltoid = lesson(
         'facts': [
             F('The deltoid caps the shoulder joint, covering it from the front, the side and the back.', SHOULDER),
             F('Its fibres arise from the clavicle, the acromion and the spine of the scapula.', HUMERUS_TABLE),
-            F('It inserts on the deltoid tuberosity, about halfway down the outer side of the humerus.',
-              check=f'{NOT_IN} The deltoid’s insertion (deltoid tuberosity of the humerus).'),
+            F('It inserts on the deltoid tuberosity, a roughened area halfway down the outer side of the humerus.', HUMERUS),
         ],
         'simpler': F('It wraps over the top of your shoulder, from your collarbone and shoulder blade to your upper arm bone.', HUMERUS_TABLE),
         'deeper': F('Its origin follows the insertion of the trapezius on the clavicle, acromion and scapular spine.', HUMERUS_TABLE, 's11-5#tbl-ch11_08'),
@@ -108,7 +107,7 @@ deltoid = lesson(
             REL('joint', 'Glenohumeral (shoulder) joint', 'The deltoid covers this joint, formed by the humeral head and the glenoid cavity.', HUMERUS, SHOULDER),
             REL('muscle', 'Trapezius', 'Attaches to the same line of clavicle, acromion and scapular spine, from above.', 's11-5#tbl-ch11_08', HUMERUS_TABLE),
             REL('muscle', 'Pectoralis major', 'The axial muscle in front. It shares the job of bringing the arm forwards.', 's11-5#fs-id2008704', 'glossary:pectoralis major'),
-            REL('nerve', 'Axillary nerve', 'A branch of the radial nerve that goes to the armpit region. It supplies the deltoid.', PLEXUS,
+            REL('nerve', 'Axillary nerve', 'A nerve of the brachial plexus that goes to the armpit region. It supplies the deltoid.', PLEXUS,
                 check=f'{NOT_IN} That the axillary nerve supplies the deltoid.'),
         ],
         'simpler': F('It covers the shoulder joint, with the rotator cuff underneath and the trapezius above.', SHOULDER, CUFF_JOINT),
@@ -162,7 +161,7 @@ rotator_cuff = lesson(
     parts=SIDES('supraspinatus_muscle', 'infraspinatus_muscle', 'teres_minor_muscle', 'subscapularis_muscle'),
     topic='muscles', source='OpenStax A&P 2e: 11.5 Muscles of the Pectoral Girdle and Upper Limbs; 9.6 Anatomy of Selected Synovial Joints',
     oneLine={
-        'main': F('Four short muscles from the scapula whose tendons ring the shoulder joint and hold the humeral head in its socket.', CUFF, CUFF_JOINT),
+        'main': F('Four muscles from the scapula whose tendons ring the shoulder joint and hold the humeral head in its socket.', CUFF, CUFF_JOINT),
         'simpler': F('The rotator cuff is a ring of four muscles that keeps your shoulder joint together.', CUFF_JOINT),
         'deeper': F('They act as “dynamic ligaments”, adjusting their pull to give the shoulder joint its main support.', CUFF_JOINT),
     },
@@ -216,7 +215,7 @@ rotator_cuff = lesson(
     clinical={
         'items': [
             CLIN('Years of throwing fast pitches overhead.', 'The rotator cuff tendons, which become pinched and inflamed and may tear from the bone.',
-                 'Raise the arm overhead without pain, or with full strength.', 'Repeated overhead movement squeezes the tendons beneath the acromion.', CUFF, SHOULDER_INJ),
+                 'Raise the arm overhead without pain, or with full strength.', 'Repeated overhead movement pinches the tendons, so they become inflamed.', CUFF, SHOULDER_INJ),
             CLIN('A fall onto the hand with the arm fully abducted.', 'The shoulder joint, which dislocates downwards (inferiorly).',
                  'Move the arm at the shoulder.', 'The cuff and ligaments support the joint in front, above and behind, but not below.', SHOULDER_INJ),
         ],
@@ -260,12 +259,14 @@ biceps = lesson(
             F('Its tendon inserts on the radial tuberosity of the radius.', check=f'{NOT_IN} The insertion of the biceps brachii (radial tuberosity).'),
         ],
         'simpler': F('It runs down the front of your upper arm, from your shoulder blade to your forearm.', FOREARM_TABLE, FLEXORS),
-        'deeper': F('The tendon of the long head runs in the intertubercular (bicipital) groove of the humerus.', HUMERUS),
+        'deeper': F('One of its tendons runs in the intertubercular (bicipital) groove of the humerus.', HUMERUS),
     },
     features={
         'items': [
-            FEAT('Long head', 'Arises above the glenoid cavity. Its tendon passes through the bicipital groove.', FOREARM_TABLE, HUMERUS),
-            FEAT('Short head', 'Arises from the coracoid process of the scapula.', FOREARM_TABLE),
+            FEAT('Long head', 'Arises from the tubercle above the glenoid cavity. Its tendon passes through the bicipital groove.', FOREARM_TABLE, HUMERUS,
+                 check=f'{NOT_IN} Which head of the biceps arises where (OpenStax lists both origins, not which head each belongs to).'),
+            FEAT('Short head', 'Arises from the coracoid process of the scapula.', FOREARM_TABLE,
+                 check=f'{NOT_IN} Which head of the biceps arises where (OpenStax lists both origins, not which head each belongs to).'),
             FEAT('Belly', 'The plump middle of the muscle. It bulges more as the muscle shortens.', BELLY),
             FEAT('Fusiform shape', 'A spindle-shaped belly that tapers towards each end.', BELLY,
                  check=f'{NOT_IN} That the biceps brachii itself is fusiform (11.1 uses it as the example of a belly).'),
@@ -286,7 +287,7 @@ biceps = lesson(
             REL('muscle', 'Brachialis', 'Lies deep to the biceps and adds power to elbow flexion.', FLEXORS),
             REL('muscle', 'Triceps brachii', 'In the posterior compartment. It extends the forearm, opposing the biceps.', PAIRS, FOREARM),
             REL('muscle', 'Brachioradialis', 'The third elbow flexor. It can flex the forearm quickly or help lift a load slowly.', FLEXORS),
-            REL('bone', 'Humerus', 'The long-head tendon runs in its intertubercular groove.', HUMERUS),
+            REL('bone', 'Humerus', 'A biceps tendon runs in its intertubercular (bicipital) groove.', HUMERUS),
             REL('nerve', 'Musculocutaneous nerve', 'The nerve of the anterior compartment of the arm.',
                 check=f'{NOT_IN} The musculocutaneous nerve and its supply to the biceps.'),
         ],
@@ -294,7 +295,7 @@ biceps = lesson(
     },
     development={
         'facts': [
-            F('Like other limb muscles, it develops from general mesoderm. Spinal nerves then form its neuromuscular junctions.', SOMITES, 's10-9#fs-id1605365'),
+            F('Like other limb muscles, it develops from general mesoderm. Its nerve supply then triggers the formation of its neuromuscular junctions.', SOMITES, 's10-9#fs-id1605365'),
         ],
     },
     variations={
@@ -307,7 +308,7 @@ biceps = lesson(
             CLIN('Damage to the lower motor neurons that supply the biceps.', 'The motor side of the biceps stretch reflex.',
                  'Show a normal biceps reflex when the tendon is tapped.', 'The reflex needs the spindle’s sensory fibre, the spinal synapse and the motor neuron intact.', REFLEXES),
             CLIN('A heavy lift that ruptures the tendon of the long head.', 'The long-head tendon, where it runs in the bicipital groove.',
-                 'Flex and supinate with full strength; the belly bunches up near the elbow.', 'The torn head cannot pull, and its belly shortens away from the tear.', HUMERUS,
+                 'Flex and supinate the forearm with full strength.', 'The torn head cannot pull, so its belly bunches up towards the elbow.', HUMERUS,
                  check=f'{NOT_IN} Rupture of the long head of the biceps and its signs.'),
         ],
     },
@@ -329,8 +330,8 @@ biceps = lesson(
             'The triceps brachii extends the forearm, opposing the biceps.', PAIRS),
         MCQ('Besides flexing the elbow, what else does the biceps brachii do?', ['Pronates the forearm', 'Supinates the forearm', 'Extends the wrist', 'Abducts the arm'], 1,
             'It also supinates the forearm at the radioulnar joints.', FLEXORS),
-        MCQ('Where does the short head of the biceps arise?', ['Coracoid process', 'Acromion', 'Lateral epicondyle', 'Infraglenoid tubercle'], 0,
-            'The short head arises from the coracoid process; the long head from the tubercle above the glenoid cavity.', FOREARM_TABLE),
+        MCQ('Which muscle lies deep to the biceps brachii and adds power to elbow flexion?', ['Brachialis', 'Brachioradialis', 'Coracobrachialis', 'Anconeus'], 0,
+            'Deep to the biceps brachii, the brachialis provides additional power in flexing the forearm.', FLEXORS),
     ],
 )
 
@@ -373,7 +374,7 @@ diaphragm = lesson(
         'items': [
             REL('muscle', 'External intercostals', 'Work with the diaphragm in quiet inspiration, lifting the ribs up and out.', INSPIRATION, QUIET),
             REL('muscle', 'Abdominal muscles', 'With the diaphragm, they raise abdominal pressure in defecation, urination and childbirth.', VALSALVA),
-            REL('nerve', 'Phrenic nerve', 'The phrenic nerve comes from the cervical plexus in the neck. It reaches the diaphragm at the base of the thorax.', PLEXUS),
+            REL('nerve', 'Phrenic nerve', 'It comes from the cervical plexus in the neck and reaches the diaphragm at the base of the thorax.', PLEXUS),
             REL('vessel', 'Inferior vena cava and aorta', 'Pass through the caval opening and the aortic hiatus.', DIA_OPENINGS),
             REL('organ', 'Oesophagus', 'Enters the abdomen through the oesophageal hiatus.', OESOPHAGUS, DIA_OPENINGS),
         ],
@@ -453,7 +454,8 @@ scm = lesson(
     },
     formFunction={
         'facts': [
-            F('One muscle alone turns the head to the opposite side and tilts it to its own side.', NECK_TABLE, NECK),
+            F('One muscle alone turns the head to the opposite side and tilts it to its own side.', NECK_TABLE, NECK,
+              check=f'{NOT_IN} That one muscle tilts the head towards its own side (OpenStax says “to the side”).'),
             F('Both together flex the head forwards.', NECK, NECK_TABLE),
         ],
         'simpler': F('One side turns your head; both sides bend it forwards.', NECK, NECK_TABLE),
@@ -466,7 +468,7 @@ scm = lesson(
             REL('nerve', 'Accessory nerve (cranial nerve XI)', 'A purely motor cranial nerve to muscles of the neck.', CRANIAL_TABLE, 's13-4#fs-id1830197'),
             REL('region', 'Triangles of the neck', 'Its line separates the anterior and posterior triangles.', NECK),
         ],
-        'simpler': F('It works with the deep neck muscles to move the head, and its nerve is a cranial nerve.', NECK_TABLE, CRANIAL_TABLE),
+        'simpler': F('It works with the muscles at the back of the neck to move the head. Its nerve is a cranial nerve.', NECK_TABLE, CRANIAL_TABLE),
     },
     development={
         'facts': [
@@ -494,7 +496,8 @@ scm = lesson(
         'items': [
             TUT('explain', 'Explain why the left sternocleidomastoid turns the face to the right.',
                 ['It runs from the front (sternum, clavicle) to the back of the skull (mastoid).', 'Pulling the mastoid down and forwards rotates the head.',
-                 'The face turns to the opposite side.', 'So the left muscle turns the face to the right.'], NECK_TABLE, NAMES),
+                 'The face turns to the opposite side.', 'So the left muscle turns the face to the right.'], NECK_TABLE, NAMES,
+                check=f'{NOT_IN} How the line of pull from sternum to mastoid rotates the head.'),
             TUT('compare', 'Compare the actions of the sternocleidomastoids and the semispinalis capitis acting on both sides.',
                 ['Both sternocleidomastoids together flex the head.', 'Both semispinalis capitis muscles together extend it.',
                  'So the two pairs are antagonists.', 'Acting on one side, each pair turns and tilts the head.'], NECK_TABLE, ANTAGONIST),
@@ -573,8 +576,8 @@ quadriceps = lesson(
     },
     clinical={
         'items': [
-            CLIN('Tapping the patellar ligament below the kneecap.', 'The knee-jerk (stretch) reflex of the quadriceps.',
-                 'Show a normal knee-jerk reflex if the reflex arc is damaged.', 'Stretching the muscle activates its spindles, which excite its motor neurons directly.', REFLEXES),
+            CLIN('Damage to the quadriceps’ reflex arc: its sensory fibres, the spinal cord or its lower motor neurons.', 'The knee-jerk (stretch) reflex of the quadriceps.',
+                 'Kick the leg forwards when the patellar ligament is tapped.', 'The tap normally stretches the muscle, and its spindles excite its motor neurons directly.', REFLEXES),
             CLIN('A leg kept in plaster for weeks.', 'The quadriceps, through disuse.',
                  'Straighten the knee strongly when the plaster comes off.', 'Unused muscle loses structural proteins and shrinks.', DISUSE, ATROPHY),
         ],
@@ -616,19 +619,21 @@ hamstrings = lesson(
             F('The hamstrings fill the posterior compartment of the thigh.', HAMS),
             F('All three arise from the ischial tuberosity; the biceps femoris also from the linea aspera and distal femur.', THIGH_TABLE),
         ],
-        'simpler': F('They run from the bone you sit on to just below the back of the knee.', THIGH_TABLE, HAMS),
+        'simpler': F('They run from the bone you sit on to the back of the knee.', THIGH_TABLE, HAMS),
         'deeper': F('Their tendons form the borders of the popliteal fossa, the diamond-shaped space behind the knee.', HAMS),
     },
     features={
         'items': [
-            FEAT('Biceps femoris', 'The lateral hamstring. Besides flexing the knee, it turns the thigh outwards.', THIGH_TABLE),
+            FEAT('Biceps femoris', 'The lateral hamstring. Besides flexing the knee, it turns the thigh outwards.', THIGH_TABLE,
+                 check=f'{NOT_IN} Which hamstrings lie laterally and which medially (OpenStax gives their rotations, not their positions).'),
             FEAT('Semitendinosus', 'A medial hamstring with a long tendon. It turns the thigh inwards.', THIGH_TABLE,
-                 check=f'{NOT_IN} The long tendon of the semitendinosus.'),
+                 check=f'{NOT_IN} The long tendon of the semitendinosus, and which hamstrings lie medially.'),
             FEAT('Semimembranosus', 'A medial hamstring, deep to the semitendinosus. It turns the thigh inwards.', THIGH_TABLE,
-                 check=f'{NOT_IN} That the semimembranosus lies deep to the semitendinosus.'),
+                 check=f'{NOT_IN} That the semimembranosus lies deep to the semitendinosus, and which hamstrings lie medially.'),
             FEAT('Popliteal fossa', 'The diamond-shaped space behind the knee, bordered by their tendons.', HAMS),
         ],
-        'simpler': F('One hamstring is on the outer side; two are on the inner side.', THIGH_TABLE),
+        'simpler': F('One hamstring is on the outer side; two are on the inner side.', THIGH_TABLE,
+              check=f'{NOT_IN} Which hamstrings lie laterally and which medially (OpenStax gives their rotations, not their positions).'),
         'deeper': F('The biceps femoris inserts on the head of the fibula; the other two on the medial side of the tibia.',
                     check=f'{NOT_IN} The insertions of the hamstrings.'),
     },
@@ -646,8 +651,8 @@ hamstrings = lesson(
             REL('muscle', 'Quadriceps femoris', 'Their antagonists at the knee.', PAIRS),
             REL('nerve', 'Sciatic nerve', 'Runs down the back of the thigh. It is the tibial and fibular nerves combined.', PLEXUS,
                 check=f'{NOT_IN} That the sciatic nerve supplies the hamstrings and runs among them.'),
-            REL('muscle', 'Gastrocnemius', 'Arises from the femoral condyles, between the hamstring tendons behind the knee.', LEG_TABLE),
-            REL('space', 'Popliteal fossa', 'Bounded above by the hamstring tendons.', HAMS),
+            REL('muscle', 'Gastrocnemius', 'Arises from the femoral condyles, so it too crosses the back of the knee and helps flex it.', LEG_TABLE),
+            REL('muscle', 'Gracilis', 'In the medial compartment. Like the hamstrings, it moves the leg back at the knee, as when kneeling.', THIGH_TABLE),
         ],
         'simpler': F('They sit behind the thigh, opposite the quadriceps, with the sciatic nerve close by.', PAIRS, PLEXUS),
     },
@@ -678,7 +683,8 @@ hamstrings = lesson(
                  'So they extend the thigh at the hip.', 'And they flex the leg at the knee.'], THIGH_TABLE, HAMS),
             TUT('compare', 'Compare the biceps femoris with the semitendinosus and semimembranosus.',
                 ['All three flex the knee and extend the thigh.', 'The biceps femoris lies laterally and turns the thigh outwards.',
-                 'The other two lie medially and turn it inwards.', 'Only the biceps femoris also arises from the femur.'], THIGH_TABLE),
+                 'The other two lie medially and turn it inwards.', 'Only the biceps femoris also arises from the femur.'], THIGH_TABLE,
+                check=f'{NOT_IN} Which hamstrings lie laterally and which medially (OpenStax gives their rotations, not their positions).'),
             TUT('predict', 'Predict which movement is hard after a hamstring strain.',
                 ['Bending the knee against resistance.', 'Swinging the thigh back while running.',
                  'Both stretch or load the torn muscle.', 'So running and climbing hurt most.'], HAMS, THIGH_TABLE,
@@ -701,7 +707,7 @@ calf = lesson(
     topic='muscles', source='OpenStax A&P 2e: 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs; 14.3; 16.4; 20.2',
     oneLine={
         'main': F('The gastrocnemius and soleus form the calf and pull on the calcaneal tendon to point the foot down.', CALF, LEG_TABLE),
-        'simpler': F('The calf muscles lift your heel so you can stand on tiptoe and push off when walking.', CALF, LEG_TABLE),
+        'simpler': F('The calf muscles point your foot down, as when you jump or tap your foot.', CALF, LEG_TABLE),
         'deeper': F('They lie in the superficial posterior compartment of the leg and help keep us upright.', CALF),
     },
     where={
@@ -753,8 +759,8 @@ calf = lesson(
     },
     clinical={
         'items': [
-            CLIN('Tapping the calcaneal tendon with a reflex hammer.', 'The ankle reflex of the gastrocnemius and soleus.',
-                 'Show a normal ankle reflex if the reflex arc is broken.', 'Stretch of the muscle excites its own motor neurons through the spinal cord.', REFLEXES),
+            CLIN('Damage to the calf muscles’ reflex arc: their sensory fibres, the spinal cord or their lower motor neurons.', 'The ankle reflex of the gastrocnemius and soleus.',
+                 'Point the foot down when the calcaneal tendon is tapped.', 'The tap normally stretches the muscles, and their spindles excite their motor neurons through the spinal cord.', REFLEXES),
             CLIN('A sudden push-off that ruptures the calcaneal tendon.', 'The calcaneal (Achilles) tendon.',
                  'Stand on tiptoe on that leg or push off when walking.', 'The calf muscles can no longer pull on the calcaneus.', CALF,
                  check=f'{NOT_IN} Rupture of the calcaneal tendon and its signs.'),

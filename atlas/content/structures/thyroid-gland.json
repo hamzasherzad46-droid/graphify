@@ -24,9 +24,10 @@
    ]
   },
   "deeper": {
-   "t": "It makes T3 and T4 from iodine, and calcitonin from its parafollicular cells.",
+   "t": "It makes triiodothyronine (T₃) and thyroxine (T₄) from iodine, and calcitonin from its parafollicular cells.",
    "src": [
     "s17-4#fs-id1217036",
+    "s17-4#fs-id805721",
     "s17-4#fs-id555341"
    ]
   }
@@ -108,9 +109,10 @@
  "formFunction": {
   "facts": [
    {
-    "t": "T3 and T4 raise the basal metabolic rate, the energy the body uses at rest.",
+    "t": "Triiodothyronine (T₃) and thyroxine (T₄) raise the basal metabolic rate, the energy the body uses at rest.",
     "src": [
-     "s17-4#fs-id1241366"
+     "s17-4#fs-id1241366",
+     "s17-4#fs-id805721"
     ]
    },
    {
@@ -210,7 +212,7 @@
    {
     "injury": "Too little iodine in the diet.",
     "damaged": "Hormone production in the thyroid follicles.",
-    "cannotDo": "Make T3 and T4: the gland swells into a goitre.",
+    "cannotDo": "Make T₃ and T₄: the gland swells into a goitre.",
     "why": "TSH rises, and colloid builds up in the overstimulated follicles.",
     "src": [
      "s17-4#fs-id1081468"
@@ -219,8 +221,8 @@
    {
     "injury": "Inflammation of the thyroid gland.",
     "damaged": "The thyroid’s hormone output (hypothyroidism).",
-    "cannotDo": "Keep a normal metabolic rate: they gain weight and feel cold.",
-    "why": "Low T3 and T4 slow the use of energy throughout the body.",
+    "cannotDo": "Keep a normal metabolic rate: they gain weight, and their hands and feet are cold.",
+    "why": "Low T₃ and T₄ slow the use of energy throughout the body.",
     "src": [
      "s17-4#fs-id1374729",
      "s17-4#fs-id1241366"
@@ -234,8 +236,8 @@
     "kind": "explain",
     "q": "Explain why iodine deficiency causes a goitre.",
     "model": [
-     "Without iodine, T3 and T4 cannot be made.",
-     "Low T3 and T4 remove negative feedback.",
+     "Without iodine, T₃ and T₄ cannot be made.",
+     "Low T₃ and T₄ remove negative feedback.",
      "TSH secretion increases.",
      "Overstimulated follicles store more colloid, and the gland enlarges."
     ],
@@ -248,7 +250,7 @@
     "kind": "compare",
     "q": "Compare follicle cells and parafollicular cells.",
     "model": [
-     "Follicle cells surround the colloid and make T3 and T4.",
+     "Follicle cells surround the colloid and make T₃ and T₄.",
      "Their hormones raise the metabolic rate.",
      "Parafollicular cells lie between follicles and make calcitonin.",
      "Calcitonin tends to lower blood calcium."
@@ -261,9 +263,9 @@
    },
    {
     "kind": "predict",
-    "q": "Predict the TSH level in someone with low T3 and T4 from thyroid inflammation.",
+    "q": "Predict the TSH level in someone with low T₃ and T₄ from thyroid inflammation.",
     "model": [
-     "Low T3 and T4 reduce negative feedback.",
+     "Low T₃ and T₄ reduce negative feedback.",
      "The hypothalamus releases more TRH.",
      "The pituitary releases more TSH.",
      "So TSH is high."
@@ -291,10 +293,10 @@
    ]
   },
   {
-   "stem": "Which hormone stimulates the thyroid to release T3 and T4?",
+   "stem": "Which hormone stimulates the thyroid to release T₃ and T₄?",
    "options": [
     "TRH",
-    "ACTH",
+    "Growth hormone",
     "TSH",
     "Calcitonin"
    ],

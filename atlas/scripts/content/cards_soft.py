@@ -43,32 +43,61 @@ def pick(s, path):
     return v
 
 
-def depth_lines(s):
-    """Three to five one-line points from the key features ("Name: what it is."), first sentences where needed."""
-    out = []
+def depth_lines(s, why):
+    """
+    Three to five one-line points: the key features ("Name: what it is.", first sentences where needed), then one-sentence
+    form-and-function facts. Sourced points come first; a point awaiting a source (†) is used only to make up three.
+    Nothing the card's "why" already says is repeated.
+    """
+    feats, extra = [], []
     for i in s['features']['items']:
         first = sentences(i['t'])[0]
         line = f"{i['name']}: {first[0].lower() + first[1:]}"
-        if len(line) <= 115:
-            out.append(fact(i, line))
+        if len(line) <= 115 and first not in why['t']:
+            feats.append(fact(i, line))
     for f in s['formFunction']['facts']:
-        if len(out) < 3 and len(sentences(f['t'])) == 1 and len(f['t']) <= 115:
-            out.append(fact(f))
-    return out[:5]
+        if len(sentences(f['t'])) == 1 and len(f['t']) <= 115 and f['t'] not in why['t']:
+            extra.append(fact(f))
+    cands = feats + extra
+    out = [c for c in feats if not c.get('check')][:5]
+    for pool in ([c for c in extra if not c.get('check')], [c for c in cands if c.get('check')]):
+        for c in pool:
+            if len(out) < 3:
+                out.append(c)
+    order = {id(c): k for k, c in enumerate(cands)}
+    return sorted(out, key=lambda c: order[id(c)])
 
 
-def clinical(c):
-    """The lesson's first clinical case as one short statement: what happens, and why."""
-    for t in (f"{c['injury']} {c['why']}", c['injury']):
-        if len(sentences(t)) <= 3:
-            return fact(c, t)
-    return fact(c, ' '.join(sentences(c['injury'])[:3]))
+def clinical(s, k, t):
+    """One of the lesson's clinical cases (k), retold as one short statement; its sources and check carry over."""
+    return fact(s['clinical']['items'][k], t)
+
+
+# Per lesson: which clinical case the card retells, and how (one or two sentences, from that case only).
+CLINICAL = {
+    'deltoid': (0, 'A fracture of the surgical neck of the humerus can injure the axillary nerve. The deltoid then cannot contract, so lifting the arm sideways is weak.'),
+    'rotator-cuff': (0, 'Years of throwing fast pitches overhead can pinch and inflame the rotator cuff tendons. They may even tear away from the bone.'),
+    'biceps-brachii': (0, 'If the lower motor neurons to the biceps are damaged, tapping its tendon gives no normal reflex. The reflex needs the sensory fibre, the spinal synapse and the motor neuron intact.'),
+    'diaphragm': (0, 'In central sleep apnoea, the respiratory centres do not drive the diaphragm regularly, so breathing stops for short periods. Damage to the pons or medulla, or drugs such as morphine, can cause it.'),
+    'sternocleidomastoid': (0, 'A baby born with one short sternocleidomastoid holds the head tilted to that side, with the face turned away (congenital torticollis).'),
+    'quadriceps-femoris': (0, 'If the reflex arc is damaged, tapping the patellar ligament gives no knee-jerk reflex. Normally the stretch activates muscle spindles, which excite the quadriceps’ motor neurons directly.'),
+    'hamstrings': (1, 'Compression or irritation of the sciatic nerve, or of the spinal nerves that form it, causes sciatica: pain on moving the hip and leg.'),
+    'calf-muscles': (0, 'If the reflex arc is damaged, tapping the calcaneal tendon gives no ankle reflex. Normally the stretch excites the motor neurons of the gastrocnemius and soleus through the spinal cord.'),
+    'heart': (0, 'A coronary artery blocked by atherosclerotic plaque starves part of the myocardium of blood and oxygen. Those cardiac muscle cells die: a myocardial infarction.'),
+    'lungs': (0, 'A baby born before enough surfactant is made cannot keep the alveoli open. Without surfactant, they collapse during expiration.'),
+    'stomach': (0, 'Most peptic ulcers are caused by non-steroidal anti-inflammatory drugs (NSAIDs) such as aspirin, or by Helicobacter pylori infection. Both break down the mucosal barrier, so gastric juice erodes the lining.'),
+    'small-intestine': (0, 'With too little lactase, lactose is not digested in the small intestine. Bacteria in the large intestine ferment it, causing gas, cramps, bloating and diarrhoea.'),
+    'liver': (0, 'If bile cannot reach the intestine, fats are not emulsified and are hardly absorbed. The stool is pale (acholic) and fatty, because bilirubin no longer colours it.'),
+    'pancreas': (1, 'In type 1 diabetes, an autoimmune disease stops the beta cells making insulin. Insulin must then be given by injection or infusion.'),
+    'kidneys': (0, 'Failing kidneys make too little erythropoietin and active vitamin D. Red blood cell production and calcium absorption both suffer.'),
+    'thyroid-gland': (0, 'Too little iodine in the diet stops T₃ and T₄ being made, so TSH rises. The overstimulated follicles fill with colloid, and the gland swells into a goitre.'),
+}
 
 
 # Per lesson: front, answer, objective, level, type, the statements that answer the front, and the exam trap.
 CARDS = {
     'deltoid': ('Which muscle is the major abductor of the arm?', 'Deltoid', 'Name the major abductor of the arm.', 'core', 'function',
-                ['oneLine.main', 'formFunction.facts.0'],
+                ['oneLine.deeper', 'formFunction.facts.0'],
                 ('The supraspinatus also abducts the arm, but the deltoid is the major abductor.', ['s11-5#fs-id2501482'])),
     'rotator-cuff': ('Which four muscles form the rotator cuff?', 'Supraspinatus, infraspinatus, teres minor, subscapularis',
                      'List the four rotator cuff muscles.', 'core', 'feature', ['where.facts.0', 'oneLine.deeper'],
@@ -77,12 +106,12 @@ CARDS = {
                        'State the second action of the biceps brachii at the forearm.', 'core', 'function', ['formFunction.facts.0', 'oneLine.deeper'],
                        ('The brachialis, deep to the biceps, flexes the elbow but does not supinate.', ['s11-5#fs-id2831016'])),
     'diaphragm': ('Which nerve supplies the diaphragm?', 'Phrenic nerve', 'Name the nerve of the diaphragm.', 'core', 'supply',
-                  ['relations.items.2'],
+                  ['relations.items.2', 'formFunction.facts.0'],
                   ('The phrenic nerve comes from the cervical plexus in the neck, not from the thoracic nerves.', ['s13-4#fs-id1472046'])),
     'sternocleidomastoid': ('Which way does the left sternocleidomastoid turn the face?', 'To the right (the opposite side)',
                             'State the direction of head rotation by one sternocleidomastoid.', 'higher', 'function',
                             ['formFunction.facts.0', 'formFunction.facts.1'],
-                            ('Acting alone, it turns the face away from its own side but tilts the head towards it.', ['s11-3#tbl-ch11_05', 's11-3#fs-id2455581'])),
+                            ('Acting alone, it turns the face to the opposite side; the two together flex the head.', ['s11-3#tbl-ch11_05', 's11-3#fs-id2455581'])),
     'quadriceps-femoris': ('Which quadriceps muscle also flexes the thigh at the hip?', 'Rectus femoris', 'Name the quadriceps muscle that crosses the hip.',
                            'higher', 'function', ['formFunction.facts.0', 'formFunction.facts.1'],
                            ('Only the rectus femoris arises from the hip bone; the three vasti arise from the femur.', ['s11-6#fig-ch11_06_03'])),
@@ -127,6 +156,7 @@ def card_for(s):
     hook = next((fact(f) for f in [*s['features']['items'], s['features']['deeper']] if ' means ' in f['t'] and len(sentences(f['t'])) == 1), None)
     if s['id'] == 'rotator-cuff':
         hook = fact(s['features']['deeper'])  # the SITS memory aid
+    why = join(*[pick(s, p) for p in why_paths])
     card = {
         'reviewStatus': 'draft',
         'id': f"{DECKS[s['topic']]}-{s['id']}-{ctype}",
@@ -139,10 +169,10 @@ def card_for(s):
         'objective': objective,
         'front': front,
         'answer': answer,
-        'why': join(*[pick(s, p) for p in why_paths]),
+        'why': why,
         'simpler': fact(s['oneLine']['simpler']),
-        'depth': depth_lines(s),
-        'clinical': clinical(s['clinical']['items'][0]),
+        'depth': depth_lines(s, why),
+        'clinical': clinical(s, *CLINICAL[s['id']]),
         'trap': {'t': trap_t, 'src': trap_src},
         'source': s['source'],
     }

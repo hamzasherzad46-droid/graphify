@@ -12,10 +12,11 @@ for (const f of readdirSync(join(ROOT, 'content', 'bones'))) {
   const b = JSON.parse(readFileSync(join(ROOT, 'content', 'bones', f), 'utf8'))
   bones.set(b.id, b.name)
 }
-const ORDER = ['humerus', 'scapula', 'scaphoid', 'sphenoid', 'mandible']
+const TOPIC = { skull: 'Skull', 'upper-limb': 'Upper limb', muscles: 'Muscles', heart: 'Heart', respiratory: 'Respiratory', digestive: 'Digestive', urinary: 'Urinary', endocrine: 'Endocrine' }
+const ORDER = Object.keys(TOPIC)
 const lessons = readdirSync(DIR)
   .map((f) => JSON.parse(readFileSync(join(DIR, f), 'utf8')))
-  .sort((a, b) => (ORDER.indexOf(a.id) + 1 || 99) - (ORDER.indexOf(b.id) + 1 || 99))
+  .sort((a, b) => ORDER.indexOf(a.topic) - ORDER.indexOf(b.topic) || (a.title ?? bones.get(a.bone)).localeCompare(b.title ?? bones.get(b.bone)))
 
 /** "s8-2#fs-id2110691" → "8.2 ¶fs-id2110691"; "glossary:optic canal" → "glossary: optic canal". */
 const ref = (s) => (s.startsWith('reviewer:') ? `reviewer, ${s.slice(9)}` : s.startsWith('glossary:') ? `glossary: ${s.slice(9)}` : `${s.split('#')[0].slice(1).replace('-', '.')} ¶${s.split('#')[1]}`)
@@ -29,13 +30,13 @@ const line = (f) => `${f.t}${dag(f)}${srcOf(f)}`
 
 const out = []
 const pending = []
-out.push('# Structure lessons: 5 samples for review', '')
+out.push(`# Structure lessons: all ${lessons.length}, for review`, '')
 out.push(
-  'Draft lessons in the nine-layer format, for review before the remaining Skull and Upper limb structures are written. All five are in the app: Home → Lessons → Textbook → Skull or Upper limb → *Structure by structure*.',
+  'Draft lessons in the nine-layer format: bones of the skull and upper limb, and muscles and organs of the male model. All are in the app: Home → Lessons → Textbook → a topic → *Structure by structure*.',
   '',
   '**Layers.** 1 In one line · 2 Where it is · 3 Key features (shown first) · then under *Go deeper*: 4 Form → function · 5 Relations · 6 Development · 7 Variations · 8 Clinical reasoning · 9 Tutorial questions · then a three-question check. Layers 1–3 have *Explain simpler* and *Explain deeper*; layers 4–5 have *Explain simpler*.',
   '',
-  '**Sources.** Each statement shows its OpenStax A&P 2e paragraph (section ¶paragraph id) or glossary entry. A **†** marks a statement that the imported OpenStax chapters (6–9, 12–16 and 20) do not confirm: it is shown with a dagger in the app and listed at the end. Nothing is marked reviewed.',
+  '**Sources.** Each statement shows its OpenStax A&P 2e paragraph (section ¶paragraph id) or glossary entry. A **†** marks a statement that the imported OpenStax chapters (6–17, 19–23 and 25) do not confirm: it is shown with a dagger in the app and listed at the end. Nothing is marked reviewed.',
   '',
   '**Writing checks (automatic).** At most 20 words a sentence and 3 sentences a paragraph; British spelling; abbreviations written out; every source exists; one of each tutorial kind; three check questions with the answers in different places.',
   '',
@@ -48,13 +49,13 @@ const factsOf = (s) => [
 ]
 lessons.forEach((s, k) => {
   const f = factsOf(s)
-  out.push(`| ${k + 1} | ${s.title ?? bones.get(s.bone)} | ${s.topic === 'skull' ? 'Skull' : 'Upper limb'} | ${f.length + s.check.length} | ${f.filter((x) => x.check).length} |`)
+  out.push(`| ${k + 1} | ${s.title ?? bones.get(s.bone)} | ${TOPIC[s.topic] ?? s.topic} | ${f.length + s.check.length} | ${f.filter((x) => x.check).length} |`)
 })
 out.push('')
 
 lessons.forEach((s, k) => {
   const name = s.title ?? bones.get(s.bone)
-  out.push('---', '', `## ${k + 1}. ${name}`, '', `*${s.source} · id \`${s.id}\` · bone \`${s.bone}\` · ${s.reviewStatus}*`, '')
+  out.push('---', '', `## ${k + 1}. ${name}`, '', `*${s.source} · id \`${s.id}\` · ${s.bone ? `bone \`${s.bone}\`` : `part \`${s.part}\``} · ${s.reviewStatus}*`, '')
   out.push('### 1. In one line', '', `**${line(s.oneLine.main)}**`, '', `*Simpler.* ${line(s.oneLine.simpler)}`, '', `*Deeper.* ${line(s.oneLine.deeper)}`, '')
   out.push('### 2. Where it is', '', ...s.where.facts.map((f) => `- ${line(f)}`), '', `*Simpler.* ${line(s.where.simpler)}`, '', `*Deeper.* ${line(s.where.deeper)}`, '')
   out.push('### 3. Key features', '', ...s.features.items.map((f) => `- **${f.name}.** ${line(f)}`), '', `*Simpler.* ${line(s.features.simpler)}`, '', `*Deeper.* ${line(s.features.deeper)}`, '')

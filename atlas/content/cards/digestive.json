@@ -14,7 +14,7 @@
    "front": "Which vessel brings nutrient-rich blood from the gut to the liver?",
    "answer": "Hepatic portal vein",
    "why": {
-    "t": "The hepatic portal vein brings nutrient-rich blood from the gut. It supplies more oxygen than the hepatic artery. Hepatocytes, about 80 percent of its volume, line porous sinusoids and process what the blood brings.",
+    "t": "It brings nutrient-rich blood from the gut, and supplies more oxygen than the hepatic artery. Hepatocytes, about 80 percent of its volume, line porous sinusoids and process what the blood brings.",
     "src": [
      "s23-6#fs-id1842507",
      "s23-6#fs-id1257384",
@@ -55,7 +55,7 @@
     }
    ],
    "clinical": {
-    "t": "A blockage that stops bile reaching the intestine. Without bile, fats are not emulsified and bilirubin does not colour the stool.",
+    "t": "If bile cannot reach the intestine, fats are not emulsified and are hardly absorbed. The stool is pale (acholic) and fatty, because bilirubin no longer colours it.",
     "src": [
      "s23-6#fs-id1884700",
      "s23-6#fs-id1390455"
@@ -123,11 +123,11 @@
     }
    ],
    "clinical": {
-    "t": "Protein-digesting enzymes activated inside the pancreas. Active enzymes digest the pancreatic tissue.",
+    "t": "In type 1 diabetes, an autoimmune disease stops the beta cells making insulin. Insulin must then be given by injection or infusion.",
     "src": [
-     "s23-6#fs-id1895555"
-    ],
-    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The symptoms of pancreatitis."
+     "s17-9#fs-id1200718",
+     "s17-9#fs-id1489225"
+    ]
    },
    "trap": {
     "t": "Beta cells make insulin, which lowers blood glucose; alpha cells make glucagon, which raises it.",
@@ -158,7 +158,7 @@
     ]
    },
    "simpler": {
-    "t": "Your small intestine is a long, coiled tube that takes the goodness from your food.",
+    "t": "Your small intestine is a long, coiled tube that absorbs the nutrients from your food.",
     "src": [
      "s23-5#fs-id2142144"
     ]
@@ -198,7 +198,7 @@
     }
    ],
    "clinical": {
-    "t": "Too little lactase made by the absorptive cells. Bacteria in the large intestine ferment the undigested lactose, making gas.",
+    "t": "With too little lactase, lactose is not digested in the small intestine. Bacteria in the large intestine ferment it, causing gas, cramps, bloating and diarrhoea.",
     "src": [
      "s23-5#fs-id1632981",
      "s23-5#fs-id1485386"
@@ -273,7 +273,7 @@
     }
    ],
    "clinical": {
-    "t": "Long use of non-steroidal anti-inflammatory drugs (NSAIDs) such as aspirin, or Helicobacter pylori infection. Gastric juice eats deeper into the unprotected mucosa.",
+    "t": "Most peptic ulcers are caused by non-steroidal anti-inflammatory drugs (NSAIDs) such as aspirin, or by Helicobacter pylori infection. Both break down the mucosal barrier, so gastric juice erodes the lining.",
     "src": [
      "s23-4#fs-id2023452",
      "s23-4#fs-id1632870",

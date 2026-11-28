@@ -14,10 +14,11 @@
    "front": "Which pituitary hormone stimulates the thyroid gland?",
    "answer": "Thyroid-stimulating hormone (TSH)",
    "why": {
-    "t": "Thyroid hormone release is controlled by thyroid-stimulating hormone (TSH) from the pituitary, by negative feedback. T3 and T4 raise the basal metabolic rate, the energy the body uses at rest.",
+    "t": "Thyroid hormone release is controlled by thyroid-stimulating hormone (TSH) from the pituitary, by negative feedback. Triiodothyronine (T₃) and thyroxine (T₄) raise the basal metabolic rate, the energy the body uses at rest.",
     "src": [
      "s17-4#fs-id1073276",
-     "s17-4#fs-id1241366"
+     "s17-4#fs-id1241366",
+     "s17-4#fs-id805721"
     ]
    },
    "simpler": {
@@ -55,7 +56,7 @@
     }
    ],
    "clinical": {
-    "t": "Too little iodine in the diet. TSH rises, and colloid builds up in the overstimulated follicles.",
+    "t": "Too little iodine in the diet stops T₃ and T₄ being made, so TSH rises. The overstimulated follicles fill with colloid, and the gland swells into a goitre.",
     "src": [
      "s17-4#fs-id1081468"
     ]

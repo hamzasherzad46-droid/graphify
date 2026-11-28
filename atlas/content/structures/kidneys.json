@@ -50,7 +50,7 @@
    }
   ],
   "simpler": {
-   "t": "They sit against your back muscles, just under your lowest ribs.",
+   "t": "They sit at the back of your abdomen, partly tucked under your lowest ribs.",
    "src": [
     "s25-3#fs-id1592078"
    ]
@@ -247,12 +247,13 @@
     "q": "Explain why the right kidney lies lower than the left.",
     "model": [
      "Both lie behind the peritoneum either side of the spine.",
-     "The liver sits above the right kidney.",
+     "The liver lies on the right, in the upper abdomen.",
      "It displaces the right kidney slightly downwards.",
      "So the left is at about T12 to L3 and the right a little lower."
     ],
     "src": [
-     "s25-3#fs-id1592078"
+     "s25-3#fs-id1592078",
+     "s23-6#fs-id1907412"
     ]
    },
    {

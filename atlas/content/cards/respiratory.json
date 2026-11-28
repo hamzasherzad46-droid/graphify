@@ -28,12 +28,6 @@
    },
    "depth": [
     {
-     "t": "Lobes: the right lung has three lobes; the left lung has two.",
-     "src": [
-      "s22-2#fs-id2717313"
-     ]
-    },
-    {
      "t": "Cardiac notch: an indentation in the left lung that makes room for the heart.",
      "src": [
       "s22-2#fs-id2627237"
@@ -60,7 +54,7 @@
     }
    ],
    "clinical": {
-    "t": "A baby born before enough surfactant is made. Without surfactant, the alveoli collapse during expiration.",
+    "t": "A baby born before enough surfactant is made cannot keep the alveoli open. Without surfactant, they collapse during expiration.",
     "src": [
      "s22-3#fs-id1862104",
      "s22-7#fs-id1910265"

@@ -49,9 +49,10 @@
     ]
    },
    {
-    "t": "It inserts on the deltoid tuberosity, about halfway down the outer side of the humerus.",
-    "src": [],
-    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The deltoid’s insertion (deltoid tuberosity of the humerus)."
+    "t": "It inserts on the deltoid tuberosity, a roughened area halfway down the outer side of the humerus.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ]
    }
   ],
   "simpler": {
@@ -191,7 +192,7 @@
    {
     "kind": "nerve",
     "name": "Axillary nerve",
-    "t": "A branch of the radial nerve that goes to the armpit region. It supplies the deltoid.",
+    "t": "A nerve of the brachial plexus that goes to the armpit region. It supplies the deltoid.",
     "src": [
      "s13-4#fs-id1472046"
     ],

@@ -162,6 +162,7 @@ T_IODINE = 's17-4#fs-id768548'
 T_GOITRE = 's17-4#fs-id1081468'
 T_HYPO = 's17-4#fs-id1374729'
 T_CALCITONIN = 's17-4#fs-id555341'
+T_STEPS = 's17-4#fs-id805721'
 T_CALCITONIN_ROLE = 's17-4#fs-id1411228'
 
 heart = lesson(
@@ -185,7 +186,7 @@ heart = lesson(
         'items': [
             FEAT('Atria', 'The two upper chambers. They receive blood and push it into the ventricles.', H_CHAMBERS),
             FEAT('Ventricles', 'The two lower chambers, the main pumps: right to the lungs, left to the body.', H_CHAMBERS),
-            FEAT('Valves', 'Tricuspid and mitral between atria and ventricles; pulmonary and aortic at the exits.', H_VALVES, H_AV_SEPTUM),
+            FEAT('Valves', 'Tricuspid and mitral between atria and ventricles; pulmonary and aortic at the exits.', H_VALVES, H_MITRAL, H_AV_SEPTUM),
             FEAT('Septa', 'Walls between the chambers: interatrial, interventricular and atrioventricular.', H_IAS, H_IVS, H_AV_SEPTUM),
             FEAT('Myocardium', 'The thick middle layer of the wall, made of cardiac muscle that pumps the blood.', H_MYOCARDIUM, H_WALL),
         ],
@@ -226,7 +227,7 @@ heart = lesson(
     clinical={
         'items': [
             CLIN('A coronary artery blocked by atherosclerotic plaque.', 'The heart muscle the artery supplies, which dies (myocardial infarction).',
-                 'Keep the heart pumping normally; there is often sudden pain beneath the sternum.', 'Without blood and oxygen, the cardiac muscle cells die.', H_MI, H_ANGINA),
+                 'Pump normally with the damaged region.', 'Without blood and oxygen, the cardiac muscle cells die; there is often sudden pain beneath the sternum.', H_MI, H_ANGINA),
             CLIN('Fluid or blood building up quickly in the pericardial cavity.', 'The heart’s filling (cardiac tamponade).',
                  'Fill and empty the heart fully: less blood is pumped with each beat.', 'The fluid presses on the heart and stops it relaxing fully between beats.', H_TAMPONADE),
         ],
@@ -278,8 +279,7 @@ lungs = lesson(
             FEAT('Alveoli', 'Tiny grape-like air sacs, about 200 micrometres across, with elastic walls.', L_ALVEOLUS),
             FEAT('Hilum', 'Where the nerves enter the lung root and the two layers of pleura meet.', L_NERVES, L_PLEURA),
         ],
-        'simpler': F('Three lobes on the right, two on the left, branching down to millions of tiny air sacs.', L_LOBES, L_ALVEOLUS,
-                     check=f'{NOT_IN} The number of alveoli (“millions”).'),
+        'simpler': F('Three lobes on the right, two on the left, branching down to tiny air sacs.', L_LOBES, L_ALVEOLUS),
         'deeper': F('The right lung is shorter and wider; the left holds a smaller volume, sharing space with the heart.', L_GROSS),
     },
     formFunction={
@@ -309,7 +309,7 @@ lungs = lesson(
     },
     variations={
         'facts': [
-            F('Second-hand smoke raises a non-smoker’s risk of lung cancer by up to 30 percent.', L_SMOKE),
+            F('Living with a smoker raises a non-smoker’s risk of lung cancer by up to 30 percent.', L_SMOKE),
         ],
     },
     clinical={
@@ -370,7 +370,7 @@ stomach = lesson(
             FEAT('Pylorus', 'The funnel to the duodenum, ending at the pyloric sphincter, which controls emptying.', S_REGIONS),
             FEAT('Rugae', 'Large folds of mucosa and submucosa that form when the stomach is empty.', S_REGIONS),
         ],
-        'simpler': F('Four regions, from top to bottom: cardia, fundus, body and pylorus.', S_REGIONS),
+        'simpler': F('Four regions: the cardia, fundus, body and pylorus.', S_REGIONS),
         'deeper': F('It has an extra, inner oblique layer of smooth muscle, so it can churn food vigorously.', S_WALL),
     },
     formFunction={
@@ -438,7 +438,7 @@ small_intestine = lesson(
     topic='digestive', source='OpenStax A&P 2e: 23.5 The Small and Large Intestines',
     oneLine={
         'main': F('The longest part of the digestive tract, where most digestion and practically all absorption take place.', SI_INTRO),
-        'simpler': F('Your small intestine is a long, coiled tube that takes the goodness from your food.', SI_INTRO),
+        'simpler': F('Your small intestine is a long, coiled tube that absorbs the nutrients from your food.', SI_INTRO),
         'deeper': F('It is “small” only in diameter: about 2.5 cm, against 7.6 cm for the large intestine.', SI_INTRO),
     },
     where={
@@ -457,8 +457,7 @@ small_intestine = lesson(
             FEAT('Circular folds', 'Deep ridges of mucosa and submucosa that make chyme spiral and slow down.', SI_FOLDS),
             FEAT('Villi and microvilli', 'Finger-like projections and their tiny surface extensions, the brush border.', SI_VILLI, SI_MICROVILLI),
         ],
-        'simpler': F('Three parts: duodenum, jejunum and ileum, lined with millions of tiny folds and fingers.', SI_REGIONS, SI_VILLI,
-                     check=f'{NOT_IN} The number of villi (“millions”).'),
+        'simpler': F('Three parts, the duodenum, jejunum and ileum, lined with folds and tiny finger-like villi.', SI_REGIONS, SI_VILLI),
         'deeper': F('Circular folds, villi and microvilli increase its absorptive surface more than 600-fold.', SI_AREA),
     },
     formFunction={
@@ -545,7 +544,7 @@ liver = lesson(
             FEAT('Falciform ligament', 'A remnant of the umbilical vein that separates the right and left lobes in front.', LV_LOBES),
             FEAT('Porta hepatis', 'The “gate” where the hepatic artery and hepatic portal vein enter.', LV_PORTA),
         ],
-        'simpler': F('Two main lobes, with vessels entering at a “gate” underneath.', LV_LOBES, LV_PORTA),
+        'simpler': F('Two main lobes, with vessels entering at a “gate”, the porta hepatis.', LV_LOBES, LV_PORTA),
         'deeper': F('It weighs about three pounds (about 1.4 kg) in an adult.', LV_PLACE),
     },
     formFunction={
@@ -558,7 +557,7 @@ liver = lesson(
     },
     relations={
         'items': [
-            REL('vein', 'Hepatic portal vein', 'The hepatic portal vein brings nutrient-rich blood from the gut. It supplies more oxygen than the hepatic artery.', LV_PORTA),
+            REL('vein', 'Hepatic portal vein', 'It brings nutrient-rich blood from the gut, and supplies more oxygen than the hepatic artery.', LV_PORTA),
             REL('artery', 'Hepatic artery', 'Brings oxygenated blood from the heart.', LV_PORTA),
             REL('organ', 'Gallbladder', 'Stores and concentrates the bile between meals.', LV_BETWEEN_MEALS, ACCESSORY),
             REL('duct', 'Common bile duct', 'Formed by the common hepatic and cystic ducts; carries bile to the duodenum.', LV_DUCTS),
@@ -659,13 +658,13 @@ pancreas = lesson(
     },
     variations={
         'facts': [
-            F('A smaller accessory duct, when present, opens into the duodenum about an inch above the main opening.', P_ACINI),
+            F('A smaller accessory duct, when present, opens into the duodenum about 2.5 cm (1 inch) above the main opening.', P_ACINI),
         ],
     },
     clinical={
         'items': [
             CLIN('Protein-digesting enzymes activated inside the pancreas.', 'The pancreas itself (pancreatitis).',
-                 'Digest normally without pain, as the gland is inflamed.', 'Active enzymes digest the pancreatic tissue.', P_INACTIVE,
+                 'Digest food normally, while the inflamed gland is painful.', 'Active enzymes digest the pancreatic tissue.', P_INACTIVE,
                  check=f'{NOT_IN} The symptoms of pancreatitis.'),
             CLIN('An autoimmune attack on the beta cells.', 'The beta cells of the islets (type 1 diabetes).',
                  'Make insulin: they need insulin by injection or infusion.', 'Without insulin, glucose cannot enter most body cells.', P_TYPE1, P_INSULIN),
@@ -708,7 +707,7 @@ kidneys = lesson(
             F('They lie either side of the spine, behind the peritoneum, protected by muscle, fat and ribs.', K_PLACE),
             F('The left kidney is at about T12 to L3; the right is lower, pushed down by the liver.', K_EXTERNAL),
         ],
-        'simpler': F('They sit against your back muscles, just under your lowest ribs.', K_EXTERNAL),
+        'simpler': F('They sit at the back of your abdomen, partly tucked under your lowest ribs.', K_EXTERNAL),
         'deeper': F('The eleventh and twelfth ribs partly protect their upper portions.', K_EXTERNAL),
     },
     features={
@@ -761,8 +760,8 @@ kidneys = lesson(
     tutorial={
         'items': [
             TUT('explain', 'Explain why the right kidney lies lower than the left.',
-                ['Both lie behind the peritoneum either side of the spine.', 'The liver sits above the right kidney.',
-                 'It displaces the right kidney slightly downwards.', 'So the left is at about T12 to L3 and the right a little lower.'], K_EXTERNAL),
+                ['Both lie behind the peritoneum either side of the spine.', 'The liver lies on the right, in the upper abdomen.',
+                 'It displaces the right kidney slightly downwards.', 'So the left is at about T12 to L3 and the right a little lower.'], K_EXTERNAL, LV_PLACE),
             TUT('compare', 'Compare the renal cortex and medulla.',
                 ['The cortex is outer and lighter.', 'It holds the renal corpuscles and convoluted tubules.',
                  'The medulla is inner, with pyramids and papillae.', 'Its papillae carry urine to the calyces.'], K_INTERNAL, K_CORTEX),
@@ -788,7 +787,7 @@ thyroid = lesson(
     oneLine={
         'main': F('A butterfly-shaped gland in front of the trachea that makes the hormones that set the metabolic rate.', T_PLACE, T_FUNCTION),
         'simpler': F('Your thyroid is a small gland in your neck. Its hormones control how fast your body uses energy.', T_PLACE, T_FUNCTION),
-        'deeper': F('It makes T3 and T4 from iodine, and calcitonin from its parafollicular cells.', T_ASSEMBLY, T_CALCITONIN),
+        'deeper': F('It makes triiodothyronine (T₃) and thyroxine (T₄) from iodine, and calcitonin from its parafollicular cells.', T_ASSEMBLY, T_STEPS, T_CALCITONIN),
     },
     where={
         'facts': [
@@ -811,7 +810,7 @@ thyroid = lesson(
     },
     formFunction={
         'facts': [
-            F('T3 and T4 raise the basal metabolic rate, the energy the body uses at rest.', T_FUNCTION),
+            F('Triiodothyronine (T₃) and thyroxine (T₄) raise the basal metabolic rate, the energy the body uses at rest.', T_FUNCTION, T_STEPS),
             F('They are needed for growth, and especially for the developing nervous system.', T_GROWTH),
             F('Thyroid hormone release is controlled by thyroid-stimulating hormone (TSH) from the pituitary, by negative feedback.', T_REGULATION),
         ],
@@ -840,28 +839,28 @@ thyroid = lesson(
     clinical={
         'items': [
             CLIN('Too little iodine in the diet.', 'Hormone production in the thyroid follicles.',
-                 'Make T3 and T4: the gland swells into a goitre.', 'TSH rises, and colloid builds up in the overstimulated follicles.', T_GOITRE),
+                 'Make T₃ and T₄: the gland swells into a goitre.', 'TSH rises, and colloid builds up in the overstimulated follicles.', T_GOITRE),
             CLIN('Inflammation of the thyroid gland.', 'The thyroid’s hormone output (hypothyroidism).',
-                 'Keep a normal metabolic rate: they gain weight and feel cold.', 'Low T3 and T4 slow the use of energy throughout the body.', T_HYPO, T_FUNCTION),
+                 'Keep a normal metabolic rate: they gain weight, and their hands and feet are cold.', 'Low T₃ and T₄ slow the use of energy throughout the body.', T_HYPO, T_FUNCTION),
         ],
     },
     tutorial={
         'items': [
             TUT('explain', 'Explain why iodine deficiency causes a goitre.',
-                ['Without iodine, T3 and T4 cannot be made.', 'Low T3 and T4 remove negative feedback.',
+                ['Without iodine, T₃ and T₄ cannot be made.', 'Low T₃ and T₄ remove negative feedback.',
                  'TSH secretion increases.', 'Overstimulated follicles store more colloid, and the gland enlarges.'], T_GOITRE, T_REGULATION),
             TUT('compare', 'Compare follicle cells and parafollicular cells.',
-                ['Follicle cells surround the colloid and make T3 and T4.', 'Their hormones raise the metabolic rate.',
+                ['Follicle cells surround the colloid and make T₃ and T₄.', 'Their hormones raise the metabolic rate.',
                  'Parafollicular cells lie between follicles and make calcitonin.', 'Calcitonin tends to lower blood calcium.'], T_PLACE, T_ASSEMBLY, T_CALCITONIN),
-            TUT('predict', 'Predict the TSH level in someone with low T3 and T4 from thyroid inflammation.',
-                ['Low T3 and T4 reduce negative feedback.', 'The hypothalamus releases more TRH.',
+            TUT('predict', 'Predict the TSH level in someone with low T₃ and T₄ from thyroid inflammation.',
+                ['Low T₃ and T₄ reduce negative feedback.', 'The hypothalamus releases more TRH.',
                  'The pituitary releases more TSH.', 'So TSH is high.'], T_REGULATION, T_HYPO),
         ],
     },
     check=[
         MCQ('Which cells make calcitonin?', ['Follicle cells', 'Parafollicular cells', 'Chief cells', 'Beta cells'], 1,
             'Parafollicular (C) cells between the follicles make calcitonin.', T_CALCITONIN),
-        MCQ('Which hormone stimulates the thyroid to release T3 and T4?', ['TRH', 'ACTH', 'TSH', 'Calcitonin'], 2,
+        MCQ('Which hormone stimulates the thyroid to release T₃ and T₄?', ['TRH', 'Growth hormone', 'TSH', 'Calcitonin'], 2,
             'Thyroid-stimulating hormone (TSH) from the anterior pituitary stimulates release.', T_REGULATION),
         MCQ('Where is the thyroid gland?', ['In front of the trachea, below the larynx', 'Behind the oesophagus', 'On top of the kidneys', 'In the mediastinum'], 0,
             'It lies anterior to the trachea, just inferior to the larynx.', T_PLACE),

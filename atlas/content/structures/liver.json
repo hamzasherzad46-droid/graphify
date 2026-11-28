@@ -91,7 +91,7 @@
    }
   ],
   "simpler": {
-   "t": "Two main lobes, with vessels entering at a “gate” underneath.",
+   "t": "Two main lobes, with vessels entering at a “gate”, the porta hepatis.",
    "src": [
     "s23-6#fs-id1479465",
     "s23-6#fs-id1842507"
@@ -140,7 +140,7 @@
    {
     "kind": "vein",
     "name": "Hepatic portal vein",
-    "t": "The hepatic portal vein brings nutrient-rich blood from the gut. It supplies more oxygen than the hepatic artery.",
+    "t": "It brings nutrient-rich blood from the gut, and supplies more oxygen than the hepatic artery.",
     "src": [
      "s23-6#fs-id1842507"
     ]

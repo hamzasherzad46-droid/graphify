@@ -958,7 +958,7 @@
   },
   "appendix": {
    "term": "appendix",
-   "meaning": "(vermiform appendix) coiled tube attached to the cecum",
+   "meaning": "(vermiform appendix) coiled tube attached to the caecum",
    "section": "23.5"
   },
   "aquaporin": {
@@ -1298,7 +1298,7 @@
   },
   "azygos vein": {
    "term": "azygos vein",
-   "meaning": "originates in the lumbar region and passes through the diaphragm into the thoracic cavity on the right side of the vertebral column; drains blood from the intercostal veins, esophageal veins, bronchial veins, and other veins draining the mediastinal region; leads to the superior vena cava",
+   "meaning": "originates in the lumbar region and passes through the diaphragm into the thoracic cavity on the right side of the vertebral column; drains blood from the intercostal veins, oesophageal veins, bronchial veins, and other veins draining the mediastinal region; leads to the superior vena cava",
    "section": "20.5"
   },
   "b cells": {
@@ -1598,7 +1598,7 @@
   },
   "blood–testis barrier": {
    "term": "blood–testis barrier",
-   "meaning": "tight junctions between Sertoli cells that prevent bloodborne pathogens from gaining access to later stages of spermatogenesis and prevent the potential for an autoimmune reaction to haploid sperm",
+   "meaning": "tight junctions between Sertoli cells that prevent blood-borne pathogens from gaining access to later stages of spermatogenesis and prevent the potential for an autoimmune reaction to haploid sperm",
    "section": "27.1"
   },
   "body": {
@@ -1841,6 +1841,11 @@
    "meaning": "connective tissue sac containing lubricating fluid that prevents friction between adjacent structures, such as skin and bone, tendons and bone, or between muscles",
    "section": "9.4"
   },
+  "caecum": {
+   "term": "caecum",
+   "meaning": "pouch forming the beginning of the large intestine",
+   "section": "23.5"
+  },
   "calcaneal tendon": {
    "term": "calcaneal tendon",
    "meaning": "(also, Achilles tendon) strong tendon that inserts into the calcaneal bone of the ankle",
@@ -1953,7 +1958,7 @@
   },
   "cardia": {
    "term": "cardia",
-   "meaning": "(also, cardiac region) part of the stomach surrounding the cardiac orifice (esophageal hiatus)",
+   "meaning": "(also, cardiac region) part of the stomach surrounding the cardiac orifice (oesophageal hiatus)",
    "section": "23.4"
   },
   "cardiac accelerator nerves": {
@@ -2120,11 +2125,6 @@
    "term": "cavernous sinus",
    "meaning": "enlarged vein that receives blood from most of the other cerebral veins and the eye socket, and leads to the petrosal sinus",
    "section": "20.5"
-  },
-  "cecum": {
-   "term": "cecum",
-   "meaning": "pouch forming the beginning of the large intestine",
-   "section": "23.5"
   },
   "celiac ganglion": {
    "term": "celiac ganglion",
@@ -2493,7 +2493,7 @@
   },
   "circular fold": {
    "term": "circular fold",
-   "meaning": "(also, plica circulare) deep fold in the mucosa and submucosa of the small intestine",
+   "meaning": "(also, plica circularis) deep fold in the mucosa and submucosa of the small intestine",
    "section": "23.5"
   },
   "circulatory shock": {
@@ -2643,7 +2643,7 @@
   },
   "colon": {
    "term": "colon",
-   "meaning": "part of the large intestine between the cecum and the rectum",
+   "meaning": "part of the large intestine between the caecum and the rectum",
    "section": "23.5"
   },
   "colony-stimulating factors": {
@@ -4151,21 +4151,6 @@
    "meaning": "protein hormone secreted in response to low oxygen levels that triggers the bone marrow to produce red blood cells",
    "section": "17.10"
   },
-  "esophageal artery": {
-   "term": "esophageal artery",
-   "meaning": "branch of the thoracic aorta; supplies blood to the oesophagus",
-   "section": "20.5"
-  },
-  "esophageal plexus": {
-   "term": "esophageal plexus",
-   "meaning": "neuronal plexus in the wall of the oesophagus that is part of the enteric nervous system",
-   "section": "13.4"
-  },
-  "esophageal vein": {
-   "term": "esophageal vein",
-   "meaning": "drains the inferior portions of the oesophagus and leads to the azygos vein",
-   "section": "20.5"
-  },
   "ethmoid air cell": {
    "term": "ethmoid air cell",
    "meaning": "one of several small, air-filled spaces located within the lateral sides of the ethmoid bone, between the orbit and upper nasal cavity",
@@ -4498,7 +4483,7 @@
   },
   "faeces": {
    "term": "faeces",
-   "meaning": "semisolid waste product of digestion",
+   "meaning": "semi-solid waste product of digestion",
    "section": "23.5"
   },
   "false ribs": {
@@ -4928,7 +4913,7 @@
   },
   "forced breathing": {
    "term": "forced breathing",
-   "meaning": "(also, hyperpnea) mode of breathing that occurs during exercise or by active thought that requires muscle contraction for both inspiration and expiration",
+   "meaning": "(also, hyperpnoea) mode of breathing that occurs during exercise or by active thought that requires muscle contraction for both inspiration and expiration",
    "section": "22.3"
   },
   "forearm": {
@@ -5818,7 +5803,7 @@
   },
   "hemiazygos vein": {
    "term": "hemiazygos vein",
-   "meaning": "smaller vein complementary to the azygos vein; drains the esophageal veins from the oesophagus and the left intercostal veins, and leads to the brachiocephalic vein via the superior intercostal vein",
+   "meaning": "smaller vein complementary to the azygos vein; drains the oesophageal veins from the oesophagus and the left intercostal veins, and leads to the brachiocephalic vein via the superior intercostal vein",
    "section": "20.5"
   },
   "hemisection": {
@@ -6131,8 +6116,8 @@
    "meaning": "process in which one cell splits to produce new cells",
    "section": "10.8"
   },
-  "hyperpnea": {
-   "term": "hyperpnea",
+  "hyperpnoea": {
+   "term": "hyperpnoea",
    "meaning": "increased rate and depth of ventilation due to an increase in oxygen demand that does not significantly alter blood oxygen or carbon dioxide levels",
    "section": "22.6"
   },
@@ -6326,8 +6311,8 @@
    "meaning": "antibody whose monomer is a surface receptor of naive B cells; the pentamer is the first antibody made blood plasma during primary responses",
    "section": "21.4"
   },
-  "ileocecal sphincter": {
-   "term": "ileocecal sphincter",
+  "ileocaecal sphincter": {
+   "term": "ileocaecal sphincter",
    "meaning": "sphincter located where the small intestine joins with the large intestine",
    "section": "23.5"
   },
@@ -7408,7 +7393,7 @@
   },
   "laryngeal prominence": {
    "term": "laryngeal prominence",
-   "meaning": "region where the two lamine of the thyroid cartilage join, forming a protrusion known as “Adam’s apple”",
+   "meaning": "region where the two laminae of the thyroid cartilage join, forming a protrusion known as “Adam’s apple”",
    "section": "22.1"
   },
   "laryngopharynx": {
@@ -7886,15 +7871,15 @@
    "meaning": "(also, swayback) excessive anterior curvature of the lumbar vertebral column region",
    "section": "7.3"
   },
-  "lower esophageal sphincter": {
-   "term": "lower esophageal sphincter",
-   "meaning": "smooth muscle sphincter that regulates food movement from the oesophagus to the stomach",
-   "section": "23.3"
-  },
   "lower motor neuron": {
    "term": "lower motor neuron",
    "meaning": "second neuron in the motor command pathway that is directly connected to the skeletal muscle",
    "section": "12.3"
+  },
+  "lower oesophageal sphincter": {
+   "term": "lower oesophageal sphincter",
+   "meaning": "smooth muscle sphincter that regulates food movement from the oesophagus to the stomach",
+   "section": "23.3"
   },
   "lumbar arteries": {
    "term": "lumbar arteries",
@@ -8028,7 +8013,7 @@
   },
   "macrophage": {
    "term": "macrophage",
-   "meaning": "ameboid phagocyte found in several tissues throughout the body",
+   "meaning": "amoeboid phagocyte found in several tissues throughout the body",
    "section": "21.2"
   },
   "macrophage oxidative metabolism": {
@@ -9475,6 +9460,21 @@
    "term": "oedema",
    "meaning": "fluid accumulation in tissue; often associated with circulatory deficits",
    "section": "16.1"
+  },
+  "oesophageal artery": {
+   "term": "oesophageal artery",
+   "meaning": "branch of the thoracic aorta; supplies blood to the oesophagus",
+   "section": "20.5"
+  },
+  "oesophageal plexus": {
+   "term": "oesophageal plexus",
+   "meaning": "neuronal plexus in the wall of the oesophagus that is part of the enteric nervous system",
+   "section": "13.4"
+  },
+  "oesophageal vein": {
+   "term": "oesophageal vein",
+   "meaning": "drains the inferior portions of the oesophagus and leads to the azygos vein",
+   "section": "20.5"
   },
   "oesophagus": {
    "term": "oesophagus",
@@ -11458,7 +11458,7 @@
   },
   "quiet breathing": {
    "term": "quiet breathing",
-   "meaning": "(also, eupnea) mode of breathing that occurs at rest and does not require the cognitive thought of the individual",
+   "meaning": "(also, eupnoea) mode of breathing that occurs at rest and does not require the cognitive thought of the individual",
    "section": "22.3"
   },
   "radial artery": {
@@ -11598,7 +11598,7 @@
   },
   "rectus femoris": {
    "term": "rectus femoris",
-   "meaning": "quadricep muscle on the anterior aspect of the thigh",
+   "meaning": "quadriceps muscle on the anterior aspect of the thigh",
    "section": "11.6"
   },
   "rectus sheaths": {
@@ -14033,7 +14033,7 @@
   },
   "thyroid cartilage": {
    "term": "thyroid cartilage",
-   "meaning": "largest piece of cartilage that makes up the larynx and consists of two lamine",
+   "meaning": "largest piece of cartilage that makes up the larynx and consists of two laminae",
    "section": "22.1"
   },
   "thyroid gland": {
@@ -14571,15 +14571,15 @@
    "meaning": "individual with type AB+ blood",
    "section": "18.6"
   },
-  "upper esophageal sphincter": {
-   "term": "upper esophageal sphincter",
-   "meaning": "skeletal muscle sphincter that regulates food movement from the pharynx to the oesophagus",
-   "section": "23.3"
-  },
   "upper motor neuron": {
    "term": "upper motor neuron",
    "meaning": "first neuron in the motor command pathway with its cell body in the cerebral cortex that synapses on the lower motor neuron in the spinal cord",
    "section": "12.3"
+  },
+  "upper oesophageal sphincter": {
+   "term": "upper oesophageal sphincter",
+   "meaning": "skeletal muscle sphincter that regulates food movement from the pharynx to the oesophagus",
+   "section": "23.3"
   },
   "upregulation": {
    "term": "upregulation",
@@ -14723,17 +14723,17 @@
   },
   "vastus intermedius": {
    "term": "vastus intermedius",
-   "meaning": "quadricep muscle that is between the vastus lateralis and vastus medialis and is deep to the rectus femoris",
+   "meaning": "quadriceps muscle that is between the vastus lateralis and vastus medialis and is deep to the rectus femoris",
    "section": "11.6"
   },
   "vastus lateralis": {
    "term": "vastus lateralis",
-   "meaning": "quadricep muscle on the lateral aspect of the thigh",
+   "meaning": "quadriceps muscle on the lateral aspect of the thigh",
    "section": "11.6"
   },
   "vastus medialis": {
    "term": "vastus medialis",
-   "meaning": "quadricep muscle on the medial aspect of the thigh",
+   "meaning": "quadriceps muscle on the medial aspect of the thigh",
    "section": "11.6"
   },
   "vein": {

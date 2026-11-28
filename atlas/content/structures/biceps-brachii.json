@@ -61,7 +61,7 @@
    ]
   },
   "deeper": {
-   "t": "The tendon of the long head runs in the intertubercular (bicipital) groove of the humerus.",
+   "t": "One of its tendons runs in the intertubercular (bicipital) groove of the humerus.",
    "src": [
     "s8-2#fs-id2110691"
    ]
@@ -71,18 +71,20 @@
   "items": [
    {
     "name": "Long head",
-    "t": "Arises above the glenoid cavity. Its tendon passes through the bicipital groove.",
+    "t": "Arises from the tubercle above the glenoid cavity. Its tendon passes through the bicipital groove.",
     "src": [
      "s11-5#fig-ch11_05_05",
      "s8-2#fs-id2110691"
-    ]
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which head of the biceps arises where (OpenStax lists both origins, not which head each belongs to)."
    },
    {
     "name": "Short head",
     "t": "Arises from the coracoid process of the scapula.",
     "src": [
      "s11-5#fig-ch11_05_05"
-    ]
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which head of the biceps arises where (OpenStax lists both origins, not which head each belongs to)."
    },
    {
     "name": "Belly",
@@ -173,7 +175,7 @@
    {
     "kind": "bone",
     "name": "Humerus",
-    "t": "The long-head tendon runs in its intertubercular groove.",
+    "t": "A biceps tendon runs in its intertubercular (bicipital) groove.",
     "src": [
      "s8-2#fs-id2110691"
     ]
@@ -197,7 +199,7 @@
  "development": {
   "facts": [
    {
-    "t": "Like other limb muscles, it develops from general mesoderm. Spinal nerves then form its neuromuscular junctions.",
+    "t": "Like other limb muscles, it develops from general mesoderm. Its nerve supply then triggers the formation of its neuromuscular junctions.",
     "src": [
      "s10-9#fs-id1959103",
      "s10-9#fs-id1605365"
@@ -230,8 +232,8 @@
    {
     "injury": "A heavy lift that ruptures the tendon of the long head.",
     "damaged": "The long-head tendon, where it runs in the bicipital groove.",
-    "cannotDo": "Flex and supinate with full strength; the belly bunches up near the elbow.",
-    "why": "The torn head cannot pull, and its belly shortens away from the tear.",
+    "cannotDo": "Flex and supinate the forearm with full strength.",
+    "why": "The torn head cannot pull, so its belly bunches up towards the elbow.",
     "src": [
      "s8-2#fs-id2110691"
     ],
@@ -315,17 +317,17 @@
    ]
   },
   {
-   "stem": "Where does the short head of the biceps arise?",
+   "stem": "Which muscle lies deep to the biceps brachii and adds power to elbow flexion?",
    "options": [
-    "Coracoid process",
-    "Acromion",
-    "Lateral epicondyle",
-    "Infraglenoid tubercle"
+    "Brachialis",
+    "Brachioradialis",
+    "Coracobrachialis",
+    "Anconeus"
    ],
    "answer": 0,
-   "why": "The short head arises from the coracoid process; the long head from the tubercle above the glenoid cavity.",
+   "why": "Deep to the biceps brachii, the brachialis provides additional power in flexing the forearm.",
    "src": [
-    "s11-5#fig-ch11_05_05"
+    "s11-5#fs-id2831016"
    ]
   }
  ]

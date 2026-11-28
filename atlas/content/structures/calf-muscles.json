@@ -26,7 +26,7 @@
    ]
   },
   "simpler": {
-   "t": "The calf muscles lift your heel so you can stand on tiptoe and push off when walking.",
+   "t": "The calf muscles point your foot down, as when you jump or tap your foot.",
    "src": [
     "s11-6#fs-id2421915",
     "s11-6#fig-ch11_06_05"
@@ -217,10 +217,10 @@
  "clinical": {
   "items": [
    {
-    "injury": "Tapping the calcaneal tendon with a reflex hammer.",
+    "injury": "Damage to the calf muscles’ reflex arc: their sensory fibres, the spinal cord or their lower motor neurons.",
     "damaged": "The ankle reflex of the gastrocnemius and soleus.",
-    "cannotDo": "Show a normal ankle reflex if the reflex arc is broken.",
-    "why": "Stretch of the muscle excites its own motor neurons through the spinal cord.",
+    "cannotDo": "Point the foot down when the calcaneal tendon is tapped.",
+    "why": "The tap normally stretches the muscles, and their spindles excite their motor neurons through the spinal cord.",
     "src": [
      "s16-4#fs-id1956663"
     ]

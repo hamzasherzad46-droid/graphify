@@ -230,10 +230,10 @@
  "clinical": {
   "items": [
    {
-    "injury": "Tapping the patellar ligament below the kneecap.",
+    "injury": "Damage to the quadriceps’ reflex arc: its sensory fibres, the spinal cord or its lower motor neurons.",
     "damaged": "The knee-jerk (stretch) reflex of the quadriceps.",
-    "cannotDo": "Show a normal knee-jerk reflex if the reflex arc is damaged.",
-    "why": "Stretching the muscle activates its spindles, which excite its motor neurons directly.",
+    "cannotDo": "Kick the leg forwards when the patellar ligament is tapped.",
+    "why": "The tap normally stretches the muscle, and its spindles excite its motor neurons directly.",
     "src": [
      "s16-4#fs-id1956663"
     ]

@@ -111,7 +111,8 @@
     "src": [
      "s11-3#tbl-ch11_05",
      "s11-3#fs-id2455581"
-    ]
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That one muscle tilts the head towards its own side (OpenStax says “to the side”)."
    },
    {
     "t": "Both together flex the head forwards.",
@@ -174,7 +175,7 @@
    }
   ],
   "simpler": {
-   "t": "It works with the deep neck muscles to move the head, and its nerve is a cranial nerve.",
+   "t": "It works with the muscles at the back of the neck to move the head. Its nerve is a cranial nerve.",
    "src": [
     "s11-3#tbl-ch11_05",
     "s13-4#tbl-ch13_03"
@@ -242,7 +243,8 @@
     "src": [
      "s11-3#tbl-ch11_05",
      "s11-2#fs-id2279191"
-    ]
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). How the line of pull from sternum to mastoid rotates the head."
    },
    {
     "kind": "compare",

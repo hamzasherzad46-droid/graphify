@@ -17,7 +17,7 @@
    ]
   },
   "simpler": {
-   "t": "Your small intestine is a long, coiled tube that takes the goodness from your food.",
+   "t": "Your small intestine is a long, coiled tube that absorbs the nutrients from your food.",
    "src": [
     "s23-5#fs-id2142144"
    ]
@@ -99,12 +99,11 @@
    }
   ],
   "simpler": {
-   "t": "Three parts: duodenum, jejunum and ileum, lined with millions of tiny folds and fingers.",
+   "t": "Three parts, the duodenum, jejunum and ileum, lined with folds and tiny finger-like villi.",
    "src": [
     "s23-5#fs-id2142277",
     "s23-5#fs-id1272744"
-   ],
-   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The number of villi (“millions”)."
+   ]
   },
   "deeper": {
    "t": "Circular folds, villi and microvilli increase its absorptive surface more than 600-fold.",

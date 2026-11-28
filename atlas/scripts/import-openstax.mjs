@@ -56,7 +56,7 @@ const CHANGES = [
   'Atlas groups the sections by topic.',
   'Atlas shows each section’s chapter review summary at its top as key points: the first sentence of each summary paragraph, with the rest of the paragraph one tap away.',
   'Spelling follows British English (for example haemorrhage, fibre, colour), with one form for each word across Atlas (for example brainstem, anteroposterior).',
-  'Typing errors in the source are corrected; each correction is listed in Atlas’s spelling dictionary.',
+  'Typing errors in the source are corrected, and so are a few errors of fact (for example, the axillary nerve does not branch from the radial nerve, and the supinator turns the palm up); each correction is listed in Atlas’s spelling dictionary.',
   'Each abbreviation is written out in full the first time it appears in the section (for example, central nervous system (CNS)).',
   'Links to videos, interactive exercises and external websites are removed.',
   'Three review questions per section appear as a quick check; the other review and critical thinking questions appear among the exam-style questions.',
@@ -322,11 +322,28 @@ function keyPoints(doc) {
 
 /* ── Main ───────────────────────────────────────────────────────────────────────────────────────────────────── */
 
+/**
+ * Errors of fact that span marked-up key terms, so are corrected in the source markup before it is read (the
+ * dictionary's corrections work within one piece of text). Each: [module, exact source text, corrected text].
+ */
+const SOURCE_FIXES = [
+  // The axillary nerve arises from the brachial plexus beside the radial nerve (both from its posterior cord), not from it.
+  ['m46553', '</term> from which the <term id="term-00038">axillary nerve</term> branches to go to the armpit region.', '</term>. The <term id="term-00038">axillary nerve</term>, from the same part of the plexus, goes to the armpit region.'],
+]
+const fixSource = (m, xml) => {
+  for (const [mod, from, to] of SOURCE_FIXES) {
+    if (mod !== m) continue
+    if (!xml.includes(from)) throw new Error(`SOURCE_FIXES: text not found in ${m}: ${from}`)
+    xml = xml.replace(from, to)
+  }
+  return xml
+}
+
 const titles = new Map()
 const docs = new Map()
 for (const ch of CHAPTERS)
   for (const [m] of ch.modules) {
-    const doc = new DOMParser().parseFromString(await cached(`modules/${m}/index.cnxml`), 'text/xml')
+    const doc = new DOMParser().parseFromString(fixSource(m, await cached(`modules/${m}/index.cnxml`)), 'text/xml')
     docs.set(m, doc)
     titles.set(m, textOf(doc.getElementsByTagName('title')[0]))
   }

@@ -81,6 +81,9 @@ const RULES = [
   [/ogs$/, 'ogues'],
 ]
 
+/** The rules above for medical prefixes and endings (the first ones): sure enough to apply to dictionary words too. */
+const MEDICAL = RULES.findIndex(([re]) => re.source.startsWith('iz('))
+
 /** Words that look like American spellings but are not: Henry Gray (Gray's Anatomy), and "arbor" (arbor vitae, Latin). */
 const PROTECTED = new Set(['Gray', 'GRAY', 'arbor', 'Arbor'])
 
@@ -95,6 +98,8 @@ const SURE = [
   [/^(hyper|hypo|an|poly|leuk)?hem(?=at|o|or|ang|ost|og)/, '$1haem'],
   [/([^a])esthe(sia|sias|tic|tics|tist|tists)$/, '$1aesthe$2'],
   [/rrhea$/, 'rrhoea'],
+  [/^esoph/, 'oesoph'],
+  [/^gastroesoph/, 'gastro-oesoph'],
 ]
 
 const matchCase = (src, out) => (src === src.toUpperCase() && src.length > 1 ? out.toUpperCase() : src[0] === src[0].toUpperCase() ? out[0].toUpperCase() + out.slice(1) : out)
@@ -106,10 +111,19 @@ export function toBritish(word) {
   if (PROTECTED.has(word)) return null
   const lower = word.toLowerCase()
   // Latin and other approved words stay as they are ("arbor vitae", "et"), as do the medical spellings kept on purpose.
-  if (extra.has(lower) || keep.has(lower)) return null
+  if (keep.has(lower)) return null
+  if (extra.has(lower) && !/^(gastro)?esoph|^edem|^hem(?=[ao])/.test(lower)) return null
   const v = VARCON.get(lower)
   if (v && !speller.correct(lower)) return matchCase(word, v)
   if (v && known(v) && lower.endsWith('ize')) return matchCase(word, v)
+  // Medical American forms that a general dictionary also lists ("edema", "hemoglobin", "esophageal"): converted
+  // whenever the British form is a known word, so the American form never passes as known.
+  for (const [re, rep] of RULES.slice(0, MEDICAL)) {
+    if (!re.test(lower)) continue
+    const out = lower.replace(re, rep)
+    if (out !== lower && known(out)) return matchCase(word, out)
+  }
+  if (/^(gastro)?esoph/.test(lower)) return matchCase(word, lower.replace(/^gastroesoph/, 'gastro-oesoph').replace(/^esoph/, 'oesoph'))
   if (known(lower)) return null
   // Rules safe for any word, so applied even where the British form is not yet in a dictionary ("hyperpolarisation").
   for (const [re, rep] of SURE) if (re.test(lower)) return matchCase(word, lower.replace(re, rep))

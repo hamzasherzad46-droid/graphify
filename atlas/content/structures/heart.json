@@ -104,6 +104,7 @@
     "t": "Tricuspid and mitral between atria and ventricles; pulmonary and aortic at the exits.",
     "src": [
      "s19-1#fs-id2718087",
+     "s19-1#fs-id2326948",
      "s19-1#fs-id2268819"
     ]
    },
@@ -266,8 +267,8 @@
    {
     "injury": "A coronary artery blocked by atherosclerotic plaque.",
     "damaged": "The heart muscle the artery supplies, which dies (myocardial infarction).",
-    "cannotDo": "Keep the heart pumping normally; there is often sudden pain beneath the sternum.",
-    "why": "Without blood and oxygen, the cardiac muscle cells die.",
+    "cannotDo": "Pump normally with the damaged region.",
+    "why": "Without blood and oxygen, the cardiac muscle cells die; there is often sudden pain beneath the sternum.",
     "src": [
      "s19-1#fs-id1289761",
      "s19-1#fs-id2351428"

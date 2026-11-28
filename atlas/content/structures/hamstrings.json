@@ -52,7 +52,7 @@
    }
   ],
   "simpler": {
-   "t": "They run from the bone you sit on to just below the back of the knee.",
+   "t": "They run from the bone you sit on to the back of the knee.",
    "src": [
     "s11-6#fig-ch11_06_03",
     "s11-6#fs-id2012638"
@@ -72,7 +72,8 @@
     "t": "The lateral hamstring. Besides flexing the knee, it turns the thigh outwards.",
     "src": [
      "s11-6#fig-ch11_06_03"
-    ]
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which hamstrings lie laterally and which medially (OpenStax gives their rotations, not their positions)."
    },
    {
     "name": "Semitendinosus",
@@ -80,7 +81,7 @@
     "src": [
      "s11-6#fig-ch11_06_03"
     ],
-    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The long tendon of the semitendinosus."
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The long tendon of the semitendinosus, and which hamstrings lie medially."
    },
    {
     "name": "Semimembranosus",
@@ -88,7 +89,7 @@
     "src": [
      "s11-6#fig-ch11_06_03"
     ],
-    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the semimembranosus lies deep to the semitendinosus."
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the semimembranosus lies deep to the semitendinosus, and which hamstrings lie medially."
    },
    {
     "name": "Popliteal fossa",
@@ -102,7 +103,8 @@
    "t": "One hamstring is on the outer side; two are on the inner side.",
    "src": [
     "s11-6#fig-ch11_06_03"
-   ]
+   ],
+   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which hamstrings lie laterally and which medially (OpenStax gives their rotations, not their positions)."
   },
   "deeper": {
    "t": "The biceps femoris inserts on the head of the fibula; the other two on the medial side of the tibia.",
@@ -171,17 +173,17 @@
    {
     "kind": "muscle",
     "name": "Gastrocnemius",
-    "t": "Arises from the femoral condyles, between the hamstring tendons behind the knee.",
+    "t": "Arises from the femoral condyles, so it too crosses the back of the knee and helps flex it.",
     "src": [
      "s11-6#fig-ch11_06_05"
     ]
    },
    {
-    "kind": "space",
-    "name": "Popliteal fossa",
-    "t": "Bounded above by the hamstring tendons.",
+    "kind": "muscle",
+    "name": "Gracilis",
+    "t": "In the medial compartment. Like the hamstrings, it moves the leg back at the knee, as when kneeling.",
     "src": [
-     "s11-6#fs-id2012638"
+     "s11-6#fig-ch11_06_03"
     ]
    }
   ],
@@ -264,7 +266,8 @@
     ],
     "src": [
      "s11-6#fig-ch11_06_03"
-    ]
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which hamstrings lie laterally and which medially (OpenStax gives their rotations, not their positions)."
    },
    {
     "kind": "predict",

@@ -102,12 +102,11 @@
    }
   ],
   "simpler": {
-   "t": "Three lobes on the right, two on the left, branching down to millions of tiny air sacs.",
+   "t": "Three lobes on the right, two on the left, branching down to tiny air sacs.",
    "src": [
     "s22-2#fs-id2717313",
     "s22-1#fs-id2594216"
-   ],
-   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The number of alveoli (“millions”)."
+   ]
   },
   "deeper": {
    "t": "The right lung is shorter and wider; the left holds a smaller volume, sharing space with the heart.",
@@ -228,7 +227,7 @@
  "variations": {
   "facts": [
    {
-    "t": "Second-hand smoke raises a non-smoker’s risk of lung cancer by up to 30 percent.",
+    "t": "Living with a smoker raises a non-smoker’s risk of lung cancer by up to 30 percent.",
     "src": [
      "s22-2#fs-id2573116"
     ]

@@ -14,8 +14,9 @@ const sentence = (before, after) => before.slice(before.search(/[^.!?]*$/)) + af
 const AXIS_OK = (before, after) => !/\b(an?|around|along|about|single|second|long)\s+$/i.test(before) && /\b(atlas|C2|C1|dens|vertebra|cervical|atlantoaxial)\b/i.test(sentence(before, after).replace(/\baxis\b/gi, ''))
 
 /** In the nervous system chapters "C1"–"L5" name spinal nerves or cord levels ("spinal nerves C4 through T1", "the T1
- *  chain ganglion"), so there they are linked only after the word vertebra ("vertebra T5"). */
-const CODE_OK = (before, nerves) => !nerves || /\bvertebra[e]?\s+$/i.test(before)
+ *  chain ganglion"), and in chapter 21 complement proteins ("C3", "C5–C9"), so there they are linked only after the word
+ *  vertebra ("vertebra T5"). Ganglia named by level ("thoracic ganglia T1–T4", 19.2) are never linked. */
+const CODE_OK = (before, nerves) => (!nerves || /\bvertebra[e]?\s+$/i.test(before)) && !/\bganglia\s+(?:[CTL]\d+\s*[–-]\s*)?$/i.test(before)
 /** "radius" is the bone, except in a paragraph about blood vessels and flow ("the radius of the blood vessel"). */
 const RADIUS_OK = (para) => !/\b(vessels?|resistance|viscosity|lumen|arterioles?|blood flow|diameter)\b/i.test(para)
 
@@ -70,6 +71,8 @@ export function linker(landmarks) {
     const key = match.toLowerCase().replace(/[\s-]+/g, ' ')
     if (key === 'axis' && !AXIS_OK(before, after)) return null
     if (key === 'radius' && !RADIUS_OK(para)) return null
+    // "dens" is also the singular of dentes, the teeth (23.3).
+    if (key === 'dens' && /\bdentes\b/i.test(para)) return null
     // Gray's calls the scaphoid of the hand the “navicular”: in the upper-limb chapter it is the scaphoid, not the foot's bone.
     if ((key === 'navicular' || key === 'navicular bone') && mode.hand) return 'scaphoid_left'
     if (key === 'atlas' || key === 'axis') contexts.push(`${before.slice(-30)}[${match}]${after.slice(0, 30)}`)

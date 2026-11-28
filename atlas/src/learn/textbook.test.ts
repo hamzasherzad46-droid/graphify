@@ -17,9 +17,9 @@ const inlines = (b: Block): Inline[] =>
 const all = (s: Section) => [...s.blocks.flatMap(inlines), ...s.keyPoints.flatMap((k) => [...k.lead, ...k.rest]), ...s.objectives.flat(), ...s.quickCheck.flatMap((q) => [...q.stem, ...q.options.flat()])]
 const figs = (bs: Block[]): Extract<Block, { t: 'fig' }>[] => bs.flatMap((b) => (b.t === 'fig' ? [b] : b.t === 'note' ? figs(b.blocks) : []))
 
-describe('textbook content (OpenStax A&P 2e, chapters 6–9, 12–16 and 20)', () => {
-  it('has all 61 sections, each in the index and in an Atlas topic', () => {
-    expect(sections).toHaveLength(61)
+describe('textbook content (OpenStax A&P 2e, chapters 6–17, 19–23 and 25)', () => {
+  it('has all 131 sections, each in the index and in an Atlas topic', () => {
+    expect(sections).toHaveLength(131)
     const topics = new Set(TOPICS.map((t) => t.id))
     for (const s of sections) {
       expect(index.sections.some((x: { id: string }) => x.id === s.id), s.id).toBe(true)
@@ -73,10 +73,11 @@ describe('textbook content (OpenStax A&P 2e, chapters 6–9, 12–16 and 20)', (
       for (const id of ids) expect(id, s.id).toMatch(/^[\w-]+$/)
     }
   })
-  it('has a quick check of three questions (two where the book has only two) with valid answers', () => {
+  it('has a quick check of three questions (fewer where the book has fewer) with valid answers', () => {
     for (const s of sections.filter((x) => x.num.includes('.'))) {
       expect(s.quickCheck.length, s.id).toBe(Math.min(3, s.quickCheck.length + s.review.length))
-      expect(s.quickCheck.length, s.id).toBeGreaterThanOrEqual(2)
+      // Section 10.4 has a single review question in the book.
+      expect(s.quickCheck.length, s.id).toBeGreaterThanOrEqual(s.id === 's10-4' ? 1 : 2)
       for (const q of s.quickCheck) expect(q.answer >= 0 && q.answer < q.options.length, q.id).toBe(true)
     }
   })

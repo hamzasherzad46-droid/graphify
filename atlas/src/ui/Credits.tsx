@@ -111,9 +111,10 @@ export function Credits({ onBack }: { onBack: () => void }) {
           <section>
             <h3>OpenStax Anatomy and Physiology 2e</h3>
             <p>
-              Textbook chapters 6–9 (bone tissue, axial and appendicular skeleton, joints), 12–16 (the nervous system) and 20 (blood
-              vessels and circulation) are adapted from <em>Anatomy and Physiology 2e</em> by J. Gordon Betts et al., OpenStax, licensed
-              under{' '}
+              Textbook chapters 6–9 (bone tissue, axial and appendicular skeleton, joints), 10–11 (muscle tissue and the muscular
+              system), 12–16 (the nervous system), 17 (the endocrine system), 19–20 (the heart, blood vessels and circulation), 21 (the
+              lymphatic and immune system), 22 (the respiratory system), 23 (the digestive system) and 25 (the urinary system) are
+              adapted from <em>Anatomy and Physiology 2e</em> by J. Gordon Betts et al., OpenStax, licensed under{' '}
               <a href={BY} target="_blank" rel="noreferrer">
                 CC BY 4.0
               </a>

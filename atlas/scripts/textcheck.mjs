@@ -316,7 +316,7 @@ const RULES = [
   ['missing space after punctuation', /[a-z][,;:][A-Za-z]|[a-z]\.[A-Z][a-z]/g],
   ['double space', / {2,}/g, null, ['atlas', 'ui', 'server']], // in the books, joined table cells (browsers show one space)
   ['a before a vowel', /\ba (?=[aeio][a-z])(?!one|uni|use|usu|eu|ewe|once|europ)/g], // lower-case article only (not the label “A”)
-  ['an before a consonant', /\ban (?=[bcdfgjklmnpqrstvwxyz])(?!hour|honou|heir|honest)/g], // "an L-shaped", "an LMN": letters sound with a vowel
+  ['an before a consonant', /\ban (?=[bcdfgjklmnpqrstvwxyz])(?!hour|honou|heir|honest|x-ray)/g], // "an L-shaped", "an LMN", "an x-ray": letters sound with a vowel
   ['unbalanced brackets', null],
 ]
 const grammar = []

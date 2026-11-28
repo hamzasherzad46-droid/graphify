@@ -74,6 +74,20 @@
       "textbookOnly": true
     },
     {
+      "id": "muscle-tissue",
+      "title": "Muscle tissue",
+      "blurb": "Skeletal, cardiac and smooth muscle, how a fibre contracts, and how exercise changes muscle",
+      "regions": [],
+      "textbookOnly": true
+    },
+    {
+      "id": "muscles",
+      "title": "Muscles",
+      "blurb": "How muscles are named and arranged, and the muscles of the head, trunk and limbs",
+      "regions": [],
+      "textbookOnly": true
+    },
+    {
       "id": "nervous",
       "title": "Nervous system",
       "blurb": "Nervous tissue, the brain, spinal cord and nerves, the somatic and autonomic systems, and the neurological exam",
@@ -81,9 +95,51 @@
       "textbookOnly": true
     },
     {
+      "id": "endocrine",
+      "title": "Endocrine system",
+      "blurb": "Hormones and the glands that make them: pituitary, thyroid, parathyroid, adrenal, pineal and pancreas",
+      "regions": [],
+      "textbookOnly": true
+    },
+    {
+      "id": "heart",
+      "title": "Heart",
+      "blurb": "Chambers and valves, cardiac muscle and the conduction system, the cardiac cycle and cardiac output",
+      "regions": [],
+      "textbookOnly": true
+    },
+    {
       "id": "vessels",
       "title": "Blood vessels and circulation",
       "blurb": "Arteries, veins and capillaries, blood flow and pressure, and the circulatory routes",
+      "regions": [],
+      "textbookOnly": true
+    },
+    {
+      "id": "lymphatic",
+      "title": "Lymphatic and immune system",
+      "blurb": "Lymphatic vessels, lymph nodes, the spleen and thymus, and the innate and adaptive immune responses",
+      "regions": [],
+      "textbookOnly": true
+    },
+    {
+      "id": "respiratory",
+      "title": "Respiratory system",
+      "blurb": "The airways and lungs, breathing, gas exchange and the transport of oxygen and carbon dioxide",
+      "regions": [],
+      "textbookOnly": true
+    },
+    {
+      "id": "digestive",
+      "title": "Digestive system",
+      "blurb": "The digestive tract from mouth to anus, the liver, pancreas and gallbladder, and digestion and absorption",
+      "regions": [],
+      "textbookOnly": true
+    },
+    {
+      "id": "urinary",
+      "title": "Urinary system",
+      "blurb": "The kidneys, ureters, bladder and urethra, how urine is formed, and the kidney’s part in homeostasis",
       "regions": [],
       "textbookOnly": true
     }

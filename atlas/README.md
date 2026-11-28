@@ -352,13 +352,16 @@ plus **Learn / Hard** mode and a timer (none, 1, 3, 5 min). *Continue where you 
 ## Lessons (lessons upgrade)
 
 Home → **Lessons** offers **Exam-style questions** and **Textbook**, both organised by topic (`content/topics.json`):
-Skull, Spine, Thorax, Upper limb, Lower limb, Pelvis; the textbook adds Bone tissue, The skeleton and Joints. Pages
+Skull, Spine, Thorax, Upper limb, Lower limb, Pelvis; the textbook adds Bone tissue, The skeleton, Joints, Muscle tissue,
+Muscles, Nervous system, Endocrine system, Heart, Blood vessels and circulation, Lymphatic and immune system, Respiratory
+system, Digestive system and Urinary system. Pages
 opened from Home form a stack backed by browser history, so the phone's back button closes them.
 
 ### Textbook (step 2)
 
-- **Source**: OpenStax *Anatomy and Physiology 2e*, chapters 6–9 (the skeleton: 28 sections), 12–16 (the nervous system) and 20
-  (blood vessels and circulation), 61 sections and 253 figures in all, imported by
+- **Source**: OpenStax *Anatomy and Physiology 2e*, chapters 6–9 (the skeleton: 28 sections), 10–11 (muscle tissue and the
+  muscular system), 12–16 (the nervous system), 17 (endocrine), 19–20 (the heart, blood vessels and circulation), 21
+  (lymphatic and immune), 22 (respiratory), 23 (digestive) and 25 (urinary), 131 sections and 484 figures in all, imported by
   `scripts/import-openstax.mjs` from the book's source repository into `content/textbook/*.json` and
   `public/textbook/*.webp`.
 - **Licence**: the repository moved the book to **CC BY-NC-SA 4.0** on 2026-03-19 (commit `fdfa6e2`). Atlas uses the
@@ -371,6 +374,13 @@ opened from Home form a stack backed by browser history, so the phone's back but
   synonym, vertebra codes (C1–L5), and 148 landmarks on a single bone (mastoid process → temporal bone, greater
   trochanter → femur, …) open the bone in 3D, with a *Back to 7.2 The Skull* pill on the 3D view. "Axis" links to
   C2 only in a sentence about the neck vertebrae. Structures formed by several bones (fossae, sutures) are not linked.
+  Vertebra codes are linked only after "vertebra" in the nervous system chapters (spinal nerves) and chapter 21
+  (complement proteins C1–C9), never after "ganglia"; "dens" is not linked where it is the singular of dentes (teeth).
+- **New chapters (10–11, 17, 19, 21–23, 25)**: typing errors in the source are corrected on import (each listed in
+  `data/dictionary.json`, for example "quatratus femoris" → "quadratus femoris", "external automated defibrillators (EADs)"
+  → "automated external defibrillators (AEDs)"), chemical formulas are set with subscripts (H₂CO₃, HCO₃⁻), and Figure 22.12,
+  whose source file lacks its JPEG end marker, is read as it is (the picture is complete). New words in these chapters
+  are listed as *proposed* in the dictionary, awaiting review.
 - **Reader**: about 65 characters a line, 17.5 px text (five sizes), line height 1.7, dark / light / auto; key points
   (the first sentence of each chapter-review paragraph, full summary one tap away), learning objectives, the full
   text, figures that open full screen (pinch or double-tap to zoom), key terms, a 3-question quick check from the

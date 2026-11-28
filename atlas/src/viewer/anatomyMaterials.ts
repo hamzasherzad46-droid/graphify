@@ -142,6 +142,7 @@ export function organMaterial(kind: OrganKind, name: string): THREE.Material {
   return new THREE.MeshPhysicalMaterial({
     color: c, vertexColors: true, roughness: kind === 'lung' ? 0.7 : 0.5, sheen: 0.4, sheenRoughness: 0.5,
     sheenColor: new THREE.Color('#ffe6dc'), clearcoat: wet, clearcoatRoughness: 0.35,
+    side: THREE.DoubleSide, // some source surfaces are single sheets (the pharynx, valve leaflets): seen from both sides
   })
 }
 

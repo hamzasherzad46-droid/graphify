@@ -1,6 +1,6 @@
 # Atlas text check
 
-18,550 pieces of text, 369,095 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 177 approved + 6 proposed.
+18,551 pieces of text, 369,164 words. Standard: British English (-ise); dictionary: en-GB base + 3,309 Terminologia Anatomica words + 177 approved + 6 proposed.
 
 **Result: PASS.** Unknown words: 0. American spellings: 0. Names written two ways or in the wrong case: 0. Abbreviations not written out at first use: 0. Restricted words out of place: 0. Names not in their owners’ spelling: 0. Grammar rule hits: 8; LanguageTool: 15.
 
@@ -70,7 +70,7 @@ answerText · Bastioni · cloze · Hauquier · MakeHuman · Palmius
 - EN_COMPOUNDS_WEIGHT_BEARING (content/questions/spine.json.questions[8].answerText): This word is normally spelled with a hyphen. “...the nucleus pulposus resists compression for weight bearing and can change shape to allow for vertebral ...” → weight-bearing
 - AGREEMENT_SENT_START (content/questions/spine.json.questions[11].why): You should probably use "sit". “...hat projects upwards from its body. The dens sits against the back of the anterior arch of the...” → sit
 - ENGLISH_WORD_REPEAT_BEGINNING_RULE (content/questions/thorax.json.questions[12].whyNot[2]): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...t attach to the cartilage of the rib above.  Ribs 1 and 2 are true ribs that join the sternum ...”
-- LICENCE_LICENSE_NOUN_SINGULAR (src/ui/Credits.tsx:138): License must be spelled with a "c" when used as a noun in British English. Use "licence". “...timizer (MIT), Inter typeface (SIL Open Font License).  Atlas · Skeletal system  For education on...” → Licence
+- LICENCE_LICENSE_NOUN_SINGULAR (src/ui/Credits.tsx:144): License must be spelled with a "c" when used as a noun in British English. Use "licence". “...timizer (MIT), Inter typeface (SIL Open Font License).  Atlas · Skeletal system  For education on...” → Licence
 - ENGLISH_WORD_REPEAT_BEGINNING_RULE (server/src/marking.ts:12): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “... fair and exact senior anatomy tutor would.  You receive the question, the model answer and i...” → Furthermore, you
 - ENGLISH_WORD_REPEAT_BEGINNING_RULE (server/src/prompts.ts:21): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...nior anatomy tutor at a leading university.  You only work on human anatomy and the physiolog...” → Furthermore, you
 - ENGLISH_WORD_REPEAT_BEGINNING_RULE (server/src/prompts.ts:21): Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. “...logy and clinical anatomy that goes with it. You do not chat, answer general questions, write...” → Furthermore, you

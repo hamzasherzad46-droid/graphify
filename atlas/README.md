@@ -171,6 +171,47 @@ npx gltf-transform draco /tmp/fit/layers-male-lod1.glb models-src/layers-male-ph
 python3 scripts/model/verify_muscles.py /tmp/fit/muscles-male /tmp/fit/muscles-orig docs/muscle-check.tsv
 ```
 
+## 3D model upgrade, step 3: the male organs (`models-src/organs-male.glb`, `organs-male-phone.glb`)
+
+**Male only**, for the same reason as the muscles. From **Z-Anatomy** (CC BY-SA 4.0), in the male skeleton's space
+(the same measured offset as the muscles): `scripts/model/organs.py`.
+
+- **368 parts:** the heart (chambers, valve leaflets, papillary muscles, coronary arteries and cardiac veins) and the
+  great vessels (aorta, pulmonary trunk and arteries, venae cavae, pulmonary veins); the lungs (five lobes), trachea and
+  bronchial tree; the oesophagus, stomach, small and large intestine, appendix, liver, gallbladder and bile duct,
+  pancreas, tongue, palate, pharynx and salivary glands; the kidneys, renal pelves, ureters, bladder and urethra; the
+  thyroid, parathyroid, suprarenal and pituitary glands and the pineal gland; the spleen, thymus and palatine tonsils;
+  the male genital organs; the brain (cerebrum with its deep structures, cerebellum, brainstem) and the spinal cord.
+  Not included: lymph nodes, nerves, and the vessels beyond the heart's.
+- **Per part, extras** `{layer: 'organs', kind, system, side, za}`. The genital organs and the urethra also carry
+  `modesty: true` (hidden while modesty is on, the default); the pleura and peritoneal folds (omenta, mesocolon)
+  carry `hidden: true` (they wrap the organs and are shown only on request).
+- **True to the source:** each part is lightly smoothed and simplified, and checked against the full-resolution
+  original (95th percentile of the two-sided surface distance, `docs/organ-check.tsv`): at most 0.8 mm (phone level
+  1.2 mm), a fifth of the part's thickness for thin closed parts, and 0.15 mm for vessels, ducts and airways (open
+  tubes in the source, which crumple under any coarser limit). A part whose smoothing would throw any point more
+  than 5 mm out keeps its original surface.
+- **Repairs, all listed in Credits:** an opening no joining part meets is a hole in the source mesh and is closed
+  with a smooth patch that continues the wall's curvature (one about 5 cm across in the stomach's front wall, small
+  ones in the small intestine, liver and bronchi); openings where parts meet (stomach to duodenum, chamber to chamber)
+  and the cut ends of the great vessels stay open. The brain is coarse in the source (about 6.5 mm between points),
+  so it is rounded by subdivision, within 2 mm of the original (2.6 mm on phones).
+- **Two levels:** about 633,000 triangles (tablets, desktop; 2.8 MB) and about 351,000 (phones; 1.8 MB),
+  Draco-compressed, with baked occlusion between organs.
+
+**Materials** (`organMaterial` in `src/viewer/anatomyMaterials.ts`): natural tissue tones under a soft clear coat,
+arteries red and veins blue by textbook convention, valve leaflets pale, drawn from both sides (some source surfaces,
+such as the pharynx, are single sheets).
+
+```bash
+node scripts/model/export-za.mjs <Z-Anatomy FBX dir> VisceralSystem100 /tmp/fit/visceral-orig 100000000 0
+node scripts/model/export-za.mjs <Z-Anatomy FBX dir> CardioVascular41 /tmp/fit/cardio-orig 100000000 0
+node scripts/model/export-za.mjs <Z-Anatomy FBX dir> LymphoidOrgans100 /tmp/fit/lymph-orig 100000000 0
+python3 scripts/model/organs.py /tmp/fit /tmp/fit/organs-male   # also needs nervous, zaskel and male (step 2)
+npx gltf-transform draco /tmp/fit/organs-male.glb models-src/organs-male.glb
+npx gltf-transform draco /tmp/fit/organs-male-lod1.glb models-src/organs-male-phone.glb
+```
+
 ## Exploded view (step 3)
 
 Dock → explode button. Choose the whole skeleton or one region (skull, spine, thorax, upper limb, hand, pelvis,

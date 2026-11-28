@@ -48,6 +48,12 @@ export function Credits({ onBack }: { onBack: () => void }) {
               cartilages; lightly smoothed and simplified (each within about a millimetre of the original), otherwise
               unchanged.
             </p>
+            <p className="muted small">
+              The male organs come from the same source: the heart and great vessels, lungs and airways, digestive organs, kidneys and urinary tract,
+              glands, spleen and thymus, genital organs, and the brain and spinal cord. Lightly smoothed and simplified; holes in
+              the source surfaces of the stomach, intestines and a few other organs closed with smooth patches; the brain, coarse
+              in the source, rounded by subdivision (within 2 mm of the original).
+            </p>
           </section>
 
           <section>

@@ -10,11 +10,15 @@ the organs, pleura and peritoneal folds, {hidden: true}), and <out prefix>-check
 
 Every mesh is the Z-Anatomy original, lightly smoothed (Taubin) and decimated to a triangle budget proportional to
 its surface area; each level stays within MAX_P95 (95th percentile of the two-sided surface distance) of the
-original, given more triangles until it does. Nothing is reshaped, moved or guessed.
+original (for thin parts, a fifth of their thickness), given more triangles until it does. The brain, coarse in the
+source, is rounded by subdivision (brain_source). Nothing is reshaped, moved or guessed.
 """
 import sys
 from multiprocessing import Pool
 import numpy as np
+from collections import defaultdict
+from scipy import sparse
+from scipy.sparse.linalg import spsolve
 import igl
 from scipy.spatial import cKDTree
 import fit
@@ -27,6 +31,12 @@ LOD1_TRIS = 160_000
 MAX_P95 = 0.0008  # m (organs are smooth, so a tighter limit than the muscles' costs little)
 MAX_P95_LOD1 = 0.0012
 MIN_TRIS = 80
+BRAIN_P95 = 0.002  # m: the subdivided brain against the coarse original (see brain_source)
+MAX_STRAY = 0.005  # m
+BRAIN_P95_LOD1 = 0.0026  # m (phones)
+BRAIN_SHARE = 2.5
+TUBES = {'artery', 'vein', 'airway', 'urinary', 'bile'}
+TUBE_P95 = 0.00015  # m  # the rounded brain needs more triangles than its area share
 
 HEART = {
     'Left_atrium', 'Right_atrium', 'Left_ventricle', 'Right_ventricle',
@@ -138,20 +148,152 @@ def select(work):
     return out
 
 
+# Openings: where a tube meets the next part (stomach to duodenum, chamber to chamber, bronchus to lung) the source
+# leaves the ends open, and that stays. An opening no such part meets is a hole in the source mesh (one in the
+# stomach's front wall, small ones in the small intestine) and is closed with a smooth patch that continues the
+# surrounding wall's curvature. The cut ends of the great vessels, where the model stops, are left open.
+JOINS = {'gut', 'airway', 'artery', 'vein', 'heart', 'urinary', 'bile', 'lung', 'kidney', 'gland', 'mouth', 'genital'}
+FILL_KINDS = {'gut', 'airway', 'urinary', 'bile', 'lung', 'kidney', 'liver', 'spleen', 'gland', 'mouth', 'genital'}
+JOIN_GAP = 0.003  # m
+
+
+def boundary_loops(f):
+    """Each open boundary as an ordered loop, oriented as the edges run in the faces."""
+    e = np.concatenate([f[:, [0, 1]], f[:, [1, 2]], f[:, [2, 0]]])
+    key = np.sort(e, axis=1)
+    _, inv, cnt = np.unique(key, axis=0, return_inverse=True, return_counts=True)
+    b = e[cnt[inv.ravel()] == 1]
+    nxt = {a: z for a, z in b}
+    loops, seen = [], set()
+    for a in nxt:
+        if a in seen:
+            continue
+        loop, x = [], a
+        while x not in seen and x in nxt:
+            seen.add(x)
+            loop.append(x)
+            x = nxt[x]
+        if len(loop) >= 3 and x == a:
+            loops.append(loop)
+    return loops
+
+
+def fill_hole(v, f, loop):
+    """A patch of concentric rings over the hole, its inner points placed so the surface bends smoothly
+    (bilaplacian, everything else fixed)."""
+    p = v[loop]
+    c = p.mean(0)
+    edge = np.linalg.norm(np.roll(p, -1, 0) - p, axis=1).mean()
+    k = int(max(2, np.ceil(np.linalg.norm(p - c, axis=1).mean() / max(edge, 1e-6))))
+    n0, m = len(v), len(loop)
+    rings = [np.array(loop)]
+    newv = []
+    for j in range(1, k):
+        newv.append(c + (p - c) * (1 - j / k))
+        rings.append(n0 + (j - 1) * m + np.arange(m))
+    centre = n0 + (k - 1) * m
+    newv.append(c[None])
+    V = np.vstack([v] + newv)
+    tris = []
+    for j in range(k - 1):
+        a, b = rings[j], rings[j + 1]
+        for i in range(m):
+            i2 = (i + 1) % m
+            # the hole's edge runs loop[i] -> loop[i+1] in the faces, so the patch runs the other way
+            tris += [(a[i2], a[i], b[i]), (a[i2], b[i], b[i2])]
+    last = rings[-1]
+    tris += [(last[(i + 1) % m], last[i], centre) for i in range(m)]
+    F = np.vstack([f, np.array(tris, np.int64)])
+    free = np.arange(n0, len(V))
+    nb = fit.neighbours(F, len(V))
+    rows = np.repeat(np.arange(len(V)), [len(x) for x in nb])
+    cols = np.concatenate([np.asarray(x, np.int64) for x in nb])
+    deg = np.array([len(x) for x in nb], np.float64)
+    L = sparse.csr_matrix((np.ones(len(rows)) / deg[rows], (rows, cols)), shape=(len(V), len(V))) - sparse.eye(len(V))
+    Q = (L.T @ L).tocsr()
+    fixed = np.setdiff1d(np.arange(len(V)), free)
+    A = Q[free][:, free]
+    rhs = -(Q[free][:, fixed] @ V[fixed])
+    V[free] = np.column_stack([spsolve(A.tocsc(), rhs[:, d]) for d in range(3)])
+    return V, F
+
+
+def repair(sel):
+    """Closes holes no joining part meets; returns {name: holes closed}."""
+    names = list(sel)
+    P = np.vstack([sel[n][0] for n in names])
+    owner = np.repeat(np.arange(len(names)), [len(sel[n][0]) for n in names])
+    tree = cKDTree(P)
+    closed = {}
+    for i, n in enumerate(names):
+        v, f, kind, system = sel[n]
+        if kind not in FILL_KINDS:
+            continue
+        f = f.astype(np.int64)
+        count = 0
+        for loop in boundary_loops(f):
+            near = tree.query_ball_point(v[loop], JOIN_GAP)
+            met = {owner[j] for js in near for j in js if owner[j] != i and sel[names[owner[j]]][2] in JOINS}
+            if met:
+                continue
+            v, f = fill_hole(v, f, loop)
+            count += 1
+        if count:
+            sel[n] = (v, f, kind, system)
+            closed[n] = count
+    return closed
+
+
+def relative_limit(v, f, limit):
+    """Thin parts (coronary vessels, ducts, valve leaflets) need a limit set by their own thickness: 0.8 mm is
+    nothing on the liver but half the width of a coronary artery."""
+    if not remesh.is_closed(f):  # a sheet (the pleura, the omenta): no thickness to measure
+        return limit
+    thickness = 2 * remesh.volume(v, f) / max(remesh.area(v, f), 1e-12)
+    return float(min(limit, max(0.00012, 0.2 * thickness)))
+
+
+def brain_source(v, f):
+    """The Z-Anatomy brain is coarse (gyri about 6.5 mm between points), so its surfaces read as flat facets.
+    Two rounds of Loop subdivision then light smoothing give the smooth surface those points describe; the result
+    is measured against the original like everything else (BRAIN_P95)."""
+    import trimesh.remesh as tr
+    try:
+        sv, sf = tr.subdivide_loop(v, f, iterations=2)
+        it = 2
+    except ValueError:  # a non-manifold edge in the source: split each triangle in four, then smooth more
+        sv, sf = tr.subdivide(*tr.subdivide(v, f))
+        it = 6
+    sf = np.asarray(sf, np.int64)
+    return remesh.taubin(np.asarray(sv, np.float64), sf, it), sf
+
+
 def level(args):
-    name, v, f, budget, limit = args
+    name, v, f, budget, limit, kind = args
     f = f.astype(np.int64)
     orig = (v, f)
-    s = (remesh.taubin(v, f, 2), f)
+    if kind == 'brain':
+        s = brain_source(v, f)
+        limit = BRAIN_P95 if limit == MAX_P95 else BRAIN_P95_LOD1
+    else:
+        s = (remesh.taubin(v, f, 2), f)
+        if kind in TUBES:  # vessels, ducts, airways: often open tubes in the source, crumpled by any coarse limit
+            limit = min(limit, TUBE_P95)
+        elif kind != 'membrane':  # membranes: thin by nature, and hidden
+            limit = relative_limit(v, f, limit)
+    # A spike (smoothing can throw a point of a tiny or broken mesh far out) would slip past a 95th percentile:
+    # any point more than MAX_STRAY from the original and the part keeps its original surface.
+    if np.sqrt(igl.point_mesh_squared_distance(s[0], v, f)[0].max()) > MAX_STRAY:
+        return name, orig, 0.0
     target = max(budget, MIN_TRIS)
     while True:
         lv = remesh.decimate(*s, target)
         err = remesh.p95_two_sided(lv, orig)
         if err <= limit:
             return name, lv, err
-        if target >= len(f):
+        if target >= len(s[1]):
             break
-        target = min(int(target * 1.6), len(f))
+        target = min(int(target * 1.6), len(s[1]))
     if remesh.p95_two_sided(s, orig) > limit:  # smoothing alone moves it: keep the original
         return name, orig, 0.0
     return name, s, remesh.p95_two_sided(s, orig)
@@ -160,12 +302,15 @@ def level(args):
 def main(work, out):
     off = layers.za_offset(f'{work}/zaskel', f'{work}/male')
     sel = select(work)
+    closed = repair(sel)
+    print('holes closed:', ', '.join(f'{n} {c}' for n, c in sorted(closed.items())) or 'none', flush=True)
     names = sorted(sel)
     areas = np.array([remesh.area(sel[n][0], sel[n][1].astype(np.int64)) for n in names])
     share = areas / areas.sum()
     res = {}
     for lod, (total, limit) in enumerate(((LOD0_TRIS, MAX_P95), (LOD1_TRIS, MAX_P95_LOD1))):
-        jobs = [(n, sel[n][0] + off, sel[n][1], int(total * s), limit) for n, s in zip(names, share)]
+        jobs = [(n, sel[n][0] + off, sel[n][1], int(total * s * (BRAIN_SHARE if sel[n][2] == 'brain' else 1)), limit,
+                 sel[n][2]) for n, s in zip(names, share)]
         jobs.sort(key=lambda j: -len(j[2]))
         with Pool(4) as pool:
             for n, lv, err in pool.imap_unordered(level, jobs):
@@ -192,7 +337,7 @@ def main(work, out):
             ao = 0.5 + 0.5 * np.clip(ao, 0, 1) ** 0.8
             kind, system = sel[n][2], sel[n][3]
             extras = {'layer': 'organs', 'kind': kind, 'system': system, 'side': layers.side_of(n), 'za': n}
-            if kind == 'genital':
+            if kind == 'genital' or n == 'Urethra':  # the male urethra runs through the penis
                 extras['modesty'] = True
             if kind == 'membrane':
                 extras['hidden'] = True

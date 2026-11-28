@@ -1,0 +1,72 @@
+{
+ "topic": "endocrine",
+ "cards": [
+  {
+   "reviewStatus": "draft",
+   "id": "or-thyroid-gland-function",
+   "topic": "endocrine",
+   "type": "function",
+   "level": "core",
+   "structureId": "thyroid-gland",
+   "part": "thyroid_gland",
+   "frontView": false,
+   "objective": "Name the pituitary hormone that controls the thyroid.",
+   "front": "Which pituitary hormone stimulates the thyroid gland?",
+   "answer": "Thyroid-stimulating hormone (TSH)",
+   "why": {
+    "t": "Thyroid hormone release is controlled by thyroid-stimulating hormone (TSH) from the pituitary, by negative feedback. T3 and T4 raise the basal metabolic rate, the energy the body uses at rest.",
+    "src": [
+     "s17-4#fs-id1073276",
+     "s17-4#fs-id1241366"
+    ]
+   },
+   "simpler": {
+    "t": "Your thyroid is a small gland in your neck. Its hormones control how fast your body uses energy.",
+    "src": [
+     "s17-4#fs-id1219750",
+     "s17-4#fs-id1241366"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Isthmus: the narrow middle part that joins the two lobes.",
+     "src": [
+      "s17-4#fs-id1219750"
+     ]
+    },
+    {
+     "t": "Lobes: wing-shaped right and left lobes either side of the isthmus.",
+     "src": [
+      "s17-4#fs-id1219750"
+     ]
+    },
+    {
+     "t": "Follicles: hollow spheres of follicle cells filled with colloid, where the hormones are made.",
+     "src": [
+      "s17-4#fs-id1219750",
+      "s17-4#fs-id1217036"
+     ]
+    },
+    {
+     "t": "Parafollicular (C) cells: cells between the follicles that make calcitonin.",
+     "src": [
+      "s17-4#fs-id555341"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Too little iodine in the diet. TSH rises, and colloid builds up in the overstimulated follicles.",
+    "src": [
+     "s17-4#fs-id1081468"
+    ]
+   },
+   "trap": {
+    "t": "The hypothalamus makes thyrotropin-releasing hormone (TRH); the anterior pituitary makes TSH.",
+    "src": [
+     "s17-4#fs-id1073276"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 17.4 The Thyroid Gland"
+  }
+ ]
+}

@@ -1,0 +1,79 @@
+{
+ "topic": "respiratory",
+ "cards": [
+  {
+   "reviewStatus": "draft",
+   "id": "or-lungs-feature",
+   "topic": "respiratory",
+   "type": "feature",
+   "level": "core",
+   "structureId": "lungs",
+   "part": "superior_lobe_of_right_lung",
+   "frontView": false,
+   "objective": "State the lobes of the right lung.",
+   "front": "How many lobes does the right lung have?",
+   "answer": "Three: superior, middle and inferior",
+   "why": {
+    "t": "The right lung has three lobes; the left lung has two. Fissures separate them. The right lung is shorter and wider; the left holds a smaller volume, sharing space with the heart.",
+    "src": [
+     "s22-2#fs-id2717313",
+     "s22-2#fs-id2627237"
+    ]
+   },
+   "simpler": {
+    "t": "Your lungs take oxygen from the air into your blood and pass carbon dioxide out.",
+    "src": [
+     "s22-2#fs-id1401100"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Lobes: the right lung has three lobes; the left lung has two.",
+     "src": [
+      "s22-2#fs-id2717313"
+     ]
+    },
+    {
+     "t": "Cardiac notch: an indentation in the left lung that makes room for the heart.",
+     "src": [
+      "s22-2#fs-id2627237"
+     ]
+    },
+    {
+     "t": "Bronchopulmonary segments: divisions of a lobe, each with its own tertiary bronchus and artery.",
+     "src": [
+      "s22-2#fs-id2717313"
+     ]
+    },
+    {
+     "t": "Alveoli: tiny grape-like air sacs, about 200 micrometres across, with elastic walls.",
+     "src": [
+      "s22-1#fs-id2594216"
+     ]
+    },
+    {
+     "t": "Hilum: where the nerves enter the lung root and the two layers of pleura meet.",
+     "src": [
+      "s22-2#fs-id2292208",
+      "s22-2#fs-id2346435"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A baby born before enough surfactant is made. Without surfactant, the alveoli collapse during expiration.",
+    "src": [
+     "s22-3#fs-id1862104",
+     "s22-7#fs-id1910265"
+    ]
+   },
+   "trap": {
+    "t": "The left lung has two lobes and the cardiac notch; the right has three.",
+    "src": [
+     "s22-2#fs-id2717313",
+     "s22-2#fs-id2627237"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 22.1 Organs and Structures of the Respiratory System; 22.2 The Lungs; 22.3; 22.7"
+  }
+ ]
+}

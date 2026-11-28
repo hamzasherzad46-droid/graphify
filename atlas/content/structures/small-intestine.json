@@ -1,0 +1,341 @@
+{
+ "reviewStatus": "draft",
+ "id": "small-intestine",
+ "title": "Small intestine",
+ "part": "jejunum",
+ "parts": [
+  "duodenum",
+  "jejunum"
+ ],
+ "topic": "digestive",
+ "source": "OpenStax A&P 2e: 23.5 The Small and Large Intestines",
+ "oneLine": {
+  "main": {
+   "t": "The longest part of the digestive tract, where most digestion and practically all absorption take place.",
+   "src": [
+    "s23-5#fs-id2142144"
+   ]
+  },
+  "simpler": {
+   "t": "Your small intestine is a long, coiled tube that takes the goodness from your food.",
+   "src": [
+    "s23-5#fs-id2142144"
+   ]
+  },
+  "deeper": {
+   "t": "It is “small” only in diameter: about 2.5 cm, against 7.6 cm for the large intestine.",
+   "src": [
+    "s23-5#fs-id2142144"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It runs from the pyloric sphincter of the stomach to the caecum of the large intestine.",
+    "src": [
+     "s23-5#fs-id2271264",
+     "s23-5#fs-id1921294"
+    ]
+   },
+   {
+    "t": "The jejunum and ileum hang from the posterior abdominal wall by the mesentery, framed by the large intestine.",
+    "src": [
+     "s23-5#fs-id1921294"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is coiled up in the middle of your abdomen, ringed by the large intestine.",
+   "src": [
+    "s23-5#fs-id1921294"
+   ]
+  },
+  "deeper": {
+   "t": "The duodenum curves behind the peritoneum (retroperitoneal) round the head of the pancreas.",
+   "src": [
+    "s23-5#fs-id2271264"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Duodenum",
+    "t": "The shortest part, about 25 cm. It receives bile and pancreatic juice.",
+    "src": [
+     "s23-5#fs-id2271264",
+     "s23-5#fs-id2227124"
+    ]
+   },
+   {
+    "name": "Jejunum",
+    "t": "About 0.9 m in life. Its name means “empty”.",
+    "src": [
+     "s23-5#fs-id2311182"
+    ]
+   },
+   {
+    "name": "Ileum",
+    "t": "The longest part, about 1.8 m. It joins the caecum at the ileocaecal valve.",
+    "src": [
+     "s23-5#fs-id1921294"
+    ]
+   },
+   {
+    "name": "Circular folds",
+    "t": "Deep ridges of mucosa and submucosa that make chyme spiral and slow down.",
+    "src": [
+     "s23-5#fs-id1377788"
+    ]
+   },
+   {
+    "name": "Villi and microvilli",
+    "t": "Finger-like projections and their tiny surface extensions, the brush border.",
+    "src": [
+     "s23-5#fs-id1272744",
+     "s23-5#fs-id810619"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Three parts: duodenum, jejunum and ileum, lined with millions of tiny folds and fingers.",
+   "src": [
+    "s23-5#fs-id2142277",
+    "s23-5#fs-id1272744"
+   ],
+   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The number of villi (“millions”)."
+  },
+  "deeper": {
+   "t": "Circular folds, villi and microvilli increase its absorptive surface more than 600-fold.",
+   "src": [
+    "s23-5#fs-id2020227"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Each villus holds a capillary bed and a lacteal, so absorbed nutrients pass straight into blood or lymph.",
+    "src": [
+     "s23-5#fs-id1272744"
+    ]
+   },
+   {
+    "t": "Enzymes fixed to the microvilli finish digesting carbohydrates and proteins.",
+    "src": [
+     "s23-5#fs-id810619"
+    ]
+   },
+   {
+    "t": "Segmentation mixes chyme with digestive juices and presses it against the mucosa.",
+    "src": [
+     "s23-5#fs-id1837941"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "A huge, finger-covered surface and churning movements help it absorb food.",
+   "src": [
+    "s23-5#fs-id2020227",
+    "s23-5#fs-id1837941"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "organ",
+    "name": "Stomach",
+    "t": "Releases chyme into the duodenum through the pyloric sphincter.",
+    "src": [
+     "s23-5#fs-id2271264"
+    ]
+   },
+   {
+    "kind": "duct",
+    "name": "Bile duct and pancreatic duct",
+    "t": "Join at the hepatopancreatic ampulla and open into the duodenum.",
+    "src": [
+     "s23-5#fs-id2227124"
+    ]
+   },
+   {
+    "kind": "organ",
+    "name": "Large intestine (caecum)",
+    "t": "Receives food residue from the ileum through the ileocaecal valve.",
+    "src": [
+     "s23-5#fs-id1921294",
+     "s23-5#fs-id1764904"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Superior mesenteric artery",
+    "t": "Its main arterial supply.",
+    "src": [
+     "s23-5#fs-id2240902"
+    ]
+   },
+   {
+    "kind": "vein",
+    "name": "Hepatic portal vein",
+    "t": "Carries nutrient-rich blood from it to the liver.",
+    "src": [
+     "s23-5#fs-id2240902"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It starts at the stomach and ends at the large intestine, and its blood goes to the liver.",
+   "src": [
+    "s23-5#fs-id2271264",
+    "s23-5#fs-id1921294",
+    "s23-5#fs-id2240902"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It develops from the midgut of the embryo.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the small intestine."
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "Peyer’s patches in the ileum are most prominent in young people and fade with age.",
+    "src": [
+     "s23-5#fs-id1482787"
+    ]
+   },
+   {
+    "t": "Some human populations keep making lactase as adults; in others, lactose intolerance is common.",
+    "src": [
+     "s23-5#fs-id1632981"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Too little lactase made by the absorptive cells.",
+    "damaged": "Digestion of lactose, the milk sugar (lactose intolerance).",
+    "cannotDo": "Eat dairy without gas, cramps, bloating and diarrhoea.",
+    "why": "Bacteria in the large intestine ferment the undigested lactose, making gas.",
+    "src": [
+     "s23-5#fs-id1632981",
+     "s23-5#fs-id1485386"
+    ]
+   },
+   {
+    "injury": "Damage that flattens the villi.",
+    "damaged": "The absorptive surface of the small intestine.",
+    "cannotDo": "Absorb nutrients normally.",
+    "why": "The surface area for absorption falls sharply.",
+    "src": [
+     "s23-5#fs-id2020227",
+     "s23-5#fs-id1272744"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Conditions that flatten the villi and their effects."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the small intestine has such a large absorptive surface.",
+    "model": [
+     "Circular folds make chyme spiral and slow down.",
+     "Villi cover the folds, about 20–40 per square millimetre.",
+     "Microvilli cover the cells of each villus.",
+     "Together they increase the surface more than 600-fold."
+    ],
+    "src": [
+     "s23-5#fs-id1377788",
+     "s23-5#fs-id1272744",
+     "s23-5#fs-id2020227"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the duodenum and the ileum.",
+    "model": [
+     "Duodenum: shortest, about 25 cm, partly retroperitoneal.",
+     "It receives bile and pancreatic juice and has Brunner’s glands.",
+     "Ileum: longest, about 1.8 m, on the mesentery.",
+     "It has Peyer’s patches and ends at the ileocaecal valve."
+    ],
+    "src": [
+     "s23-5#fs-id2271264",
+     "s23-5#fs-id2041977",
+     "s23-5#fs-id1921294",
+     "s23-5#fs-id1482787"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict what happens in the colon of someone with lactose intolerance after drinking milk.",
+    "model": [
+     "Lactose passes undigested through the small intestine.",
+     "Bacteria in the large intestine ferment it.",
+     "This produces gas, including hydrogen.",
+     "Cramps, bloating and diarrhoea follow."
+    ],
+    "src": [
+     "s23-5#fs-id1485386",
+     "s23-5#fs-id1761464"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which is the longest part of the small intestine?",
+   "options": [
+    "Duodenum",
+    "Jejunum",
+    "Ileum",
+    "Caecum"
+   ],
+   "answer": 2,
+   "why": "The ileum, about 1.8 m long, is the longest part.",
+   "src": [
+    "s23-5#fs-id1921294"
+   ]
+  },
+  {
+   "stem": "What is a lacteal?",
+   "options": [
+    "A lymphatic capillary in a villus",
+    "A gland in the duodenum",
+    "A fold of the mucosa",
+    "An enzyme for lactose"
+   ],
+   "answer": 0,
+   "why": "Each villus contains a lymphatic capillary called a lacteal.",
+   "src": [
+    "s23-5#fs-id1272744"
+   ]
+  },
+  {
+   "stem": "Where do bile and pancreatic juice enter the small intestine?",
+   "options": [
+    "Ileum",
+    "Duodenum",
+    "Jejunum",
+    "Ileocaecal valve"
+   ],
+   "answer": 1,
+   "why": "Both reach the duodenum through the hepatopancreatic ampulla.",
+   "src": [
+    "s23-5#fs-id2227124"
+   ]
+  }
+ ]
+}

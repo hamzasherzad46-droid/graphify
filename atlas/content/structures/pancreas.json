@@ -1,0 +1,321 @@
+{
+ "reviewStatus": "draft",
+ "id": "pancreas",
+ "title": "Pancreas",
+ "part": "pancreas",
+ "parts": [
+  "pancreas"
+ ],
+ "topic": "digestive",
+ "source": "OpenStax A&P 2e: 23.6 Accessory Organs in Digestion; 17.9 The Endocrine Pancreas",
+ "oneLine": {
+  "main": {
+   "t": "A gland behind the stomach that makes digestive juice for the duodenum and hormones that control blood glucose.",
+   "src": [
+    "s23-6#fs-id2094509",
+    "s17-9#fs-id1907359"
+   ]
+  },
+  "simpler": {
+   "t": "Your pancreas makes juices to digest food and insulin to manage sugar in your blood.",
+   "src": [
+    "s23-6#fs-id1364084",
+    "s17-9#fs-id1977301"
+   ]
+  },
+  "deeper": {
+   "t": "It is both exocrine (enzymes into ducts) and endocrine (hormones into the blood).",
+   "src": [
+    "s23-6#fs-id2094509"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It lies across the back of the abdomen, behind the stomach, in the retroperitoneum.",
+    "src": [
+     "s23-6#fs-id2094509"
+    ]
+   },
+   {
+    "t": "Its head sits in the C-shaped curve of the duodenum; its tail reaches the spleen.",
+    "src": [
+     "s23-6#fs-id2094509"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It lies flat behind your stomach, from the duodenum across to the spleen.",
+   "src": [
+    "s23-6#fs-id2094509"
+   ]
+  },
+  "deeper": {
+   "t": "Its body extends about 15 cm to the left of the head.",
+   "src": [
+    "s23-6#fs-id2094509"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Head, body and tail",
+    "t": "Head in the duodenal curve, body extending left, tail at the hilum of the spleen.",
+    "src": [
+     "s23-6#fs-id2094509"
+    ]
+   },
+   {
+    "name": "Acini",
+    "t": "Grape-like clusters of cells that make pancreatic juice.",
+    "src": [
+     "s23-6#fs-id1836151"
+    ]
+   },
+   {
+    "name": "Pancreatic islets",
+    "t": "Islands of endocrine cells among the acini (formerly the islets of Langerhans).",
+    "src": [
+     "s23-6#fs-id2022250",
+     "s17-9#fs-id1907359"
+    ]
+   },
+   {
+    "name": "Pancreatic ducts",
+    "t": "The main duct joins the bile duct at the hepatopancreatic ampulla. A smaller accessory duct may open separately.",
+    "src": [
+     "s23-6#fs-id1836151"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Mostly juice-making cells, with small islands of hormone-making cells.",
+   "src": [
+    "s23-6#fs-id1836151",
+    "s23-6#fs-id2022250"
+   ]
+  },
+  "deeper": {
+   "t": "In each islet, beta cells (insulin) make up about 75 percent and alpha cells (glucagon) about 20 percent.",
+   "src": [
+    "s17-9#fs-id1977301"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "It makes over a litre of pancreatic juice a day; its bicarbonate buffers the acidic chyme.",
+    "src": [
+     "s23-6#fs-id1364084"
+    ]
+   },
+   {
+    "t": "Protein-digesting enzymes are made inactive, so they cannot digest the pancreas itself.",
+    "src": [
+     "s23-6#fs-id1895555"
+    ]
+   },
+   {
+    "t": "Insulin lowers blood glucose; glucagon raises it.",
+    "src": [
+     "s17-9#tbl-ch18_07"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Its juice neutralises stomach acid and digests food; its hormones balance blood sugar.",
+   "src": [
+    "s23-6#fs-id1364084",
+    "s17-9#tbl-ch18_07"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "organ",
+    "name": "Duodenum",
+    "t": "Curves round the head of the pancreas and receives its juice.",
+    "src": [
+     "s23-5#fs-id2271264",
+     "s23-6#fs-id1836151"
+    ]
+   },
+   {
+    "kind": "duct",
+    "name": "Common bile duct",
+    "t": "Joins the main pancreatic duct just before the duodenum.",
+    "src": [
+     "s23-6#fs-id1836151"
+    ]
+   },
+   {
+    "kind": "organ",
+    "name": "Stomach",
+    "t": "Lies in front of the pancreas.",
+    "src": [
+     "s23-6#fs-id2094509"
+    ]
+   },
+   {
+    "kind": "organ",
+    "name": "Spleen",
+    "t": "The tail of the pancreas ends at its hilum.",
+    "src": [
+     "s23-6#fs-id2094509"
+    ]
+   },
+   {
+    "kind": "hormone",
+    "name": "Cholecystokinin",
+    "t": "From I cells of the duodenum; stimulates the release of pancreatic juices and bile.",
+    "src": [
+     "s23-5#tbl-ch24_07"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It is wrapped by the duodenum and shares a duct with the liver.",
+   "src": [
+    "s23-5#fs-id2271264",
+    "s23-6#fs-id1836151"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It develops from buds of the embryonic gut tube that later fuse.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the pancreas."
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "A smaller accessory duct, when present, opens into the duodenum about an inch above the main opening.",
+    "src": [
+     "s23-6#fs-id1836151"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Protein-digesting enzymes activated inside the pancreas.",
+    "damaged": "The pancreas itself (pancreatitis).",
+    "cannotDo": "Digest normally without pain, as the gland is inflamed.",
+    "why": "Active enzymes digest the pancreatic tissue.",
+    "src": [
+     "s23-6#fs-id1895555"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The symptoms of pancreatitis."
+   },
+   {
+    "injury": "An autoimmune attack on the beta cells.",
+    "damaged": "The beta cells of the islets (type 1 diabetes).",
+    "cannotDo": "Make insulin: they need insulin by injection or infusion.",
+    "why": "Without insulin, glucose cannot enter most body cells.",
+    "src": [
+     "s17-9#fs-id1200718",
+     "s17-9#fs-id1489225"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the pancreas makes its protein-digesting enzymes in inactive forms.",
+    "model": [
+     "Active enzymes would digest the pancreas.",
+     "They are released as trypsinogen and other inactive forms.",
+     "Enteropeptidase in the duodenum activates trypsin.",
+     "Trypsin then activates the other enzymes."
+    ],
+    "src": [
+     "s23-6#fs-id1895555"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare insulin and glucagon.",
+    "model": [
+     "Insulin comes from beta cells; glucagon from alpha cells.",
+     "High blood glucose releases insulin; low glucose releases glucagon.",
+     "Insulin lowers blood glucose; glucagon raises it.",
+     "Both are controlled by negative feedback."
+    ],
+    "src": [
+     "s17-9#fs-id1977301",
+     "s17-9#tbl-ch18_07",
+     "s17-9#fs-id1751772",
+     "s17-9#fs-id1886347"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict what happens to the beta cells in long-standing type 2 diabetes.",
+    "model": [
+     "Body cells become resistant to insulin.",
+     "The pancreas makes more insulin to compensate.",
+     "Over time the beta cells become exhausted.",
+     "Blood glucose then rises further."
+    ],
+    "src": [
+     "s17-9#fs-id1641299"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which islet cells make insulin?",
+   "options": [
+    "Alpha cells",
+    "Delta cells",
+    "Beta cells",
+    "PP cells"
+   ],
+   "answer": 2,
+   "why": "Beta cells, about 75 percent of each islet, produce insulin.",
+   "src": [
+    "s17-9#fs-id1977301"
+   ]
+  },
+  {
+   "stem": "What makes pancreatic juice slightly alkaline?",
+   "options": [
+    "Sodium bicarbonate",
+    "Hydrochloric acid",
+    "Bile salts",
+    "Insulin"
+   ],
+   "answer": 0,
+   "why": "Sodium bicarbonate gives pancreatic juice its alkalinity.",
+   "src": [
+    "s23-6#fs-id1364084"
+   ]
+  },
+  {
+   "stem": "Where does the head of the pancreas lie?",
+   "options": [
+    "At the hilum of the spleen",
+    "In the C-shaped curve of the duodenum",
+    "Behind the liver",
+    "In front of the stomach"
+   ],
+   "answer": 1,
+   "why": "Its head nestles in the C-shaped curve of the duodenum.",
+   "src": [
+    "s23-6#fs-id2094509"
+   ]
+  }
+ ]
+}

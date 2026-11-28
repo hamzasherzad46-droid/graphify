@@ -3732,7 +3732,10 @@
   "puboanalis": "Proposed: Terminologia Anatomica term, in the name of a part of the 3D model (content/parts/male.json).",
   "declive": "Proposed: Terminologia Anatomica term, in the name of a part of the 3D model (content/parts/male.json).",
   "pyramis": "Proposed: Terminologia Anatomica term, in the name of a part of the 3D model (content/parts/male.json).",
-  "Jensen": "Proposed: name (Jensen, eponym of the intermediate sulcus), in the name of a part of the 3D model."
+  "Jensen": "Proposed: name (Jensen, eponym of the intermediate sulcus), in the name of a part of the 3D model.",
+  "ileocaecal": "Proposed: British spelling of “ileocecal” (as caecum for cecum), in the textbook and lessons.",
+  "Ileocaecal": "As ileocaecal.",
+  "midgut": "Proposed: embryology term (the middle part of the embryonic gut tube), in the small intestine lesson."
  },
  "historical": {
   "Albrecht": {
@@ -4354,7 +4357,9 @@
   "carboxy-peptidase": "carboxypeptidase",
   "pro-enzyme": "proenzyme",
   "semisolid": "semi-solid",
-  "nonkeratinized": "non-keratinized"
+  "nonkeratinized": "non-keratinized",
+  "cecum": "caecum",
+  "ileocecal": "ileocaecal"
  },
  "names": {
   "Database Center for Life Science": "Organisation (BodyParts3D publisher): its own spelling.",

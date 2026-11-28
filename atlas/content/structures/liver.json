@@ -1,0 +1,322 @@
+{
+ "reviewStatus": "draft",
+ "id": "liver",
+ "title": "Liver",
+ "part": "liver",
+ "parts": [
+  "liver"
+ ],
+ "topic": "digestive",
+ "source": "OpenStax A&P 2e: 23.6 Accessory Organs in Digestion: The Liver, Pancreas, and Gallbladder",
+ "oneLine": {
+  "main": {
+   "t": "The largest gland in the body: it makes bile and processes the nutrients and toxins absorbed from the gut.",
+   "src": [
+    "s23-6#fs-id1907412",
+    "s23-6#fs-id1966736",
+    "glossary:liver"
+   ]
+  },
+  "simpler": {
+   "t": "Your liver is a big organ under your right ribs. It makes bile and cleans your blood.",
+   "src": [
+    "s23-6#fs-id1907412",
+    "s23-6#fs-id1966736"
+   ]
+  },
+  "deeper": {
+   "t": "Besides digestion, it has many roles in metabolism and regulation.",
+   "src": [
+    "s23-6#fs-id1907412"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It lies below the diaphragm in the right upper quadrant of the abdomen, protected by the ribs.",
+    "src": [
+     "s23-6#fs-id1907412"
+    ]
+   },
+   {
+    "t": "Peritoneal folds called ligaments attach it to the diaphragm and the abdominal wall.",
+    "src": [
+     "s23-6#fs-id1479465"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits high on the right side of your abdomen, under your ribs.",
+   "src": [
+    "s23-6#fs-id1907412"
+   ]
+  },
+  "deeper": {
+   "t": "The lesser omentum tethers it to the lesser curvature of the stomach.",
+   "src": [
+    "s23-6#fs-id1479465"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Right and left lobes",
+    "t": "A large right lobe and a much smaller left lobe.",
+    "src": [
+     "s23-6#fs-id1479465"
+    ]
+   },
+   {
+    "name": "Quadrate and caudate lobes",
+    "t": "Smaller lobes some anatomists identify within the right lobe.",
+    "src": [
+     "s23-6#fs-id1479465"
+    ]
+   },
+   {
+    "name": "Falciform ligament",
+    "t": "A remnant of the umbilical vein that separates the right and left lobes in front.",
+    "src": [
+     "s23-6#fs-id1479465"
+    ]
+   },
+   {
+    "name": "Porta hepatis",
+    "t": "The “gate” where the hepatic artery and hepatic portal vein enter.",
+    "src": [
+     "s23-6#fs-id1842507"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Two main lobes, with vessels entering at a “gate” underneath.",
+   "src": [
+    "s23-6#fs-id1479465",
+    "s23-6#fs-id1842507"
+   ]
+  },
+  "deeper": {
+   "t": "It weighs about three pounds (about 1.4 kg) in an adult.",
+   "src": [
+    "s23-6#fs-id1907412"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Hepatocytes, about 80 percent of its volume, line porous sinusoids and process what the blood brings.",
+    "src": [
+     "s23-6#fs-id1257384",
+     "s23-6#fs-id1966736"
+    ]
+   },
+   {
+    "t": "It makes about one litre of bile a day; bile salts emulsify fats.",
+    "src": [
+     "s23-6#fs-id1386125",
+     "s23-6#fs-id1390455"
+    ]
+   },
+   {
+    "t": "Bile salts are reclaimed in the ileum and recycled (the enterohepatic circulation).",
+    "src": [
+     "s23-6#fs-id1216217"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Its cells sit right against the blood, clean it, and make bile to break up fats.",
+   "src": [
+    "s23-6#fs-id1966736",
+    "s23-6#fs-id1390455"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "vein",
+    "name": "Hepatic portal vein",
+    "t": "The hepatic portal vein brings nutrient-rich blood from the gut. It supplies more oxygen than the hepatic artery.",
+    "src": [
+     "s23-6#fs-id1842507"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Hepatic artery",
+    "t": "Brings oxygenated blood from the heart.",
+    "src": [
+     "s23-6#fs-id1842507"
+    ]
+   },
+   {
+    "kind": "organ",
+    "name": "Gallbladder",
+    "t": "Stores and concentrates the bile between meals.",
+    "src": [
+     "s23-6#fs-id1379189",
+     "s23-6#fs-id2279526"
+    ]
+   },
+   {
+    "kind": "duct",
+    "name": "Common bile duct",
+    "t": "Formed by the common hepatic and cystic ducts; carries bile to the duodenum.",
+    "src": [
+     "s23-6#fs-id1356003"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Diaphragm",
+    "t": "Lies directly above it.",
+    "src": [
+     "s23-6#fs-id1907412"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Blood comes in from the gut and the heart; bile goes out to the gallbladder and duodenum.",
+   "src": [
+    "s23-6#fs-id1842507",
+    "s23-6#fs-id1356003"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "The falciform ligament and the ligamentum teres hepatis are remnants of the fetal umbilical vein.",
+    "src": [
+     "s23-6#fs-id1479465"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "Some anatomists divide the right lobe further into quadrate and caudate lobes.",
+    "src": [
+     "s23-6#fs-id1479465"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A blockage that stops bile reaching the intestine.",
+    "damaged": "The flow of bile into the duodenum.",
+    "cannotDo": "Digest fats normally: the stool is pale (acholic) and fatty.",
+    "why": "Without bile, fats are not emulsified and bilirubin does not colour the stool.",
+    "src": [
+     "s23-6#fs-id1884700",
+     "s23-6#fs-id1390455"
+    ]
+   },
+   {
+    "injury": "A build-up of bilirubin when red cell breakdown or bile flow goes wrong.",
+    "damaged": "The liver’s excretion of bilirubin into bile.",
+    "cannotDo": "Clear bilirubin: the skin and eyes turn yellow (jaundice).",
+    "why": "Bilirubin is a waste of old red cells that the liver normally excretes in bile.",
+    "src": [
+     "s23-6#fs-id1884700"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Jaundice and its causes."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how bile helps digest fats.",
+    "model": [
+     "Fats do not dissolve in the watery chyme.",
+     "Bile salts have a water-loving and a fat-loving region.",
+     "They pull large fat globules apart into droplets about 1 micrometre across.",
+     "This emulsification gives lipase a larger surface to act on."
+    ],
+    "src": [
+     "s23-6#fs-id1390455",
+     "s23-6#fs-id1386125"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the blood the liver receives from the hepatic artery and the hepatic portal vein.",
+    "model": [
+     "The hepatic artery brings oxygenated blood from the heart.",
+     "The portal vein brings partly deoxygenated, nutrient-rich blood from the gut.",
+     "The portal vein also carries absorbed drugs and toxins.",
+     "It actually supplies more oxygen than the smaller hepatic arteries."
+    ],
+    "src": [
+     "s23-6#fs-id1842507"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict what happens to bile between meals.",
+    "model": [
+     "The liver keeps making bile.",
+     "The hepatopancreatic ampulla closes.",
+     "Bile is diverted into the gallbladder.",
+     "There it is concentrated and stored until the next meal."
+    ],
+    "src": [
+     "s23-6#fs-id1379189"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Where is the liver?",
+   "options": [
+    "Left upper quadrant",
+    "Right upper quadrant",
+    "Behind the stomach in the retroperitoneum",
+    "In the pelvis"
+   ],
+   "answer": 1,
+   "why": "It lies inferior to the diaphragm in the right upper quadrant.",
+   "src": [
+    "s23-6#fs-id1907412"
+   ]
+  },
+  {
+   "stem": "What enters the liver at the porta hepatis?",
+   "options": [
+    "Hepatic artery and hepatic portal vein",
+    "Hepatic veins",
+    "Inferior vena cava",
+    "Cystic duct"
+   ],
+   "answer": 0,
+   "why": "The hepatic artery and hepatic portal vein enter at the porta hepatis.",
+   "src": [
+    "s23-6#fs-id1842507"
+   ]
+  },
+  {
+   "stem": "What gives faeces their brown colour?",
+   "options": [
+    "Bile salts",
+    "Cholesterol",
+    "Lecithin",
+    "Stercobilin, from bilirubin"
+   ],
+   "answer": 3,
+   "why": "Intestinal bacteria turn bilirubin into stercobilin, a brown pigment.",
+   "src": [
+    "s23-6#fs-id1884700"
+   ]
+  }
+ ]
+}

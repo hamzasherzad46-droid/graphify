@@ -18,7 +18,8 @@
     "dictionary": "node scripts/build-dictionary.mjs",
     "structures:review": "node scripts/structures-review.mjs",
     "review:pack": "node scripts/textcheck.mjs --json && node scripts/review-pack.mjs",
-    "review:checklist": "node scripts/dagger-checklist.mjs"
+    "review:checklist": "node scripts/dagger-checklist.mjs",
+    "review:checklist:pdf": "node scripts/checklist-pdf.cjs docs/dagger-checklist.md docs/dagger-checklist.pdf"
   },
   "dependencies": {
     "@capacitor/local-notifications": "^8.3.1",

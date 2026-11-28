@@ -222,7 +222,7 @@ function DeckPicker({ onClose }: { onClose: () => void }) {
             onClick={() => useSession.getState().open('layered')}
           >
             <span className="row-k">New · Layered flashcards (preview)</span>
-            <span className="row-v">{LAYERED.length} draft cards: Skull and Upper limb</span>
+            <span className="row-v">{LAYERED.length} draft cards: Skull, Upper limb, muscles and organs</span>
             <ChevronRightIcon className="row-go" />
           </button>
           <ul className="decks">

@@ -1,0 +1,332 @@
+{
+ "reviewStatus": "draft",
+ "id": "biceps-brachii",
+ "title": "Biceps brachii",
+ "part": "long_head_of_biceps_brachii_left",
+ "parts": [
+  "long_head_of_biceps_brachii_left",
+  "long_head_of_biceps_brachii_right",
+  "short_head_of_biceps_brachii_left",
+  "short_head_of_biceps_brachii_right"
+ ],
+ "topic": "muscles",
+ "source": "OpenStax A&P 2e: 11.1 Interactions of Skeletal Muscles; 11.5 Muscles of the Pectoral Girdle and Upper Limbs; 8.2; 14.3; 16.4",
+ "oneLine": {
+  "main": {
+   "t": "The two-headed muscle at the front of the arm that bends the elbow and turns the palm up.",
+   "src": [
+    "s11-5#fs-id2831016",
+    "glossary:biceps brachii"
+   ]
+  },
+  "simpler": {
+   "t": "The biceps is the muscle at the front of your upper arm that bends your elbow.",
+   "src": [
+    "s11-5#fs-id2831016"
+   ]
+  },
+  "deeper": {
+   "t": "It crosses both the shoulder and the elbow, so it also helps flex the arm at the shoulder.",
+   "src": [
+    "s11-5#fs-id2831016"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It lies in the anterior compartment of the arm, with the brachialis deep to it.",
+    "src": [
+     "s11-5#fs-id2831016",
+     "s11-1#tbl-ch11_01"
+    ]
+   },
+   {
+    "t": "Its two heads arise from the scapula: the coracoid process and the tubercle above the glenoid cavity.",
+    "src": [
+     "s11-5#fig-ch11_05_05"
+    ]
+   },
+   {
+    "t": "Its tendon inserts on the radial tuberosity of the radius.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The insertion of the biceps brachii (radial tuberosity)."
+   }
+  ],
+  "simpler": {
+   "t": "It runs down the front of your upper arm, from your shoulder blade to your forearm.",
+   "src": [
+    "s11-5#fig-ch11_05_05",
+    "s11-5#fs-id2831016"
+   ]
+  },
+  "deeper": {
+   "t": "The tendon of the long head runs in the intertubercular (bicipital) groove of the humerus.",
+   "src": [
+    "s8-2#fs-id2110691"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Long head",
+    "t": "Arises above the glenoid cavity. Its tendon passes through the bicipital groove.",
+    "src": [
+     "s11-5#fig-ch11_05_05",
+     "s8-2#fs-id2110691"
+    ]
+   },
+   {
+    "name": "Short head",
+    "t": "Arises from the coracoid process of the scapula.",
+    "src": [
+     "s11-5#fig-ch11_05_05"
+    ]
+   },
+   {
+    "name": "Belly",
+    "t": "The plump middle of the muscle. It bulges more as the muscle shortens.",
+    "src": [
+     "s11-1#fs-id2292670"
+    ]
+   },
+   {
+    "name": "Fusiform shape",
+    "t": "A spindle-shaped belly that tapers towards each end.",
+    "src": [
+     "s11-1#fs-id2292670"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the biceps brachii itself is fusiform (11.1 uses it as the example of a belly)."
+   }
+  ],
+  "simpler": {
+   "t": "It has two heads at the top that join into one belly.",
+   "src": [
+    "s11-5#fig-ch11_05_05",
+    "s11-1#fs-id2292670"
+   ]
+  },
+  "deeper": {
+   "t": "“Bi” in its name means it has two origins; “tri” in triceps means three.",
+   "src": [
+    "s11-2#fs-id2762982"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "It flexes the forearm at the elbow, and supinates it at the radioulnar joints.",
+    "src": [
+     "s11-5#fs-id2831016"
+    ]
+   },
+   {
+    "t": "It is the prime mover in lifting a cup. The brachialis assists as a synergist.",
+    "src": [
+     "s11-1#fs-id2684650"
+    ]
+   },
+   {
+    "t": "The triceps brachii, at the back of the arm, is its antagonist.",
+    "src": [
+     "s11-1#tbl-ch11_01"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It bends your elbow and turns your palm to face up.",
+   "src": [
+    "s11-5#fs-id2831016",
+    "s11-5#fs-id2271811"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "muscle",
+    "name": "Brachialis",
+    "t": "Lies deep to the biceps and adds power to elbow flexion.",
+    "src": [
+     "s11-5#fs-id2831016"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Triceps brachii",
+    "t": "In the posterior compartment. It extends the forearm, opposing the biceps.",
+    "src": [
+     "s11-1#tbl-ch11_01",
+     "s11-5#fs-id2271811"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Brachioradialis",
+    "t": "The third elbow flexor. It can flex the forearm quickly or help lift a load slowly.",
+    "src": [
+     "s11-5#fs-id2831016"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Humerus",
+    "t": "The long-head tendon runs in its intertubercular groove.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Musculocutaneous nerve",
+    "t": "The nerve of the anterior compartment of the arm.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The musculocutaneous nerve and its supply to the biceps."
+   }
+  ],
+  "simpler": {
+   "t": "It works with the brachialis and against the triceps.",
+   "src": [
+    "s11-1#fs-id2684650",
+    "s11-1#tbl-ch11_01"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Like other limb muscles, it develops from general mesoderm. Spinal nerves then form its neuromuscular junctions.",
+    "src": [
+     "s10-9#fs-id1959103",
+     "s10-9#fs-id1605365"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "Resistance training thickens its fibres by adding myofibrils (hypertrophy). No new fibres form.",
+    "src": [
+     "s10-6#fs-id1584189",
+     "s10-6#fs-id2264056"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Damage to the lower motor neurons that supply the biceps.",
+    "damaged": "The motor side of the biceps stretch reflex.",
+    "cannotDo": "Show a normal biceps reflex when the tendon is tapped.",
+    "why": "The reflex needs the spindle’s sensory fibre, the spinal synapse and the motor neuron intact.",
+    "src": [
+     "s16-4#fs-id1956663"
+    ]
+   },
+   {
+    "injury": "A heavy lift that ruptures the tendon of the long head.",
+    "damaged": "The long-head tendon, where it runs in the bicipital groove.",
+    "cannotDo": "Flex and supinate with full strength; the belly bunches up near the elbow.",
+    "why": "The torn head cannot pull, and its belly shortens away from the tear.",
+    "src": [
+     "s8-2#fs-id2110691"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Rupture of the long head of the biceps and its signs."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the biceps and brachialis share the work of lifting a cup.",
+    "model": [
+     "The biceps is the prime mover for the movement.",
+     "The brachialis, deep to it, assists as a synergist.",
+     "Both flex the forearm at the elbow.",
+     "The triceps relaxes as their antagonist."
+    ],
+    "src": [
+     "s11-1#fs-id2684650",
+     "s11-5#fs-id2831016",
+     "s11-1#tbl-ch11_01"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the biceps brachii and the brachialis.",
+    "model": [
+     "Both flex the forearm.",
+     "The biceps crosses the shoulder and elbow; the brachialis arises from the distal humerus.",
+     "Only the biceps supinates the forearm.",
+     "The brachialis lies deep to the biceps."
+    ],
+    "src": [
+     "s11-5#fs-id2831016",
+     "s11-5#fig-ch11_05_05"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict what happens to the triceps when the biceps contracts in a withdrawal reflex.",
+    "model": [
+     "The sensory neuron excites an interneuron in the spinal cord.",
+     "The interneuron inhibits the triceps’ motor neuron.",
+     "The triceps relaxes instead of resisting.",
+     "So the elbow flexes quickly."
+    ],
+    "src": [
+     "s14-3#fs-id2133457"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which muscle is the antagonist of the biceps brachii at the elbow?",
+   "options": [
+    "Brachialis",
+    "Brachioradialis",
+    "Triceps brachii",
+    "Deltoid"
+   ],
+   "answer": 2,
+   "why": "The triceps brachii extends the forearm, opposing the biceps.",
+   "src": [
+    "s11-1#tbl-ch11_01"
+   ]
+  },
+  {
+   "stem": "Besides flexing the elbow, what else does the biceps brachii do?",
+   "options": [
+    "Pronates the forearm",
+    "Supinates the forearm",
+    "Extends the wrist",
+    "Abducts the arm"
+   ],
+   "answer": 1,
+   "why": "It also supinates the forearm at the radioulnar joints.",
+   "src": [
+    "s11-5#fs-id2831016"
+   ]
+  },
+  {
+   "stem": "Where does the short head of the biceps arise?",
+   "options": [
+    "Coracoid process",
+    "Acromion",
+    "Lateral epicondyle",
+    "Infraglenoid tubercle"
+   ],
+   "answer": 0,
+   "why": "The short head arises from the coracoid process; the long head from the tubercle above the glenoid cavity.",
+   "src": [
+    "s11-5#fig-ch11_05_05"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,353 @@
+{
+ "reviewStatus": "draft",
+ "id": "lungs",
+ "title": "Lungs",
+ "part": "superior_lobe_of_right_lung",
+ "parts": [
+  "inferior_lobe_of_left_lung",
+  "inferior_lobe_of_right_lung",
+  "middle_lobe_of_right_lung",
+  "superior_lobe_of_left_lung",
+  "superior_lobe_of_right_lung"
+ ],
+ "topic": "respiratory",
+ "source": "OpenStax A&P 2e: 22.1 Organs and Structures of the Respiratory System; 22.2 The Lungs; 22.3; 22.7",
+ "oneLine": {
+  "main": {
+   "t": "The paired, pyramid-shaped organs of gas exchange in the chest, enclosed by the pleurae.",
+   "src": [
+    "s22-2#fs-id2627237",
+    "s22-2#fs-id1401100"
+   ]
+  },
+  "simpler": {
+   "t": "Your lungs take oxygen from the air into your blood and pass carbon dioxide out.",
+   "src": [
+    "s22-2#fs-id1401100"
+   ]
+  },
+  "deeper": {
+   "t": "They exchange gases across about 70 square metres of very thin, highly permeable epithelium.",
+   "src": [
+    "s22-2#fs-id1401100"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "They fill the thoracic cavity on either side of the mediastinum, and rest on the diaphragm.",
+    "src": [
+     "s22-2#fs-id2627237",
+     "s22-2#fs-id2346435"
+    ]
+   },
+   {
+    "t": "Each connects to the trachea by its main bronchus.",
+    "src": [
+     "s22-2#fs-id2627237"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They fill most of your chest, either side of your heart.",
+   "src": [
+    "s22-2#fs-id2627237"
+   ]
+  },
+  "deeper": {
+   "t": "The apex is at the top; the base rests on the diaphragm. The costal surface faces the ribs.",
+   "src": [
+    "s22-2#fs-id2627237"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Lobes",
+    "t": "The right lung has three lobes; the left lung has two. Fissures separate them.",
+    "src": [
+     "s22-2#fs-id2717313"
+    ]
+   },
+   {
+    "name": "Cardiac notch",
+    "t": "An indentation in the left lung that makes room for the heart.",
+    "src": [
+     "s22-2#fs-id2627237"
+    ]
+   },
+   {
+    "name": "Bronchopulmonary segments",
+    "t": "Divisions of a lobe, each with its own tertiary bronchus and artery.",
+    "src": [
+     "s22-2#fs-id2717313"
+    ]
+   },
+   {
+    "name": "Alveoli",
+    "t": "Tiny grape-like air sacs, about 200 micrometres across, with elastic walls.",
+    "src": [
+     "s22-1#fs-id2594216"
+    ]
+   },
+   {
+    "name": "Hilum",
+    "t": "Where the nerves enter the lung root and the two layers of pleura meet.",
+    "src": [
+     "s22-2#fs-id2292208",
+     "s22-2#fs-id2346435"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Three lobes on the right, two on the left, branching down to millions of tiny air sacs.",
+   "src": [
+    "s22-2#fs-id2717313",
+    "s22-1#fs-id2594216"
+   ],
+   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The number of alveoli (“millions”)."
+  },
+  "deeper": {
+   "t": "The right lung is shorter and wider; the left holds a smaller volume, sharing space with the heart.",
+   "src": [
+    "s22-2#fs-id2627237"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Alveolar and capillary walls together form a respiratory membrane about 0.5 micrometres thick.",
+    "src": [
+     "s22-1#fs-id2488371"
+    ]
+   },
+   {
+    "t": "Type II alveolar cells secrete surfactant, which lowers surface tension, so the alveoli do not collapse.",
+    "src": [
+     "s22-1#fs-id2201617",
+     "s22-3#fs-id1862104"
+    ]
+   },
+   {
+    "t": "The lungs are passive in breathing: pleural fluid makes them follow the chest wall as it moves.",
+    "src": [
+     "s22-2#fs-id2078585",
+     "s22-3#fs-id1882180"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Very thin walls let gases pass quickly; a slippery film keeps the air sacs open.",
+   "src": [
+    "s22-1#fs-id2488371",
+    "s22-3#fs-id1862104"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "membrane",
+    "name": "Pleura",
+    "t": "Visceral pleura covers the lung; parietal pleura lines the chest wall. Pleural fluid lies between.",
+    "src": [
+     "s22-2#fs-id2346435",
+     "s22-2#fs-id2078585"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Diaphragm",
+    "t": "Borders the lungs below; its contraction enlarges the chest and draws air in.",
+    "src": [
+     "s22-2#fs-id2627237",
+     "s22-3#fs-id1882180"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Pulmonary arteries",
+    "t": "Bring deoxygenated blood from the pulmonary trunk to the alveoli.",
+    "src": [
+     "s22-2#fs-id2144132"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Autonomic nerves",
+    "t": "Parasympathetic nerves constrict the airways; sympathetic nerves dilate them.",
+    "src": [
+     "s22-2#fs-id2292208"
+    ]
+   },
+   {
+    "kind": "airway",
+    "name": "Bronchi",
+    "t": "Connect each lung to the trachea and branch within it.",
+    "src": [
+     "s22-2#fs-id2627237",
+     "s22-2#fs-id2717313"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They sit on the diaphragm, wrapped in pleura, fed by the pulmonary arteries.",
+   "src": [
+    "s22-2#fs-id2627237",
+    "s22-2#fs-id2346435",
+    "s22-2#fs-id2144132"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "The lung bud grows from the foregut at about week 4; most respiratory structures arise from endoderm.",
+    "src": [
+     "s22-7#fs-id2485319",
+     "s22-7#fs-id2486303"
+    ]
+   },
+   {
+    "t": "By week 28 enough alveoli have matured that a premature baby can usually breathe alone.",
+    "src": [
+     "s22-7#fs-id2287234"
+    ]
+   },
+   {
+    "t": "Surfactant is usually not adequate until about the eighth month of pregnancy.",
+    "src": [
+     "s22-7#fs-id1910265"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "Second-hand smoke raises a non-smoker’s risk of lung cancer by up to 30 percent.",
+    "src": [
+     "s22-2#fs-id2573116"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A baby born before enough surfactant is made.",
+    "damaged": "The alveoli, whose surface tension is too high.",
+    "cannotDo": "Keep the alveoli open when breathing out.",
+    "why": "Without surfactant, the alveoli collapse during expiration.",
+    "src": [
+     "s22-3#fs-id1862104",
+     "s22-7#fs-id1910265"
+    ]
+   },
+   {
+    "injury": "A disease confined to one bronchopulmonary segment.",
+    "damaged": "That segment only.",
+    "cannotDo": "Use that segment for gas exchange.",
+    "why": "Each segment has its own bronchus and artery, so it can be removed with little effect on its neighbours.",
+    "src": [
+     "s22-2#fs-id2717313"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the lungs expand though they have no muscle to move them.",
+    "model": [
+     "The diaphragm and intercostals enlarge the thoracic cavity.",
+     "Pleural fluid holds the lungs to the chest wall by surface tension.",
+     "So the lungs are pulled outwards and stretch.",
+     "Their pressure falls, and air flows in."
+    ],
+    "src": [
+     "s22-2#fs-id2078585",
+     "s22-3#fs-id1882180"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the right and left lungs.",
+    "model": [
+     "Right: three lobes (superior, middle, inferior).",
+     "Left: two lobes (superior, inferior).",
+     "The right is shorter and wider.",
+     "The left is smaller, with a cardiac notch for the heart."
+    ],
+    "src": [
+     "s22-2#fs-id2717313",
+     "s22-2#fs-id2627237"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict what happens to a baby born at 26 weeks without treatment.",
+    "model": [
+     "Its type II cells make little surfactant.",
+     "Surface tension in the alveoli stays high.",
+     "The alveoli collapse when it breathes out.",
+     "So each breath takes great effort."
+    ],
+    "src": [
+     "s22-7#fs-id1910265",
+     "s22-3#fs-id1862104",
+     "s22-7#fs-id2287234"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The effort of breathing without surfactant (respiratory distress in premature babies)."
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "How many lobes does the left lung have?",
+   "options": [
+    "One",
+    "Two",
+    "Three",
+    "Four"
+   ],
+   "answer": 1,
+   "why": "The left lung has two lobes, superior and inferior; the right has three.",
+   "src": [
+    "s22-2#fs-id2717313"
+   ]
+  },
+  {
+   "stem": "Which cells secrete pulmonary surfactant?",
+   "options": [
+    "Type I alveolar cells",
+    "Alveolar macrophages",
+    "Type II alveolar cells",
+    "Goblet cells"
+   ],
+   "answer": 2,
+   "why": "Type II alveolar cells secrete surfactant.",
+   "src": [
+    "s22-1#fs-id2201617"
+   ]
+  },
+  {
+   "stem": "What is the cardiac notch?",
+   "options": [
+    "An indentation of the left lung for the heart",
+    "A fissure of the right lung",
+    "The hilum of the left lung",
+    "A groove for the aorta"
+   ],
+   "answer": 0,
+   "why": "It is an indentation on the left lung that allows space for the heart.",
+   "src": [
+    "s22-2#fs-id2627237"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,332 @@
+{
+ "reviewStatus": "draft",
+ "id": "diaphragm",
+ "title": "Diaphragm",
+ "part": "diaphragm",
+ "parts": [
+  "diaphragm"
+ ],
+ "topic": "muscles",
+ "source": "OpenStax A&P 2e: 11.4 Axial Muscles of the Abdominal Wall and Thorax; 22.3 The Process of Breathing; 13.4; 23.3",
+ "oneLine": {
+  "main": {
+   "t": "The dome-shaped sheet of muscle between the chest and the abdomen: the main muscle of breathing.",
+   "src": [
+    "s11-4#fs-id2974297",
+    "s22-3#fs-id1882180"
+   ]
+  },
+  "simpler": {
+   "t": "The diaphragm is a dome of muscle under your lungs. It pulls air in when it tightens.",
+   "src": [
+    "s11-4#fs-id2974297",
+    "s22-3#fs-id1882180"
+   ]
+  },
+  "deeper": {
+   "t": "Its contraction flattens the dome, enlarging the thoracic cavity and lowering the pressure in the lungs.",
+   "src": [
+    "s22-3#fs-id1882180"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It separates the thoracic and abdominal cavities. Its upper surface is the floor of the chest.",
+    "src": [
+     "s11-4#fs-id2974297"
+    ]
+   },
+   {
+    "t": "Its muscle arises from the xiphoid process, the lower six ribs and cartilages, and the lumbar vertebrae.",
+    "src": [
+     "s11-4#fs-id2304478"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits across the bottom of your rib cage, under your heart and lungs.",
+   "src": [
+    "s11-4#fs-id2974297",
+    "s11-4#fs-id2304478"
+   ]
+  },
+  "deeper": {
+   "t": "The pericardial sac and the parietal pleura fuse onto its central tendon.",
+   "src": [
+    "s11-4#fs-id2304478"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Central tendon",
+    "t": "The tendon in the middle of the dome, into which all the muscle fibres insert.",
+    "src": [
+     "s11-4#fs-id2304478",
+     "s11-4#tbl-ch11_07"
+    ]
+   },
+   {
+    "name": "Caval opening",
+    "t": "Lets the inferior vena cava pass from the abdomen to the thorax.",
+    "src": [
+     "s11-4#fs-id2143601"
+    ]
+   },
+   {
+    "name": "Oesophageal hiatus",
+    "t": "Lets the oesophagus and its nerves pass into the abdomen.",
+    "src": [
+     "s11-4#fs-id2143601",
+     "s23-3#fs-id1984077"
+    ]
+   },
+   {
+    "name": "Aortic hiatus",
+    "t": "At the back: the aorta, thoracic duct and azygos vein pass through it.",
+    "src": [
+     "s11-4#fs-id2143601"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It has a tendon in the middle and three openings for big tubes to pass through.",
+   "src": [
+    "s11-4#fs-id2304478",
+    "s11-4#fs-id2143601"
+   ]
+  },
+  "deeper": {
+   "t": "The three openings lie at about the levels of T8 (caval), T10 (oesophageal) and T12 (aortic).",
+   "src": [
+    "s11-4#fs-id2143601"
+   ],
+   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The vertebral levels of the diaphragm’s openings."
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Contracting, it moves down towards the abdomen and makes the thoracic cavity larger.",
+    "src": [
+     "s22-3#fs-id1882180"
+    ]
+   },
+   {
+    "t": "The lungs follow, because pleural fluid holds them to the chest wall. Their pressure falls and air flows in.",
+    "src": [
+     "s22-3#fs-id1882180",
+     "s22-3#fs-id1545698"
+    ]
+   },
+   {
+    "t": "Quiet expiration is passive: the diaphragm relaxes and the elastic lungs recoil.",
+    "src": [
+     "s22-3#fs-id2453488"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Tighten it and air comes in. Relax it and air goes out by itself.",
+   "src": [
+    "s22-3#fs-id1882180",
+    "s22-3#fs-id2453488"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "muscle",
+    "name": "External intercostals",
+    "t": "Work with the diaphragm in quiet inspiration, lifting the ribs up and out.",
+    "src": [
+     "s22-3#fs-id1882180",
+     "s22-3#fs-id2327717"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Abdominal muscles",
+    "t": "With the diaphragm, they raise abdominal pressure in defecation, urination and childbirth.",
+    "src": [
+     "s11-4#fs-id2072110"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Phrenic nerve",
+    "t": "The phrenic nerve comes from the cervical plexus in the neck. It reaches the diaphragm at the base of the thorax.",
+    "src": [
+     "s13-4#fs-id1472046"
+    ]
+   },
+   {
+    "kind": "vessel",
+    "name": "Inferior vena cava and aorta",
+    "t": "Pass through the caval opening and the aortic hiatus.",
+    "src": [
+     "s11-4#fs-id2143601"
+    ]
+   },
+   {
+    "kind": "organ",
+    "name": "Oesophagus",
+    "t": "Enters the abdomen through the oesophageal hiatus.",
+    "src": [
+     "s23-3#fs-id1984077",
+     "s11-4#fs-id2143601"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "The heart and lungs sit on it and the liver and stomach lie under it. A nerve from the neck works it.",
+   "src": [
+    "s11-4#fs-id2974297",
+    "s13-4#fs-id1472046"
+   ],
+   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the liver and stomach lie directly under the diaphragm."
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "The phrenic nerve comes from the neck (cervical plexus), a sign that the diaphragm’s muscle starts in the neck region.",
+    "src": [
+     "s13-4#fs-id1472046"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the diaphragm and why its nerve comes from the neck."
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "A deep breath is mainly diaphragmatic; a shallow breath relies more on the intercostals (costal breathing).",
+    "src": [
+     "s22-3#fs-id2276812"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Damage to the pons or medulla, after a stroke or from drugs such as morphine.",
+    "damaged": "The respiratory centres that drive the diaphragm.",
+    "cannotDo": "Breathe regularly in sleep: breathing stops for short periods (central sleep apnoea).",
+    "why": "Without signals from the centres, the diaphragm and intercostals do not contract.",
+    "src": [
+     "s22-3#fs-id2582598",
+     "s22-3#fs-id2096099"
+    ]
+   },
+   {
+    "injury": "Part of the stomach slides up through the oesophageal hiatus (a hiatus hernia).",
+    "damaged": "The oesophageal hiatus, which has widened.",
+    "cannotDo": "Keep stomach acid out of the oesophagus: heartburn is worse lying down.",
+    "why": "The hiatus no longer holds the junction of the oesophagus and stomach below the diaphragm.",
+    "src": [
+     "s23-3#fs-id1984077",
+     "s11-4#fs-id2143601"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Hiatus hernia and its symptoms."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how contraction of the diaphragm draws air into the lungs.",
+    "model": [
+     "The diaphragm moves down and the thoracic cavity enlarges.",
+     "Pleural fluid makes the lungs follow the chest wall.",
+     "Lung volume rises, so pressure in the alveoli falls below atmospheric.",
+     "Air flows down this pressure gradient into the lungs."
+    ],
+    "src": [
+     "s22-3#fs-id1882180",
+     "s22-3#fs-id1545698"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare quiet and forced breathing.",
+    "model": [
+     "Quiet breathing: the diaphragm and external intercostals contract; expiration is passive.",
+     "Forced breathing: inspiration and expiration both use muscles.",
+     "Neck muscles such as the scalenes help forced inspiration.",
+     "Abdominal muscles and internal intercostals drive forced expiration."
+    ],
+    "src": [
+     "s22-3#fs-id2327717",
+     "s22-3#fs-id2146002",
+     "s22-3#fs-id2453488"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict what happens to breathing if the phrenic nerve is cut on one side.",
+    "model": [
+     "The phrenic nerve is the diaphragm’s motor nerve.",
+     "That half of the diaphragm cannot contract.",
+     "Inspiration on that side weakens.",
+     "The intercostals and accessory muscles must do more of the work."
+    ],
+    "src": [
+     "s13-4#fs-id1472046",
+     "s22-3#fs-id1882180"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The effects of cutting one phrenic nerve."
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "What passes through the aortic hiatus?",
+   "options": [
+    "Inferior vena cava",
+    "Oesophagus",
+    "Aorta, thoracic duct and azygos vein",
+    "Phrenic nerve"
+   ],
+   "answer": 2,
+   "why": "The aorta, thoracic duct and azygos vein pass through the aortic hiatus at the back.",
+   "src": [
+    "s11-4#fs-id2143601"
+   ]
+  },
+  {
+   "stem": "Which nerve supplies the diaphragm?",
+   "options": [
+    "Vagus nerve",
+    "Phrenic nerve",
+    "Intercostal nerve",
+    "Accessory nerve"
+   ],
+   "answer": 1,
+   "why": "The phrenic nerve, from the cervical plexus, connects to the diaphragm.",
+   "src": [
+    "s13-4#fs-id1472046"
+   ]
+  },
+  {
+   "stem": "What happens when the diaphragm contracts?",
+   "options": [
+    "It moves inferiorly and the thoracic cavity enlarges",
+    "It moves superiorly and air is forced out",
+    "The lungs actively expand themselves",
+    "Intra-alveolar pressure rises above atmospheric"
+   ],
+   "answer": 0,
+   "why": "It moves down towards the abdomen, enlarging the thoracic cavity.",
+   "src": [
+    "s22-3#fs-id1882180"
+   ]
+  }
+ ]
+}

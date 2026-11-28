@@ -1,0 +1,328 @@
+{
+ "reviewStatus": "draft",
+ "id": "calf-muscles",
+ "title": "Calf muscles: gastrocnemius and soleus",
+ "part": "medial_head_of_gastrocnemius_left",
+ "parts": [
+  "medial_head_of_gastrocnemius_left",
+  "medial_head_of_gastrocnemius_right",
+  "lateral_head_of_gastrocnemius_left",
+  "lateral_head_of_gastrocnemius_right",
+  "soleus_muscle_left",
+  "soleus_muscle_right",
+  "plantaris_muscle_left",
+  "plantaris_muscle_right",
+  "calcaneal_tendon_left",
+  "calcaneal_tendon_right"
+ ],
+ "topic": "muscles",
+ "source": "OpenStax A&P 2e: 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs; 14.3; 16.4; 20.2",
+ "oneLine": {
+  "main": {
+   "t": "The gastrocnemius and soleus form the calf and pull on the calcaneal tendon to point the foot down.",
+   "src": [
+    "s11-6#fs-id2421915",
+    "s11-6#fig-ch11_06_05"
+   ]
+  },
+  "simpler": {
+   "t": "The calf muscles lift your heel so you can stand on tiptoe and push off when walking.",
+   "src": [
+    "s11-6#fs-id2421915",
+    "s11-6#fig-ch11_06_05"
+   ]
+  },
+  "deeper": {
+   "t": "They lie in the superficial posterior compartment of the leg and help keep us upright.",
+   "src": [
+    "s11-6#fs-id2421915"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "The gastrocnemius is the most superficial and visible muscle of the calf; the wide, flat soleus lies deep to it.",
+    "src": [
+     "s11-6#fs-id2421915"
+    ]
+   },
+   {
+    "t": "Both insert through the calcaneal (Achilles) tendon into the calcaneus.",
+    "src": [
+     "s11-6#fs-id2421915"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They form the bulge at the back of your lower leg, ending in the tendon above your heel.",
+   "src": [
+    "s11-6#fs-id2421915"
+   ]
+  },
+  "deeper": {
+   "t": "The small plantaris runs obliquely between them to the same tendon.",
+   "src": [
+    "s11-6#fs-id2421915"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Gastrocnemius",
+    "t": "Two heads from the medial and lateral condyles of the femur.",
+    "src": [
+     "s11-6#fig-ch11_06_05"
+    ]
+   },
+   {
+    "name": "Soleus",
+    "t": "Wide and flat, from the upper tibia, fibula and interosseous membrane.",
+    "src": [
+     "s11-6#fs-id2421915",
+     "s11-6#fig-ch11_06_05"
+    ]
+   },
+   {
+    "name": "Calcaneal (Achilles) tendon",
+    "t": "A strong tendon into the calcaneus, shared by the superficial calf muscles.",
+    "src": [
+     "s11-6#fs-id2421915",
+     "glossary:calcaneal tendon"
+    ]
+   },
+   {
+    "name": "Plantaris",
+    "t": "A small muscle between the two. Some people have two; about 7 percent of cadavers have none.",
+    "src": [
+     "s11-6#fs-id2421915"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Two big muscles, one tendon to the heel.",
+   "src": [
+    "s11-6#fs-id2421915"
+   ]
+  },
+  "deeper": {
+   "t": "Surgeons use the plantaris tendon in tendon transplants and ligament repairs.",
+   "src": [
+    "s11-6#fs-id2421915"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Pulling the heel up, they plantar flex the foot, as in jumping or tapping the foot.",
+    "src": [
+     "s11-6#fig-ch11_06_05"
+    ]
+   },
+   {
+    "t": "The gastrocnemius crosses the knee, so it also helps flex the leg.",
+    "src": [
+     "s11-6#fig-ch11_06_05"
+    ]
+   },
+   {
+    "t": "The soleus, crossing the ankle only, helps maintain posture while walking.",
+    "src": [
+     "s11-6#fig-ch11_06_05"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They push the front of the foot down and lift the heel.",
+   "src": [
+    "s11-6#fig-ch11_06_05"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "bone",
+    "name": "Calcaneus",
+    "t": "The heel bone, where the calcaneal tendon inserts.",
+    "src": [
+     "s11-6#fs-id2421915"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Tibialis anterior",
+    "t": "At the front of the leg. It dorsiflexes the foot, opposing the calf.",
+    "src": [
+     "s14-3#fs-id2349137",
+     "s11-6#fig-ch11_06_05"
+    ]
+   },
+   {
+    "kind": "vein",
+    "name": "Veins of the leg",
+    "t": "Contracting leg muscles squeeze nearby veins, pushing blood towards the heart.",
+    "src": [
+     "s20-2#fs-id1429887"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Deep posterior muscles",
+    "t": "Popliteus, flexor digitorum longus, flexor hallucis longus and tibialis posterior lie beneath.",
+    "src": [
+     "s11-6#fs-id2421915"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Tibial nerve",
+    "t": "One of the two nerves in the sciatic nerve. It supplies the back of the leg.",
+    "src": [
+     "s13-4#fs-id1472046"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the tibial nerve supplies the calf muscles."
+   }
+  ],
+  "simpler": {
+   "t": "They pull on the heel and work against the muscles at the front of the shin.",
+   "src": [
+    "s11-6#fs-id2421915",
+    "s14-3#fs-id2349137"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "They develop from general mesoderm, like all limb muscles.",
+    "src": [
+     "s10-9#fs-id1959103"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "The plantaris varies most: some people have two, and about 7 percent of cadavers have none.",
+    "src": [
+     "s11-6#fs-id2421915"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Tapping the calcaneal tendon with a reflex hammer.",
+    "damaged": "The ankle reflex of the gastrocnemius and soleus.",
+    "cannotDo": "Show a normal ankle reflex if the reflex arc is broken.",
+    "why": "Stretch of the muscle excites its own motor neurons through the spinal cord.",
+    "src": [
+     "s16-4#fs-id1956663"
+    ]
+   },
+   {
+    "injury": "A sudden push-off that ruptures the calcaneal tendon.",
+    "damaged": "The calcaneal (Achilles) tendon.",
+    "cannotDo": "Stand on tiptoe on that leg or push off when walking.",
+    "why": "The calf muscles can no longer pull on the calcaneus.",
+    "src": [
+     "s11-6#fs-id2421915"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Rupture of the calcaneal tendon and its signs."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how walking helps blood return from the legs.",
+    "model": [
+     "Leg muscles, including the calf, contract during walking.",
+     "They squeeze the nearby veins.",
+     "The veins’ one-way valves let blood move only upwards.",
+     "So the skeletal muscle pump moves blood towards the heart."
+    ],
+    "src": [
+     "s20-2#fs-id1429887"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the gastrocnemius and the soleus.",
+    "model": [
+     "Both plantar flex the foot through the calcaneal tendon.",
+     "The gastrocnemius arises from the femur and crosses the knee.",
+     "So it also flexes the leg; the soleus does not.",
+     "The soleus lies deep and helps posture while walking."
+    ],
+    "src": [
+     "s11-6#fig-ch11_06_05",
+     "s11-6#fs-id2421915"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict what happens to the calf muscles when you step on a tack.",
+    "model": [
+     "Pain fibres excite the motor neurons of the tibialis anterior.",
+     "The foot dorsiflexes.",
+     "An interneuron inhibits the gastrocnemius and soleus.",
+     "Plantar flexion stops, so the foot lifts off the tack."
+    ],
+    "src": [
+     "s14-3#fs-id2349137"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which calf muscle also flexes the knee?",
+   "options": [
+    "Soleus",
+    "Gastrocnemius",
+    "Tibialis posterior",
+    "Fibularis longus"
+   ],
+   "answer": 1,
+   "why": "The gastrocnemius arises from the femoral condyles, so it crosses and flexes the knee.",
+   "src": [
+    "s11-6#fig-ch11_06_05"
+   ]
+  },
+  {
+   "stem": "Where does the calcaneal tendon insert?",
+   "options": [
+    "Navicular",
+    "Talus",
+    "Calcaneus",
+    "Base of the fifth metatarsal"
+   ],
+   "answer": 2,
+   "why": "It inserts into the calcaneal bone of the ankle.",
+   "src": [
+    "s11-6#fs-id2421915"
+   ]
+  },
+  {
+   "stem": "Which muscle lies deep to the gastrocnemius?",
+   "options": [
+    "Soleus",
+    "Tibialis anterior",
+    "Sartorius",
+    "Extensor digitorum longus"
+   ],
+   "answer": 0,
+   "why": "Deep to the gastrocnemius is the wide, flat soleus.",
+   "src": [
+    "s11-6#fs-id2421915"
+   ]
+  }
+ ]
+}

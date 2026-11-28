@@ -1,0 +1,341 @@
+{
+ "reviewStatus": "draft",
+ "id": "quadriceps-femoris",
+ "title": "Quadriceps femoris",
+ "part": "rectus_femoris_muscle_left",
+ "parts": [
+  "rectus_femoris_muscle_left",
+  "rectus_femoris_muscle_right",
+  "vastus_lateralis_muscle_left",
+  "vastus_lateralis_muscle_right",
+  "vastus_medialis_muscle_left",
+  "vastus_medialis_muscle_right",
+  "vastus_intermedius_muscle_left",
+  "vastus_intermedius_muscle_right"
+ ],
+ "topic": "muscles",
+ "source": "OpenStax A&P 2e: 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs; 11.1; 13.4; 14.3; 16.4",
+ "oneLine": {
+  "main": {
+   "t": "The group of four muscles at the front of the thigh that extend and stabilise the knee.",
+   "src": [
+    "s11-6#fs-id2591754"
+   ]
+  },
+  "simpler": {
+   "t": "The quadriceps are the big muscles on the front of your thigh. They straighten your knee.",
+   "src": [
+    "s11-6#fs-id2591754"
+   ]
+  },
+  "deeper": {
+   "t": "All four join one tendon to the patella, which continues as the patellar ligament to the tibial tuberosity.",
+   "src": [
+    "s11-6#fs-id2591754"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "They fill the anterior compartment of the thigh.",
+    "src": [
+     "s11-6#fs-id2591754"
+    ]
+   },
+   {
+    "t": "Rectus femoris lies in front, vastus lateralis on the outer side and vastus medialis on the inner side. Vastus intermedius lies between them, deep.",
+    "src": [
+     "s11-6#fs-id2591754"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They cover the front and sides of your thigh, above the kneecap.",
+   "src": [
+    "s11-6#fs-id2591754"
+   ]
+  },
+  "deeper": {
+   "t": "Only the rectus femoris arises from the hip bone; the three vasti arise from the femur.",
+   "src": [
+    "s11-6#fig-ch11_06_03"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Rectus femoris",
+    "t": "Arises from the anterior inferior iliac spine and above the acetabulum. It also helps raise the knee.",
+    "src": [
+     "s11-6#fig-ch11_06_03"
+    ]
+   },
+   {
+    "name": "Vastus lateralis",
+    "t": "Arises from the greater trochanter, the intertrochanteric line and the linea aspera.",
+    "src": [
+     "s11-6#fig-ch11_06_03"
+    ]
+   },
+   {
+    "name": "Vastus medialis",
+    "t": "Arises from the linea aspera and the intertrochanteric line.",
+    "src": [
+     "s11-6#fig-ch11_06_03"
+    ]
+   },
+   {
+    "name": "Vastus intermedius",
+    "t": "Arises from the upper shaft of the femur, deep to the rectus femoris.",
+    "src": [
+     "s11-6#fig-ch11_06_03",
+     "s11-6#fs-id2591754"
+    ]
+   },
+   {
+    "name": "Quadriceps tendon",
+    "t": "The tendon common to all four. It inserts into the patella.",
+    "src": [
+     "s11-6#fs-id2591754"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Four muscles, one shared tendon, one kneecap.",
+   "src": [
+    "s11-6#fs-id2591754"
+   ]
+  },
+  "deeper": {
+   "t": "Their motor units are large, up to about 1,000 fibres each, suited to force rather than fine control.",
+   "src": [
+    "s14-3#fs-id2763982"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Pulling through the patella and patellar ligament, they extend the leg at the knee, as in kicking.",
+    "src": [
+     "s11-6#fs-id2591754",
+     "s11-6#fig-ch11_06_03"
+    ]
+   },
+   {
+    "t": "The rectus femoris crosses the hip too, so it also flexes the thigh.",
+    "src": [
+     "s11-6#fig-ch11_06_03",
+     "s11-6#fs-id2591754"
+    ]
+   },
+   {
+    "t": "The hamstrings, behind, are their antagonists.",
+    "src": [
+     "s11-1#tbl-ch11_01"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They straighten the knee; the front one also lifts the thigh.",
+   "src": [
+    "s11-6#fs-id2591754",
+    "s11-6#fig-ch11_06_03"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "bone",
+    "name": "Patella",
+    "t": "Lies in the quadriceps tendon. The tendon continues below it as the patellar ligament.",
+    "src": [
+     "s11-6#fs-id2591754"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Tibial tuberosity",
+    "t": "Where the patellar ligament attaches.",
+    "src": [
+     "s11-6#fs-id2591754"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Hamstrings",
+    "t": "In the posterior compartment. They flex the knee, opposing the quadriceps.",
+    "src": [
+     "s11-1#tbl-ch11_01",
+     "s11-6#fs-id2012638"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Sartorius",
+    "t": "A band-like muscle crossing the front of the thigh, also in the anterior compartment.",
+    "src": [
+     "s11-6#fs-id2591754"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Femoral nerve",
+    "t": "A major nerve of the lumbar plexus, to the front of the thigh.",
+    "src": [
+     "s13-4#fs-id1472046"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the femoral nerve supplies the quadriceps."
+   }
+  ],
+  "simpler": {
+   "t": "They pull on the kneecap and are opposed by the hamstrings.",
+   "src": [
+    "s11-6#fs-id2591754",
+    "s11-1#tbl-ch11_01"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Limb muscles develop from general mesoderm. Satellite cells later repair the fibres.",
+    "src": [
+     "s10-9#fs-id1959103",
+     "s10-9#fs-id2329008"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "Without use, they waste quickly (disuse atrophy), for example after a leg fracture.",
+    "src": [
+     "s10-9#fs-id2269378"
+    ]
+   },
+   {
+    "t": "Age-related loss (sarcopenia) is slowed, though not stopped, by exercise.",
+    "src": [
+     "s10-6#fs-id2267886",
+     "s10-6#fs-id1425445"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Tapping the patellar ligament below the kneecap.",
+    "damaged": "The knee-jerk (stretch) reflex of the quadriceps.",
+    "cannotDo": "Show a normal knee-jerk reflex if the reflex arc is damaged.",
+    "why": "Stretching the muscle activates its spindles, which excite its motor neurons directly.",
+    "src": [
+     "s16-4#fs-id1956663"
+    ]
+   },
+   {
+    "injury": "A leg kept in plaster for weeks.",
+    "damaged": "The quadriceps, through disuse.",
+    "cannotDo": "Straighten the knee strongly when the plaster comes off.",
+    "why": "Unused muscle loses structural proteins and shrinks.",
+    "src": [
+     "s10-9#fs-id2269378",
+     "s10-9#fs-id1645648"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how the quadriceps extend the knee though none of them attaches to the tibia directly.",
+    "model": [
+     "All four join the quadriceps tendon.",
+     "The tendon inserts into the patella.",
+     "Below the patella it continues as the patellar ligament.",
+     "The ligament attaches to the tibial tuberosity, so pulling it straightens the knee."
+    ],
+    "src": [
+     "s11-6#fs-id2591754"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the rectus femoris and the vastus lateralis.",
+    "model": [
+     "Both extend the knee through the quadriceps tendon.",
+     "The rectus femoris arises from the hip bone, so it also flexes the thigh.",
+     "The vastus lateralis arises from the femur and acts on the knee only.",
+     "The rectus femoris lies in front; the vastus lateralis on the outer side."
+    ],
+    "src": [
+     "s11-6#fig-ch11_06_03",
+     "s11-6#fs-id2591754"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict what a knee-jerk test shows if the reflex arc is intact.",
+    "model": [
+     "The tap stretches the quadriceps.",
+     "Muscle spindles signal into the spinal cord.",
+     "Their fibres excite the motor neuron directly.",
+     "The quadriceps contract and the leg kicks forwards."
+    ],
+    "src": [
+     "s16-4#fs-id1956663"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which quadriceps muscle also flexes the thigh at the hip?",
+   "options": [
+    "Vastus lateralis",
+    "Vastus medialis",
+    "Vastus intermedius",
+    "Rectus femoris"
+   ],
+   "answer": 3,
+   "why": "The rectus femoris arises from the hip bone, so it also helps raise the knee (flex the thigh).",
+   "src": [
+    "s11-6#fig-ch11_06_03"
+   ]
+  },
+  {
+   "stem": "Where does the patellar ligament attach?",
+   "options": [
+    "Tibial tuberosity",
+    "Head of the fibula",
+    "Medial malleolus",
+    "Linea aspera"
+   ],
+   "answer": 0,
+   "why": "The patellar ligament attaches to the tibial tuberosity.",
+   "src": [
+    "s11-6#fs-id2591754"
+   ]
+  },
+  {
+   "stem": "Which group opposes the quadriceps at the knee?",
+   "options": [
+    "Adductors",
+    "Hamstrings",
+    "Gluteal muscles",
+    "Fibular muscles"
+   ],
+   "answer": 1,
+   "why": "The hamstrings flex the leg, whereas the quadriceps extend it.",
+   "src": [
+    "s11-1#tbl-ch11_01"
+   ]
+  }
+ ]
+}

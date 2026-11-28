@@ -36,7 +36,7 @@ export function StudyLauncher() {
     quiz: `${s.count || 'All'} questions · ${s.perQuestion ? `${s.perQuestion} s each` : 'untimed'}`,
     weak: weakCount ? `${weakCount} bones to work on` : 'Nothing yet: missed bones appear here',
     mycards: myCards ? `${myCards} ${myCards === 1 ? 'card' : 'cards'}` : 'Make one from a highlight or note (Lessons)',
-    layered: `Preview: ${LAYERED.length} draft cards, Skull and Upper limb`,
+    layered: `Preview: ${LAYERED.length} draft cards: Skull, Upper limb, muscles and organs`,
   }
   const [page, setPage] = useState<'modes' | 'settings'>('modes')
   if (page === 'settings') return <PracticeSettings onBack={() => setPage('modes')} />

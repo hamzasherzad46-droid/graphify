@@ -1,0 +1,572 @@
+{
+ "topic": "muscles",
+ "cards": [
+  {
+   "reviewStatus": "draft",
+   "id": "mu-biceps-brachii-function",
+   "topic": "muscles",
+   "type": "function",
+   "level": "core",
+   "structureId": "biceps-brachii",
+   "part": "long_head_of_biceps_brachii_left",
+   "frontView": false,
+   "objective": "State the second action of the biceps brachii at the forearm.",
+   "front": "Besides flexing the elbow, what does the biceps brachii do to the forearm?",
+   "answer": "Supinates it (turns the palm up)",
+   "why": {
+    "t": "It flexes the forearm at the elbow, and supinates it at the radioulnar joints. It crosses both the shoulder and the elbow, so it also helps flex the arm at the shoulder.",
+    "src": [
+     "s11-5#fs-id2831016"
+    ]
+   },
+   "simpler": {
+    "t": "The biceps is the muscle at the front of your upper arm that bends your elbow.",
+    "src": [
+     "s11-5#fs-id2831016"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Long head: arises above the glenoid cavity.",
+     "src": [
+      "s11-5#fig-ch11_05_05",
+      "s8-2#fs-id2110691"
+     ]
+    },
+    {
+     "t": "Short head: arises from the coracoid process of the scapula.",
+     "src": [
+      "s11-5#fig-ch11_05_05"
+     ]
+    },
+    {
+     "t": "Belly: the plump middle of the muscle.",
+     "src": [
+      "s11-1#fs-id2292670"
+     ]
+    },
+    {
+     "t": "Fusiform shape: a spindle-shaped belly that tapers towards each end.",
+     "src": [
+      "s11-1#fs-id2292670"
+     ],
+     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the biceps brachii itself is fusiform (11.1 uses it as the example of a belly)."
+    }
+   ],
+   "clinical": {
+    "t": "Damage to the lower motor neurons that supply the biceps. The reflex needs the spindle’s sensory fibre, the spinal synapse and the motor neuron intact.",
+    "src": [
+     "s16-4#fs-id1956663"
+    ]
+   },
+   "trap": {
+    "t": "The brachialis, deep to the biceps, flexes the elbow but does not supinate.",
+    "src": [
+     "s11-5#fs-id2831016"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 11.1 Interactions of Skeletal Muscles; 11.5 Muscles of the Pectoral Girdle and Upper Limbs; 8.2; 14.3; 16.4",
+   "hook": {
+    "t": "“Bi” in its name means it has two origins; “tri” in triceps means three.",
+    "src": [
+     "s11-2#fs-id2762982"
+    ]
+   }
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "mu-calf-muscles-compare",
+   "topic": "muscles",
+   "type": "compare",
+   "level": "higher",
+   "structureId": "calf-muscles",
+   "part": "medial_head_of_gastrocnemius_left",
+   "frontView": false,
+   "objective": "Name the calf muscle that also acts on the knee.",
+   "front": "Which calf muscle crosses the knee as well as the ankle?",
+   "answer": "Gastrocnemius",
+   "why": {
+    "t": "The gastrocnemius is the most superficial and visible muscle of the calf; the wide, flat soleus lies deep to it. The gastrocnemius crosses the knee, so it also helps flex the leg.",
+    "src": [
+     "s11-6#fs-id2421915",
+     "s11-6#fig-ch11_06_05"
+    ]
+   },
+   "simpler": {
+    "t": "The calf muscles lift your heel so you can stand on tiptoe and push off when walking.",
+    "src": [
+     "s11-6#fs-id2421915",
+     "s11-6#fig-ch11_06_05"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Gastrocnemius: two heads from the medial and lateral condyles of the femur.",
+     "src": [
+      "s11-6#fig-ch11_06_05"
+     ]
+    },
+    {
+     "t": "Soleus: wide and flat, from the upper tibia, fibula and interosseous membrane.",
+     "src": [
+      "s11-6#fs-id2421915",
+      "s11-6#fig-ch11_06_05"
+     ]
+    },
+    {
+     "t": "Calcaneal (Achilles) tendon: a strong tendon into the calcaneus, shared by the superficial calf muscles.",
+     "src": [
+      "s11-6#fs-id2421915",
+      "glossary:calcaneal tendon"
+     ]
+    },
+    {
+     "t": "Plantaris: a small muscle between the two.",
+     "src": [
+      "s11-6#fs-id2421915"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Tapping the calcaneal tendon with a reflex hammer. Stretch of the muscle excites its own motor neurons through the spinal cord.",
+    "src": [
+     "s16-4#fs-id1956663"
+    ]
+   },
+   "trap": {
+    "t": "The soleus lies deep to the gastrocnemius and arises below the knee, so it does not flex it.",
+    "src": [
+     "s11-6#fs-id2421915",
+     "s11-6#fig-ch11_06_05"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs; 14.3; 16.4; 20.2"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "mu-deltoid-function",
+   "topic": "muscles",
+   "type": "function",
+   "level": "core",
+   "structureId": "deltoid",
+   "part": "acromial_part_of_deltoid_muscle_left",
+   "frontView": false,
+   "objective": "Name the major abductor of the arm.",
+   "front": "Which muscle is the major abductor of the arm?",
+   "answer": "Deltoid",
+   "why": {
+    "t": "The thick muscle that makes the rounded shape of the shoulder, and the main muscle that lifts the arm sideways. Its fibres arch over the shoulder, so pulling on the humerus lifts the arm away from the body.",
+    "src": [
+     "s11-5#fs-id2501482"
+    ]
+   },
+   "simpler": {
+    "t": "The deltoid is your shoulder muscle. It lifts your arm out to the side.",
+    "src": [
+     "s11-5#fs-id2501482"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Clavicular (front) part: arises from the clavicle.",
+     "src": [
+      "s11-5#fig-ch11_05_03",
+      "s11-5#fs-id2501482"
+     ],
+     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts)."
+    },
+    {
+     "t": "Acromial (middle) part: arises from the acromion.",
+     "src": [
+      "s11-5#fig-ch11_05_03",
+      "s11-5#fs-id2501482"
+     ],
+     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the middle (acromial) fibres are the ones that abduct."
+    },
+    {
+     "t": "Spinal (back) part: arises from the spine of the scapula.",
+     "src": [
+      "s11-5#fig-ch11_05_03",
+      "s11-5#fs-id2501482"
+     ],
+     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts)."
+    },
+    {
+     "t": "Shape: thick and triangular, like the Greek letter delta, which gives it its name.",
+     "src": [
+      "s11-5#fs-id2501482"
+     ],
+     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The origin of the name (the Greek letter delta)."
+    }
+   ],
+   "clinical": {
+    "t": "A fracture of the surgical neck of the humerus after a fall. Without its nerve, the deltoid cannot contract, so abduction is weak.",
+    "src": [
+     "s8-2#fs-id2030259"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The course of the axillary nerve round the surgical neck, and the weakness that follows its injury."
+   },
+   "trap": {
+    "t": "The supraspinatus also abducts the arm, but the deltoid is the major abductor.",
+    "src": [
+     "s11-5#fs-id2501482"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 11.5 Muscles of the Pectoral Girdle and Upper Limbs; 9.6; 8.2; 13.4"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "mu-diaphragm-supply",
+   "topic": "muscles",
+   "type": "supply",
+   "level": "core",
+   "structureId": "diaphragm",
+   "part": "diaphragm",
+   "frontView": false,
+   "objective": "Name the nerve of the diaphragm.",
+   "front": "Which nerve supplies the diaphragm?",
+   "answer": "Phrenic nerve",
+   "why": {
+    "t": "The phrenic nerve comes from the cervical plexus in the neck. It reaches the diaphragm at the base of the thorax.",
+    "src": [
+     "s13-4#fs-id1472046"
+    ]
+   },
+   "simpler": {
+    "t": "The diaphragm is a dome of muscle under your lungs. It pulls air in when it tightens.",
+    "src": [
+     "s11-4#fs-id2974297",
+     "s22-3#fs-id1882180"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Central tendon: the tendon in the middle of the dome, into which all the muscle fibres insert.",
+     "src": [
+      "s11-4#fs-id2304478",
+      "s11-4#tbl-ch11_07"
+     ]
+    },
+    {
+     "t": "Caval opening: lets the inferior vena cava pass from the abdomen to the thorax.",
+     "src": [
+      "s11-4#fs-id2143601"
+     ]
+    },
+    {
+     "t": "Oesophageal hiatus: lets the oesophagus and its nerves pass into the abdomen.",
+     "src": [
+      "s11-4#fs-id2143601",
+      "s23-3#fs-id1984077"
+     ]
+    },
+    {
+     "t": "Aortic hiatus: at the back: the aorta, thoracic duct and azygos vein pass through it.",
+     "src": [
+      "s11-4#fs-id2143601"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Damage to the pons or medulla, after a stroke or from drugs such as morphine. Without signals from the centres, the diaphragm and intercostals do not contract.",
+    "src": [
+     "s22-3#fs-id2582598",
+     "s22-3#fs-id2096099"
+    ]
+   },
+   "trap": {
+    "t": "The phrenic nerve comes from the cervical plexus in the neck, not from the thoracic nerves.",
+    "src": [
+     "s13-4#fs-id1472046"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 11.4 Axial Muscles of the Abdominal Wall and Thorax; 22.3 The Process of Breathing; 13.4; 23.3"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "mu-hamstrings-relation",
+   "topic": "muscles",
+   "type": "relation",
+   "level": "core",
+   "structureId": "hamstrings",
+   "part": "long_head_of_biceps_femoris_left",
+   "frontView": false,
+   "objective": "State the common origin of the hamstrings.",
+   "front": "Where do the hamstrings arise?",
+   "answer": "Ischial tuberosity",
+   "why": {
+    "t": "All three arise from the ischial tuberosity; the biceps femoris also from the linea aspera and distal femur. Crossing the back of the hip, they also extend the thigh: they move it down and back.",
+    "src": [
+     "s11-6#fig-ch11_06_03",
+     "s11-6#fs-id2012638"
+    ]
+   },
+   "simpler": {
+    "t": "The hamstrings are the muscles at the back of your thigh. They bend your knee.",
+    "src": [
+     "s11-6#fs-id2012638"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Biceps femoris: the lateral hamstring.",
+     "src": [
+      "s11-6#fig-ch11_06_03"
+     ]
+    },
+    {
+     "t": "Semitendinosus: a medial hamstring with a long tendon.",
+     "src": [
+      "s11-6#fig-ch11_06_03"
+     ],
+     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The long tendon of the semitendinosus."
+    },
+    {
+     "t": "Semimembranosus: a medial hamstring, deep to the semitendinosus.",
+     "src": [
+      "s11-6#fig-ch11_06_03"
+     ],
+     "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the semimembranosus lies deep to the semitendinosus."
+    },
+    {
+     "t": "Popliteal fossa: the diamond-shaped space behind the knee, bordered by their tendons.",
+     "src": [
+      "s11-6#fs-id2012638"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A sudden sprint, with the hip flexed and the knee straightening. They are stretched across two joints while contracting hard to slow the leg.",
+    "src": [
+     "s11-6#fs-id2012638"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Hamstring strains."
+   },
+   "trap": {
+    "t": "The hamstrings flex the knee and extend the hip; the quadriceps extend the knee.",
+    "src": [
+     "s11-1#tbl-ch11_01",
+     "s11-6#fs-id2012638"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs; 11.1; 13.4"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "mu-quadriceps-femoris-function",
+   "topic": "muscles",
+   "type": "function",
+   "level": "higher",
+   "structureId": "quadriceps-femoris",
+   "part": "rectus_femoris_muscle_left",
+   "frontView": false,
+   "objective": "Name the quadriceps muscle that crosses the hip.",
+   "front": "Which quadriceps muscle also flexes the thigh at the hip?",
+   "answer": "Rectus femoris",
+   "why": {
+    "t": "Pulling through the patella and patellar ligament, they extend the leg at the knee, as in kicking. The rectus femoris crosses the hip too, so it also flexes the thigh.",
+    "src": [
+     "s11-6#fs-id2591754",
+     "s11-6#fig-ch11_06_03"
+    ]
+   },
+   "simpler": {
+    "t": "The quadriceps are the big muscles on the front of your thigh. They straighten your knee.",
+    "src": [
+     "s11-6#fs-id2591754"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Rectus femoris: arises from the anterior inferior iliac spine and above the acetabulum.",
+     "src": [
+      "s11-6#fig-ch11_06_03"
+     ]
+    },
+    {
+     "t": "Vastus lateralis: arises from the greater trochanter, the intertrochanteric line and the linea aspera.",
+     "src": [
+      "s11-6#fig-ch11_06_03"
+     ]
+    },
+    {
+     "t": "Vastus medialis: arises from the linea aspera and the intertrochanteric line.",
+     "src": [
+      "s11-6#fig-ch11_06_03"
+     ]
+    },
+    {
+     "t": "Vastus intermedius: arises from the upper shaft of the femur, deep to the rectus femoris.",
+     "src": [
+      "s11-6#fig-ch11_06_03",
+      "s11-6#fs-id2591754"
+     ]
+    },
+    {
+     "t": "Quadriceps tendon: the tendon common to all four.",
+     "src": [
+      "s11-6#fs-id2591754"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Tapping the patellar ligament below the kneecap. Stretching the muscle activates its spindles, which excite its motor neurons directly.",
+    "src": [
+     "s16-4#fs-id1956663"
+    ]
+   },
+   "trap": {
+    "t": "Only the rectus femoris arises from the hip bone; the three vasti arise from the femur.",
+    "src": [
+     "s11-6#fig-ch11_06_03"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs; 11.1; 13.4; 14.3; 16.4"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "mu-rotator-cuff-feature",
+   "topic": "muscles",
+   "type": "feature",
+   "level": "core",
+   "structureId": "rotator-cuff",
+   "part": "supraspinatus_muscle_left",
+   "frontView": false,
+   "objective": "List the four rotator cuff muscles.",
+   "front": "Which four muscles form the rotator cuff?",
+   "answer": "Supraspinatus, infraspinatus, teres minor, subscapularis",
+   "why": {
+    "t": "All four arise from the scapula and attach to the greater or lesser tubercle of the humerus. They act as “dynamic ligaments”, adjusting their pull to give the shoulder joint its main support.",
+    "src": [
+     "s9-6#fs-id2429784"
+    ]
+   },
+   "simpler": {
+    "t": "The rotator cuff is a ring of four muscles that keeps your shoulder joint together.",
+    "src": [
+     "s9-6#fs-id2429784"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Supraspinatus: above the spine of the scapula, from the supraspinous fossa.",
+     "src": [
+      "s11-5#fs-id2501482",
+      "s11-5#fig-ch11_05_03"
+     ]
+    },
+    {
+     "t": "Infraspinatus: below the spine of the scapula, from the infraspinous fossa.",
+     "src": [
+      "s11-5#fs-id2501482",
+      "s11-5#fig-ch11_05_03"
+     ]
+    },
+    {
+     "t": "Teres minor: from the lateral border of the scapula.",
+     "src": [
+      "s11-5#fs-id2501482",
+      "s11-5#fig-ch11_05_03"
+     ]
+    },
+    {
+     "t": "Subscapularis: from the front of the scapula (subscapular fossa).",
+     "src": [
+      "s11-5#fs-id2501482",
+      "s11-5#fig-ch11_05_03"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Years of throwing fast pitches overhead. Repeated overhead movement squeezes the tendons beneath the acromion.",
+    "src": [
+     "s11-5#fs-id2421860",
+     "s9-6#fs-id1894060"
+    ]
+   },
+   "trap": {
+    "t": "The teres minor is a rotator cuff muscle; the teres major is not.",
+    "src": [
+     "s11-5#fs-id2421860",
+     "s11-5#fs-id2501482"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 11.5 Muscles of the Pectoral Girdle and Upper Limbs; 9.6 Anatomy of Selected Synovial Joints",
+   "hook": {
+    "t": "A memory aid for the four is SITS: supraspinatus, infraspinatus, teres minor, subscapularis.",
+    "src": [
+     "s11-5#fs-id2421860"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The memory aid SITS."
+   }
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "mu-sternocleidomastoid-function",
+   "topic": "muscles",
+   "type": "function",
+   "level": "higher",
+   "structureId": "sternocleidomastoid",
+   "part": "sternocleidomastoid_muscle_left",
+   "frontView": false,
+   "objective": "State the direction of head rotation by one sternocleidomastoid.",
+   "front": "Which way does the left sternocleidomastoid turn the face?",
+   "answer": "To the right (the opposite side)",
+   "why": {
+    "t": "One muscle alone turns the head to the opposite side and tilts it to its own side. Both together flex the head forwards.",
+    "src": [
+     "s11-3#tbl-ch11_05",
+     "s11-3#fs-id2455581"
+    ]
+   },
+   "simpler": {
+    "t": "It is the long muscle on each side of your neck that turns your head.",
+    "src": [
+     "s11-3#fs-id2455581"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Sternal head: arises from the sternum (“sterno” in the name).",
+     "src": [
+      "s11-2#fs-id2279191"
+     ]
+    },
+    {
+     "t": "Clavicular head: arises from the clavicle (“cleido” in the name).",
+     "src": [
+      "s11-2#fs-id2279191"
+     ]
+    },
+    {
+     "t": "Insertion: on the mastoid process of the temporal bone (“mastoid” in the name), and the occipital bone.",
+     "src": [
+      "s11-2#fs-id2279191",
+      "s11-3#tbl-ch11_05"
+     ]
+    },
+    {
+     "t": "Name: named for its attachments, with the origin first: sterno, cleido, mastoid.",
+     "src": [
+      "s11-2#fs-id2279191"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A baby born with a shortened sternocleidomastoid on one side. The short muscle pulls constantly, tilting to its own side and turning to the opposite.",
+    "src": [
+     "s11-3#tbl-ch11_05"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Congenital torticollis."
+   },
+   "trap": {
+    "t": "Acting alone, it turns the face away from its own side but tilts the head towards it.",
+    "src": [
+     "s11-3#tbl-ch11_05",
+     "s11-3#fs-id2455581"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 11.2 Naming Skeletal Muscles; 11.3 Axial Muscles of the Head, Neck, and Back; 13.4"
+  }
+ ]
+}

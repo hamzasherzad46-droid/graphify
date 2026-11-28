@@ -1,6 +1,6 @@
 # Atlas: † statements for sign-off
 
-25 November 2026. 147 statements are marked † in the app: not confirmed by the imported OpenStax A&P 2e chapters (6–9, 12–16 and 20) or by review. Each stays marked until it is signed off here.
+28 November 2026. 198 statements are marked † in the app: not confirmed by the imported OpenStax A&P 2e chapters (6–17, 19–23 and 25) or by review. Each stays marked until it is signed off here.
 
 **Proposed sources.** For each statement: any sentence of *Gray’s Anatomy* (1918) that supports it, quoted in full (a secondary source: it can support a statement but cannot approve one on its own); the Terminologia Anatomica (TA2) entry for each name it uses; and a current textbook in which to confirm it. No page numbers are given: please record the edition and page you use.
 
@@ -255,7 +255,67 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 24. Structure lesson: Capitate, layer “Where it is”
+### 24. Structure lesson: Biceps brachii, layer “Where it is”
+
+> Its tendon inserts on the radial tuberosity of the radius.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The insertion of the biceps brachii (radial tuberosity).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 25. Structure lesson: Biceps brachii, layer “Key features”
+
+> Fusiform shape: A spindle-shaped belly that tapers towards each end.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). That the biceps brachii itself is fusiform (11.1 uses it as the example of a belly).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 26. Structure lesson: Biceps brachii, layer “Relations”
+
+> Musculocutaneous nerve: The nerve of the anterior compartment of the arm.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The musculocutaneous nerve and its supply to the biceps.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 27. Structure lesson: Biceps brachii, layer “Clinical reasoning”
+
+> Injury: A heavy lift that ruptures the tendon of the long head. Damaged: The long-head tendon, where it runs in the bicipital groove. Patient can’t: Flex and supinate with full strength; the belly bunches up near the elbow. Why: The torn head cannot pull, and its belly shortens away from the tear.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Rupture of the long head of the biceps and its signs.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 28. Structure lesson: Calf muscles: gastrocnemius and soleus, layer “Relations”
+
+> Tibial nerve: One of the two nerves in the sciatic nerve. It supplies the back of the leg.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). That the tibial nerve supplies the calf muscles.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 29. Structure lesson: Calf muscles: gastrocnemius and soleus, layer “Clinical reasoning”
+
+> Injury: A sudden push-off that ruptures the calcaneal tendon. Damaged: The calcaneal (Achilles) tendon. Patient can’t: Stand on tiptoe on that leg or push off when walking. Why: The calf muscles can no longer pull on the calcaneus.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Rupture of the calcaneal tendon and its signs.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 30. Structure lesson: Capitate, layer “Where it is”
 
 > It is the largest of the carpal bones.
 
@@ -265,7 +325,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 25. Structure lesson: Capitate, layer “Key features”
+### 31. Structure lesson: Capitate, layer “Key features”
 
 > Rounded head: Its upper end is rounded, fitting a hollow formed by the scaphoid and lunate.
 
@@ -275,7 +335,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 26. Structure lesson: Capitate, layer “Development”
+### 32. Structure lesson: Capitate, layer “Development”
 
 > Its single ossification centre appears first of the carpal bones, during the first year.
 
@@ -285,7 +345,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 27. Structure lesson: Capitate, layer “Clinical reasoning”
+### 33. Structure lesson: Capitate, layer “Clinical reasoning”
 
 > Injury: A violent fall onto the hand with the wrist bent far back. Damaged: The capitate and the rest of the hand dislocate backwards around the lunate (perilunate dislocation). Patient can’t: Move the wrist; the fingers may also be numb. Why: The lunate stays attached to the radius while the ligaments around it tear.
 
@@ -295,7 +355,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 28. Structure lesson: Capitate, layer “Tutorial questions”
+### 34. Structure lesson: Capitate, layer “Tutorial questions”
 
 > Predict the effect of a fall that dislocates the capitate backwards around the lunate.
 
@@ -305,7 +365,167 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 29. Structure lesson: Ethmoid bone, layer “Clinical reasoning”
+### 35. Structure lesson: Deltoid, layer “Where it is”
+
+> It inserts on the deltoid tuberosity, about halfway down the outer side of the humerus.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The deltoid’s insertion (deltoid tuberosity of the humerus).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 36. Structure lesson: Deltoid, layer “Key features”
+
+> Clavicular (front) part: Arises from the clavicle. It helps flex and medially rotate the arm.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 37. Structure lesson: Deltoid, layer “Key features”
+
+> Acromial (middle) part: Arises from the acromion. It is the part that abducts the arm.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). That the middle (acromial) fibres are the ones that abduct.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 38. Structure lesson: Deltoid, layer “Key features”
+
+> Spinal (back) part: Arises from the spine of the scapula. It helps extend and laterally rotate the arm.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 39. Structure lesson: Deltoid, layer “Key features”
+
+> Shape: Thick and triangular, like the Greek letter delta, which gives it its name.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The origin of the name (the Greek letter delta).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 40. Structure lesson: Deltoid, layer “Key features”
+
+> Its front and back parts work against each other, so the deltoid can both flex and extend the arm.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 41. Structure lesson: Deltoid, layer “Form → function”
+
+> The front fibres flex and medially rotate the arm. The back fibres extend and laterally rotate it.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 42. Structure lesson: Deltoid, layer “Relations”
+
+> Axillary nerve: A branch of the radial nerve that goes to the armpit region. It supplies the deltoid.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). That the axillary nerve supplies the deltoid.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 43. Structure lesson: Deltoid, layer “Clinical reasoning”
+
+> Injury: A fracture of the surgical neck of the humerus after a fall. Damaged: The axillary nerve, which winds round the surgical neck to reach the deltoid. Patient can’t: Lift the arm out to the side with normal strength. Why: Without its nerve, the deltoid cannot contract, so abduction is weak.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The course of the axillary nerve round the surgical neck, and the weakness that follows its injury.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 44. Structure lesson: Deltoid, layer “Tutorial questions”
+
+> Explain how one muscle, the deltoid, can both flex and extend the arm.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 45. Structure lesson: Deltoid, layer “Tutorial questions”
+
+> Predict what a patient cannot do after a fracture of the surgical neck that injures the axillary nerve.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The axillary nerve’s supply to the deltoid and the signs of its injury.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** *Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students*
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 46. Structure lesson: Diaphragm, layer “Key features”
+
+> The three openings lie at about the levels of T8 (caval), T10 (oesophageal) and T12 (aortic).
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The vertebral levels of the diaphragm’s openings.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 47. Structure lesson: Diaphragm, layer “Relations”
+
+> The heart and lungs sit on it and the liver and stomach lie under it. A nerve from the neck works it.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). That the liver and stomach lie directly under the diaphragm.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 48. Structure lesson: Diaphragm, layer “Development”
+
+> The phrenic nerve comes from the neck (cervical plexus), a sign that the diaphragm’s muscle starts in the neck region.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The development of the diaphragm and why its nerve comes from the neck.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 49. Structure lesson: Diaphragm, layer “Clinical reasoning”
+
+> Injury: Part of the stomach slides up through the oesophageal hiatus (a hiatus hernia). Damaged: The oesophageal hiatus, which has widened. Patient can’t: Keep stomach acid out of the oesophagus: heartburn is worse lying down. Why: The hiatus no longer holds the junction of the oesophagus and stomach below the diaphragm.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Hiatus hernia and its symptoms.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 50. Structure lesson: Diaphragm, layer “Tutorial questions”
+
+> Predict what happens to breathing if the phrenic nerve is cut on one side.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The effects of cutting one phrenic nerve.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 51. Structure lesson: Ethmoid bone, layer “Clinical reasoning”
 
 > Injury: A fracture through the cribriform plate. Damaged: The coverings of the brain over the plate tear. Patient can’t: Keep the nose dry: the clear fluid around the brain (cerebrospinal fluid) leaks from the nose. Why: The thin plate is all that separates the nasal cavity from the cranial cavity.
 
@@ -316,7 +536,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 30. Structure lesson: Frontal bone, layer “Development”
+### 52. Structure lesson: Frontal bone, layer “Development”
 
 > The anterior fontanelle, the soft spot at the front of a baby’s head, lies where it meets the parietal bones.
 
@@ -326,7 +546,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 31. Structure lesson: Hamate, layer “Relations”
+### 53. Structure lesson: Hamate, layer “Relations”
 
 > Ulnar nerve: Passes beside the hook of the hamate into the hand.
 
@@ -336,7 +556,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 32. Structure lesson: Hamate, layer “Development”
+### 54. Structure lesson: Hamate, layer “Development”
 
 > Its single ossification centre appears during the first year, just after the capitate.
 
@@ -346,7 +566,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 33. Structure lesson: Hamate, layer “Clinical reasoning”
+### 55. Structure lesson: Hamate, layer “Clinical reasoning”
 
 > Injury: A golf club, bat or racquet handle strikes the base of the palm. Damaged: The hook of the hamate breaks. Patient can’t: Grip firmly without pain at the base of the palm. Why: The handle presses directly on the hook, which projects forwards.
 
@@ -356,7 +576,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 34. Structure lesson: Hamate, layer “Tutorial questions”
+### 56. Structure lesson: Hamate, layer “Tutorial questions”
 
 > A golfer strikes the ground and has pain at the base of the palm. Predict the fracture and why.
 
@@ -366,7 +586,77 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 35. Structure lesson: Hyoid bone, layer “Key features”
+### 57. Structure lesson: Hamstrings, layer “Key features”
+
+> Semitendinosus: A medial hamstring with a long tendon. It turns the thigh inwards.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The long tendon of the semitendinosus.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 58. Structure lesson: Hamstrings, layer “Key features”
+
+> Semimembranosus: A medial hamstring, deep to the semitendinosus. It turns the thigh inwards.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). That the semimembranosus lies deep to the semitendinosus.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 59. Structure lesson: Hamstrings, layer “Key features”
+
+> The biceps femoris inserts on the head of the fibula; the other two on the medial side of the tibia.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The insertions of the hamstrings.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 60. Structure lesson: Hamstrings, layer “Relations”
+
+> Sciatic nerve: Runs down the back of the thigh. It is the tibial and fibular nerves combined.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). That the sciatic nerve supplies the hamstrings and runs among them.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 61. Structure lesson: Hamstrings, layer “Variations”
+
+> Sprinters’ muscles have a high share of fast glycolytic fibres for powerful bursts.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Fibre types of the hamstrings specifically.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 62. Structure lesson: Hamstrings, layer “Clinical reasoning”
+
+> Injury: A sudden sprint, with the hip flexed and the knee straightening. Damaged: The hamstrings, which tear (a hamstring strain). Patient can’t: Run or bend the knee against resistance without pain. Why: They are stretched across two joints while contracting hard to slow the leg.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Hamstring strains.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 63. Structure lesson: Hamstrings, layer “Tutorial questions”
+
+> Predict which movement is hard after a hamstring strain.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Hamstring strains.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 64. Structure lesson: Hyoid bone, layer “Key features”
 
 > Body: The front of the U.
 
@@ -376,7 +666,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 36. Structure lesson: Hyoid bone, layer “Development”
+### 65. Structure lesson: Hyoid bone, layer “Development”
 
 > It forms from cartilage of the second and third pharyngeal arches.
 
@@ -386,7 +676,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 37. Structure lesson: Hyoid bone, layer “Clinical reasoning”
+### 66. Structure lesson: Hyoid bone, layer “Clinical reasoning”
 
 > Injury: Strong pressure on the front of the neck, as in strangulation. Damaged: The hyoid bone may break. Patient can’t: Swallow or speak without pain. Why: The hyoid moves with the tongue, larynx and pharynx in swallowing and speaking.
 
@@ -396,7 +686,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 38. Structure lesson: Hyoid bone, layer “Clinical reasoning”
+### 67. Structure lesson: Hyoid bone, layer “Clinical reasoning”
 
 > Injury: Weakness of the small muscles attached to the hyoid, for example after a stroke. Damaged: The muscles that move the hyoid. Patient can’t: Swallow safely: food may enter the airway. Why: Swallowing needs the hyoid to move in step with the larynx and pharynx.
 
@@ -406,7 +696,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 39. Structure lesson: Inferior nasal concha, layer “Development”
+### 68. Structure lesson: Inferior nasal concha, layer “Development”
 
 > The inferior concha forms from a cartilage model (endochondral ossification).
 
@@ -416,7 +706,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 40. Structure lesson: Inferior nasal concha, layer “Clinical reasoning”
+### 69. Structure lesson: Inferior nasal concha, layer “Clinical reasoning”
 
 > Injury: A cold or an allergy. Damaged: The lining over the conchae swells. Patient can’t: Breathe easily through the nose. Why: The swollen lining narrows the air passages around the conchae.
 
@@ -426,7 +716,37 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 41. Structure lesson: Lacrimal bone, layer “Development”
+### 70. Structure lesson: Kidneys, layer “In one line”
+
+> Two bean-shaped organs at the back of the abdomen that filter the blood and make urine.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The kidneys’ bean shape.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (abdomen chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 71. Structure lesson: Kidneys, layer “Development”
+
+> They develop in the pelvis and rise to their adult position in the abdomen.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The development of the kidneys.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (abdomen chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 72. Structure lesson: Kidneys, layer “Tutorial questions”
+
+> Predict a blood change in long-term kidney failure.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Anaemia in kidney failure.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (abdomen chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 73. Structure lesson: Lacrimal bone, layer “Development”
 
 > Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).
 
@@ -436,7 +756,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 42. Structure lesson: Lacrimal bone, layer “Clinical reasoning”
+### 74. Structure lesson: Lacrimal bone, layer “Clinical reasoning”
 
 > Injury: A baby’s tear duct has not fully opened. Damaged: The nasolacrimal duct is blocked. Patient can’t: Drain tears: the eye waters all the time. Why: Tears can leave the eye only through this duct into the nose.
 
@@ -446,7 +766,17 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 43. Structure lesson: Lunate, layer “Relations”
+### 75. Structure lesson: Liver, layer “Clinical reasoning”
+
+> Injury: A build-up of bilirubin when red cell breakdown or bile flow goes wrong. Damaged: The liver’s excretion of bilirubin into bile. Patient can’t: Clear bilirubin: the skin and eyes turn yellow (jaundice). Why: Bilirubin is a waste of old red cells that the liver normally excretes in bile.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Jaundice and its causes.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (abdomen chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 76. Structure lesson: Lunate, layer “Relations”
 
 > Median nerve: Runs through the carpal tunnel, in front of the lunate.
 
@@ -456,7 +786,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 44. Structure lesson: Lunate, layer “Development”
+### 77. Structure lesson: Lunate, layer “Development”
 
 > Its single ossification centre appears at about the fifth year.
 
@@ -466,7 +796,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 45. Structure lesson: Lunate, layer “Clinical reasoning”
+### 78. Structure lesson: Lunate, layer “Clinical reasoning”
 
 > Injury: A fall onto the outstretched hand with the wrist bent far back. Damaged: The lunate dislocates forwards, into the carpal tunnel. Patient can’t: Feel the thumb, index and middle fingers normally. Why: The dislocated bone takes up space in the tunnel and presses on the median nerve.
 
@@ -476,7 +806,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 46. Structure lesson: Lunate, layer “Tutorial questions”
+### 79. Structure lesson: Lunate, layer “Tutorial questions”
 
 > Predict the effect of the lunate dislocating forwards into the carpal tunnel.
 
@@ -486,7 +816,27 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 47. Structure lesson: Auditory ossicles, layer “Key features”
+### 80. Structure lesson: Lungs, layer “Key features”
+
+> Three lobes on the right, two on the left, branching down to millions of tiny air sacs.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The number of alveoli (“millions”).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (thorax chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 81. Structure lesson: Lungs, layer “Tutorial questions”
+
+> Predict what happens to a baby born at 26 weeks without treatment.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The effort of breathing without surfactant (respiratory distress in premature babies).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (thorax chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 82. Structure lesson: Auditory ossicles, layer “Key features”
 
 > Footplate of the stapes: Its flat base fills the oval window.
 
@@ -496,7 +846,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 48. Structure lesson: Auditory ossicles, layer “Key features”
+### 83. Structure lesson: Auditory ossicles, layer “Key features”
 
 > The stapes is the smallest bone in the body.
 
@@ -506,7 +856,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 49. Structure lesson: Auditory ossicles, layer “Development”
+### 84. Structure lesson: Auditory ossicles, layer “Development”
 
 > They form from cartilage of the embryonic pharyngeal arches.
 
@@ -516,7 +866,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 50. Structure lesson: Auditory ossicles, layer “Clinical reasoning”
+### 85. Structure lesson: Auditory ossicles, layer “Clinical reasoning”
 
 > Injury: Abnormal bone growth fixes the stapes in the oval window (otosclerosis). Damaged: The stapes. Patient can’t: Hear well: sound is no longer passed into the inner ear. Why: The stapes must move to send vibrations through the oval window.
 
@@ -526,7 +876,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 51. Structure lesson: Auditory ossicles, layer “Clinical reasoning”
+### 86. Structure lesson: Auditory ossicles, layer “Clinical reasoning”
 
 > Injury: A blast, or something pushed into the ear canal. Damaged: The eardrum tears. Patient can’t: Hear normally on that side. Why: The malleus is attached to the eardrum, which must vibrate to move the ossicles.
 
@@ -536,7 +886,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 52. Structure lesson: Auditory ossicles, layer “Tutorial questions”
+### 87. Structure lesson: Auditory ossicles, layer “Tutorial questions”
 
 > Predict the effect on hearing if the stapes cannot move, and explain it.
 
@@ -546,7 +896,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 53. Structure lesson: Maxilla, layer “Development”
+### 88. Structure lesson: Maxilla, layer “Development”
 
 > Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).
 
@@ -556,7 +906,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 54. Structure lesson: Maxilla, layer “Clinical reasoning”
+### 89. Structure lesson: Maxilla, layer “Clinical reasoning”
 
 > Injury: A blow to the eye from in front, as from a ball. Damaged: The thin floor of the orbit breaks into the maxillary sinus below (blow-out fracture). Patient can’t: Look upwards without double vision. Why: An eye muscle and orbital fat can be trapped in the break.
 
@@ -566,7 +916,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 55. Structure lesson: Nasal bone, layer “Key features”
+### 90. Structure lesson: Nasal bone, layer “Key features”
 
 > Upper and side edges: Meet the frontal bone above and the maxillae at the sides.
 
@@ -576,7 +926,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 56. Structure lesson: Nasal bone, layer “Relations”
+### 91. Structure lesson: Nasal bone, layer “Relations”
 
 > Frontal bone and maxillae: Meet them above and at the sides.
 
@@ -586,7 +936,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 57. Structure lesson: Nasal bone, layer “Development”
+### 92. Structure lesson: Nasal bone, layer “Development”
 
 > Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).
 
@@ -596,7 +946,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 58. Structure lesson: Nasal bone, layer “Clinical reasoning”
+### 93. Structure lesson: Nasal bone, layer “Clinical reasoning”
 
 > Injury: A blow to the nose. Damaged: The nasal bones break: these are the bones damaged when the nose is broken. Patient can’t: Keep the nose straight: the bridge may be pushed to one side. Why: The thin bones form the bony bridge, so a blow drives them sideways or inwards.
 
@@ -606,7 +956,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 59. Structure lesson: Nasal bone, layer “Clinical reasoning”
+### 94. Structure lesson: Nasal bone, layer “Clinical reasoning”
 
 > Injury: A broken nose with a swollen, blocked nostril. Damaged: Blood collects under the lining of the septal cartilage (septal haematoma). Patient can’t: Breathe through that side of the nose. Why: The cartilage depends on that lining for nourishment, so trapped blood threatens it.
 
@@ -616,7 +966,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 60. Structure lesson: Nasal bone, layer “Tutorial questions”
+### 95. Structure lesson: Nasal bone, layer “Tutorial questions”
 
 > Explain why a broken nose is usually a break of the nasal bones.
 
@@ -626,7 +976,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 61. Structure lesson: Occipital bone, layer “Development”
+### 96. Structure lesson: Occipital bone, layer “Development”
 
 > Its upper part, behind the brain, forms from membrane; its base forms from a cartilage model.
 
@@ -636,7 +986,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 62. Structure lesson: Occipital bone, layer “Clinical reasoning”
+### 97. Structure lesson: Occipital bone, layer “Clinical reasoning”
 
 > Injury: Bleeding or swelling raises the pressure inside the skull. Damaged: The lowest part of the cerebellum is pushed down through the foramen magnum. Patient can’t: Keep breathing and heart rate regulated: the brainstem is compressed. Why: The pons and medulla, at the foramen magnum, regulate breathing and the heart.
 
@@ -646,7 +996,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 63. Structure lesson: Palatine bone, layer “Development”
+### 98. Structure lesson: Palatine bone, layer “Development”
 
 > Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).
 
@@ -656,7 +1006,27 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 64. Structure lesson: Parietal bone, layer “Key features”
+### 99. Structure lesson: Pancreas, layer “Development”
+
+> It develops from buds of the embryonic gut tube that later fuse.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The development of the pancreas.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (abdomen chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 100. Structure lesson: Pancreas, layer “Clinical reasoning”
+
+> Injury: Protein-digesting enzymes activated inside the pancreas. Damaged: The pancreas itself (pancreatitis). Patient can’t: Digest normally without pain, as the gland is inflamed. Why: Active enzymes digest the pancreatic tissue.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The symptoms of pancreatitis.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (abdomen chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 101. Structure lesson: Parietal bone, layer “Key features”
 
 > Grooves on the inner surface: Branches of the artery that supplies the brain’s coverings mark the inner surface of the skull.
 
@@ -666,7 +1036,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 65. Structure lesson: Pisiform, layer “Key features”
+### 102. Structure lesson: Pisiform, layer “Key features”
 
 > It lies within the tendon of a forearm muscle (flexor carpi ulnaris), like a kneecap within its tendon.
 
@@ -676,7 +1046,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 66. Structure lesson: Pisiform, layer “Relations”
+### 103. Structure lesson: Pisiform, layer “Relations”
 
 > Flexor carpi ulnaris: Its tendon attaches to the pisiform.
 
@@ -686,7 +1056,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 67. Structure lesson: Pisiform, layer “Relations”
+### 104. Structure lesson: Pisiform, layer “Relations”
 
 > Ulnar nerve and artery: Pass beside it into the hand, outside the carpal tunnel.
 
@@ -696,7 +1066,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 68. Structure lesson: Pisiform, layer “Development”
+### 105. Structure lesson: Pisiform, layer “Development”
 
 > Its single ossification centre appears last of the carpal bones, at about the twelfth year.
 
@@ -706,7 +1076,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 69. Structure lesson: Pisiform, layer “Clinical reasoning”
+### 106. Structure lesson: Pisiform, layer “Clinical reasoning”
 
 > Injury: A fall onto the heel of the hand on the little-finger side. Damaged: The pisiform breaks. Patient can’t: Bend the wrist towards the little-finger side without pain. Why: A forearm muscle tendon attaches to it and pulls on the broken bone.
 
@@ -716,7 +1086,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 70. Structure lesson: Pisiform, layer “Clinical reasoning”
+### 107. Structure lesson: Pisiform, layer “Clinical reasoning”
 
 > Injury: Long pressure on the base of the palm, as in long-distance cycling. Damaged: The ulnar nerve beside the pisiform. Patient can’t: Spread and close the fingers strongly; the little finger may feel numb. Why: The nerve passes beside the pisiform and the hook of the hamate into the hand.
 
@@ -726,7 +1096,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 71. Structure lesson: Pisiform, layer “Tutorial questions”
+### 108. Structure lesson: Pisiform, layer “Tutorial questions”
 
 > After a long ride, a cyclist’s little finger feels numb. Predict the nerve affected and where.
 
@@ -736,7 +1106,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 72. Structure lesson: Phalanges of the hand, layer “Key features”
+### 109. Structure lesson: Phalanges of the hand, layer “Key features”
 
 > Base, shaft and head: Each phalanx has a base nearest the palm, a shaft and a head.
 
@@ -746,7 +1116,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 73. Structure lesson: Phalanges of the hand, layer “Clinical reasoning”
+### 110. Structure lesson: Phalanges of the hand, layer “Clinical reasoning”
 
 > Injury: A ball strikes the tip of a straight finger. Damaged: The tendon that straightens the fingertip tears from the distal phalanx, sometimes with a fragment of bone (mallet finger). Patient can’t: Straighten the tip of the finger. Why: Without its tendon, nothing pulls the distal phalanx straight.
 
@@ -756,7 +1126,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 74. Structure lesson: Phalanges of the hand, layer “Tutorial questions”
+### 111. Structure lesson: Phalanges of the hand, layer “Tutorial questions”
 
 > A cricket ball strikes the tip of a straight finger, and the tip now droops. Predict the injury and explain it.
 
@@ -766,7 +1136,17 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 75. Structure lesson: Radius, layer “Clinical reasoning”
+### 112. Structure lesson: Quadriceps femoris, layer “Relations”
+
+> Femoral nerve: A major nerve of the lumbar plexus, to the front of the thigh.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). That the femoral nerve supplies the quadriceps.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 113. Structure lesson: Radius, layer “Clinical reasoning”
 
 > Injury: A young child is lifted or swung by the hand. Damaged: The head of the radius slips partly out of the annular ligament (“pulled elbow”). Patient can’t: Turn the palm up, and the child holds the arm still. Why: The annular ligament normally holds the head in place as it turns.
 
@@ -776,7 +1156,127 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 76. Structure lesson: Temporal bone, layer “Variations”
+### 114. Structure lesson: Rotator cuff, layer “Key features”
+
+> A memory aid for the four is SITS: supraspinatus, infraspinatus, teres minor, subscapularis.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The memory aid SITS.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 115. Structure lesson: Small intestine, layer “Key features”
+
+> Three parts: duodenum, jejunum and ileum, lined with millions of tiny folds and fingers.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The number of villi (“millions”).
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (abdomen chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 116. Structure lesson: Small intestine, layer “Development”
+
+> It develops from the midgut of the embryo.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The development of the small intestine.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (abdomen chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 117. Structure lesson: Small intestine, layer “Clinical reasoning”
+
+> Injury: Damage that flattens the villi. Damaged: The absorptive surface of the small intestine. Patient can’t: Absorb nutrients normally. Why: The surface area for absorption falls sharply.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Conditions that flatten the villi and their effects.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (abdomen chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 118. Structure lesson: Sternocleidomastoid, layer “Development”
+
+> Skeletal muscle of the head develops from general mesoderm; trunk muscles come from somites.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Which embryonic tissue the sternocleidomastoid itself comes from.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 119. Structure lesson: Sternocleidomastoid, layer “Variations”
+
+> Its two heads, sternal and clavicular, can be seen and felt separately low in the neck.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). That the two heads are visible separately.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 120. Structure lesson: Sternocleidomastoid, layer “Clinical reasoning”
+
+> Injury: A baby born with a shortened sternocleidomastoid on one side. Damaged: The sternocleidomastoid (congenital torticollis, wry neck). Patient can’t: Hold the head straight: it tilts to the short side and turns away. Why: The short muscle pulls constantly, tilting to its own side and turning to the opposite.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Congenital torticollis.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 121. Structure lesson: Sternocleidomastoid, layer “Clinical reasoning”
+
+> Injury: Injury to the accessory nerve in the neck. Damaged: The nerve to the sternocleidomastoid and trapezius. Patient can’t: Turn the head strongly to the opposite side, or shrug that shoulder. Why: Both muscles lose their motor supply from cranial nerve XI.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The accessory nerve’s supply to the sternocleidomastoid and trapezius, and the signs of its injury.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 122. Structure lesson: Sternocleidomastoid, layer “Tutorial questions”
+
+> Predict the head position in a baby whose right sternocleidomastoid is short.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). Congenital torticollis.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (the chapter for the muscle’s region)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 123. Structure lesson: Stomach, layer “In one line”
+
+> The J-shaped bag between the oesophagus and the duodenum that holds food, churns it and starts digesting protein.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The stomach’s J shape.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (abdomen chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 124. Structure lesson: Stomach, layer “Where it is”
+
+> It sits in the upper abdomen, under the diaphragm, mostly on the left.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). That the stomach lies mostly on the left.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (abdomen chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 125. Structure lesson: Stomach, layer “Development”
+
+> It develops as a widening of the foregut, the same tube that also gives rise to the lung bud.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). The development of the stomach from the foregut.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (abdomen chapter)
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 126. Structure lesson: Temporal bone, layer “Variations”
 
 > The mastoid process is larger in males.
 
@@ -786,7 +1286,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 77. Structure lesson: Temporal bone, layer “Clinical reasoning”
+### 127. Structure lesson: Temporal bone, layer “Clinical reasoning”
 
 > Injury: Swelling or injury of the facial nerve as it leaves the stylomastoid foramen (as in Bell’s palsy). Damaged: The facial nerve. Patient can’t: Close the eye, smile or raise the eyebrow on that side. Why: The facial nerve controls the muscles of facial expression.
 
@@ -796,7 +1296,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 78. Structure lesson: Metacarpal bones, layer “Development”
+### 128. Structure lesson: Metacarpal bones, layer “Development”
 
 > Each has two ossification centres: one for the shaft, and one for the head (in the first, for the base).
 
@@ -806,7 +1306,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 79. Structure lesson: Metacarpal bones, layer “Variations”
+### 129. Structure lesson: Metacarpal bones, layer “Variations”
 
 > The first metacarpal ossifies like a phalanx, so some anatomists count the thumb as having three phalanges.
 
@@ -816,7 +1316,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 80. Structure lesson: Metacarpal bones, layer “Clinical reasoning”
+### 130. Structure lesson: Metacarpal bones, layer “Clinical reasoning”
 
 > Injury: A punch that lands on a hard object. Damaged: The neck of the fifth metacarpal breaks (“boxer’s fracture”). Patient can’t: Make a fist with a normal knuckle: the little-finger knuckle sinks. Why: The fifth metacarpal is the most mobile of the palm bones and takes the force of a badly aimed punch.
 
@@ -826,7 +1326,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 81. Structure lesson: Metacarpal bones, layer “Clinical reasoning”
+### 131. Structure lesson: Metacarpal bones, layer “Clinical reasoning”
 
 > Injury: A blow along the bent thumb, as in a punch. Damaged: The base of the first metacarpal breaks into the saddle joint (Bennett fracture). Patient can’t: Pinch or touch the thumb to the fingertips without pain. Why: The break enters the saddle joint on which opposition depends.
 
@@ -836,7 +1336,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 82. Structure lesson: Metacarpal bones, layer “Tutorial questions”
+### 132. Structure lesson: Metacarpal bones, layer “Tutorial questions”
 
 > A man punches a wall and the knuckle of his little finger sinks. Predict the injury and explain it.
 
@@ -846,7 +1346,17 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 83. Structure lesson: Trapezium, layer “Development”
+### 133. Structure lesson: Thyroid gland, layer “Where it is”
+
+> Its two lobes wrap round the sides of the trachea, joined by the isthmus in front.
+
+- **What is missing:** Not in OpenStax A&amp;P 2e (chapters 6–17, 19–23 and 25). That the lobes wrap round the sides of the trachea.
+- **Gray’s 1918:** no supporting sentence in the imported chapters.
+- **Confirm in:** a current clinical anatomy textbook, for example Moore, Dalley and Agur, *Clinically Oriented Anatomy*, or Drake, Vogl and Mitchell, *Gray’s Anatomy for Students* (neck chapter), or a current physiology textbook for what its hormones do
+
+☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
+
+### 134. Structure lesson: Trapezium, layer “Development”
 
 > Its single ossification centre appears at about the fifth year.
 
@@ -856,7 +1366,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 84. Structure lesson: Trapezium, layer “Clinical reasoning”
+### 135. Structure lesson: Trapezium, layer “Clinical reasoning”
 
 > Injury: Years of pinching and gripping. Damaged: The joint between the trapezium and the first metacarpal wears (osteoarthritis). Patient can’t: Pinch, open jars or turn keys without pain at the base of the thumb. Why: This saddle joint takes the force of every pinch and grip.
 
@@ -866,7 +1376,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 85. Structure lesson: Trapezoid, layer “Development”
+### 136. Structure lesson: Trapezoid, layer “Development”
 
 > Its single ossification centre appears at about the eighth year.
 
@@ -876,7 +1386,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 86. Structure lesson: Trapezoid, layer “Clinical reasoning”
+### 137. Structure lesson: Trapezoid, layer “Clinical reasoning”
 
 > Injury: A hard bony lump on the back of the hand, at the base of the index and middle fingers. Damaged: Extra bone (a carpal boss) where the trapezoid and capitate meet the second and third metacarpals. Patient can’t: Bend the wrist back fully without pain over the lump. Why: The lump catches the tendons that run over the back of the wrist.
 
@@ -886,7 +1396,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 87. Structure lesson: Triquetrum, layer “Development”
+### 138. Structure lesson: Triquetrum, layer “Development”
 
 > Its single ossification centre appears at about the third year.
 
@@ -896,7 +1406,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 88. Structure lesson: Triquetrum, layer “Clinical reasoning”
+### 139. Structure lesson: Triquetrum, layer “Clinical reasoning”
 
 > Injury: A fall onto the outstretched hand. Damaged: A small chip of bone breaks off the back of the triquetrum: the second most common carpal fracture. Patient can’t: Use the wrist without pain on the back of the little-finger side. Why: Ligaments and nearby bones strike or pull on its back surface as the wrist is forced backwards.
 
@@ -906,7 +1416,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 89. Structure lesson: Triquetrum, layer “Clinical reasoning”
+### 140. Structure lesson: Triquetrum, layer “Clinical reasoning”
 
 > Injury: A twisting fall on the hand. Damaged: The articular disc between the ulna and the triquetrum tears. Patient can’t: Turn the forearm or grip without pain on the little-finger side. Why: The disc unites the lower ends of the radius and ulna, and the triquetrum presses on it.
 
@@ -916,7 +1426,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 90. Structure lesson: Ulna, layer “Relations”
+### 141. Structure lesson: Ulna, layer “Relations”
 
 > Ulnar nerve: Passes behind the medial epicondyle and enters the forearm beside the ulna.
 
@@ -927,7 +1437,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 91. Structure lesson: Ulna, layer “Clinical reasoning”
+### 142. Structure lesson: Ulna, layer “Clinical reasoning”
 
 > Injury: A fall onto the point of the elbow. Damaged: The olecranon breaks. Patient can’t: Straighten the elbow against resistance. Why: The muscle that straightens the elbow (triceps) pulls on the olecranon, drawing the fragment away.
 
@@ -937,7 +1447,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 92. Structure lesson: Vomer, layer “Relations”
+### 143. Structure lesson: Vomer, layer “Relations”
 
 > Sphenoid bone: Its upper border meets the body of the sphenoid.
 
@@ -947,7 +1457,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 93. Structure lesson: Vomer, layer “Development”
+### 144. Structure lesson: Vomer, layer “Development”
 
 > Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).
 
@@ -957,7 +1467,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 94. Structure lesson: Vomer, layer “Development”
+### 145. Structure lesson: Vomer, layer “Development”
 
 > It forms from two thin plates, which are almost completely united by puberty.
 
@@ -967,7 +1477,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 95. Structure lesson: Vomer, layer “Variations”
+### 146. Structure lesson: Vomer, layer “Variations”
 
 > The nasal septum is often bent to one side (a deviated septum).
 
@@ -977,7 +1487,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 96. Structure lesson: Vomer, layer “Clinical reasoning”
+### 147. Structure lesson: Vomer, layer “Clinical reasoning”
 
 > Injury: A septum bent to one side, from development or an injury. Damaged: The bony and cartilage parts of the septum, including the vomer. Patient can’t: Breathe freely through the narrower side. Why: The septum divides the nasal cavity, so bending it narrows one side.
 
@@ -987,7 +1497,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 97. Structure lesson: Vomer, layer “Clinical reasoning”
+### 148. Structure lesson: Vomer, layer “Clinical reasoning”
 
 > Injury: A blow to the nose that breaks the septum. Damaged: The septal cartilage and the vomer. Patient can’t: Breathe evenly through both sides of the nose. Why: The broken septum shifts into one side of the nasal cavity.
 
@@ -997,7 +1507,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 98. Structure lesson: Zygomatic bone, layer “Development”
+### 149. Structure lesson: Zygomatic bone, layer “Development”
 
 > Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).
 
@@ -1007,7 +1517,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 99. Structure lesson: Zygomatic bone, layer “Clinical reasoning”
+### 150. Structure lesson: Zygomatic bone, layer “Clinical reasoning”
 
 > Injury: A punch or blow to the cheek. Damaged: The zygomatic bone or arch breaks and may be pushed inwards. Patient can’t: Open the mouth fully, if the broken arch presses on the jaw beneath. Why: Part of the mandible and chewing muscles lie just deep to the arch.
 
@@ -1017,7 +1527,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 100. Flashcard 2.1 (“Name the highlighted bone.”), layer “Clinical”
+### 151. Flashcard 2.1 (“Name the highlighted bone.”), layer “Clinical”
 
 > Because the sphenoid sinus lies just in front of and below the sella turcica, surgeons can reach a pituitary tumour through the nose and the sphenoid sinus (transsphenoidal surgery), without opening the skull.
 
@@ -1028,7 +1538,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 101. Flashcard 2.1 (“Name the highlighted bone.”), layer “Memory hook”
+### 152. Flashcard 2.1 (“Name the highlighted bone.”), layer “Memory hook”
 
 > “Sphenoid” comes from the Greek for wedge: it is wedged between the other bones of the skull.
 
@@ -1038,7 +1548,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 102. Flashcard 2.2 (“Which bone contains the foramen magnum?”), layer “Clinical”
+### 153. Flashcard 2.2 (“Which bone contains the foramen magnum?”), layer “Clinical”
 
 > Raised pressure inside the skull can push the lowest part of the cerebellum (the tonsils) down through the foramen magnum, compressing the brainstem: “coning”, which can stop breathing.
 
@@ -1049,7 +1559,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 103. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Why”
+### 154. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Why”
 
 > The pterion is where four skull bones meet, and it is the weakest part of the skull. A major branch of the artery that supplies the skull and the coverings of the brain runs on its inner surface, so a blow here can fracture the bone and tear the artery.
 
@@ -1060,7 +1570,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 104. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Go deeper”, point 3
+### 155. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Go deeper”, point 3
 
 > The artery enters the skull through the foramen spinosum.
 
@@ -1071,7 +1581,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 105. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Go deeper”, point 5
+### 156. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Go deeper”, point 5
 
 > It is a branch of the maxillary artery.
 
@@ -1082,7 +1592,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 106. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Clinical”
+### 157. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Clinical”
 
 > A torn artery bleeds between the skull and the dura: an extradural haematoma. The patient may seem well at first, but the growing clot presses on the brain and can kill within hours, so it is a surgical emergency.
 
@@ -1093,7 +1603,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 107. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Exam trap”
+### 158. Flashcard 2.3 (“Which artery lies immediately deep to the pterion?”), layer “Exam trap”
 
 > An extradural haematoma is usually arterial (middle meningeal artery); a subdural haematoma is usually venous (bridging veins).
 
@@ -1103,7 +1613,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 108. Flashcard 2.4 (“Name it: a small, flat, sieve-like part of the ethmoid bone in the roof of the nasal cavity, pierced by openings for olfactory nerve branches.”), layer “Clinical”
+### 159. Flashcard 2.4 (“Name it: a small, flat, sieve-like part of the ethmoid bone in the roof of the nasal cavity, pierced by openings for olfactory nerve branches.”), layer “Clinical”
 
 > A fracture through the cribriform plate can tear the olfactory nerve fibres, causing loss of smell, and can let cerebrospinal fluid leak from the nose.
 
@@ -1114,7 +1624,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 109. Flashcard 2.7 (“Name the highlighted bone.”), layer “Go deeper”, point 2
+### 160. Flashcard 2.7 (“Name the highlighted bone.”), layer “Go deeper”, point 2
 
 > Body: the front of the U.
 
@@ -1124,7 +1634,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 110. Flashcard 2.7 (“Name the highlighted bone.”), layer “Clinical”
+### 161. Flashcard 2.7 (“Name the highlighted bone.”), layer “Clinical”
 
 > Strong pressure on the front of the neck, as in strangulation. The hyoid bone may break. The hyoid moves with the tongue, larynx and pharynx in swallowing and speaking.
 
@@ -1134,7 +1644,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 111. Flashcard 2.12 (“Name the highlighted bone.”), layer “Go deeper”, point 4
+### 162. Flashcard 2.12 (“Name the highlighted bone.”), layer “Go deeper”, point 4
 
 > Upper and side edges: meet the frontal bone above and the maxillae at the sides.
 
@@ -1144,7 +1654,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 112. Flashcard 2.12 (“Name the highlighted bone.”), layer “Clinical”
+### 163. Flashcard 2.12 (“Name the highlighted bone.”), layer “Clinical”
 
 > A blow to the nose. The nasal bones break: these are the bones damaged when the nose is broken. The thin bones form the bony bridge, so a blow drives them sideways or inwards.
 
@@ -1154,7 +1664,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 113. Flashcard 2.14 (“Which auditory ossicle is attached to the oval window?”), layer “Go deeper”, point 5
+### 164. Flashcard 2.14 (“Which auditory ossicle is attached to the oval window?”), layer “Go deeper”, point 5
 
 > Footplate of the stapes: its flat base fills the oval window.
 
@@ -1164,7 +1674,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 114. Flashcard 2.14 (“Which auditory ossicle is attached to the oval window?”), layer “Clinical”
+### 165. Flashcard 2.14 (“Which auditory ossicle is attached to the oval window?”), layer “Clinical”
 
 > Abnormal bone growth fixes the stapes in the oval window (otosclerosis). The stapes must move to send vibrations through the oval window.
 
@@ -1174,7 +1684,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 115. Flashcard 2.18 (“Name the highlighted bone.”), layer “Clinical”
+### 166. Flashcard 2.18 (“Name the highlighted bone.”), layer “Clinical”
 
 > A septum bent to one side, from development or an injury. It affects the bony and cartilage parts of the septum, including the vomer. The septum divides the nasal cavity, so bending it narrows one side.
 
@@ -1184,7 +1694,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 116. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Why”
+### 167. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Why”
 
 > The scaphoid links the proximal and distal rows of carpal bones and meets the radius directly, so it takes much of the force of a fall on the outstretched hand. It lies in the floor of the anatomical snuffbox, so tenderness there points to it.
 
@@ -1195,7 +1705,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 117. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Explain simpler”
+### 168. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Explain simpler”
 
 > The scaphoid is the wrist bone on the thumb side that meets the radius, so a fall onto the hand loads it heavily. It sits under the small hollow at the base of the thumb, so pain there suggests it is broken.
 
@@ -1206,7 +1716,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 118. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 2
+### 169. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 2
 
 > Its blood supply (from branches of the radial artery) enters mainly at the distal end.
 
@@ -1217,7 +1727,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 119. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 3
+### 170. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 3
 
 > So a fracture across the waist can cut off the supply to the proximal pole.
 
@@ -1227,7 +1737,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 120. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 4
+### 171. Flashcard 2.20 (“A student falls on an outstretched hand and has tenderness in the anatomical snuffbox. Which bone is most likely fractured?”), layer “Go deeper”, point 4
 
 > Risk: avascular necrosis and non-union of the proximal fragment.
 
@@ -1237,7 +1747,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 121. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Why”
+### 172. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Why”
 
 > The ulnar nerve runs in a shallow groove on the back of the medial epicondyle, covered only by skin and fascia. That is why a knock there sends tingling down the little-finger side of the hand.
 
@@ -1248,7 +1758,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 122. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Explain simpler”
+### 173. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Explain simpler”
 
 > The nerve passes right behind the bony bump on the inner side of the elbow, just under the skin, so hitting it makes the little finger tingle.
 
@@ -1259,7 +1769,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 123. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 2
+### 174. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 2
 
 > The nerve enters the forearm between the two heads of flexor carpi ulnaris.
 
@@ -1270,7 +1780,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 124. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 3
+### 175. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 3
 
 > It supplies most of the small (intrinsic) muscles of the hand.
 
@@ -1281,7 +1791,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 125. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 4
+### 176. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Go deeper”, point 4
 
 > It gives sensation to the little finger and the medial half of the ring finger.
 
@@ -1292,7 +1802,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 126. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Clinical”
+### 177. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Clinical”
 
 > A fracture of the medial epicondyle, or long pressure on the elbow, can injure the ulnar nerve, weakening the small muscles of the hand and numbing the little finger.
 
@@ -1303,7 +1813,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 127. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Memory hook”
+### 178. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Memory hook”
 
 > The “funny bone” is not a bone: it is the ulnar nerve behind the medial epicondyle.
 
@@ -1314,7 +1824,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 128. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Exam trap”
+### 179. Flashcard 2.21 (“Which nerve lies directly posterior to the medial epicondyle of the humerus?”), layer “Exam trap”
 
 > Only the ulnar nerve lies behind the medial epicondyle: the median nerve crosses in front of the elbow, and the radial nerve lies on the lateral side.
 
@@ -1325,7 +1835,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 129. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Why”
+### 180. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Why”
 
 > The surgical neck is where the expanded upper end of the humerus narrows into the shaft, and it is a common site of fracture. The axillary nerve wraps around the back of this neck, so a fracture here can stretch or tear it.
 
@@ -1336,7 +1846,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 130. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Explain simpler”
+### 181. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Explain simpler”
 
 > The surgical neck is the narrow part just below the ball of the humerus. A nerve wraps around it, so breaking the bone there can damage the nerve.
 
@@ -1347,7 +1857,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 131. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 2
+### 182. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 2
 
 > The posterior circumflex humeral artery runs around the neck with the nerve.
 
@@ -1358,7 +1868,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 132. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 3
+### 183. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 3
 
 > The axillary nerve supplies the deltoid and teres minor.
 
@@ -1369,7 +1879,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 133. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 4
+### 184. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 4
 
 > It supplies the skin over the lower deltoid (the “regimental badge” area).
 
@@ -1380,7 +1890,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 134. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 5
+### 185. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Go deeper”, point 5
 
 > Lower down, the radial nerve lies in the radial groove, at risk in shaft fractures.
 
@@ -1391,7 +1901,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 135. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Clinical”
+### 186. Flashcard 2.24 (“Which nerve is most at risk in a fracture of the surgical neck of the humerus?”), layer “Clinical”
 
 > Damage to the axillary nerve weakens the deltoid, so raising the arm out to the side is weak, with numbness over the lower outer shoulder.
 
@@ -1402,7 +1912,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 136. Flashcard 2.25 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 2
+### 187. Flashcard 2.25 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 2
 
 > Carries nine tendons from three muscles, plus the median nerve.
 
@@ -1413,7 +1923,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 137. Flashcard 2.25 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 3
+### 188. Flashcard 2.25 (“What forms the roof of the carpal tunnel?”), layer “Go deeper”, point 3
 
 > Flexor digitorum superficialis (four), flexor digitorum profundus (four) and flexor pollicis longus (one).
 
@@ -1424,7 +1934,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 138. Flashcard 2.25 (“What forms the roof of the carpal tunnel?”), layer “Clinical”
+### 189. Flashcard 2.25 (“What forms the roof of the carpal tunnel?”), layer “Clinical”
 
 > Swelling in the tunnel compresses the median nerve: carpal tunnel syndrome, with pain or numbness and weakness in the parts of the hand it supplies. The bony walls and tough roof cannot stretch, so any swelling squeezes the nerve.
 
@@ -1435,7 +1945,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 139. Flashcard 2.26 (“Name the highlighted bone.”), layer “Go deeper”, point 1
+### 190. Flashcard 2.26 (“Name the highlighted bone.”), layer “Go deeper”, point 1
 
 > Rounded head: its upper end is rounded, fitting a hollow formed by the scaphoid and lunate.
 
@@ -1445,7 +1955,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 140. Flashcard 2.26 (“Name the highlighted bone.”), layer “Clinical”
+### 191. Flashcard 2.26 (“Name the highlighted bone.”), layer “Clinical”
 
 > A violent fall onto the hand with the wrist bent far back. The capitate and the rest of the hand dislocate backwards around the lunate (perilunate dislocation). The lunate stays attached to the radius while the ligaments around it tear.
 
@@ -1455,7 +1965,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 141. Flashcard 2.28 (“Name the highlighted bone.”), layer “Clinical”
+### 192. Flashcard 2.28 (“Name the highlighted bone.”), layer “Clinical”
 
 > A golf club, bat or racquet handle strikes the base of the palm. The hook of the hamate breaks. The handle presses directly on the hook, which projects forwards.
 
@@ -1465,7 +1975,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 142. Flashcard 2.29 (“How many phalanges does the thumb have?”), layer “Go deeper”, point 5
+### 193. Flashcard 2.29 (“How many phalanges does the thumb have?”), layer “Go deeper”, point 5
 
 > Base, shaft and head: each phalanx has a base nearest the palm, a shaft and a head.
 
@@ -1475,7 +1985,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 143. Flashcard 2.31 (“Name the highlighted bone.”), layer “Clinical”
+### 194. Flashcard 2.31 (“Name the highlighted bone.”), layer “Clinical”
 
 > A fall onto the outstretched hand with the wrist bent far back. The lunate dislocates forwards, into the carpal tunnel. The dislocated bone takes up space in the tunnel and presses on the median nerve.
 
@@ -1485,7 +1995,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 144. Flashcard 2.32 (“Which metacarpals are firmly anchored and do not move?”), layer “Clinical”
+### 195. Flashcard 2.32 (“Which metacarpals are firmly anchored and do not move?”), layer “Clinical”
 
 > A punch that lands on a hard object. The neck of the fifth metacarpal breaks (“boxer’s fracture”). The fifth metacarpal is the most mobile of the palm bones and takes the force of a badly aimed punch.
 
@@ -1495,7 +2005,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 145. Flashcard 2.33 (“Name the highlighted bone.”), layer “Clinical”
+### 196. Flashcard 2.33 (“Name the highlighted bone.”), layer “Clinical”
 
 > A fall onto the heel of the hand on the little-finger side. The pisiform breaks. A forearm muscle tendon attaches to it and pulls on the broken bone.
 
@@ -1505,7 +2015,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 146. Flashcard 2.38 (“Name the highlighted bone.”), layer “Clinical”
+### 197. Flashcard 2.38 (“Name the highlighted bone.”), layer “Clinical”
 
 > A hard bony lump on the back of the hand, at the base of the index and middle fingers. There is extra bone (a carpal boss) where the trapezoid and capitate meet the second and third metacarpals. The lump catches the tendons that run over the back of the wrist.
 
@@ -1515,7 +2025,7 @@
 
 ☐ Confirmed  ☐ Change  ☐ Remove  Source (edition, page): ____________________  Initials and date: ________
 
-### 147. Flashcard 2.39 (“Name the highlighted bone.”), layer “Clinical”
+### 198. Flashcard 2.39 (“Name the highlighted bone.”), layer “Clinical”
 
 > A twisting fall on the hand. The articular disc between the ulna and the triquetrum tears. The disc unites the lower ends of the radius and ulna, and the triquetrum presses on it.
 

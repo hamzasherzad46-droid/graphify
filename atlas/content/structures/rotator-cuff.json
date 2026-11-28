@@ -1,0 +1,333 @@
+{
+ "reviewStatus": "draft",
+ "id": "rotator-cuff",
+ "title": "Rotator cuff",
+ "part": "supraspinatus_muscle_left",
+ "parts": [
+  "supraspinatus_muscle_left",
+  "supraspinatus_muscle_right",
+  "infraspinatus_muscle_left",
+  "infraspinatus_muscle_right",
+  "teres_minor_muscle_left",
+  "teres_minor_muscle_right",
+  "subscapularis_muscle_left",
+  "subscapularis_muscle_right"
+ ],
+ "topic": "muscles",
+ "source": "OpenStax A&P 2e: 11.5 Muscles of the Pectoral Girdle and Upper Limbs; 9.6 Anatomy of Selected Synovial Joints",
+ "oneLine": {
+  "main": {
+   "t": "Four short muscles from the scapula whose tendons ring the shoulder joint and hold the humeral head in its socket.",
+   "src": [
+    "s11-5#fs-id2421860",
+    "s9-6#fs-id2429784"
+   ]
+  },
+  "simpler": {
+   "t": "The rotator cuff is a ring of four muscles that keeps your shoulder joint together.",
+   "src": [
+    "s9-6#fs-id2429784"
+   ]
+  },
+  "deeper": {
+   "t": "They act as “dynamic ligaments”, adjusting their pull to give the shoulder joint its main support.",
+   "src": [
+    "s9-6#fs-id2429784"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "All four arise from the scapula and attach to the greater or lesser tubercle of the humerus.",
+    "src": [
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "t": "Their tendons encircle the head of the humerus and fuse with the joint capsule in front, above and behind.",
+    "src": [
+     "s9-6#fs-id2429784"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They run from your shoulder blade to the top of your arm bone, wrapping round the joint.",
+   "src": [
+    "s9-6#fs-id2429784"
+   ]
+  },
+  "deeper": {
+   "t": "The fused tendons thicken the capsule. That thickening is what is called the rotator cuff.",
+   "src": [
+    "s9-6#fs-id2429784"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Supraspinatus",
+    "t": "Above the spine of the scapula, from the supraspinous fossa. It abducts the arm.",
+    "src": [
+     "s11-5#fs-id2501482",
+     "s11-5#fig-ch11_05_03"
+    ]
+   },
+   {
+    "name": "Infraspinatus",
+    "t": "Below the spine of the scapula, from the infraspinous fossa. It laterally rotates the arm.",
+    "src": [
+     "s11-5#fs-id2501482",
+     "s11-5#fig-ch11_05_03"
+    ]
+   },
+   {
+    "name": "Teres minor",
+    "t": "From the lateral border of the scapula. It laterally rotates and extends the arm.",
+    "src": [
+     "s11-5#fs-id2501482",
+     "s11-5#fig-ch11_05_03"
+    ]
+   },
+   {
+    "name": "Subscapularis",
+    "t": "From the front of the scapula (subscapular fossa). It medially rotates the arm.",
+    "src": [
+     "s11-5#fs-id2501482",
+     "s11-5#fig-ch11_05_03"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Three are on the back of the shoulder blade and one is on its front.",
+   "src": [
+    "s11-5#fs-id2501482",
+    "s11-5#fig-ch11_05_03"
+   ]
+  },
+  "deeper": {
+   "t": "A memory aid for the four is SITS: supraspinatus, infraspinatus, teres minor, subscapularis.",
+   "src": [
+    "s11-5#fs-id2421860"
+   ],
+   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The memory aid SITS."
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "The shoulder has the largest range of motion of any joint, at the cost of stability. Muscles give its main support.",
+    "src": [
+     "s9-6#fs-id2305343",
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "t": "Constant small adjustments in their pull keep the humeral head centred in the glenoid cavity.",
+    "src": [
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "t": "Two bursae, subacromial and subscapular, stop the tendons rubbing on the scapula.",
+    "src": [
+     "s9-6#fs-id2429784"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They are like living ligaments: they tighten as needed to keep the joint steady.",
+   "src": [
+    "s9-6#fs-id2429784"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "muscle",
+    "name": "Deltoid",
+    "t": "Lies over the cuff, capping the shoulder. It is the main abductor of the arm.",
+    "src": [
+     "s11-5#fs-id2501482"
+    ]
+   },
+   {
+    "kind": "bursa",
+    "name": "Subacromial bursa",
+    "t": "Sits between the cuff tendons and the acromion, reducing friction.",
+    "src": [
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "kind": "bone",
+    "name": "Greater and lesser tubercles",
+    "t": "Bony attachment sites on the humerus for muscles acting across the shoulder.",
+    "src": [
+     "s8-2#fs-id2110691",
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Teres major",
+    "t": "Lies below the teres minor but is not part of the cuff. It extends and medially rotates the arm.",
+    "src": [
+     "s11-5#fs-id2501482"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "Glenohumeral joint",
+    "t": "The joint the cuff supports. Its glenoid cavity is about a third the size of the humeral head.",
+    "src": [
+     "s9-6#fs-id2305343",
+     "s9-6#fs-id1231336"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "The cuff lies under the deltoid and is protected from the acromion by a bursa.",
+   "src": [
+    "s11-5#fs-id2501482",
+    "s9-6#fs-id2429784"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Limb muscles, including these, develop from general mesoderm. Many myoblasts fuse to make each fibre.",
+    "src": [
+     "s10-9#fs-id1959103"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "Repeated use of the arm in abduction, as in throwing, swimming or racquet sports, can wear and tear the cuff.",
+    "src": [
+     "s9-6#fs-id1894060"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Years of throwing fast pitches overhead.",
+    "damaged": "The rotator cuff tendons, which become pinched and inflamed and may tear from the bone.",
+    "cannotDo": "Raise the arm overhead without pain, or with full strength.",
+    "why": "Repeated overhead movement squeezes the tendons beneath the acromion.",
+    "src": [
+     "s11-5#fs-id2421860",
+     "s9-6#fs-id1894060"
+    ]
+   },
+   {
+    "injury": "A fall onto the hand with the arm fully abducted.",
+    "damaged": "The shoulder joint, which dislocates downwards (inferiorly).",
+    "cannotDo": "Move the arm at the shoulder.",
+    "why": "The cuff and ligaments support the joint in front, above and behind, but not below.",
+    "src": [
+     "s9-6#fs-id1894060"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why most shoulder dislocations are inferior.",
+    "model": [
+     "The humeral head is supported in front, above and behind.",
+     "This support comes from the rotator cuff and ligaments.",
+     "Below, the joint has little support.",
+     "So a force on the fully abducted arm drives the head downwards."
+    ],
+    "src": [
+     "s9-6#fs-id1894060",
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the actions of the infraspinatus and the subscapularis.",
+    "model": [
+     "Both are rotator cuff muscles from the scapula.",
+     "The infraspinatus lies behind and laterally rotates the arm.",
+     "The subscapularis lies in front and medially rotates it.",
+     "So they are antagonists for rotation, while both steady the joint."
+    ],
+    "src": [
+     "s11-5#fs-id2501482",
+     "s11-1#fs-id2260527",
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict which movements hurt in a baseball pitcher with an inflamed rotator cuff.",
+    "model": [
+     "Bringing the arm overhead to throw.",
+     "The tendons are pinched in this position.",
+     "Repeated movement inflames them further.",
+     "A tendon may eventually tear away from the bone."
+    ],
+    "src": [
+     "s11-5#fs-id2421860",
+     "s9-6#fs-id1894060"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which muscle is not part of the rotator cuff?",
+   "options": [
+    "Supraspinatus",
+    "Teres minor",
+    "Teres major",
+    "Subscapularis"
+   ],
+   "answer": 2,
+   "why": "The cuff is the supraspinatus, infraspinatus, teres minor and subscapularis. The teres major is not part of it.",
+   "src": [
+    "s11-5#fs-id2421860"
+   ]
+  },
+  {
+   "stem": "Which rotator cuff muscle medially rotates the arm?",
+   "options": [
+    "Infraspinatus",
+    "Subscapularis",
+    "Teres minor",
+    "Supraspinatus"
+   ],
+   "answer": 1,
+   "why": "The subscapularis, on the front of the scapula, medially rotates the arm.",
+   "src": [
+    "s11-5#fs-id2501482"
+   ]
+  },
+  {
+   "stem": "What gives the shoulder joint its main support?",
+   "options": [
+    "Its deep bony socket",
+    "The joint capsule alone",
+    "The rotator cuff muscles",
+    "The biceps brachii"
+   ],
+   "answer": 2,
+   "why": "The rotator cuff muscles act as dynamic ligaments and give the main support.",
+   "src": [
+    "s9-6#fs-id2429784"
+   ]
+  }
+ ]
+}

@@ -289,6 +289,7 @@
   "DQ": "The name of an HLA class II molecule (21.7).",
   "DR": "The name of an HLA class II molecule (21.7).",
   "McKinley": "A name (Mount McKinley, now Denali).",
-  "ATPases": "As ATPase: a word formed from ATP; ATP itself is written out."
+  "ATPases": "As ATPase: a word formed from ATP; ATP itself is written out.",
+  "SITS": "A memory aid spelled out in the same sentence (supraspinatus, infraspinatus, teres minor, subscapularis)."
  }
 }

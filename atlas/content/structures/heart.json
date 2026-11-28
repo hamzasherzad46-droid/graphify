@@ -1,0 +1,377 @@
+{
+ "reviewStatus": "draft",
+ "id": "heart",
+ "title": "Heart",
+ "part": "left_ventricle",
+ "parts": [
+  "anterior_papillary_muscle_of_right_ventricle",
+  "anterior_semilunar_leaflet_of_pulmonary_valve",
+  "inferior_leaflet_of_right_atrioventricular_valve",
+  "inferior_papillary_muscle_of_left_ventricle",
+  "inferior_papillary_muscle_of_right_ventricle",
+  "left_atrium",
+  "left_coronary_leaflet",
+  "left_semilunar_leaflet_of_pulmonary_valve",
+  "left_ventricle",
+  "non_coronary_leaflet",
+  "posterior_leaflet_of_left_atrioventricular_valve",
+  "right_atrium",
+  "right_coronary_leaflet",
+  "right_semilunar_leaflet_of_pulmonary_valve",
+  "right_ventricle",
+  "septal_leaflet_of_right_atrioventricular_valve",
+  "septal_papillary_muscle_of_right_ventricle"
+ ],
+ "topic": "heart",
+ "source": "OpenStax A&P 2e: 19.1 Heart Anatomy; 19.5 Development of the Heart",
+ "oneLine": {
+  "main": {
+   "t": "The four-chambered muscular pump in the middle of the chest that drives blood round the lungs and the body.",
+   "src": [
+    "s19-1#fs-id1892589",
+    "s19-1#fs-id1478856",
+    "s19-1#fs-id2767147"
+   ]
+  },
+  "simpler": {
+   "t": "The heart is a pump about the size of your fist. It pushes blood all round your body.",
+   "src": [
+    "s19-1#fs-id2694723",
+    "s19-1#fs-id1478856"
+   ]
+  },
+  "deeper": {
+   "t": "The right side of the heart feeds the pulmonary circuit; the left side feeds the systemic circuit.",
+   "src": [
+    "s19-1#fs-id2767147",
+    "s19-1#fs-id1236860"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It lies in the mediastinum, between the lungs, inside the pericardial sac.",
+    "src": [
+     "s19-1#fs-id1892589"
+    ]
+   },
+   {
+    "t": "Its base, where the great vessels attach, is at the level of the third costal cartilage.",
+    "src": [
+     "s19-1#fs-id1892589"
+    ]
+   },
+   {
+    "t": "Its apex lies just left of the sternum, between the fourth and fifth ribs near their cartilages.",
+    "src": [
+     "s19-1#fs-id1892589"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits behind your breastbone, pointing down and to the left.",
+   "src": [
+    "s19-1#fs-id1892589"
+   ]
+  },
+  "deeper": {
+   "t": "Its right side is turned forwards and its left side backwards. The left lung has a notch for it.",
+   "src": [
+    "s19-1#fs-id1892589",
+    "s22-2#fs-id2627237"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Atria",
+    "t": "The two upper chambers. They receive blood and push it into the ventricles.",
+    "src": [
+     "s19-1#fs-id1478856"
+    ]
+   },
+   {
+    "name": "Ventricles",
+    "t": "The two lower chambers, the main pumps: right to the lungs, left to the body.",
+    "src": [
+     "s19-1#fs-id1478856"
+    ]
+   },
+   {
+    "name": "Valves",
+    "t": "Tricuspid and mitral between atria and ventricles; pulmonary and aortic at the exits.",
+    "src": [
+     "s19-1#fs-id2718087",
+     "s19-1#fs-id2268819"
+    ]
+   },
+   {
+    "name": "Septa",
+    "t": "Walls between the chambers: interatrial, interventricular and atrioventricular.",
+    "src": [
+     "s19-1#fs-id2301176",
+     "s19-1#fs-id1422157",
+     "s19-1#fs-id2268819"
+    ]
+   },
+   {
+    "name": "Myocardium",
+    "t": "The thick middle layer of the wall, made of cardiac muscle that pumps the blood.",
+    "src": [
+     "s19-1#fs-id2062267",
+     "s19-1#fs-id2122250"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Four chambers, four one-way valves and a thick muscle wall.",
+   "src": [
+    "s19-1#fs-id1478856",
+    "s19-1#fs-id2718087"
+   ]
+  },
+  "deeper": {
+   "t": "Its muscle cells swirl round the chambers in figure-of-eight patterns, which helps it pump efficiently.",
+   "src": [
+    "s19-1#fs-id2062267"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "The left ventricle’s wall is much thicker than the right’s, to pump against the higher resistance of the systemic circuit.",
+    "src": [
+     "s19-1#fs-id2183171"
+    ]
+   },
+   {
+    "t": "Papillary muscles tighten the chordae tendineae as the ventricles contract, so the valve flaps cannot blow back.",
+    "src": [
+     "s19-1#fs-id2765308",
+     "s19-1#fs-id1534517"
+    ]
+   },
+   {
+    "t": "The semilunar valves are pockets that fill with blood flowing back, sealing the exits.",
+    "src": [
+     "s19-1#fs-id2541385"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Thick walls for pumping hard, and valves that let blood go only one way.",
+   "src": [
+    "s19-1#fs-id2183171",
+    "s19-1#fs-id2718087"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "membrane",
+    "name": "Pericardium",
+    "t": "A tough fibrous sac with a serous lining that protects the heart and holds it in place.",
+    "src": [
+     "s19-1#fs-id2418328"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Aorta",
+    "t": "Leaves the left ventricle through the aortic valve, carrying blood to the body.",
+    "src": [
+     "s19-1#fs-id2663012",
+     "s19-1#fs-id1236860"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Pulmonary trunk",
+    "t": "Leaves the right ventricle and divides into the right and left pulmonary arteries.",
+    "src": [
+     "s19-1#fs-id1236860"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Coronary arteries",
+    "t": "The first branches of the aorta. They supply the heart muscle itself.",
+    "src": [
+     "s19-1#fs-id1247110"
+    ]
+   },
+   {
+    "kind": "vein",
+    "name": "Pulmonary veins",
+    "t": "Bring oxygen-rich blood from the lungs into the left atrium.",
+    "src": [
+     "s19-1#fs-id1236860",
+     "s19-1#fs-id2769216"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Big vessels leave from its top, and its own arteries wrap round its surface.",
+   "src": [
+    "s19-1#fs-id1892589",
+    "s19-1#fs-id1247110"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It is the first organ to work, beating from about day 21 or 22 after fertilisation.",
+    "src": [
+     "s19-5#fs-id2058606"
+    ]
+   },
+   {
+    "t": "It forms from mesoderm as a tube, which folds into an S shape between days 23 and 28.",
+    "src": [
+     "s19-5#fs-id2485730",
+     "s19-5#fs-id1364320"
+    ]
+   },
+   {
+    "t": "In the fetus, the foramen ovale lets blood pass from the right atrium to the left. It closes at birth.",
+    "src": [
+     "s19-1#fs-id2301176"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "As many as 20–25 percent of people have a patent foramen ovale, mostly without symptoms.",
+    "src": [
+     "s19-1#fs-id2587120"
+    ]
+   },
+   {
+    "t": "An endurance athlete’s heart can be much larger than average, as exercise adds myofilaments.",
+    "src": [
+     "s19-1#fs-id2694723"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A coronary artery blocked by atherosclerotic plaque.",
+    "damaged": "The heart muscle the artery supplies, which dies (myocardial infarction).",
+    "cannotDo": "Keep the heart pumping normally; there is often sudden pain beneath the sternum.",
+    "why": "Without blood and oxygen, the cardiac muscle cells die.",
+    "src": [
+     "s19-1#fs-id1289761",
+     "s19-1#fs-id2351428"
+    ]
+   },
+   {
+    "injury": "Fluid or blood building up quickly in the pericardial cavity.",
+    "damaged": "The heart’s filling (cardiac tamponade).",
+    "cannotDo": "Fill and empty the heart fully: less blood is pumped with each beat.",
+    "why": "The fluid presses on the heart and stops it relaxing fully between beats.",
+    "src": [
+     "s19-1#fs-id2988974"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the left ventricle’s wall is thicker than the right’s.",
+    "model": [
+     "Both ventricles pump the same amount of blood per beat.",
+     "The left pumps into the long systemic circuit, with high resistance.",
+     "The right pumps into the short pulmonary circuit, with low resistance.",
+     "So the left must generate much more pressure."
+    ],
+    "src": [
+     "s19-1#fs-id2183171"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the atrioventricular and semilunar valves.",
+    "model": [
+     "Atrioventricular valves lie between atria and ventricles: tricuspid on the right, mitral on the left.",
+     "They are held by chordae tendineae and papillary muscles.",
+     "Semilunar valves guard the pulmonary trunk and aorta.",
+     "They are pocket-like, with no chordae tendineae or papillary muscles."
+    ],
+    "src": [
+     "s19-1#fs-id2718087",
+     "s19-1#fs-id2541385",
+     "s19-1#fs-id2326948"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict what happens if chordae tendineae on the mitral valve break.",
+    "model": [
+     "The cusps are no longer held as the ventricle contracts.",
+     "A cusp is forced backwards into the atrium (prolapse).",
+     "Blood flows back into the left atrium (regurgitation).",
+     "A heart murmur is heard with a stethoscope."
+    ],
+    "src": [
+     "s19-1#fs-id2266265",
+     "s19-1#fs-id1932336"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which chamber pumps blood into the aorta?",
+   "options": [
+    "Right atrium",
+    "Right ventricle",
+    "Left atrium",
+    "Left ventricle"
+   ],
+   "answer": 3,
+   "why": "The left ventricle ejects blood into the aorta through the aortic semilunar valve.",
+   "src": [
+    "s19-1#fs-id2663012"
+   ]
+  },
+  {
+   "stem": "Which valve lies between the left atrium and the left ventricle?",
+   "options": [
+    "Mitral valve",
+    "Tricuspid valve",
+    "Pulmonary valve",
+    "Aortic valve"
+   ],
+   "answer": 0,
+   "why": "The mitral (bicuspid) valve guards the opening between the left atrium and ventricle.",
+   "src": [
+    "s19-1#fs-id2326948"
+   ]
+  },
+  {
+   "stem": "Which vessels carry oxygen-rich blood into the heart?",
+   "options": [
+    "Venae cavae",
+    "Pulmonary veins",
+    "Pulmonary arteries",
+    "Coronary sinus"
+   ],
+   "answer": 1,
+   "why": "The pulmonary veins return highly oxygenated blood from the lungs to the left atrium.",
+   "src": [
+    "s19-1#fs-id1236860"
+   ]
+  }
+ ]
+}

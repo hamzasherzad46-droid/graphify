@@ -1,0 +1,293 @@
+{
+ "topic": "digestive",
+ "cards": [
+  {
+   "reviewStatus": "draft",
+   "id": "or-liver-supply",
+   "topic": "digestive",
+   "type": "supply",
+   "level": "core",
+   "structureId": "liver",
+   "part": "liver",
+   "frontView": false,
+   "objective": "Name the vessel bringing absorbed nutrients to the liver.",
+   "front": "Which vessel brings nutrient-rich blood from the gut to the liver?",
+   "answer": "Hepatic portal vein",
+   "why": {
+    "t": "The hepatic portal vein brings nutrient-rich blood from the gut. It supplies more oxygen than the hepatic artery. Hepatocytes, about 80 percent of its volume, line porous sinusoids and process what the blood brings.",
+    "src": [
+     "s23-6#fs-id1842507",
+     "s23-6#fs-id1257384",
+     "s23-6#fs-id1966736"
+    ]
+   },
+   "simpler": {
+    "t": "Your liver is a big organ under your right ribs. It makes bile and cleans your blood.",
+    "src": [
+     "s23-6#fs-id1907412",
+     "s23-6#fs-id1966736"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Right and left lobes: a large right lobe and a much smaller left lobe.",
+     "src": [
+      "s23-6#fs-id1479465"
+     ]
+    },
+    {
+     "t": "Quadrate and caudate lobes: smaller lobes some anatomists identify within the right lobe.",
+     "src": [
+      "s23-6#fs-id1479465"
+     ]
+    },
+    {
+     "t": "Falciform ligament: a remnant of the umbilical vein that separates the right and left lobes in front.",
+     "src": [
+      "s23-6#fs-id1479465"
+     ]
+    },
+    {
+     "t": "Porta hepatis: the “gate” where the hepatic artery and hepatic portal vein enter.",
+     "src": [
+      "s23-6#fs-id1842507"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A blockage that stops bile reaching the intestine. Without bile, fats are not emulsified and bilirubin does not colour the stool.",
+    "src": [
+     "s23-6#fs-id1884700",
+     "s23-6#fs-id1390455"
+    ]
+   },
+   "trap": {
+    "t": "The portal vein, not the smaller hepatic artery, supplies most of the liver’s oxygen.",
+    "src": [
+     "s23-6#fs-id1842507"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 23.6 Accessory Organs in Digestion: The Liver, Pancreas, and Gallbladder"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "or-pancreas-function",
+   "topic": "digestive",
+   "type": "function",
+   "level": "core",
+   "structureId": "pancreas",
+   "part": "pancreas",
+   "frontView": false,
+   "objective": "Name the islet cells that make glucagon.",
+   "front": "Which pancreatic islet cells make glucagon?",
+   "answer": "Alpha cells",
+   "why": {
+    "t": "In each islet, beta cells (insulin) make up about 75 percent and alpha cells (glucagon) about 20 percent. Insulin lowers blood glucose; glucagon raises it.",
+    "src": [
+     "s17-9#fs-id1977301",
+     "s17-9#tbl-ch18_07"
+    ]
+   },
+   "simpler": {
+    "t": "Your pancreas makes juices to digest food and insulin to manage sugar in your blood.",
+    "src": [
+     "s23-6#fs-id1364084",
+     "s17-9#fs-id1977301"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Head, body and tail: head in the duodenal curve, body extending left, tail at the hilum of the spleen.",
+     "src": [
+      "s23-6#fs-id2094509"
+     ]
+    },
+    {
+     "t": "Acini: grape-like clusters of cells that make pancreatic juice.",
+     "src": [
+      "s23-6#fs-id1836151"
+     ]
+    },
+    {
+     "t": "Pancreatic islets: islands of endocrine cells among the acini (formerly the islets of Langerhans).",
+     "src": [
+      "s23-6#fs-id2022250",
+      "s17-9#fs-id1907359"
+     ]
+    },
+    {
+     "t": "Pancreatic ducts: the main duct joins the bile duct at the hepatopancreatic ampulla.",
+     "src": [
+      "s23-6#fs-id1836151"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Protein-digesting enzymes activated inside the pancreas. Active enzymes digest the pancreatic tissue.",
+    "src": [
+     "s23-6#fs-id1895555"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The symptoms of pancreatitis."
+   },
+   "trap": {
+    "t": "Beta cells make insulin, which lowers blood glucose; alpha cells make glucagon, which raises it.",
+    "src": [
+     "s17-9#fs-id1977301",
+     "s17-9#tbl-ch18_07"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 23.6 Accessory Organs in Digestion; 17.9 The Endocrine Pancreas"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "or-small-intestine-feature",
+   "topic": "digestive",
+   "type": "feature",
+   "level": "core",
+   "structureId": "small-intestine",
+   "part": "jejunum",
+   "frontView": false,
+   "objective": "List the features that enlarge the absorptive surface of the small intestine.",
+   "front": "Which three features enlarge the absorptive surface of the small intestine?",
+   "answer": "Circular folds, villi and microvilli",
+   "why": {
+    "t": "Circular folds, villi and microvilli increase its absorptive surface more than 600-fold. Each villus holds a capillary bed and a lacteal, so absorbed nutrients pass straight into blood or lymph.",
+    "src": [
+     "s23-5#fs-id2020227",
+     "s23-5#fs-id1272744"
+    ]
+   },
+   "simpler": {
+    "t": "Your small intestine is a long, coiled tube that takes the goodness from your food.",
+    "src": [
+     "s23-5#fs-id2142144"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Duodenum: the shortest part, about 25 cm.",
+     "src": [
+      "s23-5#fs-id2271264",
+      "s23-5#fs-id2227124"
+     ]
+    },
+    {
+     "t": "Jejunum: about 0.9 m in life.",
+     "src": [
+      "s23-5#fs-id2311182"
+     ]
+    },
+    {
+     "t": "Ileum: the longest part, about 1.8 m.",
+     "src": [
+      "s23-5#fs-id1921294"
+     ]
+    },
+    {
+     "t": "Circular folds: deep ridges of mucosa and submucosa that make chyme spiral and slow down.",
+     "src": [
+      "s23-5#fs-id1377788"
+     ]
+    },
+    {
+     "t": "Villi and microvilli: finger-like projections and their tiny surface extensions, the brush border.",
+     "src": [
+      "s23-5#fs-id1272744",
+      "s23-5#fs-id810619"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Too little lactase made by the absorptive cells. Bacteria in the large intestine ferment the undigested lactose, making gas.",
+    "src": [
+     "s23-5#fs-id1632981",
+     "s23-5#fs-id1485386"
+    ]
+   },
+   "trap": {
+    "t": "Villi are projections of the mucosa; microvilli are extensions of single cells (the brush border).",
+    "src": [
+     "s23-5#fs-id1272744",
+     "s23-5#fs-id810619"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 23.5 The Small and Large Intestines"
+  },
+  {
+   "reviewStatus": "draft",
+   "id": "or-stomach-function",
+   "topic": "digestive",
+   "type": "function",
+   "level": "core",
+   "structureId": "stomach",
+   "part": "stomach",
+   "frontView": false,
+   "objective": "Name the gastric cells that secrete acid.",
+   "front": "Which cells of the gastric glands secrete hydrochloric acid?",
+   "answer": "Parietal cells",
+   "why": {
+    "t": "Parietal cells make hydrochloric acid and intrinsic factor; chief cells make pepsinogen. Mucus rich in bicarbonate, tight junctions and fast cell renewal protect the stomach from digesting itself.",
+    "src": [
+     "s23-4#fs-id1959017",
+     "s23-4#fs-id1905668",
+     "s23-4#fs-id1896856"
+    ]
+   },
+   "simpler": {
+    "t": "Your stomach stores a meal and mixes it with acid juices before passing it on.",
+    "src": [
+     "s23-4#fs-id1477027",
+     "s23-4#fs-id1890948"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Cardia: where the oesophagus joins and food enters.",
+     "src": [
+      "s23-4#fs-id2052808"
+     ]
+    },
+    {
+     "t": "Fundus: the dome above and to the left of the cardia, under the diaphragm.",
+     "src": [
+      "s23-4#fs-id2052808"
+     ]
+    },
+    {
+     "t": "Body: the main part of the stomach.",
+     "src": [
+      "s23-4#fs-id2052808"
+     ]
+    },
+    {
+     "t": "Pylorus: the funnel to the duodenum, ending at the pyloric sphincter, which controls emptying.",
+     "src": [
+      "s23-4#fs-id2052808"
+     ]
+    },
+    {
+     "t": "Rugae: large folds of mucosa and submucosa that form when the stomach is empty.",
+     "src": [
+      "s23-4#fs-id2052808"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Long use of non-steroidal anti-inflammatory drugs (NSAIDs) such as aspirin, or Helicobacter pylori infection. Gastric juice eats deeper into the unprotected mucosa.",
+    "src": [
+     "s23-4#fs-id2023452",
+     "s23-4#fs-id1632870",
+     "s23-4#fs-id1070208"
+    ]
+   },
+   "trap": {
+    "t": "Chief cells make pepsinogen; the parietal cells’ acid converts it into pepsin.",
+    "src": [
+     "s23-4#fs-id1905668",
+     "s23-4#fs-id1959017"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 23.4 The Stomach; 23.3"
+  }
+ ]
+}

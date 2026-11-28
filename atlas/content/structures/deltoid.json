@@ -1,0 +1,352 @@
+{
+ "reviewStatus": "draft",
+ "id": "deltoid",
+ "title": "Deltoid",
+ "part": "acromial_part_of_deltoid_muscle_left",
+ "parts": [
+  "clavicular_part_of_deltoid_muscle_left",
+  "clavicular_part_of_deltoid_muscle_right",
+  "acromial_part_of_deltoid_muscle_left",
+  "acromial_part_of_deltoid_muscle_right",
+  "scapular_spinal_part_of_deltoid_muscle_left",
+  "scapular_spinal_part_of_deltoid_muscle_right"
+ ],
+ "topic": "muscles",
+ "source": "OpenStax A&P 2e: 11.5 Muscles of the Pectoral Girdle and Upper Limbs; 9.6; 8.2; 13.4",
+ "oneLine": {
+  "main": {
+   "t": "The thick muscle that makes the rounded shape of the shoulder, and the main muscle that lifts the arm sideways.",
+   "src": [
+    "s11-5#fs-id2501482"
+   ]
+  },
+  "simpler": {
+   "t": "The deltoid is your shoulder muscle. It lifts your arm out to the side.",
+   "src": [
+    "s11-5#fs-id2501482"
+   ]
+  },
+  "deeper": {
+   "t": "It is the major abductor of the arm, and it also helps to flex, extend and rotate it.",
+   "src": [
+    "s11-5#fs-id2501482",
+    "glossary:deltoid"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "The deltoid caps the shoulder joint, covering it from the front, the side and the back.",
+    "src": [
+     "s11-5#fs-id2501482"
+    ]
+   },
+   {
+    "t": "Its fibres arise from the clavicle, the acromion and the spine of the scapula.",
+    "src": [
+     "s11-5#fig-ch11_05_03"
+    ]
+   },
+   {
+    "t": "It inserts on the deltoid tuberosity, about halfway down the outer side of the humerus.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The deltoid’s insertion (deltoid tuberosity of the humerus)."
+   }
+  ],
+  "simpler": {
+   "t": "It wraps over the top of your shoulder, from your collarbone and shoulder blade to your upper arm bone.",
+   "src": [
+    "s11-5#fig-ch11_05_03"
+   ]
+  },
+  "deeper": {
+   "t": "Its origin follows the insertion of the trapezius on the clavicle, acromion and scapular spine.",
+   "src": [
+    "s11-5#fig-ch11_05_03",
+    "s11-5#tbl-ch11_08"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Clavicular (front) part",
+    "t": "Arises from the clavicle. It helps flex and medially rotate the arm.",
+    "src": [
+     "s11-5#fig-ch11_05_03",
+     "s11-5#fs-id2501482"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts)."
+   },
+   {
+    "name": "Acromial (middle) part",
+    "t": "Arises from the acromion. It is the part that abducts the arm.",
+    "src": [
+     "s11-5#fig-ch11_05_03",
+     "s11-5#fs-id2501482"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the middle (acromial) fibres are the ones that abduct."
+   },
+   {
+    "name": "Spinal (back) part",
+    "t": "Arises from the spine of the scapula. It helps extend and laterally rotate the arm.",
+    "src": [
+     "s11-5#fig-ch11_05_03",
+     "s11-5#fs-id2501482"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts)."
+   },
+   {
+    "name": "Shape",
+    "t": "Thick and triangular, like the Greek letter delta, which gives it its name.",
+    "src": [
+     "s11-5#fs-id2501482"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The origin of the name (the Greek letter delta)."
+   }
+  ],
+  "simpler": {
+   "t": "It has a front, a middle and a back part, all meeting on the upper arm.",
+   "src": [
+    "s11-5#fig-ch11_05_03"
+   ]
+  },
+  "deeper": {
+   "t": "Its front and back parts work against each other, so the deltoid can both flex and extend the arm.",
+   "src": [
+    "s11-5#fs-id2501482",
+    "s11-1#fs-id2260527"
+   ],
+   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts)."
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Its fibres arch over the shoulder, so pulling on the humerus lifts the arm away from the body.",
+    "src": [
+     "s11-5#fs-id2501482"
+    ]
+   },
+   {
+    "t": "The front fibres flex and medially rotate the arm. The back fibres extend and laterally rotate it.",
+    "src": [
+     "s11-5#fs-id2501482"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts)."
+   },
+   {
+    "t": "Its thickness gives the shoulder its rounded outline.",
+    "src": [
+     "s11-5#fs-id2501482"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Because it sits over the top of the shoulder, it lifts the arm out to the side.",
+   "src": [
+    "s11-5#fs-id2501482"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "muscle",
+    "name": "Supraspinatus",
+    "t": "A rotator cuff muscle deep to the deltoid. It also abducts the arm.",
+    "src": [
+     "s11-5#fs-id2501482",
+     "s11-5#fs-id2421860"
+    ]
+   },
+   {
+    "kind": "joint",
+    "name": "Glenohumeral (shoulder) joint",
+    "t": "The deltoid covers this joint, formed by the humeral head and the glenoid cavity.",
+    "src": [
+     "s8-2#fs-id2110691",
+     "s11-5#fs-id2501482"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Trapezius",
+    "t": "Attaches to the same line of clavicle, acromion and scapular spine, from above.",
+    "src": [
+     "s11-5#tbl-ch11_08",
+     "s11-5#fig-ch11_05_03"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Pectoralis major",
+    "t": "The axial muscle in front. It shares the job of bringing the arm forwards.",
+    "src": [
+     "s11-5#fs-id2008704",
+     "glossary:pectoralis major"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Axillary nerve",
+    "t": "A branch of the radial nerve that goes to the armpit region. It supplies the deltoid.",
+    "src": [
+     "s13-4#fs-id1472046"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the axillary nerve supplies the deltoid."
+   }
+  ],
+  "simpler": {
+   "t": "It covers the shoulder joint, with the rotator cuff underneath and the trapezius above.",
+   "src": [
+    "s11-5#fs-id2501482",
+    "s9-6#fs-id2429784"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Like other limb muscles, it develops from general mesoderm rather than from somites.",
+    "src": [
+     "s10-9#fs-id1959103"
+    ]
+   },
+   {
+    "t": "Its fibres form when many myoblasts fuse, which is why each fibre has many nuclei.",
+    "src": [
+     "s10-9#fs-id1959103"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "Training adds structural proteins to its fibres, so the muscle grows thicker without adding fibres.",
+    "src": [
+     "s10-6#fs-id1584189"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A fracture of the surgical neck of the humerus after a fall.",
+    "damaged": "The axillary nerve, which winds round the surgical neck to reach the deltoid.",
+    "cannotDo": "Lift the arm out to the side with normal strength.",
+    "why": "Without its nerve, the deltoid cannot contract, so abduction is weak.",
+    "src": [
+     "s8-2#fs-id2030259"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The course of the axillary nerve round the surgical neck, and the weakness that follows its injury."
+   },
+   {
+    "injury": "A shoulder kept still for weeks after an injury.",
+    "damaged": "The deltoid itself, through disuse.",
+    "cannotDo": "Lift the arm with the strength they had before.",
+    "why": "Unused muscle loses structural proteins and shrinks (disuse atrophy).",
+    "src": [
+     "s10-9#fs-id2269378",
+     "s10-9#fs-id1645648"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain how one muscle, the deltoid, can both flex and extend the arm.",
+    "model": [
+     "The deltoid has front, middle and back parts.",
+     "The front part lies in front of the joint and flexes the arm.",
+     "The back part lies behind the joint and extends it.",
+     "So its parts can act as antagonists to each other."
+    ],
+    "src": [
+     "s11-5#fs-id2501482",
+     "s11-1#fs-id2260527"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts)."
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the deltoid and the supraspinatus in abducting the arm.",
+    "model": [
+     "Both abduct the arm.",
+     "The deltoid is the major abductor and lies superficially, capping the shoulder.",
+     "The supraspinatus lies deep, above the spine of the scapula.",
+     "Its tendon is part of the rotator cuff, which steadies the joint."
+    ],
+    "src": [
+     "s11-5#fs-id2501482",
+     "s11-5#fs-id2421860",
+     "s9-6#fs-id2429784"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict what a patient cannot do after a fracture of the surgical neck that injures the axillary nerve.",
+    "model": [
+     "The axillary nerve supplies the deltoid.",
+     "The deltoid cannot contract without it.",
+     "Abduction of the arm becomes weak.",
+     "Over time the unused muscle wastes, flattening the shoulder’s outline."
+    ],
+    "src": [
+     "s8-2#fs-id2030259",
+     "s10-9#fs-id1645648"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The axillary nerve’s supply to the deltoid and the signs of its injury."
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which movement is the deltoid’s main action?",
+   "options": [
+    "Adduction of the arm",
+    "Abduction of the arm",
+    "Supination of the forearm",
+    "Elevation of the scapula"
+   ],
+   "answer": 1,
+   "why": "The deltoid is the major abductor of the arm.",
+   "src": [
+    "s11-5#fs-id2501482"
+   ]
+  },
+  {
+   "stem": "Which of these is not an origin of the deltoid?",
+   "options": [
+    "Clavicle",
+    "Acromion",
+    "Spine of the scapula",
+    "Coracoid process"
+   ],
+   "answer": 3,
+   "why": "The deltoid arises from the clavicle, acromion and spine of the scapula. The coracoid process gives origin to the coracobrachialis.",
+   "src": [
+    "s11-5#fig-ch11_05_03"
+   ]
+  },
+  {
+   "stem": "What gives the shoulder its rounded outline?",
+   "options": [
+    "The deltoid",
+    "The head of the humerus alone",
+    "The trapezius",
+    "The subscapularis"
+   ],
+   "answer": 0,
+   "why": "The thick deltoid creates the rounded lines of the shoulder.",
+   "src": [
+    "s11-5#fs-id2501482"
+   ]
+  }
+ ]
+}

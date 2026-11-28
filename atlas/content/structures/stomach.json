@@ -1,0 +1,330 @@
+{
+ "reviewStatus": "draft",
+ "id": "stomach",
+ "title": "Stomach",
+ "part": "stomach",
+ "parts": [
+  "stomach"
+ ],
+ "topic": "digestive",
+ "source": "OpenStax A&P 2e: 23.4 The Stomach; 23.3",
+ "oneLine": {
+  "main": {
+   "t": "The J-shaped bag between the oesophagus and the duodenum that holds food, churns it and starts digesting protein.",
+   "src": [
+    "s23-4#fs-id2151539",
+    "s23-4#fs-id1899671"
+   ],
+   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The stomach’s J shape."
+  },
+  "simpler": {
+   "t": "Your stomach stores a meal and mixes it with acid juices before passing it on.",
+   "src": [
+    "s23-4#fs-id1477027",
+    "s23-4#fs-id1890948"
+   ]
+  },
+  "deeper": {
+   "t": "It turns food into chyme and releases it into the small intestine a little at a time.",
+   "src": [
+    "s23-4#fs-id1477027"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It lies just below the oesophagus and links it to the duodenum.",
+    "src": [
+     "s23-4#fs-id2151539"
+    ]
+   },
+   {
+    "t": "Its two ends are fixed; the part between them can move and change size.",
+    "src": [
+     "s23-4#fs-id2151539"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits in the upper abdomen, under the diaphragm, mostly on the left.",
+   "src": [
+    "s23-4#fs-id2052808"
+   ],
+   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the stomach lies mostly on the left."
+  },
+  "deeper": {
+   "t": "The lesser omentum ties it to the liver; the greater omentum hangs from its greater curvature.",
+   "src": [
+    "s23-4#fs-id1386858"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Cardia",
+    "t": "Where the oesophagus joins and food enters.",
+    "src": [
+     "s23-4#fs-id2052808"
+    ]
+   },
+   {
+    "name": "Fundus",
+    "t": "The dome above and to the left of the cardia, under the diaphragm.",
+    "src": [
+     "s23-4#fs-id2052808"
+    ]
+   },
+   {
+    "name": "Body",
+    "t": "The main part of the stomach.",
+    "src": [
+     "s23-4#fs-id2052808"
+    ]
+   },
+   {
+    "name": "Pylorus",
+    "t": "The funnel to the duodenum, ending at the pyloric sphincter, which controls emptying.",
+    "src": [
+     "s23-4#fs-id2052808"
+    ]
+   },
+   {
+    "name": "Rugae",
+    "t": "Large folds of mucosa and submucosa that form when the stomach is empty.",
+    "src": [
+     "s23-4#fs-id2052808"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Four regions, from top to bottom: cardia, fundus, body and pylorus.",
+   "src": [
+    "s23-4#fs-id2052808"
+   ]
+  },
+  "deeper": {
+   "t": "It has an extra, inner oblique layer of smooth muscle, so it can churn food vigorously.",
+   "src": [
+    "s23-4#fs-id1990056"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Empty it is about the size of a fist, yet it can stretch to hold about 4 litres.",
+    "src": [
+     "s23-4#fs-id2151539"
+    ]
+   },
+   {
+    "t": "Parietal cells make hydrochloric acid and intrinsic factor; chief cells make pepsinogen.",
+    "src": [
+     "s23-4#fs-id1959017",
+     "s23-4#fs-id1905668"
+    ]
+   },
+   {
+    "t": "Mucus rich in bicarbonate, tight junctions and fast cell renewal protect the stomach from digesting itself.",
+    "src": [
+     "s23-4#fs-id1896856"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It stretches to hold a meal, makes strong acid, and protects itself with a mucus lining.",
+   "src": [
+    "s23-4#fs-id2151539",
+    "s23-4#fs-id1959017",
+    "s23-4#fs-id1896856"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "organ",
+    "name": "Oesophagus",
+    "t": "Enters through the oesophageal hiatus of the diaphragm and joins at the cardia.",
+    "src": [
+     "s23-3#fs-id1984077",
+     "s23-4#fs-id2052808"
+    ]
+   },
+   {
+    "kind": "organ",
+    "name": "Duodenum",
+    "t": "Receives chyme through the pyloric sphincter.",
+    "src": [
+     "s23-4#fs-id2052808"
+    ]
+   },
+   {
+    "kind": "organ",
+    "name": "Liver",
+    "t": "Joined to the lesser curvature by the lesser omentum.",
+    "src": [
+     "s23-4#fs-id1386858"
+    ]
+   },
+   {
+    "kind": "membrane",
+    "name": "Greater omentum",
+    "t": "Runs from the greater curvature to the posterior abdominal wall.",
+    "src": [
+     "s23-4#fs-id1386858"
+    ]
+   },
+   {
+    "kind": "hormone",
+    "name": "Gastrin",
+    "t": "Made mainly by G cells of the pyloric antrum. It increases gastric secretion and emptying.",
+    "src": [
+     "s23-4#fs-id1388512",
+     "s23-4#tbl-ch24_06"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Food comes in from the oesophagus and goes on to the duodenum.",
+   "src": [
+    "s23-4#fs-id2052808"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "It develops as a widening of the foregut, the same tube that also gives rise to the lung bud.",
+    "src": [
+     "s22-7#fs-id2485319"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the stomach from the foregut."
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "Its size and position change with every meal, as it fills, churns and empties.",
+    "src": [
+     "s23-4#fs-id2151539"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Long use of non-steroidal anti-inflammatory drugs (NSAIDs) such as aspirin, or Helicobacter pylori infection.",
+    "damaged": "The mucosal barrier, letting acid erode the lining (a peptic ulcer).",
+    "cannotDo": "Eat without “burning” pain and indigestion.",
+    "why": "Gastric juice eats deeper into the unprotected mucosa.",
+    "src": [
+     "s23-4#fs-id2023452",
+     "s23-4#fs-id1632870",
+     "s23-4#fs-id1070208"
+    ]
+   },
+   {
+    "injury": "An ulcer that erodes right through the stomach wall.",
+    "damaged": "The whole wall, now perforated, and the peritoneum.",
+    "cannotDo": "Recover without surgery.",
+    "why": "Stomach contents leak through the hole and inflame the peritoneum (peritonitis).",
+    "src": [
+     "s23-4#fs-id2071941"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the stomach does not digest itself.",
+    "model": [
+     "A thick mucus coat rich in bicarbonate neutralises acid.",
+     "Tight junctions stop gastric juice getting between the cells.",
+     "Stem cells replace damaged surface cells quickly.",
+     "Together these form the mucosal barrier."
+    ],
+    "src": [
+     "s23-4#fs-id1896856"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare parietal cells and chief cells.",
+    "model": [
+     "Both lie in the gastric glands.",
+     "Parietal cells make hydrochloric acid and intrinsic factor.",
+     "Chief cells make pepsinogen.",
+     "The acid converts pepsinogen into active pepsin."
+    ],
+    "src": [
+     "s23-4#fs-id1959017",
+     "s23-4#fs-id1905668"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict the effect of the enterogastric reflex when the duodenum fills with chyme.",
+    "model": [
+     "Distension of the duodenum triggers the reflex.",
+     "Gastric secretion is inhibited.",
+     "The pyloric sphincter closes.",
+     "So no more chyme enters until the duodenum is ready."
+    ],
+    "src": [
+     "s23-4#fs-id1352023"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which cells secrete hydrochloric acid?",
+   "options": [
+    "Chief cells",
+    "Parietal cells",
+    "G cells",
+    "Mucous neck cells"
+   ],
+   "answer": 1,
+   "why": "Parietal cells produce hydrochloric acid and intrinsic factor.",
+   "src": [
+    "s23-4#fs-id1959017"
+   ]
+  },
+  {
+   "stem": "Which region of the stomach connects to the duodenum?",
+   "options": [
+    "Pylorus",
+    "Fundus",
+    "Cardia",
+    "Body"
+   ],
+   "answer": 0,
+   "why": "The funnel-shaped pylorus connects the stomach to the duodenum.",
+   "src": [
+    "s23-4#fs-id2052808"
+   ]
+  },
+  {
+   "stem": "What causes most peptic ulcers?",
+   "options": [
+    "Too much mucus",
+    "Gastrin deficiency",
+    "Lack of intrinsic factor",
+    "NSAIDs or Helicobacter pylori infection"
+   ],
+   "answer": 3,
+   "why": "The majority of ulcers are caused by NSAIDs or Helicobacter pylori infection.",
+   "src": [
+    "s23-4#fs-id2023452"
+   ]
+  }
+ ]
+}

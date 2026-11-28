@@ -1,0 +1,330 @@
+{
+ "reviewStatus": "draft",
+ "id": "hamstrings",
+ "title": "Hamstrings",
+ "part": "long_head_of_biceps_femoris_left",
+ "parts": [
+  "long_head_of_biceps_femoris_left",
+  "long_head_of_biceps_femoris_right",
+  "short_head_of_biceps_femoris_left",
+  "short_head_of_biceps_femoris_right",
+  "semitendinosus_muscle_left",
+  "semitendinosus_muscle_right",
+  "semimembranosus_muscle_left",
+  "semimembranosus_muscle_right"
+ ],
+ "topic": "muscles",
+ "source": "OpenStax A&P 2e: 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs; 11.1; 13.4",
+ "oneLine": {
+  "main": {
+   "t": "The three long muscles at the back of the thigh that bend the knee and extend the hip.",
+   "src": [
+    "s11-6#fs-id2012638",
+    "glossary:hamstring group"
+   ]
+  },
+  "simpler": {
+   "t": "The hamstrings are the muscles at the back of your thigh. They bend your knee.",
+   "src": [
+    "s11-6#fs-id2012638"
+   ]
+  },
+  "deeper": {
+   "t": "They are the biceps femoris, semitendinosus and semimembranosus, in the posterior compartment of the thigh.",
+   "src": [
+    "s11-6#fs-id2012638"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "The hamstrings fill the posterior compartment of the thigh.",
+    "src": [
+     "s11-6#fs-id2012638"
+    ]
+   },
+   {
+    "t": "All three arise from the ischial tuberosity; the biceps femoris also from the linea aspera and distal femur.",
+    "src": [
+     "s11-6#fig-ch11_06_03"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They run from the bone you sit on to just below the back of the knee.",
+   "src": [
+    "s11-6#fig-ch11_06_03",
+    "s11-6#fs-id2012638"
+   ]
+  },
+  "deeper": {
+   "t": "Their tendons form the borders of the popliteal fossa, the diamond-shaped space behind the knee.",
+   "src": [
+    "s11-6#fs-id2012638"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Biceps femoris",
+    "t": "The lateral hamstring. Besides flexing the knee, it turns the thigh outwards.",
+    "src": [
+     "s11-6#fig-ch11_06_03"
+    ]
+   },
+   {
+    "name": "Semitendinosus",
+    "t": "A medial hamstring with a long tendon. It turns the thigh inwards.",
+    "src": [
+     "s11-6#fig-ch11_06_03"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The long tendon of the semitendinosus."
+   },
+   {
+    "name": "Semimembranosus",
+    "t": "A medial hamstring, deep to the semitendinosus. It turns the thigh inwards.",
+    "src": [
+     "s11-6#fig-ch11_06_03"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the semimembranosus lies deep to the semitendinosus."
+   },
+   {
+    "name": "Popliteal fossa",
+    "t": "The diamond-shaped space behind the knee, bordered by their tendons.",
+    "src": [
+     "s11-6#fs-id2012638"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "One hamstring is on the outer side; two are on the inner side.",
+   "src": [
+    "s11-6#fig-ch11_06_03"
+   ]
+  },
+  "deeper": {
+   "t": "The biceps femoris inserts on the head of the fibula; the other two on the medial side of the tibia.",
+   "src": [],
+   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The insertions of the hamstrings."
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Crossing the back of the knee, they flex the leg, as when kneeling.",
+    "src": [
+     "s11-6#fs-id2012638",
+     "s11-6#fig-ch11_06_03"
+    ]
+   },
+   {
+    "t": "Crossing the back of the hip, they also extend the thigh: they move it down and back.",
+    "src": [
+     "s11-6#fs-id2012638",
+     "s11-6#fig-ch11_06_03"
+    ]
+   },
+   {
+    "t": "They oppose the quadriceps, which extend the knee.",
+    "src": [
+     "s11-1#tbl-ch11_01"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They bend the knee and swing the thigh backwards.",
+   "src": [
+    "s11-6#fs-id2012638",
+    "s11-6#fig-ch11_06_03"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "bone",
+    "name": "Ischial tuberosity",
+    "t": "Their common origin, on the hip bone.",
+    "src": [
+     "s11-6#fig-ch11_06_03"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Quadriceps femoris",
+    "t": "Their antagonists at the knee.",
+    "src": [
+     "s11-1#tbl-ch11_01"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Sciatic nerve",
+    "t": "Runs down the back of the thigh. It is the tibial and fibular nerves combined.",
+    "src": [
+     "s13-4#fs-id1472046"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the sciatic nerve supplies the hamstrings and runs among them."
+   },
+   {
+    "kind": "muscle",
+    "name": "Gastrocnemius",
+    "t": "Arises from the femoral condyles, between the hamstring tendons behind the knee.",
+    "src": [
+     "s11-6#fig-ch11_06_05"
+    ]
+   },
+   {
+    "kind": "space",
+    "name": "Popliteal fossa",
+    "t": "Bounded above by the hamstring tendons.",
+    "src": [
+     "s11-6#fs-id2012638"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They sit behind the thigh, opposite the quadriceps, with the sciatic nerve close by.",
+   "src": [
+    "s11-1#tbl-ch11_01",
+    "s13-4#fs-id1472046"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Like all limb muscles, they develop from general mesoderm, and each fibre forms from many fused myoblasts.",
+    "src": [
+     "s10-9#fs-id1959103"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "Sprinters’ muscles have a high share of fast glycolytic fibres for powerful bursts.",
+    "src": [
+     "s10-6#fs-id2264056"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Fibre types of the hamstrings specifically."
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A sudden sprint, with the hip flexed and the knee straightening.",
+    "damaged": "The hamstrings, which tear (a hamstring strain).",
+    "cannotDo": "Run or bend the knee against resistance without pain.",
+    "why": "They are stretched across two joints while contracting hard to slow the leg.",
+    "src": [
+     "s11-6#fs-id2012638"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Hamstring strains."
+   },
+   {
+    "injury": "Compression of the sciatic nerve or the spinal nerves that form it.",
+    "damaged": "The sciatic nerve (sciatica).",
+    "cannotDo": "Move the hip and leg without pain.",
+    "why": "Compression or irritation of the nerve, or of the spinal nerves forming it, causes sciatica.",
+    "src": [
+     "s13-4#fs-id1472046"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the hamstrings act on both the hip and the knee.",
+    "model": [
+     "They arise from the ischial tuberosity, behind the hip joint.",
+     "They cross the back of the knee to the leg.",
+     "So they extend the thigh at the hip.",
+     "And they flex the leg at the knee."
+    ],
+    "src": [
+     "s11-6#fig-ch11_06_03",
+     "s11-6#fs-id2012638"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the biceps femoris with the semitendinosus and semimembranosus.",
+    "model": [
+     "All three flex the knee and extend the thigh.",
+     "The biceps femoris lies laterally and turns the thigh outwards.",
+     "The other two lie medially and turn it inwards.",
+     "Only the biceps femoris also arises from the femur."
+    ],
+    "src": [
+     "s11-6#fig-ch11_06_03"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict which movement is hard after a hamstring strain.",
+    "model": [
+     "Bending the knee against resistance.",
+     "Swinging the thigh back while running.",
+     "Both stretch or load the torn muscle.",
+     "So running and climbing hurt most."
+    ],
+    "src": [
+     "s11-6#fs-id2012638",
+     "s11-6#fig-ch11_06_03"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Hamstring strains."
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Where do all three hamstrings arise?",
+   "options": [
+    "Ischial tuberosity",
+    "Anterior inferior iliac spine",
+    "Greater trochanter",
+    "Pubic symphysis"
+   ],
+   "answer": 0,
+   "why": "All three arise from the ischial tuberosity.",
+   "src": [
+    "s11-6#fig-ch11_06_03"
+   ]
+  },
+  {
+   "stem": "What space do the hamstring tendons help to form?",
+   "options": [
+    "Femoral triangle",
+    "Popliteal fossa",
+    "Inguinal canal",
+    "Tarsal tunnel"
+   ],
+   "answer": 1,
+   "why": "Their tendons form the popliteal fossa behind the knee.",
+   "src": [
+    "s11-6#fs-id2012638"
+   ]
+  },
+  {
+   "stem": "Which hamstring turns the thigh outwards?",
+   "options": [
+    "Semitendinosus",
+    "Semimembranosus",
+    "Gracilis",
+    "Biceps femoris"
+   ],
+   "answer": 3,
+   "why": "The biceps femoris twists the thigh outwards; the other two twist it inwards.",
+   "src": [
+    "s11-6#fig-ch11_06_03"
+   ]
+  }
+ ]
+}

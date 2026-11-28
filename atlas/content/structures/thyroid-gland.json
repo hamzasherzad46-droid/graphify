@@ -1,0 +1,322 @@
+{
+ "reviewStatus": "draft",
+ "id": "thyroid-gland",
+ "title": "Thyroid gland",
+ "part": "thyroid_gland",
+ "parts": [
+  "thyroid_gland"
+ ],
+ "topic": "endocrine",
+ "source": "OpenStax A&P 2e: 17.4 The Thyroid Gland",
+ "oneLine": {
+  "main": {
+   "t": "A butterfly-shaped gland in front of the trachea that makes the hormones that set the metabolic rate.",
+   "src": [
+    "s17-4#fs-id1219750",
+    "s17-4#fs-id1241366"
+   ]
+  },
+  "simpler": {
+   "t": "Your thyroid is a small gland in your neck. Its hormones control how fast your body uses energy.",
+   "src": [
+    "s17-4#fs-id1219750",
+    "s17-4#fs-id1241366"
+   ]
+  },
+  "deeper": {
+   "t": "It makes T3 and T4 from iodine, and calcitonin from its parafollicular cells.",
+   "src": [
+    "s17-4#fs-id1217036",
+    "s17-4#fs-id555341"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It lies in front of the trachea, just below the larynx.",
+    "src": [
+     "s17-4#fs-id1219750"
+    ]
+   },
+   {
+    "t": "The parathyroid glands are embedded in the back of its lobes.",
+    "src": [
+     "s17-4#fs-id1219750"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits low in the front of your neck, below your voice box.",
+   "src": [
+    "s17-4#fs-id1219750"
+   ]
+  },
+  "deeper": {
+   "t": "Its two lobes wrap round the sides of the trachea, joined by the isthmus in front.",
+   "src": [
+    "s17-4#fs-id1219750"
+   ],
+   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the lobes wrap round the sides of the trachea."
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Isthmus",
+    "t": "The narrow middle part that joins the two lobes.",
+    "src": [
+     "s17-4#fs-id1219750"
+    ]
+   },
+   {
+    "name": "Lobes",
+    "t": "Wing-shaped right and left lobes either side of the isthmus.",
+    "src": [
+     "s17-4#fs-id1219750"
+    ]
+   },
+   {
+    "name": "Follicles",
+    "t": "Hollow spheres of follicle cells filled with colloid, where the hormones are made.",
+    "src": [
+     "s17-4#fs-id1219750",
+     "s17-4#fs-id1217036"
+    ]
+   },
+   {
+    "name": "Parafollicular (C) cells",
+    "t": "Cells between the follicles that make calcitonin.",
+    "src": [
+     "s17-4#fs-id555341"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Two wings joined in the middle, full of tiny hormone-making sacs.",
+   "src": [
+    "s17-4#fs-id1219750"
+   ]
+  },
+  "deeper": {
+   "t": "Iodine attaches to thyroglobulin in the colloid to build the hormones.",
+   "src": [
+    "s17-4#fs-id1217036"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "T3 and T4 raise the basal metabolic rate, the energy the body uses at rest.",
+    "src": [
+     "s17-4#fs-id1241366"
+    ]
+   },
+   {
+    "t": "They are needed for growth, and especially for the developing nervous system.",
+    "src": [
+     "s17-4#fs-id1243032"
+    ]
+   },
+   {
+    "t": "Thyroid hormone release is controlled by thyroid-stimulating hormone (TSH) from the pituitary, by negative feedback.",
+    "src": [
+     "s17-4#fs-id1073276"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Its hormones turn up the body’s energy use and help children grow.",
+   "src": [
+    "s17-4#fs-id1241366",
+    "s17-4#fs-id1243032"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "airway",
+    "name": "Trachea",
+    "t": "Lies directly behind the gland.",
+    "src": [
+     "s17-4#fs-id1219750"
+    ]
+   },
+   {
+    "kind": "airway",
+    "name": "Larynx",
+    "t": "Lies just above it.",
+    "src": [
+     "s17-4#fs-id1219750"
+    ]
+   },
+   {
+    "kind": "gland",
+    "name": "Parathyroid glands",
+    "t": "Embedded in the back of its lobes.",
+    "src": [
+     "s17-4#fs-id1219750"
+    ]
+   },
+   {
+    "kind": "gland",
+    "name": "Anterior pituitary",
+    "t": "Releases TSH, which stimulates the thyroid.",
+    "src": [
+     "s17-4#fs-id1073276"
+    ]
+   },
+   {
+    "kind": "brain",
+    "name": "Hypothalamus",
+    "t": "Releases thyrotropin-releasing hormone (TRH), which triggers TSH secretion.",
+    "src": [
+     "s17-4#fs-id1073276"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It sits on the windpipe, below the voice box, and is controlled by the pituitary.",
+   "src": [
+    "s17-4#fs-id1219750",
+    "s17-4#fs-id1073276"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Its hormones are critical for normal development of the nervous system before birth and in early childhood.",
+    "src": [
+     "s17-4#fs-id1243032"
+    ]
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "Where diets lack iodine, iodised salt is the main source in many countries.",
+    "src": [
+     "s17-4#fs-id768548"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Too little iodine in the diet.",
+    "damaged": "Hormone production in the thyroid follicles.",
+    "cannotDo": "Make T3 and T4: the gland swells into a goitre.",
+    "why": "TSH rises, and colloid builds up in the overstimulated follicles.",
+    "src": [
+     "s17-4#fs-id1081468"
+    ]
+   },
+   {
+    "injury": "Inflammation of the thyroid gland.",
+    "damaged": "The thyroid’s hormone output (hypothyroidism).",
+    "cannotDo": "Keep a normal metabolic rate: they gain weight and feel cold.",
+    "why": "Low T3 and T4 slow the use of energy throughout the body.",
+    "src": [
+     "s17-4#fs-id1374729",
+     "s17-4#fs-id1241366"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why iodine deficiency causes a goitre.",
+    "model": [
+     "Without iodine, T3 and T4 cannot be made.",
+     "Low T3 and T4 remove negative feedback.",
+     "TSH secretion increases.",
+     "Overstimulated follicles store more colloid, and the gland enlarges."
+    ],
+    "src": [
+     "s17-4#fs-id1081468",
+     "s17-4#fs-id1073276"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare follicle cells and parafollicular cells.",
+    "model": [
+     "Follicle cells surround the colloid and make T3 and T4.",
+     "Their hormones raise the metabolic rate.",
+     "Parafollicular cells lie between follicles and make calcitonin.",
+     "Calcitonin tends to lower blood calcium."
+    ],
+    "src": [
+     "s17-4#fs-id1219750",
+     "s17-4#fs-id1217036",
+     "s17-4#fs-id555341"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict the TSH level in someone with low T3 and T4 from thyroid inflammation.",
+    "model": [
+     "Low T3 and T4 reduce negative feedback.",
+     "The hypothalamus releases more TRH.",
+     "The pituitary releases more TSH.",
+     "So TSH is high."
+    ],
+    "src": [
+     "s17-4#fs-id1073276",
+     "s17-4#fs-id1374729"
+    ]
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Which cells make calcitonin?",
+   "options": [
+    "Follicle cells",
+    "Parafollicular cells",
+    "Chief cells",
+    "Beta cells"
+   ],
+   "answer": 1,
+   "why": "Parafollicular (C) cells between the follicles make calcitonin.",
+   "src": [
+    "s17-4#fs-id555341"
+   ]
+  },
+  {
+   "stem": "Which hormone stimulates the thyroid to release T3 and T4?",
+   "options": [
+    "TRH",
+    "ACTH",
+    "TSH",
+    "Calcitonin"
+   ],
+   "answer": 2,
+   "why": "Thyroid-stimulating hormone (TSH) from the anterior pituitary stimulates release.",
+   "src": [
+    "s17-4#fs-id1073276"
+   ]
+  },
+  {
+   "stem": "Where is the thyroid gland?",
+   "options": [
+    "In front of the trachea, below the larynx",
+    "Behind the oesophagus",
+    "On top of the kidneys",
+    "In the mediastinum"
+   ],
+   "answer": 0,
+   "why": "It lies anterior to the trachea, just inferior to the larynx.",
+   "src": [
+    "s17-4#fs-id1219750"
+   ]
+  }
+ ]
+}

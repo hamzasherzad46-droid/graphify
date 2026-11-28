@@ -735,11 +735,22 @@ asked for). The lesson ends with three check questions answered on the page.
 - All 31 Skull and Upper limb structures (16 Skull, 15 Upper limb; the auditory ossicles, the metacarpals and the
   phalanges of the hand as group lessons). Authored by `scripts/content/structures_*.py` (shared helpers in
   `structures_lib.py`); the full text is in `docs/structures-review.md` (`npm run structures:review`).
+- **Muscles and organs (male model):** 16 more lessons in the same nine layers. Muscles (`structures_muscles.py`):
+  deltoid, rotator cuff, biceps brachii, diaphragm, sternocleidomastoid, quadriceps femoris, hamstrings, and the calf
+  muscles. Organs (`structures_organs.py`): heart, lungs, stomach, small intestine, liver, pancreas, kidneys, thyroid
+  gland. Sourced from the new textbook chapters (10–11, 17, 19, 21–23, 25), including the origins listed in the
+  descriptions of OpenStax's muscle tables; attachments, nerves and clinical points the book does not give carry a †
+  with what is missing. Each lesson names its part in the male model (`part`, `parts`): **See in 3D** opens the male
+  model at that part's layer and flies to it, and tapping the part in 3D links back to its lesson.
 - **† checklist**: `docs/dagger-checklist.md` (and PDF), every statement awaiting a source check, with where it appears
   and a proposed source (Gray’s 1918 quoted as support only, Terminologia Anatomica entries, a current textbook), for
-  sign-off (`npm run review:checklist`).
+  sign-off (`npm run review:checklist`; PDF: `npm run review:checklist:pdf`). Now 198 statements, 51 of them from
+  the muscle and organ lessons and cards.
 - **Flashcards**: one card per structure in the approved layered format (`scripts/content/cards_v2.py`), built from the
-  lesson’s own statements so every source and † carries over; the ten reviewed samples are kept unchanged.
+  lesson’s own statements so every source and † carries over; the ten reviewed samples are kept unchanged. The muscle
+  and organ lessons have one card each (`scripts/content/cards_soft.py`, decks `content/cards/muscles.json`, `heart`,
+  `respiratory`, `digestive`, `urinary`, `endocrine`): a question on the front without a 3D view (the card's small 3D
+  view shows bones), and See in 3D on the back.
 
 ## Progress (step 6)
 

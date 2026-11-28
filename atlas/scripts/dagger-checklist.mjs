@@ -40,6 +40,17 @@ const HN = `${CLINICAL} (head and neck chapter)`
 const DEV = 'Standring (ed.), *Gray’s Anatomy: The Anatomical Basis of Clinical Practice*, current edition (development and ossification), or a skeletal-maturation atlas (Greulich and Pyle)'
 const ORTHO = '*Apley and Solomon’s System of Orthopaedics and Trauma*, current edition, or ' + CLINICAL
 const NEURO = `${CLINICAL} (head and neck chapter), or a neurology or neurosurgery text for the clinical point`
+/** Muscle and organ lessons: the regional chapter, and a physiology text for how an organ works. */
+const BOOK_BY_TOPIC = {
+  skull: HN,
+  'upper-limb': UL,
+  muscles: `${CLINICAL} (the chapter for the muscle’s region)`,
+  heart: `${CLINICAL} (thorax chapter)`,
+  respiratory: `${CLINICAL} (thorax chapter)`,
+  digestive: `${CLINICAL} (abdomen chapter)`,
+  urinary: `${CLINICAL} (abdomen chapter)`,
+  endocrine: `${CLINICAL} (neck chapter), or a current physiology textbook for what its hormones do`,
+}
 
 /**
  * Proposed sources, by the start of the statement. `gray`: a pattern for the Gray's 1918 sentence that supports it;
@@ -106,7 +117,7 @@ const proposalFor = (t) => P.find(([start]) => t.startsWith(start))?.[1]
 
 /** For a statement with no hand-made proposal: the textbook for its topic, and Gray's where the check already cites it. */
 function defaultProposal(it) {
-  const book = it.topic === 'skull' ? HN : UL
+  const book = BOOK_BY_TOPIC[it.topic] ?? UL
   if (/Gray’s 1918 \(8\.2\)/.test(it.missing)) return { gray: /ossification proceeds in the following order/, book: DEV }
   if (/osteoarthritis|fracture|breaks|dislocat/i.test(it.text)) return { book: ORTHO }
   return { book }
@@ -148,7 +159,7 @@ const today = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'l
 L.push(
   '# Atlas: † statements for sign-off',
   '',
-  `${today}. ${items.length} statements are marked † in the app: not confirmed by the imported OpenStax A&P 2e chapters (6–9, 12–16 and 20) or by review. Each stays marked until it is signed off here.`,
+  `${today}. ${items.length} statements are marked † in the app: not confirmed by the imported OpenStax A&P 2e chapters (6–17, 19–23 and 25) or by review. Each stays marked until it is signed off here.`,
   '',
   '**Proposed sources.** For each statement: any sentence of *Gray’s Anatomy* (1918) that supports it, quoted in full (a secondary source: it can support a statement but cannot approve one on its own); the Terminologia Anatomica (TA2) entry for each name it uses; and a current textbook in which to confirm it. No page numbers are given: please record the edition and page you use.',
   '',

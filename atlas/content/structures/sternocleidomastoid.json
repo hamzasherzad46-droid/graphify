@@ -1,0 +1,321 @@
+{
+ "reviewStatus": "draft",
+ "id": "sternocleidomastoid",
+ "title": "Sternocleidomastoid",
+ "part": "sternocleidomastoid_muscle_left",
+ "parts": [
+  "sternocleidomastoid_muscle_left",
+  "sternocleidomastoid_muscle_right"
+ ],
+ "topic": "muscles",
+ "source": "OpenStax A&P 2e: 11.2 Naming Skeletal Muscles; 11.3 Axial Muscles of the Head, Neck, and Back; 13.4",
+ "oneLine": {
+  "main": {
+   "t": "The neck muscle from the sternum and clavicle to the mastoid process that turns and tilts the head.",
+   "src": [
+    "s11-2#fs-id2279191",
+    "s11-3#fs-id2455581"
+   ]
+  },
+  "simpler": {
+   "t": "It is the long muscle on each side of your neck that turns your head.",
+   "src": [
+    "s11-3#fs-id2455581"
+   ]
+  },
+  "deeper": {
+   "t": "Acting alone it turns the head to the opposite side; both together flex the head.",
+   "src": [
+    "s11-3#tbl-ch11_05"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "It runs up the side of the neck, from the sternum and clavicle to the skull behind the ear.",
+    "src": [
+     "s11-2#fs-id2279191",
+     "s11-3#tbl-ch11_05"
+    ]
+   },
+   {
+    "t": "It inserts on the mastoid process of the temporal bone and on the occipital bone.",
+    "src": [
+     "s11-3#tbl-ch11_05"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "You can feel it on the side of your neck when you turn your head.",
+   "src": [
+    "s11-3#fs-id2455581"
+   ]
+  },
+  "deeper": {
+   "t": "Seen from the side, it divides the neck into anterior and posterior triangles.",
+   "src": [
+    "s11-3#fs-id2455581"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Sternal head",
+    "t": "Arises from the sternum (“sterno” in the name).",
+    "src": [
+     "s11-2#fs-id2279191"
+    ]
+   },
+   {
+    "name": "Clavicular head",
+    "t": "Arises from the clavicle (“cleido” in the name).",
+    "src": [
+     "s11-2#fs-id2279191"
+    ]
+   },
+   {
+    "name": "Insertion",
+    "t": "On the mastoid process of the temporal bone (“mastoid” in the name), and the occipital bone.",
+    "src": [
+     "s11-2#fs-id2279191",
+     "s11-3#tbl-ch11_05"
+    ]
+   },
+   {
+    "name": "Name",
+    "t": "Named for its attachments, with the origin first: sterno, cleido, mastoid.",
+    "src": [
+     "s11-2#fs-id2279191"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Its long name lists where it starts and ends: breastbone, collarbone, mastoid.",
+   "src": [
+    "s11-2#fs-id2279191"
+   ]
+  },
+  "deeper": {
+   "t": "When a muscle is named for its attachments, the origin is always named first.",
+   "src": [
+    "s11-2#fs-id2279191"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "One muscle alone turns the head to the opposite side and tilts it to its own side.",
+    "src": [
+     "s11-3#tbl-ch11_05",
+     "s11-3#fs-id2455581"
+    ]
+   },
+   {
+    "t": "Both together flex the head forwards.",
+    "src": [
+     "s11-3#fs-id2455581",
+     "s11-3#tbl-ch11_05"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "One side turns your head; both sides bend it forwards.",
+   "src": [
+    "s11-3#fs-id2455581",
+    "s11-3#tbl-ch11_05"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "bone",
+    "name": "Temporal bone (mastoid process)",
+    "t": "Its insertion, behind the ear.",
+    "src": [
+     "s11-2#fs-id2279191"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Splenius capitis",
+    "t": "Tilts and turns the head to its own side; both together extend the head.",
+    "src": [
+     "s11-3#tbl-ch11_05"
+    ]
+   },
+   {
+    "kind": "muscle",
+    "name": "Semispinalis capitis",
+    "t": "Extends the head when both sides act, opposing the sternocleidomastoids.",
+    "src": [
+     "s11-3#tbl-ch11_05"
+    ]
+   },
+   {
+    "kind": "nerve",
+    "name": "Accessory nerve (cranial nerve XI)",
+    "t": "A purely motor cranial nerve to muscles of the neck.",
+    "src": [
+     "s13-4#tbl-ch13_03",
+     "s13-4#fs-id1830197"
+    ]
+   },
+   {
+    "kind": "region",
+    "name": "Triangles of the neck",
+    "t": "Its line separates the anterior and posterior triangles.",
+    "src": [
+     "s11-3#fs-id2455581"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "It works with the deep neck muscles to move the head, and its nerve is a cranial nerve.",
+   "src": [
+    "s11-3#tbl-ch11_05",
+    "s13-4#tbl-ch13_03"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "Skeletal muscle of the head develops from general mesoderm; trunk muscles come from somites.",
+    "src": [
+     "s10-9#fs-id1959103"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which embryonic tissue the sternocleidomastoid itself comes from."
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "Its two heads, sternal and clavicular, can be seen and felt separately low in the neck.",
+    "src": [
+     "s11-2#fs-id2279191"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the two heads are visible separately."
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "A baby born with a shortened sternocleidomastoid on one side.",
+    "damaged": "The sternocleidomastoid (congenital torticollis, wry neck).",
+    "cannotDo": "Hold the head straight: it tilts to the short side and turns away.",
+    "why": "The short muscle pulls constantly, tilting to its own side and turning to the opposite.",
+    "src": [
+     "s11-3#tbl-ch11_05"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Congenital torticollis."
+   },
+   {
+    "injury": "Injury to the accessory nerve in the neck.",
+    "damaged": "The nerve to the sternocleidomastoid and trapezius.",
+    "cannotDo": "Turn the head strongly to the opposite side, or shrug that shoulder.",
+    "why": "Both muscles lose their motor supply from cranial nerve XI.",
+    "src": [
+     "s13-4#tbl-ch13_03",
+     "s11-5#tbl-ch11_08"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The accessory nerve’s supply to the sternocleidomastoid and trapezius, and the signs of its injury."
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the left sternocleidomastoid turns the face to the right.",
+    "model": [
+     "It runs from the front (sternum, clavicle) to the back of the skull (mastoid).",
+     "Pulling the mastoid down and forwards rotates the head.",
+     "The face turns to the opposite side.",
+     "So the left muscle turns the face to the right."
+    ],
+    "src": [
+     "s11-3#tbl-ch11_05",
+     "s11-2#fs-id2279191"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the actions of the sternocleidomastoids and the semispinalis capitis acting on both sides.",
+    "model": [
+     "Both sternocleidomastoids together flex the head.",
+     "Both semispinalis capitis muscles together extend it.",
+     "So the two pairs are antagonists.",
+     "Acting on one side, each pair turns and tilts the head."
+    ],
+    "src": [
+     "s11-3#tbl-ch11_05",
+     "s11-1#fs-id2260527"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict the head position in a baby whose right sternocleidomastoid is short.",
+    "model": [
+     "The short muscle pulls constantly.",
+     "The head tilts to the right.",
+     "The face turns to the left.",
+     "This is congenital torticollis."
+    ],
+    "src": [
+     "s11-3#tbl-ch11_05"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Congenital torticollis."
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "Where does the sternocleidomastoid insert?",
+   "options": [
+    "Sternum",
+    "Clavicle",
+    "Mastoid process of the temporal bone",
+    "Spinous process of C7"
+   ],
+   "answer": 2,
+   "why": "It inserts on the mastoid process of the temporal bone, named last in its name.",
+   "src": [
+    "s11-2#fs-id2279191"
+   ]
+  },
+  {
+   "stem": "What does one sternocleidomastoid do on its own?",
+   "options": [
+    "Extends the head",
+    "Rotates the head to the opposite side",
+    "Elevates the scapula",
+    "Depresses the mandible"
+   ],
+   "answer": 1,
+   "why": "Individually it rotates the head to the opposite side.",
+   "src": [
+    "s11-3#tbl-ch11_05"
+   ]
+  },
+  {
+   "stem": "Which neck regions does it separate?",
+   "options": [
+    "Anterior and posterior triangles",
+    "Thorax and abdomen",
+    "Pharynx and larynx",
+    "Left and right carotid sheaths"
+   ],
+   "answer": 0,
+   "why": "Seen from the side, it divides the neck into anterior and posterior triangles.",
+   "src": [
+    "s11-3#fs-id2455581"
+   ]
+  }
+ ]
+}

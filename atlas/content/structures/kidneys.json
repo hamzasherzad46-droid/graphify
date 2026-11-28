@@ -1,0 +1,333 @@
+{
+ "reviewStatus": "draft",
+ "id": "kidneys",
+ "title": "Kidneys",
+ "part": "kidney_left",
+ "parts": [
+  "kidney_left",
+  "kidney_right",
+  "renal_pelvis_left",
+  "renal_pelvis_right"
+ ],
+ "topic": "urinary",
+ "source": "OpenStax A&P 2e: 25.2 Gross Anatomy of Urine Transport; 25.3 Gross Anatomy of the Kidney; 25.10; 17.10",
+ "oneLine": {
+  "main": {
+   "t": "Two bean-shaped organs at the back of the abdomen that filter the blood and make urine.",
+   "src": [
+    "s25-3#fs-id1542887",
+    "s25-3#fs-id2532837"
+   ],
+   "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The kidneys’ bean shape."
+  },
+  "simpler": {
+   "t": "Your kidneys clean your blood and turn the waste into urine.",
+   "src": [
+    "s25-3#fs-id2532837"
+   ]
+  },
+  "deeper": {
+   "t": "They also help control blood pressure, make erythropoietin and activate vitamin D.",
+   "src": [
+    "s25-10#fs-id2844948",
+    "s17-10#fs-id1389903"
+   ]
+  }
+ },
+ "where": {
+  "facts": [
+   {
+    "t": "They lie either side of the spine, behind the peritoneum, protected by muscle, fat and ribs.",
+    "src": [
+     "s25-3#fs-id1542887"
+    ]
+   },
+   {
+    "t": "The left kidney is at about T12 to L3; the right is lower, pushed down by the liver.",
+    "src": [
+     "s25-3#fs-id1592078"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "They sit against your back muscles, just under your lowest ribs.",
+   "src": [
+    "s25-3#fs-id1592078"
+   ]
+  },
+  "deeper": {
+   "t": "The eleventh and twelfth ribs partly protect their upper portions.",
+   "src": [
+    "s25-3#fs-id1592078"
+   ]
+  }
+ },
+ "features": {
+  "items": [
+   {
+    "name": "Cortex",
+    "t": "The lighter outer region, holding all the renal corpuscles and convoluted tubules.",
+    "src": [
+     "s25-3#fs-id2303293",
+     "s25-3#fs-id2506359"
+    ]
+   },
+   {
+    "name": "Medulla",
+    "t": "The inner region, with renal pyramids and papillae.",
+    "src": [
+     "s25-3#fs-id2303293"
+    ]
+   },
+   {
+    "name": "Renal pelvis",
+    "t": "The funnel formed from the calyces; it narrows into the ureter.",
+    "src": [
+     "s25-3#fs-id1764618",
+     "s25-2#fs-id2338701"
+    ]
+   },
+   {
+    "name": "Hilum",
+    "t": "Where vessels, nerves, lymphatics and the ureter enter and leave.",
+    "src": [
+     "s25-3#fs-id1764618"
+    ]
+   },
+   {
+    "name": "Capsule and fat",
+    "t": "A fibrous capsule, a cushioning fat pad and renal fascia surround each kidney.",
+    "src": [
+     "s25-3#fs-id1592078"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "An outer cortex, an inner medulla and a funnel that collects the urine.",
+   "src": [
+    "s25-3#fs-id2303293",
+    "s25-3#fs-id1764618"
+   ]
+  },
+  "deeper": {
+   "t": "About 1.3 million nephrons in each kidney do the filtering.",
+   "src": [
+    "s25-3#fs-id2718604"
+   ]
+  }
+ },
+ "formFunction": {
+  "facts": [
+   {
+    "t": "Each nephron starts with a glomerulus, a tuft of high-pressure capillaries inside Bowman’s capsule.",
+    "src": [
+     "s25-3#fs-id2532837"
+    ]
+   },
+   {
+    "t": "They receive about 25 percent of the cardiac output at rest.",
+    "src": [
+     "s25-3#fs-id1542887"
+    ]
+   },
+   {
+    "t": "Smooth muscle in the renal pelvis and ureter moves urine on by peristalsis.",
+    "src": [
+     "s25-3#fs-id1764618",
+     "s25-2#fs-id2140392"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Lots of blood flows through tiny filters, and muscle squeezes the urine down to the bladder.",
+   "src": [
+    "s25-3#fs-id1542887",
+    "s25-3#fs-id2532837",
+    "s25-2#fs-id2140392"
+   ]
+  }
+ },
+ "relations": {
+  "items": [
+   {
+    "kind": "gland",
+    "name": "Adrenal gland",
+    "t": "Sits on top of each kidney; its aldosterone makes the kidney keep sodium.",
+    "src": [
+     "s25-3#fs-id2488605"
+    ]
+   },
+   {
+    "kind": "artery",
+    "name": "Renal artery",
+    "t": "Comes straight from the aorta.",
+    "src": [
+     "s25-3#fs-id1764618"
+    ]
+   },
+   {
+    "kind": "vein",
+    "name": "Renal vein",
+    "t": "Returns cleansed blood straight to the inferior vena cava.",
+    "src": [
+     "s25-3#fs-id1764618"
+    ]
+   },
+   {
+    "kind": "duct",
+    "name": "Ureter",
+    "t": "About 30 cm long; carries urine from the renal pelvis to the bladder.",
+    "src": [
+     "s25-2#fs-id2140392",
+     "s25-2#fs-id2338701"
+    ]
+   },
+   {
+    "kind": "organ",
+    "name": "Liver",
+    "t": "Pushes the right kidney a little lower than the left.",
+    "src": [
+     "s25-3#fs-id1592078"
+    ]
+   }
+  ],
+  "simpler": {
+   "t": "Blood comes from the aorta and goes back to the vena cava; urine goes down the ureter.",
+   "src": [
+    "s25-3#fs-id1764618"
+   ]
+  }
+ },
+ "development": {
+  "facts": [
+   {
+    "t": "They develop in the pelvis and rise to their adult position in the abdomen.",
+    "src": [],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the kidneys."
+   }
+  ]
+ },
+ "variations": {
+  "facts": [
+   {
+    "t": "The male kidney is usually a little larger than the female.",
+    "src": [
+     "s25-3#fs-id1542887"
+    ]
+   }
+  ]
+ },
+ "clinical": {
+  "items": [
+   {
+    "injury": "Kidney failure.",
+    "damaged": "The kidneys’ filtering and their hormone roles.",
+    "cannotDo": "Keep enough red blood cells, or absorb calcium normally.",
+    "why": "Failing kidneys make too little erythropoietin and active vitamin D.",
+    "src": [
+     "s25-10#fs-id2844948",
+     "s25-10#fs-id1586933"
+    ]
+   },
+   {
+    "injury": "Glomeruli damaged by an autoimmune illness.",
+    "damaged": "The glomerular filter, which lets protein through.",
+    "cannotDo": "Keep protein in the blood: it is lost in the urine, and oedema spreads.",
+    "why": "Low plasma protein lets water move out of the blood into the tissues.",
+    "src": [
+     "s25-10#fs-id2096572"
+    ]
+   }
+  ]
+ },
+ "tutorial": {
+  "items": [
+   {
+    "kind": "explain",
+    "q": "Explain why the right kidney lies lower than the left.",
+    "model": [
+     "Both lie behind the peritoneum either side of the spine.",
+     "The liver sits above the right kidney.",
+     "It displaces the right kidney slightly downwards.",
+     "So the left is at about T12 to L3 and the right a little lower."
+    ],
+    "src": [
+     "s25-3#fs-id1592078"
+    ]
+   },
+   {
+    "kind": "compare",
+    "q": "Compare the renal cortex and medulla.",
+    "model": [
+     "The cortex is outer and lighter.",
+     "It holds the renal corpuscles and convoluted tubules.",
+     "The medulla is inner, with pyramids and papillae.",
+     "Its papillae carry urine to the calyces."
+    ],
+    "src": [
+     "s25-3#fs-id2303293",
+     "s25-3#fs-id2506359"
+    ]
+   },
+   {
+    "kind": "predict",
+    "q": "Predict a blood change in long-term kidney failure.",
+    "model": [
+     "The kidneys make erythropoietin.",
+     "Erythropoietin stimulates red blood cell formation.",
+     "Failing kidneys make too little of it.",
+     "So red blood cells fall (anaemia)."
+    ],
+    "src": [
+     "s17-10#fs-id1918548",
+     "s25-10#fs-id2844948"
+    ],
+    "check": "Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Anaemia in kidney failure."
+   }
+  ]
+ },
+ "check": [
+  {
+   "stem": "At about which vertebral levels is the left kidney?",
+   "options": [
+    "T12 to L3",
+    "T6 to T9",
+    "L4 to S1",
+    "C7 to T2"
+   ],
+   "answer": 0,
+   "why": "The left kidney is at about T12 to L3; the right is lower.",
+   "src": [
+    "s25-3#fs-id1592078"
+   ]
+  },
+  {
+   "stem": "Which hormone do the kidneys make that stimulates red blood cell formation?",
+   "options": [
+    "Renin",
+    "Aldosterone",
+    "Calcitonin",
+    "Erythropoietin"
+   ],
+   "answer": 3,
+   "why": "The kidneys produce erythropoietin (EPO).",
+   "src": [
+    "s17-10#fs-id1918548"
+   ]
+  },
+  {
+   "stem": "Where are the renal corpuscles?",
+   "options": [
+    "Medulla",
+    "Renal pelvis",
+    "Cortex",
+    "Papillae"
+   ],
+   "answer": 2,
+   "why": "All renal corpuscles lie in the cortex.",
+   "src": [
+    "s25-3#fs-id2506359"
+   ]
+  }
+ ]
+}

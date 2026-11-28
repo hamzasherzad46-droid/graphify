@@ -1,0 +1,83 @@
+{
+ "topic": "heart",
+ "cards": [
+  {
+   "reviewStatus": "draft",
+   "id": "or-heart-function",
+   "topic": "heart",
+   "type": "function",
+   "level": "higher",
+   "structureId": "heart",
+   "part": "left_ventricle",
+   "frontView": false,
+   "objective": "Explain the thickness of the left ventricular wall.",
+   "front": "Why is the wall of the left ventricle thicker than the right’s?",
+   "answer": "It pumps against the systemic circuit’s resistance",
+   "why": {
+    "t": "The left ventricle’s wall is much thicker than the right’s, to pump against the higher resistance of the systemic circuit. The right side of the heart feeds the pulmonary circuit; the left side feeds the systemic circuit.",
+    "src": [
+     "s19-1#fs-id2183171",
+     "s19-1#fs-id2767147",
+     "s19-1#fs-id1236860"
+    ]
+   },
+   "simpler": {
+    "t": "The heart is a pump about the size of your fist. It pushes blood all round your body.",
+    "src": [
+     "s19-1#fs-id2694723",
+     "s19-1#fs-id1478856"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Atria: the two upper chambers.",
+     "src": [
+      "s19-1#fs-id1478856"
+     ]
+    },
+    {
+     "t": "Ventricles: the two lower chambers, the main pumps: right to the lungs, left to the body.",
+     "src": [
+      "s19-1#fs-id1478856"
+     ]
+    },
+    {
+     "t": "Valves: tricuspid and mitral between atria and ventricles; pulmonary and aortic at the exits.",
+     "src": [
+      "s19-1#fs-id2718087",
+      "s19-1#fs-id2268819"
+     ]
+    },
+    {
+     "t": "Septa: walls between the chambers: interatrial, interventricular and atrioventricular.",
+     "src": [
+      "s19-1#fs-id2301176",
+      "s19-1#fs-id1422157",
+      "s19-1#fs-id2268819"
+     ]
+    },
+    {
+     "t": "Myocardium: the thick middle layer of the wall, made of cardiac muscle that pumps the blood.",
+     "src": [
+      "s19-1#fs-id2062267",
+      "s19-1#fs-id2122250"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "A coronary artery blocked by atherosclerotic plaque. Without blood and oxygen, the cardiac muscle cells die.",
+    "src": [
+     "s19-1#fs-id1289761",
+     "s19-1#fs-id2351428"
+    ]
+   },
+   "trap": {
+    "t": "Both ventricles pump the same volume per beat; the left must generate more pressure.",
+    "src": [
+     "s19-1#fs-id2183171"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 19.1 Heart Anatomy; 19.5 Development of the Heart"
+  }
+ ]
+}

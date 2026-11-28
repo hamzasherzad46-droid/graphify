@@ -1,0 +1,80 @@
+{
+ "topic": "urinary",
+ "cards": [
+  {
+   "reviewStatus": "draft",
+   "id": "or-kidneys-relation",
+   "topic": "urinary",
+   "type": "relation",
+   "level": "higher",
+   "structureId": "kidneys",
+   "part": "kidney_left",
+   "frontView": false,
+   "objective": "Explain the lower position of the right kidney.",
+   "front": "Why does the right kidney lie lower than the left?",
+   "answer": "The liver pushes it down",
+   "why": {
+    "t": "The left kidney is at about T12 to L3; the right is lower, pushed down by the liver. They lie either side of the spine, behind the peritoneum, protected by muscle, fat and ribs.",
+    "src": [
+     "s25-3#fs-id1592078",
+     "s25-3#fs-id1542887"
+    ]
+   },
+   "simpler": {
+    "t": "Your kidneys clean your blood and turn the waste into urine.",
+    "src": [
+     "s25-3#fs-id2532837"
+    ]
+   },
+   "depth": [
+    {
+     "t": "Cortex: the lighter outer region, holding all the renal corpuscles and convoluted tubules.",
+     "src": [
+      "s25-3#fs-id2303293",
+      "s25-3#fs-id2506359"
+     ]
+    },
+    {
+     "t": "Medulla: the inner region, with renal pyramids and papillae.",
+     "src": [
+      "s25-3#fs-id2303293"
+     ]
+    },
+    {
+     "t": "Renal pelvis: the funnel formed from the calyces; it narrows into the ureter.",
+     "src": [
+      "s25-3#fs-id1764618",
+      "s25-2#fs-id2338701"
+     ]
+    },
+    {
+     "t": "Hilum: where vessels, nerves, lymphatics and the ureter enter and leave.",
+     "src": [
+      "s25-3#fs-id1764618"
+     ]
+    },
+    {
+     "t": "Capsule and fat: a fibrous capsule, a cushioning fat pad and renal fascia surround each kidney.",
+     "src": [
+      "s25-3#fs-id1592078"
+     ]
+    }
+   ],
+   "clinical": {
+    "t": "Kidney failure. Failing kidneys make too little erythropoietin and active vitamin D.",
+    "src": [
+     "s25-10#fs-id2844948",
+     "s25-10#fs-id1586933"
+    ]
+   },
+   "trap": {
+    "t": "The kidneys are retroperitoneal: behind the peritoneum, not inside the peritoneal cavity.",
+    "src": [
+     "s25-3#fs-id1542887",
+     "s25-2#fs-id2338701"
+    ]
+   },
+   "source": "OpenStax A&P 2e: 25.2 Gross Anatomy of Urine Transport; 25.3 Gross Anatomy of the Kidney; 25.10; 17.10"
+  }
+ ]
+}

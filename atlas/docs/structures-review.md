@@ -15,32 +15,48 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 | 3 | Scaphoid | Upper limb | 34 | 5 |
 | 4 | Sphenoid bone | Skull | 40 | 4 |
 | 5 | Mandible | Skull | 43 | 3 |
-| 6 | Capitate | Upper limb | 34 | 5 |
-| 7 | Clavicle | Upper limb | 41 | 0 |
-| 8 | Ethmoid bone | Skull | 38 | 1 |
-| 9 | Frontal bone | Skull | 40 | 1 |
-| 10 | Hamate | Upper limb | 35 | 4 |
-| 11 | Phalanges of the hand | Upper limb | 36 | 3 |
-| 12 | Hyoid bone | Skull | 34 | 4 |
-| 13 | Inferior nasal concha | Skull | 31 | 2 |
-| 14 | Lacrimal bone | Skull | 33 | 2 |
-| 15 | Lunate | Upper limb | 34 | 4 |
-| 16 | Maxilla | Skull | 36 | 2 |
-| 17 | Metacarpal bones | Upper limb | 38 | 5 |
-| 18 | Nasal bone | Skull | 32 | 6 |
-| 19 | Occipital bone | Skull | 36 | 2 |
-| 20 | Auditory ossicles | Skull | 34 | 6 |
-| 21 | Palatine bone | Skull | 32 | 1 |
-| 22 | Parietal bone | Skull | 36 | 1 |
-| 23 | Pisiform | Upper limb | 33 | 7 |
-| 24 | Radius | Upper limb | 39 | 1 |
-| 25 | Temporal bone | Skull | 40 | 2 |
-| 26 | Trapezium | Upper limb | 35 | 2 |
-| 27 | Trapezoid | Upper limb | 34 | 2 |
-| 28 | Triquetrum | Upper limb | 34 | 3 |
-| 29 | Ulna | Upper limb | 41 | 2 |
-| 30 | Vomer | Skull | 33 | 6 |
-| 31 | Zygomatic bone | Skull | 33 | 2 |
+| 6 | Biceps brachii | Upper limb | 34 | 4 |
+| 7 | Calf muscles: gastrocnemius and soleus | Upper limb | 33 | 2 |
+| 8 | Capitate | Upper limb | 34 | 5 |
+| 9 | Clavicle | Upper limb | 41 | 0 |
+| 10 | Deltoid | Upper limb | 35 | 11 |
+| 11 | Diaphragm | Upper limb | 33 | 5 |
+| 12 | Ethmoid bone | Skull | 38 | 1 |
+| 13 | Frontal bone | Skull | 40 | 1 |
+| 14 | Hamate | Upper limb | 35 | 4 |
+| 15 | Hamstrings | Upper limb | 33 | 7 |
+| 16 | Phalanges of the hand | Upper limb | 36 | 3 |
+| 17 | Heart | Upper limb | 38 | 0 |
+| 18 | Hyoid bone | Skull | 34 | 4 |
+| 19 | Inferior nasal concha | Skull | 31 | 2 |
+| 20 | Kidneys | Upper limb | 34 | 3 |
+| 21 | Lacrimal bone | Skull | 33 | 2 |
+| 22 | Liver | Upper limb | 33 | 1 |
+| 23 | Lunate | Upper limb | 34 | 4 |
+| 24 | Lungs | Upper limb | 36 | 2 |
+| 25 | Maxilla | Skull | 36 | 2 |
+| 26 | Metacarpal bones | Upper limb | 38 | 5 |
+| 27 | Nasal bone | Skull | 32 | 6 |
+| 28 | Occipital bone | Skull | 36 | 2 |
+| 29 | Auditory ossicles | Skull | 34 | 6 |
+| 30 | Palatine bone | Skull | 32 | 1 |
+| 31 | Pancreas | Upper limb | 33 | 2 |
+| 32 | Parietal bone | Skull | 36 | 1 |
+| 33 | Pisiform | Upper limb | 33 | 7 |
+| 34 | Quadriceps femoris | Upper limb | 35 | 1 |
+| 35 | Radius | Upper limb | 39 | 1 |
+| 36 | Rotator cuff | Upper limb | 33 | 1 |
+| 37 | Small intestine | Upper limb | 35 | 3 |
+| 38 | Sternocleidomastoid | Upper limb | 32 | 5 |
+| 39 | Stomach | Upper limb | 34 | 3 |
+| 40 | Temporal bone | Skull | 40 | 2 |
+| 41 | Thyroid gland | Upper limb | 33 | 1 |
+| 42 | Trapezium | Upper limb | 35 | 2 |
+| 43 | Trapezoid | Upper limb | 34 | 2 |
+| 44 | Triquetrum | Upper limb | 34 | 3 |
+| 45 | Ulna | Upper limb | 41 | 2 |
+| 46 | Vomer | Skull | 33 | 6 |
+| 47 | Zygomatic bone | Skull | 33 | 2 |
 
 ---
 
@@ -648,7 +664,226 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 6. Capitate
+## 6. Biceps brachii
+
+*OpenStax A&P 2e: 11.1 Interactions of Skeletal Muscles; 11.5 Muscles of the Pectoral Girdle and Upper Limbs; 8.2; 14.3; 16.4 · id `biceps-brachii` · bone `undefined` · draft*
+
+### 1. In one line
+
+**The two-headed muscle at the front of the arm that bends the elbow and turns the palm up. <sub>[11.5 ¶fs-id2831016; glossary: biceps brachii]</sub>**
+
+*Simpler.* The biceps is the muscle at the front of your upper arm that bends your elbow. <sub>[11.5 ¶fs-id2831016]</sub>
+
+*Deeper.* It crosses both the shoulder and the elbow, so it also helps flex the arm at the shoulder. <sub>[11.5 ¶fs-id2831016]</sub>
+
+### 2. Where it is
+
+- It lies in the anterior compartment of the arm, with the brachialis deep to it. <sub>[11.5 ¶fs-id2831016; 11.1 ¶tbl-ch11_01]</sub>
+- Its two heads arise from the scapula: the coracoid process and the tubercle above the glenoid cavity. <sub>[11.5 ¶fig-ch11_05_05]</sub>
+- Its tendon inserts on the radial tuberosity of the radius. † <sub>[† Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The insertion of the biceps brachii (radial tuberosity).]</sub>
+
+*Simpler.* It runs down the front of your upper arm, from your shoulder blade to your forearm. <sub>[11.5 ¶fig-ch11_05_05; 11.5 ¶fs-id2831016]</sub>
+
+*Deeper.* The tendon of the long head runs in the intertubercular (bicipital) groove of the humerus. <sub>[8.2 ¶fs-id2110691]</sub>
+
+### 3. Key features
+
+- **Long head.** Arises above the glenoid cavity. Its tendon passes through the bicipital groove. <sub>[11.5 ¶fig-ch11_05_05; 8.2 ¶fs-id2110691]</sub>
+- **Short head.** Arises from the coracoid process of the scapula. <sub>[11.5 ¶fig-ch11_05_05]</sub>
+- **Belly.** The plump middle of the muscle. It bulges more as the muscle shortens. <sub>[11.1 ¶fs-id2292670]</sub>
+- **Fusiform shape.** A spindle-shaped belly that tapers towards each end. † <sub>[11.1 ¶fs-id2292670; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the biceps brachii itself is fusiform (11.1 uses it as the example of a belly).]</sub>
+
+*Simpler.* It has two heads at the top that join into one belly. <sub>[11.5 ¶fig-ch11_05_05; 11.1 ¶fs-id2292670]</sub>
+
+*Deeper.* “Bi” in its name means it has two origins; “tri” in triceps means three. <sub>[11.2 ¶fs-id2762982]</sub>
+
+### 4. Form → function
+
+- It flexes the forearm at the elbow, and supinates it at the radioulnar joints. <sub>[11.5 ¶fs-id2831016]</sub>
+- It is the prime mover in lifting a cup. The brachialis assists as a synergist. <sub>[11.1 ¶fs-id2684650]</sub>
+- The triceps brachii, at the back of the arm, is its antagonist. <sub>[11.1 ¶tbl-ch11_01]</sub>
+
+*Simpler.* It bends your elbow and turns your palm to face up. <sub>[11.5 ¶fs-id2831016; 11.5 ¶fs-id2271811]</sub>
+
+### 5. Relations
+
+- *muscle* **Brachialis.** Lies deep to the biceps and adds power to elbow flexion. <sub>[11.5 ¶fs-id2831016]</sub>
+- *muscle* **Triceps brachii.** In the posterior compartment. It extends the forearm, opposing the biceps. <sub>[11.1 ¶tbl-ch11_01; 11.5 ¶fs-id2271811]</sub>
+- *muscle* **Brachioradialis.** The third elbow flexor. It can flex the forearm quickly or help lift a load slowly. <sub>[11.5 ¶fs-id2831016]</sub>
+- *bone* **Humerus.** The long-head tendon runs in its intertubercular groove. <sub>[8.2 ¶fs-id2110691]</sub>
+- *nerve* **Musculocutaneous nerve.** The nerve of the anterior compartment of the arm. † <sub>[† Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The musculocutaneous nerve and its supply to the biceps.]</sub>
+
+*Simpler.* It works with the brachialis and against the triceps. <sub>[11.1 ¶fs-id2684650; 11.1 ¶tbl-ch11_01]</sub>
+
+### 6. Development
+
+- Like other limb muscles, it develops from general mesoderm. Spinal nerves then form its neuromuscular junctions. <sub>[10.9 ¶fs-id1959103; 10.9 ¶fs-id1605365]</sub>
+
+### 7. Variations
+
+- Resistance training thickens its fibres by adding myofibrils (hypertrophy). No new fibres form. <sub>[10.6 ¶fs-id1584189; 10.6 ¶fs-id2264056]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** Damage to the lower motor neurons that supply the biceps.  
+   **Damaged:** The motor side of the biceps stretch reflex.  
+   **Patient can’t:** Show a normal biceps reflex when the tendon is tapped.  
+   **Why:** The reflex needs the spindle’s sensory fibre, the spinal synapse and the motor neuron intact. <sub>[16.4 ¶fs-id1956663]</sub>
+
+2. **Injury:** A heavy lift that ruptures the tendon of the long head.  
+   **Damaged:** The long-head tendon, where it runs in the bicipital groove.  
+   **Patient can’t:** Flex and supinate with full strength; the belly bunches up near the elbow.  
+   **Why:** The torn head cannot pull, and its belly shortens away from the tear. † <sub>[8.2 ¶fs-id2110691; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Rupture of the long head of the biceps and its signs.]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain how the biceps and brachialis share the work of lifting a cup.** <sub>[11.1 ¶fs-id2684650; 11.5 ¶fs-id2831016; 11.1 ¶tbl-ch11_01]</sub>
+
+   - The biceps is the prime mover for the movement.
+   - The brachialis, deep to it, assists as a synergist.
+   - Both flex the forearm at the elbow.
+   - The triceps relaxes as their antagonist.
+
+2. *Compare.* **Compare the biceps brachii and the brachialis.** <sub>[11.5 ¶fs-id2831016; 11.5 ¶fig-ch11_05_05]</sub>
+
+   - Both flex the forearm.
+   - The biceps crosses the shoulder and elbow; the brachialis arises from the distal humerus.
+   - Only the biceps supinates the forearm.
+   - The brachialis lies deep to the biceps.
+
+3. *Predict.* **Predict what happens to the triceps when the biceps contracts in a withdrawal reflex.** <sub>[14.3 ¶fs-id2133457]</sub>
+
+   - The sensory neuron excites an interneuron in the spinal cord.
+   - The interneuron inhibits the triceps’ motor neuron.
+   - The triceps relaxes instead of resisting.
+   - So the elbow flexes quickly.
+
+### Check yourself
+
+1. Which muscle is the antagonist of the biceps brachii at the elbow?  
+   A. Brachialis · B. Brachioradialis · **C. Triceps brachii** · D. Deltoid  
+   *The triceps brachii extends the forearm, opposing the biceps.* <sub>[11.1 ¶tbl-ch11_01]</sub>
+
+2. Besides flexing the elbow, what else does the biceps brachii do?  
+   A. Pronates the forearm · **B. Supinates the forearm** · C. Extends the wrist · D. Abducts the arm  
+   *It also supinates the forearm at the radioulnar joints.* <sub>[11.5 ¶fs-id2831016]</sub>
+
+3. Where does the short head of the biceps arise?  
+   **A. Coracoid process** · B. Acromion · C. Lateral epicondyle · D. Infraglenoid tubercle  
+   *The short head arises from the coracoid process; the long head from the tubercle above the glenoid cavity.* <sub>[11.5 ¶fig-ch11_05_05]</sub>
+
+---
+
+## 7. Calf muscles: gastrocnemius and soleus
+
+*OpenStax A&P 2e: 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs; 14.3; 16.4; 20.2 · id `calf-muscles` · bone `undefined` · draft*
+
+### 1. In one line
+
+**The gastrocnemius and soleus form the calf and pull on the calcaneal tendon to point the foot down. <sub>[11.6 ¶fs-id2421915; 11.6 ¶fig-ch11_06_05]</sub>**
+
+*Simpler.* The calf muscles lift your heel so you can stand on tiptoe and push off when walking. <sub>[11.6 ¶fs-id2421915; 11.6 ¶fig-ch11_06_05]</sub>
+
+*Deeper.* They lie in the superficial posterior compartment of the leg and help keep us upright. <sub>[11.6 ¶fs-id2421915]</sub>
+
+### 2. Where it is
+
+- The gastrocnemius is the most superficial and visible muscle of the calf; the wide, flat soleus lies deep to it. <sub>[11.6 ¶fs-id2421915]</sub>
+- Both insert through the calcaneal (Achilles) tendon into the calcaneus. <sub>[11.6 ¶fs-id2421915]</sub>
+
+*Simpler.* They form the bulge at the back of your lower leg, ending in the tendon above your heel. <sub>[11.6 ¶fs-id2421915]</sub>
+
+*Deeper.* The small plantaris runs obliquely between them to the same tendon. <sub>[11.6 ¶fs-id2421915]</sub>
+
+### 3. Key features
+
+- **Gastrocnemius.** Two heads from the medial and lateral condyles of the femur. <sub>[11.6 ¶fig-ch11_06_05]</sub>
+- **Soleus.** Wide and flat, from the upper tibia, fibula and interosseous membrane. <sub>[11.6 ¶fs-id2421915; 11.6 ¶fig-ch11_06_05]</sub>
+- **Calcaneal (Achilles) tendon.** A strong tendon into the calcaneus, shared by the superficial calf muscles. <sub>[11.6 ¶fs-id2421915; glossary: calcaneal tendon]</sub>
+- **Plantaris.** A small muscle between the two. Some people have two; about 7 percent of cadavers have none. <sub>[11.6 ¶fs-id2421915]</sub>
+
+*Simpler.* Two big muscles, one tendon to the heel. <sub>[11.6 ¶fs-id2421915]</sub>
+
+*Deeper.* Surgeons use the plantaris tendon in tendon transplants and ligament repairs. <sub>[11.6 ¶fs-id2421915]</sub>
+
+### 4. Form → function
+
+- Pulling the heel up, they plantar flex the foot, as in jumping or tapping the foot. <sub>[11.6 ¶fig-ch11_06_05]</sub>
+- The gastrocnemius crosses the knee, so it also helps flex the leg. <sub>[11.6 ¶fig-ch11_06_05]</sub>
+- The soleus, crossing the ankle only, helps maintain posture while walking. <sub>[11.6 ¶fig-ch11_06_05]</sub>
+
+*Simpler.* They push the front of the foot down and lift the heel. <sub>[11.6 ¶fig-ch11_06_05]</sub>
+
+### 5. Relations
+
+- *bone* **Calcaneus.** The heel bone, where the calcaneal tendon inserts. <sub>[11.6 ¶fs-id2421915]</sub>
+- *muscle* **Tibialis anterior.** At the front of the leg. It dorsiflexes the foot, opposing the calf. <sub>[14.3 ¶fs-id2349137; 11.6 ¶fig-ch11_06_05]</sub>
+- *vein* **Veins of the leg.** Contracting leg muscles squeeze nearby veins, pushing blood towards the heart. <sub>[20.2 ¶fs-id1429887]</sub>
+- *muscle* **Deep posterior muscles.** Popliteus, flexor digitorum longus, flexor hallucis longus and tibialis posterior lie beneath. <sub>[11.6 ¶fs-id2421915]</sub>
+- *nerve* **Tibial nerve.** One of the two nerves in the sciatic nerve. It supplies the back of the leg. † <sub>[13.4 ¶fs-id1472046; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the tibial nerve supplies the calf muscles.]</sub>
+
+*Simpler.* They pull on the heel and work against the muscles at the front of the shin. <sub>[11.6 ¶fs-id2421915; 14.3 ¶fs-id2349137]</sub>
+
+### 6. Development
+
+- They develop from general mesoderm, like all limb muscles. <sub>[10.9 ¶fs-id1959103]</sub>
+
+### 7. Variations
+
+- The plantaris varies most: some people have two, and about 7 percent of cadavers have none. <sub>[11.6 ¶fs-id2421915]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** Tapping the calcaneal tendon with a reflex hammer.  
+   **Damaged:** The ankle reflex of the gastrocnemius and soleus.  
+   **Patient can’t:** Show a normal ankle reflex if the reflex arc is broken.  
+   **Why:** Stretch of the muscle excites its own motor neurons through the spinal cord. <sub>[16.4 ¶fs-id1956663]</sub>
+
+2. **Injury:** A sudden push-off that ruptures the calcaneal tendon.  
+   **Damaged:** The calcaneal (Achilles) tendon.  
+   **Patient can’t:** Stand on tiptoe on that leg or push off when walking.  
+   **Why:** The calf muscles can no longer pull on the calcaneus. † <sub>[11.6 ¶fs-id2421915; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Rupture of the calcaneal tendon and its signs.]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain how walking helps blood return from the legs.** <sub>[20.2 ¶fs-id1429887]</sub>
+
+   - Leg muscles, including the calf, contract during walking.
+   - They squeeze the nearby veins.
+   - The veins’ one-way valves let blood move only upwards.
+   - So the skeletal muscle pump moves blood towards the heart.
+
+2. *Compare.* **Compare the gastrocnemius and the soleus.** <sub>[11.6 ¶fig-ch11_06_05; 11.6 ¶fs-id2421915]</sub>
+
+   - Both plantar flex the foot through the calcaneal tendon.
+   - The gastrocnemius arises from the femur and crosses the knee.
+   - So it also flexes the leg; the soleus does not.
+   - The soleus lies deep and helps posture while walking.
+
+3. *Predict.* **Predict what happens to the calf muscles when you step on a tack.** <sub>[14.3 ¶fs-id2349137]</sub>
+
+   - Pain fibres excite the motor neurons of the tibialis anterior.
+   - The foot dorsiflexes.
+   - An interneuron inhibits the gastrocnemius and soleus.
+   - Plantar flexion stops, so the foot lifts off the tack.
+
+### Check yourself
+
+1. Which calf muscle also flexes the knee?  
+   A. Soleus · **B. Gastrocnemius** · C. Tibialis posterior · D. Fibularis longus  
+   *The gastrocnemius arises from the femoral condyles, so it crosses and flexes the knee.* <sub>[11.6 ¶fig-ch11_06_05]</sub>
+
+2. Where does the calcaneal tendon insert?  
+   A. Navicular · B. Talus · **C. Calcaneus** · D. Base of the fifth metatarsal  
+   *It inserts into the calcaneal bone of the ankle.* <sub>[11.6 ¶fs-id2421915]</sub>
+
+3. Which muscle lies deep to the gastrocnemius?  
+   **A. Soleus** · B. Tibialis anterior · C. Sartorius · D. Extensor digitorum longus  
+   *Deep to the gastrocnemius is the wide, flat soleus.* <sub>[11.6 ¶fs-id2421915]</sub>
+
+---
+
+## 8. Capitate
 
 *OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4 · id `capitate` · bone `capitate_left` · draft*
 
@@ -759,7 +994,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 7. Clavicle
+## 9. Clavicle
 
 *OpenStax A&P 2e: 8.1 The Pectoral Girdle; 8.5; 9.4; 20.5 · id `clavicle` · bone `clavicle_left` · draft*
 
@@ -876,7 +1111,227 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 8. Ethmoid bone
+## 10. Deltoid
+
+*OpenStax A&P 2e: 11.5 Muscles of the Pectoral Girdle and Upper Limbs; 9.6; 8.2; 13.4 · id `deltoid` · bone `undefined` · draft*
+
+### 1. In one line
+
+**The thick muscle that makes the rounded shape of the shoulder, and the main muscle that lifts the arm sideways. <sub>[11.5 ¶fs-id2501482]</sub>**
+
+*Simpler.* The deltoid is your shoulder muscle. It lifts your arm out to the side. <sub>[11.5 ¶fs-id2501482]</sub>
+
+*Deeper.* It is the major abductor of the arm, and it also helps to flex, extend and rotate it. <sub>[11.5 ¶fs-id2501482; glossary: deltoid]</sub>
+
+### 2. Where it is
+
+- The deltoid caps the shoulder joint, covering it from the front, the side and the back. <sub>[11.5 ¶fs-id2501482]</sub>
+- Its fibres arise from the clavicle, the acromion and the spine of the scapula. <sub>[11.5 ¶fig-ch11_05_03]</sub>
+- It inserts on the deltoid tuberosity, about halfway down the outer side of the humerus. † <sub>[† Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The deltoid’s insertion (deltoid tuberosity of the humerus).]</sub>
+
+*Simpler.* It wraps over the top of your shoulder, from your collarbone and shoulder blade to your upper arm bone. <sub>[11.5 ¶fig-ch11_05_03]</sub>
+
+*Deeper.* Its origin follows the insertion of the trapezius on the clavicle, acromion and scapular spine. <sub>[11.5 ¶fig-ch11_05_03; 11.5 ¶tbl-ch11_08]</sub>
+
+### 3. Key features
+
+- **Clavicular (front) part.** Arises from the clavicle. It helps flex and medially rotate the arm. † <sub>[11.5 ¶fig-ch11_05_03; 11.5 ¶fs-id2501482; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).]</sub>
+- **Acromial (middle) part.** Arises from the acromion. It is the part that abducts the arm. † <sub>[11.5 ¶fig-ch11_05_03; 11.5 ¶fs-id2501482; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the middle (acromial) fibres are the ones that abduct.]</sub>
+- **Spinal (back) part.** Arises from the spine of the scapula. It helps extend and laterally rotate the arm. † <sub>[11.5 ¶fig-ch11_05_03; 11.5 ¶fs-id2501482; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).]</sub>
+- **Shape.** Thick and triangular, like the Greek letter delta, which gives it its name. † <sub>[11.5 ¶fs-id2501482; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The origin of the name (the Greek letter delta).]</sub>
+
+*Simpler.* It has a front, a middle and a back part, all meeting on the upper arm. <sub>[11.5 ¶fig-ch11_05_03]</sub>
+
+*Deeper.* Its front and back parts work against each other, so the deltoid can both flex and extend the arm. † <sub>[11.5 ¶fs-id2501482; 11.1 ¶fs-id2260527; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).]</sub>
+
+### 4. Form → function
+
+- Its fibres arch over the shoulder, so pulling on the humerus lifts the arm away from the body. <sub>[11.5 ¶fs-id2501482]</sub>
+- The front fibres flex and medially rotate the arm. The back fibres extend and laterally rotate it. † <sub>[11.5 ¶fs-id2501482; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).]</sub>
+- Its thickness gives the shoulder its rounded outline. <sub>[11.5 ¶fs-id2501482]</sub>
+
+*Simpler.* Because it sits over the top of the shoulder, it lifts the arm out to the side. <sub>[11.5 ¶fs-id2501482]</sub>
+
+### 5. Relations
+
+- *muscle* **Supraspinatus.** A rotator cuff muscle deep to the deltoid. It also abducts the arm. <sub>[11.5 ¶fs-id2501482; 11.5 ¶fs-id2421860]</sub>
+- *joint* **Glenohumeral (shoulder) joint.** The deltoid covers this joint, formed by the humeral head and the glenoid cavity. <sub>[8.2 ¶fs-id2110691; 11.5 ¶fs-id2501482]</sub>
+- *muscle* **Trapezius.** Attaches to the same line of clavicle, acromion and scapular spine, from above. <sub>[11.5 ¶tbl-ch11_08; 11.5 ¶fig-ch11_05_03]</sub>
+- *muscle* **Pectoralis major.** The axial muscle in front. It shares the job of bringing the arm forwards. <sub>[11.5 ¶fs-id2008704; glossary: pectoralis major]</sub>
+- *nerve* **Axillary nerve.** A branch of the radial nerve that goes to the armpit region. It supplies the deltoid. † <sub>[13.4 ¶fs-id1472046; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the axillary nerve supplies the deltoid.]</sub>
+
+*Simpler.* It covers the shoulder joint, with the rotator cuff underneath and the trapezius above. <sub>[11.5 ¶fs-id2501482; 9.6 ¶fs-id2429784]</sub>
+
+### 6. Development
+
+- Like other limb muscles, it develops from general mesoderm rather than from somites. <sub>[10.9 ¶fs-id1959103]</sub>
+- Its fibres form when many myoblasts fuse, which is why each fibre has many nuclei. <sub>[10.9 ¶fs-id1959103]</sub>
+
+### 7. Variations
+
+- Training adds structural proteins to its fibres, so the muscle grows thicker without adding fibres. <sub>[10.6 ¶fs-id1584189]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** A fracture of the surgical neck of the humerus after a fall.  
+   **Damaged:** The axillary nerve, which winds round the surgical neck to reach the deltoid.  
+   **Patient can’t:** Lift the arm out to the side with normal strength.  
+   **Why:** Without its nerve, the deltoid cannot contract, so abduction is weak. † <sub>[8.2 ¶fs-id2030259; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The course of the axillary nerve round the surgical neck, and the weakness that follows its injury.]</sub>
+
+2. **Injury:** A shoulder kept still for weeks after an injury.  
+   **Damaged:** The deltoid itself, through disuse.  
+   **Patient can’t:** Lift the arm with the strength they had before.  
+   **Why:** Unused muscle loses structural proteins and shrinks (disuse atrophy). <sub>[10.9 ¶fs-id2269378; 10.9 ¶fs-id1645648]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain how one muscle, the deltoid, can both flex and extend the arm.** † <sub>[11.5 ¶fs-id2501482; 11.1 ¶fs-id2260527; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).]</sub>
+
+   - The deltoid has front, middle and back parts.
+   - The front part lies in front of the joint and flexes the arm.
+   - The back part lies behind the joint and extends it.
+   - So its parts can act as antagonists to each other.
+
+2. *Compare.* **Compare the deltoid and the supraspinatus in abducting the arm.** <sub>[11.5 ¶fs-id2501482; 11.5 ¶fs-id2421860; 9.6 ¶fs-id2429784]</sub>
+
+   - Both abduct the arm.
+   - The deltoid is the major abductor and lies superficially, capping the shoulder.
+   - The supraspinatus lies deep, above the spine of the scapula.
+   - Its tendon is part of the rotator cuff, which steadies the joint.
+
+3. *Predict.* **Predict what a patient cannot do after a fracture of the surgical neck that injures the axillary nerve.** † <sub>[8.2 ¶fs-id2030259; 10.9 ¶fs-id1645648; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The axillary nerve’s supply to the deltoid and the signs of its injury.]</sub>
+
+   - The axillary nerve supplies the deltoid.
+   - The deltoid cannot contract without it.
+   - Abduction of the arm becomes weak.
+   - Over time the unused muscle wastes, flattening the shoulder’s outline.
+
+### Check yourself
+
+1. Which movement is the deltoid’s main action?  
+   A. Adduction of the arm · **B. Abduction of the arm** · C. Supination of the forearm · D. Elevation of the scapula  
+   *The deltoid is the major abductor of the arm.* <sub>[11.5 ¶fs-id2501482]</sub>
+
+2. Which of these is not an origin of the deltoid?  
+   A. Clavicle · B. Acromion · C. Spine of the scapula · **D. Coracoid process**  
+   *The deltoid arises from the clavicle, acromion and spine of the scapula. The coracoid process gives origin to the coracobrachialis.* <sub>[11.5 ¶fig-ch11_05_03]</sub>
+
+3. What gives the shoulder its rounded outline?  
+   **A. The deltoid** · B. The head of the humerus alone · C. The trapezius · D. The subscapularis  
+   *The thick deltoid creates the rounded lines of the shoulder.* <sub>[11.5 ¶fs-id2501482]</sub>
+
+---
+
+## 11. Diaphragm
+
+*OpenStax A&P 2e: 11.4 Axial Muscles of the Abdominal Wall and Thorax; 22.3 The Process of Breathing; 13.4; 23.3 · id `diaphragm` · bone `undefined` · draft*
+
+### 1. In one line
+
+**The dome-shaped sheet of muscle between the chest and the abdomen: the main muscle of breathing. <sub>[11.4 ¶fs-id2974297; 22.3 ¶fs-id1882180]</sub>**
+
+*Simpler.* The diaphragm is a dome of muscle under your lungs. It pulls air in when it tightens. <sub>[11.4 ¶fs-id2974297; 22.3 ¶fs-id1882180]</sub>
+
+*Deeper.* Its contraction flattens the dome, enlarging the thoracic cavity and lowering the pressure in the lungs. <sub>[22.3 ¶fs-id1882180]</sub>
+
+### 2. Where it is
+
+- It separates the thoracic and abdominal cavities. Its upper surface is the floor of the chest. <sub>[11.4 ¶fs-id2974297]</sub>
+- Its muscle arises from the xiphoid process, the lower six ribs and cartilages, and the lumbar vertebrae. <sub>[11.4 ¶fs-id2304478]</sub>
+
+*Simpler.* It sits across the bottom of your rib cage, under your heart and lungs. <sub>[11.4 ¶fs-id2974297; 11.4 ¶fs-id2304478]</sub>
+
+*Deeper.* The pericardial sac and the parietal pleura fuse onto its central tendon. <sub>[11.4 ¶fs-id2304478]</sub>
+
+### 3. Key features
+
+- **Central tendon.** The tendon in the middle of the dome, into which all the muscle fibres insert. <sub>[11.4 ¶fs-id2304478; 11.4 ¶tbl-ch11_07]</sub>
+- **Caval opening.** Lets the inferior vena cava pass from the abdomen to the thorax. <sub>[11.4 ¶fs-id2143601]</sub>
+- **Oesophageal hiatus.** Lets the oesophagus and its nerves pass into the abdomen. <sub>[11.4 ¶fs-id2143601; 23.3 ¶fs-id1984077]</sub>
+- **Aortic hiatus.** At the back: the aorta, thoracic duct and azygos vein pass through it. <sub>[11.4 ¶fs-id2143601]</sub>
+
+*Simpler.* It has a tendon in the middle and three openings for big tubes to pass through. <sub>[11.4 ¶fs-id2304478; 11.4 ¶fs-id2143601]</sub>
+
+*Deeper.* The three openings lie at about the levels of T8 (caval), T10 (oesophageal) and T12 (aortic). † <sub>[11.4 ¶fs-id2143601; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The vertebral levels of the diaphragm’s openings.]</sub>
+
+### 4. Form → function
+
+- Contracting, it moves down towards the abdomen and makes the thoracic cavity larger. <sub>[22.3 ¶fs-id1882180]</sub>
+- The lungs follow, because pleural fluid holds them to the chest wall. Their pressure falls and air flows in. <sub>[22.3 ¶fs-id1882180; 22.3 ¶fs-id1545698]</sub>
+- Quiet expiration is passive: the diaphragm relaxes and the elastic lungs recoil. <sub>[22.3 ¶fs-id2453488]</sub>
+
+*Simpler.* Tighten it and air comes in. Relax it and air goes out by itself. <sub>[22.3 ¶fs-id1882180; 22.3 ¶fs-id2453488]</sub>
+
+### 5. Relations
+
+- *muscle* **External intercostals.** Work with the diaphragm in quiet inspiration, lifting the ribs up and out. <sub>[22.3 ¶fs-id1882180; 22.3 ¶fs-id2327717]</sub>
+- *muscle* **Abdominal muscles.** With the diaphragm, they raise abdominal pressure in defecation, urination and childbirth. <sub>[11.4 ¶fs-id2072110]</sub>
+- *nerve* **Phrenic nerve.** The phrenic nerve comes from the cervical plexus in the neck. It reaches the diaphragm at the base of the thorax. <sub>[13.4 ¶fs-id1472046]</sub>
+- *vessel* **Inferior vena cava and aorta.** Pass through the caval opening and the aortic hiatus. <sub>[11.4 ¶fs-id2143601]</sub>
+- *organ* **Oesophagus.** Enters the abdomen through the oesophageal hiatus. <sub>[23.3 ¶fs-id1984077; 11.4 ¶fs-id2143601]</sub>
+
+*Simpler.* The heart and lungs sit on it and the liver and stomach lie under it. A nerve from the neck works it. † <sub>[11.4 ¶fs-id2974297; 13.4 ¶fs-id1472046; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the liver and stomach lie directly under the diaphragm.]</sub>
+
+### 6. Development
+
+- The phrenic nerve comes from the neck (cervical plexus), a sign that the diaphragm’s muscle starts in the neck region. † <sub>[13.4 ¶fs-id1472046; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the diaphragm and why its nerve comes from the neck.]</sub>
+
+### 7. Variations
+
+- A deep breath is mainly diaphragmatic; a shallow breath relies more on the intercostals (costal breathing). <sub>[22.3 ¶fs-id2276812]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** Damage to the pons or medulla, after a stroke or from drugs such as morphine.  
+   **Damaged:** The respiratory centres that drive the diaphragm.  
+   **Patient can’t:** Breathe regularly in sleep: breathing stops for short periods (central sleep apnoea).  
+   **Why:** Without signals from the centres, the diaphragm and intercostals do not contract. <sub>[22.3 ¶fs-id2582598; 22.3 ¶fs-id2096099]</sub>
+
+2. **Injury:** Part of the stomach slides up through the oesophageal hiatus (a hiatus hernia).  
+   **Damaged:** The oesophageal hiatus, which has widened.  
+   **Patient can’t:** Keep stomach acid out of the oesophagus: heartburn is worse lying down.  
+   **Why:** The hiatus no longer holds the junction of the oesophagus and stomach below the diaphragm. † <sub>[23.3 ¶fs-id1984077; 11.4 ¶fs-id2143601; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Hiatus hernia and its symptoms.]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain how contraction of the diaphragm draws air into the lungs.** <sub>[22.3 ¶fs-id1882180; 22.3 ¶fs-id1545698]</sub>
+
+   - The diaphragm moves down and the thoracic cavity enlarges.
+   - Pleural fluid makes the lungs follow the chest wall.
+   - Lung volume rises, so pressure in the alveoli falls below atmospheric.
+   - Air flows down this pressure gradient into the lungs.
+
+2. *Compare.* **Compare quiet and forced breathing.** <sub>[22.3 ¶fs-id2327717; 22.3 ¶fs-id2146002; 22.3 ¶fs-id2453488]</sub>
+
+   - Quiet breathing: the diaphragm and external intercostals contract; expiration is passive.
+   - Forced breathing: inspiration and expiration both use muscles.
+   - Neck muscles such as the scalenes help forced inspiration.
+   - Abdominal muscles and internal intercostals drive forced expiration.
+
+3. *Predict.* **Predict what happens to breathing if the phrenic nerve is cut on one side.** † <sub>[13.4 ¶fs-id1472046; 22.3 ¶fs-id1882180; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The effects of cutting one phrenic nerve.]</sub>
+
+   - The phrenic nerve is the diaphragm’s motor nerve.
+   - That half of the diaphragm cannot contract.
+   - Inspiration on that side weakens.
+   - The intercostals and accessory muscles must do more of the work.
+
+### Check yourself
+
+1. What passes through the aortic hiatus?  
+   A. Inferior vena cava · B. Oesophagus · **C. Aorta, thoracic duct and azygos vein** · D. Phrenic nerve  
+   *The aorta, thoracic duct and azygos vein pass through the aortic hiatus at the back.* <sub>[11.4 ¶fs-id2143601]</sub>
+
+2. Which nerve supplies the diaphragm?  
+   A. Vagus nerve · **B. Phrenic nerve** · C. Intercostal nerve · D. Accessory nerve  
+   *The phrenic nerve, from the cervical plexus, connects to the diaphragm.* <sub>[13.4 ¶fs-id1472046]</sub>
+
+3. What happens when the diaphragm contracts?  
+   **A. It moves inferiorly and the thoracic cavity enlarges** · B. It moves superiorly and air is forced out · C. The lungs actively expand themselves · D. Intra-alveolar pressure rises above atmospheric  
+   *It moves down towards the abdomen, enlarging the thoracic cavity.* <sub>[22.3 ¶fs-id1882180]</sub>
+
+---
+
+## 12. Ethmoid bone
 
 *OpenStax A&P 2e: 7.2 The Skull; 7.5; 14.1 · id `ethmoid` · bone `ethmoid_bone` · draft*
 
@@ -991,7 +1446,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 9. Frontal bone
+## 13. Frontal bone
 
 *OpenStax A&P 2e: 7.2 The Skull; 7.5; 9.2; 14.1 · id `frontal` · bone `frontal_bone` · draft*
 
@@ -1107,7 +1562,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 10. Hamate
+## 14. Hamate
 
 *OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4 · id `hamate` · bone `hamate_left` · draft*
 
@@ -1219,7 +1674,116 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 11. Phalanges of the hand
+## 15. Hamstrings
+
+*OpenStax A&P 2e: 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs; 11.1; 13.4 · id `hamstrings` · bone `undefined` · draft*
+
+### 1. In one line
+
+**The three long muscles at the back of the thigh that bend the knee and extend the hip. <sub>[11.6 ¶fs-id2012638; glossary: hamstring group]</sub>**
+
+*Simpler.* The hamstrings are the muscles at the back of your thigh. They bend your knee. <sub>[11.6 ¶fs-id2012638]</sub>
+
+*Deeper.* They are the biceps femoris, semitendinosus and semimembranosus, in the posterior compartment of the thigh. <sub>[11.6 ¶fs-id2012638]</sub>
+
+### 2. Where it is
+
+- The hamstrings fill the posterior compartment of the thigh. <sub>[11.6 ¶fs-id2012638]</sub>
+- All three arise from the ischial tuberosity; the biceps femoris also from the linea aspera and distal femur. <sub>[11.6 ¶fig-ch11_06_03]</sub>
+
+*Simpler.* They run from the bone you sit on to just below the back of the knee. <sub>[11.6 ¶fig-ch11_06_03; 11.6 ¶fs-id2012638]</sub>
+
+*Deeper.* Their tendons form the borders of the popliteal fossa, the diamond-shaped space behind the knee. <sub>[11.6 ¶fs-id2012638]</sub>
+
+### 3. Key features
+
+- **Biceps femoris.** The lateral hamstring. Besides flexing the knee, it turns the thigh outwards. <sub>[11.6 ¶fig-ch11_06_03]</sub>
+- **Semitendinosus.** A medial hamstring with a long tendon. It turns the thigh inwards. † <sub>[11.6 ¶fig-ch11_06_03; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The long tendon of the semitendinosus.]</sub>
+- **Semimembranosus.** A medial hamstring, deep to the semitendinosus. It turns the thigh inwards. † <sub>[11.6 ¶fig-ch11_06_03; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the semimembranosus lies deep to the semitendinosus.]</sub>
+- **Popliteal fossa.** The diamond-shaped space behind the knee, bordered by their tendons. <sub>[11.6 ¶fs-id2012638]</sub>
+
+*Simpler.* One hamstring is on the outer side; two are on the inner side. <sub>[11.6 ¶fig-ch11_06_03]</sub>
+
+*Deeper.* The biceps femoris inserts on the head of the fibula; the other two on the medial side of the tibia. † <sub>[† Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The insertions of the hamstrings.]</sub>
+
+### 4. Form → function
+
+- Crossing the back of the knee, they flex the leg, as when kneeling. <sub>[11.6 ¶fs-id2012638; 11.6 ¶fig-ch11_06_03]</sub>
+- Crossing the back of the hip, they also extend the thigh: they move it down and back. <sub>[11.6 ¶fs-id2012638; 11.6 ¶fig-ch11_06_03]</sub>
+- They oppose the quadriceps, which extend the knee. <sub>[11.1 ¶tbl-ch11_01]</sub>
+
+*Simpler.* They bend the knee and swing the thigh backwards. <sub>[11.6 ¶fs-id2012638; 11.6 ¶fig-ch11_06_03]</sub>
+
+### 5. Relations
+
+- *bone* **Ischial tuberosity.** Their common origin, on the hip bone. <sub>[11.6 ¶fig-ch11_06_03]</sub>
+- *muscle* **Quadriceps femoris.** Their antagonists at the knee. <sub>[11.1 ¶tbl-ch11_01]</sub>
+- *nerve* **Sciatic nerve.** Runs down the back of the thigh. It is the tibial and fibular nerves combined. † <sub>[13.4 ¶fs-id1472046; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the sciatic nerve supplies the hamstrings and runs among them.]</sub>
+- *muscle* **Gastrocnemius.** Arises from the femoral condyles, between the hamstring tendons behind the knee. <sub>[11.6 ¶fig-ch11_06_05]</sub>
+- *space* **Popliteal fossa.** Bounded above by the hamstring tendons. <sub>[11.6 ¶fs-id2012638]</sub>
+
+*Simpler.* They sit behind the thigh, opposite the quadriceps, with the sciatic nerve close by. <sub>[11.1 ¶tbl-ch11_01; 13.4 ¶fs-id1472046]</sub>
+
+### 6. Development
+
+- Like all limb muscles, they develop from general mesoderm, and each fibre forms from many fused myoblasts. <sub>[10.9 ¶fs-id1959103]</sub>
+
+### 7. Variations
+
+- Sprinters’ muscles have a high share of fast glycolytic fibres for powerful bursts. † <sub>[10.6 ¶fs-id2264056; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Fibre types of the hamstrings specifically.]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** A sudden sprint, with the hip flexed and the knee straightening.  
+   **Damaged:** The hamstrings, which tear (a hamstring strain).  
+   **Patient can’t:** Run or bend the knee against resistance without pain.  
+   **Why:** They are stretched across two joints while contracting hard to slow the leg. † <sub>[11.6 ¶fs-id2012638; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Hamstring strains.]</sub>
+
+2. **Injury:** Compression of the sciatic nerve or the spinal nerves that form it.  
+   **Damaged:** The sciatic nerve (sciatica).  
+   **Patient can’t:** Move the hip and leg without pain.  
+   **Why:** Compression or irritation of the nerve, or of the spinal nerves forming it, causes sciatica. <sub>[13.4 ¶fs-id1472046]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain why the hamstrings act on both the hip and the knee.** <sub>[11.6 ¶fig-ch11_06_03; 11.6 ¶fs-id2012638]</sub>
+
+   - They arise from the ischial tuberosity, behind the hip joint.
+   - They cross the back of the knee to the leg.
+   - So they extend the thigh at the hip.
+   - And they flex the leg at the knee.
+
+2. *Compare.* **Compare the biceps femoris with the semitendinosus and semimembranosus.** <sub>[11.6 ¶fig-ch11_06_03]</sub>
+
+   - All three flex the knee and extend the thigh.
+   - The biceps femoris lies laterally and turns the thigh outwards.
+   - The other two lie medially and turn it inwards.
+   - Only the biceps femoris also arises from the femur.
+
+3. *Predict.* **Predict which movement is hard after a hamstring strain.** † <sub>[11.6 ¶fs-id2012638; 11.6 ¶fig-ch11_06_03; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Hamstring strains.]</sub>
+
+   - Bending the knee against resistance.
+   - Swinging the thigh back while running.
+   - Both stretch or load the torn muscle.
+   - So running and climbing hurt most.
+
+### Check yourself
+
+1. Where do all three hamstrings arise?  
+   **A. Ischial tuberosity** · B. Anterior inferior iliac spine · C. Greater trochanter · D. Pubic symphysis  
+   *All three arise from the ischial tuberosity.* <sub>[11.6 ¶fig-ch11_06_03]</sub>
+
+2. What space do the hamstring tendons help to form?  
+   A. Femoral triangle · **B. Popliteal fossa** · C. Inguinal canal · D. Tarsal tunnel  
+   *Their tendons form the popliteal fossa behind the knee.* <sub>[11.6 ¶fs-id2012638]</sub>
+
+3. Which hamstring turns the thigh outwards?  
+   A. Semitendinosus · B. Semimembranosus · C. Gracilis · **D. Biceps femoris**  
+   *The biceps femoris twists the thigh outwards; the other two twist it inwards.* <sub>[11.6 ¶fig-ch11_06_03]</sub>
+
+---
+
+## 16. Phalanges of the hand
 
 *OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4; 9.5; 20.5 · id `hand-phalanges` · bone `hand_proximal_phalanx_3_left` · draft*
 
@@ -1332,7 +1896,121 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 12. Hyoid bone
+## 17. Heart
+
+*OpenStax A&P 2e: 19.1 Heart Anatomy; 19.5 Development of the Heart · id `heart` · bone `undefined` · draft*
+
+### 1. In one line
+
+**The four-chambered muscular pump in the middle of the chest that drives blood round the lungs and the body. <sub>[19.1 ¶fs-id1892589; 19.1 ¶fs-id1478856; 19.1 ¶fs-id2767147]</sub>**
+
+*Simpler.* The heart is a pump about the size of your fist. It pushes blood all round your body. <sub>[19.1 ¶fs-id2694723; 19.1 ¶fs-id1478856]</sub>
+
+*Deeper.* The right side of the heart feeds the pulmonary circuit; the left side feeds the systemic circuit. <sub>[19.1 ¶fs-id2767147; 19.1 ¶fs-id1236860]</sub>
+
+### 2. Where it is
+
+- It lies in the mediastinum, between the lungs, inside the pericardial sac. <sub>[19.1 ¶fs-id1892589]</sub>
+- Its base, where the great vessels attach, is at the level of the third costal cartilage. <sub>[19.1 ¶fs-id1892589]</sub>
+- Its apex lies just left of the sternum, between the fourth and fifth ribs near their cartilages. <sub>[19.1 ¶fs-id1892589]</sub>
+
+*Simpler.* It sits behind your breastbone, pointing down and to the left. <sub>[19.1 ¶fs-id1892589]</sub>
+
+*Deeper.* Its right side is turned forwards and its left side backwards. The left lung has a notch for it. <sub>[19.1 ¶fs-id1892589; 22.2 ¶fs-id2627237]</sub>
+
+### 3. Key features
+
+- **Atria.** The two upper chambers. They receive blood and push it into the ventricles. <sub>[19.1 ¶fs-id1478856]</sub>
+- **Ventricles.** The two lower chambers, the main pumps: right to the lungs, left to the body. <sub>[19.1 ¶fs-id1478856]</sub>
+- **Valves.** Tricuspid and mitral between atria and ventricles; pulmonary and aortic at the exits. <sub>[19.1 ¶fs-id2718087; 19.1 ¶fs-id2268819]</sub>
+- **Septa.** Walls between the chambers: interatrial, interventricular and atrioventricular. <sub>[19.1 ¶fs-id2301176; 19.1 ¶fs-id1422157; 19.1 ¶fs-id2268819]</sub>
+- **Myocardium.** The thick middle layer of the wall, made of cardiac muscle that pumps the blood. <sub>[19.1 ¶fs-id2062267; 19.1 ¶fs-id2122250]</sub>
+
+*Simpler.* Four chambers, four one-way valves and a thick muscle wall. <sub>[19.1 ¶fs-id1478856; 19.1 ¶fs-id2718087]</sub>
+
+*Deeper.* Its muscle cells swirl round the chambers in figure-of-eight patterns, which helps it pump efficiently. <sub>[19.1 ¶fs-id2062267]</sub>
+
+### 4. Form → function
+
+- The left ventricle’s wall is much thicker than the right’s, to pump against the higher resistance of the systemic circuit. <sub>[19.1 ¶fs-id2183171]</sub>
+- Papillary muscles tighten the chordae tendineae as the ventricles contract, so the valve flaps cannot blow back. <sub>[19.1 ¶fs-id2765308; 19.1 ¶fs-id1534517]</sub>
+- The semilunar valves are pockets that fill with blood flowing back, sealing the exits. <sub>[19.1 ¶fs-id2541385]</sub>
+
+*Simpler.* Thick walls for pumping hard, and valves that let blood go only one way. <sub>[19.1 ¶fs-id2183171; 19.1 ¶fs-id2718087]</sub>
+
+### 5. Relations
+
+- *membrane* **Pericardium.** A tough fibrous sac with a serous lining that protects the heart and holds it in place. <sub>[19.1 ¶fs-id2418328]</sub>
+- *artery* **Aorta.** Leaves the left ventricle through the aortic valve, carrying blood to the body. <sub>[19.1 ¶fs-id2663012; 19.1 ¶fs-id1236860]</sub>
+- *artery* **Pulmonary trunk.** Leaves the right ventricle and divides into the right and left pulmonary arteries. <sub>[19.1 ¶fs-id1236860]</sub>
+- *artery* **Coronary arteries.** The first branches of the aorta. They supply the heart muscle itself. <sub>[19.1 ¶fs-id1247110]</sub>
+- *vein* **Pulmonary veins.** Bring oxygen-rich blood from the lungs into the left atrium. <sub>[19.1 ¶fs-id1236860; 19.1 ¶fs-id2769216]</sub>
+
+*Simpler.* Big vessels leave from its top, and its own arteries wrap round its surface. <sub>[19.1 ¶fs-id1892589; 19.1 ¶fs-id1247110]</sub>
+
+### 6. Development
+
+- It is the first organ to work, beating from about day 21 or 22 after fertilisation. <sub>[19.5 ¶fs-id2058606]</sub>
+- It forms from mesoderm as a tube, which folds into an S shape between days 23 and 28. <sub>[19.5 ¶fs-id2485730; 19.5 ¶fs-id1364320]</sub>
+- In the fetus, the foramen ovale lets blood pass from the right atrium to the left. It closes at birth. <sub>[19.1 ¶fs-id2301176]</sub>
+
+### 7. Variations
+
+- As many as 20–25 percent of people have a patent foramen ovale, mostly without symptoms. <sub>[19.1 ¶fs-id2587120]</sub>
+- An endurance athlete’s heart can be much larger than average, as exercise adds myofilaments. <sub>[19.1 ¶fs-id2694723]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** A coronary artery blocked by atherosclerotic plaque.  
+   **Damaged:** The heart muscle the artery supplies, which dies (myocardial infarction).  
+   **Patient can’t:** Keep the heart pumping normally; there is often sudden pain beneath the sternum.  
+   **Why:** Without blood and oxygen, the cardiac muscle cells die. <sub>[19.1 ¶fs-id1289761; 19.1 ¶fs-id2351428]</sub>
+
+2. **Injury:** Fluid or blood building up quickly in the pericardial cavity.  
+   **Damaged:** The heart’s filling (cardiac tamponade).  
+   **Patient can’t:** Fill and empty the heart fully: less blood is pumped with each beat.  
+   **Why:** The fluid presses on the heart and stops it relaxing fully between beats. <sub>[19.1 ¶fs-id2988974]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain why the left ventricle’s wall is thicker than the right’s.** <sub>[19.1 ¶fs-id2183171]</sub>
+
+   - Both ventricles pump the same amount of blood per beat.
+   - The left pumps into the long systemic circuit, with high resistance.
+   - The right pumps into the short pulmonary circuit, with low resistance.
+   - So the left must generate much more pressure.
+
+2. *Compare.* **Compare the atrioventricular and semilunar valves.** <sub>[19.1 ¶fs-id2718087; 19.1 ¶fs-id2541385; 19.1 ¶fs-id2326948]</sub>
+
+   - Atrioventricular valves lie between atria and ventricles: tricuspid on the right, mitral on the left.
+   - They are held by chordae tendineae and papillary muscles.
+   - Semilunar valves guard the pulmonary trunk and aorta.
+   - They are pocket-like, with no chordae tendineae or papillary muscles.
+
+3. *Predict.* **Predict what happens if chordae tendineae on the mitral valve break.** <sub>[19.1 ¶fs-id2266265; 19.1 ¶fs-id1932336]</sub>
+
+   - The cusps are no longer held as the ventricle contracts.
+   - A cusp is forced backwards into the atrium (prolapse).
+   - Blood flows back into the left atrium (regurgitation).
+   - A heart murmur is heard with a stethoscope.
+
+### Check yourself
+
+1. Which chamber pumps blood into the aorta?  
+   A. Right atrium · B. Right ventricle · C. Left atrium · **D. Left ventricle**  
+   *The left ventricle ejects blood into the aorta through the aortic semilunar valve.* <sub>[19.1 ¶fs-id2663012]</sub>
+
+2. Which valve lies between the left atrium and the left ventricle?  
+   **A. Mitral valve** · B. Tricuspid valve · C. Pulmonary valve · D. Aortic valve  
+   *The mitral (bicuspid) valve guards the opening between the left atrium and ventricle.* <sub>[19.1 ¶fs-id2326948]</sub>
+
+3. Which vessels carry oxygen-rich blood into the heart?  
+   A. Venae cavae · **B. Pulmonary veins** · C. Pulmonary arteries · D. Coronary sinus  
+   *The pulmonary veins return highly oxygenated blood from the lungs to the left atrium.* <sub>[19.1 ¶fs-id1236860]</sub>
+
+---
+
+## 18. Hyoid bone
 
 *OpenStax A&P 2e: 7.2 The Skull · id `hyoid` · bone `hyoid_bone` · draft*
 
@@ -1443,7 +2121,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 13. Inferior nasal concha
+## 19. Inferior nasal concha
 
 *OpenStax A&P 2e: 7.2 The Skull; 7.5 · id `inferior-nasal-concha` · bone `inferior_nasal_concha_left` · draft*
 
@@ -1551,7 +2229,117 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 14. Lacrimal bone
+## 20. Kidneys
+
+*OpenStax A&P 2e: 25.2 Gross Anatomy of Urine Transport; 25.3 Gross Anatomy of the Kidney; 25.10; 17.10 · id `kidneys` · bone `undefined` · draft*
+
+### 1. In one line
+
+**Two bean-shaped organs at the back of the abdomen that filter the blood and make urine. † <sub>[25.3 ¶fs-id1542887; 25.3 ¶fs-id2532837; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The kidneys’ bean shape.]</sub>**
+
+*Simpler.* Your kidneys clean your blood and turn the waste into urine. <sub>[25.3 ¶fs-id2532837]</sub>
+
+*Deeper.* They also help control blood pressure, make erythropoietin and activate vitamin D. <sub>[25.10 ¶fs-id2844948; 17.10 ¶fs-id1389903]</sub>
+
+### 2. Where it is
+
+- They lie either side of the spine, behind the peritoneum, protected by muscle, fat and ribs. <sub>[25.3 ¶fs-id1542887]</sub>
+- The left kidney is at about T12 to L3; the right is lower, pushed down by the liver. <sub>[25.3 ¶fs-id1592078]</sub>
+
+*Simpler.* They sit against your back muscles, just under your lowest ribs. <sub>[25.3 ¶fs-id1592078]</sub>
+
+*Deeper.* The eleventh and twelfth ribs partly protect their upper portions. <sub>[25.3 ¶fs-id1592078]</sub>
+
+### 3. Key features
+
+- **Cortex.** The lighter outer region, holding all the renal corpuscles and convoluted tubules. <sub>[25.3 ¶fs-id2303293; 25.3 ¶fs-id2506359]</sub>
+- **Medulla.** The inner region, with renal pyramids and papillae. <sub>[25.3 ¶fs-id2303293]</sub>
+- **Renal pelvis.** The funnel formed from the calyces; it narrows into the ureter. <sub>[25.3 ¶fs-id1764618; 25.2 ¶fs-id2338701]</sub>
+- **Hilum.** Where vessels, nerves, lymphatics and the ureter enter and leave. <sub>[25.3 ¶fs-id1764618]</sub>
+- **Capsule and fat.** A fibrous capsule, a cushioning fat pad and renal fascia surround each kidney. <sub>[25.3 ¶fs-id1592078]</sub>
+
+*Simpler.* An outer cortex, an inner medulla and a funnel that collects the urine. <sub>[25.3 ¶fs-id2303293; 25.3 ¶fs-id1764618]</sub>
+
+*Deeper.* About 1.3 million nephrons in each kidney do the filtering. <sub>[25.3 ¶fs-id2718604]</sub>
+
+### 4. Form → function
+
+- Each nephron starts with a glomerulus, a tuft of high-pressure capillaries inside Bowman’s capsule. <sub>[25.3 ¶fs-id2532837]</sub>
+- They receive about 25 percent of the cardiac output at rest. <sub>[25.3 ¶fs-id1542887]</sub>
+- Smooth muscle in the renal pelvis and ureter moves urine on by peristalsis. <sub>[25.3 ¶fs-id1764618; 25.2 ¶fs-id2140392]</sub>
+
+*Simpler.* Lots of blood flows through tiny filters, and muscle squeezes the urine down to the bladder. <sub>[25.3 ¶fs-id1542887; 25.3 ¶fs-id2532837; 25.2 ¶fs-id2140392]</sub>
+
+### 5. Relations
+
+- *gland* **Adrenal gland.** Sits on top of each kidney; its aldosterone makes the kidney keep sodium. <sub>[25.3 ¶fs-id2488605]</sub>
+- *artery* **Renal artery.** Comes straight from the aorta. <sub>[25.3 ¶fs-id1764618]</sub>
+- *vein* **Renal vein.** Returns cleansed blood straight to the inferior vena cava. <sub>[25.3 ¶fs-id1764618]</sub>
+- *duct* **Ureter.** About 30 cm long; carries urine from the renal pelvis to the bladder. <sub>[25.2 ¶fs-id2140392; 25.2 ¶fs-id2338701]</sub>
+- *organ* **Liver.** Pushes the right kidney a little lower than the left. <sub>[25.3 ¶fs-id1592078]</sub>
+
+*Simpler.* Blood comes from the aorta and goes back to the vena cava; urine goes down the ureter. <sub>[25.3 ¶fs-id1764618]</sub>
+
+### 6. Development
+
+- They develop in the pelvis and rise to their adult position in the abdomen. † <sub>[† Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the kidneys.]</sub>
+
+### 7. Variations
+
+- The male kidney is usually a little larger than the female. <sub>[25.3 ¶fs-id1542887]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** Kidney failure.  
+   **Damaged:** The kidneys’ filtering and their hormone roles.  
+   **Patient can’t:** Keep enough red blood cells, or absorb calcium normally.  
+   **Why:** Failing kidneys make too little erythropoietin and active vitamin D. <sub>[25.10 ¶fs-id2844948; 25.10 ¶fs-id1586933]</sub>
+
+2. **Injury:** Glomeruli damaged by an autoimmune illness.  
+   **Damaged:** The glomerular filter, which lets protein through.  
+   **Patient can’t:** Keep protein in the blood: it is lost in the urine, and oedema spreads.  
+   **Why:** Low plasma protein lets water move out of the blood into the tissues. <sub>[25.10 ¶fs-id2096572]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain why the right kidney lies lower than the left.** <sub>[25.3 ¶fs-id1592078]</sub>
+
+   - Both lie behind the peritoneum either side of the spine.
+   - The liver sits above the right kidney.
+   - It displaces the right kidney slightly downwards.
+   - So the left is at about T12 to L3 and the right a little lower.
+
+2. *Compare.* **Compare the renal cortex and medulla.** <sub>[25.3 ¶fs-id2303293; 25.3 ¶fs-id2506359]</sub>
+
+   - The cortex is outer and lighter.
+   - It holds the renal corpuscles and convoluted tubules.
+   - The medulla is inner, with pyramids and papillae.
+   - Its papillae carry urine to the calyces.
+
+3. *Predict.* **Predict a blood change in long-term kidney failure.** † <sub>[17.10 ¶fs-id1918548; 25.10 ¶fs-id2844948; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Anaemia in kidney failure.]</sub>
+
+   - The kidneys make erythropoietin.
+   - Erythropoietin stimulates red blood cell formation.
+   - Failing kidneys make too little of it.
+   - So red blood cells fall (anaemia).
+
+### Check yourself
+
+1. At about which vertebral levels is the left kidney?  
+   **A. T12 to L3** · B. T6 to T9 · C. L4 to S1 · D. C7 to T2  
+   *The left kidney is at about T12 to L3; the right is lower.* <sub>[25.3 ¶fs-id1592078]</sub>
+
+2. Which hormone do the kidneys make that stimulates red blood cell formation?  
+   A. Renin · B. Aldosterone · C. Calcitonin · **D. Erythropoietin**  
+   *The kidneys produce erythropoietin (EPO).* <sub>[17.10 ¶fs-id1918548]</sub>
+
+3. Where are the renal corpuscles?  
+   A. Medulla · B. Renal pelvis · **C. Cortex** · D. Papillae  
+   *All renal corpuscles lie in the cortex.* <sub>[25.3 ¶fs-id2506359]</sub>
+
+---
+
+## 21. Lacrimal bone
 
 *OpenStax A&P 2e: 7.2 The Skull; 6.4 · id `lacrimal` · bone `lacrimal_bone_left` · draft*
 
@@ -1661,7 +2449,116 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 15. Lunate
+## 22. Liver
+
+*OpenStax A&P 2e: 23.6 Accessory Organs in Digestion: The Liver, Pancreas, and Gallbladder · id `liver` · bone `undefined` · draft*
+
+### 1. In one line
+
+**The largest gland in the body: it makes bile and processes the nutrients and toxins absorbed from the gut. <sub>[23.6 ¶fs-id1907412; 23.6 ¶fs-id1966736; glossary: liver]</sub>**
+
+*Simpler.* Your liver is a big organ under your right ribs. It makes bile and cleans your blood. <sub>[23.6 ¶fs-id1907412; 23.6 ¶fs-id1966736]</sub>
+
+*Deeper.* Besides digestion, it has many roles in metabolism and regulation. <sub>[23.6 ¶fs-id1907412]</sub>
+
+### 2. Where it is
+
+- It lies below the diaphragm in the right upper quadrant of the abdomen, protected by the ribs. <sub>[23.6 ¶fs-id1907412]</sub>
+- Peritoneal folds called ligaments attach it to the diaphragm and the abdominal wall. <sub>[23.6 ¶fs-id1479465]</sub>
+
+*Simpler.* It sits high on the right side of your abdomen, under your ribs. <sub>[23.6 ¶fs-id1907412]</sub>
+
+*Deeper.* The lesser omentum tethers it to the lesser curvature of the stomach. <sub>[23.6 ¶fs-id1479465]</sub>
+
+### 3. Key features
+
+- **Right and left lobes.** A large right lobe and a much smaller left lobe. <sub>[23.6 ¶fs-id1479465]</sub>
+- **Quadrate and caudate lobes.** Smaller lobes some anatomists identify within the right lobe. <sub>[23.6 ¶fs-id1479465]</sub>
+- **Falciform ligament.** A remnant of the umbilical vein that separates the right and left lobes in front. <sub>[23.6 ¶fs-id1479465]</sub>
+- **Porta hepatis.** The “gate” where the hepatic artery and hepatic portal vein enter. <sub>[23.6 ¶fs-id1842507]</sub>
+
+*Simpler.* Two main lobes, with vessels entering at a “gate” underneath. <sub>[23.6 ¶fs-id1479465; 23.6 ¶fs-id1842507]</sub>
+
+*Deeper.* It weighs about three pounds (about 1.4 kg) in an adult. <sub>[23.6 ¶fs-id1907412]</sub>
+
+### 4. Form → function
+
+- Hepatocytes, about 80 percent of its volume, line porous sinusoids and process what the blood brings. <sub>[23.6 ¶fs-id1257384; 23.6 ¶fs-id1966736]</sub>
+- It makes about one litre of bile a day; bile salts emulsify fats. <sub>[23.6 ¶fs-id1386125; 23.6 ¶fs-id1390455]</sub>
+- Bile salts are reclaimed in the ileum and recycled (the enterohepatic circulation). <sub>[23.6 ¶fs-id1216217]</sub>
+
+*Simpler.* Its cells sit right against the blood, clean it, and make bile to break up fats. <sub>[23.6 ¶fs-id1966736; 23.6 ¶fs-id1390455]</sub>
+
+### 5. Relations
+
+- *vein* **Hepatic portal vein.** The hepatic portal vein brings nutrient-rich blood from the gut. It supplies more oxygen than the hepatic artery. <sub>[23.6 ¶fs-id1842507]</sub>
+- *artery* **Hepatic artery.** Brings oxygenated blood from the heart. <sub>[23.6 ¶fs-id1842507]</sub>
+- *organ* **Gallbladder.** Stores and concentrates the bile between meals. <sub>[23.6 ¶fs-id1379189; 23.6 ¶fs-id2279526]</sub>
+- *duct* **Common bile duct.** Formed by the common hepatic and cystic ducts; carries bile to the duodenum. <sub>[23.6 ¶fs-id1356003]</sub>
+- *muscle* **Diaphragm.** Lies directly above it. <sub>[23.6 ¶fs-id1907412]</sub>
+
+*Simpler.* Blood comes in from the gut and the heart; bile goes out to the gallbladder and duodenum. <sub>[23.6 ¶fs-id1842507; 23.6 ¶fs-id1356003]</sub>
+
+### 6. Development
+
+- The falciform ligament and the ligamentum teres hepatis are remnants of the fetal umbilical vein. <sub>[23.6 ¶fs-id1479465]</sub>
+
+### 7. Variations
+
+- Some anatomists divide the right lobe further into quadrate and caudate lobes. <sub>[23.6 ¶fs-id1479465]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** A blockage that stops bile reaching the intestine.  
+   **Damaged:** The flow of bile into the duodenum.  
+   **Patient can’t:** Digest fats normally: the stool is pale (acholic) and fatty.  
+   **Why:** Without bile, fats are not emulsified and bilirubin does not colour the stool. <sub>[23.6 ¶fs-id1884700; 23.6 ¶fs-id1390455]</sub>
+
+2. **Injury:** A build-up of bilirubin when red cell breakdown or bile flow goes wrong.  
+   **Damaged:** The liver’s excretion of bilirubin into bile.  
+   **Patient can’t:** Clear bilirubin: the skin and eyes turn yellow (jaundice).  
+   **Why:** Bilirubin is a waste of old red cells that the liver normally excretes in bile. † <sub>[23.6 ¶fs-id1884700; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Jaundice and its causes.]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain how bile helps digest fats.** <sub>[23.6 ¶fs-id1390455; 23.6 ¶fs-id1386125]</sub>
+
+   - Fats do not dissolve in the watery chyme.
+   - Bile salts have a water-loving and a fat-loving region.
+   - They pull large fat globules apart into droplets about 1 micrometre across.
+   - This emulsification gives lipase a larger surface to act on.
+
+2. *Compare.* **Compare the blood the liver receives from the hepatic artery and the hepatic portal vein.** <sub>[23.6 ¶fs-id1842507]</sub>
+
+   - The hepatic artery brings oxygenated blood from the heart.
+   - The portal vein brings partly deoxygenated, nutrient-rich blood from the gut.
+   - The portal vein also carries absorbed drugs and toxins.
+   - It actually supplies more oxygen than the smaller hepatic arteries.
+
+3. *Predict.* **Predict what happens to bile between meals.** <sub>[23.6 ¶fs-id1379189]</sub>
+
+   - The liver keeps making bile.
+   - The hepatopancreatic ampulla closes.
+   - Bile is diverted into the gallbladder.
+   - There it is concentrated and stored until the next meal.
+
+### Check yourself
+
+1. Where is the liver?  
+   A. Left upper quadrant · **B. Right upper quadrant** · C. Behind the stomach in the retroperitoneum · D. In the pelvis  
+   *It lies inferior to the diaphragm in the right upper quadrant.* <sub>[23.6 ¶fs-id1907412]</sub>
+
+2. What enters the liver at the porta hepatis?  
+   **A. Hepatic artery and hepatic portal vein** · B. Hepatic veins · C. Inferior vena cava · D. Cystic duct  
+   *The hepatic artery and hepatic portal vein enter at the porta hepatis.* <sub>[23.6 ¶fs-id1842507]</sub>
+
+3. What gives faeces their brown colour?  
+   A. Bile salts · B. Cholesterol · C. Lecithin · **D. Stercobilin, from bilirubin**  
+   *Intestinal bacteria turn bilirubin into stercobilin, a brown pigment.* <sub>[23.6 ¶fs-id1884700]</sub>
+
+---
+
+## 23. Lunate
 
 *OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4 · id `lunate` · bone `lunate_left` · draft*
 
@@ -1772,7 +2669,119 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 16. Maxilla
+## 24. Lungs
+
+*OpenStax A&P 2e: 22.1 Organs and Structures of the Respiratory System; 22.2 The Lungs; 22.3; 22.7 · id `lungs` · bone `undefined` · draft*
+
+### 1. In one line
+
+**The paired, pyramid-shaped organs of gas exchange in the chest, enclosed by the pleurae. <sub>[22.2 ¶fs-id2627237; 22.2 ¶fs-id1401100]</sub>**
+
+*Simpler.* Your lungs take oxygen from the air into your blood and pass carbon dioxide out. <sub>[22.2 ¶fs-id1401100]</sub>
+
+*Deeper.* They exchange gases across about 70 square metres of very thin, highly permeable epithelium. <sub>[22.2 ¶fs-id1401100]</sub>
+
+### 2. Where it is
+
+- They fill the thoracic cavity on either side of the mediastinum, and rest on the diaphragm. <sub>[22.2 ¶fs-id2627237; 22.2 ¶fs-id2346435]</sub>
+- Each connects to the trachea by its main bronchus. <sub>[22.2 ¶fs-id2627237]</sub>
+
+*Simpler.* They fill most of your chest, either side of your heart. <sub>[22.2 ¶fs-id2627237]</sub>
+
+*Deeper.* The apex is at the top; the base rests on the diaphragm. The costal surface faces the ribs. <sub>[22.2 ¶fs-id2627237]</sub>
+
+### 3. Key features
+
+- **Lobes.** The right lung has three lobes; the left lung has two. Fissures separate them. <sub>[22.2 ¶fs-id2717313]</sub>
+- **Cardiac notch.** An indentation in the left lung that makes room for the heart. <sub>[22.2 ¶fs-id2627237]</sub>
+- **Bronchopulmonary segments.** Divisions of a lobe, each with its own tertiary bronchus and artery. <sub>[22.2 ¶fs-id2717313]</sub>
+- **Alveoli.** Tiny grape-like air sacs, about 200 micrometres across, with elastic walls. <sub>[22.1 ¶fs-id2594216]</sub>
+- **Hilum.** Where the nerves enter the lung root and the two layers of pleura meet. <sub>[22.2 ¶fs-id2292208; 22.2 ¶fs-id2346435]</sub>
+
+*Simpler.* Three lobes on the right, two on the left, branching down to millions of tiny air sacs. † <sub>[22.2 ¶fs-id2717313; 22.1 ¶fs-id2594216; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The number of alveoli (“millions”).]</sub>
+
+*Deeper.* The right lung is shorter and wider; the left holds a smaller volume, sharing space with the heart. <sub>[22.2 ¶fs-id2627237]</sub>
+
+### 4. Form → function
+
+- Alveolar and capillary walls together form a respiratory membrane about 0.5 micrometres thick. <sub>[22.1 ¶fs-id2488371]</sub>
+- Type II alveolar cells secrete surfactant, which lowers surface tension, so the alveoli do not collapse. <sub>[22.1 ¶fs-id2201617; 22.3 ¶fs-id1862104]</sub>
+- The lungs are passive in breathing: pleural fluid makes them follow the chest wall as it moves. <sub>[22.2 ¶fs-id2078585; 22.3 ¶fs-id1882180]</sub>
+
+*Simpler.* Very thin walls let gases pass quickly; a slippery film keeps the air sacs open. <sub>[22.1 ¶fs-id2488371; 22.3 ¶fs-id1862104]</sub>
+
+### 5. Relations
+
+- *membrane* **Pleura.** Visceral pleura covers the lung; parietal pleura lines the chest wall. Pleural fluid lies between. <sub>[22.2 ¶fs-id2346435; 22.2 ¶fs-id2078585]</sub>
+- *muscle* **Diaphragm.** Borders the lungs below; its contraction enlarges the chest and draws air in. <sub>[22.2 ¶fs-id2627237; 22.3 ¶fs-id1882180]</sub>
+- *artery* **Pulmonary arteries.** Bring deoxygenated blood from the pulmonary trunk to the alveoli. <sub>[22.2 ¶fs-id2144132]</sub>
+- *nerve* **Autonomic nerves.** Parasympathetic nerves constrict the airways; sympathetic nerves dilate them. <sub>[22.2 ¶fs-id2292208]</sub>
+- *airway* **Bronchi.** Connect each lung to the trachea and branch within it. <sub>[22.2 ¶fs-id2627237; 22.2 ¶fs-id2717313]</sub>
+
+*Simpler.* They sit on the diaphragm, wrapped in pleura, fed by the pulmonary arteries. <sub>[22.2 ¶fs-id2627237; 22.2 ¶fs-id2346435; 22.2 ¶fs-id2144132]</sub>
+
+### 6. Development
+
+- The lung bud grows from the foregut at about week 4; most respiratory structures arise from endoderm. <sub>[22.7 ¶fs-id2485319; 22.7 ¶fs-id2486303]</sub>
+- By week 28 enough alveoli have matured that a premature baby can usually breathe alone. <sub>[22.7 ¶fs-id2287234]</sub>
+- Surfactant is usually not adequate until about the eighth month of pregnancy. <sub>[22.7 ¶fs-id1910265]</sub>
+
+### 7. Variations
+
+- Second-hand smoke raises a non-smoker’s risk of lung cancer by up to 30 percent. <sub>[22.2 ¶fs-id2573116]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** A baby born before enough surfactant is made.  
+   **Damaged:** The alveoli, whose surface tension is too high.  
+   **Patient can’t:** Keep the alveoli open when breathing out.  
+   **Why:** Without surfactant, the alveoli collapse during expiration. <sub>[22.3 ¶fs-id1862104; 22.7 ¶fs-id1910265]</sub>
+
+2. **Injury:** A disease confined to one bronchopulmonary segment.  
+   **Damaged:** That segment only.  
+   **Patient can’t:** Use that segment for gas exchange.  
+   **Why:** Each segment has its own bronchus and artery, so it can be removed with little effect on its neighbours. <sub>[22.2 ¶fs-id2717313]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain how the lungs expand though they have no muscle to move them.** <sub>[22.2 ¶fs-id2078585; 22.3 ¶fs-id1882180]</sub>
+
+   - The diaphragm and intercostals enlarge the thoracic cavity.
+   - Pleural fluid holds the lungs to the chest wall by surface tension.
+   - So the lungs are pulled outwards and stretch.
+   - Their pressure falls, and air flows in.
+
+2. *Compare.* **Compare the right and left lungs.** <sub>[22.2 ¶fs-id2717313; 22.2 ¶fs-id2627237]</sub>
+
+   - Right: three lobes (superior, middle, inferior).
+   - Left: two lobes (superior, inferior).
+   - The right is shorter and wider.
+   - The left is smaller, with a cardiac notch for the heart.
+
+3. *Predict.* **Predict what happens to a baby born at 26 weeks without treatment.** † <sub>[22.7 ¶fs-id1910265; 22.3 ¶fs-id1862104; 22.7 ¶fs-id2287234; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The effort of breathing without surfactant (respiratory distress in premature babies).]</sub>
+
+   - Its type II cells make little surfactant.
+   - Surface tension in the alveoli stays high.
+   - The alveoli collapse when it breathes out.
+   - So each breath takes great effort.
+
+### Check yourself
+
+1. How many lobes does the left lung have?  
+   A. One · **B. Two** · C. Three · D. Four  
+   *The left lung has two lobes, superior and inferior; the right has three.* <sub>[22.2 ¶fs-id2717313]</sub>
+
+2. Which cells secrete pulmonary surfactant?  
+   A. Type I alveolar cells · B. Alveolar macrophages · **C. Type II alveolar cells** · D. Goblet cells  
+   *Type II alveolar cells secrete surfactant.* <sub>[22.1 ¶fs-id2201617]</sub>
+
+3. What is the cardiac notch?  
+   **A. An indentation of the left lung for the heart** · B. A fissure of the right lung · C. The hilum of the left lung · D. A groove for the aorta  
+   *It is an indentation on the left lung that allows space for the heart.* <sub>[22.2 ¶fs-id2627237]</sub>
+
+---
+
+## 25. Maxilla
 
 *OpenStax A&P 2e: 7.2 The Skull; 6.4; 7.5; 9.2 · id `maxilla` · bone `maxilla_left` · draft*
 
@@ -1885,7 +2894,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 17. Metacarpal bones
+## 26. Metacarpal bones
 
 *OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4; 9.5; 20.5 · id `metacarpals` · bone `metacarpal_3_left` · draft*
 
@@ -1999,7 +3008,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 18. Nasal bone
+## 27. Nasal bone
 
 *OpenStax A&P 2e: 7.2 The Skull; 6.4 · id `nasal` · bone `nasal_bone_left` · draft*
 
@@ -2108,7 +3117,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 19. Occipital bone
+## 28. Occipital bone
 
 *OpenStax A&P 2e: 7.2 The Skull; 7.3; 7.5; 13.2; 16.3; 20.5 · id `occipital` · bone `occipital_bone` · draft*
 
@@ -2221,7 +3230,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 20. Auditory ossicles
+## 29. Auditory ossicles
 
 *OpenStax A&P 2e: 14.1 Sensory Perception; 7.2 The Skull · id `ossicles` · bone `malleus_left` · draft*
 
@@ -2332,7 +3341,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 21. Palatine bone
+## 30. Palatine bone
 
 *OpenStax A&P 2e: 7.2 The Skull; 6.4 · id `palatine` · bone `palatine_bone_left` · draft*
 
@@ -2441,7 +3450,116 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 22. Parietal bone
+## 31. Pancreas
+
+*OpenStax A&P 2e: 23.6 Accessory Organs in Digestion; 17.9 The Endocrine Pancreas · id `pancreas` · bone `undefined` · draft*
+
+### 1. In one line
+
+**A gland behind the stomach that makes digestive juice for the duodenum and hormones that control blood glucose. <sub>[23.6 ¶fs-id2094509; 17.9 ¶fs-id1907359]</sub>**
+
+*Simpler.* Your pancreas makes juices to digest food and insulin to manage sugar in your blood. <sub>[23.6 ¶fs-id1364084; 17.9 ¶fs-id1977301]</sub>
+
+*Deeper.* It is both exocrine (enzymes into ducts) and endocrine (hormones into the blood). <sub>[23.6 ¶fs-id2094509]</sub>
+
+### 2. Where it is
+
+- It lies across the back of the abdomen, behind the stomach, in the retroperitoneum. <sub>[23.6 ¶fs-id2094509]</sub>
+- Its head sits in the C-shaped curve of the duodenum; its tail reaches the spleen. <sub>[23.6 ¶fs-id2094509]</sub>
+
+*Simpler.* It lies flat behind your stomach, from the duodenum across to the spleen. <sub>[23.6 ¶fs-id2094509]</sub>
+
+*Deeper.* Its body extends about 15 cm to the left of the head. <sub>[23.6 ¶fs-id2094509]</sub>
+
+### 3. Key features
+
+- **Head, body and tail.** Head in the duodenal curve, body extending left, tail at the hilum of the spleen. <sub>[23.6 ¶fs-id2094509]</sub>
+- **Acini.** Grape-like clusters of cells that make pancreatic juice. <sub>[23.6 ¶fs-id1836151]</sub>
+- **Pancreatic islets.** Islands of endocrine cells among the acini (formerly the islets of Langerhans). <sub>[23.6 ¶fs-id2022250; 17.9 ¶fs-id1907359]</sub>
+- **Pancreatic ducts.** The main duct joins the bile duct at the hepatopancreatic ampulla. A smaller accessory duct may open separately. <sub>[23.6 ¶fs-id1836151]</sub>
+
+*Simpler.* Mostly juice-making cells, with small islands of hormone-making cells. <sub>[23.6 ¶fs-id1836151; 23.6 ¶fs-id2022250]</sub>
+
+*Deeper.* In each islet, beta cells (insulin) make up about 75 percent and alpha cells (glucagon) about 20 percent. <sub>[17.9 ¶fs-id1977301]</sub>
+
+### 4. Form → function
+
+- It makes over a litre of pancreatic juice a day; its bicarbonate buffers the acidic chyme. <sub>[23.6 ¶fs-id1364084]</sub>
+- Protein-digesting enzymes are made inactive, so they cannot digest the pancreas itself. <sub>[23.6 ¶fs-id1895555]</sub>
+- Insulin lowers blood glucose; glucagon raises it. <sub>[17.9 ¶tbl-ch18_07]</sub>
+
+*Simpler.* Its juice neutralises stomach acid and digests food; its hormones balance blood sugar. <sub>[23.6 ¶fs-id1364084; 17.9 ¶tbl-ch18_07]</sub>
+
+### 5. Relations
+
+- *organ* **Duodenum.** Curves round the head of the pancreas and receives its juice. <sub>[23.5 ¶fs-id2271264; 23.6 ¶fs-id1836151]</sub>
+- *duct* **Common bile duct.** Joins the main pancreatic duct just before the duodenum. <sub>[23.6 ¶fs-id1836151]</sub>
+- *organ* **Stomach.** Lies in front of the pancreas. <sub>[23.6 ¶fs-id2094509]</sub>
+- *organ* **Spleen.** The tail of the pancreas ends at its hilum. <sub>[23.6 ¶fs-id2094509]</sub>
+- *hormone* **Cholecystokinin.** From I cells of the duodenum; stimulates the release of pancreatic juices and bile. <sub>[23.5 ¶tbl-ch24_07]</sub>
+
+*Simpler.* It is wrapped by the duodenum and shares a duct with the liver. <sub>[23.5 ¶fs-id2271264; 23.6 ¶fs-id1836151]</sub>
+
+### 6. Development
+
+- It develops from buds of the embryonic gut tube that later fuse. † <sub>[† Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the pancreas.]</sub>
+
+### 7. Variations
+
+- A smaller accessory duct, when present, opens into the duodenum about an inch above the main opening. <sub>[23.6 ¶fs-id1836151]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** Protein-digesting enzymes activated inside the pancreas.  
+   **Damaged:** The pancreas itself (pancreatitis).  
+   **Patient can’t:** Digest normally without pain, as the gland is inflamed.  
+   **Why:** Active enzymes digest the pancreatic tissue. † <sub>[23.6 ¶fs-id1895555; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The symptoms of pancreatitis.]</sub>
+
+2. **Injury:** An autoimmune attack on the beta cells.  
+   **Damaged:** The beta cells of the islets (type 1 diabetes).  
+   **Patient can’t:** Make insulin: they need insulin by injection or infusion.  
+   **Why:** Without insulin, glucose cannot enter most body cells. <sub>[17.9 ¶fs-id1200718; 17.9 ¶fs-id1489225]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain why the pancreas makes its protein-digesting enzymes in inactive forms.** <sub>[23.6 ¶fs-id1895555]</sub>
+
+   - Active enzymes would digest the pancreas.
+   - They are released as trypsinogen and other inactive forms.
+   - Enteropeptidase in the duodenum activates trypsin.
+   - Trypsin then activates the other enzymes.
+
+2. *Compare.* **Compare insulin and glucagon.** <sub>[17.9 ¶fs-id1977301; 17.9 ¶tbl-ch18_07; 17.9 ¶fs-id1751772; 17.9 ¶fs-id1886347]</sub>
+
+   - Insulin comes from beta cells; glucagon from alpha cells.
+   - High blood glucose releases insulin; low glucose releases glucagon.
+   - Insulin lowers blood glucose; glucagon raises it.
+   - Both are controlled by negative feedback.
+
+3. *Predict.* **Predict what happens to the beta cells in long-standing type 2 diabetes.** <sub>[17.9 ¶fs-id1641299]</sub>
+
+   - Body cells become resistant to insulin.
+   - The pancreas makes more insulin to compensate.
+   - Over time the beta cells become exhausted.
+   - Blood glucose then rises further.
+
+### Check yourself
+
+1. Which islet cells make insulin?  
+   A. Alpha cells · B. Delta cells · **C. Beta cells** · D. PP cells  
+   *Beta cells, about 75 percent of each islet, produce insulin.* <sub>[17.9 ¶fs-id1977301]</sub>
+
+2. What makes pancreatic juice slightly alkaline?  
+   **A. Sodium bicarbonate** · B. Hydrochloric acid · C. Bile salts · D. Insulin  
+   *Sodium bicarbonate gives pancreatic juice its alkalinity.* <sub>[23.6 ¶fs-id1364084]</sub>
+
+3. Where does the head of the pancreas lie?  
+   A. At the hilum of the spleen · **B. In the C-shaped curve of the duodenum** · C. Behind the liver · D. In front of the stomach  
+   *Its head nestles in the C-shaped curve of the duodenum.* <sub>[23.6 ¶fs-id2094509]</sub>
+
+---
+
+## 32. Parietal bone
 
 *OpenStax A&P 2e: 7.2 The Skull; 7.5; 9.2; 20.5 · id `parietal` · bone `parietal_bone_left` · draft*
 
@@ -2554,7 +3672,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 23. Pisiform
+## 33. Pisiform
 
 *OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5 · id `pisiform` · bone `pisiform_left` · draft*
 
@@ -2664,7 +3782,118 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 24. Radius
+## 34. Quadriceps femoris
+
+*OpenStax A&P 2e: 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs; 11.1; 13.4; 14.3; 16.4 · id `quadriceps-femoris` · bone `undefined` · draft*
+
+### 1. In one line
+
+**The group of four muscles at the front of the thigh that extend and stabilise the knee. <sub>[11.6 ¶fs-id2591754]</sub>**
+
+*Simpler.* The quadriceps are the big muscles on the front of your thigh. They straighten your knee. <sub>[11.6 ¶fs-id2591754]</sub>
+
+*Deeper.* All four join one tendon to the patella, which continues as the patellar ligament to the tibial tuberosity. <sub>[11.6 ¶fs-id2591754]</sub>
+
+### 2. Where it is
+
+- They fill the anterior compartment of the thigh. <sub>[11.6 ¶fs-id2591754]</sub>
+- Rectus femoris lies in front, vastus lateralis on the outer side and vastus medialis on the inner side. Vastus intermedius lies between them, deep. <sub>[11.6 ¶fs-id2591754]</sub>
+
+*Simpler.* They cover the front and sides of your thigh, above the kneecap. <sub>[11.6 ¶fs-id2591754]</sub>
+
+*Deeper.* Only the rectus femoris arises from the hip bone; the three vasti arise from the femur. <sub>[11.6 ¶fig-ch11_06_03]</sub>
+
+### 3. Key features
+
+- **Rectus femoris.** Arises from the anterior inferior iliac spine and above the acetabulum. It also helps raise the knee. <sub>[11.6 ¶fig-ch11_06_03]</sub>
+- **Vastus lateralis.** Arises from the greater trochanter, the intertrochanteric line and the linea aspera. <sub>[11.6 ¶fig-ch11_06_03]</sub>
+- **Vastus medialis.** Arises from the linea aspera and the intertrochanteric line. <sub>[11.6 ¶fig-ch11_06_03]</sub>
+- **Vastus intermedius.** Arises from the upper shaft of the femur, deep to the rectus femoris. <sub>[11.6 ¶fig-ch11_06_03; 11.6 ¶fs-id2591754]</sub>
+- **Quadriceps tendon.** The tendon common to all four. It inserts into the patella. <sub>[11.6 ¶fs-id2591754]</sub>
+
+*Simpler.* Four muscles, one shared tendon, one kneecap. <sub>[11.6 ¶fs-id2591754]</sub>
+
+*Deeper.* Their motor units are large, up to about 1,000 fibres each, suited to force rather than fine control. <sub>[14.3 ¶fs-id2763982]</sub>
+
+### 4. Form → function
+
+- Pulling through the patella and patellar ligament, they extend the leg at the knee, as in kicking. <sub>[11.6 ¶fs-id2591754; 11.6 ¶fig-ch11_06_03]</sub>
+- The rectus femoris crosses the hip too, so it also flexes the thigh. <sub>[11.6 ¶fig-ch11_06_03; 11.6 ¶fs-id2591754]</sub>
+- The hamstrings, behind, are their antagonists. <sub>[11.1 ¶tbl-ch11_01]</sub>
+
+*Simpler.* They straighten the knee; the front one also lifts the thigh. <sub>[11.6 ¶fs-id2591754; 11.6 ¶fig-ch11_06_03]</sub>
+
+### 5. Relations
+
+- *bone* **Patella.** Lies in the quadriceps tendon. The tendon continues below it as the patellar ligament. <sub>[11.6 ¶fs-id2591754]</sub>
+- *bone* **Tibial tuberosity.** Where the patellar ligament attaches. <sub>[11.6 ¶fs-id2591754]</sub>
+- *muscle* **Hamstrings.** In the posterior compartment. They flex the knee, opposing the quadriceps. <sub>[11.1 ¶tbl-ch11_01; 11.6 ¶fs-id2012638]</sub>
+- *muscle* **Sartorius.** A band-like muscle crossing the front of the thigh, also in the anterior compartment. <sub>[11.6 ¶fs-id2591754]</sub>
+- *nerve* **Femoral nerve.** A major nerve of the lumbar plexus, to the front of the thigh. † <sub>[13.4 ¶fs-id1472046; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the femoral nerve supplies the quadriceps.]</sub>
+
+*Simpler.* They pull on the kneecap and are opposed by the hamstrings. <sub>[11.6 ¶fs-id2591754; 11.1 ¶tbl-ch11_01]</sub>
+
+### 6. Development
+
+- Limb muscles develop from general mesoderm. Satellite cells later repair the fibres. <sub>[10.9 ¶fs-id1959103; 10.9 ¶fs-id2329008]</sub>
+
+### 7. Variations
+
+- Without use, they waste quickly (disuse atrophy), for example after a leg fracture. <sub>[10.9 ¶fs-id2269378]</sub>
+- Age-related loss (sarcopenia) is slowed, though not stopped, by exercise. <sub>[10.6 ¶fs-id2267886; 10.6 ¶fs-id1425445]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** Tapping the patellar ligament below the kneecap.  
+   **Damaged:** The knee-jerk (stretch) reflex of the quadriceps.  
+   **Patient can’t:** Show a normal knee-jerk reflex if the reflex arc is damaged.  
+   **Why:** Stretching the muscle activates its spindles, which excite its motor neurons directly. <sub>[16.4 ¶fs-id1956663]</sub>
+
+2. **Injury:** A leg kept in plaster for weeks.  
+   **Damaged:** The quadriceps, through disuse.  
+   **Patient can’t:** Straighten the knee strongly when the plaster comes off.  
+   **Why:** Unused muscle loses structural proteins and shrinks. <sub>[10.9 ¶fs-id2269378; 10.9 ¶fs-id1645648]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain how the quadriceps extend the knee though none of them attaches to the tibia directly.** <sub>[11.6 ¶fs-id2591754]</sub>
+
+   - All four join the quadriceps tendon.
+   - The tendon inserts into the patella.
+   - Below the patella it continues as the patellar ligament.
+   - The ligament attaches to the tibial tuberosity, so pulling it straightens the knee.
+
+2. *Compare.* **Compare the rectus femoris and the vastus lateralis.** <sub>[11.6 ¶fig-ch11_06_03; 11.6 ¶fs-id2591754]</sub>
+
+   - Both extend the knee through the quadriceps tendon.
+   - The rectus femoris arises from the hip bone, so it also flexes the thigh.
+   - The vastus lateralis arises from the femur and acts on the knee only.
+   - The rectus femoris lies in front; the vastus lateralis on the outer side.
+
+3. *Predict.* **Predict what a knee-jerk test shows if the reflex arc is intact.** <sub>[16.4 ¶fs-id1956663]</sub>
+
+   - The tap stretches the quadriceps.
+   - Muscle spindles signal into the spinal cord.
+   - Their fibres excite the motor neuron directly.
+   - The quadriceps contract and the leg kicks forwards.
+
+### Check yourself
+
+1. Which quadriceps muscle also flexes the thigh at the hip?  
+   A. Vastus lateralis · B. Vastus medialis · C. Vastus intermedius · **D. Rectus femoris**  
+   *The rectus femoris arises from the hip bone, so it also helps raise the knee (flex the thigh).* <sub>[11.6 ¶fig-ch11_06_03]</sub>
+
+2. Where does the patellar ligament attach?  
+   **A. Tibial tuberosity** · B. Head of the fibula · C. Medial malleolus · D. Linea aspera  
+   *The patellar ligament attaches to the tibial tuberosity.* <sub>[11.6 ¶fs-id2591754]</sub>
+
+3. Which group opposes the quadriceps at the knee?  
+   A. Adductors · **B. Hamstrings** · C. Gluteal muscles · D. Fibular muscles  
+   *The hamstrings flex the leg, whereas the quadriceps extend it.* <sub>[11.1 ¶tbl-ch11_01]</sub>
+
+---
+
+## 35. Radius
 
 *OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5; 9.4; 9.5; 9.6; 20.5 · id `radius` · bone `radius_left` · draft*
 
@@ -2780,7 +4009,445 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 25. Temporal bone
+## 36. Rotator cuff
+
+*OpenStax A&P 2e: 11.5 Muscles of the Pectoral Girdle and Upper Limbs; 9.6 Anatomy of Selected Synovial Joints · id `rotator-cuff` · bone `undefined` · draft*
+
+### 1. In one line
+
+**Four short muscles from the scapula whose tendons ring the shoulder joint and hold the humeral head in its socket. <sub>[11.5 ¶fs-id2421860; 9.6 ¶fs-id2429784]</sub>**
+
+*Simpler.* The rotator cuff is a ring of four muscles that keeps your shoulder joint together. <sub>[9.6 ¶fs-id2429784]</sub>
+
+*Deeper.* They act as “dynamic ligaments”, adjusting their pull to give the shoulder joint its main support. <sub>[9.6 ¶fs-id2429784]</sub>
+
+### 2. Where it is
+
+- All four arise from the scapula and attach to the greater or lesser tubercle of the humerus. <sub>[9.6 ¶fs-id2429784]</sub>
+- Their tendons encircle the head of the humerus and fuse with the joint capsule in front, above and behind. <sub>[9.6 ¶fs-id2429784]</sub>
+
+*Simpler.* They run from your shoulder blade to the top of your arm bone, wrapping round the joint. <sub>[9.6 ¶fs-id2429784]</sub>
+
+*Deeper.* The fused tendons thicken the capsule. That thickening is what is called the rotator cuff. <sub>[9.6 ¶fs-id2429784]</sub>
+
+### 3. Key features
+
+- **Supraspinatus.** Above the spine of the scapula, from the supraspinous fossa. It abducts the arm. <sub>[11.5 ¶fs-id2501482; 11.5 ¶fig-ch11_05_03]</sub>
+- **Infraspinatus.** Below the spine of the scapula, from the infraspinous fossa. It laterally rotates the arm. <sub>[11.5 ¶fs-id2501482; 11.5 ¶fig-ch11_05_03]</sub>
+- **Teres minor.** From the lateral border of the scapula. It laterally rotates and extends the arm. <sub>[11.5 ¶fs-id2501482; 11.5 ¶fig-ch11_05_03]</sub>
+- **Subscapularis.** From the front of the scapula (subscapular fossa). It medially rotates the arm. <sub>[11.5 ¶fs-id2501482; 11.5 ¶fig-ch11_05_03]</sub>
+
+*Simpler.* Three are on the back of the shoulder blade and one is on its front. <sub>[11.5 ¶fs-id2501482; 11.5 ¶fig-ch11_05_03]</sub>
+
+*Deeper.* A memory aid for the four is SITS: supraspinatus, infraspinatus, teres minor, subscapularis. † <sub>[11.5 ¶fs-id2421860; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The memory aid SITS.]</sub>
+
+### 4. Form → function
+
+- The shoulder has the largest range of motion of any joint, at the cost of stability. Muscles give its main support. <sub>[9.6 ¶fs-id2305343; 9.6 ¶fs-id2429784]</sub>
+- Constant small adjustments in their pull keep the humeral head centred in the glenoid cavity. <sub>[9.6 ¶fs-id2429784]</sub>
+- Two bursae, subacromial and subscapular, stop the tendons rubbing on the scapula. <sub>[9.6 ¶fs-id2429784]</sub>
+
+*Simpler.* They are like living ligaments: they tighten as needed to keep the joint steady. <sub>[9.6 ¶fs-id2429784]</sub>
+
+### 5. Relations
+
+- *muscle* **Deltoid.** Lies over the cuff, capping the shoulder. It is the main abductor of the arm. <sub>[11.5 ¶fs-id2501482]</sub>
+- *bursa* **Subacromial bursa.** Sits between the cuff tendons and the acromion, reducing friction. <sub>[9.6 ¶fs-id2429784]</sub>
+- *bone* **Greater and lesser tubercles.** Bony attachment sites on the humerus for muscles acting across the shoulder. <sub>[8.2 ¶fs-id2110691; 9.6 ¶fs-id2429784]</sub>
+- *muscle* **Teres major.** Lies below the teres minor but is not part of the cuff. It extends and medially rotates the arm. <sub>[11.5 ¶fs-id2501482]</sub>
+- *joint* **Glenohumeral joint.** The joint the cuff supports. Its glenoid cavity is about a third the size of the humeral head. <sub>[9.6 ¶fs-id2305343; 9.6 ¶fs-id1231336]</sub>
+
+*Simpler.* The cuff lies under the deltoid and is protected from the acromion by a bursa. <sub>[11.5 ¶fs-id2501482; 9.6 ¶fs-id2429784]</sub>
+
+### 6. Development
+
+- Limb muscles, including these, develop from general mesoderm. Many myoblasts fuse to make each fibre. <sub>[10.9 ¶fs-id1959103]</sub>
+
+### 7. Variations
+
+- Repeated use of the arm in abduction, as in throwing, swimming or racquet sports, can wear and tear the cuff. <sub>[9.6 ¶fs-id1894060]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** Years of throwing fast pitches overhead.  
+   **Damaged:** The rotator cuff tendons, which become pinched and inflamed and may tear from the bone.  
+   **Patient can’t:** Raise the arm overhead without pain, or with full strength.  
+   **Why:** Repeated overhead movement squeezes the tendons beneath the acromion. <sub>[11.5 ¶fs-id2421860; 9.6 ¶fs-id1894060]</sub>
+
+2. **Injury:** A fall onto the hand with the arm fully abducted.  
+   **Damaged:** The shoulder joint, which dislocates downwards (inferiorly).  
+   **Patient can’t:** Move the arm at the shoulder.  
+   **Why:** The cuff and ligaments support the joint in front, above and behind, but not below. <sub>[9.6 ¶fs-id1894060]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain why most shoulder dislocations are inferior.** <sub>[9.6 ¶fs-id1894060; 9.6 ¶fs-id2429784]</sub>
+
+   - The humeral head is supported in front, above and behind.
+   - This support comes from the rotator cuff and ligaments.
+   - Below, the joint has little support.
+   - So a force on the fully abducted arm drives the head downwards.
+
+2. *Compare.* **Compare the actions of the infraspinatus and the subscapularis.** <sub>[11.5 ¶fs-id2501482; 11.1 ¶fs-id2260527; 9.6 ¶fs-id2429784]</sub>
+
+   - Both are rotator cuff muscles from the scapula.
+   - The infraspinatus lies behind and laterally rotates the arm.
+   - The subscapularis lies in front and medially rotates it.
+   - So they are antagonists for rotation, while both steady the joint.
+
+3. *Predict.* **Predict which movements hurt in a baseball pitcher with an inflamed rotator cuff.** <sub>[11.5 ¶fs-id2421860; 9.6 ¶fs-id1894060]</sub>
+
+   - Bringing the arm overhead to throw.
+   - The tendons are pinched in this position.
+   - Repeated movement inflames them further.
+   - A tendon may eventually tear away from the bone.
+
+### Check yourself
+
+1. Which muscle is not part of the rotator cuff?  
+   A. Supraspinatus · B. Teres minor · **C. Teres major** · D. Subscapularis  
+   *The cuff is the supraspinatus, infraspinatus, teres minor and subscapularis. The teres major is not part of it.* <sub>[11.5 ¶fs-id2421860]</sub>
+
+2. Which rotator cuff muscle medially rotates the arm?  
+   A. Infraspinatus · **B. Subscapularis** · C. Teres minor · D. Supraspinatus  
+   *The subscapularis, on the front of the scapula, medially rotates the arm.* <sub>[11.5 ¶fs-id2501482]</sub>
+
+3. What gives the shoulder joint its main support?  
+   A. Its deep bony socket · B. The joint capsule alone · **C. The rotator cuff muscles** · D. The biceps brachii  
+   *The rotator cuff muscles act as dynamic ligaments and give the main support.* <sub>[9.6 ¶fs-id2429784]</sub>
+
+---
+
+## 37. Small intestine
+
+*OpenStax A&P 2e: 23.5 The Small and Large Intestines · id `small-intestine` · bone `undefined` · draft*
+
+### 1. In one line
+
+**The longest part of the digestive tract, where most digestion and practically all absorption take place. <sub>[23.5 ¶fs-id2142144]</sub>**
+
+*Simpler.* Your small intestine is a long, coiled tube that takes the goodness from your food. <sub>[23.5 ¶fs-id2142144]</sub>
+
+*Deeper.* It is “small” only in diameter: about 2.5 cm, against 7.6 cm for the large intestine. <sub>[23.5 ¶fs-id2142144]</sub>
+
+### 2. Where it is
+
+- It runs from the pyloric sphincter of the stomach to the caecum of the large intestine. <sub>[23.5 ¶fs-id2271264; 23.5 ¶fs-id1921294]</sub>
+- The jejunum and ileum hang from the posterior abdominal wall by the mesentery, framed by the large intestine. <sub>[23.5 ¶fs-id1921294]</sub>
+
+*Simpler.* It is coiled up in the middle of your abdomen, ringed by the large intestine. <sub>[23.5 ¶fs-id1921294]</sub>
+
+*Deeper.* The duodenum curves behind the peritoneum (retroperitoneal) round the head of the pancreas. <sub>[23.5 ¶fs-id2271264]</sub>
+
+### 3. Key features
+
+- **Duodenum.** The shortest part, about 25 cm. It receives bile and pancreatic juice. <sub>[23.5 ¶fs-id2271264; 23.5 ¶fs-id2227124]</sub>
+- **Jejunum.** About 0.9 m in life. Its name means “empty”. <sub>[23.5 ¶fs-id2311182]</sub>
+- **Ileum.** The longest part, about 1.8 m. It joins the caecum at the ileocaecal valve. <sub>[23.5 ¶fs-id1921294]</sub>
+- **Circular folds.** Deep ridges of mucosa and submucosa that make chyme spiral and slow down. <sub>[23.5 ¶fs-id1377788]</sub>
+- **Villi and microvilli.** Finger-like projections and their tiny surface extensions, the brush border. <sub>[23.5 ¶fs-id1272744; 23.5 ¶fs-id810619]</sub>
+
+*Simpler.* Three parts: duodenum, jejunum and ileum, lined with millions of tiny folds and fingers. † <sub>[23.5 ¶fs-id2142277; 23.5 ¶fs-id1272744; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The number of villi (“millions”).]</sub>
+
+*Deeper.* Circular folds, villi and microvilli increase its absorptive surface more than 600-fold. <sub>[23.5 ¶fs-id2020227]</sub>
+
+### 4. Form → function
+
+- Each villus holds a capillary bed and a lacteal, so absorbed nutrients pass straight into blood or lymph. <sub>[23.5 ¶fs-id1272744]</sub>
+- Enzymes fixed to the microvilli finish digesting carbohydrates and proteins. <sub>[23.5 ¶fs-id810619]</sub>
+- Segmentation mixes chyme with digestive juices and presses it against the mucosa. <sub>[23.5 ¶fs-id1837941]</sub>
+
+*Simpler.* A huge, finger-covered surface and churning movements help it absorb food. <sub>[23.5 ¶fs-id2020227; 23.5 ¶fs-id1837941]</sub>
+
+### 5. Relations
+
+- *organ* **Stomach.** Releases chyme into the duodenum through the pyloric sphincter. <sub>[23.5 ¶fs-id2271264]</sub>
+- *duct* **Bile duct and pancreatic duct.** Join at the hepatopancreatic ampulla and open into the duodenum. <sub>[23.5 ¶fs-id2227124]</sub>
+- *organ* **Large intestine (caecum).** Receives food residue from the ileum through the ileocaecal valve. <sub>[23.5 ¶fs-id1921294; 23.5 ¶fs-id1764904]</sub>
+- *artery* **Superior mesenteric artery.** Its main arterial supply. <sub>[23.5 ¶fs-id2240902]</sub>
+- *vein* **Hepatic portal vein.** Carries nutrient-rich blood from it to the liver. <sub>[23.5 ¶fs-id2240902]</sub>
+
+*Simpler.* It starts at the stomach and ends at the large intestine, and its blood goes to the liver. <sub>[23.5 ¶fs-id2271264; 23.5 ¶fs-id1921294; 23.5 ¶fs-id2240902]</sub>
+
+### 6. Development
+
+- It develops from the midgut of the embryo. † <sub>[† Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the small intestine.]</sub>
+
+### 7. Variations
+
+- Peyer’s patches in the ileum are most prominent in young people and fade with age. <sub>[23.5 ¶fs-id1482787]</sub>
+- Some human populations keep making lactase as adults; in others, lactose intolerance is common. <sub>[23.5 ¶fs-id1632981]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** Too little lactase made by the absorptive cells.  
+   **Damaged:** Digestion of lactose, the milk sugar (lactose intolerance).  
+   **Patient can’t:** Eat dairy without gas, cramps, bloating and diarrhoea.  
+   **Why:** Bacteria in the large intestine ferment the undigested lactose, making gas. <sub>[23.5 ¶fs-id1632981; 23.5 ¶fs-id1485386]</sub>
+
+2. **Injury:** Damage that flattens the villi.  
+   **Damaged:** The absorptive surface of the small intestine.  
+   **Patient can’t:** Absorb nutrients normally.  
+   **Why:** The surface area for absorption falls sharply. † <sub>[23.5 ¶fs-id2020227; 23.5 ¶fs-id1272744; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Conditions that flatten the villi and their effects.]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain why the small intestine has such a large absorptive surface.** <sub>[23.5 ¶fs-id1377788; 23.5 ¶fs-id1272744; 23.5 ¶fs-id2020227]</sub>
+
+   - Circular folds make chyme spiral and slow down.
+   - Villi cover the folds, about 20–40 per square millimetre.
+   - Microvilli cover the cells of each villus.
+   - Together they increase the surface more than 600-fold.
+
+2. *Compare.* **Compare the duodenum and the ileum.** <sub>[23.5 ¶fs-id2271264; 23.5 ¶fs-id2041977; 23.5 ¶fs-id1921294; 23.5 ¶fs-id1482787]</sub>
+
+   - Duodenum: shortest, about 25 cm, partly retroperitoneal.
+   - It receives bile and pancreatic juice and has Brunner’s glands.
+   - Ileum: longest, about 1.8 m, on the mesentery.
+   - It has Peyer’s patches and ends at the ileocaecal valve.
+
+3. *Predict.* **Predict what happens in the colon of someone with lactose intolerance after drinking milk.** <sub>[23.5 ¶fs-id1485386; 23.5 ¶fs-id1761464]</sub>
+
+   - Lactose passes undigested through the small intestine.
+   - Bacteria in the large intestine ferment it.
+   - This produces gas, including hydrogen.
+   - Cramps, bloating and diarrhoea follow.
+
+### Check yourself
+
+1. Which is the longest part of the small intestine?  
+   A. Duodenum · B. Jejunum · **C. Ileum** · D. Caecum  
+   *The ileum, about 1.8 m long, is the longest part.* <sub>[23.5 ¶fs-id1921294]</sub>
+
+2. What is a lacteal?  
+   **A. A lymphatic capillary in a villus** · B. A gland in the duodenum · C. A fold of the mucosa · D. An enzyme for lactose  
+   *Each villus contains a lymphatic capillary called a lacteal.* <sub>[23.5 ¶fs-id1272744]</sub>
+
+3. Where do bile and pancreatic juice enter the small intestine?  
+   A. Ileum · **B. Duodenum** · C. Jejunum · D. Ileocaecal valve  
+   *Both reach the duodenum through the hepatopancreatic ampulla.* <sub>[23.5 ¶fs-id2227124]</sub>
+
+---
+
+## 38. Sternocleidomastoid
+
+*OpenStax A&P 2e: 11.2 Naming Skeletal Muscles; 11.3 Axial Muscles of the Head, Neck, and Back; 13.4 · id `sternocleidomastoid` · bone `undefined` · draft*
+
+### 1. In one line
+
+**The neck muscle from the sternum and clavicle to the mastoid process that turns and tilts the head. <sub>[11.2 ¶fs-id2279191; 11.3 ¶fs-id2455581]</sub>**
+
+*Simpler.* It is the long muscle on each side of your neck that turns your head. <sub>[11.3 ¶fs-id2455581]</sub>
+
+*Deeper.* Acting alone it turns the head to the opposite side; both together flex the head. <sub>[11.3 ¶tbl-ch11_05]</sub>
+
+### 2. Where it is
+
+- It runs up the side of the neck, from the sternum and clavicle to the skull behind the ear. <sub>[11.2 ¶fs-id2279191; 11.3 ¶tbl-ch11_05]</sub>
+- It inserts on the mastoid process of the temporal bone and on the occipital bone. <sub>[11.3 ¶tbl-ch11_05]</sub>
+
+*Simpler.* You can feel it on the side of your neck when you turn your head. <sub>[11.3 ¶fs-id2455581]</sub>
+
+*Deeper.* Seen from the side, it divides the neck into anterior and posterior triangles. <sub>[11.3 ¶fs-id2455581]</sub>
+
+### 3. Key features
+
+- **Sternal head.** Arises from the sternum (“sterno” in the name). <sub>[11.2 ¶fs-id2279191]</sub>
+- **Clavicular head.** Arises from the clavicle (“cleido” in the name). <sub>[11.2 ¶fs-id2279191]</sub>
+- **Insertion.** On the mastoid process of the temporal bone (“mastoid” in the name), and the occipital bone. <sub>[11.2 ¶fs-id2279191; 11.3 ¶tbl-ch11_05]</sub>
+- **Name.** Named for its attachments, with the origin first: sterno, cleido, mastoid. <sub>[11.2 ¶fs-id2279191]</sub>
+
+*Simpler.* Its long name lists where it starts and ends: breastbone, collarbone, mastoid. <sub>[11.2 ¶fs-id2279191]</sub>
+
+*Deeper.* When a muscle is named for its attachments, the origin is always named first. <sub>[11.2 ¶fs-id2279191]</sub>
+
+### 4. Form → function
+
+- One muscle alone turns the head to the opposite side and tilts it to its own side. <sub>[11.3 ¶tbl-ch11_05; 11.3 ¶fs-id2455581]</sub>
+- Both together flex the head forwards. <sub>[11.3 ¶fs-id2455581; 11.3 ¶tbl-ch11_05]</sub>
+
+*Simpler.* One side turns your head; both sides bend it forwards. <sub>[11.3 ¶fs-id2455581; 11.3 ¶tbl-ch11_05]</sub>
+
+### 5. Relations
+
+- *bone* **Temporal bone (mastoid process).** Its insertion, behind the ear. <sub>[11.2 ¶fs-id2279191]</sub>
+- *muscle* **Splenius capitis.** Tilts and turns the head to its own side; both together extend the head. <sub>[11.3 ¶tbl-ch11_05]</sub>
+- *muscle* **Semispinalis capitis.** Extends the head when both sides act, opposing the sternocleidomastoids. <sub>[11.3 ¶tbl-ch11_05]</sub>
+- *nerve* **Accessory nerve (cranial nerve XI).** A purely motor cranial nerve to muscles of the neck. <sub>[13.4 ¶tbl-ch13_03; 13.4 ¶fs-id1830197]</sub>
+- *region* **Triangles of the neck.** Its line separates the anterior and posterior triangles. <sub>[11.3 ¶fs-id2455581]</sub>
+
+*Simpler.* It works with the deep neck muscles to move the head, and its nerve is a cranial nerve. <sub>[11.3 ¶tbl-ch11_05; 13.4 ¶tbl-ch13_03]</sub>
+
+### 6. Development
+
+- Skeletal muscle of the head develops from general mesoderm; trunk muscles come from somites. † <sub>[10.9 ¶fs-id1959103; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which embryonic tissue the sternocleidomastoid itself comes from.]</sub>
+
+### 7. Variations
+
+- Its two heads, sternal and clavicular, can be seen and felt separately low in the neck. † <sub>[11.2 ¶fs-id2279191; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the two heads are visible separately.]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** A baby born with a shortened sternocleidomastoid on one side.  
+   **Damaged:** The sternocleidomastoid (congenital torticollis, wry neck).  
+   **Patient can’t:** Hold the head straight: it tilts to the short side and turns away.  
+   **Why:** The short muscle pulls constantly, tilting to its own side and turning to the opposite. † <sub>[11.3 ¶tbl-ch11_05; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Congenital torticollis.]</sub>
+
+2. **Injury:** Injury to the accessory nerve in the neck.  
+   **Damaged:** The nerve to the sternocleidomastoid and trapezius.  
+   **Patient can’t:** Turn the head strongly to the opposite side, or shrug that shoulder.  
+   **Why:** Both muscles lose their motor supply from cranial nerve XI. † <sub>[13.4 ¶tbl-ch13_03; 11.5 ¶tbl-ch11_08; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The accessory nerve’s supply to the sternocleidomastoid and trapezius, and the signs of its injury.]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain why the left sternocleidomastoid turns the face to the right.** <sub>[11.3 ¶tbl-ch11_05; 11.2 ¶fs-id2279191]</sub>
+
+   - It runs from the front (sternum, clavicle) to the back of the skull (mastoid).
+   - Pulling the mastoid down and forwards rotates the head.
+   - The face turns to the opposite side.
+   - So the left muscle turns the face to the right.
+
+2. *Compare.* **Compare the actions of the sternocleidomastoids and the semispinalis capitis acting on both sides.** <sub>[11.3 ¶tbl-ch11_05; 11.1 ¶fs-id2260527]</sub>
+
+   - Both sternocleidomastoids together flex the head.
+   - Both semispinalis capitis muscles together extend it.
+   - So the two pairs are antagonists.
+   - Acting on one side, each pair turns and tilts the head.
+
+3. *Predict.* **Predict the head position in a baby whose right sternocleidomastoid is short.** † <sub>[11.3 ¶tbl-ch11_05; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Congenital torticollis.]</sub>
+
+   - The short muscle pulls constantly.
+   - The head tilts to the right.
+   - The face turns to the left.
+   - This is congenital torticollis.
+
+### Check yourself
+
+1. Where does the sternocleidomastoid insert?  
+   A. Sternum · B. Clavicle · **C. Mastoid process of the temporal bone** · D. Spinous process of C7  
+   *It inserts on the mastoid process of the temporal bone, named last in its name.* <sub>[11.2 ¶fs-id2279191]</sub>
+
+2. What does one sternocleidomastoid do on its own?  
+   A. Extends the head · **B. Rotates the head to the opposite side** · C. Elevates the scapula · D. Depresses the mandible  
+   *Individually it rotates the head to the opposite side.* <sub>[11.3 ¶tbl-ch11_05]</sub>
+
+3. Which neck regions does it separate?  
+   **A. Anterior and posterior triangles** · B. Thorax and abdomen · C. Pharynx and larynx · D. Left and right carotid sheaths  
+   *Seen from the side, it divides the neck into anterior and posterior triangles.* <sub>[11.3 ¶fs-id2455581]</sub>
+
+---
+
+## 39. Stomach
+
+*OpenStax A&P 2e: 23.4 The Stomach; 23.3 · id `stomach` · bone `undefined` · draft*
+
+### 1. In one line
+
+**The J-shaped bag between the oesophagus and the duodenum that holds food, churns it and starts digesting protein. † <sub>[23.4 ¶fs-id2151539; 23.4 ¶fs-id1899671; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The stomach’s J shape.]</sub>**
+
+*Simpler.* Your stomach stores a meal and mixes it with acid juices before passing it on. <sub>[23.4 ¶fs-id1477027; 23.4 ¶fs-id1890948]</sub>
+
+*Deeper.* It turns food into chyme and releases it into the small intestine a little at a time. <sub>[23.4 ¶fs-id1477027]</sub>
+
+### 2. Where it is
+
+- It lies just below the oesophagus and links it to the duodenum. <sub>[23.4 ¶fs-id2151539]</sub>
+- Its two ends are fixed; the part between them can move and change size. <sub>[23.4 ¶fs-id2151539]</sub>
+
+*Simpler.* It sits in the upper abdomen, under the diaphragm, mostly on the left. † <sub>[23.4 ¶fs-id2052808; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the stomach lies mostly on the left.]</sub>
+
+*Deeper.* The lesser omentum ties it to the liver; the greater omentum hangs from its greater curvature. <sub>[23.4 ¶fs-id1386858]</sub>
+
+### 3. Key features
+
+- **Cardia.** Where the oesophagus joins and food enters. <sub>[23.4 ¶fs-id2052808]</sub>
+- **Fundus.** The dome above and to the left of the cardia, under the diaphragm. <sub>[23.4 ¶fs-id2052808]</sub>
+- **Body.** The main part of the stomach. <sub>[23.4 ¶fs-id2052808]</sub>
+- **Pylorus.** The funnel to the duodenum, ending at the pyloric sphincter, which controls emptying. <sub>[23.4 ¶fs-id2052808]</sub>
+- **Rugae.** Large folds of mucosa and submucosa that form when the stomach is empty. <sub>[23.4 ¶fs-id2052808]</sub>
+
+*Simpler.* Four regions, from top to bottom: cardia, fundus, body and pylorus. <sub>[23.4 ¶fs-id2052808]</sub>
+
+*Deeper.* It has an extra, inner oblique layer of smooth muscle, so it can churn food vigorously. <sub>[23.4 ¶fs-id1990056]</sub>
+
+### 4. Form → function
+
+- Empty it is about the size of a fist, yet it can stretch to hold about 4 litres. <sub>[23.4 ¶fs-id2151539]</sub>
+- Parietal cells make hydrochloric acid and intrinsic factor; chief cells make pepsinogen. <sub>[23.4 ¶fs-id1959017; 23.4 ¶fs-id1905668]</sub>
+- Mucus rich in bicarbonate, tight junctions and fast cell renewal protect the stomach from digesting itself. <sub>[23.4 ¶fs-id1896856]</sub>
+
+*Simpler.* It stretches to hold a meal, makes strong acid, and protects itself with a mucus lining. <sub>[23.4 ¶fs-id2151539; 23.4 ¶fs-id1959017; 23.4 ¶fs-id1896856]</sub>
+
+### 5. Relations
+
+- *organ* **Oesophagus.** Enters through the oesophageal hiatus of the diaphragm and joins at the cardia. <sub>[23.3 ¶fs-id1984077; 23.4 ¶fs-id2052808]</sub>
+- *organ* **Duodenum.** Receives chyme through the pyloric sphincter. <sub>[23.4 ¶fs-id2052808]</sub>
+- *organ* **Liver.** Joined to the lesser curvature by the lesser omentum. <sub>[23.4 ¶fs-id1386858]</sub>
+- *membrane* **Greater omentum.** Runs from the greater curvature to the posterior abdominal wall. <sub>[23.4 ¶fs-id1386858]</sub>
+- *hormone* **Gastrin.** Made mainly by G cells of the pyloric antrum. It increases gastric secretion and emptying. <sub>[23.4 ¶fs-id1388512; 23.4 ¶tbl-ch24_06]</sub>
+
+*Simpler.* Food comes in from the oesophagus and goes on to the duodenum. <sub>[23.4 ¶fs-id2052808]</sub>
+
+### 6. Development
+
+- It develops as a widening of the foregut, the same tube that also gives rise to the lung bud. † <sub>[22.7 ¶fs-id2485319; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the stomach from the foregut.]</sub>
+
+### 7. Variations
+
+- Its size and position change with every meal, as it fills, churns and empties. <sub>[23.4 ¶fs-id2151539]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** Long use of non-steroidal anti-inflammatory drugs (NSAIDs) such as aspirin, or Helicobacter pylori infection.  
+   **Damaged:** The mucosal barrier, letting acid erode the lining (a peptic ulcer).  
+   **Patient can’t:** Eat without “burning” pain and indigestion.  
+   **Why:** Gastric juice eats deeper into the unprotected mucosa. <sub>[23.4 ¶fs-id2023452; 23.4 ¶fs-id1632870; 23.4 ¶fs-id1070208]</sub>
+
+2. **Injury:** An ulcer that erodes right through the stomach wall.  
+   **Damaged:** The whole wall, now perforated, and the peritoneum.  
+   **Patient can’t:** Recover without surgery.  
+   **Why:** Stomach contents leak through the hole and inflame the peritoneum (peritonitis). <sub>[23.4 ¶fs-id2071941]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain why the stomach does not digest itself.** <sub>[23.4 ¶fs-id1896856]</sub>
+
+   - A thick mucus coat rich in bicarbonate neutralises acid.
+   - Tight junctions stop gastric juice getting between the cells.
+   - Stem cells replace damaged surface cells quickly.
+   - Together these form the mucosal barrier.
+
+2. *Compare.* **Compare parietal cells and chief cells.** <sub>[23.4 ¶fs-id1959017; 23.4 ¶fs-id1905668]</sub>
+
+   - Both lie in the gastric glands.
+   - Parietal cells make hydrochloric acid and intrinsic factor.
+   - Chief cells make pepsinogen.
+   - The acid converts pepsinogen into active pepsin.
+
+3. *Predict.* **Predict the effect of the enterogastric reflex when the duodenum fills with chyme.** <sub>[23.4 ¶fs-id1352023]</sub>
+
+   - Distension of the duodenum triggers the reflex.
+   - Gastric secretion is inhibited.
+   - The pyloric sphincter closes.
+   - So no more chyme enters until the duodenum is ready.
+
+### Check yourself
+
+1. Which cells secrete hydrochloric acid?  
+   A. Chief cells · **B. Parietal cells** · C. G cells · D. Mucous neck cells  
+   *Parietal cells produce hydrochloric acid and intrinsic factor.* <sub>[23.4 ¶fs-id1959017]</sub>
+
+2. Which region of the stomach connects to the duodenum?  
+   **A. Pylorus** · B. Fundus · C. Cardia · D. Body  
+   *The funnel-shaped pylorus connects the stomach to the duodenum.* <sub>[23.4 ¶fs-id2052808]</sub>
+
+3. What causes most peptic ulcers?  
+   A. Too much mucus · B. Gastrin deficiency · C. Lack of intrinsic factor · **D. NSAIDs or Helicobacter pylori infection**  
+   *The majority of ulcers are caused by NSAIDs or Helicobacter pylori infection.* <sub>[23.4 ¶fs-id2023452]</sub>
+
+---
+
+## 40. Temporal bone
 
 *OpenStax A&P 2e: 7.2 The Skull; 7.5; 9.6; 13.4; 14.1; 20.5 · id `temporal` · bone `temporal_bone_left` · draft*
 
@@ -2896,7 +4563,116 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 26. Trapezium
+## 41. Thyroid gland
+
+*OpenStax A&P 2e: 17.4 The Thyroid Gland · id `thyroid-gland` · bone `undefined` · draft*
+
+### 1. In one line
+
+**A butterfly-shaped gland in front of the trachea that makes the hormones that set the metabolic rate. <sub>[17.4 ¶fs-id1219750; 17.4 ¶fs-id1241366]</sub>**
+
+*Simpler.* Your thyroid is a small gland in your neck. Its hormones control how fast your body uses energy. <sub>[17.4 ¶fs-id1219750; 17.4 ¶fs-id1241366]</sub>
+
+*Deeper.* It makes T3 and T4 from iodine, and calcitonin from its parafollicular cells. <sub>[17.4 ¶fs-id1217036; 17.4 ¶fs-id555341]</sub>
+
+### 2. Where it is
+
+- It lies in front of the trachea, just below the larynx. <sub>[17.4 ¶fs-id1219750]</sub>
+- The parathyroid glands are embedded in the back of its lobes. <sub>[17.4 ¶fs-id1219750]</sub>
+
+*Simpler.* It sits low in the front of your neck, below your voice box. <sub>[17.4 ¶fs-id1219750]</sub>
+
+*Deeper.* Its two lobes wrap round the sides of the trachea, joined by the isthmus in front. † <sub>[17.4 ¶fs-id1219750; † Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the lobes wrap round the sides of the trachea.]</sub>
+
+### 3. Key features
+
+- **Isthmus.** The narrow middle part that joins the two lobes. <sub>[17.4 ¶fs-id1219750]</sub>
+- **Lobes.** Wing-shaped right and left lobes either side of the isthmus. <sub>[17.4 ¶fs-id1219750]</sub>
+- **Follicles.** Hollow spheres of follicle cells filled with colloid, where the hormones are made. <sub>[17.4 ¶fs-id1219750; 17.4 ¶fs-id1217036]</sub>
+- **Parafollicular (C) cells.** Cells between the follicles that make calcitonin. <sub>[17.4 ¶fs-id555341]</sub>
+
+*Simpler.* Two wings joined in the middle, full of tiny hormone-making sacs. <sub>[17.4 ¶fs-id1219750]</sub>
+
+*Deeper.* Iodine attaches to thyroglobulin in the colloid to build the hormones. <sub>[17.4 ¶fs-id1217036]</sub>
+
+### 4. Form → function
+
+- T3 and T4 raise the basal metabolic rate, the energy the body uses at rest. <sub>[17.4 ¶fs-id1241366]</sub>
+- They are needed for growth, and especially for the developing nervous system. <sub>[17.4 ¶fs-id1243032]</sub>
+- Thyroid hormone release is controlled by thyroid-stimulating hormone (TSH) from the pituitary, by negative feedback. <sub>[17.4 ¶fs-id1073276]</sub>
+
+*Simpler.* Its hormones turn up the body’s energy use and help children grow. <sub>[17.4 ¶fs-id1241366; 17.4 ¶fs-id1243032]</sub>
+
+### 5. Relations
+
+- *airway* **Trachea.** Lies directly behind the gland. <sub>[17.4 ¶fs-id1219750]</sub>
+- *airway* **Larynx.** Lies just above it. <sub>[17.4 ¶fs-id1219750]</sub>
+- *gland* **Parathyroid glands.** Embedded in the back of its lobes. <sub>[17.4 ¶fs-id1219750]</sub>
+- *gland* **Anterior pituitary.** Releases TSH, which stimulates the thyroid. <sub>[17.4 ¶fs-id1073276]</sub>
+- *brain* **Hypothalamus.** Releases thyrotropin-releasing hormone (TRH), which triggers TSH secretion. <sub>[17.4 ¶fs-id1073276]</sub>
+
+*Simpler.* It sits on the windpipe, below the voice box, and is controlled by the pituitary. <sub>[17.4 ¶fs-id1219750; 17.4 ¶fs-id1073276]</sub>
+
+### 6. Development
+
+- Its hormones are critical for normal development of the nervous system before birth and in early childhood. <sub>[17.4 ¶fs-id1243032]</sub>
+
+### 7. Variations
+
+- Where diets lack iodine, iodised salt is the main source in many countries. <sub>[17.4 ¶fs-id768548]</sub>
+
+### 8. Clinical reasoning
+
+1. **Injury:** Too little iodine in the diet.  
+   **Damaged:** Hormone production in the thyroid follicles.  
+   **Patient can’t:** Make T3 and T4: the gland swells into a goitre.  
+   **Why:** TSH rises, and colloid builds up in the overstimulated follicles. <sub>[17.4 ¶fs-id1081468]</sub>
+
+2. **Injury:** Inflammation of the thyroid gland.  
+   **Damaged:** The thyroid’s hormone output (hypothyroidism).  
+   **Patient can’t:** Keep a normal metabolic rate: they gain weight and feel cold.  
+   **Why:** Low T3 and T4 slow the use of energy throughout the body. <sub>[17.4 ¶fs-id1374729; 17.4 ¶fs-id1241366]</sub>
+
+### 9. Tutorial questions
+
+1. *Explain.* **Explain why iodine deficiency causes a goitre.** <sub>[17.4 ¶fs-id1081468; 17.4 ¶fs-id1073276]</sub>
+
+   - Without iodine, T3 and T4 cannot be made.
+   - Low T3 and T4 remove negative feedback.
+   - TSH secretion increases.
+   - Overstimulated follicles store more colloid, and the gland enlarges.
+
+2. *Compare.* **Compare follicle cells and parafollicular cells.** <sub>[17.4 ¶fs-id1219750; 17.4 ¶fs-id1217036; 17.4 ¶fs-id555341]</sub>
+
+   - Follicle cells surround the colloid and make T3 and T4.
+   - Their hormones raise the metabolic rate.
+   - Parafollicular cells lie between follicles and make calcitonin.
+   - Calcitonin tends to lower blood calcium.
+
+3. *Predict.* **Predict the TSH level in someone with low T3 and T4 from thyroid inflammation.** <sub>[17.4 ¶fs-id1073276; 17.4 ¶fs-id1374729]</sub>
+
+   - Low T3 and T4 reduce negative feedback.
+   - The hypothalamus releases more TRH.
+   - The pituitary releases more TSH.
+   - So TSH is high.
+
+### Check yourself
+
+1. Which cells make calcitonin?  
+   A. Follicle cells · **B. Parafollicular cells** · C. Chief cells · D. Beta cells  
+   *Parafollicular (C) cells between the follicles make calcitonin.* <sub>[17.4 ¶fs-id555341]</sub>
+
+2. Which hormone stimulates the thyroid to release T3 and T4?  
+   A. TRH · B. ACTH · **C. TSH** · D. Calcitonin  
+   *Thyroid-stimulating hormone (TSH) from the anterior pituitary stimulates release.* <sub>[17.4 ¶fs-id1073276]</sub>
+
+3. Where is the thyroid gland?  
+   **A. In front of the trachea, below the larynx** · B. Behind the oesophagus · C. On top of the kidneys · D. In the mediastinum  
+   *It lies anterior to the trachea, just inferior to the larynx.* <sub>[17.4 ¶fs-id1219750]</sub>
+
+---
+
+## 42. Trapezium
 
 *OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4; 9.5 · id `trapezium` · bone `trapezium_left` · draft*
 
@@ -3008,7 +4784,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 27. Trapezoid
+## 43. Trapezoid
 
 *OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4 · id `trapezoid` · bone `trapezoid_left` · draft*
 
@@ -3119,7 +4895,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 28. Triquetrum
+## 44. Triquetrum
 
 *OpenStax A&P 2e: 8.2 Bones of the Upper Limb (and glossary); 8.5; 9.4 · id `triquetrum` · bone `triquetrum_left` · draft*
 
@@ -3230,7 +5006,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 29. Ulna
+## 45. Ulna
 
 *OpenStax A&P 2e: 8.2 Bones of the Upper Limb; 8.5; 9.4; 9.5; 9.6; 20.5 · id `ulna` · bone `ulna_left` · draft*
 
@@ -3347,7 +5123,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 30. Vomer
+## 46. Vomer
 
 *OpenStax A&P 2e: 7.2 The Skull; 6.4 · id `vomer` · bone `vomer` · draft*
 
@@ -3456,7 +5232,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## 31. Zygomatic bone
+## 47. Zygomatic bone
 
 *OpenStax A&P 2e: 7.2 The Skull; 6.4 · id `zygomatic` · bone `zygomatic_bone_left` · draft*
 
@@ -3566,7 +5342,7 @@ Draft lessons in the nine-layer format, for review before the remaining Skull an
 
 ---
 
-## Awaiting a source check (99)
+## Awaiting a source check (150)
 
 Each needs an approved source (OpenStax A&P 2e, or a reviewer) before the lesson can be marked reviewed.
 
@@ -3593,17 +5369,46 @@ Each needs an approved source (OpenStax A&P 2e, or a reviewer) before the lesson
 - **Mandible: Inferior alveolar nerve.** “The nerve to the lower teeth: enters the mandibular foramen.” — OpenStax describes the nerve without naming it; “inferior alveolar nerve” needs an approved source.
 - **Mandible.** “Like other flat bones of the face, most of it forms directly from membrane (intramembranous ossification).” — OpenStax says the flat bones of the face develop this way; that this includes most of the mandible needs an approved source.
 - **Mandible.** “In males the angle of the mandible tends to be squarer and more flared.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- **Biceps brachii.** “Its tendon inserts on the radial tuberosity of the radius.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The insertion of the biceps brachii (radial tuberosity).
+- **Biceps brachii: Fusiform shape.** “A spindle-shaped belly that tapers towards each end.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the biceps brachii itself is fusiform (11.1 uses it as the example of a belly).
+- **Biceps brachii: Musculocutaneous nerve.** “The nerve of the anterior compartment of the arm.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The musculocutaneous nerve and its supply to the biceps.
+- **Biceps brachii.** “The torn head cannot pull, and its belly shortens away from the tear.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Rupture of the long head of the biceps and its signs.
+- **Calf muscles: gastrocnemius and soleus: Tibial nerve.** “One of the two nerves in the sciatic nerve. It supplies the back of the leg.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the tibial nerve supplies the calf muscles.
+- **Calf muscles: gastrocnemius and soleus.** “The calf muscles can no longer pull on the calcaneus.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Rupture of the calcaneal tendon and its signs.
 - **Capitate.** “It is the largest of the carpal bones.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Capitate: Rounded head.** “Its upper end is rounded, fitting a hollow formed by the scaphoid and lunate.” — OpenStax gives its name and its joints with the scaphoid and lunate; the rounded head fitting their hollow is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Capitate.** “Its single ossification centre appears first of the carpal bones, during the first year.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the first year, before the hamate (supporting only).
 - **Capitate.** “The lunate stays attached to the radius while the ligaments around it tear.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Capitate.** “Predict the effect of a fall that dislocates the capitate backwards around the lunate.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- **Deltoid.** “It inserts on the deltoid tuberosity, about halfway down the outer side of the humerus.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The deltoid’s insertion (deltoid tuberosity of the humerus).
+- **Deltoid: Clavicular (front) part.** “Arises from the clavicle. It helps flex and medially rotate the arm.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).
+- **Deltoid: Acromial (middle) part.** “Arises from the acromion. It is the part that abducts the arm.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the middle (acromial) fibres are the ones that abduct.
+- **Deltoid: Spinal (back) part.** “Arises from the spine of the scapula. It helps extend and laterally rotate the arm.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).
+- **Deltoid: Shape.** “Thick and triangular, like the Greek letter delta, which gives it its name.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The origin of the name (the Greek letter delta).
+- **Deltoid.** “Its front and back parts work against each other, so the deltoid can both flex and extend the arm.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).
+- **Deltoid.** “The front fibres flex and medially rotate the arm. The back fibres extend and laterally rotate it.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).
+- **Deltoid: Axillary nerve.** “A branch of the radial nerve that goes to the armpit region. It supplies the deltoid.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the axillary nerve supplies the deltoid.
+- **Deltoid.** “Without its nerve, the deltoid cannot contract, so abduction is weak.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The course of the axillary nerve round the surgical neck, and the weakness that follows its injury.
+- **Deltoid.** “Explain how one muscle, the deltoid, can both flex and extend the arm.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which parts of the deltoid flex and which extend the arm (OpenStax names the actions, not the parts).
+- **Deltoid.** “Predict what a patient cannot do after a fracture of the surgical neck that injures the axillary nerve.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The axillary nerve’s supply to the deltoid and the signs of its injury.
+- **Diaphragm.** “The three openings lie at about the levels of T8 (caval), T10 (oesophageal) and T12 (aortic).” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The vertebral levels of the diaphragm’s openings.
+- **Diaphragm.** “The heart and lungs sit on it and the liver and stomach lie under it. A nerve from the neck works it.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the liver and stomach lie directly under the diaphragm.
+- **Diaphragm.** “The phrenic nerve comes from the neck (cervical plexus), a sign that the diaphragm’s muscle starts in the neck region.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the diaphragm and why its nerve comes from the neck.
+- **Diaphragm.** “The hiatus no longer holds the junction of the oesophagus and stomach below the diaphragm.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Hiatus hernia and its symptoms.
+- **Diaphragm.** “Predict what happens to breathing if the phrenic nerve is cut on one side.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The effects of cutting one phrenic nerve.
 - **Ethmoid bone.** “The thin plate is all that separates the nasal cavity from the cranial cavity.” — Leakage of cerebrospinal fluid from the nose is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the plate’s position is.
 - **Frontal bone.** “The anterior fontanelle, the soft spot at the front of a baby’s head, lies where it meets the parietal bones.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Hamate: Ulnar nerve.** “Passes beside the hook of the hamate into the hand.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Hamate.** “Its single ossification centre appears during the first year, just after the capitate.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the first year, after the capitate (supporting only).
 - **Hamate.** “The handle presses directly on the hook, which projects forwards.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Hamate.** “A golfer strikes the ground and has pain at the base of the palm. Predict the fracture and why.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- **Hamstrings: Semitendinosus.** “A medial hamstring with a long tendon. It turns the thigh inwards.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The long tendon of the semitendinosus.
+- **Hamstrings: Semimembranosus.** “A medial hamstring, deep to the semitendinosus. It turns the thigh inwards.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the semimembranosus lies deep to the semitendinosus.
+- **Hamstrings.** “The biceps femoris inserts on the head of the fibula; the other two on the medial side of the tibia.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The insertions of the hamstrings.
+- **Hamstrings: Sciatic nerve.** “Runs down the back of the thigh. It is the tibial and fibular nerves combined.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the sciatic nerve supplies the hamstrings and runs among them.
+- **Hamstrings.** “Sprinters’ muscles have a high share of fast glycolytic fibres for powerful bursts.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Fibre types of the hamstrings specifically.
+- **Hamstrings.** “They are stretched across two joints while contracting hard to slow the leg.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Hamstring strains.
+- **Hamstrings.** “Predict which movement is hard after a hamstring strain.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Hamstring strains.
 - **Phalanges of the hand: Base, shaft and head.** “Each phalanx has a base nearest the palm, a shaft and a head.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Phalanges of the hand.** “Without its tendon, nothing pulls the distal phalanx straight.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Phalanges of the hand.** “A cricket ball strikes the tip of a straight finger, and the tip now droops. Predict the injury and explain it.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
@@ -3613,12 +5418,18 @@ Each needs an approved source (OpenStax A&P 2e, or a reviewer) before the lesson
 - **Hyoid bone.** “Swallowing needs the hyoid to move in step with the larynx and pharynx.” — Swallowing problems after a stroke are not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the hyoid’s role is.
 - **Inferior nasal concha.** “The inferior concha forms from a cartilage model (endochondral ossification).” — OpenStax 7.5 says the facial bones form from cartilage; that this applies to the inferior nasal concha needs an approved source.
 - **Inferior nasal concha.** “The swollen lining narrows the air passages around the conchae.” — Swelling of the lining narrowing the nasal passages is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- **Kidneys.** “Two bean-shaped organs at the back of the abdomen that filter the blood and make urine.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The kidneys’ bean shape.
+- **Kidneys.** “They develop in the pelvis and rise to their adult position in the abdomen.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the kidneys.
+- **Kidneys.** “Predict a blood change in long-term kidney failure.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Anaemia in kidney failure.
 - **Lacrimal bone.** “Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).” — OpenStax 6.4 says the flat bones of the face form from membrane, but 7.5 says the facial bones form from cartilage; which applies to the lacrimal bone needs an approved source.
 - **Lacrimal bone.** “Tears can leave the eye only through this duct into the nose.” — A blocked tear duct in babies is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the duct’s course is.
+- **Liver.** “Bilirubin is a waste of old red cells that the liver normally excretes in bile.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Jaundice and its causes.
 - **Lunate: Median nerve.** “Runs through the carpal tunnel, in front of the lunate.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Lunate.** “Its single ossification centre appears at about the fifth year.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the fifth year (supporting only).
 - **Lunate.** “The dislocated bone takes up space in the tunnel and presses on the median nerve.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Lunate.** “Predict the effect of the lunate dislocating forwards into the carpal tunnel.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- **Lungs.** “Three lobes on the right, two on the left, branching down to millions of tiny air sacs.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The number of alveoli (“millions”).
+- **Lungs.** “Predict what happens to a baby born at 26 weeks without treatment.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The effort of breathing without surfactant (respiratory distress in premature babies).
 - **Maxilla.** “Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).” — OpenStax 6.4 says the flat bones of the face form from membrane, but 7.5 says the facial bones form from cartilage; which applies to the maxilla needs an approved source.
 - **Maxilla.** “An eye muscle and orbital fat can be trapped in the break.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Metacarpal bones.** “Each has two ossification centres: one for the shaft, and one for the head (in the first, for the base).” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives two centres for each metacarpal (supporting only).
@@ -3641,6 +5452,8 @@ Each needs an approved source (OpenStax A&P 2e, or a reviewer) before the lesson
 - **Auditory ossicles.** “The malleus is attached to the eardrum, which must vibrate to move the ossicles.” — A torn eardrum is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the eardrum’s role is.
 - **Auditory ossicles.** “Predict the effect on hearing if the stapes cannot move, and explain it.” — Hearing loss from a fixed stapes is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the role of the oval window is.
 - **Palatine bone.** “Like the other flat bones of the face, it forms directly from membrane (intramembranous ossification).” — OpenStax 6.4 says the flat bones of the face form from membrane, but 7.5 says the facial bones form from cartilage; which applies to the palatine bone needs an approved source.
+- **Pancreas.** “It develops from buds of the embryonic gut tube that later fuse.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the pancreas.
+- **Pancreas.** “Active enzymes digest the pancreatic tissue.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The symptoms of pancreatitis.
 - **Parietal bone: Grooves on the inner surface.** “Branches of the artery that supplies the brain’s coverings mark the inner surface of the skull.” — OpenStax says the artery’s branches groove the inner surface of the skull; that this includes the parietal bone needs an approved source.
 - **Pisiform.** “It lies within the tendon of a forearm muscle (flexor carpi ulnaris), like a kneecap within its tendon.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Pisiform: Flexor carpi ulnaris.** “Its tendon attaches to the pisiform.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
@@ -3649,9 +5462,23 @@ Each needs an approved source (OpenStax A&P 2e, or a reviewer) before the lesson
 - **Pisiform.** “A forearm muscle tendon attaches to it and pulls on the broken bone.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Pisiform.** “The nerve passes beside the pisiform and the hook of the hamate into the hand.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Pisiform.** “After a long ride, a cyclist’s little finger feels numb. Predict the nerve affected and where.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- **Quadriceps femoris: Femoral nerve.** “A major nerve of the lumbar plexus, to the front of the thigh.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the femoral nerve supplies the quadriceps.
 - **Radius.** “The annular ligament normally holds the head in place as it turns.” — “Pulled elbow” (radial head subluxation) in young children is not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
+- **Rotator cuff.** “A memory aid for the four is SITS: supraspinatus, infraspinatus, teres minor, subscapularis.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The memory aid SITS.
+- **Small intestine.** “Three parts: duodenum, jejunum and ileum, lined with millions of tiny folds and fingers.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The number of villi (“millions”).
+- **Small intestine.** “It develops from the midgut of the embryo.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the small intestine.
+- **Small intestine.** “The surface area for absorption falls sharply.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Conditions that flatten the villi and their effects.
+- **Sternocleidomastoid.** “Skeletal muscle of the head develops from general mesoderm; trunk muscles come from somites.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Which embryonic tissue the sternocleidomastoid itself comes from.
+- **Sternocleidomastoid.** “Its two heads, sternal and clavicular, can be seen and felt separately low in the neck.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the two heads are visible separately.
+- **Sternocleidomastoid.** “The short muscle pulls constantly, tilting to its own side and turning to the opposite.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Congenital torticollis.
+- **Sternocleidomastoid.** “Both muscles lose their motor supply from cranial nerve XI.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The accessory nerve’s supply to the sternocleidomastoid and trapezius, and the signs of its injury.
+- **Sternocleidomastoid.** “Predict the head position in a baby whose right sternocleidomastoid is short.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). Congenital torticollis.
+- **Stomach.** “The J-shaped bag between the oesophagus and the duodenum that holds food, churns it and starts digesting protein.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The stomach’s J shape.
+- **Stomach.** “It sits in the upper abdomen, under the diaphragm, mostly on the left.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the stomach lies mostly on the left.
+- **Stomach.** “It develops as a widening of the foregut, the same tube that also gives rise to the lung bud.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). The development of the stomach from the foregut.
 - **Temporal bone.** “The mastoid process is larger in males.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (7.2) says it is larger in the male (supporting only).
 - **Temporal bone.** “The facial nerve controls the muscles of facial expression.” — Bell’s palsy and nerve injury at the foramen are not in OpenStax A&P 2e (chapters 6–9, 12–16, 20); the nerve’s course and role are.
+- **Thyroid gland.** “Its two lobes wrap round the sides of the trachea, joined by the isthmus in front.” — Not in OpenStax A&P 2e (chapters 6–17, 19–23 and 25). That the lobes wrap round the sides of the trachea.
 - **Trapezium.** “Its single ossification centre appears at about the fifth year.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the fifth year (as the “greater multangular”) (supporting only).
 - **Trapezium.** “This saddle joint takes the force of every pinch and grip.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20).
 - **Trapezoid.** “Its single ossification centre appears at about the eighth year.” — Not in OpenStax A&P 2e (chapters 6–9, 12–16, 20). Gray’s 1918 (8.2) gives the eighth year (as the “lesser multangular”) (supporting only).
